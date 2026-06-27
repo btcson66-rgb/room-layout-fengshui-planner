@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '租屋房間配置｜不施工也能規劃床、桌、收納與動線';
+const description = '租屋族房間配置建議，聚焦不能改牆、不能大施工、家具可復原的情況，先用規劃器確認既有家具與新家具是否合適。';
+const canonical = '/zh/rental-room-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '租屋房間配置',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '租屋房間配置', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '租屋不能釘牆，收納怎麼安排？', a: '優先使用落地層架、可移動抽屜、床底收納與免釘掛架，並確認不會堵住門窗、插座和走道。' },
+  { q: '房東原本的家具一定要保留怎麼辦？', a: '先把既有家具當作不可移動或較難移動物件放進平面圖，再看自己的家具還能放在哪裡。' },
+  { q: '租屋房間要不要買剛好尺寸的家具？', a: '不建議買太剛好的大型家具，因為未來搬家可能不適用，也可能卡在門口或走廊。' },
+  { q: '租屋可以參考風水格局嗎？', a: '可以用民俗說法作為參考，但應以租約限制、安全、通風、採光和日常舒適為優先。' },
+];
+const relatedLinks = [
+  { href: '/zh/studio-apartment-layout/', title: '套房格局配置' },
+  { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查' },
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/room-layout-planner/', title: '房間配置規劃器' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>租屋房間配置</h1>
+        <p class="lead">租屋配置的重點是可復原、少施工、好搬走，同時讓每天生活動線不要被家具擋住。</p>
+        <p>租屋房間常常有幾個限制：不能改牆、不能鑽孔、房東家具不能丟、插座位置固定、窗簾和冷氣也不能移。這些限制讓配置比自有住宅更需要事前規劃。與其搬進去後反覆移動床和衣櫃，不如先量好尺寸，把不能動的家具和門窗位置放進平面圖，再決定自己的床墊、書桌、層架和收納箱要放在哪裡。</p>
+        <p>租屋族買家具時也要想下一次搬家。太高、太深、太剛好的家具，可能現在這間能放，下一間卻不適合；大型一體式家具也比模組化層架難搬。若房間不大，可以優先選擇可拆、可折、可堆疊、可當多功能用途的家具，例如床底收納、折疊桌、窄深抽屜櫃、帶輪收納車。這些物件不一定最有設計感，但更符合租屋生活的彈性。</p>
+
+        <h2>租屋配置的檢查重點</h2>
+        <p>第一，入口動線要乾淨，門片不能被鞋櫃、行李箱或床角擋住。第二，插座附近要留給書桌、延長線和充電設備，不要被衣櫃完全蓋住。第三，窗戶與冷氣出風口不要被高櫃遮住。第四，收納要集中，不要讓開放衣架、紙箱和雜物分散在所有牆邊。第五，若使用免釘掛架或落地架，要確認穩定性，不要只為了省空間而忽略安全。</p>
+
+        <h2>如何用規劃器檢查租屋房間</h2>
+        <ol>
+          <li>先在 <a href="/zh/room-layout-planner/">規劃器</a> 建立房間尺寸，標出門、窗、冷氣和固定家具。</li>
+          <li>把房東原有床、桌、衣櫃或冰箱當作已存在家具放入。</li>
+          <li>加入自己想買或想搬入的家具，確認是否超出房間或擋住門口。</li>
+          <li>檢查主要走道，特別是入口到床、桌、衛浴或陽台的路線。</li>
+          <li>匯出平面圖，與室友或房東溝通需要移動的家具位置。</li>
+        </ol>
+        <p>租屋也可以參考床、門、鏡子等民俗格局說法，但請把它當作文化與空間感受參考，不應承諾或期待任何特定結果。完整聲明請看 <a href="/disclaimer/">免責聲明</a>。</p>
+      </article>
+      <div class="cta-band">
+        <div>
+          <h2>把不能動的家具先放進圖上</h2>
+          <p>先確認租屋限制，再安排自己的床、桌、衣櫃和收納。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">規劃租屋房間</a>
+      </div>
+      <AdSlot id="zh-rental-mid" slot="zh-rental-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,44 @@
+---
+import Layout from '../components/Layout.astro';
+import Faq from '../components/Faq.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+
+const title = '免責聲明｜風水格局參考與房間尺寸工具限制';
+const description = '本免責聲明說明房間尺寸檢查、家具配置與風水格局內容的限制：僅供參考，不保證任何結果。';
+const faq = [
+  { q: '風水格局參考會保證財運、健康或感情嗎？', a: '不會。本網站不保證財富、健康、人際、感情、運氣或任何結果，也不提供算命或占卜。' },
+  { q: '尺寸警示一定準確嗎？', a: '不一定。警示取決於使用者輸入資料與簡化模型，仍需以現場量測、家具規格與專業判斷為準。' },
+  { q: '我應該如何使用風水內容？', a: '請把它當作民俗文化、動線與舒適度的參考之一，並以安全、實際需求、預算與居住習慣為優先。' },
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: 'https://room-layout-fengshui-planner.pages.dev/disclaimer/',
+};
+---
+
+<Layout title={title} description={description} canonical="/disclaimer/" lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>免責聲明</h1>
+        <p class="lead">本網站提供的房間格局、家具尺寸與風水相關內容，均為一般資訊、民俗文化與空間舒適度參考，不構成任何專業服務或結果保證。</p>
+        <p>Room Layout Feng Shui Planner 的目標是協助一般使用者在搬家、租屋、改造房間或購買家具前，先做基本的尺寸與動線推估。後續工具會以使用者輸入的房間長寬、家具尺寸、門窗位置與物件旋轉角度建立簡化圖面，並提示家具是否超出邊界、門口是否可能被阻擋、主要走道是否可能太窄。這些提示只適合初步參考，不能取代現場測量、建築圖說、家具商規格、搬運評估、消防安全要求、租屋合約限制或專業室內設計意見。</p>
+        <p>實際居住空間往往包含梁柱、窗台、插座、冷氣管線、踢腳板、門框厚度、地板落差、牆面不平整與家具突出部位。工具中的矩形與簡化圖形無法完整表示所有細節。若使用者輸入錯誤單位或尺寸，或忽略家具開門、抽屜、椅子拉出、床包厚度、插頭空間等因素，輸出結果可能與現場不一致。任何購買、搬運、施工或安全決策，都應再次以實際量測與相關專業建議為準。</p>
+        <p>中文頁面中的風水格局內容尤其需要清楚理解：本站只以民俗文化與空間舒適度角度撰寫，例如「民俗上常見說法會注意床是否正對門」「可考慮鏡子是否讓睡眠區感到不安」「書桌後方有牆面在視覺上可能較穩定」等。這些說法不是科學結論，不是預言，不是算命，也不是住宅吉凶判定。本網站絕不保證財富、健康、關係、感情、工作、學業、運氣或任何生活結果。</p>
+        <p>使用者應把風水參考放在安全、實用、舒適、預算與生活習慣之後。若某個民俗建議與通風、採光、逃生、安全距離、家具穩固、兒童或長者照護需求衝突，應優先考慮實際安全與專業建議。本站不因任何人依賴風水內容而承擔責任。</p>
+        <p>本網站可能連結到第三方服務、分析工具或廣告平台。第三方內容、政策與可用性由其提供者負責。使用者應自行閱讀相關服務條款與隱私政策。若你不同意本免責聲明，請停止使用本網站內容與工具。</p>
+        <h2>English summary</h2>
+        <p>All room planning and feng shui content is for general reference only. Feng shui notes are cultural and spatial-arrangement references, not fortune-telling and not guarantees of wealth, health, relationships, luck, or any outcome.</p>
+      </article>
+      <div class="cta-band">
+        <p>使用工具前，請以現場量測與安全需求為優先。</p>
+        <a class="button" href="/terms/">閱讀使用條款</a>
+      </div>
+      <Faq items={faq} />
+      <RelatedLinks links={[{ href: '/terms/', title: '使用條款' }, { href: '/privacy/', title: '隱私權政策' }, { href: '/about/', title: '關於本站' }]} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,93 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Apartment Furniture Planner | Plan Living Room and Bedroom Fit';
+const description = 'Plan furniture across an apartment with practical room-by-room sizing tips for living areas, bedrooms, dining spaces, storage, and moving decisions.';
+const canonical = '/en/apartment-furniture-planner/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Apartment Furniture Planner',
+    description,
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Apartment furniture planner', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'Can I plan a whole apartment with one room planner?', a: 'Plan one room at a time. For each room, enter its dimensions, test the main furniture, then export separate plans for comparison.' },
+  { q: 'What should I buy first for a new apartment?', a: 'Start with the largest daily-use pieces: bed, sofa, desk, dining table, and storage. Smaller pieces can fill gaps later.' },
+  { q: 'How do I avoid buying too much furniture?', a: 'Plan circulation first. If the main route, door swing, or chair space disappears, remove or resize furniture before purchasing.' },
+  { q: 'Should every apartment room have the same clearance target?', a: 'No. Living rooms, dining areas, and bedrooms have different movement needs, but about 60 cm is a useful minimum route for many tight spaces.' },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Room layout planner' },
+  { href: '/en/studio-apartment-layout/', title: 'Studio apartment layout' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>Apartment furniture planner</h1>
+        <p class="lead">
+          Apartment planning is mostly about choosing the right furniture scale for each room. A sofa, bed, dining table, and storage pieces should fit your routines, not just the floor area.
+        </p>
+        <p>
+          When moving into an apartment, it is easy to shop room by room from photos and guesses. The problem is that apartment spaces interact. A dining table may look fine until chairs block the balcony route. A sofa may fit the living room wall but leave no space for a desk. A wardrobe may solve bedroom storage but make the door feel tight. Before ordering several large pieces, build a simple plan for each room and check the daily movement around them.
+        </p>
+        <p>
+          Start with the rooms you use most: bedroom, living room, and any dining or work area. For the bedroom, confirm the bed size and clothing storage. For the living area, test sofa depth, coffee table clearance, TV or media unit placement, and the walking route through the room. For dining, include chair pull-out depth, not only the table. For entry or hallway storage, make sure doors can still open and people can pass with bags or laundry.
+        </p>
+
+        <h2>Room-by-room sizing tips</h2>
+        <p>
+          In a living room, sofa depth often matters as much as length. A deep sofa can make a narrow room feel blocked, especially when paired with a coffee table. Leave enough space between seating and table so people can pass and sit down. In a dining area, a compact round or drop-leaf table can be more forgiving than a large rectangle. In a bedroom, prioritize bed access and wardrobe clearance before adding extra cabinets.
+        </p>
+        <p>
+          If the apartment is rented, avoid layouts that depend on permanent changes. Choose furniture that can move through the building, be disassembled, or work in a future room. Measure elevators, stairwells, and doors before buying oversized items. A beautiful piece that cannot reach the apartment or cannot leave later is a moving problem waiting to happen.
+        </p>
+
+        <h2>How to do this with the planner</h2>
+        <ol>
+          <li>Open the <a href="/en/room-layout-planner/">room layout planner</a> and plan one apartment room at a time.</li>
+          <li>Enter the exact room dimensions and add fixed doors or windows.</li>
+          <li>Place the largest furniture first, then add secondary items only if circulation remains clear.</li>
+          <li>Check warnings for blocked doors, out-of-room furniture, and narrow walking routes.</li>
+          <li>Export a PNG or PDF for each room so you can compare purchases and moving priorities.</li>
+        </ol>
+        <p>
+          The best apartment plan often leaves some space unfilled. Empty floor near the entry, bed, sofa, or table is not wasted; it is what makes the apartment usable after the furniture arrives.
+        </p>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>Plan each apartment room before ordering furniture</h2>
+          <p>Use one room plan at a time to check scale, clearance, and everyday movement.</p>
+        </div>
+        <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+      </div>
+      <AdSlot id="en-apartment-mid" slot="en-apartment-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

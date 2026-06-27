@@ -1,0 +1,44 @@
+---
+import Layout from '../components/Layout.astro';
+import Faq from '../components/Faq.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+
+const title = '隱私權政策｜Room Layout Feng Shui Planner';
+const description = '說明本網站的 localStorage 草稿儲存、GA4、Cookie、AdSense 與聯絡資料處理方式。';
+const faq = [
+  { q: '房間格局資料會傳到伺服器嗎？', a: '預設不會。後續規劃工具的草稿會存在使用者自己的瀏覽器 localStorage，不上傳到本網站伺服器。' },
+  { q: '如果啟用 GA4，會發生什麼事？', a: '若部署者設定 PUBLIC_GA_ID，網站會載入 Google Analytics 4，用於彙整瀏覽量、來源與裝置等統計資料。未設定時不會注入 GA4 程式碼。' },
+  { q: '我可以刪除本機草稿嗎？', a: '後續工具會提供清空設計功能；使用者也可以透過瀏覽器網站資料設定清除 localStorage。' },
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: 'https://room-layout-fengshui-planner.pages.dev/privacy/',
+};
+---
+
+<Layout title={title} description={description} canonical="/privacy/" lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>隱私權政策</h1>
+        <p class="lead">本政策說明 Room Layout Feng Shui Planner 如何處理網站使用資料、瀏覽器本機儲存、分析服務與廣告相關資訊。</p>
+        <p>本網站的核心原則是：房間格局規劃應盡量在使用者自己的裝置中完成。Phase 1 尚未上線規劃工具；後續工具依規格會把房間長寬、家具位置、尺寸、旋轉角度與草稿內容預設儲存在使用者瀏覽器的 localStorage。這些草稿資料不會因為儲存而上傳到本網站伺服器，也不需要使用者建立帳號。localStorage 是瀏覽器提供的本機儲存空間，同一台裝置與同一個瀏覽器通常可以再次讀取，但清除瀏覽資料、更換瀏覽器、使用無痕模式或重置裝置時，草稿可能消失。</p>
+        <p>網站本身採靜態部署，不使用資料庫，也不提供後端 API 來接收房間資料。若使用者主動透過聯絡頁提供意見、問題或電子郵件地址，該內容只會用於回覆與改善網站，不會要求提供敏感身分資料。請不要在聯絡訊息中提供身份證號、付款資訊、私人地址完整細節或其他不必要的敏感資料。</p>
+        <p>本網站支援環境變數 PUBLIC_GA_ID。只有在部署者於建置時設定此值，頁面才會注入 Google Analytics 4 gtag；如果此值為空，網站不會載入 GA4。GA4 可能透過 Cookie 或類似技術收集彙整性的瀏覽統計，例如頁面瀏覽、流量來源、裝置類型與大略地區。這些資料用於理解內容是否有幫助與改善網站結構，不用於取得房間草稿內容。</p>
+        <p>未來若放置 Google AdSense 或其他廣告服務，廣告供應商可能使用 Cookie 或類似技術顯示、衡量或限制廣告。Phase 1 僅提供清楚標示的廣告佔位區，不載入真實廣告程式碼。實際啟用廣告前，網站應再次確認政策文字、Cookie 告知與所在地法規要求。</p>
+        <p>使用者可以透過瀏覽器設定管理 Cookie、網站資料與 localStorage。若不希望留下本機草稿，可以使用工具的清空功能，或在瀏覽器中刪除本網站的網站資料。請注意，刪除後通常無法由本網站復原。</p>
+        <h2>English summary</h2>
+        <p>Room layout drafts are intended to be stored locally in the user browser localStorage and are not uploaded to a server by default. GA4 is injected only when PUBLIC_GA_ID is provided at build time. AdSense is not active in Phase 1; only placeholders are present.</p>
+      </article>
+      <div class="cta-band">
+        <p>想了解風水與空間建議的限制，請先閱讀免責聲明。</p>
+        <a class="button" href="/disclaimer/">閱讀免責聲明</a>
+      </div>
+      <Faq items={faq} />
+      <RelatedLinks links={[{ href: '/about/', title: '關於本站' }, { href: '/terms/', title: '使用條款' }, { href: '/contact/', title: '聯絡我們' }]} />
+    </div>
+  </section>
+</Layout>

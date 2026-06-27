@@ -1,0 +1,93 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Furniture Fit Checker | Check Room Sizes Before Buying Furniture';
+const description = 'Use a practical furniture fit checker to compare room dimensions, furniture sizes, clearances, door swings, and moving paths before buying or moving pieces.';
+const canonical = '/en/furniture-fit-checker/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Furniture Fit Checker',
+    description,
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Furniture fit checker', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'What measurements do I need before using the furniture fit checker?', a: 'Measure the room length and width, the furniture width and depth, door and window positions, door swing space, and any narrow route the item must pass through.' },
+  { q: 'Should I use product dimensions or packaging dimensions?', a: 'Use product dimensions for room placement, but also check packaging dimensions and diagonal size if the item must pass through tight doors, elevators, or stair turns.' },
+  { q: 'How much clearance should I leave around furniture?', a: 'For everyday movement, about 60 cm is a useful minimum walkway target. Chairs, wardrobe doors, drawers, and beds often need more practical clearance.' },
+  { q: 'Can the planner prove a furniture item will fit through a hallway?', a: 'No. It helps you reason from measurements, but tight moving routes also depend on height, diagonal angle, packaging, stairs, turns, and whether legs or parts can be removed.' },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Room layout planner' },
+  { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
+  { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner' },
+  { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>Furniture fit checker</h1>
+        <p class="lead">
+          Before you buy a bed, desk, wardrobe, sofa, or dining table, check the real room size and the everyday clearances around it. A piece can technically fit in a room and still be wrong for the way you live.
+        </p>
+        <p>
+          Furniture fit is not only a width-by-depth question. The item has to sit in the room, leave a route from the door, allow drawers or wardrobe doors to open, and avoid blocking windows, radiators, outlets, or the only comfortable walkway. Buyers often compare the product dimensions with one wall and stop there. That catches obvious problems, but it misses the second layer: what happens when a person needs to walk past the bed, pull out a chair, open a storage door, or carry laundry through the room.
+        </p>
+        <p>
+          Start by measuring the room at floor level, not from a listing photo. Note the usable wall lengths after subtracting doors, built-in closets, low windows, columns, pipes, or baseboard heaters. Then measure the furniture itself. For a bed, include the full frame, not only the mattress. For a wardrobe, include door swing or drawer pull-out depth. For a desk, include chair space behind it. For a sofa, check both the length along the wall and the depth into the room, because a deep sofa can make a narrow living room feel blocked even when the length looks fine.
+        </p>
+
+        <h2>Sizing and clearance tips</h2>
+        <p>
+          Use about 60 cm as a practical minimum walking route in a small room. More is better near a bed side, wardrobe, desk chair, dining chair, or entry. If a route is below that, the room may still be usable, but carrying a bag, making the bed, vacuuming, or moving past another person can become frustrating. Leave space for door arcs and keep the entry clear before adding optional pieces such as side tables or storage carts.
+        </p>
+        <p>
+          For large purchases, check the delivery path separately. Measure the front door, elevator, stairwell, hallway turns, and any tight corners. A sofa with removable legs or a bed frame that arrives flat-packed is very different from a fully assembled cabinet. If a seller provides only product dimensions, ask for package dimensions as well.
+        </p>
+
+        <h2>How to do this with the planner</h2>
+        <ol>
+          <li>Open the <a href="/en/room-layout-planner/">room layout planner</a> and enter the room length and width in cm, m, or ft.</li>
+          <li>Add the door first, then place windows or fixed obstacles so the usable walls are clear.</li>
+          <li>Add the furniture you are checking and edit its width, depth, and rotation to match the product dimensions.</li>
+          <li>Drag the item through likely positions and watch for out-of-room, blocked-door, and narrow-walkway warnings.</li>
+          <li>Export a PNG or PDF to compare with the product page, store listing, or moving checklist.</li>
+        </ol>
+        <p>
+          Treat the result as a practical planning draft. If the layout only works when furniture touches every wall and the walkway warning stays visible, consider a smaller size, a different orientation, or a furniture piece with built-in storage that replaces another item.
+        </p>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>Check the furniture size in a real floor plan</h2>
+          <p>Use your room measurements and the product dimensions to test fit before ordering or arranging delivery.</p>
+        </div>
+        <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+      </div>
+      <AdSlot id="en-fit-mid" slot="en-furniture-fit-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,15 @@
+---
+interface Props {
+  id: string;
+  slot: string;
+}
+
+const { id, slot } = Astro.props;
+---
+
+<aside class="ad-slot" id={id} aria-label={slot}>
+  <!-- Future AdSense placement:
+  <ins class="adsbygoogle" data-ad-client="ca-pub-..." data-ad-slot="..."></ins>
+  -->
+  <span>廣告位 / Ad placeholder<br />{slot}</span>
+</aside>

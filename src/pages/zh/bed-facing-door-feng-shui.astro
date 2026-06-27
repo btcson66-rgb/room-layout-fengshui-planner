@@ -1,0 +1,81 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '床對門風水參考：臥室床位與動線舒適度檢查';
+const description = '以民俗參考與空間舒適度角度說明床對門常見說法，並用房間佈局規劃工具檢查門口動線、床位距離與可調整方案。';
+const canonical = '/zh/bed-facing-door-feng-shui/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '床對門風水參考',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '床對門風水參考', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '民俗上說床對門，實際可以怎麼理解？', a: '可把它當成民俗參考與空間舒適度提醒：床正對門時，開門視線、門口聲音與走動路線比較直接，容易讓休息區缺少緩衝。' },
+  { q: '床不能移開門口正線時怎麼辦？', a: '可考慮微調床的位置或角度，保留門口通行寬度，並用矮櫃、簾子或床尾留白做視線緩衝；重點是實際動線與使用感受。' },
+  { q: '房間很小，床一定要靠近門會有問題嗎？', a: '小房間常受尺寸限制，建議先確認門片能順利開啟、床邊可走、櫃門能開，再把民俗說法作為次要參考。' },
+  { q: '規劃工具能檢查哪些床對門相關項目？', a: '中文規劃工具會列出床是否直接面向門的民俗參考，也會檢查家具越界、門口是否被擋、主要走道是否過窄。' },
+];
+const relatedLinks = [
+  { href: '/zh/bedroom-feng-shui-layout/', title: '臥室風水格局參考' },
+  { href: '/zh/mirror-facing-bed-feng-shui/', title: '鏡子對床風水參考' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間佈局規劃' },
+  { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>床對門風水參考</h1>
+        <p class="lead">床位面向房門，是臥室佈局裡很常被提到的民俗參考題目。比較實用的看法，是同時檢查門口視線、開門動線、床邊通行與睡眠區的安定感。</p>
+        <p><strong>民俗參考聲明：</strong>本頁所有風水內容只作為民俗文化與空間安排參考，不保證、暗示或預測任何財富、健康、感情、運氣或人生結果。完整說明請見 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p>民俗上常見說法會提醒「床不要正對門」。若轉成一般居家規劃語言，可以理解成：床是休息區，門是出入與視線進出的地方；當床尾或床身直接落在門的正前方，開門時房內外的視線會直接穿過睡眠區，門外聲音、走動與光線也更容易進入使用者的注意範圍。這不是結果判斷，而是空間舒適度的提醒。對租屋族、套房或小臥室來說，真正需要先處理的是門片能不能完整打開、床邊是否還能安全上下床、衣櫃抽屜會不會和床互卡，以及半夜走到門口或浴室時是否需要繞很多路。</p>
+        <p>檢查床對門時，不必只看「床有沒有碰到門的延長線」。更好的做法是把房門、床、衣櫃、書桌一起放進平面圖，觀察門口到床邊之間是否有一條清楚的通道。若床尾正對門，但床距離門很遠、門口仍保留足夠寬度，實際干擾可能比小房間裡床卡住門口要低。相反地，如果床離門很近，門片一打開就碰到床尾，或衣櫃門被床堵住，即使沒有完全正對，也會形成日常使用上的不便。</p>
+
+        <h2>常見調整方向</h2>
+        <p>第一個可考慮的調整，是讓床頭靠實牆，並把床稍微移到門的斜側。民俗上常把靠牆視為較有依托的安排；從空間舒適度來看，靠牆也能減少床頭後方走動，讓插座、床頭櫃和照明更好安排。第二個方向，是保留門口到主要家具之間約 60 公分以上的主要走道，讓房門、衣櫃與床邊不互相干擾。第三個方向，是用矮櫃、布簾或床尾留白做視線緩衝，但不要放高櫃阻塞門口，否則通風、採光與逃生動線都會變差。</p>
+        <p>如果房間格局限制很大，例如門、窗、冷氣孔與插座都固定，可以先接受床位接近門的現實，再用細節降低不適感：避免床尾緊貼門口，讓門片完整開啟；床側至少留出一側可上下床；大型衣櫃避開門後；鏡面不要剛好反射床的主要視線。這些做法都不是為了追求某種結果，而是讓起居、收納與休息更順。</p>
+
+        <h2>用規劃工具檢查床與門</h2>
+        <ol>
+          <li>打開 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，輸入房間長寬與單位。</li>
+          <li>加入門、窗、床、衣櫃與書桌，先照實際尺寸擺放。</li>
+          <li>旋轉或拖曳床，觀察床是否直接面向門，並確認門片開啟範圍沒有被床擋住。</li>
+          <li>查看中文工具的結構檢查：家具是否超出房間、門口是否被擋、主要走道是否過窄。</li>
+          <li>查看「風水參考」區塊，把床對門提示當作民俗參考，再搭配動線與視線舒適度決定是否微調。</li>
+          <li>調整完成後匯出 PNG 或 PDF，保留給搬家、租屋看房或家具購買前比較。</li>
+        </ol>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>先畫出床與門的位置</h2>
+          <p>用實際尺寸檢查床位、門口動線與中文風水參考提示，比只靠想像更容易判斷是否需要調整。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">開始規劃臥室</a>
+      </div>
+      <AdSlot id="zh-bed-facing-door-mid" slot="zh-bed-facing-door-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

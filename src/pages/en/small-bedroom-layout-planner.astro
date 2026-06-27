@@ -1,0 +1,93 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Small Bedroom Layout Planner | Bed Desk Wardrobe Ideas for Tight Rooms';
+const description = 'Plan a small bedroom layout with practical bed, desk, wardrobe, storage, and walkway tips for renters, students, and compact apartments.';
+const canonical = '/en/small-bedroom-layout-planner/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Small Bedroom Layout Planner',
+    description,
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Small bedroom layout planner', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'What should I place first in a small bedroom?', a: 'Place the bed first because it is usually the largest item and determines the remaining walkway, desk, and storage options.' },
+  { q: 'Can a desk fit in a small bedroom?', a: 'Often yes, but include chair pull-back space. A narrow desk, wall-facing desk, or window-side desk can work better than a deep desk in a tight room.' },
+  { q: 'How much space should I leave beside a bed?', a: 'Aim for a usable route on at least one side. Around 60 cm is a helpful target, but smaller rooms may require a tighter compromise.' },
+  { q: 'Is it better to use a smaller bed?', a: 'If the larger bed blocks wardrobe access or leaves no walkway, a smaller bed can make the whole room easier to live in.' },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Room layout planner' },
+  { href: '/en/bed-desk-wardrobe-layout/', title: 'Bed desk wardrobe layout' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/studio-apartment-layout/', title: 'Studio apartment layout' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>Small bedroom layout planner</h1>
+        <p class="lead">
+          A small bedroom works best when the large items are honest about space. Plan the bed, desk, wardrobe, and walking route together instead of squeezing each piece in one by one.
+        </p>
+        <p>
+          The usual small-bedroom mistake is choosing furniture by wall length alone. A bed may fit against the long wall, a wardrobe may fit beside the door, and a desk may fit under the window, but the room can still feel cramped if every action overlaps. You need space to enter the room, open storage, sit at the desk, make the bed, and move around without stepping sideways all the time. A simple to-scale plan helps you see those conflicts before moving furniture repeatedly.
+        </p>
+        <p>
+          Begin with the bed because it controls the layout. In a very small room, a single bed or full bed placed along a wall may leave more usable floor than a centered bed with two narrow side gaps. If two people use the room, access from both sides may matter more. For one person, one good side route plus storage clearance can be a better tradeoff. Add the wardrobe next, because door swing, drawers, and hanging access need clear floor space. The desk should come after those fixed needs unless the room is primarily used for studying or working from home.
+        </p>
+
+        <h2>Practical sizing and clearance tips</h2>
+        <p>
+          Keep a main route from the door to the bed or desk as clear as possible. Around 60 cm is a useful walkway target, though many small bedrooms require compromises. Avoid placing the bed so close to the wardrobe that drawers cannot open. If the desk chair backs into the bed, check whether you can still sit down comfortably. A desk that looks small on a product page can need significant working depth once the chair, knees, and power cable are included.
+        </p>
+        <p>
+          Use vertical storage to reduce floor crowding. A taller wardrobe, under-bed storage, wall shelves, or a bedside shelf can replace extra cabinets. If the room is rented, prioritize changes that do not require drilling: freestanding shelves, slim rolling carts, clamp lamps, or furniture that can move with you.
+        </p>
+
+        <h2>How to do this with the planner</h2>
+        <ol>
+          <li>Open the <a href="/en/room-layout-planner/">room layout planner</a> and enter the small bedroom dimensions.</li>
+          <li>Add the door and windows first so you do not accidentally block the entry or light.</li>
+          <li>Add the bed, set its real frame size, and test wall-aligned and centered options.</li>
+          <li>Add the wardrobe and desk, then check drawer, door, and chair clearance by leaving visible floor space around them.</li>
+          <li>Use warnings and exports to compare two or three realistic layouts before moving heavy items.</li>
+        </ol>
+        <p>
+          If every layout feels tight, remove the least important item from the plan and test again. A small bedroom often improves more from one fewer piece than from a slightly different angle.
+        </p>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>Try your small bedroom dimensions</h2>
+          <p>Build a simple plan and compare bed, desk, and wardrobe positions before rearranging the room.</p>
+        </div>
+        <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+      </div>
+      <AdSlot id="en-small-bedroom-mid" slot="en-small-bedroom-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,93 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Studio Apartment Layout Planner | Plan Sleep Work and Dining Zones';
+const description = 'Plan a studio apartment layout with practical zoning tips for sleeping, working, eating, storage, walkways, and furniture fit in one open room.';
+const canonical = '/en/studio-apartment-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Studio Apartment Layout Planner',
+    description,
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Studio apartment layout', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'How do I divide a studio apartment without building walls?', a: 'Use furniture orientation, rugs, shelves, lighting, and clear walkways to suggest zones while keeping the room easy to move through.' },
+  { q: 'Should the bed or sofa be placed first?', a: 'Place the largest and least flexible item first. In many studios that is the bed, but a sofa bed or work-from-home desk may change the priority.' },
+  { q: 'Can a dining table fit in a studio?', a: 'A small round table, wall table, drop-leaf table, or desk-dining combination can work if chair pull-out space is included in the plan.' },
+  { q: 'What is the biggest studio layout problem?', a: 'Overlapping zones. The bed, desk chair, dining chair, and entry route often compete for the same floor space.' },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Room layout planner' },
+  { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner' },
+  { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>Studio apartment layout planner</h1>
+        <p class="lead">
+          A studio apartment has to support sleeping, working, eating, relaxing, storage, and entry circulation in one room. The goal is not to fill every wall, but to make each zone usable.
+        </p>
+        <p>
+          Studio planning is different from bedroom planning because every piece affects multiple routines. A bed beside the entry may save wall space but make the home feel less private. A sofa floating in the middle can create a living zone but may narrow the route to the kitchen. A desk by the window may be pleasant for work but can block a curtain, heater, or balcony door. A floor plan helps you test these relationships before choosing furniture that locks you into one awkward setup.
+        </p>
+        <p>
+          Start by identifying the fixed points: entrance, kitchen edge, bathroom door, windows, outlets, radiators, closets, and balcony doors. Then decide which zone matters most for your daily life. If you work from home, the desk deserves clear chair space and light control. If you often host one or two people, a sofa or small dining table may matter more. If the studio is mainly for sleep and storage, prioritize a calm bed area and easy access to clothes.
+        </p>
+
+        <h2>Zoning and clearance tips</h2>
+        <p>
+          Use furniture backs and edges to create zones. A wardrobe can separate sleep and entry, an open shelf can divide bed and living areas without fully blocking light, and a rug can define a sofa area. Keep a main walkway from the door to the kitchen and bathroom clear. Avoid layouts where the desk chair, dining chair, and bed access all need the same narrow strip of floor.
+        </p>
+        <p>
+          Compact furniture matters, but multifunctional furniture only helps if it remains easy to use. A sofa bed is useful when it can open without moving half the room. A drop-leaf table is useful when folded and unfolded positions both fit. Under-bed storage helps only if there is space to pull bins out. Plan the open state, not just the closed state.
+        </p>
+
+        <h2>How to do this with the planner</h2>
+        <ol>
+          <li>Open the <a href="/en/room-layout-planner/">room layout planner</a> and enter the full studio room dimensions.</li>
+          <li>Add the entrance door, bathroom or closet door positions, and windows as reference items.</li>
+          <li>Place the bed, then test whether the sofa, desk, or dining area works better near the window or near the kitchen side.</li>
+          <li>Add storage and check whether doors, drawers, and chair pull-back space overlap with the main route.</li>
+          <li>Export two versions: one optimized for work and one optimized for relaxing, then compare the tradeoffs.</li>
+        </ol>
+        <p>
+          The best studio layout usually has fewer, better-positioned pieces. If a zone only works when furniture is constantly moved, consider a smaller item or a combined use such as a desk that also works as a dining surface.
+        </p>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>Map your studio zones before buying furniture</h2>
+          <p>Try sleep, work, dining, and storage layouts in one to-scale plan.</p>
+        </div>
+        <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+      </div>
+      <AdSlot id="en-studio-mid" slot="en-studio-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

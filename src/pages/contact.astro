@@ -1,0 +1,44 @@
+---
+import Layout from '../components/Layout.astro';
+import Faq from '../components/Faq.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+
+const title = '聯絡我們｜Room Layout Feng Shui Planner';
+const description = '回報錯誤、提出房間格局規劃需求、隱私問題、授權問題或網站內容建議。';
+const faq = [
+  { q: '可以請你們幫我看房間風水嗎？', a: '本站不提供個人命理、占卜或結果保證服務。未來工具只會提供民俗文化與空間舒適度角度的參考提醒。' },
+  { q: '回報問題時應提供哪些資訊？', a: '請提供頁面網址、裝置與瀏覽器、你看到的問題、是否能重現，以及不含敏感個資的簡短描述。' },
+  { q: '現在有聯絡表單嗎？', a: 'Phase 1 是靜態基礎頁，尚未加入表單後端。正式部署時可在此頁補上公開聯絡信箱或靜態表單服務。' },
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: title,
+  description,
+  url: 'https://room-layout-fengshui-planner.pages.dev/contact/',
+};
+---
+
+<Layout title={title} description={description} canonical="/contact/" lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>聯絡我們</h1>
+        <p class="lead">如果你發現頁面錯誤、內容不清楚、授權資訊需要補充，或希望提出房間格局規劃工具的實用需求，可以透過本頁了解適合回報的內容。</p>
+        <p>本專案目前處於分階段建置。Phase 1 完成靜態網站骨架、共用元件、政策頁與部署文件；後續才會加入規劃工具、中文內容頁、英文內容頁與更多尺寸情境。因為網站設計目標是給一般使用者使用，我們特別重視簡單、清楚、可驗證的回饋，例如某個按鈕文字不明確、某個政策說明太難懂、某個頁面在手機上閱讀不順，或某個家具尺寸情境很常見但尚未被涵蓋。</p>
+        <p>回報技術問題時，請盡量提供頁面網址、使用的瀏覽器與裝置、操作步驟、預期結果與實際結果。若問題和房間資料有關，請只提供必要的示例尺寸，不要傳送完整住址、門牌、租約、身份資料、付款資訊或其他敏感內容。後續規劃工具預設會把草稿存在瀏覽器 localStorage，不會上傳到伺服器；因此我們通常也無法從伺服器端替使用者找回本機草稿。</p>
+        <p>若你要詢問風水內容，請注意本網站只會以民俗文化與空間舒適度參考的方式處理。可以回報某段文字是否過度肯定、是否缺少免責連結、是否容易讓人誤解為結果保證；但本站不提供個人命盤、占卜、住宅吉凶判定或任何關於財富、健康、人際、感情、運氣的承諾。</p>
+        <p>若你要詢問授權或素材來源，請參考 license-audit.md。專案會列出第三方套件授權，家具與介面圖示採自製 SVG，不使用來源不明圖示。產品方向可參考 MIT 授權的 fedepaj/arcada-planner，但 Phase 1 沒有複製其程式碼或素材。</p>
+        <p>正式上線時，部署者可以在此頁加入公開聯絡信箱或靜態表單服務；加入前仍需確保不引入資料庫、後端服務或不必要的追蹤。若使用第三方表單，也應同步更新隱私權政策。</p>
+        <h2>English summary</h2>
+        <p>Use this page as guidance for reporting bugs, content issues, privacy questions, licensing concerns, or practical room-planning needs. Do not send sensitive personal information. The project does not provide fortune-telling or guaranteed feng shui outcomes.</p>
+      </article>
+      <div class="cta-band">
+        <p>回報前可先查看免責聲明，確認風水參考的語氣與限制。</p>
+        <a class="button" href="/disclaimer/">查看免責聲明</a>
+      </div>
+      <Faq items={faq} />
+      <RelatedLinks links={[{ href: '/about/', title: '關於本站' }, { href: '/privacy/', title: '隱私權政策' }, { href: '/changelog/', title: '更新紀錄' }]} />
+    </div>
+  </section>
+</Layout>

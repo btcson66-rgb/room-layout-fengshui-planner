@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '家具尺寸適配檢查｜買家具前確認放得下、進得去';
+const description = '買床、桌、衣櫃或沙發前，用房間配置規劃器檢查家具尺寸、門口寬度、走道距離與開門空間，降低買錯尺寸的風險。';
+const canonical = '/zh/furniture-fit-checker/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '家具尺寸適配檢查',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '家具尺寸適配檢查', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '買家具前最少要量哪些尺寸？', a: '至少量房間長寬、門寬、門片開啟方向、走道寬、窗戶位置，以及家具的寬、深、高與最大突出處。' },
+  { q: '只看商品頁尺寸夠嗎？', a: '不夠。商品尺寸通常只說家具本體，還要考慮搬入路線、抽屜拉出、櫃門打開與人站立操作的空間。' },
+  { q: '規劃器可以幫我判斷搬運路線嗎？', a: '規劃器適合檢查房間內與門口附近的基本尺寸；樓梯、電梯、公共走廊仍建議另外現場測量。' },
+  { q: '家具剛好塞得下就可以買嗎？', a: '不建議。床邊、桌前、衣櫃前最好保留可站立與通行距離，否則日常使用會很卡。' },
+];
+const relatedLinks = [
+  { href: '/zh/room-layout-planner/', title: '房間配置規劃器' },
+  { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間家具配置' },
+  { href: '/zh/rental-room-layout/', title: '租屋房間配置' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>家具尺寸適配檢查</h1>
+        <p class="lead">買家具前先問三件事：房間放得下嗎、搬得進門嗎、放下後還能正常走路與開門嗎？</p>
+        <p>家具尺寸適配不是只比「房間寬度大於家具寬度」這麼簡單。床墊可能放得下，但床架外框多出幾公分；書桌能靠牆，椅子往後拉卻卡住衣櫃；衣櫃寬度剛好，門片打開後人沒有站的位置。尤其租屋、套房和小臥室常常同時有床、桌、衣櫃、行李箱、插座與窗簾軌道，買錯尺寸不只浪費錢，還可能讓退換貨與搬運變得麻煩。</p>
+        <p>建議先用捲尺量房間內牆到內牆的長寬，再標出門、窗、柱子、冷氣、插座與不能移動的家具。家具商品頁上的寬、深、高要記下來，若有抽屜、掀床、伸縮桌、沙發床或衣櫃門，也要加上打開時需要的距離。搬入時還要確認入口門寬、走廊轉角、電梯門與樓梯平台；這些不一定都能在房間平面圖完全模擬，但先確認房內擺放能不能成立，可以大幅減少錯買機率。</p>
+
+        <h2>實用尺寸與間距提醒</h2>
+        <p>床邊最好至少留一側可上下床的走道，小房間可用約 60 公分作為基本通行參考；書桌前方要能拉椅子，若每天使用，建議不要只留一個椅背厚度；衣櫃前方要預留開門或抽屜拉出的深度。沙發與茶几之間要能伸腳與通行，餐桌周圍要保留椅子拉開後的距離。若房間很小，先確定「每天一定會走的路」與「每天一定會打開的門」不被家具占掉，比追求對稱更重要。</p>
+
+        <h2>如何用規劃器檢查家具尺寸</h2>
+        <ol>
+          <li>在 <a href="/zh/room-layout-planner/">房間配置規劃器</a> 輸入房間長寬與單位。</li>
+          <li>加入門、窗，再依商品尺寸加入床、桌、衣櫃或沙發。</li>
+          <li>拖曳家具到你預計擺放的位置，旋轉到實際方向。</li>
+          <li>檢查是否超出房間、是否擋住門口、主要走道是否過窄。</li>
+          <li>把可行版本匯出 PNG 或 PDF，購買前再拿現場尺寸核對一次。</li>
+        </ol>
+        <p>如果想加入中文民俗格局角度，例如床是否正對門、鏡子是否對床，請把它當作常見說法與空間舒適度參考，並閱讀 <a href="/disclaimer/">免責聲明</a>。家具是否適合，仍應以實際尺寸、使用習慣與安全通行為主。</p>
+      </article>
+      <div class="cta-band">
+        <div>
+          <h2>先把商品尺寸放進平面圖</h2>
+          <p>用實際寬深建立家具，再看門口、走道和日常開門距離是否足夠。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">開始檢查尺寸</a>
+      </div>
+      <AdSlot id="zh-fit-mid" slot="zh-furniture-fit-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

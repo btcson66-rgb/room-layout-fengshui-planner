@@ -1,0 +1,108 @@
+# Room Layout Feng Shui Planner
+
+A statically deployable room furniture layout planning website for renters, movers, and people checking furniture sizes before buying. The Chinese experience will include feng shui layout reference content written only as folk-culture and spatial-comfort reference, never as a guarantee of wealth, health, relationships, luck, or any outcome.
+
+Phase 1 contains the Astro scaffold, static configuration, shared components, trust pages, README, license, robots.txt, sitemap integration, and license audit. The planner tool and SEO landing pages are intentionally left for later phases.
+
+## Tech Stack
+
+- Astro static output
+- TypeScript strict mode
+- `@astrojs/sitemap`
+- `jspdf` for the later PDF export feature
+- Hand-written CSS in `src/styles/global.css`
+- No database, backend server, AI API, or CSS framework
+
+## Setup
+
+```bash
+npm install
+```
+
+This repository uses npm. If npm cache permissions fail on Windows, use a local cache:
+
+```bash
+npm install --cache ./.npm-cache
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+The site builds to `dist/` and is suitable for static hosting.
+
+## Preview
+
+```bash
+npm run preview
+```
+
+## Type Check
+
+```bash
+npm run check
+```
+
+## Environment Variables
+
+Copy `.env.example` to `.env` if needed.
+
+```bash
+PUBLIC_GA_ID=
+```
+
+If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
+
+## Deployment
+
+The placeholder production site in `astro.config.mjs` is:
+
+```text
+https://room-layout-fengshui-planner.pages.dev
+```
+
+Change this value before deploying to a final production domain, because canonical URLs, Open Graph URLs, and sitemap output depend on it.
+
+### Cloudflare Pages
+
+1. Connect the repository.
+2. Set build command to `npm run build`.
+3. Set output directory to `dist`.
+4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
+
+### Vercel
+
+1. Import the repository.
+2. Use the Astro framework preset or set build command to `npm run build`.
+3. Set output directory to `dist`.
+4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
+
+### GitHub Pages
+
+1. Build with `npm run build`.
+2. Publish the `dist/` directory with a GitHub Actions workflow or another static deploy process.
+3. Confirm the configured `site` URL matches the public domain.
+
+## Google Search Console Submission Flow
+
+1. Deploy, then add the domain property in Google Search Console.
+2. Verify DNS for the domain property.
+3. Submit `sitemap.xml`.
+4. Check indexing status and inspect important URLs.
+5. Connect GA4 if analytics is needed.
+
+## Privacy Direction
+
+The later planner tool is intended to save drafts in the user's browser `localStorage` by default. Room layout data should not be uploaded to a server.
+
+## Feng Shui Content Rule
+
+All feng shui references must be written as folk-culture and spatial-comfort reference only. Use wording such as "參考", "常見說法", "可考慮", and "民俗上". Never guarantee wealth, health, relationships, luck, or any outcome. Every feng shui section must link to `/disclaimer/`.

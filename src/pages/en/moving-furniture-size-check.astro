@@ -1,0 +1,93 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Moving Furniture Size Check | Check Rooms Doors and Corridors';
+const description = 'Prepare for a move by checking whether furniture fits the new room, doorways, corridors, elevators, and everyday clearances before moving day.';
+const canonical = '/en/moving-furniture-size-check/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Moving Furniture Size Check',
+    description,
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Moving furniture size check', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'What should I measure before moving furniture?', a: 'Measure the new room, the furniture, the room door, building entrance, elevator, stair turns, hallway width, and any tight landing or corner.' },
+  { q: 'Is room fit enough to confirm moving fit?', a: 'No. A piece can fit in the destination room but fail on the route through doors, corridors, stairs, or elevators.' },
+  { q: 'How do I handle furniture that can be disassembled?', a: 'Measure the largest disassembled part and the assembled footprint. Plan the room with the assembled size, then check the moving route with package or part sizes.' },
+  { q: 'When should I decide not to move a piece?', a: 'If it blocks the new room, barely clears the route, costs more to move than replace, or cannot be disassembled safely, selling or donating may be smarter.' },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Room layout planner' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner' },
+  { href: '/en/bed-desk-wardrobe-layout/', title: 'Bed desk wardrobe layout' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>Moving furniture size check</h1>
+        <p class="lead">
+          Before moving day, check two separate questions: will the furniture fit in the new room, and can it reach that room through the doors, corridors, stairs, or elevator?
+        </p>
+        <p>
+          Moving problems often appear late because people only measure the destination wall. A wardrobe may fit the bedroom wall but not the hallway turn. A sofa may fit through the apartment door only if the legs are removed. A dining table may fit the room but leave no route once chairs are added. A moving size check should cover the item, the room, and the route between them.
+        </p>
+        <p>
+          Make a simple measurement list before confirming what to move. For each large item, record width, depth, height, whether it can be disassembled, and the largest part after disassembly. For the destination, measure the room length and width, door width and height, hallway width, elevator depth, stair landing size, and any tight corner. If you are renting, also check whether the building has moving-hour rules, elevator booking, protective padding requirements, or furniture restrictions.
+        </p>
+
+        <h2>Room and route clearance tips</h2>
+        <p>
+          In the destination room, leave a main walkway and make sure doors, drawers, and chairs can still move. About 60 cm is a useful minimum route for many rooms, but moving in large furniture may need more temporary clearance. Do not plan a final layout that depends on sliding heavy furniture across a bed or blocking the only entry.
+        </p>
+        <p>
+          For the route, think in three dimensions. Door width is not enough if the item is tall, rigid, and cannot rotate. Stair turns and elevator doors often decide whether a large sofa, mattress, or cabinet can pass. If the fit is close, ask movers or the seller for guidance and confirm whether parts can be removed without damage.
+        </p>
+
+        <h2>How to do this with the planner</h2>
+        <ol>
+          <li>Open the <a href="/en/room-layout-planner/">room layout planner</a> and enter the destination room size.</li>
+          <li>Add the room door and any windows or fixed storage that affects furniture placement.</li>
+          <li>Add the furniture you plan to move using its assembled dimensions.</li>
+          <li>Try final positions and check whether the item blocks the door, extends outside the room, or leaves a very narrow route.</li>
+          <li>Export the plan, then separately compare the furniture dimensions with the actual moving route measurements.</li>
+        </ol>
+        <p>
+          If a large item barely fits in both the route and the room, decide before moving day whether it is worth the risk. Replacing one oversized piece can be cheaper and calmer than paying to move it twice.
+        </p>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>Check the new room before moving day</h2>
+          <p>Plan the destination layout first, then verify doors, corridors, stairs, and elevators separately.</p>
+        </div>
+        <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+      </div>
+      <AdSlot id="en-moving-mid" slot="en-moving-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

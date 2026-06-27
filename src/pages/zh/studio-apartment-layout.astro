@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '套房格局配置｜單房空間分出睡眠、工作與用餐區';
+const description = '套房與 studio apartment 配置建議，教你用家具、走道與收納分區，並用房間配置規劃器先測試床、桌、沙發和餐桌位置。';
+const canonical = '/zh/studio-apartment-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '套房格局配置',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '套房格局配置', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '套房要先放床還是先分區？', a: '通常先確認床和門窗的關係，再用桌、矮櫃、地毯或沙發背界定工作、用餐與休息區。' },
+  { q: '單房空間如何避免看起來很亂？', a: '讓每個區域有明確邊界，收納集中，主要走道保持連續，不要讓椅子、衣架和行李箱散在入口動線上。' },
+  { q: '可以用高櫃隔開床嗎？', a: '可以，但要注意採光、通風、櫃體穩定與逃生動線。租屋時也要確認不會傷牆或違反租約。' },
+  { q: '套房風水格局要怎麼看？', a: '可把床門、鏡子、桌後支撐等當作民俗參考，但不保證任何結果，仍以安全、舒適與實用為主。' },
+];
+const relatedLinks = [
+  { href: '/zh/rental-room-layout/', title: '租屋房間配置' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置' },
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/room-layout-planner/', title: '房間配置規劃器' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>套房格局配置</h1>
+        <p class="lead">套房只有一個主要空間，更需要用家具位置和走道，把睡眠、工作、用餐與收納分清楚。</p>
+        <p>studio 或小套房的難點，不是家具數量一定很多，而是所有生活行為都在同一個房間發生。床太靠入口會缺少休息感，書桌放在床邊容易讓工作和睡眠混在一起，餐桌沒有固定位置就會變成雜物堆。好的套房配置會先保留一條從入口到床、桌、衛浴或陽台的連續動線，再把家具當作分區邊界，而不是把所有家具沿牆排滿。</p>
+        <p>規劃時可以把空間分為四塊：睡眠區、工作區、用餐或休息區、收納區。睡眠區通常需要比較安定的位置，避免床邊就是主要入口動線。工作區要靠近插座與光線，但螢幕不要被窗光嚴重反射。用餐或休息區可以用小餐桌、折疊桌或沙發椅形成，不一定要很大，但要有固定落點。收納區則盡量集中，避免開放衣架、行李箱與雜物分散在每個角落。</p>
+
+        <h2>套房配置的實用技巧</h2>
+        <p>如果空間很小，可用矮櫃、書桌側邊、床尾凳或地毯來暗示分區，避免使用過高、過深、會擋光的隔板。床與書桌之間若沒有距離，可以讓桌面朝向牆或窗，至少在視覺上把工作區獨立出來。餐桌若只能很小，折疊桌或可收納餐車比固定大桌更有彈性。入口處要留一個放鑰匙、包包和鞋子的區域，否則雜物會很快占掉主要走道。</p>
+
+        <h2>如何用規劃器檢查套房格局</h2>
+        <ol>
+          <li>在 <a href="/zh/room-layout-planner/">房間配置規劃器</a> 建立套房長寬，先標出門、窗和不可移動區域。</li>
+          <li>放入床，避開主要開門路線，確認床邊仍可通行。</li>
+          <li>加入書桌、衣櫃、沙發或餐桌，觀察每個區域是否有明確功能。</li>
+          <li>用走道警示檢查入口到床、桌、收納區是否順暢。</li>
+          <li>輸出可行版本，搬家或添購家具前再核對實際尺寸。</li>
+        </ol>
+        <p>中文站的風水格局提示只作為民俗文化與空間舒適度參考，例如床與門的相對位置、鏡子面向等常見說法。這些內容不保證任何運勢或生活結果，請閱讀 <a href="/disclaimer/">免責聲明</a>。</p>
+      </article>
+      <div class="cta-band">
+        <div>
+          <h2>先分區，再放家具</h2>
+          <p>把單房空間拆成睡眠、工作、用餐與收納，再檢查每條動線是否真的走得通。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">規劃套房格局</a>
+      </div>
+      <AdSlot id="zh-studio-mid" slot="zh-studio-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,145 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Room Layout Feng Shui Planner | Free Room Furniture Layout Tool';
+const description = 'Plan room furniture layouts online before buying, moving, or rearranging. Use a free browser-based planner with local drafts, clear sizing checks, and PNG or PDF export.';
+const canonical = '/en/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Room Layout Feng Shui Planner',
+    url: `${siteUrl}/en/`,
+    inLanguage: 'en',
+    description,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Room Layout Planner',
+    applicationCategory: 'DesignApplication',
+    operatingSystem: 'Web browser',
+    url: `${siteUrl}/en/room-layout-planner/`,
+    description: 'A free browser-based room layout planner for checking furniture sizes, door clearance, walkway space, and simple floor plan exports.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+    ],
+  },
+];
+const scenarios = [
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker', text: 'Check a sofa, bed, desk, wardrobe, or dining table against the real room size before you buy or move it.' },
+  { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner', text: 'Plan a tight bedroom around the bed, desk, wardrobe, and the walkway you still need every day.' },
+  { href: '/en/studio-apartment-layout/', title: 'Studio apartment layout', text: 'Divide one room into sleep, work, eating, storage, and entry zones without blocking circulation.' },
+  { href: '/en/bed-desk-wardrobe-layout/', title: 'Bed desk wardrobe layout', text: 'Arrange the three core bedroom pieces together and avoid layouts that only work on paper.' },
+  { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner', text: 'Sketch practical living spaces, bedrooms, and dining areas before committing to furniture sizes.' },
+  { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check', text: 'Prepare for a move by checking room dimensions, door swings, hallway clearance, and large-item placement.' },
+];
+const faq = [
+  {
+    q: 'Is the planner meant for ordinary renters and movers?',
+    a: 'Yes. It is built for everyday room planning: checking sizes, trying furniture positions, and avoiding obvious clearance problems before buying or moving items.',
+  },
+  {
+    q: 'Does my layout get uploaded to a server?',
+    a: 'No. The planner runs in your browser, and saved drafts use localStorage by default. Exports are generated in the browser as PNG or PDF files.',
+  },
+  {
+    q: 'Can I use it without exact architectural drawings?',
+    a: 'Yes. A tape-measured room length, width, doors, windows, and furniture dimensions are enough for a useful first-pass layout.',
+  },
+  {
+    q: 'Does the English section include feng shui content?',
+    a: 'No. The English pages focus on practical furniture sizing, room fit, clearance, and moving preparation.',
+  },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Open the room layout planner' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
+  { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card hero">
+        <h1>Plan a room layout before you buy, move, or rearrange furniture</h1>
+        <p class="lead">
+          Room Layout Feng Shui Planner includes a practical English room planner for renters, movers, students, and furniture buyers who need a fast way to test whether a layout can work in a real room.
+        </p>
+        <p>
+          A furniture layout often fails for simple reasons: the bed fits but the wardrobe door cannot open, the sofa clears the wall but blocks the entry, or the desk leaves no comfortable route across the room. Those problems are hard to spot from a product photo or a quick measurement in a store. This site helps you turn room dimensions into a clear floor plan, add common furniture pieces, and see the tradeoffs before you spend money or move heavy items.
+        </p>
+        <p>
+          The planner is intentionally simple. Enter the room length and width, choose the unit you measured in, add furniture such as a bed, desk, wardrobe, sofa, dining table, door, window, or mirror, then drag and resize each item. The browser checks for furniture outside the room, possible door obstruction, and a main walkway that may feel too narrow. It will not replace judgment, but it gives you a useful drawing to discuss with a roommate, family member, seller, mover, or landlord.
+        </p>
+        <div class="cta-band">
+          <div>
+            <h2>Start with your real room size</h2>
+            <p>Build a quick to-scale layout, save the draft locally, and export a PNG or PDF when you need to compare options.</p>
+          </div>
+          <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="pages-heading">
+        <h2 id="pages-heading">Choose the planning guide that matches your situation</h2>
+        <div class="scenario-grid">
+          {scenarios.map((item) => (
+            <article>
+              <h3><a href={item.href}>{item.title}</a></h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="why-heading">
+        <h2 id="why-heading">Why use this tool</h2>
+        <p>
+          The planner runs locally in your browser, so you do not need an account, a database, or a design app. Drafts are saved with browser localStorage by default, which means your working layout stays on the device and browser you used unless you export it or clear the data. That makes it suitable for quick personal planning, rental rooms, dorm rooms, apartment moves, and shopping checks where privacy and speed matter more than advanced rendering.
+        </p>
+        <p>
+          You can use the scenario pages below as checklists. Measure the room, note fixed points such as doors and windows, add the largest furniture first, then test everyday movement. A good first layout usually protects a route from the door to the bed or seating area, leaves enough room to open storage, and avoids squeezing furniture so tightly that cleaning, making the bed, or pulling out a chair becomes annoying.
+        </p>
+      </section>
+
+      <AdSlot id="en-home-mid" slot="en-home-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero h2 {
+    margin-top: 0;
+  }
+
+  .scenario-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .scenario-grid article {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  @media (min-width: 760px) {
+    .scenario-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

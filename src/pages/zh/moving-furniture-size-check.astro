@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '搬家家具尺寸檢查｜新家放得下，也要搬得進去';
+const description = '搬家前檢查家具尺寸與新房間配置，確認床、桌、衣櫃、沙發能通過門口走廊，放下後仍保留走道與開門空間。';
+const canonical = '/zh/moving-furniture-size-check/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '搬家家具尺寸檢查',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '搬家家具尺寸檢查', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '搬家前最容易漏量什麼？', a: '除了新房間長寬，常漏量入口門寬、電梯門、樓梯平台、走廊轉角、房門開啟方向和家具不可拆的最大尺寸。' },
+  { q: '家具放得下但搬不進去怎麼辦？', a: '要先確認能否拆解、是否需要吊車或特殊搬運；若成本太高，可能比重新購買更不划算。' },
+  { q: '搬家公司需要平面圖嗎？', a: '不一定，但簡單平面圖能幫助溝通大型家具放置位置，減少搬入當天臨時移動和反覆搬運。' },
+  { q: '搬家後再慢慢調整可以嗎？', a: '小家具可以，大型床架、衣櫃、沙發最好搬入前先確認位置，否則很耗體力，也可能刮傷地板或牆面。' },
+];
+const relatedLinks = [
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/rental-room-layout/', title: '租屋房間配置' },
+  { href: '/zh/studio-apartment-layout/', title: '套房格局配置' },
+  { href: '/zh/room-layout-planner/', title: '房間配置規劃器' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>搬家家具尺寸檢查</h1>
+        <p class="lead">搬家前要確認兩件事：家具能不能進新家，進去後能不能正常使用。</p>
+        <p>很多搬家問題不是家具完全放不下，而是搬入路線或使用距離沒有先想清楚。沙發能放進客廳，但電梯門太窄；衣櫃能靠牆，卻在走廊轉角轉不過去；床架放進房間後，房門打開會撞到床尾。搬家當天時間緊、物品多、人也累，若現場才發現大型家具位置不對，重新搬動會很麻煩，甚至可能增加費用或造成損傷。</p>
+        <p>搬家前建議建立兩份尺寸清單：一份是新房間尺寸，包括長寬、門寬、窗戶、樑柱、插座、冷氣、內開門方向；另一份是家具尺寸，包括寬、深、高、是否可拆、拆完後最大單件尺寸，以及需要使用時打開的距離。大型家具例如床架、衣櫃、沙發、餐桌，最好在搬入前就決定第一落點，避免搬進房間後還要多次旋轉。</p>
+
+        <h2>搬入路線也要量</h2>
+        <p>新家室內放得下，不代表一定搬得進去。請確認大樓入口、電梯門、電梯內深度、樓梯寬度、樓梯平台、走廊轉角與房門寬度。若家具可以拆解，確認拆解後最長或最寬的單件尺寸；若不能拆，搬家公司可能需要特殊搬運方式。這些路線尺寸不一定能完整放進房間規劃圖，但你可以把關鍵門口和房內最終位置先畫出來，判斷是否值得搬這件家具。</p>
+
+        <h2>如何用規劃器做搬家前檢查</h2>
+        <ol>
+          <li>在 <a href="/zh/room-layout-planner/">房間配置規劃器</a> 建立新房間尺寸，加入門窗與固定障礙。</li>
+          <li>依現有家具實際尺寸放入床、桌、衣櫃、沙發或餐桌。</li>
+          <li>先把大型家具放到預計落點，檢查是否超界或擋門。</li>
+          <li>確認主要走道，特別是入口到家具放置點是否有足夠迴轉空間。</li>
+          <li>匯出圖面，搬家前與家人、室友或搬家公司確認擺放順序。</li>
+        </ol>
+        <p>若新房間是臥室，也可以參考中文站的民俗格局提示，例如床門相對或鏡子位置。不過這些只屬常見說法與空間舒適度參考，不保證任何結果；請閱讀 <a href="/disclaimer/">免責聲明</a>。</p>
+      </article>
+      <div class="cta-band">
+        <div>
+          <h2>搬家前先確認大型家具落點</h2>
+          <p>把新房間和現有家具畫出來，先排搬入順序，再決定哪些家具值得帶走。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">做搬家尺寸檢查</a>
+      </div>
+      <AdSlot id="zh-moving-mid" slot="zh-moving-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,53 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  lang: 'zh' | 'en';
+  ogImage?: string;
+  jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+}
+
+const { title, description, canonical, lang, ogImage, jsonLd } = Astro.props;
+const site = Astro.site ?? new URL('https://room-layout-fengshui-planner.pages.dev');
+const url = new URL(canonical, site).toString();
+const imageUrl = ogImage ? new URL(ogImage, site).toString() : undefined;
+const gaId = import.meta.env.PUBLIC_GA_ID;
+const locale = lang === 'zh' ? 'zh_TW' : 'en_US';
+const alternates = [
+  { lang: 'zh', href: '/zh/' },
+  { lang: 'en', href: '/en/' },
+];
+const jsonItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={url} />
+<meta property="og:locale" content={locale} />
+{imageUrl && <meta property="og:image" content={imageUrl} />}
+<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+{imageUrl && <meta name="twitter:image" content={imageUrl} />}
+{alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, site).toString()} />)}
+<link rel="alternate" hreflang="x-default" href={new URL('/zh/', site).toString()} />
+{jsonItems.map((item) => <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />)}
+{
+  gaId && (
+    <>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+      <script
+        is:inline
+        set:html={`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${gaId}');`}
+      />
+    </>
+  )
+}

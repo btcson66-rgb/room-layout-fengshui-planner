@@ -1,0 +1,44 @@
+---
+import Layout from '../components/Layout.astro';
+import Faq from '../components/Faq.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+
+const title = '使用條款｜Room Layout Feng Shui Planner';
+const description = '使用 Room Layout Feng Shui Planner 前請閱讀本條款，了解靜態工具、尺寸參考、風水內容與使用責任限制。';
+const faq = [
+  { q: '網站上的尺寸檢查可以取代現場測量嗎？', a: '不可以。工具可協助初步推估，但購買家具、施工或搬運前仍應以現場實際測量與商家規格為準。' },
+  { q: '我可以商業使用這個網站產出的圖片嗎？', a: '一般使用者可將自己建立的格局圖用於個人搬家、溝通與記錄；若涉及品牌、廣告或再發布，請自行確認內容權利與使用情境。' },
+  { q: '風水參考是服務承諾嗎？', a: '不是。所有風水內容只作民俗文化與空間舒適度參考，不承諾任何結果。' },
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: 'https://room-layout-fengshui-planner.pages.dev/terms/',
+};
+---
+
+<Layout title={title} description={description} canonical="/terms/" lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>使用條款</h1>
+        <p class="lead">使用本網站即表示你理解本網站是一般資訊與自助規劃工具，不是工程、法律、醫療、財務、室內設計或風水服務的專業承諾。</p>
+        <p>Room Layout Feng Shui Planner 旨在提供簡單的房間尺寸與家具配置參考。後續規劃工具會協助使用者輸入房間長寬、放置家具、檢查基本邊界、門口動線與走道寬度。這些功能適合用來做初步想像與溝通，但不應取代現場測量、家具商規格、建築圖說、搬運公司建議或專業設計判斷。房間牆面可能不完全平直，踢腳板、窗簾盒、插座、冷氣、梁柱、門框、地面高低差與家具實際外型都可能影響擺放結果。</p>
+        <p>使用者應自行確認輸入資料正確。若輸入的長度、寬度、單位或家具尺寸錯誤，工具輸出的圖面與警示也會不準確。購買家具、安排搬運、鑽孔、施工或簽約前，請再次以實際量測與相關專業意見為準。本網站不承擔因使用、誤用、無法使用或依賴網站內容而產生的損失。</p>
+        <p>中文頁面可能提供風水格局參考。這些文字只描述民俗上常見說法與空間舒適度角度，例如床是否正對門、鏡子是否正對床、書桌後方是否有依靠等。它們不是預測，不是算命，也不是任何關於財富、健康、關係、感情、運勢或人生結果的保證。使用者應以安全、法規、生活習慣、預算與實際舒適度為優先。</p>
+        <p>本網站內容、文字與自製圖形受授權與著作權保護。除非另有說明，本專案以 MIT 授權釋出程式碼；第三方套件依各自授權使用。不得將本站內容包裝成會保證特定結果的服務，也不得移除必要的免責說明後用於誤導性宣傳。</p>
+        <p>網站可能會更新功能、內容、頁面路徑與政策。若發現錯誤、連結失效或內容不清楚，歡迎透過聯絡頁回報。我們會以維持靜態、低風險、透明的產品方向為原則持續修正。</p>
+        <h2>English summary</h2>
+        <p>This website provides general room layout references only. It does not replace real measurements, professional advice, construction checks, or purchasing confirmation. Feng shui content is cultural and spatial-comfort reference only and never guarantees outcomes.</p>
+      </article>
+      <div class="cta-band">
+        <p>在使用尺寸與風水參考前，建議同時閱讀隱私政策與免責聲明。</p>
+        <a class="button" href="/privacy/">查看隱私權政策</a>
+      </div>
+      <Faq items={faq} />
+      <RelatedLinks links={[{ href: '/privacy/', title: '隱私權政策' }, { href: '/disclaimer/', title: '免責聲明' }, { href: '/about/', title: '關於本站' }]} />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '小房間配置指南｜床、書桌、衣櫃怎麼放才不擠';
+const description = '小房間家具配置建議，說明床、書桌、衣櫃、門窗與走道間距怎麼安排，並用線上規劃器先畫出可用版本。';
+const canonical = '/zh/small-bedroom-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '小房間配置指南',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '小房間配置', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '小房間床一定要靠牆嗎？', a: '多數小房間會把床靠牆以節省走道，但仍要考慮上下床、換床單、插座與窗簾使用是否方便。' },
+  { q: '書桌放窗邊好嗎？', a: '窗邊採光好，但要注意日曬、反光、窗簾開合與冷氣位置；若會長時間工作，桌前與椅後空間更重要。' },
+  { q: '衣櫃前方要留多少？', a: '要看門片或抽屜形式。平開門與抽屜需要更多前方距離，拉門衣櫃較省空間，但仍要能站著拿衣物。' },
+  { q: '可以用風水決定小房間配置嗎？', a: '可作為民俗與舒適度參考，但不應取代尺寸、安全、採光、通風與日常使用需求；本站不保證任何結果。' },
+];
+const relatedLinks = [
+  { href: '/zh/bed-desk-wardrobe-layout/', title: '床桌衣櫃配置' },
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/rental-room-layout/', title: '租屋房間配置' },
+  { href: '/zh/room-layout-planner/', title: '房間配置規劃器' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>小房間配置指南</h1>
+        <p class="lead">小房間不是只能把家具塞滿，而是要先保留每天會用到的走道、開門、坐下與收納動作。</p>
+        <p>小臥室最常見的問題，是床、書桌、衣櫃三件家具各自尺寸都合理，放在一起卻互相打架。床擺下後衣櫃門打不開，書桌椅子一拉就撞到床尾，門口進來第一步就被床角擋住。要讓小房間好用，第一步不是找最漂亮的擺法，而是把必要動作列出來：進門、上下床、坐到桌前、打開衣櫃、拿行李、打掃地面。只要其中一個動作每天都卡，房間就會很快變亂。</p>
+        <p>規劃時可以先決定床的位置，因為床通常最大，也最不容易頻繁移動。單人床可考慮長邊靠牆，雙人床若兩人使用，至少要思考其中一側上下床是否可接受。書桌最好接近插座與自然光，但不要讓椅背完全堵住主要通道。衣櫃若是平開門，要把門片打開的弧度或深度算進去；若是拉門衣櫃，也要留站立與拿衣服的距離。窗戶附近不要被高櫃完全擋住，以免通風與採光變差。</p>
+
+        <h2>小房間常用間距</h2>
+        <p>主要走道可用約 60 公分作為基本參考，若只能留更窄，要確認不是每天頻繁通過的位置。床尾到牆或衣櫃之間若低於可自然側身通過的寬度，換床單和打掃會比較辛苦。書桌前方要能坐下、拉椅、站起來，衣櫃前方要能蹲下或彎腰拿物。小房間可以接受局部緊湊，但不要讓門口、床邊、桌前和衣櫃前全部同時緊。</p>
+
+        <h2>如何用規劃器檢查小房間</h2>
+        <ol>
+          <li>先在 <a href="/zh/room-layout-planner/">規劃器</a> 輸入房間內部長寬，加入門窗位置。</li>
+          <li>放入床，確認床邊或床尾至少有一條可行走路線。</li>
+          <li>加入書桌與椅子活動範圍，避免桌椅擋住房門或衣櫃。</li>
+          <li>加入衣櫃，依門片形式預留前方操作距離。</li>
+          <li>比較兩到三個版本，再選擇最符合日常動作的配置。</li>
+        </ol>
+        <p>若你也想看中文民俗格局參考，例如床是否直接面向門、床頭是否靠牆，請以「常見說法」與空間舒適度角度看待，並參考 <a href="/disclaimer/">免責聲明</a>。小房間真正的核心仍是通行安全、收納效率和生活習慣。</p>
+      </article>
+      <div class="cta-band">
+        <div>
+          <h2>把小房間先畫出來</h2>
+          <p>先放最大件家具，再一步步確認桌前、床邊與衣櫃前的可用距離。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">開始配置小房間</a>
+      </div>
+      <AdSlot id="zh-small-bedroom-mid" slot="zh-small-bedroom-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

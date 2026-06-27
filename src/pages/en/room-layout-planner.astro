@@ -1,0 +1,148 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import '../../styles/planner.css';
+
+const title = 'Room Layout Planner | Free Furniture Floor Plan Tool';
+const description = 'Plan a room layout online with draggable furniture, room dimensions, structural checks, local draft saving, and PNG or PDF export.';
+const canonical = '/en/room-layout-planner/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Room Layout Planner',
+    applicationCategory: 'DesignApplication',
+    operatingSystem: 'Web browser',
+    url: `${siteUrl}${canonical}`,
+    description,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Room Layout Planner', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faqItems = [
+  {
+    q: 'Does the planner upload my room layout?',
+    a: 'No. Drafts are stored in your browser localStorage by default, and PNG or PDF exports are generated in the browser.',
+  },
+  {
+    q: 'Can I use it before buying furniture?',
+    a: 'Yes. Enter the room size, add the furniture you are considering, and check whether the door swing, walkway, and large items still fit.',
+  },
+  {
+    q: 'Does the English planner include feng shui checks?',
+    a: 'No. The English tool shows structural checks only: room bounds, blocked door clearance, and narrow walkway warnings.',
+  },
+];
+const relatedLinks = [
+  { href: '/zh/room-layout-planner/', title: '中文房間家具配置工具' },
+  { href: '/privacy/', title: 'Privacy policy' },
+  { href: '/disclaimer/', title: 'Disclaimer' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header>
+        <h1>Room Layout Planner</h1>
+        <p class="lead">
+          Enter your room dimensions, add furniture, then drag each item around a to-scale SVG floor plan. The planner checks whether furniture extends beyond the room, whether a door swing is blocked, and whether the main walkway may feel too narrow.
+        </p>
+      </header>
+
+      <div id="room-planner" data-planner></div>
+
+      <AdSlot id="planner-mid-en" slot="room-layout-planner-en-mid" />
+
+      <section class="cta-band">
+        <div>
+          <h2>Check the layout before moving furniture</h2>
+          <p>Use the templates to start quickly, adjust the sizes to match your furniture, then export a PNG or PDF you can keep while shopping or moving.</p>
+        </div>
+        <a class="button secondary" href="/privacy/">How drafts are stored</a>
+      </section>
+
+      <Faq items={faqItems} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { initPlanner } from '../../planner/planner';
+
+  const strings = {
+    roomLength: 'Room length',
+    roomWidth: 'Room width',
+    unit: 'Unit',
+    palette: 'Add furniture',
+    templatesLabel: 'Templates',
+    selectedItem: 'Selected item',
+    noSelection: 'Select an item in the plan to rotate, resize, or delete it.',
+    width: 'Width',
+    height: 'Depth',
+    rotation: 'Angle',
+    area: 'Room area',
+    checksTitle: 'Structural checks',
+    noWarnings: 'No obvious layout warnings right now.',
+    saveStatus: 'Draft saved',
+    confirmClear: 'Clear this design and return to the default layout?',
+    itemList: 'Furniture list',
+    disclaimerLink: 'Read disclaimer',
+    units: { cm: 'cm', m: 'm', ft: 'ft' },
+    furniture: {
+      bed: 'Bed',
+      desk: 'Desk',
+      wardrobe: 'Wardrobe',
+      sofa: 'Sofa',
+      diningTable: 'Dining table',
+      door: 'Door',
+      window: 'Window',
+      mirror: 'Mirror',
+    },
+    actions: {
+      add: 'Add',
+      rotate90: 'Rotate 90°',
+      delete: 'Delete',
+      exportPng: 'Export PNG',
+      exportPdf: 'Export PDF',
+      save: 'Save',
+      clear: 'Clear design',
+    },
+    templates: {
+      studio: 'Studio',
+      student: 'Student room',
+      double: 'Double room',
+      living: 'Living room',
+    },
+    warnings: {
+      bounds: 'Furniture extends outside the room boundary. Adjust its position or size.',
+      door: 'The door swing or entry clearance may be blocked by furniture.',
+      aisle: 'The main walkway may be under about 60 cm, which can feel cramped.',
+    },
+    fengShui: {
+      sectionTitle: 'Feng shui reference',
+      bedFacingDoor: '',
+      mirrorFacingBed: '',
+      deskNoSupport: '',
+      doorwayBlocked: '',
+      headboardNoWall: '',
+      noWarnings: '',
+    },
+  };
+
+  const target = document.querySelector('[data-planner]');
+  if (target instanceof HTMLElement) {
+    initPlanner(target, { strings, fengShui: false, storageKey: 'room-layout-planner:en' });
+  }
+</script>

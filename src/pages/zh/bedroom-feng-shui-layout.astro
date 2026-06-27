@@ -1,0 +1,82 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '臥室風水格局參考：床、門、鏡子、書桌與走道';
+const description = '用民俗參考加空間舒適度的方式整理臥室格局重點，包含床對門、鏡子對床、床頭靠牆、書桌背後支撐與走道檢查。';
+const canonical = '/zh/bedroom-feng-shui-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '臥室風水格局參考',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '臥室風水格局參考', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '臥室風水格局應該先看哪裡？', a: '建議先看床是否放得穩、門口是否順暢、走道是否足夠，再把床對門、鏡子對床、床頭靠牆等常見說法當作民俗參考。' },
+  { q: '床頭一定要靠牆嗎？', a: '民俗上常偏好床頭有靠；實務上，靠牆通常較好安排床頭櫃、插座與照明，也能減少床頭後方走動。' },
+  { q: '套房同時有床和書桌，怎麼兼顧？', a: '先保留門口到床、書桌與衣櫃的主要走道，再調整桌椅方向與床頭位置。無法全部符合時，以安全動線和日常使用優先。' },
+  { q: '中文規劃工具的風水參考可以當成結論嗎？', a: '不建議當成結論。它是民俗參考與舒適度提醒，應搭配尺寸、門窗、採光與個人生活習慣一起判斷。' },
+  { q: '臥室格局需要保留多少走道？', a: '工具會以約 60 公分作為主要走道提醒。實際上還要看使用者身形、家具開啟方向與是否需要搬運大型物品。' },
+];
+const relatedLinks = [
+  { href: '/zh/bed-facing-door-feng-shui/', title: '床對門風水參考' },
+  { href: '/zh/desk-placement-feng-shui/', title: '書桌擺放風水參考' },
+  { href: '/zh/mirror-facing-bed-feng-shui/', title: '鏡子對床風水參考' },
+  { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>臥室風水格局參考</h1>
+        <p class="lead">臥室格局可以同時用兩個角度檢查：一是民俗上常提到的床、門、鏡子與書桌位置；二是更可量測的動線、反光、收納與家具尺寸。</p>
+        <p><strong>民俗參考聲明：</strong>本頁臥室風水內容只作為民俗文化與空間舒適度參考，不保證、暗示或預測任何財富、健康、感情、運氣、工作或生活結果。完整說明請見 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p>臥室通常是家中最需要安靜和秩序感的空間，但租屋、套房和小坪數常會把睡眠、讀書、收納和穿衣都放在同一個房間。民俗上常見的臥室提醒，例如床不要正對門、鏡子不要直接照床、床頭可考慮靠牆、書桌背後有支撐，本頁都建議用「民俗參考加空間舒適度」來理解。這些說法不應被用來預測或承諾任何結果；比較實際的價值，是提醒使用者注意視線、光線、走道、門片開啟和家具使用的順暢度。</p>
+        <p>規劃臥室時，第一步不是挑一個看起來最符合說法的位置，而是先建立準確尺寸。床的長寬、衣櫃深度、書桌椅子退後距離、門片旋轉方向、窗戶位置和插座位置，都會影響最後可用方案。當平面圖畫出來後，再逐一檢查：床頭是否有穩定牆面或至少不是主要走道；床尾是否正對門且距離過近；鏡子是否反射床或強光；書桌座位背後是否常有人走動；主要走道是否低於約 60 公分。這些檢查比單一說法更可靠，也更貼近日常生活。</p>
+
+        <h2>五個常見臥室檢查點</h2>
+        <p>第一，床與門的關係。民俗上常提醒床不要直接面向門；實際上，門口是出入與視線通道，床太靠近或正對門時，休息區會少一些緩衝。第二，床頭是否靠牆。民俗上常把靠牆視為有依托；實務上，靠牆可讓床頭燈、插座、床頭櫃更好安排，也讓床頭後方不形成走道。第三，鏡子是否直接照床。民俗上會列為注意事項；實務上是反光、倒影與夜間視線刺激問題。第四，書桌座位背後是否穩定。背後若是門口或走道，工作時可能較容易被打斷；若靠牆或靠穩定櫃體，椅子位置較明確。第五，門口與主要走道是否順暢。無論任何民俗參考，安全和實際通行都應放在前面。</p>
+        <p>若房間很小，不可能每個項目都調到理想狀態，建議用優先順序處理。先確保門能開、走道能走、家具能使用；再處理床頭、鏡子、書桌視線；最後才微調細節，例如床尾留白、矮櫃位置、窗簾與照明。這樣做能避免為了追求單一說法而犧牲基本功能。</p>
+
+        <h2>用規劃工具建立臥室方案</h2>
+        <ol>
+          <li>打開 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，輸入臥室長寬和單位。</li>
+          <li>依序加入門、窗、床、衣櫃、書桌、鏡子，尺寸盡量照真實家具填寫。</li>
+          <li>先看結構檢查，確認沒有家具越界、門口被擋或主要走道過窄。</li>
+          <li>再看中文「風水參考」：床對門、鏡子對床、書桌背後支撐、門口通行、床頭靠牆等提示。</li>
+          <li>每次只調整一個家具，例如先移床，再調衣櫃，最後調書桌，避免看不出是哪個變更改善了問題。</li>
+          <li>保存多個草稿或匯出 PDF，和家人、室友或房東討論時更容易說明。</li>
+        </ol>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>用尺寸檢查臥室格局</h2>
+          <p>把民俗參考、門口動線、鏡面反光和家具尺寸放在同一張圖，比單看文字建議更容易取捨。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">建立臥室平面圖</a>
+      </div>
+      <AdSlot id="zh-bedroom-feng-shui-mid" slot="zh-bedroom-feng-shui-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

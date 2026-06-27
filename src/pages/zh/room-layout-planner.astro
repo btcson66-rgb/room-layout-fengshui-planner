@@ -1,0 +1,148 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import '../../styles/planner.css';
+
+const title = '房間家具配置工具｜房間平面圖與風水格局參考';
+const description = '免費線上房間家具配置工具，可拖曳床、書桌、衣櫃、沙發、門窗與鏡子，檢查尺寸、動線、門口遮擋，並提供民俗風水格局參考。';
+const canonical = '/zh/room-layout-planner/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: '房間家具配置工具',
+    applicationCategory: 'DesignApplication',
+    operatingSystem: 'Web browser',
+    url: `${siteUrl}${canonical}`,
+    description,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '房間家具配置工具', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faqItems = [
+  {
+    q: '這個工具會把房間資料上傳到伺服器嗎？',
+    a: '不會。房間尺寸與家具草稿預設只儲存在你的瀏覽器 localStorage，匯出 PNG 或 PDF 也在本機完成。',
+  },
+  {
+    q: '風水檢查代表一定會影響運勢嗎？',
+    a: '不代表。頁面中的風水內容僅作民俗文化與空間舒適度參考，不保證任何財運、健康、感情或其他結果。',
+  },
+  {
+    q: '可以用手機拖曳家具嗎？',
+    a: '可以。工具使用 pointer events，支援滑鼠與觸控操作；手機畫面會把控制列、平面圖與檢查結果直向排列。',
+  },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'English room layout planner' },
+  { href: '/privacy/', title: '隱私權說明' },
+  { href: '/disclaimer/', title: '風水與內容免責聲明' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header>
+        <h1>房間家具配置工具</h1>
+        <p class="lead">
+          輸入房間長寬後，直接拖曳床、書桌、衣櫃、沙發、餐桌、門、窗與鏡子，檢查家具是否放得下、門口是否被擋住、主要走道是否太窄。中文版本另外提供民俗上常見的風水格局參考，重點放在動線、視線與空間舒適度。
+        </p>
+      </header>
+
+      <div id="room-planner" data-planner></div>
+
+      <AdSlot id="planner-mid-zh" slot="room-layout-planner-zh-mid" />
+
+      <section class="cta-band">
+        <div>
+          <h2>先用尺寸排一次，再決定家具</h2>
+          <p>搬家、租屋或購買家具前，可以先把大件家具放進平面圖，確認開門、走道與床邊空間是否仍然順手。</p>
+        </div>
+        <a class="button secondary" href="/disclaimer/">閱讀風水參考免責聲明</a>
+      </section>
+
+      <Faq items={faqItems} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { initPlanner } from '../../planner/planner';
+
+  const strings = {
+    roomLength: '房間長度',
+    roomWidth: '房間寬度',
+    unit: '單位',
+    palette: '新增家具',
+    templatesLabel: '範例格局',
+    selectedItem: '已選項目',
+    noSelection: '點選平面圖中的家具後，可調整旋轉、寬度、高度或刪除。',
+    width: '寬度',
+    height: '深度',
+    rotation: '角度',
+    area: '房間面積',
+    checksTitle: '結構檢查',
+    noWarnings: '目前沒有明顯的尺寸或動線警示。',
+    saveStatus: '已儲存草稿',
+    confirmClear: '確定要清除目前設計並回到預設格局嗎？',
+    itemList: '家具清單',
+    disclaimerLink: '查看免責聲明',
+    units: { cm: '公分', m: '公尺', ft: '英尺' },
+    furniture: {
+      bed: '床',
+      desk: '書桌',
+      wardrobe: '衣櫃',
+      sofa: '沙發',
+      diningTable: '餐桌',
+      door: '門',
+      window: '窗',
+      mirror: '鏡子',
+    },
+    actions: {
+      add: '新增',
+      rotate90: '旋轉 90°',
+      delete: '刪除',
+      exportPng: '匯出 PNG',
+      exportPdf: '匯出 PDF',
+      save: '手動儲存',
+      clear: '清除設計',
+    },
+    templates: {
+      studio: '小套房',
+      student: '學生房',
+      double: '雙人房',
+      living: '客廳',
+    },
+    warnings: {
+      bounds: '有家具超出房間邊界，建議調整位置或尺寸。',
+      door: '門片開啟範圍可能被家具遮擋，進出動線可再保留一些空間。',
+      aisle: '主要走道可能小於約 60 公分，日常通行可能會覺得擁擠。',
+    },
+    fengShui: {
+      sectionTitle: '風水格局參考',
+      bedFacingDoor: '民俗上常見說法會提醒床正對門時，可考慮調整床位或用櫃體、布簾減少直衝感；此為空間舒適度參考。',
+      mirrorFacingBed: '民俗參考中常提到鏡子正對床可能造成視覺干擾，可考慮改放側邊或降低反射範圍。',
+      deskNoSupport: '常見說法會建議書桌背後有牆面或穩定背景，實務上也能減少背後通行帶來的不安定感。',
+      doorwayBlocked: '門口動線被擋時，民俗與日常使用都常建議保持出入口清爽，方便進出與視線辨識。',
+      headboardNoWall: '床頭未靠牆時，民俗上常見建議是可考慮讓床頭有穩定依靠；此處僅作格局參考。',
+      noWarnings: '目前沒有明顯的風水格局參考提醒。內容僅供民俗文化與空間舒適度參考。',
+    },
+  };
+
+  const target = document.querySelector('[data-planner]');
+  if (target instanceof HTMLElement) {
+    initPlanner(target, { strings, fengShui: true, storageKey: 'room-layout-planner:zh' });
+  }
+</script>

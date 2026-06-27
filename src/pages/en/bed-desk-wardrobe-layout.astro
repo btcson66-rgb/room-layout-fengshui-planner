@@ -1,0 +1,93 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { en } from '../../i18n/en';
+
+const title = 'Bed Desk Wardrobe Layout | Arrange Core Bedroom Furniture';
+const description = 'Plan a bedroom around the bed, desk, and wardrobe with practical clearance tips for walking, working, storage access, and room fit.';
+const canonical = '/en/bed-desk-wardrobe-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Bed Desk Wardrobe Layout',
+    description,
+    inLanguage: 'en',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Bed desk wardrobe layout', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'Which item should I position first?', a: 'Start with the bed, then place the wardrobe, then fit the desk where chair movement and light still work.' },
+  { q: 'How do I stop the desk chair from blocking the room?', a: 'Include chair pull-back depth in the floor plan. A desk that fits against a wall may still fail if the chair blocks the bed or wardrobe.' },
+  { q: 'Can the wardrobe go behind the door?', a: 'Only if the room door and wardrobe doors can still open comfortably. Test both door swings before committing.' },
+  { q: 'What if all three pieces barely fit?', a: 'Try a smaller desk, narrower wardrobe, bed with storage, or wall shelf. Removing one extra cabinet often improves the layout more than tiny adjustments.' },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Room layout planner' },
+  { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>Bed desk wardrobe layout</h1>
+        <p class="lead">
+          The bed, desk, and wardrobe are the three pieces that decide whether a bedroom feels usable. Plan them together so sleeping, working, and storage do not fight for the same floor space.
+        </p>
+        <p>
+          Many bedrooms look simple until these three items arrive. The bed consumes the largest rectangle, the wardrobe needs access in front, and the desk needs both a surface and a chair zone. If you place each one independently, the leftover space may become a narrow path that is inconvenient every day. The better approach is to choose a priority order and test the group as a system.
+        </p>
+        <p>
+          The bed usually comes first because its size is hardest to ignore. Check whether it should run along the longest wall, sit under a window, or be centered with access on one or both sides. Then place the wardrobe where clothing access is convenient and door or drawer clearance does not collide with the bed. Finally, place the desk where the chair can move without blocking the wardrobe or the main route from the door. If you work or study daily, the desk may deserve more space than a small bedside table.
+        </p>
+
+        <h2>Clearance tips for the three-piece layout</h2>
+        <p>
+          A workable bedroom needs a route from the entrance to the bed and a clear area in front of storage. Around 60 cm is a useful minimum walkway target, but wardrobe doors, drawers, laundry baskets, and chair movement often need more. If a wardrobe has sliding doors, it may be easier in a narrow room than hinged doors. If the desk chair backs into the bed, make sure there is still enough space to sit down without twisting awkwardly.
+        </p>
+        <p>
+          Pay attention to outlets and light. A desk far from power may create cable clutter across the floor. A wardrobe blocking a window can make the room darker and harder to ventilate. A bed placed tightly between two pieces can become difficult to make. These small daily frictions matter more than a layout that only looks balanced in a top-down drawing.
+        </p>
+
+        <h2>How to do this with the planner</h2>
+        <ol>
+          <li>Open the <a href="/en/room-layout-planner/">room layout planner</a> and enter the exact bedroom size.</li>
+          <li>Add the room door and windows so fixed constraints are visible before placing furniture.</li>
+          <li>Add the bed and test the main orientations. Keep the version that leaves the best route.</li>
+          <li>Add the wardrobe with its real size, then leave enough front clearance for doors or drawers.</li>
+          <li>Add the desk and chair zone mentally by leaving open floor behind the desk. Export the plan when the three pieces work together.</li>
+        </ol>
+        <p>
+          If the planner warns about a narrow route or blocked door, do not treat it as a minor detail. In a bedroom used every day, small clearance problems become repeated annoyances.
+        </p>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>Test the bed, desk, and wardrobe together</h2>
+          <p>Use real dimensions to compare bedroom layouts before moving or buying furniture.</p>
+        </div>
+        <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+      </div>
+      <AdSlot id="en-bed-desk-wardrobe-mid" slot="en-bed-desk-wardrobe-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

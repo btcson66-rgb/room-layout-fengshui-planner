@@ -1,0 +1,76 @@
+export const zh = {
+  nav: {
+    home: '首頁',
+    planner: '房間格局規劃工具',
+    fitChecker: '家具尺寸檢查',
+    smallBedroom: '小房間佈局',
+    languageZh: '中文',
+    languageEn: 'English',
+  },
+  footer: {
+    about: '關於',
+    privacy: '隱私權',
+    terms: '使用條款',
+    contact: '聯絡',
+    disclaimer: '免責聲明',
+    changelog: '更新紀錄',
+    folkDisclaimer: '風水內容僅作民俗文化與空間舒適度參考，請以實際居住需求為準。',
+  },
+  cta: {
+    openPlanner: '開始規劃房間',
+    readDisclaimer: '閱讀免責聲明',
+    contactUs: '聯絡我們',
+  },
+  tool: {
+    roomLength: '房間長度',
+    roomWidth: '房間寬度',
+    unit: '單位',
+    units: {
+      cm: '公分',
+      m: '公尺',
+      ft: '英尺',
+    },
+    furniture: {
+      bed: '床',
+      desk: '書桌',
+      wardrobe: '衣櫃',
+      sofa: '沙發',
+      diningTable: '餐桌',
+      door: '門',
+      window: '窗',
+      mirror: '鏡子',
+    },
+    actions: {
+      rotate: '旋轉',
+      resize: '調整尺寸',
+      delete: '刪除',
+      exportPng: '匯出 PNG',
+      exportPdf: '匯出 PDF',
+      save: '儲存',
+      clear: '清空設計',
+    },
+    area: '面積',
+    templates: {
+      studio: '小套房',
+      student: '學生房',
+      double: '雙人房',
+      living: '客廳',
+    },
+    warnings: {
+      bounds: '家具超出房間範圍，請調整位置或尺寸。',
+      door: '門片開啟範圍可能被家具阻擋。',
+      aisle: '主要通道可能低於 60 公分，行走舒適度不足。',
+    },
+    fengShui: {
+      sectionTitle: '風水格局參考',
+      bedFacingDoor: '床正對門的常見說法',
+      mirrorFacingBed: '鏡子正對床的常見說法',
+      deskNoSupport: '書桌後方缺少依靠的參考',
+      doorwayBlocked: '門口動線受阻的參考',
+      headboardNoWall: '床頭未靠牆的參考',
+      disclaimerLabel: '民俗參考，非結果保證',
+    },
+  },
+};
+
+export type UiStrings = typeof zh;

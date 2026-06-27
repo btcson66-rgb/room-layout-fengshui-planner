@@ -1,0 +1,81 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '鏡子對床風水參考：反光、視線與臥室舒適度';
+const description = '以民俗參考與實際舒適度說明鏡子對床的常見說法，並用房間規劃工具檢查鏡面、床位、衣櫃與動線。';
+const canonical = '/zh/mirror-facing-bed-feng-shui/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '鏡子對床風水參考',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '鏡子對床風水參考', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '鏡子對床的民俗說法可以怎麼看？', a: '建議當成民俗文化參考與視線舒適度提醒。鏡面正對床時，反光、倒影與夜間視覺刺激可能比較明顯。' },
+  { q: '衣櫃門有鏡子又不能移走怎麼辦？', a: '可考慮調整床位、改變櫃門開啟方向、加窗簾式遮擋，或讓鏡面不要直接反射床的主要休息區。' },
+  { q: '鏡子放臥室一定不好嗎？', a: '不需要絕對化。鏡子可用於穿搭與放大視覺，但要避開造成眩光、半夜視線干擾或阻礙走道的位置。' },
+  { q: '工具能判斷鏡子是否面向床嗎？', a: '中文工具提供鏡子面向床的民俗參考提示，也會同時檢查家具越界、門口阻擋與走道寬度，方便一起判斷。' },
+];
+const relatedLinks = [
+  { href: '/zh/bed-facing-door-feng-shui/', title: '床對門風水參考' },
+  { href: '/zh/bedroom-feng-shui-layout/', title: '臥室風水格局參考' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間佈局規劃' },
+  { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>鏡子對床風水參考</h1>
+        <p class="lead">鏡子對床是臥室裡常被討論的民俗參考。實際規劃時，可以把它理解為反光、倒影、夜間視線與床邊動線的舒適度檢查。</p>
+        <p><strong>民俗參考聲明：</strong>本頁鏡子與臥室風水內容只作為民俗文化與空間安排參考，不保證、暗示或預測任何財富、健康、感情、運氣或其他結果。完整說明請見 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p>民俗上常見說法會提醒鏡子不要直接照到床。若用日常居住角度解讀，重點在於鏡面會反射光線、人物與門窗影像。當鏡子正對床頭或床身，人在床上翻身、起身或半夜醒來時，可能直接看到鏡中倒影；如果窗外車燈、走廊燈或室內小夜燈被鏡面反射，也會讓睡眠區多一個視覺刺激來源。這些都是舒適度與視線管理問題，不應被寫成任何結果的承諾或判斷。</p>
+        <p>鏡子本身在小房間很有用：它能協助穿搭、整理儀容，也可能讓空間看起來更開闊。問題通常不在「能不能放」，而在「照到哪裡」、「會不會反光」、「是否卡住動線」。例如穿衣鏡放在衣櫃側邊，比直接對床尾更容易使用；全身鏡靠近出入口，可以出門前檢查穿搭，但要保留門口走道；若鏡子是衣櫃門的一部分，則要把櫃門開啟範圍和床距一起確認，避免人站在床邊換衣時被家具擠住。</p>
+
+        <h2>反光、視線與可調整做法</h2>
+        <p>第一個檢查點是鏡面是否直接反射床的主要休息位置。民俗上會把這種配置列為需要留意；實務上，則可能造成夜間倒影、光線反射或視線干擾。可考慮將鏡子移到床側斜角、衣櫃內側、門後但不妨礙開門的位置，或使用可收合的立鏡。第二個檢查點是鏡面是否反射窗戶或強光源。若早晨陽光或夜間燈光直射鏡面，可透過窗簾、燈具位置或鏡面角度改善。</p>
+        <p>第三個檢查點是動線。全身鏡前方通常需要一段站立距離，才能看清全身；若鏡子放在床與衣櫃之間，可能會讓換衣動作變得擁擠。建議把鏡子當成一件會被使用的家具，而不是只在平面圖上畫一條線。要留出人站立、轉身、打開櫃門與通往門口的空間，這樣民俗參考與實際功能才不會互相衝突。</p>
+
+        <h2>用規劃工具檢查鏡子與床</h2>
+        <ol>
+          <li>進入 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，輸入房間尺寸並放入門窗。</li>
+          <li>加入床、衣櫃、鏡子、書桌或其他大型家具，先照目前房間狀態擺放。</li>
+          <li>觀察鏡子是否正對床頭、床身或床尾；若提示出現，先把它視為民俗參考與視線舒適度提醒。</li>
+          <li>旋轉鏡子或移到衣櫃側、門旁、床側斜角，並確認不擋住門口或主要走道。</li>
+          <li>查看結構檢查，確認家具沒有超出房間、門片沒有被擋、主要走道不低於工具提示的門檻。</li>
+          <li>把不同版本保存成草稿或匯出，比較哪一版最方便穿衣、收納與睡前使用。</li>
+        </ol>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>檢查鏡面是否直接照到床</h2>
+          <p>把鏡子、床和衣櫃畫在同一張平面圖，能更快判斷反光、視線與站立距離是否舒服。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">開始檢查鏡子位置</a>
+      </div>
+      <AdSlot id="zh-mirror-facing-bed-mid" slot="zh-mirror-facing-bed-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

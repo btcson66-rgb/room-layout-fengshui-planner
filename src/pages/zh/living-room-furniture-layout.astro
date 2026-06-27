@@ -1,0 +1,84 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '客廳家具佈局規劃：沙發、茶几、餐桌與動線尺寸';
+const description = '客廳家具佈局指南，整理沙發、茶几、電視、餐桌、門窗與走道尺寸，並用房間規劃工具檢查家具是否放得下。';
+const canonical = '/zh/living-room-furniture-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '客廳家具佈局規劃',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '客廳家具佈局規劃', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '客廳沙發和茶几之間要留多少距離？', a: '常見做法是留出可通行且能伸手拿取的距離，小空間可抓約 35 到 45 公分，大空間可再放寬，實際仍要看走道是否被擋。' },
+  { q: '餐桌放客廳旁邊要注意什麼？', a: '除了桌面尺寸，還要把椅子拉出和人繞行的距離算進去，避免餐椅一拉開就擋住沙發、門口或陽台通道。' },
+  { q: '客廳需要風水參考嗎？', a: '若使用民俗參考，建議只當作空間舒適度提醒，例如入口不要被大型家具堵住、主要動線保持清楚；完整原則請見免責聲明。' },
+  { q: '搬家前如何確認沙發買了放得下？', a: '先量客廳長寬、門寬、電梯和轉角，再在規劃工具放入沙發、茶几、電視櫃與門窗，檢查是否越界或堵住走道。' },
+];
+const relatedLinks = [
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸放得下檢查' },
+  { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查' },
+  { href: '/zh/studio-apartment-layout/', title: '套房格局規劃' },
+  { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>客廳家具佈局規劃</h1>
+        <p class="lead">客廳常同時承擔看電視、聊天、用餐、收納、出入陽台與迎接訪客的功能。好的客廳佈局，重點不是家具塞滿，而是讓主要動線清楚、坐下舒服、門窗能正常使用。</p>
+        <p>客廳家具規劃最容易出錯的地方，是只看沙發或餐桌的外框尺寸，沒有把人實際活動的距離算進去。沙發前方需要放腳和經過的空間，茶几旁需要彎腰拿東西的距離，電視櫃前方要留出清潔與開抽屜的位置，餐桌椅更需要把椅子拉出後的深度一起計算。若客廳連接玄關、走廊、廚房或陽台，主要通道最好保持連續，不要讓沙發背、餐椅或收納櫃把路線切斷。</p>
+        <p>先決定客廳的主功能，會比直接搬家具更有效。如果主要是看電視，沙發和電視牆的視線距離、反光和插座位置很重要；如果常招待朋友，沙發、單椅和茶几之間要形成容易對話的範圍；如果客廳兼餐廳，餐桌旁的椅子拉出距離要優先保留；如果是小套房，沙發床、摺疊桌或靠牆餐桌可能比大型 L 型沙發更實用。每一種選擇都要回到尺寸和路線，而不是只看照片是否好看。</p>
+
+        <h2>沙發、茶几與電視區</h2>
+        <p>沙發是客廳最大的家具之一，通常應先放入平面圖。靠牆沙發可以節省中央空間，也較容易保留客廳到陽台或玄關的路線；L 型沙發適合較寬的客廳，但要確認轉角不會卡住門片或餐椅。茶几不宜只看寬度，還要看沙發前方能否伸腳、能否從沙發側邊走過。小客廳可考慮窄茶几、邊几、可移動小桌或有收納功能的茶几，減少中央被固定家具佔滿。</p>
+        <p>電視櫃與螢幕位置也會影響佈局。若螢幕正對窗，白天可能反光；若沙發離螢幕過近，觀看角度可能不舒服。可先把窗戶、陽台門和主要燈具標出，再調整沙發方向。大型收納櫃盡量不要壓在主要出入口旁，否則進門、搬家具和日常通行都會變得不順。</p>
+
+        <h2>餐桌、收納與入口動線</h2>
+        <p>客廳兼餐廳時，餐桌椅是第二個容易低估的尺寸。四人餐桌看似只有桌面長寬，但椅子拉出後每一側都需要空間；若餐桌靠牆，至少要確認常用座位能拉開，不常用的一側才適合收起。餐邊櫃、鞋櫃、掃地機器人位置與插座，也最好一起畫進去，因為它們常在最後才被發現擋住走道。</p>
+        <p>若想加入風水格局參考，建議以民俗文化和空間舒適度的方式理解，例如入口處可考慮保持通暢、不要被高櫃或大型沙發直接堵住，讓進出、採光與通風更清楚。這類內容只作為民俗參考與居住舒適度提醒，不保證、暗示或預測任何財富、健康、關係、運氣或其他結果；請參考 <a href="/disclaimer/">免責聲明</a>。</p>
+
+        <h2>用規劃工具檢查客廳佈局</h2>
+        <ol>
+          <li>打開 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，輸入客廳長寬；若客餐廳相連，可用整個公共區域尺寸。</li>
+          <li>先放門、窗、陽台門，再加入沙發、茶几、餐桌、衣櫃或收納櫃等大型家具。</li>
+          <li>用實際尺寸調整每件家具，包含椅子拉出、櫃門開啟和人站立的位置。</li>
+          <li>查看工具提示，確認家具沒有超出房間、門口沒有被擋、主要走道沒有過窄。</li>
+          <li>套用客廳範例或自行保存草稿，比較靠牆沙發、面窗沙發、客餐廳分區等不同版本。</li>
+          <li>購買家具前匯出 PNG 或 PDF，和家具尺寸表、搬家路線一起確認。</li>
+        </ol>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>先確認沙發、餐桌與走道放得下</h2>
+          <p>用客廳平面圖檢查家具尺寸和門窗動線，可降低搬回家才發現卡住的風險。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">規劃客廳家具</a>
+      </div>
+      <AdSlot id="zh-living-room-layout-mid" slot="zh-living-room-layout-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

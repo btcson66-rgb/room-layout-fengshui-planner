@@ -1,0 +1,76 @@
+import type { UiStrings } from './zh';
+
+export const en: UiStrings = {
+  nav: {
+    home: 'Home',
+    planner: 'Room layout planner',
+    fitChecker: 'Furniture fit checker',
+    smallBedroom: 'Small bedroom layout',
+    languageZh: '中文',
+    languageEn: 'English',
+  },
+  footer: {
+    about: 'About',
+    privacy: 'Privacy',
+    terms: 'Terms',
+    contact: 'Contact',
+    disclaimer: 'Disclaimer',
+    changelog: 'Changelog',
+    folkDisclaimer: 'Feng shui notes are cultural and spatial-comfort references only. Practical needs come first.',
+  },
+  cta: {
+    openPlanner: 'Start planning',
+    readDisclaimer: 'Read disclaimer',
+    contactUs: 'Contact us',
+  },
+  tool: {
+    roomLength: 'Room length',
+    roomWidth: 'Room width',
+    unit: 'Unit',
+    units: {
+      cm: 'cm',
+      m: 'm',
+      ft: 'ft',
+    },
+    furniture: {
+      bed: 'Bed',
+      desk: 'Desk',
+      wardrobe: 'Wardrobe',
+      sofa: 'Sofa',
+      diningTable: 'Dining table',
+      door: 'Door',
+      window: 'Window',
+      mirror: 'Mirror',
+    },
+    actions: {
+      rotate: 'Rotate',
+      resize: 'Resize',
+      delete: 'Delete',
+      exportPng: 'Export PNG',
+      exportPdf: 'Export PDF',
+      save: 'Save',
+      clear: 'Clear design',
+    },
+    area: 'Area',
+    templates: {
+      studio: 'Studio',
+      student: 'Student room',
+      double: 'Double room',
+      living: 'Living room',
+    },
+    warnings: {
+      bounds: 'Furniture is outside the room boundary. Adjust its position or size.',
+      door: 'The door swing may be blocked by furniture.',
+      aisle: 'The main walkway may be under 60 cm, which can feel cramped.',
+    },
+    fengShui: {
+      sectionTitle: 'Feng shui reference',
+      bedFacingDoor: 'Common reference about a bed facing the door',
+      mirrorFacingBed: 'Common reference about a mirror facing the bed',
+      deskNoSupport: 'Reference about no support behind a desk',
+      doorwayBlocked: 'Reference about blocked doorway circulation',
+      headboardNoWall: 'Reference about a headboard not against a wall',
+      disclaimerLabel: 'Cultural reference, not an outcome guarantee',
+    },
+  },
+};

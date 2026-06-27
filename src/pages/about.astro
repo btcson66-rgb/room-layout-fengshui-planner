@@ -1,0 +1,43 @@
+---
+import Layout from '../components/Layout.astro';
+import Faq from '../components/Faq.astro';
+import RelatedLinks from '../components/RelatedLinks.astro';
+
+const title = '關於 Room Layout Feng Shui Planner｜房間家具格局規劃網站';
+const description = '了解本網站如何協助租屋、搬家與購買家具前的尺寸檢查，並以民俗文化與空間舒適度角度提供風水格局參考。';
+const faq = [
+  { q: '這個網站是給室內設計師使用嗎？', a: '主要不是。本網站面向一般租屋族、搬家者與購買家具前想先確認尺寸的人，重點是簡單、可理解、可在瀏覽器中完成。' },
+  { q: '風水內容代表保證結果嗎？', a: '不代表。風水相關文字只作民俗文化與空間舒適度參考，不保證財富、健康、人際、感情、運氣或任何結果。' },
+  { q: '網站會上傳我的房間資料嗎？', a: 'Phase 1 尚未提供規劃工具；後續工具預計把草稿預設存在使用者瀏覽器 localStorage，不上傳到伺服器。' },
+];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: 'https://room-layout-fengshui-planner.pages.dev/about/',
+};
+---
+
+<Layout title={title} description={description} canonical="/about/" lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>關於 Room Layout Feng Shui Planner</h1>
+        <p class="lead">這是一個為一般人設計的靜態房間家具格局規劃網站，目標是讓租屋、搬家、改造小房間、購買床架或書桌前的尺寸確認，都能先在瀏覽器中完成基本推演。</p>
+        <p>很多人需要的不是複雜的工程繪圖軟體，而是一個可以快速輸入房間長寬、放上床、桌子、衣櫃、沙發、門窗與鏡子，然後看出「放不放得下」、「門會不會被擋住」、「走道是否太窄」的工具。本網站的產品方向就是把這些日常決策做得清楚、低門檻，而且能靜態部署，不依賴資料庫、後端伺服器或付費 API。</p>
+        <p>中文內容會加入風水格局參考，原因是許多華語使用者在安排床、鏡子、書桌與門的位置時，會同時在意民俗上的常見說法與實際居住感受。這些內容一律以「參考」「常見說法」「可考慮」「民俗上」等語氣撰寫，只作文化脈絡與空間舒適度提醒。網站不提供算命、占卜或任何結果保證，也不宣稱能帶來財富、健康、感情、人際或運氣上的改變。完整限制請閱讀 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p>技術上，本網站採用 Astro 靜態輸出。後續規劃工具會在瀏覽器端完成計算、繪圖、匯出與草稿儲存，讓部署可以放在 Cloudflare Pages、Vercel 或 GitHub Pages。這種架構的好處是簡單、透明、維護成本低，也避免把一般使用者的房間資料送到伺服器處理。</p>
+        <p>目前 Phase 1 建立的是基礎網站、共用元件、信任頁面與部署文件；規劃工具本體、中文與英文 SEO 內容頁會在後續階段加入。所有家具與介面圖示都會使用自製 SVG 或基本圖形，不使用來源不明的圖示、字型或素材。</p>
+        <h2>English summary</h2>
+        <p>Room Layout Feng Shui Planner is a static website for everyday room planning. It is built for renters, movers, and furniture buyers who need a practical browser-based way to check room dimensions and furniture placement. Feng shui notes are cultural and spatial-comfort references only, never promises or fortune-telling.</p>
+      </article>
+      <div class="cta-band">
+        <p>下一階段會加入房間格局規劃工具；目前可先查看網站政策與免責說明。</p>
+        <a class="button" href="/zh/room-layout-planner/">前往規劃工具</a>
+      </div>
+      <Faq items={faq} />
+      <RelatedLinks links={[{ href: '/privacy/', title: '隱私權政策' }, { href: '/disclaimer/', title: '免責聲明' }, { href: '/changelog/', title: '更新紀錄' }]} />
+    </div>
+  </section>
+</Layout>

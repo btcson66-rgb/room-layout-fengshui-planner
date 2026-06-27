@@ -1,0 +1,122 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '房間家具配置規劃器｜租屋、搬家、買家具前先量好';
+const description = '免費線上房間家具配置規劃器，適合租屋、搬家與買家具前檢查尺寸。可在瀏覽器畫房間、放家具、看動線，並提供民俗格局參考。';
+const canonical = '/zh/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Room Layout Feng Shui Planner',
+    url: `${siteUrl}/zh/`,
+    inLanguage: 'zh-TW',
+    description,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: '房間家具配置規劃器',
+    applicationCategory: 'DesignApplication',
+    operatingSystem: 'Web browser',
+    url: `${siteUrl}/zh/room-layout-planner/`,
+    description: '在瀏覽器中建立房間尺寸、拖放家具、檢查門口與走道動線，並匯出平面圖。',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+    ],
+  },
+];
+const scenarios = [
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查', text: '買床、書桌、衣櫃前，先確認房間、門口與走道能不能容納。' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置', text: '把床、桌、衣櫃放進有限坪數，同時保留可走路與開櫃門的空間。' },
+  { href: '/zh/studio-apartment-layout/', title: '套房單房格局', text: '在同一個空間中分出睡眠、工作、用餐與收納區。' },
+  { href: '/zh/bed-desk-wardrobe-layout/', title: '床桌衣櫃三件配置', text: '針對臥室最常見三大件家具，快速比較幾種擺法。' },
+  { href: '/zh/rental-room-layout/', title: '租屋房間配置', text: '不動牆面、不大施工，用可復原方式安排既有家具。' },
+  { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查', text: '搬入前先確認家具能進門、能轉彎、放下後還能使用。' },
+];
+const faq = [
+  { q: '這個工具適合誰使用？', a: '適合租屋族、準備搬家的人、正在買家具的人，以及想先確認床、桌、衣櫃能不能放進房間的一般使用者。' },
+  { q: '房間配置資料會上傳到伺服器嗎？', a: '規劃草稿預設儲存在使用者自己的瀏覽器 localStorage，不需要資料庫，也不會為了使用工具而上傳房間配置。' },
+  { q: '一定要量得很精準才能開始嗎？', a: '可以先用大約尺寸建立草圖，但買家具或搬家前建議重新量一次房間長寬、門寬、走道寬與家具最大外徑。' },
+  { q: '風水內容代表保證結果嗎？', a: '不是。本站中文風水內容只作為民俗說法與空間舒適度參考，不保證任何財運、健康、感情或其他結果。' },
+];
+const relatedLinks = [
+  { href: '/zh/room-layout-planner/', title: '開啟房間配置規劃器' },
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置建議' },
+  { href: '/disclaimer/', title: '民俗格局參考聲明' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>房間家具配置規劃器</h1>
+        <p class="lead">搬家、租屋或買家具之前，先把房間長寬、床、書桌、衣櫃、沙發、門窗位置畫出來，比只看商品尺寸更可靠。</p>
+        <p>很多人買家具時只確認「床是 150 公分寬」「桌子是 120 公分長」，卻忽略門片打開後會占空間、衣櫃門需要站立距離、床邊至少要留一條能走的路。這個網站的目的不是做複雜室內設計，而是讓一般人用最少步驟判斷家具能不能放、放了之後好不好走、搬家當天會不會卡在門口或走廊轉角。</p>
+        <p>你可以在規劃器中輸入房間尺寸，加入床、桌、衣櫃、沙發、餐桌、門、窗與鏡子，拖曳調整位置，旋轉家具，再看工具提示的邊界、門口與走道警示。規劃草稿保存在自己的瀏覽器 localStorage，適合先試幾個版本，再匯出 PNG 或 PDF 給家人、室友、搬家公司或家具店討論。</p>
+        <div class="cta-band">
+          <div>
+            <h2>先畫一張可量尺寸的房間草圖</h2>
+            <p>從房間長寬開始，放進主要家具，檢查門口、走道與開櫃距離，再決定要不要購買或搬入。</p>
+          </div>
+          <a class="button" href="/zh/room-layout-planner/">開始規劃房間</a>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="scenario-heading">
+        <h2 id="scenario-heading">依你的情境選擇配置重點</h2>
+        <div class="scenario-grid">
+          {scenarios.map((item) => (
+            <article>
+              <h3><a href={item.href}>{item.title}</a></h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="privacy-heading">
+        <h2 id="privacy-heading">資料如何保存？</h2>
+        <p>房間規劃草稿預設儲存在你目前使用的瀏覽器 localStorage。這代表你可以關掉頁面後再回來修改，但如果清除瀏覽器資料、換裝置或使用無痕視窗，草稿可能會消失。本站不需要帳號、資料庫或後端伺服器；你輸入的房間配置主要用於當下瀏覽器中的繪圖與檢查。</p>
+      </section>
+
+      <section class="card" aria-labelledby="folk-heading">
+        <h2 id="folk-heading">中文站的民俗格局參考</h2>
+        <p>中文內容可能提到床、門、鏡子、書桌背後支撐等常見民俗說法。這些只作為空間感受與民俗文化參考，不保證任何結果；完整說明請看 <a href="/disclaimer/">免責聲明</a>。</p>
+      </section>
+
+      <AdSlot id="zh-home-mid" slot="zh-home-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .scenario-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .scenario-grid article {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  @media (min-width: 760px) {
+    .scenario-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

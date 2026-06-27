@@ -1,0 +1,81 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '書桌擺放風水參考：背後靠牆、採光與工作動線';
+const description = '整理書桌背後有靠、避開門口衝線與採光眩光等常見說法，並用房間規劃工具檢查桌椅、收納與走道舒適度。';
+const canonical = '/zh/desk-placement-feng-shui/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '書桌擺放風水參考',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '書桌擺放風水參考', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '書桌背後有靠是什麼意思？', a: '民俗上常見說法會偏好座位背後有牆或穩定家具；從實用角度看，背後少走動、椅子較好定位，也比較不容易被門口活動打擾。' },
+  { q: '書桌一定不能背對門嗎？', a: '不需要絕對化。可考慮門口視線、椅子退後空間與螢幕反光；若背對門但動線清楚、座位穩定，也可以是可用方案。' },
+  { q: '窗邊書桌比較好嗎？', a: '窗邊有自然光，但也要檢查眩光、熱源、窗簾與插座位置。側光通常比螢幕正對窗或背對強光更舒服。' },
+  { q: '工具能幫我檢查書桌哪些問題？', a: '可用工具放入書桌、椅子、門窗與床櫃，檢查家具是否越界、門口是否被擋、走道是否過窄，中文頁也會提示書桌背後支撐的民俗參考。' },
+];
+const relatedLinks = [
+  { href: '/zh/bed-desk-wardrobe-layout/', title: '床書桌衣櫃佈局' },
+  { href: '/zh/bedroom-feng-shui-layout/', title: '臥室風水格局參考' },
+  { href: '/zh/rental-room-layout/', title: '租屋房間佈局' },
+  { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>書桌擺放風水參考</h1>
+        <p class="lead">書桌位置不只影響讀書或工作，也會牽涉椅子退後、插座、採光、收納與門口動線。民俗參考可以作為提醒，但最後仍要回到日常使用是否順手。</p>
+        <p><strong>民俗參考聲明：</strong>本頁書桌風水內容只作為民俗文化與空間舒適度參考，不保證、暗示或預測任何財富、健康、感情、運氣、考試或工作結果。完整說明請見 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p>民俗上談書桌擺放時，常見說法包括「背後有靠」、「不要正沖門」、「桌面保持明亮」。把這些說法轉成實際空間語言，可以得到幾個可檢查的重點：座位背後若是牆面或穩定櫃體，椅子比較容易固定，背後也不會常有人走動；桌子若剛好在門口通道上，開門、進出與視線容易打斷專注；光線若從正前方或正後方直射螢幕，則可能造成眩光或影子。這些都是空間舒適度問題，不是對人生結果的判斷。</p>
+        <p>在小房間裡，書桌常和床、衣櫃搶空間。桌面看似放得下，但椅子一拉開就擋住衣櫃，或人坐下後門片無法完整打開，這才是需要優先處理的問題。書桌尺寸建議先看真實使用方式：筆電工作可用較小桌面，外接螢幕、鍵盤與文件需要更深的桌面；若桌旁有抽屜櫃，要把抽屜拉出距離也畫進平面圖。民俗參考可提醒「座位背後是否安定」，實務上則要確認椅背後至少留出能進出的空間，不要讓人每次坐下都卡住床邊或櫃角。</p>
+
+        <h2>背後靠牆與門口視線</h2>
+        <p>「背後有靠」可理解為座位後方有穩定邊界。若書桌背後是開放走道，家人或室友走過時容易讓人分心；若背後是門，開關門也可能讓椅子缺少安全距離。可考慮把書桌靠牆或靠窗側邊擺放，使座位背後不在主要通道上。若房間限制讓桌子只能背對門，可以用低櫃、牆面、轉向桌椅或加大椅背後距離來改善使用感，但不需要把民俗說法解讀成絕對禁忌。</p>
+        <p>採光方面，側面自然光通常比較容易使用，因為螢幕反光較少，也能讓桌面保持明亮。桌子正對窗時，視線舒服但螢幕可能反光；背對窗時，螢幕可能被背後強光照到。可用窗簾、桌燈、螢幕角度與桌面方向微調。這些調整同時符合「明亮整潔」的常見說法與實際的閱讀舒適度。</p>
+
+        <h2>用規劃工具檢查書桌格局</h2>
+        <ol>
+          <li>前往 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，建立房間尺寸並加入門窗。</li>
+          <li>放入書桌、椅子活動範圍、床、衣櫃與常用收納，先照真實尺寸排列。</li>
+          <li>檢查座位背後是否是主要走道，椅子退後時是否碰到床、門或櫃子。</li>
+          <li>在中文工具的「風水參考」查看書桌背後支撐提示，並同時看結構檢查中的門口阻擋與走道寬度。</li>
+          <li>如果提示不理想，先嘗試旋轉書桌 90 度、移到窗側、縮小收納或調整床櫃位置。</li>
+          <li>保存草稿，分別比較「靠牆」、「窗側」、「床尾」三種版本，再選日常最順的一種。</li>
+        </ol>
+      </article>
+
+      <div class="cta-band">
+        <div>
+          <h2>把書桌、椅子和門窗一起畫出來</h2>
+          <p>書桌好不好用，常取決於椅子退後、螢幕光線與走道寬度。用平面圖比較會更清楚。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">檢查書桌位置</a>
+      </div>
+      <AdSlot id="zh-desk-placement-mid" slot="zh-desk-placement-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

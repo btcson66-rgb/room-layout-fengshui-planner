@@ -1,0 +1,23 @@
+{
+  "name": "room-layout-fengshui-planner",
+  "version": "1.0.0",
+  "description": "Static room layout and feng shui reference planner website.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.0.3",
+    "jspdf": "^4.2.1",
+    "typescript": "^6.0.3"
+  }
+}

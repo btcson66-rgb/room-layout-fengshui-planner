@@ -1,0 +1,78 @@
+---
+import Layout from '../../components/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const title = '床桌衣櫃配置｜臥室三大件家具的擺放順序';
+const description = '床、書桌、衣櫃是臥室最常見三大件家具。本頁說明如何安排擺放順序、走道、椅子與櫃門空間，並用規劃器測試。';
+const canonical = '/zh/bed-desk-wardrobe-layout/';
+const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: '床桌衣櫃配置',
+    description,
+    inLanguage: 'zh-TW',
+    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '床桌衣櫃配置', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: '床、桌、衣櫃應該先放哪一個？', a: '通常先放最大且最難移動的床，再安排衣櫃開門距離，最後調整書桌與椅子活動範圍。' },
+  { q: '書桌可以貼著床放嗎？', a: '可以，但要確認椅子能拉開、床邊能上下床，且桌面不會因離床太近而長期堆放雜物。' },
+  { q: '衣櫃放床尾好不好？', a: '可行，但床尾到衣櫃之間要留通行與開門距離，否則換衣、拿物和整理床鋪都會不方便。' },
+  { q: '床頭一定要靠牆嗎？', a: '民俗上常見床頭有靠的說法，空間使用上也較穩定；但本站只作參考，不保證任何結果。' },
+];
+const relatedLinks = [
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置' },
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/studio-apartment-layout/', title: '套房格局配置' },
+  { href: '/zh/room-layout-planner/', title: '房間配置規劃器' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h1>床桌衣櫃配置</h1>
+        <p class="lead">臥室只要床、書桌、衣櫃三件家具位置對了，大多數日常動線就會順很多。</p>
+        <p>床、桌、衣櫃是租屋房、學生房和一般臥室最常見的三大件。它們各自功能很明確，卻很容易互相干擾：床太大會壓縮桌前空間，桌子位置不對會擋衣櫃，衣櫃門打開又可能碰到床角。配置時要用「使用順序」思考，而不是只看牆面哪裡有空。每天起床、走到桌前、拿衣服、開門出房間，這幾個動作應該能連續完成。</p>
+        <p>一般來說，先決定床的位置最有效，因為床面積最大，也最影響房間重心。床放好後，接著確認衣櫃的位置與開門方式。如果是平開衣櫃，要讓門片可以完整打開，人在前方也能站著拿衣物；如果是拉門衣櫃，雖然省空間，仍需要前方操作距離。書桌通常放在最後微調，因為它要同時配合插座、採光、椅子拉開與工作安靜度。桌椅位置不要切斷入口到床或衣櫃的主要路線。</p>
+
+        <h2>三件家具的配置模式</h2>
+        <p>小房間常見做法是床長邊靠牆，衣櫃放在門旁或床尾，書桌靠窗或靠另一面牆。較方正的房間可以讓床頭靠實牆，衣櫃沿短牆，書桌與床保持一段距離。狹長房間則要避免把家具一件件排成障礙物，可以讓床與衣櫃分居兩端，中間保留走道。若書桌必須靠床，建議至少讓椅子後方不是主要通道，否則坐下時會擋住全房間。</p>
+
+        <h2>如何用規劃器安排床桌衣櫃</h2>
+        <ol>
+          <li>打開 <a href="/zh/room-layout-planner/">房間配置規劃器</a>，建立房間尺寸並加入門窗。</li>
+          <li>先放床，確認床邊或床尾留有可上下床的空間。</li>
+          <li>加入衣櫃，依平開門或拉門預留前方使用距離。</li>
+          <li>加入書桌，測試椅子位置是否擋住門、床或衣櫃。</li>
+          <li>看結構警示與走道警示，再輸出你覺得最順的版本。</li>
+        </ol>
+        <p>若參考民俗格局，可留意床是否直接對門、床頭是否有牆面支撐、鏡子是否面向床等常見說法。這些內容只作為參考與空間舒適度提醒，不代表任何保證；請參考 <a href="/disclaimer/">免責聲明</a>。</p>
+      </article>
+      <div class="cta-band">
+        <div>
+          <h2>先排三大件，再補小物</h2>
+          <p>床、桌、衣櫃的位置決定房間動線，先在圖上比較幾個版本再搬動家具。</p>
+        </div>
+        <a class="button" href="/zh/room-layout-planner/">測試床桌衣櫃配置</a>
+      </div>
+      <AdSlot id="zh-bed-desk-wardrobe-mid" slot="zh-bed-desk-wardrobe-mid" />
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
