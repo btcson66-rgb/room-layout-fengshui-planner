@@ -35,6 +35,13 @@ const questions = [
   { id: 'desk-facing-door', label: '書桌是否正對門、背對門，或背後缺少穩定依靠？' },
   { id: 'clear-entry', label: '門口、床邊或主要通道是否被雜物與大型家具阻擋？' },
 ];
+const relatedArticles = [
+  { href: '/zh/blog/door-facing-window-room-layout/', title: '門對窗房間規劃' },
+  { href: '/zh/blog/beam-over-desk-bed-layout/', title: '房間有橫樑怎麼辦' },
+  { href: '/zh/blog/feng-shui-entry-bedroom-doorway/', title: '房間門口整理與風水' },
+  { href: '/zh/blog/feng-shui-bedroom-plant-placement/', title: '臥室可以放植物嗎' },
+  { href: '/zh/blog/sleep-quality-bedroom-layout/', title: '睡眠品質與房間配置' },
+];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
@@ -87,6 +94,13 @@ const questions = [
           本工具不是命理、占卜或專業室內設計服務。所有風水文字都以民俗文化、生活習慣與空間舒適度角度提供參考，不保證財運、健康、關係、工作或任何結果。請依照實際房屋條件、安全、通風、採光、逃生動線與個人需求判斷。
         </p>
         <p><a href="/disclaimer/">閱讀完整免責聲明</a></p>
+      </section>
+
+      <section class="card" aria-labelledby="related-articles-heading">
+        <h2 id="related-articles-heading">相關文章</h2>
+        <ul>
+          {relatedArticles.map((a) => <li><a href={a.href}>{a.title}</a></li>)}
+        </ul>
       </section>
 
       <RelatedLinks links={[...toolLinks, { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '臥室風水檢查清單文章' }]} />

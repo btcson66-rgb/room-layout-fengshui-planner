@@ -1,0 +1,39 @@
+{
+  "newArticleCount": 32,
+  "strategy": "AdSense 審查期間只增加有用長尾內容，不新增廣告 placeholder、不重構整站。",
+  "groups": {
+    "房型": [
+      "long-narrow-bedroom-layout",
+      "square-bedroom-layout",
+      "l-shaped-room-layout",
+      "no-window-bedroom-layout",
+      "bedroom-with-balcony-layout"
+    ],
+    "風水延伸": [
+      "door-facing-window-room-layout",
+      "beam-over-desk-bed-layout",
+      "feng-shui-entry-bedroom-doorway",
+      "feng-shui-bedroom-plant-placement"
+    ],
+    "生活情境": [
+      "pet-friendly-room-layout",
+      "home-office-bedroom-layout",
+      "makeup-table-bedroom-layout",
+      "room-layout-for-parents-baby"
+    ],
+    "租屋小房間": [
+      "first-apartment-room-layout",
+      "tiny-room-layout-under-5-ping",
+      "renter-no-drill-storage",
+      "room-layout-for-couples-renting",
+      "room-layout-for-students-dorm"
+    ],
+    "尺寸收納": [
+      "plug-outlet-room-layout",
+      "dresser-nightstand-layout",
+      "bunk-bed-small-room-layout",
+      "minimalist-bedroom-layout",
+      "seasonal-room-reset-guide"
+    ]
+  }
+}
