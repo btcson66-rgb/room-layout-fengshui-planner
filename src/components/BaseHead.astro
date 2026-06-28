@@ -14,7 +14,7 @@ const site = Astro.site ?? new URL('https://roomfeng.win');
 const url = new URL(canonical, site).toString();
 const imageUrl = ogImage ? new URL(ogImage, site).toString() : undefined;
 const gaId = import.meta.env.PUBLIC_GA_ID;
-const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID ?? 'ca-pub-7052036786750044';
+const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID ?? import.meta.env.PUBLIC_ADSENSE_CLIENT ?? 'ca-pub-7052036786750044';
 const locale = lang === 'zh' ? 'zh_TW' : 'en_US';
 const alternates = [
   { lang: 'zh', href: '/' },

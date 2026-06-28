@@ -24,4 +24,4 @@ The product direction may be informed by `fedepaj/arcada-planner`, which is MIT 
 
 ## Advertising Placeholders
 
-`AdSlot.astro` renders a clearly marked placeholder only. It does not load AdSense or any other advertising script; the real AdSense `<ins>` insertion point is marked with a comment in the component.
+`AdSlot.astro` renders clearly marked placeholder boxes and does not render live ad units. When `PUBLIC_ADSENSE_CLIENT` is set, `BaseHead.astro` loads the Google AdSense site verification script requested by Google for application review. The `ads.txt` record in `public/ads.txt` is a publisher verification file, not a code dependency.

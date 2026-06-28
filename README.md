@@ -65,9 +65,22 @@ Copy `.env.example` to `.env` if needed.
 
 ```bash
 PUBLIC_GA_ID=
+PUBLIC_ADSENSE_CLIENT=
 ```
 
 If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
+
+If `PUBLIC_ADSENSE_CLIENT` is set at build time, the shared head component injects the Google AdSense site verification script site-wide. The production AdSense value for `roomfeng.win` is:
+
+```bash
+PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044
+```
+
+The AdSense `ads.txt` verification record is published from `public/ads.txt`:
+
+```text
+google.com, pub-7052036786750044, DIRECT, f08c47fec0942fa0
+```
 
 ## Deployment
 
@@ -85,6 +98,7 @@ Change this value only if the production domain changes, because canonical URLs,
 2. Set build command to `npm run build`.
 3. Set output directory to `dist`.
 4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
+5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044` when submitting the site to Google AdSense.
 
 ### Vercel
 
@@ -92,6 +106,7 @@ Change this value only if the production domain changes, because canonical URLs,
 2. Use the Astro framework preset or set build command to `npm run build`.
 3. Set output directory to `dist`.
 4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
+5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044` when submitting the site to Google AdSense.
 
 ### GitHub Pages
 
