@@ -1,4 +1,5 @@
 ---
+const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID ?? import.meta.env.PUBLIC_ADSENSE_CLIENT ?? 'ca-pub-7052036786750044';
 ---
 
 <!doctype html>
@@ -8,6 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="refresh" content="0;url=/" />
     <link rel="canonical" href="https://roomfeng.win/" />
+    {
+      adsenseId && (
+        <script
+          is:inline
+          async
+          crossorigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+        />
+      )
+    }
     <title>前往房間格局規劃工具</title>
   </head>
   <body>
