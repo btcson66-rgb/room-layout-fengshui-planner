@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://room-layout-fengshui-planner.pages.dev/sitemap-index.xml
+Sitemap: https://roomfeng.win/sitemap-index.xml
