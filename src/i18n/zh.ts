@@ -39,6 +39,7 @@ export const zh = {
       door: '門',
       window: '窗',
       mirror: '鏡子',
+      custom: '自訂',
     },
     actions: {
       rotate: '旋轉',

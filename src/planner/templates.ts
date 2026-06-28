@@ -15,6 +15,7 @@ export const DEFAULT_SIZES: Record<FurnitureType, { w: number; h: number }> = {
   door: { w: 80, h: 12 },
   window: { w: 120, h: 10 },
   mirror: { w: 50, h: 8 },
+  custom: { w: 80, h: 60 },
 };
 
 export function makeItem(type: FurnitureType, label: string, x = 40, y = 40): FurnitureItem {

@@ -4,3 +4,5 @@ dist/
 .npm-cache/
 .env
 .env.local
+.codex-content/
+room_planner_content_pack.zip

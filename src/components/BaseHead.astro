@@ -5,10 +5,11 @@ interface Props {
   canonical: string;
   lang: 'zh' | 'en';
   ogImage?: string;
+  ogType?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const { title, description, canonical, lang, ogImage, jsonLd } = Astro.props;
+const { title, description, canonical, lang, ogImage, ogType = 'website', jsonLd } = Astro.props;
 const site = Astro.site ?? new URL('https://roomfeng.win');
 const url = new URL(canonical, site).toString();
 const imageUrl = ogImage ? new URL(ogImage, site).toString() : undefined;
@@ -26,7 +27,7 @@ const jsonItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
 <link rel="canonical" href={url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
 <meta property="og:url" content={url} />
 <meta property="og:locale" content={locale} />
 {imageUrl && <meta property="og:image" content={imageUrl} />}
@@ -51,4 +52,3 @@ gtag('config', '${gaId}');`}
     </>
   )
 }
-<script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7052036786750044" crossorigin="anonymous"></script>

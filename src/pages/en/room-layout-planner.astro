@@ -8,7 +8,7 @@ import '../../styles/planner.css';
 const title = 'Room Layout Planner | Free Furniture Floor Plan Tool';
 const description = 'Plan a room layout online with draggable furniture, room dimensions, structural checks, local draft saving, and PNG or PDF export.';
 const canonical = '/en/room-layout-planner/';
-const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -99,6 +99,7 @@ const relatedLinks = [
     confirmClear: 'Clear this design and return to the default layout?',
     itemList: 'Furniture list',
     disclaimerLink: 'Read disclaimer',
+    emptyHint: '↓ Add furniture below, or pick a template',
     units: { cm: 'cm', m: 'm', ft: 'ft' },
     furniture: {
       bed: 'Bed',
@@ -109,6 +110,13 @@ const relatedLinks = [
       door: 'Door',
       window: 'Window',
       mirror: 'Mirror',
+      custom: 'Custom',
+    },
+    customItem: {
+      label: 'Custom item',
+      namePlaceholder: 'Name (e.g. TV cabinet)',
+      addButton: 'Add custom item',
+      editNameLabel: 'Item name',
     },
     actions: {
       add: 'Add',

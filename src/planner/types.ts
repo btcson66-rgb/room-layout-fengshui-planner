@@ -8,7 +8,8 @@ export type FurnitureType =
   | 'diningTable'
   | 'door'
   | 'window'
-  | 'mirror';
+  | 'mirror'
+  | 'custom';
 
 export interface Room {
   w: number;
@@ -58,7 +59,14 @@ export interface PlannerStrings {
   confirmClear: string;
   itemList: string;
   disclaimerLink: string;
+  emptyHint?: string;
   furniture: Record<FurnitureType, string>;
+  customItem: {
+    label: string;
+    namePlaceholder: string;
+    addButton: string;
+    editNameLabel: string;
+  };
   units: Record<Unit, string>;
   actions: {
     add: string;

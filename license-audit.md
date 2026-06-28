@@ -14,6 +14,10 @@ This audit covers the direct dependencies installed for this project. Licenses w
 
 All furniture, door, window, mirror, and UI logo/icon representations in this project are self-made SVG or CSS shapes (see `src/planner/` and the shared components). No third-party icon set, font, or unclear visual asset is used. The site uses the system font stack only.
 
+## Imported Editorial Content
+
+The `roomfeng_seo_upgrade_pack` articles and structured feng shui rule data were imported as site editorial content supplied by the site owner. They are not third-party package code and are not included as a zip or temporary build artifact.
+
 ## Arcada Planner Attribution Stance
 
 The product direction may be informed by `fedepaj/arcada-planner`, which is MIT licensed. This project did not copy code, assets, icons, fonts, or text from that project; the planner was implemented independently. If any MIT code pattern is reused in the future, the reused portions must be attributed here.

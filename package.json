@@ -6,7 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "lint": "astro check",
+    "preflight": "npm run check && npm run build"
   },
   "keywords": [],
   "author": "",

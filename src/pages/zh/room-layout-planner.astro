@@ -8,7 +8,7 @@ import '../../styles/planner.css';
 const title = '房間家具配置工具｜房間平面圖與風水格局參考';
 const description = '免費線上房間家具配置工具，可拖曳床、書桌、衣櫃、沙發、門窗與鏡子，檢查尺寸、動線、門口遮擋，並提供民俗風水格局參考。';
 const canonical = '/zh/room-layout-planner/';
-const siteUrl = 'https://room-layout-fengshui-planner.pages.dev';
+const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -56,20 +56,51 @@ const relatedLinks = [
       <header>
         <h1>房間家具配置工具</h1>
         <p class="lead">
-          輸入房間長寬後，直接拖曳床、書桌、衣櫃、沙發、餐桌、門、窗與鏡子，檢查家具是否放得下、門口是否被擋住、主要走道是否太窄。中文版本另外提供民俗上常見的風水格局參考，重點放在動線、視線與空間舒適度。
+          輸入房間長寬，拖曳家具放入平面圖，確認動線與門口，再匯出 PNG / PDF 或取得規劃建議。
         </p>
+        <ol class="step-flow" aria-label="使用步驟">
+          <li class="step-flow-item" aria-current="step">
+            <span class="step-num">1</span>
+            <span class="step-label">輸入房間尺寸</span>
+          </li>
+          <li class="step-flow-item">
+            <span class="step-num">2</span>
+            <span class="step-label">拖曳放置家具</span>
+          </li>
+          <li class="step-flow-item">
+            <span class="step-num">3</span>
+            <span class="step-label">匯出 / 取得建議</span>
+          </li>
+        </ol>
       </header>
 
       <div id="room-planner" data-planner></div>
 
       <AdSlot id="planner-mid-zh" slot="room-layout-planner-zh-mid" />
 
-      <section class="cta-band">
-        <div>
-          <h2>先用尺寸排一次，再決定家具</h2>
-          <p>搬家、租屋或購買家具前，可以先把大件家具放進平面圖，確認開門、走道與床邊空間是否仍然順手。</p>
+      <section class="next-steps-panel" aria-labelledby="next-heading">
+        <h2 id="next-heading">完成平面圖後 — 下一步</h2>
+        <div class="next-steps-grid">
+          <article class="next-step-card">
+            <div class="next-step-icon" aria-hidden="true">📋</div>
+            <h3>取得文字規劃建議</h3>
+            <p>用表單填入門窗條件與家具需求，取得配置、動線、收納與風水參考的文字建議。</p>
+            <a class="button secondary" href="/zh/blog/bedroom-layout-before-buying-furniture/">閱讀買家具前規劃教學</a>
+          </article>
+          <article class="next-step-card">
+            <div class="next-step-icon" aria-hidden="true">🪄</div>
+            <h3>臥室風水格局檢查</h3>
+            <p>用 checklist 參考床對門、鏡子對床、床頭靠窗與動線的民俗說法與空間舒適度提醒。</p>
+            <a class="button secondary" href="/zh/feng-shui-bedroom-checker/">前往風水檢查工具</a>
+          </article>
+          <article class="next-step-card">
+            <div class="next-step-icon" aria-hidden="true">📐</div>
+            <h3>確認家具放得下嗎？</h3>
+            <p>不確定床、桌、衣櫃放得進去嗎？閱讀家具尺寸與走道空間的實用建議。</p>
+            <a class="button secondary" href="/zh/furniture-fit-checker/">家具尺寸適配檢查</a>
+          </article>
         </div>
-        <a class="button secondary" href="/disclaimer/">閱讀風水參考免責聲明</a>
+        <p class="disclaimer-note">風水內容僅作民俗文化與空間舒適度參考，詳見 <a href="/disclaimer/">免責聲明</a>。</p>
       </section>
 
       <Faq items={faqItems} />
@@ -77,6 +108,91 @@ const relatedLinks = [
     </div>
   </section>
 </Layout>
+
+<style>
+  /* ── Step flow indicator ── */
+  .step-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    padding: 0;
+    margin: var(--space-3) 0 0;
+  }
+
+  .step-flow-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-surface-muted, #f7f6f3);
+    border-radius: 999px;
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+  }
+
+  .step-flow-item[aria-current="step"] {
+    background: #2f6f62;
+    color: #fff;
+  }
+
+  .step-num {
+    display: grid;
+    place-items: center;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 0.85em;
+    background: rgba(0,0,0,.12);
+    flex-shrink: 0;
+  }
+
+  .step-flow-item[aria-current="step"] .step-num {
+    background: rgba(255,255,255,.25);
+  }
+
+  /* ── Next steps panel ── */
+  .next-steps-panel {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    background: var(--color-surface);
+  }
+
+  .next-steps-panel h2 {
+    margin-bottom: var(--space-4);
+  }
+
+  .next-steps-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .next-step-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .next-step-icon {
+    font-size: 1.75rem;
+  }
+
+  .disclaimer-note {
+    margin-top: var(--space-4);
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+  }
+
+  @media (min-width: 640px) {
+    .next-steps-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>
 
 <script>
   import { initPlanner } from '../../planner/planner';
@@ -99,6 +215,7 @@ const relatedLinks = [
     confirmClear: '確定要清除目前設計並回到預設格局嗎？',
     itemList: '家具清單',
     disclaimerLink: '查看免責聲明',
+    emptyHint: '↓ 下方選家具新增，或選擇範例格局',
     units: { cm: '公分', m: '公尺', ft: '英尺' },
     furniture: {
       bed: '床',
@@ -109,6 +226,13 @@ const relatedLinks = [
       door: '門',
       window: '窗',
       mirror: '鏡子',
+      custom: '自訂',
+    },
+    customItem: {
+      label: '自訂格子',
+      namePlaceholder: '名稱（如：電視櫃）',
+      addButton: '新增自訂格子',
+      editNameLabel: '格子名稱',
     },
     actions: {
       add: '新增',

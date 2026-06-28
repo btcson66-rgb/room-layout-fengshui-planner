@@ -2,10 +2,15 @@
   margin-block: var(--space-5);
 }
 
+/* Mobile: canvas always on top, then controls, then checks */
 .planner-shell {
   display: grid;
   gap: var(--space-4);
 }
+
+.planner-canvas-wrap { order: -1; }  /* ① canvas first on mobile */
+.planner-controls    { order:  0; }  /* ② controls second         */
+.planner-side        { order:  1; }  /* ③ checks last             */
 
 .planner-panel,
 .planner-canvas-wrap {
@@ -117,9 +122,37 @@
   font-size: var(--text-sm);
 }
 
+.planner-custom-form {
+  display: grid;
+  gap: var(--space-2);
+  margin-block-end: var(--space-4);
+}
+
+.planner-custom-name {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.55rem;
+  color: var(--color-text);
+  background: #fff;
+  font: inherit;
+}
+
+.planner-custom-size-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+}
+
 @media (min-width: 900px) {
   .planner-shell {
     grid-template-columns: minmax(210px, 0.75fr) minmax(420px, 1.7fr) minmax(250px, 0.9fr);
     align-items: start;
   }
+
+  /* Desktop: restore source order via explicit column placement */
+  .planner-controls    { grid-column: 1; order: 0; }
+  .planner-canvas-wrap { grid-column: 2; order: 0; }
+  .planner-side        { grid-column: 3; order: 0; }
 }

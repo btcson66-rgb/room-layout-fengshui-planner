@@ -41,6 +41,7 @@ export const en: UiStrings = {
       door: 'Door',
       window: 'Window',
       mirror: 'Mirror',
+      custom: 'Custom',
     },
     actions: {
       rotate: 'Rotate',

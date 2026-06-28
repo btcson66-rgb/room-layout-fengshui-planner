@@ -1,0 +1,39 @@
+---
+import ToolSeoPage from '../../components/ToolSeoPage.astro';
+const fields = ['房間寬度', '房間長度', '床寬', '床長', '門的位置', '窗的位置', '衣櫃位置', '書桌位置'].map((label, index) => ({ id: `f${index}`, label, type: index > 3 ? 'select' as const : 'number' as const, options: ['左側', '右側', '上方', '下方', '未決定'] }));
+---
+<ToolSeoPage
+  title="臥室配置工具｜床位、衣櫃、書桌、動線與風水參考"
+  description="快速檢查臥室床位、門窗、衣櫃、書桌與睡眠舒適度，取得動線與風水參考建議。"
+  canonical="/zh/bed-desk-wardrobe-layout/"
+  h1="臥室配置工具"
+  lead="用臥室尺寸、床、門、窗、衣櫃與書桌位置，快速整理床位建議、動線建議、睡眠舒適度提醒與風水參考。"
+  fields={fields}
+  results={[
+    { title: '床位優先', text: '先確認床頭是否有穩定背景，再看床尾是否正對門與床邊走道。' },
+    { title: '衣櫃開門距離', text: '衣櫃前要保留站立與開門空間，不要把床邊或門口完全堵住。' },
+    { title: '睡眠舒適度', text: '床避免貼近噪音源、強光窗邊與主要通道，可降低干擾。' },
+    { title: '風水參考', text: '常見說法會提醒床頭靠牆、床不正對門、鏡不正對床；請以舒適與安全為優先。' },
+  ]}
+  sections={[
+    { heading: '床、門、窗先確認', body: '臥室配置通常由床開始，但門窗會決定床能不能放得安穩。先畫出門片開啟範圍與窗戶位置，再比較床頭方向。' },
+    { heading: '書桌與衣櫃不要搶動線', body: '書桌椅子後方需要拉椅空間，衣櫃前需要開門或抽屜空間。兩者若靠近床邊，要避免互相卡住。' },
+    { heading: '風水作為格局參考', body: '民俗上的床位提醒可以轉換成視線、聲音、光線與心理安定感檢查，不應被理解為保證效果。' },
+  ]}
+  faq={[
+    { q: '床一定要靠牆嗎？', a: '不一定，但床頭靠牆通常更穩定，也較容易安排床頭燈與插座。' },
+    { q: '床對門一定不好嗎？', a: '不是絕對禁忌；本站只建議從隱私、聲音、光線與動線干擾角度評估。' },
+    { q: '小臥室放不下書桌怎麼辦？', a: '可考慮窄桌、折疊桌或靠窗側牆配置，優先保留床邊與入口動線。' },
+  ]}
+  relatedArticles={[
+    { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '臥室床位怎麼擺？' },
+    { href: '/zh/blog/bed-under-window-solutions/', title: '床頭靠窗可以嗎？' },
+    { href: '/zh/blog/bed-size-room-guide/', title: '床尺寸怎麼選？' },
+  ]}
+  relatedTools={[
+    { href: '/zh/room-layout-planner/', title: '房間規劃工具' },
+    { href: '/zh/feng-shui-bedroom-checker/', title: '臥室風水檢查工具' },
+    { href: '/zh/small-bedroom-layout/', title: '小房間配置工具' },
+  ]}
+  disclaimer
+/>

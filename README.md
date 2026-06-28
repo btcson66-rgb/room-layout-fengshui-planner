@@ -1,8 +1,8 @@
-# Room Layout Feng Shui Planner
+# RoomFeng
 
 A statically deployable room furniture layout planning website for renters, movers, and people checking furniture sizes before buying. The Chinese experience will include feng shui layout reference content written only as folk-culture and spatial-comfort reference, never as a guarantee of wealth, health, relationships, luck, or any outcome.
 
-Phase 1 contains the Astro scaffold, static configuration, shared components, trust pages, README, license, robots.txt, sitemap integration, and license audit. The planner tool and SEO landing pages are intentionally left for later phases.
+The site includes the Astro scaffold, static configuration, shared components, trust pages, the browser-only planner, SEO landing pages, blog content collection, category pages, tool pages, robots.txt, sitemap integration, and license audit.
 
 ## Tech Stack
 
@@ -51,6 +51,14 @@ npm run preview
 npm run check
 ```
 
+## Preflight
+
+```bash
+npm run preflight
+```
+
+This runs `astro check` and `astro build`.
+
 ## Environment Variables
 
 Copy `.env.example` to `.env` if needed.
@@ -63,13 +71,13 @@ If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `g
 
 ## Deployment
 
-The placeholder production site in `astro.config.mjs` is:
+The production site in `astro.config.mjs` is:
 
 ```text
-https://room-layout-fengshui-planner.pages.dev
+https://roomfeng.win
 ```
 
-Change this value before deploying to a final production domain, because canonical URLs, Open Graph URLs, and sitemap output depend on it.
+Change this value only if the production domain changes, because canonical URLs, Open Graph URLs, and sitemap output depend on it.
 
 ### Cloudflare Pages
 
@@ -95,7 +103,7 @@ Change this value before deploying to a final production domain, because canonic
 
 1. Deploy, then add the domain property in Google Search Console.
 2. Verify DNS for the domain property.
-3. Submit `sitemap.xml`.
+3. Submit `sitemap-index.xml` from the deployed domain.
 4. Check indexing status and inspect important URLs.
 5. Connect GA4 if analytics is needed.
 
@@ -106,3 +114,7 @@ The later planner tool is intended to save drafts in the user's browser `localSt
 ## Feng Shui Content Rule
 
 All feng shui references must be written as folk-culture and spatial-comfort reference only. Use wording such as "參考", "常見說法", "可考慮", and "民俗上". Never guarantee wealth, health, relationships, luck, or any outcome. Every feng shui section must link to `/disclaimer/`.
+
+## Content System
+
+Blog articles live in `src/content/blog/` and use `/zh/blog/[slug]/`. Category pages are generated at `/zh/category/[category]/`. Imported content pack archives or temporary extraction folders should stay out of production builds.

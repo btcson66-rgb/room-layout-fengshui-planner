@@ -1,0 +1,43 @@
+---
+import ToolSeoPage from '../../components/ToolSeoPage.astro';
+const fields = [
+  { id: 'mode', label: '空間模式', type: 'select' as const, options: ['small bedroom', 'rental room', 'studio'] },
+  { id: 'width', label: '房間寬度' },
+  { id: 'length', label: '房間長度' },
+  ...['需要床下收納', '需要書桌', '需要衣櫃', '需要沙發', '不能施工'].map((label, index) => ({ id: `s${index}`, label, type: 'checkbox' as const })),
+];
+---
+<ToolSeoPage
+  title="小房間配置工具｜小套房、租屋與垂直收納建議"
+  description="輸入小房間、小套房或租屋需求，取得收納、多功能家具、床下收納、垂直收納與視覺放大建議。"
+  canonical="/zh/small-bedroom-layout/"
+  h1="小房間與小套房配置工具"
+  lead="小房間配置不是把所有家具塞進去，而是先保留入口、床邊與桌椅使用空間，再用垂直收納與多功能家具補足需求。"
+  fields={fields}
+  results={[
+    { title: '先留地面動線', text: '入口到床、桌、衣櫃的路線要先保留，再決定收納櫃與小家具。' },
+    { title: '垂直收納', text: '牆面層架、高櫃與掛勾能減少地面佔用，但不要擋住窗戶採光。' },
+    { title: '多功能家具', text: '收納床、折疊桌、可移動邊桌適合租屋與小套房，但尺寸仍要先量。' },
+    { title: '視覺放大', text: '淺色、留白、低矮家具與整齊收納能降低壓迫感。' },
+  ]}
+  sections={[
+    { heading: '小房間優先順序', body: '先放床，再安排桌、衣櫃與收納。每新增一件家具，都要檢查門口、床邊與抽屜能不能正常使用。' },
+    { heading: '租屋低成本改善', body: '租屋不能裝潢時，可用活動層架、布簾、床下盒與可復原掛勾整理物品。' },
+    { heading: '小套房分區', body: '可用地毯、矮櫃、燈光或床頭方向分出睡眠、工作與用餐區，但不要阻斷主要走道。' },
+  ]}
+  faq={[
+    { q: '小房間一定要買收納床嗎？', a: '不一定。收納床有用，但要確認床邊抽屜可打開，也要避免拿取太麻煩。' },
+    { q: '小套房怎麼分區？', a: '可用家具方向、地毯、燈光與矮櫃分區，避免用大型屏風完全擋住採光。' },
+    { q: '租屋不能釘牆怎麼收納？', a: '可用落地層架、門後掛勾、床下盒與可移動推車。' },
+  ]}
+  relatedArticles={[
+    { href: '/zh/blog/small-bedroom-bed-placement/', title: '小房間怎麼佈置？' },
+    { href: '/zh/blog/studio-zoning-layout/', title: '小套房家具怎麼放？' },
+    { href: '/zh/blog/rental-room-layout-planning/', title: '租屋房間不能裝潢怎麼改？' },
+    { href: '/zh/blog/small-room-storage-zones/', title: '房間收納怎麼做？' },
+  ]}
+  relatedTools={[
+    { href: '/zh/room-layout-planner/', title: '房間規劃工具' },
+    { href: '/zh/bed-desk-wardrobe-layout/', title: '臥室配置工具' },
+  ]}
+/>

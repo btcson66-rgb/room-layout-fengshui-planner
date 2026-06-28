@@ -1,0 +1,166 @@
+---
+import Layout from './Layout.astro';
+import Faq from './Faq.astro';
+import RelatedLinks from './RelatedLinks.astro';
+import { siteUrl } from '../data/site';
+
+type Field = { id: string; label: string; type?: 'number' | 'select' | 'checkbox'; options?: string[] };
+type Result = { title: string; text: string };
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  h1: string;
+  lead: string;
+  fields: Field[];
+  results: Result[];
+  sections: { heading: string; body: string }[];
+  faq: { q: string; a: string }[];
+  relatedArticles: { href: string; title: string }[];
+  relatedTools: { href: string; title: string }[];
+  disclaimer?: boolean;
+}
+
+const props = Astro.props;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: props.h1,
+    applicationCategory: 'DesignApplication',
+    operatingSystem: 'Web browser',
+    url: `${siteUrl}${props.canonical}`,
+    description: props.description,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '工具', item: `${siteUrl}/zh/room-layout-planner/` },
+      { '@type': 'ListItem', position: 3, name: props.h1, item: `${siteUrl}${props.canonical}` },
+    ],
+  },
+];
+---
+
+<Layout title={props.title} description={props.description} canonical={props.canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>{props.h1}</h1>
+        <p class="lead">{props.lead}</p>
+        {props.disclaimer && <p>風水內容是傳統文化與室內配置參考，不保證任何財運、感情、健康或人生結果。請以實際居住舒適度、安全、採光、通風與動線為優先。完整說明請見 <a href="/disclaimer/">免責聲明</a>。</p>}
+      </header>
+
+      <section class="card tool-mvp" data-tool-mvp data-results={JSON.stringify(props.results)} aria-labelledby="tool-form-heading">
+        <h2 id="tool-form-heading">輸入條件取得建議</h2>
+        <form>
+          <div class="tool-grid">
+            {props.fields.map((field) => (
+              <label>
+                <span>{field.label}</span>
+                {field.type === 'select' ? (
+                  <select name={field.id}>
+                    {field.options?.map((option) => <option value={option}>{option}</option>)}
+                  </select>
+                ) : field.type === 'checkbox' ? (
+                  <input type="checkbox" name={field.id} />
+                ) : (
+                  <input type="number" name={field.id} min="0" step="10" placeholder="cm" />
+                )}
+              </label>
+            ))}
+          </div>
+          <button class="button" type="submit">產生配置提醒</button>
+        </form>
+        <div class="result-panel" data-tool-result>
+          <p>填入尺寸與條件後，這裡會列出動線、採光、收納與風水參考提醒。頁面下方也有可直接閱讀的規劃原則。</p>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="guide-heading">
+        <h2 id="guide-heading">規劃重點</h2>
+        {props.sections.map((section) => (
+          <article>
+            <h3>{section.heading}</h3>
+            <p>{section.body}</p>
+          </article>
+        ))}
+      </section>
+
+      <section class="card" aria-labelledby="article-heading">
+        <h2 id="article-heading">推薦文章</h2>
+        <ul>
+          {props.relatedArticles.map((link) => <li><a href={link.href}>{link.title}</a></li>)}
+        </ul>
+      </section>
+
+      <Faq items={props.faq} />
+      <RelatedLinks links={props.relatedTools} />
+    </div>
+  </section>
+</Layout>
+
+<script>
+  document.querySelectorAll('[data-tool-mvp]').forEach((tool) => {
+    const form = tool.querySelector('form');
+    const result = tool.querySelector('[data-tool-result]');
+    if (!(form instanceof HTMLFormElement) || !(result instanceof HTMLElement) || !(tool instanceof HTMLElement)) return;
+    const suggestions = JSON.parse(tool.dataset.results || '[]') as Array<{ title: string; text: string }>;
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const checked = [...new FormData(form).entries()].filter(([, value]) => value === 'on').length;
+      const picked = suggestions.slice(0, Math.max(3, Math.min(suggestions.length, checked + 3)));
+      result.innerHTML = `<ul>${picked.map((item) => `<li><strong>${item.title}</strong>：${item.text}</li>`).join('')}</ul>`;
+    });
+  });
+</script>
+
+<style>
+  .tool-mvp form {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .tool-grid {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .tool-grid label {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  input,
+  select {
+    min-height: 42px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.55rem;
+    font: inherit;
+    background: #fff;
+  }
+
+  input[type='checkbox'] {
+    width: 1.2rem;
+    min-height: 1.2rem;
+  }
+
+  .result-panel {
+    margin-top: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-muted);
+    padding: var(--space-4);
+  }
+
+  @media (min-width: 760px) {
+    .tool-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

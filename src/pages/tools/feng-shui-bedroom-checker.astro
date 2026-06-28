@@ -1,0 +1,41 @@
+---
+import ToolSeoPage from '../../components/ToolSeoPage.astro';
+const checks = ['床是否正對門', '床頭是否靠牆', '床頭是否靠窗', '鏡子是否正對床', '床是否在橫樑下', '書桌是否正對門', '門口是否堆雜物', '衣櫃是否擋住動線'].map((label, index) => ({ id: `c${index}`, label, type: 'checkbox' as const }));
+---
+<ToolSeoPage
+  title="臥室風水檢查工具｜床對門、鏡子對床、床頭靠窗參考"
+  description="用 checklist 檢查床對門、床頭靠窗、鏡子對床、橫樑、書桌與門口動線，取得傳統說法與實用改善建議。"
+  canonical="/zh/feng-shui-bedroom-checker/"
+  h1="臥室風水檢查工具"
+  lead="勾選你的臥室狀況，快速取得 score 概念、issue list、severity、traditional reason、practical reason、recommendation 與相關文章方向。"
+  fields={checks}
+  results={[
+    { title: '床對門', text: '民俗上常稱為門沖；實務上可從隱私、聲音、光線與進出干擾評估，建議移床或加緩衝。' },
+    { title: '床頭支撐', text: '床頭靠牆或有床頭板通常較穩定，也能降低背後空曠感。' },
+    { title: '鏡子對床', text: '鏡面反射可能造成夜間視覺干擾，可改側放、遮簾或收進衣櫃。' },
+    { title: '門口動線', text: '入口、床邊與衣櫃前堆物會影響安全與日常通行，優先清出路線。' },
+    { title: '分數解讀', text: '勾選越多代表需要檢查的配置越多，並不代表命運或結果，只是整理改善優先順序。' },
+  ]}
+  sections={[
+    { heading: '傳統說法與實用理由並列', body: '每個提醒都應同時看民俗說法與實際空間原因，例如睡眠干擾、採光、通風、收納、心理舒適度。' },
+    { heading: '先處理影響生活的項目', body: '如果房間很小，不必追求所有說法都做到。先處理門口堵塞、床邊太窄、鏡面反射與睡眠干擾。' },
+    { heading: '租屋可用可復原改善', body: '布簾、屏風、床頭板、矮櫃與家具角度調整，通常比施工更適合租屋族。' },
+  ]}
+  faq={[
+    { q: '檢查結果代表一定會影響運勢嗎？', a: '不代表。本站不提供保證或占卜，只整理傳統文化與空間舒適度參考。' },
+    { q: '床對門一定要搬床嗎？', a: '不一定。若無法搬床，可考慮矮櫃、屏風、地毯或布簾建立緩衝。' },
+    { q: '鏡子不能移動怎麼辦？', a: '可用布簾遮住、調整床角度，或在睡眠時降低鏡面反射範圍。' },
+  ]}
+  relatedArticles={[
+    { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '臥室床位怎麼擺？' },
+    { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床對門真的不好嗎？' },
+    { href: '/zh/blog/mirror-facing-bed-bedroom/', title: '鏡子對床怎麼辦？' },
+    { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '2026 房間風水懶人包' },
+    { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '風水檢查工具教學' },
+  ]}
+  relatedTools={[
+    { href: '/zh/bed-desk-wardrobe-layout/', title: '臥室配置工具' },
+    { href: '/zh/room-layout-planner/', title: '房間規劃工具' },
+  ]}
+  disclaimer
+/>

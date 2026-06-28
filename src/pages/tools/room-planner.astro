@@ -1,0 +1,54 @@
+---
+import ToolSeoPage from '../../components/ToolSeoPage.astro';
+
+const fields = [
+  { id: 'width', label: 'room width 房間寬度' },
+  { id: 'length', label: 'room length 房間長度' },
+  { id: 'door', label: 'door position 門的位置', type: 'select' as const, options: ['左側', '右側', '上方', '下方'] },
+  { id: 'window', label: 'window position 窗的位置', type: 'select' as const, options: ['左側', '右側', '上方', '下方', '無窗'] },
+  { id: 'roomType', label: 'room type 房型', type: 'select' as const, options: ['bedroom', 'small bedroom', 'studio', 'study room', 'living room'] },
+  ...['bed', 'desk', 'wardrobe', 'sofa', 'TV cabinet', 'bookshelf', 'storage cabinet'].map((label) => ({ id: label, label, type: 'checkbox' as const })),
+];
+const results = [
+  { title: '先畫固定條件', text: '房間長寬、門片開啟方向與窗戶位置會決定家具可放區域，建議先確認這三項。' },
+  { title: '保留主要動線', text: '床邊、門口與衣櫃前最好保留約 60 公分以上通行空間，避免日常使用卡住。' },
+  { title: '採光不要被高櫃擋住', text: '衣櫃、書架與收納櫃盡量靠實牆，不要直接遮住窗面。' },
+  { title: '收納分區', text: '常用物放入口與桌邊，季節物放床下或高處，避免雜物堆在門口。' },
+  { title: '風水參考', text: '民俗上常提醒床不正對門、鏡不正對床、床頭有穩定背景；這些只作為配置與舒適度參考。' },
+];
+---
+
+<ToolSeoPage
+  title="免費房間規劃工具｜尺寸、家具配置、動線與風水參考"
+  description="輸入房間尺寸、門窗位置與家具需求，取得房間配置、動線、採光、收納與風水參考提醒。"
+  canonical="/zh/room-layout-planner/"
+  h1="免費房間規劃工具"
+  lead="這個表單式工具適合搬家、租屋與買家具前快速檢查房間配置。若需要拖拉平面圖，可使用完整的中文房間平面規劃器。"
+  fields={fields}
+  results={results}
+  sections={[
+    { heading: '房間規劃怎麼做', body: '先量房間長寬、門寬、窗戶位置與主要插座，再決定床、桌、衣櫃等大件家具。先處理不可移動的條件，再比較家具擺法。' },
+    { heading: '為什麼要先看門窗', body: '門會影響進出與開門範圍，窗會影響採光、通風與高櫃位置。忽略門窗時，家具很容易放得下卻不好用。' },
+    { heading: '家具配置順序', body: '通常先放床或沙發等最大家具，再放衣櫃、書桌、收納櫃，最後檢查走道、抽屜、椅子後方與門片開啟空間。' },
+    { heading: '小房間規劃提醒', body: '小房間優先保留地面動線，使用床下、牆面與垂直收納，避免入口與窗邊被大型家具塞滿。' },
+    { heading: '房間風水參考', body: '風水內容請當作傳統文化與空間舒適度參考，例如床不正對門、鏡子不正對床、床頭有穩定背景，不保證任何結果。' },
+  ]}
+  faq={[
+    { q: '這個工具和拖拉式規劃器有什麼不同？', a: '此頁適合快速取得文字建議；拖拉式規劃器可實際畫平面圖、放家具、匯出 PNG/PDF。' },
+    { q: '需要註冊嗎？', a: '不需要。本站工具以瀏覽器端運算為主，不需要資料庫或帳號。' },
+    { q: '風水提醒可以當成保證嗎？', a: '不可以。風水提醒只是民俗文化與空間舒適度參考。' },
+  ]}
+  relatedArticles={[
+    { href: '/zh/blog/bedroom-layout-before-buying-furniture/', title: '房間規劃怎麼做？' },
+    { href: '/zh/blog/room-circulation-width-guide/', title: '房間動線怎麼抓？' },
+    { href: '/zh/blog/door-window-room-layout/', title: '門窗位置怎麼影響房間佈局？' },
+    { href: '/zh/blog/bedroom-layout-before-buying-furniture/', title: '房間規劃工具新手教學' },
+  ]}
+  relatedTools={[
+    { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },
+    { href: '/zh/feng-shui-bedroom-checker/', title: '臥室風水檢查工具' },
+    { href: '/zh/small-bedroom-layout/', title: '小房間配置工具' },
+    { href: '/zh/desk-placement-feng-shui/', title: '書桌擺放工具' },
+  ]}
+  disclaimer
+/>

@@ -10,10 +10,11 @@ interface Props {
   canonical: string;
   lang: 'zh' | 'en';
   ogImage?: string;
+  ogType?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const { title, description, canonical, lang, ogImage, jsonLd } = Astro.props;
+const { title, description, canonical, lang, ogImage, ogType, jsonLd } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const { title, description, canonical, lang, ogImage, jsonLd } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} jsonLd={jsonLd} />
+    <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} jsonLd={jsonLd} />
   </head>
   <body>
     <Header />

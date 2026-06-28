@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../components/Layout.astro';
+import RelatedLinks from '../../../components/RelatedLinks.astro';
+import { categoryMeta, categorySlugs, formatDate, siteUrl, toolLinks } from '../../../data/site';
+
+export function getStaticPaths() {
+  return categorySlugs.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+const meta = categoryMeta[category ?? ''];
+const posts = (await getCollection('blog'))
+  .filter((post) => post.data.category === category)
+  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+const title = `${meta.title}｜RoomFeng`;
+const description = meta.description;
+const canonical = `/zh/category/${category}/`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description,
+    url: `${siteUrl}${canonical}`,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}/zh/blog/` },
+      { '@type': 'ListItem', position: 3, name: meta.title, item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <p class="meta"><a href="/zh/blog/">文章</a> / {meta.title}</p>
+        <h1>{meta.title}</h1>
+        <p class="lead">{meta.intro}</p>
+        {category === 'feng-shui' && (
+          <p>
+            風水相關內容僅作民俗文化與空間舒適度參考，不保證任何結果。實際房間配置請以安全、通風、採光、動線與個人需求為主，詳見 <a href="/disclaimer/">免責聲明</a>。
+          </p>
+        )}
+      </header>
+
+      <section class="card" aria-labelledby="category-posts">
+        <h2 id="category-posts">分類文章</h2>
+        <div class="post-list">
+          {posts.map((post) => (
+            <article>
+              <p class="meta">{formatDate(post.data.updated)}</p>
+              <h3><a href={`/zh/blog/${post.id}/`}>{post.data.title}</a></h3>
+              <p>{post.data.description}</p>
+              <p class="tag-list">{post.data.tags.map((tag) => <span>{tag}</span>)}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <RelatedLinks links={[...toolLinks, { href: '/zh/blog/', title: '全部房間規劃文章' }]} />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .post-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .post-list article {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  .meta {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .tag-list span {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.05rem 0.45rem;
+    font-size: var(--text-xs);
+  }
+</style>

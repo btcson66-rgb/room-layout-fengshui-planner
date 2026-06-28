@@ -1,0 +1,37 @@
+---
+import ToolSeoPage from '../../components/ToolSeoPage.astro';
+const fields = ['門的位置', '窗的位置', '插座位置', '自然光方向', '椅子後方空間是否足夠', '書桌是否正對門', '螢幕是否反光'].map((label, index) => ({ id: `d${index}`, label, type: index < 4 ? 'select' as const : 'checkbox' as const, options: ['左側', '右側', '前方', '後方', '未決定'] }));
+---
+<ToolSeoPage
+  title="書桌擺放工具｜採光、插座、動線與書桌風水參考"
+  description="檢查書桌與門、窗、插座、自然光、椅子後方空間的關係，取得工作效率、採光反光與風水參考建議。"
+  canonical="/zh/desk-placement-feng-shui/"
+  h1="書桌擺放工具"
+  lead="書桌位置會影響採光、螢幕反光、插座使用、椅子後方動線與專注感。此工具用簡單條件整理擺放提醒。"
+  fields={fields}
+  results={[
+    { title: '自然光方向', text: '桌面有自然光很好，但螢幕不宜直接反光，必要時調整角度或使用窗簾。' },
+    { title: '插座與線路', text: '桌子靠近插座可減少延長線跨越走道，降低絆倒風險。' },
+    { title: '椅子後方', text: '椅子後方要能拉開與通行，避免背後就是門口主要路線。' },
+    { title: '書桌風水參考', text: '常見說法建議能看見門但不要正沖門，背後可有牆或櫃體作為穩定背景。' },
+  ]}
+  sections={[
+    { heading: '工作效率建議', body: '把常用物放在伸手可及的位置，減少桌面雜物，並讓椅子能完整拉出。' },
+    { heading: '採光與反光', body: '窗在側邊通常比正前方或正後方更好控制反光。若光線太強，可用窗簾或調整螢幕角度。' },
+    { heading: '書桌風水參考', body: '民俗上常提醒書桌背後有穩定背景、可看見門但不正沖門。這些可轉換成安全感與干擾管理來理解。' },
+  ]}
+  faq={[
+    { q: '書桌一定要面向門嗎？', a: '不一定。能掌握入口即可，不需要正對門；正對門反而可能被進出干擾。' },
+    { q: '窗前可以放書桌嗎？', a: '可以，但要注意螢幕反光、午後西曬、窗簾與插座位置。' },
+    { q: '小房間書桌太擠怎麼辦？', a: '可用窄桌、壁掛層板或折疊桌，但要保留椅子後方空間。' },
+  ]}
+  relatedArticles={[
+    { href: '/zh/blog/desk-facing-door-layout/', title: '書桌要怎麼擺？' },
+    { href: '/zh/blog/student-room-layout-guide/', title: '學生房間怎麼規劃？' },
+  ]}
+  relatedTools={[
+    { href: '/zh/room-layout-planner/', title: '房間規劃工具' },
+    { href: '/zh/bed-desk-wardrobe-layout/', title: '臥室配置工具' },
+  ]}
+  disclaimer
+/>

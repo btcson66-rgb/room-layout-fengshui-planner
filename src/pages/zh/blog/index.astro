@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../components/Layout.astro';
+import RelatedLinks from '../../../components/RelatedLinks.astro';
+import { categoryMeta, formatDate, siteUrl, toolLinks } from '../../../data/site';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+const title = '房間規劃文章｜RoomFeng';
+const description = 'RoomFeng 房間規劃文章整理小房間佈局、家具尺寸、搬家檢查、臥室風水民俗參考與動線規劃教學。';
+const canonical = '/zh/blog/';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>房間規劃文章</h1>
+        <p class="lead">
+          這裡整理 RoomFeng 的房間配置、家具尺寸、小房間收納、搬家前檢查與臥室風水民俗參考文章。內容以一般租屋族、搬家族與買家具前需要確認尺寸的人為主，重點放在可執行的測量、動線與空間舒適度。
+        </p>
+        <p>
+          風水相關文章僅作民俗文化與空間安排參考，會同時說明實用的採光、通風、視線、走道與睡眠干擾原因，不保證任何財運、健康、感情或運勢結果。
+        </p>
+      </header>
+
+      <section class="card" aria-labelledby="category-heading">
+        <h2 id="category-heading">文章分類</h2>
+        <div class="link-grid">
+          {Object.entries(categoryMeta).map(([slug, meta]) => (
+            <a href={`/zh/category/${slug}/`}>
+              <strong>{meta.title}</strong>
+              <span>{meta.description}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="posts-heading">
+        <h2 id="posts-heading">最新文章</h2>
+        <div class="post-list">
+          {posts.map((post) => (
+            <article>
+              <p class="meta">
+                {formatDate(post.data.updated)} / <a href={`/zh/category/${post.data.category}/`}>{categoryMeta[post.data.category]?.title ?? post.data.category}</a>
+              </p>
+              <h3><a href={`/zh/blog/${post.id}/`}>{post.data.title}</a></h3>
+              <p>{post.data.description}</p>
+              <p class="tag-list">{post.data.tags.map((tag) => <span>{tag}</span>)}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <RelatedLinks links={[...toolLinks, { href: '/disclaimer/', title: '風水民俗參考免責聲明' }]} />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .link-grid,
+  .post-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .link-grid a,
+  .post-list article {
+    display: grid;
+    gap: var(--space-2);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  .link-grid a {
+    text-decoration: none;
+  }
+
+  .link-grid span,
+  .meta {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .tag-list span {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.05rem 0.45rem;
+    font-size: var(--text-xs);
+  }
+
+  @media (min-width: 760px) {
+    .link-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

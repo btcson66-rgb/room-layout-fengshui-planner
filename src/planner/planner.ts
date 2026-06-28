@@ -101,6 +101,7 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
       wardrobe: '#e8e0cf',
       sofa: '#dce7ee',
       diningTable: '#efe5c8',
+      custom: '#e8e5e0',
     };
     group.append(svgEl('rect', { x: item.x, y: item.y, width: item.w, height: item.h, rx: 4, fill: fillByType[item.type], stroke: '#646158', 'stroke-width': 2 }));
     if (item.type === 'bed') {
@@ -118,6 +119,21 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
   }
 
   parent.append(group);
+}
+
+function renderEmptyHint(svg: SVGSVGElement, room: Design['room'], message: string): void {
+  const cx = room.w / 2 + PAD;
+  const cy = room.h / 2 + PAD;
+  const hint = svgEl('text', {
+    x: cx, y: cy,
+    'text-anchor': 'middle',
+    'dominant-baseline': 'middle',
+    'font-size': 14,
+    fill: '#a09e98',
+    'pointer-events': 'none',
+  });
+  hint.textContent = message;
+  svg.append(hint);
 }
 
 function renderGrid(svg: SVGSVGElement, room: Design['room']): void {
@@ -296,6 +312,9 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   const rerender = (): void => {
     renderSvg(svg, state, strings);
+    if (state.design.items.length === 0) {
+      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? '← 左側新增家具，或選擇範例格局');
+    }
     areaLine.textContent = `${strings.area}: ${formatArea(state.design.room.w, state.design.room.h, state.design.room.unit)}`;
     renderSelection();
     renderWarnings(structural, strings.checksTitle, runStructuralChecks(state.design, strings), strings.noWarnings);
@@ -353,6 +372,41 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       palette.append(button);
     });
 
+    const customTitle = document.createElement('h3');
+    customTitle.textContent = strings.customItem.label;
+    const customForm = document.createElement('div');
+    customForm.className = 'planner-custom-form';
+    const customNameInput = document.createElement('input');
+    customNameInput.type = 'text';
+    customNameInput.placeholder = strings.customItem.namePlaceholder;
+    customNameInput.className = 'planner-custom-name';
+    const customWInput = createNumberInput(80, 1);
+    const customHInput = createNumberInput(60, 1);
+    const customAddBtn = document.createElement('button');
+    customAddBtn.type = 'button';
+    customAddBtn.className = 'button secondary planner-small-button';
+    customAddBtn.textContent = strings.customItem.addButton;
+    customAddBtn.addEventListener('click', () => {
+      const name = customNameInput.value.trim() || strings.customItem.namePlaceholder;
+      const w = Math.max(20, toCm(Number(customWInput.value) || 80, state.design.room.unit));
+      const h = Math.max(20, toCm(Number(customHInput.value) || 60, state.design.room.unit));
+      const item = makeItem('custom', name, 40, 40);
+      item.w = w;
+      item.h = h;
+      item.label = name;
+      state.design.items.push(item);
+      state.selectedId = item.id;
+      customNameInput.value = '';
+      rerender();
+    });
+    const customSizeRow = document.createElement('div');
+    customSizeRow.className = 'planner-custom-size-row';
+    customSizeRow.append(
+      createLabeledInput(strings.width, customWInput),
+      createLabeledInput(strings.height, customHInput),
+    );
+    customForm.append(customNameInput, customSizeRow, customAddBtn);
+
     const templateTitle = document.createElement('h3');
     templateTitle.textContent = strings.templatesLabel;
     const templates = document.createElement('div');
@@ -406,7 +460,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     status.className = 'planner-save-status planner-muted';
     actions.append(saveButton, pngButton, pdfButton, clearButton, status);
 
-    controls.append(roomGrid, paletteTitle, palette, templateTitle, templates, actions);
+    controls.append(roomGrid, paletteTitle, palette, customTitle, customForm, templateTitle, templates, actions);
   };
 
   function renderSelection(): void {
@@ -421,6 +475,22 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       empty.textContent = strings.noSelection;
       selectionPanel.append(empty);
       return;
+    }
+
+    if (item.type === 'custom') {
+      const nameLabel = document.createElement('label');
+      nameLabel.className = 'planner-field';
+      const nameSpan = document.createElement('span');
+      nameSpan.textContent = strings.customItem.editNameLabel;
+      const nameInput = document.createElement('input');
+      nameInput.type = 'text';
+      nameInput.value = item.label ?? '';
+      nameInput.addEventListener('input', () => {
+        item.label = nameInput.value || strings.furniture.custom;
+        rerender();
+      });
+      nameLabel.append(nameSpan, nameInput);
+      selectionPanel.append(nameLabel);
     }
 
     const grid = document.createElement('div');
@@ -482,6 +552,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       rerender();
       return;
     }
+    event.preventDefault();
     const id = group.dataset.id;
     const item = state.design.items.find((candidate) => candidate.id === id);
     if (!item) return;
@@ -494,13 +565,14 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   svg.addEventListener('pointermove', (event) => {
     if (!state.dragging) return;
+    event.preventDefault();
     const item = state.design.items.find((candidate) => candidate.id === state.dragging?.id);
     if (!item) return;
     const point = localPoint(svg, event);
     item.x = Math.round(point.x - state.dragging.offsetX);
     item.y = Math.round(point.y - state.dragging.offsetY);
     rerender();
-  });
+  }, { passive: false });
 
   svg.addEventListener('pointerup', (event) => {
     state.dragging = null;

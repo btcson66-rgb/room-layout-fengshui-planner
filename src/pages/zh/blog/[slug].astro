@@ -1,0 +1,140 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../components/Layout.astro';
+import RelatedLinks from '../../../components/RelatedLinks.astro';
+import { categoryMeta, formatDate, siteUrl } from '../../../data/site';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const canonical = `/zh/blog/${post.id}/`;
+const category = categoryMeta[post.data.category];
+const toolTitle = (href: string) => {
+  const map: Record<string, string> = {
+    '/zh/room-layout-planner/': '房間家具配置工具',
+    '/zh/furniture-fit-checker/': '家具尺寸檢查',
+    '/zh/small-bedroom-layout/': '小房間佈局規劃',
+    '/zh/studio-apartment-layout/': '小套房配置',
+    '/zh/bed-desk-wardrobe-layout/': '床桌衣櫃配置',
+    '/zh/rental-room-layout/': '租屋房間配置',
+    '/zh/moving-furniture-size-check/': '搬家家具尺寸檢查',
+    '/zh/feng-shui-bedroom-checker/': '臥室風水格局檢查',
+  };
+  return map[href] ?? href;
+};
+const relatedLinks = [
+  ...post.data.relatedTools.map((href: string) => ({ href, title: toolTitle(href) })),
+  ...post.data.relatedPosts.map((slug: string) => ({ href: `/zh/blog/${slug}/`, title: slug })),
+  { href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category },
+];
+const body = post.body ?? '';
+const faqSection = body.match(/##\s*(常見問題|FAQ)([\s\S]*)/);
+const faqMatches = faqSection
+  ? [...faqSection[2].matchAll(/###\s+(.+?)\n\n([\s\S]*?)(?=\n###|\n## |$)/g)]
+      .filter((match) => match[1] && match[2])
+      .slice(0, 6)
+      .map((match) => ({
+        q: match[1].trim(),
+        a: match[2].replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[#*_`>-]/g, '').trim(),
+      }))
+  : [];
+const jsonLd: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.data.title,
+    description: post.data.description,
+    datePublished: post.data.date.toISOString(),
+    dateModified: post.data.updated.toISOString(),
+    inLanguage: 'zh-TW',
+    mainEntityOfPage: `${siteUrl}${canonical}`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}/zh/blog/` },
+      { '@type': 'ListItem', position: 3, name: category?.title ?? post.data.category, item: `${siteUrl}/zh/category/${post.data.category}/` },
+      { '@type': 'ListItem', position: 4, name: post.data.title, item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+if (faqMatches.length > 0) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqMatches.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  });
+}
+---
+
+<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd}>
+  <article class="section">
+    <div class="container page-grid">
+      <header class="card article-meta">
+        <p><a href="/zh/blog/">文章</a> / <a href={`/zh/category/${post.data.category}/`}>{category?.title ?? post.data.category}</a></p>
+        <p class="lead">{post.data.description}</p>
+        <p>更新時間：<time datetime={post.data.updated.toISOString()}>{formatDate(post.data.updated)}</time></p>
+        <p class="tag-list">{post.data.tags.map((tag: string) => <span>{tag}</span>)}</p>
+        {post.data.category === 'feng-shui' && (
+          <p class="disclaimer-note">
+            本文風水內容僅作民俗文化與空間舒適度參考，沒有任何結果保證。請以實際居住安全、動線、採光與個人需求為準，並閱讀 <a href="/disclaimer/">免責聲明</a>。
+          </p>
+        )}
+      </header>
+
+      <div class="card article-body">
+        <Content />
+      </div>
+
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .article-meta p {
+    margin-bottom: var(--space-3);
+  }
+
+  .article-body :global(h1) {
+    margin-top: 0;
+  }
+
+  .article-body :global(h2),
+  .article-body :global(h3) {
+    margin-top: var(--space-6);
+  }
+
+  .article-body :global(li) {
+    margin-bottom: var(--space-2);
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .tag-list span {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.05rem 0.45rem;
+    font-size: var(--text-xs);
+  }
+
+  .disclaimer-note {
+    border-left: 4px solid var(--color-accent);
+    padding-left: var(--space-3);
+    color: var(--color-muted);
+  }
+</style>

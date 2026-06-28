@@ -1,0 +1,168 @@
+---
+import Layout from '../../components/Layout.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { fengShuiRules } from '../../data/fengShuiRules';
+import { siteUrl, toolLinks } from '../../data/site';
+
+const title = '臥室風水格局檢查｜RoomFeng';
+const description = '用 RoomFeng 的臥室風水格局檢查清單，從床對門、鏡子對床、床頭靠牆、書桌位置與入口動線做民俗文化與空間舒適度參考。';
+const canonical = '/zh/feng-shui-bedroom-checker/';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 2, name: '臥室風水格局檢查', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const questions = [
+  { id: 'bed-facing-door', label: '床是否正對門或床尾直接朝門？' },
+  { id: 'mirror-facing-bed', label: '鏡子是否正對床，睡覺時容易看到反射？' },
+  { id: 'headboard-wall', label: '床頭是否沒有靠實牆或穩定床頭板？' },
+  { id: 'bed-under-window', label: '床頭是否直接靠窗？' },
+  { id: 'desk-facing-door', label: '書桌是否正對門、背對門，或背後缺少穩定依靠？' },
+  { id: 'clear-entry', label: '門口、床邊或主要通道是否被雜物與大型家具阻擋？' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>臥室風水格局檢查</h1>
+        <p class="lead">
+          這個清單把常見臥室風水說法轉成可檢查的空間問題，例如床對門、鏡子對床、床頭靠牆、書桌位置與入口動線。結果僅作民俗文化與空間舒適度參考，不代表任何保證。
+        </p>
+        <p>
+          建議先用 <a href="/zh/room-layout-planner/">房間家具配置工具</a> 畫出房間、門窗與家具，再用本頁檢查需要調整的項目。若無法更動大型家具，可優先考慮布簾、屏風、矮櫃、收納與照明等可復原做法。
+        </p>
+      </header>
+
+      <section class="card checker-card" aria-labelledby="checker-heading">
+        <h2 id="checker-heading">勾選你房間目前的狀況</h2>
+        <form class="checker-form" data-feng-checker>
+          {questions.map((question) => (
+            <label>
+              <input type="checkbox" name="issue" value={question.id} />
+              <span>{question.label}</span>
+            </label>
+          ))}
+        </form>
+        <div class="checker-result" data-feng-result aria-live="polite">
+          <p>尚未勾選項目。你可以先從床、門、鏡子、書桌與入口動線開始檢查。</p>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="rules-heading">
+        <h2 id="rules-heading">常見檢查項目</h2>
+        <div class="rule-list">
+          {fengShuiRules.map((rule) => (
+            <article>
+              <p class="severity">{rule.severity === 'high' ? '較需注意' : rule.severity === 'medium' ? '可優先檢查' : '可作參考'}</p>
+              <h3>{rule.title}</h3>
+              <p><strong>民俗常見說法：</strong>{rule.traditionalReason}</p>
+              <p><strong>空間舒適度：</strong>{rule.practicalReason}</p>
+              <p><strong>可考慮：</strong>{rule.recommendation}</p>
+              <a href={`/zh/blog/${rule.relatedArticleSlug}/`}>閱讀延伸文章</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>使用限制與提醒</h2>
+        <p>
+          本工具不是命理、占卜或專業室內設計服務。所有風水文字都以民俗文化、生活習慣與空間舒適度角度提供參考，不保證財運、健康、關係、工作或任何結果。請依照實際房屋條件、安全、通風、採光、逃生動線與個人需求判斷。
+        </p>
+        <p><a href="/disclaimer/">閱讀完整免責聲明</a></p>
+      </section>
+
+      <RelatedLinks links={[...toolLinks, { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '臥室風水檢查清單文章' }]} />
+    </div>
+  </section>
+
+  <script is:inline define:vars={{ rules: fengShuiRules }}>
+    const form = document.querySelector('[data-feng-checker]');
+    const result = document.querySelector('[data-feng-result]');
+    const byId = new Map(rules.map((rule) => [rule.id, rule]));
+
+    function renderResult() {
+      const checked = Array.from(form.querySelectorAll('input:checked')).map((input) => input.value);
+      if (checked.length === 0) {
+        result.innerHTML = '<p>尚未勾選項目。你可以先從床、門、鏡子、書桌與入口動線開始檢查。</p>';
+        return;
+      }
+
+      const items = checked
+        .map((id) => byId.get(id))
+        .filter(Boolean)
+        .map(
+          (rule) => `
+            <article>
+              <h3>${rule.title}</h3>
+              <p><strong>民俗參考：</strong>${rule.traditionalReason}</p>
+              <p><strong>實用原因：</strong>${rule.practicalReason}</p>
+              <p><strong>可考慮調整：</strong>${rule.recommendation}</p>
+              <a ${'href'}="/zh/blog/${rule.relatedArticleSlug}/">查看延伸說明</a>
+            </article>
+          `,
+        )
+        .join('');
+
+      result.innerHTML = `<p>以下結果僅作民俗文化與空間舒適度參考，沒有任何結果保證。詳見 <a href="/disclaimer/">免責聲明</a>。</p>${items}`;
+    }
+
+    form.addEventListener('change', renderResult);
+  </script>
+</Layout>
+
+<style>
+  .checker-form {
+    display: grid;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+  }
+
+  .checker-form label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-3);
+  }
+
+  .checker-form input {
+    margin-top: 0.25rem;
+  }
+
+  .checker-result,
+  .rule-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .checker-result article,
+  .rule-list article {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  .severity {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-2);
+  }
+</style>
