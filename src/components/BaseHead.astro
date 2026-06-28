@@ -14,9 +14,10 @@ const site = Astro.site ?? new URL('https://roomfeng.win');
 const url = new URL(canonical, site).toString();
 const imageUrl = ogImage ? new URL(ogImage, site).toString() : undefined;
 const gaId = import.meta.env.PUBLIC_GA_ID;
+const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID ?? 'ca-pub-7052036786750044';
 const locale = lang === 'zh' ? 'zh_TW' : 'en_US';
 const alternates = [
-  { lang: 'zh', href: '/zh/' },
+  { lang: 'zh', href: '/' },
   { lang: 'en', href: '/en/' },
 ];
 const jsonItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
@@ -36,7 +37,7 @@ const jsonItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
 <meta name="twitter:description" content={description} />
 {imageUrl && <meta name="twitter:image" content={imageUrl} />}
 {alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, site).toString()} />)}
-<link rel="alternate" hreflang="x-default" href={new URL('/zh/', site).toString()} />
+<link rel="alternate" hreflang="x-default" href={new URL('/', site).toString()} />
 {jsonItems.map((item) => <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />)}
 {
   gaId && (
@@ -52,3 +53,6 @@ gtag('config', '${gaId}');`}
     </>
   )
 }
+{adsenseId && (
+  <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`} crossorigin="anonymous" />
+)}
