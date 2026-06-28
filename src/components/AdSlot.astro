@@ -5,12 +5,12 @@ interface Props {
   adSlot?: string;
 }
 
-const { id, slot, adSlot } = Astro.props;
+const { id, adSlot } = Astro.props;
 const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID;
 const adUnitSlot = adSlot ?? import.meta.env.PUBLIC_ADSENSE_SLOT;
 ---
 
-{adsenseId ? (
+{adsenseId && (
   <aside class="ad-slot" id={id} aria-label="Advertisement">
     <ins
       class="adsbygoogle"
@@ -21,9 +21,5 @@ const adUnitSlot = adSlot ?? import.meta.env.PUBLIC_ADSENSE_SLOT;
       data-full-width-responsive="true"
     ></ins>
     <script is:inline>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </aside>
-) : (
-  <aside class="ad-slot" id={id} aria-label={slot}>
-    <span>廣告位 / Ad placeholder<br />{slot}</span>
   </aside>
 )}

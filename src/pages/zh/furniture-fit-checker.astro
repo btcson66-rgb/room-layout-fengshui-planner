@@ -15,14 +15,14 @@ const jsonLd = [
     headline: '家具尺寸適配檢查',
     description,
     inLanguage: 'zh-TW',
-    author: { '@type': 'Organization', name: 'Room Layout Feng Shui Planner' },
+    author: { '@type': 'Organization', name: 'RoomFeng' },
     mainEntityOfPage: `${siteUrl}${canonical}`,
   },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/zh/` },
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
       { '@type': 'ListItem', position: 2, name: '家具尺寸適配檢查', item: `${siteUrl}${canonical}` },
     ],
   },
@@ -38,6 +38,11 @@ const relatedLinks = [
   { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查' },
   { href: '/zh/small-bedroom-layout/', title: '小房間家具配置' },
   { href: '/zh/rental-room-layout/', title: '租屋房間配置' },
+];
+const relatedArticles = [
+  { href: '/zh/blog/furniture-measurement-checklist/', title: '家具尺寸測量清單' },
+  { href: '/zh/blog/bed-size-room-guide/', title: '床的尺寸與房間搭配' },
+  { href: '/zh/blog/moving-furniture-checklist/', title: '搬家家具檢查清單' },
 ];
 ---
 
@@ -71,6 +76,12 @@ const relatedLinks = [
         <a class="button" href="/zh/room-layout-planner/">開始檢查尺寸</a>
       </div>
       <AdSlot id="zh-fit-mid" slot="zh-furniture-fit-mid" />
+      <section class="card" aria-labelledby="related-articles-heading">
+        <h2 id="related-articles-heading">相關文章</h2>
+        <ul>
+          {relatedArticles.map((a) => <li><a href={a.href}>{a.title}</a></li>)}
+        </ul>
+      </section>
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

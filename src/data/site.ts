@@ -1,7 +1,7 @@
 export const siteUrl = 'https://roomfeng.win';
 export const siteName = 'RoomFeng';
 export const zhBrandName = 'RoomFeng 房間規劃與風水佈局工具';
-export const enBrandName = 'RoomFeng Room Layout Planner';
+export const enBrandName = 'RoomFeng';
 
 export const toolLinks = [
   { href: '/zh/room-layout-planner/', title: '房間家具配置工具' },

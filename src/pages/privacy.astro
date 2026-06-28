@@ -3,7 +3,7 @@ import Layout from '../components/Layout.astro';
 import Faq from '../components/Faq.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
 
-const title = '隱私權政策｜Room Layout Feng Shui Planner';
+const title = '隱私權政策｜RoomFeng';
 const description = '說明本網站的 localStorage 草稿儲存、GA4、Cookie、AdSense 與聯絡資料處理方式。';
 const faq = [
   { q: '房間格局資料會傳到伺服器嗎？', a: '預設不會。後續規劃工具的草稿會存在使用者自己的瀏覽器 localStorage，不上傳到本網站伺服器。' },
@@ -24,7 +24,7 @@ const jsonLd = {
     <div class="container page-grid">
       <article class="card">
         <h1>隱私權政策</h1>
-        <p class="lead">本政策說明 Room Layout Feng Shui Planner 如何處理網站使用資料、瀏覽器本機儲存、分析服務與廣告相關資訊。</p>
+        <p class="lead">本政策說明 RoomFeng 如何處理網站使用資料、瀏覽器本機儲存、分析服務與廣告相關資訊。</p>
         <p>本網站的核心原則是：房間格局規劃應盡量在使用者自己的裝置中完成。Phase 1 尚未上線規劃工具；後續工具依規格會把房間長寬、家具位置、尺寸、旋轉角度與草稿內容預設儲存在使用者瀏覽器的 localStorage。這些草稿資料不會因為儲存而上傳到本網站伺服器，也不需要使用者建立帳號。localStorage 是瀏覽器提供的本機儲存空間，同一台裝置與同一個瀏覽器通常可以再次讀取，但清除瀏覽資料、更換瀏覽器、使用無痕模式或重置裝置時，草稿可能消失。</p>
         <p>網站本身採靜態部署，不使用資料庫，也不提供後端 API 來接收房間資料。若使用者主動透過聯絡頁提供意見、問題或電子郵件地址，該內容只會用於回覆與改善網站，不會要求提供敏感身分資料。請不要在聯絡訊息中提供身份證號、付款資訊、私人地址完整細節或其他不必要的敏感資料。</p>
         <p>本網站支援環境變數 PUBLIC_GA_ID。只有在部署者於建置時設定此值，頁面才會注入 Google Analytics 4 gtag；如果此值為空，網站不會載入 GA4。GA4 可能透過 Cookie 或類似技術收集彙整性的瀏覽統計，例如頁面瀏覽、流量來源、裝置類型與大略地區。這些資料用於理解內容是否有幫助與改善網站結構，不用於取得房間草稿內容。</p>
