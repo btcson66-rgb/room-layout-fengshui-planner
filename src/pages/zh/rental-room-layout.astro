@@ -7,6 +7,7 @@ import RelatedLinks from '../../components/RelatedLinks.astro';
 const title = '租屋房間配置｜不施工也能規劃床、桌、收納與動線';
 const description = '租屋族房間配置建議，聚焦不能改牆、不能大施工、家具可復原的情況，先用規劃器確認既有家具與新家具是否合適。';
 const canonical = '/zh/rental-room-layout/';
+const alternates = { zh: '/zh/rental-room-layout/', en: '/en/apartment-furniture-planner/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -50,7 +51,7 @@ const relatedArticles = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -79,7 +80,7 @@ const relatedArticles = [
         </div>
         <a class="button" href="/zh/room-layout-planner/">規劃租屋房間</a>
       </div>
-      <AdSlot id="zh-rental-mid" slot="zh-rental-mid" />
+      <AdSlot id="zh-rental-mid" adSlot="zh-rental-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>

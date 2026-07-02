@@ -8,6 +8,7 @@ import { en } from '../../i18n/en';
 const title = 'Furniture Fit Checker | Check Room Sizes Before Buying Furniture';
 const description = 'Use a practical furniture fit checker to compare room dimensions, furniture sizes, clearances, door swings, and moving paths before buying or moving pieces.';
 const canonical = '/en/furniture-fit-checker/';
+const alternates = { zh: '/zh/furniture-fit-checker/', en: '/en/furniture-fit-checker/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -42,7 +43,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -85,7 +86,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
-      <AdSlot id="en-fit-mid" slot="en-furniture-fit-mid" />
+      <AdSlot id="en-fit-mid" adSlot="en-furniture-fit-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

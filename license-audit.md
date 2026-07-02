@@ -9,10 +9,11 @@ This audit covers the direct dependencies installed for this project. Licenses w
 | `@astrojs/check` | 0.9.9 | MIT | Astro and TypeScript diagnostics | Used by `npm run check`. |
 | `jspdf` | 4.2.1 | MIT | PDF export | Used by the planner tool's "Export PDF" feature. PNG export uses the native Canvas API with no extra dependency. |
 | `typescript` | 6.0.3 | Apache-2.0 | Type checking | Installed package metadata reports Apache-2.0. |
+| `sharp` | 0.34.5 | Apache-2.0 | Build-time brand asset generation | Dev dependency used by `scripts/generate-brand-assets.mjs` to rasterize self-made SVG artwork into committed PNG files. |
 
 ## Self-Made Assets
 
-All furniture, door, window, mirror, and UI logo/icon representations in this project are self-made SVG or CSS shapes (see `src/planner/` and the shared components). No third-party icon set, font, or unclear visual asset is used. The site uses the system font stack only.
+All furniture, door, window, mirror, UI logo/icon, favicon, Apple touch icon, and Open Graph image representations in this project are self-made SVG or CSS shapes (see `src/planner/`, the shared components, and `scripts/generate-brand-assets.mjs`). No third-party icon set, font, or unclear visual asset is used. The site uses the system font stack only.
 
 ## Imported Editorial Content
 
@@ -24,4 +25,4 @@ The product direction may be informed by `fedepaj/arcada-planner`, which is MIT 
 
 ## Advertising Placeholders
 
-`AdSlot.astro` renders clearly marked placeholder boxes and does not render live ad units. When `PUBLIC_ADSENSE_CLIENT` is set, `BaseHead.astro` loads the Google AdSense site verification script requested by Google for application review. The `ads.txt` record in `public/ads.txt` is a publisher verification file, not a code dependency.
+`AdSlot.astro` renders clearly marked placeholder boxes when no AdSense client is configured. When `PUBLIC_ADSENSE_CLIENT` is set, `BaseHead.astro` loads the Google AdSense script and `AdSlot.astro` renders live ad units using each page's configured slot. The `ads.txt` record in `public/ads.txt` is a publisher verification file, not a code dependency.

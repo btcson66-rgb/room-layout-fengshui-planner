@@ -8,6 +8,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "lint": "astro check",
+    "assets:brand": "node scripts/generate-brand-assets.mjs",
     "preflight": "npm run check && npm run build"
   },
   "keywords": [],
@@ -21,5 +22,8 @@
     "astro": "^7.0.3",
     "jspdf": "^4.2.1",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }

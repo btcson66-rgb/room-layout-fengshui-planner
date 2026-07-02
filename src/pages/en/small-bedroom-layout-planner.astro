@@ -8,6 +8,7 @@ import { en } from '../../i18n/en';
 const title = 'Small Bedroom Layout Planner | Bed Desk Wardrobe Ideas for Tight Rooms';
 const description = 'Plan a small bedroom layout with practical bed, desk, wardrobe, storage, and walkway tips for renters, students, and compact apartments.';
 const canonical = '/en/small-bedroom-layout-planner/';
+const alternates = { zh: '/zh/small-bedroom-layout/', en: '/en/small-bedroom-layout-planner/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -42,7 +43,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -85,7 +86,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
-      <AdSlot id="en-small-bedroom-mid" slot="en-small-bedroom-mid" />
+      <AdSlot id="en-small-bedroom-mid" adSlot="en-small-bedroom-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

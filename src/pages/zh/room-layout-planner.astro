@@ -8,6 +8,7 @@ import '../../styles/planner.css';
 const title = '房間家具配置工具｜房間平面圖與風水格局參考';
 const description = '免費線上房間家具配置工具，可拖曳床、書桌、衣櫃、沙發、門窗與鏡子，檢查尺寸、動線、門口遮擋，並提供民俗風水格局參考。';
 const canonical = '/zh/room-layout-planner/';
+const alternates = { zh: '/zh/room-layout-planner/', en: '/en/room-layout-planner/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -61,7 +62,7 @@ const relatedArticles = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <header>
@@ -87,7 +88,7 @@ const relatedArticles = [
 
       <div id="room-planner" data-planner></div>
 
-      <AdSlot id="planner-mid-zh" slot="room-layout-planner-zh-mid" />
+      <AdSlot id="planner-mid-zh" adSlot="room-layout-planner-zh-mid" />
 
       <section class="next-steps-panel" aria-labelledby="next-heading">
         <h2 id="next-heading">完成平面圖後 — 下一步</h2>

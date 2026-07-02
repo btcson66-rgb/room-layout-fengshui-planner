@@ -11,6 +11,7 @@ const popularPosts = posts.filter((post) => ['feng-shui', 'room-planning', 'smal
 const title = 'RoomFeng｜免費房間規劃與風水佈局工具';
 const description = '輸入房間尺寸、門窗位置與家具需求，快速取得臥室、小房間、小套房與書桌配置建議，並參考床位、鏡子、採光、收納與動線風水提醒。';
 const canonical = '/';
+const alternates = { zh: '/', en: '/en/' };
 const faq = [
   { q: '房間規劃工具可以做什麼？', a: '可以協助你整理房間尺寸、門窗位置、家具需求、動線、採光、收納與風水參考，適合搬家、租屋與買家具前使用。' },
   { q: '風水建議是保證有效嗎？', a: '不是。本站風水內容只作為傳統文化與室內配置參考，不保證任何財運、感情、健康或人生結果。' },
@@ -59,7 +60,7 @@ const fengShuiQuestions = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <header class="card">

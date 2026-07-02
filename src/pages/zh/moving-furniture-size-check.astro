@@ -7,6 +7,7 @@ import RelatedLinks from '../../components/RelatedLinks.astro';
 const title = '搬家家具尺寸檢查｜新家放得下，也要搬得進去';
 const description = '搬家前檢查家具尺寸與新房間配置，確認床、桌、衣櫃、沙發能通過門口走廊，放下後仍保留走道與開門空間。';
 const canonical = '/zh/moving-furniture-size-check/';
+const alternates = { zh: '/zh/moving-furniture-size-check/', en: '/en/moving-furniture-size-check/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -45,7 +46,7 @@ const relatedArticles = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -74,7 +75,7 @@ const relatedArticles = [
         </div>
         <a class="button" href="/zh/room-layout-planner/">做搬家尺寸檢查</a>
       </div>
-      <AdSlot id="zh-moving-mid" slot="zh-moving-mid" />
+      <AdSlot id="zh-moving-mid" adSlot="zh-moving-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>

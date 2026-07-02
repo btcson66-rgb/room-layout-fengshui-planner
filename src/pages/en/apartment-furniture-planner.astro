@@ -8,6 +8,7 @@ import { en } from '../../i18n/en';
 const title = 'Apartment Furniture Planner | Plan Living Room and Bedroom Fit';
 const description = 'Plan furniture across an apartment with practical room-by-room sizing tips for living areas, bedrooms, dining spaces, storage, and moving decisions.';
 const canonical = '/en/apartment-furniture-planner/';
+const alternates = { zh: '/zh/rental-room-layout/', en: '/en/apartment-furniture-planner/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -42,7 +43,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -85,7 +86,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
-      <AdSlot id="en-apartment-mid" slot="en-apartment-mid" />
+      <AdSlot id="en-apartment-mid" adSlot="en-apartment-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

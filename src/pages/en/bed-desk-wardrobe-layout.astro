@@ -8,6 +8,7 @@ import { en } from '../../i18n/en';
 const title = 'Bed Desk Wardrobe Layout | Arrange Core Bedroom Furniture';
 const description = 'Plan a bedroom around the bed, desk, and wardrobe with practical clearance tips for walking, working, storage access, and room fit.';
 const canonical = '/en/bed-desk-wardrobe-layout/';
+const alternates = { zh: '/zh/bed-desk-wardrobe-layout/', en: '/en/bed-desk-wardrobe-layout/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -42,7 +43,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -85,7 +86,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
-      <AdSlot id="en-bed-desk-wardrobe-mid" slot="en-bed-desk-wardrobe-mid" />
+      <AdSlot id="en-bed-desk-wardrobe-mid" adSlot="en-bed-desk-wardrobe-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

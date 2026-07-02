@@ -39,6 +39,14 @@ npm run build
 
 The site builds to `dist/` and is suitable for static hosting.
 
+## Brand Assets
+
+The favicon, Apple touch icon, and Open Graph image are generated from self-made SVG artwork with `sharp`:
+
+```bash
+npm run assets:brand
+```
+
 ## Preview
 
 ```bash
@@ -70,7 +78,7 @@ PUBLIC_ADSENSE_CLIENT=
 
 If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
 
-If `PUBLIC_ADSENSE_CLIENT` is set at build time, the shared head component injects the Google AdSense site verification script site-wide. The production AdSense value for `roomfeng.win` is:
+If `PUBLIC_ADSENSE_CLIENT` is set at build time, the shared head component injects the Google AdSense script site-wide and `AdSlot.astro` renders live ad units with each page's configured slot. The production AdSense value for `roomfeng.win` is:
 
 ```bash
 PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044

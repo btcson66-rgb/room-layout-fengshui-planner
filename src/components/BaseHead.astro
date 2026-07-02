@@ -6,38 +6,86 @@ interface Props {
   lang: 'zh' | 'en';
   ogImage?: string;
   ogType?: string;
+  alternates?: {
+    zh: string;
+    en: string;
+    xDefault?: string;
+  };
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const { title, description, canonical, lang, ogImage, ogType = 'website', jsonLd } = Astro.props;
+const { title, description, canonical, lang, ogImage, ogType = 'website', alternates, jsonLd } = Astro.props;
 const site = Astro.site ?? new URL('https://roomfeng.win');
 const url = new URL(canonical, site).toString();
-const imageUrl = ogImage ? new URL(ogImage, site).toString() : undefined;
+const imageUrl = new URL(ogImage ?? '/og-image.png', site).toString();
+const logoUrl = new URL('/apple-touch-icon.png', site).toString();
+const siteOrigin = site.toString().replace(/\/$/, '');
 const gaId = import.meta.env.PUBLIC_GA_ID;
-const adsenseId = import.meta.env.PUBLIC_ADSENSE_ID ?? import.meta.env.PUBLIC_ADSENSE_CLIENT;
+const adsenseClient = import.meta.env.PUBLIC_ADSENSE_CLIENT || import.meta.env.PUBLIC_ADSENSE_ID;
 const locale = lang === 'zh' ? 'zh_TW' : 'en_US';
-const alternates = [
-  { lang: 'zh', href: '/' },
-  { lang: 'en', href: '/en/' },
-];
-const jsonItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
+const alternateLinks = alternates
+  ? [
+      { lang: 'zh', href: alternates.zh },
+      { lang: 'en', href: alternates.en },
+      { lang: 'x-default', href: alternates.xDefault ?? alternates.zh },
+    ]
+  : [];
+const organizationLogo = {
+  '@type': 'ImageObject',
+  url: logoUrl,
+  width: 180,
+  height: 180,
+};
+const organization = {
+  '@type': 'Organization',
+  name: 'RoomFeng',
+  url: siteOrigin,
+  logo: organizationLogo,
+};
+const withStructuredDataDefaults = (item: Record<string, unknown>) => {
+  const rawType = item['@type'];
+  const types = Array.isArray(rawType) ? rawType : [rawType];
+
+  if (types.includes('Article')) {
+    return {
+      image: imageUrl,
+      author: organization,
+      publisher: organization,
+      ...item,
+    };
+  }
+
+  if (types.includes('Organization')) {
+    return {
+      ...item,
+      logo: item.logo ?? organizationLogo,
+    };
+  }
+
+  return item;
+};
+const jsonItems = (Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []).map(withStructuredDataDefaults);
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={url} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content={ogType} />
 <meta property="og:url" content={url} />
 <meta property="og:locale" content={locale} />
-{imageUrl && <meta property="og:image" content={imageUrl} />}
-<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
+<meta property="og:site_name" content="RoomFeng" />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-{imageUrl && <meta name="twitter:image" content={imageUrl} />}
-{alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, site).toString()} />)}
-<link rel="alternate" hreflang="x-default" href={new URL('/', site).toString()} />
+<meta name="twitter:image" content={imageUrl} />
+{alternateLinks.map((alt) => <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, site).toString()} />)}
 {jsonItems.map((item) => <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />)}
 {
   gaId && (
@@ -53,6 +101,6 @@ gtag('config', '${gaId}');`}
     </>
   )
 }
-{adsenseId && (
-  <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`} crossorigin="anonymous" />
+{adsenseClient && (
+  <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`} crossorigin="anonymous" />
 )}

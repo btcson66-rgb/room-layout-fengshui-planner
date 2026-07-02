@@ -8,6 +8,7 @@ import { en } from '../../i18n/en';
 const title = 'RoomFeng | Free Room Furniture Layout Tool';
 const description = 'Plan room furniture layouts online before buying, moving, or rearranging. Use a free browser-based planner with local drafts, clear sizing checks, and PNG or PDF export.';
 const canonical = '/en/';
+const alternates = { zh: '/', en: '/en/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -70,7 +71,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <header class="card hero">
@@ -115,7 +116,7 @@ const relatedLinks = [
         </p>
       </section>
 
-      <AdSlot id="en-home-mid" slot="en-home-mid" />
+      <AdSlot id="en-home-mid" adSlot="en-home-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

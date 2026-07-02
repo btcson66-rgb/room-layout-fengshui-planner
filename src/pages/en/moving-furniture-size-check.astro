@@ -8,6 +8,7 @@ import { en } from '../../i18n/en';
 const title = 'Moving Furniture Size Check | Check Rooms Doors and Corridors';
 const description = 'Prepare for a move by checking whether furniture fits the new room, doorways, corridors, elevators, and everyday clearances before moving day.';
 const canonical = '/en/moving-furniture-size-check/';
+const alternates = { zh: '/zh/moving-furniture-size-check/', en: '/en/moving-furniture-size-check/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -42,7 +43,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -85,7 +86,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
-      <AdSlot id="en-moving-mid" slot="en-moving-mid" />
+      <AdSlot id="en-moving-mid" adSlot="en-moving-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

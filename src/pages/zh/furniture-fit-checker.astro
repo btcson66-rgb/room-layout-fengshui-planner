@@ -7,6 +7,7 @@ import RelatedLinks from '../../components/RelatedLinks.astro';
 const title = '家具尺寸適配檢查｜買家具前確認放得下、進得去';
 const description = '買床、桌、衣櫃或沙發前，用房間配置規劃器檢查家具尺寸、門口寬度、走道距離與開門空間，降低買錯尺寸的風險。';
 const canonical = '/zh/furniture-fit-checker/';
+const alternates = { zh: '/zh/furniture-fit-checker/', en: '/en/furniture-fit-checker/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -50,7 +51,7 @@ const relatedArticles = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -79,7 +80,7 @@ const relatedArticles = [
         </div>
         <a class="button" href="/zh/room-layout-planner/">開始檢查尺寸</a>
       </div>
-      <AdSlot id="zh-fit-mid" slot="zh-furniture-fit-mid" />
+      <AdSlot id="zh-fit-mid" adSlot="zh-furniture-fit-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>

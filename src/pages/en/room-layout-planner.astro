@@ -8,6 +8,7 @@ import '../../styles/planner.css';
 const title = 'RoomFeng Room Planner | Free Furniture Floor Plan Tool';
 const description = 'Plan a room layout online with draggable furniture, room dimensions, structural checks, local draft saving, and PNG or PDF export.';
 const canonical = '/en/room-layout-planner/';
+const alternates = { zh: '/zh/room-layout-planner/', en: '/en/room-layout-planner/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -50,7 +51,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="en" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <header>
@@ -62,7 +63,7 @@ const relatedLinks = [
 
       <div id="room-planner" data-planner></div>
 
-      <AdSlot id="planner-mid-en" slot="room-layout-planner-en-mid" />
+      <AdSlot id="planner-mid-en" adSlot="room-layout-planner-en-mid" />
 
       <section class="cta-band">
         <div>

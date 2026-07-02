@@ -1,0 +1,45 @@
+---
+import Layout from '../components/Layout.astro';
+import { siteUrl } from '../data/site';
+
+const title = '找不到頁面｜RoomFeng';
+const description = '這個 RoomFeng 頁面可能已移動、網址輸入錯誤，或暫時不存在。你可以回到首頁、使用房間規劃工具，或閱讀房間配置文章。';
+const canonical = '/404/';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: `${siteUrl}${canonical}`,
+  inLanguage: 'zh-TW',
+};
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>找不到頁面</h1>
+        <p class="lead">這個頁面可能已移動、網址輸入錯誤，或暫時不存在。</p>
+        <p>你可以回到首頁重新查找，直接打開房間家具配置工具，或閱讀房間規劃文章。風水相關內容仍只作民俗文化與空間舒適度參考，不保證任何結果。</p>
+      </header>
+
+      <section class="card" aria-labelledby="recovery-heading">
+        <h2 id="recovery-heading">常用入口</h2>
+        <div class="cta-row">
+          <a class="button" href="/">回到首頁</a>
+          <a class="button secondary" href="/zh/room-layout-planner/">使用房間規劃工具</a>
+          <a class="button secondary" href="/zh/blog/">閱讀房間配置文章</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+</style>

@@ -7,6 +7,7 @@ import RelatedLinks from '../../components/RelatedLinks.astro';
 const title = '套房格局配置｜單房空間分出睡眠、工作與用餐區';
 const description = '套房與 studio apartment 配置建議，教你用家具、走道與收納分區，並用房間配置規劃器先測試床、桌、沙發和餐桌位置。';
 const canonical = '/zh/studio-apartment-layout/';
+const alternates = { zh: '/zh/studio-apartment-layout/', en: '/en/studio-apartment-layout/' };
 const siteUrl = 'https://roomfeng.win';
 const jsonLd = [
   {
@@ -46,7 +47,7 @@ const relatedArticles = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
@@ -75,7 +76,7 @@ const relatedArticles = [
         </div>
         <a class="button" href="/zh/room-layout-planner/">規劃套房格局</a>
       </div>
-      <AdSlot id="zh-studio-mid" slot="zh-studio-mid" />
+      <AdSlot id="zh-studio-mid" adSlot="zh-studio-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>
