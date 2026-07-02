@@ -1,6 +1,4 @@
-import { jsPDF } from 'jspdf';
 import type { Design, PlannerStrings } from './types';
-import { formatArea, formatLength } from './units';
 
 function triggerDownload(blob: Blob, filename: string): void {
   const url = URL.createObjectURL(blob);
@@ -54,22 +52,37 @@ export async function exportPng(svg: SVGSVGElement): Promise<void> {
   triggerDownload(blob, 'room-layout-plan.png');
 }
 
-export async function exportPdf(svg: SVGSVGElement, design: Design, strings: PlannerStrings): Promise<void> {
-  const blob = await svgToPngBlob(svg);
-  const dataUrl = await new Promise<string>((resolve) => {
+function blobToDataUrl(blob: Blob): Promise<string> {
+  return new Promise<string>((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => resolve(String(reader.result));
+    reader.onerror = () => reject(new Error('Unable to read exported image.'));
     reader.readAsDataURL(blob);
   });
+}
+
+function imageSize(dataUrl: string): Promise<{ width: number; height: number }> {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve({ width: image.naturalWidth, height: image.naturalHeight });
+    image.onerror = () => reject(new Error('Unable to measure exported image.'));
+    image.src = dataUrl;
+  });
+}
+
+export async function exportPdf(svg: SVGSVGElement, _design: Design, _strings: PlannerStrings): Promise<void> {
+  const { jsPDF } = await import('jspdf');
+  const blob = await svgToPngBlob(svg);
+  const dataUrl = await blobToDataUrl(blob);
+  const size = await imageSize(dataUrl);
   const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
-  pdf.setFontSize(16);
-  pdf.text('Room layout plan', 14, 16);
-  pdf.setFontSize(10);
-  pdf.text(`${strings.roomLength}: ${formatLength(design.room.h, design.room.unit)}  ${strings.roomWidth}: ${formatLength(design.room.w, design.room.unit)}`, 14, 24);
-  pdf.text(`${strings.area}: ${formatArea(design.room.w, design.room.h, design.room.unit)}`, 14, 30);
-  pdf.addImage(dataUrl, 'PNG', 14, 36, 180, 125);
-  const itemLines = design.items.map((item) => `${item.label ?? strings.furniture[item.type]} ${formatLength(item.w, design.room.unit)} x ${formatLength(item.h, design.room.unit)}`);
-  pdf.text(strings.itemList, 205, 38);
-  pdf.text(itemLines.length ? itemLines : ['-'], 205, 46, { maxWidth: 72 });
+  const pageWidth = pdf.internal.pageSize.getWidth();
+  const pageHeight = pdf.internal.pageSize.getHeight();
+  const scale = Math.min(pageWidth / size.width, pageHeight / size.height);
+  const width = size.width * scale;
+  const height = size.height * scale;
+  const x = (pageWidth - width) / 2;
+  const y = (pageHeight - height) / 2;
+  pdf.addImage(dataUrl, 'PNG', x, y, width, height);
   pdf.save('room-layout-plan.pdf');
 }

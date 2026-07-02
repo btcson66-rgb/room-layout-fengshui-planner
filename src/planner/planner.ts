@@ -6,7 +6,7 @@ import { formatArea, fromCm, toCm } from './units';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DEFAULT_STORAGE_KEY = 'room-layout-planner:draft';
-const MIN_ITEM_SIZE = 20;
+const MIN_ITEM_SIZE = 10;
 const PAD = 24;
 const FURNITURE_TYPES: FurnitureType[] = ['bed', 'desk', 'wardrobe', 'sofa', 'diningTable', 'door', 'window', 'mirror'];
 
@@ -17,6 +17,16 @@ interface PlannerState {
     id: string;
     offsetX: number;
     offsetY: number;
+  } | null;
+  resizing: {
+    id: string;
+    startW: number;
+    startH: number;
+    centerX: number;
+    centerY: number;
+    rotation: number;
+    pointerLocalX: number;
+    pointerLocalY: number;
   } | null;
   saveTimer: number | undefined;
 }
@@ -57,6 +67,22 @@ function localPoint(svg: SVGSVGElement, event: PointerEvent): { x: number; y: nu
   if (!matrix) return { x: 0, y: 0 };
   const transformed = point.matrixTransform(matrix.inverse());
   return { x: transformed.x - PAD, y: transformed.y - PAD };
+}
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(Math.max(value, min), max);
+}
+
+function rotatePoint(x: number, y: number, centerX: number, centerY: number, angleDeg: number): { x: number; y: number } {
+  const angle = (angleDeg * Math.PI) / 180;
+  const cos = Math.cos(angle);
+  const sin = Math.sin(angle);
+  const dx = x - centerX;
+  const dy = y - centerY;
+  return {
+    x: centerX + dx * cos - dy * sin,
+    y: centerY + dx * sin + dy * cos,
+  };
 }
 
 function createLabeledInput(label: string, input: HTMLInputElement | HTMLSelectElement): HTMLLabelElement {
@@ -115,7 +141,7 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
 
   if (selected) {
     group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#2f6f62', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
-    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#2f6f62', 'data-resize': item.id }));
+    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#2f6f62', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
   }
 
   parent.append(group);
@@ -271,6 +297,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     design: loadDesign(storageKey, strings),
     selectedId: null,
     dragging: null,
+    resizing: null,
     saveTimer: undefined,
   };
 
@@ -331,6 +358,12 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     rerender();
   };
 
+  const clampItemWidth = (item: FurnitureItem, value: number): number =>
+    clamp(Math.round(value), MIN_ITEM_SIZE, Math.max(MIN_ITEM_SIZE, state.design.room.w - item.x));
+
+  const clampItemHeight = (item: FurnitureItem, value: number): number =>
+    clamp(Math.round(value), MIN_ITEM_SIZE, Math.max(MIN_ITEM_SIZE, state.design.room.h - item.y));
+
   const renderControls = (): void => {
     controls.replaceChildren();
     const roomGrid = document.createElement('div');
@@ -388,8 +421,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     customAddBtn.textContent = strings.customItem.addButton;
     customAddBtn.addEventListener('click', () => {
       const name = customNameInput.value.trim() || strings.customItem.namePlaceholder;
-      const w = Math.max(20, toCm(Number(customWInput.value) || 80, state.design.room.unit));
-      const h = Math.max(20, toCm(Number(customHInput.value) || 60, state.design.room.unit));
+      const w = Math.max(MIN_ITEM_SIZE, toCm(Number(customWInput.value) || 80, state.design.room.unit));
+      const h = Math.max(MIN_ITEM_SIZE, toCm(Number(customHInput.value) || 60, state.design.room.unit));
       const item = makeItem('custom', name, 40, 40);
       item.w = w;
       item.h = h;
@@ -504,11 +537,11 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     slider.max = '359';
     slider.value = String(item.rotation);
     width.addEventListener('change', () => {
-      item.w = Math.max(MIN_ITEM_SIZE, toCm(Number(width.value), state.design.room.unit));
+      item.w = clampItemWidth(item, toCm(Number(width.value), state.design.room.unit));
       rerender();
     });
     height.addEventListener('change', () => {
-      item.h = Math.max(MIN_ITEM_SIZE, toCm(Number(height.value), state.design.room.unit));
+      item.h = clampItemHeight(item, toCm(Number(height.value), state.design.room.unit));
       rerender();
     });
     rotation.addEventListener('change', () => {
@@ -546,6 +579,32 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   svg.addEventListener('pointerdown', (event) => {
     const target = event.target as Element;
+    const resizeTarget = target.closest<SVGElement>('[data-resize]');
+    if (resizeTarget) {
+      event.preventDefault();
+      const id = resizeTarget.getAttribute('data-resize');
+      const item = state.design.items.find((candidate) => candidate.id === id);
+      if (!item) return;
+      const point = localPoint(svg, event);
+      const centerX = item.x + item.w / 2;
+      const centerY = item.y + item.h / 2;
+      const pointerLocal = rotatePoint(point.x, point.y, centerX, centerY, -item.rotation);
+      state.selectedId = item.id;
+      state.dragging = null;
+      state.resizing = {
+        id: item.id,
+        startW: item.w,
+        startH: item.h,
+        centerX,
+        centerY,
+        rotation: item.rotation,
+        pointerLocalX: pointerLocal.x,
+        pointerLocalY: pointerLocal.y,
+      };
+      svg.setPointerCapture(event.pointerId);
+      rerender();
+      return;
+    }
     const group = target.closest<SVGGElement>('.planner-item');
     if (!group) {
       state.selectedId = null;
@@ -559,11 +618,24 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     state.selectedId = item.id;
     const point = localPoint(svg, event);
     state.dragging = { id: item.id, offsetX: point.x - item.x, offsetY: point.y - item.y };
+    state.resizing = null;
     svg.setPointerCapture(event.pointerId);
     rerender();
   });
 
   svg.addEventListener('pointermove', (event) => {
+    if (state.resizing) {
+      event.preventDefault();
+      const resize = state.resizing;
+      const item = state.design.items.find((candidate) => candidate.id === resize.id);
+      if (!item) return;
+      const point = localPoint(svg, event);
+      const pointerLocal = rotatePoint(point.x, point.y, resize.centerX, resize.centerY, -resize.rotation);
+      item.w = clampItemWidth(item, resize.startW + pointerLocal.x - resize.pointerLocalX);
+      item.h = clampItemHeight(item, resize.startH + pointerLocal.y - resize.pointerLocalY);
+      rerender();
+      return;
+    }
     if (!state.dragging) return;
     event.preventDefault();
     const item = state.design.items.find((candidate) => candidate.id === state.dragging?.id);
@@ -574,11 +646,16 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     rerender();
   }, { passive: false });
 
-  svg.addEventListener('pointerup', (event) => {
+  const finishPointerInteraction = (event: PointerEvent): void => {
+    const hadInteraction = Boolean(state.dragging || state.resizing);
     state.dragging = null;
+    state.resizing = null;
     if (svg.hasPointerCapture(event.pointerId)) svg.releasePointerCapture(event.pointerId);
-    saveNow();
-  });
+    if (hadInteraction) saveNow();
+  };
+
+  svg.addEventListener('pointerup', finishPointerInteraction);
+  svg.addEventListener('pointercancel', finishPointerInteraction);
 
   renderControls();
   rerender();

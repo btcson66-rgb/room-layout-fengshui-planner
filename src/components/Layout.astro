@@ -8,7 +8,7 @@ interface Props {
   title: string;
   description: string;
   canonical: string;
-  lang: 'zh' | 'en';
+  lang?: 'zh' | 'en';
   ogImage?: string;
   ogType?: string;
   alternates?: {
@@ -19,7 +19,7 @@ interface Props {
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const { title, description, canonical, lang, ogImage, ogType, alternates, jsonLd } = Astro.props;
+const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd } = Astro.props;
 ---
 
 <!doctype html>
@@ -30,10 +30,10 @@ const { title, description, canonical, lang, ogImage, ogType, alternates, jsonLd
     <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} alternates={alternates} jsonLd={jsonLd} />
   </head>
   <body>
-    <Header />
+    <Header lang={lang} />
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>

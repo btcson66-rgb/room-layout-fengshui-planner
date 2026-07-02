@@ -224,7 +224,7 @@ p {
 }
 
 .ad-slot {
-  min-height: 120px;
+  min-height: 250px;
   display: grid;
   place-items: center;
   border: 1px dashed var(--color-border);

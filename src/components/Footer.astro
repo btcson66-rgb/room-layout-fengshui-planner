@@ -1,21 +1,32 @@
 ---
+import { en } from '../i18n/en';
 import { zh } from '../i18n/zh';
+
+interface Props {
+  lang?: 'zh' | 'en';
+}
+
+const { lang = 'zh' } = Astro.props;
+const t = lang === 'en' ? en : zh;
+const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
+const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
 ---
 
 <footer class="site-footer">
   <div class="container footer-inner">
     <div>
       <ul class="footer-links">
-        <li><a href="/about/">{zh.footer.about}</a></li>
-        <li><a href="/privacy/">{zh.footer.privacy}</a></li>
-        <li><a href="/terms/">{zh.footer.terms}</a></li>
-        <li><a href="/contact/">{zh.footer.contact}</a></li>
-        <li><a href="/disclaimer/">{zh.footer.disclaimer}</a></li>
-        <li><a href="/changelog/">{zh.footer.changelog}</a></li>
-        <li><a href="/zh/blog/">文章</a></li>
-        <li><a href="/zh/room-layout-planner/">工具</a></li>
+        <li><a href="/about/">{t.footer.about}</a></li>
+        <li><a href="/privacy/">{t.footer.privacy}</a></li>
+        <li><a href="/terms/">{t.footer.terms}</a></li>
+        <li><a href="/contact/">{t.footer.contact}</a></li>
+        <li><a href="/disclaimer/">{t.footer.disclaimer}</a></li>
+        <li><a href="/changelog/">{t.footer.changelog}</a></li>
+        {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
+        <li><a href={plannerHref}>{t.nav.planner}</a></li>
+        <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
       </ul>
-      <p>{zh.footer.folkDisclaimer} <a href="/disclaimer/">了解限制</a></p>
+      <p>{t.footer.folkDisclaimer} <a href="/disclaimer/">{t.footer.disclaimer}</a></p>
     </div>
     <p>&copy; 2026 RoomFeng. A Btcson Project.</p>
   </div>

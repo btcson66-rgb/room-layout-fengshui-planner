@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
+import AdSlot from '../../../components/AdSlot.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import { categoryMeta, formatDate, siteUrl } from '../../../data/site';
 
@@ -92,9 +93,13 @@ if (faqMatches.length > 0) {
         )}
       </header>
 
+      <AdSlot id="zh-blog-top" adSlot="zh-blog-top" />
+
       <div class="card article-body">
         <Content />
       </div>
+
+      <AdSlot id="zh-blog-bottom" adSlot="zh-blog-bottom" />
 
       <RelatedLinks links={relatedLinks} />
     </div>
