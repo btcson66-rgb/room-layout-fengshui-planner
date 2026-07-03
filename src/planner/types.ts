@@ -52,6 +52,7 @@ export interface PlannerStrings {
   width: string;
   height: string;
   rotation: string;
+  rotationSliderLabel?: string;
   area: string;
   checksTitle: string;
   noWarnings: string;

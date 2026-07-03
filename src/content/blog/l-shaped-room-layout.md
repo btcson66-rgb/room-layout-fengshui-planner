@@ -51,9 +51,9 @@ L 型房間是分區機會是這個主題最需要先確認的部分。很多人
 ## 建議搭配使用
 
 
-- [/zh/room-layout-planner/](/zh/room-layout-planner/)
+- [房間家具配置工具](/zh/room-layout-planner/)
 
-- [/zh/small-bedroom-layout/](/zh/small-bedroom-layout/)
+- [小房間配置指南](/zh/small-bedroom-layout/)
 
 
 ## 常見問題

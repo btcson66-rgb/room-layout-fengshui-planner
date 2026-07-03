@@ -51,9 +51,9 @@ relatedPosts: []
 ## 建議搭配使用
 
 
-- [/zh/room-layout-planner/](/zh/room-layout-planner/)
+- [房間家具配置工具](/zh/room-layout-planner/)
 
-- [/zh/bed-desk-wardrobe-layout/](/zh/bed-desk-wardrobe-layout/)
+- [床桌衣櫃配置](/zh/bed-desk-wardrobe-layout/)
 
 
 ## 常見問題

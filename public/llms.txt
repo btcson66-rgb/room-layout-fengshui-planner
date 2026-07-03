@@ -1,0 +1,32 @@
+# RoomFeng
+
+> RoomFeng 是給租屋、搬家與買家具前使用的房間配置工具站，提供家具尺寸檢查、房間平面圖與民俗風水格局參考。
+
+## 主要工具
+
+- [房間家具配置工具](https://roomfeng.win/zh/room-layout-planner/)
+- [家具尺寸適配檢查](https://roomfeng.win/zh/furniture-fit-checker/)
+- [臥室風水格局檢查](https://roomfeng.win/zh/feng-shui-bedroom-checker/)
+- [搬家家具尺寸檢查](https://roomfeng.win/zh/moving-furniture-size-check/)
+- [小房間配置指南](https://roomfeng.win/zh/small-bedroom-layout/)
+- [床桌衣櫃配置](https://roomfeng.win/zh/bed-desk-wardrobe-layout/)
+- [套房格局配置](https://roomfeng.win/zh/studio-apartment-layout/)
+- [租屋房間配置](https://roomfeng.win/zh/rental-room-layout/)
+
+## 核心文章
+
+- [床對門風水怎麼看？臥室床位、門口動線與改善方式](https://roomfeng.win/zh/blog/bed-facing-door-feng-shui/)
+- [鏡子對床怎麼辦？臥室鏡子擺放、遮擋與租屋改善指南](https://roomfeng.win/zh/blog/mirror-facing-bed-bedroom/)
+- [臥室風水檢查清單：床、門、窗、鏡子與書桌一次看](https://roomfeng.win/zh/blog/bedroom-feng-shui-checklist/)
+- [床尺寸怎麼選？單人床、雙人床與房間尺寸對照指南](https://roomfeng.win/zh/blog/bed-size-room-guide/)
+- [家具尺寸量測清單：買家具前先確認長寬高、門口與動線](https://roomfeng.win/zh/blog/furniture-measurement-checklist/)
+- [搬家前畫房間平面圖：先確認家具放不放得下](https://roomfeng.win/zh/blog/floor-plan-before-moving-guide/)
+- [長型房間怎麼擺？床、書桌與衣櫃的動線配置](https://roomfeng.win/zh/blog/long-narrow-bedroom-layout/)
+- [租屋房間配置規劃：不施工也能改善床位、收納與動線](https://roomfeng.win/zh/blog/rental-room-layout-planning/)
+- [套房分區佈置：睡眠、工作、用餐與收納怎麼分](https://roomfeng.win/zh/blog/studio-zoning-layout/)
+- [房間走道寬度要留多少？床邊、衣櫃前與門口尺寸指南](https://roomfeng.win/zh/blog/room-circulation-width-guide/)
+
+## 關於本站
+
+- [關於 RoomFeng](https://roomfeng.win/about/)
+- [聯絡我們](https://roomfeng.win/contact/)

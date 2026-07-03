@@ -56,9 +56,9 @@ relatedPosts:
 ## 建議搭配使用
 
 
-- [/zh/furniture-fit-checker/](/zh/furniture-fit-checker/)
+- [家具尺寸適配檢查](/zh/furniture-fit-checker/)
 
-- [/zh/moving-furniture-size-check/](/zh/moving-furniture-size-check/)
+- [搬家家具尺寸檢查](/zh/moving-furniture-size-check/)
 
 
 ## 常見問題

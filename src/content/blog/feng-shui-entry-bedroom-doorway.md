@@ -51,9 +51,9 @@ relatedPosts: []
 ## 建議搭配使用
 
 
-- [/zh/feng-shui-bedroom-checker/](/zh/feng-shui-bedroom-checker/)
+- [臥室風水格局檢查](/zh/feng-shui-bedroom-checker/)
 
-- [/zh/room-layout-planner/](/zh/room-layout-planner/)
+- [房間家具配置工具](/zh/room-layout-planner/)
 
 
 ## 常見問題

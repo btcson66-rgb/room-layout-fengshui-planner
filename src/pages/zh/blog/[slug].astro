@@ -14,6 +14,8 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const canonical = `/zh/blog/${post.id}/`;
 const category = categoryMeta[post.data.category];
+const blogPosts = await getCollection('blog');
+const blogTitleBySlug = new Map(blogPosts.map((entry) => [entry.id, entry.data.title]));
 const toolTitle = (href: string) => {
   const map: Record<string, string> = {
     '/zh/room-layout-planner/': '房間家具配置工具',
@@ -27,9 +29,15 @@ const toolTitle = (href: string) => {
   };
   return map[href] ?? href;
 };
+const relatedPostLinks = post.data.relatedPosts
+  .map((slug: string) => {
+    const title = blogTitleBySlug.get(slug);
+    return title ? { href: `/zh/blog/${slug}/`, title } : null;
+  })
+  .filter((link): link is { href: string; title: string } => link !== null);
 const relatedLinks = [
   ...post.data.relatedTools.map((href: string) => ({ href, title: toolTitle(href) })),
-  ...post.data.relatedPosts.map((slug: string) => ({ href: `/zh/blog/${slug}/`, title: slug })),
+  ...relatedPostLinks,
   { href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category },
 ];
 const body = post.body ?? '';

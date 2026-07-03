@@ -51,9 +51,9 @@ relatedPosts: []
 ## 建議搭配使用
 
 
-- [/zh/small-bedroom-layout/](/zh/small-bedroom-layout/)
+- [小房間配置指南](/zh/small-bedroom-layout/)
 
-- [/zh/furniture-fit-checker/](/zh/furniture-fit-checker/)
+- [家具尺寸適配檢查](/zh/furniture-fit-checker/)
 
 
 ## 常見問題

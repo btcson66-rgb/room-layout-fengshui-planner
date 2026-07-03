@@ -51,9 +51,9 @@ relatedPosts: []
 ## 建議搭配使用
 
 
-- [/zh/feng-shui-bedroom-checker/](/zh/feng-shui-bedroom-checker/)
+- [臥室風水格局檢查](/zh/feng-shui-bedroom-checker/)
 
-- [/zh/bed-desk-wardrobe-layout/](/zh/bed-desk-wardrobe-layout/)
+- [床桌衣櫃配置](/zh/bed-desk-wardrobe-layout/)
 
 
 ## 常見問題

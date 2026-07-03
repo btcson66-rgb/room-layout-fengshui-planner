@@ -56,9 +56,9 @@ relatedPosts:
 ## 建議搭配使用
 
 
-- [/zh/room-layout-planner/](/zh/room-layout-planner/)
+- [房間家具配置工具](/zh/room-layout-planner/)
 
-- [/zh/furniture-fit-checker/](/zh/furniture-fit-checker/)
+- [家具尺寸適配檢查](/zh/furniture-fit-checker/)
 
 
 ## 常見問題

@@ -51,9 +51,9 @@ relatedPosts: []
 ## 建議搭配使用
 
 
-- [/zh/moving-furniture-size-check/](/zh/moving-furniture-size-check/)
+- [搬家家具尺寸檢查](/zh/moving-furniture-size-check/)
 
-- [/zh/room-layout-planner/](/zh/room-layout-planner/)
+- [房間家具配置工具](/zh/room-layout-planner/)
 
 
 ## 常見問題

@@ -51,9 +51,9 @@ relatedPosts: []
 ## 建議搭配使用
 
 
-- [/zh/rental-room-layout/](/zh/rental-room-layout/)
+- [租屋房間配置](/zh/rental-room-layout/)
 
-- [/zh/small-bedroom-layout/](/zh/small-bedroom-layout/)
+- [小房間配置指南](/zh/small-bedroom-layout/)
 
 
 ## 常見問題

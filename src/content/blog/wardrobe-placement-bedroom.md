@@ -56,9 +56,9 @@ relatedPosts:
 ## 建議搭配使用
 
 
-- [/zh/bed-desk-wardrobe-layout/](/zh/bed-desk-wardrobe-layout/)
+- [床桌衣櫃配置](/zh/bed-desk-wardrobe-layout/)
 
-- [/zh/furniture-fit-checker/](/zh/furniture-fit-checker/)
+- [家具尺寸適配檢查](/zh/furniture-fit-checker/)
 
 
 ## 常見問題

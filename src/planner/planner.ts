@@ -85,10 +85,11 @@ function rotatePoint(x: number, y: number, centerX: number, centerY: number, ang
   };
 }
 
-function createLabeledInput(label: string, input: HTMLInputElement | HTMLSelectElement): HTMLLabelElement {
+function createLabeledInput(label: string, input: HTMLInputElement | HTMLSelectElement, options: { hiddenLabel?: boolean } = {}): HTMLLabelElement {
   const wrapper = document.createElement('label');
   wrapper.className = 'planner-field';
   const text = document.createElement('span');
+  if (options.hiddenLabel) text.className = 'planner-sr-only';
   text.textContent = label;
   wrapper.append(text, input);
   return wrapper;
@@ -340,7 +341,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const rerender = (): void => {
     renderSvg(svg, state, strings);
     if (state.design.items.length === 0) {
-      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? '← 左側新增家具，或選擇範例格局');
+      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? '選擇家具新增，或套用範例格局。');
     }
     areaLine.textContent = `${strings.area}: ${formatArea(state.design.room.w, state.design.room.h, state.design.room.unit)}`;
     renderSelection();
@@ -541,6 +542,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     slider.min = '0';
     slider.max = '359';
     slider.value = String(item.rotation);
+    slider.setAttribute('aria-label', strings.rotationSliderLabel ?? strings.rotation);
     width.addEventListener('change', () => {
       item.w = clampItemWidth(item, toCm(Number(width.value), state.design.room.unit));
       rerender();
@@ -557,7 +559,12 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       item.rotation = Number(slider.value);
       rerender();
     });
-    grid.append(createLabeledInput(strings.width, width), createLabeledInput(strings.height, height), createLabeledInput(strings.rotation, rotation), createLabeledInput(strings.rotation, slider));
+    grid.append(
+      createLabeledInput(strings.width, width),
+      createLabeledInput(strings.height, height),
+      createLabeledInput(strings.rotation, rotation),
+      createLabeledInput(strings.rotation, slider, { hiddenLabel: true }),
+    );
 
     const actions = document.createElement('div');
     actions.className = 'planner-button-row';
