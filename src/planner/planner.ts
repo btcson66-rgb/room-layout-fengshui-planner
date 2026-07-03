@@ -364,6 +364,11 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const clampItemHeight = (item: FurnitureItem, value: number): number =>
     clamp(Math.round(value), MIN_ITEM_SIZE, Math.max(MIN_ITEM_SIZE, state.design.room.h - item.y));
 
+  const clampCenteredSize = (value: number, center: number, roomSize: number): number => {
+    const centeredMax = Math.min(roomSize, center * 2, (roomSize - center) * 2);
+    return clamp(Math.round(value), MIN_ITEM_SIZE, Math.max(MIN_ITEM_SIZE, centeredMax));
+  };
+
   const renderControls = (): void => {
     controls.replaceChildren();
     const roomGrid = document.createElement('div');
@@ -631,8 +636,16 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       if (!item) return;
       const point = localPoint(svg, event);
       const pointerLocal = rotatePoint(point.x, point.y, resize.centerX, resize.centerY, -resize.rotation);
-      item.w = clampItemWidth(item, resize.startW + pointerLocal.x - resize.pointerLocalX);
-      item.h = clampItemHeight(item, resize.startH + pointerLocal.y - resize.pointerLocalY);
+      const prevW = item.w;
+      const prevH = item.h;
+      const newW = clampCenteredSize(resize.startW + pointerLocal.x - resize.pointerLocalX, resize.centerX, state.design.room.w);
+      const newH = clampCenteredSize(resize.startH + pointerLocal.y - resize.pointerLocalY, resize.centerY, state.design.room.h);
+      item.x -= (newW - prevW) / 2;
+      item.y -= (newH - prevH) / 2;
+      item.w = newW;
+      item.h = newH;
+      item.x = clamp(item.x, 0, Math.max(0, state.design.room.w - item.w));
+      item.y = clamp(item.y, 0, Math.max(0, state.design.room.h - item.h));
       rerender();
       return;
     }
