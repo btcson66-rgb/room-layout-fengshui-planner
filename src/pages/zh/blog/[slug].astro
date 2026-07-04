@@ -11,6 +11,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const allPosts = await getCollection('blog');
+const noindexSlugs = new Set(allPosts.filter((p) => p.data.noindex).map((p) => p.id));
 const canonical = `/zh/blog/${post.id}/`;
 const category = categoryMeta[post.data.category];
 const toolTitle = (href: string) => {
@@ -28,7 +30,9 @@ const toolTitle = (href: string) => {
 };
 const relatedLinks = [
   ...post.data.relatedTools.map((href: string) => ({ href, title: toolTitle(href) })),
-  ...post.data.relatedPosts.map((slug: string) => ({ href: `/zh/blog/${slug}/`, title: slug })),
+  ...post.data.relatedPosts
+    .filter((slug: string) => !noindexSlugs.has(slug))
+    .map((slug: string) => ({ href: `/zh/blog/${slug}/`, title: slug })),
   { href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category },
 ];
 const body = post.body ?? '';
@@ -77,7 +81,7 @@ if (faqMatches.length > 0) {
 }
 ---
 
-<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd}>
+<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd} noindex={post.data.noindex}>
   <article class="section">
     <div class="container page-grid">
       <header class="card article-meta">

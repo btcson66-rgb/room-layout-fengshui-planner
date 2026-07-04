@@ -12,9 +12,10 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, lang, ogImage, ogType, jsonLd } = Astro.props;
+const { title, description, canonical, lang, ogImage, ogType, jsonLd, noindex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,7 +23,7 @@ const { title, description, canonical, lang, ogImage, ogType, jsonLd } = Astro.p
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} jsonLd={jsonLd} />
+    <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} jsonLd={jsonLd} noindex={noindex} />
   </head>
   <body>
     <Header />

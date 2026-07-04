@@ -7,9 +7,10 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, lang, ogImage, ogType = 'website', jsonLd } = Astro.props;
+const { title, description, canonical, lang, ogImage, ogType = 'website', jsonLd, noindex = false } = Astro.props;
 const site = Astro.site ?? new URL('https://roomfeng.win');
 const url = new URL(canonical, site).toString();
 const imageUrl = ogImage ? new URL(ogImage, site).toString() : undefined;
@@ -25,6 +26,7 @@ const jsonItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
 
 <title>{title}</title>
 <meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, follow" />}
 <link rel="canonical" href={url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
