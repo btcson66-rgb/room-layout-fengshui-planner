@@ -1,10 +1,12 @@
----
+﻿---
 import { getCollection } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import { categoryMeta, formatDate, siteUrl, toolLinks } from '../../../data/site';
 
-const posts = (await getCollection('blog')).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.noindex)
+  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
 const title = '房間規劃文章｜RoomFeng';
 const description = 'RoomFeng 房間規劃文章整理小房間佈局、家具尺寸、搬家檢查、臥室風水民俗參考與動線規劃教學。';
 const canonical = '/zh/blog/';

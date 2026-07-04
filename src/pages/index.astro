@@ -5,7 +5,9 @@ import Faq from '../components/Faq.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
 import { categoryMeta, formatDate, siteUrl } from '../data/site';
 
-const posts = (await getCollection('blog')).sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.noindex)
+  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
 const latestPosts = posts.slice(0, 5);
 const popularPosts = posts.filter((post) => ['feng-shui', 'room-planning', 'small-room'].includes(post.data.category)).slice(0, 6);
 const title = 'RoomFeng｜免費房間規劃與風水佈局工具';
@@ -137,17 +139,6 @@ const fengShuiQuestions = [
             </article>
           ))}
         </div>
-      </section>
-
-      <section class="card" aria-labelledby="scenarios-heading">
-        <h2 id="scenarios-heading">更多房型與生活情境</h2>
-        <ul>
-          <li><a href="/zh/blog/long-narrow-bedroom-layout/">長型房間怎麼擺？</a></li>
-          <li><a href="/zh/blog/no-window-bedroom-layout/">無窗房間怎麼佈置？</a></li>
-          <li><a href="/zh/blog/home-office-bedroom-layout/">臥室兼辦公室怎麼規劃？</a></li>
-          <li><a href="/zh/blog/first-apartment-room-layout/">第一次租屋房間怎麼規劃？</a></li>
-          <li><a href="/zh/blog/tiny-room-layout-under-5-ping/">5 坪以下小房間怎麼佈置？</a></li>
-        </ul>
       </section>
 
       <Faq items={faq} />
