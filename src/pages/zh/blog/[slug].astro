@@ -15,7 +15,9 @@ const { Content } = await render(post);
 const canonical = `/zh/blog/${post.id}/`;
 const category = categoryMeta[post.data.category];
 const blogPosts = await getCollection('blog');
-const blogTitleBySlug = new Map(blogPosts.map((entry) => [entry.id, entry.data.title]));
+const blogTitleBySlug = new Map(
+  blogPosts.filter((entry) => !entry.data.noindex).map((entry) => [entry.id, entry.data.title]),
+);
 const toolTitle = (href: string) => {
   const map: Record<string, string> = {
     '/zh/room-layout-planner/': '房間家具配置工具',
@@ -86,7 +88,7 @@ if (faqMatches.length > 0) {
 }
 ---
 
-<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd}>
+<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd} noindex={post.data.noindex}>
   <article class="section">
     <div class="container page-grid">
       <header class="card article-meta">

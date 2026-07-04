@@ -1,4 +1,4 @@
----
+﻿---
 import { getCollection } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
@@ -11,7 +11,7 @@ export function getStaticPaths() {
 const { category } = Astro.params;
 const meta = categoryMeta[category ?? ''];
 const posts = (await getCollection('blog'))
-  .filter((post) => post.data.category === category)
+  .filter((post) => post.data.category === category && !post.data.noindex)
   .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
 const title = `${meta.title}｜RoomFeng`;
 const description = meta.description;

@@ -1,4 +1,4 @@
-export const zh = {
+﻿export const zh = {
   nav: {
     home: '首頁',
     planner: '房間格局規劃工具',
@@ -8,10 +8,10 @@ export const zh = {
     languageEn: 'English',
   },
   footer: {
-    about: '關於',
-    privacy: '隱私權',
+    about: '關於本站',
+    privacy: '隱私權政策',
     terms: '使用條款',
-    contact: '聯絡',
+    contact: '聯絡我們',
     disclaimer: '免責聲明',
     changelog: '更新紀錄',
     folkDisclaimer: '風水內容僅作民俗文化與空間舒適度參考，請以實際居住需求為準。',

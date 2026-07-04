@@ -12,9 +12,10 @@ interface Props {
     xDefault?: string;
   };
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, lang, ogImage, ogType = 'website', alternates, jsonLd } = Astro.props;
+const { title, description, canonical, lang, ogImage, ogType = 'website', alternates, jsonLd, noindex = false } = Astro.props;
 const site = Astro.site ?? new URL('https://roomfeng.win');
 const url = new URL(canonical, site).toString();
 const imageUrl = new URL(ogImage ?? '/og-image.png', site).toString();
@@ -69,6 +70,7 @@ const jsonItems = (Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []).map(
 
 <title>{title}</title>
 <meta name="description" content={description} />
+{noindex && <meta name="robots" content="noindex, follow" />}
 <link rel="canonical" href={url} />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

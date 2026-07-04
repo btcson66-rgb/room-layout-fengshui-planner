@@ -17,9 +17,10 @@ interface Props {
     xDefault?: string;
   };
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd } = Astro.props;
+const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd, noindex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -27,7 +28,7 @@ const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates,
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} alternates={alternates} jsonLd={jsonLd} />
+    <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} alternates={alternates} jsonLd={jsonLd} noindex={noindex} />
   </head>
   <body>
     <Header lang={lang} />
