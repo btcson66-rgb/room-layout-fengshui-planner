@@ -14,6 +14,13 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const canonical = `/zh/blog/${post.id}/`;
 const category = categoryMeta[post.data.category];
+const authorName = 'Btcson Project 編輯團隊';
+const authorPath = '/about/#btcson-project-team';
+const articleAuthor = {
+  '@type': 'Organization',
+  name: authorName,
+  url: `${siteUrl}${authorPath}`,
+};
 const blogPosts = await getCollection('blog');
 const blogTitleBySlug = new Map(
   blogPosts.filter((entry) => !entry.data.noindex).map((entry) => [entry.id, entry.data.title]),
@@ -61,6 +68,7 @@ const jsonLd: Record<string, unknown>[] = [
     description: post.data.description,
     datePublished: post.data.date.toISOString(),
     dateModified: post.data.updated.toISOString(),
+    author: articleAuthor,
     inLanguage: 'zh-TW',
     mainEntityOfPage: `${siteUrl}${canonical}`,
   },
@@ -94,7 +102,11 @@ if (faqMatches.length > 0) {
       <header class="card article-meta">
         <p><a href="/zh/blog/">文章</a> / <a href={`/zh/category/${post.data.category}/`}>{category?.title ?? post.data.category}</a></p>
         <p class="lead">{post.data.description}</p>
-        <p>更新時間：<time datetime={post.data.updated.toISOString()}>{formatDate(post.data.updated)}</time></p>
+        <p class="byline">
+          作者：<a href={authorPath}>{authorName}</a> ·
+          發布時間：<time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time> ·
+          更新時間：<time datetime={post.data.updated.toISOString()}>{formatDate(post.data.updated)}</time>
+        </p>
         <p class="tag-list">{post.data.tags.map((tag: string) => <span>{tag}</span>)}</p>
         {post.data.category === 'feng-shui' && (
           <p class="disclaimer-note">
@@ -145,6 +157,11 @@ if (faqMatches.length > 0) {
     border-radius: var(--radius-sm);
     padding: 0.05rem 0.45rem;
     font-size: var(--text-xs);
+  }
+
+  .byline {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
   }
 
   .disclaimer-note {

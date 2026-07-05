@@ -10,12 +10,19 @@ const faq = [
   { q: '風水內容代表保證結果嗎？', a: '不代表。風水相關文字只作民俗文化與空間舒適度參考，不保證財富、健康、人際、感情、運氣或任何結果。' },
   { q: '網站會上傳我的房間資料嗎？', a: '不會。房間規劃工具的草稿預設存在使用者瀏覽器 localStorage，不會上傳到本網站伺服器。' },
 ];
+const teamProfile = {
+  '@type': 'Organization',
+  name: 'Btcson Project',
+  url: 'https://roomfeng.win/about/#btcson-project-team',
+  description: 'Btcson Project 是維護 RoomFeng 的獨立網站團隊，專注整理居家空間規劃、家具尺寸檢查與民俗風水文化參考內容。',
+};
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
   name: title,
   description,
   url: 'https://roomfeng.win/about/',
+  mainEntity: teamProfile,
 };
 ---
 
@@ -29,13 +36,15 @@ const jsonLd = {
         <p>中文內容會加入風水格局參考，原因是許多華語使用者在安排床、鏡子、書桌與門的位置時，會同時在意民俗上的常見說法與實際居住感受。這些內容一律以「參考」「常見說法」「可考慮」「民俗上」等語氣撰寫，只作文化脈絡與空間舒適度提醒。網站不提供算命、占卜或任何結果保證，也不宣稱能帶來財富、健康、感情、人際或運氣上的改變。完整限制請閱讀 <a href="/disclaimer/">免責聲明</a>。</p>
         <p>技術上，本網站採用 Astro 靜態輸出。房間規劃工具在瀏覽器端完成計算、繪圖、匯出與草稿儲存，讓部署可以放在 Cloudflare Pages、Vercel 或 GitHub Pages。這種架構的好處是簡單、透明、維護成本低，也避免把一般使用者的房間資料送到伺服器處理。</p>
         <p>目前網站已包含中文與英文入口、房間規劃工具、家具尺寸檢查情境、中文部落格文章、分類頁、隱私權政策、使用條款、聯絡頁與免責聲明。所有家具與介面圖示都使用自製 SVG 或基本圖形，不使用來源不明的圖示、字型或素材。</p>
-        <h2>營運與內容判斷</h2>
-        <p>RoomFeng 由 Btcson Project 維護。網站內容以一般居住者的實際決策為優先，例如尺寸、動線、採光、收納、租屋限制與搬家前檢查；風水相關段落只放在民俗文化與空間舒適度的參考位置，不作個人吉凶判斷。若你發現內容過度肯定、缺少免責連結、連結失效或資料需要更正，可以透過 <a href="mailto:btcson66@gmail.com">btcson66@gmail.com</a> 聯絡。</p>
+        <h2 id="btcson-project-team">關於作者與團隊</h2>
+        <p>Btcson Project 編輯團隊是維護 RoomFeng 的獨立網站團隊。團隊整理的主題聚焦在一般居住者會遇到的實際問題：房間長寬怎麼量、家具外徑怎麼比對、門窗與走道會不會互相卡住，以及租屋或搬家前有哪些尺寸細節需要先確認。</p>
+        <p>中文內容也會整理民俗風水相關的常見說法，例如床與門、鏡子與床、書桌背後支撐感、床頭靠牆與出入口動線。這些內容只作民俗文化與空間舒適度參考，會盡量使用「參考」「常見說法」「可考慮」「民俗上」等語氣，不作算命、占卜或個人吉凶判斷，也不保證財富、健康、感情、人際、運氣或任何結果。完整限制請閱讀 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p>RoomFeng 不以虛構職稱、學歷或專業證照包裝內容。每篇文章會盡量把建議落回可檢查的居住條件，例如尺寸、動線、採光、通風、收納、安全與使用習慣。若你發現內容過度肯定、缺少免責連結、連結失效或資料需要更正，可以透過 <a href="mailto:btcson66@gmail.com">btcson66@gmail.com</a> 聯絡。</p>
         <h2>English summary</h2>
         <p>RoomFeng is a static website for everyday room planning. It is built for renters, movers, and furniture buyers who need a practical browser-based way to check room dimensions and furniture placement. Feng shui notes are cultural and spatial-comfort references only, never promises or fortune-telling.</p>
       </article>
       <div class="cta-band">
-        <p>下一階段會加入房間格局規劃工具；目前可先查看網站政策與免責說明。</p>
+        <p>可直接使用房間格局規劃工具，或查看網站政策與民俗文化參考限制。</p>
         <a class="button" href="/zh/room-layout-planner/">前往規劃工具</a>
       </div>
       <Faq items={faq} />
