@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../components/Layout.astro';
 import Faq from '../components/Faq.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
 import { categoryMeta, formatDate, siteUrl } from '../data/site';
 
@@ -78,6 +79,8 @@ const fengShuiQuestions = [
           <a class="button secondary" href="/zh/feng-shui-bedroom-checker/">檢查風水格局參考</a>
         </div>
       </header>
+
+      <NewsletterSignup placement="home" />
 
       <section class="card" aria-labelledby="tools-heading">
         <h2 id="tools-heading">工具入口</h2>

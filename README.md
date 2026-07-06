@@ -74,6 +74,8 @@ Copy `.env.example` to `.env` if needed.
 ```bash
 PUBLIC_GA_ID=
 PUBLIC_ADSENSE_CLIENT=
+BREVO_API_KEY=
+BREVO_ROOMFENG_LIST_ID=
 ```
 
 If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
@@ -89,6 +91,8 @@ The AdSense `ads.txt` verification record is published from `public/ads.txt`:
 ```text
 google.com, pub-7052036786750044, DIRECT, f08c47fec0942fa0
 ```
+
+The newsletter form posts to the Cloudflare Pages Function at `/api/newsletter`. Set `BREVO_API_KEY` and `BREVO_ROOMFENG_LIST_ID` in Cloudflare Pages project environment variables; do not expose the Brevo API key in client-side code. If either value is missing, or if the site is hosted on a purely static platform without Pages Functions, the form shows a "訂閱功能即將開放" message instead of failing noisily.
 
 ## Deployment
 
@@ -107,6 +111,7 @@ Change this value only if the production domain changes, because canonical URLs,
 3. Set output directory to `dist`.
 4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
 5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044` when submitting the site to Google AdSense.
+6. Add `BREVO_API_KEY` and `BREVO_ROOMFENG_LIST_ID` to enable the newsletter form.
 
 ### Vercel
 
