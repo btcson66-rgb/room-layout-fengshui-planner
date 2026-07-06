@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 
@@ -76,6 +77,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/zh/room-layout-planner/">規劃客廳家具</a>
       </div>
+      <AffiliateRecs productIds={['amethyst-cave', 'lucky-cat', 'gold-koi-painting']} />
       <AdSlot id="zh-living-room-layout-mid" adSlot="zh-living-room-layout-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
