@@ -1,0 +1,110 @@
+---
+import { affiliateProducts, type AffiliateProduct } from '../data/affiliateProducts';
+
+interface Props {
+  productIds: string[];
+}
+
+const { productIds } = Astro.props;
+const productsById = new Map(affiliateProducts.map((product) => [product.id, product]));
+const products = productIds
+  .map((id) => productsById.get(id))
+  .filter((product): product is AffiliateProduct => product !== undefined);
+---
+
+{products.length > 0 && (
+  <section class="affiliate-recs" aria-labelledby="affiliate-recs-heading">
+    <div class="affiliate-recs__header">
+      <p class="affiliate-recs__kicker">Shopee Affiliate</p>
+      <h2 id="affiliate-recs-heading">開運好物推薦</h2>
+    </div>
+
+    <div class="affiliate-recs__grid">
+      {products.map((product) => (
+        <article class="affiliate-recs__card">
+          <div>
+            <h3>{product.name}</h3>
+            <p class="affiliate-recs__price">{product.price}</p>
+            <p class="affiliate-recs__shop">店家：{product.shop}</p>
+            <p>{product.note}</p>
+          </div>
+          <a class="button" href={product.url} target="_blank" rel="sponsored nofollow noopener">前往蝦皮看看</a>
+        </article>
+      ))}
+    </div>
+
+    <p class="affiliate-recs__disclosure">
+      本區塊含蝦皮聯盟行銷連結，透過連結購買，本站可能獲得分潤，不影響您的購買價格。商品資訊以蝦皮頁面為準。
+    </p>
+  </section>
+)}
+
+<style>
+  .affiliate-recs {
+    display: grid;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .affiliate-recs__header {
+    display: grid;
+    gap: var(--space-1);
+  }
+
+  .affiliate-recs__kicker {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    font-weight: 800;
+  }
+
+  .affiliate-recs h2,
+  .affiliate-recs h3,
+  .affiliate-recs p {
+    margin: 0;
+  }
+
+  .affiliate-recs__grid {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .affiliate-recs__card {
+    display: grid;
+    gap: var(--space-4);
+    align-content: space-between;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface-muted);
+  }
+
+  .affiliate-recs__card h3 {
+    font-size: 1.05rem;
+  }
+
+  .affiliate-recs__price {
+    color: var(--color-primary-strong);
+    font-weight: 800;
+  }
+
+  .affiliate-recs__shop,
+  .affiliate-recs__disclosure {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .affiliate-recs__card .button {
+    justify-self: start;
+  }
+
+  @media (min-width: 760px) {
+    .affiliate-recs__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>
