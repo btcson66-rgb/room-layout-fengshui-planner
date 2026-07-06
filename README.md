@@ -76,6 +76,8 @@ PUBLIC_GA_ID=
 PUBLIC_ADSENSE_CLIENT=
 BREVO_API_KEY=
 BREVO_ROOMFENG_LIST_ID=
+BREVO_WORTHCALC_LIST_ID=
+BREVO_FUNNYTOOLS_LIST_ID=
 ```
 
 If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
@@ -94,6 +96,8 @@ google.com, pub-7052036786750044, DIRECT, f08c47fec0942fa0
 
 The newsletter form posts to the Cloudflare Pages Function at `/api/newsletter`. Set `BREVO_API_KEY` and `BREVO_ROOMFENG_LIST_ID` in Cloudflare Pages project environment variables; do not expose the Brevo API key in client-side code. If either value is missing, or if the site is hosted on a purely static platform without Pages Functions, the form shows a "訂閱功能即將開放" message instead of failing noisily.
 
+The same function also acts as the shared newsletter hub for `roomfeng`, `worthcalc`, and `funnytools`. Requests may pass `site=roomfeng`, `site=worthcalc`, or `site=funnytools`; missing `site` defaults to `roomfeng` for backward compatibility. Configure `BREVO_ROOMFENG_LIST_ID`, `BREVO_WORTHCALC_LIST_ID`, and `BREVO_FUNNYTOOLS_LIST_ID` separately. If a site list id is not configured, the function returns `coming_soon`.
+
 ## Deployment
 
 The production site in `astro.config.mjs` is:
@@ -111,7 +115,7 @@ Change this value only if the production domain changes, because canonical URLs,
 3. Set output directory to `dist`.
 4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
 5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044` when submitting the site to Google AdSense.
-6. Add `BREVO_API_KEY` and `BREVO_ROOMFENG_LIST_ID` to enable the newsletter form.
+6. Add `BREVO_API_KEY`, `BREVO_ROOMFENG_LIST_ID`, `BREVO_WORTHCALC_LIST_ID`, and `BREVO_FUNNYTOOLS_LIST_ID` to enable the shared newsletter hub.
 
 ### Vercel
 
