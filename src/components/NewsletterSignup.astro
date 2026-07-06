@@ -1,0 +1,203 @@
+---
+interface Props {
+  placement?: 'home' | 'article';
+}
+
+const { placement = 'article' } = Astro.props;
+const formId = `newsletter-${placement}`;
+---
+
+<section class:list={['newsletter-signup', `newsletter-signup--${placement}`]} aria-labelledby={`${formId}-heading`}>
+  <div>
+    <p class="newsletter-kicker">RoomFeng 電子報</p>
+    <h2 id={`${formId}-heading`}>訂閱：居家風水自檢清單 PDF＋每月運勢信</h2>
+    <p>
+      每月整理一封房間配置、收納動線與民俗風水參考提醒。風水內容僅作民俗文化與空間舒適度參考，不保證任何結果。
+    </p>
+  </div>
+
+  <form class="newsletter-form" action="/api/newsletter" method="post" data-newsletter-form>
+    <label for={`${formId}-email`}>Email</label>
+    <div class="newsletter-form-row">
+      <input id={`${formId}-email`} type="email" name="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required />
+      <button class="button" type="submit">送出</button>
+    </div>
+    <input class="newsletter-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <p class="newsletter-privacy">
+      送出代表同意接收 RoomFeng 電子報，可隨時退訂。更多資料處理方式請見 <a href="/privacy/">隱私權政策</a> 與 <a href="/disclaimer/">免責聲明</a>。
+    </p>
+    <p class="newsletter-status" data-newsletter-status role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<script is:inline>
+  (() => {
+    const forms = document.querySelectorAll('[data-newsletter-form]');
+
+    forms.forEach((form) => {
+      if (!(form instanceof HTMLFormElement)) return;
+
+      const status = form.querySelector('[data-newsletter-status]');
+      const button = form.querySelector('button[type="submit"]');
+      const defaultButtonText = button?.textContent ?? '送出';
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) return;
+
+        if (button) {
+          button.disabled = true;
+          button.textContent = '送出中';
+        }
+
+        if (status) {
+          status.textContent = '';
+          status.classList.remove('is-success', 'is-error', 'is-muted');
+        }
+
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+          });
+          const contentType = response.headers.get('content-type') ?? '';
+          const data = contentType.includes('application/json') ? await response.json() : {};
+
+          if (response.ok && data?.ok !== false) {
+            form.reset();
+            if (status) {
+              status.textContent = data.message ?? '訂閱申請已送出，請留意信箱後續通知。';
+              status.classList.add('is-success');
+            }
+
+            if (typeof window.gtag === 'function') {
+              window.gtag('event', 'newsletter_signup', {
+                method: 'brevo_pages_function',
+                list: 'roomfeng',
+              });
+            }
+            return;
+          }
+
+          if (response.status === 503 || response.status === 404 || data?.code === 'coming_soon') {
+            if (status) {
+              status.textContent = data.message ?? '訂閱功能即將開放，請稍後再試。';
+              status.classList.add('is-muted');
+            }
+            return;
+          }
+
+          if (status) {
+            status.textContent = data.message ?? '送出失敗，請稍後再試。';
+            status.classList.add('is-error');
+          }
+        } catch {
+          if (status) {
+            status.textContent = '訂閱功能即將開放，請稍後再試。';
+            status.classList.add('is-muted');
+          }
+        } finally {
+          if (button) {
+            button.disabled = false;
+            button.textContent = defaultButtonText;
+          }
+        }
+      });
+    });
+  })();
+</script>
+
+<style>
+  .newsletter-signup {
+    display: grid;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-muted) 100%);
+  }
+
+  .newsletter-kicker {
+    margin-bottom: var(--space-2);
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    font-weight: 800;
+  }
+
+  .newsletter-signup h2 {
+    margin-top: 0;
+  }
+
+  .newsletter-form {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .newsletter-form label {
+    font-weight: 700;
+  }
+
+  .newsletter-form-row {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .newsletter-form input[type='email'] {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+  }
+
+  .newsletter-form button:disabled {
+    cursor: progress;
+    opacity: 0.72;
+  }
+
+  .newsletter-hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .newsletter-privacy,
+  .newsletter-status {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .newsletter-status.is-success {
+    color: var(--color-primary-strong);
+    font-weight: 700;
+  }
+
+  .newsletter-status.is-error {
+    color: var(--color-warning-text);
+    font-weight: 700;
+  }
+
+  .newsletter-status.is-muted {
+    color: var(--color-muted);
+    font-weight: 700;
+  }
+
+  @media (min-width: 760px) {
+    .newsletter-signup {
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      align-items: center;
+    }
+
+    .newsletter-form-row {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+  }
+</style>

@@ -1,8 +1,10 @@
 node_modules/
 dist/
 .astro/
+.wrangler/
 .npm-cache/
 .env
 .env.local
+.dev.vars
 .codex-content/
 room_planner_content_pack.zip

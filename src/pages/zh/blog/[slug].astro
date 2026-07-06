@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
 import AdSlot from '../../../components/AdSlot.astro';
+import NewsletterSignup from '../../../components/NewsletterSignup.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import { categoryMeta, formatDate, siteUrl } from '../../../data/site';
 
@@ -122,6 +123,8 @@ if (faqMatches.length > 0) {
       </div>
 
       <AdSlot id="zh-blog-bottom" adSlot="zh-blog-bottom" />
+
+      <NewsletterSignup placement="article" />
 
       <RelatedLinks links={relatedLinks} />
     </div>
