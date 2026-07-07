@@ -26,16 +26,16 @@ const jsonLd = {
       <article class="card">
         <h1>隱私權政策</h1>
         <p class="lead">本政策說明 RoomFeng 如何處理網站使用資料、瀏覽器本機儲存、分析服務與廣告相關資訊。</p>
-        <p>本網站的核心原則是：房間格局規劃應盡量在使用者自己的裝置中完成。Phase 1 尚未上線規劃工具；後續工具依規格會把房間長寬、家具位置、尺寸、旋轉角度與草稿內容預設儲存在使用者瀏覽器的 localStorage。這些草稿資料不會因為儲存而上傳到本網站伺服器，也不需要使用者建立帳號。localStorage 是瀏覽器提供的本機儲存空間，同一台裝置與同一個瀏覽器通常可以再次讀取，但清除瀏覽資料、更換瀏覽器、使用無痕模式或重置裝置時，草稿可能消失。</p>
+        <p>本網站的核心原則是：房間格局規劃、家具尺寸檢查與臥室風水檢查應盡量在使用者自己的裝置中完成。房間長寬、家具位置、尺寸、旋轉角度與草稿內容預設儲存在使用者瀏覽器的 localStorage。這些草稿資料不會因為儲存而上傳到本網站伺服器，也不需要使用者建立帳號。localStorage 是瀏覽器提供的本機儲存空間，同一台裝置與同一個瀏覽器通常可以再次讀取，但清除瀏覽資料、更換瀏覽器、使用無痕模式或重置裝置時，草稿可能消失。</p>
         <p>網站本身採靜態部署，不使用資料庫，也不提供後端 API 來接收房間資料。若使用者主動透過聯絡頁提供意見、問題或電子郵件地址，該內容只會用於回覆與改善網站，不會要求提供敏感身分資料。請不要在聯絡訊息中提供身份證號、付款資訊、私人地址完整細節或其他不必要的敏感資料。</p>
         <p>本網站支援環境變數 PUBLIC_GA_ID。只有在部署者於建置時設定此值，頁面才會注入 Google Analytics 4 gtag；如果此值為空，網站不會載入 GA4。GA4 可能透過 Cookie 或類似技術收集彙整性的瀏覽統計，例如頁面瀏覽、流量來源、裝置類型與大略地區。這些資料用於理解內容是否有幫助與改善網站結構，不用於取得房間草稿內容。</p>
         <h2>電子郵件收集與退訂</h2>
-        <p>若使用者主動填寫 RoomFeng 電子報表單，網站會收集使用者提供的 Email，用於寄送居家風水自檢清單 PDF、每月房間配置提醒、民俗風水參考內容與網站更新通知。此訂閱資料會交由 Brevo 或同等電子郵件服務處理，用於管理名單、寄送郵件、記錄退訂狀態與基本寄送成效。</p>
+        <p>若使用者主動填寫 RoomFeng 電子報表單，網站會收集使用者提供的 Email，用於寄送居家風水自檢清單 PDF、每月房間配置與民俗文化參考提醒、收納動線內容與網站更新通知。此訂閱資料會交由 Brevo 或同等電子郵件服務處理，用於管理名單、寄送郵件、記錄退訂狀態與基本寄送成效。</p>
         <p>電子報訂閱不會要求房間格局草稿、住址、門牌、身份資料或付款資訊。每封電子報應提供退訂方式；使用者也可以透過 <a href="/contact/">聯絡我們</a> 要求停止寄送或刪除訂閱資料。風水相關電子報內容仍僅作民俗文化與空間舒適度參考，不保證財運、健康、感情或其他結果。</p>
-        <p>未來若放置 Google AdSense 或其他廣告服務，廣告供應商可能使用 Cookie 或類似技術顯示、衡量或限制廣告。Phase 1 僅提供清楚標示的廣告佔位區，不載入真實廣告程式碼。實際啟用廣告前，網站應再次確認政策文字、Cookie 告知與所在地法規要求。</p>
+        <p>若網站載入 Google AdSense 或其他廣告服務，廣告供應商可能使用 Cookie、廣告識別碼或類似技術顯示、衡量、限制或個人化廣告。Google 與其合作夥伴可能依使用者瀏覽器、裝置、所在地區與互動情形處理廣告相關資料。使用者可透過瀏覽器設定、Google 廣告設定或相關同意管理介面控制 Cookie 與個人化廣告偏好。</p>
         <p>使用者可以透過瀏覽器設定管理 Cookie、網站資料與 localStorage。若不希望留下本機草稿，可以使用工具的清空功能，或在瀏覽器中刪除本網站的網站資料。請注意，刪除後通常無法由本網站復原。</p>
         <h2>English summary</h2>
-        <p>Room layout drafts are intended to be stored locally in the user browser localStorage and are not uploaded to a server by default. GA4 is injected only when PUBLIC_GA_ID is provided at build time. AdSense is not active in Phase 1; only placeholders are present.</p>
+        <p>Room layout drafts, furniture-fit checks, and feng shui checker inputs are intended to be stored locally in the user's browser localStorage and are not uploaded to a server by default. GA4 is injected only when PUBLIC_GA_ID is provided at build time. If Google AdSense is enabled, Google and its partners may use cookies, advertising identifiers, and similar technologies to deliver, measure, limit, or personalize ads.</p>
       </article>
       <div class="cta-band">
         <p>想了解風水與空間建議的限制，請先閱讀免責聲明。</p>

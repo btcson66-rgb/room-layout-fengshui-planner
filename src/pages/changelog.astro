@@ -6,8 +6,8 @@ import RelatedLinks from '../components/RelatedLinks.astro';
 const title = '更新紀錄｜RoomFeng';
 const description = '追蹤 RoomFeng 的靜態網站基礎、政策頁、工具功能與內容頁建置進度。';
 const faq = [
-  { q: 'Phase 1 包含規劃工具嗎？', a: '不包含。Phase 1 只建立 Astro 靜態 scaffold、共用元件、基礎設定、信任頁與文件。' },
-  { q: '後續會加入哪些內容？', a: '後續階段會加入中文與英文首頁、房間格局規劃工具、家具尺寸檢查與各種房型內容頁。' },
+  { q: '目前包含哪些正式功能？', a: '目前包含房間格局規劃、家具尺寸檢查、臥室風水檢查、中文與英文內容頁、文章分類與政策頁。' },
+  { q: '更新紀錄會列出哪些內容？', a: '會列出已上線功能、政策影響、內容調整、驗證結果與重要風險提醒。' },
   { q: '更新紀錄會記錄政策變更嗎？', a: '會。隱私權、條款、免責聲明、授權與第三方套件的重要變更都應在此頁摘要。' },
 ];
 const jsonLd = {
@@ -25,14 +25,14 @@ const jsonLd = {
       <article class="card">
         <h1>更新紀錄</h1>
         <p class="lead">本頁記錄網站分階段建置與重要政策變更，方便使用者與維護者理解目前功能範圍。</p>
-        <h2>2026-06-28｜Phase 1：靜態網站基礎與信任頁</h2>
+        <h2>2026-06-28｜基礎版：靜態網站基礎與信任頁</h2>
         <p>本次建立 Astro 靜態網站 scaffold，設定 static output、sitemap、TypeScript strict、環境變數範例、全站 CSS 設計 token、共用頁首、頁尾、SEO head、FAQ、相關連結與廣告佔位元件。網站目標是能部署到 Cloudflare Pages、Vercel 或 GitHub Pages，並維持無資料庫、無 AI API、無後端伺服器的架構。</p>
-        <p>同時新增六個信任頁：關於、隱私權政策、使用條款、聯絡我們、免責聲明與更新紀錄。這些頁面以中文為主，並提供英文摘要，讓使用者在工具正式上線前就能理解資料儲存、風水內容限制、授權態度與聯絡方式。隱私權頁明確說明後續工具的房間草稿預設會存在使用者瀏覽器 localStorage，不會上傳到伺服器；免責聲明也明確指出風水內容只作民俗文化與空間舒適度參考，不保證任何結果。</p>
-        <p>Phase 1 不包含房間格局規劃工具本體，也不包含中文或英文 SEO 內容頁。頁首仍保留未來主導覽位置，便於後續階段接上 `/zh/`、`/en/`、規劃工具與尺寸檢查頁。後續開發應避免在本階段偷做工具邏輯或大量內容頁，保持每個階段的變更範圍清楚。</p>
-        <p>授權方面，專案新增 MIT LICENSE 與 license-audit.md，列出 Astro、@astrojs/sitemap、@astrojs/check、jspdf、typescript 等依賴的授權，並註明家具與 UI 圖示採自製 SVG。產品方向可參考 MIT 授權的 fedepaj/arcada-planner，但 Phase 1 沒有複製其程式碼、圖示、字型或素材。</p>
+        <p>同時新增六個信任頁：關於、隱私權政策、使用條款、聯絡我們、免責聲明與更新紀錄。這些頁面以中文為主，並提供英文摘要，讓使用者理解資料儲存、風水內容限制、授權態度與聯絡方式。隱私權頁明確說明房間草稿預設會存在使用者瀏覽器 localStorage，不會上傳到伺服器；免責聲明也明確指出風水內容只作民俗文化與空間舒適度參考，不保證任何結果。</p>
+        <p>目前網站已接上中文與英文首頁、房間格局規劃工具、家具尺寸檢查、臥室風水檢查、內容頁、部落格文章與分類頁。後續更新仍應避免一次新增大量低價值頁面，並維持每次變更的驗證紀錄。</p>
+        <p>授權方面，專案新增 MIT LICENSE 與 license-audit.md，列出 Astro、@astrojs/sitemap、@astrojs/check、jspdf、typescript 等依賴的授權，並註明家具與 UI 圖示採自製 SVG。產品方向可參考 MIT 授權的 fedepaj/arcada-planner，但沒有複製其程式碼、圖示、字型或素材。</p>
         <p>未來更新應在此頁加入日期、階段、主要新增內容、政策影響與驗證結果。若啟用 GA4、AdSense、表單服務或新增第三方套件，也應同步更新隱私權政策、README 與授權稽核文件。</p>
         <h2>English summary</h2>
-        <p>Phase 1 created the static Astro foundation, shared components, infrastructure files, trust pages, README, license, and license audit. The planner tool and SEO landing pages are intentionally deferred to later phases.</p>
+        <p>The foundation release created the static Astro site, shared components, infrastructure files, trust pages, README, license, and license audit. The current site now includes room planning tools, furniture-fit checks, feng shui reference checks, policy pages, and content sections.</p>
       </article>
       <div class="cta-band">
         <p>查看目前的產品定位與資料處理原則。</p>
