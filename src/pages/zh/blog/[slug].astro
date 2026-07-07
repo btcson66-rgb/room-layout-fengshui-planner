@@ -109,9 +109,9 @@ if (faqMatches.length > 0) {
           更新時間：<time datetime={post.data.updated.toISOString()}>{formatDate(post.data.updated)}</time>
         </p>
         <p class="tag-list">{post.data.tags.map((tag: string) => <span>{tag}</span>)}</p>
-        {post.data.category === 'feng-shui' && (
+        {(post.data.category === 'feng-shui' || body.includes('風水')) && (
           <p class="disclaimer-note">
-            本文風水內容僅作民俗文化與空間舒適度參考，沒有任何結果保證。請以實際居住安全、動線、採光與個人需求為準，並閱讀 <a href="/disclaimer/">免責聲明</a>。
+            本文風水內容僅供民俗文化與空間配置參考；不保證健康、財運、感情、事業或任何人生結果，也不取代專業建築、室內設計、醫療或法律建議。請以實際居住安全、動線、採光、通風與個人需求為準，並閱讀 <a href="/disclaimer/">免責聲明</a>。
           </p>
         )}
       </header>
