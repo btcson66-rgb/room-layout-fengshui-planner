@@ -28,6 +28,34 @@ const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furni
       </ul>
       <p>{t.footer.folkDisclaimer} <a href="/disclaimer/">{t.footer.disclaimer}</a></p>
     </div>
+    <p class="footer-site-stats" data-site-stats="roomfeng.win" data-lang={lang} hidden data-nosnippet></p>
     <p>&copy; 2026 RoomFeng. A Btcson Project.</p>
   </div>
 </footer>
+
+<script is:inline>
+// 累積數據為 GA4 真實快照（funnytools release 時刷新並發佈）；
+// 低於門檻或抓取失敗時保持隱藏，不顯示任何估算數字。
+(function () {
+  var el = document.querySelector('p[data-site-stats]');
+  if (!el || !('fetch' in window)) return;
+  var MIN_PAGEVIEWS = 1000;
+  var run = function () {
+    fetch('https://funnytools.win/data/site-stats.json')
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data || !data.sites) return;
+        var s = data.sites[el.getAttribute('data-site-stats')];
+        if (!s || !(s.pageviews >= MIN_PAGEVIEWS)) return;
+        var fmt = function (n) { return Number(n).toLocaleString('en-US'); };
+        el.textContent = el.getAttribute('data-lang') === 'en'
+          ? fmt(s.pageviews) + ' total views · ' + fmt(s.users) + ' users and counting'
+          : '累積瀏覽 ' + fmt(s.pageviews) + ' 次 · 累積使用者 ' + fmt(s.users) + ' 位';
+        el.hidden = false;
+      })
+      .catch(function () {});
+  };
+  if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 4000 });
+  else setTimeout(run, 1500);
+})();
+</script>
