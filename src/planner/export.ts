@@ -1,3 +1,4 @@
+import { requestGatedDownload } from './downloadGate';
 import type { Design, PlannerStrings } from './types';
 import { formatArea, formatLength } from './units';
 
@@ -63,9 +64,20 @@ export async function svgToPngBlob(svg: SVGSVGElement): Promise<Blob> {
   });
 }
 
-export async function exportPng(svg: SVGSVGElement): Promise<void> {
+function toolSlug(suffix: string): string {
+  const segments = window.location.pathname.split('/').filter(Boolean);
+  const last = segments[segments.length - 1] || 'planner';
+  return `${last}-${suffix}`;
+}
+
+export async function exportPng(svg: SVGSVGElement, anchor?: HTMLElement | null): Promise<void> {
   const blob = await svgToPngBlob(svg);
-  triggerDownload(blob, 'room-layout-plan.png');
+  requestGatedDownload({
+    tool: toolSlug('png'),
+    anchor,
+    getFile: () => ({ blob, filename: 'room-layout-plan.png' }),
+    fallback: () => triggerDownload(blob, 'room-layout-plan.png'),
+  });
 }
 
 function blobToDataUrl(blob: Blob): Promise<string> {
@@ -159,7 +171,12 @@ function buildTextPanels(rows: PdfTextRow[], heading: string, firstRows: number,
   return panels;
 }
 
-export async function exportPdf(svg: SVGSVGElement, design: Design, strings: PlannerStrings): Promise<void> {
+export async function exportPdf(
+  svg: SVGSVGElement,
+  design: Design,
+  strings: PlannerStrings,
+  anchor?: HTMLElement | null,
+): Promise<void> {
   const { jsPDF } = await import('jspdf');
   const blob = await svgToPngBlob(svg);
   const dataUrl = await blobToDataUrl(blob);
@@ -192,5 +209,10 @@ export async function exportPdf(svg: SVGSVGElement, design: Design, strings: Pla
     pdf.addImage(panel.toDataURL('image/png'), 'PNG', PDF_MARGIN_MM, panelY, contentWidth, panelHeight);
   });
 
-  pdf.save('room-layout-plan.pdf');
+  requestGatedDownload({
+    tool: toolSlug('pdf'),
+    anchor,
+    getFile: () => ({ blob: pdf.output('blob'), filename: 'room-layout-plan.pdf' }),
+    fallback: () => pdf.save('room-layout-plan.pdf'),
+  });
 }

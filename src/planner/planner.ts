@@ -476,12 +476,12 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     pngButton.type = 'button';
     pngButton.className = 'button secondary planner-small-button';
     pngButton.textContent = strings.actions.exportPng;
-    pngButton.addEventListener('click', () => void exportPng(svg));
+    pngButton.addEventListener('click', () => void exportPng(svg, actions));
     const pdfButton = document.createElement('button');
     pdfButton.type = 'button';
     pdfButton.className = 'button secondary planner-small-button';
     pdfButton.textContent = strings.actions.exportPdf;
-    pdfButton.addEventListener('click', () => void exportPdf(svg, state.design, strings));
+    pdfButton.addEventListener('click', () => void exportPdf(svg, state.design, strings, actions));
     const clearButton = document.createElement('button');
     clearButton.type = 'button';
     clearButton.className = 'button secondary planner-small-button';
