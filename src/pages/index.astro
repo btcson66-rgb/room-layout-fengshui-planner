@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../components/Layout.astro';
+import AffiliateRecs from '../components/AffiliateRecs.astro';
 import Faq from '../components/Faq.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
@@ -144,6 +145,7 @@ const fengShuiQuestions = [
         </div>
       </section>
 
+      <AffiliateRecs productIds={['amethyst-cave', 'lucky-cat', 'gold-koi-9-painting']} />
       <Faq items={faq} />
       <RelatedLinks links={[
         { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },

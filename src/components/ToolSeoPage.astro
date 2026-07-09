@@ -1,5 +1,6 @@
 ---
 import Layout from './Layout.astro';
+import AffiliateRecs from './AffiliateRecs.astro';
 import Faq from './Faq.astro';
 import RelatedLinks from './RelatedLinks.astro';
 import { siteUrl } from '../data/site';
@@ -19,6 +20,7 @@ interface Props {
   faq: { q: string; a: string }[];
   relatedArticles: { href: string; title: string }[];
   relatedTools: { href: string; title: string }[];
+  affiliateProductIds?: string[];
   disclaimer?: boolean;
 }
 
@@ -98,6 +100,7 @@ const jsonLd = [
         </ul>
       </section>
 
+      {props.affiliateProductIds && props.affiliateProductIds.length > 0 && <AffiliateRecs productIds={props.affiliateProductIds} />}
       <Faq items={props.faq} />
       <RelatedLinks links={props.relatedTools} />
     </div>

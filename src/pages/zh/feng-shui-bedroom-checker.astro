@@ -1,5 +1,6 @@
 ---
 import Layout from '../../components/Layout.astro';
+import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { fengShuiRules } from '../../data/fengShuiRules';
 import { siteUrl, toolLinks } from '../../data/site';
@@ -98,6 +99,7 @@ const relatedArticles: { href: string; title: string }[] = [
         </ul>
       </section>
 
+      <AffiliateRecs productIds={['white-crystal-cluster', 'amethyst-egg', 'topaz-ring']} />
       <RelatedLinks links={[...toolLinks, { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '臥室風水檢查清單文章' }]} />
     </div>
   </section>

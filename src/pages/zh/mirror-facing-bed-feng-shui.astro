@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 
@@ -74,6 +75,7 @@ const relatedLinks = [
         <a class="button" href="/zh/room-layout-planner/">開始檢查鏡子位置</a>
       </div>
       <AdSlot id="zh-mirror-facing-bed-mid" adSlot="zh-mirror-facing-bed-mid" />
+      <AffiliateRecs productIds={['white-crystal-cluster', 'amethyst-egg']} />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>
