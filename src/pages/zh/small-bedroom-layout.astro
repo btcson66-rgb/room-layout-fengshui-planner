@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 
@@ -84,6 +85,7 @@ const relatedArticles = [
           {relatedArticles.map((a) => <li><a href={a.href}>{a.title}</a></li>)}
         </ul>
       </section>
+      <AffiliateRecs productIds={['fengshui-mousepad', 'white-crystal-cluster']} />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
     </div>

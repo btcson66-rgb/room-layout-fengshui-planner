@@ -1,6 +1,7 @@
 ---
 import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import '../../styles/planner.css';
@@ -117,6 +118,7 @@ const relatedArticles = [
         </ul>
       </section>
 
+      <AffiliateRecs productIds={['amethyst-cave', 'gold-koi-painting']} />
       <Faq items={faqItems} />
       <RelatedLinks links={relatedLinks} />
     </div>
