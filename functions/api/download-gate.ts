@@ -51,6 +51,33 @@ const jsonHeaders = {
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Bot Fight Mode 關閉後的端點自我防護：per-IP 限流（Cache API，逐 colo 軟限制）。
+// 正常使用者一小時內下載多個工具檔案也用不到上限；超過視為機器人灌注。
+const RATE_LIMIT_MAX = 6;
+const RATE_LIMIT_WINDOW_SECONDS = 3600;
+
+async function isRateLimited(request: Request): Promise<boolean> {
+  const ip = request.headers.get('cf-connecting-ip');
+  if (!ip) return false;
+
+  try {
+    const cache = (caches as unknown as { default: Cache }).default;
+    const key = new Request(`https://rate-limit.download-gate.invalid/${encodeURIComponent(ip)}`);
+    const hit = await cache.match(key);
+    const count = hit ? Number(await hit.text()) || 0 : 0;
+
+    if (count >= RATE_LIMIT_MAX) return true;
+
+    await cache.put(key, new Response(String(count + 1), {
+      headers: { 'cache-control': `max-age=${RATE_LIMIT_WINDOW_SECONDS}` },
+    }));
+    return false;
+  } catch {
+    // 快取層故障不能擋住正常使用者
+    return false;
+  }
+}
+
 function corsHeaders(request: Request): HeadersInit {
   const origin = request.headers.get('origin');
 
@@ -275,6 +302,10 @@ export function onRequestOptions({ request }: PagesContext) {
 export async function onRequestPost({ request, env }: PagesContext) {
   if (isDisallowedCorsRequest(request)) {
     return jsonResponse(request, { ok: false, code: 'forbidden_origin' }, 403);
+  }
+
+  if (await isRateLimited(request)) {
+    return jsonResponse(request, { ok: false, code: 'rate_limited', message: 'Too many requests. Please try again later.' }, 429);
   }
 
   let formData: FormData;
