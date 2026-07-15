@@ -125,6 +125,14 @@ check('blog-index-count', blogIndexSlugs.size === reviewReadyBlogSlugs.size, [..
 for (const slug of reviewReadyBlogSlugs) check(`blog-index:${slug}`, blogIndexSlugs.has(slug), 'must be linked');
 for (const slug of heldSlugs) check(`blog-index-held:${slug}`, !blogIndexSlugs.has(slug), 'must not be linked');
 
+const notFound = await fs.readFile(path.join(distRoot, '404.html'), 'utf8');
+check('404:robots', /name="robots"[^>]+content="[^"]*noindex/i.test(notFound), 'error page must be noindex');
+check(
+  '404:no-ad-loader',
+  !/pagead2\.googlesyndication|adsbygoogle|data-ad-slot/i.test(notFound),
+  'error page must not load or host ads',
+);
+
 const sitemapFiles = (await fs.readdir(distRoot)).filter((name) => /^sitemap.*\.xml$/.test(name));
 const sitemapSource = (await Promise.all(sitemapFiles.map((name) => fs.readFile(path.join(distRoot, name), 'utf8')))).join('\n');
 const sitemapUrls = [...sitemapSource.matchAll(/<loc>(https:\/\/roomfeng\.win\/[^<]*)<\/loc>/g)]
