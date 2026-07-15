@@ -1,5 +1,6 @@
 export const reviewReadyBlogSlugs = new Set([
   'air-conditioner-bedroom-layout',
+  'bed-facing-door-feng-shui',
   'bed-head-against-wall',
   'bed-under-window-solutions',
   'furniture-measurement-checklist',

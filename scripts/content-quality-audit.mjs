@@ -7,8 +7,12 @@ const contentRoot = path.join(root, 'src', 'content', 'blog');
 const distRoot = path.join(root, 'dist');
 const failures = [];
 const checks = [];
-const expectedReviewReadyCount = 7;
+const expectedReviewReadyCount = 8;
 const expandedArticleRequirements = new Map([
+  ['bed-facing-door-feng-shui', {
+    required: [/15 分鐘/, /一晚/, /cdc\.gov\/sleep/i, /usfa\.fema\.gov/i, /cpsc\.gov/i, /\/disclaimer\//],
+    forbidden: [/必定招|保證轉運|影響財運/],
+  }],
   ['bed-under-window-solutions', {
     required: [/7 晚|七晚/, /epa\.gov/i, /260\s*×\s*300/],
     forbidden: [],
@@ -69,7 +73,8 @@ for (const slug of reviewReadyBlogSlugs) {
   check(`source:${slug}:characters`, characters >= 1800, characters);
   check(`source:${slug}:h2`, h2Count >= 6, h2Count);
   check(`source:${slug}:links`, linkCount >= 3, linkCount);
-  check(`source:${slug}:review-date`, /updated:\s*["']?2026-07-15/.test(source), 'updated must be 2026-07-15');
+  const updated = source.match(/updated:\s*["']?(\d{4}-\d{2}-\d{2})/)?.[1] ?? '';
+  check(`source:${slug}:review-date`, updated >= '2026-07-15', updated || 'updated date is required');
   check(`source:${slug}:no-seo-copy`, !/SEO|搜尋流量|關鍵字叢集|建議保持免註冊/.test(body), 'no internal SEO/editorial instructions in reader content');
   const expandedRequirements = expandedArticleRequirements.get(slug);
   if (expandedRequirements) {
