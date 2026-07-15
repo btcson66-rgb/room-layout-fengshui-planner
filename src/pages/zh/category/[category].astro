@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
+import { isReviewReadyBlogSlug } from '../../../data/contentQuality.mjs';
 import { categoryMeta, categorySlugs, formatDate, siteUrl, toolLinks } from '../../../data/site';
 
 export function getStaticPaths() {
@@ -11,7 +12,7 @@ export function getStaticPaths() {
 const { category } = Astro.params;
 const meta = categoryMeta[category ?? ''];
 const posts = (await getCollection('blog'))
-  .filter((post) => post.data.category === category && !post.data.noindex)
+  .filter((post) => post.data.category === category && !post.data.noindex && isReviewReadyBlogSlug(post.id))
   .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
 const title = `${meta.title}｜RoomFeng`;
 const description = meta.description;
@@ -37,7 +38,7 @@ const jsonLd = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd} noindex={posts.length === 0}>
   <section class="section">
     <div class="container page-grid">
       <header class="card">
@@ -53,6 +54,7 @@ const jsonLd = [
 
       <section class="card" aria-labelledby="category-posts">
         <h2 id="category-posts">分類文章</h2>
+        {posts.length === 0 && <p>這個分類目前沒有完成內容品質重寫的公開文章。請先使用下方工具；舊稿會在補足實測流程、案例與限制後再重新評估。</p>}
         <div class="post-list">
           {posts.map((post) => (
             <article>
