@@ -1,7 +1,10 @@
 export const reviewReadyBlogSlugs = new Set([
+  'air-conditioner-bedroom-layout',
   'bed-head-against-wall',
+  'bed-under-window-solutions',
   'furniture-measurement-checklist',
   'room-circulation-width-guide',
+  'small-room-storage-zones',
   'student-room-layout-guide',
 ]);
 
