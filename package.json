@@ -10,7 +10,9 @@
     "lint": "astro check",
     "assets:brand": "node scripts/generate-brand-assets.mjs",
     "audit:content": "node scripts/content-quality-audit.mjs",
-    "preflight": "npm run check && npm run build && npm run audit:content"
+    "test:www-redirect": "node --test infra/www-redirect-worker/test/*.test.mjs",
+    "deploy:www-redirect": "wrangler deploy --config infra/www-redirect-worker/wrangler.jsonc",
+    "preflight": "npm run check && npm run build && npm run audit:content && npm run test:www-redirect"
   },
   "keywords": [],
   "author": "",

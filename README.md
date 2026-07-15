@@ -129,6 +129,12 @@ Change this value only if the production domain changes, because canonical URLs,
 
 1. Build with `npm run build`.
 2. Publish the `dist/` directory with a GitHub Actions workflow or another static deploy process.
+
+### Canonical `www` redirect
+
+The production apex host is `https://roomfeng.win`. A minimal edge Worker in `infra/www-redirect-worker/` permanently redirects `www.roomfeng.win` to the apex while preserving paths and query strings. This prevents the same Pages HTML from being served as two crawlable hosts. It does not change the static Astro application or handle application data.
+
+Run `npm run test:www-redirect` to verify redirect behavior. After a reviewed merge, an operator authenticated with Cloudflare Workers Scripts and Routes edit permissions can run `npm run deploy:www-redirect`. Deployment and rollback details are documented in `infra/www-redirect-worker/README.md`.
 3. Confirm the configured `site` URL matches the public domain.
 
 ## Google Search Console Submission Flow
