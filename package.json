@@ -9,7 +9,8 @@
     "check": "astro check",
     "lint": "astro check",
     "assets:brand": "node scripts/generate-brand-assets.mjs",
-    "preflight": "npm run check && npm run build"
+    "audit:content": "node scripts/content-quality-audit.mjs",
+    "preflight": "npm run check && npm run build && npm run audit:content"
   },
   "keywords": [],
   "author": "",

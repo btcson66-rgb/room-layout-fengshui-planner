@@ -6,13 +6,14 @@ interface Props {
 }
 
 const { productIds } = Astro.props;
+const affiliateEnabled = import.meta.env.PUBLIC_AFFILIATE_ENABLED === 'true';
 const productsById = new Map(affiliateProducts.map((product) => [product.id, product]));
 const products = productIds
   .map((id) => productsById.get(id))
   .filter((product): product is AffiliateProduct => product !== undefined);
 ---
 
-{products.length > 0 && (
+{affiliateEnabled && products.length > 0 && (
   <section class="affiliate-recs" aria-labelledby="affiliate-recs-heading">
     <div class="affiliate-recs__header">
       <p class="affiliate-recs__kicker">Shopee Affiliate</p>

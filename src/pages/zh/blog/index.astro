@@ -2,10 +2,11 @@
 import { getCollection } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
+import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
 import { categoryMeta, formatDate, siteUrl, toolLinks } from '../../../data/site';
 
 const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.noindex)
+  .filter((post) => !post.data.noindex && isReviewReadyBlogSlug(post.id))
   .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
 const title = '房間規劃文章｜RoomFeng';
 const description = 'RoomFeng 房間規劃文章整理小房間佈局、家具尺寸、搬家檢查、臥室風水民俗參考與動線規劃教學。';
@@ -46,7 +47,7 @@ const jsonLd = [
       <section class="card" aria-labelledby="category-heading">
         <h2 id="category-heading">文章分類</h2>
         <div class="link-grid">
-          {Object.entries(categoryMeta).map(([slug, meta]) => (
+          {Object.entries(categoryMeta).filter(([slug]) => reviewReadyCategorySlugs.has(slug)).map(([slug, meta]) => (
             <a href={`/zh/category/${slug}/`}>
               <strong>{meta.title}</strong>
               <span>{meta.description}</span>
@@ -57,6 +58,7 @@ const jsonLd = [
 
       <section class="card" aria-labelledby="posts-heading">
         <h2 id="posts-heading">最新文章</h2>
+        <p>目前只列出完成實質重寫、工具連結驗證與人工內容檢查的核心指南。其他舊稿已退出索引與公開文章清單，避免用相似短文堆疊搜尋結果。</p>
         <div class="post-list">
           {posts.map((post) => (
             <article>

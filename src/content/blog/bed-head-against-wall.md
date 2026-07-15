@@ -2,7 +2,7 @@
 title: "床頭要靠牆嗎？床頭靠窗怎麼辦與不靠牆改善方法"
 description: "床頭要靠牆嗎？通常建議靠穩定實牆：背後有靠更好睡、燈與插座也好安排。本文比較靠實牆、靠窗、不靠牆三種床位，附床頭板、矮櫃、屏風等租屋族替代做法與平面圖檢查重點。"
 date: "2026-06-28"
-updated: "2026-07-06"
+updated: "2026-07-15"
 category: "feng-shui"
 tags:
   - 床頭靠牆
@@ -18,9 +18,9 @@ relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
 relatedPosts:
-  - bed-under-window-solutions
-  - bed-facing-door-feng-shui
-  - bedroom-feng-shui-checklist
+  - room-circulation-width-guide
+  - furniture-measurement-checklist
+  - student-room-layout-guide
 ---
 
 # 床頭要靠牆嗎？床頭靠窗與不靠牆的實用改善方法
@@ -42,7 +42,7 @@ relatedPosts:
 
 也要避開幾種常見問題：潮濕外牆、冷氣直吹、窗框漏風、走廊噪音、床頭上方有不牢固層板。床頭靠牆不等於任何牆都適合，如果靠牆後反而長期受潮、太冷或被噪音干擾，就需要換牆面或增加緩衝。
 
-如果床尾或床側會直接對到房門，建議一起閱讀 [床對門怎麼辦](/zh/blog/bed-facing-door-feng-shui/)，先分辨是床尾正對、床側略對，還是只是門打開後視線看得到床。
+如果床尾或床側會直接對到房門，先用 [房間家具配置工具](/zh/room-layout-planner/) 畫出門片開啟範圍，分辨是床尾正對、床側略對，還是只有門打開後視線看得到床。前兩種通常需要優先調整走道與床的位置，最後一種則可先用門簾、屏風或床尾矮櫃降低視線干擾。
 
 ## 床頭不靠牆的實際影響：兩個角度
 
@@ -71,13 +71,13 @@ relatedPosts:
 
 小房間常需要收納，這時可考慮把矮櫃、床頭收納櫃或矮層架放在床頭後方。高度不宜太壓迫，深度也要避免讓床被推到門口或衣櫃前。矮櫃上方不要放太重、容易掉落的物品，特別是玻璃、書堆、大型電器。
 
-如果你同時在安排高衣櫃，先看 [臥室衣櫃擺放位置](/zh/blog/wardrobe-placement-bedroom/) 的開門距離與床邊壓迫檢查，再決定矮櫃和高櫃誰靠近床。
+如果你同時在安排高衣櫃，先用 [家具尺寸與搬運檢查指南](/zh/blog/furniture-measurement-checklist/) 核對櫃體、櫃門、包裝與搬運路線，再決定矮櫃和高櫃誰靠近床。
 
 ### 3. 用屏風、厚窗簾或布簾降低視線干擾
 
 如果床頭後方是門口或開放空間，屏風、布簾、半高層架可以降低視線直衝。重點不是把房間切得更小，而是讓床頭後方有一個穩定背景。租屋族可選免釘、可移動、重量適中的款式，避免破壞牆面或造成安全風險。
 
-床頭靠窗時，遮光窗簾與隔音窗簾也很實用。想更完整比較窗邊床位的優缺點，可延伸閱讀 [床頭靠窗可以嗎？小房間床靠窗的改善方式](/zh/blog/bed-under-window-solutions/)。
+床頭靠窗時，遮光窗簾與隔音窗簾也很實用。先用紙膠帶在地面標出窗扇、床架與主要走道，再依 [房間走道寬度指南](/zh/blog/room-circulation-width-guide/) 做一次實際通行測試，避免窗簾和屏風改善了視線，卻卡住清潔或逃生動線。
 
 ### 4. 微調床角度，而不是只追求完全正放
 
@@ -118,11 +118,11 @@ relatedPosts:
 
 - [房間家具配置工具](/zh/room-layout-planner/)
 
-- [床頭靠窗改善方式](/zh/blog/bed-under-window-solutions/)
+- [房間走道寬度實測指南](/zh/blog/room-circulation-width-guide/)
 
-- [床對門化解與床位調整](/zh/blog/bed-facing-door-feng-shui/)
+- [家具尺寸與搬運檢查表](/zh/blog/furniture-measurement-checklist/)
 
-- [臥室衣櫃位置檢查](/zh/blog/wardrobe-placement-bedroom/)
+- [學生房四區配置指南](/zh/blog/student-room-layout-guide/)
 
 
 ## 常見問題

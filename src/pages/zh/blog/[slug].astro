@@ -4,6 +4,7 @@ import Layout from '../../../components/Layout.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import NewsletterSignup from '../../../components/NewsletterSignup.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
+import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
 import { categoryMeta, formatDate, siteUrl } from '../../../data/site';
 
 export async function getStaticPaths() {
@@ -15,6 +16,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const canonical = `/zh/blog/${post.id}/`;
 const category = categoryMeta[post.data.category];
+const reviewReady = !post.data.noindex && isReviewReadyBlogSlug(post.id);
 const authorName = 'Btcson Project 編輯團隊';
 const authorPath = '/about/#btcson-project-team';
 const articleAuthor = {
@@ -24,7 +26,7 @@ const articleAuthor = {
 };
 const blogPosts = await getCollection('blog');
 const blogTitleBySlug = new Map(
-  blogPosts.filter((entry) => !entry.data.noindex).map((entry) => [entry.id, entry.data.title]),
+  blogPosts.filter((entry) => !entry.data.noindex && isReviewReadyBlogSlug(entry.id)).map((entry) => [entry.id, entry.data.title]),
 );
 const toolTitle = (href: string) => {
   const map: Record<string, string> = {
@@ -48,7 +50,9 @@ const relatedPostLinks = post.data.relatedPosts
 const relatedLinks = [
   ...post.data.relatedTools.map((href: string) => ({ href, title: toolTitle(href) })),
   ...relatedPostLinks,
-  { href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category },
+  ...(reviewReadyCategorySlugs.has(post.data.category)
+    ? [{ href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category }]
+    : []),
 ];
 const body = post.body ?? '';
 const faqSection = body.match(/##\s*(常見問題|FAQ)([\s\S]*)/);
@@ -97,7 +101,7 @@ if (faqMatches.length > 0) {
 }
 ---
 
-<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd} noindex={post.data.noindex}>
+<Layout title={`${post.data.title}｜RoomFeng`} description={post.data.description} canonical={canonical} lang="zh" ogType="article" jsonLd={jsonLd} noindex={!reviewReady}>
   <article class="section">
     <div class="container page-grid">
       <header class="card article-meta">
@@ -116,15 +120,15 @@ if (faqMatches.length > 0) {
         )}
       </header>
 
-      <AdSlot id="zh-blog-top" adSlot="zh-blog-top" />
+      {reviewReady && <AdSlot id="zh-blog-top" adSlot="zh-blog-top" />}
 
       <div class="card article-body">
         <Content />
       </div>
 
-      <AdSlot id="zh-blog-bottom" adSlot="zh-blog-bottom" />
+      {reviewReady && <AdSlot id="zh-blog-bottom" adSlot="zh-blog-bottom" />}
 
-      <NewsletterSignup placement="article" />
+      {reviewReady && <NewsletterSignup placement="article" />}
 
       <RelatedLinks links={relatedLinks} />
     </div>

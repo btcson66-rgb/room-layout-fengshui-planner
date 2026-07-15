@@ -1,14 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../components/Layout.astro';
-import AffiliateRecs from '../components/AffiliateRecs.astro';
 import Faq from '../components/Faq.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
+import { isReviewReadyBlogSlug } from '../data/contentQuality.mjs';
 import { categoryMeta, formatDate, siteUrl } from '../data/site';
 
 const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.noindex)
+  .filter((post) => !post.data.noindex && isReviewReadyBlogSlug(post.id))
   .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
 const latestPosts = posts.slice(0, 5);
 const popularPosts = posts.filter((post) => ['feng-shui', 'room-planning', 'small-room'].includes(post.data.category)).slice(0, 6);
@@ -145,7 +145,17 @@ const fengShuiQuestions = [
         </div>
       </section>
 
-      <AffiliateRecs productIds={['amethyst-cave', 'lucky-cat', 'gold-koi-9-painting']} />
+      <section class="card" aria-labelledby="editorial-heading">
+        <h2 id="editorial-heading">RoomFeng 如何整理公開指南</h2>
+        <p>本站不再用大量短文覆蓋相似搜尋詞。公開文章必須先完成實際尺寸檢查流程、可執行案例、限制說明、站內工具驗證與人工編輯；尚未完成的舊稿會退出文章清單與搜尋索引，完成重寫後才重新公開。</p>
+        <ul>
+          <li>先量房間、門窗、插座與家具外徑，再寫配置結論。</li>
+          <li>數字只作規劃起點，不能取代建築、消防、無障礙或專業設計規範。</li>
+          <li>風水只分開標示為民俗文化參考，不包裝成健康或人生結果。</li>
+          <li>商品與聯盟推薦在 AdSense 重新審查期間預設關閉。</li>
+        </ul>
+        <p>內容方法、作者說明與更正方式可查看 <a href="/about/#editorial-process">編輯與審查流程</a>。</p>
+      </section>
       <Faq items={faq} />
       <RelatedLinks links={[
         { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },
