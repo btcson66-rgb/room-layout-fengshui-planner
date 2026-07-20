@@ -16,6 +16,7 @@ keywords:
   - 房間整理
   - 收納分區
 relatedTools:
+  - /zh/small-room-storage-planner/
   - /zh/small-bedroom-layout/
   - /zh/rental-room-layout/
   - /zh/room-layout-planner/
