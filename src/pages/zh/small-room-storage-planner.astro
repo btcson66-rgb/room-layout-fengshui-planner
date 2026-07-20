@@ -1,0 +1,292 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '小房間收納規劃器｜估算剩餘空間與收納方案 - RoomFeng';
+const description = '輸入房間坪數或長寬、床型與衣櫃條件，立即估算剩餘可用空間，並取得床下、直立、門後與牆面收納建議。';
+const canonical = '/zh/small-room-storage-planner/';
+const faq = [
+  { q: '小房間收納規劃器的剩餘空間怎麼算？', a: '工具會用房間面積扣除所選床型、衣櫃估算占地與基本活動空間。結果是前期篩選方案的概算，不等於現場可放入任意同面積家具，仍要核對門窗、柱位與家具外徑。' },
+  { q: '床下收納適合放每天使用的物品嗎？', a: '通常更適合換季寢具、備品等較低頻物品。若每天都要彎腰拉出深箱，歸位成本容易過高；同時要先確認床底淨高、抽取方向、灰塵與濕氣。' },
+  { q: '租屋不能鑽牆，還能做直立收納嗎？', a: '可以優先考慮有清楚荷重標示的獨立層架、窄推車或家具內部分隔。高櫃仍要依產品說明處理防傾倒；黏貼、頂天立地或任何固定方式也應先確認牆面材質與租約。' },
+  { q: '收納做得越滿越好嗎？', a: '不是。房門、櫃門、抽屜、窗戶、插座和主要走道周圍需要保留操作空間。建議留下部分空容量，讓新物品有暫存位置，也方便清潔、檢查與取放。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '小房間收納規劃器', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/blog/small-room-storage-zones/', title: '小房間收納分區指南' },
+  { href: '/zh/blog/renter-no-drill-storage/', title: '租屋免鑽牆收納方法' },
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置工具' },
+  { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>小房間收納規劃器</h1>
+        <p class="lead">先輸入房間大小、床型與衣櫃條件，工具會估算扣除大型家具與基本活動範圍後還有多少空間，再依房間條件整理可優先測試的收納方案。</p>
+        <p>小房間收納的關鍵不只是「還能塞多少」，而是常用物是否容易拿取、門片與抽屜能否打開、主要走道是否保持清楚。面積相同的兩個房間，也可能因門窗位置、樑柱、床架外框與家具方向而得到完全不同的配置。這個結果適合用來縮小選項；準備購買收納櫃、床箱或層架前，仍要量現場淨尺寸，並把外開尺寸與操作空間一起算進去。</p>
+
+        <h2>使用方式</h2>
+        <ol>
+          <li>若只知道租屋廣告上的坪數，選「房間坪數」輸入；有捲尺時，改用室內牆到牆的長、寬會更接近實際。</li>
+          <li>選擇單人、雙人或加大床，並勾選房內是否已有衣櫃。工具採常見尺寸估算，床架外框較大時要另外預留。</li>
+          <li>查看剩餘空間與建議清單，先用紙箱或紙膠帶模擬一週，再決定是否購買收納用品。</li>
+        </ol>
+      </header>
+
+      <section class="card planner-card" aria-labelledby="planner-heading">
+        <h2 id="planner-heading">輸入房間條件</h2>
+        <form class="planner-form" data-storage-form>
+          <fieldset>
+            <legend>房間大小輸入方式</legend>
+            <label><input type="radio" name="sizeMode" value="dimensions" checked /> 輸入長 × 寬（公尺）</label>
+            <label><input type="radio" name="sizeMode" value="ping" /> 直接輸入坪數</label>
+          </fieldset>
+
+          <div class="dimension-fields" data-dimension-fields>
+            <label>房間長（m）<input type="number" name="roomLength" min="1.5" max="20" step="0.1" value="3.2" required /></label>
+            <label>房間寬（m）<input type="number" name="roomWidth" min="1.5" max="20" step="0.1" value="2.7" required /></label>
+          </div>
+          <label class="ping-field" data-ping-field hidden>房間坪數<input type="number" name="roomPing" min="1" max="100" step="0.1" value="3" /></label>
+
+          <label>床型
+            <select name="bedType">
+              <option value="single">單人床（約 106 × 188 cm）</option>
+              <option value="double">雙人床（約 152 × 188 cm）</option>
+              <option value="queen">加大床（約 182 × 188 cm）</option>
+            </select>
+          </label>
+          <label class="check-label"><input type="checkbox" name="hasWardrobe" checked /> 房內已有衣櫃（以約 120 × 60 cm 估算）</label>
+          <button class="button" type="submit">計算收納空間</button>
+        </form>
+
+        <div class="planner-result" data-storage-result aria-live="polite">
+          <p>填好條件後按「計算收納空間」，這裡會顯示面積概算與建議。</p>
+        </div>
+      </section>
+
+      <article class="card">
+        <h2>小房間收納三大原則</h2>
+        <h3>一、先保留空白，再安排容器</h3>
+        <p>房門開啟範圍、從門口到床與書桌的路線、衣櫃門和抽屜前方，都不是「沒利用到的空間」，而是房間每天能順利運作的必要空白。規劃時可先用約 60 公分作為一般主要走道的檢查起點，再依使用者身形、搬運需求與現場障礙調整。不要為了多放一個窄櫃，讓人必須側身通過，或讓房門只能開一半。</p>
+
+        <h3>二、依使用頻率分層，而不是只依品類分箱</h3>
+        <p>每天拿的充電線、包包與衣物應放在伸手可及、一步就能歸位的位置；每週使用的用品可以進抽屜或層架；換季寢具與低頻備品才適合床下或高處。把所有「文具」放在同一箱看似整齊，但若每天用的筆被壓在備用紙張下方，桌面很快又會堆回原狀。分類名稱最好能直接描述動作，例如「本週待處理」、「每天出門」或「冬季寢具」。</p>
+
+        <h3>三、向上發展也要有重量與安全上限</h3>
+        <p>牆面層板、門後掛架與高櫃能釋放地面，但不是無限容量。高處宜放輕、低頻且不怕摔的物品，重物放低；層架、掛鉤與防傾倒固定都要遵循產品荷重及安裝說明。租屋若不能鑽牆，可參考<a href="/zh/blog/renter-no-drill-storage/">免鑽牆收納做法</a>，但仍要確認黏著面、門片承重與租約，不能把「免鑽」當成一定安全或完全無痕。</p>
+      </article>
+
+      <article class="card">
+        <h2>常見錯誤：看見空位就立刻買收納家具</h2>
+        <p>第一個常見錯誤是只量牆寬，沒有量踢腳板、插座、窗簾、門把與抽屜拉出深度。第二個錯誤是把床下塞滿不同尺寸的箱子，結果清潔困難、物品受潮，而且最裡面的箱子幾乎不再使用。第三個錯誤是用大型門後掛架承載過多重量，導致門片難開、鉸鏈負擔增加，甚至侵入逃生動線。第四個錯誤則是把高處當作常用區，每天踩椅子拿東西，增加跌落與物品掉落風險。</p>
+        <p>更穩妥的做法是先閱讀<a href="/zh/blog/small-room-storage-zones/">小房間收納分區指南</a>，盤點最近七天真正使用的物品，再用既有紙箱測試位置。確認一週內能自然歸位、開門與走路都不受影響後，才依淨寬、淨深、淨高挑選容器。若大型家具位置還沒決定，可到<a href="/zh/small-bedroom-layout/">小房間配置工具</a>比較情境，或用<a href="/zh/room-layout-planner/">房間平面圖工具</a>把門窗與實際家具尺寸畫出來。</p>
+        <p>本工具的數字是面積概算，沒有模擬不規則牆面、床架突出、櫃門方向、兒童與寵物安全，也不能取代家具安裝說明或現場專業判斷。當剩餘空間顯示為正數，也不代表一定存在一塊形狀完整、可放家具的區域；真正購買前仍應逐項核對長、寬、高與搬入路線。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+
+  <script is:inline>
+    const form = document.querySelector('[data-storage-form]');
+    const result = document.querySelector('[data-storage-result]');
+    const dimensionFields = document.querySelector('[data-dimension-fields]');
+    const pingField = document.querySelector('[data-ping-field]');
+    const bedSizes = {
+      single: { label: '單人床', area: 1.06 * 1.88 },
+      double: { label: '雙人床', area: 1.52 * 1.88 },
+      queen: { label: '加大床', area: 1.82 * 1.88 },
+    };
+
+    function setMode() {
+      const mode = form.elements.sizeMode.value;
+      const usePing = mode === 'ping';
+      dimensionFields.hidden = usePing;
+      pingField.hidden = !usePing;
+      form.elements.roomLength.required = !usePing;
+      form.elements.roomWidth.required = !usePing;
+      form.elements.roomPing.required = usePing;
+    }
+
+    function recommendations(roomArea, remaining, hasWardrobe) {
+      const items = [];
+      if (remaining < 1.2) {
+        items.push(['床下低頻收納', '地面餘裕有限，優先利用既有床底。', '先量床底淨高與抽取方向；避開潮濕，並保留清潔空間。']);
+        items.push(['家具內部分隔', '不增加家具占地，適合抽屜、衣櫃或書桌內。', '先盤點常用品，避免分隔盒本身浪費容量。']);
+      } else {
+        items.push(['窄型直立收納', '有少量地面餘裕，可測試深度較小的獨立層架。', '重物放低並依產品說明防傾倒，不遮擋插座與窗戶。']);
+        items.push(['床下分類箱', '適合換季衣物、備用寢具與低頻用品。', '統一抽取方向並清楚標示內容，不要把床下全部塞滿。']);
+      }
+      if (roomArea < 9) {
+        items.push(['門後輕量掛架', '適合當日外套、空袋等少量輕物。', '確認門能完全開啟、鉸鏈承重與逃生動線，不掛重物。']);
+      }
+      items.push(['牆面層板', '可放輕、低頻物品，把桌面留給每天使用的用品。', '確認牆體、固定方式與荷重；租屋施工前先取得同意。']);
+      if (hasWardrobe) {
+        items.push(['衣櫃雙層利用', '已有衣櫃時，先改善櫃內垂直空隙再添購外部櫃體。', '量的是櫃內淨尺寸；保留門片、抽屜與通風空間。']);
+      } else {
+        items.push(['可移動吊衣架或窄櫃', '沒有衣櫃時，可先集中當季衣物。', '控制衣物數量與家具高度；高櫃須依說明固定。']);
+      }
+      return items;
+    }
+
+    function render(event) {
+      event?.preventDefault();
+      const mode = form.elements.sizeMode.value;
+      const roomArea = mode === 'ping'
+        ? Number(form.elements.roomPing.value) * 3.3058
+        : Number(form.elements.roomLength.value) * Number(form.elements.roomWidth.value);
+      if (!Number.isFinite(roomArea) || roomArea <= 0) {
+        result.innerHTML = '<p class="result-warning">請輸入有效的房間尺寸。</p>';
+        return;
+      }
+      const bed = bedSizes[form.elements.bedType.value];
+      const hasWardrobe = form.elements.hasWardrobe.checked;
+      const wardrobeArea = hasWardrobe ? 0.72 : 0;
+      const activityReserve = Math.max(roomArea * 0.22, 1.2);
+      const remaining = Math.max(0, roomArea - bed.area - wardrobeArea - activityReserve);
+      const remainingPing = remaining / 3.3058;
+      const status = remaining < 1.2
+        ? '空間非常緊湊，先改善既有家具內部與床下收納。'
+        : remaining < 2.5
+          ? '仍有有限調整空間，宜選窄、可移動且用途明確的方案。'
+          : '有一定配置彈性，但仍應先保留門片與主要走道。';
+      const list = recommendations(roomArea, remaining, hasWardrobe)
+        .map(([name, condition, note]) => `<li><strong>${name}</strong><span>適用：${condition}</span><span>注意：${note}</span></li>`)
+        .join('');
+      result.innerHTML = `
+        <h3>估算結果</h3>
+        <div class="result-metrics">
+          <p><strong>${roomArea.toFixed(1)} m²</strong><span>房間面積（約 ${(roomArea / 3.3058).toFixed(1)} 坪）</span></p>
+          <p><strong>${remaining.toFixed(1)} m²</strong><span>剩餘可規劃空間（約 ${remainingPing.toFixed(1)} 坪）</span></p>
+        </div>
+        <p>${status}</p>
+        <p class="result-note">估算已扣除${bed.label}約 ${bed.area.toFixed(1)} m²、${hasWardrobe ? '衣櫃約 0.7 m²，以及' : ''}基本活動空間約 ${activityReserve.toFixed(1)} m²。</p>
+        <h3>建議優先順序</h3>
+        <ul class="recommendation-list">${list}</ul>
+      `;
+    }
+
+    form.addEventListener('change', (event) => {
+      if (event.target.name === 'sizeMode') setMode();
+    });
+    form.addEventListener('submit', render);
+    setMode();
+  </script>
+</Layout>
+
+<style>
+  .planner-form,
+  .planner-result,
+  .dimension-fields,
+  .recommendation-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .planner-form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-4);
+  }
+
+  .planner-form label:not(.check-label),
+  .planner-form select,
+  .planner-form input[type='number'] {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .planner-form input[type='number'],
+  .planner-form select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .check-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .planner-result {
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-5);
+  }
+
+  .result-metrics {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .result-metrics p {
+    display: grid;
+    margin: 0;
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted, #f7f6f3);
+  }
+
+  .result-metrics strong {
+    font-size: var(--text-xl);
+  }
+
+  .result-metrics span,
+  .recommendation-list span,
+  .result-note {
+    color: var(--color-muted);
+  }
+
+  .recommendation-list {
+    padding-left: 1.25rem;
+  }
+
+  .recommendation-list li {
+    display: grid;
+    gap: var(--space-1);
+  }
+
+  .result-warning {
+    color: #9b2c2c;
+  }
+
+  @media (min-width: 640px) {
+    .dimension-fields,
+    .result-metrics {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

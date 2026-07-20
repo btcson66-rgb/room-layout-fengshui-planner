@@ -1,0 +1,256 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '房間傢俱尺寸建議器｜床、書桌、衣櫃尺寸與走道試算';
+const description = '輸入房間長寬，立即取得床型、書桌寬深、衣櫃深度組合建議，並用 60 公分原則試算主要走道是否足夠。';
+const canonical = '/zh/room-furniture-size-advisor/';
+const faq = [
+  { q: '60 公分走道是硬性規定嗎？', a: '不是。本頁把 60 公分當作一般房間配置的初步檢查值，方便在買家具前排除明顯過擠的組合。實際需求會受身形、輔具、門片、抽屜、搬運與建築條件影響。' },
+  { q: '床墊尺寸和床架尺寸一樣嗎？', a: '通常不完全相同。床架可能在左右與床尾多出數公分到數十公分，軟包床頭、平台床或附抽屜床架也會增加外徑。規劃時應使用商品標示的完整床架尺寸。' },
+  { q: '衣櫃深度一定要 60 公分嗎？', a: '常見吊衣櫃深度約 55 至 60 公分，但衣架方向、門片形式與衣物厚度都會影響需求。房間很窄可找較淺款，但應確認衣服不會夾門，且門前仍有操作空間。' },
+  { q: '工具建議雙人床，就代表一定放得下嗎？', a: '不代表。結果是假設床與衣櫃分別靠在相對兩側的簡化試算，沒有納入門窗、樑柱、插座與其他家具。請把候選尺寸放進房間平面圖，再以現場量測確認。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '房間傢俱尺寸建議器', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/bed-desk-wardrobe-layout/', title: '床、書桌、衣櫃配置工具' },
+  { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查' },
+  { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },
+  { href: '/zh/blog/bed-size-room-guide/', title: '床型尺寸與房間搭配指南' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>房間傢俱尺寸建議器</h1>
+        <p class="lead">房間長寬決定的不只是家具能不能塞進去，也決定床邊能否上下床、衣櫃能否開門，以及書桌椅能不能正常拉出。輸入室內淨長與淨寬，即可取得床、桌、櫃的起始尺寸組合。</p>
+        <p>這個工具採簡化配置：以房間較短邊試算「床寬＋衣櫃深度＋中間走道」，並以約 60 公分作為一般主要走道的初步目標。它適合在瀏覽商品前先設定尺寸上限，不會取代完整平面配置。門窗、柱子、床架外框、衣櫃開門方式及書桌椅活動範圍，都要在下一步另外檢查。</p>
+
+        <h2>使用方式</h2>
+        <ol>
+          <li>量室內牆面完成面到另一側牆面的淨長、淨寬，不要直接採用含公設或牆體的權狀面積。</li>
+          <li>輸入公尺數值後按下計算，查看工具建議的床型、書桌與衣櫃深度。</li>
+          <li>把候選商品的完整外徑放進<a href="/zh/room-layout-planner/">房間平面圖工具</a>，加入門窗後再次確認走道與開門空間。</li>
+        </ol>
+      </header>
+
+      <section class="card advisor-card" aria-labelledby="advisor-heading">
+        <h2 id="advisor-heading">輸入房間淨尺寸</h2>
+        <form class="advisor-form" data-size-form>
+          <label>房間長（m）<input type="number" name="roomLength" min="1.8" max="20" step="0.1" value="3.2" required /></label>
+          <label>房間寬（m）<input type="number" name="roomWidth" min="1.8" max="20" step="0.1" value="2.7" required /></label>
+          <button class="button" type="submit">取得尺寸建議</button>
+        </form>
+        <div class="advisor-result" data-size-result aria-live="polite">
+          <p>輸入房間長寬後，這裡會顯示建議組合與走道試算。</p>
+        </div>
+      </section>
+
+      <article class="card table-card">
+        <h2>傢俱尺寸速查表</h2>
+        <p>下表是規劃初期常用的約略規格，不同品牌、床架結構與訂製家具會有差異。尤其床墊名稱不是統一的施工尺寸，同樣寫「雙人」或「加大」，實際寬長仍可能不同；購買時一定要以商品頁完整外徑為準。</p>
+        <div class="table-scroll" tabindex="0" aria-label="可水平捲動的家具尺寸表">
+          <table>
+            <thead><tr><th scope="col">家具</th><th scope="col">常見尺寸（寬 × 深／長）</th><th scope="col">適用情境</th><th scope="col">額外預留</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">單人床</th><td>約 106 × 188 cm</td><td>學生房、單人小臥室</td><td>床架外框與至少一側上下床空間</td></tr>
+              <tr><th scope="row">雙人床</th><td>約 152 × 188 cm</td><td>一至兩人使用、一般臥室</td><td>兩人使用時盡量保留兩側通行</td></tr>
+              <tr><th scope="row">加大床</th><td>約 182 × 188 cm</td><td>房間短邊較充裕</td><td>先檢查床尾、衣櫃與門口動線</td></tr>
+              <tr><th scope="row">小型書桌</th><td>約 80–100 × 45–50 cm</td><td>筆電、短時間閱讀</td><td>椅後至少檢查 60 cm，常用可再增加</td></tr>
+              <tr><th scope="row">標準書桌</th><td>約 120 × 60 cm</td><td>螢幕、長時間工作或讀書</td><td>確認螢幕視距、椅子與抽屜開啟</td></tr>
+              <tr><th scope="row">吊衣衣櫃</th><td>深約 55–60 cm</td><td>一般橫向衣架</td><td>平開門前方需加門片與站立空間</td></tr>
+              <tr><th scope="row">淺型衣櫃</th><td>深約 45–50 cm</td><td>窄房、摺衣或特定吊掛方式</td><td>先確認衣架方向與衣物不夾門</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>走道寬度：先用 60 公分排除過擠組合</h2>
+        <p>在一般房間的早期規劃中，約 60 公分可作為單人基本通行的檢查起點。如果計算後只剩三、四十公分，即使人勉強能側身通過，換床單、搬物品、打開櫃門與日常清潔都可能很不方便。若使用輪椅、助行器，或需要兩人錯身、照護與搬運，所需寬度通常更大，應依實際需求及適用規範另外確認。</p>
+        <p>走道也不能只看一條直線。平開房門有旋轉範圍，衣櫃平開門需要門片深度，抽屜要完全拉出，書桌椅後方還要包含坐下、起身與經過的空間。若房間短邊不足，可把衣櫃移到床尾同側、改用拉門款、選較淺的櫃體，或縮小床型；但每個方案都應在完整平面圖中驗證，而不是只看面積總和。</p>
+
+        <h2>如何選擇床、桌、櫃的優先順序</h2>
+        <p>先列出不可妥協的主要用途。每天睡眠是核心需求時，先確定床與上下床空間，再配置衣物與工作區；若房間也是長時間居家工作場所，書桌深度、螢幕位置與椅後距離不能被當成剩餘空間。衣櫃則應依實際衣物數量決定，不要只因牆面有空就買滿整面。小房間常見的有效做法，是保留一件完整好用的主要家具，再讓其他家具變淺、變窄或改為可移動。</p>
+        <p>例如 270 × 320 公分的房間，以 152 公分雙人床和 55 公分深衣櫃放在相對兩側，理論中間約剩 63 公分；看似達到基本目標，但床架若比床墊寬 8 公分，衣櫃把手突出 3 公分，實際就可能低於 60 公分。因此建議把工具結果當作「商品搜尋上限」，再用<a href="/zh/furniture-fit-checker/">家具尺寸適配檢查</a>核對外徑、門口與搬運路線。若要同時比較床、桌與衣櫃的位置，可參考<a href="/zh/bed-desk-wardrobe-layout/">床桌櫃配置工具</a>。</p>
+
+        <h2>量測與購買前的常見錯誤</h2>
+        <p>最常見的是只量地板的一條邊，忽略踢腳板、柱角、窗簾盒與牆面不垂直；其次是只看床墊而漏掉床架，只看櫃體而漏掉門片、把手和抽屜；第三是把家具「旋轉後能塞入」誤認為日常可以正常使用。搬入路線也要量大門、走廊、電梯、樓梯轉角與包裝尺寸。最好在地上用紙膠帶貼出家具完整外框，再實際走動、開門與拉椅子至少一次。</p>
+        <p>尺寸建議不等於安全或法規判定。本頁沒有檢查逃生、消防、結構固定、電器散熱、插座負載或兒童防傾倒需求。高櫃應依製造商說明組裝及固定；任何會遮擋設備、窗戶、出入口或必要維修位置的配置，都應優先調整。閱讀<a href="/zh/blog/bed-size-room-guide/">床型尺寸指南</a>後，請仍以你準備購買的實際商品規格與現場複量為準。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+
+  <script is:inline>
+    const form = document.querySelector('[data-size-form]');
+    const result = document.querySelector('[data-size-result]');
+    const beds = [
+      { label: '加大床', width: 1.82, length: 1.88 },
+      { label: '雙人床', width: 1.52, length: 1.88 },
+      { label: '單人床', width: 1.06, length: 1.88 },
+    ];
+
+    function render(event) {
+      event.preventDefault();
+      const length = Number(form.elements.roomLength.value);
+      const width = Number(form.elements.roomWidth.value);
+      if (![length, width].every((value) => Number.isFinite(value) && value > 0)) {
+        result.innerHTML = '<p class="result-warning">請輸入有效的房間長寬。</p>';
+        return;
+      }
+      const longSide = Math.max(length, width);
+      const shortSide = Math.min(length, width);
+      const area = length * width;
+      const wardrobeDepth = shortSide < 2.35 ? 0.45 : shortSide < 2.8 ? 0.55 : 0.6;
+      const bed = beds.find((item) => shortSide - item.width - wardrobeDepth >= 0.6 && longSide - item.length >= 0.6) || beds[beds.length - 1];
+      const aisle = shortSide - bed.width - wardrobeDepth;
+      const desk = area < 7 ? { size: '80 × 45 cm', note: '適合筆電與基本閱讀；先控制桌面設備數量。' }
+        : area < 10 ? { size: '90–100 × 50 cm', note: '可容納筆電或單螢幕，仍要檢查椅後距離。' }
+          : { size: '120 × 60 cm', note: '適合較完整工作區；椅後活動範圍需另外畫入。' };
+      const aisleState = aisle >= 0.6
+        ? `約 ${Math.round(aisle * 100)} cm，達到本工具採用的 60 cm 初步目標。`
+        : `約 ${Math.max(0, Math.round(aisle * 100))} cm，低於 60 cm 初步目標；建議縮小床型、改變櫃位或選更淺櫃體。`;
+      const lengthState = longSide - bed.length >= 0.6
+        ? `床尾理論餘裕約 ${Math.round((longSide - bed.length) * 100)} cm。`
+        : '床尾不足 60 cm，需重新安排床向或減少相對家具。';
+
+      result.innerHTML = `
+        <h3>${length.toFixed(1)} × ${width.toFixed(1)} m（約 ${(area / 3.3058).toFixed(1)} 坪）建議</h3>
+        <div class="advice-grid">
+          <article><span>床型</span><strong>${bed.label}</strong><p>以約 ${Math.round(bed.width * 100)} × ${Math.round(bed.length * 100)} cm 試算；購買時請改用床架完整外徑。</p></article>
+          <article><span>書桌</span><strong>${desk.size}</strong><p>${desk.note}</p></article>
+          <article><span>衣櫃深度</span><strong>${Math.round(wardrobeDepth * 100)} cm</strong><p>${wardrobeDepth < 0.55 ? '屬淺型方案，需確認衣架方向與內部淨深。' : '適合一般吊衣起始比較，門片空間另計。'}</p></article>
+          <article><span>床與櫃相對擺放的走道</span><strong class="${aisle >= 0.6 ? 'is-ok' : 'is-warn'}">${aisleState}</strong><p>${lengthState}</p></article>
+        </div>
+        <p class="result-note">此為矩形房、家具靠相對牆面的簡化試算，未計床架突出、門窗、柱位、櫃門與其他家具。下一步請把實際商品尺寸放入平面圖驗證。</p>
+        <a class="button" href="/zh/room-layout-planner/">用平面圖驗證組合</a>
+      `;
+    }
+
+    form.addEventListener('submit', render);
+  </script>
+</Layout>
+
+<style>
+  .advisor-form,
+  .advisor-result,
+  .advice-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .advisor-form label {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .advisor-form input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .advisor-result {
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-5);
+  }
+
+  .advice-grid article {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .advice-grid article > span,
+  .result-note {
+    color: var(--color-muted);
+  }
+
+  .advice-grid strong {
+    font-size: var(--text-lg);
+  }
+
+  .advice-grid p {
+    margin: 0;
+  }
+
+  .is-ok {
+    color: #236347;
+  }
+
+  .is-warn,
+  .result-warning {
+    color: #9b2c2c;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead {
+    background: var(--color-surface-muted, #f7f6f3);
+  }
+
+  @media (min-width: 640px) {
+    .advisor-form {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: end;
+    }
+
+    .advisor-form .button {
+      grid-column: 1 / -1;
+      justify-self: start;
+    }
+
+    .advice-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
