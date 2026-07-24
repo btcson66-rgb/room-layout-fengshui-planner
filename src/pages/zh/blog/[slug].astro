@@ -54,7 +54,7 @@ const relatedLinks = [
     ? [{ href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category }]
     : []),
 ];
-const body = post.body ?? '';
+const body = (post.body ?? '').replace(/\r\n/g, '\n');
 const faqSection = body.match(/##\s*(常見問題|FAQ)([\s\S]*)/);
 const faqMatches = faqSection
   ? [...faqSection[2].matchAll(/###\s+(.+?)\n\n([\s\S]*?)(?=\n###|\n## |$)/g)]
@@ -98,6 +98,20 @@ if (faqMatches.length > 0) {
       acceptedAnswer: { '@type': 'Answer', text: item.a },
     })),
   });
+}
+if (post.data.howToSteps.length > 0) {
+  const howTo: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: post.data.howToName ?? post.data.title,
+    step: post.data.howToSteps.map((text: string, index: number) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      text,
+    })),
+  };
+  if (post.data.howToTotalTime) howTo.totalTime = post.data.howToTotalTime;
+  jsonLd.push(howTo);
 }
 ---
 
