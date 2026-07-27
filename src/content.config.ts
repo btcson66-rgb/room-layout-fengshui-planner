@@ -15,6 +15,9 @@ const blog = defineCollection({
     relatedTools: z.array(z.string()).default([]),
     relatedPosts: z.array(z.string()).default([]),
     noindex: z.boolean().optional().default(false),
+    howToName: z.string().optional(),
+    howToSteps: z.array(z.string()).default([]),
+    howToTotalTime: z.string().optional(),
   }),
 });
 
