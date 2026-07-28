@@ -1,0 +1,359 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '坪數房間配置範本庫｜3～8坪睡＋讀書／收納／上下舖配置範例';
+const description = '選擇房間坪數（3、4、5、6、8 坪）與需求組合，立即取得 2 種可行配置範本，包含走道最小寬度、家具尺寸上限與常見錯誤，可再進房間平面圖工具細調。';
+const canonical = '/zh/room-size-layout-templates/';
+const faq = [
+  { q: '範本用的房間長寬是怎麼來的？', a: '同一個坪數在現實中可能是正方形，也可能是狹長形，實際差異很大。本頁用一組固定的長寬比假設換算每個坪數的長、寬，方便先比較配置邏輯；正式規劃前，請一定要用捲尺量出你房間的實際室內淨長寬，再用計算結果覆核。' },
+  { q: '兩種配置範本差在哪裡？', a: '「一字型＋床尾角落區」把床和另一件家具集中在同一面牆，把房間中段留成大面積開放地板；「對牆型」把床和另一件家具分靠兩面相對的牆，中間留一條固定寬度的走道。前者地板彈性大，後者动线固定但通常更省長邊空間，兩者各有適合的房型比例。' },
+  { q: '5 坪房間真的放得下床＋書桌嗎？', a: '依本頁的假設比例（約 3.17 × 5.2 公尺），單人床加一張書桌通常算得出可行的走道寬度，但這是簡化試算，沒有算入樑柱、插座與門窗位置；建議把結果帶進房間平面圖工具，放入實際門窗再次確認。' },
+  { q: '3 坪房間適合放上下舖嗎？', a: '数字上可能算出及格的走道寬度，但 3 坪（约 9.9 平方公尺）要同時容納兩人日常生活相當緊繃，通常只夠放床架和一套共用收納，缺乏個人分區與隱私。若條件允許，建議至少抓 5～6 坪再考慮兩人共用房間，本頁在這個組合下也會特別提示。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '坪數房間配置範本庫', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置指南' },
+  { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },
+  { href: '/zh/bed-door-fix-selector/', title: '床對門化解方案選擇器' },
+  { href: '/zh/blog/small-room-storage-zones/', title: '小房間收納分區指南' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>坪數房間配置範本庫</h1>
+        <p class="lead">選擇房間坪數與主要需求組合，立即取得 2 種配置範本：走道最小寬度、家具尺寸上限與常見錯誤都會依你的坪數算出來，不是同一套文字套用到所有大小。</p>
+        <p>房間規劃最常見的困擾，是搜尋到的建議都用「你的房間夠大」當前提。這個工具反過來做：先固定坪數與需求，再老實算出在這個大小下，家具能放到多深、走道會剩多少、哪種配置比較合理。結果仍是簡化試算，正式決定前請用 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a> 放入實際門窗與家具細調。</p>
+
+        <h2>使用方式</h2>
+        <ol>
+          <li>選擇最接近你房間的坪數（3、4、5、6、8 坪皆為室內坪數，不是權狀坪數）。</li>
+          <li>選擇主要需求組合：睡＋讀書、睡＋收納，或雙人上下舖。</li>
+          <li>查看兩種配置範本的走道最小寬度、家具尺寸上限與常見錯誤，先篩選出你比較能接受的走道寬度等級。</li>
+          <li>把選定範本的家具尺寸帶進 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，加入實際門窗後再次確認。</li>
+        </ol>
+      </header>
+
+      <section class="card template-card" aria-labelledby="template-heading">
+        <h2 id="template-heading">選擇坪數與需求</h2>
+        <form class="template-form" data-template-form>
+          <label>房間坪數
+            <select name="ping">
+              <option value="3">3 坪（約 9.9 m²）</option>
+              <option value="4">4 坪（約 13.2 m²）</option>
+              <option value="5" selected>5 坪（約 16.5 m²）</option>
+              <option value="6">6 坪（約 19.8 m²）</option>
+              <option value="8">8 坪（約 26.4 m²）</option>
+            </select>
+          </label>
+          <label>主要需求組合
+            <select name="need">
+              <option value="study">睡＋讀書（單人房，需要書桌）</option>
+              <option value="storage">睡＋收納（單人房，收納優先）</option>
+              <option value="bunk">雙人上下舖（兩人共用房間）</option>
+            </select>
+          </label>
+          <button class="button" type="submit">取得配置範本</button>
+        </form>
+        <div class="template-result" data-template-result aria-live="polite">
+          <p>選好坪數與需求組合後按「取得配置範本」，這裡會顯示 2 種配置範本與試算數字。</p>
+        </div>
+      </section>
+
+      <article class="card">
+        <h2>假設的房間長寬比例</h2>
+        <p>同一個坪數，正方形房間和狹長形房間的可用性差很多。本頁用一組固定比例換算每個坪數的假設長、寬（見下表），比例偏向常見的租屋狹長房型，讓試算結果更接近多數小房間的實際狀況；如果你的房間比較方正，走道通常會比試算結果更寬鬆。</p>
+        <div class="table-scroll" tabindex="0" aria-label="可水平捲動的坪數假設長寬表">
+          <table>
+            <thead><tr><th scope="col">坪數</th><th scope="col">假設面積</th><th scope="col">假設長 × 寬</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">3 坪</th><td>約 9.9 m²</td><td>約 4.00 × 2.48 m</td></tr>
+              <tr><th scope="row">4 坪</th><td>約 13.2 m²</td><td>約 4.60 × 2.87 m</td></tr>
+              <tr><th scope="row">5 坪</th><td>約 16.5 m²</td><td>約 5.20 × 3.17 m</td></tr>
+              <tr><th scope="row">6 坪</th><td>約 19.8 m²</td><td>約 5.70 × 3.47 m</td></tr>
+              <tr><th scope="row">8 坪</th><td>約 26.4 m²</td><td>約 6.60 × 4.00 m</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>兩種配置邏輯怎麼選</h2>
+        <h3>一字型＋床尾角落區</h3>
+        <p>床和另一件主要家具都靠同一面長牆放置，家具之間不互相堆疊深度，房間中段留成一大片開放地板。這種配置的走道最小寬度＝房間短邊－床寬，通常會比對牆型寬鬆，適合想保留彈性活動空間（例如瑜伽墊、行李箱攤開、訪客打地舖）的房型；缺點是床尾角落需要足夠的長邊空間才放得下第二件家具，房間太短會放不下。</p>
+        <h3>對牆型（床與家具分靠兩側）</h3>
+        <p>床靠一面長牆，另一件主要家具靠對面長牆，中間留一條固定寬度的走道。走道最小寬度＝房間短邊－床寬－家具深度，通常比一字型窄，但不需要額外佔用床尾的長邊空間，比較適合房間偏短、或想讓床尾保持完全淨空（例如要放行李箱、嬰兒床）的情況。</p>
+        <p>兩種配置沒有絕對的好壞，本頁會同時算出兩種的走道寬度，讓你依實際房型比例（正方形或狹長形）與生活習慣挑選。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+
+  <script is:inline>
+    const form = document.querySelector('[data-template-form]');
+    const result = document.querySelector('[data-template-result]');
+
+    const pingTable = {
+      3: { sqm: 9.9, short: 2.48, long: 4.0 },
+      4: { sqm: 13.2, short: 2.87, long: 4.6 },
+      5: { sqm: 16.5, short: 3.17, long: 5.2 },
+      6: { sqm: 19.8, short: 3.47, long: 5.7 },
+      8: { sqm: 26.4, short: 4.0, long: 6.6 },
+    };
+
+    const needConfig = {
+      study: {
+        label: '睡＋讀書',
+        bedWidth: 1.06,
+        bedLength: 1.88,
+        bedLabel: '單人床（約 106 × 188 cm）',
+        secondaryDepth: 0.5,
+        secondaryLabel: '書桌',
+        mistake: '常見錯誤：直接搬進 120 × 60 cm 標準書桌，深度超出試算上限，走道被壓縮到 45 cm 以下才發現椅子拉不開；小坪數建議先用深度 45–50 cm 的窄桌。',
+      },
+      storage: {
+        label: '睡＋收納',
+        bedWidth: 1.06,
+        bedLength: 1.88,
+        bedLabel: '單人床（約 106 × 188 cm）',
+        secondaryDepth: 0.55,
+        secondaryLabel: '衣櫃／收納櫃',
+        mistake: '常見錯誤：床和衣櫃都選市售最大尺寸，衣櫃門一打開就卡到床沿，變成每天都要側身取衣；建議先確認櫃門開闔方向再決定深度。',
+      },
+      bunk: {
+        label: '雙人上下舖',
+        bedWidth: 1.0,
+        bedLength: 2.0,
+        bedLabel: '雙層床／上下舖（約 100 × 200 cm footprint）',
+        secondaryDepth: 0.5,
+        secondaryLabel: '共用書桌收納複合家具',
+        mistake: '常見錯誤：只算上下舖床架本身的地板面積，忽略上舖爬梯的迴轉空間與樓板淨高（建議至少 260 cm 樓高），也沒有替兩人分配各自的置物角落。',
+      },
+    };
+
+    function cm(value) {
+      return `${Math.max(0, Math.round(value * 100))} cm`;
+    }
+
+    function classify(aisle) {
+      if (aisle >= 0.6) return { label: '舒適', cls: 'is-ok' };
+      if (aisle >= 0.45) return { label: '偏緊，可行但建議實測', cls: 'is-warn' };
+      return { label: '不建議，需精簡家具或改配置', cls: 'is-bad' };
+    }
+
+    function buildVariants(pingInfo, need) {
+      const { short, long } = pingInfo;
+      const { bedWidth, bedLength, secondaryDepth, secondaryLabel } = need;
+      const footSpace = long - bedLength;
+      const v1Feasible = footSpace >= secondaryDepth + 0.6;
+      const v1Aisle = short - bedWidth;
+      const v2Aisle = short - bedWidth - secondaryDepth;
+      const furnitureCap = Math.max(0, short - bedWidth - 0.6);
+
+      const v1 = {
+        name: '一字型＋床尾角落區',
+        aisle: v1Aisle,
+        note: v1Feasible
+          ? `床尾角落區約 ${cm(footSpace)} 深，足夠放下${secondaryLabel}並留基本操作空間。`
+          : `床尾角落區僅約 ${cm(footSpace)} 深，${secondaryLabel}可能放不下或需改用更窄款，建議改看「對牆型」。`,
+        feasible: v1Feasible,
+      };
+      const v2 = {
+        name: '對牆型（床與家具分靠兩側）',
+        aisle: v2Aisle,
+        note: `床與${secondaryLabel}分靠兩面長牆，中間走道固定為房間短邊扣除兩者深度。`,
+        feasible: true,
+      };
+      return [v1, v2, furnitureCap];
+    }
+
+    function render(event) {
+      event.preventDefault();
+      const ping = form.elements.ping.value;
+      const needKey = form.elements.need.value;
+      const pingInfo = pingTable[ping];
+      const need = needConfig[needKey];
+      const [v1, v2, furnitureCap] = buildVariants(pingInfo, need);
+
+      const bunkCaution = needKey === 'bunk' && Number(ping) <= 4
+        ? `<p class="result-warning"><strong>坪數提醒：</strong>${ping} 坪（約 ${pingInfo.sqm} m²）要同時容納兩人日常生活相當緊繃，通常只夠放床架和一套共用收納，幾乎沒有個人分區與隱私。即使下方走道試算及格，仍建議條件允許時抓至少 5～6 坪再考慮兩人共用房間。</p>`
+        : '';
+
+      const variantCard = (variant) => {
+        const status = classify(variant.aisle);
+        return `
+          <article class="template-variant">
+            <div class="variant-head">
+              <h3>${variant.name}</h3>
+              <span class="tier-badge ${status.cls}">${status.label}</span>
+            </div>
+            <p><strong>走道最小寬度：</strong>約 ${cm(variant.aisle)}</p>
+            <p>${variant.note}</p>
+          </article>`;
+      };
+
+      result.innerHTML = `
+        <h3>${ping} 坪（約 ${pingInfo.sqm} m²）× ${need.label}</h3>
+        <p class="result-note">假設房間約 ${pingInfo.long.toFixed(2)} × ${pingInfo.short.toFixed(2)} m；家具採 ${need.bedLabel} ＋ ${need.secondaryLabel}（假設深度 ${cm(need.secondaryDepth)}）試算。</p>
+        ${bunkCaution}
+        <div class="variant-grid">${variantCard(v1)}${variantCard(v2)}</div>
+        <p class="result-note"><strong>${need.secondaryLabel}深度上限（維持至少 60 cm 走道回推）：</strong>約 ${cm(furnitureCap)}</p>
+        <p class="result-note">${need.mistake}</p>
+        <p class="result-note">以上為矩形房、家具靠牆的簡化試算，未計入樑柱、插座、窗戶與門片開闔弧線。請把數字帶進下方工具實際畫一次。</p>
+        <a class="button" href="/zh/room-layout-planner/">用平面圖工具細調</a>
+      `;
+    }
+
+    form.addEventListener('submit', render);
+  </script>
+</Layout>
+
+<style>
+  .template-form,
+  .variant-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .template-form label {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .template-form select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .template-result {
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-5);
+  }
+
+  .result-note {
+    color: var(--color-muted);
+  }
+
+  .result-warning {
+    color: #9b2c2c;
+    background: rgba(155, 44, 44, 0.1);
+    padding: var(--space-3);
+    border-radius: var(--radius-sm);
+  }
+
+  .template-variant {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .template-variant p {
+    margin: 0;
+  }
+
+  .variant-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+
+  .variant-head h3 {
+    margin: 0;
+  }
+
+  .tier-badge {
+    font-size: var(--text-xs);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .is-ok {
+    color: #236347;
+    background: rgba(35, 99, 71, 0.12);
+  }
+
+  .is-warn {
+    color: #6f4b00;
+    background: var(--color-warning-bg);
+  }
+
+  .is-bad {
+    color: #9b2c2c;
+    background: rgba(155, 44, 44, 0.1);
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  thead {
+    background: var(--color-surface-muted, #f7f6f3);
+  }
+
+  @media (min-width: 640px) {
+    .template-form {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: end;
+    }
+
+    .template-form .button {
+      grid-column: 1 / -1;
+      justify-self: start;
+    }
+
+    .variant-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>

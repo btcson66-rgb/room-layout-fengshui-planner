@@ -1,0 +1,436 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '床對門化解方案選擇器｜依床位、房型與可移動程度排序做法';
+const description = '輸入床與門的相對位置、房間尺寸、床可不可以移動與房型施工條件，工具依可行性排序輸出移床位、屏風、床簾、櫃體擋煞、開門方向調整等化解方案，附最小尺寸需求與備案。';
+const canonical = '/zh/bed-door-fix-selector/';
+const faq = [
+  { q: '床對門一定要化解嗎？', a: '不一定。民俗上常見說法會提醒床不要正對門，但實際影響通常是視線、聲音與走動路線的干擾程度。如果門片開闔順暢、走道清楚、睡眠也沒有被明顯打擾，不化解也是一個合理選擇；本頁化解方案是給想調整的人一個依現況排序的起點，不是強制標準。' },
+  { q: '這個工具怎麼決定化解方案的排序？', a: '排序是計算結果，不是隨機列表。工具會用房間短邊扣掉床寬（側邊淨寬）、長邊扣掉床長（床尾或床頭淨深），再依你填的「床可移動程度」與「房型施工條件」判斷每個方案在你的房間現況下是否有足夠空間執行，最後把數字算出來可行、且不需要條件（例如租屋不能施工）就被排除的方案排在前面。' },
+  { q: '租屋不能鑽牆，還能化解床對門嗎？', a: '可以。移床位、屏風或隔屏、免鑽自立桿床簾都不需要施工；只有「開門方向調整」（改推拉門或改鉸鏈側）需要較大幅度施工，通常需要房東同意。工具會依你選的房型條件把不能施工的方案自動排到後面，並提示替代做法。' },
+  { q: '工具算出「適合」，就代表一定放得下嗎？', a: '不代表。這是依房間長寬、床型尺寸與簡化家具尺寸推算的初步試算，沒有計入房間形狀不規則、樑柱、插座、床架外框突出、家具把手與門片開闔弧線等細節。請把算出的方案帶進 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a> 實際畫一次，並以現場量測為最終依據。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '床對門化解方案選擇器', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/bed-facing-door-feng-shui/', title: '床對門風水參考（說明頁）' },
+  { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床對門 15 分鐘實測與化解判斷' },
+  { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
+  { href: '/zh/room-size-layout-templates/', title: '坪數房間配置範本庫' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>床對門化解方案選擇器</h1>
+        <p class="lead">床尾、床側或床頭對門，可以化解的做法不只一種，但不是每一種在你的房間裡都做得到。輸入床位、房間尺寸、床可不可以移動與房型施工條件，工具會依「現況算不算得出足夠空間」排序，把可行的方案排在前面，並附上每招不可行時的替代做法。</p>
+        <p><strong>民俗參考聲明：</strong>本頁「化解」用語沿用民俗習慣說法，內容只作民俗文化與空間舒適度參考，不保證、暗示或預測任何財富、健康、感情、運氣或人生結果。完整原則請見 <a href="/disclaimer/">免責聲明</a>。</p>
+
+        <h2>使用方式</h2>
+        <ol>
+          <li>先判斷床與門的相對關係：床尾正對門、床側面對門，或較少見的床頭正對門。</li>
+          <li>量室內牆到牆的淨長、淨寬（不要用權狀坪數換算），並填入床型、床可移動程度與房型施工條件。</li>
+          <li>按下計算，依排序由上往下看：排最前面的通常是現況空間與條件都允許的方案；排後面的會標示原因與需要的最小尺寸。</li>
+          <li>選定方案後，把家具尺寸帶進 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a> 畫一次，確認門片開闔與走道沒有被擋。</li>
+        </ol>
+      </header>
+
+      <section class="card selector-card" aria-labelledby="selector-heading">
+        <h2 id="selector-heading">輸入房間與床位條件</h2>
+        <form class="selector-form" data-fix-form>
+          <label>床型
+            <select name="bedType">
+              <option value="single">單人床（約 106 × 188 cm）</option>
+              <option value="double" selected>雙人床（約 152 × 188 cm）</option>
+              <option value="queen">加大床（約 182 × 188 cm）</option>
+            </select>
+          </label>
+          <label>床與門的相對關係
+            <select name="relation">
+              <option value="foot">床尾正對門</option>
+              <option value="side">床側正對門（床身側邊面向門）</option>
+              <option value="head">床頭正對門（較少見）</option>
+            </select>
+          </label>
+          <label>房間長（m，室內淨長）<input type="number" name="roomLength" min="1.8" max="10" step="0.1" value="3.6" required /></label>
+          <label>房間寬（m，室內淨寬）<input type="number" name="roomWidth" min="1.8" max="10" step="0.1" value="2.8" required /></label>
+          <label>床可移動程度
+            <select name="movable">
+              <option value="free">可自由移動或轉向</option>
+              <option value="limited">只能小範圍移動或轉向</option>
+              <option value="fixed">完全不能移動（嵌入式、架高床、空間限制死）</option>
+            </select>
+          </label>
+          <label>房型／施工條件
+            <select name="housing">
+              <option value="owned">自有住宅，可自由施工</option>
+              <option value="rentalOK">租屋，房東同意小幅施工／鑽牆</option>
+              <option value="rentalNo" selected>租屋，不可鑽牆或大幅施工</option>
+            </select>
+          </label>
+          <button class="button" type="submit">取得排序後的化解方案</button>
+        </form>
+        <div class="selector-result" data-fix-result aria-live="polite">
+          <p>填好條件後按「取得排序後的化解方案」，這裡會顯示依可行性排序的做法清單。</p>
+        </div>
+      </section>
+
+      <article class="card">
+        <h2>五種常見做法，各自的適用前提</h2>
+        <p>民俗與家居討論裡最常被提到的床對門做法大致是這五種：移床位、屏風或隔屏、床簾、床尾櫃體擋煞、開門方向調整。它們不是互相排斥的清單，而是由「需要多少空間」與「需不需要施工」兩個條件排出的優先順序。移床位幾乎不花錢也不用施工，但前提是床真的可以移動，而且側邊要有足夠淨寬；屏風、隔屏與床簾佔地更小，租屋族也適用；床尾櫃體需要同時考慮低櫃深度與門片開闔弧線，太淺的空間放了櫃子反而擋門；開門方向調整效果最直接，但屬於較大幅度施工，通常只有自有住宅或房東同意時才實際可行。</p>
+        <p>本工具的計算邏輯：側邊淨寬＝房間短邊－床寬，用來判斷移床位與床側屏風／床簾是否有空間；床尾淨深＝房間長邊－床長，用來判斷床尾屏風、床尾櫃體與門片開闔弧線是否足夠。這是矩形房、家具靠牆的簡化試算，沒有計入房間形狀、樑柱與插座位置，實際仍要以平面圖與現場量測覆核。</p>
+
+        <h2>租屋常見的取捨</h2>
+        <p>租屋族最常卡住的不是「哪個方案效果最好」，而是「哪個方案不用打電話問房東」。移床位、屏風／隔屏與免鑽自立桿床簾都不需要施工，是租屋的預設優先選項；床尾櫃體多半也是市售家具、不用施工，但要注意搬入路線與門片開闔；開門方向調整幾乎一定要跟房東溝通，甚至可能不在租約允許範圍內。如果工具算出你目前條件下「移床位」和「屏風」都因空間不足被排到後面，通常代表房間本身偏小，這時可以優先看免鑽床簾，或搭配 <a href="/zh/room-size-layout-templates/">坪數房間配置範本庫</a> 換一個整體配置角度，而不是只針對門的問題單點處理。</p>
+
+        <h2>常見錯誤</h2>
+        <p>最常見的錯誤是先買屏風或床簾，才發現尺寸放不進去、或恰好擋住衣櫃門與逃生動線；第二常見的錯誤是把「移床位」想成隨便挪一點就好，實際上側移不足 60 公分時，走道反而比化解前更擠；第三個錯誤是床尾櫃體選得太深，看起來擋住了視線，卻也讓門片只能開到一半。任何化解方案都不應該犧牲門片完整開闔、主要走道通行與逃生動線；如果數字算出來的最小尺寸與現場量測有落差，應該以現場為準，並優先考慮通行安全。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+
+  <script is:inline>
+    const form = document.querySelector('[data-fix-form]');
+    const result = document.querySelector('[data-fix-result]');
+    const bedWidths = { single: 1.06, double: 1.52, queen: 1.82 };
+    const bedLength = 1.88;
+    const relationLabels = { foot: '床尾正對門', side: '床側正對門', head: '床頭正對門' };
+
+    function cm(value) {
+      return `${Math.max(0, Math.round(value * 100))} cm`;
+    }
+
+    function tierMeta(tier) {
+      if (tier === 'recommended') return { label: '適合，可優先考慮', cls: 'is-ok' };
+      if (tier === 'possible') return { label: '空間偏緊，建議先實測', cls: 'is-warn' };
+      return { label: '目前條件較不建議', cls: 'is-bad' };
+    }
+
+    function buildRemedies({ bedWidth, relation, sideClearance, footClearance, movable, housing }) {
+      const canMinorDrill = housing !== 'rentalNo';
+      const canMajorConstruction = housing === 'owned';
+
+      const moveBed = (() => {
+        let tier;
+        let reason;
+        if (movable !== 'free') {
+          tier = 'unlikely';
+          reason = '床目前無法自由移動或轉向，這招在現況下不可行；若日後家具鬆動或想搬動，可再回來檢查一次側邊淨寬。';
+        } else if (sideClearance >= 0.9) {
+          tier = 'recommended';
+          reason = `側邊還有約 ${cm(sideClearance)} 淨寬，足夠把床側移，並在移動後保留基本走道。`;
+        } else if (sideClearance >= 0.6) {
+          tier = 'possible';
+          reason = `側邊約 ${cm(sideClearance)} 淨寬，側移後走道會偏窄，建議先用紙膠帶在地上模擬，確認日常通行不受影響。`;
+        } else {
+          tier = 'unlikely';
+          reason = `側邊僅約 ${cm(sideClearance)} 淨寬，扣掉床寬後幾乎沒有位移空間，這招目前不可行。`;
+        }
+        return {
+          key: 'moveBed',
+          name: '移床位／調整床的角度',
+          reason,
+          tier,
+          minSize: '建議側邊至少留 90 cm（30 cm 位移＋60 cm 走道），有 60 cm 也可勉強執行，低於 60 cm 不建議。',
+          fallback: '屏風或隔屏',
+        };
+      })();
+
+      const relevantForScreen = relation === 'foot' ? footClearance : sideClearance;
+      const screen = (() => {
+        let tier;
+        let reason;
+        if (relevantForScreen >= 0.7) {
+          tier = 'recommended';
+          reason = `相關方向淨深約 ${cm(relevantForScreen)}，足夠放置屏風或隔屏，且不至於擋住主要走道。`;
+        } else if (relevantForScreen >= 0.45) {
+          tier = 'possible';
+          reason = `相關方向淨深約 ${cm(relevantForScreen)}，只能放較窄的隔屏，且要特別確認沒有擋到門片開闔弧線。`;
+        } else {
+          tier = 'unlikely';
+          reason = `相關方向淨深僅約 ${cm(relevantForScreen)}，放屏風容易擋到動線，這招目前不建議。`;
+        }
+        return {
+          key: 'screen',
+          name: '屏風或隔屏',
+          reason,
+          tier,
+          minSize: '屏風／隔屏占地約寬 80–120 cm、深 30–40 cm，且不能擋住門片開闔弧線與逃生動線。',
+          fallback: '床簾',
+        };
+      })();
+
+      const relevantForCurtain = relation === 'foot' ? footClearance : sideClearance;
+      const curtain = (() => {
+        let tier;
+        let reason;
+        if (relevantForCurtain >= 0.15) {
+          tier = 'recommended';
+          reason = `免鑽自立桿床簾只需約 15 cm 空間即可安裝，相關方向淨深約 ${cm(relevantForCurtain)}，可行。`;
+        } else {
+          tier = 'possible';
+          reason = '空間非常緊繃，建議改用較窄的半幅簾或床頭簾片，並確認掛桿不會突出到走道上。';
+        }
+        if (housing === 'rentalNo') {
+          reason += ' 租屋不可施工時，優先選免鑽自立桿或床架夾式桿件，不需要鑽牆或黏貼天花板。';
+        }
+        return {
+          key: 'curtain',
+          name: '床簾',
+          reason,
+          tier,
+          minSize: '免鑽自立桿款約需床頭或床側多留 10–15 cm 空間；固定吊掛桿款則需要天花板或牆面可施工。',
+          fallback: '床尾櫃體擋煞',
+        };
+      })();
+
+      const cabinet = (() => {
+        const doorSwing = 0.8;
+        const cabinetDepth = 0.4;
+        const buffer = 0.2;
+        const needed = doorSwing + cabinetDepth + buffer;
+        let tier;
+        let reason;
+        if (relation !== 'foot') {
+          tier = 'unlikely';
+          reason = `此招主要處理床尾正對門的情況，你選的是「${relationLabels[relation]}」，實際效果有限，優先參考其他方案。`;
+        } else if (footClearance >= needed) {
+          tier = 'recommended';
+          reason = `床尾到門之間約 ${cm(footClearance)}，足夠放低櫃並保留門片開闔弧線。`;
+        } else if (footClearance >= 1.0) {
+          tier = 'possible';
+          reason = `床尾到門之間約 ${cm(footClearance)}，需改用深度 30 cm 以下的矮櫃，並重新確認門片能否完整開闔。`;
+        } else {
+          tier = 'unlikely';
+          reason = `床尾到門之間僅約 ${cm(footClearance)}，放低櫃很可能擋住門片，這招目前不建議。`;
+        }
+        return {
+          key: 'cabinet',
+          name: '床尾櫃體擋煞',
+          reason,
+          tier,
+          minSize: '建議床尾到門之間至少 140 cm（低櫃深 40 cm＋門片開闔弧線 80 cm＋緩衝 20 cm）；100–140 cm 需改用 30 cm 以下矮櫃並重新確認開門。',
+          fallback: canMajorConstruction ? '開門方向調整' : '屏風＋床簾組合',
+        };
+      })();
+
+      const doorSwing = (() => {
+        let tier;
+        let reason;
+        if (!canMinorDrill) {
+          tier = 'unlikely';
+          reason = '租屋且不可施工，這招現況不可行，需先和房東確認或改用其他方案。';
+        } else if (canMajorConstruction) {
+          tier = 'recommended';
+          reason = '自有住宅可施工，若其他方案空間都不理想，改門片開闔方向或推拉門是最直接的做法。';
+        } else {
+          tier = 'possible';
+          reason = '房東同意的「小幅施工」多半不包含更換門片或改變開門方向，執行前務必先確認施工範圍與是否需要恢復原狀。';
+        }
+        return {
+          key: 'doorSwing',
+          name: '開門方向調整（改推拉門或改鉸鏈側）',
+          reason,
+          tier,
+          minSize: '改推拉門需門側牆面至少「門寬＋10 cm」的滑動軌道空間；改開門方向需確認鉸鏈側牆有對應側牆寬度，且不影響逃生動線。',
+          fallback: '屏風＋床簾組合',
+        };
+      })();
+
+      return [moveBed, screen, curtain, cabinet, doorSwing];
+    }
+
+    function render(event) {
+      event.preventDefault();
+      const bedType = form.elements.bedType.value;
+      const relation = form.elements.relation.value;
+      const roomLength = Number(form.elements.roomLength.value);
+      const roomWidth = Number(form.elements.roomWidth.value);
+      const movable = form.elements.movable.value;
+      const housing = form.elements.housing.value;
+
+      if (![roomLength, roomWidth].every((value) => Number.isFinite(value) && value > 0)) {
+        result.innerHTML = '<p class="result-warning">請輸入有效的房間長寬。</p>';
+        return;
+      }
+
+      const bedWidth = bedWidths[bedType];
+      const longSide = Math.max(roomLength, roomWidth);
+      const shortSide = Math.min(roomLength, roomWidth);
+      const sideClearance = shortSide - bedWidth;
+      const footClearance = longSide - bedLength;
+
+      const tierOrder = { recommended: 0, possible: 1, unlikely: 2 };
+      const remedies = buildRemedies({ bedWidth, relation, sideClearance, footClearance, movable, housing })
+        .map((item, index) => ({ ...item, index }))
+        .sort((a, b) => tierOrder[a.tier] - tierOrder[b.tier] || a.index - b.index);
+
+      const cards = remedies
+        .map((item) => {
+          const meta = tierMeta(item.tier);
+          return `
+            <article class="remedy-card">
+              <div class="remedy-head">
+                <h3>${item.name}</h3>
+                <span class="tier-badge ${meta.cls}">${meta.label}</span>
+              </div>
+              <p>${item.reason}</p>
+              <p class="result-note"><strong>最小尺寸需求：</strong>${item.minSize}</p>
+              <p class="result-note"><strong>這招不可行時 → </strong>改用「${item.fallback}」</p>
+            </article>`;
+        })
+        .join('');
+
+      result.innerHTML = `
+        <h3>房間試算：${relationLabels[relation]}</h3>
+        <div class="stat-grid">
+          <p><strong>${cm(sideClearance)}</strong><span>側邊淨寬（短邊－床寬）</span></p>
+          <p><strong>${cm(footClearance)}</strong><span>床尾／床頭淨深（長邊－床長）</span></p>
+        </div>
+        <p class="result-note">以下依可行性排序，排在前面的方案在你目前的房間與條件下較容易執行；排在後面的仍列出原因與替代做法，方便你比較取捨。</p>
+        <div class="remedy-list">${cards}</div>
+        <p class="result-note">此為矩形房、家具靠牆的簡化試算，未計入樑柱、插座、床架外框與門片實際開闔角度。請把候選方案放進房間平面圖驗證。</p>
+        <a class="button" href="/zh/room-layout-planner/">用平面圖驗證方案</a>
+      `;
+    }
+
+    form.addEventListener('submit', render);
+  </script>
+</Layout>
+
+<style>
+  .selector-form,
+  .stat-grid,
+  .remedy-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .selector-form label {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .selector-form input,
+  .selector-form select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .selector-result {
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-5);
+  }
+
+  .stat-grid p {
+    display: grid;
+    margin: 0;
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted, #f7f6f3);
+  }
+
+  .stat-grid strong {
+    font-size: var(--text-xl);
+  }
+
+  .stat-grid span,
+  .result-note {
+    color: var(--color-muted);
+  }
+
+  .remedy-card {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .remedy-card p {
+    margin: 0;
+  }
+
+  .remedy-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+
+  .remedy-head h3 {
+    margin: 0;
+  }
+
+  .tier-badge {
+    font-size: var(--text-xs);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .is-ok {
+    color: #236347;
+    background: rgba(35, 99, 71, 0.12);
+  }
+
+  .is-warn {
+    color: #6f4b00;
+    background: var(--color-warning-bg);
+  }
+
+  .is-bad,
+  .result-warning {
+    color: #9b2c2c;
+    background: rgba(155, 44, 44, 0.1);
+  }
+
+  @media (min-width: 640px) {
+    .selector-form {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: end;
+    }
+
+    .selector-form .button {
+      grid-column: 1 / -1;
+      justify-self: start;
+    }
+
+    .stat-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+</style>
