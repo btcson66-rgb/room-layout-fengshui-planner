@@ -33,3 +33,16 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name roomfeng-win --branch main
+
+      # Waits for the fresh deploy to serve the updated sitemap, then submits
+      # it to Google Search Console. Requires GSC_SERVICE_ACCOUNT_JSON repo
+      # secret (same service account JSON used by funnytools). Deliberately
+      # NOT gated behind an "if secret exists" check — CLAUDE.md 紅線第 6 條
+      # requires a broken/missing pipeline to fail loudly, not skip silently
+      # (that silent-skip pattern is exactly how funnytools' equivalent step
+      # went unnoticed for months). scripts/gsc-submit-sitemap.mjs itself
+      # exits 1 with a clear message when credentials are missing.
+      - name: Submit sitemap to Google Search Console
+        run: sleep 60 && npm run gsc:submit-sitemap
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
