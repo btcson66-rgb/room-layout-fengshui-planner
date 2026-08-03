@@ -20,7 +20,6 @@ relatedTools:
   - /zh/feng-shui-bedroom-checker/
 relatedPosts:
   - humid-bedroom-layout
-  - mattress-on-floor
   - under-bed-storage-feng-shui
 ---
 
@@ -50,7 +49,7 @@ relatedPosts:
 全房除濕之外，三個濕氣重災區值得「定向處理」：
 
 - **衣櫃**：除濕機面向打開的衣櫃門吹 1–2 小時（雨季每週一次），比放十包除濕盒有效；平時櫃內放除濕盒當維持。發霉味出現＝已經太遲，衣物全洗＋櫃體擦拭酒精。
-- **床墊**：起床後掀開棉被讓床面散濕半小時；雨季每兩週把除濕機對床面近距離跑一輪。床墊直接放地上的家庭，這是必修不是選修（原理見[床墊落地的濕氣問題](/zh/blog/mattress-on-floor/)）。
+- **床墊**：起床後掀開棉被讓床面散濕半小時；雨季每兩週把除濕機對床面近距離跑一輪。床墊直接放地上的家庭，這是必修不是選修（相關防潮原理見[潮濕臥室配置指南](/zh/blog/humid-bedroom-layout/)）。
 - **床底收納區**：換季整理時順手對床底吹一輪，收納箱打開透氣（完整節奏見[床底收納指南](/zh/blog/under-bed-storage-feng-shui/)）。
 
 ## 和冷氣除濕模式怎麼分工

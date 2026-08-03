@@ -13,6 +13,7 @@ export default defineConfig({
       filter(page) {
         const path = new URL(page).pathname;
         const normalizedPath = normalizePath(path);
+        if (normalizedPath === '/zh/bed-facing-door-feng-shui/') return false;
         const blogMatch = normalizedPath.match(/^\/zh\/blog\/([^/]+)\/$/);
         if (blogMatch && !reviewReadyBlogSlugs.has(blogMatch[1])) return false;
         const categoryMatch = normalizedPath.match(/^\/zh\/category\/([^/]+)\/$/);

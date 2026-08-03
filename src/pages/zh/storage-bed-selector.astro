@@ -1,0 +1,279 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '收納床／掀床選型規劃器｜計算抽屜、側掀、上掀淨空';
+const description = '輸入房間長寬、樓高、身高、書桌與共用需求，計算抽屜床、側掀床、上掀床、高架床與上下舖的開啟淨空、迴旋半徑與不適用條件。';
+const canonical = '/zh/storage-bed-selector/';
+const faq = [
+  { q: '抽屜床旁邊到底要留多少空間？', a: '先量抽屜箱體內深，再確認滑軌是否能完全拉出。本工具以抽屜拉出 60 公分加 10 公分手部餘量試算，但不同商品差異很大；床側淨空應至少等於商品標示的全伸長度，而不是只看能否打開一條縫。' },
+  { q: '側掀床和上掀床哪一種比較省空間？', a: '要看哪一側能站人。側掀床需要沿床的長側操作，上掀床主要從床尾操作；兩者床板都在床體上方旋轉，實際最高點由床板長寬、床箱高度與五金限制角度共同決定，應向店家索取開啟尺寸圖。' },
+  { q: '兩人睡可以用 3.5 尺掀床嗎？', a: '3.5 × 6.2 尺屬常見加大單人名義尺寸，不適合作為一般兩人長期共用的預設。本工具勾選兩人共用時，改用 5 × 6.2 尺、約 150 × 190 公分床墊試算。' },
+  { q: '樓高 240 公分一定適合高架床嗎？', a: '不一定。還要知道上層床面高度、床墊厚度、床下淨高、使用者坐姿頭頂高度，以及吊扇、燈具、冷氣與樑的位置。240 公分只作本工具的第一道篩選，不代替實品安裝圖與安全規範。' },
+  { q: '收納床規劃要量床墊還是床架？', a: '兩個都要。床墊尺寸用來判斷睡眠需求，真正占地與碰撞則以床架最外緣為準；厚床頭、軟包邊、抽屜把手與踢腳板都可能讓外尺寸大於床墊。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '收納床／掀床選型規劃器', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/small-bedroom-layout/', title: '小房間配置指南' },
+  { href: '/zh/small-room-storage-planner/', title: '小房間收納規劃工具' },
+  { href: '/zh/room-size-layout-templates/', title: '3～8 坪房間配置範本' },
+  { href: '/zh/room-furniture-size-advisor/', title: '房間家具尺寸建議工具' },
+  { href: '/zh/room-layout-planner/', title: '拖拉式房間平面圖工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>收納床／掀床選型規劃器</h1>
+        <p class="lead">收納床不能只看床放不放得下；抽屜要能全拉、掀床要有人站的位置，高架床則同時受樓高與使用者身高限制。輸入你的淨尺寸，本工具會把五種床型依可行性排序。</p>
+        <p><strong>速答：</strong>先量房間最窄處的淨長、淨寬與最低樓高，再把床架最外尺寸加上開啟操作區。抽屜床看直線抽拉深度；側掀床的承板旋轉半徑接近床寬；上掀床的旋轉半徑接近床長，因此三者不能只用同一個「床邊留 60 公分」判斷。</p>
+        <p>結果是購買前的初篩，不是商品安裝保證。本頁使用名義床墊尺寸加上保守操作區做矩形配置；厚床頭、特殊床箱、氣壓棒角度、抽屜滑軌與房間樑柱都必須回到實際商品圖確認。</p>
+      </header>
+
+      <section class="card selector-card" aria-labelledby="selector-heading">
+        <h2 id="selector-heading">輸入房間與使用需求</h2>
+        <form class="selector-form" data-selector-form novalidate>
+          <label>房間淨長（公分）
+            <input name="roomLength" type="number" inputmode="decimal" min="160" max="1200" step="1" value="360" required />
+          </label>
+          <label>房間淨寬（公分）
+            <input name="roomWidth" type="number" inputmode="decimal" min="160" max="1200" step="1" value="280" required />
+          </label>
+          <label>最低天花板高度（公分）
+            <input name="ceilingHeight" type="number" inputmode="decimal" min="180" max="500" step="1" value="250" required />
+          </label>
+          <label>主要使用者身高（公分）
+            <input name="userHeight" type="number" inputmode="decimal" min="120" max="230" step="1" value="170" required />
+          </label>
+          <label class="check-row"><input name="needsDesk" type="checkbox" /> 房內需要一張書桌</label>
+          <label class="check-row"><input name="shared" type="checkbox" /> 兩人共用睡眠空間</label>
+          <button class="button" type="submit">計算適合床型</button>
+        </form>
+        <div class="selector-result" data-selector-result aria-live="polite">
+          <p>按下「計算適合床型」後，這裡會顯示依可行性排序的五種床型。</p>
+        </div>
+      </section>
+
+      <article class="card">
+        <h2>尺寸基準：床墊尺寸不等於床架外尺寸</h2>
+        <p>台灣常見名義尺寸裡，標準單人 3 × 6.2 尺約為 90 × 188～190 公分、加大單人 3.5 × 6.2 尺約為 105 × 188 公分、雙人 5 × 6.2 尺約為 150 × 188～190 公分。本工具單人預設 105 × 188 公分，兩人預設 150 × 190 公分；床架則先假設四周合計比床墊多 6 公分。</p>
+        <p>這只是初篩基準。IKEA 台灣的<a href="https://www.ikea.com.tw/zh/page/how-to-choose-bed-size" rel="noopener noreferrer">床墊尺寸說明</a>列出 90 × 190 與 150 × 190 公分等規格，也提醒床架、床墊與寢具要核對同規格。實際購買時請記錄四個數字：床架最外寬、最外長、床箱頂高度，以及完全開啟後的最高點或最外點。</p>
+      </article>
+
+      <article class="card">
+        <h2>抽屜、側掀與上掀的開啟空間怎麼量？</h2>
+        <h3>抽屜床：量全伸深度，不是只量抽屜面板</h3>
+        <p>抽屜沿直線拉出，所以沒有旋轉弧。本工具以 60 公分抽拉深度加 10 公分手部餘量計算；若商品抽屜內深 75 公分或滑軌能全伸，床側就要改用商品的全伸尺寸。現場做法是把紙膠帶從床架外緣貼到「抽屜最外點」，再確認衣櫃門、房門與椅子都不會進入這條帶狀區。</p>
+        <h3>側掀床：旋轉半徑接近承板寬度</h3>
+        <p>側掀的轉軸沿床的長邊，另一側床板向上移動，幾何上的旋轉半徑接近床寬：單人約 105 公分，雙人約 150 公分。真正最高點仍會受五金停止角度、床墊厚度與床箱高度影響；如果床上方有低樑、壁櫃或吊燈，必須索取側視開啟圖。</p>
+        <h3>上掀床：旋轉半徑接近承板長度</h3>
+        <p>上掀通常以床頭短邊為軸，床尾往上，因此旋轉半徑接近 188～190 公分，明顯大於側掀。這不代表一定需要 190 公分額外樓高，因為五金通常不會讓床板轉到完全垂直；它代表你不能用側掀床的最高點猜上掀床，必須核對該商品的最大角度與開啟高度。</p>
+      </article>
+
+      <article class="card">
+        <h2>高架床與上下舖要多算哪三個高度？</h2>
+        <p>第一個是上層床面到天花板，這會影響坐起、翻身與整理床鋪；本工具用 75 公分作初篩。第二個是床下淨高：若放書桌，不能只看桌面塞不塞得進去，還要把椅面高度加上坐姿上半身高度。本工具用「身高 × 0.52 ＋ 45 公分椅高」估算坐姿頭頂，再要求至少 10 公分餘量。</p>
+        <p>第三個是房內最低障礙物高度。吊扇、冷氣、灑水頭、燈具與樑都可能低於名義天花板，因此輸入值應填房間相關位置的最低高度，而不是建案型錄上的樓高。高架床與上下舖還涉及護欄、梯具、結構固定與年齡限制，本頁只處理空間選型；安全條件一律以製造商安裝說明為準。</p>
+      </article>
+
+      <article class="card">
+        <h2>購買前的四步現場覆核</h2>
+        <ol>
+          <li>從完成面量房間淨尺寸，牆腳有踢腳板時，以最窄處為準。</li>
+          <li>向店家要床架俯視與開啟側視圖，圈出最外尺寸、最高點、轉軸位置與操作側。</li>
+          <li>用紙膠帶把床架與開啟區貼在地面；書桌則再貼 100 × 120 公分桌椅操作區。</li>
+          <li>實際走一次進門、開床、拿物、關床、拉椅與開衣櫃，不順就換方向或床型。</li>
+        </ol>
+        <p>選出床型後，把實品外尺寸放入<a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，加入門窗與衣櫃。若你的問題其實是物品如何分區，而不是床型，請改用<a href="/zh/small-room-storage-planner/">小房間收納規劃工具</a>。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+
+  <script>
+    import { rankStorageBeds } from '../../scripts/storageBedSelector';
+
+    const form = document.querySelector<HTMLFormElement>('[data-selector-form]');
+    const result = document.querySelector<HTMLElement>('[data-selector-result]');
+
+    const escapeHtml = (value: string) => value.replace(/[&<>'"]/g, (character) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;',
+    })[character] ?? character);
+
+    function render(event: SubmitEvent) {
+      event.preventDefault();
+      if (!form || !result) return;
+      const data = new FormData(form);
+      const selection = rankStorageBeds({
+        roomLength: Number(data.get('roomLength')),
+        roomWidth: Number(data.get('roomWidth')),
+        ceilingHeight: Number(data.get('ceilingHeight')),
+        userHeight: Number(data.get('userHeight')),
+        needsDesk: data.get('needsDesk') === 'on',
+        shared: data.get('shared') === 'on',
+      });
+
+      if (selection.errors.length > 0) {
+        result.innerHTML = `<div class="form-errors" role="alert"><h3>請先修正輸入</h3><ul>${selection.errors.map((error) => `<li>${escapeHtml(error)}</li>`).join('')}</ul></div>`;
+        return;
+      }
+
+      const cards = selection.results.map((item, index) => `
+        <article class="bed-result ${item.feasible ? 'is-feasible' : 'is-unavailable'}">
+          <div class="result-heading">
+            <h3>${index + 1}. ${escapeHtml(item.name)}</h3>
+            <span class="status-badge">${item.feasible ? '通過初篩' : '目前不建議'}</span>
+          </div>
+          <p><strong>試算床型：</strong>${escapeHtml(item.bedSize)}</p>
+          <p><strong>最小淨空需求：</strong>${escapeHtml(item.minimumClearance)}</p>
+          <p><strong>開啟／使用範圍：</strong>${escapeHtml(item.openingEnvelope)}</p>
+          <p><strong>判斷：</strong>${escapeHtml(item.reason)}</p>
+          <p><strong>不適用：</strong>${escapeHtml(item.notSuitable)}</p>
+          <p><strong>替代方案：</strong>${escapeHtml(item.alternative)}</p>
+        </article>`).join('');
+
+      result.innerHTML = `
+        <h3>選型結果（可行者優先）</h3>
+        <div class="bed-results">${cards}</div>
+        <div class="assumptions"><h3>本次試算假設</h3><ul>${selection.assumptions.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul></div>
+        <p><a class="button" href="/zh/room-layout-planner/">把實品尺寸畫進平面圖</a></p>`;
+    }
+
+    form?.addEventListener('submit', render);
+  </script>
+</Layout>
+
+<style>
+  .selector-form,
+  .bed-results {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .selector-form > *,
+  .bed-result,
+  .selector-result {
+    min-width: 0;
+  }
+
+  .selector-form label:not(.check-row) {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .selector-form input[type='number'] {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .check-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .check-row input {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  .selector-result {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    overflow-wrap: anywhere;
+  }
+
+  .bed-result {
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-left: 0.35rem solid var(--color-primary);
+    border-radius: var(--radius-sm);
+  }
+
+  .bed-result.is-unavailable {
+    border-left-color: #9b2c2c;
+    background: rgba(155, 44, 44, 0.05);
+  }
+
+  .result-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+
+  .result-heading h3 {
+    margin: 0;
+  }
+
+  .status-badge {
+    flex: 0 0 auto;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    background: var(--color-surface-muted, #f2f1ec);
+    font-size: var(--text-xs);
+  }
+
+  .bed-result p:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-errors {
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    background: rgba(155, 44, 44, 0.1);
+    color: #8a2626;
+  }
+
+  .assumptions {
+    margin-top: var(--space-5);
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted, #f7f6f3);
+  }
+
+  @media (min-width: 640px) {
+    .selector-form {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: end;
+    }
+
+    .selector-form .button {
+      grid-column: 1 / -1;
+      justify-self: start;
+    }
+  }
+</style>
