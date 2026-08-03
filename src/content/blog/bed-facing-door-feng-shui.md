@@ -1,8 +1,8 @@
 ---
 title: "床對門風水怎麼辦？15 分鐘實測，看要不要化解或移床"
-description: "床對門風水好嗎？免買屏風，先用 15 分鐘檢查門片、逃生動線、光線與視線，判斷需不需要化解、移床或轉向；附租屋實例與安全來源佐證。"
+description: "床頭對門先處理枕邊聲光與門片距離；床尾對門先檢查門片、走道與出口，只有實際干擾再考慮移床或視線緩衝。附 15 分鐘檢查與租屋做法。"
 date: "2026-06-28"
-updated: "2026-07-25"
+updated: "2026-08-03"
 howToName: "床對門 15 分鐘檢查"
 howToTotalTime: "PT15M"
 howToSteps:
@@ -26,6 +26,7 @@ relatedTools:
   - /zh/room-layout-planner/
   - /zh/bed-desk-wardrobe-layout/
   - /zh/feng-shui-bedroom-checker/
+  - /zh/bed-door-fix-selector/
 relatedPosts:
   - mirror-facing-bed-bedroom
   - bed-head-against-wall
@@ -33,6 +34,8 @@ relatedPosts:
 ---
 
 # 床對門怎麼辦？先做 15 分鐘實測，再決定要不要移床
+
+速答：床頭對門時，先處理枕邊過近的門片、聲音與走廊光線；床尾對門時，先確認門片能全開、出口與夜間走道沒有被床或家具卡住。第一步不是買屏風，而是量門片與床的相對位置；需要比較可行做法時，可用[床對門化解方案選擇器](/zh/bed-door-fix-selector/)依房間尺寸、床位與施工條件排序。
 
 床尾對門不等於房間一定有問題，也不需要看到門就立刻買屏風。民俗風水常把床與房門在同一直線稱為「門沖」；在日常生活裡，真正可以檢查的是：門片會不會碰到家具、夜間走道是否安全、開門光線或聲音是否打斷睡眠，以及躺下時是否因缺少隱私而不舒服。
 
