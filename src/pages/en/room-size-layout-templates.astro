@@ -1,0 +1,261 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = 'Room Size Layout Templates | 150–450 sq ft Studio Plans';
+const description = 'Choose a 150, 200, 300, or 450 sq ft room and get two calculated layout templates with Twin, Full, or Queen bed sizes, furniture zones, and clear walkway widths.';
+const canonical = '/en/room-size-layout-templates/';
+const alternates = { zh: '/zh/room-size-layout-templates/', en: '/en/room-size-layout-templates/' };
+const faq = [
+  { q: 'What room measurement should I use for a studio apartment?', a: 'Use the clear interior length and width of the open room, measured from finished wall to finished wall. Do not use the apartment listing area if that number includes a bathroom, closets, wall thickness, or shared circulation.' },
+  { q: 'Is 200 sq ft enough for a Queen bed and a desk?', a: 'It can be in a roughly 10 × 20 ft open room, but the desk is usually easier at the foot of the bed than directly opposite it. A 60 in Queen plus a 24 in desk leaves 36 in across a 120 in room before chair movement, so door, closet, and chair zones still need a full floor-plan check.' },
+  { q: 'Should I choose a Twin, Full, or Queen bed for a small studio?', a: 'Choose from the sleeper outward. A Twin is 38 × 75 in, a Full is 54 × 75 in, and a Queen is 60 × 80 in in the U.S. sizing used here. Then subtract the actual bed-frame dimensions—not only the mattress—from the room width and keep the remaining daily route usable.' },
+  { q: 'Why does the calculator assume a rectangular room?', a: 'A fixed rectangle makes the two templates comparable and exposes the width calculation. Real studios may have kitchens, columns, radiators, alcoves, or angled walls, so use the result as a starting envelope and redraw the selected version with your measured obstacles.' },
+  { q: 'Is a 36 inch path required inside every bedroom?', a: 'No. This page uses 36 in as a practical comparison target borrowed from the familiar U.S. accessible-route dimension, not as a statement that every private bedroom layout must meet that rule. Local building and accessibility requirements depend on the property and jurisdiction.' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'en',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Room size layout templates', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/en/studio-apartment-layout/', title: 'Studio apartment layout guide' },
+  { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner' },
+  { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/room-layout-planner/', title: 'Free drag-and-drop room planner' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>Room size layout templates for studios and single rooms</h1>
+        <p class="lead">Pick a familiar U.S. room size and a real priority. The tool calculates two starting layouts with named bed sizes, furniture depth, and the clear width left over, so you can copy a workable structure instead of facing an empty canvas.</p>
+        <p><strong>Quick answer:</strong> square footage tells you how much floor exists, but room width decides whether a bed, another furniture zone, and a useful path can sit side by side. A 200 sq ft room shaped 10 × 20 ft behaves differently from a square room of the same area, so every result below states the rectangle it assumes.</p>
+        <p>These are planning templates for an open room, not complete apartment plans. They do not silently count a bathroom, built-in closet, kitchen run, or wall thickness as usable furniture area. After choosing a template, transfer the dimensions to the <a href="/en/room-layout-planner/">free room layout planner</a> and add your actual doors, windows, columns, radiators, and outlets.</p>
+      </header>
+
+      <section class="card template-card" aria-labelledby="template-heading">
+        <h2 id="template-heading">Calculate two layouts for your room size</h2>
+        <form class="template-form" data-en-template-form>
+          <label>Open-room floor area
+            <select name="size">
+              <option value="150">150 sq ft / 13.9 m² — micro studio or single room</option>
+              <option value="200" selected>200 sq ft / 18.6 m² — compact studio</option>
+              <option value="300">300 sq ft / 27.9 m² — medium studio</option>
+              <option value="450">450 sq ft / 41.8 m² — large studio</option>
+            </select>
+          </label>
+          <label>Main priority
+            <select name="priority">
+              <option value="sleep">Sleep and closed storage</option>
+              <option value="work">Sleep and work</option>
+              <option value="hosting">Sleep and occasional guests</option>
+            </select>
+          </label>
+          <button class="button" type="submit">Show calculated templates</button>
+        </form>
+        <div class="template-result" data-en-template-result aria-live="polite">
+          <p>Select a size and priority, then calculate. Two different arrangements will appear here.</p>
+        </div>
+      </section>
+
+      <article class="card">
+        <h2>Will a queen bed fit in a 200 sq ft room?</h2>
+        <p>Yes, a Queen mattress can fit in a 200 sq ft open room when the room is about 10 × 20 ft, but “fits” does not mean every furniture arrangement works. A 60 in wide Queen plus an 18 in deep storage unit leaves 42 in across a 120 in room; replacing that storage with a 24 in desk leaves 36 in before the chair is pulled out.</p>
+        <p>The better test is whether the actual bed frame, chair movement, entry door, closet door, and daily route can operate at the same time. If the 200 sq ft figure includes a bathroom or kitchen, do not use it as the room area—measure the open sleeping room itself. If the clear short side is less than 10 ft, try the end-zone template or compare a Full mattress before buying.</p>
+      </article>
+
+      <article class="card">
+        <h2>What bed size works in a 150 sq ft studio?</h2>
+        <p>A Twin is the safest starting point when 150 sq ft must hold sleeping, storage, and another daily function. At 38 × 75 in, it preserves 16 in more width than a Full and 22 in more than a Queen, which can determine whether a desk, cabinet, or passage works at all.</p>
+        <p>This page uses common U.S. nominal mattress dimensions: Twin 38 × 75 in, Full 54 × 75 in, and Queen 60 × 80 in. Those figures can be checked against the <a href="https://www.ikea.com/us/en/cat/mattresses-bm002/" rel="noopener noreferrer">IKEA U.S. mattress size guide</a>. Bed frames are often wider and longer than their mattresses, so replace the nominal dimensions with the product’s maximum outside dimensions before committing to a purchase.</p>
+      </article>
+
+      <article class="card">
+        <h2>How wide should a walkway be in a small apartment?</h2>
+        <p>Use 36 in as a useful comparison target for a main route, then test the route with the people and tasks in your home. The U.S. Access Board describes 36 in as the continuous clear width for an accessible route, with specific limited reductions and wider turning requirements; this page borrows that familiar dimension as a planning benchmark, not as a claim that it is the building code for every private bedroom.</p>
+        <p>Below 36 in, the calculator labels a result “tight” down to 24 in. That does not certify safety or accessibility—it tells you the arrangement deserves a tape-outline test. A narrow strip used only to make a bed may be acceptable to one person, while the path from entry to bathroom, a wheelchair route, or a place where two people pass needs a different standard. Review the <a href="https://www.access-board.gov/ada/guides/chapter-4-accessible-routes/" rel="noopener noreferrer">U.S. Access Board route guidance</a> and the requirements that apply to your property when accessibility is part of the brief.</p>
+      </article>
+
+      <article class="card">
+        <h2>Which layout should I copy for work, storage, or guests?</h2>
+        <h3>Opposite-wall layout</h3>
+        <p>Place the bed along one long wall and the second function along the opposite wall. The calculator subtracts the mattress width and the furniture depth from the room’s short side. This exposes the daily pinch point: a desk may look shallow, but the chair temporarily occupies the clear route, while a closed storage wall usually keeps a more stable aisle.</p>
+        <h3>End-zone layout</h3>
+        <p>Keep the side of the bed open and move the work, storage, or guest function to the far end. The tool subtracts bed length and activity-zone depth from the room’s long side. This works well in a long studio, but only if the entry and kitchen circulation do not cut through that end zone.</p>
+        <p>Neither template assumes that furniture can overlap. A sofa bed still needs its opened footprint, a wardrobe needs its door or drawer depth, and a desk needs room for the chair to move. Draw those temporary operating rectangles, not only the furniture’s closed outline.</p>
+      </article>
+
+      <article class="card">
+        <h2>How do I turn a template into a measured floor plan?</h2>
+        <ol>
+          <li>Measure the clear room length and width at floor level; use the smallest reading if walls are uneven.</li>
+          <li>Mark doors, closet doors, windows, radiators, columns, and fixed kitchen edges.</li>
+          <li>Replace each nominal mattress with the maximum outside dimensions of the bed frame you may buy.</li>
+          <li>Outline both closed furniture and temporary use zones: open drawers, pulled-out chairs, and a made-up sofa bed.</li>
+          <li>Walk the tape outline while carrying laundry or a bag, then redraw the chosen version in the <a href="/en/room-layout-planner/">room planner</a>.</li>
+        </ol>
+        <p>If the obstacle is not the room but the route into it, use the <a href="/en/moving-furniture-size-check/">moving furniture size check</a> to compare doors, corridors, corners, and elevators. Room fit and delivery-path fit are separate decisions; a Queen may work perfectly in the room and still fail at a stair turn.</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+
+  <script>
+    import { buildRoomTemplates } from '../../scripts/roomSizeLayoutTemplates';
+    import type { LayoutPriority, RoomSizeKey } from '../../scripts/roomSizeLayoutTemplates';
+
+    const form = document.querySelector<HTMLFormElement>('[data-en-template-form]');
+    const result = document.querySelector<HTMLElement>('[data-en-template-result]');
+
+    const statusLabel = {
+      comfortable: '36 in or more',
+      tight: 'Tight: tape-test it',
+      'does-not-fit': 'Does not preserve 24 in',
+    } as const;
+
+    function render(event: SubmitEvent) {
+      event.preventDefault();
+      if (!form || !result) return;
+      const data = new FormData(form);
+      const output = buildRoomTemplates({
+        size: data.get('size') as RoomSizeKey,
+        priority: data.get('priority') as LayoutPriority,
+      });
+      const cards = output.variants.map((variant) => `
+        <article class="layout-variant status-${variant.status}">
+          <div class="variant-heading">
+            <h3>${variant.name}</h3>
+            <span class="status-badge">${statusLabel[variant.status]}</span>
+          </div>
+          <p><strong>Bed:</strong> ${variant.bed}</p>
+          <p><strong>Second zone:</strong> ${variant.furniture}</p>
+          <p><strong>Calculated clear width:</strong> ${variant.clearWidth} in (${Math.round(variant.clearWidth * 2.54)} cm)</p>
+          <p>${variant.note}</p>
+        </article>`).join('');
+
+      result.innerHTML = `
+        <h3>${output.squareFeet} sq ft / ${output.squareMeters} m² for ${output.priorityLabel}</h3>
+        <p><strong>Assumed open-room rectangle:</strong> ${output.assumedRoom}. Bathrooms, kitchens, closets, and wall thickness are not included.</p>
+        <div class="variant-grid">${cards}</div>
+        <p class="result-note">A 36 in result is a comparison benchmark, not a code determination. Transfer the better template to the planner and add real openings and obstacles.</p>
+        <a class="button" href="/en/room-layout-planner/">Draw this template to scale</a>`;
+    }
+
+    form?.addEventListener('submit', render);
+  </script>
+</Layout>
+
+<style>
+  .template-form,
+  .variant-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .template-form > *,
+  .template-result,
+  .layout-variant {
+    min-width: 0;
+  }
+
+  .template-form label {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .template-form select {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .template-result {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    overflow-wrap: anywhere;
+  }
+
+  .layout-variant {
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-left: 0.35rem solid var(--color-primary);
+    border-radius: var(--radius-sm);
+  }
+
+  .layout-variant.status-tight {
+    border-left-color: #8a6500;
+  }
+
+  .layout-variant.status-does-not-fit {
+    border-left-color: #9b2c2c;
+  }
+
+  .variant-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+
+  .variant-heading h3 {
+    margin: 0;
+  }
+
+  .status-badge {
+    flex: 0 0 auto;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    background: var(--color-surface-muted, #f2f1ec);
+    font-size: var(--text-xs);
+  }
+
+  .result-note {
+    color: var(--color-muted);
+  }
+
+  @media (min-width: 640px) {
+    .template-form,
+    .variant-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .template-form {
+      align-items: end;
+    }
+
+    .template-form .button {
+      grid-column: 1 / -1;
+      justify-self: start;
+    }
+  }
+</style>

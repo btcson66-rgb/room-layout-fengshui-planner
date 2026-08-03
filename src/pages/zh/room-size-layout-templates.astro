@@ -7,6 +7,7 @@ import { siteUrl } from '../../data/site';
 const title = '5坪房間設計範本｜3～8坪睡眠、讀書、收納配置';
 const description = '5坪房間怎麼設計？選擇 3、4、5、6、8 坪與睡眠、讀書、收納或上下舖需求，取得 2 種配置範本、走道寬度、家具尺寸上限與常見錯誤。';
 const canonical = '/zh/room-size-layout-templates/';
+const alternates = { zh: '/zh/room-size-layout-templates/', en: '/en/room-size-layout-templates/' };
 const faq = [
   { q: '範本用的房間長寬是怎麼來的？', a: '同一個坪數在現實中可能是正方形，也可能是狹長形，實際差異很大。本頁用一組固定的長寬比假設換算每個坪數的長、寬，方便先比較配置邏輯；正式規劃前，請一定要用捲尺量出你房間的實際室內淨長寬，再用計算結果覆核。' },
   { q: '兩種配置範本差在哪裡？', a: '「一字型＋床尾角落區」把床和另一件家具集中在同一面牆，把房間中段留成大面積開放地板；「對牆型」把床和另一件家具分靠兩面相對的牆，中間留一條固定寬度的走道。前者地板彈性大，後者動線固定但通常更省長邊空間，兩者各有適合的房型比例。' },
@@ -43,7 +44,7 @@ const relatedLinks = [
 ];
 ---
 
-<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <header class="card">
