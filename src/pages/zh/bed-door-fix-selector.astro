@@ -4,8 +4,8 @@ import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { siteUrl } from '../../data/site';
 
-const title = '床對門化解方案選擇器｜依床位、房型與可移動程度排序做法';
-const description = '輸入床與門的相對位置、房間尺寸、床可不可以移動與房型施工條件，工具依可行性排序輸出移床位、屏風、床簾、櫃體擋煞、開門方向調整等化解方案，附最小尺寸需求與備案。';
+const title = '床對門化解方案選擇器｜床頭、床尾對門怎麼辦';
+const description = '床頭對門先處理枕邊聲光與門片距離，床尾對門先檢查開門動線；輸入房間尺寸與床位條件，依可行性取得移床、屏風、床簾等化解方案。';
 const canonical = '/zh/bed-door-fix-selector/';
 const faq = [
   { q: '床對門一定要化解嗎？', a: '不一定。民俗上常見說法會提醒床不要正對門，但實際影響通常是視線、聲音與走動路線的干擾程度。如果門片開闔順暢、走道清楚、睡眠也沒有被明顯打擾，不化解也是一個合理選擇；本頁化解方案是給想調整的人一個依現況排序的起點，不是強制標準。' },
@@ -34,7 +34,6 @@ const jsonLd = [
   },
 ];
 const relatedLinks = [
-  { href: '/zh/bed-facing-door-feng-shui/', title: '床對門風水參考（說明頁）' },
   { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床對門 15 分鐘實測與化解判斷' },
   { href: '/zh/room-layout-planner/', title: '房間佈局規劃工具' },
   { href: '/zh/room-size-layout-templates/', title: '坪數房間配置範本庫' },
@@ -48,6 +47,9 @@ const relatedLinks = [
         <h1>床對門化解方案選擇器</h1>
         <p class="lead">床尾、床側或床頭對門，可以化解的做法不只一種，但不是每一種在你的房間裡都做得到。輸入床位、房間尺寸、床可不可以移動與房型施工條件，工具會依「現況算不算得出足夠空間」排序，把可行的方案排在前面，並附上每招不可行時的替代做法。</p>
         <p><strong>民俗參考聲明：</strong>本頁「化解」用語沿用民俗習慣說法，內容只作民俗文化與空間舒適度參考，不保證、暗示或預測任何財富、健康、感情、運氣或人生結果。完整原則請見 <a href="/disclaimer/">免責聲明</a>。</p>
+
+        <h2>床頭對門與床尾對門，先處理的問題不同</h2>
+        <p><strong>床頭對門</strong>時，先量枕邊到門片的距離，觀察開關門聲、走廊光線與進出動線是否太靠近頭部；<strong>床尾對門</strong>時，先確認門片能完整開啟，床尾到出口的路線沒有被矮櫃、屏風或床架卡住。工具會依你選的相對關係調整方案說明，但任何民俗參考做法都不應犧牲通行與逃生安全。</p>
 
         <h2>使用方式</h2>
         <ol>
@@ -132,7 +134,7 @@ const relatedLinks = [
       return { label: '目前條件較不建議', cls: 'is-bad' };
     }
 
-    function buildRemedies({ bedWidth, relation, sideClearance, footClearance, movable, housing }) {
+    function buildRemedies({ relation, sideClearance, footClearance, movable, housing }) {
       const canMinorDrill = housing !== 'rentalNo';
       const canMajorConstruction = housing === 'owned';
 
@@ -287,7 +289,7 @@ const relatedLinks = [
       const footClearance = longSide - bedLength;
 
       const tierOrder = { recommended: 0, possible: 1, unlikely: 2 };
-      const remedies = buildRemedies({ bedWidth, relation, sideClearance, footClearance, movable, housing })
+      const remedies = buildRemedies({ relation, sideClearance, footClearance, movable, housing })
         .map((item, index) => ({ ...item, index }))
         .sort((a, b) => tierOrder[a.tier] - tierOrder[b.tier] || a.index - b.index);
 
