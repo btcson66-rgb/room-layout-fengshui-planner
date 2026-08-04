@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { fileURLToPath } from 'node:url';
 import { reviewReadyBlogSlugs, reviewReadyCategorySlugs } from './src/data/contentQuality.mjs';
+import { createSitemapLastmodLookup } from './scripts/sitemap-lastmod.mjs';
 
 const normalizePath = (pathname) => (pathname.endsWith('/') ? pathname : `${pathname}/`);
+const lastmodForUrl = createSitemapLastmodLookup(fileURLToPath(new URL('.', import.meta.url)));
 
 export default defineConfig({
   output: 'static',
@@ -19,6 +22,9 @@ export default defineConfig({
         const categoryMatch = normalizedPath.match(/^\/zh\/category\/([^/]+)\/$/);
         if (categoryMatch && !reviewReadyCategorySlugs.has(categoryMatch[1])) return false;
         return !path.startsWith('/tools/') && path !== '/zh/' && path !== '/404' && path !== '/404/' && path !== '/404.html';
+      },
+      serialize(item) {
+        return { ...item, lastmod: lastmodForUrl(item.url).lastmod };
       },
     }),
   ],
