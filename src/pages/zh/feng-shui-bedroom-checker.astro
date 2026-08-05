@@ -1,12 +1,13 @@
 ---
 import Layout from '../../components/Layout.astro';
 import AffiliateRecs from '../../components/AffiliateRecs.astro';
+import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { fengShuiRules } from '../../data/fengShuiRules';
 import { siteUrl, toolLinks } from '../../data/site';
 
-const title = '臥室風水鑑定｜免費線上格局檢查工具 - RoomFeng';
-const description = '免費臥室風水鑑定工具：依檢查清單逐項確認床對門、鏡子對床、床頭靠牆、書桌位置與入口動線，立即看出格局問題。內容為民俗文化與空間舒適度參考。';
+const title = '臥室風水鑑定：6 項免費線上格局檢查｜RoomFeng';
+const description = '免費做臥室風水鑑定：逐項檢查床對門、鏡子對床、床頭靠牆與靠窗、書桌及入口動線，了解判斷標準、結果意思與可調整順序。僅供民俗文化與空間舒適度參考。';
 const canonical = '/zh/feng-shui-bedroom-checker/';
 const jsonLd = [
   {
@@ -29,14 +30,57 @@ const jsonLd = [
   },
 ];
 const questions = [
-  { id: 'bed-facing-door', label: '床是否正對門或床尾直接朝門？' },
-  { id: 'mirror-facing-bed', label: '鏡子是否正對床，睡覺時容易看到反射？' },
-  { id: 'headboard-wall', label: '床頭是否沒有靠實牆或穩定床頭板？' },
-  { id: 'bed-under-window', label: '床頭是否直接靠窗？' },
-  { id: 'desk-facing-door', label: '書桌是否正對門、背對門，或背後缺少穩定依靠？' },
-  { id: 'clear-entry', label: '門口、床邊或主要通道是否被雜物與大型家具阻擋？' },
+  {
+    id: 'bed-facing-door',
+    label: '房門打開後，門口直線是否穿過床面？',
+    criterion: '站在門口往房內看；若門洞向前延伸的範圍穿過床墊，而不是只看到床角，選「有此狀況」。',
+    uncertainTip: '在平面圖上畫出門洞兩側向前的直線，確認是否與床墊外框重疊。',
+  },
+  {
+    id: 'mirror-facing-bed',
+    label: '躺在枕頭位置時，鏡中是否看得到床或人影？',
+    criterion: '用平常睡眠高度與夜間照明實看；只有站起來才看得到的鏡面，不算同一種情況。',
+    uncertainTip: '在晚上常用燈光下躺到枕頭位置，檢查鏡面是否反射床面、門口燈光或窗外車燈。',
+  },
+  {
+    id: 'headboard-wall',
+    label: '床頭後方是否缺少連續實牆或穩固床頭板？',
+    criterion: '檢查枕頭後方是否為可開啟的門窗、主要走道，或一推就移動的薄板與家具。',
+    uncertainTip: '輕推床頭板並查看床頭後方用途；穩定不等於一定要施工固定，也不能用不穩的高櫃代替。',
+  },
+  {
+    id: 'bed-under-window',
+    label: '床頭是否與窗戶開口範圍直接重疊？',
+    criterion: '比較床頭寬度與窗框位置，並實測開窗、拉簾、清潔及換床單時是否互相卡住。',
+    uncertainTip: '量窗台高度、窗扇開啟範圍與床頭板高度，再記錄夜間光線、聲音和窗邊水氣。',
+  },
+  {
+    id: 'desk-facing-door',
+    label: '坐在書桌前時，背後或正前方是否為門口主動線？',
+    criterion: '把椅子拉到實際工作位置，確認開門、人員經過與椅子後退是否會互相干擾。',
+    uncertainTip: '分別在房門開啟、有人經過與椅子後退時測一次，不要只看空椅子的照片。',
+  },
+  {
+    id: 'clear-entry',
+    label: '入口、床邊或衣櫃前是否有無法順走的窄點？',
+    criterion: '將房門與櫃門完整打開，從入口走到床邊與收納區；本站規劃器以約 60 公分作主要走道提醒起點，仍須按使用者需求現場測試。',
+    uncertainTip: '用捲尺量最窄處，並抱著洗衣籃或拿著日常物品實走一次；有輔具時應以輔具實際寬度為準。',
+  },
 ];
 const relatedArticles: { href: string; title: string }[] = [
+  { href: '/zh/blog/bedroom-feng-shui-checklist/', title: '臥室風水檢查清單：逐區查看' },
+  { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床對門的現場判斷與調整' },
+  { href: '/zh/blog/mirror-facing-bed-bedroom/', title: '鏡子對床與側邊反射怎麼分' },
+  { href: '/zh/blog/bed-under-window-solutions/', title: '床頭靠窗怎麼辦：7 晚檢查' },
+];
+const faq = [
+  { q: '臥室風水鑑定通常會看哪些項目？', a: '本站先看六個能在房間中直接確認的項目：床與房門的直線、躺下時的鏡面反射、床頭後方、床頭與窗的位置、書桌和門口的關係，以及入口與收納動線。結果同時說明民俗常見說法和實際空間原因。' },
+  { q: '做臥室風水鑑定需要生日、八字或房屋座向嗎？', a: '不需要。這個工具不是命理或占卜服務，也不依個人資料預測結果；只整理能由門、窗、床、鏡子、書桌與走道觀察到的格局條件。' },
+  { q: '臥室風水鑑定的結果是分數嗎？', a: '不是吉凶分數。勾選數量只代表本次發現幾個需要再確認的配置，不代表房間品質，更不能用來推論健康、財運、感情、考試或工作結果。' },
+  { q: '怎樣才算床正對門？只看到床角也算嗎？', a: '可把門洞兩側向房內延伸成兩條直線；直線範圍穿過床墊主體，才列為本工具的「有此狀況」。只從門口斜看得到床角，可另外檢查隱私與光線，但不必混成完全相同的格局。' },
+  { q: '租屋不能移床或鑽牆，檢查還有用嗎？', a: '有用。先找出真正干擾，再比較轉動家具、調整床頭板、窗簾、可移式屏風、收納位置與照明等可復原方案；任何做法都不能阻擋門窗、逃生或日常通行。' },
+  { q: '工具能看出潮濕、噪音或採光是否嚴重嗎？', a: '不能只靠勾選判定嚴重程度。潮濕要看雨天與清晨狀況，噪音要在實際睡眠時段記錄，反光要在白天與夜間分別測試；工具只能提醒你下一步量什麼、看什麼。' },
+  { q: '檢查出很多項目時，應該先改哪一個？', a: '先處理會阻擋門窗、逃生、開門或行走的問題，再處理反覆潮濕、家具不穩與線材絆倒等現場風險；其後才比較光線、聲音、視線與民俗偏好。' },
 ];
 ---
 
@@ -44,32 +88,70 @@ const relatedArticles: { href: string; title: string }[] = [
   <section class="section">
     <div class="container page-grid">
       <header class="card">
-        <h1>臥室風水格局檢查</h1>
+        <h1>臥室風水鑑定：6 項格局自我檢查</h1>
         <p class="lead">
-          這個清單把常見臥室風水說法轉成可檢查的空間問題，例如床對門、鏡子對床、床頭靠牆、書桌位置與入口動線。結果僅作民俗文化與空間舒適度參考，不代表任何保證。
+          想做臥室風水鑑定，不必先從吉凶分數開始。這個免費工具把常見說法拆成六個能在現場觀察的條件：床與門的直線、鏡面反射、床頭支撐、床頭靠窗、書桌位置，以及入口與收納動線。逐題選「有此狀況」、「沒有」或「不確定」，就能得到下一步檢查方法。
         </p>
         <p>
-          建議先用 <a href="/zh/room-layout-planner/">房間家具配置工具</a> 畫出房間、門窗與家具，再用本頁檢查需要調整的項目。若無法更動大型家具，可優先考慮布簾、屏風、矮櫃、收納與照明等可復原做法。
+          這不是遠端看圖斷定房間好壞，也不會用方位或個人資料預測結果。所有結果只作民俗文化與空間舒適度參考；不保證健康、財運、感情、工作、考試、運氣或任何結果。請先讀 <a href="/disclaimer/">完整免責聲明</a>，並把安全、門窗功能、通風、採光和實際使用放在前面。
         </p>
       </header>
 
+      <section class="card" aria-labelledby="prepare-heading">
+        <h2 id="prepare-heading">開始鑑定前，先準備三樣資料</h2>
+        <ol>
+          <li><strong>一張能看到門窗與家具的平面草圖：</strong>手繪即可，也可以先用 <a href="/zh/room-layout-planner/">房間家具配置工具</a> 依公分輸入房間、床、書桌、衣櫃、門、窗與鏡子。</li>
+          <li><strong>五個現場尺寸：</strong>房門開啟範圍、床墊外框、窗台與窗扇、椅子實際後退範圍，以及主要走道最窄處。不要只用建案坪數或家具商品名稱代替。</li>
+          <li><strong>兩個不同時段的觀察：</strong>白天檢查窗光與開窗，晚上用平常燈光躺在床上看鏡面、門口光線與噪音。單張白天照片無法回答所有問題。</li>
+        </ol>
+        <p>本節只是協助量測格局，不是命理鑑定。民俗說法的使用界線請見 <a href="/disclaimer/">免責聲明</a>。</p>
+      </section>
+
       <section class="card checker-card" aria-labelledby="checker-heading">
-        <h2 id="checker-heading">勾選你房間目前的狀況</h2>
+        <h2 id="checker-heading">逐項完成臥室格局鑑定</h2>
+        <p>每題的「有此狀況」代表需要進一步檢查，不等於凶、不等於一定要搬家具。「不確定」會列出現場量測方式，不會硬判成通過或不通過。</p>
+        <p class="checker-progress" data-feng-progress>尚未作答，共 6 題。</p>
         <form class="checker-form" data-feng-checker>
-          {questions.map((question) => (
-            <label>
-              <input type="checkbox" name="issue" value={question.id} />
-              <span>{question.label}</span>
-            </label>
+          {questions.map((question, index) => (
+            <fieldset>
+              <legend><span>第 {index + 1} 題</span>{question.label}</legend>
+              <p class="criterion"><strong>判斷方式：</strong>{question.criterion}</p>
+              <div class="answer-options">
+                <label><input type="radio" name={question.id} value="issue" /> 有此狀況</label>
+                <label><input type="radio" name={question.id} value="clear" /> 沒有</label>
+                <label><input type="radio" name={question.id} value="unknown" /> 不確定</label>
+              </div>
+            </fieldset>
           ))}
+          <button class="button secondary" type="reset">重新檢查</button>
         </form>
         <div class="checker-result" data-feng-result aria-live="polite">
-          <p>尚未勾選項目。你可以先從床、門、鏡子、書桌與入口動線開始檢查。</p>
+          <p>完成任一題後，這裡會顯示已確認項目、不確定項目的量測方法，以及建議處理順序。</p>
         </div>
+        <noscript><p>此互動鑑定需要瀏覽器啟用 JavaScript；你仍可使用下方判斷表逐項手動檢查。</p></noscript>
+      </section>
+
+      <section class="card" aria-labelledby="criteria-heading">
+        <h2 id="criteria-heading">六項鑑定標準與結果代表什麼</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>項目</th><th>結果代表的實際問題</th><th>優先再確認</th></tr></thead>
+            <tbody>
+              <tr><td>床與房門直線重疊</td><td>開門視線、走動聲音、走道光線可能直接進入睡眠區。</td><td>門片是否碰床、床是否壓縮入口，再比較床位轉向。</td></tr>
+              <tr><td>躺下看得到鏡面反射</td><td>夜間人影、門口燈或窗外移動光源可能被反射到視野。</td><td>分清楚正對床、只照到床側，或只有站立時看得到。</td></tr>
+              <tr><td>床頭後方不穩定</td><td>後方可能是門窗、通道或會移動的家具，需檢查碰撞、光聲與使用衝突。</td><td>床頭板是否穩固，以及完整牆面是否真的比現況更好用。</td></tr>
+              <tr><td>床頭與窗戶重疊</td><td>可能影響開窗、拉簾與清潔，也要另查光線、聲音、水氣與滲水。</td><td>窗戶用途、窗扇範圍、窗台高度和 7 晚實際記錄。</td></tr>
+              <tr><td>書桌位於門口干擾線</td><td>開門、人員經過、椅子後退與螢幕視線可能互相干擾。</td><td>把視線、聲音、反光和椅後空間分開測，不只看桌子朝向。</td></tr>
+              <tr><td>入口或主要走道有窄點</td><td>房門、櫃門、抽屜、床角或雜物可能讓日常進出卡住。</td><td>量最窄處並實走；約 60 公分只是本站提醒起點，不是所有人的通用答案。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>表中的民俗聯想只能當作重新觀察空間的提示，不能從格局推論人生結果。詳細界線請見 <a href="/disclaimer/">免責聲明</a>。</p>
       </section>
 
       <section class="card" aria-labelledby="rules-heading">
-        <h2 id="rules-heading">常見檢查項目</h2>
+        <h2 id="rules-heading">每一項提醒可以怎麼調整</h2>
+        <p>下列「較需注意／可優先檢查／可作參考」只用來安排現場檢查順序，不是吉凶等級。先處理門窗受阻、家具不穩、持續潮濕與通行問題，再比較光線、聲音、視線與個人偏好。風水文字仍受 <a href="/disclaimer/">免責聲明</a> 約束。</p>
         <div class="rule-list">
           {fengShuiRules.map((rule) => (
             <article>
@@ -78,10 +160,37 @@ const relatedArticles: { href: string; title: string }[] = [
               <p><strong>民俗常見說法：</strong>{rule.traditionalReason}</p>
               <p><strong>空間舒適度：</strong>{rule.practicalReason}</p>
               <p><strong>可考慮：</strong>{rule.recommendation}</p>
-              <a href={`/zh/blog/${rule.relatedArticleSlug}/`}>閱讀延伸文章</a>
+              <a href={`/zh/blog/${rule.relatedArticleSlug}/`}>
+                {rule.relatedArticleSlug === 'bed-under-window-solutions' ? '床頭靠窗怎麼辦：完整判斷方法' : '閱讀延伸文章'}
+              </a>
             </article>
           ))}
         </div>
+      </section>
+
+      <section class="card" aria-labelledby="scope-heading">
+        <h2 id="scope-heading">這個臥室風水鑑定能判斷什麼、不能判斷什麼</h2>
+        <div class="scope-grid">
+          <div>
+            <h3>工具可以協助</h3>
+            <ul>
+              <li>用一致標準辨認床、門、窗、鏡子、書桌與走道的相對位置。</li>
+              <li>把「感覺不好」拆成可量的門片範圍、走道窄點、鏡面視線與家具操作衝突。</li>
+              <li>依安全與日常使用，整理先量測、再微調、最後才換大型家具的順序。</li>
+              <li>為租屋情境找可復原方案，但仍要實測門窗與逃生動線。</li>
+            </ul>
+          </div>
+          <div>
+            <h3>工具不能代替</h3>
+            <ul>
+              <li>無法從勾選結果診斷滲水、霉菌、電路、結構、消防或室內空氣問題。</li>
+              <li>無法只看平面位置得知夜間噪音、季節日照、窗縫風感或使用者的實際需求。</li>
+              <li>不做八字、命盤、方位吉凶、運勢評分，也不預測任何人生結果。</li>
+              <li>不能取代建築、修繕、消防、醫療或其他合格專業人員的現場判斷。</li>
+            </ul>
+          </div>
+        </div>
+        <p>若發現窗戶無法開啟、門片卡住、家具搖晃、反覆滲水或需要攀爬才能操作，先停止用裝飾遮擋問題。民俗參考不應凌駕安全；完整說明見 <a href="/disclaimer/">免責聲明</a>。</p>
       </section>
 
       <section class="card">
@@ -91,6 +200,8 @@ const relatedArticles: { href: string; title: string }[] = [
         </p>
         <p><a href="/disclaimer/">閱讀完整免責聲明</a></p>
       </section>
+
+      <Faq items={faq} />
 
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
@@ -104,19 +215,30 @@ const relatedArticles: { href: string; title: string }[] = [
     </div>
   </section>
 
-  <script is:inline define:vars={{ rules: fengShuiRules }}>
+  <script is:inline define:vars={{ rules: fengShuiRules, assessmentQuestions: questions }}>
     const form = document.querySelector('[data-feng-checker]');
     const result = document.querySelector('[data-feng-result]');
+    const progress = document.querySelector('[data-feng-progress]');
     const byId = new Map(rules.map((rule) => [rule.id, rule]));
+    const questionById = new Map(assessmentQuestions.map((question) => [question.id, question]));
 
     function renderResult() {
-      const checked = Array.from(form.querySelectorAll('input:checked')).map((input) => input.value);
-      if (checked.length === 0) {
-        result.innerHTML = '<p>尚未勾選項目。你可以先從床、門、鏡子、書桌與入口動線開始檢查。</p>';
+      const answers = new Map(new FormData(form).entries());
+      const answeredCount = answers.size;
+      progress.textContent = answeredCount === assessmentQuestions.length
+        ? `已完成 ${answeredCount}／${assessmentQuestions.length} 題。`
+        : `已完成 ${answeredCount}／${assessmentQuestions.length} 題，還有 ${assessmentQuestions.length - answeredCount} 題未確認。`;
+
+      if (answeredCount === 0) {
+        result.innerHTML = '<p>完成任一題後，這裡會顯示已確認項目、不確定項目的量測方法，以及建議處理順序。</p>';
         return;
       }
 
-      const items = checked
+      const issueIds = assessmentQuestions.filter((question) => answers.get(question.id) === 'issue').map((question) => question.id);
+      const unknownIds = assessmentQuestions.filter((question) => answers.get(question.id) === 'unknown').map((question) => question.id);
+      const clearCount = assessmentQuestions.filter((question) => answers.get(question.id) === 'clear').length;
+
+      const issueItems = issueIds
         .map((id) => byId.get(id))
         .filter(Boolean)
         .map(
@@ -126,16 +248,33 @@ const relatedArticles: { href: string; title: string }[] = [
               <p><strong>民俗參考：</strong>${rule.traditionalReason}</p>
               <p><strong>實用原因：</strong>${rule.practicalReason}</p>
               <p><strong>可考慮調整：</strong>${rule.recommendation}</p>
-              <a ${'href'}="/zh/blog/${rule.relatedArticleSlug}/">查看延伸說明</a>
+              <a ${'href'}="/zh/blog/${rule.relatedArticleSlug}/">${rule.relatedArticleSlug === 'bed-under-window-solutions' ? '床頭靠窗怎麼辦：查看完整判斷方法' : '查看延伸說明'}</a>
             </article>
           `,
         )
         .join('');
 
-      result.innerHTML = `<p>以下結果僅作民俗文化與空間舒適度參考，沒有任何結果保證。詳見 <a href="/disclaimer/">免責聲明</a>。</p>${items}`;
+      const unknownItems = unknownIds
+        .map((id) => questionById.get(id))
+        .filter(Boolean)
+        .map((question) => `<li><strong>${question.label}</strong><br>${question.uncertainTip}</li>`)
+        .join('');
+
+      const issueSummary = issueIds.length > 0
+        ? `<h3>發現 ${issueIds.length} 個需要再檢查的項目</h3>${issueItems}`
+        : '<h3>目前沒有勾選「有此狀況」</h3><p>這只表示已回答的六項中沒有發現對應格局，不代表房間得到吉凶認證，也不能排除潮濕、噪音、結構或其他現場問題。</p>';
+      const unknownSummary = unknownIds.length > 0
+        ? `<h3>還有 ${unknownIds.length} 個不確定項目</h3><ul>${unknownItems}</ul>`
+        : '';
+      const unfinishedSummary = answeredCount < assessmentQuestions.length
+        ? `<p><strong>尚有 ${assessmentQuestions.length - answeredCount} 題未作答：</strong>先完成其餘項目，再決定調整順序。</p>`
+        : `<p><strong>已確認為「沒有」：${clearCount} 項。</strong>若房間或家具之後更動，建議重新檢查。</p>`;
+
+      result.innerHTML = `<p>以下結果只作民俗文化與空間舒適度參考，不是命理、醫療或安全鑑定，沒有任何結果保證。詳見 <a href="/disclaimer/">免責聲明</a>。</p>${unfinishedSummary}${issueSummary}${unknownSummary}`;
     }
 
     form.addEventListener('change', renderResult);
+    form.addEventListener('reset', () => window.setTimeout(renderResult, 0));
   </script>
 </Layout>
 
@@ -146,17 +285,66 @@ const relatedArticles: { href: string; title: string }[] = [
     margin-bottom: var(--space-5);
   }
 
-  .checker-form label {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-3);
+  .checker-form fieldset {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
-    padding: var(--space-3);
+    padding: var(--space-4);
   }
 
-  .checker-form input {
-    margin-top: 0.25rem;
+  .checker-form legend {
+    font-weight: 700;
+    padding: 0 var(--space-2);
+  }
+
+  .checker-form legend span {
+    color: var(--color-muted);
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 400;
+  }
+
+  .criterion {
+    color: var(--color-muted);
+    margin-top: var(--space-2);
+  }
+
+  .answer-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+  }
+
+  .answer-options label {
+    align-items: center;
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .checker-progress {
+    font-weight: 700;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  .table-wrap table {
+    border-collapse: collapse;
+    min-width: 42rem;
+    width: 100%;
+  }
+
+  .table-wrap th,
+  .table-wrap td {
+    border: 1px solid var(--color-border);
+    padding: var(--space-3);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .scope-grid {
+    display: grid;
+    gap: var(--space-4);
   }
 
   .checker-result,
@@ -175,5 +363,11 @@ const relatedArticles: { href: string; title: string }[] = [
     color: var(--color-muted);
     font-size: var(--text-sm);
     margin-bottom: var(--space-2);
+  }
+
+  @media (min-width: 48rem) {
+    .scope-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 </style>
