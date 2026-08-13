@@ -21,6 +21,8 @@ relatedPosts:
   - furniture-measurement-checklist
   - student-room-layout-guide
   - bed-head-against-wall
+  - long-narrow-bedroom-layout
+  - tiny-room-layout-under-5-ping
 ---
 
 # 房間走道要留多寬？用門片、抽屜與椅子實測動線
