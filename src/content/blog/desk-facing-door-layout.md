@@ -23,6 +23,7 @@ relatedPosts:
   - student-room-layout-guide
   - bed-head-against-wall
   - room-circulation-width-guide
+  - home-office-bedroom-layout
 howToName: "書桌對門 3 天分心紀錄流程"
 howToTotalTime: "P3D"
 howToSteps:

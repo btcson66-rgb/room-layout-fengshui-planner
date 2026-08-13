@@ -24,6 +24,7 @@ relatedPosts:
   - furniture-measurement-checklist
   - room-circulation-width-guide
   - student-room-layout-guide
+  - tiny-room-layout-under-5-ping
 ---
 
 # 小房間收納分區：先盤點 30 件物品，再規劃五個存放區

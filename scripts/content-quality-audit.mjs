@@ -7,7 +7,7 @@ const contentRoot = path.join(root, 'src', 'content', 'blog');
 const distRoot = path.join(root, 'dist');
 const failures = [];
 const checks = [];
-const expectedReviewReadyCount = 12;
+const expectedReviewReadyCount = 15;
 const expandedArticleRequirements = new Map([
   ['bed-facing-door-feng-shui', {
     required: [/15 分鐘/, /一晚/, /cdc\.gov\/sleep/i, /usfa\.fema\.gov/i, /cpsc\.gov/i, /\/disclaimer\//],
@@ -24,6 +24,21 @@ const expandedArticleRequirements = new Map([
   ['small-room-storage-zones', {
     required: [/30 件/, /cpsc\.gov/i, /防傾倒/, /7 天歸位測試/],
     forbidden: [],
+  }],
+  ['home-office-bedroom-layout', {
+    minimumCharacters: 3200,
+    required: [/7 天界線測試/, /osha\.gov\/etools\/computer-workstations\/components\/monitors/i, /270\s*×\s*330/, /視訊背景/],
+    forbidden: [/保證專注|治療失眠|改善失眠/],
+  }],
+  ['long-narrow-bedroom-layout', {
+    minimumCharacters: 3200,
+    required: [/三條線測試/, /nfa\.gov\.tw/i, /240\s*×\s*420/, /直排版/],
+    forbidden: [/法定走道|保證好住/],
+  }],
+  ['tiny-room-layout-under-5-ping', {
+    minimumCharacters: 3200,
+    required: [/功能預算/, /3\.3058/, /cpsc\.gov/i, /330\s*×\s*500/],
+    forbidden: [/5\s*坪一定|保證收納/],
   }],
 ]);
 
@@ -79,7 +94,11 @@ for (const slug of reviewReadyBlogSlugs) {
   const expandedRequirements = expandedArticleRequirements.get(slug);
   if (expandedRequirements) {
     expandedArticleBodies.set(slug, body);
-    check(`source:${slug}:expanded-depth`, characters >= 2500, characters);
+    check(
+      `source:${slug}:expanded-depth`,
+      characters >= (expandedRequirements.minimumCharacters ?? 2500),
+      characters,
+    );
     for (const pattern of expandedRequirements.required) {
       check(`source:${slug}:required:${pattern.source}`, pattern.test(body), pattern.source);
     }
