@@ -27,7 +27,11 @@ jobs:
       - run: npm run build
         env:
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
-          PUBLIC_ADSENSE_CLIENT: ca-pub-7052036786750044
+          # 2026-08-24: was ca-pub-7052036786750044 (AdSense account btcson66).
+          # That account's sign-in mailbox is no longer accessible, so the site
+          # is being re-submitted for review under account zxc851558. Keep this
+          # value in sync with public/ads.txt — AdSense matches the two.
+          PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
