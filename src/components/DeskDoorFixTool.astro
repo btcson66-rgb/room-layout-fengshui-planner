@@ -1,0 +1,325 @@
+<section class="card desk-door-tool" aria-labelledby="desk-door-tool-heading">
+  <h2 id="desk-door-tool-heading">輸入房間、門窗與桌椅位置</h2>
+  <p>座標從房間西北角起算：X 是離西牆距離，Y 是離北牆距離。門窗位置填「從西牆／北牆到開口起點」；所有數字都是完成面實測公分。</p>
+
+  <form class="desk-door-form" data-desk-door-form novalidate>
+    <fieldset>
+      <legend>1. 房間內徑</legend>
+      <div class="field-grid">
+        <label>房間東西寬（cm）
+          <input name="roomWidth" type="number" min="150" max="2000" step="1" value="300" required />
+        </label>
+        <label>房間南北長（cm）
+          <input name="roomLength" type="number" min="150" max="2000" step="1" value="360" required />
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. 房門與門口動線</legend>
+      <p>內開左／右以「站在房內面向房門」看到的鉸鏈側為準；拉門沒有掃掠圓弧，仍保留門口走路帶。</p>
+      <div class="field-grid">
+        <label>房門所在牆面
+          <select name="doorWall">
+            <option value="south">南牆</option>
+            <option value="north">北牆</option>
+            <option value="west">西牆</option>
+            <option value="east">東牆</option>
+          </select>
+        </label>
+        <label>牆角到門洞起點（cm）
+          <input name="doorOffset" type="number" min="0" max="2000" step="1" value="25" required />
+        </label>
+        <label>門洞／門片寬（cm）
+          <input name="doorWidth" type="number" min="45" max="180" step="1" value="80" required />
+        </label>
+        <label>開門方式
+          <select name="doorSwing">
+            <option value="inward-left">向內開，鉸鏈在左</option>
+            <option value="inward-right">向內開，鉸鏈在右</option>
+            <option value="sliding">拉門／推拉門</option>
+          </select>
+        </label>
+        <label>門口走路帶深度（60–75 cm）
+          <input name="circulationWidth" type="number" min="60" max="75" step="1" value="70" required />
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. 窗戶（可選）</legend>
+      <label class="check-label"><input name="windowEnabled" type="checkbox" checked /> 納入窗戶與螢幕方向檢查</label>
+      <div class="field-grid" data-window-fields>
+        <label>窗戶所在牆面
+          <select name="windowWall" data-window-control>
+            <option value="east">東牆</option>
+            <option value="west">西牆</option>
+            <option value="north">北牆</option>
+            <option value="south">南牆</option>
+          </select>
+        </label>
+        <label>牆角到窗洞起點（cm）
+          <input name="windowOffset" data-window-control type="number" min="0" max="2000" step="1" value="120" />
+        </label>
+        <label>窗洞寬（cm）
+          <input name="windowWidth" data-window-control type="number" min="20" max="1000" step="1" value="110" />
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. 書桌、椅子與目前座向</legend>
+      <p>書桌 X、Y 填桌體外框左上角；「面向」是人坐下看螢幕的方向，椅子活動區會加在反方向。</p>
+      <div class="field-grid">
+        <label>書桌寬（左右，cm）
+          <input name="deskWidth" type="number" min="40" max="400" step="1" value="120" required />
+        </label>
+        <label>書桌深（前後，cm）
+          <input name="deskDepth" type="number" min="30" max="200" step="1" value="60" required />
+        </label>
+        <label>書桌左上角 X（cm）
+          <input name="deskX" type="number" min="0" max="2000" step="1" value="35" required />
+        </label>
+        <label>書桌左上角 Y（cm）
+          <input name="deskY" type="number" min="0" max="2000" step="1" value="215" required />
+        </label>
+        <label>坐下時面向
+          <select name="deskFacing">
+            <option value="north">北</option>
+            <option value="south">南</option>
+            <option value="west">西</option>
+            <option value="east">東</option>
+          </select>
+        </label>
+        <label>椅子拉出活動深度（cm）
+          <input name="chairClearance" type="number" min="30" max="200" step="1" value="75" required />
+        </label>
+      </div>
+    </fieldset>
+
+    <button class="button" type="submit">計算要不要移、往哪裡移幾公分</button>
+  </form>
+
+  <div class="desk-door-result" data-desk-door-result aria-live="polite">
+    <p>送出後會顯示門片與走路帶重疊、椅後距離、窗光方向，以及每個問題的最小可行移動量。</p>
+  </div>
+</section>
+
+<script>
+  import { analyzeDeskDoor } from '../scripts/deskDoorFix';
+  import type { DeskDoorInput, DoorSwing, MovementResult, Wall } from '../scripts/deskDoorFix';
+
+  const directionLabel: Record<Wall, string> = { north: '北', south: '南', west: '西', east: '東' };
+  const rectText = (rect: { x: number; y: number; width: number; height: number }) =>
+    `X ${Math.round(rect.x)}～${Math.round(rect.x + rect.width)}、Y ${Math.round(rect.y)}～${Math.round(rect.y + rect.height)} cm`;
+
+  function movementCard(title: string, movement: MovementResult | null, clearText: string) {
+    if (!movement) {
+      return `<article class="result-card is-clear"><h4>${title}</h4><p>${clearText}</p></article>`;
+    }
+    const optionItems = movement.options.map((option) => {
+      const direction = directionLabel[option.direction];
+      if (option.feasibleShift !== null) {
+        return `<li>往${direction}最少移 <strong>${option.feasibleShift} cm</strong>：桌面與完整椅子活動區仍可留在房內。</li>`;
+      }
+      if (option.requiredShift !== null) {
+        return `<li>往${direction}幾何上至少要 ${option.requiredShift} cm，但房內空間不足${option.roomShortfall > 0 ? ` ${option.roomShortfall} cm` : ''}。</li>`;
+      }
+      return `<li>往${direction}無法在此房型內解除這個條件。</li>`;
+    }).join('');
+    const best = movement.best?.feasibleShift !== null && movement.best
+      ? `<p class="result-answer"><strong>最小可行做法：</strong>往${directionLabel[movement.best.direction]}移 ${movement.best.feasibleShift} cm，房內有空間。</p>`
+      : '<p class="result-warning"><strong>目前沒有可行平移：</strong>四個方向都會讓桌面或椅子活動區超出房間。</p>';
+    return `<article class="result-card is-warn"><h4>${title}</h4>${best}<ul>${optionItems}</ul></article>`;
+  }
+
+  document.querySelectorAll<HTMLFormElement>('[data-desk-door-form]').forEach((form) => {
+    const result = form.parentElement?.querySelector<HTMLElement>('[data-desk-door-result]');
+    const windowToggle = form.elements.namedItem('windowEnabled') as HTMLInputElement | null;
+    const windowControls = form.querySelectorAll<HTMLInputElement | HTMLSelectElement>('[data-window-control]');
+    const syncWindowFields = () => windowControls.forEach((control) => { control.disabled = !windowToggle?.checked; });
+    windowToggle?.addEventListener('change', syncWindowFields);
+    syncWindowFields();
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!result) return;
+      const data = new FormData(form);
+      const n = (name: string) => Number(data.get(name));
+      const hasWindow = data.get('windowEnabled') === 'on';
+      const input: DeskDoorInput = {
+        roomWidth: n('roomWidth'),
+        roomLength: n('roomLength'),
+        door: {
+          wall: data.get('doorWall') as Wall,
+          offset: n('doorOffset'),
+          width: n('doorWidth'),
+          swing: data.get('doorSwing') as DoorSwing,
+        },
+        circulationWidth: n('circulationWidth'),
+        window: hasWindow ? {
+          wall: data.get('windowWall') as Wall,
+          offset: n('windowOffset'),
+          width: n('windowWidth'),
+        } : undefined,
+        desk: {
+          x: n('deskX'),
+          y: n('deskY'),
+          width: n('deskWidth'),
+          depth: n('deskDepth'),
+          facing: data.get('deskFacing') as Wall,
+        },
+        chairClearance: n('chairClearance'),
+      };
+      const analysis = analyzeDeskDoor(input);
+      if (analysis.errors.length > 0) {
+        result.innerHTML = `<div class="tool-error" role="alert"><h3>輸入無法計算</h3><p>請確認所有尺寸為有效公分數、門窗開口沒有超出牆面，而且書桌本體完整留在房內。門口走路帶需介於 60～75 公分。</p><p><code>${analysis.errors.join(', ')}</code></p></div>`;
+        return;
+      }
+
+      const doorText = analysis.door.pathIntersects
+        ? `<p class="result-warning"><strong>目前有重疊。</strong>桌面加椅子活動外框深入門口走路帶 <strong>${analysis.door.bandOverlapDepth} cm</strong>，沿門洞方向重疊 <strong>${analysis.door.bandOverlapSpan} cm</strong>${analysis.door.swingIntersects ? '，也碰到內開門片的掃掠區' : ''}。</p>`
+        : '<p class="result-answer"><strong>目前沒有重疊。</strong>桌面與拉出的椅子都未進入門片掃掠區或門口走路帶。</p>';
+      const backText = analysis.back.toDoorOrWalkway
+        ? `<p class="result-warning"><strong>座位背後是門口／主要動線。</strong>椅子活動外緣到該動線的距離為 <strong>${analysis.back.pathDistance} cm</strong>，到後方牆面則有 ${analysis.back.wallDistance} cm。</p>`
+        : `<p class="result-answer"><strong>座位背後不直接接門口動線。</strong>椅子活動外緣到後方牆面有 ${analysis.back.wallDistance} cm。</p>`;
+      const windowText = analysis.window.relation === 'none'
+        ? '<p>未勾選窗戶，這次不判定螢幕與窗光方向。</p>'
+        : analysis.window.relation === 'front'
+          ? `<p class="result-warning"><strong>窗在視線正前方。</strong>螢幕背向窗，與窗洞投影對齊 ${analysis.window.projectedOverlap} cm；亮窗背景可能讓明暗對比過大。</p>`
+          : analysis.window.relation === 'back'
+            ? `<p class="result-warning"><strong>窗在座位正後方。</strong>螢幕正面朝窗，與窗洞投影對齊 ${analysis.window.projectedOverlap} cm；先測螢幕反光與人影。</p>`
+            : analysis.window.relation === 'side'
+              ? `<p class="result-answer"><strong>目前是側向採光。</strong>窗洞與桌位投影對齊 ${analysis.window.projectedOverlap} cm；仍要按上午、下午日照調整窗簾。</p>`
+              : '<p class="result-answer"><strong>窗與桌位投影錯開。</strong>目前不是正面或背面直對窗戶。</p>';
+
+      const hasBlockedCondition = analysis.door.pathIntersects
+        || analysis.back.toDoorOrWalkway
+        || analysis.window.relation === 'front'
+        || analysis.window.relation === 'back';
+      const alternatives = hasBlockedCondition ? `
+        <section class="alternative-box">
+          <h3>不平移或平移不可行時</h3>
+          <ol>
+            <li><strong>轉 90° 改成側向採光：</strong>旋轉後的桌椅活動區至少需要 ${analysis.alternatives.rotate.requiredWidth} × ${analysis.alternatives.rotate.requiredLength} cm；目前原地旋轉${analysis.alternatives.rotate.feasible ? `可行，可面向${directionLabel[analysis.alternatives.rotate.facing!]}` : '仍會碰門口動線、直對窗或超出房間'}。</li>
+            <li><strong>椅後加低層架／穩固隔屏：</strong>本工具以層架深 25 cm 計；若後方仍是走道，還要另保留 ${input.circulationWidth} cm，所以共需 ${analysis.alternatives.shelf.requiredBehind} cm。現有 ${analysis.alternatives.shelf.availableBehind} cm，${analysis.alternatives.shelf.feasible ? '空間足夠，但仍要做傾倒與通行測試' : `還差 ${analysis.alternatives.shelf.shortfall} cm，不應硬塞進走道`}。</li>
+            <li><strong>和衣櫃交換位置：</strong>衣櫃現址至少要能容納 ${analysis.alternatives.swap.requiredWidth} × ${analysis.alternatives.swap.requiredLength} cm 的完整桌椅活動區。此工具沒有衣櫃尺寸與座標，不能宣稱一定可換；還要另量衣櫃外框、櫃門開啟與搬動路線。</li>
+          </ol>
+        </section>` : '';
+
+      result.innerHTML = `
+        <h3>計算結果</h3>
+        <p>書桌外框：${rectText(analysis.deskRect)}；含椅子拉出後的活動外框：${rectText(analysis.activityRect)}。門口走路帶：${rectText(analysis.door.bandRect)}。</p>
+        <div class="result-grid">
+          <article class="result-card"><h4>1. 門片與走路帶</h4>${doorText}</article>
+          <article class="result-card"><h4>2. 座位背後</h4>${backText}</article>
+          <article class="result-card"><h4>3. 螢幕與窗戶</h4>${windowText}</article>
+        </div>
+        <h3>4. 最少要移幾公分</h3>
+        <div class="move-grid">
+          ${movementCard('清除門片／走路帶重疊', analysis.movements.door, '目前不必為門口動線移桌。')}
+          ${movementCard('不再背對門口／主要動線', analysis.movements.back, '目前座位背後不直接接門口動線。')}
+          ${movementCard('不再正面或背面直對窗戶', analysis.movements.window, '目前不必為窗光方向平移書桌。')}
+        </div>
+        ${alternatives}
+        <p class="result-note">數字以矩形房、直牆、1 公分步進與完整椅子拉出深度計算；「剛好不重疊」不是施工誤差。請另加踢腳板、門把、桌腳外張與量尺誤差，並以現場完整開門、坐下、起身測試為準。</p>`;
+    });
+  });
+</script>
+
+<style>
+  .desk-door-form,
+  .field-grid,
+  .result-grid,
+  .move-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .desk-door-form fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .desk-door-form legend {
+    padding: 0 var(--space-2);
+    font-weight: 700;
+  }
+
+  .desk-door-form label:not(.check-label) {
+    display: grid;
+    gap: var(--space-2);
+    min-width: 0;
+  }
+
+  .check-label {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    margin-bottom: var(--space-4);
+  }
+
+  .check-label input {
+    width: auto;
+  }
+
+  .desk-door-form input:not([type='checkbox']),
+  .desk-door-form select {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .desk-door-result {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    overflow-wrap: anywhere;
+  }
+
+  :global(.desk-door-result .result-card),
+  :global(.desk-door-result .alternative-box),
+  :global(.desk-door-result .tool-error) {
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-muted);
+  }
+
+  :global(.desk-door-result .result-card h4),
+  :global(.desk-door-result .alternative-box h3) {
+    margin-top: 0;
+  }
+
+  :global(.desk-door-result .result-warning) {
+    color: var(--color-warning-text, #7a3e00);
+  }
+
+  :global(.desk-door-result .result-answer) {
+    color: var(--color-text);
+  }
+
+  :global(.desk-door-result .result-note) {
+    font-size: 0.95rem;
+  }
+
+  @media (min-width: 48rem) {
+    .field-grid,
+    .result-grid,
+    .move-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .result-grid > :first-child {
+      grid-column: span 2;
+    }
+  }
+</style>

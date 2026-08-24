@@ -1,0 +1,90 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import DeskDoorFixTool from '../../components/DeskDoorFixTool.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '書桌對門要不要移？先算門口動線重疊幾公分';
+const description = '書桌對門不一定要移；輸入房間、門片、書桌與椅子尺寸，計算是否占到 60～75 公分門口動線、要往哪裡移幾公分，以及窗邊反光取捨。';
+const canonical = '/zh/desk-door-fix-check/';
+const faq = [
+  { q: '書桌對門好嗎？', a: '不一定要移。先把書桌外框和椅子拉到能起身的位置，檢查兩者是否進入門洞向內延伸 60～75 公分的走路帶或內開門片掃掠區；沒有重疊、開門與通行也正常時，可以先保留。' },
+  { q: '書桌正對門可以嗎？', a: '可以先保留，但要先量門片、門洞走路帶和完整桌椅活動外框的重疊，再比較側移或轉 90 度。不要只為了避開視線而把椅子推進衣櫃、床邊或另一條主要走道。' },
+  { q: '書桌對門化解怎麼做？', a: '先量房間內徑、門洞起點與寬度、開門方向、桌體外框，以及椅子從桌下拉到能自然站起的距離。頁面沿用「化解」的常見問法，實際只計算門片、走路帶、背後距離與窗光方向。' },
+  { q: '窗邊書桌到底行不行？', a: '可以；優先讓窗光從側面進來。面向窗時要處理亮窗背景與熱感，背對窗時要測螢幕反光和人影，並完整操作窗扇與窗簾確認不會碰到螢幕或桌上物品。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '書桌對門化解檢查', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/blog/desk-facing-door-layout/', title: '書桌對門：先看門口走路帶，再做 3 天干擾紀錄' },
+  { href: '/zh/desk-placement-feng-shui/', title: '書桌靠牆、門口與窗邊採光取捨' },
+  { href: '/zh/beam-layout-fix-check/', title: '樑壓書桌：計算座位要移幾公分' },
+  { href: '/zh/room-layout-planner/', title: '拖拉式房間家具配置工具' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>書桌對門要不要移？先算動線重疊與移動公分</h1>
+        <p class="lead"><strong>書桌對門不一定要移；桌面或拉出的椅子進入門口走路帶，才先算要移幾公分。</strong></p>
+        <p>這個檢查器把房門拆成兩個可量區域：內開門片以鉸鏈為圓心掃過的四分之一圓，以及門洞向室內延伸 60～75 公分的走路帶。工具會把書桌外框和椅子拉到能站起的活動深度合併，報出深入走路帶幾公分、沿門洞交疊幾公分，再逐公分尋找往北、南、東、西移動後能完整留在房內的最短方案。</p>
+        <p>頁名沿用「書桌對門化解」的自然搜尋問法，但結果只處理空間幾何、視線與採光取捨，不判吉凶，也不保證專注力、工作、考試、健康或任何人生結果。民俗上常見的「背後有靠」與「不沖門」只作文化和空間舒適度參考；完整界線請閱讀<a href="/disclaimer/">免責聲明</a>。</p>
+      </header>
+
+      <DeskDoorFixTool />
+
+      <article class="card">
+        <h2>工具怎麼判定書桌正對門與背對門</h2>
+        <p>「正對門」不只看桌面朝向。若桌子看起來離門很遠，但椅子拉出 75 公分後進入門洞的走路帶，日常進出仍會擦過椅背；反過來，視線看得到門卻沒有桌椅重疊、門片可全開、主要走道也完整，就沒有必要只因名稱強迫搬動。結果會把門片掃掠與矩形走路帶分開計算，並顯示實際重疊深度。</p>
+        <p>座位背後的判定以「完整拉出椅子的外緣」為起點，沿人的背後方向找到門口動線，回報兩者距離；也同時回報到牆面的剩餘距離。0 公分代表椅子活動區已碰到動線，不代表人一定會被撞到，但應立刻用真椅子做開門、坐下、起身與他人通行測試。若想記錄視線、聲音和反光哪一項真的造成干擾，可接著閱讀<a href="/zh/blog/desk-facing-door-layout/">書桌對門的 3 天干擾紀錄</a>。</p>
+      </article>
+
+      <article class="card">
+        <h2>實際尺寸案例：300 × 360 公分房間</h2>
+        <p>工具預填案例是房間東西寬 300、公分南北長 360 公分；房門在南牆，從西牆 25 公分處開始，門寬 80 公分，向內開且鉸鏈在左，門口走路帶深 70 公分。書桌寬 120、深 60 公分，左上角在 X＝35、Y＝215，坐下朝北；椅子拉出深度為 75 公分。因此桌椅活動外框是 X＝35～155、Y＝215～350。</p>
+        <p>門口走路帶是 X＝25～105、Y＝290～360；它和桌椅活動外框在南北方向重疊 60 公分、沿門洞方向重疊 70 公分，椅子活動區也碰到內開門片掃掠範圍。往北或往東最少都要移 70 公分：往東後活動外框改成 X＝105～225，剛好不再交疊且房內放得下；往西至少需 130 公分，卻會超出西牆 95 公分。這些數字是矩形剛好不重疊的紙上最小值，現場仍要另加門把、桌腳外張、踢腳板與量測誤差。</p>
+        <p>同一案例的窗戶在東牆，開口從北牆 120 公分處起、寬 110 公分；座位朝北，因此窗光來自側面，不屬於螢幕正面朝窗或背面朝窗。側光通常較容易調整，但仍應在實際使用的上午、下午各看一次螢幕反光、窗簾位置與日照熱感。</p>
+      </article>
+
+      <article class="card">
+        <h2>不能平移時，三種替代方案各需要多少空間</h2>
+        <ol>
+          <li><strong>旋轉 90 度：</strong>工具會把桌寬、桌深與椅子拉出距離重新交換軸向，列出旋轉後需要的完整矩形，再檢查是否仍碰門口動線、超出房間或正面／背面直對窗戶。它不是只看桌板能不能轉過去。</li>
+          <li><strong>椅後加低層架或穩固隔屏：</strong>計算先保留 25 公分層架深度；若後方仍是主要走道，還要加上你輸入的 60～75 公分通行帶。可移式家具要做傾倒測試，不能把不穩的高櫃當成身體支撐，也不能用隔屏堵住唯一出口。</li>
+          <li><strong>書桌與衣櫃交換位置：</strong>工具會列出衣櫃現址至少要容納的桌椅活動寬與長，但沒有衣櫃尺寸時不會假裝判定可行。請量衣櫃外框、門片、抽屜與搬動路線，再用<a href="/zh/room-layout-planner/">房間家具配置工具</a>把兩件家具一起重畫。</li>
+        </ol>
+        <p>若要比較靠牆、斜看門口、窗邊與床尾四種桌位，<a href="/zh/desk-placement-feng-shui/">書桌擺放與採光取捨</a>整理了不同情境的現場測法；本頁只負責把門、椅子、窗與移動距離算成公分。</p>
+      </article>
+
+      <article class="card">
+        <h2>假設與限制：量家具外框，不要只抄商品尺寸</h2>
+        <p>本工具假設房間是矩形、牆面互相垂直、門窗開口都位在單一直牆上，也假設桌椅活動區可用一個矩形表示。L 型房、斜牆、柱角、門把突出、地毯阻力、輪椅迴轉、兩人同時通行與消防逃生需求不在模型內；這些情況要回到現場逐項測試。</p>
+        <p>請量實品最外緣：桌腳外張、螢幕支架、線槽、扶手、高背椅後傾與踢腳板都可能比型錄的桌板尺寸更大。門寬也應量完成面淨開口，而不是只抄門片標稱。計算結果是配置篩選，不是施工圖、人體工學保證或生活結果判斷；涉及固定層架、電線、窗扇與逃生動線時，以現場和適合的專業意見為準。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
