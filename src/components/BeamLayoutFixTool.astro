@@ -1,0 +1,353 @@
+---
+interface Props {
+  lang: 'zh' | 'en';
+}
+
+const { lang } = Astro.props;
+const zh = lang === 'zh';
+---
+
+<section class="card beam-tool" aria-labelledby={`beam-tool-heading-${lang}`}>
+  <h2 id={`beam-tool-heading-${lang}`}>{zh ? '輸入房間、樑與家具位置' : 'Enter the room, beam, and furniture positions'}</h2>
+  <p>{zh
+    ? '座標以房間西北角為起點：X 是離西牆的距離，Y 是離北牆的距離。所有數字都填完成面實測公分。'
+    : 'Coordinates start at the room’s northwest corner: X is the distance from the west wall and Y is the distance from the north wall. Enter finished-surface measurements in centimeters.'}</p>
+
+  <form class="beam-form" data-beam-form data-lang={lang} novalidate>
+    <fieldset>
+      <legend>{zh ? '1. 房間與樑' : '1. Room and beam'}</legend>
+      <div class="field-grid">
+        <label>{zh ? '房間東西寬' : 'Room width (west–east)'}
+          <input name="roomWidth" type="number" min="120" max="2000" step="1" value="300" required />
+        </label>
+        <label>{zh ? '房間南北長' : 'Room length (north–south)'}
+          <input name="roomLength" type="number" min="120" max="2000" step="1" value="360" required />
+        </label>
+        <label>{zh ? '天花板高度' : 'Ceiling height'}
+          <input name="ceilingHeight" type="number" min="150" max="600" step="1" value="250" required />
+        </label>
+        <label>{zh ? '樑下垂高度' : 'Beam drop below ceiling'}
+          <input name="beamDrop" type="number" min="0" max="300" step="1" value="25" required />
+        </label>
+        <label>{zh ? '從哪面牆量樑' : 'Reference wall for beam'}
+          <select name="beamWall">
+            <option value="north">{zh ? '北牆' : 'North wall'}</option>
+            <option value="south">{zh ? '南牆' : 'South wall'}</option>
+            <option value="west">{zh ? '西牆' : 'West wall'}</option>
+            <option value="east">{zh ? '東牆' : 'East wall'}</option>
+          </select>
+        </label>
+        <label>{zh ? '牆到樑近邊距離' : 'Wall to near beam edge'}
+          <input name="beamDistance" type="number" min="0" max="2000" step="1" value="80" required />
+        </label>
+        <label>{zh ? '樑投影寬度' : 'Beam projection width'}
+          <input name="beamWidth" type="number" min="1" max="500" step="1" value="40" required />
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>{zh ? '2. 床的外框與位置' : '2. Bed footprint and position'}</legend>
+      <div class="field-grid">
+        <label>{zh ? '床外框東西寬' : 'Bed width (west–east)'}
+          <input name="bedWidth" type="number" min="40" max="500" step="1" value="150" required />
+        </label>
+        <label>{zh ? '床外框南北長' : 'Bed length (north–south)'}
+          <input name="bedLength" type="number" min="40" max="500" step="1" value="190" required />
+        </label>
+        <label>{zh ? '床左上角 X' : 'Bed top-left X'}
+          <input name="bedX" type="number" min="0" max="2000" step="1" value="20" required />
+        </label>
+        <label>{zh ? '床左上角 Y' : 'Bed top-left Y'}
+          <input name="bedY" type="number" min="0" max="2000" step="1" value="60" required />
+        </label>
+        <label>{zh ? '床頭朝向' : 'Headboard side'}
+          <select name="headSide">
+            <option value="north">{zh ? '北' : 'North'}</option>
+            <option value="south">{zh ? '南' : 'South'}</option>
+            <option value="west">{zh ? '西' : 'West'}</option>
+            <option value="east">{zh ? '東' : 'East'}</option>
+          </select>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>{zh ? '3. 書桌與座位區' : '3. Desk and seat zone'}</legend>
+      <div class="field-grid">
+        <label>{zh ? '桌面東西寬' : 'Desk width (west–east)'}
+          <input name="deskWidth" type="number" min="30" max="500" step="1" value="90" required />
+        </label>
+        <label>{zh ? '桌面南北深' : 'Desk depth (north–south)'}
+          <input name="deskDepth" type="number" min="20" max="300" step="1" value="60" required />
+        </label>
+        <label>{zh ? '書桌左上角 X' : 'Desk top-left X'}
+          <input name="deskX" type="number" min="0" max="2000" step="1" value="190" required />
+        </label>
+        <label>{zh ? '書桌左上角 Y' : 'Desk top-left Y'}
+          <input name="deskY" type="number" min="0" max="2000" step="1" value="50" required />
+        </label>
+        <label>{zh ? '座位在桌子的哪一側' : 'Seat side of desk'}
+          <select name="seatSide">
+            <option value="south">{zh ? '南側' : 'South side'}</option>
+            <option value="north">{zh ? '北側' : 'North side'}</option>
+            <option value="west">{zh ? '西側' : 'West side'}</option>
+            <option value="east">{zh ? '東側' : 'East side'}</option>
+          </select>
+        </label>
+        <label>{zh ? '椅子／座位區深度' : 'Chair / seat-zone depth'}
+          <input name="seatDepth" type="number" min="20" max="200" step="1" value="60" required />
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>{zh ? '4. 門片與走道' : '4. Door swing and walkway'}</legend>
+      <div class="field-grid">
+        <label>{zh ? '房門所在牆面' : 'Door wall'}
+          <select name="doorWall">
+            <option value="south">{zh ? '南牆' : 'South wall'}</option>
+            <option value="north">{zh ? '北牆' : 'North wall'}</option>
+            <option value="west">{zh ? '西牆' : 'West wall'}</option>
+            <option value="east">{zh ? '東牆' : 'East wall'}</option>
+          </select>
+        </label>
+        <label>{zh ? '鉸鏈離西牆／北牆距離' : 'Hinge offset from west / north'}
+          <input name="hingeOffset" type="number" min="0" max="2000" step="1" value="280" required />
+        </label>
+        <label>{zh ? '門片寬度' : 'Door-leaf width'}
+          <input name="doorWidth" type="number" min="30" max="200" step="1" value="80" required />
+        </label>
+        <label>{zh ? '門片沿牆展開方向' : 'Door direction along wall'}
+          <select name="swingDirection">
+            <option value="negative">{zh ? '往座標減少側（西／北）' : 'Toward lower coordinate (west / north)'}</option>
+            <option value="positive">{zh ? '往座標增加側（東／南）' : 'Toward higher coordinate (east / south)'}</option>
+          </select>
+        </label>
+        <label>{zh ? '至少保留的主要走道' : 'Target minimum walkway'}
+          <input name="walkwayWidth" type="number" min="20" max="200" step="1" value="60" required />
+        </label>
+      </div>
+    </fieldset>
+
+    <button class="button" type="submit">{zh ? '計算要往哪裡移、還差幾公分' : 'Calculate direction and centimeters to clear'}</button>
+  </form>
+
+  <div class="beam-result" data-beam-result aria-live="polite">
+    <p>{zh ? '送出後會分別判定床頭、床身與書桌座位，並列出能通過房間、門片與走道檢查的移動方向。' : 'Submit to check the headboard zone, bed body, and desk seat separately, then see moves that also pass room, door-swing, and walkway checks.'}</p>
+  </div>
+</section>
+
+<script>
+  import { analyzeBeamLayout } from '../scripts/beamLayoutFix';
+  import type { BeamLayoutInput, Wall, SwingDirection } from '../scripts/beamLayoutFix';
+
+  const directionLabel = {
+    zh: { north: '北', south: '南', west: '西', east: '東' },
+    en: { north: 'north', south: 'south', west: 'west', east: 'east' },
+  } as const;
+  const reasonLabel = {
+    zh: { room: '房間邊界', door: '門片開啟範圍', walkway: '主要走道', furniture: '另一件家具' },
+    en: { room: 'room boundary', door: 'door swing', walkway: 'main walkway', furniture: 'the other furniture item' },
+  } as const;
+
+  document.querySelectorAll<HTMLFormElement>('[data-beam-form]').forEach((form) => {
+    const result = form.parentElement?.querySelector<HTMLElement>('[data-beam-result]');
+    const lang = form.dataset.lang === 'en' ? 'en' : 'zh';
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!result) return;
+      const data = new FormData(form);
+      const n = (name: string) => Number(data.get(name));
+      const input: BeamLayoutInput = {
+        roomWidth: n('roomWidth'),
+        roomLength: n('roomLength'),
+        beamWall: data.get('beamWall') as Wall,
+        beamDistance: n('beamDistance'),
+        beamWidth: n('beamWidth'),
+        beamDrop: n('beamDrop'),
+        ceilingHeight: n('ceilingHeight'),
+        bed: {
+          x: n('bedX'), y: n('bedY'), width: n('bedWidth'), height: n('bedLength'),
+          headSide: data.get('headSide') as Wall,
+        },
+        desk: {
+          x: n('deskX'), y: n('deskY'), width: n('deskWidth'), height: n('deskDepth'),
+          seatSide: data.get('seatSide') as Wall,
+          seatDepth: n('seatDepth'),
+        },
+        door: {
+          wall: data.get('doorWall') as Wall,
+          hingeOffset: n('hingeOffset'),
+          width: n('doorWidth'),
+          swingDirection: data.get('swingDirection') as SwingDirection,
+        },
+        walkwayWidth: n('walkwayWidth'),
+      };
+      const analysis = analyzeBeamLayout(input);
+      if (analysis.errors.length > 0) {
+        const message = lang === 'zh'
+          ? '請檢查：尺寸必須是有效正數；家具與座位區要在房內；樑帶不能超出房間；鉸鏈與門片也要落在所選牆面。'
+          : 'Check the inputs: use valid positive dimensions; keep furniture and the seat zone inside the room; keep the beam strip inside the room; and place the hinge and leaf on the selected wall.';
+        result.innerHTML = `<div class="tool-error" role="alert"><h3>${lang === 'zh' ? '輸入無法計算' : 'The inputs cannot be calculated'}</h3><p>${message}</p><p><code>${analysis.errors.join(', ')}</code></p></div>`;
+        return;
+      }
+
+      const checkCard = (label: string, check: typeof analysis.bedHead) => `
+        <article class="check-card ${check.underBeam ? 'is-hit' : 'is-clear'}">
+          <h4>${label}</h4>
+          <p><strong>${check.underBeam ? (lang === 'zh' ? '落在樑下' : 'Under the beam') : (lang === 'zh' ? '未落在樑下' : 'Clear of the beam')}</strong></p>
+          <p>${check.underBeam
+            ? (lang === 'zh'
+              ? `投影重疊 ${check.overlap} 公分；移到最近樑緣外還差 ${check.clearanceNeeded} 公分。`
+              : `Projection overlap: ${check.overlap} cm. The nearest beam edge is ${check.clearanceNeeded} cm away.`)
+            : (lang === 'zh' ? '目前與樑的水平投影沒有重疊。' : 'Its current horizontal projection does not overlap the beam.')}</p>
+        </article>`;
+
+      const moveList = (label: string, moves: typeof analysis.bedMoves) => {
+        if (moves.length === 0) return `<section><h4>${label}</h4><p>${lang === 'zh' ? '目前不必為避樑移動。' : 'No beam-clearance move is needed.'}</p></section>`;
+        return `<section><h4>${label}</h4><ul>${moves.map((move) => {
+          const direction = directionLabel[lang][move.direction];
+          if (move.feasible) {
+            const extra = move.recommendedShift !== move.requiredShift
+              ? (lang === 'zh' ? `；避開其他障礙後建議移 ${move.recommendedShift} 公分` : `; after other obstacles, move ${move.recommendedShift} cm`)
+              : '';
+            return `<li><strong>${lang === 'zh' ? `往${direction}可行` : `${direction} works`}：</strong>${lang === 'zh' ? `避開樑本身差 ${move.requiredShift} 公分` : `${move.requiredShift} cm to clear the beam`}${extra}。</li>`;
+          }
+          const reasons = move.reasons.map((reason) => reasonLabel[lang][reason]).join(lang === 'zh' ? '、' : ', ');
+          const shortfall = move.shortfall > 0
+            ? (lang === 'zh' ? `；房間／走道條件另差 ${move.shortfall} 公分` : `; room or walkway shortfall: ${move.shortfall} cm`)
+            : '';
+          return `<li><strong>${lang === 'zh' ? `往${direction}不可行` : `${direction} does not work`}：</strong>${lang === 'zh' ? `避開樑本身差 ${move.requiredShift} 公分` : `${move.requiredShift} cm is needed for the beam`}${shortfall}；${lang === 'zh' ? '卡在' : 'blocked by'} ${reasons}。</li>`;
+        }).join('')}</ul></section>`;
+      };
+
+      const noFeasibleMove = (analysis.bedMoves.length > 0 && !analysis.bedMoves.some((move) => move.feasible))
+        || (analysis.deskMoves.length > 0 && !analysis.deskMoves.some((move) => move.feasible));
+      const alternatives = noFeasibleMove ? `
+        <section class="alternative-box">
+          <h3>${lang === 'zh' ? '平移不通過時，依序比較' : 'If sliding fails, compare these in order'}</h3>
+          <ol>
+            <li><strong>${lang === 'zh' ? '改變床／桌朝向' : 'Rotate the bed or desk'}：</strong>${lang === 'zh' ? '適合轉 90° 後仍能保留門片與走道；若旋轉外框會撞牆或另一件家具，就不適用。' : 'Use when a 90° turn still preserves the door swing and walkway; skip it when the rotated footprint hits a wall or the other item.'}</li>
+            <li><strong>${lang === 'zh' ? '天花板包覆修飾' : 'A ceiling enclosure or visual treatment'}：</strong>${lang === 'zh' ? '適合樑下淨高足夠、問題主要是視覺分割，且屋主與專業人員確認可施工；若會遮擋設備、降低必要淨高或租約不允許，就不適用。' : 'Use when underside height is adequate, the issue is mainly visual, and the owner and a qualified professional approve the work; skip it when services would be covered, useful height would be lost, or the lease forbids it.'}</li>
+            <li><strong>${lang === 'zh' ? '換家具尺寸' : 'Choose smaller furniture'}：</strong>${lang === 'zh' ? '適合差距來自床或桌外框太長；若真正卡住的是門位、固定牆柱或使用者座位，就不一定有效。' : 'Use when the missing centimeters come from the bed or desk footprint; it may not help when the fixed door, structure, or seated position is the real constraint.'}</li>
+            <li><strong>${lang === 'zh' ? '調整使用位置' : 'Adjust the occupied position'}：</strong>${lang === 'zh' ? '適合只差枕頭區或椅子位置，且改後仍能正常坐起、起身；若整張床身都跨過樑帶，就不能只移枕頭當成完全避開。' : 'Use when only the pillow or chair zone is affected and the new position remains usable; it is not a full clearance fix when the whole bed still crosses the beam strip.'}</li>
+          </ol>
+        </section>` : '';
+
+      const beam = analysis.beam!;
+      result.innerHTML = `
+        <h3>${lang === 'zh' ? '計算結果' : 'Calculated result'}</h3>
+        <p>${lang === 'zh'
+          ? `樑投影範圍：X ${beam.x}～${beam.x + beam.width}、Y ${beam.y}～${beam.y + beam.height} 公分；樑下緣高度 ${analysis.beamUndersideHeight} 公分。`
+          : `Beam projection: X ${beam.x}–${beam.x + beam.width} cm and Y ${beam.y}–${beam.y + beam.height} cm. Beam underside height: ${analysis.beamUndersideHeight} cm.`}</p>
+        ${analysis.currentDoorConflict ? `<p class="result-warning">${lang === 'zh' ? '目前配置已碰到門片開啟範圍；任何避樑方案都要先把這個衝突排除。' : 'The current layout already intersects the door swing. Resolve that conflict before accepting a beam-clearance move.'}</p>` : ''}
+        <div class="check-grid">
+          ${checkCard(lang === 'zh' ? '床頭帶（床頭向內 35 公分）' : 'Headboard zone (first 35 cm)', analysis.bedHead)}
+          ${checkCard(lang === 'zh' ? '整個床身' : 'Whole bed body', analysis.bedBody)}
+          ${checkCard(lang === 'zh' ? '書桌座位區' : 'Desk seat zone', analysis.deskSeat)}
+        </div>
+        <div class="move-grid">
+          ${moveList(lang === 'zh' ? '床要怎麼移' : 'Bed movement options', analysis.bedMoves)}
+          ${moveList(lang === 'zh' ? '書桌要怎麼移' : 'Desk movement options', analysis.deskMoves)}
+        </div>
+        ${alternatives}
+        <p class="result-note">${lang === 'zh'
+          ? '判定包含 1 公分越界緩衝；走道只檢查家具與座位區至少有一側達到你輸入的寬度，不能代替現場走動、門窗或消防檢查。'
+          : 'The calculation adds a 1 cm edge buffer. The walkway check only confirms that at least one side of the furniture/activity envelope meets your target; it does not replace an on-site walking, opening, or fire-safety check.'}</p>`;
+    });
+  });
+</script>
+
+<style>
+  .beam-form,
+  .field-grid,
+  .check-grid,
+  .move-grid {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .beam-form fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .beam-form legend {
+    padding: 0 var(--space-2);
+    font-weight: 700;
+  }
+
+  .beam-form label {
+    display: grid;
+    gap: var(--space-2);
+    min-width: 0;
+  }
+
+  .beam-form input,
+  .beam-form select {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: inherit;
+  }
+
+  .beam-result {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+    overflow-wrap: anywhere;
+  }
+
+  .check-card,
+  .alternative-box,
+  .tool-error {
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-left: 0.35rem solid var(--color-primary);
+    border-radius: var(--radius-sm);
+  }
+
+  .check-card.is-hit,
+  .result-warning,
+  .tool-error {
+    border-left-color: #9b2c2c;
+    background: rgba(155, 44, 44, 0.07);
+  }
+
+  .check-card h4,
+  .check-card p:last-child,
+  .move-grid h4 {
+    margin-bottom: 0;
+  }
+
+  .result-warning,
+  .result-note {
+    padding: var(--space-3);
+    border-radius: var(--radius-sm);
+  }
+
+  .result-note {
+    background: var(--color-surface-muted, #f7f6f3);
+    color: var(--color-muted);
+  }
+
+  @media (min-width: 640px) {
+    .field-grid,
+    .check-grid,
+    .move-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .check-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+</style>

@@ -1,0 +1,91 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import BeamLayoutFixTool from '../../components/BeamLayoutFixTool.astro';
+import { siteUrl } from '../../data/site';
+
+const title = 'Beam Clearance Layout Checker | Move a Bed or Desk by Exact Cm';
+const description = 'Map a ceiling beam, bed, desk seat, inward-swinging door, and walkway. See exactly how many centimeters each item must move to clear the beam projection.';
+const canonical = '/en/beam-layout-fix-check/';
+const alternates = { zh: '/zh/beam-layout-fix-check/', en: canonical };
+const faq = [
+  { q: 'What should I do if my desk seat is directly under a beam?', a: 'Measure the two beam edges on the floor, then map the chair zone rather than judging only the desktop. The checker compares both perpendicular directions and reports the centimeters needed to move the occupied seat zone beyond the beam projection.' },
+  { q: 'Does the entire bed need to clear the beam?', a: 'The result separates the first 35 cm at the headboard from the full bed body. You can see whether the head zone is clear even when the foot of the bed still crosses the beam, but the tool will not call that full-bed clearance.' },
+  { q: 'Why can a shorter move fail the door check?', a: 'A move can clear the beam yet place the furniture inside the quarter-circle swept by an inward-opening door. The checker searches farther in the same direction for a position that clears the beam, stays in the room, avoids the other item, and preserves the requested walkway.' },
+  { q: 'Can I use feet or inches?', a: 'This checker currently uses centimeters so it can report a direct movement difference without mixed-unit rounding. Convert every room and furniture measurement to centimeters before entering it, and use the same finished surfaces for all coordinate readings.' },
+  { q: 'Can the checker approve a ceiling enclosure around the beam?', a: 'No. It can show the beam underside height from your measurements, but it cannot inspect structure, utilities, fire equipment, lease restrictions, or construction details. Ask the owner and an appropriate qualified professional before covering or altering a ceiling area.' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'en',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: 'Beam clearance layout checker', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/en/room-layout-planner/', title: 'Drag-and-drop room layout planner' },
+  { href: '/en/bed-desk-wardrobe-layout/', title: 'Bed, desk, and wardrobe layout guide' },
+  { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
+  { href: '/en/room-size-layout-templates/', title: 'Room sizer and calculated templates' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>Beam clearance layout checker</h1>
+        <p class="lead"><strong>Measure the beam edges; the checker returns the exact move in centimeters.</strong></p>
+        <p>A ceiling beam occupies more than a center line when viewed on a floor plan. Its full width creates a strip below it, so a bed or chair can still overlap the beam even when the furniture center looks offset. This browser-only calculator maps that strip, checks the headboard zone, full bed body, and occupied desk-seat zone separately, then compares moves toward both beam edges.</p>
+        <p>A geometric clearance is only the first test. Each suggested move must also keep the furniture and activity zone inside the room, outside an inward door swing, away from the other large item, and beside at least one clear route as wide as the target you enter. No layout is graded for luck or promised to change sleep, health, or any other outcome.</p>
+      </header>
+
+      <BeamLayoutFixTool lang="en" />
+
+      <article class="card">
+        <h2>How the beam projection is mapped</h2>
+        <p>Choose the wall from which you measured, enter the distance to the near beam edge, and then enter the beam width. A beam measured 80 cm from the north wall with a width of 40 cm occupies Y coordinates 80 through 120 cm. The calculator compares that complete interval with each occupied rectangle; it does not assume the beam is an infinitely thin line.</p>
+        <p>The bed body uses the outside footprint you provide. The headboard check uses the first 35 cm inward from the selected head side, which creates a visible head-and-pillow zone instead of an edge with no area. The desk check extends an adjustable chair zone from the chosen side of the desktop. If your chair moves farther back during use, increase that zone before accepting a result.</p>
+      </article>
+
+      <article class="card">
+        <h2>Worked example: a 300 × 360 cm room</h2>
+        <p>The prefilled room is 300 cm wide and 360 cm long. Its beam starts 80 cm from the north wall and is 40 cm wide, so the projected strip spans Y 80–120. A 150 × 190 cm bed starts at X 20, Y 60. Moving north would require 171 cm to get the whole bed beyond the near beam edge, but only 60 cm exists. Moving south requires 61 cm, placing the bed at Y 121–311, still inside the room.</p>
+        <p>The 90 × 60 cm desk begins at X 190, Y 50. Its 60 cm chair zone extends south from the desktop, so that occupied zone covers Y 110–170 and overlaps 10 cm of the beam strip. The nearest complete clearance is 11 cm south. Those values are generated by the same geometry used in the form; change the door, walkway, or furniture values and the accepted direction may change.</p>
+      </article>
+
+      <article class="card">
+        <h2>If sliding does not fit, use this decision order</h2>
+        <ol>
+          <li><strong>Rotate the bed or desk.</strong> Use this when a 90-degree footprint clears the beam and still leaves the door and route usable. It does not work when the longer rotated edge hits a wall or the other item.</li>
+          <li><strong>Consider a ceiling enclosure or visual treatment.</strong> This is only relevant when usable underside height remains and the owner plus a qualified professional confirm construction and service access. It is unsuitable when equipment would be covered, the lease forbids work, or the lower finish creates a new clearance problem.</li>
+          <li><strong>Choose a smaller furniture footprint.</strong> This can recover a measured shortfall caused by bed length or desk depth. It will not relocate a fixed doorway, column, or the body position required to use the desk.</li>
+          <li><strong>Adjust the occupied position.</strong> Moving a pillow or chair may clear the head or seat zone. Do not describe that as whole-bed clearance when the remaining bed body still crosses the beam.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h2>What this checker cannot tell you</h2>
+        <p>The checker cannot inspect beam structure, concealed wiring, pipes, alarms, sprinklers, surface irregularities, or the construction of a proposed ceiling enclosure. It treats the room and furniture as rectangles and the inward door swing as a quarter circle. An L-shaped room, angled wall, projecting bed frame, splayed desk leg, or sliding door needs a more detailed measured drawing.</p>
+        <p>It also cannot set a universal safe underside height. The displayed height is only your ceiling height minus your beam-drop measurement. If someone stands, stretches, or rises from a raised bed below the beam, perform that motion on site. Use the <a href="/en/room-layout-planner/">room layout planner</a> for a fuller furniture drawing, and consult the property owner or an appropriate professional before changing ceilings, lighting, or safety equipment.</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

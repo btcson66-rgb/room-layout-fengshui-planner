@@ -1,0 +1,92 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import BeamLayoutFixTool from '../../components/BeamLayoutFixTool.astro';
+import { siteUrl } from '../../data/site';
+
+const title = '樑下配置化解檢查器｜算床頭、床身、書桌要移幾公分';
+const description = '輸入房間、橫樑、床、書桌、門片與走道尺寸，逐項判定床頭、床身、書桌座位是否在樑下，並計算可完全避開的移動方向與公分差距。';
+const canonical = '/zh/beam-layout-fix-check/';
+const alternates = { zh: canonical, en: '/en/beam-layout-fix-check/' };
+const faq = [
+  { q: '坐在樑下怎麼辦？', a: '先量出樑的水平投影邊界，再標出椅子與身體實際停留的座位區。若座位區有重疊，工具會比較往樑兩側移動所需的公分數；移動前還要確認門片、另一件家具與走道不會被新的位置卡住。' },
+  { q: '書桌在樑下，但椅子不在樑下，需要搬嗎？', a: '若桌面跨過樑帶、座位區沒有重疊，這個工具會把「書桌座位」判為未落在樑下。是否仍調整可看照明、起身碰撞與視覺感受，不必只因桌面名稱而強迫搬動。' },
+  { q: '床尾在樑下，床頭不在樑下怎麼算？', a: '工具會分開顯示床頭帶與整個床身。床頭帶未重疊但床身重疊時，代表頭部區已避開，卻還不是整床完全避開；結果會同時保留這兩個層級，不會混成一個結論。' },
+  { q: '工具說要移 11 公分，實際也只移 11 公分嗎？', a: '11 公分是依輸入矩形與 1 公分越界緩衝算出的最小值。現場還要把踢腳板、床頭軟包、桌腳外張、量尺誤差與不規則牆面算進去；購買或施工前應重新量完成面。' },
+  { q: '完全移不動時可以包樑嗎？', a: '可先判斷問題是否主要來自視覺分割，而且樑下淨高、設備、產權與租約都允許。包覆會再降低完成面高度，也可能涉及燈具、偵煙器或其他設備，不應只看平面圖自行決定，需由屋主與合適專業人員確認。' },
+];
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    url: `${siteUrl}${canonical}`,
+    description,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '樑下配置化解檢查器', item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const relatedLinks = [
+  { href: '/zh/blog/beam-over-desk-bed-layout/', title: '橫樑壓床、書桌在樑下的現場處理' },
+  { href: '/zh/room-layout-planner/', title: '拖拉式房間家具配置工具' },
+  { href: '/zh/bed-desk-wardrobe-layout/', title: '床、書桌、衣櫃配置' },
+  { href: '/zh/feng-shui-bedroom-checker/', title: '臥室民俗與空間舒適度檢查' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <h1>樑下配置化解檢查器</h1>
+        <p class="lead"><strong>先量樑的投影邊界；工具會算床與書桌要移幾公分。</strong></p>
+        <p>這裡的「樑下」只做俯視幾何判定：把樑的寬度畫成一條投影帶，再分別和床頭帶、整個床身、書桌椅座位區比較。若有重疊，結果會列出往兩側完全離開樑帶所需的最小距離，接著再檢查家具是否仍在房內、是否碰到內開門片、是否撞到另一件家具，以及至少一側能否保留你輸入的主要走道。</p>
+        <p>頁名沿用常見的「化解」問法，但計算不判吉凶，也不預測健康、運勢或任何生活結果。民俗上常見的壓樑說法只作文化與空間舒適度參考；實際優先順序仍是淨高、碰撞、門片、走道與日常使用。完整界線請閱讀<a href="/disclaimer/">免責聲明</a>。</p>
+      </header>
+
+      <BeamLayoutFixTool lang="zh" />
+
+      <article class="card">
+        <h2>工具怎麼判定床頭、床身與書桌座位</h2>
+        <p>樑的位置以「從哪一面牆量到樑的近邊」加上樑寬表示。例如從北牆量 80 公分到樑近邊、樑寬 40 公分，樑帶就是 Y＝80～120 公分。床身用床架外框判定；床頭則取所選床頭方向向內 35 公分，讓枕頭與頭部活動區不只是一條沒有面積的線。書桌判定的是椅子／座位區，不是只看桌板有沒有在樑下。</p>
+        <p>「投影重疊」和「要移多少」是兩個數字。重疊 10 公分不一定只要移 10 公分，因為家具可能位在樑帶中間；工具會分別算到兩側樑緣的距離，再加 1 公分越界緩衝。選出較短方向後仍不算完成，因為那個新位置可能讓床撞門、桌椅壓縮走道，或床桌互相重疊。</p>
+      </article>
+
+      <article class="card">
+        <h2>實際尺寸案例：300 × 360 公分房間</h2>
+        <p>使用工具預填案例：房間 300 × 360 公分；橫樑從北牆量 80 公分，寬 40 公分，所以投影為 Y＝80～120。床外框 150 × 190 公分，左上角在 X＝20、Y＝60，床身跨過樑帶。整張床若往北移，要讓床尾越過 Y＝80，至少要移 171 公分，但北側只有 60 公分，放不下；往南移則讓床頭越過 Y＝120，差 61 公分，床尾會停在 Y＝311，仍在 360 公分房長內。</p>
+        <p>同一案例的書桌是 90 × 60 公分，左上角 X＝190、Y＝50，座位在南側並預留 60 公分深。座位區從 Y＝110 延伸到 170，和樑帶重疊 10 公分；往南移 11 公分即可讓座位區起點到 Y＝121。預填門位在南牆，門片與這兩個候選位置不衝突；工具仍會依你改填的門位、門寬、鉸鏈和走道重新判定，不會把案例結論套到所有房間。</p>
+      </article>
+
+      <article class="card">
+        <h2>移不動時的替代處理順序</h2>
+        <ol>
+          <li><strong>改變床或桌朝向：</strong>適合旋轉後外框能避開樑帶，門片與主要走道仍完整；若轉 90° 會卡牆、衣櫃或座位，就不適用。</li>
+          <li><strong>天花板包覆或視覺修飾：</strong>適合樑下實際淨高足夠、問題主要是視覺分割，且屋主與專業人員確認設備和施工條件；租屋不允許、會遮住設備或讓淨高更不足時不適用。</li>
+          <li><strong>換較短或較窄家具：</strong>適合結果顯示只差一段外框尺寸；若卡點是固定門位、牆柱或椅子使用區，單純換小桌面未必解決。</li>
+          <li><strong>調整實際使用位置：</strong>適合只有枕頭或椅子區在樑帶內；若整張床身仍跨過樑帶，就只能說頭部區避開，不能說整床完全避開。</li>
+        </ol>
+        <p>若你想先理解淨高、坐起與站立測試，再回來輸入平面尺寸，可閱讀<a href="/zh/blog/beam-over-desk-bed-layout/">房間有橫樑時的床與書桌配置文章</a>。文章負責現場觀察，本工具負責把水平差距算成公分，兩者處理的是不同層次。</p>
+      </article>
+
+      <article class="card">
+        <h2>這個工具不能告訴你什麼</h2>
+        <p>它不能判斷結構安全、樑內管線、消防設備、天花板施工方式，也不能確認家具實品的軟包、床腳、桌腳外張或牆面不垂直。門片以鉸鏈為圓心的四分之一圓計算，走道則只檢查床／桌活動外框至少有一側達到輸入寬度；複雜 L 型房、斜牆、柱角與多人同時通行仍要回到現場測試。</p>
+        <p>它也不能告訴你某個配置會帶來好運、健康、睡眠改善或任何確定結果。下垂高度只用來算「天花板高度－樑下垂＝樑下緣高度」，不會自行宣告安全門檻。若有人會在樑下站起、伸手，請實際做動作測試；涉及包樑、燈具、偵煙器、灑水頭或電路時，應由屋主、物業與適合的專業人員依現場條件處理。</p>
+      </article>
+
+      <Faq items={faq} />
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>

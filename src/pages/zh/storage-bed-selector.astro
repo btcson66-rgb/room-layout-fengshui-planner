@@ -4,8 +4,8 @@ import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { siteUrl } from '../../data/site';
 
-const title = '收納床／掀床選型規劃器｜計算抽屜、側掀、上掀淨空';
-const description = '輸入房間長寬、樓高、身高、書桌與共用需求，計算抽屜床、側掀床、上掀床、高架床與上下舖的開啟淨空、迴旋半徑與不適用條件。';
+const title = '小房間收納床選型器｜計算抽屜、側掀、上掀淨空';
+const description = '小房間收納先確認床架開啟空間。輸入房間長寬、樓高、身高與共用需求，比較抽屜床、側掀床、上掀床、高架床和上下舖的淨空與不適用條件。';
 const canonical = '/zh/storage-bed-selector/';
 const faq = [
   { q: '抽屜床旁邊到底要留多少空間？', a: '先量抽屜箱體內深，再確認滑軌是否能完全拉出。本工具以抽屜拉出 60 公分加 10 公分手部餘量試算，但不同商品差異很大；床側淨空應至少等於商品標示的全伸長度，而不是只看能否打開一條縫。' },
@@ -30,7 +30,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '收納床／掀床選型規劃器', item: `${siteUrl}${canonical}` },
+      { '@type': 'ListItem', position: 2, name: '小房間收納床選型器', item: `${siteUrl}${canonical}` },
     ],
   },
 ];
@@ -47,8 +47,8 @@ const relatedLinks = [
   <section class="section">
     <div class="container page-grid">
       <header class="card">
-        <h1>收納床／掀床選型規劃器</h1>
-        <p class="lead">收納床不能只看床放不放得下；抽屜要能全拉、掀床要有人站的位置，高架床則同時受樓高與使用者身高限制。輸入你的淨尺寸，本工具會把五種床型依可行性排序。</p>
+        <h1>小房間收納床／掀床選型規劃器</h1>
+        <p class="lead">小房間收納不能只看床放不放得下；抽屜要能全拉、掀床要有人站的位置，高架床則同時受樓高與使用者身高限制。輸入你的淨尺寸，本工具會把五種床型依可行性排序。</p>
         <p><strong>速答：</strong>先量房間最窄處的淨長、淨寬與最低樓高，再把床架最外尺寸加上開啟操作區。抽屜床看直線抽拉深度；側掀床的承板旋轉半徑接近床寬；上掀床的旋轉半徑接近床長，因此三者不能只用同一個「床邊留 60 公分」判斷。</p>
         <p>結果是購買前的初篩，不是商品安裝保證。本頁使用名義床墊尺寸加上保守操作區做矩形配置；厚床頭、特殊床箱、氣壓棒角度、抽屜滑軌與房間樑柱都必須回到實際商品圖確認。</p>
       </header>
