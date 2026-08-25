@@ -85,13 +85,13 @@ If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `g
 If `PUBLIC_ADSENSE_CLIENT` is set at build time, the shared head component injects the Google AdSense script site-wide and `AdSlot.astro` renders live ad units with each page's configured slot. The production AdSense value for `roomfeng.win` is:
 
 ```bash
-PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044
+PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270
 ```
 
 The AdSense `ads.txt` verification record is published from `public/ads.txt`:
 
 ```text
-google.com, pub-7052036786750044, DIRECT, f08c47fec0942fa0
+google.com, pub-9117672212804270, DIRECT, f08c47fec0942fa0
 ```
 
 The newsletter form posts to the Cloudflare Pages Function at `/api/newsletter`. Set `BREVO_API_KEY` and `BREVO_ROOMFENG_LIST_ID` in Cloudflare Pages project environment variables; do not expose the Brevo API key in client-side code. If either value is missing, or if the site is hosted on a purely static platform without Pages Functions, the form shows a "訂閱功能即將開放" message instead of failing noisily.
@@ -114,7 +114,7 @@ Change this value only if the production domain changes, because canonical URLs,
 2. Set build command to `npm run build`.
 3. Set output directory to `dist`.
 4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
-5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044` when submitting the site to Google AdSense.
+5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270` when submitting the site to Google AdSense.
 6. Add `BREVO_API_KEY`, `BREVO_ROOMFENG_LIST_ID`, `BREVO_WORTHCALC_LIST_ID`, and `BREVO_FUNNYTOOLS_LIST_ID` to enable the shared newsletter hub.
 
 ### Vercel
@@ -123,7 +123,7 @@ Change this value only if the production domain changes, because canonical URLs,
 2. Use the Astro framework preset or set build command to `npm run build`.
 3. Set output directory to `dist`.
 4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
-5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-7052036786750044` when submitting the site to Google AdSense.
+5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270` when submitting the site to Google AdSense.
 
 ### GitHub Pages
 
