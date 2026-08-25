@@ -103,6 +103,9 @@ gtag('config', '${gaId}');`}
     </>
   )
 }
+{/* AdSense 網站擁有權驗證。主控台在無法執行 loader script 時改讀這個 meta，
+    它本身不發出廣告請求。條件與 loader 相同：noindex 頁一律不輸出。 */}
+{!noindex && adsenseClient && <meta name="google-adsense-account" content={adsenseClient} />}
 {!noindex && adsenseClient && (
   <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`} crossorigin="anonymous" />
 )}
