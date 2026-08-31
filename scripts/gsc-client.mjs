@@ -24,6 +24,26 @@ function getServiceAccountCredentials() {
   return null;
 }
 
+function getUserOAuthCredentials() {
+  const rawClient = process.env.FABLE_OPS_OAUTH_CLIENT_JSON;
+  const refreshToken = process.env.FABLE_OPS_REFRESH_TOKEN;
+  if (!rawClient && !refreshToken) return null;
+  if (!rawClient || !refreshToken) {
+    throw new Error('FABLE_OPS_OAUTH_CLIENT_JSON and FABLE_OPS_REFRESH_TOKEN must be configured together.');
+  }
+  let parsed;
+  try {
+    parsed = JSON.parse(rawClient);
+  } catch {
+    throw new Error('FABLE_OPS_OAUTH_CLIENT_JSON is not valid JSON.');
+  }
+  const client = parsed.installed || parsed.web || parsed;
+  if (!client?.client_id || !client?.client_secret) {
+    throw new Error('FABLE_OPS_OAUTH_CLIENT_JSON is missing client_id or client_secret.');
+  }
+  return { clientId: client.client_id, clientSecret: client.client_secret, refreshToken };
+}
+
 function missingGscCredentialVars() {
   if (process.env.GSC_SERVICE_ACCOUNT_JSON) {
     try {
@@ -64,6 +84,24 @@ export async function fetchJson(url, options = {}) {
 }
 
 export async function googleAccessToken() {
+  const oauth = getUserOAuthCredentials();
+  if (oauth) {
+    const { response, json } = await fetchJson('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        grant_type: 'refresh_token',
+        refresh_token: oauth.refreshToken,
+        client_id: oauth.clientId,
+        client_secret: oauth.clientSecret,
+      }),
+    });
+    if (!response.ok || !json?.access_token) {
+      throw new Error(`Configured user OAuth refresh failed: ${response.status} ${googleError(json)}`);
+    }
+    return json.access_token;
+  }
+
   const credentials = getServiceAccountCredentials();
   if (!credentials?.client_email || !credentials?.private_key) {
     const missing = missingGscCredentialVars();
