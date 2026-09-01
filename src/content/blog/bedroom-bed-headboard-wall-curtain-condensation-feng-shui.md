@@ -89,7 +89,7 @@ EPA 的居家濕氣資料指出，窗戶結露是室內水氣在較冷表面凝�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾、窗扇和擦拭站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布簾外框與床側距離；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放開窗、擦乾、晾簾和清潔。若已確定是布料積塵，可讀 [床頭窗簾布料清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui/)；若要先判斷窗邊結露，可參考 [臥室窗戶結露](/zh/blog/bedroom-window-condensation-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾、窗扇和擦拭站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布簾外框與床側距離；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗、擦乾、晾簾和清潔。若已確定是布料積塵，可讀 [床頭窗簾布料清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui/)；若要先判斷窗邊結露，可參考 [臥室窗戶結露](/zh/blog/bedroom-window-condensation-feng-shui/)。
 
 ### 參考資料
 

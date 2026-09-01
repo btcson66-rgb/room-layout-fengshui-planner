@@ -18,11 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-air-purifier-filter-cleaning-feng-shui
-  - living-room-air-purifier-floor-protection-feng-shui
-  - living-room-air-purifier-noise-feng-shui
+  - living-room-air-purifier-feng-shui
 howToName: "空氣清淨機腳輪、底座、毛髮、電線與客廳移動動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +35,7 @@ howToSteps:
 
 客廳空氣清淨機腳輪的風水問題常被說成「機器能走動就能帶動氣」，但真正需要處理的是腳輪卡住毛髮、底座積塵、移動時電線被拉緊、機器被推到沙發或牆角，或進風口因位置變動而被遮住。風水裡的「氣流順」可以轉譯為設備可按需求移動、進風口有空間、電線不受壓和清潔路徑不絆腳，不能把腳輪順滑直接當成空氣品質或健康結果。
 
-先量客廳長寬、清淨機外框、底座、腳輪直徑、電線長度、插座、沙發、窗戶和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出設備、插座與清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對機器與家具，最後以 [房間動線檢查](/zh/room-circulation-check/)測試移動時是否跨過走道。工具只協助配置，不代替家電安全判斷。
+先量客廳長寬、清淨機外框、底座、腳輪直徑、電線長度、插座、沙發、窗戶和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出設備、插座與清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對機器與家具，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試移動時是否跨過走道。工具只協助配置，不代替家電安全判斷。
 
 ## 腳輪的好風水是底座可檢查、移動阻力可辨且機器不靠電線拉動
 
@@ -74,7 +73,7 @@ Dyson 的清淨機清潔資料建議清潔前拔除電源，以柔軟刷具或�
 
 腳輪與底座完全乾燥後，先不通電在平整地面短距離推動，觀察是否偏斜、卡住或碰撞家具。確認電線有緩衝、插頭沒有被拉緊，再接回設備測試進風與運轉聲。不要在機器傾斜或腳輪未固定時開機。
 
-可參考 [客廳空氣清淨機濾網清潔風水](/zh/blog/living-room-air-purifier-filter-cleaning-feng-shui/)處理濾網，但本頁重點是腳輪、底座和移動動線；若地面受壓，再查看 [空氣清淨機地板保護風水](/zh/blog/living-room-air-purifier-floor-protection-feng-shui/)。
+可參考 [客廳空氣清淨機濾網清潔風水](/zh/blog/living-room-air-purifier-filter-cleaning-feng-shui/)處理濾網，但本頁重點是腳輪、底座和移動動線；若地面受壓，再查看 [空氣清淨機清潔風水](/zh/blog/living-room-air-purifier-cleaning-feng-shui/)。
 
 ## 七日觀察：移動順暢之外，也看進風和電線是否維持可檢查
 

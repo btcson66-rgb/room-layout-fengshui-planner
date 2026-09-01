@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-peephole-cleaning-feng-shui
   - entryway-door-hinge-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 玄關門鈴攝影機鏡頭通常位在門外或門框附近，會遇到指紋、灰塵、雨滴、蜘蛛網、油膜、保護膜老化和溫差霧氣。畫面模糊不一定是鏡頭髒，也可能是鏡頭外罩受損、內部進水、網路、夜間反光或裝設角度問題。風水裡玄關視線常被說成納氣與迎客，實際可以轉成門口視線清楚、門片能開、包裹不堵路、攝影機不被清潔或遮蔽物破壞、訪客和家人隱私有界線，不是把鏡頭擦亮就能保證平安或財運。
 
-先記錄玄關約 180 × 260 公分、攝影機位置、門鈴按鈕、門把、門檻、鞋櫃、包裹暫放區和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取件、穿鞋和家人進出的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃、傘架和包裹不會遮住鏡頭或門片；狹窄玄關可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試提包和開門。工具只能協助配置，不能代替攝影機安全、電池、供電、網路或所在地隱私規範。
+先記錄玄關約 180 × 260 公分、攝影機位置、門鈴按鈕、門把、門檻、鞋櫃、包裹暫放區和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取件、穿鞋和家人進出的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃、傘架和包裹不會遮住鏡頭或門片；狹窄玄關可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試提包和開門。工具只能協助配置，不能代替攝影機安全、電池、供電、網路或所在地隱私規範。
 
 ## 指紋、灰塵、雨滴、霧氣與保護膜不是同一個問題
 

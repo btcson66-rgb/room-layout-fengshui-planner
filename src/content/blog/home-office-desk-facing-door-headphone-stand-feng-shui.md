@@ -91,7 +91,7 @@ OSHA 的工作站資料將電話、鍵盤、滑鼠和桌面視為互相影響的
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出耳機、充電座、桌椅和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面與桌下外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拿取、充電、起身和清潔。若電話也占用同一桌角，可讀 [面向房門書桌電話座](/zh/blog/home-office-desk-facing-door-phone-stand-feng-shui/)；若線材是主要問題，參考 [面向房門書桌鍵盤距離](/zh/blog/home-office-desk-facing-door-keyboard-distance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出耳機、充電座、桌椅和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面與桌下外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拿取、充電、起身和清潔。若電話也占用同一桌角，可讀 [面向房門書桌電話座](/zh/blog/home-office-desk-facing-door-phone-stand-feng-shui/)；若線材是主要問題，參考 [面向房門書桌鍵盤距離](/zh/blog/home-office-desk-facing-door-keyboard-distance-feng-shui/)。
 
 ### 參考資料
 

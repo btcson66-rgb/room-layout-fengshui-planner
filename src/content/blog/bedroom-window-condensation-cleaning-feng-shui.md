@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-window-condensation-feng-shui
   - bedroom-window-sill-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室窗戶結露在風水文章裡常被說成「窗邊水氣帶走好運」，但實際上水珠先告訴我們：室內空氣中的水分在較冷的玻璃或窗框表面凝結。結露可能與室內外溫差、洗澡或晾衣帶來的水氣、窗簾遮擋、家具貼窗、窗框密封和通風方式有關。風水語彙可以提醒人留意「濕滯」，但不能把水珠直接解釋成財運、睡眠或健康結果。
 
-先量臥室長寬、窗戶寬高、窗框、玻璃分格、窗簾、床頭、衣櫃、除濕設備和窗邊通道。以 300 × 320 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床、窗簾和家具之間的空氣與擦拭空間，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對衣櫃是否堵住窗邊，最後以 [房間動線檢查](/zh/room-circulation-check/)確認夜間起身不會踩到濕地面。工具只協助配置，不代替漏水、窗體和室內環境判斷。
+先量臥室長寬、窗戶寬高、窗框、玻璃分格、窗簾、床頭、衣櫃、除濕設備和窗邊通道。以 300 × 320 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床、窗簾和家具之間的空氣與擦拭空間，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對衣櫃是否堵住窗邊，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認夜間起身不會踩到濕地面。工具只協助配置，不代替漏水、窗體和室內環境判斷。
 
 ## 窗戶結露的好風水是水珠可追、窗框能乾且床邊不被濕氣包圍
 

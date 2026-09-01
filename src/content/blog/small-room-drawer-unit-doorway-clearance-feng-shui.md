@@ -89,7 +89,7 @@ NFPA 的居家逃生規劃資料提醒家庭辨識出口與替代路線；小房
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫櫃體、門和床，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 輸入抽屜全開深度，最後以 [房間動線檢查](/zh/room-circulation-check/) 檢查入口。若你要處理整段收納走道，可參考 [小房間收納走道與轉身](/zh/blog/small-room-storage-aisle-turning-clearance-feng-shui/)；若是衣櫃門本身的轉身問題，參考 [小房間衣櫃門操作](/zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫櫃體、門和床，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 輸入抽屜全開深度，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 檢查入口。若你要處理整段收納走道，可參考 [小房間收納走道與轉身](/zh/blog/small-room-storage-aisle-turning-clearance-feng-shui/)；若是衣櫃門本身的轉身問題，參考 [小房間衣櫃門操作](/zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/)。
 
 ### 參考資料
 

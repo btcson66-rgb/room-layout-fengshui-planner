@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-water-filter-feng-shui
   - kitchen-water-filter-replacement-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 濾水龍頭的風水問題常被問成「水龍頭朝哪個方向才會留財」，但每天真正影響廚房的，通常是出水口是否有水垢、濾芯座是否滲水、O 形環是否偏位、濾芯更換時有沒有先止水，以及取水者會不會與洗菜、備餐和開櫃的人互相卡住。風水裡的「水口清楚」可以轉譯為水從哪裡來、經過哪些可檢查部件、漏水如何被發現、使用後能否擦乾，不能把方位當作飲水品質或健康保證。
 
-先量廚房長寬、濾水龍頭底座、出水口高度、水槽邊緣、濾芯座、檯下櫃體、止水閥、電源和備餐檯。以 240 × 300 公分廚房為例，水槽旁若同時放著濾水龍頭、洗杯區和砧板，真正的衝突不是五行，而是取水時手肘碰到刀具、杯子擋住水槽，或檯下管線被收納物壓住。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取水與備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查櫃內濾芯高度與門片，最後以 [房間動線檢查](/zh/room-circulation-check/)測試兩人同時使用水槽。工具只協助配置，不代替設備說明、食品衛生、管線或電氣判斷。
+先量廚房長寬、濾水龍頭底座、出水口高度、水槽邊緣、濾芯座、檯下櫃體、止水閥、電源和備餐檯。以 240 × 300 公分廚房為例，水槽旁若同時放著濾水龍頭、洗杯區和砧板，真正的衝突不是五行，而是取水時手肘碰到刀具、杯子擋住水槽，或檯下管線被收納物壓住。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取水與備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查櫃內濾芯高度與門片，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試兩人同時使用水槽。工具只協助配置，不代替設備說明、食品衛生、管線或電氣判斷。
 
 ## 濾水龍頭的好風水是水路可追、漏點可見且更換不必清空整座廚房
 

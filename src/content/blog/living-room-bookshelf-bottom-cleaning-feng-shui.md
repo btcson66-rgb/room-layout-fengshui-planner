@@ -17,7 +17,7 @@ keywords:
   - 書櫃底層潮味處理
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-rug-dust-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 書櫃底層在客廳風水裡常被聯想到藏書、根基與知識累積，但真正需要維護的是書籍紙屑、底板、踢腳、櫃腳、牆面、重心、固定件和閱讀動線。底層書籍最容易沾地面灰塵，也可能被濕拖把、水痕或寵物毛影響；把重書全部集中在一側，則可能讓櫃體受力不均。本文把「根基穩」轉成可觀察的底層除塵、書籍分類、固定與承重檢查，不把書櫃位置當成學業、財運或運勢保證。
 
-先記錄書櫃高度、寬度、底板、踢腳、櫃腳、背板、固定件、牆面、沙發和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取書、清潔與客廳活動路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認書櫃前方沒有被茶几或收納箱堵住；櫃體與牆面距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代家具防傾倒與結構檢查。
+先記錄書櫃高度、寬度、底板、踢腳、櫃腳、背板、固定件、牆面、沙發和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取書、清潔與客廳活動路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認書櫃前方沒有被茶几或收納箱堵住；櫃體與牆面距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代家具防傾倒與結構檢查。
 
 ## 先分辨書塵、紙屑、潮痕與家具異常
 

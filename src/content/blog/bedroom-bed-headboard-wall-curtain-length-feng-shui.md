@@ -89,7 +89,7 @@ EPA 的室內空氣品質指南可作為一般清潔和通風參考；CPSC 的�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、窗簾下擺、床腳和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布料外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放清潔、開窗與離床。若你在意陰影，可讀 [床頭窗簾低照度](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若要處理洗滌，可參考 [床頭窗簾布料清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、窗簾下擺、床腳和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布料外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放清潔、開窗與離床。若你在意陰影，可讀 [床頭窗簾低照度](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若要處理洗滌，可參考 [床頭窗簾布料清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui/)。
 
 ### 參考資料
 

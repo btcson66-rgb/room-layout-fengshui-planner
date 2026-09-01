@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-robot-vacuum-side-brush-cleaning-feng-shui
   - living-room-robot-vacuum-cliff-sensor-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人的前方緩衝器，也常被稱為防撞緩衝器，是機器碰到家具時會有輕微位移的外殼部件；它和側刷、側輪、前輪、懸崖感測器、導航鏡頭不是同一個零件。緩衝器卡住、縫隙進入毛髮或感測窗有灰塵，可能讓機器反覆碰撞；家具太低、深色表面、地毯邊或地圖資料也可能造成相似表現。客廳風水可以把「反覆碰撞」轉成家具邊界、通道和清掃路徑的觀察，但不能把碰撞直接解釋成沖煞或保證避開。
 
-先記錄機器人品牌、型號、錯誤訊息、緩衝器前後左右接縫，以及沙發、茶几、電視櫃、地毯和門檻。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出家具腳和清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查低矮物、懸空櫃和伸出的收納盒，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)確認人行路徑不會因為加設阻擋物而變窄。
+先記錄機器人品牌、型號、錯誤訊息、緩衝器前後左右接縫，以及沙發、茶几、電視櫃、地毯和門檻。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出家具腳和清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查低矮物、懸空櫃和伸出的收納盒，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認人行路徑不會因為加設阻擋物而變窄。
 
 ## 緩衝器、感測窗與導航要分區
 

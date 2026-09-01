@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedside-table-feng-shui
   - bedroom-charging-station-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 水瓶放在臥室，常被聯想到補水、滋養、讓睡眠環境柔和，也有人會問水瓶是否一定要放床頭、床的左側或財位。但臥室水瓶真正要處理的是漏水、床墊與電器距離、瓶身清潔、材質標示、夜間取用、補水和瓶子乾燥。沒有任何水瓶方位能保證睡眠、健康、財運或感情；本文把「水氣滋養」轉成不打翻、容易清洗、能判斷是否該更換與不妨礙起身的空間條件。
 
-先量臥室、床、床頭櫃、水瓶外徑與高度、插座、床頭燈、充電器、門、窗和夜間行走路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、床尾矮櫃和書桌側邊的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水瓶不會壓到燈具、手機或文件，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試半夜取水、換床單與清潔。工具只能協助配置，不取代容器說明與飲水衛生建議。
+先量臥室、床、床頭櫃、水瓶外徑與高度、插座、床頭燈、充電器、門、窗和夜間行走路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、床尾矮櫃和書桌側邊的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水瓶不會壓到燈具、手機或文件，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試半夜取水、換床單與清潔。工具只能協助配置，不取代容器說明與飲水衛生建議。
 
 ## 床頭有水，不代表越近越好
 

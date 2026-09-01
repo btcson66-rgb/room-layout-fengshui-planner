@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-spice-jar-label-cleaning-feng-shui
   - kitchen-dish-towel-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐具抽屜容易掉入米粒、麵包屑、油膜和水珠，叉子與湯匙混在一起時，取用會反覆翻找；托盤腳墊滑動、抽屜滑軌卡住、刀具露出或抽屜靠近水槽而回潮，也會讓廚房動線變得不順。廚房風水常把餐具整齊和備餐秩序連在一起，但可驗收的內容是餐具乾燥、托盤穩定、抽屜能完整開關，以及取用時不需要跨過熱鍋或水槽，不能把收納整齊直接當成財運結論。
 
-先記錄櫥櫃品牌、抽屜尺寸、托盤材質、滑軌、刀具、餐具數量、水槽、爐具和備餐檯位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開抽屜和取餐具的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對托盤與抽屜內寬，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)確認開抽屜不會擋住主要路徑。
+先記錄櫥櫃品牌、抽屜尺寸、托盤材質、滑軌、刀具、餐具數量、水槽、爐具和備餐檯位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開抽屜和取餐具的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對托盤與抽屜內寬，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認開抽屜不會擋住主要路徑。
 
 ## 抽屜、托盤、滑軌與餐具要分開
 

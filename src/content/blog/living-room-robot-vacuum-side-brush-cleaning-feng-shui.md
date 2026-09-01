@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-robot-vacuum-side-wheel-cleaning-feng-shui
   - living-room-robot-vacuum-cliff-sensor-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人側刷的風水常被說成「掃到牆角才不留死角」，但真正需要處理的是邊刷毛髮、刷座異物、牆角灰塵、家具碰撞、地毯邊和清掃路徑。風水裡的「掃除死角」可以轉譯為側刷能受控旋轉、牆邊灰塵可觀察、家具不反覆碰撞，不能把側刷轉動直接當成客廳清潔或運勢保證。
 
-先量客廳長寬、機器人寬度、側刷伸出範圍、牆角、沙發腳、茶几腳、地毯邊、門檻和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出牆邊路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具腳不會形成刷毛反覆卡住的窄角，最後用 [房間動線檢查](/zh/room-circulation-check/)檢查人行路徑與清掃路徑是否交會。
+先量客廳長寬、機器人寬度、側刷伸出範圍、牆角、沙發腳、茶几腳、地毯邊、門檻和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出牆邊路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具腳不會形成刷毛反覆卡住的窄角，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查人行路徑與清掃路徑是否交會。
 
 ## 側刷的好風水是刷毛完整、刷座乾淨與牆邊路徑可觀察
 

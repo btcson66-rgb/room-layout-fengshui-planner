@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-window-sill-cleaning-feng-shui
   - bedroom-bedside-rug-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室毛毯在風水裡常被聯想到包覆、安定與季節照護，但真正需要維護的是纖維灰塵、皮屑、汗氣、飲料污漬、洗標限制、乾燥程度、收納袋和床邊取用。毛毯洗完若還有潮感就摺起來，水氣會被封在纖維和收納袋內；長期不用的厚毯若直接堆在衣櫃最底層，也可能讓異味和狀態變化不易察覺。本文把「臥室有暖意」轉成可觀察的材質分類、清潔、完全乾燥、收納與睡前動線驗收，不把毛毯顏色或擺放方位當成好眠、健康或運勢保證。
 
-先記錄毛毯尺寸、纖維、填充、洗標、收納袋、床架、衣櫃、窗戶、除濕位置和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排晾曬與暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認收納不壓住床邊用品；換季搬運路徑可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間規劃，不能取代洗標、纖維特性與濕氣處理判斷。
+先記錄毛毯尺寸、纖維、填充、洗標、收納袋、床架、衣櫃、窗戶、除濕位置和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排晾曬與暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認收納不壓住床邊用品；換季搬運路徑可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間規劃，不能取代洗標、纖維特性與濕氣處理判斷。
 
 ## 先分辨灰塵、汗味、污漬與潮感
 

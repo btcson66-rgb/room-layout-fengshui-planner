@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-light-cover-cleaning-feng-shui
   - kitchen-range-hood-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 抽油煙機燈開關的風水問題常被說成「燈火開關不順會影響家運」，但真正需要處理的是按鍵卡油、旋鈕回彈不良、控制面板積塵、清潔液流入縫隙，或燈光異常讓爐台操作視線變差。風水裡的「火有節制」可以轉譯為照明按需求開關、控制面板可辨、排煙能獨立操作和清潔不跨過熱鍋，不能把按鍵手感直接當成財運或烹調結果。
 
-先量廚房長寬、抽油煙機寬深、燈開關位置、按鍵或旋鈕尺寸、爐台、流理台、牆面插座和操作站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開關、爐台和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫥櫃與控制面板，最後以 [房間動線檢查](/zh/room-circulation-check/)測試端鍋時是否擋住按鍵。工具只協助配置，不代替電氣維修。
+先量廚房長寬、抽油煙機寬深、燈開關位置、按鍵或旋鈕尺寸、爐台、流理台、牆面插座和操作站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開關、爐台和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫥櫃與控制面板，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試端鍋時是否擋住按鍵。工具只協助配置，不代替電氣維修。
 
 ## 燈開關的好風水是按鍵可辨、回彈正常且控制區不被油膜封住
 

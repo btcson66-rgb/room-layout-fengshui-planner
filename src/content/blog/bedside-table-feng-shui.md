@@ -16,9 +16,8 @@ keywords:
   - 床頭燈電線整理
   - 小臥室床邊收納
 relatedTools:
-  - /zh/bedroom-layout/
-  - /zh/furniture-fit-checker/
   - /zh/room-layout-planner/
+  - /zh/furniture-fit-checker/
 relatedPosts:
   - dresser-nightstand-layout
   - bedroom-ceiling-light-feng-shui

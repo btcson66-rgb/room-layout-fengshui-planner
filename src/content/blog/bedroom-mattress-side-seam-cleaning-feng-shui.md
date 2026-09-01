@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-mattress-vacuum-cleaning-feng-shui
   - bedroom-mattress-ventilation-dehumidifying-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床墊側邊縫線清潔風水常被寫成「床墊四周乾淨就能穩住睡氣」，但床墊滾邊、拉鍊、提把和側布每天承受人體皮屑、汗氣、灰塵、寢具纖維與床架摩擦。床邊若緊貼牆面，吸塵器進不去，濕氣也較難散；床墊搬動時若只抓縫線或提把，可能讓接縫受力。床墊側邊不是只看外觀，還要同時看清潔可達性、通風、床架支撐和上下床的腳步空間。風水語彙可以幫助整理秩序，但不能保證睡眠、除蟎或健康結果。
 
-先量臥室長寬、床墊長寬高、床架外框、床邊牆距、窗戶、除濕設備、床單垂落範圍和使用者站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床墊側邊與清潔工具的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床墊更換、搬動和床架支撐有足夠空間；若兩側很窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試上下床、換床單和吸塵是否會互相干擾。工具只能協助配置，不能判定床墊內部污染、彈簧結構或人體症狀。
+先量臥室長寬、床墊長寬高、床架外框、床邊牆距、窗戶、除濕設備、床單垂落範圍和使用者站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床墊側邊與清潔工具的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床墊更換、搬動和床架支撐有足夠空間；若兩側很窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試上下床、換床單和吸塵是否會互相干擾。工具只能協助配置，不能判定床墊內部污染、彈簧結構或人體症狀。
 
 ## 先分辨縫線皮屑、灰塵與潮濕異常
 

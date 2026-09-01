@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-food-container-seal-cleaning-feng-shui
   - kitchen-spice-rack-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房抽屜收納盒在風水裡常被聯想到食器有序、家務分流與食祿不亂，但真正需要維護的是餐具碎屑、油膜、濕氣、分隔盒、抽屜底板、滑軌和取用動線。把剛洗好的餐具放進未乾的盒子，或把沾油的量匙和乾燥餐具混在一起，容易讓抽屜有味道、收納盒變黏，甚至讓家人找不到需要的用品。本文把「器物有序」轉成可觀察的清空、分類、材質清潔、乾燥與抽屜開啟驗收，不把抽屜方位當成料理、衛生或運勢保證。
 
-先記錄抽屜尺寸、滑軌、分隔盒材質、餐具用途、爐具、水槽、垃圾桶與通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取餐具、備餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認分隔盒不會卡住抽屜；多人備餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)觀察開抽屜是否妨礙端盤。工具不能取代材質保養和食品接觸用品的產品說明。
+先記錄抽屜尺寸、滑軌、分隔盒材質、餐具用途、爐具、水槽、垃圾桶與通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取餐具、備餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認分隔盒不會卡住抽屜；多人備餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)觀察開抽屜是否妨礙端盤。工具不能取代材質保養和食品接觸用品的產品說明。
 
 ## 先分辨碎屑、油膜、積水與異味
 

@@ -101,7 +101,7 @@ EPA 的室內空氣品質資料建議控制污染源、保持清潔乾燥並在�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫窗戶、窗簾、桌子與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面和後退空間；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾與離席。若反光是核心問題，可看 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)；若需要擴散光，參考 [桌燈擴散罩](/zh/blog/home-office-desk-task-light-diffuser-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫窗戶、窗簾、桌子與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面和後退空間；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾與離席。若反光是核心問題，可看 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)；若需要擴散光，參考 [桌燈擴散罩](/zh/blog/home-office-desk-task-light-diffuser-feng-shui/)。
 
 ### 參考資料
 

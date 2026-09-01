@@ -16,9 +16,8 @@ keywords:
   - 馬桶補水管位置檢查
   - 浴室水流動線
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-tank-fill-valve-cleaning-feng-shui
   - bathroom-toilet-tank-chain-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶水箱溢水管在風水裡容易被聯想到水流有界、排濁有出口；搜尋「馬桶溢水管」時，真正需要維護的是水位過高、補水管位置、溢水管管口沉積物、回流水聲、浮球與進水閥狀態。水箱裡看得到一支直立管，不代表它只是要擦拭的表面；水位長期進入溢水管，可能是調整、密封或進水零件問題。本文把「水有出口但不外溢」轉成可觀察的關水、辨識水位、清潔可及表面、回裝和漏水交接，不把溢水管位置當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、馬桶型式、水箱蓋、溢水管、補水管、進水閥、浮球、沖水閥、供水閥、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)畫出開蓋、關水和查看路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會擋住水箱；查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代給排水或馬桶維修判斷。
+先記錄浴室約 180 × 240 公分、馬桶型式、水箱蓋、溢水管、補水管、進水閥、浮球、沖水閥、供水閥、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出開蓋、關水和查看路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會擋住水箱；查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代給排水或馬桶維修判斷。
 
 ## 先分辨水位過高、補水回流與溢水管髒污
 

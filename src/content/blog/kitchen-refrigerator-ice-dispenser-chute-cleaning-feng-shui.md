@@ -18,11 +18,11 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-ice-maker-cleaning-feng-shui
   - kitchen-refrigerator-ice-bin-cleaning-feng-shui
-  - kitchen-refrigerator-drip-tray-cleaning-feng-shui
+  - kitchen-refrigerator-egg-tray-cleaning-feng-shui
 howToName: "冰箱製冰出冰口、儲冰盒、托盤、結冰與取冰動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +36,7 @@ howToSteps:
 
 冰箱製冰出冰口的風水問題常被說成「水與冰能帶來清涼財氣」，但真正影響使用的是濕氣讓冰塊結團、出冰口被碎冰堵住、托盤積水留下礦物痕，或取冰時必須轉身穿過爐具和備餐線。風水裡的「水有源、流有序」可以轉譯為出冰口可清潔、冰塊能順利落下、滴水不滯留和取用路徑不碰撞，不能把出冰量直接當成財運或飲水結果。
 
-先量廚房長寬、冰箱外框、門片開啟角度、出冰口高度、托盤深度、插座、爐具、流理台和取冰站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取杯、接冰和擦拭路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱與牆面，最後用 [房間動線檢查](/zh/room-circulation-check/)測試端熱食時是否交會。工具只協助配置，不代替製冰設備與電氣安全。
+先量廚房長寬、冰箱外框、門片開啟角度、出冰口高度、托盤深度、插座、爐具、流理台和取冰站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取杯、接冰和擦拭路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱與牆面，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試端熱食時是否交會。工具只協助配置，不代替製冰設備與電氣安全。
 
 ## 出冰口的好風水是冰塊可分辨、滴水可擦且出冰不必硬敲
 

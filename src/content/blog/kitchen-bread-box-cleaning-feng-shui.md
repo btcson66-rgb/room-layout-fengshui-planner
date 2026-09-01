@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-toaster-crumb-tray-cleaning-feng-shui
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 麵包盒在廚房風水裡常被聯想到食祿、收納和家人共享，但真正需要維護的是盒體、盒蓋、密封件、麵包屑、油膜、潮氣、檯面和取食動線。麵包盒太密封而麵包還溫熱，或碎屑掉在盒底沒有清理，容易讓食物收納變成潮味與雜物的來源。本文把「食物有庫」轉成可觀察的清空、材質清潔、完全乾燥、通風與先進先出，不把盒位當成保存、健康或運勢保證。
 
-先記錄麵包盒材質、尺寸、盒蓋、密封條、通風孔、檯面、爐具、水槽、排油煙機和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取麵包、清潔和晾乾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認盒蓋全開不會撞櫃；早餐多人取食時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試開蓋和端盤。工具不能取代食品保存標示與材質說明。
+先記錄麵包盒材質、尺寸、盒蓋、密封條、通風孔、檯面、爐具、水槽、排油煙機和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取麵包、清潔和晾乾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認盒蓋全開不會撞櫃；早餐多人取食時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試開蓋和端盤。工具不能取代食品保存標示與材質說明。
 
 ## 先分辨麵包屑、油膜、潮味與霉斑
 

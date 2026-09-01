@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-feng-shui
   - kitchen-sponge-cloth-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 砧板在廚房風水裡常被聯想到把食材切分妥當、讓一家人的飲食有秩序，有人會問砧板靠近水槽、爐具或某個方位是否比較能守住家運。但實際收納要先回答幾個問題：這塊砧板切過生肉、海鮮、熟食還是蔬果？用完能不能立即洗淨？洗後是否能完全乾燥？表面有沒有深刮痕、裂縫或變形？家人能否一眼辨認並順手放回？沒有任何方位能替代食品衛生；本文把「分清楚、放穩、保持乾燥」當成砧板風水的可檢查版本。
 
-先量砧板厚度、長寬、刀具收納、流理臺深度、水槽邊緣、瀝水區、抽屜內高與主要通行路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較砧板直立架、抽屜和櫃內位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認立放後櫃門、抽屜和水槽下方設備不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試洗菜、切菜、開冰箱與端菜時是否需要側身閃避。工具只協助空間配置，不取代食藥署資料、產品標示或所在地的食品衛生規範。
+先量砧板厚度、長寬、刀具收納、流理臺深度、水槽邊緣、瀝水區、抽屜內高與主要通行路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較砧板直立架、抽屜和櫃內位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認立放後櫃門、抽屜和水槽下方設備不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試洗菜、切菜、開冰箱與端菜時是否需要側身閃避。工具只協助空間配置，不取代食藥署資料、產品標示或所在地的食品衛生規範。
 
 ## 先決定用途，再決定砧板放哪裡
 

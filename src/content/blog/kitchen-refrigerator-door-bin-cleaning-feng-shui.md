@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-door-gasket-cleaning-feng-shui
   - kitchen-refrigerator-door-handle-cleaning-feng-shui

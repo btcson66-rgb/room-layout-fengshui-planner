@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-window-blinds-feng-shui
   - humid-bedroom-layout
@@ -36,7 +36,7 @@ howToSteps:
 
 窗戶結露在風水討論裡常被說成窗邊漏氣、寒氣進房或睡床不穩，也有人會問床頭靠窗、窗簾長期關閉或窗向改變能不能把問題化掉。但結露是水氣在較冷表面凝結的現象，應先檢查室內濕度、溫差、通風、家具遮擋、窗框排水與清潔；若只換顏色或擺件，水珠仍然會回來。沒有任何床位或窗向能保證健康、睡眠或運勢；本文把「窗邊氣場不穩」轉成可以觀察的水氣、距離與生活流程。
 
-先量窗框、床墊、床頭櫃、衣櫃、窗簾、冷氣出風方向、牆角和窗邊家具離牆距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床靠窗、床側留通道和家具移開的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認窗扇、窗簾與家具不互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間起身、擦窗、開窗與搬動床品。工具不能代替漏水、結構、黴菌或室內環境的專業判斷。
+先量窗框、床墊、床頭櫃、衣櫃、窗簾、冷氣出風方向、牆角和窗邊家具離牆距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床靠窗、床側留通道和家具移開的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認窗扇、窗簾與家具不互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間起身、擦窗、開窗與搬動床品。工具不能代替漏水、結構、黴菌或室內環境的專業判斷。
 
 ## 先分辨結露、滲水與清潔水痕
 

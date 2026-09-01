@@ -22,7 +22,7 @@ relatedTools:
 relatedPosts:
   - bathroom-shower-caddy-storage-feng-shui
   - bathroom-towel-rack-feng-shui
-  - bathroom-shower-feng-shui
+  - bathroom-shower-squeegee-feng-shui
 howToName: "淋浴置物架鏽斑、積水、固定、承重與取物動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:

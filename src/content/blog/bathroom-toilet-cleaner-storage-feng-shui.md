@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-ventilation-feng-shui
   - bathroom-floor-drain-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室清潔劑在風水裡常被聯想到清除濁氣、整理穢氣，有人會問馬桶清潔劑放在馬桶旁、門後或浴室凶位，能不能把不好的氣一起帶走。實際上更需要先處理的是產品用途是否清楚、瓶身是否仍有原標籤、酸性產品與含氯產品是否分流、通風是否足夠、瓶口有沒有滴漏，以及兒童和長者會不會誤拿。沒有一個方位能替代化學品使用說明與通風；本文把「除穢」轉成可辨識的分類、拿取路徑和用後歸位。
 
-先量浴室長寬、馬桶、洗手台、淋浴區、門扇、排風扇、窗、地漏與可關閉的收納櫃，並記錄每個瓶子的高度、容量、蓋型和拿取時的手部高度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗手台下、馬桶側櫃和門後的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶身不會頂住櫃門、排水管或插座，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試清潔、洗澡、拖地和開門時是否需要跨過瓶子。工具只協助配置，不取代產品標示、化學品管理或醫療建議。
+先量浴室長寬、馬桶、洗手台、淋浴區、門扇、排風扇、窗、地漏與可關閉的收納櫃，並記錄每個瓶子的高度、容量、蓋型和拿取時的手部高度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗手台下、馬桶側櫃和門後的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶身不會頂住櫃門、排水管或插座，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清潔、洗澡、拖地和開門時是否需要跨過瓶子。工具只協助配置，不取代產品標示、化學品管理或醫療建議。
 
 ## 先把風水的「清除」翻成清潔劑分流
 

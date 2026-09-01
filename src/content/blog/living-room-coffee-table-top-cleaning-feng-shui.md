@@ -17,7 +17,7 @@ keywords:
   - 客廳端餐通行動線
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-coffee-table-under-surface-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳茶几桌面在風水裡常被聯想到聚合、交流與待客，但真正需要維護的是飲料水痕、食物碎屑、油膜、遙控器、書本、桌角、承重、桌腳和端餐動線。茶几是全家都會碰到的共享表面，若飲料長期放在邊緣、濕杯墊留水、桌面堆滿低頻物品，清潔與通行都會受影響。本文把「客廳聚合有序」轉成可觀察的清空、共享物品分流、材質清潔、承重和端餐驗收，不把茶几位置當成人緣、財運或運勢保證。
 
-先記錄茶几長寬高、桌面材質、桌角、桌腳、沙發、電視櫃、地毯、插座和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、端餐、清潔和起身路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認茶几不切斷沙發與房門；桌面物品和尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助動線，不能取代家具材質與穩定判斷。
+先記錄茶几長寬高、桌面材質、桌角、桌腳、沙發、電視櫃、地毯、插座和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、端餐、清潔和起身路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認茶几不切斷沙發與房門；桌面物品和尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助動線，不能取代家具材質與穩定判斷。
 
 ## 先分辨飲料水痕、碎屑、油膜與桌面損傷
 

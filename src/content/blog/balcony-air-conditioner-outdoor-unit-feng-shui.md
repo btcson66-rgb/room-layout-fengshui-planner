@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-feng-shui-layout
   - living-room-air-conditioner-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 冷氣室外機在陽台風水裡常被聯想到把熱氣排出、讓家中的氣流不滯留，也有人擔心室外機正對門窗會把熱、噪音或不好的氣帶回室內。但室外機真正要處理的是進出風空間、冷凝水、支架固定、電源與配線、維修通道、日照、震動、鄰居影響和陽台逃生界線。沒有任何室外機方位能保證降溫、財運、健康或家運；本文把「散熱排濁」轉成可檢查的通風、排水、維護與可退讓空間。
 
-先量陽台、室外機外廓、支架、牆面、欄杆、窗戶、排水管、插座、曬衣架、洗衣機和通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、靠側邊和維修架三種配置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認機體、支架和遮蔽格柵沒有互相擠壓，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試晾衣、清潔、搬運和必要離開路徑。工具只能協助平面規劃，不能取代合格安裝人員、建築規定或大樓管理規約。
+先量陽台、室外機外廓、支架、牆面、欄杆、窗戶、排水管、插座、曬衣架、洗衣機和通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、靠側邊和維修架三種配置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認機體、支架和遮蔽格柵沒有互相擠壓，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試晾衣、清潔、搬運和必要離開路徑。工具只能協助平面規劃，不能取代合格安裝人員、建築規定或大樓管理規約。
 
 ## 室外機不是可以任意藏起來的裝飾
 

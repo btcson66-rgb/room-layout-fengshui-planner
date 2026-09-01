@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-width-guide/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - wardrobe-placement-bedroom
   - bedroom-layout-before-buying-furniture
@@ -86,7 +86,7 @@ howToSteps:
 
 第一版使用 180 公分高開放書櫃，容量大但床上正好看見全部書脊；第二版改成 100 公分低櫃，視線安定且可當閱讀平台，但收藏書需要分散；第三版把櫃體拆成兩座 80 公分寬低櫃，中間保留清潔與取書空間，容量最低卻最容易搬動。用紙箱模擬三個版本，測試開門、下床、拉窗簾、夜間取書和清潔，不能只以「書櫃靠東方」做決定。
 
-可用 [房間家具配置工具](/zh/room-layout-planner/)畫床、書櫃、門窗和走道，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較櫃門與床邊距離；[房間動線寬度指南](/zh/room-circulation-width-guide/)可協助檢查通道，但不能驗證固定零件、牆體承重或地震安全。
+可用 [房間家具配置工具](/zh/room-layout-planner/)畫床、書櫃、門窗和走道，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較櫃門與床邊距離；[房間動線寬度指南](/zh/blog/room-circulation-width-guide/)可協助檢查通道，但不能驗證固定零件、牆體承重或地震安全。
 
 案例中若高櫃讓床上視線有壓力，先比較改低、加門或移到床側；若床邊只有 55 公分導致清潔籃卡住，應優先調整家具，不要用掛飾或植物填補。書櫃的民俗位置可以作為偏好，但床邊安全、固定與可維護性應先被說清楚。
 

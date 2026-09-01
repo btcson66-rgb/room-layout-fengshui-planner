@@ -91,7 +91,7 @@ EPA 的室內空氣資料把來源控制、通風和輔助清潔分開看，因�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗扇、布幅、床頭板和站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較窗扇最外點；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開窗、換床單與清潔。若上緣有漏光，可讀 [窗簾上方漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-top-gap-feng-shui/)；若下擺碰窗台，參考 [窗簾下擺與窗台](/zh/blog/bedroom-bed-headboard-wall-curtain-sill-contact-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗扇、布幅、床頭板和站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較窗扇最外點；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗、換床單與清潔。若上緣有漏光，可讀 [窗簾上方漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-top-gap-feng-shui/)；若下擺碰窗台，參考 [窗簾下擺與窗台](/zh/blog/bedroom-bed-headboard-wall-curtain-sill-contact-feng-shui/)。
 
 ### 參考資料
 

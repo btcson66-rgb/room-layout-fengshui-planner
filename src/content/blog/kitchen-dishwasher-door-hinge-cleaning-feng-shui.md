@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-dishwasher-door-seal-cleaning-feng-shui
   - kitchen-dishwasher-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機門鉸鏈的風水問題常被說成「水火交界不能有阻礙」，但日常真正要處理的是門片下墜、鉸鏈積塵、彈簧拉力不均、門封條被夾住，或洗碗機開門後擋住水槽與備餐路徑。風水裡的「水火有序」可以轉譯為洗碗機門能受控開合、櫃體維持方正、餐具能安全取放和人不用跨過開啟門片，不能把鉸鏈狀態直接當成財運或家人關係結果。
 
-先量廚房長寬、洗碗機寬深、門片開啟高度、鉸鏈兩側、滑籃拉出距離、踢腳板、水槽、爐具和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取碗和端菜路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對洗碗機與櫥櫃，最後用 [房間動線檢查](/zh/room-circulation-check/)測試門片打開後是否封住通道。工具只協助配置，不代替家電安裝與維修判斷。
+先量廚房長寬、洗碗機寬深、門片開啟高度、鉸鏈兩側、滑籃拉出距離、踢腳板、水槽、爐具和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取碗和端菜路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對洗碗機與櫥櫃，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試門片打開後是否封住通道。工具只協助配置，不代替家電安裝與維修判斷。
 
 ## 洗碗機門鉸鏈的好風水是開合可控、門片不磨櫃且密封完整
 

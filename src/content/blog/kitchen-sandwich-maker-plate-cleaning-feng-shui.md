@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-toaster-crumb-cleaning-feng-shui
   - kitchen-coffee-machine-water-tank-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 熱壓吐司機在廚房風水裡容易被聯想到把食材壓合、把早餐聚到一起，但烤盤實際會接觸麵包屑、起司、奶油、醬料和高溫焦痕。清潔時若把整台機器拿到水槽沖洗，或趁烤盤仍熱就用金屬工具刮，可能讓水進入機體或傷到表面。本文把「聚合」轉成早餐工作站可重複的加熱、取餐、冷卻、清潔和收納順序。
 
-先記錄熱壓吐司機型號、烤盤是否可拆、表面塗層、電線、插座、檯面、爐具、水槽和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出放麵包、加熱、取餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開蓋不會撞上櫃門；多人早餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端盤與收線。工具不能取代產品說明、電器安全或塗層保養要求。
+先記錄熱壓吐司機型號、烤盤是否可拆、表面塗層、電線、插座、檯面、爐具、水槽和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出放麵包、加熱、取餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開蓋不會撞上櫃門；多人早餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端盤與收線。工具不能取代產品說明、電器安全或塗層保養要求。
 
 ## 先分辨麵包屑、起司油膜與焦痕
 

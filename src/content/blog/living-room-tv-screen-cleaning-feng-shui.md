@@ -17,7 +17,7 @@ keywords:
   - 客廳觀看距離動線
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-tv-cabinet-shelf-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電視螢幕在客廳風水裡常被聯想到聲光、家庭交流與視線集中，但真正需要維護的是灰塵、指紋、液體、反光、散熱孔、電線、電視支撐和觀看通道。直接把清潔液噴在螢幕上，液體可能沿邊框流入；只看畫面乾淨，也可能忽略背面散熱與電視櫃穩定。本文把「視線集中」轉成可觀察的關機、除塵、乾燥、散熱、固定與客廳動線驗收，不把螢幕朝向當成人緣、健康或運勢保證。
 
-先記錄螢幕尺寸、邊框、底座或壁掛、散熱孔、線材、電視櫃、牆面、沙發、窗戶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出觀看、清潔與拔電路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認清潔梯具、櫃門和家人走路不互相干擾；螢幕與櫃體尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代電視說明、壁掛固定和電氣安全判斷。
+先記錄螢幕尺寸、邊框、底座或壁掛、散熱孔、線材、電視櫃、牆面、沙發、窗戶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出觀看、清潔與拔電路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認清潔梯具、櫃門和家人走路不互相干擾；螢幕與櫃體尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代電視說明、壁掛固定和電氣安全判斷。
 
 ## 先分辨灰塵、指紋、液體與反光問題
 

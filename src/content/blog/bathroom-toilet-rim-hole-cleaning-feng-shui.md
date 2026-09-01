@@ -16,9 +16,8 @@ keywords:
   - 馬桶出水孔堵塞
   - 浴室水流動線
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-tank-overflow-tube-cleaning-feng-shui
   - bathroom-toilet-flush-button-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶邊緣出水孔在風水裡容易被聯想到水流分布、清除與浴室界線，但真正需要維護的是硬水沉積、孔洞堵塞、沖水不均、馬桶內緣、清潔劑範圍和陶瓷狀態。看見水從某幾個孔流出，不代表整圈已經暢通；刷掉表面污垢，也不代表深處的水垢已經處理。本文把「水流均勻、濁物有出口」轉成可觀察的關水、孔洞辨識、可及清潔、沖水驗收和浴室動線交接，不把出水孔數量或方向當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、馬桶型式、內緣出水孔、水箱、沖水閥、馬桶內面、供水閥、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)畫出關水、清潔和沖水查看路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會堵住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代給排水或衛浴維修判斷。
+先記錄浴室約 180 × 240 公分、馬桶型式、內緣出水孔、水箱、沖水閥、馬桶內面、供水閥、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出關水、清潔和沖水查看路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會堵住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代給排水或衛浴維修判斷。
 
 ## 先分辨水垢、單孔堵塞、沖水不均與釉面破損
 

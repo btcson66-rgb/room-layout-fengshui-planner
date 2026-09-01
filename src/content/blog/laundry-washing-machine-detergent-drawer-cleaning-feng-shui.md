@@ -16,9 +16,8 @@ keywords:
   - 洗衣機抽屜潮氣乾燥
   - 洗衣區洗劑收納
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-detergent-drawer-feng-shui
   - laundry-washing-machine-door-gasket-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機洗劑盒在風水裡常被聯想到衣物更新、流動與清除，但真正需要維護的是洗劑結塊、柔軟精膜、進水孔、抽屜潮氣、霉味、滑軌和洗衣通道。洗劑盒推回去看似整齊，卻可能把濕殘留封在抽屜後方；洗衣洗完，也不代表加劑格已經乾燥。本文把「衣物去舊」轉成可觀察的取出、分格清潔、乾燥、回裝與洗衣動線驗收，不把洗衣機方位當成財運、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、洗劑盒格數、進水孔、門片、排水、牆距、洗衣籃、晾衣區和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排加劑、取衣和晾衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認抽屜完全拉出時不會撞到洗衣籃；家人交接可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代產品說明、進水或電器維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、洗劑盒格數、進水孔、門片、排水、牆距、洗衣籃、晾衣區和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排加劑、取衣和晾衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認抽屜完全拉出時不會撞到洗衣籃；家人交接可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代產品說明、進水或電器維修判斷。
 
 ## 先分辨洗劑結塊、柔軟精膜、潮氣與進水堵塞
 

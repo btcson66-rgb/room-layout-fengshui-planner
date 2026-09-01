@@ -87,7 +87,7 @@ OSHA 建議螢幕大致放在使用者正前方並保留適當觀看距離，也
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 先畫書桌和門窗，接著用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深、椅子與牆面，最後以 [房間動線檢查](/zh/room-circulation-check/) 回放起身和通過。若你在意入口視線，可延伸閱讀 [書桌對門的視線配置](/zh/blog/home-office-desk-facing-door-visibility-feng-shui/)；若更在意門口聲音，參考 [書桌靠門的聲音與隱私](/zh/blog/home-office-desk-doorway-sound-privacy-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 先畫書桌和門窗，接著用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深、椅子與牆面，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放起身和通過。若你在意入口視線，可延伸閱讀 [書桌對門的視線配置](/zh/blog/home-office-desk-facing-door-visibility-feng-shui/)；若更在意門口聲音，參考 [書桌靠門的聲音與隱私](/zh/blog/home-office-desk-doorway-sound-privacy-feng-shui/)。
 
 ### 參考資料
 

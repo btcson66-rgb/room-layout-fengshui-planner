@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-door-bin-cleaning-feng-shui
   - kitchen-refrigerator-door-gasket-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 冰箱門側層架的風水問題常被說成「門邊放水就能聚財」，但每天真正要處理的是飲料滴漏形成黏膜、瓶罐太高卡住門封、層架承重不均、塑膠件裂開，或取瓶時站在冰箱門前擋住廚房通道。風水裡的「收納有序」可以轉譯為瓶罐重量可辨、層架能清潔、門片能完全閉合和取物不穿越熱鍋，不能把門架是否整齊直接當成財運或飲食結果。
 
-先量廚房長寬、冰箱外框、門側層架寬深、層間高度、瓶罐尺寸、門片開啟角度、爐具、流理台和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取瓶與備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱和牆面，最後用 [房間動線檢查](/zh/room-circulation-check/)測試多人交會。工具只協助配置，不代替家電與食品保存判斷。
+先量廚房長寬、冰箱外框、門側層架寬深、層間高度、瓶罐尺寸、門片開啟角度、爐具、流理台和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取瓶與備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱和牆面，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試多人交會。工具只協助配置，不代替家電與食品保存判斷。
 
 ## 門側層架的好風水是重量分區、滴漏可見且門封不被瓶罐頂住
 

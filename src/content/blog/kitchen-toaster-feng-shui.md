@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-oven-feng-shui
   - kitchen-air-fryer-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 烤麵包機在廚房風水裡常被視為火位，於是有人會問放在財位是否能帶來豐足、插槽朝哪裡才不散氣。但烤麵包機是會升溫、產生碎屑並需要插座的電器，位置要先處理平坦檯面、插槽上方、電線、潮濕、窗簾、紙袋、奶油麵包與熱麵包落點。若它靠近水槽、被櫃底壓住散熱空間，或家人取麵包時要伸手越過熱鍋，風水象徵不能取代用電與燙傷風險。沒有烤麵包機位置能保證財運、早餐成功或健康結果；本文只把風水文化轉化成可觀察的空間秩序。
 
-先量烤麵包機寬深高、插槽位置、碎屑盤抽出方向、電源線長度、插座、流理台、爐具、窗簾和早餐餐盤區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較烤麵包機與備餐位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜、上櫃和插頭不互撞；廚房通道較窄時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端熱麵包能否轉身。工具只能協助看尺寸，不能代替產品說明、插座負載或電氣專業判斷。
+先量烤麵包機寬深高、插槽位置、碎屑盤抽出方向、電源線長度、插座、流理台、爐具、窗簾和早餐餐盤區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較烤麵包機與備餐位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜、上櫃和插頭不互撞；廚房通道較窄時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端熱麵包能否轉身。工具只能協助看尺寸，不能代替產品說明、插座負載或電氣專業判斷。
 
 ## 先分辨烘烤、取出與清潔狀態
 

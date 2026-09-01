@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-package-drop-zone-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 書包在玄關風水裡常被看成學習能量、孩子責任感或家庭秩序的象徵，因此有人會問書包靠門、靠鞋櫃或靠牆是否會影響學業，也有人把所有課本、便當、水壺和雨具一起塞在固定櫃裡。更實際的問題是：回家後書包有沒有固定落點？濕雨具和食物是否分開？孩子能不能自己卸下與整理？隔天出門會不會擋住門、絆倒家人或找不到作業？沒有任何方位能保證學習結果；好的玄關安排，是讓物品有下一步、讓人不需要把重量和混亂一路背進生活區。
 
-先量玄關門扇開啟弧線、鞋櫃深度、書包厚度、掛鉤高度、座椅、雨具區、電梯或樓梯方向和主要出入路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較書包掛鉤、低櫃與獨立落點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認書包放下後鞋櫃門、抽屜和門片不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試兩人同時進門、脫鞋、提袋、推車與拿包。工具只協助空間配置，不取代學校衛教、商品標示或家庭安全判斷。
+先量玄關門扇開啟弧線、鞋櫃深度、書包厚度、掛鉤高度、座椅、雨具區、電梯或樓梯方向和主要出入路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較書包掛鉤、低櫃與獨立落點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認書包放下後鞋櫃門、抽屜和門片不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試兩人同時進門、脫鞋、提袋、推車與拿包。工具只協助空間配置，不取代學校衛教、商品標示或家庭安全判斷。
 
 ## 書包回家不是「丟在門口」或「立刻藏起來」
 

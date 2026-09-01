@@ -97,7 +97,7 @@ CPSC 的家具固定教育資料強調要依固定件與牆體條件處理。石
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出床頭、層板和頭部活動區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度與支架；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放坐起與夜間離床。若床頭牆縫是問題，可看 [床頭靠牆留縫](/zh/blog/bedroom-bed-head-wall-gap-clearance-feng-shui/)；若床頭固定是主題，參考 [床頭板穩定](/zh/blog/bedroom-headboard-stability-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出床頭、層板和頭部活動區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度與支架；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放坐起與夜間離床。若床頭牆縫是問題，可看 [床頭靠牆留縫](/zh/blog/bedroom-bed-head-wall-gap-clearance-feng-shui/)；若床頭固定是主題，參考 [床頭板穩定](/zh/blog/bedroom-headboard-stability-feng-shui/)。
 
 ### 參考資料
 

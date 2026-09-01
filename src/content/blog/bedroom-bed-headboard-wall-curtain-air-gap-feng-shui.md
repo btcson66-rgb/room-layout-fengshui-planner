@@ -87,7 +87,7 @@ EPA 的室內空氣指南把灰塵、清潔和通風視為日常維護的一部�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾靜態與動態外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床架、布堆和清潔工具；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾、換床單和下床。若窗邊有濕氣，可讀 [床頭窗簾結露](/zh/blog/bedroom-bed-headboard-wall-curtain-condensation-feng-shui/)；若問題在回位，可參考 [床頭窗簾側邊回收](/zh/blog/bedroom-bed-headboard-wall-curtain-side-return-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾靜態與動態外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床架、布堆和清潔工具；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾、換床單和下床。若窗邊有濕氣，可讀 [床頭窗簾結露](/zh/blog/bedroom-bed-headboard-wall-curtain-condensation-feng-shui/)；若問題在回位，可參考 [床頭窗簾側邊回收](/zh/blog/bedroom-bed-headboard-wall-curtain-side-return-feng-shui/)。
 
 ### 參考資料
 

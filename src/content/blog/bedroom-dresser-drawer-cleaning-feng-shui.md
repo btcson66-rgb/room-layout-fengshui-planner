@@ -18,10 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-table-cleaning-feng-shui
-  - bedroom-wardrobe-placement-bedroom
+  - wardrobe-placement-bedroom
   - bedroom-bedside-table-under-cleaning-feng-shui
 howToName: "斗櫃抽屜材質、衣物纖維、滑軌、負重、固定與臥室動線檢查"
 howToTotalTime: "PT35M"
@@ -36,7 +36,7 @@ howToSteps:
 
 斗櫃風水常被問成「放在床的哪一邊才旺」，但臥室每天真正要處理的是：衣物纖維是否堆在抽屜後角、抽屜拉出會不會撞床、重物是否集中在上層、受潮衣物是否帶進櫃內、清潔後能否完全乾燥，以及半夜起身時是否要繞過開啟的抽屜。風水裡的「藏」可以轉譯為衣物分類、抽屜順暢、家具固定與夜間路徑清楚，不能用方位保證睡眠或運勢。
 
-先量臥室長寬、斗櫃寬深高、抽屜完全拉出深度、床、床頭櫃、門片、衣架、插座和夜間走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出起床、取衣、換衣、開抽屜和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜拉出後不會侵入床側或門片；也可參考 [房間動線檢查](/zh/room-circulation-check/)核對夜間站位。工具只協助配置，不代替家具固定、承重或衣物衛生判斷。
+先量臥室長寬、斗櫃寬深高、抽屜完全拉出深度、床、床頭櫃、門片、衣架、插座和夜間走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出起床、取衣、換衣、開抽屜和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜拉出後不會侵入床側或門片；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)核對夜間站位。工具只協助配置，不代替家具固定、承重或衣物衛生判斷。
 
 ## 斗櫃抽屜的好風水是衣物乾燥、後角可清且開啟不切斷床邊走道
 

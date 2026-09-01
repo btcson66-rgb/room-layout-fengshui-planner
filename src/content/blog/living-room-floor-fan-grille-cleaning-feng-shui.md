@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-floor-fan-cleaning-feng-shui
   - living-room-ceiling-fan-blade-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳立扇護網的風水問題常被說成「風扇直吹會把好氣吹散」，但真正需要處理的是前後護網積塵、扇葉油膜、護網卡榫未扣緊、馬達進水、底座搖晃、擺頭受阻或電線跨過走道。風水裡的「風有節制」可以轉譯為風向按需求調整、護網保持可清潔、設備穩定和電線不絆腳，不能把風向直接當成健康或家運結果。
 
-先量客廳長寬、立扇外框、護網直徑、底座、電線長度、插座、沙發、窗戶和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出立扇、插座與清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對扇頭擺動和底座空間，最後以 [房間動線檢查](/zh/room-circulation-check/)測試風扇電線是否穿過人行路徑。工具只協助配置，不代替電器維修。
+先量客廳長寬、立扇外框、護網直徑、底座、電線長度、插座、沙發、窗戶和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出立扇、插座與清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對扇頭擺動和底座空間，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試風扇電線是否穿過人行路徑。工具只協助配置，不代替電器維修。
 
 ## 護網的好風水是積塵可見、扇頭穩定且風向不直接干擾走道
 

@@ -110,6 +110,6 @@ howToSteps:
 
 ## 腳踏車收納風水的資料界線與參考
 
-本文把風水的納氣、通暢和靠山轉成陽台避難出口、車架固定、防潮、排水與取車動線，不宣稱腳踏車會改變運勢。陽台與通道不得堆放妨礙逃生物品，可參考[內政部消防安全相關規定資料](https://www.moea.gov.tw/Mns/populace/content/wHandMenuFile.ashx?file_id=3237)與[臺南市消防局居家防火提醒](https://119.tainan.gov.tw/News_Content.aspx?n=25521&s=7694555)，實際仍依建築、社區規約與現場避難條件調整。
+本文把風水的納氣、通暢和靠山轉成陽台避難出口、車架固定、防潮、排水與取車動線，不宣稱腳踏車會改變運勢。陽台與通道不得堆放妨礙逃生物品，可參考[消防署逃生通道說明](https://www.nfa.gov.tw/cht/index.php?article_id=11657&code=list&flag=detail&ids=1468)與[臺南市消防局居家防火提醒](https://119.tainan.gov.tw/News_Content.aspx?n=25521&s=7694555)，實際仍依建築、社區規約與現場避難條件調整。
 
 ---

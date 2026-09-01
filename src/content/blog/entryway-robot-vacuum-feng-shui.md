@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-package-drop-zone-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人在玄關風水裡容易被說成把灰塵帶走、讓入門氣場保持乾淨，因此有人會問充電座放在門旁、財位或鞋櫃下方是否比較好。但掃地機器人需要固定充電座、可辨識的回充路徑、平整地面與電源線，玄關又常有鞋子、雨具、包裹、行李和泥水。若充電座擋住門片、電線橫過鞋櫃前、地墊捲起或機器人回充時卡在鞋子之間，象徵上的「掃除晦氣」不能取代實際動線與電池充電安全。沒有充電座位置能保證財運、清潔效果或家庭順利；本文把風水語言轉成可觀察的入口秩序。
 
-先量主機、充電座、回充前方和兩側的空間，並標出大門開啟弧線、鞋櫃、傘架、包裹暫放區、地墊、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較充電座與玄關家具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、鞋櫃和機器人不互撞；若玄關同時是推車或行李路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替產品說明、充電座要求、電池維護或電氣安全判斷。
+先量主機、充電座、回充前方和兩側的空間，並標出大門開啟弧線、鞋櫃、傘架、包裹暫放區、地墊、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較充電座與玄關家具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、鞋櫃和機器人不互撞；若玄關同時是推車或行李路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替產品說明、充電座要求、電池維護或電氣安全判斷。
 
 ## 先分辨停靠、清掃與進門狀態
 

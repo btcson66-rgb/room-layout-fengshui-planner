@@ -97,7 +97,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出推車靜態與動態外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床側、床尾和門片距離；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取物、清潔和離床。若你考慮壁掛收納，可讀 [床邊壁掛收納與突出](/zh/blog/small-room-storage-bedside-wall-shelf-feng-shui/)；若需要柔性容器，參考 [床邊籃子取物](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出推車靜態與動態外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床側、床尾和門片距離；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、清潔和離床。若你考慮壁掛收納，可讀 [床邊壁掛收納與突出](/zh/blog/small-room-storage-bedside-wall-shelf-feng-shui/)；若需要柔性容器，參考 [床邊籃子取物](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)。
 
 ### 參考資料
 

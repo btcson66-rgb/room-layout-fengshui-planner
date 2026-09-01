@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-kettle-spout-filter-cleaning-feng-shui
   - kitchen-electric-kettle-scale-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電熱水壺底座的風水常被說成「火位不能受水」，但實際需要處理的是底座水珠、插頭潮濕、接點污漬、電線受壓和壺身漏水。風水裡的水火分區可以轉譯為壺身與水槽有清潔區、底座與插座有乾燥區、拿杯和倒水不穿越電線，不能把底座乾淨直接說成財運或安全保證。
 
-先量廚房長寬、底座直徑、電線長度、插座、水槽、杯櫃和倒水站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出底座與水槽的距離，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/room-circulation-check/)看拿杯時是否跨過電線。
+先量廚房長寬、底座直徑、電線長度、插座、水槽、杯櫃和倒水站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出底座與水槽的距離，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看拿杯時是否跨過電線。
 
 ## 電熱水壺底座的好風水是接點乾燥、壺身穩定與電線不擋路
 

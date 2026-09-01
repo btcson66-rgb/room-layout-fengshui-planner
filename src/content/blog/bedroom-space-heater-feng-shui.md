@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-ceiling-light-feng-shui
   - bedroom-charging-station-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室電暖器常被問成「暖氣對床會不會火氣太重」「放在財位能不能聚人氣」。但電暖器是高溫、高功率、可能長時間使用的設備，位置要先處理棉被、床墊、窗簾、插座、通風和夜間關機。若暖氣被衣物覆蓋、靠近床邊、使用延長線或放在無法看見的角落，風水上的暖意反而變成難以監測的風險。沒有暖氣方向能保證睡眠、健康或運勢；可以保留「溫度舒適」的象徵，但不能用它取代產品安全。
 
-先量電暖器外廓、出風口、床墊、棉被垂落、窗簾、插座、電線和夜間通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看床、窗與暖氣的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認電暖器不會被床腳或簾子碰到；若暖氣放在通往浴室的路線旁，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認起身時不會踩到電線。工具不能代替產品說明、插座負載或醫療建議。
+先量電暖器外廓、出風口、床墊、棉被垂落、窗簾、插座、電線和夜間通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看床、窗與暖氣的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認電暖器不會被床腳或簾子碰到；若暖氣放在通往浴室的路線旁，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認起身時不會踩到電線。工具不能代替產品說明、插座負載或醫療建議。
 
 ## 先分辨暖房、睡前與烘乾任務
 

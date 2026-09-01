@@ -87,7 +87,7 @@ OSHA 的螢幕資料建議把螢幕與桌子、椅子和鍵盤一起調整，並
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌面、螢幕視線、椅子與房門掃掠，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座、文件架和桌深；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放看門、起身、開門和清潔。若主要問題是螢幕與訪客視線，可讀 [面向房門書桌螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)；若桌下支撐不足，參考 [面向房門書桌腳踏](/zh/blog/home-office-desk-facing-door-footrest-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌面、螢幕視線、椅子與房門掃掠，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座、文件架和桌深；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放看門、起身、開門和清潔。若主要問題是螢幕與訪客視線，可讀 [面向房門書桌螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)；若桌下支撐不足，參考 [面向房門書桌腳踏](/zh/blog/home-office-desk-facing-door-footrest-feng-shui/)。
 
 ### 參考資料
 

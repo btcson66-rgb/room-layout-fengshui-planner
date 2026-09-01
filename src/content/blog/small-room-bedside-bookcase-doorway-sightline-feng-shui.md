@@ -125,7 +125,7 @@ CPSC 的 Anchor It 教育資料建議遵循家具和固定件說明；石膏板�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫門片、床邊書櫃和入口視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較高度和深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放進門與離開。若抽屜外伸是問題，可看 [床邊書櫃抽屜](/zh/blog/small-room-bedside-bookcase-drawer-clearance-feng-shui/)；若轉角碰撞是瓶頸，參考 [床邊書櫃轉角](/zh/blog/small-room-bedside-bookcase-corner-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫門片、床邊書櫃和入口視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較高度和深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放進門與離開。若抽屜外伸是問題，可看 [床邊書櫃抽屜](/zh/blog/small-room-bedside-bookcase-drawer-clearance-feng-shui/)；若轉角碰撞是瓶頸，參考 [床邊書櫃轉角](/zh/blog/small-room-bedside-bookcase-corner-clearance-feng-shui/)。
 
 ### 參考資料
 

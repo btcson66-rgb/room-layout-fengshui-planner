@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-cabinet-cleaning-feng-shui
   - bedroom-window-sill-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室床邊檯燈在風水裡常被聯想到光明、陪伴與睡前界線，但真正需要維護的是燈罩灰塵、燈泡熱度、燈座穩定、開關、電線、插頭和夜間起床動線。燈罩積塵會影響光線，濕布靠近通電燈具則可能讓水分進入燈座；床邊電線若被床腳或地毯壓住，也不應只用裝飾物遮起來。本文把「床邊有光」轉成可觀察的斷電、除塵、散熱、電線與起床通行驗收，不把燈光顏色或床頭方向當成好眠、健康或運勢保證。
 
-先記錄檯燈高度、燈罩、燈泡、燈座、開關、插頭、電線、床邊桌、床架、窗戶和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排清潔和充電位置，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認燈光不被窗簾或高物遮住；夜間起床路徑可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不能取代燈具說明和電氣安全判斷。
+先記錄檯燈高度、燈罩、燈泡、燈座、開關、插頭、電線、床邊桌、床架、窗戶和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排清潔和充電位置，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認燈光不被窗簾或高物遮住；夜間起床路徑可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不能取代燈具說明和電氣安全判斷。
 
 ## 先分辨燈罩灰塵、過熱、晃動與電線破損
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toothbrush-storage-feng-shui
   - bathroom-medicine-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電動牙刷放在浴室，常被想像成讓每日清潔更有節奏、讓口腔保養「充滿動力」，也有人會問充電座放洗手台左側、右側或靠近鏡子是否比較順。但真正要處理的是刷頭能否乾燥、是否容易被洗手台水花或馬桶飛濺污染、充電座是否適合浴室環境、底座能否清潔，以及家人之間會不會拿錯刷頭。沒有任何電動牙刷位置能保證健康、口才、財運或感情；本文把「清潔有序」轉成可觀察的分格、乾燥、用電與動線條件。
 
-先量浴室、洗手台、馬桶、淋浴區、電動牙刷本體、刷頭、充電座、插座、鏡櫃、毛巾架和門扇。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗手台側邊、鏡櫃內與浴室外乾燥區的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認充電座、杯子和刷頭不會互相擠壓，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試刷牙、彎腰、清潔、洗澡後進出與夜間使用。工具只能協助配置，不取代產品說明、口腔衛生或用電安全建議。
+先量浴室、洗手台、馬桶、淋浴區、電動牙刷本體、刷頭、充電座、插座、鏡櫃、毛巾架和門扇。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗手台側邊、鏡櫃內與浴室外乾燥區的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認充電座、杯子和刷頭不會互相擠壓，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試刷牙、彎腰、清潔、洗澡後進出與夜間使用。工具只能協助配置，不取代產品說明、口腔衛生或用電安全建議。
 
 ## 乾燥與防濺是浴室收納的第一層
 

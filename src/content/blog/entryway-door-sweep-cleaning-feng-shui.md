@@ -16,9 +16,8 @@ keywords:
   - 門底密封條摩擦地面
   - 大門掃條更換檢查
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-threshold-seal-cleaning-feng-shui
   - entryway-door-closer-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關大門底部掃條在風水裡容易被聯想到門底界線、擋外濁與室內穩定，但真正需要維護的是門底刷條、灰塵、砂粒、縫隙、雨水、摩擦、門檻接觸和開門通道。掃條擦乾淨，不代表柔性片仍有回彈；門底沒有漏光，也不代表下雨時水不會沿著門檻進入。本文把「界線可見、外水不滯」轉成可觀察的分區清潔、接觸測試、門扇阻力、雨天驗收和家人交接，不把掃條位置當成防水、防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、大門材質、底部掃條型式、固定螺絲、柔性片、門檻、門框、門扇、地墊、雨具區和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出開門、擦腳、雨具和搬物路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認地墊不會壓住掃條；開合時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代門體、防水或密封維修判斷。
+先記錄玄關約 160 × 240 公分、大門材質、底部掃條型式、固定螺絲、柔性片、門檻、門框、門扇、地墊、雨具區和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出開門、擦腳、雨具和搬物路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認地墊不會壓住掃條；開合時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代門體、防水或密封維修判斷。
 
 ## 先分辨灰塵、砂粒、掃條裂痕與門底漏光
 

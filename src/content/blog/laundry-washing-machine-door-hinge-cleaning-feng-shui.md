@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-door-latch-cleaning-feng-shui
   - laundry-washing-machine-door-gasket-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 前開式洗衣機門鉸鏈把門片連到前面板，附近容易卡住衣物纖維、洗劑殘留和灰塵；鉸鏈螺絲鬆動、門片下垂、門封條變形或門鎖對位不良，也可能讓門難關、漏水或無法啟動。洗衣間風水可以把「門能開合、衣物能進出、濕衣能交接」轉成可觀察的設備和動線條件，但不能把門鉸鏈狀態直接當成家運、感情或清潔效果保證。
 
-先記錄洗衣機品牌、型號、門片開啟方向、鉸鏈位置、門封條、洗衣籃、排水管和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片完全打開與取衣範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對洗衣籃、收納架和機體是否互撞，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)確認門打開後仍有站位。
+先記錄洗衣機品牌、型號、門片開啟方向、鉸鏈位置、門封條、洗衣籃、排水管和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片完全打開與取衣範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對洗衣籃、收納架和機體是否互撞，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認門打開後仍有站位。
 
 ## 鉸鏈、門封條、門鎖和玻璃要分開
 

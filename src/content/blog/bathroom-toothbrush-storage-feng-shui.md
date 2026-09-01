@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-medicine-cabinet-feng-shui
   - bathroom-toilet-ventilation-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 牙刷在浴室風水裡容易被聯想到口舌、人際、清潔和每日更新，因此有人會問牙刷應不應該放在鏡櫃、窗邊、洗手台左側或遠離馬桶。但牙刷真正要處理的是刷頭乾燥、容器排水、馬桶與洗手台的距離、家人分格、沐浴飛濺、清潔和早晚洗漱動線。沒有任何牙刷方向能保證口才、感情、健康或財運；本文把「口舌清爽」轉成可檢查的乾燥、分開與衛生習慣。
 
-先量浴室、牙刷杯、洗手台、馬桶、淋浴區、鏡櫃、門窗、排風口和家人站立的位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗手台側邊、鏡櫃內和通風層架，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認杯具與瓶罐不會擋住鏡面、龍頭或排水，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試刷牙、洗臉、洗澡和清潔時是否會互相卡住。工具只協助規劃，不取代醫療或衛生建議。
+先量浴室、牙刷杯、洗手台、馬桶、淋浴區、鏡櫃、門窗、排風口和家人站立的位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗手台側邊、鏡櫃內和通風層架，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認杯具與瓶罐不會擋住鏡面、龍頭或排水，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試刷牙、洗臉、洗澡和清潔時是否會互相卡住。工具只協助規劃，不取代醫療或衛生建議。
 
 ## 牙刷不該只追求「藏起來」
 

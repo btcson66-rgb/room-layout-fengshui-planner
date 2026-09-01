@@ -18,10 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-oven-feng-shui
-  - kitchen-oven-door-cleaning-feng-shui
+  - kitchen-oven-door-seal-cleaning-feng-shui
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
 howToName: "烤箱門鉸鏈、門縫、鉸鏈鎖、門片重量與廚房開門動線檢查"
 howToTotalTime: "PT30M"
@@ -36,7 +36,7 @@ howToSteps:
 
 烤箱門鉸鏈的風水問題常被問成「火門不順會不會影響家運」，但每天真正要處理的是鉸鏈附近是否卡著油垢和烘烤殘渣，門片能否平順開合，門封條是否被夾住，清潔後門片有沒有歪斜，以及開門取盤時會不會切斷廚房主要通道。風水裡的「火口有序」可以轉譯為熱源可控、門片狀態可見、清潔工具有位置和取物路徑可測試，不能把鉸鏈狀態直接當成財運或家庭關係開關。
 
-先量廚房長寬、烤箱寬深、門片完全開啟深度、把手突出、左右櫃體、爐具、水槽、備餐檯和站位。以 240 × 300 公分廚房為例，嵌入式烤箱在高櫃中段，門片向下打開後會伸入走道；若鉸鏈阻力增加，使用者可能在熱門片旁側身取盤。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片掃掠區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與把手，最後用 [房間動線檢查](/zh/room-circulation-check/)測試一人取盤和兩人交會。工具只協助配置，不代替電器維修或高溫操作判斷。
+先量廚房長寬、烤箱寬深、門片完全開啟深度、把手突出、左右櫃體、爐具、水槽、備餐檯和站位。以 240 × 300 公分廚房為例，嵌入式烤箱在高櫃中段，門片向下打開後會伸入走道；若鉸鏈阻力增加，使用者可能在熱門片旁側身取盤。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片掃掠區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與把手，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試一人取盤和兩人交會。工具只協助配置，不代替電器維修或高溫操作判斷。
 
 ## 烤箱鉸鏈的好風水是開合可控、熱源有界且門前不堵路
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-exhaust-fan-feng-shui
   - bathroom-shower-door-track-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 浴室排風扇外罩是天花板或牆面上可見的格柵、百葉或面罩，長期會吸附灰塵、毛髮、纖維和潮濕環境中的細小污物。外罩堵住會影響進風，但排風變弱也可能是扇葉、馬達、風管、室外風罩或開關問題。風水裡常把浴室通風說成去濕、去濁，實際上應落在濕氣能排出、外罩可清、電源可安全隔離、洗後地面可乾和家人能順利離開，不是把排風扇位置寫成除霉、健康或運勢保證。
 
-先記錄浴室約 180 × 240 公分、排風扇外罩、淋浴區、門片、門檻、地墊、馬桶、洗手台和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡後開門、擦腳、取毛巾與清潔工具的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認浴室收納、伸縮曬衣桿和瓶籃不會擋住排風或出口；需要時用 [房間通行寬度檢查](/zh/room-circulation-check/)測試濕地上的離開路徑。工具只能協助配置，不能取代電氣、風管、防水和高處作業判斷。
+先記錄浴室約 180 × 240 公分、排風扇外罩、淋浴區、門片、門檻、地墊、馬桶、洗手台和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡後開門、擦腳、取毛巾與清潔工具的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認浴室收納、伸縮曬衣桿和瓶籃不會擋住排風或出口；需要時用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試濕地上的離開路徑。工具只能協助配置，不能取代電氣、風管、防水和高處作業判斷。
 
 ## 外罩積塵和排風系統問題要分開
 

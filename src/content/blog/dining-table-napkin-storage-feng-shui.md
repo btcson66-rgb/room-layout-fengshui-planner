@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-sideboard-feng-shui
   - dining-chair-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐巾紙和餐具在餐廳風水裡常被聯想到飲食供應、家人聚會與分享，有人會把餐巾紙盒放桌子中央，或把筷子口朝向門口，期待吃飯時更聚人氣。但餐具真正要處理的是乾淨與用過分開、紙巾是否保持乾燥、餐具是否有缺口或裂縫、上菜和分食時會不會互相碰撞，以及用餐後的垃圾與清洗路徑。沒有一個餐具方向能保證健康、財運或家庭和諧；本文把「聚餐有序」轉成可執行的餐邊櫃、桌面與清潔流程。
 
-先量餐桌、餐椅、餐邊櫃、廚房出口、垃圾分類區、餐巾紙、餐盤和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌中央、桌側與餐邊櫃的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認餐巾紙盒、餐具抽屜與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端菜、分食、起身、收桌和清掃。工具只能協助配置，不取代食品衛生與餐具產品說明。
+先量餐桌、餐椅、餐邊櫃、廚房出口、垃圾分類區、餐巾紙、餐盤和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌中央、桌側與餐邊櫃的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認餐巾紙盒、餐具抽屜與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端菜、分食、起身、收桌和清掃。工具只能協助配置，不取代食品衛生與餐具產品說明。
 
 ## 乾淨餐具和用過用品要有清楚分界
 

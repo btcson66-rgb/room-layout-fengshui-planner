@@ -16,9 +16,8 @@ keywords:
   - 門底密封條破損
   - 大門關門摩擦門檻
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-hinge-cleaning-feng-shui
   - entryway-door-lock-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關大門門檻密封條在風水裡容易被聯想到內外分界、擋濁與留住室內穩定，但真正需要維護的是門底膠條、門檻灰塵、砂粒、縫隙、雨水、門扇拖地、密封壓縮和開關阻力。門底看不到光，不代表密封完整；門可以關上，也不代表密封條沒有裂痕或門檻受潮。本文把「界線清楚、外水不滯」轉成可觀察的清潔、密封接觸、門扇對位、雨天驗收和通行交接，不把門檻高度或方向當成防水、防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、大門材質、門底密封條、門檻表面、調整螺絲、門框、門扇、門鎖、地墊、雨具區、室內外高差和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出開門、擦腳、搬物和雨具放置路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認地墊與鞋櫃不會壓住門底；開合時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代門體、密封、防水或地面安全專業判斷。
+先記錄玄關約 160 × 240 公分、大門材質、門底密封條、門檻表面、調整螺絲、門框、門扇、門鎖、地墊、雨具區、室內外高差和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出開門、擦腳、搬物和雨具放置路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認地墊與鞋櫃不會壓住門底；開合時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代門體、密封、防水或地面安全專業判斷。
 
 ## 先分辨灰塵、砂粒、裂痕、縫隙與門扇拖地
 

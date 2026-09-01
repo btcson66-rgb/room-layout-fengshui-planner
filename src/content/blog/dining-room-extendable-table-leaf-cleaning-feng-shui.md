@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-edge-cleaning-feng-shui
   - dining-room-table-under-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 伸縮餐桌的隱藏桌板平常收在桌面下方或框體內，展開後才成為完整桌面的一部分。接縫裡可能積累飯粒、油膜和水痕，延伸滑軌可能卡入碎屑，卡扣或支撐件也可能因桌板沒有完全對齊而承受偏力。餐廳風水常談「桌面完整、家人聚合」，但實際應先確認桌板能平順拉出、接縫沒有高低差、收納腔能清潔，以及展開後椅子和端菜路徑仍有留空。
 
-若有人問「餐桌伸不開是不是家運不順？」比較可靠的分流是：桌板被物品卡住、滑軌沾污、卡扣未解、桌腳位置不對、桌面材料受潮，還是家具本身已有變形。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)分別畫出收合與展開兩個狀態，用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌椅和牆距，再以 [房間通行寬度檢查](/zh/room-circulation-check/)確認端菜和起身路徑。工具只協助尺寸整理，不取代家具說明或維修判斷。
+若有人問「餐桌伸不開是不是家運不順？」比較可靠的分流是：桌板被物品卡住、滑軌沾污、卡扣未解、桌腳位置不對、桌面材料受潮，還是家具本身已有變形。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)分別畫出收合與展開兩個狀態，用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌椅和牆距，再以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認端菜和起身路徑。工具只協助尺寸整理，不取代家具說明或維修判斷。
 
 ## 先辨認桌板、延伸滑軌與卡扣
 

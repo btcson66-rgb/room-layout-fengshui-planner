@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-dishwasher-filter-cleaning-feng-shui
   - kitchen-dish-rack-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機籃架在風水裡容易被聯想到收納、流動與「洗去雜氣」，但真正需要維護的是餐具殘渣、籃架輪子、噴水臂、排水、洗後積水、鏽痕、尖角、裝載方向和門片開啟範圍。籃架推得進去，不代表餐具沒有互相遮擋；洗程完成，也不代表籃架輪子、門邊和底部已乾燥。本文把「清洗有序」轉成可觀察的清空、分區裝載、依說明清潔、乾燥和通行驗收，不把洗碗機位置當成財運、衛生或運勢保證。
 
-先記錄洗碗機寬深高、上下籃架、餐具槽、輪子、噴水臂、濾網、門片、相鄰水槽、櫥櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出裝載、取餐具和開門路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片前方沒有固定收納箱；多人操作時用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助尺寸和動線，不取代電器說明與維修判斷。
+先記錄洗碗機寬深高、上下籃架、餐具槽、輪子、噴水臂、濾網、門片、相鄰水槽、櫥櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出裝載、取餐具和開門路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片前方沒有固定收納箱；多人操作時用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助尺寸和動線，不取代電器說明與維修判斷。
 
 ## 先分辨食物殘渣、水垢、積水與籃架損傷
 

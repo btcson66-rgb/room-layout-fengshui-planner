@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-water-filter-cleaning-feng-shui
   - bathroom-bidet-seat-spray-nozzle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶除臭濾網的風水常被說成「廁所氣味影響家運」，但實際需要處理的是濾網灰塵、除臭風扇、座體污漬、排風、濕氣和異味來源。風水裡的「清氣」可以轉譯為氣流有出口、濾網不堵、座體乾燥和人不必在濕地上拆裝，不能把除臭效果直接當成健康或家運保證。
 
-先量浴室長寬、馬桶座、除臭濾網位置、排風扇、門窗、淋浴區、插座與門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出濾網和排風路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)保留拆裝空間，最後用 [房間動線檢查](/zh/room-circulation-check/)確認水桶和工具不堵出口。
+先量浴室長寬、馬桶座、除臭濾網位置、排風扇、門窗、淋浴區、插座與門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出濾網和排風路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)保留拆裝空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認水桶和工具不堵出口。
 
 ## 除臭濾網的好風水是通風可觀察、濾網乾燥與異味來源可追
 

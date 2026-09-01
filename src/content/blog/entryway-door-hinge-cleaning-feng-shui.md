@@ -16,9 +16,8 @@ keywords:
   - 大門五金鏽痕保養
   - 玄關開門動線
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-lock-cleaning-feng-shui
   - entryway-door-handle-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關大門鉸鏈在風水裡容易被聯想到開合、出入與氣口，但真正需要維護的是灰塵、鏽痕、吱聲、螺絲鬆動、門扇下垂、門框磨擦和夾手風險。門可以勉強關上，不代表鉸鏈承重正常；滴油後聲音變小，也不代表門扇對位已恢復。本文把「門戶開合順暢」轉成可觀察的清空、表面清潔、五金狀態、閉合和通行驗收，不把鉸鏈方向當成防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、大門材質、鉸鏈數量、鉸鏈蓋、螺絲、門扇、門框、門鎖、門檻、鞋櫃和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出開門、搬物、脫鞋和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會限制門扇；開合時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代門扇、鉸鏈或居家安全專業判斷。
+先記錄玄關約 160 × 240 公分、大門材質、鉸鏈數量、鉸鏈蓋、螺絲、門扇、門框、門鎖、門檻、鞋櫃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出開門、搬物、脫鞋和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會限制門扇；開合時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代門扇、鉸鏈或居家安全專業判斷。
 
 ## 先分辨灰塵、鏽痕、吱聲與門扇下垂
 

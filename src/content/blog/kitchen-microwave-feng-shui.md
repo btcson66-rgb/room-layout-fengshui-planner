@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-feng-shui
   - kitchen-sink-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 微波爐在風水討論裡常被歸入火，於是出現「不能靠水槽」「不能對著門」「放在某個方位才旺」的簡化說法。但微波爐更直接的問題是消耗功率、散熱、爐門開啟、熱容器搬運、清潔和備餐路徑。若它放在太高的吊櫃、太低的地面、爐火旁或插座負載不合適的位置，使用不舒服甚至有安全疑慮。沒有微波爐方位能保證財運或家人健康；水火象徵可以拿來整理思考，實際決策應回到設備條件。
 
-先量微波爐寬深高、爐門完全開啟後的前方空間、插座位置、電線長度、檯面承重、上方櫃體、洗槽與爐具距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較家電、洗槽與爐具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、電線和檯面不會互撞；若廚房是兩人共用，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端熱食和備餐交會。工具不會替你判斷微波爐認證、插座負載或容器是否適用。
+先量微波爐寬深高、爐門完全開啟後的前方空間、插座位置、電線長度、檯面承重、上方櫃體、洗槽與爐具距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較家電、洗槽與爐具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、電線和檯面不會互撞；若廚房是兩人共用，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端熱食和備餐交會。工具不會替你判斷微波爐認證、插座負載或容器是否適用。
 
 ## 先分辨加熱、解凍與暫放任務
 

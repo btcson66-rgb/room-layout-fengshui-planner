@@ -97,7 +97,7 @@ OSHA 的評估清單建議當使用者因窗光或燈光瞇眼、扭身時重新
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出窗戶、桌燈、螢幕和門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座與桌面；最後以 [房間動線檢查](/zh/room-circulation-check/) 檢查椅子後退。若桌燈反光是核心問題，可看 [桌燈與螢幕眩光](/zh/blog/home-office-desk-task-light-screen-glare-feng-shui/)；若窗光是來源，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出窗戶、桌燈、螢幕和門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座與桌面；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 檢查椅子後退。若桌燈反光是核心問題，可看 [桌燈與螢幕眩光](/zh/blog/home-office-desk-task-light-screen-glare-feng-shui/)；若窗光是來源，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
 
 ### 參考資料
 

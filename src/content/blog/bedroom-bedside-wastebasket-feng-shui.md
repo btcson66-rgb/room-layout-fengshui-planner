@@ -20,7 +20,7 @@ relatedTools:
   - /zh/furniture-fit-checker/
   - /zh/small-bedroom-layout/
 relatedPosts:
-  - bedroom-bedside-table-feng-shui
+  - bedroom-bedside-table-cleaning-feng-shui
   - bedroom-bedside-clock-feng-shui
   - sleep-quality-bedroom-layout
 howToName: "臥室床邊垃圾桶位置、氣味與夜間動線檢查"

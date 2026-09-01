@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-extension-cord-feng-shui
   - living-room-wifi-router-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 智慧插座在客廳風水裡常被聯想到把電器集中管理、讓家庭活動更有秩序，也有人會把電視櫃後方所有設備接到一個智慧插座，期待一鍵關閉就能把雜亂「收乾淨」。但智慧插座仍是用電產品，不會因為能連手機就自動適合所有設備；要先看額定電流與功率、插座和延長線是否串接、周圍是否散熱、是否靠近水、家人能否在網路中斷時手動操作。沒有任何智慧插座位置能保證財運、家庭和諧或不起火；本文把「電氣集中」轉成可檢查的設備分流與操作流程。
 
-先盤點客廳牆壁插座、智慧插座、延長線、電視、路由器、音響、遊戲主機、檯燈、電風扇和充電設備。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電視櫃、沙發側和工作角落的電源路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認插頭與設備不被背板壓住，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試清潔、起身和緊急離開。工具只能協助配置，不取代產品說明與電氣專業判斷。
+先盤點客廳牆壁插座、智慧插座、延長線、電視、路由器、音響、遊戲主機、檯燈、電風扇和充電設備。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電視櫃、沙發側和工作角落的電源路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認插頭與設備不被背板壓住，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清潔、起身和緊急離開。工具只能協助配置，不取代產品說明與電氣專業判斷。
 
 ## 智慧控制不等於可以共用所有電器
 

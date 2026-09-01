@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-feng-shui
   - kitchen-air-fryer-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機在廚房風水裡常被說成把餐後雜亂洗掉、讓家中水氣循環，因此有人會問放在水槽旁是不是一定最好、靠近爐具會不會水火相沖。但洗碗機真正需要處理的是進水、排水、電源、櫥櫃尺寸、門片開啟、高溫、蒸氣、餐具分類和漏水檢查。若門片打開就堵住走道，排水管被折彎，或洗程結束後熱蒸氣直衝木櫃，風水象徵不能取代安裝與使用安全。沒有洗碗機位置能保證財運、家庭和諧或餐具潔淨；本文把「水有去處、餐後歸位」轉成可測量的廚房條件。
 
-先量洗碗機外廓、門片完全放下後的深度、餐具籃拉出距離、進水與排水管線、插座、水槽、垃圾桶、備餐檯面和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗碗機與水槽、餐具收納的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、抽屜和櫥櫃不互撞；若餐後需要兩人同時清理，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替產品說明、給排水施工、接地或合格安裝人員的判斷。
+先量洗碗機外廓、門片完全放下後的深度、餐具籃拉出距離、進水與排水管線、插座、水槽、垃圾桶、備餐檯面和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗碗機與水槽、餐具收納的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、抽屜和櫥櫃不互撞；若餐後需要兩人同時清理，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替產品說明、給排水施工、接地或合格安裝人員的判斷。
 
 ## 先分辨裝載、運轉與開門取物狀態
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-fire-extinguisher-feng-shui
   - entryway-bicycle-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電動自行車放在玄關，常被聯想到把外出的動能帶回家、讓出入更有效率，也有人問車頭朝向、靠近門邊或放在玄關財位是否比較順。但電動自行車真正要處理的是電池、原廠充電器、插座、充電時間、可燃物、門扇、樓梯、電梯與逃生動線。沒有任何車頭方向能保證平安、財運或事業；本文把「出入順」轉成不阻門、不堵路、可監看充電狀態與能在異常時快速處理的配置。
 
-先量玄關、車體、電池是否可拆、鞋櫃、門扇開啟範圍、插座、充電器線長和家人主要通行位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較玄關側邊、儲藏間入口和室外合規停放點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認車把、踏板和充電器不會撞到櫃體，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試進門、脫鞋、搬物與緊急離開。工具不能取代消防、社區規約或產品說明。
+先量玄關、車體、電池是否可拆、鞋櫃、門扇開啟範圍、插座、充電器線長和家人主要通行位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較玄關側邊、儲藏間入口和室外合規停放點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認車把、踏板和充電器不會撞到櫃體，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試進門、脫鞋、搬物與緊急離開。工具不能取代消防、社區規約或產品說明。
 
 ## 玄關可以停車，不代表適合充電
 

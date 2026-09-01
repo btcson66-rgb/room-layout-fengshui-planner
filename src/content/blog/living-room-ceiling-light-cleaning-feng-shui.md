@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-window-cleaning-feng-shui
   - living-room-wall-clock-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳天花板燈具清潔風水常被說成「明堂要亮，家運才開」，但燈具實際會累積灰塵、飛蟲、棉絮、油膜和燈罩老化留下的霧痕。亮度變暗可能是燈罩髒，也可能是燈泡老化、電源接點、配光或家具遮擋；閃爍、異味、焦痕和異常發熱更不能用「光煞」解釋。風水可用來討論明暗與聚會感，但不能保證財運、照度或用電安全。
 
-先量客廳長寬、天花板高度、燈具外框、沙發、茶几、電視、窗戶和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出燈具投光與家具位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認高處清潔不會撞到櫃體；若沙發到門口、窗邊或餐區是主要動線，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)觀察陰影、眩光和站位。工具只能協助配置比較，不能判定電路、燈具固定或高處作業安全。
+先量客廳長寬、天花板高度、燈具外框、沙發、茶几、電視、窗戶和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出燈具投光與家具位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認高處清潔不會撞到櫃體；若沙發到門口、窗邊或餐區是主要動線，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)觀察陰影、眩光和站位。工具只能協助配置比較，不能判定電路、燈具固定或高處作業安全。
 
 ## 先分辨燈罩灰塵、飛蟲、油膜與老化變色
 

@@ -87,7 +87,7 @@ EPA 的室內空氣品質資料提醒，灰塵和室內環境需要依靠清潔�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出容器、標籤視角、開口和床側通道，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取物、補貨、換床單和清潔。若容器透明造成視覺干擾，可讀 [床邊透明收納箱](/zh/blog/small-room-storage-bedside-transparent-box-feng-shui/)；若要先整理物品，可參考 [小房間收納分區](/zh/blog/small-room-storage-zones/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出容器、標籤視角、開口和床側通道，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、補貨、換床單和清潔。若容器透明造成視覺干擾，可讀 [床邊透明收納箱](/zh/blog/small-room-storage-bedside-transparent-box-feng-shui/)；若要先整理物品，可參考 [小房間收納分區](/zh/blog/small-room-storage-zones/)。
 
 ### 參考資料
 

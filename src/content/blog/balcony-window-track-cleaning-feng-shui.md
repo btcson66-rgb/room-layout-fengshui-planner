@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-feng-shui-layout
   - living-room-window-track-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 窗軌風水常被問成「窗戶朝哪裡才進好氣」，但陽台每天真正要處理的是：軌道裡是否堆著砂粒、雨水是否能排走、窗扇和紗窗是否推得動、清潔時會不會把污水推進室內、曬衣架是否擋住開窗，以及人在取衣時是否必須踩過窗軌。風水裡的「納氣」可以轉譯為窗戶能順利開關、空氣能進出、雨水不倒灌與走道不被雜物切斷，不能用朝向保證通風或運勢。
 
-先量陽台長寬、窗框、窗扇與紗窗寬度、軌道數量、排水孔、牆角、曬衣架、花盆和室內門檻。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開窗、擦軌、晾衣和進出室內的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認曬衣架、花盆與窗扇開啟範圍不互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)找出濕腳與清潔工具的交會。工具只協助配置，不代替高處、玻璃、排水或窗戶維修判斷。
+先量陽台長寬、窗框、窗扇與紗窗寬度、軌道數量、排水孔、牆角、曬衣架、花盆和室內門檻。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開窗、擦軌、晾衣和進出室內的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認曬衣架、花盆與窗扇開啟範圍不互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)找出濕腳與清潔工具的交會。工具只協助配置，不代替高處、玻璃、排水或窗戶維修判斷。
 
 ## 窗軌的好風水是清得出砂粒、排得走水且窗扇不必硬推
 

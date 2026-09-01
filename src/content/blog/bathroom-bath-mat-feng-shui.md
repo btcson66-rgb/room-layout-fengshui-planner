@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-towel-rack-feng-shui
   - bathroom-toilet-ventilation-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室防滑墊常被問成「放在門口能不能擋住濁水」「黑色止滑墊會不會讓浴室變沉」。顏色、乾濕與排水確實可以放進風水文化的討論，但防滑墊首先是讓人從濕地面走到乾地面時不必急著跨步的居家用品。墊子太小、底部會滑、邊緣翹起或長時間濕著發霉，都可能比方位更直接影響使用感。沒有一張墊子能保證健康、財運或避邪；要先確認它能吸水、穩定、容易清潔，而且不會成為新的絆倒點。
 
-先量淋浴門、浴室門檻、洗手台前、馬桶旁、地漏和墊子可鋪設的範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出濕區與乾區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認防滑墊不會頂到門片或馬桶底座；若長者、幼兒或行動較慢者使用浴室，再用 [房間通行寬度檢查](/zh/room-circulation-check/)看進出、轉身與夜間照明。工具只能協助看空間，不會替你檢查墊子材質、止滑性能或牆面扶手。
+先量淋浴門、浴室門檻、洗手台前、馬桶旁、地漏和墊子可鋪設的範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出濕區與乾區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認防滑墊不會頂到門片或馬桶底座；若長者、幼兒或行動較慢者使用浴室，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)看進出、轉身與夜間照明。工具只能協助看空間，不會替你檢查墊子材質、止滑性能或牆面扶手。
 
 ## 先分辨淋浴內與門外的墊子任務
 

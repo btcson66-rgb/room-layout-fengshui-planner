@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-frame-cleaning-feng-shui
   - bedroom-bedside-floor-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床墊側邊的風水問題常被問成「床墊靠牆是不是容易聚陰」，但每天真正需要處理的是床沿縫隙是否卡著灰塵、毛髮和皮屑，保護套是否移位，床墊側面是否被牆角或床架磨到，以及換床單時是否要把身體扭進狹窄縫隙。風水裡的「藏風、安睡」可以轉譯為床邊可檢查、材料能乾燥、上下床不必踩到雜物和清掃路徑清楚，不能把床墊側邊直接當成睡眠品質開關。
 
-先量臥室長寬、床墊長寬高、床架外框、床邊縫隙、床頭櫃、牆角、窗簾和主要通道。以 300 × 320 公分臥室為例，床靠近一側牆面，另一側只有一條窄通道；若床墊側邊沒有可伸手清潔的距離，換床單與查看受潮位置都會變成拉扯問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床墊搬動與換床單站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床邊家具，最後用 [房間動線檢查](/zh/room-circulation-check/)測試夜間上下床。工具只協助配置，不代替床墊材質和室內濕氣判斷。
+先量臥室長寬、床墊長寬高、床架外框、床邊縫隙、床頭櫃、牆角、窗簾和主要通道。以 300 × 320 公分臥室為例，床靠近一側牆面，另一側只有一條窄通道；若床墊側邊沒有可伸手清潔的距離，換床單與查看受潮位置都會變成拉扯問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床墊搬動與換床單站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床邊家具，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試夜間上下床。工具只協助配置，不代替床墊材質和室內濕氣判斷。
 
 ## 床墊側邊的好風水是灰塵可見、床沿可乾且上下床不踩雜物
 

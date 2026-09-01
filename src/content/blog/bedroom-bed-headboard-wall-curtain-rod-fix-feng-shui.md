@@ -91,7 +91,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桿身、托架、床頭和布料外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較窗簾與床側距離；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放開合、換床單和離床。若你先想了解陰影，可讀 [床頭牆面窗簾陰影](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若牆面還有層板，參考 [床頭牆面層板距離](/zh/blog/bedroom-bed-headboard-wall-shelf-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桿身、托架、床頭和布料外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較窗簾與床側距離；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開合、換床單和離床。若你先想了解陰影，可讀 [床頭牆面窗簾陰影](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若牆面還有層板，參考 [床頭牆面層板距離](/zh/blog/bedroom-bed-headboard-wall-shelf-clearance-feng-shui/)。
 
 ### 參考資料
 

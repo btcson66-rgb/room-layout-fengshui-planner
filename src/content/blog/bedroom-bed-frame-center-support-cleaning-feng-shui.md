@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-frame-cleaning-feng-shui
   - bedroom-bed-frame-joint-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床架中央支撐梁常在床板下方，平時看不到，卻會影響床板受力、床墊位置、床底清潔和夜間起身動線。風水文章可能把床底說成「藏氣」或把中央梁聯想到壓迫，但真正需要處理的是灰塵、木屑、鏽粉、潮氣、支腳懸空、螺絲鬆動、床板下陷與異音。本文把「床有根、睡有界」轉成可觀察的支撐件定位、材質清潔、承重分流、通風與七晚記錄，不把床架外觀當成睡眠、健康或運勢保證。
 
-先記錄床架尺寸、中央支撐梁數量、支腳位置、床板形式、床墊厚度、床頭、牆面、床邊櫃和夜間通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示拆下床墊與床板的暫放區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時不會撞到衣櫃或門片；床底通行可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)觀察。工具只協助配置，不證明床架可承重，也不取代產品說明或家具維修判斷。
+先記錄床架尺寸、中央支撐梁數量、支腳位置、床板形式、床墊厚度、床頭、牆面、床邊櫃和夜間通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示拆下床墊與床板的暫放區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時不會撞到衣櫃或門片；床底通行可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)觀察。工具只協助配置，不證明床架可承重，也不取代產品說明或家具維修判斷。
 
 ## 先分辨中央梁灰塵、受力異常、潮氣與異音
 

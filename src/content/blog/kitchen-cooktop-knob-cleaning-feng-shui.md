@@ -18,10 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-feng-shui
-  - kitchen-stove-feng-shui
+  - kitchen-gas-stove-ventilation-feng-shui
   - kitchen-countertop-zoning-feng-shui
 howToName: "爐具旋鈕、控制面板、油膜、高溫冷卻與廚房動線檢查"
 howToTotalTime: "PT30M"
@@ -36,7 +36,7 @@ howToSteps:
 
 爐具旋鈕風水常被問成「爐子在哪個方位才旺」，但廚房每天真正要處理的是：旋鈕是否沾滿油膜、控制面板能不能擦乾、旋鈕拆下後密封件是否被保留、清潔時爐具是否已冷卻、鍋具與清潔布是否互相干擾，以及備餐者是否要伸手跨過熱區。風水裡的「火」可以轉譯為熱源、控制、清潔和備餐動線有清楚界線，不能用方位保證旺財或取代爐具安全。
 
-先量廚房長寬、爐具、流理台、抽油煙機、冰箱、旋鈕面板、鍋具暫放區、插座與主要站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拿鍋、調火、盛菜、擦拭和離開熱區的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認旋鈕前方沒有垃圾桶或抽屜干擾；也可參考 [房間動線檢查](/zh/room-circulation-check/)找出多人交會。工具只協助配置，不代替瓦斯、電氣、火源或產品說明。
+先量廚房長寬、爐具、流理台、抽油煙機、冰箱、旋鈕面板、鍋具暫放區、插座與主要站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拿鍋、調火、盛菜、擦拭和離開熱區的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認旋鈕前方沒有垃圾桶或抽屜干擾；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)找出多人交會。工具只協助配置，不代替瓦斯、電氣、火源或產品說明。
 
 ## 旋鈕的好風水是摸得到控制、油膜可清且清潔不必靠近熱源硬作
 

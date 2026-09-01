@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-dresser-drawer-cleaning-feng-shui
   - bedroom-bedside-table-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 斗櫃把手風水常被問成「把手朝向會不會影響睡眠」，但每天真正要處理的是：把手是否沾有手汗與乳液、接縫是否卡灰、螺絲是否鬆、開抽屜時會不會撞到床側，以及夜間起身取衣時是否要在暗處摸索。風水裡的「開」可以轉譯為把手好握、抽屜順暢、家具固定和取衣路徑清楚，不能用把手方向保證好眠或運勢。
 
-先量臥室長寬、斗櫃寬深高、把手突出深度、抽屜完全拉出距離、床、床頭櫃、門片與夜間照明。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出起身、開抽屜、取衣和擦拭路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認把手和床側不互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)核對夜間走道。工具只協助配置，不代替家具固定或五金維修。
+先量臥室長寬、斗櫃寬深高、把手突出深度、抽屜完全拉出距離、床、床頭櫃、門片與夜間照明。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出起身、開抽屜、取衣和擦拭路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認把手和床側不互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)核對夜間走道。工具只協助配置，不代替家具固定或五金維修。
 
 ## 把手的好風水是摸得到髒污、螺絲穩且拉開抽屜不撞床
 

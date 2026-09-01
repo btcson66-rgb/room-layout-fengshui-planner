@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-kettle-base-cleaning-feng-shui
   - kitchen-electric-kettle-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電熱水壺電源線的風水常被說成「火線凌亂會破壞廚房氣場」，但日常真正要處理的是插頭潮濕、線材外皮、接頭受拉、檯面水痕與人行路徑。風水裡的水火分區可以轉譯為電線遠離水槽積水、插頭不被濕布覆蓋、壺身移動不拉扯線材，不能把走線整齊直接當成財運或電氣安全保證。
 
-先量廚房長寬、電線長度、插座位置、熱水壺底座、水槽、杯櫃和通行路徑。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出壺和插座的相對位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/room-circulation-check/)看電線是否跨過備餐站位。
+先量廚房長寬、電線長度、插座位置、熱水壺底座、水槽、杯櫃和通行路徑。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出壺和插座的相對位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看電線是否跨過備餐站位。
 
 ## 電源線的好風水是外皮完整、插頭乾燥與走線不被拉扯
 

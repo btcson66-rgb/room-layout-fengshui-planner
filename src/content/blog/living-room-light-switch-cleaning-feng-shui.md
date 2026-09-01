@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-floor-lamp-cleaning-feng-shui
   - living-room-window-lock-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳電燈開關清潔風水常被簡化成「開關保持明亮就能開運」，但開關是每天被手指按壓的接觸面，也可能位在玄關、沙發、餐桌或落地門附近。手汗、護手霜、食物油、灰塵和清潔劑殘留會讓面板失去觸感；若開關周圍靠近濕拖把、飲水區或窗邊，還要留意潮氣、滲水、面板鬆動和異常發熱。真正可驗證的改善，是人能在入口和夜間看清開關、清潔時不把水帶進電路、按壓手感正常，且家具不會逼人摸黑繞行。沒有一種面板顏色或方位能保證財運、健康或家庭和諧。
 
-先量客廳、門片、沙發、茶几、落地窗、電燈開關面板和主要通行線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出從入口到沙發、陽台和臥室的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認高櫃、掛畫或沙發扶手沒有遮住開關；晚上常摸黑走動時，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試能否在不跨過茶几和電線的情況下開燈。工具只能協助位置比較，不能替代電工檢查、用電規範或房屋漏水判斷。
+先量客廳、門片、沙發、茶几、落地窗、電燈開關面板和主要通行線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出從入口到沙發、陽台和臥室的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認高櫃、掛畫或沙發扶手沒有遮住開關；晚上常摸黑走動時，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試能否在不跨過茶几和電線的情況下開燈。工具只能協助位置比較，不能替代電工檢查、用電規範或房屋漏水判斷。
 
 ## 先判斷面板髒污，不要把異常當成清潔問題
 

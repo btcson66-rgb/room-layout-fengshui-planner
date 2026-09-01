@@ -22,7 +22,7 @@ relatedTools:
 relatedPosts:
   - balcony-drainage-feng-shui
   - balcony-rainwater-storage-feng-shui
-  - balcony-plant-watering-can-feng-shui
+  - living-room-plant-watering-can-feng-shui
 howToName: "陽台地漏蓋、落葉、積水與雨天通行檢查"
 howToTotalTime: "PT30M"
 howToSteps:

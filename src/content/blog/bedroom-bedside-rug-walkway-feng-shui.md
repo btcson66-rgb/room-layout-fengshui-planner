@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-rug-cleaning-feng-shui
   - bedroom-bedside-floor-cleaning-feng-shui
@@ -89,7 +89,7 @@ howToSteps:
 
 雙人床若單側靠牆，地毯不能只鋪外側而忽略靠牆側清潔、床墊搬運和床架檢查。可參考 [雙人床靠牆的兩側使用判斷](/zh/blog/double-bed-against-wall-feng-shui/)，先決定哪一側是主要下床與清掃路線，再安排地毯。若兩側都要下床，兩側地毯的邊緣和照明要各自測試。
 
-地毯也可能壓住床邊桌腳、充電線或床架腳墊。先把線材移出落腳區，再測地毯位置；不能因為地毯蓋住線材就當作整理完成。RoomFeng 的 [房間動線檢查](/zh/room-circulation-check/)可以協助畫床、地毯、門和桌的占地，現場仍需實際踩踏確認。
+地毯也可能壓住床邊桌腳、充電線或床架腳墊。先把線材移出落腳區，再測地毯位置；不能因為地毯蓋住線材就當作整理完成。RoomFeng 的 [房間動線檢查](/zh/blog/room-circulation-width-guide/)可以協助畫床、地毯、門和桌的占地，現場仍需實際踩踏確認。
 
 ## 七日觀察：讓地毯通過日常而不是照片測試
 

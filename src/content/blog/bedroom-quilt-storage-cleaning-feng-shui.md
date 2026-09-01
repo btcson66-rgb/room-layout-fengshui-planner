@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-blanket-storage-cleaning-feng-shui
   - bedroom-bed-throw-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室棉被在風水裡常被聯想到包覆、季節與休息區界線，但真正需要維護的是填充物、灰塵、汗氣、寵物毛、潮感、霉味、收納袋和衣櫃通風。棉被表面摸起來乾，不代表內層填充已乾；換季時若直接塞入密閉袋，下一次拿出來才發現結塊或異味，會讓使用和清潔都變得被動。本文把「被褥安定」轉成可觀察的洗標判斷、清潔、內外層乾燥、換季分流與取用動線驗收，不把棉被厚度或方位當成好眠、健康或運勢保證。
 
-先記錄棉被尺寸、填充物、洗標、縫線、收納袋、衣櫃、床架、窗戶、除濕位置和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排晾曬與暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認收納不壓住床邊；換季搬運可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間規劃，不能取代洗標、填充物與濕氣處理判斷。
+先記錄棉被尺寸、填充物、洗標、縫線、收納袋、衣櫃、床架、窗戶、除濕位置和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排晾曬與暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認收納不壓住床邊；換季搬運可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間規劃，不能取代洗標、填充物與濕氣處理判斷。
 
 ## 先分辨灰塵、汗氣、潮感與填充物結塊
 

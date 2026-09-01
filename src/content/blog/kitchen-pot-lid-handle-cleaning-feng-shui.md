@@ -21,7 +21,7 @@ relatedTools:
   - /zh/small-room-storage-planner/
 relatedPosts:
   - kitchen-pot-lid-storage-feng-shui
-  - kitchen-lid-rack-feng-shui
+  - kitchen-spice-rack-feng-shui
   - kitchen-wooden-spatula-cleaning-feng-shui
 howToName: "鍋蓋把手清潔、耐熱檢查與廚房拿鍋動線規劃"
 howToTotalTime: "PT30M"

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
   - kitchen-electric-hot-pot-plug-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 烤麵包機在廚房風水裡常被聯想到早餐、火氣和日常供養，但真正需要維護的是屑盤、插槽、加熱部件、外殼、電線、插頭和檯面動線。麵包屑落入機體後沒有清理，使用完立刻倒置或用水沖洗，可能讓殘屑、餘熱與電氣部位混在一起。本文把「火氣不積」轉成可觀察的拔電、冷卻、屑盤清潔、外部乾燥和收納流程，不把位置當成烘烤、食物或運勢承諾。
 
-先記錄烤麵包機型號、屑盤、插槽、按鍵、外殼、電線、插頭、檯面、爐具和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出放麵包、取吐司和清理屑盤的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認機體周圍有散熱和工作面；早餐多人取食時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試手臂與餐盤避讓。工具不能取代產品說明與電器安全判斷。
+先記錄烤麵包機型號、屑盤、插槽、按鍵、外殼、電線、插頭、檯面、爐具和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出放麵包、取吐司和清理屑盤的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認機體周圍有散熱和工作面；早餐多人取食時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試手臂與餐盤避讓。工具不能取代產品說明與電器安全判斷。
 
 ## 先分辨麵包屑、焦味與機體異常
 

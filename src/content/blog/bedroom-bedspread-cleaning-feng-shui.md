@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-sheet-cleaning-feng-shui
   - bedroom-duvet-cover-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室床罩在風水裡常被聯想到遮蔽、完整與睡眠區界線，但真正需要維護的是床面灰塵、皮屑、腳端污漬、寵物毛、床罩內側、床下通風、完全乾燥和收納容器。床罩只是覆蓋層，不等於床單或被套；每天掀罩、拖地和寵物活動都會讓污染來源不同。本文把「床面有界」轉成可觀察的拆分、清潔、乾燥、床下查看與收納驗收，不把床罩長度、顏色或垂墜感當成好眠、健康或運勢保證。
 
-先記錄床罩尺寸、材質、內襯、床面、床尾、床下高度、床架、窗戶、寵物活動區、洗衣和收納位置。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排掀罩和收納動線，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認床罩不會拖入通道；搬運與折疊可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間配置，不能取代床罩洗標與材質判斷。
+先記錄床罩尺寸、材質、內襯、床面、床尾、床下高度、床架、窗戶、寵物活動區、洗衣和收納位置。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排掀罩和收納動線，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認床罩不會拖入通道；搬運與折疊可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間配置，不能取代床罩洗標與材質判斷。
 
 ## 先分辨床面灰塵、腳端污漬、寵物毛與潮感
 

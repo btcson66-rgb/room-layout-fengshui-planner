@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-umbrella-drip-tray-cleaning-feng-shui
   - entryway-umbrella-stand-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 傘架的瀝水盤用來承接濕雨傘落下的水，傘架本體則負責支撐長傘或掛住短傘；底盤積水、傘布未展開、鋼架鏽斑、地墊吸水和門口坡度可能同時出現。玄關風水常把「水留在門內」解讀成聚散問題，但更可靠的檢查是雨水有沒有越過瀝水盤、地板是否打滑、傘架會不會擋門，以及濕傘能否在不滴到鞋子的地方乾燥。
 
-先記錄傘架材質、瀝水盤深度、長傘和折傘數量、玄關門片、鞋櫃、地墊和牆角。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進門收傘、擦腳和掛傘的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對傘架與鞋櫃是否互相壓迫，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)確認雨天仍能開門和換鞋。
+先記錄傘架材質、瀝水盤深度、長傘和折傘數量、玄關門片、鞋櫃、地墊和牆角。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進門收傘、擦腳和掛傘的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對傘架與鞋櫃是否互相壓迫，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認雨天仍能開門和換鞋。
 
 ## 傘架本體和瀝水盤的功能不同
 

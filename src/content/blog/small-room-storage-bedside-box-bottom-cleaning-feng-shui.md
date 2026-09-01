@@ -95,7 +95,7 @@ EPA 的室內空氣資料將清潔活動、灰塵和室內來源視為環境管�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出箱底、床側、暫放區和工具路徑，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較箱體移動與床側外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放抬箱、滑出、拖地和回位。若箱子需要堆疊，可讀 [床邊收納箱堆疊](/zh/blog/small-room-storage-bedside-stacked-boxes-feng-shui/)；若考慮改用抽屜，參考 [床邊抽屜深度](/zh/blog/small-room-storage-bedside-drawer-depth-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出箱底、床側、暫放區和工具路徑，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較箱體移動與床側外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放抬箱、滑出、拖地和回位。若箱子需要堆疊，可讀 [床邊收納箱堆疊](/zh/blog/small-room-storage-bedside-stacked-boxes-feng-shui/)；若考慮改用抽屜，參考 [床邊抽屜深度](/zh/blog/small-room-storage-bedside-drawer-depth-feng-shui/)。
 
 ### 參考資料
 

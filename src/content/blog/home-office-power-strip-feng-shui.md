@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-cable-management-feng-shui
   - home-office-monitor-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 居家辦公的延長線常被嫌難看，於是有人把它們全部綁緊、塞進桌下或用地毯蓋住，認為線材消失後思緒就會更集中。實際上，辦公桌的電源管理要處理的是額定容量、設備分組、插頭鬆動、電線受壓、變壓器散熱、清潔和起身時的絆倒風險。風水可以用「思路不打結」描述清楚路徑，但不能保證效率、升遷或用電安全。
 
-先列出電腦、螢幕、印表機、檯燈、路由器、喇叭、充電器、牆壁插座和延長線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌後與牆側走線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌板、抽屜、椅子與插頭不互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試清潔、起身和搬桌。
+先列出電腦、螢幕、印表機、檯燈、路由器、喇叭、充電器、牆壁插座和延長線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌後與牆側走線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌板、抽屜、椅子與插頭不互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清潔、起身和搬桌。
 
 ## 插孔數量不等於可以接的設備數量
 

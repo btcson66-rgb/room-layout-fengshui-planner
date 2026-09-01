@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-floor-tile-cleaning-feng-shui
   - balcony-mosquito-screen-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台太陽能板常被聯想到吸收日光、聚集能量，但板面實際會累積灰塵、鳥糞、落葉、鹽霧和雨水痕，周圍還有支架、排水孔、欄杆、窗戶與晾衣路徑。清潔若需要踩欄杆、拉高壓水柱或用研磨工具，風水中的「納光」不能代替墜落、漏水、觸電和板材損傷的風險。本文把陽台明亮與流動轉成可觀察的板面、排水、安全和維護安排。
 
-先記錄系統類型、板面角度、支架、線材、逆變器、排水孔、窗戶、欄杆和可站立區域。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出清潔人員與晾衣動線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查花架、收納櫃和板面是否互相遮擋；陽台人流可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能取代安裝商、電氣、結構或高處作業安全意見。
+先記錄系統類型、板面角度、支架、線材、逆變器、排水孔、窗戶、欄杆和可站立區域。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出清潔人員與晾衣動線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查花架、收納櫃和板面是否互相遮擋；陽台人流可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能取代安裝商、電氣、結構或高處作業安全意見。
 
 ## 先分辨灰塵、鳥糞、鹽霧與遮蔭
 

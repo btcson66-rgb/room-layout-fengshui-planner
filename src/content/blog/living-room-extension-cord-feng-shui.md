@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - plug-outlet-room-layout
   - living-room-tv-console-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 延長線在客廳風水裡常被聯想到把電器與資訊集中、讓家庭活動有一個供應中心，因此有人會把它藏在沙發底、地毯下或電視櫃後方，認為看不見就比較清爽。但延長線不是可以被風水口訣掩蓋的雜物，它有額定電壓、電流、功率、散熱、插頭接觸、灰塵與絆倒條件。沒有任何延長線整理方式能保證不起火、家庭和諧或財運；本文把「電氣有序」落到負載可讀、線材伸展、設備分流與家人走得過去。
 
-先盤點牆壁插座、延長線規格、過載保護、電視、路由器、遊戲主機、音響、吸塵器和充電器。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電視櫃與沙發兩種電源路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具移動不會壓到插頭，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試起身、打掃與夜間通行。工具不能代替電氣專業判斷或產品說明。
+先盤點牆壁插座、延長線規格、過載保護、電視、路由器、遊戲主機、音響、吸塵器和充電器。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電視櫃與沙發兩種電源路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具移動不會壓到插頭，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試起身、打掃與夜間通行。工具不能代替電氣專業判斷或產品說明。
 
 ## 客廳的「電氣聚氣」先拆成三個區域
 

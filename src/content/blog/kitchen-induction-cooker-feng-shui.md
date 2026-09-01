@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - stove-facing-door-feng-shui
   - kitchen-island-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電磁爐在廚房風水裡常被聯想到火元素、烹飪能量和家庭聚餐，因此有人會問把它放在財位、廚房中央或靠近入口，是不是更能帶來旺氣。但電磁爐是高功率加熱設備，位置要先處理專用插座、平坦檯面、鍋具穩定、散熱、潮濕、易燃物、熱鍋把手和端菜路徑。若為了讓爐面「坐鎮廚房」而放在水槽旁、插座共用或通道邊，風水象徵不能取代用電與燙傷預防。沒有任何電磁爐方位能保證財運、健康或家人關係；本文把「火有位置」轉成可檢查的備料、加熱、盛裝和清潔秩序。
 
-先量電磁爐本體、控制面板、鍋具直徑、鍋柄伸出方向、插座、牆面、窗簾、爐具、水槽、備餐檯和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較固定檯面與可移動中島的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋柄和電線不撞櫃；多人備餐時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端熱鍋與進出。工具只能協助看空間，不能取代產品說明、住宅電氣規範或專業安裝判斷。
+先量電磁爐本體、控制面板、鍋具直徑、鍋柄伸出方向、插座、牆面、窗簾、爐具、水槽、備餐檯和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較固定檯面與可移動中島的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋柄和電線不撞櫃；多人備餐時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端熱鍋與進出。工具只能協助看空間，不能取代產品說明、住宅電氣規範或專業安裝判斷。
 
 ## 先分清電磁爐的加熱區與非加熱區
 

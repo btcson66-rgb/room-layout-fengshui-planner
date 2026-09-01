@@ -22,7 +22,7 @@ relatedTools:
 relatedPosts:
   - bedroom-bedside-clock-display-brightness-feng-shui
   - bedroom-night-walkway-feng-shui
-  - bedroom-sleep-quality-bedroom-layout
+  - sleep-quality-bedroom-layout
 howToName: "床邊耳塞清潔、乾燥與夜間動線檢查"
 howToTotalTime: "PT15M"
 howToSteps:

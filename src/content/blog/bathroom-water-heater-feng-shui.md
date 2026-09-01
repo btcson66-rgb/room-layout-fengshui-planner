@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-ventilation-feng-shui
   - bathroom-bidet-seat-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 熱水器在浴室風水裡常被聯想到溫暖、水火調和和洗去疲憊，因此有人會問熱水器放在浴室哪個方位，是否能提升健康或家運。但燃氣與電熱水器涉及型式選擇、通風、排氣、燃燒廢氣、電氣、熱水管、晾衣、門窗和檢修；如果把「水火相濟」當成可以在密閉浴室安裝屋外式熱水器，風水象徵會掩蓋一氧化碳與觸電風險。沒有任何熱水器方位能保證健康、安全或家運；本文把「水火有序」落到可確認的型式、通風、排氣和洗澡流程。
 
-先量熱水器本體、排氣管、進排氣口、門窗、淋浴區、洗手台、晾衣架、插座和檢修空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)查看設備與門片、淋浴路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認排氣與維修不被收納遮住；狹窄浴室再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬進出。工具不能判定熱水器型式或安裝合格與否，這些要交給合格人員與主管機關規範。
+先量熱水器本體、排氣管、進排氣口、門窗、淋浴區、洗手台、晾衣架、插座和檢修空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)查看設備與門片、淋浴路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認排氣與維修不被收納遮住；狹窄浴室再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬進出。工具不能判定熱水器型式或安裝合格與否，這些要交給合格人員與主管機關規範。
 
 ## 先分辨屋外式、室內式與電熱水器
 

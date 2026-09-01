@@ -16,9 +16,8 @@ keywords:
   - 馬桶水垢異味檢查
   - 浴室排水動線
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-bowl-trapway-cleaning-feng-shui
   - bathroom-toilet-rim-hole-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶水位線在風水裡容易被聯想到留水、界線與排濁，但真正需要維護的是黃垢、硬水沉積、存水彎水位、異味、沖水路徑和陶瓷釉面。水面周圍一圈顏色變深，不代表都是同一種污垢；把水位降下來，也不代表排水或存水彎已恢復。本文把「留水有界、濁物可辨」轉成可觀察的水位記錄、材質保護、分區清潔、沖水驗收和浴室動線交接，不把水位高度或水線方位當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、馬桶型式、水位線、存水彎、內緣出水孔、水箱、沖水閥、供水閥、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)畫出排水、刷洗和沖淨路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會堵住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代衛浴或排水維修判斷。
+先記錄浴室約 180 × 240 公分、馬桶型式、水位線、存水彎、內緣出水孔、水箱、沖水閥、供水閥、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出排水、刷洗和沖淨路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會堵住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代衛浴或排水維修判斷。
 
 ## 先分辨黃垢、硬水沉積、異味與水位異常
 

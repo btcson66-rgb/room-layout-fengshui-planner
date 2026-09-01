@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-sofa-seat-bottom-cleaning-feng-shui
   - living-room-sofa-armrest-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 沙發坐墊拉鍊在風水語境裡常被說成「拉鍊合好就能聚氣」，但實際最常見的問題是拉鍊卡住布邊、坐墊套被錯誤拆洗、填充物塞不回原位、底部藏著零食碎屑，或把坐墊拆下後茶几和沙發之間沒有足夠起身空間。風水裡的「聚、靠、坐」可以轉譯為坐墊支撐可維護、布套依標籤處理、拉鍊不被硬拉和客廳通道清楚，不能把拉鍊閉合直接當成舒適或人際結果。
 
-先量客廳長寬、沙發總長深、坐墊、拉鍊位置、扶手、茶几、地毯、插座和起身通道。以 360 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆墊、清潔、坐回和端茶的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對坐墊厚度與茶几，最後以 [房間動線檢查](/zh/room-circulation-check/)測試多人起身。工具只協助配置，不代替布料、拉鍊和填充物保養判斷。
+先量客廳長寬、沙發總長深、坐墊、拉鍊位置、扶手、茶几、地毯、插座和起身通道。以 360 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆墊、清潔、坐回和端茶的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對坐墊厚度與茶几，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試多人起身。工具只協助配置，不代替布料、拉鍊和填充物保養判斷。
 
 ## 拉鍊的好風水是能看見、能閉合、坐墊不偏且清潔有替代方案
 

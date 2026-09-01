@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-wet-shoes-feng-shui
   - entryway-umbrella-stand-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 雨衣在玄關風水裡常被聯想到把外在的雨水擋在門外、讓回家後的氣場保持清爽，也有人會問雨衣掛門後、放鞋櫃內或朝向室內是否比較能「擋煞」。但雨衣真正要處理的是穿過雨後的水分、材質乾燥、霉味、滴水、防滑、衣架承重，以及濕衣物會不會卡住門扇與穿鞋路徑。沒有任何雨衣方向能保證平安、家運或財運；本文把「擋雨」轉成可執行的暫放、晾乾與歸位流程。
 
-先量玄關、雨衣收折後尺寸、衣架、掛鉤、滴水盤、鞋櫃、雨傘、鞋凳、門扇開啟範圍和地面排水。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門後、鞋櫃側面與洗衣區暫放的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認雨衣掛起、收折與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試回家脫雨衣、脫鞋、拿包、清潔與緊急開門。工具只能協助配置，不取代材質洗滌說明、除霉或居家安全建議。
+先量玄關、雨衣收折後尺寸、衣架、掛鉤、滴水盤、鞋櫃、雨傘、鞋凳、門扇開啟範圍和地面排水。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門後、鞋櫃側面與洗衣區暫放的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認雨衣掛起、收折與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試回家脫雨衣、脫鞋、拿包、清潔與緊急開門。工具只能協助配置，不取代材質洗滌說明、除霉或居家安全建議。
 
 ## 濕雨衣要先有暫放區再談收納
 

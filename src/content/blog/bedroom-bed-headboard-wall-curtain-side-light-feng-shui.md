@@ -95,7 +95,7 @@ EPA 的室內空氣資料可作窗邊通風與環境觀察背景；CPSC 的窗�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗框、軌道、布堆和床頭板，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較側邊外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾、開窗、清潔和下床。若上緣漏光，可讀 [窗簾上方漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-top-gap-feng-shui/)；若窗簾碰窗台，參考 [窗簾下擺接觸](/zh/blog/bedroom-bed-headboard-wall-curtain-sill-contact-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗框、軌道、布堆和床頭板，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較側邊外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾、開窗、清潔和下床。若上緣漏光，可讀 [窗簾上方漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-top-gap-feng-shui/)；若窗簾碰窗台，參考 [窗簾下擺接觸](/zh/blog/bedroom-bed-headboard-wall-curtain-sill-contact-feng-shui/)。
 
 ### 參考資料
 

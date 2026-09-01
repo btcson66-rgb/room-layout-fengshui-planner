@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-wardrobe-cleaning-feng-shui
   - bedroom-wardrobe-door-hinge-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 衣櫃滑門軌道風水常被問成「滑門開向哪邊才不影響睡眠」，但每天真正要處理的是：下軌是否卡著砂粒和毛髮、滑輪是否越拉越重、門片交疊時能否拿到衣物、床側是否被開門者堵住，以及清潔布能否進入軌道兩端。風水裡的「開」可以轉譯為門片好推、軌道看得見、衣物拿取不必繞行、櫃體固定和夜間走道清楚，不能用開門方向保證好眠或運勢。
 
-先量臥室長寬、衣櫃寬深高、門片寬度與重疊量、上下軌、床、床頭櫃、門片開啟區和夜間照明。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取衣、換衣與清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和床側不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查夜間站位。工具只協助配置，不代替衣櫃固定、滑輪維修或高處作業判斷。
+先量臥室長寬、衣櫃寬深高、門片寬度與重疊量、上下軌、床、床頭櫃、門片開啟區和夜間照明。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取衣、換衣與清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和床側不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查夜間站位。工具只協助配置，不代替衣櫃固定、滑輪維修或高處作業判斷。
 
 ## 衣櫃滑門軌道的好風水是推得順、看得見且下軌不成清潔死角
 

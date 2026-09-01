@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-water-heater-feng-shui
   - kitchen-door-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 瓦斯桶在陽台風水裡常被聯想到火元素、家庭炊煮和能量來源，因此有人會問靠近廚房、朝向哪方或放在陽台角落是否比較旺。但液化石油氣是可燃性高壓氣體，瓦斯桶真正要處理的是直立、固定、通風、日照、熱源、管線、檢驗期限、開關和緊急處置。沒有任何瓦斯桶位置能保證旺財、平安或不漏氣；本文把「火氣有序」轉成可檢查的設備條件與不堵住陽台出口的安全界線。
 
-先量陽台、瓦斯桶、瓦斯管線、爐具、熱水器、欄杆、窗戶、曬衣架、收納物與通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、靠近管線端點和維修面的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶體與固定件不會被櫃體擠壓，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試收衣、清掃、開門和緊急離開。工具不能取代消防署、瓦斯行或合格承裝業者判斷。
+先量陽台、瓦斯桶、瓦斯管線、爐具、熱水器、欄杆、窗戶、曬衣架、收納物與通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、靠近管線端點和維修面的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶體與固定件不會被櫃體擠壓，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試收衣、清掃、開門和緊急離開。工具不能取代消防署、瓦斯行或合格承裝業者判斷。
 
 ## 「火有靠」不等於把瓦斯桶塞進角落
 

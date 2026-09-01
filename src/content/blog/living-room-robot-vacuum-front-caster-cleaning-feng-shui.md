@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-robot-vacuum-charging-contacts-cleaning-feng-shui
   - living-room-robot-vacuum-cliff-sensor-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人前輪的風水常被說成「前路順不順」，但真正需要處理的是萬向輪毛髮、輪軸卡滯、輪槽異物、輪子偏磨和地面拖痕。風水裡的「路」可以轉譯為機器人能直行、轉向、通過家具邊並回到充電座，不能把前輪轉得順直接當成客廳運勢或清掃效果保證。
 
-先量客廳長寬、前輪模組、沙發底高度、茶几腳、地毯邊、門檻和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出清掃路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具底部，最後用 [房間動線檢查](/zh/room-circulation-check/)看人行道和機器人路徑是否交會。
+先量客廳長寬、前輪模組、沙發底高度、茶几腳、地毯邊、門檻和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出清掃路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具底部，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看人行道和機器人路徑是否交會。
 
 ## 前輪的好風水是轉向自由、輪軸清楚與地面不被拖傷
 

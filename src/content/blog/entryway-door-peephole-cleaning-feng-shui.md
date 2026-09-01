@@ -16,9 +16,8 @@ keywords:
   - 門上窺視孔視線保養
   - 玄關開門動線
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-lock-cleaning-feng-shui
   - entryway-door-handle-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關門上貓眼在風水裡容易被聯想到察看、守門與納氣，但真正需要維護的是內外鏡片指紋、灰塵、霧化、刮痕、鏡筒鬆動、視線範圍、門扇受力和開門安全。貓眼看得到，不代表看得清楚；鏡片擦亮，也不代表門扇、門鎖或門框能安全閉合。本文把「入口看得清」轉成可觀察的內外分區清潔、視線驗收、門扇操作和訪客交接，不把貓眼方向當成防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、門扇材質、貓眼高度、內外鏡片、鏡筒、門鎖、把手、門框、門檻、鞋櫃和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出查看、開門、脫鞋和拿包裹路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃不會擋住站立視線；進出時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代門鎖、門扇或居家安全判斷。
+先記錄玄關約 160 × 240 公分、門扇材質、貓眼高度、內外鏡片、鏡筒、門鎖、把手、門框、門檻、鞋櫃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出查看、開門、脫鞋和拿包裹路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃不會擋住站立視線；進出時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代門鎖、門扇或居家安全判斷。
 
 ## 先分辨指紋、灰塵、霧化與鏡筒鬆動
 

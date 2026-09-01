@@ -17,7 +17,7 @@ keywords:
   - 客廳收納櫃清潔
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-side-table-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳邊櫃在風水裡常被聯想到靠山、收納與家庭交流，但真正需要維護的是桌面灰塵、抽屜雜物、櫃門、承重、桌腳、牆距、防傾倒與人流。邊櫃容易被當成「什麼都可以放」的家具，清潔時才發現抽屜塞滿、重物集中或櫃門開啟會堵住走道。本文把「客廳有靠」轉成可觀察的清空、物品分區、材質清潔、固定、承重與通行驗收，不把邊櫃位置當成人緣、財運或運勢保證。
 
-先記錄邊櫃寬深高、桌面材質、櫃門、抽屜、層板、背板、桌腳、牆面、沙發、電視櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取物、清潔和開門路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認櫃門和抽屜不切入走道；家具尺寸與重物位置可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助空間判讀，不能取代家具固定和承重判斷。
+先記錄邊櫃寬深高、桌面材質、櫃門、抽屜、層板、背板、桌腳、牆面、沙發、電視櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取物、清潔和開門路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認櫃門和抽屜不切入走道；家具尺寸與重物位置可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助空間判讀，不能取代家具固定和承重判斷。
 
 ## 先分辨灰塵、水痕、抽屜超載與櫃體晃動
 

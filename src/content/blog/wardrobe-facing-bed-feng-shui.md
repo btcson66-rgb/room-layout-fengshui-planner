@@ -16,9 +16,8 @@ keywords:
   - 衣櫃鏡子對床
   - 小房間衣櫃動線
 relatedTools:
-  - /zh/bedroom-layout/
-  - /zh/furniture-fit-checker/
   - /zh/room-layout-planner/
+  - /zh/furniture-fit-checker/
 relatedPosts:
   - wardrobe-placement-bedroom
   - wardrobe-door-types
@@ -80,7 +79,7 @@ howToSteps:
 
 第一版改成 180 公分推門衣櫃，保留床尾整理位置，但櫃內中間區域取物較受限；第二版把衣櫃縮成 120 公分低櫃，剩餘衣物移到門旁，但洗衣回收路線要繞過床；第三版維持開門櫃，把床向窗側移 20 公分並取消鏡面門，結果床邊一側變窄。用紙膠帶測試換衣、打床單、夜間起身和拿行李後，第一版最容易維持，並用布簾處理鏡面反光。
 
-可用 [臥室配置工具](/zh/bedroom-layout/) 先畫床和衣櫃外框，再用 [家具尺寸檢查](/zh/furniture-fit-checker/) 核對門片、抽屜與走道；也可以用 [房間家具配置工具](/zh/room-layout-planner/) 比較分段收納。若要改動插座、牆體或固定高櫃，應找合格人員確認。
+可用 [房間家具配置工具](/zh/room-layout-planner/) 先畫床和衣櫃外框，再用 [家具尺寸檢查](/zh/furniture-fit-checker/) 核對門片、抽屜與走道；也可以用 [房間家具配置工具](/zh/room-layout-planner/) 比較分段收納。若要改動插座、牆體或固定高櫃，應找合格人員確認。
 
 ## 七天測試：把「壓迫感」拆成可記錄的事件
 

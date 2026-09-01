@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-table-cleaning-feng-shui
   - bedroom-bedside-lamp-base-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 床頭櫃桌面每天接觸水杯、眼鏡、手機、護膚品、書、藥品、充電器和床頭燈，灰塵和水痕容易被物品遮住。桌面看似整齊，不代表沒有液體滲入封邊、線材被壓或抽屜開啟會撞到人。風水常把床頭櫃視為靠山、安定或睡前收納，實際應轉成物品可取、液體和電氣分開、桌面可擦乾、燈具穩定、夜間起身不絆腳，不把桌面清空寫成好眠或運勢保證。
 
-先記錄臥室約 300 × 360 公分、床頭櫃長寬高、桌面材質、床沿、床頭燈、插座、電線、窗簾、門片和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出睡前放手機、取眼鏡、喝水、關燈與夜間起身的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床頭櫃抽屜、燈具和水杯不互撞；用 [房間通行寬度檢查](/zh/room-circulation-check/)測試從床沿到門口。工具只能協助配置，不能取代家具穩定、電氣、藥品或個人健康判斷。
+先記錄臥室約 300 × 360 公分、床頭櫃長寬高、桌面材質、床沿、床頭燈、插座、電線、窗簾、門片和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出睡前放手機、取眼鏡、喝水、關燈與夜間起身的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床頭櫃抽屜、燈具和水杯不互撞；用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試從床沿到門口。工具只能協助配置，不能取代家具穩定、電氣、藥品或個人健康判斷。
 
 ## 水痕、護膚品油膜、灰塵與桌面受潮分流
 

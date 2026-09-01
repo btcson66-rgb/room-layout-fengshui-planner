@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-shoe-cabinet-feng-shui
   - entryway-bench-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 網購、外送和社區代收讓玄關常出現紙箱、袋子、退貨件與待拆包裹。風水文章可能把它們說成「雜氣堆積」「財物堵在門口」，但真正需要處理的是門片能否全開、住址個資是否外露、紙箱是否受潮、拆箱刀具放哪裡、垃圾如何分類，以及家人和緊急避難路徑是否被占用。沒有一個包裹角落能保證財運或家宅結果；好的暫放區應該有進入、判斷、拆開、歸位和離場時間。
 
-先量大門、鞋櫃、穿鞋椅、門檻、客廳通道、電梯或樓梯方向，再把不同包裹的外框畫進去。可使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較暫放籃和門片，也可用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體與紙箱外框；若玄關同時要放雨具和穿鞋椅，再用 [房間通行寬度檢查](/zh/room-circulation-check/)看人是否能通過。工具不能替代社區消防、個資保護或物流保存條件。
+先量大門、鞋櫃、穿鞋椅、門檻、客廳通道、電梯或樓梯方向，再把不同包裹的外框畫進去。可使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較暫放籃和門片，也可用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體與紙箱外框；若玄關同時要放雨具和穿鞋椅，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)看人是否能通過。工具不能替代社區消防、個資保護或物流保存條件。
 
 ## 先分「剛送到」「待確認」和「已拆完」
 

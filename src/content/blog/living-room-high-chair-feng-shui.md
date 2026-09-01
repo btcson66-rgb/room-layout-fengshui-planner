@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-play-mat-feng-shui
   - dining-chair-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 兒童用高腳椅在客廳風水裡常被說成「把孩子的位置放進家庭中心」「餐桌旁才有團聚氣」。但高腳椅是讓幼兒坐高、吃飯和被照顧的設備，位置要先處理椅腳穩定、安全帶、托盤、餐桌距離、食物掉落和大人通行。若椅子靠近門口會被撞、椅腳踩到遊戲墊、扣件鬆動，或抱孩子入座時要繞過茶几，象徵性的中心位置不能取代實際安全。沒有高腳椅位置能保證孩子健康、家庭和諧或運勢；親子用餐的安定感來自照顧流程清楚。
 
-先量高腳椅展開後寬深高、椅腳外張、托盤、餐桌、沙發、遊戲墊、門口和照顧者站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較高腳椅與餐桌、遊戲區的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認托盤、椅背和家具不互撞；若客廳同時是通道，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試抱孩子和端熱食。工具不能代替商品檢驗、使用說明或成人陪伴。
+先量高腳椅展開後寬深高、椅腳外張、托盤、餐桌、沙發、遊戲墊、門口和照顧者站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較高腳椅與餐桌、遊戲區的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認托盤、椅背和家具不互撞；若客廳同時是通道，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試抱孩子和端熱食。工具不能代替商品檢驗、使用說明或成人陪伴。
 
 ## 先分辨用餐、清潔與收納狀態
 

@@ -16,9 +16,8 @@ keywords:
   - 洗衣機 door latch 異物
   - 洗衣機 Child Lock 檢查
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-door-glass-cleaning-feng-shui
   - laundry-washing-machine-door-seal-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機門鎖扣在風水裡容易被聯想到界線、收納與循環中的封合，但真正需要維護的是衣物或異物卡住、門扣、鎖座、膠圈、Child Lock、門片密合與漏水。門片看似關上，不代表鎖扣已接合；指示燈亮起，也不代表門膠圈沒有夾住線頭。本文把「衣物收妥、門界有序」轉成可觀察的停止洗程、異物清除、門扣檢查、上鎖驗收和洗衣動線交接，不把鎖扣方向當成洗淨、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、門鎖扣、鎖座、門膠圈、門玻璃、門片、控制面板、洗衣籃和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排停機、開門和取衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認洗衣籃不會壓住門片；操作時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代電器安全、門鎖維修或漏水判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、門鎖扣、鎖座、門膠圈、門玻璃、門片、控制面板、洗衣籃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排停機、開門和取衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認洗衣籃不會壓住門片；操作時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代電器安全、門鎖維修或漏水判斷。
 
 ## 先分辨卡衣、異物、門扣磨損、Child Lock 與門片偏斜
 

@@ -18,11 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-layout-planner/
 relatedPosts:
   - kitchen-fridge-feng-shui
   - kitchen-countertop-zoning-feng-shui
-  - kitchen-bottle-storage-feng-shui
+  - kitchen-bowl-storage-feng-shui
 howToName: "冰箱門邊調味料溫度、日期與取用分區整理"
 howToTotalTime: "PT25M"
 howToSteps:

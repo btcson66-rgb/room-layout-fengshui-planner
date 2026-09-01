@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-exhaust-fan-cover-cleaning-feng-shui
   - bathroom-exhaust-fan-grille-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 排風扇馬達藏在外罩後方，負責帶動扇葉；馬達附近的灰塵、扇葉上的纖維、外罩堵塞和風管阻力都可能影響聲音與排風。浴室風水常把換氣理解成排濁、去濕，但可驗收的內容應是洗澡後水氣是否有變化、外罩能否安全清理、開關和電路是否可隔離，以及門口是否有乾燥的離開路徑。馬達清潔不是把浴室變成沒有霉菌或一定健康的保證。
 
-先記錄風扇品牌、型號、外罩尺寸、淋浴區、門片、地墊、毛巾和室外排氣方向。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡後開門、取毛巾和擦腳的路線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查收納、曬衣桿或瓶籃是否擋住進風與出口，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認濕地上的站位。這些工具不能取代電氣、高處、風管和防水判斷。
+先記錄風扇品牌、型號、外罩尺寸、淋浴區、門片、地墊、毛巾和室外排氣方向。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡後開門、取毛巾和擦腳的路線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查收納、曬衣桿或瓶籃是否擋住進風與出口，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認濕地上的站位。這些工具不能取代電氣、高處、風管和防水判斷。
 
 ## 馬達、扇葉、外罩與風管不是同一個問題
 

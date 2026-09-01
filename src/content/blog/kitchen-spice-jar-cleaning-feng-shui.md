@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-spice-rack-cleaning-feng-shui
   - kitchen-food-container-seal-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 調味料瓶在廚房風水裡常被聯想到五味、食祿與家人共同做飯，但真正需要維護的是瓶身、瓶蓋、螺紋、出料孔、標籤、粉末、油膜與取用路徑。瓶口被濕湯匙碰過，粉類可能結塊；瓶身靠近爐火，油垢容易讓手滑；標籤脫落，家人就無法分辨內容物與日期。本文把「五味有序」轉成可觀察的辨識、清潔、乾燥、先用先補與安全回位，不把瓶子朝向或顏色當成料理、健康或運勢保證。
 
-先記錄瓶身材質、瓶蓋類型、出料孔、標籤、開封日期、爐具、水槽、排油煙機和取用位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拿瓶、舀取與清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開蓋和放回不會撞到上櫃；多人備餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)看端盤與取瓶是否交叉。工具不能取代食品標示與保存條件。
+先記錄瓶身材質、瓶蓋類型、出料孔、標籤、開封日期、爐具、水槽、排油煙機和取用位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拿瓶、舀取與清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開蓋和放回不會撞到上櫃；多人備餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)看端盤與取瓶是否交叉。工具不能取代食品標示與保存條件。
 
 ## 先分辨瓶口油垢、粉末結塊與受潮
 

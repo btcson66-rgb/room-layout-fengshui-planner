@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - pet-friendly-room-layout
   - living-room-blanket-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 寵物床在客廳風水裡常被聯想到陪伴、守護與家人互動，有人會問寵物床放在財位、沙發旁或朝向大門，是否能讓家裡更旺。真正要先照顧的是寵物是否有乾燥、清潔、安靜且不受驚擾的休息位置，床是否會滑動、堵住通道、靠近熱源或讓家人一直跨過去。沒有一個方向能保證招財或寵物健康；本文把「守護」轉成可觀察的休息選擇、清潔節奏和人寵共用動線。
 
-先量客廳長寬、沙發、茶几、電視櫃、寵物床攤開尺寸、門窗、冷氣、電線、食水碗和主要通道，並記錄寵物站起、轉身、伸展、進出床和躲避的範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發側、窗邊、牆角和獨立休息區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床邊不會撞茶几或出風口，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試家人端茶、掃地、抱寵物和緊急離開。工具只協助配置，不取代獸醫、動物照護或居家安全建議。
+先量客廳長寬、沙發、茶几、電視櫃、寵物床攤開尺寸、門窗、冷氣、電線、食水碗和主要通道，並記錄寵物站起、轉身、伸展、進出床和躲避的範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發側、窗邊、牆角和獨立休息區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床邊不會撞茶几或出風口，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試家人端茶、掃地、抱寵物和緊急離開。工具只協助配置，不取代獸醫、動物照護或居家安全建議。
 
 ## 寵物床不是裝飾，先看休息需求
 

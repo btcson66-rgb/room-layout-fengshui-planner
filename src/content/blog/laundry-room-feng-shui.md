@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-width-guide/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-door-feng-shui
   - kitchen-fridge-feng-shui
@@ -88,7 +88,7 @@ howToSteps:
 
 第一版把洗衣機和高櫃並排，外觀整齊但維修空間不足；第二版取消高櫃，改用可移動洗衣籃與壁面層板，維修容易但用品較外露；第三版把洗衣機轉向窗側，通風較好卻改變進出路線。用紙箱模擬櫃體、門片和洗衣籃，測試搬濕衣、拉開前門、拿清潔劑、開窗、清理濾網和夜間通行，才能比較方案。
 
-可用 [房間家具配置工具](/zh/room-layout-planner/)畫出洗衣機、門片、洗衣籃和窗戶，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體外框；[房間動線寬度指南](/zh/room-circulation-width-guide/)只能協助平面比較，不會驗證排水、電氣、設備水平或牆面承重。
+可用 [房間家具配置工具](/zh/room-layout-planner/)畫出洗衣機、門片、洗衣籃和窗戶，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體外框；[房間動線寬度指南](/zh/blog/room-circulation-width-guide/)只能協助平面比較，不會驗證排水、電氣、設備水平或牆面承重。
 
 案例中若高櫃遮住窗戶，先比較低櫃、開放層板和移動推車；若濕衣必須穿過臥室，先設置中途洗衣籃或調整晾衣點；若脫水震動傳到床邊，應先檢查水平和隔振，不要用風水物件掩蓋機械問題。
 

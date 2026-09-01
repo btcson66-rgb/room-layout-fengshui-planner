@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bath-mat-cleaning-feng-shui
   - bathroom-shower-drain-strainer-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 淋浴墊邊緣是最容易藏住皂膜、毛髮、皮屑和水分的位置，止滑背面也可能黏住地面灰塵、清潔劑或霉斑。墊面洗乾淨，不代表背面乾燥；背面不滑，也不代表墊子不會翹角或阻礙排水。風水常把浴室腳踏墊說成收水、隔濁或守住乾區，實際應轉成腳下穩定、墊面可清潔、背面能乾、排水口不被遮住和使用者不必跨過濕地離開，不把地墊材質寫成防滑或運勢保證。
 
-先記錄浴室約 180 × 240 公分、淋浴墊長寬厚度、排水口、門檻、淋浴門、馬桶、洗手台、入口與擦腳站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡、踩墊、擦腳、拿毛巾與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認淋浴椅、瓶籃和地墊不會互相壓住；用 [房間通行寬度檢查](/zh/room-circulation-check/)測試濕地上的通行。工具只能協助平面比較，不能取代地面防滑、材質洗滌和潮濕維修判斷。
+先記錄浴室約 180 × 240 公分、淋浴墊長寬厚度、排水口、門檻、淋浴門、馬桶、洗手台、入口與擦腳站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡、踩墊、擦腳、拿毛巾與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認淋浴椅、瓶籃和地墊不會互相壓住；用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試濕地上的通行。工具只能協助平面比較，不能取代地面防滑、材質洗滌和潮濕維修判斷。
 
 ## 墊面、邊緣、止滑背面與地面要分開看
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-flower-pot-tray-cleaning-feng-shui
   - balcony-drainage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台花盆底部容易卡住土粒、根系、落葉和肥料結塊，托盤滿水、外盆沒有溢流出口、內盆貼住外盆底部或地漏被花盆遮住，都可能讓澆水後的水停在不該停的位置。陽台風水常談植物生氣與水氣流動，但可驗收的是盆底能否排水、托盤是否容易清空、地面是否乾燥，以及家人能否安全繞過植物，不能把積水直接等同家運停滯。
 
-先記錄花盆材質、口徑、高度、底孔數量、內外盆、托盤、植物重量、陽台地漏和排水坡度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出澆水與搬盆範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對盆架和托盤占地，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)確認通往曬衣區的路徑。
+先記錄花盆材質、口徑、高度、底孔數量、內外盆、托盤、植物重量、陽台地漏和排水坡度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出澆水與搬盆範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對盆架和托盤占地，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認通往曬衣區的路徑。
 
 ## 盆底孔、內盆、外盆與托盤要分開
 

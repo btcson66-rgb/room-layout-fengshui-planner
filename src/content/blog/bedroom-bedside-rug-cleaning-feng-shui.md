@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-pillow-dust-cleaning-feng-shui
   - bedroom-mattress-protector-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床邊地毯在臥室風水裡常被聯想到柔和、承接與睡眠區界線，但真正需要維護的是纖維、底布、止滑層、灰塵、寵物毛、潮氣、床腳和起身動線。地毯貼著床邊，容易承接皮屑和毛髮；若清洗後尚未乾燥就鋪回，或底部止滑層老化，夜間起身時可能滑動或帶來潮味。本文把「床邊有界」轉成可觀察的除塵、材質清潔、完全乾燥、平整與防滑驗收，不把地毯顏色或方向當成睡眠、健康或運勢保證。
 
-先記錄地毯尺寸、材質、底布、止滑層、床架、床邊桌、窗戶、地面和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排清潔與暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認地毯不壓住床腳或出入口；床邊走道可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能取代地毯洗標、地面狀態與防滑判斷。
+先記錄地毯尺寸、材質、底布、止滑層、床架、床邊桌、窗戶、地面和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排清潔與暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認地毯不壓住床腳或出入口；床邊走道可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能取代地毯洗標、地面狀態與防滑判斷。
 
 ## 先分辨纖維灰塵、寵物毛、污漬與潮味
 

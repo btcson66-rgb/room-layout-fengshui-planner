@@ -89,7 +89,7 @@ OSHA 的桌下淨空資料提供工作站參考尺寸，但每個人的腿長、
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌腳、椅子、抽屜拉出和門片掃掠，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌下淨空；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放起身、開門、取件和清潔。若主要問題是轉身，可讀 [面向房門書桌椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)；若是線材干擾，參考 [面向房門書桌線槽](/zh/blog/home-office-desk-facing-door-cable-channel-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌腳、椅子、抽屜拉出和門片掃掠，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌下淨空；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放起身、開門、取件和清潔。若主要問題是轉身，可讀 [面向房門書桌椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)；若是線材干擾，參考 [面向房門書桌線槽](/zh/blog/home-office-desk-facing-door-cable-channel-feng-shui/)。
 
 ### 參考資料
 

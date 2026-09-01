@@ -85,7 +85,7 @@ CPSC 的家具安全資料提醒高而窄的家具、衣櫃與衣物收納單元
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫掛架和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 輸入厚衣物外凸，最後以 [房間動線檢查](/zh/room-circulation-check/) 測取衣和出口。若是衣櫃門打開後轉身，可參考 [小房間衣櫃門操作](/zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/)；若是抽屜櫃靠門，參考 [抽屜櫃全開深度](/zh/blog/small-room-drawer-unit-doorway-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫掛架和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 輸入厚衣物外凸，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 測取衣和出口。若是衣櫃門打開後轉身，可參考 [小房間衣櫃門操作](/zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/)；若是抽屜櫃靠門，參考 [抽屜櫃全開深度](/zh/blog/small-room-drawer-unit-doorway-clearance-feng-shui/)。
 
 ### 參考資料
 

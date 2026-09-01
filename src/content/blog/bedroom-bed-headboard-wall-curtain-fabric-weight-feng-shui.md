@@ -97,7 +97,7 @@ CPSC 的窗簾繩安全資料提醒，不能為了固定重布而把拉繩或綁
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出軌道、布堆、床頭板和晾乾站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較厚布外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾、清潔、換床單和開窗。若軌道是瓶頸，可讀 [窗簾軌道清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-rail-cleaning-feng-shui/)；若上方有光帶，參考 [窗簾上方漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-top-gap-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出軌道、布堆、床頭板和晾乾站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較厚布外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾、清潔、換床單和開窗。若軌道是瓶頸，可讀 [窗簾軌道清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-rail-cleaning-feng-shui/)；若上方有光帶，參考 [窗簾上方漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-top-gap-feng-shui/)。
 
 ### 參考資料
 

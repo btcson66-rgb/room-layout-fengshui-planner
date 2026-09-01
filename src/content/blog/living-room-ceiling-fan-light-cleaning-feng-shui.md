@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-ceiling-fan-blade-cleaning-feng-shui
   - living-room-ceiling-light-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳吊扇燈具同時承擔氣流與照明，清潔時不能只把它當成吊扇葉片或天花板燈。葉片上的灰塵、燈罩油膜、燈泡發熱、燈光晃動、吊桿偏移、控制器異常和高處作業風險，都會影響實際使用。風水常說「風光要和」，可以轉成氣流不把灰塵吹向人、照明不造成眩光、走道不被梯具堵住，但不能把擦亮燈罩當成降溫、用電或運勢保證。
 
-先記錄吊扇燈具型號、葉片材質與直徑、燈罩材質、燈泡類型、吊桿、天花板接點、牆壁開關、遙控器、沙發、茶几、電視和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示清潔梯具與家具暫移位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)查看燈罩開啟後是否會碰到櫃體；沙發與門口的使用路徑可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)觀察。工具只能協助空間配置，不取代電氣、吊掛和高處作業判斷。
+先記錄吊扇燈具型號、葉片材質與直徑、燈罩材質、燈泡類型、吊桿、天花板接點、牆壁開關、遙控器、沙發、茶几、電視和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示清潔梯具與家具暫移位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)查看燈罩開啟後是否會碰到櫃體；沙發與門口的使用路徑可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)觀察。工具只能協助空間配置，不取代電氣、吊掛和高處作業判斷。
 
 ## 先分辨葉片灰塵、燈罩油膜、發熱與電氣異常
 

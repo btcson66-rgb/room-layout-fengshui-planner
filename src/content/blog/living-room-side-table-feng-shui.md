@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-coffee-table-feng-shui
   - living-room-floor-lamp-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳邊桌常被問「放在沙發左邊還是右邊比較旺」「邊桌靠牆才有靠嗎」。民俗上可以把邊桌理解成承接日常物品、穩定視線的小家具，但沒有一個左右方位能保證財運、健康或家庭和諧。它真正參與的是坐下喝水、拿遙控器、閱讀、充電、放藥盒、起身和打掃；只要桌子太靠扶手、太高、太輕或電線橫過走道，風水上的「穩」就會被每天的碰撞打破。
 
-規劃前量沙發外框、扶手高度、桌面、茶几、電視櫃、落地燈、插座和主要通道。先用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出桌子占用，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較桌面和沙發關係；如果邊桌靠近起身路徑，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)做碰撞測試。工具能比較平面配置，不能取代實際坐姿、桌面承重和家庭成員觀察。
+規劃前量沙發外框、扶手高度、桌面、茶几、電視櫃、落地燈、插座和主要通道。先用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出桌子占用，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較桌面和沙發關係；如果邊桌靠近起身路徑，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)做碰撞測試。工具能比較平面配置，不能取代實際坐姿、桌面承重和家庭成員觀察。
 
 ## 先分辨邊桌是服務座位，還是製造第二個障礙
 

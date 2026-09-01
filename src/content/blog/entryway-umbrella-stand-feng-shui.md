@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-wet-shoes-feng-shui
   - entryway-doormat-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關雨傘架很容易被簡化成「靠近大門聚財」或「雨水帶進家裡會破財」。這些說法可以作為風水文化的象徵，但雨傘架其實同時承擔濕傘滴水、尖端收納、開門迴轉、換鞋、拿鑰匙和雨天照明等任務。若濕傘把地面弄滑、架子卡住門扇，或家人每次進門都要跨過一個障礙，玄關的不安定感就有很實際的原因。沒有任何雨傘架位置能保證財運；可先把水、路線和使用頻率安排清楚，再決定外觀與象徵。
 
-先量大門內側、門扇完全打開後的弧線、鞋櫃深度、雨傘架外廓、滴水盤拉出距離與穿鞋站立區。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進門後的第一段路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認雨傘架不會和鞋櫃、門把互撞；若玄關也是客廳或樓梯的必經處，再用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查提傘、抱物和夜間通行。工具只能協助看尺寸，不能取代地面止滑、產品穩定和建物逃生判斷。
+先量大門內側、門扇完全打開後的弧線、鞋櫃深度、雨傘架外廓、滴水盤拉出距離與穿鞋站立區。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進門後的第一段路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認雨傘架不會和鞋櫃、門把互撞；若玄關也是客廳或樓梯的必經處，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查提傘、抱物和夜間通行。工具只能協助看尺寸，不能取代地面止滑、產品穩定和建物逃生判斷。
 
 ## 先把乾傘與濕傘分成兩種任務
 

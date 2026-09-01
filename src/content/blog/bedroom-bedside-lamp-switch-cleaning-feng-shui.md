@@ -18,9 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - bedroom-bedside-lamp-cleaning-feng-shui
+  - bedroom-bedside-lamp-base-cleaning-feng-shui
   - bedroom-bedside-lamp-cord-cleaning-feng-shui
   - bedroom-bedside-lamp-shade-cleaning-feng-shui
 howToName: "床頭燈開關、按鍵、旋鈕、電線、燈罩與夜間動線檢查"
@@ -36,7 +36,7 @@ howToSteps:
 
 床頭燈開關的風水問題常被說成「床邊燈忽明忽暗會影響睡眠」，但實際要處理的是按鍵沾油、旋鈕卡塵、插頭鬆動、電線被床頭櫃壓住、燈罩散熱不足，或關燈後床邊到門口的路徑沒有照明。風水裡的「明暗有度」可以轉譯為開關可操作、光線可調、線材不受壓和夜間起身不必摸黑，不能把開關手感直接當成睡眠或健康結果。
 
-先量臥室長寬、床頭燈高度、底座、開關、電線長度、插座、床頭櫃、床沿和門口。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出關燈、插拔和起身路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對燈具和床頭櫃，最後以 [房間動線檢查](/zh/room-circulation-check/)測試夜間通行。工具只協助配置，不代替電氣維修。
+先量臥室長寬、床頭燈高度、底座、開關、電線長度、插座、床頭櫃、床沿和門口。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出關燈、插拔和起身路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對燈具和床頭櫃，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試夜間通行。工具只協助配置，不代替電氣維修。
 
 ## 床頭燈開關的好風水是按鍵可辨、光線可控且插頭不被家具拉住
 
@@ -74,7 +74,7 @@ Philips Hue 的照明資料把標準燈泡、整合式 LED 和燈具拆卸方式
 
 燈具完全乾燥後，確認燈罩、燈泡、底座和開關復位，再接回插頭。先短時間測試開關回彈、亮度和閃爍，再在床上坐起、下床、走向門口，確認線材不跨越腳步。不要把手機充電線和燈線混在一起壓在櫃腳下。
 
-可參考 [床頭燈清潔風水](/zh/blog/bedroom-bedside-lamp-cleaning-feng-shui/)處理燈體，也可參考 [床頭燈電線清潔風水](/zh/blog/bedroom-bedside-lamp-cord-cleaning-feng-shui/)處理線材，但本頁重點是開關可及性與夜間操作，不把不同部件混為一談。
+可參考 [床頭燈底座清潔風水](/zh/blog/bedroom-bedside-lamp-base-cleaning-feng-shui/)處理燈體，也可參考 [床頭燈電線清潔風水](/zh/blog/bedroom-bedside-lamp-cord-cleaning-feng-shui/)處理線材，但本頁重點是開關可及性與夜間操作，不把不同部件混為一談。
 
 ## 七日觀察：開關順暢之外，也看夜間是否不必摸黑尋找
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-cooktop-knob-cleaning-feng-shui
   - kitchen-stove-control-knob-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 爐具控制面板的風水問題常被問成「觸控按鍵在哪個方位才旺」，但每天真正影響廚房使用的，通常是面板上沾著油膜、濕手造成誤觸、餘熱尚未退去就開始擦拭、清潔劑殘留在縫隙，或端熱鍋時必須跨過控制區。風水裡的「火有界、氣有序」可以轉譯為熱區、控制區、清潔區和備餐路徑各自可辨識，不能把面板亮不亮直接當成財運或安全結果。
 
-先量廚房長寬、爐具外框、各熱區、控制面板、流理台、抽油煙機、鍋具暫放處、插座、垃圾桶和主要站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開啟控制、端鍋、放置熱鍋和清潔退讓的路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)核對抽屜與垃圾桶，最後用 [房間動線檢查](/zh/room-circulation-check/)測試兩人交會。工具只協助配置，不代替產品說明、瓦斯或電氣安全判斷。
+先量廚房長寬、爐具外框、各熱區、控制面板、流理台、抽油煙機、鍋具暫放處、插座、垃圾桶和主要站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開啟控制、端鍋、放置熱鍋和清潔退讓的路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)核對抽屜與垃圾桶，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試兩人交會。工具只協助配置，不代替產品說明、瓦斯或電氣安全判斷。
 
 ## 控制面板的好風水是標示看得懂、觸控不誤動且清潔有退讓距離
 

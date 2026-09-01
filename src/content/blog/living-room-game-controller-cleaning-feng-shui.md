@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-remote-control-cleaning-feng-shui
   - living-room-tv-console-back-cable-dust-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 遊戲手把是客廳裡會被長時間握住、放到沙發、地毯、茶几和充電站的設備。手汗和皮脂會聚在類比搖桿、扳機、方向鍵與握把縫隙，餅乾屑、寵物毛和灰塵則可能掉進按鍵周圍；若有人邊喝飲料邊遊戲，液體還可能沿著縫隙進入電路。客廳風水常談娛樂、互動和人流，實務上可先驗收手把是否乾淨可握、按鍵是否能正常回彈、充電線不絆腳，以及收納不會把遊戲區變成通道障礙。
 
-先記錄手把型號、是否有電池、充電方式、耳機孔、USB 或其他開口、搖桿帽、沙發、茶几、電視櫃和遊戲主機位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出坐下、握持、放回和充電路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認手把不會卡在沙發縫或被茶几抽屜壓住；多人遊戲時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試手肘、線材和走道。工具不能代替設備製造商、電池安全或維修指引。
+先記錄手把型號、是否有電池、充電方式、耳機孔、USB 或其他開口、搖桿帽、沙發、茶几、電視櫃和遊戲主機位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出坐下、握持、放回和充電路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認手把不會卡在沙發縫或被茶几抽屜壓住；多人遊戲時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試手肘、線材和走道。工具不能代替設備製造商、電池安全或維修指引。
 
 ## 先分辨手汗、碎屑、寵物毛與液體
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-coffee-table-feng-shui
   - living-room-rug-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳腳凳常被問成「沙發前放腳凳會不會擋住財路」「腳凳圓形比較能聚氣嗎」。形狀和位置可以反映居家美感，但腳凳是每天會被踢動、坐上、踩踏、暫放遙控器、搬到客人座位和清潔的家具，真正要先檢查的是沙發與腳凳距離、起身、滑動、桌角、收納重量、兒童攀爬和主要通道。沒有一個腳凳位置能保證財運或家庭和諧；客廳的流動感應先是人能繞行、坐穩、伸腳和收回家具。
 
-先量沙發、腳凳、茶几、電視櫃、門口、窗戶和通往房間的路線。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發與腳凳，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納凳掀蓋、腳踏外框和茶几不互撞；若客廳兼作餐廳或遊戲區，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試家具移動後仍能通過。工具不能替你判斷腳凳承重、輪子或地面摩擦。
+先量沙發、腳凳、茶几、電視櫃、門口、窗戶和通往房間的路線。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發與腳凳，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納凳掀蓋、腳踏外框和茶几不互撞；若客廳兼作餐廳或遊戲區，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試家具移動後仍能通過。工具不能替你判斷腳凳承重、輪子或地面摩擦。
 
 ## 先分清腳踏、座椅和收納任務
 

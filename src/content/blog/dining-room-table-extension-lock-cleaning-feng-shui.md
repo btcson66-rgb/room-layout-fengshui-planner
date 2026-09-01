@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-extension-rail-cleaning-feng-shui
   - dining-room-table-apron-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 伸縮餐桌延伸鎖扣在風水文章裡常被說成「桌子能開就能聚客」，但真正讓使用者困擾的，通常是桌葉沒有對齊、底部鎖扣藏著飯粒、鎖定後仍有晃動、收合時手指靠近夾點，或展開後桌腳把椅子和端菜路徑截斷。風水裡的「聚合、穩定」可以轉譯為桌葉能定位、鎖扣狀態可確認、展開後空間可通行，不能把鎖扣卡不卡直接當成人際或財運結果。
 
-先量餐廳長寬、餐桌收起／展開尺寸、桌葉厚度、鎖扣位置、桌腳、椅子後退距離、餐邊櫃、門片和清潔工具。以 220 × 300 公分餐廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出收起與展開兩種平面，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌葉和桌腳落點，最後以 [房間動線檢查](/zh/room-circulation-check/)測試端菜、入座、起身和掃地。工具只協助配置，不代替家具說明、承重或夾傷判斷。
+先量餐廳長寬、餐桌收起／展開尺寸、桌葉厚度、鎖扣位置、桌腳、椅子後退距離、餐邊櫃、門片和清潔工具。以 220 × 300 公分餐廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出收起與展開兩種平面，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌葉和桌腳落點，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試端菜、入座、起身和掃地。工具只協助配置，不代替家具說明、承重或夾傷判斷。
 
 ## 延伸鎖扣的好風水是開合有順序、鎖定有回饋且桌葉不晃動
 

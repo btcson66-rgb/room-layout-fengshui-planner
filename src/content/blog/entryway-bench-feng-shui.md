@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-shoe-cabinet-feng-shui
   - entryway-doormat-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關穿鞋椅常被問「放在門旁會不會擋財路」「椅背是不是要靠實牆」。傳統空間觀念確實重視入口的整潔、明亮與穩定，但沒有一個椅子方向能保證財運、健康或家人和諧。穿鞋椅是每天進出都會用到的工作家具，座面高度、椅腳穩定、起身時的腳位、門片開啟、鞋櫃門和地面防滑，往往比椅背朝向更能決定玄關是否好用。
 
-規劃前先量門扇完全開啟的範圍、門檻、鞋櫃深度、入口淨寬和通往客廳的路線。再把椅子外框、坐下後膝蓋與提袋的位置畫出來。可以使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較椅子、鞋櫃和門片，也可用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查外框；若玄關需要讓嬰兒車或助行器通過，再搭配 [房間通行寬度檢查](/zh/room-circulation-check/)。工具能協助畫圖，不能替代使用者實際試坐或無障礙評估。
+規劃前先量門扇完全開啟的範圍、門檻、鞋櫃深度、入口淨寬和通往客廳的路線。再把椅子外框、坐下後膝蓋與提袋的位置畫出來。可以使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較椅子、鞋櫃和門片，也可用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查外框；若玄關需要讓嬰兒車或助行器通過，再搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)。工具能協助畫圖，不能替代使用者實際試坐或無障礙評估。
 
 ## 先判斷穿鞋椅要解決的是哪一個入口問題
 

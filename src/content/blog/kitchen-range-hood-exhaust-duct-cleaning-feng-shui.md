@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-baffle-cleaning-feng-shui
   - kitchen-range-hood-filter-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 抽油煙機排煙管清潔風水常被說成「油煙有出口，火氣才不亂」，但排煙管真正處理的是爐具上方的油霧、蒸氣、熱氣與室外排放路徑。回煙可能來自濾網堵塞、風扇髒污、管路接縫、彎折、外部風壓、補風不足或公共管道問題；只擦亮外殼，不能證明管內乾淨。風水可用來討論火源、出口與工作流的界線，但不能保證排煙、防火、空氣品質或財運。
 
-先量廚房長寬、爐具、抽油煙機罩體、排煙管可見段、吊櫃、窗戶、門、冰箱、流理台和備餐站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆洗與檢查需要的站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認吊櫃、櫃門和設備不會壓住管路；若廚房只有一條窄走道，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端鍋、開櫃、清潔和撤離。工具只能協助空間比較，不能判定瓦斯、電氣、排煙管或公共風管安全。
+先量廚房長寬、爐具、抽油煙機罩體、排煙管可見段、吊櫃、窗戶、門、冰箱、流理台和備餐站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆洗與檢查需要的站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認吊櫃、櫃門和設備不會壓住管路；若廚房只有一條窄走道，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端鍋、開櫃、清潔和撤離。工具只能協助空間比較，不能判定瓦斯、電氣、排煙管或公共風管安全。
 
 ## 先分辨表面油膜、管內油垢、風扇髒污與回煙
 

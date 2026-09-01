@@ -16,9 +16,8 @@ keywords:
   - 門框扣片對位檢查
   - 大門關門阻力
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-lock-cleaning-feng-shui
   - entryway-door-closer-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關大門鎖舌扣片在風水裡容易被聯想到門戶接合、內外界線與進出秩序，但真正需要維護的是扣片灰塵、門框凹槽、鎖舌對位、螺絲固定、門扇下垂和關門阻力。扣片表面擦亮，不代表鎖舌已順利進入；門能暫時上鎖，也不代表螺絲、門框或門扇受力正常。本文把「門戶相接、出入有序」轉成可觀察的表面清潔、鎖舌行程、門扇對位、上鎖驗收和家人交接，不把扣片方位當成防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、大門材質、鎖舌扣片、門框凹槽、鎖舌、上下或側邊螺絲、門扇、門鎖、門檻、鞋櫃和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出關門、上鎖、提物和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會限制門扇；開合時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代門鎖或門框維修判斷。
+先記錄玄關約 160 × 240 公分、大門材質、鎖舌扣片、門框凹槽、鎖舌、上下或側邊螺絲、門扇、門鎖、門檻、鞋櫃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出關門、上鎖、提物和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會限制門扇；開合時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代門鎖或門框維修判斷。
 
 ## 先分辨灰塵、砂粒、扣片變形與門扇對位
 

@@ -93,7 +93,7 @@ OSHA 的工作站資料提醒電話、鍵盤與滑鼠等設備要和桌椅一起
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出電話、話筒線、鍵盤、文件與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面與桌外停靠；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放接聽、記錄、起身和清潔。若滑鼠區被擠壓，可讀 [面向房門書桌滑鼠位置](/zh/blog/home-office-desk-facing-door-mouse-placement-feng-shui/)；若通話被打斷，參考 [面向房門書桌電話通話](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出電話、話筒線、鍵盤、文件與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面與桌外停靠；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放接聽、記錄、起身和清潔。若滑鼠區被擠壓，可讀 [面向房門書桌滑鼠位置](/zh/blog/home-office-desk-facing-door-mouse-placement-feng-shui/)；若通話被打斷，參考 [面向房門書桌電話通話](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)。
 
 ### 參考資料
 

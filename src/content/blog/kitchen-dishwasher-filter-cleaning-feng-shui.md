@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-strainer-cleaning-feng-shui
   - kitchen-sandwich-maker-plate-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機在廚房風水裡常被聯想到把髒污帶走、讓餐後秩序回到乾淨，但濾網、噴淋臂、排水口、門邊膠條和機內底部會累積食物殘渣、油膜、皂垢與積水。若把大骨、竹籤或大量油脂直接放入，濾網很快堵住；若拆洗後沒有回裝，洗程可能把殘渣帶進排水。本文把「濁水外流」轉成餐具預處理、濾網清潔、排水驗收和廚房人流的可觀察流程。
 
-先記錄洗碗機型號、濾網結構、噴淋臂、門片開啟範圍、排水管、插座、水槽和餐具暫放區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出收餐、刮渣、裝籃和取碗路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片開啟不撞櫃；多人收餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能取代產品說明、水電或維修判斷。
+先記錄洗碗機型號、濾網結構、噴淋臂、門片開啟範圍、排水管、插座、水槽和餐具暫放區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出收餐、刮渣、裝籃和取碗路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片開啟不撞櫃；多人收餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能取代產品說明、水電或維修判斷。
 
 ## 先分辨濾網殘渣、油膜與排水積水
 

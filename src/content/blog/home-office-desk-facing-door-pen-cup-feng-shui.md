@@ -85,7 +85,7 @@ OSHA 的電腦工作站資料把桌面空間、螢幕位置、滑鼠與身體接
 
 ## 相關工具與延伸閱讀
 
-用 [書桌擺位風水工具](/zh/desk-placement-feng-shui/) 畫門口、桌面與視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較筆筒與設備的外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開門、起身和清潔。若桌面前方還有桌墊，可讀 [書桌對門桌墊配置](/zh/blog/home-office-desk-facing-door-desk-mat-feng-shui/)；若文件常堆在門口側，參考 [書桌對門文件盤隱私](/zh/blog/home-office-desk-facing-door-document-tray-privacy-feng-shui/)。
+用 [書桌擺位風水工具](/zh/desk-placement-feng-shui/) 畫門口、桌面與視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較筆筒與設備的外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開門、起身和清潔。若桌面前方還有桌墊，可讀 [書桌對門桌墊配置](/zh/blog/home-office-desk-facing-door-desk-mat-feng-shui/)；若文件常堆在門口側，參考 [書桌對門文件盤隱私](/zh/blog/home-office-desk-facing-door-document-tray-privacy-feng-shui/)。
 
 ### 參考資料
 

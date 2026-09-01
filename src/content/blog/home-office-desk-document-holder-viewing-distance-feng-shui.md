@@ -85,7 +85,7 @@ OSHA 的文件架資料建議文件與螢幕的高度、距離盡量接近，並
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫桌、螢幕和門窗，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深與文件架底座，最後以 [房間動線檢查](/zh/room-circulation-check/) 回看椅子和桌旁走道。若螢幕靠牆是主問題，可參考 [書桌螢幕離牆與視距](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)；若椅子後方卡住，可參考 [書桌椅背靠牆](/zh/blog/home-office-desk-chair-back-wall-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫桌、螢幕和門窗，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深與文件架底座，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回看椅子和桌旁走道。若螢幕靠牆是主問題，可參考 [書桌螢幕離牆與視距](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)；若椅子後方卡住，可參考 [書桌椅背靠牆](/zh/blog/home-office-desk-chair-back-wall-clearance-feng-shui/)。
 
 ### 參考資料
 

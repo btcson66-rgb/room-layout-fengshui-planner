@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-feng-shui
   - bathroom-toilet-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶噴桿噴嘴的風水問題常被說成「水氣直沖會影響浴室氣場」，但真正需要處理的是噴嘴水垢、噴孔出水變歪、噴桿伸出後無法收回、清潔液濺到座體、插座受潮，或清潔時站位被浴簾和垃圾桶擋住。風水裡的「水路有界」可以轉譯為噴桿可按說明清潔、供水與電源分開、座體保持乾燥和人行動線不被工具阻塞，不能把噴水方向直接當成健康或運勢結果。
 
-先量浴室長寬、馬桶外框、免治座、噴桿伸出距離、供水閥、插座、洗手台、垃圾桶和主要站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出噴桿清潔與擦乾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對馬桶旁工具空間，最後以 [房間動線檢查](/zh/room-circulation-check/)測試開蓋、清潔和離開浴室是否互相干擾。工具只協助配置，不代替衛浴與用電維修。
+先量浴室長寬、馬桶外框、免治座、噴桿伸出距離、供水閥、插座、洗手台、垃圾桶和主要站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出噴桿清潔與擦乾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對馬桶旁工具空間，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試開蓋、清潔和離開浴室是否互相干擾。工具只協助配置，不代替衛浴與用電維修。
 
 ## 噴桿噴嘴的好風水是水垢可辨、伸出可控且清潔時不讓座體泡水
 

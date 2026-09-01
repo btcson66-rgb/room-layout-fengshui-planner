@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-package-drop-zone-feng-shui
   - entryway-bench-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 鑰匙盤在玄關風水裡常被說成「守住家宅」「把財庫鎖起來」，但它最重要的工作是讓鑰匙、門禁卡和車鑰匙在回家與出門時有固定落點。盤子太小，物品會掉到地上；太靠門，門扇或雨具會把它撞翻；放在公開可見處，還可能讓備用鑰匙、地址標籤和門禁資訊暴露。沒有鑰匙盤能保證財運或家宅平安，真正穩定的入口是找得到、拿得快、不絆倒，而且不把安全資訊放在門外。
 
-先量大門、門把迴轉、鞋櫃檯面、鑰匙盤、包包暫放和穿鞋位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看回家後的第一段路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認盤子不會和門片、包包或鞋櫃碰撞；若玄關是狹窄通道，再用 [房間通行寬度檢查](/zh/room-circulation-check/)看家人抱物時是否能安全通過。工具不會替你判斷門鎖、門禁或備用鑰匙管理。
+先量大門、門把迴轉、鞋櫃檯面、鑰匙盤、包包暫放和穿鞋位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看回家後的第一段路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認盤子不會和門片、包包或鞋櫃碰撞；若玄關是狹窄通道，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)看家人抱物時是否能安全通過。工具不會替你判斷門鎖、門禁或備用鑰匙管理。
 
 ## 先把每日鑰匙與備用鑰匙分開
 

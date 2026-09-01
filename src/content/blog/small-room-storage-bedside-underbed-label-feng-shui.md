@@ -91,7 +91,7 @@ EPA 的室內空氣資料可作床下灰塵、通風和清潔順序的背景；C
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床下箱、床尾索引、拉出外框和站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較箱體與床架高度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放找物、清潔、換季和回位。若想建立分類，可讀 [床邊收納標籤系統](/zh/blog/small-room-storage-bedside-label-system-feng-shui/)；若考慮掛袋，參考 [床邊收納袋](/zh/blog/small-room-storage-bedside-storage-bag-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床下箱、床尾索引、拉出外框和站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較箱體與床架高度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放找物、清潔、換季和回位。若想建立分類，可讀 [床邊收納標籤系統](/zh/blog/small-room-storage-bedside-label-system-feng-shui/)；若考慮掛袋，參考 [床邊收納袋](/zh/blog/small-room-storage-bedside-storage-bag-feng-shui/)。
 
 ### 參考資料
 

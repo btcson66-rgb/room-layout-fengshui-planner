@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-air-conditioner-feng-shui
   - living-room-ceiling-fan-feng-shui
@@ -56,7 +56,7 @@ howToSteps:
 
 設備在安靜時運轉，家人可能願意長時間使用；若高風速像持續的白噪音，電視音量、談話和睡前休息就會受到影響。不要只比較規格上的分貝，應在沙發、餐桌和夜間各坐十分鐘，聽低速、高速、啟動和濾網髒污提示的聲音。顯示燈也可能在暗室造成干擾，可依說明關閉或調低亮度，但不要為了遮光把進風口蓋住。
 
-電線要沿牆或家具側邊整理，不能橫跨茶几前、沙發起身處或從地毯下穿過主要路徑。若插座離設備很遠，先重新評估位置，不要用多個延長線堆在潮濕窗邊或被家具壓住。家中有幼兒、長者或寵物時，電源線、插頭、機器重量、傾倒可能性和夜間辨識更重要；必要時可把這些條件帶入 [房間通行寬度檢查](/zh/room-circulation-check/)。
+電線要沿牆或家具側邊整理，不能橫跨茶几前、沙發起身處或從地毯下穿過主要路徑。若插座離設備很遠，先重新評估位置，不要用多個延長線堆在潮濕窗邊或被家具壓住。家中有幼兒、長者或寵物時，電源線、插頭、機器重量、傾倒可能性和夜間辨識更重要；必要時可把這些條件帶入 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)。
 
 ## 濾網、異味和臭氧不能用裝飾補救
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - feng-shui-entry-bedroom-doorway
   - entryway-screen-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 門鈴攝影機在玄關風水裡常被解讀為守住入口、辨識外來氣和讓家人更安心，因此有人會把鏡頭對準整條走廊，或把門鈴放到最顯眼的位置。但門口攝影機的實務問題包括視線、逆光、夜間照明、門片開合、訪客站位、鄰居與路人入鏡、錄影保存、電線、防雨和維修。門口設備也可能拍到不需要蒐集的人與場景；「守門」不能變成毫無邊界的錄影。沒有任何門鈴攝影機位置能保證防盜、家運或安全；本文把「守住入口」落到可說明、可調整、可停用的視線與隱私設計。
 
-先量門片、門框、門鈴、鏡頭、訪客站位、門廊、鄰居門、公共走道、窗戶與包裹落點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鏡頭與門片方向，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門鈴本體和電線不妨礙開門；玄關狹窄時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試家人、訪客和包裹同時出現。工具不能代替所在地法律、社區規約、個資與隱私專業意見。
+先量門片、門框、門鈴、鏡頭、訪客站位、門廊、鄰居門、公共走道、窗戶與包裹落點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鏡頭與門片方向，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門鈴本體和電線不妨礙開門；玄關狹窄時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試家人、訪客和包裹同時出現。工具不能代替所在地法律、社區規約、個資與隱私專業意見。
 
 ## 先定義門鈴需要看見什麼
 

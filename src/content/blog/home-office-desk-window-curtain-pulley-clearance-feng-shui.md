@@ -105,7 +105,7 @@ CPSC 的窗簾安全資料指出，有幼兒時無繩產品是更安全的選項
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗戶、拉繩、桌子與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較椅子後退；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾和離席。若窗光反射是主問題，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)；若百葉角度是瓶頸，可看 [書桌窗簾百葉](/zh/blog/home-office-desk-task-light-window-blinds-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗戶、拉繩、桌子與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較椅子後退；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾和離席。若窗光反射是主問題，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)；若百葉角度是瓶頸，可看 [書桌窗簾百葉](/zh/blog/home-office-desk-task-light-window-blinds-feng-shui/)。
 
 ### 參考資料
 

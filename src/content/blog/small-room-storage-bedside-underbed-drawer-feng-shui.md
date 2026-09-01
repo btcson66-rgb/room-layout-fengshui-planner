@@ -91,7 +91,7 @@ CPSC 的家具安全資料提醒，重家具與有抽屜的家具要依產品和
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床下抽屜完全拉出、床尾和房門區，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床架、地毯和滑輪外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取物、吸塵和夜間離床。若床下收納涉及床架開啟，可讀 [收納床開啟距離](/zh/blog/small-room-storage-bed-opening-clearance-feng-shui/)；若考慮床邊移動物件，參考 [床邊推車動線](/zh/blog/small-room-storage-bedside-rolling-cart-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床下抽屜完全拉出、床尾和房門區，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床架、地毯和滑輪外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、吸塵和夜間離床。若床下收納涉及床架開啟，可讀 [收納床開啟距離](/zh/blog/small-room-storage-bed-opening-clearance-feng-shui/)；若考慮床邊移動物件，參考 [床邊推車動線](/zh/blog/small-room-storage-bedside-rolling-cart-clearance-feng-shui/)。
 
 ### 參考資料
 

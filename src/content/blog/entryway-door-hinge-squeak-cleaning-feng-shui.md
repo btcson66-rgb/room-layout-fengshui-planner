@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-hinge-cleaning-feng-shui
   - entryway-door-threshold-corner-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關門鉸鏈異音在風水語境裡常被說成「門響會驚動財氣」，但真正要處理的是鉸鏈積著灰塵、潤滑不足、螺絲鬆動、門片下沉，或門邊開始磨到門框和門檻。風水裡的「門路順」可以轉譯為門片能平穩開關、鉸鏈狀態可辨、鎖具能到位與進出不需要用肩膀硬推，不能把一聲異音直接當成財運或安全結果。
 
-先量玄關長寬、門片寬高、鉸鏈數量、門框、門檻、鞋櫃、傘架、地墊與開門掃掠區。以 180 × 240 公分玄關為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、換鞋、搬物與清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對鞋櫃和門片，最後以 [房間動線檢查](/zh/room-circulation-check/)測試進出交會。工具只協助配置，不代替門體、鎖具和鉸鏈維修。
+先量玄關長寬、門片寬高、鉸鏈數量、門框、門檻、鞋櫃、傘架、地墊與開門掃掠區。以 180 × 240 公分玄關為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、換鞋、搬物與清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對鞋櫃和門片，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試進出交會。工具只協助配置，不代替門體、鎖具和鉸鏈維修。
 
 ## 鉸鏈的好風水是聲音來源可追、門片不下沉且鎖定不靠硬推
 

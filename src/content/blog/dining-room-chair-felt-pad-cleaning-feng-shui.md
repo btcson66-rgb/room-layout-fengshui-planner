@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-chair-foot-cleaning-feng-shui
   - dining-room-chair-leg-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐椅椅腳毛氈墊的風水問題常被說成「拉椅聲會破壞餐氣」，但實際要處理的是毛氈墊把砂粒夾在底面，拉椅時像砂紙一樣磨地板，墊片脫膠後椅腳直接接觸地面，或椅腳受力不均讓入座和端菜變得不穩。風水裡的「和、穩、聚」可以轉譯為椅子能順著地面移動、墊片能檢查和家庭成員不必用力拖拉，不能把聲音直接當成人際或財運結果。
 
-先量餐廳長寬、餐桌、椅子外框、椅腳直徑、毛氈墊尺寸、地板材質、餐邊櫃、門片和拉椅後退距離。以 220 × 300 公分餐廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座、拉椅和端菜路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對椅腳與桌腳，最後以 [房間動線檢查](/zh/room-circulation-check/)測試多人交會。工具只協助配置，不代替家具、地板和防滑判斷。
+先量餐廳長寬、餐桌、椅子外框、椅腳直徑、毛氈墊尺寸、地板材質、餐邊櫃、門片和拉椅後退距離。以 220 × 300 公分餐廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座、拉椅和端菜路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對椅腳與桌腳，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試多人交會。工具只協助配置，不代替家具、地板和防滑判斷。
 
 ## 毛氈墊的好風水是底面乾淨、墊片貼合且椅子不歪斜
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-caddy-storage-feng-shui
   - bathroom-shower-caddy-rust-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 淋浴置物架風水常被問成「置物架放在浴室哪個角落才不會漏財」，但每天真正要處理的是：洗髮精和沐浴乳是否在架上滴漏、皂垢是否堵住排水孔、金屬表面是否生鏽、吸盤或掛架是否滑移，以及取瓶時手臂會不會伸過熱水或濕滑地面。風水裡的「清」可以轉譯為瓶罐好拿、架面可沖洗、積水能排出、固定狀態可看見和洗澡不必跨越危險區，不能用置物架方位保證財運、乾燥或防滑。
 
-先量浴室長寬、淋浴區、置物架寬深高、瓶罐高度、牆面、蓮蓬頭、門片、地漏、門檻和站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取瓶、洗澡、沖洗置物架和離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認架體、門片和手部活動不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查洗澡後的濕腳路徑。工具只協助配置，不代替牆面固定、防滑、防水或清潔劑判斷。
+先量浴室長寬、淋浴區、置物架寬深高、瓶罐高度、牆面、蓮蓬頭、門片、地漏、門檻和站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取瓶、洗澡、沖洗置物架和離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認架體、門片和手部活動不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查洗澡後的濕腳路徑。工具只協助配置，不代替牆面固定、防滑、防水或清潔劑判斷。
 
 ## 淋浴置物架的好風水是瓶底擦得到、皂垢排得出且固定狀態可檢查
 

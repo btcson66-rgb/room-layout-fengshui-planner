@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-feng-shui-layout
   - balcony-clothes-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台排水孔在風水裡常被聯想到水氣流動、財水進出和把濁水送離居家，有人會問排水孔被盆栽遮住、洗衣機放在陽台或排水方向朝外是否會漏財。但陽台真正要處理的是雨水能否排走、排水孔是否被落葉和泥土堵住、盆栽與晾衣架會不會傾倒、洗衣機排水是否合適，以及陽台是否仍能作為安全通行或避難空間。沒有任何排水孔位置能保證財運、平安或防颱；本文把「水路順」轉成可檢查的排水、固定與清空流程。
 
-先量陽台、排水孔、落水頭、欄杆、門扇、盆栽、洗衣機、曬衣架和室內外高低差。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較盆栽靠牆、洗衣機側邊與空出排水帶的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認大型物件、門扇和曬衣架不互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試清理、晾衣、開門和必要通行。工具只能協助配置，不取代建築排水、防颱或避難專業判斷。
+先量陽台、排水孔、落水頭、欄杆、門扇、盆栽、洗衣機、曬衣架和室內外高低差。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較盆栽靠牆、洗衣機側邊與空出排水帶的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認大型物件、門扇和曬衣架不互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清理、晾衣、開門和必要通行。工具只能協助配置，不取代建築排水、防颱或避難專業判斷。
 
 ## 排水孔上方不要變成固定堆放區
 

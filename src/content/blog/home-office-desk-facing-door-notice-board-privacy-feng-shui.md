@@ -87,7 +87,7 @@ OSHA 的工作站資料提醒螢幕、桌面和常用物品要依使用者與工
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出公告板、桌子、房門和文件視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較板框突出和取物高度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放進門、轉身與清潔。若你的主要問題是通話，可讀 [面向房門通話隱私](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)；若主要是螢幕視線，參考 [面向房門螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出公告板、桌子、房門和文件視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較板框突出和取物高度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放進門、轉身與清潔。若你的主要問題是通話，可讀 [面向房門通話隱私](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)；若主要是螢幕視線，參考 [面向房門螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)。
 
 ### 參考資料
 

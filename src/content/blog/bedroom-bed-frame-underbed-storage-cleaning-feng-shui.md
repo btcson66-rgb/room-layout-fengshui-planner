@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-frame-foot-cleaning-feng-shui
   - bedroom-mattress-protector-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床下收納在臥室風水裡常被聯想到藏物、承托與睡眠下方的氣流，但真正需要維護的是床架底部、地面、收納箱、衣物、灰塵、毛髮、潮氣和夜間起身動線。床下塞滿紙箱或濕衣物，會讓人無法查看地面與床架；收納箱貼著牆或地板，潮痕出現時也不容易被發現。本文把「床下不滯」轉成可觀察的清空、除塵、乾燥、分類與通行驗收，不把床下是否放物當成睡眠、健康或運勢保證。
 
-先記錄床架高度、底板、床腳、收納箱尺寸、地面、靠牆面、窗戶和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)規劃拉出箱體與清潔工具的暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認床邊起身和取物路徑；床下淨空與箱體尺寸可用 [房間通行寬度檢查](/zh/room-circulation-check/)核對。工具不能取代床架說明與潮濕處理。
+先記錄床架高度、底板、床腳、收納箱尺寸、地面、靠牆面、窗戶和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)規劃拉出箱體與清潔工具的暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認床邊起身和取物路徑；床下淨空與箱體尺寸可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)核對。工具不能取代床架說明與潮濕處理。
 
 ## 先分辨床底灰塵、毛髮、潮痕與異味
 

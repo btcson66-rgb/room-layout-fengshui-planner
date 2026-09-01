@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-desk-cable-cleaning-feng-shui
   - home-office-desk-drawer-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 辦公椅腳輪承受椅子、使用者和移動時的重量，輪子縫隙容易纏住頭髮、線頭和灰塵；輪軸有異物、腳輪沒有插到底、地毯邊翹起或輪子不適合地板，也會讓椅子難以移動。書房風水常把「椅子能退能轉」和工作支持感連在一起，但可檢查的內容是椅子能否安全後退、腳輪是否固定、桌下線材是否不纏腳，以及地板是否被反覆刮傷，不能把滑動順暢直接當成工作運或升遷保證。
 
-先記錄椅子品牌、腳輪數量、地板材質、桌腳、電源線、抽屜和椅背後退距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身和取物的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌面、椅座和扶手是否互撞，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)確認後退後不會擋住門口。
+先記錄椅子品牌、腳輪數量、地板材質、桌腳、電源線、抽屜和椅背後退距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身和取物的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌面、椅座和扶手是否互撞，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認後退後不會擋住門口。
 
 ## 輪子、輪軸、椅腳和地面要分開
 

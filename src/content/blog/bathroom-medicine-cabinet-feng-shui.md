@@ -18,9 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - bathroom-storage-feng-shui
+  - bathroom-toothbrush-storage-feng-shui
   - bathroom-mirror-feng-shui
   - small-room-storage-zones
 howToName: "藥品防潮、分類、上鎖與取用路線檢查"
@@ -36,7 +36,7 @@ howToSteps:
 
 藥櫃在居家風水裡常被聯想到照護、修復和把家人的日常需要收好，因此有人會問放在浴室哪一面牆、鏡櫃後方或某個方位是否能帶來健康。但藥品不是單純的收納物，保存環境、原包裝、藥袋、仿單、開封日期、兒童可及性和誤用風險都比方位口號優先。浴室又是家中常見的濕熱區，洗澡蒸氣、洗手台飛濺、通風和陽光都可能影響收納判斷。沒有任何藥櫃位置能保證健康或治療結果；本文把「照護有序」轉成可檢查的保存、分類和取用流程。
 
-先量藥櫃、洗手台、淋浴區、馬桶、浴室門、排風口、窗戶、插座、鏡面和兒童可能踩踏的家具。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較浴室內外兩種收納位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃門開啟時不會撞到人，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間取藥與清潔動線。工具不能取代醫師、藥師、藥品說明或兒童安全判斷。
+先量藥櫃、洗手台、淋浴區、馬桶、浴室門、排風口、窗戶、插座、鏡面和兒童可能踩踏的家具。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較浴室內外兩種收納位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃門開啟時不會撞到人，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間取藥與清潔動線。工具不能取代醫師、藥師、藥品說明或兒童安全判斷。
 
 ## 「藥氣」與實際保存條件要分開
 

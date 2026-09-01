@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-monitor-feng-shui
   - home-office-desk-lamp-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 辦公椅在風水裡常被聯想到靠山、穩定與工作承托，有人會問椅背一定要靠牆、不能背門，或黑色高背椅能不能幫助升職。實際需要先確認的是坐面高度是否合適、腳能否穩定接觸地面、螢幕與鍵盤是否配合、桌下能否伸展、轉身是否會撞家具，以及長時間工作時是否能改變姿勢。沒有一張椅子或一個方位能保證職涯結果；本文把「靠山」轉成背部支撐、可調整設定和不堵通道的工作流程。
 
-先量房間長寬、書桌、辦公椅最大後仰與旋轉範圍、螢幕、鍵盤、抽屜、門扇、窗、插座和桌下淨空，並記錄使用者坐下、起身、伸腿和搬椅子的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、側向門口和窗邊的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認椅背後仰不會撞牆或櫃門，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試工作、取物、清掃和離開。工具只協助配置，不取代職安、復健或個人醫療建議。
+先量房間長寬、書桌、辦公椅最大後仰與旋轉範圍、螢幕、鍵盤、抽屜、門扇、窗、插座和桌下淨空，並記錄使用者坐下、起身、伸腿和搬椅子的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、側向門口和窗邊的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認椅背後仰不會撞牆或櫃門，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試工作、取物、清掃和離開。工具只協助配置，不取代職安、復健或個人醫療建議。
 
 ## 先分清風水的靠山與椅背支撐
 

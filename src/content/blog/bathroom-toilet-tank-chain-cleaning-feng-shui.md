@@ -16,9 +16,8 @@ keywords:
   - 馬桶水箱漏水檢查
   - 浴室沖水動線
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-flush-handle-cleaning-feng-shui
   - bathroom-toilet-flush-button-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶水箱鏈條在風水裡容易被聯想到排除、流動與「把濁氣帶走」，但真正需要維護的是水垢、鏽蝕、鏈條長度、止水皮、浮球干涉、按鈕回位和持續進水。水箱蓋蓋回去看不到，不代表鏈條沒有卡住；沖水一次正常，也不代表連續使用後不會漏水。本文把「污水有去處」轉成可觀察的關水、辨識零件、可及清潔、回位和漏水交接，不把沖水方向當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、馬桶型式、水箱蓋、按鈕或拉桿、鏈條、止水皮、浮球、進水閥、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)畫出開蓋、沖水和清潔路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認馬桶旁沒有堆放清潔用品；水箱查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代馬桶零件、給排水或維修判斷。
+先記錄浴室約 180 × 240 公分、馬桶型式、水箱蓋、按鈕或拉桿、鏈條、止水皮、浮球、進水閥、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出開蓋、沖水和清潔路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認馬桶旁沒有堆放清潔用品；水箱查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代馬桶零件、給排水或維修判斷。
 
 ## 先分辨水垢、鏽蝕、鏈條卡住與持續進水
 

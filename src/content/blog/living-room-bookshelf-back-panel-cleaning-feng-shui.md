@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-bookshelf-feng-shui
   - living-room-display-cabinet-glass-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳書櫃背板的風水問題常被說成「背有靠才穩」，但實際要面對的是背板與牆面之間卡著灰塵、紙屑和寵物毛，外牆冷凝或漏水留下潮痕，電線被壓在家具後方，或書櫃太重而無法安全拉開清潔。風水裡的「有靠」可以轉譯為家具固定、牆面可檢查、背板能乾燥和前方通道不被書櫃切斷，不能把靠牆位置直接當成安定或財運結果。
 
-先量客廳長寬、書櫃寬高深、背板材質、牆面、踢腳板、插座、電線、窗戶、沙發和清掃空間。以 360 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出書櫃、沙發和取書站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與牆面，最後以 [房間動線檢查](/zh/room-circulation-check/)測試吸塵、擦背板和撤離路徑。工具只協助配置，不代替家具固定、電氣和潮濕維修。
+先量客廳長寬、書櫃寬高深、背板材質、牆面、踢腳板、插座、電線、窗戶、沙發和清掃空間。以 360 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出書櫃、沙發和取書站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與牆面，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試吸塵、擦背板和撤離路徑。工具只協助配置，不代替家具固定、電氣和潮濕維修。
 
 ## 書櫃背板的好風水是靠牆穩定、背面可查且前方不堵住通道
 

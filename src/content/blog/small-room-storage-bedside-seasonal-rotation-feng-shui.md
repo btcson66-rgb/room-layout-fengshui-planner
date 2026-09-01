@@ -85,7 +85,7 @@ EPA 的室內空氣資料可作灰塵、通風與潮濕管理的背景；衣物�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床邊箱、封存區、暫放區與搬運路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載與開口外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取衣、換床單、清潔和出房。若你需要固定補貨節奏，可讀 [床邊補貨週期](/zh/blog/small-room-storage-bedside-restock-cycle-feng-shui/)；若要處理床下衣物，參考 [床下換季衣物收納](/zh/blog/small-room-storage-bedside-underbed-seasonal-clothes-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床邊箱、封存區、暫放區與搬運路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載與開口外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取衣、換床單、清潔和出房。若你需要固定補貨節奏，可讀 [床邊補貨週期](/zh/blog/small-room-storage-bedside-restock-cycle-feng-shui/)；若要處理床下衣物，參考 [床下換季衣物收納](/zh/blog/small-room-storage-bedside-underbed-seasonal-clothes-feng-shui/)。
 
 ### 參考資料
 

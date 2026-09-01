@@ -17,7 +17,7 @@ keywords:
   - 音響插頭安全檢查
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-speaker-stand-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳喇叭線材在風水裡常被聯想到聲音流動、連結與氣場不亂，但真正需要維護的是灰塵、線材受拉、折彎、插頭、接點、家具移動和家人通行。線材藏在電視櫃後或地毯下，外觀可能很整齊，卻不代表能安全查看與拔電；清潔時拖動喇叭，也可能把接點拉鬆。本文把「連結順暢」轉成可觀察的斷電、辨識、除塵、走線、固定與絆倒驗收，不把線材方向當成音質、人緣或運勢保證。
 
-先記錄喇叭、擴大機、線材長度、接頭、插座、家具、地毯、牆面和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出聆聽、清潔和拔電路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認線材不切入人流；需要穿過櫃體或牆角時，可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對彎折和出口空間。工具只能協助走線規劃，不能取代設備說明、電氣安全和維修判斷。
+先記錄喇叭、擴大機、線材長度、接頭、插座、家具、地毯、牆面和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出聆聽、清潔和拔電路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認線材不切入人流；需要穿過櫃體或牆角時，可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對彎折和出口空間。工具只能協助走線規劃，不能取代設備說明、電氣安全和維修判斷。
 
 ## 先分辨灰塵、破皮、受拉與插頭鬆脫
 

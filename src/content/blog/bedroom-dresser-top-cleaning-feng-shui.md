@@ -18,11 +18,11 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-dresser-drawer-rail-cleaning-feng-shui
   - bedroom-bedside-table-cleaning-feng-shui
-  - bedroom-mirror-frame-dust-cleaning-feng-shui
+  - bathroom-mirror-frame-dust-cleaning-feng-shui
 howToName: "臥室梳妝台面、鏡面物品與臥室通道檢查"
 howToTotalTime: "PT30M"
 howToSteps:

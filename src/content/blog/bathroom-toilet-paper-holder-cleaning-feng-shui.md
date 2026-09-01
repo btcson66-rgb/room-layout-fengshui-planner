@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-paper-holder-feng-shui
   - bathroom-washbasin-faucet-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室衛生紙架清潔風水常被問成「馬桶旁放紙會不會把財沖走」，但衛生紙架每天面對紙屑、手部接觸、洗手水花、淋浴蒸氣、清潔劑和濕氣。紙卷若靠近水源，可能受潮、破損或沾到清潔水；架體底座若有皂垢、鏽蝕或鬆動，換卷和取紙時會承受拉扯；架子若突出在門片或馬桶旁，使用者可能為了拿紙扭身、碰撞或跨過濕地。清潔和位置應以乾燥、可取、可換、可擦和固定穩定來驗證，沒有一個紙架方位能保證財運或健康。
 
-先量浴室長寬、馬桶、洗手台、淋浴區、門片開啟弧線、衛生紙架外框與使用者坐下、起身和取紙位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出紙卷、手臂、門片和清潔工具的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認架體不會碰到水龍頭、馬桶蓋或門框；空間很窄時搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試清潔和進出。工具只能協助位置比較，不能確認牆內管線、防水層或固定承重。
+先量浴室長寬、馬桶、洗手台、淋浴區、門片開啟弧線、衛生紙架外框與使用者坐下、起身和取紙位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出紙卷、手臂、門片和清潔工具的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認架體不會碰到水龍頭、馬桶蓋或門框；空間很窄時搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清潔和進出。工具只能協助位置比較，不能確認牆內管線、防水層或固定承重。
 
 ## 先辨認紙屑、水痕與鏽蝕來源
 

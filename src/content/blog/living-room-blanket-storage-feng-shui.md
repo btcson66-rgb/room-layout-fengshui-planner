@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-rug-feng-shui
   - living-room-coffee-table-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳毛毯在風水裡常被聯想到溫暖、照顧與家人願意停留，有人會問毛毯疊在沙發左側是否比較聚人氣，或選紅色、米色能不能讓家人更和氣。真正需要先處理的是：這條毯子是乾淨備用、正在使用、已沾汗或食物，還是洗後尚未乾？毛毯會不會掉到地面、遮住插座、壓住暖氣出風口，或讓寵物與幼兒把布料拖進通道？沒有任何顏色或方位能替代清潔、乾燥與收放規則；本文把「客廳有溫度」轉成可辨識的布品狀態、固定落點和可觀察的使用流程。
 
-先量客廳長寬、沙發深度、茶几、電視櫃、收納籃、插座、冷氣或電暖設備的位置，並記錄毛毯攤開、對折與捲起的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發側籃、電視櫃抽屜和獨立收納櫃的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認籃子不會頂住櫃門、插座或散熱區，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端茶、起身、掃地與多人交會。工具只協助配置，不取代寢具洗滌標示、材質判斷或過敏照護建議。
+先量客廳長寬、沙發深度、茶几、電視櫃、收納籃、插座、冷氣或電暖設備的位置，並記錄毛毯攤開、對折與捲起的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發側籃、電視櫃抽屜和獨立收納櫃的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認籃子不會頂住櫃門、插座或散熱區，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端茶、起身、掃地與多人交會。工具只協助配置，不取代寢具洗滌標示、材質判斷或過敏照護建議。
 
 ## 先替每條毛毯標記目前狀態
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-feng-shui
   - kitchen-electric-kettle-scale-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡機在廚房風水裡常被聯想到香氣、招待和人際往來，但水箱、出水口、蒸氣孔、滴水盤與咖啡渣盒其實是每天接觸水、熱氣、咖啡油和細小殘渣的設備部位。若水箱補水時會滴到插座，清潔出水口時把液體灌入機體，或熱杯必須穿過家人的備餐路徑，單靠「香氣聚人」的說法不能解決問題。本文把風水中的清濁分界，轉成水垢能看見、機體能乾燥、熱區不阻塞和清潔工具有固定落點的工作流程。
 
-先記錄咖啡機型號、說明書要求、水箱容量、濾芯或除垢方式、出水口高度、蒸氣孔方向、滴水盤位置和插座距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出咖啡機、水槽、爐具、杯子與主要通道，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱抽出不會撞到上櫃；多人共用廚房時，可再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端熱飲和補水。工具只能協助空間測量，不能取代產品說明、電氣檢查或維修判斷。
+先記錄咖啡機型號、說明書要求、水箱容量、濾芯或除垢方式、出水口高度、蒸氣孔方向、滴水盤位置和插座距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出咖啡機、水槽、爐具、杯子與主要通道，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱抽出不會撞到上櫃；多人共用廚房時，可再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端熱飲和補水。工具只能協助空間測量，不能取代產品說明、電氣檢查或維修判斷。
 
 ## 先把水箱、出水口和滴水盤分成三種污垢
 

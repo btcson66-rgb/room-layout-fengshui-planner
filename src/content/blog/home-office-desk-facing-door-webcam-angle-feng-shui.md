@@ -95,7 +95,7 @@ OSHA 的工作站資料建議螢幕與使用者、鍵盤、桌子和椅子一起
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫房門、桌子、鏡頭與背景視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較支架和門片空間；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開門、離席和清潔。若螢幕隱私是主題，可看 [面向房門螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)；若椅子後退是瓶頸，參考 [面向房門椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫房門、桌子、鏡頭與背景視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較支架和門片空間；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開門、離席和清潔。若螢幕隱私是主題，可看 [面向房門螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)；若椅子後退是瓶頸，參考 [面向房門椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)。
 
 ### 參考資料
 

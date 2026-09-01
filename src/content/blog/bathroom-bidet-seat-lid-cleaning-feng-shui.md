@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-spray-nozzle-cleaning-feng-shui
   - bathroom-bidet-remote-control-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶便蓋的風水常被說成「廁所蓋住就能留住氣」，但真正需要分辨的是便蓋轉軸、座體電氣、清潔劑、水氣和拆裝復位。風水裡的「收口」可以轉譯為便蓋能穩定開合、座體不被水沖、清潔劑不殘留、使用者不必踩著濕地拆裝，不能把便蓋關上直接說成守財或健康結果。
 
-先量浴室長寬、馬桶座、便蓋開啟高度、插座、洗手台、淋浴濕區和門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示便蓋開合，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時有手部空間，最後用 [房間動線檢查](/zh/room-circulation-check/)看拆下便蓋後工具與水桶是否堵住出口。
+先量浴室長寬、馬桶座、便蓋開啟高度、插座、洗手台、淋浴濕區和門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示便蓋開合，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時有手部空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看拆下便蓋後工具與水桶是否堵住出口。
 
 ## 免治馬桶便蓋的好風水是開合平順、座體乾燥與復位可靠
 

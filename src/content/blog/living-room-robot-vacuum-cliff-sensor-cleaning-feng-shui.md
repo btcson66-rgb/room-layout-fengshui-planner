@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-robot-vacuum-charging-contacts-cleaning-feng-shui
   - living-room-robot-vacuum-dock-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人懸崖感測器的風水常被說成「避開缺角與下陷」，但真正要處理的是感測窗灰塵、反光地面、地毯邊、樓梯落差和清掃路徑。風水裡的「避險」可以轉譯為機器人能辨認地面邊界、不撞家具、不因濕污誤判，以及人行道和機器人路徑有清楚分界，不能把感測器正常直接說成客廳安全或聚財保證。
 
-先量客廳長寬、樓梯或門檻落差、地毯厚度、機器人高度、沙發、茶几和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示地面邊界，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具底部高度，最後用 [房間動線檢查](/zh/room-circulation-check/)看清掃時是否與人行交會。
+先量客廳長寬、樓梯或門檻落差、地毯厚度、機器人高度、沙發、茶几和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示地面邊界，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具底部高度，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看清掃時是否與人行交會。
 
 ## 懸崖感測器的好風水是落差可辨、感測窗乾淨與路徑不混亂
 
