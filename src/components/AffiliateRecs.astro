@@ -39,6 +39,7 @@ const products = showAll ? selectedProducts : selectedProducts.slice(0, Math.max
           <div class="affiliate-recs__body">
             <h3>{product.name}</h3>
             <p>{product.description}</p>
+            {product.optionalPriceLabel && <p class="affiliate-recs__price">{product.optionalPriceLabel}</p>}
             <p class="affiliate-recs__shop">來源商店：{product.shop}</p>
             <ul class="affiliate-recs__tags" aria-label="情境標籤">
               {product.tags.map((tag) => <li>{tag}</li>)}
@@ -57,7 +58,7 @@ const products = showAll ? selectedProducts : selectedProducts.slice(0, Math.max
         </article>
       ))}
     </div>
-    <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；部分圖片來自品牌官方或公開商品頁，其餘為本站製作並清楚標示商品編號的居家示意圖，款式與顏色仍以蝦皮商品頁為準。本區塊含蝦皮聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。商品名稱、規格、庫存與其他資訊可能變動，請以蝦皮商品頁為準。</p>
+    <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以蝦皮商品頁為準。本區塊含蝦皮聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以蝦皮商品頁為準。</p>
   </section>
 )}
 
@@ -103,7 +104,7 @@ const products = showAll ? selectedProducts : selectedProducts.slice(0, Math.max
   .affiliate-recs__card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); background: var(--color-surface); }
   .affiliate-recs__body { display: grid; gap: var(--space-2); }
   .affiliate-recs__card h3 { font-size: 1.05rem; }
-  .affiliate-recs__shop, .affiliate-recs__disclosure { color: var(--color-muted); font-size: var(--text-sm); }
+  .affiliate-recs__shop, .affiliate-recs__price, .affiliate-recs__disclosure { color: var(--color-muted); font-size: var(--text-sm); }
   .affiliate-recs__tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
   .affiliate-recs__tags li { border: 1px solid var(--color-border); border-radius: 999px; padding: 0.05rem 0.45rem; color: var(--color-muted); font-size: var(--text-xs); }
   .affiliate-recs__card .button { justify-self: start; }
