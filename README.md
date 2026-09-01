@@ -73,6 +73,7 @@ Copy `.env.example` to `.env` if needed.
 
 ```bash
 PUBLIC_GA_ID=
+PUBLIC_AFFILIATE_ENABLED=true
 PUBLIC_ADSENSE_CLIENT=
 BREVO_API_KEY=
 BREVO_ROOMFENG_LIST_ID=
@@ -81,6 +82,8 @@ BREVO_FUNNYTOOLS_LIST_ID=
 ```
 
 If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
+
+`PUBLIC_AFFILIATE_ENABLED` controls the optional public Shopee support catalogue and contextual article cards. It is enabled by default when unset; set it explicitly to `false` to hide those cards. The free planner and editorial content remain available either way.
 
 If `PUBLIC_ADSENSE_CLIENT` is set at build time, the shared head component injects the Google AdSense script site-wide and `AdSlot.astro` renders live ad units with each page's configured slot. The production AdSense value for `roomfeng.win` is:
 

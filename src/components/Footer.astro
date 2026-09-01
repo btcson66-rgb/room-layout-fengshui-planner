@@ -10,6 +10,7 @@ const { lang = 'zh' } = Astro.props;
 const t = lang === 'en' ? en : zh;
 const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
 const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
+const supportHref = '/support/';
 ---
 
 <footer class="site-footer">
@@ -23,6 +24,7 @@ const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furni
         <li><a href="/disclaimer/">{t.footer.disclaimer}</a></li>
         <li><a href="/changelog/">{t.footer.changelog}</a></li>
         {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
+        <li><a href={supportHref}>支持我們</a></li>
         <li><a href={plannerHref}>{t.nav.planner}</a></li>
         <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
       </ul>
