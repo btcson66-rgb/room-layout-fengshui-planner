@@ -995,6 +995,10 @@ export const reviewReadyBlogSlugs = new Set([
   'bedroom-bed-headboard-wall-curtain-fabric-weight-feng-shui',
   'home-office-desk-facing-door-desk-mat-feng-shui',
   'small-room-storage-bedside-underbed-label-feng-shui',
+  'bedroom-bed-headboard-wall-curtain-double-rail-feng-shui',
+  'home-office-desk-facing-door-pen-cup-feng-shui',
+  'small-room-storage-underbed-cleaning-clearance-feng-shui',
+  'small-room-storage-lift-up-bed-opening-feng-shui',
 ]);
 
 export const reviewReadyCategorySlugs = new Set([
