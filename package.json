@@ -10,6 +10,7 @@
     "check": "astro check",
     "lint": "astro check",
     "assets:brand": "node scripts/generate-brand-assets.mjs",
+    "assets:affiliate": "node scripts/generate-affiliate-assets.mjs",
     "audit:content": "node scripts/content-quality-audit.mjs",
     "gsc:submit-sitemap": "node scripts/gsc-submit-sitemap.mjs",
     "gsc:sitemap-health": "node scripts/gsc-sitemap-health.mjs",

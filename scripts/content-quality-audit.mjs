@@ -196,12 +196,19 @@ async function walk(directory) {
   }
 }
 await walk(distRoot);
-let affiliateHits = 0;
+const affiliateFiles = [];
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, 'utf8');
-  if (/Shopee Affiliate|shopee\.tw/i.test(html)) affiliateHits += 1;
+  if (/data-affiliate-product-link|Shopee Affiliate|shopee\.tw/i.test(html)) affiliateFiles.push({ file, html });
 }
-check('affiliate-output-hidden', affiliateHits === 0, affiliateHits);
+const supportFile = affiliateFiles.find(({ file }) => file.endsWith(`${path.sep}support${path.sep}index.html`));
+check('affiliate-output-support-page', Boolean(supportFile), affiliateFiles.map(({ file }) => path.relative(distRoot, file)).join(', '));
+if (supportFile) {
+  const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-product-id/g) ?? []).length;
+  check('affiliate-support-catalog-count', cardCount === 38, cardCount);
+  check('affiliate-support-links-safe', /rel="sponsored nofollow noopener"/.test(supportFile.html), 'sponsored/nofollow/noopener');
+  check('affiliate-support-images-lazy', /loading="lazy"/.test(supportFile.html), 'lazy image loading');
+}
 
 const report = {
   status: failures.length === 0 ? 'PASS' : 'FAIL',

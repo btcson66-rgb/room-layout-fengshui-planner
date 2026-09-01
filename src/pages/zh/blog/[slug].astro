@@ -4,6 +4,7 @@ import Layout from '../../../components/Layout.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import NewsletterSignup from '../../../components/NewsletterSignup.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
+import AffiliateRecs from '../../../components/AffiliateRecs.astro';
 import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
 import { categoryMeta, formatDate, siteUrl } from '../../../data/site';
 
@@ -140,6 +141,8 @@ if (post.data.howToSteps.length > 0) {
       <div class="card article-body">
         <Content />
       </div>
+
+      {reviewReady && <AffiliateRecs category={post.data.category} tags={post.data.tags} slug={post.id} />}
 
       {reviewReady && <AdSlot id="zh-blog-bottom" adSlot="zh-blog-bottom" />}
 

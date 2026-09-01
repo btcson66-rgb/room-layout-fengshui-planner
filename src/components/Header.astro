@@ -11,6 +11,7 @@ const t = lang === 'en' ? en : zh;
 const homeHref = lang === 'en' ? '/en/' : '/';
 const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
 const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
+const supportHref = '/support/';
 ---
 
 <header class="site-header">
@@ -31,6 +32,7 @@ const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furni
         {lang === 'zh' && <li><a href="/zh/feng-shui-bedroom-checker/">風水檢查</a></li>}
         <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
         {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
+        <li><a href={supportHref}>支持我們</a></li>
       </ul>
     </nav>
     <div class="language-switcher" aria-label="Language switcher">
