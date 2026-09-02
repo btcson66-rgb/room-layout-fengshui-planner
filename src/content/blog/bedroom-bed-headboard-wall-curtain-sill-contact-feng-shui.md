@@ -91,7 +91,7 @@ EPA 的居家空氣資料可作灰塵、濕氣和通風管理的背景；CPSC �
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗台、床頭板、下擺和風向外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較接觸與開合；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開窗、換床單和清潔。若你要比較下擺長度，可讀 [床頭窗簾下擺長度](/zh/blog/bedroom-bed-headboard-wall-curtain-length-feng-shui/)；若窗台灰塵是主因，參考 [臥室窗台清潔](/zh/blog/bedroom-window-sill-cleaning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗台、床頭板、下擺和風向外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較接觸與開合；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗、換床單和清潔。若你要比較下擺長度，可讀 [床頭窗簾下擺長度](/zh/blog/bedroom-bed-headboard-wall-curtain-length-feng-shui/)；若窗台灰塵是主因，參考 [臥室窗台清潔](/zh/blog/bedroom-window-sill-cleaning-feng-shui/)。
 
 ### 參考資料
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
   - kitchen-electric-hot-pot-plug-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 瓦斯爐在廚房風水裡常被聯想到火氣、財庫和家人用餐，但真正需要先處理的是火孔、爐蓋、爐架、旋鈕、軟管、瓦斯接頭、排油煙機和通風。火孔被油垢堵住時，火焰可能不均；爐具附近堆滿紙袋或清潔用品，則讓火源和雜物沒有邊界。本文把「火氣穩定」轉成可觀察的關火、冷卻、火孔清潔、通風和取鍋動線，不把方位當成燃燒、健康或運勢保證。
 
-先記錄瓦斯爐型號、燃料類型、爐蓋、火孔、爐架、旋鈕、橡皮管、接頭、排油煙機、窗戶和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出點火、備料、取鍋和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認爐邊不會被收納物堵住；多人煮飯時用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端鍋和避讓。工具不能取代瓦斯技師、消防或產品說明。
+先記錄瓦斯爐型號、燃料類型、爐蓋、火孔、爐架、旋鈕、橡皮管、接頭、排油煙機、窗戶和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出點火、備料、取鍋和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認爐邊不會被收納物堵住；多人煮飯時用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端鍋和避讓。工具不能取代瓦斯技師、消防或產品說明。
 
 ## 先分辨油垢、火孔堵塞與漏氣疑慮
 

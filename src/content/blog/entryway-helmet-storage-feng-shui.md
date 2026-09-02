@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-bicycle-feng-shui
   - entryway-electric-bicycle-charging-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 安全帽放在玄關，常被理解成把外出的保護帶回家，也有人會問帽口朝內、朝外、放在門旁或放在鞋櫃上方是否比較順。但安全帽真正要處理的是帽殼與內襯是否受損、雨後是否乾燥、是否被陽光和熱源長期照射、扣帶能否正常固定，以及收納位置會不會堵住開門與穿鞋。沒有任何帽口方向能保證平安、財運或出門順利；本文把「護身」轉成可檢查的保管、辨識與取用條件。
 
-先量玄關、鞋櫃、門扇開啟範圍、安全帽外徑、帽袋、掛鉤、雨衣、鞋凳、鑰匙盤和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鞋櫃上層、獨立層架與靠牆掛放的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認帽體、帽袋和開櫃門不會互相碰撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試進門、脫鞋、拿包和快速離開。工具只能協助平面規劃，不能判定安全帽是否符合交通法規或仍具保護能力。
+先量玄關、鞋櫃、門扇開啟範圍、安全帽外徑、帽袋、掛鉤、雨衣、鞋凳、鑰匙盤和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鞋櫃上層、獨立層架與靠牆掛放的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認帽體、帽袋和開櫃門不會互相碰撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試進門、脫鞋、拿包和快速離開。工具只能協助平面規劃，不能判定安全帽是否符合交通法規或仍具保護能力。
 
 ## 安全帽收好不等於安全帽被妥善保管
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedding-storage-feng-shui
   - bedroom-mattress-protector-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 枕頭在臥室風水裡常被聯想到休息、伴侶關係與頭部有靠，有人會問枕頭要不要靠牆、備用枕頭放床頭是否比較能留住好氣。但枕頭實際需要處理的是貼身布品的清潔、填充物的乾燥、枕套與枕芯是否配對、使用者能否安全取放，以及備用物品會不會壓在潮濕角落。沒有任何枕頭數量、顏色或方位能保證好眠、健康、感情或財運；較可靠的做法，是把枕頭狀態與床邊動線一起管理。
 
-先量床墊、床頭板、床頭櫃、衣櫃、抽屜、床下高度、窗戶、門片與通往浴室的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃與枕頭暫放區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認枕頭放入櫃格後不會頂住門片，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬換枕套、搬運和半夜下床。工具只協助空間配置，不取代商品洗標或醫療建議。
+先量床墊、床頭板、床頭櫃、衣櫃、抽屜、床下高度、窗戶、門片與通往浴室的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃與枕頭暫放區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認枕頭放入櫃格後不會頂住門片，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬換枕套、搬運和半夜下床。工具只協助空間配置，不取代商品洗標或醫療建議。
 
 ## 枕頭先按狀態分區，不先按吉方位分區
 

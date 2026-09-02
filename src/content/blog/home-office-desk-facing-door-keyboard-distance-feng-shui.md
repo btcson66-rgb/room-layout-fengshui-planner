@@ -87,7 +87,7 @@ OSHA 的鍵盤資料建議鍵盤直接位於使用者前方，讓肩膀放鬆、
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出螢幕、鍵盤、滑鼠、托盤和房門掃掠，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深與桌下外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放輸入、起身、開門與收桌。若螢幕高度是主問題，可讀 [面向房門書桌螢幕高度](/zh/blog/home-office-desk-facing-door-monitor-height-feng-shui/)；若桌下空間不足，參考 [面向房門書桌腳踏](/zh/blog/home-office-desk-facing-door-footrest-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出螢幕、鍵盤、滑鼠、托盤和房門掃掠，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深與桌下外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放輸入、起身、開門與收桌。若螢幕高度是主問題，可讀 [面向房門書桌螢幕高度](/zh/blog/home-office-desk-facing-door-monitor-height-feng-shui/)；若桌下空間不足，參考 [面向房門書桌腳踏](/zh/blog/home-office-desk-facing-door-footrest-feng-shui/)。
 
 ### 參考資料
 

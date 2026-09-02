@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-cleaning-feng-shui
   - dining-room-table-under-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐桌底部風水常被問成「桌下空間是不是容易藏煞」，但每天真正要處理的是：桌底是否積著飯粒和毛髮、桌腳接點是否鬆動、橫樑是否擋住腳、清潔工具能否伸入、椅子推回是否卡住，以及端菜和起身時會不會撞到桌腳。風水裡的「穩」可以轉譯為桌體固定、桌下可清、腳部有空間、椅子能復位和用餐路徑清楚，不能用桌下是否空置保證聚財或和諧。
 
-先量餐廳長寬、餐桌長寬高、桌面厚度、底部離地高度、桌腳、橫樑、椅子、牆面、餐櫃、門片和掃地工具寬度。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座、起身、端菜、擦桌和清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認膝部、椅腳和桌腳不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查多人用餐時的腳部交會。工具只協助配置，不代替家具固定、承重或地面安全判斷。
+先量餐廳長寬、餐桌長寬高、桌面厚度、底部離地高度、桌腳、橫樑、椅子、牆面、餐櫃、門片和掃地工具寬度。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座、起身、端菜、擦桌和清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認膝部、椅腳和桌腳不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查多人用餐時的腳部交會。工具只協助配置，不代替家具固定、承重或地面安全判斷。
 
 ## 餐桌底部的好風水是看得到髒污、腳部能伸展且清潔不必搬空全室
 

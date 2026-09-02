@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-feng-shui-checklist
   - bedroom-electric-blanket-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 住宅用火災警報器在臥室風水裡常被聯想到守護、提前察覺和讓睡眠空間有安全邊界，因此有人會問放在床頭、門上方或某個吉位是否比較能保家。但住警器真正的任務是偵測煙霧或熱氣並發出警報，位置、安裝、電池、測試、灰塵、誤報、電暖器與充電設備都要依規範和說明管理。沒有任何住警器方位能保證不失火、在所有情境都叫醒每個人或保證逃生；本文把「守護睡眠」落到偵知、確認與撤離流程。
 
-先量臥室、床、住警器、門、窗、衣櫃、電暖器、充電區和通往出口的路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床上方、門側與房間上方的設備位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具不會遮住設備，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間起身、開門和撤離。工具不能取代消防設備規範與現場判斷。
+先量臥室、床、住警器、門、窗、衣櫃、電暖器、充電區和通往出口的路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床上方、門側與房間上方的設備位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具不會遮住設備，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間起身、開門和撤離。工具不能取代消防設備規範與現場判斷。
 
 ## 「守護」不是把警報器藏在床頭裝飾裡
 

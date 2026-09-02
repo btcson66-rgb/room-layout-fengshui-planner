@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-washbasin-faucet-handle-cleaning-feng-shui
   - bathroom-washbasin-drain-odor-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 浴室洗手台水龍頭起泡器清潔風水常被說成「水口柔和，財水才不散」，但起泡器實際會攔住水垢、砂粒、管線碎屑和清潔劑殘留。出水變小或歪斜可能是濾網堵塞、墊片移位、出水口螺紋損傷或供水問題；水龍頭底部滴漏也不能用「漏財」概括。風水可以用來討論用水節制與洗手台界線，但不能保證財運、水質或管線安全。
 
-先量浴室長寬、洗手台寬度、水龍頭高度、起泡器口徑、鏡櫃、毛巾、馬桶、地漏與入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、取毛巾、擦乾和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水龍頭與鏡櫃、瓶罐不互相干涉；入口濕區狹窄時，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試洗手後轉身和離開。工具只能協助平面比較，不能判定水壓、水質、螺紋和管線維修。
+先量浴室長寬、洗手台寬度、水龍頭高度、起泡器口徑、鏡櫃、毛巾、馬桶、地漏與入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、取毛巾、擦乾和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水龍頭與鏡櫃、瓶罐不互相干涉；入口濕區狹窄時，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試洗手後轉身和離開。工具只能協助平面比較，不能判定水壓、水質、螺紋和管線維修。
 
 ## 先分辨起泡器水垢、砂粒、濾網堵塞與漏水
 

@@ -91,7 +91,7 @@ OSHA 的工作站資料提醒穿越通道的線材可能形成絆倒風險，也
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌子、線槽、插座和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較外框與設備餘長；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放離席、清潔和進門。若耳機線也會干擾，可讀 [耳機線與離席](/zh/blog/home-office-desk-facing-door-headset-cable-feng-shui/)；若設備是印表機，參考 [印表機紙盤動線](/zh/blog/home-office-desk-facing-door-printer-paper-tray-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌子、線槽、插座和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較外框與設備餘長；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放離席、清潔和進門。若耳機線也會干擾，可讀 [耳機線與離席](/zh/blog/home-office-desk-facing-door-headset-cable-feng-shui/)；若設備是印表機，參考 [印表機紙盤動線](/zh/blog/home-office-desk-facing-door-printer-paper-tray-feng-shui/)。
 
 ### 參考資料
 

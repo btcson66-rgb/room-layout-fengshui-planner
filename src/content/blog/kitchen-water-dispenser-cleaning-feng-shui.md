@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-water-dispenser-feng-shui
   - kitchen-water-filter-replacement-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 飲水機風水常被問成「飲水機放在廚房哪一方才會聚財」，但日常真正要處理的是：儲水槽是否有異味或沉積、出水口是否滴水、接水區是否積水、電線是否靠近水槽，以及取水時會不會切斷備餐路徑。風水裡的「水」可以轉譯為來源清楚、容器乾淨、出水可觀察、接水後能擦乾和動線不折返，不能用機器方位保證財運、飲水品質或健康。
 
-先量廚房長寬、飲水機寬深高、出水口高度、接水杯尺寸、儲水槽、插座、水槽、爐具、冰箱和主要站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取杯、接水、補水、擦乾和離開的路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認機器與上櫃、檯面邊緣和插座不會互相壓迫；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查兩人同時備餐。工具只協助配置，不代替飲水設備、電氣、濾芯或食品衛生判斷。
+先量廚房長寬、飲水機寬深高、出水口高度、接水杯尺寸、儲水槽、插座、水槽、爐具、冰箱和主要站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取杯、接水、補水、擦乾和離開的路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認機器與上櫃、檯面邊緣和插座不會互相壓迫；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查兩人同時備餐。工具只協助配置，不代替飲水設備、電氣、濾芯或食品衛生判斷。
 
 ## 飲水機的好風水是水源看得見、接水不滴漏且清潔能安全完成
 

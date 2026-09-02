@@ -17,7 +17,7 @@ keywords:
   - 茶几承重安全檢查
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-coffee-table-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 茶几底部在客廳風水裡常被聯想到藏物、聚氣與家庭共享，但真正需要維護的是底板、腳座、地毯、灰塵、毛髮、收納物、承重和端餐動線。茶几下面容易成為遙控器、玩具、紙袋和清潔用品的暫存區，物品越堆越深，清潔和取物越困難；若腳座鬆動或桌面重量集中，也不應以「底下整齊」掩蓋結構問題。本文把「客廳不藏滯」轉成可觀察的清空、除塵、穩定、分類與通行驗收，不把茶几形狀當成聚財、健康或運勢保證。
 
-先記錄茶几長寬高、底部淨空、腳座、底板、桌面材質、沙發、地毯和出入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出端餐、坐下、取物與清潔路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認桌腳和收納物不侵入主要通道；桌面與底部距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代家具說明、承重標示與結構安全判斷。
+先記錄茶几長寬高、底部淨空、腳座、底板、桌面材質、沙發、地毯和出入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出端餐、坐下、取物與清潔路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認桌腳和收納物不侵入主要通道；桌面與底部距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代家具說明、承重標示與結構安全判斷。
 
 ## 先分辨底塵、毛髮、潮痕與結構異常
 

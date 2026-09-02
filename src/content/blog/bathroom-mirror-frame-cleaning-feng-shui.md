@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-mirror-feng-shui
   - bathroom-shower-door-track-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 浴室鏡面邊框是鏡子周圍的鋁框、不鏽鋼框、塑膠框、貼皮或背板邊緣，會接觸洗手台飛濺、皂液、水蒸氣、清潔劑和牆面潮氣。鏡面有水痕，不代表邊框也適合用同一種清潔方式；邊框變色、背板膨脹、鏡子晃動或牆面粉化，更不是擦玻璃可以處理。風水常把鏡子說成反射、明亮或擴大空間，實際應轉成看得清楚、邊框不割手、固定可靠、洗手台不被遮擋和進出不需碰撞，不把反射面寫成化煞或運勢保證。
 
-先記錄浴室約 160 × 220 公分、鏡面與邊框尺寸、洗手台、龍頭、淋浴區、門片、門檻、插座、毛巾和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗臉、擦鏡、取毛巾與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鏡櫃門、洗手台用品和毛巾不會互撞；若浴室入口窄，使用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查清潔時的站位。工具只能協助空間配置，不能取代玻璃、牆面、防水和高處作業判斷。
+先記錄浴室約 160 × 220 公分、鏡面與邊框尺寸、洗手台、龍頭、淋浴區、門片、門檻、插座、毛巾和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗臉、擦鏡、取毛巾與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鏡櫃門、洗手台用品和毛巾不會互撞；若浴室入口窄，使用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查清潔時的站位。工具只能協助空間配置，不能取代玻璃、牆面、防水和高處作業判斷。
 
 ## 玻璃水痕、皂膜與邊框鏽斑要分流
 

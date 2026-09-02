@@ -21,7 +21,7 @@ relatedTools:
 relatedPosts:
   - bathroom-medicine-cabinet-feng-shui
   - bathroom-toilet-cleaning-feng-shui
-  - bathroom-ventilation-feng-shui
+  - bathroom-toilet-ventilation-feng-shui
 howToName: "浴室藥櫃濕氣、分類與有效期限檢查"
 howToTotalTime: "PT30M"
 howToSteps:

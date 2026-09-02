@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedside-table-feng-shui
   - bedroom-wardrobe-lighting-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 珠寶首飾在臥室風水裡常被聯想到財氣、珍惜與個人魅力，有人會問金飾放在床頭櫃是否比較守財，或把戒指集中在房間東南角能不能增加財運。更實際的問題是：不同硬度和材質是否互相磨擦？項鍊會不會打結？洗澡、運動或睡覺後是否帶著汗水和水氣直接關盒？鑲嵌寶石有沒有鬆動？貴重物品是否由家人、訪客或兒童可以直接拿到？沒有任何財位能替代首飾分隔、乾燥、檢查和保管；本文把「珍貴之物有序」轉成材質分類、取放落點與可觀察的保養流程。
 
-先量臥室長寬、床、床頭櫃、衣櫃、梳妝台、窗戶、浴室門和主要通道，並記錄珠寶盒打開、抽屜拉出和佩戴時需要的操作空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、衣櫃內抽屜和梳妝台的落點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認首飾盒不會頂住抽屜、鏡面或插座，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試睡前取下、早晨穿戴、清潔和兩人交會。工具只協助配置，不取代珠寶材質、產品保養或貴重物保管判斷。
+先量臥室長寬、床、床頭櫃、衣櫃、梳妝台、窗戶、浴室門和主要通道，並記錄珠寶盒打開、抽屜拉出和佩戴時需要的操作空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、衣櫃內抽屜和梳妝台的落點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認首飾盒不會頂住抽屜、鏡面或插座，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試睡前取下、早晨穿戴、清潔和兩人交會。工具只協助配置，不取代珠寶材質、產品保養或貴重物保管判斷。
 
 ## 先把首飾按材質與使用狀態分開
 

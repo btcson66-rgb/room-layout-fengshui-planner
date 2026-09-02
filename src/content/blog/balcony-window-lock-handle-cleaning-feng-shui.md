@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-window-track-cleaning-feng-shui
   - balcony-window-track-sill-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台窗戶鎖把手的風水問題常被問成「窗鎖不順是不是氣不流通」，但每天真正要處理的是把手是否卡著灰塵和油膜，鎖座是否對位，窗扇關閉後密封條有沒有均勻接觸，開窗幅度是否撞到曬衣架，以及家人能不能在不探身的情況下操作。風水裡的「納氣、守界」可以轉譯為開窗狀態可控、窗扇能確實關閉、鎖點可檢查和陽台路徑清楚，不能把窗戶朝向當成安全或空氣品質開關。
 
-先量陽台長寬、窗扇高度、把手突出、鎖座位置、窗台、紗窗、曬衣架、花盆和室內門檻。以 180 × 300 公分陽台為例，落地窗靠近室內門，外側有曬衣桿；若把手操作需要側身，開窗後又會碰到衣物，清潔鎖座和取衣就可能互相干擾。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出把手站位和窗扇掃掠區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對花盆與窗扇，最後用 [房間動線檢查](/zh/room-circulation-check/)測試通風和進出。工具只協助配置，不代替窗框、五金和防墜維修判斷。
+先量陽台長寬、窗扇高度、把手突出、鎖座位置、窗台、紗窗、曬衣架、花盆和室內門檻。以 180 × 300 公分陽台為例，落地窗靠近室內門，外側有曬衣桿；若把手操作需要側身，開窗後又會碰到衣物，清潔鎖座和取衣就可能互相干擾。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出把手站位和窗扇掃掠區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對花盆與窗扇，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試通風和進出。工具只協助配置，不代替窗框、五金和防墜維修判斷。
 
 ## 窗鎖把手的好風水是操作可確認、窗扇有密封且開窗不逼人探身
 

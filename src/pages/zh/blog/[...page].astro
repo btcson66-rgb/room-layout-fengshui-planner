@@ -1,16 +1,30 @@
-﻿---
-import { getCollection } from 'astro:content';
+---
+import type { GetStaticPaths, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
+import Pagination from '../../../components/Pagination.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
 import { categoryMeta, formatDate, siteUrl, toolLinks } from '../../../data/site';
+import { BLOG_PAGE_SIZE } from '../../../data/pagination';
 
-const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.noindex && isReviewReadyBlogSlug(post.id))
-  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
-const title = '房間規劃文章｜RoomFeng';
-const description = 'RoomFeng 房間規劃文章整理小房間佈局、家具尺寸、搬家檢查、臥室風水民俗參考與動線規劃教學。';
-const canonical = '/zh/blog/';
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const posts = (await getCollection('blog'))
+    .filter((post) => !post.data.noindex && isReviewReadyBlogSlug(post.id))
+    .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+  return paginate(posts, { pageSize: BLOG_PAGE_SIZE });
+};
+
+const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
+const basePath = '/zh/blog/';
+const canonical = page.currentPage === 1 ? basePath : `${basePath}${page.currentPage}/`;
+const title = page.currentPage === 1
+  ? '房間規劃文章｜RoomFeng'
+  : `房間規劃文章（第 ${page.currentPage} 頁）｜RoomFeng`;
+const baseDescription = 'RoomFeng 房間規劃文章整理小房間佈局、家具尺寸、搬家檢查、臥室風水民俗參考與動線規劃教學。';
+const description = page.currentPage === 1
+  ? baseDescription
+  : `${baseDescription}這是第 ${page.currentPage} 頁，共 ${page.lastPage} 頁。`;
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -25,7 +39,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}${canonical}` },
+      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}${basePath}` },
     ],
   },
 ];
@@ -60,17 +74,18 @@ const jsonLd = [
         <h2 id="posts-heading">最新文章</h2>
         <p>目前只列出完成實質重寫、工具連結驗證與人工內容檢查的核心指南。其他舊稿已退出索引與公開文章清單，避免用相似短文堆疊搜尋結果。</p>
         <div class="post-list">
-          {posts.map((post) => (
+          {page.data.map((post) => (
             <article>
               <p class="meta">
                 {formatDate(post.data.updated)} / <a href={`/zh/category/${post.data.category}/`}>{categoryMeta[post.data.category]?.title ?? post.data.category}</a>
               </p>
               <h3><a href={`/zh/blog/${post.id}/`}>{post.data.title}</a></h3>
               <p>{post.data.description}</p>
-              <p class="tag-list">{post.data.tags.map((tag) => <span>{tag}</span>)}</p>
+              <p class="tag-list">{post.data.tags.map((tag: string) => <span>{tag}</span>)}</p>
             </article>
           ))}
         </div>
+        <Pagination basePath={basePath} currentPage={page.currentPage} lastPage={page.lastPage} label="文章列表分頁" />
       </section>
 
       <RelatedLinks links={[...toolLinks, { href: '/disclaimer/', title: '風水民俗參考免責聲明' }]} />

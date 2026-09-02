@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-coffee-table-under-cleaning-feng-shui
   - living-room-coffee-table-top-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳茶几下層架容易被當成「看不見的收納層」，因此灰塵、餅乾屑、遙控器、玩具、雜誌、電線和寵物用品會一起堆在下面。風水裡茶几常被視為坐席與交流的中心，但下層架真正影響日常的是承重、桌腳穩定、液體污染、掃地工具能否到達，以及家人坐下和起身時會不會碰撞。本文把「中心要清爽」轉成下層架可清、可取、可承重、可退出的具體驗收，不把空架或方位寫成聚財保證。
 
-先量客廳約 360 × 420 公分、茶几長寬高、下層架離地高度、下層架深度、桌腳位置、沙發、地毯、電源和通道。使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出端茶、坐下、起身、掃地和清空下層架的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認架上物品和桌腳不會與沙發、地毯或門口互撞；用 [房間通行寬度檢查](/zh/room-circulation-check/)測試清潔工具和家人通行。工具只協助配置，不能取代家具承重、玻璃安全和電線判斷。
+先量客廳約 360 × 420 公分、茶几長寬高、下層架離地高度、下層架深度、桌腳位置、沙發、地毯、電源和通道。使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出端茶、坐下、起身、掃地和清空下層架的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認架上物品和桌腳不會與沙發、地毯或門口互撞；用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清潔工具和家人通行。工具只協助配置，不能取代家具承重、玻璃安全和電線判斷。
 
 ## 下層架的灰塵、碎屑、液體與危險小物分流
 

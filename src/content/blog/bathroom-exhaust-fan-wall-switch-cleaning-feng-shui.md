@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-exhaust-fan-feng-shui
   - bathroom-exhaust-fan-cover-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室排風扇牆壁開關的風水常被說成「濕氣影響家運」，但真正不能忽略的是水氣、清潔液和電氣部件的界線。牆壁開關面板有皂垢，不代表可以直接噴消毒劑；排風扇不轉，也不代表只要擦亮開關就能恢復。風水裡的「乾濕分區」在這裡應轉譯為濕區、開關、排風和出入口互不妨礙，不能把開關狀態當成健康或家運保證。
 
-先量浴室長寬、淋浴區邊界、洗手台、排風扇、牆壁開關、門片掃掠區和站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示濕區與開關，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體或掛架不會遮擋開關，最後用 [房間動線檢查](/zh/room-circulation-check/)測試濕手離開淋浴區時是否會撞門或跨過積水。
+先量浴室長寬、淋浴區邊界、洗手台、排風扇、牆壁開關、門片掃掠區和站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示濕區與開關，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體或掛架不會遮擋開關，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試濕手離開淋浴區時是否會撞門或跨過積水。
 
 ## 排風扇牆壁開關的好風水是乾燥、手感穩定且位置可辨
 

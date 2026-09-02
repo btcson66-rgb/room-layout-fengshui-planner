@@ -21,7 +21,7 @@ relatedTools:
   - /zh/furniture-fit-checker/
 relatedPosts:
   - bedroom-electric-blanket-cleaning-feng-shui
-  - bedroom-electric-shaver-cleaning-feng-shui
+  - bathroom-electric-shaver-cleaning-feng-shui
   - bedroom-charging-station-cable-cleaning-feng-shui
 howToName: "筋膜槍按摩頭、機身與臥室充電收納檢查"
 howToTotalTime: "PT25M"

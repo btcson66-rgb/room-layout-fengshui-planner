@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-floor-drain-cleaning-feng-shui
   - bathroom-shower-threshold-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 浴室淋浴地漏蓋清潔風水常被說成「排水口乾淨，濁氣才不滯」，但地漏蓋實際會攔住毛髮、皮屑、皂垢、砂粒和清潔布纖維。排水變慢可能是地漏蓋、存水彎、管線或坡度問題；異味可能與乾涸、防臭芯、污物或通風有關，不是只用「水氣太重」就能判定。風水可用來討論水路與乾濕界線，但不能保證防臭、排水或運勢。
 
-先量浴室長寬、淋浴區、地漏蓋大小、地面坡度、門檻、淋浴門、地墊、馬桶、洗手台與入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出水流與擦腳站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶罐、淋浴椅和地墊不會壓住排水區；入口狹窄時，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試洗澡後離開與清潔工具到達。工具只能協助平面比較，不能判定管線、防臭芯或防水層。
+先量浴室長寬、淋浴區、地漏蓋大小、地面坡度、門檻、淋浴門、地墊、馬桶、洗手台與入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出水流與擦腳站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶罐、淋浴椅和地墊不會壓住排水區；入口狹窄時，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試洗澡後離開與清潔工具到達。工具只能協助平面比較，不能判定管線、防臭芯或防水層。
 
 ## 先分辨地漏蓋毛髮、皂垢、水垢與管線回堵
 

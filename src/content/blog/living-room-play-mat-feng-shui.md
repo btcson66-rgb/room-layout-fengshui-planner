@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kids-room-layout-safety
   - living-room-rug-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 遊戲墊在客廳風水裡常被說成「讓孩子有自己的小天地」「圓形墊能聚氣」，但對家庭來說，它是每天爬行、翻身、坐下、吃點心和收玩具的地面設備。位置要先處理防滑、翹邊、接縫、清潔、沙發與茶几碰撞，以及大人端熱飲、拿藥和通往門口的路線。若遊戲墊剛好擋住陽台門、被茶几腳壓出高低差，或孩子在墊外踩到散落玩具，形狀和顏色都不能取代安全。沒有遊戲墊位置能保證孩子健康、家庭和諧或運勢；可以把它當成活動分區工具，但不應把民俗象徵當成兒童安全標準。
 
-先量遊戲墊展開後的長寬厚度、沙發、茶几、電視櫃、陽台門、玄關入口和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出遊戲區與照顧者座位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具腳、墊邊和收折空間不互撞；客廳還要保留端水和抱孩子的路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具可以協助畫區域，不能代替產品標示、材質、清潔和兒童照顧判斷。
+先量遊戲墊展開後的長寬厚度、沙發、茶几、電視櫃、陽台門、玄關入口和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出遊戲區與照顧者座位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具腳、墊邊和收折空間不互撞；客廳還要保留端水和抱孩子的路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具可以協助畫區域，不能代替產品標示、材質、清潔和兒童照顧判斷。
 
 ## 先分辨活動區、照顧區與通行區
 

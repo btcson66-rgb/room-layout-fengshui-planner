@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-coffee-table-top-cleaning-feng-shui
   - living-room-coffee-table-edge-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玻璃茶几會留下杯底水痕、手印、零食油膜、灰塵和寵物毛，透明桌面也容易讓人忽略邊角缺口、金屬框鬆動、調整腳不平或桌下物品突出。客廳風水常把透明、反光和中央位置延伸成氣流或明堂話題，但可檢查的內容是桌面是否完整、清潔後是否乾燥、桌邊與沙發的距離，以及起身和清掃是否順暢，不能把反光直接等同煞氣。
 
-先記錄茶几品牌、型號、玻璃種類、框架、調整腳、下層架、沙發、電視櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示桌面和走動範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對沙發與茶几間距，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端杯、起身和掃地路徑。
+先記錄茶几品牌、型號、玻璃種類、框架、調整腳、下層架、沙發、電視櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示桌面和走動範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對沙發與茶几間距，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端杯、起身和掃地路徑。
 
 ## 玻璃、邊角、框架與桌腳要分開
 

@@ -101,7 +101,7 @@ CPSC 的窗簾繩安全資料提醒連續環狀繩和拉繩要注意兒童接觸
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出布堆、綁帶、床頭燈和插座，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較窗簾外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開窗、換床單和離床。若你在意窗簾長度，可讀 [床頭窗簾下擺](/zh/blog/bedroom-bed-headboard-wall-curtain-length-feng-shui/)；若要處理陰影，參考 [床頭窗簾低照度](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出布堆、綁帶、床頭燈和插座，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較窗簾外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗、換床單和離床。若你在意窗簾長度，可讀 [床頭窗簾下擺](/zh/blog/bedroom-bed-headboard-wall-curtain-length-feng-shui/)；若要處理陰影，參考 [床頭窗簾低照度](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)。
 
 ### 參考資料
 

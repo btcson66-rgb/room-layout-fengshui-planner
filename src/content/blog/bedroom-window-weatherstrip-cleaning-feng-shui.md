@@ -18,11 +18,11 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-window-condensation-cleaning-feng-shui
   - bedroom-curtain-cleaning-feng-shui
-  - bedroom-window-feng-shui
+  - bedroom-window-condensation-feng-shui
 howToName: "臥室窗戶氣密條、窗扇、漏風、結露與床邊通風檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室窗戶氣密條的風水問題常被說成「窗戶漏氣會把好運帶走」，但實際要處理的是氣密條卡灰、壓扁、裂化、脫膠、窗扇關不緊，或窗邊結露讓床頭、窗簾和牆面長期受潮。風水裡的「藏風聚氣」可以轉譯為窗戶能按需求通風、關閉後接觸均勻、濕氣有出口和床邊不被冷熱氣流直吹，不能把密封條狀態直接當成睡眠或財運結果。
 
-先量臥室長寬、窗框內外尺寸、窗扇開啟方向、氣密條位置、床頭、窗簾、冷氣和除濕設備。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開窗、擦拭和床邊站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與窗扇，最後以 [房間動線檢查](/zh/room-circulation-check/)測試夜間開關窗。工具只協助配置，不代替窗戶維修與室內環境判斷。
+先量臥室長寬、窗框內外尺寸、窗扇開啟方向、氣密條位置、床頭、窗簾、冷氣和除濕設備。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開窗、擦拭和床邊站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與窗扇，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試夜間開關窗。工具只協助配置，不代替窗戶維修與室內環境判斷。
 
 ## 氣密條的好風水是接觸均勻、可清潔且不把濕氣困在床邊
 

@@ -91,7 +91,7 @@ EPA 的居家空氣資料可作清潔與室內環境背景；CPSC 的窗簾繩�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗框、軌道、布幅和床上視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較上緣重疊與清潔外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾、檢查窗框、下床和清潔。若漏光在側邊，可讀 [窗簾側邊漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-blackout-gap-feng-shui/)；若上緣固定是瓶頸，參考 [窗簾桿固定](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗框、軌道、布幅和床上視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較上緣重疊與清潔外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾、檢查窗框、下床和清潔。若漏光在側邊，可讀 [窗簾側邊漏光](/zh/blog/bedroom-bed-headboard-wall-curtain-blackout-gap-feng-shui/)；若上緣固定是瓶頸，參考 [窗簾桿固定](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
 
 ### 參考資料
 

@@ -105,7 +105,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出掛鉤、衣物外緣與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放換衣、清潔和離開。若床邊收納籃是主題，可看 [床邊收納籃](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)；若衣架靠門是瓶頸，參考 [小房間衣物掛架](/zh/blog/small-room-clothes-rack-doorway-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出掛鉤、衣物外緣與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放換衣、清潔和離開。若床邊收納籃是主題，可看 [床邊收納籃](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)；若衣架靠門是瓶頸，參考 [小房間衣物掛架通道間距](/zh/blog/small-room-clothes-rack-doorway-clearance-feng-shui/)。
 
 ### 參考資料
 

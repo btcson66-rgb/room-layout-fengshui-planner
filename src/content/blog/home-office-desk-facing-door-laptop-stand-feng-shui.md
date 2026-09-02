@@ -91,7 +91,7 @@ OSHA 的工作站資料建議將螢幕、桌面、鍵盤和滑鼠依實際任務
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出筆電架、鍵盤、滑鼠、椅子和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深與線材外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放視訊、起身、看門和收桌。若螢幕高度是瓶頸，可讀 [面向房門書桌螢幕高度](/zh/blog/home-office-desk-facing-door-monitor-height-feng-shui/)；若鍵盤前空間不足，參考 [面向房門書桌鍵盤距離](/zh/blog/home-office-desk-facing-door-keyboard-distance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出筆電架、鍵盤、滑鼠、椅子和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深與線材外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放視訊、起身、看門和收桌。若螢幕高度是瓶頸，可讀 [面向房門書桌螢幕高度](/zh/blog/home-office-desk-facing-door-monitor-height-feng-shui/)；若鍵盤前空間不足，參考 [面向房門書桌鍵盤距離](/zh/blog/home-office-desk-facing-door-keyboard-distance-feng-shui/)。
 
 ### 參考資料
 

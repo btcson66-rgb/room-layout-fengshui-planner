@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-bench-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關衣帽架常被問「掛在大門旁會不會把財氣掛住」「衣服掛太多是不是讓玄關變亂」。民俗上，入口確實常被重視整潔、明亮和內外分界；但衣帽架是一個每天承受外套、雨衣、帽子、包包和鑰匙的收納設備，真正影響生活的是掛鉤承重、衣物濕度、門片弧線、取物高度、家具固定、尖角和通道。沒有一個掛衣方向能保證財運、健康或人際結果，應先把外套進門後的暫放、晾乾、長期收納和清洗流程畫清楚。
 
-開始前量門扇完全開啟範圍、門檻、鞋櫃深度、穿鞋椅、衣帽架外框和通往客廳的路線。再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較掛衣區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體與掛物外伸範圍；玄關很窄時，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試提袋、推車和長傘。工具能畫出占用，不會替你確認牆體、掛鉤、螺絲或家具的承重。
+開始前量門扇完全開啟範圍、門檻、鞋櫃深度、穿鞋椅、衣帽架外框和通往客廳的路線。再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較掛衣區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體與掛物外伸範圍；玄關很窄時，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試提袋、推車和長傘。工具能畫出占用，不會替你確認牆體、掛鉤、螺絲或家具的承重。
 
 ## 先分清濕外套、每日外出物和季節衣物
 

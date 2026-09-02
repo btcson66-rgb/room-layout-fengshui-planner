@@ -87,7 +87,7 @@ EPA 的室內空氣品質指南提醒，居家環境需要控制濕氣、污染�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床下盒子、床側通道和清潔暫放區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床架、地毯和盒子外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放換季取物與回位。若你考慮抽屜，可讀 [床下抽屜拉出距離](/zh/blog/small-room-storage-bedside-underbed-drawer-feng-shui/)；若要移動床邊收納，參考 [床邊推車動線](/zh/blog/small-room-storage-bedside-rolling-cart-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床下盒子、床側通道和清潔暫放區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床架、地毯和盒子外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放換季取物與回位。若你考慮抽屜，可讀 [床下抽屜拉出距離](/zh/blog/small-room-storage-bedside-underbed-drawer-feng-shui/)；若要移動床邊收納，參考 [床邊推車動線](/zh/blog/small-room-storage-bedside-rolling-cart-clearance-feng-shui/)。
 
 ### 參考資料
 

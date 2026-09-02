@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-door-feng-shui
   - bathroom-shower-door-bottom-seal-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 浴室淋浴門鉸鏈清潔風水常被說成「門軸轉得順，家中的氣才不打結」，但鉸鏈實際會承受玻璃門重量、開關摩擦、皂垢、水垢、蒸氣和清潔劑殘留。異音可能來自乾澀、污物、螺絲鬆動或門片偏斜；鏽斑也可能是鍍層損傷，不是只擦掉顏色就恢復安全。風水可以用來討論門路與界線，但不能保證玻璃固定、防漏、防滑或運勢。
 
-先量浴室長寬、淋浴門外框、鉸鏈位置、玻璃門開啟弧線、馬桶、洗手台、地漏、地墊和扶手。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片旋轉範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門扇不會撞到置物架；若門口狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試開門、擦腳、取毛巾與離開時的站位。工具只能協助平面比較，不能判定玻璃門承重、鉸鏈規格或防水結構。
+先量浴室長寬、淋浴門外框、鉸鏈位置、玻璃門開啟弧線、馬桶、洗手台、地漏、地墊和扶手。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片旋轉範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門扇不會撞到置物架；若門口狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試開門、擦腳、取毛巾與離開時的站位。工具只能協助平面比較，不能判定玻璃門承重、鉸鏈規格或防水結構。
 
 ## 先分辨鉸鏈水垢、皂膜、鏽蝕與玻璃受力
 

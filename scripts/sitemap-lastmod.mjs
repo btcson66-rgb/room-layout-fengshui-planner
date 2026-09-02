@@ -123,7 +123,7 @@ export function createSitemapLastmodLookup(projectRoot) {
   for (const [category, posts] of postsByCategory) {
     const route = normalizeRoute(`/zh/category/${category}/`);
     routeDates.set(route, newestDate(posts));
-    routeSources.set(route, join(pagesDirectory, 'zh', 'category', '[category].astro'));
+    routeSources.set(route, join(pagesDirectory, 'zh', 'category', '[category]', '[...page].astro'));
   }
 
   if (fallbackRoutes.length === 0) {
@@ -137,10 +137,13 @@ export function createSitemapLastmodLookup(projectRoot) {
 
   return (url) => {
     const route = normalizeRoute(new URL(url).pathname);
-    const lastmod = routeDates.get(route);
+    // 分頁頁面（/zh/blog/2/、/zh/category/feng-shui/3/）沿用母頁的日期。
+    // 用「剝掉結尾數字段」而不是列舉頁碼，每頁筆數改變時這裡就不必跟著改。
+    const parentRoute = route.replace(/\/\d+\/$/, '/');
+    const lastmod = routeDates.get(route) ?? routeDates.get(parentRoute);
     if (!lastmod) {
       throw new Error(`[sitemap-lastmod] No content or source-file signal mapped for ${route}`);
     }
-    return { lastmod, sourceFile: routeSources.get(route) };
+    return { lastmod, sourceFile: routeSources.get(route) ?? routeSources.get(parentRoute) };
   };
 }

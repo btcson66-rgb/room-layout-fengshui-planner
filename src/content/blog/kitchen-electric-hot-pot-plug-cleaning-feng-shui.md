@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-rice-cooker-inner-lid-cleaning-feng-shui
   - kitchen-sandwich-maker-plate-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電火鍋在廚房風水裡常被聯想到圍爐、共享和火氣聚集，但鍋邊、溫控器、插頭、插座和電線會接觸湯汁、水氣、油膜與積塵。若鍋體還熱就拉線清潔，插頭沾油後仍反覆通電，或圍爐時電線穿過家人取食的路徑，象徵團聚不能代替電器安全。本文把「火氣有界」轉成冷卻、斷電、插頭乾燥、鍋邊穩固和多人動線可驗收的工作流程。
 
-先記錄電火鍋型號、額定功率、溫控器、電源線、插頭、插座、鍋體、桌面和用餐通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出加熱、取食、添湯和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋邊與桌面距離；多人圍爐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試手肘、餐具與電線。工具不能取代電器說明和安全檢查。
+先記錄電火鍋型號、額定功率、溫控器、電源線、插頭、插座、鍋體、桌面和用餐通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出加熱、取食、添湯和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋邊與桌面距離；多人圍爐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試手肘、餐具與電線。工具不能取代電器說明和安全檢查。
 
 ## 先分辨插頭油膜、積塵與接觸異常
 

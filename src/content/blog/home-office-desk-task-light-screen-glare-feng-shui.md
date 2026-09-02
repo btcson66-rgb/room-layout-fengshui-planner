@@ -95,7 +95,7 @@ OSHA 的工作環境指南建議控制眩光、合理使用自然光與人工照
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出窗戶、桌子、螢幕與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌燈底座和工作面；完成後以 [房間動線檢查](/zh/room-circulation-check/) 檢查離席路線。若螢幕距離是主要問題，可延伸閱讀 [工作桌螢幕與牆距](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/) 與 [文件架視線距離](/zh/blog/home-office-desk-document-holder-viewing-distance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出窗戶、桌子、螢幕與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌燈底座和工作面；完成後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 檢查離席路線。若螢幕距離是主要問題，可延伸閱讀 [工作桌螢幕與牆距](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/) 與 [文件架視線距離](/zh/blog/home-office-desk-document-holder-viewing-distance-feng-shui/)。
 
 ### 參考資料
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-tv-console-back-cable-dust-feng-shui
   - living-room-network-cable-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳電視電源線的風水問題常被說成「電線雜亂會切斷客廳氣場」，但真正需要處理的是電源線被電視櫃或地毯壓住、插頭半鬆、排插集中發熱、線材和訊號線混成一團，或家人從入口走到沙發時容易踩到。風水裡的「氣流順」可以轉譯為電源路徑可追蹤、設備能散熱、插座保持乾燥和走道沒有拉力與絆倒點，不能把線材排列直接當成財運或家人關係結果。
 
-先量客廳長寬、電視櫃長寬高、牆上插座、電源線長度、排插位置、電視觀看距離、沙發和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出電視櫃、插座和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與線材出口，最後用 [房間動線檢查](/zh/room-circulation-check/)測試入口到沙發是否踩線。工具只協助配置，不代替電氣安全檢查。
+先量客廳長寬、電視櫃長寬高、牆上插座、電源線長度、排插位置、電視觀看距離、沙發和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出電視櫃、插座和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與線材出口，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試入口到沙發是否踩線。工具只協助配置，不代替電氣安全檢查。
 
 ## 電視電源線的好風水是插頭可辨、線材不受壓且設備有散熱
 

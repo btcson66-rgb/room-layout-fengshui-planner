@@ -24,6 +24,14 @@ jobs:
 
       - run: npm ci
 
+      # 2026-09-02: 這個 job 過去只跑 `npm run build`，所以 astro check、
+      # content-quality-audit.mjs 與 www-redirect 測試從來沒有在 CI 執行過。
+      # 下面把 `npm run preflight` 的四個步驟攤開跑，順序與它一致
+      # （check → build → audit:content → test:www-redirect），
+      # 攤開是為了讓 build 帶著自己的 env，而 audit 讀的正是那次 build 的 dist。
+      # 任何一步失敗就不會進到 deploy。
+      - run: npm run check
+
       - run: npm run build
         env:
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
@@ -32,6 +40,10 @@ jobs:
           # is being re-submitted for review under account zxc851558. Keep this
           # value in sync with public/ads.txt — AdSense matches the two.
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+
+      - run: npm run audit:content
+
+      - run: npm run test:www-redirect
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

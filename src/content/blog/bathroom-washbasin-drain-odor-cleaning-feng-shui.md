@@ -21,7 +21,7 @@ relatedTools:
   - /zh/blog/bathroom-floor-drain-odor-feng-shui/
 relatedPosts:
   - bathroom-toilet-base-floor-edge-cleaning-feng-shui
-  - bathroom-sink-feng-shui
+  - kitchen-sink-feng-shui
   - bathroom-exhaust-fan-feng-shui
 howToName: "洗手台排水孔、存水彎、異味與浴室通風檢查"
 howToTotalTime: "PT35M"

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-drain-strainer-cleaning-feng-shui
   - kitchen-cabinet-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房水龍頭在風水裡常被聯想到水氣、流動與洗滌，但真正需要維護的是水垢、起泡器、油膜、噴濺、漏水、底座接縫和水槽周邊動線。水龍頭外表擦亮，不代表出水口沒有積垢；底座附近若長期濕潤，也可能讓檯面、矽利康或櫥櫃下方出現痕跡。本文把「水流有界」轉成可觀察的關水、來源判斷、材質清潔、乾燥與洗滌動線驗收，不把水槽方位當成財運、衛生或運勢保證。
 
-先記錄水龍頭高度、出水範圍、起泡器、軟管、底座、檯面、水槽、爐具、垃圾桶和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗滌與備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽拉或旋轉龍頭不會撞到牆、窗或吊櫃；多人使用時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不能取代水龍頭說明、管線和漏水檢修。
+先記錄水龍頭高度、出水範圍、起泡器、軟管、底座、檯面、水槽、爐具、垃圾桶和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗滌與備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽拉或旋轉龍頭不會撞到牆、窗或吊櫃；多人使用時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不能取代水龍頭說明、管線和漏水檢修。
 
 ## 先分辨水垢、油膜、噴濺與漏水
 

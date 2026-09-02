@@ -93,7 +93,7 @@ CPSC 的家具安全資料提醒家具和重物要依產品、固定件與家庭
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出收合、展開、床側與房門外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較箱體、床架和地毯；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放取物、清潔和夜間離床。若要比較掛袋，可讀 [床邊掛袋突出](/zh/blog/small-room-storage-bedside-hanging-pocket-feng-shui/)；若需要固定收納，參考 [床邊壁掛收納](/zh/blog/small-room-storage-bedside-wall-shelf-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出收合、展開、床側與房門外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較箱體、床架和地毯；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、清潔和夜間離床。若要比較掛袋，可讀 [床邊掛袋突出](/zh/blog/small-room-storage-bedside-hanging-pocket-feng-shui/)；若需要固定收納，參考 [床邊壁掛收納](/zh/blog/small-room-storage-bedside-wall-shelf-feng-shui/)。
 
 ### 參考資料
 

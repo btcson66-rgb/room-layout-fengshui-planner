@@ -93,7 +93,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾與光源，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較掛桿、布料與床側距離；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放門片和離床路線。想比較窗邊風向，可看 [床邊窗簾與通風](/zh/blog/bedroom-bed-window-curtain-clearance-feng-shui/)；若牆面同時有鏡子，參考 [床頭牆面鏡面反光](/zh/blog/bedroom-bed-headboard-wall-mirror-reflection-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾與光源，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較掛桿、布料與床側距離；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放門片和離床路線。想比較窗邊風向，可看 [床邊窗簾與通風](/zh/blog/bedroom-bed-window-curtain-clearance-feng-shui/)；若牆面同時有鏡子，參考 [床頭牆面鏡面反光](/zh/blog/bedroom-bed-headboard-wall-mirror-reflection-feng-shui/)。
 
 ### 參考資料
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-desk-chair-caster-cleaning-feng-shui
   - home-office-ergonomic-chair-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 辦公椅扶手每天接觸手臂、衣袖和桌邊，表面可能累積汗垢、護手霜、灰塵與飲料飛濺；扶手墊老化、調整按鈕卡住、螺絲鬆動或扶手與桌面互撞，也會讓坐下和起身變得不順。書房風水常把「有靠、有托」延伸到工作支持感，但可驗收的內容是扶手是否穩固、手肘能否自然放置、桌椅是否互撞，以及後退時是否擋住門口，不能把椅子舒服直接當成工作表現的結論。
 
-先記錄椅子品牌、型號、扶手材質、是否可調高低或前後、桌面高度、電源線和門片位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、轉身和取物的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對扶手與桌緣，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)確認椅子後退不會堵住主要路徑。
+先記錄椅子品牌、型號、扶手材質、是否可調高低或前後、桌面高度、電源線和門片位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、轉身和取物的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對扶手與桌緣，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認椅子後退不會堵住主要路徑。
 
 ## 扶手表面、墊面、支架與按鈕要分開
 

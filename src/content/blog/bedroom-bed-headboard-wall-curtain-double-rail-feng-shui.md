@@ -85,7 +85,7 @@ CPSC 的窗簾繩安全資料提醒帶繩、珠鍊和連續環狀拉動要注意
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出內外軌、床頭、燈具和布堆，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較軌道深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開合、清潔與離床。若你在意反光，可讀 [床頭窗簾反光](/zh/blog/bedroom-bed-headboard-wall-curtain-glare-feng-shui/)；若主要是側邊堆布，參考 [窗簾側邊回位](/zh/blog/bedroom-bed-headboard-wall-curtain-side-return-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出內外軌、床頭、燈具和布堆，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較軌道深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開合、清潔與離床。若你在意反光，可讀 [床頭窗簾反光](/zh/blog/bedroom-bed-headboard-wall-curtain-glare-feng-shui/)；若主要是側邊堆布，參考 [窗簾側邊回位](/zh/blog/bedroom-bed-headboard-wall-curtain-side-return-feng-shui/)。
 
 ### 參考資料
 

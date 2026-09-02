@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-floor-fan-grille-cleaning-feng-shui
   - living-room-floor-fan-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳立扇速度按鍵的風水問題常被說成「風速忽快忽慢會讓氣場不穩」，但真正需要處理的是按鍵卡塵、旋鈕油膜、控制盒裂痕、按鍵同時被壓下、插頭和電線受拉，或操作時必須跨過沙發與茶几。風水裡的「風有節律」可以轉譯為速度控制可辨、停止功能正常、控制區保持乾燥和電線不擋路，不能把風速直接當成健康或家運結果。
 
-先量客廳長寬、立扇外框、控制盒、按鍵或旋鈕尺寸、電線長度、插座、沙發、茶几和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出按鍵操作、插拔與扇頭範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對控制盒與家具距離，最後以 [房間動線檢查](/zh/room-circulation-check/)測試電線是否跨過腳步。工具只協助配置，不代替電氣維修。
+先量客廳長寬、立扇外框、控制盒、按鍵或旋鈕尺寸、電線長度、插座、沙發、茶几和主要走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出按鍵操作、插拔與扇頭範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對控制盒與家具距離，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試電線是否跨過腳步。工具只協助配置，不代替電氣維修。
 
 ## 速度按鍵的好風水是段位可辨、停止正常且控制盒不被水氣封住
 

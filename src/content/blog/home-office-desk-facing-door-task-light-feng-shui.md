@@ -119,7 +119,7 @@ OSHA 的工作站資料建議用工作燈照亮紙本任務，同時減少螢幕
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫房門、桌燈、螢幕與窗戶，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座與椅子後退；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開門與離席。若螢幕背景隱私是主題，可看 [面向房門視訊鏡頭](/zh/blog/home-office-desk-facing-door-webcam-angle-feng-shui/)；若鍵盤陰影是瓶頸，參考 [桌燈鍵盤陰影](/zh/blog/home-office-desk-task-light-keyboard-shadow-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫房門、桌燈、螢幕與窗戶，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座與椅子後退；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開門與離席。若螢幕背景隱私是主題，可看 [面向房門視訊鏡頭](/zh/blog/home-office-desk-facing-door-webcam-angle-feng-shui/)；若鍵盤陰影是瓶頸，參考 [桌燈鍵盤陰影](/zh/blog/home-office-desk-task-light-keyboard-shadow-feng-shui/)。
 
 ### 參考資料
 

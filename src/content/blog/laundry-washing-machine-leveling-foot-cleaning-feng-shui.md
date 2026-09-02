@@ -16,9 +16,8 @@ keywords:
   - 洗衣機腳座灰塵
   - 洗衣機地面不平
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-drum-cleaning-feng-shui
   - laundry-washing-machine-drain-pump-filter-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機水平腳在風水裡容易被聯想到根基、承重與循環穩定，但真正需要維護的是腳座灰塵、鎖固螺帽、地面平整、機身晃動、重心、電線受壓和洗衣動線。洗衣機暫時不晃，不代表四腳都接觸地面；調整一支腳後變安靜，也不代表鎖固螺帽已固定。本文把「設備有根、震動不擴散」轉成可觀察的斷電、地面清潔、四腳接觸、調平驗收與洗衣區交接，不把機器方位當成旺財、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、四個水平腳、鎖固螺帽、地面材質、牆距、排水管、電線、洗衣籃和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排檢查、工具和取衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認機身不會碰牆或壓線；維護時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代電器安裝或維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、四個水平腳、鎖固螺帽、地面材質、牆距、排水管、電線、洗衣籃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排檢查、工具和取衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認機身不會碰牆或壓線；維護時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代電器安裝或維修判斷。
 
 ## 先分辨腳座灰塵、地面不平、螺帽鬆動與負載震動
 

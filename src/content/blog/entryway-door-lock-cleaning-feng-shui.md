@@ -16,9 +16,8 @@ keywords:
   - 鑰匙轉不動如何判斷
   - 玄關進出動線整理
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-handle-cleaning-feng-shui
   - entryway-doorframe-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關門鎖在風水裡常被聯想到守門、納氣與出入界線，但真正需要維護的是把手高接觸、鎖面灰塵、鑰匙孔異物、鎖舌、門框、門扇下垂、錯誤潤滑和進出通道。門鎖表面擦亮，不代表鑰匙轉動正常；鑰匙卡住，也不應先倒入不明油品。本文把「入口守得住」轉成可觀察的表面清潔、機械狀態、製造商說明、停用交接和通行驗收，不把門鎖方位當成防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、門鎖型式、把手、鎖舌、鑰匙孔、門框、門扇、門檻、鞋櫃、雨具和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出插鑰匙、開門、脫鞋和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會擋住門扇；進出時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代鎖具、門扇或居家安全專業判斷。
+先記錄玄關約 160 × 240 公分、門鎖型式、把手、鎖舌、鑰匙孔、門框、門扇、門檻、鞋櫃、雨具和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出插鑰匙、開門、脫鞋和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會擋住門扇；進出時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代鎖具、門扇或居家安全專業判斷。
 
 ## 先分辨表面灰塵、把手油污與鎖芯異常
 

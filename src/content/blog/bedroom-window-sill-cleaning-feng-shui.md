@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-curtain-rod-cleaning-feng-shui
   - bedroom-bedside-rug-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室窗台在風水裡常被聯想到採光、氣流與內外界線，但真正需要維護的是窗框灰塵、窗槽碎屑、排水孔、凝結水、牆角濕痕、窗簾接觸面與床邊通道。窗台不是只擦一下表面就完成；玻璃內側的水珠、窗槽的積水和牆面反覆變色，可能代表不同的水氣來源。本文把「窗邊通透」轉成可觀察的來源判斷、清潔、乾燥、通風與家具距離驗收，不把窗戶朝向當成好眠、健康或運勢保證。
 
-先記錄窗台寬深、窗框材質、窗槽、排水孔、牆面、床架、床邊桌、窗簾和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)保留清潔與開窗站位，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)檢查床具與窗邊距離；若清潔時需要暫放工具，可用 [房間通行寬度檢查](/zh/room-circulation-check/)確認不會堵住出入口。工具只能協助空間判讀，不能取代窗戶、牆面與防水維修判斷。
+先記錄窗台寬深、窗框材質、窗槽、排水孔、牆面、床架、床邊桌、窗簾和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)保留清潔與開窗站位，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)檢查床具與窗邊距離；若清潔時需要暫放工具，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認不會堵住出入口。工具只能協助空間判讀，不能取代窗戶、牆面與防水維修判斷。
 
 ## 先分辨灰塵、凝結水、滲水與霉斑
 

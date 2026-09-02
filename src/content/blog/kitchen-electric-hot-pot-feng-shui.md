@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-induction-cooker-feng-shui
   - kitchen-pressure-cooker-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電火鍋在廚房風水裡常被聯想到團聚、火氣和把食物煮熟後端上桌，因此有人會問它靠近財位、餐桌中央或爐具旁是否比較旺。但電火鍋是高功率、含液體、會產生熱氣與湯汁的設備，真正需要先確認的是插座承載、電線方向、內鍋水量、鍋蓋活動、檯面穩定、夾取距離和端鍋路線。把「火能聚人氣」誤讀成讓設備一直通電，或把「水火相濟」誤讀成水槽邊使用，反而會增加燙傷與電氣風險。沒有任何電火鍋位置能保證財運、健康或家庭和諧；本文把圍爐象徵落到每一餐可以重複的空間安排。
 
-先量電火鍋外徑、內鍋、鍋蓋、旋鈕、電源線、插座、水槽、爐具、抽油煙機、餐桌與通往客廳的路線。可以用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較檯面與餐桌兩種方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋蓋打開時不會撞到上櫃，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端菜和多人取食。這些工具不能取代產品說明、住宅電氣條件或消防安全判斷。
+先量電火鍋外徑、內鍋、鍋蓋、旋鈕、電源線、插座、水槽、爐具、抽油煙機、餐桌與通往客廳的路線。可以用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較檯面與餐桌兩種方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋蓋打開時不會撞到上櫃，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端菜和多人取食。這些工具不能取代產品說明、住宅電氣條件或消防安全判斷。
 
 ## 電火鍋的水火象徵，先轉成可檢查的條件
 

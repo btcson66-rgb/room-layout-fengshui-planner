@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-key-tray-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 乾洗手和消毒酒精在玄關風水裡常被聯想到把外界雜氣留在門外，有人會問瓶子放在門內左側是否比較淨化，或每天進門先噴酒精能不能守住家運。實際要先確認的是：瓶內到底是乾洗手、環境用消毒液還是其他化學品？容器是否密封、有清楚標籤、遠離火源和高溫？幼兒能不能拿到？使用後是否真的搓到乾燥，還是手上仍有明顯髒污？沒有任何門邊方位能替代正確洗手、產品標示與易燃液體管理；本文把「玄關清淨」轉成用品分類、取用順序和不堵門的收納位置。
 
-先量玄關長寬、門扇開啟弧線、鞋櫃、鑰匙盤、插座、日照位置和通往客廳的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鞋櫃上層、壁面小平台和門側櫃的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶子不會頂住門片、抽屜或消防設備，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試提袋、脫鞋、抱幼兒和多人回家。工具只協助配置，不取代化學品標示、消防規範或衛生專業建議。
+先量玄關長寬、門扇開啟弧線、鞋櫃、鑰匙盤、插座、日照位置和通往客廳的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鞋櫃上層、壁面小平台和門側櫃的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶子不會頂住門片、抽屜或消防設備，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試提袋、脫鞋、抱幼兒和多人回家。工具只協助配置，不取代化學品標示、消防規範或衛生專業建議。
 
 ## 先分清乾洗手、消毒酒精與清潔用品
 

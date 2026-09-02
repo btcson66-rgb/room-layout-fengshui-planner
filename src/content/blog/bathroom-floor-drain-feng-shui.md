@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-ventilation-feng-shui
   - bathroom-bath-mat-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 地漏在浴室風水裡常被聯想到排走濁氣、避免水氣滯留和讓空間保持清爽，因此有人會問地漏朝哪個方位、排水快慢是否影響財運。但地漏真正要處理的是水流、積水、返溢、異味、毛髮、清潔、門檻和滑倒風險。沒有任何地漏位置能保證排走壞運、健康或財運；本文把「濁氣能出」轉成可觀察的排水、防臭和乾濕分區。
 
-先量浴室、地漏、淋浴區、洗手台、馬桶、門檻、排風口與門片。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較淋浴內外的排水與站位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認浴室收納不遮住地漏，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試赤腳進出、洗地與照護。工具不能取代水電、建築防水或現場檢修判斷。
+先量浴室、地漏、淋浴區、洗手台、馬桶、門檻、排風口與門片。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較淋浴內外的排水與站位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認浴室收納不遮住地漏，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試赤腳進出、洗地與照護。工具不能取代水電、建築防水或現場檢修判斷。
 
 ## 「水走得掉」比方位口訣更重要
 

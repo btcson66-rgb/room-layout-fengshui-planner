@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-key-tray-feng-shui
   - entryway-coat-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 寵物牽繩在玄關風水裡常被說成「把外出機會帶進家」「牽繩不要纏在門把上」。但牽繩是每天可能突然受力的安全用品，還會沾到雨水、泥沙和動物毛髮；收納位置要先處理扣環、磨損、掛點承重、門片、鞋櫃和人犬交會。若牽繩垂到地面、狗看到牽繩就衝門、濕牽繩塞進密閉櫃，或掛點靠近唯一出口，風水象徵不能消除絆倒和逃脫風險。沒有牽繩位置能保證財運、寵物健康或家庭結果；入口的順暢應建立在可檢查、可拿取和不堵路上。
 
-先量牽繩收起與展開長度、胸背帶、鞋櫃、門片、掛點、穿鞋凳和寵物等候位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出人與寵物的出門路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認牽繩和門片、鞋櫃不互撞；玄關狹窄時再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試提袋、穿鞋和開門同時發生的情況。工具不能代替動物行為、產品承重或所在地法規判斷。
+先量牽繩收起與展開長度、胸背帶、鞋櫃、門片、掛點、穿鞋凳和寵物等候位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出人與寵物的出門路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認牽繩和門片、鞋櫃不互撞；玄關狹窄時再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試提袋、穿鞋和開門同時發生的情況。工具不能代替動物行為、產品承重或所在地法規判斷。
 
 ## 先分辨日用、濕用與備用品
 

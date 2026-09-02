@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-pillow-storage-feng-shui
   - bedroom-drying-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 穿過一次但還沒決定要不要洗的衣服，在臥室風水裡常被說成「半舊不新」或會把外面的雜氣帶上床，有人因此把衣服全部掛在門後，也有人把它們堆到椅子、床尾或地板。比較實際的問題是：衣服是否沾到汗水、雨水、食物或戶外灰塵？是否已經潮濕或有異味？暫放區會不會壓住窗邊、冷氣回風或除濕設備？家人能否分辨可再穿與待洗？沒有一個方位能替代清潔和通風，本文把「清掉混亂」轉成狀態分區與可觀察的使用流程。
 
-先量床側淨寬、衣櫃門扇、掛衣桿、椅背、暫放籃、洗衣籃、窗戶、冷氣回風口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較掛衣桿、開放式衣架和分區籃的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認衣物放入後櫃門與抽屜仍能使用，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試脫衣、開櫃、上床和夜間走動。衣物暫放不是把問題藏起來，工具只協助配置，不取代洗滌標示、室內空品建議或醫療意見。
+先量床側淨寬、衣櫃門扇、掛衣桿、椅背、暫放籃、洗衣籃、窗戶、冷氣回風口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較掛衣桿、開放式衣架和分區籃的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認衣物放入後櫃門與抽屜仍能使用，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試脫衣、開櫃、上床和夜間走動。衣物暫放不是把問題藏起來，工具只協助配置，不取代洗滌標示、室內空品建議或醫療意見。
 
 ## 「穿過一次」不是單一狀態
 

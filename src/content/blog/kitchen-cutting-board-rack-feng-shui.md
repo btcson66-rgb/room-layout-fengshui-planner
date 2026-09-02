@@ -18,7 +18,6 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-layout-planner/
 relatedPosts:
   - kitchen-cutting-board-storage-feng-shui
   - kitchen-dish-rack-feng-shui

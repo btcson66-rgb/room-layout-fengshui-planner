@@ -87,7 +87,7 @@ CPSC 的家具防傾倒資料提醒，家具穩定不能只靠外觀判斷；EPA
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出箱體、開口、堆疊高度和床側通道，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較單層與滿載外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取物、搬運、換床單和清潔。若要處理透明箱，可讀 [床邊透明收納箱](/zh/blog/small-room-storage-bedside-transparent-box-feng-shui/)；若要換季，參考 [床邊換季輪替](/zh/blog/small-room-storage-bedside-seasonal-rotation-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出箱體、開口、堆疊高度和床側通道，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較單層與滿載外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、搬運、換床單和清潔。若要處理透明箱，可讀 [床邊透明收納箱](/zh/blog/small-room-storage-bedside-transparent-box-feng-shui/)；若要換季，參考 [床邊換季輪替](/zh/blog/small-room-storage-bedside-seasonal-rotation-feng-shui/)。
 
 ### 參考資料
 

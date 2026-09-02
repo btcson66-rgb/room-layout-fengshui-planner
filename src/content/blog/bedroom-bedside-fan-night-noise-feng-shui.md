@@ -101,7 +101,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出床、風扇和牆面，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放關機和夜路。若風向是主問題，可看 [床邊電風扇風向](/zh/blog/bedroom-bedside-fan-airflow-angle-feng-shui/)；若清潔造成異音，參考 [床邊電風扇積塵](/zh/blog/bedroom-bedside-fan-dust-cleaning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出床、風扇和牆面，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放關機和夜路。若風向是主問題，可看 [床邊電風扇風向](/zh/blog/bedroom-bedside-fan-airflow-angle-feng-shui/)；若清潔造成異音，參考 [床邊電風扇積塵](/zh/blog/bedroom-bedside-fan-dust-cleaning-feng-shui/)。
 
 ### 參考資料
 

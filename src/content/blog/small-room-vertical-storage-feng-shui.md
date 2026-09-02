@@ -19,7 +19,7 @@ relatedTools:
   - /zh/small-room-storage-planner/
   - /zh/small-bedroom-layout/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - small-room-storage-zones
   - small-room-storage-doorway-feng-shui
@@ -70,7 +70,7 @@ howToSteps:
 
 ### 路線：櫃體外還有門、抽屜與取物者
 
-把櫃門完全打開、抽屜完全拉出，請使用者站在前方拿取物品，再從床、桌和門口走過。家具之間的空白若只能容納一個靜止的人，未必能容納轉身、搬箱、拖把和門片。可使用 [家具尺寸檢查器](/zh/furniture-fit-checker/)和 [房間動線檢查](/zh/room-circulation-check/)先畫出完整使用範圍。
+把櫃門完全打開、抽屜完全拉出，請使用者站在前方拿取物品，再從床、桌和門口走過。家具之間的空白若只能容納一個靜止的人，未必能容納轉身、搬箱、拖把和門片。可使用 [家具尺寸檢查器](/zh/furniture-fit-checker/)和 [房間動線檢查](/zh/blog/room-circulation-width-guide/)先畫出完整使用範圍。
 
 ## 壁掛、門後與獨立高櫃的取捨
 

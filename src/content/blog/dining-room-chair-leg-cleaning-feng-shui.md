@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-chair-feng-shui
   - dining-room-table-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐椅椅腳清潔風水常被忽略，因為視線大多停在椅背、坐墊和餐桌上。實際使用時，椅腳會接觸食物碎屑、油滴、地板灰塵、拖把水、寵物毛和腳墊磨屑；有人坐下時，椅腳還會承受後退、轉身、拖拉和偏斜的力量。若椅腳底部不平或沾到油，餐椅可能在起身時滑動；若腳墊磨穿，則可能刮傷地板或讓家人為了避開椅子而繞路。這些是可以觀察和修正的生活條件，不是某種椅腳形狀一定影響財運的證明。
 
-開始前先量餐桌、椅面、椅腳外框、椅子拉出後的深度、牆面、餐邊櫃與通往廚房的路線。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出每張椅子的停放位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較椅腳和桌腳是否互相干涉；若用餐區也是客廳或廚房的通道，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試退椅、端菜、收餐和擦地。工具能協助平面比較，不能替代產品說明、承重判斷或現場安全檢查。
+開始前先量餐桌、椅面、椅腳外框、椅子拉出後的深度、牆面、餐邊櫃與通往廚房的路線。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出每張椅子的停放位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較椅腳和桌腳是否互相干涉；若用餐區也是客廳或廚房的通道，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試退椅、端菜、收餐和擦地。工具能協助平面比較，不能替代產品說明、承重判斷或現場安全檢查。
 
 ## 先把椅腳問題分成髒污、磨耗與結構
 

@@ -21,7 +21,7 @@ relatedTools:
   - /zh/blog/kitchen-countertop-zoning-feng-shui/
 relatedPosts:
   - kitchen-ladle-storage-feng-shui
-  - kitchen-spoon-storage-feng-shui
+  - kitchen-bowl-storage-feng-shui
   - kitchen-dish-rack-feng-shui
 howToName: "廚房筷子清洗乾燥與收納動線檢查"
 howToTotalTime: "PT25M"

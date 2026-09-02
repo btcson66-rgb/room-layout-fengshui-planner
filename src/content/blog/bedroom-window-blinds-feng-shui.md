@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-curtain-feng-shui
   - living-room-window-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室百葉窗常被問成「窗戶朝東比較旺嗎」「百葉窗縫隙會不會把氣切碎」「床靠窗是不是漏氣」。窗向與光線可以是風水文化裡的象徵，但百葉窗同時是有葉片、拉繩、升降機構和清潔縫隙的窗面設備，真正要先處理的是兒童拉繩、床與家具距離、晨光、午後熱、夜間隱私、開窗通風和操作高度。沒有一個窗向能保證睡眠、健康或運勢；舒適的臥室應先讓人能安全開關、看清地面並維持合適遮光。
 
-先量窗框、床墊、床頭櫃、衣櫃、窗簾盒、拉繩下垂範圍和開窗後的把手位置。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床與窗，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認百葉窗葉片、拉繩與家具不互撞；若窗邊也是夜間通道，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)確認起身不會踩到拉繩或窗邊物件。工具不能替你判斷產品安全標示與安裝品質。
+先量窗框、床墊、床頭櫃、衣櫃、窗簾盒、拉繩下垂範圍和開窗後的把手位置。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床與窗，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認百葉窗葉片、拉繩與家具不互撞；若窗邊也是夜間通道，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認起身不會踩到拉繩或窗邊物件。工具不能替你判斷產品安全標示與安裝品質。
 
 ## 先分辨採光、遮光和通風任務
 

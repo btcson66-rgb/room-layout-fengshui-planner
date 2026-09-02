@@ -94,7 +94,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出風扇、插座和床側路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較家具壓線情況；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放睡前與半夜操作。若遙控器回位是問題，可看 [床邊電風扇遙控器](/zh/blog/bedroom-bedside-fan-remote-control-night-route-feng-shui/)；若夜間聲音是瓶頸，參考 [床邊電風扇噪音](/zh/blog/bedroom-bedside-fan-night-noise-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出風扇、插座和床側路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較家具壓線情況；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放睡前與半夜操作。若遙控器回位是問題，可看 [床邊電風扇遙控器](/zh/blog/bedroom-bedside-fan-remote-control-night-route-feng-shui/)；若夜間聲音是瓶頸，參考 [床邊電風扇噪音](/zh/blog/bedroom-bedside-fan-night-noise-feng-shui/)。
 
 ### 參考資料
 

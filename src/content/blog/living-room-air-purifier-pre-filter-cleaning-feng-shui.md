@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-air-purifier-filter-cleaning-feng-shui
   - living-room-air-purifier-sensor-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 空氣清淨機的前置濾網通常攔截較大的灰塵、毛髮或纖維，但不同型號可能把前置濾網整合在背蓋，也可能使用圓筒式多層濾網。主濾網、活性碳濾網、HEPA 濾網和空氣品質感測器不能一律水洗或吸塵。客廳風水可以把「空氣流動」轉成進風口不被沙發、窗簾和雜物堵住、濾網維護可交接、清潔後不把濕件裝回，但不能由指示燈或濾網乾淨推定室內空氣狀態、健康或運勢。
 
-先記錄品牌、型號、濾網警示代碼、進風口、出風口、沙發、電視櫃和窗簾位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出機器四周的進出風範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具和收納物不貼住風口，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查清潔時能否取出背蓋和濾網。
+先記錄品牌、型號、濾網警示代碼、進風口、出風口、沙發、電視櫃和窗簾位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出機器四周的進出風範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認家具和收納物不貼住風口，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查清潔時能否取出背蓋和濾網。
 
 ## 前置濾網、主濾網和感測器不是同一件事
 

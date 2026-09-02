@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-space-heater-feng-shui
   - bedroom-humidifier-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電熱毯在臥室風水裡常被說成能增加溫暖、安定和「火」的氣感，因此有人會把它放在床的正中央，或認為整晚保持高溫能讓臥室更有暖意。但電熱毯是貼近身體與床品使用的電熱產品，配置要先處理平鋪、折痕、控制器、插座、電線、清潔、溫度和使用者能否感知熱度。毯子若皺成一團、被厚重床品壓住、插頭被床架拉扯，文化象徵不能取代產品安全。沒有任何電熱毯位置能保證改善睡眠、健康或感情；本文把「溫暖安定」落到可觀察的睡前、入睡和起床流程。
 
-先量床墊長寬、床架高度、電熱毯尺寸、控制器位置、插座、床邊櫃、窗簾和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)查看控制器與床邊櫃的相對位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認毯子不會被床墊邊緣長期夾住；如果床邊有老人、兒童或寵物活動，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬起身和夜間行走。工具不會判定電熱毯是否合格，也不能代替產品說明或醫療建議。
+先量床墊長寬、床架高度、電熱毯尺寸、控制器位置、插座、床邊櫃、窗簾和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)查看控制器與床邊櫃的相對位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認毯子不會被床墊邊緣長期夾住；如果床邊有老人、兒童或寵物活動，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬起身和夜間行走。工具不會判定電熱毯是否合格，也不能代替產品說明或醫療建議。
 
 ## 先確認電熱毯是床上用品，不是裝飾物
 

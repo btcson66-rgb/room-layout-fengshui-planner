@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-oven-feng-shui
   - kitchen-microwave-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 氣炸鍋在廚房風水裡常被歸入火，於是有人會問放在財位是否能旺財、出風口朝哪裡才不散氣。但氣炸鍋是高功率、會產生熱氣與高溫炸籃的電器，位置要先處理專用插座、進出風口、平坦檯面、抽籃路徑、熱食落點、油污和清潔。若它被塞進密閉櫃、上方堆滿紙袋、抽籃必須越過爐火，或熱籃沒有穩定落點，風水象徵不能消除燙傷和用電風險。沒有氣炸鍋位置能保證財運、料理成功或健康；風水只能作為整理火位與備餐秩序的文化角度。
 
-先量氣炸鍋寬深高、炸籃完全抽出後的前方範圍、進風口、出風口、插座、爐具、洗槽和耐熱暫放區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較氣炸鍋和備餐區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽籃、電線和檯面不互撞；廚房狹窄時再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端熱食後能否轉身。工具不能代替產品說明、插座負載或高溫設備判斷。
+先量氣炸鍋寬深高、炸籃完全抽出後的前方範圍、進風口、出風口、插座、爐具、洗槽和耐熱暫放區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較氣炸鍋和備餐區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽籃、電線和檯面不互撞；廚房狹窄時再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端熱食後能否轉身。工具不能代替產品說明、插座負載或高溫設備判斷。
 
 ## 先分辨預熱、抽籃與放涼任務
 

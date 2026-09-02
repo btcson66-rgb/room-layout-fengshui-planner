@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-sheet-cleaning-feng-shui
   - bedroom-quilt-storage-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室被套在風水裡常被聯想到包覆、休息與睡眠界線，但真正需要維護的是皮膚接觸、汗氣、皮屑、頭髮、污漬、被芯分離、綁帶、拉鍊、洗標和完全乾燥。被套外面看起來乾淨，不代表內側與被芯接觸面沒有潮氣；洗好後若塞回被芯、沒有攤開乾燥，也不能只靠香味判斷可用。本文把「被褥有界」轉成可觀察的拆分、換洗、乾燥、套合和床邊動線驗收，不把厚薄、顏色或床頭方向當成好眠、健康或運勢保證。
 
-先記錄被套尺寸、材質、開口、綁帶或拉鍊、被芯填充、床架、床尾、窗戶、洗衣機和晾曬區。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排待洗與待乾區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認拆套不會堵住床邊；被套搬運可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代被套洗標、填充物或產品判斷。
+先記錄被套尺寸、材質、開口、綁帶或拉鍊、被芯填充、床架、床尾、窗戶、洗衣機和晾曬區。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排待洗與待乾區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認拆套不會堵住床邊；被套搬運可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代被套洗標、填充物或產品判斷。
 
 ## 先分辨汗氣、皮屑、污漬與被芯潮感
 

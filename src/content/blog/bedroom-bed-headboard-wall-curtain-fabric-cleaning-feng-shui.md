@@ -91,7 +91,7 @@ EPA 的室內空氣資料可作為一般居家維護參考，但不能從一篇�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾與暫放區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桿身、床頭燈和布料外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拆掛、換床單與離床。若你先要處理陰影，可看 [床頭窗簾低照度](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若要檢查桿身固定，參考 [床頭窗簾桿承重](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床頭、窗簾與暫放區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桿身、床頭燈和布料外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拆掛、換床單與離床。若你先要處理陰影，可看 [床頭窗簾低照度](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若要檢查桿身固定，參考 [床頭窗簾桿承重](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
 
 ### 參考資料
 

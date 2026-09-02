@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-feng-shui
   - bathroom-bidet-seat-spray-nozzle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶遙控器的風水問題常被說成「控制器放錯位置會讓水氣失序」，但真正需要處理的是按鍵縫隙卡污、電池漏液、遙控器被水花濺到、固定座鬆動、訊號接收不穩，或使用者必須跨過濕地拿取遙控器。風水裡的「令行有序」可以轉譯為按鍵可辨、電池可更換、遙控器保持乾燥和操作站位不被淋浴區干擾，不能把遙控器位置直接當成健康或運勢結果。
 
-先量浴室長寬、馬桶外框、遙控器長寬、固定座、插座、淋浴區、洗手台和主要站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取用、擦拭和電池更換路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對固定座與門片距離，最後以 [房間動線檢查](/zh/room-circulation-check/)測試使用者是否會把遙控器帶進濕區。工具只協助配置，不代替衛浴用電維修。
+先量浴室長寬、馬桶外框、遙控器長寬、固定座、插座、淋浴區、洗手台和主要站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取用、擦拭和電池更換路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對固定座與門片距離，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試使用者是否會把遙控器帶進濕區。工具只協助配置，不代替衛浴用電維修。
 
 ## 遙控器的好風水是按鍵可辨、電池乾燥且固定座不被水花直濺
 

@@ -105,7 +105,7 @@ EPA 的室內空氣品質資料建議控制污染源、保持清潔乾燥並在�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出床頭櫃、風扇和遙控器回位點，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較占地；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放夜路。若噪音是主問題，可看 [床邊電風扇噪音](/zh/blog/bedroom-bedside-fan-night-noise-feng-shui/)；若積塵是問題，參考 [床邊電風扇清潔](/zh/blog/bedroom-bedside-fan-dust-cleaning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出床頭櫃、風扇和遙控器回位點，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較占地；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放夜路。若噪音是主問題，可看 [床邊電風扇噪音](/zh/blog/bedroom-bedside-fan-night-noise-feng-shui/)；若積塵是問題，參考 [床邊電風扇清潔](/zh/blog/bedroom-bedside-fan-dust-cleaning-feng-shui/)。
 
 ### 參考資料
 

@@ -89,7 +89,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫床、窗和窗簾，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床頭櫃深度，最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開窗和夜間路線。若你在意床窗距離，可參考 [床靠窗台的清潔與操作](/zh/blog/bedroom-bed-window-sill-clearance-feng-shui/)；若主要問題是床邊地面，參考 [床邊地毯夜間路線](/zh/blog/bedroom-bedside-rug-night-route-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫床、窗和窗簾，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床頭櫃深度，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗和夜間路線。若你在意床窗距離，可參考 [床靠窗台的清潔與操作](/zh/blog/bedroom-bed-window-sill-clearance-feng-shui/)；若主要問題是床邊地面，參考 [床邊地毯夜間路線](/zh/blog/bedroom-bedside-rug-night-route-feng-shui/)。
 
 ### 參考資料
 

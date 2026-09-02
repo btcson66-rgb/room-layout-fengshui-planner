@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-cutting-board-storage-feng-shui
   - kitchen-sink-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 刀具在廚房風水裡常被聯想到「利器傷和氣」或把尖銳物藏起來，有人會問刀架應該朝哪個方向、菜刀能不能放在爐具旁，或把刀全部收進抽屜是否就能讓家人少爭執。實際上更需要處理的是刀刃有沒有外露、刀柄是否容易被碰到、刀具與砧板的生熟食用途是否混淆、洗後是否乾燥，以及取刀時會不會跨過熱鍋或擋住家人。沒有任何方位能替代刀具安全；本文把「收好利器」轉成可檢查的保護、分區與動線。
 
-先量每把刀的全長、刀柄寬度、刀架槽位、抽屜內高、砧板、流理臺、水槽、爐具和主要通行路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較抽屜分格、直立刀架與封閉式收納的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜、櫃門和刀架不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拿刀、放食材、開冰箱和端菜時是否需要閃避。工具只協助空間配置，不取代產品說明、食品衛生指引或家庭安全判斷。
+先量每把刀的全長、刀柄寬度、刀架槽位、抽屜內高、砧板、流理臺、水槽、爐具和主要通行路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較抽屜分格、直立刀架與封閉式收納的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜、櫃門和刀架不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拿刀、放食材、開冰箱和端菜時是否需要閃避。工具只協助空間配置，不取代產品說明、食品衛生指引或家庭安全判斷。
 
 ## 先分辨刀具用途，不要讓所有刀混成一把「萬用刀」
 

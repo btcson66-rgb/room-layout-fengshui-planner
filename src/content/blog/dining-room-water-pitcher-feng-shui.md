@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-sideboard-feng-shui
   - dining-table-napkin-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 飲水壺在餐廳風水裡常被視為水氣、流動與家庭共享的象徵，有人會問水壺靠近餐桌、放在邊櫃東側或面向大門是否比較能聚財。但餐廳真正需要處理的是飲用水是否依來源說明使用、容器有沒有清潔乾燥、壺蓋是否完整、端取時會不會滴水、熱水是否造成燙傷，以及補水和收洗能否融入用餐流程。沒有任何水壺方位能保證財運、健康或家人關係；本文把「水聚於餐廳」轉成可檢查的衛生、穩定與動線。
 
-先量餐桌長寬、椅子拉出範圍、邊櫃深度、飲水壺高度、杯子、飲水設備、廚房到餐廳的路徑與地面材質。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較餐桌、邊櫃和飲水區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃門、壺蓋、杯子與托盤能同時操作，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端水、拉椅、清理滴水和多人交會。工具只能協助規劃，不取代飲用水設備與容器的使用說明。
+先量餐桌長寬、椅子拉出範圍、邊櫃深度、飲水壺高度、杯子、飲水設備、廚房到餐廳的路徑與地面材質。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較餐桌、邊櫃和飲水區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃門、壺蓋、杯子與托盤能同時操作，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端水、拉椅、清理滴水和多人交會。工具只能協助規劃，不取代飲用水設備與容器的使用說明。
 
 ## 先確認水的來源與容器狀態
 

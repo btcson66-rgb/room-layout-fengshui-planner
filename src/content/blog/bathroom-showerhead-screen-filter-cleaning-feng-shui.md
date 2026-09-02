@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-hand-shower-head-cleaning-feng-shui
   - bathroom-shower-water-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 淋浴花灑濾網常被忽略，卻可能與噴孔水垢、進水濾網、軟管折彎、接頭漏水和出水變弱同時出現。風水語彙會把浴室水流說成排濁、流動或洗去滯氣；實際維護則要先分辨哪一段堵塞、哪一個接頭漏水、哪些零件可以拆，以及清潔後是否能安全乾燥。本文把「水流有序」轉成型號確認、濾網清潔、出水比較、止漏驗收與淋浴動線觀察，不把水柱大小當成健康、洗淨或運勢保證。
 
-先記錄浴室約 180 × 240 公分、花灑型號、噴孔材質、濾網位置、淋浴軟管、偏心接頭、牆面、地面、排水口和主要站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆卸、擦乾和拿取工具的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛架與軟管不會碰到門片；水流和腳下安全可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)觀察。工具只能協助配置，不取代水電或衛浴維修判斷。
+先記錄浴室約 180 × 240 公分、花灑型號、噴孔材質、濾網位置、淋浴軟管、偏心接頭、牆面、地面、排水口和主要站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆卸、擦乾和拿取工具的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛架與軟管不會碰到門片；水流和腳下安全可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)觀察。工具只能協助配置，不取代水電或衛浴維修判斷。
 
 ## 先分辨噴孔水垢、濾網沉積、供水變化與接頭漏水
 

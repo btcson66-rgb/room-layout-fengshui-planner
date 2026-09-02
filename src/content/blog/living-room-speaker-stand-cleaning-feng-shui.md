@@ -17,7 +17,7 @@ keywords:
   - 喇叭底座防滑檢查
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-speaker-grille-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳喇叭架在風水裡常被聯想到聲音流動、家庭交流與左右平衡，但真正需要維護的是喇叭網罩灰塵、箱體、底座、支架固定、線材受拉、地面平整和家人通行。支架看起來只是家具配件，實際上要承接喇叭重量並維持穩定；如果喇叭偏向一側、底座滑動或線材跨過走道，不能用調整音量或裝飾品掩蓋。本文把「聲場有序」轉成可觀察的斷電、除塵、固定、防滑、線材與客廳動線驗收，不把喇叭朝向當成音質、人緣或運勢保證。
 
-先記錄喇叭尺寸、重量、支架高度、底板、腳墊、地面材質、線材出口、插座、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出聆聽、清潔與拔電路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認支架不侵入人流；喇叭與支架尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代喇叭與支架說明、地面狀態和固定安全判斷。
+先記錄喇叭尺寸、重量、支架高度、底板、腳墊、地面材質、線材出口、插座、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出聆聽、清潔與拔電路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認支架不侵入人流；喇叭與支架尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代喇叭與支架說明、地面狀態和固定安全判斷。
 
 ## 先分辨灰塵、箱體異常、支架晃動與線材受拉
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-desk-cable-cleaning-feng-shui
   - home-office-desk-lamp-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 書桌抽屜風水常被問成「抽屜朝哪裡才旺文昌」，但書房每天真正要處理的是：紙屑和筆屑是否堆在後角、文件重量是否讓底板下垂、充電線是否被抽屜夾住、坐下時膝蓋是否撞前板、拿資料時是否需要離開工作區，以及清潔後能否把物品放回原位。風水裡的「文氣」可以轉譯為資訊分類、抽屜順暢、腳下清楚與工作流程少折返，不能用方向保證專注或成果。
 
-先量書房長寬、書桌寬深高、抽屜完全拉出深度、椅子後退範圍、螢幕、鍵盤、插座、線材和門口走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、取文件、開抽屜、插拔與清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜拉出不會碰椅子或桌下線材；也可參考 [房間動線檢查](/zh/room-circulation-check/)找出工作與出入口交會。工具只協助配置，不代替電氣、承重或文件保存判斷。
+先量書房長寬、書桌寬深高、抽屜完全拉出深度、椅子後退範圍、螢幕、鍵盤、插座、線材和門口走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、取文件、開抽屜、插拔與清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜拉出不會碰椅子或桌下線材；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)找出工作與出入口交會。工具只協助配置，不代替電氣、承重或文件保存判斷。
 
 ## 書桌抽屜的好風水是文件找得到、滑軌走得順且腳部不被前板干擾
 

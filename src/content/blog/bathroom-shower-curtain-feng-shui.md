@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-paper-holder-feng-shui
   - bathroom-bath-mat-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴簾在浴室風水裡常被問成「浴簾拉起來能不能藏住濁氣」「透明浴簾會不會讓水氣外洩」。但浴簾真正的任務是協助水花集中、保留進出空間和維持視線隱私，位置要先處理下緣長度、滑軌、積水、通風、防滑和扶手。若浴簾拖到地面、纏住腳、讓照顧者看不見淋浴中的人，或拉開後堵住馬桶和門片，顏色與圖案都不能取代安全。沒有浴簾位置能保證財運、健康或家庭結果；風水可以作為空間界線的文化角度，實際仍要看浴室設備。
 
-先量浴簾桿或滑軌、浴簾寬度與下緣、淋浴區、馬桶、洗手台、門片及進出淋浴時的腳步範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出乾濕區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認浴簾收起後不會碰到紙架或門片；若家中有長者或行動不便者，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試濕腳和扶手路徑。工具不能代替防水、防滑、無障礙和施工判斷。
+先量浴簾桿或滑軌、浴簾寬度與下緣、淋浴區、馬桶、洗手台、門片及進出淋浴時的腳步範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出乾濕區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認浴簾收起後不會碰到紙架或門片；若家中有長者或行動不便者，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試濕腳和扶手路徑。工具不能代替防水、防滑、無障礙和施工判斷。
 
 ## 先分辨遮水、進出與晾乾任務
 

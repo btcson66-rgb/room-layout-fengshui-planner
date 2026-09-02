@@ -97,7 +97,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出床頭、掛畫和壁燈活動區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較突出距離；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放坐起與離床。若床頭層板是主題，可看 [床頭牆面層板](/zh/blog/bedroom-bed-headboard-wall-shelf-clearance-feng-shui/)；若燈具本體是瓶頸，參考 [床邊燈具](/zh/blog/bedroom-bedside-lamp-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出床頭、掛畫和壁燈活動區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較突出距離；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放坐起與離床。若床頭層板是主題，可看 [床頭牆面層板](/zh/blog/bedroom-bed-headboard-wall-shelf-clearance-feng-shui/)；若燈具本體是瓶頸，參考 [床邊燈具](/zh/blog/bedroom-bedside-lamp-feng-shui/)。
 
 ### 參考資料
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-recliner-chair-feng-shui
   - living-room-footstool-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 躺椅腳踏是會移動的家具部件，直坐時藏在椅座下方，伸展時可能向前推出並改變椅子的總深度。灰塵、零食碎屑、玩具、寵物毛或電源線若進入椅底，可能造成異音、收不回、腳踏歪斜或腳掌碰撞；布面污漬則要依 upholstery cleaning code 分辨能否用水、免水清潔劑或只能吸塵。客廳風水談「座位有靠、動線順」，在躺椅上應先落實為機構清潔、伸展留空、起身穩定和家人交接。
 
-如果有人問「腳踏卡住是不是客廳氣場堵住？」應先把問題拆成椅底異物、連桿或棘輪、腳踏接觸地面、布面清潔限制、電源或遙控器狀態。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出躺椅直坐與完全伸展的兩個平面，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較茶几、牆面、窗簾與插座距離，並用 [房間通行寬度檢查](/zh/room-circulation-check/)測試家人繞行和照護者靠近。工具不能取代電動家具手冊和維修判斷。
+如果有人問「腳踏卡住是不是客廳氣場堵住？」應先把問題拆成椅底異物、連桿或棘輪、腳踏接觸地面、布面清潔限制、電源或遙控器狀態。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出躺椅直坐與完全伸展的兩個平面，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較茶几、牆面、窗簾與插座距離，並用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試家人繞行和照護者靠近。工具不能取代電動家具手冊和維修判斷。
 
 ## 先辨認手動、電動與可調式躺椅腳踏
 

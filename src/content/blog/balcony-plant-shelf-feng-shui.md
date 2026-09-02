@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-feng-shui-layout
   - balcony-clothes-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台植栽在風水裡常被聯想到生氣、綠意和把室外活力引入家中，因此有人會把大型花架靠女兒牆、把花盆排滿欄杆，或追求某個方位的植物種類。但陽台是風、雨、日照、排水、承重和防墜同時出現的空間，花盆澆水後會變重，植栽架也可能受強風或碰撞影響。沒有任何植物或花架方位能保證招財、健康或家庭結果；本文把「生氣」落到安全固定、清楚通道、適量植栽和可維護的陽台邊界。
 
-先量陽台長寬、女兒牆或欄杆、落地窗、紗門、排水孔、冷氣室外機、曬衣設備和通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆與靠內兩種方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)估算花架和澆水後的轉身空間，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試開門、晾衣、修剪和撤離。工具不能代替建築結構、管理規約或現場防墜專業判斷。
+先量陽台長寬、女兒牆或欄杆、落地窗、紗門、排水孔、冷氣室外機、曬衣設備和通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆與靠內兩種方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)估算花架和澆水後的轉身空間，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試開門、晾衣、修剪和撤離。工具不能代替建築結構、管理規約或現場防墜專業判斷。
 
 ## 植物的「生氣」先變成重量和維護清單
 

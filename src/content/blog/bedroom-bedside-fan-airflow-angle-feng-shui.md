@@ -95,7 +95,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、窗、門與扇頭範圍，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放夜間路線。若電線是主要問題，可參考 [床邊電風扇電線與夜路](/zh/blog/bedroom-bedside-fan-cord-clearance-feng-shui/)；若窗邊影響氣流，可看 [床邊窗台距離](/zh/blog/bedroom-bed-window-sill-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、窗、門與扇頭範圍，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放夜間路線。若電線是主要問題，可參考 [床邊電風扇電線與夜路](/zh/blog/bedroom-bedside-fan-cord-clearance-feng-shui/)；若窗邊影響氣流，可看 [床邊窗台距離](/zh/blog/bedroom-bed-window-sill-clearance-feng-shui/)。
 
 ### 參考資料
 

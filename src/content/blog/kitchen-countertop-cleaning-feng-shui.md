@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-faucet-cleaning-feng-shui
   - kitchen-cabinet-shelf-liner-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房檯面在風水裡常被聯想到承接、聚合與食物準備，但真正需要維護的是油膜、食物碎屑、水痕、清潔劑殘留、砧板、刀具、小家電和備餐動線。檯面擦過不代表適合立刻放食材；如果抹布帶有油污，或清潔劑停在食品接觸面，表面看起來乾淨也需要重新判斷。本文把「檯面有序」轉成可觀察的清空、食品與非食品分區、材質清潔、乾燥和備餐驗收，不把檯面方位當成食祿、衛生或運勢保證。
 
-先記錄檯面長寬、材質、接縫、爐具、水槽、砧板、小家電、垃圾桶、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出切菜、洗滌、烹調和端盤路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認電器與檯面邊緣有安全距離；多人備餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不能取代檯面材質、食品接觸和電器說明。
+先記錄檯面長寬、材質、接縫、爐具、水槽、砧板、小家電、垃圾桶、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出切菜、洗滌、烹調和端盤路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認電器與檯面邊緣有安全距離；多人備餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不能取代檯面材質、食品接觸和電器說明。
 
 ## 先分辨油膜、碎屑、水痕與清潔劑殘留
 

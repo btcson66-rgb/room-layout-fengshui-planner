@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-garbage-bin-feng-shui
   - kitchen-sink-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚餘桶在廚房風水裡常被聯想到剩食、聚集與把「不好的東西」送走，有人會問廚餘桶放在水槽旁會不會漏財、放在廚房角落能不能讓家裡乾淨。真正要先處理的是廚餘有沒有瀝水、桶蓋是否能密合、容器是否容易清洗、食物和一般垃圾是否分流，以及每天把廚餘帶出去時會不會穿過餐具和烹調區。沒有一個方位能取代地方回收規定與衛生管理；本文把「送走濁氣」轉成清楚的分類、暫存上限和可走完的清運流程。
 
-先量廚房長寬、水槽、爐台、冰箱、垃圾桶、廚餘桶、門扇、電梯或垃圾車方向，並記錄空桶、半桶、滿桶、提起和清洗時的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽下、流理台側和玄關出口附近的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶蓋、把手和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試備料、端菜、提桶、清洗和開門。工具只協助配置，不取代所在地環保局、清潔隊與食品衛生判斷。
+先量廚房長寬、水槽、爐台、冰箱、垃圾桶、廚餘桶、門扇、電梯或垃圾車方向，並記錄空桶、半桶、滿桶、提起和清洗時的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽下、流理台側和玄關出口附近的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶蓋、把手和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試備料、端菜、提桶、清洗和開門。工具只協助配置，不取代所在地環保局、清潔隊與食品衛生判斷。
 
 ## 先判斷家中的廚餘是每天清運還是短暫暫存
 

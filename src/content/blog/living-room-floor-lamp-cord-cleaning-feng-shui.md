@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-floor-lamp-feng-shui
   - living-room-floor-lamp-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 立燈電線風水常被問成「線材放在沙發左側會不會破壞財位」，但客廳每天真正要處理的是：電線是否積灰、插頭是否被家具壓住、開關是否要彎腰摸索、底座是否擋住掃地路徑，以及夜間起身時腳會不會勾到線。風水裡的「明」可以轉譯為光線可用、線材可見、插頭不受拉扯、地面好清潔和走道不被切斷，不能用方位保證旺運或照明安全。
 
-先量客廳長寬、立燈總高與底座直徑、燈罩外緣、電線長度、插座、沙發、茶几、地毯、門片與主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、開關燈、清掃與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認底座和沙發不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查夜間通行。工具只協助配置，不代替電氣、燈具結構或產品說明判斷。
+先量客廳長寬、立燈總高與底座直徑、燈罩外緣、電線長度、插座、沙發、茶几、地毯、門片與主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、開關燈、清掃與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認底座和沙發不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查夜間通行。工具只協助配置，不代替電氣、燈具結構或產品說明判斷。
 
 ## 立燈電線的好風水是看得見、擦得到且不跨主要走道
 

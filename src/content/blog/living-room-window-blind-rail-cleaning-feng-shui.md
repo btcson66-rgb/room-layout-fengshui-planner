@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-window-cleaning-feng-shui
   - living-room-curtain-rail-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳百葉窗軌道清潔風水常被說成「窗路開合順，氣才進得來」，但軌道實際會累積灰塵、棉絮、油膜、飛蟲與窗框帶入的細砂。滑片卡住可能是髒污、葉片歪斜、軌道變形或拉繩受力不均；採光不舒服也可能是葉片角度、螢幕反光或家具遮擋，不是單用「窗氣不順」可以判斷。風水可作為採光與界線整理的語言，但不能保證財運、通風或拉繩安全。
 
-先量客廳長寬、窗戶寬度、百葉窗高度、軌道深度、葉片寬度、沙發、茶几、電視與主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出葉片旋轉和開合範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認窗邊家具不會壓住拉繩；若窗邊是通往陽台或玄關的路線，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試調光、開窗和清潔站位。工具只能協助平面比較，不能判定窗簾五金或兒童拉繩風險。
+先量客廳長寬、窗戶寬度、百葉窗高度、軌道深度、葉片寬度、沙發、茶几、電視與主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出葉片旋轉和開合範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認窗邊家具不會壓住拉繩；若窗邊是通往陽台或玄關的路線，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試調光、開窗和清潔站位。工具只能協助平面比較，不能判定窗簾五金或兒童拉繩風險。
 
 ## 先分辨軌道灰塵、油膜、滑片卡垢與葉片變形
 

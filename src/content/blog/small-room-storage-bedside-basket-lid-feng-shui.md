@@ -89,7 +89,7 @@ EPA 的室內空氣資料可作清潔、灰塵與通風背景；CPSC 的家具�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出籃子、蓋子、床側和暫放區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較開蓋外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放取物、清潔、通風和回位。若考慮硬式箱體，可讀 [床邊收納箱堆疊](/zh/blog/small-room-storage-bedside-stacked-boxes-feng-shui/)；若想改抽屜，參考 [床邊抽屜深度](/zh/blog/small-room-storage-bedside-drawer-depth-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出籃子、蓋子、床側和暫放區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較開蓋外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、清潔、通風和回位。若考慮硬式箱體，可讀 [床邊收納箱堆疊](/zh/blog/small-room-storage-bedside-stacked-boxes-feng-shui/)；若想改抽屜，參考 [床邊抽屜深度](/zh/blog/small-room-storage-bedside-drawer-depth-feng-shui/)。
 
 ### 參考資料
 

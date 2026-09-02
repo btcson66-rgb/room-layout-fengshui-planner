@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-sheet-cleaning-feng-shui
   - bedroom-pillow-dust-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室枕套在風水裡常被聯想到頭部、休息與睡眠區界線，但真正需要維護的是臉部接觸、汗氣、皮屑、頭髮、寵物毛、污漬、拉鍊、枕頭保護套和完全乾燥。枕套面積不大，卻每天接觸皮膚；洗完若內側仍有潮感就套回枕頭，或把待洗枕套和乾淨床品混在一起，會讓狀態難以追蹤。本文把「頭部有界」轉成可觀察的分流、換洗、材質清潔、乾燥、套合和床邊動線驗收，不把枕套顏色或床頭方向當成好眠、健康或運勢保證。
 
-先記錄枕套尺寸、材質、拉鍊或信封口、枕頭、保護套、床架、窗戶、晾曬區和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排待洗和待乾區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認換洗時不會堆住床邊；床品搬運可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間規劃，不能取代枕套洗標和材料判斷。
+先記錄枕套尺寸、材質、拉鍊或信封口、枕頭、保護套、床架、窗戶、晾曬區和房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排待洗和待乾區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認換洗時不會堆住床邊；床品搬運可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間規劃，不能取代枕套洗標和材料判斷。
 
 ## 先分辨汗氣、皮屑、灰塵與潮感
 

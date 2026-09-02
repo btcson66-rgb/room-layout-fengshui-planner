@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-kettle-feng-shui
   - kitchen-electric-kettle-scale-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電熱水壺壺蓋的風水問題常被問成「水壺放哪個方位才會聚財」，但日常真正要處理的是壺蓋內側是否有水垢、蒸氣孔是否被薄膜堵住、壺嘴倒水會不會滴回檯面、電源底座是否潮濕，以及取水時會不會切斷備餐路線。風水裡的「水火有序」可以轉譯為煮水、倒水、擦乾和收線各有界線，不能把水壺位置當成飲水安全或健康保證。
 
-先量廚房長寬、壺身寬深高、壺蓋開啟高度、壺嘴方向、底座、插座、水槽、爐具和常用杯子。以 240 × 300 公分廚房為例，水壺若放在水槽旁，補水方便卻可能讓底座長期受濺水；若放在備餐檯，取水順手但壺蓋打開時可能撞上上櫃。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出加水、煮水和倒水路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對上方空間，最後以 [房間動線檢查](/zh/room-circulation-check/)測試兩人備餐。工具只協助配置，不代替電氣、燙傷與產品維護判斷。
+先量廚房長寬、壺身寬深高、壺蓋開啟高度、壺嘴方向、底座、插座、水槽、爐具和常用杯子。以 240 × 300 公分廚房為例，水壺若放在水槽旁，補水方便卻可能讓底座長期受濺水；若放在備餐檯，取水順手但壺蓋打開時可能撞上上櫃。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出加水、煮水和倒水路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對上方空間，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試兩人備餐。工具只協助配置，不代替電氣、燙傷與產品維護判斷。
 
 ## 電熱水壺的好風水是壺蓋可清、蒸氣可排且底座保持乾燥
 

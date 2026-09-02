@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-air-purifier-pre-filter-cleaning-feng-shui
   - living-room-air-purifier-caster-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 空氣清淨機的出風口通常位在機體上方、前方或側面，縫隙會積灰塵、棉絮和寵物毛；窗簾下擺、沙發靠背、書本或裝飾物靠太近，也可能讓出風受阻。客廳風水常談氣流是否順暢，但實際可以檢查的是出風罩是否乾淨、感測器是否被誤觸、濾網是否依手冊維護，以及人行路徑有沒有被電線和機器擋住，不能把風量直接當成宅運結論。
 
-先記錄品牌、型號、出風口位置、濾網提醒、感測器入口、插座、沙發、電視櫃和窗簾。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出出風與進風範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對機器與櫃體距離，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)測試家人取物和清潔時的站位。
+先記錄品牌、型號、出風口位置、濾網提醒、感測器入口、插座、沙發、電視櫃和窗簾。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出出風與進風範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對機器與櫃體距離，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試家人取物和清潔時的站位。
 
 ## 出風罩、風口縫隙與濾網不是同一層
 

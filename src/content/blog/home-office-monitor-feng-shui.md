@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/desk-placement-feng-shui/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-printer-feng-shui
   - home-office-desk-lamp-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電腦螢幕在書房風水裡常被聯想到專注、升遷、學習成果和把注意力聚在一個方向，因此有人會問螢幕是否一定要面向門、背靠實牆或放在書桌正中央。但螢幕真正要處理的是窗戶反光、觀看距離、視線高度、支架穩定、鍵盤滑鼠位置、電源線、桌面深度與久坐後的起身動線。沒有任何螢幕方位能保證升職、考試、專注或財運；本文把「專注有靠」轉成可觀察的眩光、工作姿勢與桌面可維護性。
 
-先量書房、書桌、螢幕寬度與深度、桌面前後緣、椅子、窗戶、門、插座和主要通道。用 [書桌方位檢查](/zh/desk-placement-feng-shui/)比較面門、側窗和背牆方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認螢幕支架、喇叭、筆電和文件不會超過桌面承重，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試椅子後退、拿書、清潔和離開座位。工具能協助量測，不取代產品手冊、視光或職業安全建議。
+先量書房、書桌、螢幕寬度與深度、桌面前後緣、椅子、窗戶、門、插座和主要通道。用 [書桌方位檢查](/zh/desk-placement-feng-shui/)比較面門、側窗和背牆方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認螢幕支架、喇叭、筆電和文件不會超過桌面承重，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試椅子後退、拿書、清潔和離開座位。工具能協助量測，不取代產品手冊、視光或職業安全建議。
 
 ## 螢幕面向哪裡，不只是一個風水問題
 

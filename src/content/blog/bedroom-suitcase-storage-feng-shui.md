@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-luggage-storage-feng-shui
   - bedroom-pillow-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 行李箱在臥室風水裡常被說成承載遠方氣場、放在床下會壓住休息，或收在衣櫃旁能把旅運留住。但行李箱真正需要管理的是旅行回家後是否還有未清空的衣物、潮濕或泥沙，箱縫與輪子有沒有異物，收納處是否貼著冷牆，以及下次拿取時會不會需要搬開床、踩椅子或拖過睡眠區。沒有單一位置能決定旅運或睡眠；本文把「安置遠方物品」轉成返家分流、防潮、檢查與動線。
 
-先量行李箱長寬高、輪子與把手收回後的尺寸、床下淨高、衣櫃深度、牆面、窗戶、冷氣回風口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床下、衣櫃上方與獨立行李架的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認箱體推入後不會頂到牆面或壓住抽屜，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試開箱、拖行、換衣和夜間行走。工具只協助配置，不取代環境衛生、旅行檢查或行李箱製造商的保養說明。
+先量行李箱長寬高、輪子與把手收回後的尺寸、床下淨高、衣櫃深度、牆面、窗戶、冷氣回風口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床下、衣櫃上方與獨立行李架的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認箱體推入後不會頂到牆面或壓住抽屜，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試開箱、拖行、換衣和夜間行走。工具只協助配置，不取代環境衛生、旅行檢查或行李箱製造商的保養說明。
 
 ## 行李箱回家後先不要直接進臥室深處
 

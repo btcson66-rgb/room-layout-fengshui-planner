@@ -22,7 +22,7 @@ relatedTools:
 relatedPosts:
   - bedroom-bed-frame-cleaning-feng-shui
   - bedroom-bed-frame-joint-cleaning-feng-shui
-  - bedroom-under-bed-storage-feng-shui
+  - under-bed-storage-feng-shui
 howToName: "床架床腳灰塵、腳墊、地板受力、床底收納與起身動線檢查"
 howToTotalTime: "PT35M"
 howToSteps:

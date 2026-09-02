@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-kettle-spout-filter-cleaning-feng-shui
   - kitchen-electric-kettle-base-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電熱水壺把手的風水常被說成「拿得穩才能守住家氣」，但真正需要處理的是握持區油膜、蒸氣水痕、把手裂縫、壺身重量和倒水時的人行路徑。風水裡的「穩」可以轉譯為手柄沒有滑膜、提起時不晃、壺嘴朝向可控、熱水不穿越雜物，不能把把手乾淨直接當成財運或燙傷風險消失。
 
-先量廚房長寬、壺身與把手突出距離、杯子落點、水槽、插座、檯面邊緣和倒水站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出提壺與倒水路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/room-circulation-check/)看轉身時是否碰到鍋具或電線。
+先量廚房長寬、壺身與把手突出距離、杯子落點、水槽、插座、檯面邊緣和倒水站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出提壺與倒水路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看轉身時是否碰到鍋具或電線。
 
 ## 熱水壺把手的好風水是握持穩定、壺身可控與熱水不堵路
 

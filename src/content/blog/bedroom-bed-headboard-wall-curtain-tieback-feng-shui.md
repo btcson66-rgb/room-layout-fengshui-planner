@@ -87,7 +87,7 @@ CPSC 的窗簾繩安全資料提醒，帶繩與可接觸的窗簾配件要依產
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出綁帶扣點、布堆、床側和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較拉動與回位外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放鬆綁、下床、換床單和清潔。若布簾收起後仍外凸，可讀 [床頭窗簾側邊回收](/zh/blog/bedroom-bed-headboard-wall-curtain-side-return-feng-shui/)；若固定件是瓶頸，參考 [床頭窗簾桿固定](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出綁帶扣點、布堆、床側和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較拉動與回位外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放鬆綁、下床、換床單和清潔。若布簾收起後仍外凸，可讀 [床頭窗簾側邊回收](/zh/blog/bedroom-bed-headboard-wall-curtain-side-return-feng-shui/)；若固定件是瓶頸，參考 [床頭窗簾桿固定](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
 
 ### 參考資料
 

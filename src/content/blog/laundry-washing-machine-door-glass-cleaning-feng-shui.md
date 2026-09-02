@@ -16,9 +16,8 @@ keywords:
   - 洗衣機門關不緊漏水
   - 洗衣機門玻璃保養
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-door-seal-cleaning-feng-shui
   - laundry-washing-machine-drum-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機門玻璃在風水裡容易被聯想到內外可見、循環與水氣界面，但真正需要維護的是門內外水痕、毛絮、硬物、洗劑膜、刮痕、門膠圈密合、門鎖和洗後乾燥。玻璃看起來透明，不代表門膠圈沒有夾住線頭；門能關上，也不代表門鎖或密合面沒有異物。本文把「循環看得見、內外有界」轉成可觀察的清空、分面清潔、異物移除、密合驗收和洗衣動線交接，不把玻璃反光或朝向當成洗淨、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、門玻璃內外側、門膠圈、門鎖、門片、內桶、洗劑盒、洗衣籃、牆距、晾衣區和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排開門、取衣和擦拭路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認洗衣籃不會撞門；維護時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代製造商說明、電器安全或漏水維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、門玻璃內外側、門膠圈、門鎖、門片、內桶、洗劑盒、洗衣籃、牆距、晾衣區和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排開門、取衣和擦拭路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認洗衣籃不會撞門；維護時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代製造商說明、電器安全或漏水維修判斷。
 
 ## 先分辨水痕、毛絮、硬物、洗劑膜與玻璃刮痕
 

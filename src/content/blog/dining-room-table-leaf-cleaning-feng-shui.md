@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-cleaning-feng-shui
   - dining-room-table-under-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 伸縮餐桌的風水問題常被問成「桌板展開後才有聚餐運」，但真正每天會影響使用感受的，通常是隱藏桌板卡在桌底多久沒有取出、滑軌是否藏著飯粒、接縫是否黏著飲料、桌板收回時有沒有夾手，以及展開後椅子和端菜路徑是否被壓縮。風水裡的「開合有序」可以轉譯為桌板能順利完成狀態轉換、接縫可看見、五金不被水分浸泡、椅子有可退讓的位置，不能把展開方向當成人際關係的判定依據。
 
-先量餐廳長寬、餐桌收起與展開後的長寬、桌面高度、桌板厚度、隱藏桌葉的位置、滑軌行程、桌腳、椅子和牆面。以 220 × 300 公分餐廳為例，收起時可能只剩一側可通行；展開後要重新確認兩端椅子、餐邊櫃、門片和端菜者的交會點。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出收起／展開兩張圖，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)對照桌板行程與桌腳位置，最後以 [房間動線檢查](/zh/room-circulation-check/)測試有人坐下時是否仍能通行。工具只協助配置，不代替家具說明書、夾傷防護或五金維修判斷。
+先量餐廳長寬、餐桌收起與展開後的長寬、桌面高度、桌板厚度、隱藏桌葉的位置、滑軌行程、桌腳、椅子和牆面。以 220 × 300 公分餐廳為例，收起時可能只剩一側可通行；展開後要重新確認兩端椅子、餐邊櫃、門片和端菜者的交會點。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出收起／展開兩張圖，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)對照桌板行程與桌腳位置，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試有人坐下時是否仍能通行。工具只協助配置，不代替家具說明書、夾傷防護或五金維修判斷。
 
 ## 伸縮桌的好風水是收起不藏污、展開不阻路且桌板狀態可確認
 

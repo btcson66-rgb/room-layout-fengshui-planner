@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-filter-basket-cleaning-feng-shui
   - kitchen-coffee-machine-drip-tray-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡機 portafilter 的風水常被說成「火氣與水氣要平衡」，但每天真正會影響使用的是濾籃粉渣、咖啡油膜、把手接縫、沖煮頭密封，以及沖煮後清理咖啡渣的站位。風水裡的「流動」可以轉譯為水能按預期通過、濾籃不堵、把手鎖合穩定和人不用端著熱咖啡穿越雜物，不能把咖啡機清潔狀態直接當成財運保證。
 
-先量廚房長寬、咖啡機寬深、把手旋轉空間、杯子落點、水槽、電源線和清潔站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出沖煮與清洗路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對工作檯深度，最後用 [房間動線檢查](/zh/room-circulation-check/)確認熱杯、濕把手和粉渣不會堵住備餐路徑。
+先量廚房長寬、咖啡機寬深、把手旋轉空間、杯子落點、水槽、電源線和清潔站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出沖煮與清洗路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對工作檯深度，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認熱杯、濕把手和粉渣不會堵住備餐路徑。
 
 ## Portafilter 的好風水是鎖合穩定、濾孔通暢與粉渣可收
 

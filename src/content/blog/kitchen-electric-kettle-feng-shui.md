@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-water-dispenser-feng-shui
   - kitchen-coffee-machine-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 快煮壺在廚房風水裡常被聯想到水火相濟、熱水供應和把溫暖留在家中，因此有人會問放在財位、入口或廚房中央是否更能聚氣。但快煮壺是液體加熱且耗電量高的設備，位置要先處理最低與最高水位、壺蓋、出水口、蒸氣、基座、插座、濕手、檯面穩定和倒熱水路線。若把它放在水槽邊或用濕手插電，象徵性的水火平衡不能取代用電與燙傷預防。沒有任何快煮壺位置能保證財運、健康或家庭結果；本文把「水火有序」落到可檢查的加水、煮沸、倒水和清潔流程。
 
-先量壺體、基座、壺蓋開合、出水口、插座、水槽、牆面、上櫃、杯子與主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較乾燥檯面與水槽旁位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認壺蓋和提壺不會撞櫃；多人早餐時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端熱水。工具不能代替產品說明、插座規範或操作安全判斷。
+先量壺體、基座、壺蓋開合、出水口、插座、水槽、牆面、上櫃、杯子與主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較乾燥檯面與水槽旁位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認壺蓋和提壺不會撞櫃；多人早餐時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端熱水。工具不能代替產品說明、插座規範或操作安全判斷。
 
 ## 水位與壺蓋是位置條件
 

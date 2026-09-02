@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-air-purifier-feng-shui
   - bedroom-humidifier-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 除濕機在客廳風水裡常被聯想到把濕氣、陰濁和停滯感帶走，因此有人會問應不應放在房屋中央、財位或窗邊，認為越靠近客廳中心越能讓全家乾爽。但除濕機是會產熱、排水、吸入灰塵和需要維護的電器，位置要先處理散熱距離、進出風口、牆面、窗簾、衣物、水箱、排水管、濾網、噪音與離家斷電。標準檢驗局提醒不要在密閉衣櫥使用，也不要用衣物覆蓋機體或在無人、睡覺時長時間使用。沒有任何除濕機方位能保證健康、財運或居家舒適；本文把「去濕」落到可檢查的水路、熱路和客廳人流。
 
-先量除濕機本體、進風口、出風口、水箱、連續排水管、插座、牆面、窗簾、沙發、曬衣架和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較客廳角落與晾衣區的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱抽出和濾網清潔需要的空間；如果客廳同時是餐區或遊戲區，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試倒水、端物和進出。工具不能代替產品說明、消防或電氣專業判斷。
+先量除濕機本體、進風口、出風口、水箱、連續排水管、插座、牆面、窗簾、沙發、曬衣架和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較客廳角落與晾衣區的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱抽出和濾網清潔需要的空間；如果客廳同時是餐區或遊戲區，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試倒水、端物和進出。工具不能代替產品說明、消防或電氣專業判斷。
 
 ## 先找濕氣來源，再決定除濕機位置
 

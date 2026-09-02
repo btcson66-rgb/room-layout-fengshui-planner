@@ -95,7 +95,7 @@ OSHA 的螢幕資料建議使用者正面面向螢幕，螢幕上緣接近或略
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出窗戶、桌面和視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較螢幕支架與椅子後退；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放離席和取文件。若牆面距離是瓶頸，可看 [書桌螢幕離牆距離](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)；若窗光反射是主問題，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出窗戶、桌面和視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較螢幕支架與椅子後退；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放離席和取文件。若牆面距離是瓶頸，可看 [書桌螢幕離牆距離](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)；若窗光反射是主問題，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
 
 ### 參考資料
 

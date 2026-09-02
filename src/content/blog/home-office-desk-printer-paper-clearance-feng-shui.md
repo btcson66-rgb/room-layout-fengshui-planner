@@ -83,7 +83,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫印表機、桌和門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 輸入托盤和紙盒深度，最後以 [房間動線檢查](/zh/room-circulation-check/) 回看取紙路線。若桌面文件也造成視線問題，可參考 [書桌文件架視距](/zh/blog/home-office-desk-document-holder-viewing-distance-feng-shui/)；若桌後線材受壓，參考 [螢幕離牆與線材空間](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫印表機、桌和門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 輸入托盤和紙盒深度，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回看取紙路線。若桌面文件也造成視線問題，可參考 [書桌文件架視距](/zh/blog/home-office-desk-document-holder-viewing-distance-feng-shui/)；若桌後線材受壓，參考 [螢幕離牆與線材空間](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)。
 
 ### 參考資料
 

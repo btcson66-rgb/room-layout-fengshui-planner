@@ -87,7 +87,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-可以用 [房間配置規劃器](/zh/room-layout-planner/) 先標出床、房門和窗，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床尾板與長凳外框，最後參考 [房間動線檢查](/zh/room-circulation-check/) 回看入口與出口。若你在意的是從門口看到床的角度，可延伸閱讀 [床和房門同一直線怎麼看](/zh/blog/bedroom-bed-doorway-line-of-sight-feng-shui/)。
+可以用 [房間配置規劃器](/zh/room-layout-planner/) 先標出床、房門和窗，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床尾板與長凳外框，最後參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回看入口與出口。若你在意的是從門口看到床的角度，可延伸閱讀 [床和房門同一直線怎麼看](/zh/blog/bedroom-bed-doorway-line-of-sight-feng-shui/)。
 
 ### 參考資料
 

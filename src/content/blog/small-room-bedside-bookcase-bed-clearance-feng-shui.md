@@ -109,7 +109,7 @@ CPSC 的 Anchor It 資料把固定家具視為降低傾倒風險的重要措施�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 標出床、書櫃、抽屜外伸與門片掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放取書和離床。若書櫃靠門，可參考 [小房間書櫃靠門](/zh/blog/small-room-bedside-bookcase-doorway-clearance-feng-shui/)；若床頭留縫是瓶頸，可看 [床頭靠牆留縫](/zh/blog/bedroom-bed-head-wall-gap-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 標出床、書櫃、抽屜外伸與門片掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取書和離床。若書櫃靠門，可參考 [小房間書櫃靠門](/zh/blog/small-room-bedside-bookcase-doorway-clearance-feng-shui/)；若床頭留縫是瓶頸，可看 [床頭靠牆留縫](/zh/blog/bedroom-bed-head-wall-gap-clearance-feng-shui/)。
 
 ### 參考資料
 

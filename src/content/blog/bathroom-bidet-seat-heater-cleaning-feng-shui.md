@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-sensor-cleaning-feng-shui
   - bathroom-bidet-seat-base-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶加熱座圈常被說成「溫暖代表家中有人氣」，但日常真正要處理的是座圈污漬、感測器遮擋、節能設定、座體水氣和電源界線。風水裡的溫度與舒適可以轉譯為座圈表面可清潔、功能設定可理解、濕區不直接侵入電器，不能把座圈發熱或清潔後舒適直接當成健康、家運或安全保證。
 
-先量浴室長寬、座圈前後、便蓋開啟範圍、感應區、插座、淋浴濕區與門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出座體與濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時的手部空間，最後用 [房間動線檢查](/zh/room-circulation-check/)檢查濕腳離開時是否會碰到插座或座體。
+先量浴室長寬、座圈前後、便蓋開啟範圍、感應區、插座、淋浴濕區與門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出座體與濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時的手部空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查濕腳離開時是否會碰到插座或座體。
 
 ## 加熱座圈的好風水是表面乾淨、溫度設定可追溯與濕氣不滯留
 

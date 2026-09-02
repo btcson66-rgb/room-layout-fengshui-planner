@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-cabinet-door-cleaning-feng-shui
   - kitchen-cabinet-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房櫥櫃鉸鏈在風水裡常被聯想到轉動、開啟與藏納秩序，但真正需要維護的是鉸鏈杯、螺絲、油污、灰塵、鏽蝕、門片下垂、夾隙和開門動線。鉸鏈藏在門片內側，表面不容易察覺；直接噴油或清潔劑也可能讓殘留物進入五金和門板接縫。本文把「轉動順暢」轉成可觀察的清空、斷開使用、材質清潔、固定檢查與開合驗收，不把櫃門方向當成食祿、家具安全或運勢保證。
 
-先記錄鉸鏈型式、門片尺寸、開啟方向、螺絲、把手、爐具、水槽、牆面和走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、備餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片不會撞櫃或牆；開門後的端盤路徑可用 [房間通行寬度檢查](/zh/room-circulation-check/)實測。工具只能協助尺寸與動線，不能取代五金說明與家具維修判斷。
+先記錄鉸鏈型式、門片尺寸、開啟方向、螺絲、把手、爐具、水槽、牆面和走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、備餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片不會撞櫃或牆；開門後的端盤路徑可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)實測。工具只能協助尺寸與動線，不能取代五金說明與家具維修判斷。
 
 ## 先分辨油污、灰塵、鏽蝕與門片下垂
 

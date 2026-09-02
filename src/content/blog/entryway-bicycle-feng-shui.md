@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-stroller-feng-shui
   - entryway-wet-shoes-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 腳踏車在玄關風水裡常被問成「車頭朝內能不能把財帶回家」「掛在門口會不會沖散氣」。但腳踏車是有重量、長把手、轉動輪子和突出踏板的交通用品，位置首先要處理掛架承重、牆體、輪子泥水、門片、鞋櫃、樓梯與逃生動線。若腳踏車斜靠門後、把手會撞門、輪子滴水，或家人搬車時必須跨過唯一通道，方位象徵不能取代實際風險。沒有腳踏車收納位置能保證財運、出行平安或家庭結果；玄關的順暢要靠車體能安全進出。
 
-先量腳踏車長寬高、把手轉向、腳踏位置、輪子、掛架、門片、鞋櫃和轉身範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出搬車路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認車把、車輪和門片不互撞；玄關狹窄或有樓梯時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試一人搬車、一人提袋和夜間逃生。工具不能代替牆體承重、掛架施工、大樓規約和消防判斷。
+先量腳踏車長寬高、把手轉向、腳踏位置、輪子、掛架、門片、鞋櫃和轉身範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出搬車路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認車把、車輪和門片不互撞；玄關狹窄或有樓梯時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試一人搬車、一人提袋和夜間逃生。工具不能代替牆體承重、掛架施工、大樓規約和消防判斷。
 
 ## 先分辨進門、清潔與長期停放
 

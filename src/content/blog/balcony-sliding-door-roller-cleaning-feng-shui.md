@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-window-track-cleaning-feng-shui
   - balcony-window-lock-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台拉門滾輪的風水問題常被說成「門一開就納氣」，但每天真正造成阻礙的，往往是下軌卡著砂粒、毛髮和落葉，滾輪磨耗讓門扇歪斜，門片推到最後會回彈，或清潔和晾衣用品堵住出入口。風水裡的「出入順」可以轉譯為門扇能穩定移動、下軌能排水、密封與鎖定狀態可查看，不能把開門順暢直接當成納氣或安全保證。
 
-先量陽台長寬、拉門總寬、活動門扇、固定扇、下軌、門檻、紗門、窗簾、晾衣架、盆栽和室內外退讓空間。以 180 × 300 公分陽台為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉門開啟、擦拭、晾衣和撤離路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對盆栽與門扇掃掠，最後以 [房間動線檢查](/zh/room-circulation-check/)測試室內外交接。工具只協助配置，不代替門扇拆卸、防墜和五金維修。
+先量陽台長寬、拉門總寬、活動門扇、固定扇、下軌、門檻、紗門、窗簾、晾衣架、盆栽和室內外退讓空間。以 180 × 300 公分陽台為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉門開啟、擦拭、晾衣和撤離路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對盆栽與門扇掃掠，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試室內外交接。工具只協助配置，不代替門扇拆卸、防墜和五金維修。
 
 ## 拉門滾輪的好風水是下軌可見、推動不偏且門扇能安全停住
 

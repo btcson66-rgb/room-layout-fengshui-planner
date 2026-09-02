@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-towel-rack-feng-shui
   - bathroom-toothbrush-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 擦手巾在浴室風水裡常被聯想到洗去外在雜氣、讓水氣有出口與保持家人整潔，有人會問毛巾掛在洗手台左邊、右邊或靠近門口是否比較能留住好運。但擦手巾實際要處理的是誰使用、是否共用、洗手後能不能拿到、毛巾是否乾燥、是否碰到馬桶或地面，以及替換和清洗流程能否持續。沒有任何掛巾方位能保證健康、財運或人際結果；本文把「洗淨後歸零」轉成可檢查的個人界線、清潔與通風。
 
-先量洗手台、鏡子、馬桶、淋浴區、掛鉤或掛桿、門扇、地墊和浴室出入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較掛巾位置與洗手台、門片的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛桿、替換巾和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試洗手、擦乾、清潔與長者進出。工具只能協助配置，不取代衛生規範或醫療建議。
+先量洗手台、鏡子、馬桶、淋浴區、掛鉤或掛桿、門扇、地墊和浴室出入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較掛巾位置與洗手台、門片的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛桿、替換巾和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試洗手、擦乾、清潔與長者進出。工具只能協助配置，不取代衛生規範或醫療建議。
 
 ## 共用擦手巾和個人毛巾不是同一件事
 

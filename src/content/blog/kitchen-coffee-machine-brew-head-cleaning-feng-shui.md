@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-portafilter-cleaning-feng-shui
   - kitchen-coffee-machine-filter-basket-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡機沖煮頭的風水常被說成「水火交會要乾淨」，但日常真正需要處理的是咖啡油、細粉、出水面、密封圈、portafilter 鎖合和熱水工作位。風水裡的「水火有序」可以轉譯為熱水在受控路徑流動、沖煮頭不被殘渣堵住、把手不側漏、清潔時不讓水靠近插座，不能把沖煮頭乾淨直接當成財運或咖啡品質保證。
 
-先量廚房長寬、咖啡機寬深、沖煮頭下方空間、杯子落點、磨豆機、水槽、插座和人行路徑。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出沖煮和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對檯面，最後用 [房間動線檢查](/zh/room-circulation-check/)看拿熱杯時是否與備餐交會。
+先量廚房長寬、咖啡機寬深、沖煮頭下方空間、杯子落點、磨豆機、水槽、插座和人行路徑。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出沖煮和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對檯面，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看拿熱杯時是否與備餐交會。
 
 ## 沖煮頭的好風水是出水面清楚、密封完整與熱水路徑可控
 

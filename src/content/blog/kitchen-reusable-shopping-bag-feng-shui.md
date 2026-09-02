@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-garbage-bin-feng-shui
   - kitchen-sink-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 環保購物袋在廚房風水裡常被聯想到把財物帶回家、把食材裝滿，也有人會把袋子收在冰箱旁或門口財位，期待「袋袋有財」。但購物袋真正要處理的是它裝過什麼、是否可以接觸食品、內層是否有異味、清洗後是否乾燥、回收物和食材袋有沒有分開，以及採買回家後能否快速卸貨。沒有任何購物袋方位能保證財運、健康或食品衛生；本文把「帶財入門」轉成讀標示、清洗、乾燥與分區流程。
 
-先量廚房、入口、冰箱、食品櫃、水槽、備餐檯面、垃圾分類區和袋子收納位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門口、食品櫃側面與廚房抽屜的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認袋子、掛鉤、櫃門和冰箱不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試提袋、卸貨、清洗、晾乾和清理地面的路徑。工具只能協助配置，不取代食品容器標示或清潔說明。
+先量廚房、入口、冰箱、食品櫃、水槽、備餐檯面、垃圾分類區和袋子收納位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門口、食品櫃側面與廚房抽屜的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認袋子、掛鉤、櫃門和冰箱不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試提袋、卸貨、清洗、晾乾和清理地面的路徑。工具只能協助配置，不取代食品容器標示或清潔說明。
 
 ## 先分辨食品袋、一般購物袋與回收袋
 

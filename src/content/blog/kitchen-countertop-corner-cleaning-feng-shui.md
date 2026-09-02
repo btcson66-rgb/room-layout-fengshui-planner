@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-countertop-zoning-feng-shui
   - kitchen-sink-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 檯面轉角風水常被問成「L 型廚房的角落會不會藏煞」，但廚房每天真正要處理的是：轉角是否堆著油瓶和小家電、油膜是否沿著封邊累積、洗碗水是否流進牆角、清潔布能否到達最深處，以及備餐者是否要繞過電器才能拿取調味料。風水裡的「聚」可以轉譯為物品集中但可取、污水不滯留、接縫可檢查和工作線不折返，不能用轉角位置保證財運或衛生。
 
-先量廚房長寬、L 型檯面兩段長度、轉角深度、水槽、爐具、冰箱、插座、電器、抽屜和人體站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出切菜、洗滌、拿取和擦拭路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認電器與抽屜不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查兩人同時備餐。工具只協助配置，不代替檯面、電氣、漏水或食品安全判斷。
+先量廚房長寬、L 型檯面兩段長度、轉角深度、水槽、爐具、冰箱、插座、電器、抽屜和人體站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出切菜、洗滌、拿取和擦拭路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認電器與抽屜不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查兩人同時備餐。工具只協助配置，不代替檯面、電氣、漏水或食品安全判斷。
 
 ## 檯面轉角的好風水是深處擦得到、封邊不積水且小家電不切斷工作線
 

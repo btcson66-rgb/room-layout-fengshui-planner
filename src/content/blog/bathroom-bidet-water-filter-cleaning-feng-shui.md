@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-spray-nozzle-cleaning-feng-shui
   - bathroom-bidet-remote-control-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶進水濾網的風水問題常被說成「水流不順會影響家運」，但使用上要先確認的是濾網堵塞、進水異物、止水閥、接頭漏水和電氣部件是否乾燥。風水裡的「水路」在這裡可以轉譯為水能受控進入、清潔後沒有滲漏、濕區不延伸到插座與出入口，不能把水壓變化當成健康或財運結果。
 
-先量浴室長寬、馬桶座、進水管、止水閥、電源插座、洗手台、淋浴區與門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出濾網與止水位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時有手部空間，最後用 [房間動線檢查](/zh/room-circulation-check/)確認工具和水桶不會堵住離開路徑。
+先量浴室長寬、馬桶座、進水管、止水閥、電源插座、洗手台、淋浴區與門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出濾網與止水位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔時有手部空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認工具和水桶不會堵住離開路徑。
 
 ## 進水濾網的好風水是水壓穩定、接頭乾燥與維護可回復
 

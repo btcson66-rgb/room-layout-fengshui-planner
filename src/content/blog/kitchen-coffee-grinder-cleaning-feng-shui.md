@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-feng-shui
   - kitchen-coffee-machine-water-tank-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡研磨機在廚房風水裡容易被聯想到「把生豆轉成香氣」和日常工作的啟動，但真正需要管理的是豆槽、刀盤、出粉口、粉槽、電線、插座、異物和研磨後的熱度。咖啡油會讓粉末黏住，細粉會落在按鍵與檯面縫隙，石粒或其他異物則可能損傷刀盤；如果清潔時沒有斷電，或粉槽要穿過水槽和爐火才能倒掉，漂亮的咖啡角仍然不適合長期使用。
 
-先記錄研磨機型號、刀盤或刀片結構、豆槽容量、粉槽位置、清潔工具、電線長度和說明書對拆卸的要求。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出豆槽、出粉口、沖煮區與水槽的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認豆槽抽取時不會撞上櫃門；多人共用時，可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試倒粉和端杯是否互撞。工具只協助空間規劃，不能取代原廠維修和電氣安全意見。
+先記錄研磨機型號、刀盤或刀片結構、豆槽容量、粉槽位置、清潔工具、電線長度和說明書對拆卸的要求。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出豆槽、出粉口、沖煮區與水槽的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認豆槽抽取時不會撞上櫃門；多人共用時，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試倒粉和端杯是否互撞。工具只協助空間規劃，不能取代原廠維修和電氣安全意見。
 
 ## 先分辨咖啡粉、咖啡油與異物
 

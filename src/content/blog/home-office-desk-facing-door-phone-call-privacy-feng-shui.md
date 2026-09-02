@@ -99,7 +99,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌子、房門與椅子退讓區，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較設備和門片距離；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放進門、離椅和通話收拾。若你也在意門口聲音，可讀 [書桌門口聲音與隱私](/zh/blog/home-office-desk-doorway-sound-privacy-feng-shui/)；若主要困擾是螢幕，可參考 [面向房門的螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌子、房門與椅子退讓區，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較設備和門片距離；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放進門、離椅和通話收拾。若你也在意門口聲音，可讀 [書桌門口聲音與隱私](/zh/blog/home-office-desk-doorway-sound-privacy-feng-shui/)；若主要困擾是螢幕，可參考 [面向房門的螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)。
 
 ### 參考資料
 

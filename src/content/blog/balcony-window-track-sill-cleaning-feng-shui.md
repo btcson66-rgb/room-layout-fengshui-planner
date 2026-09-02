@@ -18,10 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-window-track-cleaning-feng-shui
-  - balcony-window-feng-shui
   - balcony-drainage-feng-shui
 howToName: "陽台窗軌、窗台、排水孔、紗窗、窗扇與晾衣動線檢查"
 howToTotalTime: "PT30M"
@@ -36,7 +35,7 @@ howToSteps:
 
 陽台窗軌和窗台的風水問題常被問成「窗戶朝向影響氣流」，但每天真正造成麻煩的，通常是窗軌藏砂塵、毛髮和昆蟲，窗台排水孔堵住，雨水或晾衣滴水回流，窗扇滑動卡住，以及清潔時必須跨過曬衣架。風水裡的「納氣」可以轉譯為通風和開窗狀態可觀察、排水不回流、窗扇可安全操作和陽台通道清楚，不能把朝向當成潮濕或空氣品質保證。
 
-先量陽台長寬、窗框、窗扇、窗軌寬度、窗台深度、排水孔、紗窗、曬衣架、洗衣機和進出站位。以 180 × 300 公分陽台為例，窗台清潔時若把水往室內推，可能讓水流到門檻；窗扇打開後也可能撞到曬衣架。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開窗和晾衣路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對架體與窗扇，最後以 [房間動線檢查](/zh/room-circulation-check/)測試進出。工具只協助配置，不代替窗框、玻璃和防水維修判斷。
+先量陽台長寬、窗框、窗扇、窗軌寬度、窗台深度、排水孔、紗窗、曬衣架、洗衣機和進出站位。以 180 × 300 公分陽台為例，窗台清潔時若把水往室內推，可能讓水流到門檻；窗扇打開後也可能撞到曬衣架。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開窗和晾衣路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對架體與窗扇，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試進出。工具只協助配置，不代替窗框、玻璃和防水維修判斷。
 
 ## 窗軌窗台的好風水是砂塵可取、雨水可排且窗扇不被迫硬推
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-ventilation-feng-shui
   - bathroom-shower-door-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室毛巾架常被問成「毛巾掛門後會不會把濁氣帶到房間」「白色毛巾架是不是比較能聚乾淨的氣」。顏色與方位可以是個人偏好，但毛巾架每天接觸洗澡後的水分、蒸氣、皮脂、清潔劑和地面水滴，實際要先確認毛巾能不能展開乾燥、架體是否固定、取用是否不必踩濕地、門片能否完整開啟、排風是否有效以及架面能否清潔。沒有一個位置能保證健康或運勢；浴室的清爽應由乾燥、通風與可維護流程建立。
 
-先量淋浴區、洗手台、馬桶、浴室門、排風口、毛巾架外框和洗澡後的站立位置。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出毛巾、人體和門片，用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較架體外伸與牆面距離；若浴室很小，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)檢查進出、拿毛巾和擦地。工具不能確認牆體防水、固定五金或排風量。
+先量淋浴區、洗手台、馬桶、浴室門、排風口、毛巾架外框和洗澡後的站立位置。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出毛巾、人體和門片，用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較架體外伸與牆面距離；若浴室很小，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查進出、拿毛巾和擦地。工具不能確認牆體防水、固定五金或排風量。
 
 ## 乾毛巾和濕毛巾不要混成一個位置
 

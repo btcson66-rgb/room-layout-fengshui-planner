@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-induction-cooker-feng-shui
   - stove-facing-door-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 壓力鍋在廚房風水裡常被聯想到把火力和食物能量集中起來，因此有人會問它放在廚房中央、靠近入口或某個財位是否更能聚財。但壓力鍋是高於常壓的容器，位置必須先處理洩氣方向、鍋蓋鎖定、水位、容量、加熱方式、平坦檯面、熱蒸氣、兒童距離與開蓋時機。若只看「火聚」而讓安全孔對著人、端鍋要穿過門口，文化象徵不能取代壓力控制。沒有任何壓力鍋方位能保證財運、健康或家庭結果；本文把「集中火力」轉成可檢查的加熱、降壓和盛裝秩序。
 
-先量壓力鍋本體、鍋蓋把手、安全孔、洩氣閥、爐面、牆面、抽油煙機、備餐檯、水槽和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆爐面與中島位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋蓋開合和拿鍋不會撞櫃；多人下廚時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端鍋路線。工具不會判定壓力鍋是否合格，實際操作要以產品標示與說明書為準。
+先量壓力鍋本體、鍋蓋把手、安全孔、洩氣閥、爐面、牆面、抽油煙機、備餐檯、水槽和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆爐面與中島位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋蓋開合和拿鍋不會撞櫃；多人下廚時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端鍋路線。工具不會判定壓力鍋是否合格，實際操作要以產品標示與說明書為準。
 
 ## 先確認壓力鍋的型式與可用容量
 

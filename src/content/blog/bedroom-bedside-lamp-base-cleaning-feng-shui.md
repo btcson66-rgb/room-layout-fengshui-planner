@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-lamp-feng-shui
   - bedroom-bedside-table-lamp-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 床頭燈底座承受燈罩和支架重量，也可能接觸床頭櫃上的水杯、護膚品、灰塵和清潔布。底座滑動、裂痕、傾斜、電線被壓、燈泡過熱或開關失靈，不是擦拭就能修好。風水常把床頭燈說成溫暖、明亮或補足陽氣，實際應轉成睡前亮度能調、底座不容易碰倒、線材不絆腳、床頭櫃可清潔、夜間起身有路，不把燈具位置寫成改善睡眠或運勢保證。
 
-先記錄臥室約 300 × 360 公分、床頭燈底座直徑和高度、床頭櫃、床沿、牆面插座、電線、窗簾、門片和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出睡前關燈、拿水、放眼鏡、夜間起身與清潔燈具的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈座、書本和水杯不會壓線或超出床頭櫃；用 [房間通行寬度檢查](/zh/room-circulation-check/)測試起身到門口。工具只能協助配置，不能取代電氣、燈泡、熱源和傾倒判斷。
+先記錄臥室約 300 × 360 公分、床頭燈底座直徑和高度、床頭櫃、床沿、牆面插座、電線、窗簾、門片和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出睡前關燈、拿水、放眼鏡、夜間起身與清潔燈具的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈座、書本和水杯不會壓線或超出床頭櫃；用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試起身到門口。工具只能協助配置，不能取代電氣、燈泡、熱源和傾倒判斷。
 
 ## 底座灰塵、水痕、滑動與裂痕分開看
 

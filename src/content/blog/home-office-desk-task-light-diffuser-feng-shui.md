@@ -99,7 +99,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗戶、桌燈、螢幕與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌燈底座；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放離席。若鍵盤陰影是主問題，可看 [桌燈與鍵盤陰影](/zh/blog/home-office-desk-task-light-keyboard-shadow-feng-shui/)；若窗光是來源，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗戶、桌燈、螢幕與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌燈底座；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放離席。若鍵盤陰影是主問題，可看 [桌燈與鍵盤陰影](/zh/blog/home-office-desk-task-light-keyboard-shadow-feng-shui/)；若窗光是來源，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
 
 ### 參考資料
 

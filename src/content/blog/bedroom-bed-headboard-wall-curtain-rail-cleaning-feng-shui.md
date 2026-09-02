@@ -95,7 +95,7 @@ EPA 的室內空氣資料指出，清潔活動可能攪起灰塵與其他室內�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出軌道、床頭板、工具和清潔站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布簾與床頭外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開窗、拆簾、晾乾和回位。若想處理布料，可讀 [床頭牆面窗簾布料清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui/)；若發現固定問題，參考 [床頭牆面窗簾桿固定](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出軌道、床頭板、工具和清潔站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布簾與床頭外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗、拆簾、晾乾和回位。若想處理布料，可讀 [床頭牆面窗簾布料清潔](/zh/blog/bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui/)；若發現固定問題，參考 [床頭牆面窗簾桿固定](/zh/blog/bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui/)。
 
 ### 參考資料
 

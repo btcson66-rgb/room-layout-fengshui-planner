@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-aerator-cleaning-feng-shui
   - kitchen-sink-faucet-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 水龍頭起泡器是安裝在出水口末端、用濾網和進氣方式整理水流的部件。它可能因礦物沉積、管線碎屑或濾網堵塞，出現水流變小、噴濺、歪斜或出水不均。起泡器、濾網、流量限制器、閥芯和供水管線不是同一個位置，清洗一個部件不等於解決整支水龍頭。風水常把廚房水流和財庫相連，本文把它轉成水流可觀察、水不亂噴、濾網能復位、水槽周邊可乾燥和備餐不被堵住，不把水量或出水方向寫成財運保證。
 
-先記錄廚房約 240 × 300 公分、水槽、起泡器、把手、濾水器、爐具、備餐面、垃圾桶、洗碗區和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗菜、裝水、擦乾、放碗與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水槽旁收納、瀝水架和清潔用品不會遮住水龍頭；需要時用 [房間通行寬度檢查](/zh/room-circulation-check/)測試兩人同時備餐。工具只能協助配置，不能取代供水、漏水和飲用水安全判斷。
+先記錄廚房約 240 × 300 公分、水槽、起泡器、把手、濾水器、爐具、備餐面、垃圾桶、洗碗區和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗菜、裝水、擦乾、放碗與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水槽旁收納、瀝水架和清潔用品不會遮住水龍頭；需要時用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試兩人同時備餐。工具只能協助配置，不能取代供水、漏水和飲用水安全判斷。
 
 ## 水流變小、噴濺和閥芯問題要分開
 

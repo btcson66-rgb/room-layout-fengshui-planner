@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-air-conditioner-front-panel-cleaning-feng-shui
   - bedroom-air-conditioner-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 冷氣排水管負責把室內機產生的冷凝水帶離機體；管路若堵塞、扭結、向上回彎、接頭鬆脫或末端浸在水裡，可能出現滴水、牆面水痕或地板積水。濾網髒、室內機傾斜、冷媒或風量異常，也可能造成相似症狀。臥室風水可以把「水路順不順」轉成冷凝水出口可觀察、床與家具不被滴水干擾、維修站位安全的配置檢查，但不能由排水管方向保證睡眠、健康或運勢。
 
-先記錄冷氣品牌、型號、排水管走向、室內機下方的床頭櫃、衣櫃、床和插座。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出維修站位和水滴可能落點，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體不壓住管線，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查床邊和門口是否仍能安全通過。工具不能取代冷氣手冊、電氣安全或合格技師。
+先記錄冷氣品牌、型號、排水管走向、室內機下方的床頭櫃、衣櫃、床和插座。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出維修站位和水滴可能落點，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體不壓住管線，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查床邊和門口是否仍能安全通過。工具不能取代冷氣手冊、電氣安全或合格技師。
 
 ## 排水管、冷凝水盤與濾網要分開看
 

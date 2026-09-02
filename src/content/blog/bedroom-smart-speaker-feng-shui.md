@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-baby-monitor-feng-shui
   - bedroom-charging-station-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 智慧音箱放進臥室後，常被解讀成讓房間「有回應」、讓伴侶溝通更順，或把鬧鐘與音樂放在床頭就能提升生活節奏。但臥室真正要處理的是聲音是否打擾睡眠、麥克風是否長時間收音、帳號是否共用、設備是否發熱、充電線是否絆腳，以及鬧鐘響起後能否安全起身。沒有任何音箱方位能保證睡眠、感情、財運或健康；本文把「聲音和諧」轉成可測試的音量、可管理的權限與不妨礙通行的設備位置。
 
-先量臥室、床、床頭櫃、衣櫃、門、窗、插座、充電線和主要起身路徑。可以用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、書桌側邊和獨立層架三種位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備與出風口、窗簾、書本沒有互相擠壓，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間起身、換床單和清潔時是否會拉到電線。工具只能協助配置，不能取代設備說明或個資設定。
+先量臥室、床、床頭櫃、衣櫃、門、窗、插座、充電線和主要起身路徑。可以用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、書桌側邊和獨立層架三種位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備與出風口、窗簾、書本沒有互相擠壓，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間起身、換床單和清潔時是否會拉到電線。工具只能協助配置，不能取代設備說明或個資設定。
 
 ## 「有聲音」不等於臥室氣場更好
 

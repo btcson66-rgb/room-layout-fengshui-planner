@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-throw-cleaning-feng-shui
   - bedroom-blanket-storage-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室床單在風水裡常被聯想到包覆、休息與床區界線，但真正需要維護的是灰塵、皮屑、汗氣、寵物毛、污漬、床墊邊界、洗標、完全乾燥和換洗動線。床單洗完若內側仍有潮感就套回床墊，或把待洗床品和乾淨床品混在一起，表面整齊也不代表床區已完成整理。本文把「床區清爽」轉成可觀察的分流、換洗、材質清潔、乾燥、套合與起床動線驗收，不把床單顏色或床頭方向當成好眠、健康或運勢保證。
 
-先記錄床單尺寸、材質、鬆緊帶、床墊、保潔墊、床架、床邊桌、窗戶、洗衣與晾曬路徑。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排待洗和待乾區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認換床單時不會堵住房門；拆洗後的搬運可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助動線規劃，不能取代床品洗標和材料判斷。
+先記錄床單尺寸、材質、鬆緊帶、床墊、保潔墊、床架、床邊桌、窗戶、洗衣與晾曬路徑。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排待洗和待乾區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認換床單時不會堵住房門；拆洗後的搬運可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助動線規劃，不能取代床品洗標和材料判斷。
 
 ## 先分辨灰塵、汗氣、污漬與潮感
 

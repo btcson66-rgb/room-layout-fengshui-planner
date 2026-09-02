@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-folding-table-feng-shui
   - living-room-footstool-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 室內腳踏車在客廳風水裡常被說成把運動活力帶進家中、讓客廳保持動氣，因此有人會問放在客廳中央是否最能旺健康。但室內腳踏車需要穩固地面、座椅與把手調整、踏板旋轉範圍、上下車空間、補水、擦汗、通風和收納。若車體放在沙發前擋住通道，踏板靠近茶几，或使用者下車時必須踩到地墊邊緣，風水象徵不能取代運動傷害預防。沒有室內腳踏車位置能保證減重、健康或運勢；本文把「活力」落到可觀察的運動與共用客廳條件。
 
-先量室內腳踏車長寬高、底座、踏板旋轉範圍、把手、座椅調整、螢幕、補水位置、沙發、電視櫃、窗戶和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較器材與客廳活動區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認踏板、椅子和茶几不互撞；若家人會在運動中進出，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替運動處方、器材說明或醫療專業判斷。
+先量室內腳踏車長寬高、底座、踏板旋轉範圍、把手、座椅調整、螢幕、補水位置、沙發、電視櫃、窗戶和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較器材與客廳活動區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認踏板、椅子和茶几不互撞；若家人會在運動中進出，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替運動處方、器材說明或醫療專業判斷。
 
 ## 先分辨上車、踩踏與下車狀態
 

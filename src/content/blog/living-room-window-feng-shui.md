@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - sofa-back-door-window-feng-shui
   - living-room-curtain-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳窗戶常被解釋成納氣、納光或財氣進出的地方，因此有人想把沙發朝向窗戶，也有人擔心窗戶正對大門、家具靠窗或窗外景色會把氣帶走。窗戶本身卻是一個需要開關、鎖定、清潔、遮光、通風和維修的住宅設備。沒有一個窗戶方位能保證財運、健康或家庭關係；比較可靠的判斷，是看窗戶和家具是否共同提供可接受的採光、自然換氣、隱私、溫度與安全。
 
-開始前量窗框內外、窗台高度、窗扇開啟方向、紗窗、把手、鎖扣、冷氣、沙發、電視櫃和走道。再把家具外框及人站在窗前清潔、開關和拉簾的範圍畫出來。可以使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發與窗戶，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查櫃體外框；若窗前也是通往陽台或走道，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)。
+開始前量窗框內外、窗台高度、窗扇開啟方向、紗窗、把手、鎖扣、冷氣、沙發、電視櫃和走道。再把家具外框及人站在窗前清潔、開關和拉簾的範圍畫出來。可以使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發與窗戶，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查櫃體外框；若窗前也是通往陽台或走道，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)。
 
 ## 「納氣」先拆成光、風、熱和外部干擾
 

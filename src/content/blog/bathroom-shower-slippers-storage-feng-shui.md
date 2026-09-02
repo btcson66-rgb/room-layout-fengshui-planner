@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bath-mat-feng-shui
   - bathroom-shower-stool-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室拖鞋在風水裡常被聯想到把濕氣留在浴室、避免污水帶進居家，也有人會問拖鞋鞋尖朝內是否比較聚氣，或門口擺滿一排鞋能不能擋住不好的氣。更實際的問題是：鞋底是否有積水？室內拖和浴室拖是否混用？拖鞋架會不會擋門、門檻或地漏？長者、幼兒與訪客能否安全辨認？清洗後是否有通風乾燥的位置？沒有任何鞋尖方向能代替防滑與清潔；本文把「把濕氣留在浴室」轉成可觀察的分流、瀝水和進出路徑。
 
-先量浴室門扇開啟弧線、門檻、淋浴區、馬桶、洗手台、地漏、拖鞋尺寸、鞋架深度和進出路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門外、門內與洗手台側邊的換鞋點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋架不會擋到門片、抽屜和清潔工具，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試濕腳換鞋、拿毛巾、扶牆和兩人交會。工具只協助配置，不取代防跌、地面施工或拖鞋產品說明。
+先量浴室門扇開啟弧線、門檻、淋浴區、馬桶、洗手台、地漏、拖鞋尺寸、鞋架深度和進出路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門外、門內與洗手台側邊的換鞋點，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋架不會擋到門片、抽屜和清潔工具，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試濕腳換鞋、拿毛巾、扶牆和兩人交會。工具只協助配置，不取代防跌、地面施工或拖鞋產品說明。
 
 ## 拖鞋至少要分室內、浴室與待清潔狀態
 

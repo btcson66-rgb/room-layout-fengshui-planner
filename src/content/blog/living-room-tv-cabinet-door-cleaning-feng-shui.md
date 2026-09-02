@@ -17,7 +17,7 @@ keywords:
   - 電視櫃收納整理
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-tv-cabinet-shelf-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳電視櫃門片在風水裡常被聯想到收納、遮蔽與家庭交流，但真正需要維護的是門板灰塵、把手油污、鉸鏈、櫃內設備散熱、電線、承重和開門通道。門片關起來能讓客廳看似整齊，卻可能把過熱設備、纏繞電線和受潮物品一起藏住；清潔時若未關閉設備或讓水流進縫隙，也會增加風險。本文把「客廳聚氣不散」轉成可觀察的關機、清空、分區清潔、通風、固定和通行驗收，不把門片材質或電視櫃方位當成人緣、財運或運勢保證。
 
-先記錄電視櫃寬深高、門片材質、把手、鉸鏈、層板、電視底座、機上盒、遊戲主機、插座、牆距、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出觀看、開門和清潔路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認門片不切入走道；設備和家具尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助配置，不能取代電器說明、散熱或家具固定判斷。
+先記錄電視櫃寬深高、門片材質、把手、鉸鏈、層板、電視底座、機上盒、遊戲主機、插座、牆距、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出觀看、開門和清潔路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認門片不切入走道；設備和家具尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助配置，不能取代電器說明、散熱或家具固定判斷。
 
 ## 先分辨灰塵、油污、鉸鏈異常與櫃內過熱
 

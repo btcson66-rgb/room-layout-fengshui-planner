@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-drying-rack-feng-shui
   - laundry-room-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 曬衣架風水常被問成「放在陽台還是室內比較好」，但洗衣間真正的難題是：濕衣服掛上後空氣是否能穿過、衣架展開會不會擋住洗衣機門、金屬桿與關節能否擦乾、腳墊是否穩定、衣物取下後架子能不能摺回，以及清潔後是否有獨立的乾燥位置。風水裡的「流通」可以轉譯為空氣、衣物、人體和清潔流程不互相堵塞，不能把某個方位當成除濕或防鏽保證。
 
-先量洗衣間長寬、洗衣機與烘衣機、曬衣架收合及展開尺寸、門片、窗戶、排風口、地漏、洗衣籃和主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取衣、掛衣、摺疊和收架路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查展開後是否撞門或壓到電線；若需要確認兩人交會，可參考 [房間動線檢查](/zh/room-circulation-check/)。工具只協助配置，不代替電器、承重、墜落或衣物洗滌判斷。
+先量洗衣間長寬、洗衣機與烘衣機、曬衣架收合及展開尺寸、門片、窗戶、排風口、地漏、洗衣籃和主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取衣、掛衣、摺疊和收架路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查展開後是否撞門或壓到電線；若需要確認兩人交會，可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)。工具只協助配置，不代替電器、承重、墜落或衣物洗滌判斷。
 
 ## 曬衣架的好風水是空氣走得過、架體站得穩且濕衣不堵住家事線
 

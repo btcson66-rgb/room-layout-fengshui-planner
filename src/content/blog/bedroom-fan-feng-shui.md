@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-space-heater-feng-shui
   - bedroom-window-blinds-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電風扇在臥室風水裡容易被問成「對床吹會不會把氣吹散」「放在窗邊能不能換氣」。但風扇首先是一件有扇葉、護網、電線和馬達的電器，位置需要處理窗簾、毛巾、床單、底座穩定、清潔、噪音與夜間通行。若風扇放在床邊而家人起身會踢到、窗簾被捲入、護網積滿灰塵，或電線跨過浴室路徑，風水象徵無法消除實際問題。沒有風向能保證睡眠、健康或運勢；氣流舒適應該和設備安全分開判斷。
 
-先量電風扇底座寬深、最高高度、擺頭角度、電線長度、床邊空間、窗簾下緣、衣架和門口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看風扇與床窗的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認擺頭時不會碰床頭櫃或簾子；若電線需要經過床尾，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間起身。工具可協助配置，不能替代護網、組裝、電氣和個人健康判斷。
+先量電風扇底座寬深、最高高度、擺頭角度、電線長度、床邊空間、窗簾下緣、衣架和門口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看風扇與床窗的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認擺頭時不會碰床頭櫃或簾子；若電線需要經過床尾，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間起身。工具可協助配置，不能替代護網、組裝、電氣和個人健康判斷。
 
 ## 先分辨降溫、循環與睡前使用
 

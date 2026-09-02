@@ -16,9 +16,8 @@ keywords:
   - 洗衣機排水管漏水檢查
   - 洗衣區排水動線
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-drain-pump-filter-cleaning-feng-shui
   - laundry-washing-machine-leveling-foot-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機排水管在風水裡容易被聯想到水流出口、濁物分流與洗衣區循環，但真正需要維護的是管內殘留、折彎、插入深度、固定架、虹吸、漏水和排水動線。排水管外觀沒有破洞，不代表管路高度正確；水排得出去，也不代表污水不會回吸或異味回到機內。本文把「水流有出口、不回流」轉成可觀察的斷電、管路查看、固定復位、排水測試和地面防漏交接，不把排水管方向當成洗淨、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、排水管、機背固定架、排水立管或水槽、插入深度、管路高度、地面、洗衣籃和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排查看、接水、取衣和晾衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認排水管不會被洗衣籃或機身壓住；操作時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代電器、排水或水電維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、排水管、機背固定架、排水立管或水槽、插入深度、管路高度、地面、洗衣籃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排查看、接水、取衣和晾衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認排水管不會被洗衣籃或機身壓住；操作時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代電器、排水或水電維修判斷。
 
 ## 先分辨管內殘留、折彎、虹吸、漏水與排水泵問題
 

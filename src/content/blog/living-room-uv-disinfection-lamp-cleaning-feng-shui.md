@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-projector-lens-cleaning-feng-shui
   - living-room-ceiling-light-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 紫外線消毒燈在客廳風水裡容易被聯想到淨化與清除濁氣，但它不是一般照明燈，使用時需要管理紫外線暴露、定時器、燈管、反射罩、插座和家人進出。灰塵與指紋會停在燈管和反射面，清潔時若忘記斷電或讓人員誤入，擺位再整齊也不能降低暴露風險。本文把「淨化」轉成可看見的斷電、清潔、使用邊界、門窗標示和收納流程，不宣稱消毒效果或健康結果。
 
-先記錄產品型號、紫外線波段或用途標示、燈管、反射罩、定時器、插座、沙發、門窗和兒童寵物路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出設備與人流，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈具不會被沙發或櫃體遮住；多人使用時可用 [房間通行寬度檢查](/zh/room-circulation-check/)設計離場路徑。工具不能取代產品安全標示、醫療或消毒專業意見。
+先記錄產品型號、紫外線波段或用途標示、燈管、反射罩、定時器、插座、沙發、門窗和兒童寵物路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出設備與人流，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈具不會被沙發或櫃體遮住；多人使用時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)設計離場路徑。工具不能取代產品安全標示、醫療或消毒專業意見。
 
 ## 先分辨灰塵、指紋、燈管變色與外殼污漬
 

@@ -16,9 +16,8 @@ keywords:
   - 洗衣機排水濾網異物
   - 洗衣機漏水檢查
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-inlet-filter-cleaning-feng-shui
   - laundry-washing-machine-door-seal-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機排水泵浦濾網在風水裡容易被聯想到水流出口、雜物分流與洗衣區不滯，但真正需要維護的是剩水、毛絮、硬物、緊急排水管、泵浦葉輪、濾網旋緊、密封和地面防漏。濾網蓋看起來乾燥，不代表內部沒有剩水；排水變慢，也不代表只要轉開濾網就能解決。本文把「水有出口、雜物不滯留」轉成可觀察的斷電、排水、分區清潔、葉輪檢查、回位驗收和洗衣動線交接，不把排水速度當成除菌、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、濾網蓋、緊急排水管、濾網、泵浦葉輪、地面、牆距、洗衣籃和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排水盆、毛巾、取濾網和晾乾路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認排水維護不會堵住門片；操作時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代電器安全、排水或維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、濾網蓋、緊急排水管、濾網、泵浦葉輪、地面、牆距、洗衣籃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排水盆、毛巾、取濾網和晾乾路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認排水維護不會堵住門片；操作時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代電器安全、排水或維修判斷。
 
 ## 先分辨剩水、毛絮、硬物、排水錯誤與濾網漏水
 

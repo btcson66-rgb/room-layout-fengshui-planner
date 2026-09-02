@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-baffle-cleaning-feng-shui
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 抽油煙機燈罩的風水問題常被說成「爐火上方明亮就能旺家」，但實際要處理的是燈罩沾油變暗、塑膠件老化、燈泡過熱、燈罩卡榫鬆脫，或清潔時把水和油帶進燈座。風水裡的「火明而有制」可以轉譯為照明能看清爐台、排煙不被清潔工作阻礙、燈罩能安全復位和烹調動線不碰撞，不能把燈泡亮度直接當成財運或烹調結果。
 
-先量廚房長寬、抽油煙機寬深、燈罩位置、燈泡規格、爐台、牆面插座、流理台和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出爐台、清潔和備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫥櫃與抽油煙機，最後以 [房間動線檢查](/zh/room-circulation-check/)測試多人交會。工具只協助配置，不代替電氣與排煙維修。
+先量廚房長寬、抽油煙機寬深、燈罩位置、燈泡規格、爐台、牆面插座、流理台和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出爐台、清潔和備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫥櫃與抽油煙機，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試多人交會。工具只協助配置，不代替電氣與排煙維修。
 
 ## 燈罩的好風水是光線可用、油膜可見且燈座不被水氣污染
 

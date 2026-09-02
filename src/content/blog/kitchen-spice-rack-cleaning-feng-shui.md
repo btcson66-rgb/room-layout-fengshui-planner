@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
   - kitchen-food-container-seal-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 調味料架在廚房風水裡常被聯想到五味、食祿與做菜秩序，但真正需要維護的是瓶身、瓶蓋、粉末、油膜、標示、架體、爐火、水槽和取用動線。瓶罐長期靠近爐火，表面可能沾油；粉類調味料若被濕湯匙碰到，可能結塊；架體太滿或不穩，補充時也容易碰倒。本文把「五味有序」轉成可觀察的乾燥、清潔、辨識、先用先補與安全回位，不把某個方位當成料理、健康或運勢保證。
 
-先記錄架體材質、層數、瓶罐高度、瓶蓋類型、爐具、水槽、排油煙機和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取調味料、盛菜和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽取瓶罐時不會撞櫃；多人同時備餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端盤與開蓋。工具不能取代食品標示、保存條件與材質說明。
+先記錄架體材質、層數、瓶罐高度、瓶蓋類型、爐具、水槽、排油煙機和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取調味料、盛菜和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽取瓶罐時不會撞櫃；多人同時備餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端盤與開蓋。工具不能取代食品標示、保存條件與材質說明。
 
 ## 先分辨油膜、粉末、受潮與異味
 

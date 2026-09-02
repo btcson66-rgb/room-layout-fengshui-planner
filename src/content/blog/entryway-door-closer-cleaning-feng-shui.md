@@ -16,9 +16,8 @@ keywords:
   - 閉門器漏油檢查
   - 玄關門扇閉合動線
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-hinge-cleaning-feng-shui
   - entryway-door-safety-chain-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關大門閉門器在風水裡容易被聯想到收束、關合與內外界線，但真正需要維護的是外殼灰塵、連桿、滑軌、固定螺絲、關門速度、扣合、漏油和夾手風險。門會自己關上，不代表速度安全；閉門器外殼擦乾淨，也不代表內部漏油或固定座沒有鬆動。本文把「門戶有收有放」轉成可觀察的表面清潔、機械狀態、關門測試、上鎖驗收和家人交接，不把關門快慢當成防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、大門材質、閉門器本體、連桿或滑軌、固定螺絲、門框、門扇、門鎖、門檻、鞋櫃和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出開門、搬物、訪客確認和關門路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會妨礙閉門；開合時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代門扇、閉門器或逃生安全專業判斷。
+先記錄玄關約 160 × 240 公分、大門材質、閉門器本體、連桿或滑軌、固定螺絲、門框、門扇、門鎖、門檻、鞋櫃和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出開門、搬物、訪客確認和關門路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會妨礙閉門；開合時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代門扇、閉門器或逃生安全專業判斷。
 
 ## 先分辨灰塵、連桿卡滯、固定鬆動與閉門器漏油
 

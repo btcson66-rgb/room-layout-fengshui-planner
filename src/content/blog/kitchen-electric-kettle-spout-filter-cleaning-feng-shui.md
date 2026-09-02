@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-kettle-scale-cleaning-feng-shui
   - kitchen-electric-kettle-lid-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電熱水壺壺嘴濾網的風水常被說成「水口要乾淨才留得住福氣」，但真正可處理的是水垢顆粒、濾網卡扣、倒水飛濺、底座受潮和端杯路徑。風水裡的「水口」可以轉譯為熱水能按預期流出、濾網不掉落、壺身與底座乾燥、家人不必跨過電線拿杯，不能把壺嘴狀態當成財運或飲水健康保證。
 
-先量廚房長寬、壺身與底座、壺嘴突出距離、杯子落點、水槽、插座和倒水站位。以 320 × 420 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出煮水、拿杯和清洗路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/room-circulation-check/)測試倒水時是否會碰到鍋具或走道。
+先量廚房長寬、壺身與底座、壺嘴突出距離、杯子落點、水槽、插座和倒水站位。以 320 × 420 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出煮水、拿杯和清洗路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認檯面深度，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試倒水時是否會碰到鍋具或走道。
 
 ## 壺嘴濾網的好風水是水流穩、濾網固定與底座不積水
 

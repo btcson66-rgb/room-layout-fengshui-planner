@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-drip-tray-cleaning-feng-shui
   - kitchen-coffee-machine-water-tank-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡機濾籃的風水問題常被說成「咖啡粉堵住水路會讓財氣不通」，但真正需要處理的是濾孔被細粉堵塞、咖啡油氧化、清潔針刮傷金屬、濾籃卡在把手裡，或沖煮時需要跨過熱水和插座拿工具。風水裡的「氣脈通」可以轉譯為水路可檢查、濾孔保持通暢、把手受力穩定和沖煮區不被雜物阻塞，不能把出水狀態直接當成財運或咖啡品質保證。
 
-先量廚房長寬、咖啡機外框、濾籃直徑、把手長度、沖煮站位、水槽、插座和杯子放置區。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出濾籃拆裝與沖洗路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對把手旋轉空間，最後以 [房間動線檢查](/zh/room-circulation-check/)測試沖煮時是否擋住水槽。工具只協助配置，不代替咖啡機維修。
+先量廚房長寬、咖啡機外框、濾籃直徑、把手長度、沖煮站位、水槽、插座和杯子放置區。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出濾籃拆裝與沖洗路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對把手旋轉空間，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試沖煮時是否擋住水槽。工具只協助配置，不代替咖啡機維修。
 
 ## 濾籃的好風水是濾孔可辨、把手穩定且清潔後能完全乾燥
 

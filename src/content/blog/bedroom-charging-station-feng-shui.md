@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedside-table-feng-shui
   - bedroom-ceiling-light-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室充電區常被問成「手機放床頭會不會破壞睡眠風水」「充電器放哪個方位比較聚氣」。手機、平板、耳機、手錶和檯燈每天都要充電，真正需要先處理的是插座負載、充電器與床品的距離、電線是否跨過走道、設備是否發熱、夜間取放、清潔和睡前使用。沒有一個床頭方位能保證睡眠、財運或健康；所謂清靜，應先轉化成夜間不必找線、不必踩線、不把發熱設備埋在棉被裡的可觀察條件。
 
-規劃前量床墊外框、床頭櫃、牆上插座、延長線長度、充電器尺寸和從床到門的路線。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出充電器、手機與床邊家具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認插頭轉接頭不會把桌面或抽屜頂住；若夜間需要去浴室，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)檢查電線與拖鞋是否侵入路線。工具能顯示位置，不能替你判斷插座、產品規格或電氣故障。
+規劃前量床墊外框、床頭櫃、牆上插座、延長線長度、充電器尺寸和從床到門的路線。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出充電器、手機與床邊家具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認插頭轉接頭不會把桌面或抽屜頂住；若夜間需要去浴室，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查電線與拖鞋是否侵入路線。工具能顯示位置，不能替你判斷插座、產品規格或電氣故障。
 
 ## 先盤點要充電的設備和真正使用時間
 

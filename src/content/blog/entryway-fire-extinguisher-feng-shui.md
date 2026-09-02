@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-shoe-cabinet-feng-shui
   - entryway-doormat-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 滅火器放在玄關，在風水語境裡常被說成鎮火、守門或把危險擋在家門外，因此有人會把它藏在鞋櫃裡，或特別挑一個方位與顏色。但滅火器不是裝飾，也不是只要靠近大門就能保證住宅安全的物件。它的位置要讓家人看得見、在需要時拿得到、平時不受潮濕與日照影響，並且不能堵住門片、樓梯或逃生路線。沒有任何滅火器方位能保證不發生火災或一定能撲滅火勢；本文把「守住入口」轉成設備管理和撤離優先的玄關設計。
 
-先量玄關、滅火器、門片開啟弧線、鞋櫃、傘架、樓梯、電箱、出口與主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較牆面掛放和立式放置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、鞋櫃與滅火器不互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試家人、訪客和夜間撤離。工具不能取代消防設備規範、管理單位要求或現場專業判斷。
+先量玄關、滅火器、門片開啟弧線、鞋櫃、傘架、樓梯、電箱、出口與主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較牆面掛放和立式放置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、鞋櫃與滅火器不互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試家人、訪客和夜間撤離。工具不能取代消防設備規範、管理單位要求或現場專業判斷。
 
 ## 「鎮火」先變成入口的可見性
 

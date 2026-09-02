@@ -89,7 +89,7 @@ OSHA 的鍵盤與桌面資料建議鍵盤、滑鼠等高頻元件放在使用者
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出鍵盤、滑鼠墊、桌角、椅子與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較左右外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放操作、起身、開門和收桌。若鍵盤距離是主問題，可讀 [面向房門書桌鍵盤距離](/zh/blog/home-office-desk-facing-door-keyboard-distance-feng-shui/)；若要調整螢幕軸線，參考 [面向房門書桌螢幕高度](/zh/blog/home-office-desk-facing-door-monitor-height-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出鍵盤、滑鼠墊、桌角、椅子與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較左右外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放操作、起身、開門和收桌。若鍵盤距離是主問題，可讀 [面向房門書桌鍵盤距離](/zh/blog/home-office-desk-facing-door-keyboard-distance-feng-shui/)；若要調整螢幕軸線，參考 [面向房門書桌螢幕高度](/zh/blog/home-office-desk-facing-door-monitor-height-feng-shui/)。
 
 ### 參考資料
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/small-room-storage-planner/
   - /zh/small-bedroom-layout/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/room-layout-planner/
 relatedPosts:
   - small-room-storage-zones
@@ -94,7 +94,7 @@ howToSteps:
 
 ## 用 RoomFeng 工具畫出門口與收納的實際占地
 
-可先在 [小房間收納規劃器](/zh/small-room-storage-planner/) 建立物品清單和存放區，再用 [小臥室配置工具](/zh/small-bedroom-layout/) 比較床、窄櫃與門口空間。若要走過開門、拿包、換鞋、到床邊與清掃，使用 [房間動線檢查](/zh/room-circulation-check/)；需要重新量整個房間時，回到 [房間配置規劃器](/zh/room-layout-planner/)。工具可協助畫出占地，現場仍要確認門片、牆面、地面、照明和家具固定。
+可先在 [小房間收納規劃器](/zh/small-room-storage-planner/) 建立物品清單和存放區，再用 [小臥室配置工具](/zh/small-bedroom-layout/) 比較床、窄櫃與門口空間。若要走過開門、拿包、換鞋、到床邊與清掃，使用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)；需要重新量整個房間時，回到 [房間配置規劃器](/zh/room-layout-planner/)。工具可協助畫出占地，現場仍要確認門片、牆面、地面、照明和家具固定。
 
 ## 常見問題：小房間門口收納
 

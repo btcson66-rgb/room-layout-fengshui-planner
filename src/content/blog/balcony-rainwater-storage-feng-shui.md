@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-drainage-feng-shui
   - balcony-feng-shui-layout
@@ -36,7 +36,7 @@ howToSteps:
 
 水在陽台風水裡常被聯想到流動、滋養與財氣，有人會問把雨水留在東南方是否比較聚財，或在陽台放大水桶能不能增加生氣。實際要先看的是：容器是否真的有用途？有沒有加蓋？雨後會不會形成積水？容器重量是否影響地面和搬運？排水孔、曬衣和逃生路徑是否被擋住？沒有任何水的方位能替代防蚊、清潔、排水和結構安全；本文把「水有去處」轉成容器用途、檢查頻率和雨後可執行的動線。
 
-先量陽台長寬、門扇、欄杆、排水孔、曬衣架、室外機、花架與可承重的平整區域，並記錄容器裝滿、半滿、空桶和倒置的尺寸與重量。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、靠內和曬衣區旁的安排，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶蓋、把手和刷洗時不會撞到設備，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試取水、掃地、晾衣、倒水和颱風前撤收。工具只協助配置，不取代建築承重、衛生、防蚊與大樓管理判斷。
+先量陽台長寬、門扇、欄杆、排水孔、曬衣架、室外機、花架與可承重的平整區域，並記錄容器裝滿、半滿、空桶和倒置的尺寸與重量。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、靠內和曬衣區旁的安排，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶蓋、把手和刷洗時不會撞到設備，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試取水、掃地、晾衣、倒水和颱風前撤收。工具只協助配置，不取代建築承重、衛生、防蚊與大樓管理判斷。
 
 ## 先分清儲水、雨水與不該留下的積水
 

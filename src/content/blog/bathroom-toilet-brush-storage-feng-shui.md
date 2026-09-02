@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-ventilation-feng-shui
   - bathroom-floor-drain-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 馬桶刷在浴室風水裡常被看成清除穢氣的工具，有人會問藏在馬桶旁、放門後或放在浴室凶位，是否能把不好的氣排掉。但馬桶刷真正要面對的是刷洗後的污水、底座積水、浴室通風、清潔劑相容性、異味、地面防滑和家人是否會拿錯刷具。沒有一個馬桶刷位置能保證健康、家運或化煞；本文把「除穢」轉成可執行的清洗、瀝乾、分區和更換流程。
 
-先量馬桶、刷具、底座、地漏、洗手台、浴室門、淋浴區與清潔用品櫃。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較馬桶側、門後與洗手台下的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認底座、櫃門和刷柄不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試如廁、洗澡、拖地和清潔時是否需要跨過濕區。工具只能協助配置，不取代清潔劑標示、通風維護或居家安全建議。
+先量馬桶、刷具、底座、地漏、洗手台、浴室門、淋浴區與清潔用品櫃。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較馬桶側、門後與洗手台下的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認底座、櫃門和刷柄不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試如廁、洗澡、拖地和清潔時是否需要跨過濕區。工具只能協助配置，不取代清潔劑標示、通風維護或居家安全建議。
 
 ## 馬桶刷要和其他清潔工具分開
 

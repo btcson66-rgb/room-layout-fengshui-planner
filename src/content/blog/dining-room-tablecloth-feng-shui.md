@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-table-napkin-storage-feng-shui
   - dining-chair-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐桌桌巾在風水裡常被聯想到把一家人的飯氣聚在桌面、讓用餐更有儀式感，有人會問圓桌一定要用圓巾、桌巾垂到椅面是否比較聚財，或把厚桌布全年鋪著就能讓餐廳看起來穩定。實際上先要處理的是桌巾會不會被幼童拉扯、熱湯和電鍋是否放在伸手範圍、布面有沒有食物污漬與水氣、椅子拉開是否會勾住布邊，以及清洗後是否完全乾燥。沒有任何顏色或垂墜長度能替代餐桌安全；本文把「聚餐有序」轉成桌面、布料與動線的檢查。
 
-先量餐桌長寬、高度、桌腳位置、桌巾實際垂墜、椅子深度、兒童座位、熱食放置區和通往廚房的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌巾覆蓋範圍與餐桌位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌巾不會卡進抽屜、桌腳或餐椅，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端菜、拉椅、起身和多人交會。工具只協助空間配置，不取代兒童安全、食品清潔和家具使用說明。
+先量餐桌長寬、高度、桌腳位置、桌巾實際垂墜、椅子深度、兒童座位、熱食放置區和通往廚房的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌巾覆蓋範圍與餐桌位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌巾不會卡進抽屜、桌腳或餐椅，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端菜、拉椅、起身和多人交會。工具只協助空間配置，不取代兒童安全、食品清潔和家具使用說明。
 
 ## 桌巾的第一個問題是「會不會被拉到」
 

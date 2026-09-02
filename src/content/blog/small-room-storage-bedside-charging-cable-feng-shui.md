@@ -91,7 +91,7 @@ CPSC 的家庭電氣安全資料提醒，延長線與電源設備不能超載，
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、插座、充電器和下床路線，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床頭板、收納盒與線材外框；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放夜間取物和清潔。若你考慮移動收納，可讀 [床邊推車動線](/zh/blog/small-room-storage-bedside-rolling-cart-clearance-feng-shui/)；若想改成壁掛，可參考 [床邊壁掛收納突出](/zh/blog/small-room-storage-bedside-wall-shelf-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、插座、充電器和下床路線，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床頭板、收納盒與線材外框；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放夜間取物和清潔。若你考慮移動收納，可讀 [床邊推車動線](/zh/blog/small-room-storage-bedside-rolling-cart-clearance-feng-shui/)；若想改成壁掛，可參考 [床邊壁掛收納突出](/zh/blog/small-room-storage-bedside-wall-shelf-feng-shui/)。
 
 ### 參考資料
 

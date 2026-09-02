@@ -93,7 +93,7 @@ CPSC 的 Anchor It 資料提醒家具要依產品說明固定並注意傾倒風�
 
 ## 相關工具與延伸閱讀
 
-用 [收納床選擇器](/zh/storage-bed-selector/) 比較掀床、抽屜和箱體，再用 [小房間收納規劃器](/zh/small-room-storage-planner/) 畫出床尾站位；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開啟、取物、清潔和門扇。若你使用床尾抽屜，可讀 [床下收納開啟空間](/zh/blog/small-room-storage-bed-opening-clearance-feng-shui/)；若主要困擾是清潔，參考 [床下收納清潔空間](/zh/blog/small-room-storage-underbed-cleaning-clearance-feng-shui/)。
+用 [收納床選擇器](/zh/storage-bed-selector/) 比較掀床、抽屜和箱體，再用 [小房間收納規劃器](/zh/small-room-storage-planner/) 畫出床尾站位；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開啟、取物、清潔和門扇。若你使用床尾抽屜，可讀 [床下收納開啟空間](/zh/blog/small-room-storage-bed-opening-clearance-feng-shui/)；若主要困擾是清潔，參考 [床下收納清潔空間](/zh/blog/small-room-storage-underbed-cleaning-clearance-feng-shui/)。
 
 ### 參考資料
 

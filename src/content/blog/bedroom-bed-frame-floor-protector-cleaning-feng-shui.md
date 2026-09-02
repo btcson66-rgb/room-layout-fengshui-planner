@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-frame-center-support-cleaning-feng-shui
   - bedroom-bed-frame-slat-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床架腳下的地板保護墊可能是黏貼式毛氈、塑膠墊、橡膠腳套或家具原有的塑膠腳。它們接觸地板的面積不大，卻容易藏住砂粒、灰塵和潮氣；床架移動、翻身造成的微小位移，也可能讓保護件偏離床腳，留下刮痕或壓痕。臥室風水常談床位穩定與「有根」，實際可先檢查床腳是否完整接觸、保護件是否仍貼合、地板是否乾燥，以及床邊是否能安全行走。
 
-若有人問「床架滑動是不是睡眠風水不好？」答案應先分流：是地板有砂粒、保護墊磨損、黏膠老化、床腳不平、床架連接件鬆動，還是使用者起身時推到床框。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出床架四角、牆距和床邊通道，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查床架與牆、衣櫃的距離，再用 [房間通行寬度檢查](/zh/room-circulation-check/)比較夜間起身和清潔路徑。工具不取代家具說明與地板維修判斷。
+若有人問「床架滑動是不是睡眠風水不好？」答案應先分流：是地板有砂粒、保護墊磨損、黏膠老化、床腳不平、床架連接件鬆動，還是使用者起身時推到床框。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出床架四角、牆距和床邊通道，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查床架與牆、衣櫃的距離，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較夜間起身和清潔路徑。工具不取代家具說明與地板維修判斷。
 
 ## 先辨認床腳、保護墊與地板材質
 

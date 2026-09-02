@@ -91,7 +91,7 @@ CPSC 的家具穩定資料可作收納固定與防傾倒的安全背景；EPA �
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出掛袋、床架、牆面、房門與取物站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較袋體滿載外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放取物、換床單、充電和清潔。若想用床側口袋，可讀 [床邊掛袋](/zh/blog/small-room-storage-bedside-hanging-pocket-feng-shui/)；若線材是主要問題，參考 [床邊充電線](/zh/blog/small-room-storage-bedside-charging-cable-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出掛袋、床架、牆面、房門與取物站位，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較袋體滿載外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、換床單、充電和清潔。若想用床側口袋，可讀 [床邊掛袋](/zh/blog/small-room-storage-bedside-hanging-pocket-feng-shui/)；若線材是主要問題，參考 [床邊充電線](/zh/blog/small-room-storage-bedside-charging-cable-feng-shui/)。
 
 ### 參考資料
 

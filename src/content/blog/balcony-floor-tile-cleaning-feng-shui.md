@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-drainage-feng-shui
   - balcony-floor-drain-grate-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 陽台地磚清潔風水常被說成「陽台乾淨，屋內氣場才不受濁水影響」，但地磚實際承受雨水、灰塵、泥沙、青苔、花盆溢水、衣物滴水、鳥糞、清潔劑和日曬熱脹冷縮。表面看起來乾淨，不代表潮濕時不滑；地面有水，也不一定是排水孔堵塞，可能與坡度、花盆托盤、曬衣滴水或門檻有關。風水可作為內外界線的整理語言，但不能保證排水、防滑或植栽生長。
 
-先量陽台長寬、門檻、地磚、排水孔、曬衣架、花盆、冷氣室外機、地墊、掃具與通往室內的路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出澆水、曬衣、清掃和排水路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認花盆與曬衣架不會壓住地磚或排水；若陽台兼作逃生、儲物或洗衣區，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試雨天進出和清潔站位。工具只能協助平面比較，不能判定外牆、防墜、磁磚黏著或排水工程。
+先量陽台長寬、門檻、地磚、排水孔、曬衣架、花盆、冷氣室外機、地墊、掃具與通往室內的路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出澆水、曬衣、清掃和排水路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認花盆與曬衣架不會壓住地磚或排水；若陽台兼作逃生、儲物或洗衣區，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試雨天進出和清潔站位。工具只能協助平面比較，不能判定外牆、防墜、磁磚黏著或排水工程。
 
 ## 先分辨乾砂、泥沙、青苔、油膜與填縫黑痕
 

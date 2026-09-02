@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bath-mat-feng-shui
   - bathroom-shower-curtain-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 淋浴椅在浴室風水裡常被說成讓水氣有承接、讓長輩或病後照護更安定，但浴室的重點不是某個方位，而是座椅防滑、椅腳穩定、扶手固定、蓮蓬頭可達、排水、乾濕分區與照護者站位。若淋浴椅放在排水孔上、椅腳踩到厚浴墊、起身時手找不到扶手，或照護者必須從門外伸手，風水象徵不能取代跌倒預防。沒有淋浴椅位置能保證健康、復原或運勢；本文把「坐得安、出入順」轉成可實地測試的浴室條件。
 
-先量淋浴椅座面高度與寬度、椅腳外張、扶手、蓮蓬頭軟管、排水孔、玻璃門、浴簾、馬桶、洗手台和入口寬度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較座椅與乾濕區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認扶手、門片和淋浴用品不互撞；若需要照護者陪同，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試進出與轉位。工具不能代替醫療、復健、無障礙設計或合格施工判斷。
+先量淋浴椅座面高度與寬度、椅腳外張、扶手、蓮蓬頭軟管、排水孔、玻璃門、浴簾、馬桶、洗手台和入口寬度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較座椅與乾濕區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認扶手、門片和淋浴用品不互撞；若需要照護者陪同，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試進出與轉位。工具不能代替醫療、復健、無障礙設計或合格施工判斷。
 
 ## 先分辨進浴、坐下與起身狀態
 

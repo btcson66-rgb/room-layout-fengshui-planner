@@ -17,7 +17,7 @@ keywords:
   - 客廳壁扇怎麼擺
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-air-purifier-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 壁掛電扇在客廳風水裡常被聯想到把氣流送到整個空間，但真正需要維護的是高處外罩、扇葉、支架、螺絲、電線、插座和家具動線。灰塵堆在高處不容易被看見，清潔時若踩在不穩的椅子上，或把濕布直接伸進馬達，整理就變成新的風險。本文把「高處氣流」轉成可觀察的斷電、支架檢查、適當工具、外罩乾燥和客廳避讓，不把壁掛位置當成送風、健康或運勢承諾。
 
-先記錄壁掛電扇型號、外罩、扇葉、支架、固定牆面、螺絲、電線、插座、沙發、電視櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出清潔和送風範圍，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認梯具、家具和家人活動不會互相干擾；固定高度與家具距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)先估算。工具不能取代牆面承重、電氣或高處作業專業。
+先記錄壁掛電扇型號、外罩、扇葉、支架、固定牆面、螺絲、電線、插座、沙發、電視櫃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出清潔和送風範圍，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認梯具、家具和家人活動不會互相干擾；固定高度與家具距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)先估算。工具不能取代牆面承重、電氣或高處作業專業。
 
 ## 先分辨高處灰塵、鬆動與異音
 

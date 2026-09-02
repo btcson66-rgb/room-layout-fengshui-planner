@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-threshold-cleaning-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 玄關門扇開啟半徑風水常被說成「門開得順，氣才進得來」，但大門真正需要的是完整開關、門把好操作、轉身不撞家具、雨天不滑、包裹有暫放位置，以及所有家人都能找到出去的路。門扇弧線被鞋櫃、長凳或地墊侵入時，問題不是單純的氣口受阻，也可能讓人側身、退步或把物品放在逃生路徑。風水可用來整理入口界線，不保證招財、擋煞或防竊。
 
-先量玄關長寬、門扇寬度、鉸鏈側、門把高度、開門方向、門檻、鞋櫃、長凳、傘架、地墊、電鈴、照明和客廳通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門扇從關閉到日常開啟的弧線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃、收納籃和長凳沒有切入操作區；入口狹窄時搭配 [房間通行寬度檢查](/zh/room-circulation-check/)模擬搬物、輪椅、推車、兒童和長者進出。工具只能協助平面比較，不能取代現場門片、五金、防火或無障礙判斷。
+先量玄關長寬、門扇寬度、鉸鏈側、門把高度、開門方向、門檻、鞋櫃、長凳、傘架、地墊、電鈴、照明和客廳通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門扇從關閉到日常開啟的弧線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃、收納籃和長凳沒有切入操作區；入口狹窄時搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬搬物、輪椅、推車、兒童和長者進出。工具只能協助平面比較，不能取代現場門片、五金、防火或無障礙判斷。
 
 ## 先畫門扇弧線，再看鞋櫃與長凳的位置
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - humid-bedroom-layout
   - bedroom-space-heater-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 加濕器在臥室風水裡常被說成補水、養氣，因此有人會問放在床頭或財位是否比較好。但加濕器會把水分散到室內，位置要先處理床品、窗簾、牆面、木家具、插座、水箱清潔、漏水和夜間通行。若出霧直接打濕枕頭、牆面結露、底座放在不穩的床頭櫃，或使用者半夜要跨過電線加水，風水上的「水氣」反而成為潮濕和絆倒問題。沒有加濕器位置能保證睡眠、健康或運勢；濕度應以設備說明、室內狀況和個人需要判斷。
 
-先量加濕器外廓、水箱抽出深度、出霧口、床、窗簾、牆面、衣櫃、插座和夜間通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較加濕器與床窗位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱、電線和床頭櫃不互撞；若需要夜間起身加水或倒水，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替醫療建議、濕度測量或電器安全判斷。
+先量加濕器外廓、水箱抽出深度、出霧口、床、窗簾、牆面、衣櫃、插座和夜間通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較加濕器與床窗位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱、電線和床頭櫃不互撞；若需要夜間起身加水或倒水，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替醫療建議、濕度測量或電器安全判斷。
 
 ## 先分辨加濕、加水與清潔任務
 

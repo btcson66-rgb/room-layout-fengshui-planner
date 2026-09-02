@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-filter-cleaning-feng-shui
   - kitchen-gas-stove-ventilation-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 廚房抽油煙機擋油板清潔風水常被說成「灶口乾淨，財氣才不被油煙沖散」，但擋油板真正承受的是油脂、蒸氣、焦屑、清潔劑殘留和烹調時的熱氣。油垢變厚可能讓清潔困難、滴油或影響排煙；焦痕、異味和風量改變也可能與設備、管道或火源有關，不是只用「火氣太旺」解釋。風水可用來討論火、水、油煙和動線界線，但不能保證財運或防火。
 
-先量廚房長寬、抽油煙機罩體、擋油板、爐具、流理台、冰箱、垃圾桶、插座和備餐站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出排煙、開櫃和備餐範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認擋板拆洗時不會撞到吊櫃；若廚房走道狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試端鍋、清潔和倒油。工具只能協助空間比較，不能判定瓦斯、電氣或排煙管安全。
+先量廚房長寬、抽油煙機罩體、擋油板、爐具、流理台、冰箱、垃圾桶、插座和備餐站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出排煙、開櫃和備餐範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認擋板拆洗時不會撞到吊櫃；若廚房走道狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端鍋、清潔和倒油。工具只能協助空間比較，不能判定瓦斯、電氣或排煙管安全。
 
 ## 先分辨擋油板油膜、厚油垢、焦痕與滴油
 

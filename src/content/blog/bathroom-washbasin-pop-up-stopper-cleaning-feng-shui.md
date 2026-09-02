@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-washbasin-overflow-hole-cleaning-feng-shui
   - bathroom-washbasin-drain-odor-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗手台彈跳排水塞不是只有盆底那一個圓形塞頭。它通常和龍頭後方的升降桿、下方球桿、夾片、連桿與密封件一起動作；毛髮、皂膜、牙膏和水垢可能附在塞頭底部、排水體內側或連桿附近。浴室風水常把水口說成流動與收納的象徵，但更可靠的做法是先確認塞頭能否升降、排水是否變慢、檯面是否常有水痕，以及清潔後是否能正確復位。
 
-如果有人問「排水塞卡住是不是浴室風水不好？」答案應先回到可觀察的故障分流：是塞頭被毛髮黏住、升降桿與球桿脫開、連桿孔位不合、排水體內有皂膜，還是存水彎或管路另有問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出洗手台、鏡面、毛巾和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認下方櫃體不會阻礙檢查連桿；浴室通行可延伸參考 [房間通行寬度檢查](/zh/room-circulation-check/)。工具只協助平面和距離整理，不取代水電或產品說明。
+如果有人問「排水塞卡住是不是浴室風水不好？」答案應先回到可觀察的故障分流：是塞頭被毛髮黏住、升降桿與球桿脫開、連桿孔位不合、排水體內有皂膜，還是存水彎或管路另有問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出洗手台、鏡面、毛巾和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認下方櫃體不會阻礙檢查連桿；浴室通行可延伸參考 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)。工具只協助平面和距離整理，不取代水電或產品說明。
 
 ## 先辨認彈跳排水塞的各個部位
 

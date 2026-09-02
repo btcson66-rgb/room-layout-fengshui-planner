@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bath-mat-feng-shui
   - bathroom-towel-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 衛生紙架在浴室風水裡常被問成「紙巾靠近馬桶會不會帶濁氣」「放哪一側才不漏財」。但衛生紙是每天都要取用的消耗品，位置首先要解決坐下、起身、取紙、沖水、洗手和換紙捲；浴室還有水花、濕氣、清潔劑與地面滑倒的問題。若紙架太遠需要扭身、紙捲被淋濕、固定座搖晃，或門片一開就撞到，方位象徵不能取代使用安全。沒有衛生紙架位置能保證財運、健康或家庭結果；風水可以作為整潔與界線的文化整理角度。
 
-先量馬桶前端、座面高度、紙架、門片迴轉、洗手台、淋浴區和成人坐起時的手臂範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出馬桶與紙架關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、抽屜和紙架不互撞；浴室狹窄時再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試濕腳、穿衣和清潔時的路徑。工具不能替代防水施工、無障礙規範或個人照護判斷。
+先量馬桶前端、座面高度、紙架、門片迴轉、洗手台、淋浴區和成人坐起時的手臂範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出馬桶與紙架關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、抽屜和紙架不互撞；浴室狹窄時再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試濕腳、穿衣和清潔時的路徑。工具不能替代防水施工、無障礙規範或個人照護判斷。
 
 ## 先分辨取紙、換紙與清潔任務
 

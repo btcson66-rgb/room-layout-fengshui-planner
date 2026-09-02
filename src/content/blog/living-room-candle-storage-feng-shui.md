@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/living-room-furniture-layout/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-floor-lamp-feng-shui
   - living-room-wall-art-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 蠟燭在客廳風水裡常被聯想到溫暖、光明、聚會和節慶氣氛，也有人會問蠟燭放在財位、電視櫃、餐桌或窗邊是否能增加火元素。但點燃的蠟燭首先是明火，不是單純的裝飾品；真正要處理的是燭台是否穩固、玻璃容器是否適合、附近有沒有窗簾與紙張、兒童或寵物能否碰到、空間是否通風，以及人離開前是否確實熄滅。沒有任何蠟燭位置能保證財運、感情、家運或健康；本文把「火氣溫暖」轉成可執行的用火邊界。
 
-先量客廳、蠟燭與燭台外徑、桌面、電視櫃、窗簾、沙發、地毯、紙類、植物、門窗、插座和兒童寵物活動範圍。用 [客廳家具配置工具](/zh/living-room-furniture-layout/)比較茶几、邊桌與穩定櫃面的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燭台與桌面物品不互相碰撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拿飲料、起身、清潔、開窗和緊急離開。工具只能協助平面配置，不能取代消防安全、產品標示或火災應變。
+先量客廳、蠟燭與燭台外徑、桌面、電視櫃、窗簾、沙發、地毯、紙類、植物、門窗、插座和兒童寵物活動範圍。用 [客廳家具配置工具](/zh/living-room-furniture-layout/)比較茶几、邊桌與穩定櫃面的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燭台與桌面物品不互相碰撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拿飲料、起身、清潔、開窗和緊急離開。工具只能協助平面配置，不能取代消防安全、產品標示或火災應變。
 
 ## 財位與火源必須分開理解
 

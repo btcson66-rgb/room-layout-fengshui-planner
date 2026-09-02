@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-bookshelf-cleaning-feng-shui
   - living-room-bookshelf-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳壁掛層板清潔風水常被說成「層次分明，氣場才不散」，但壁掛層板實際面對的是灰塵、油膜、日曬、物品偏重、固定件鬆動、牆面粉化與取物碰撞。層板表面擦得乾淨，不代表螺絲、支架和牆體仍能安全承受重量；展示物排列漂亮，也不代表兒童、寵物或清掃工具不會碰撞。風水可以用來討論視線和展示秩序，但不能保證穩固、承重、防震或財運。
 
-先量客廳長寬、層板長寬深度、離地高度、支架位置、牆材、沙發、茶几、電視、插座、窗戶和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出層板投影、取物站位和跌落範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認展示物不會壓迫沙發或電視視線；若客廳是兒童、寵物或長者共用，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試清掃、取物和撤離。工具只能協助空間比較，不能判定牆體、固定件、承重和施工安全。
+先量客廳長寬、層板長寬深度、離地高度、支架位置、牆材、沙發、茶几、電視、插座、窗戶和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出層板投影、取物站位和跌落範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認展示物不會壓迫沙發或電視視線；若客廳是兒童、寵物或長者共用，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清掃、取物和撤離。工具只能協助空間比較，不能判定牆體、固定件、承重和施工安全。
 
 ## 先分辨表面灰塵、油膜、牆面粉化與固定件鬆動
 

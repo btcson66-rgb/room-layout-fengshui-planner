@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-room-feng-shui
   - bedroom-drying-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗衣機在居家風水裡常被說成把髒污帶走、讓家裡重新清爽，因此有人會問放在陽台、浴室或房屋哪個方位比較能去除濁氣。但洗衣機涉及進水、排水、接地、用電、脫水震動、門蓋、潮濕、衣物重量和兒童攀爬，位置要先處理機台水平、排水管、龍頭、插座、地面水痕和取衣路線。若把「洗掉濁氣」理解成可以隨意放在浴室或晾衣架下，風水象徵不能取代電氣與漏水預防。沒有任何洗衣機位置能保證健康、財運或家庭關係；本文把「清潔流動」落到可檢查的洗衣、脫水、晾曬和收機流程。
 
-先量洗衣機本體、門蓋開合、進水龍頭、排水口、插座、牆面、晾衣架、清潔籃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較陽台與洗衣間位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門蓋和濾網維護範圍；家中有幼童時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試取衣與通行。工具不能代替產品安裝、接地或排水專業判斷。
+先量洗衣機本體、門蓋開合、進水龍頭、排水口、插座、牆面、晾衣架、清潔籃和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較陽台與洗衣間位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門蓋和濾網維護範圍；家中有幼童時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試取衣與通行。工具不能代替產品安裝、接地或排水專業判斷。
 
 ## 先處理潮濕與接地
 

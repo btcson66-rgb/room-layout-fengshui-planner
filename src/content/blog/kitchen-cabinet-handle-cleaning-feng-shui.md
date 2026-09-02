@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-cabinet-shelf-liner-cleaning-feng-shui
   - kitchen-drawer-organizer-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房櫥櫃把手在風水裡常被聯想到開啟、納藏與家務流動，但它也是手部、油煙、水氣和清潔布最常接觸的位置。煮飯前後摸過把手，手上的油、麵粉或水分可能留在接縫；若清潔時直接把水噴向把手底座，液體還可能進入螺絲孔、門板接縫或金屬表面。本文把「開門有序」轉成可觀察的接觸分區、材質清潔、固定檢查和備餐動線驗收，不把櫥櫃方位當成食物、衛生或運勢保證。
 
-先記錄把手長度、底座、門片材質、開門方向、爐具、水槽、垃圾桶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取物與洗手路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認把手不會互相碰撞或撞牆；多人同時備餐時，可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試櫃門開啟是否擋路。工具只能協助空間判讀，不能取代把手材質、固定件和門片保養說明。
+先記錄把手長度、底座、門片材質、開門方向、爐具、水槽、垃圾桶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取物與洗手路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認把手不會互相碰撞或撞牆；多人同時備餐時，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試櫃門開啟是否擋路。工具只能協助空間判讀，不能取代把手材質、固定件和門片保養說明。
 
 ## 先分辨手印、油膜、水痕與固定異常
 

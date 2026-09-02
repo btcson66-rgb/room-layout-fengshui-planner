@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-reusable-shopping-bag-feng-shui
   - kitchen-sponge-cloth-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 保鮮盒在廚房風水裡常被聯想到把食物與家庭資源收好、讓家中飲食有秩序，有人會問盒蓋全部疊在一起是否比較聚氣，或透明盒放在某個方向是否比較能留住財。但保鮮盒真正要處理的是盒身和盒蓋能否配對、材質是否適合食物與溫度、洗後能否完全乾燥、刮傷或變形是否需要更換，以及拿盒子時會不會撞到爐具、刀具或家人。沒有任何收納方位能保證健康、財運或家庭和諧；本文把「留住食物」轉成可檢查的容器狀態與備餐流程。
 
-先量保鮮盒外徑、盒蓋高度、抽屜內深、櫥櫃層高、冰箱門架、洗水槽、瀝水區和主要備餐路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較抽屜、櫃內與檯面位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認盒蓋直立收納後櫃門可以關閉，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拿取、清洗、端菜與多人交會。工具只能協助空間配置，不取代食品容器標示與衛生建議。
+先量保鮮盒外徑、盒蓋高度、抽屜內深、櫥櫃層高、冰箱門架、洗水槽、瀝水區和主要備餐路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較抽屜、櫃內與檯面位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認盒蓋直立收納後櫃門可以關閉，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拿取、清洗、端菜與多人交會。工具只能協助空間配置，不取代食品容器標示與衛生建議。
 
 ## 先讀材質與耐熱標示，不靠透明度判斷
 

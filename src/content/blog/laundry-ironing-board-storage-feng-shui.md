@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-room-feng-shui
   - laundry-washing-machine-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 熨衣板在洗衣區風水裡常被聯想到把衣物整理平順、把生活重新理直，有人會問熨衣板靠牆、朝門或收在衣櫃旁是否能讓家運順利。真正要先處理的是展開後是否堵住通道、熨斗是否已經冷卻、電線有沒有被拉扯或壓折、熱面是否靠近衣物與窗簾，以及收折後會不會滑落。沒有一個方向能取代高溫電器的使用說明；本文把「理順」轉成可實測的熨燙順序、冷卻位置和收納邊界。
 
-先量洗衣區長寬、洗衣機、熨衣板展開尺寸、衣櫃、曬衣架、插座、門扇與可放置熨斗的耐熱面，並記錄熨斗有水箱時的加水和倒水路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、櫃側和獨立家務角的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認熨衣板收起後不會頂住門片或設備，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拿衣、熨燙、折衣、清掃和緊急離開。工具只協助配置，不取代電器標示、消防與維修判斷。
+先量洗衣區長寬、洗衣機、熨衣板展開尺寸、衣櫃、曬衣架、插座、門扇與可放置熨斗的耐熱面，並記錄熨斗有水箱時的加水和倒水路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆、櫃側和獨立家務角的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認熨衣板收起後不會頂住門片或設備，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拿衣、熨燙、折衣、清掃和緊急離開。工具只協助配置，不取代電器標示、消防與維修判斷。
 
 ## 先分辨熨燙中的熱源與收納中的板面
 

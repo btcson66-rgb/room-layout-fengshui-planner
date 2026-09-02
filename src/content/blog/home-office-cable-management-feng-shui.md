@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-monitor-feng-shui
   - home-office-printer-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電腦線材在書房風水裡常被聯想到資訊流動、思緒不被雜線打斷，也有人把所有線束綁成一團或塞到桌下，認為看不見就能讓工作更聚焦。但線材真正要處理的是插座與延長線額定負載、電線是否捲繞或被桌腳壓住、變壓器能否散熱、插頭是否鬆動，以及清潔和起身時會不會絆倒。沒有任何線材方向能保證工作效率、升遷或財運；本文把「思路順」轉成可檢查的電源分組與桌下路徑。
 
-先列出電腦、螢幕、印表機、路由器、檯燈、喇叭、充電器、牆壁插座、延長線與變壓器。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌後、牆側和設備櫃的走線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌板、抽屜和插頭不互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試椅子後退、清潔、起身與搬桌。工具只能協助配置，不取代電氣專業或產品說明。
+先列出電腦、螢幕、印表機、路由器、檯燈、喇叭、充電器、牆壁插座、延長線與變壓器。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌後、牆側和設備櫃的走線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌板、抽屜和插頭不互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試椅子後退、清潔、起身與搬桌。工具只能協助配置，不取代電氣專業或產品說明。
 
 ## 先把電源端、設備端與通行端分區
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-stool-feng-shui
   - bathroom-toilet-ventilation-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶座在浴室風水裡常被解讀成把水流、潔淨和舒適留在家中，因此有人會問馬桶座放在浴室哪個方位，是否能改善健康或家運。但電子式馬桶座同時涉及水、電、加熱、皮膚接觸、防水、插座、進水管、控制器和清潔維修；若只看方位，忽略插座受潮、門片碰撞或清潔工具沒有落點，象徵性的「潔淨」反而會變成每日的障礙。沒有任何免治馬桶座位置能保證健康、財運或家庭結果；本文把「水清、氣順」轉成可檢查的水電分流、坐起動線和維修可及性。
 
-先量馬桶本體、座體、蓋子開合、進水管、插座、門片、洗手台、淋浴區、地面排水和主要起身空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)查看門片與座體是否互撞，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認座體、管線和控制面板不被牆角壓迫；若浴室狹窄或多人共用，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬進出、坐下、起身和清潔。工具無法判定防水等級、接地或安裝合格與否，這些仍要依標示、說明與合格專業意見確認。
+先量馬桶本體、座體、蓋子開合、進水管、插座、門片、洗手台、淋浴區、地面排水和主要起身空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)查看門片與座體是否互撞，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認座體、管線和控制面板不被牆角壓迫；若浴室狹窄或多人共用，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬進出、坐下、起身和清潔。工具無法判定防水等級、接地或安裝合格與否，這些仍要依標示、說明與合格專業意見確認。
 
 ## 先理解電子式馬桶座的水電交界
 

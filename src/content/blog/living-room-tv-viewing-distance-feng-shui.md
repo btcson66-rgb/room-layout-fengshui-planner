@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/living-room-furniture-layout/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-tv-console-feng-shui
   - tv-facing-window-living-room-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電視在客廳風水裡常被視為聚集注意力、讓家人共享資訊的中心，因此有人會問電視是否一定要放在客廳正位、面向大門，或必須讓沙發正對螢幕才算格局完整。但電視真正要處理的是觀看距離、螢幕高度、窗戶反光、電視櫃承重、散熱、電源線、音量與家人通行。沒有任何電視方位能保證家運、財運、親子關係或健康；本文把「客廳有中心」轉成可測試的視線、設備穩定與共用規則。
 
-先量客廳、電視外框、腳架或壁掛、電視櫃、沙發、茶几、窗、門、插座和主要走道。用 [客廳家具配置工具](/zh/living-room-furniture-layout/)比較電視櫃靠牆、壁掛與側牆方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體寬度、承重和設備外廓，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拿飲料、清潔、孩子活動和離開沙發。工具只能協助平面規劃，不能取代產品說明、固定施工或視光建議。
+先量客廳、電視外框、腳架或壁掛、電視櫃、沙發、茶几、窗、門、插座和主要走道。用 [客廳家具配置工具](/zh/living-room-furniture-layout/)比較電視櫃靠牆、壁掛與側牆方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃體寬度、承重和設備外廓，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拿飲料、清潔、孩子活動和離開沙發。工具只能協助平面規劃，不能取代產品說明、固定施工或視光建議。
 
 ## 電視正對沙發不代表所有人都舒服
 

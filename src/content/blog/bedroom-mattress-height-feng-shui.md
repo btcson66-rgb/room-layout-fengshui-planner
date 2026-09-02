@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bed-head-against-wall
   - bed-direction-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 「床墊太高風水不好嗎？」和「床墊太低會不會漏財？」是兩種常見問法。民俗上有人把高床看成有靠、有提升，也有人偏好低床來接近地氣；但床墊厚度、床架高度和地面關係會直接影響坐起、下床、夜間找拖鞋、床邊清潔、床下潮氣和長者使用。沒有一個床高數字能保證睡得更好、健康、財運或感情，判斷應回到使用者和房間條件。
 
-先把「床面高度」拆開：地面到床架上緣、床墊厚度、保潔墊與床包的變化，最後才是人真正坐到的高度。再量門片、衣櫃、床頭櫃、窗戶、插座和通往浴室的路徑。可以使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床和走道，用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較床架外框；若要看夜間是否會撞到家具，可再使用 [房間通行寬度檢查](/zh/room-circulation-check/)。
+先把「床面高度」拆開：地面到床架上緣、床墊厚度、保潔墊與床包的變化，最後才是人真正坐到的高度。再量門片、衣櫃、床頭櫃、窗戶、插座和通往浴室的路徑。可以使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床和走道，用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較床架外框；若要看夜間是否會撞到家具，可再使用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)。
 
 ## 床高沒有吉數，卻有使用者的起身條件
 

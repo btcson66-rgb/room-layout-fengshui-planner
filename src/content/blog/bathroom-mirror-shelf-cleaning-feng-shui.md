@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-mirror-feng-shui
   - bathroom-mirror-frame-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 鏡櫃層板風水常被問成「鏡子照到哪裡會漏財」，但浴室每天真正要處理的是：玻璃層板是否卡著水痕與皂膜、瓶罐底部是否滴漏、層板托架是否穩、開門拿東西時是否撞到洗手台、清潔後玻璃是否完全乾燥，以及家人是否要伸手跨過水盆取物。風水裡的「明」可以轉譯為看得見、擦得到、拿取順和玻璃固定可靠，不能用鏡面方向保證財運或健康。
 
-先量浴室長寬、鏡櫃寬深高、層板尺寸、洗手台、龍頭、馬桶、門片、洗漱站位與清潔工具暫放區。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開櫃、拿瓶、洗手、擦乾和離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查櫃門、人體站位和龍頭是否互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)確認多人使用的交會。工具只協助配置，不代替玻璃、牆面固定或浴室電氣判斷。
+先量浴室長寬、鏡櫃寬深高、層板尺寸、洗手台、龍頭、馬桶、門片、洗漱站位與清潔工具暫放區。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開櫃、拿瓶、洗手、擦乾和離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查櫃門、人體站位和龍頭是否互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認多人使用的交會。工具只協助配置，不代替玻璃、牆面固定或浴室電氣判斷。
 
 ## 玻璃層板的好風水是水痕可看、瓶罐不漏且拿取不必碰到濕區
 

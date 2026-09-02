@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-threshold-seal-feng-shui
   - bathroom-shower-door-bottom-seal-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室淋浴門檻清潔風水常被說成「門檻守住水氣，家運才不外流」，但門檻每天承受洗澡水、皂垢、毛髮、腳底摩擦、浴簾或淋浴門的水流，以及使用者跨入跨出的重量。門檻上白白一圈可能是水垢，黑線可能是矽利康接縫發霉，也可能只是灰塵與清潔劑殘留；真正要先處理的是水是否留在乾區、腳步是否穩、門片是否順、排水是否暢通。風水可以用來討論界線，但不能保證防滑、乾燥或健康。
 
-先量浴室長寬、淋浴門檻長度與高度、門扇或浴簾、地漏、洗手台、馬桶、地墊和進出站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出乾區與濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片開啟後不會撞到門檻或置物架；若門檻狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)比較拿毛巾、跨入淋浴間和離開時的腳步。工具只能協助平面比較，不能判定防水層、地坪坡度或結構安全。
+先量浴室長寬、淋浴門檻長度與高度、門扇或浴簾、地漏、洗手台、馬桶、地墊和進出站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出乾區與濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片開啟後不會撞到門檻或置物架；若門檻狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較拿毛巾、跨入淋浴間和離開時的腳步。工具只能協助平面比較，不能判定防水層、地坪坡度或結構安全。
 
 ## 先分辨門檻皂垢、水垢與積水來源
 

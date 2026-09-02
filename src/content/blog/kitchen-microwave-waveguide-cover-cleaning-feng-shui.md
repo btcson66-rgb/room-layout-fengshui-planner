@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-microwave-door-seal-cleaning-feng-shui
   - kitchen-microwave-turntable-ring-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 微波爐波導蓋常被風水文章說成「火口乾淨才不燒掉家運」，但真正需要處理的是波導蓋上的油污、腔體飛濺、門封狀態、散熱空間與加熱後異味。風水裡的火水分區可以轉譯為熱源、食物殘渣、清潔液與通風路徑的管理，不能把波導蓋看起來潔白直接當成加熱效果或家運保證。
 
-先量廚房長寬、微波爐外尺寸、門片開啟範圍、波導蓋位置、插座、水槽與備餐路徑。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出微波爐和水槽的距離，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查門前取物空間，最後用 [房間動線檢查](/zh/room-circulation-check/)確認熱食拿出後不會堵住主要通道。
+先量廚房長寬、微波爐外尺寸、門片開啟範圍、波導蓋位置、插座、水槽與備餐路徑。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出微波爐和水槽的距離，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查門前取物空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認熱食拿出後不會堵住主要通道。
 
 ## 波導蓋的好風水是表面可檢查、腔體少飛濺與散熱不被遮住
 

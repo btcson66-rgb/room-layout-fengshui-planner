@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-chair-leg-cleaning-feng-shui
   - dining-room-chair-felt-pad-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐椅扶手會接觸手掌、袖口、醬汁飛濺和餐桌邊緣，木扶手的轉角、漆面接縫、椅背連接處和螺絲孔也容易藏住油膜與食物碎屑。扶手磨亮、椅子晃動、拉不進桌下或扶手撞到桌面，往往是材質、固定和尺寸問題。餐廳風水常談座位有靠、家人圍坐和餐桌氣氛，但可檢查的是扶手穩不穩、椅子能否拉出、清潔後是否乾燥，以及端菜與起身是否互相干涉，不能把家具狀態直接等同家人關係。
 
-先記錄椅子品牌、型號、扶手材質、漆面、椅背、座面、椅腳、餐桌高度和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座和端菜範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對扶手與桌緣，最後用 [房間通行寬度檢查](/zh/room-circulation-check/)確認拉椅後不會堵住廚房或門口。
+先記錄椅子品牌、型號、扶手材質、漆面、椅背、座面、椅腳、餐桌高度和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座和端菜範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對扶手與桌緣，最後用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認拉椅後不會堵住廚房或門口。
 
 ## 扶手、椅背、接點與椅腳要分開
 

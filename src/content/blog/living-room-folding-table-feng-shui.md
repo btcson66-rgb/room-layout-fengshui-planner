@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-high-chair-feng-shui
   - dining-chair-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 折合桌在客廳風水裡常被說成「需要時聚人氣」「桌面展開就能承接家運」。但折合桌有活動桌腳、鎖定裝置和夾陷區，位置要先處理展開、承重、桌面水平、兒童、沙發、電視櫃、門口與收折存放。若桌腳踩在地墊上、重物集中一側、鎖定沒有扣上，或收折後靠在孩子能碰到的角落，象徵性的聚餐中心不能取代家具安全。沒有折合桌位置能保證財運、家庭和諧或聚會結果；真正的穩定來自每次展開和收回都能正確完成。
 
-先量折合桌展開與收納後的長寬高、桌腳外張、鎖定裝置、沙發、茶几、電視櫃、門片和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌面與客廳活動區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌腳、椅子和門片不互撞；需要搬桌或端熱食時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能替代產品說明、最大承載或兒童安全判斷。
+先量折合桌展開與收納後的長寬高、桌腳外張、鎖定裝置、沙發、茶几、電視櫃、門片和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較桌面與客廳活動區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌腳、椅子和門片不互撞；需要搬桌或端熱食時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能替代產品說明、最大承載或兒童安全判斷。
 
 ## 先分辨展開、用餐與收折狀態
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-table-under-cleaning-feng-shui
   - bedroom-bedside-table-top-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床邊桌常同時放床頭燈、手機、手錶、耳機和延長線，線材容易穿過抽屜、垂到地面、纏在桌腳或被床墊壓住；理線孔積灰、充電器過熱、接頭鬆動和夜間起身踩到線，也會讓「床側很亂」變成具體的使用問題。臥室風水常把床頭附近視為需要安定的區域，但可以驗收的是線材沒有破皮、插座不受潮、設備不被壓住，以及起身和清潔都有安全路徑，不能把收線直接當成睡眠或關係保證。
 
-先記錄床邊桌品牌、型號、材質、是否有理線孔、抽屜、床頭燈、充電器、插座和延長線位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床側與桌側的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌面與床墊高度，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)確認夜間下床不必跨過電線。
+先記錄床邊桌品牌、型號、材質、是否有理線孔、抽屜、床頭燈、充電器、插座和延長線位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床側與桌側的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對桌面與床墊高度，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認夜間下床不必跨過電線。
 
 ## 線材、接頭、充電器與插座要分開
 

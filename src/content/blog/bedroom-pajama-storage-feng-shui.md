@@ -18,7 +18,6 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-layout-planner/
 relatedPosts:
   - bedroom-worn-clothes-storage-feng-shui
   - bedroom-bedding-storage-feng-shui

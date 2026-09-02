@@ -89,7 +89,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫折疊桌收合和展開兩個狀態，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌板、椅子與門寬，最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開合和出口。若你在處理抽屜櫃靠門，可參考 [小房間抽屜櫃全開](/zh/blog/small-room-drawer-unit-doorway-clearance-feng-shui/)；若入口是衣物外凸，參考 [小房間衣物掛架靠門](/zh/blog/small-room-clothes-rack-doorway-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫折疊桌收合和展開兩個狀態，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌板、椅子與門寬，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開合和出口。若你在處理抽屜櫃靠門，可參考 [小房間抽屜櫃全開](/zh/blog/small-room-drawer-unit-doorway-clearance-feng-shui/)；若入口是衣物外凸，參考 [小房間衣物掛架靠門](/zh/blog/small-room-clothes-rack-doorway-clearance-feng-shui/)。
 
 ### 參考資料
 

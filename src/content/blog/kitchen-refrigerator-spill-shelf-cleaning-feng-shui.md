@@ -18,11 +18,11 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-ice-dispenser-chute-cleaning-feng-shui
   - kitchen-refrigerator-water-dispenser-cleaning-feng-shui
-  - kitchen-refrigerator-drip-tray-cleaning-feng-shui
+  - kitchen-refrigerator-egg-tray-cleaning-feng-shui
 howToName: "冰箱分配器接水盤、出水口、水垢、溢流與取水動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +36,7 @@ howToSteps:
 
 冰箱分配器接水盤的風水問題常被說成「水聚在盤中就能守住財」，但每天真正需要處理的是接水盤積著水垢、冰屑和飲料滴痕，出水口滴水超過盤面，或取水者站在冰箱前時堵住廚房通道。風水裡的「水有容器」可以轉譯為滴水可看、托盤能清潔、出水口狀態可辨和取水動線不撞擊，不能把托盤是否乾淨直接當成守財或飲水結果。
 
-先量廚房長寬、冰箱外框、分配器高度、接水盤深度、出水口、冰箱門開啟角度、爐具、流理台和杯子暫放處。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取水、接冰、擦乾和離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱與牆面，最後以 [房間動線檢查](/zh/room-circulation-check/)測試多人備餐。工具只協助配置，不代替供水、電氣和冷凍設備判斷。
+先量廚房長寬、冰箱外框、分配器高度、接水盤深度、出水口、冰箱門開啟角度、爐具、流理台和杯子暫放處。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取水、接冰、擦乾和離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱與牆面，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試多人備餐。工具只協助配置，不代替供水、電氣和冷凍設備判斷。
 
 ## 接水盤的好風水是水痕可追、托盤能取出且滴水不流到地面
 

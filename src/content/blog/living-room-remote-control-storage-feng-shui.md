@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-tv-console-feng-shui
   - living-room-smart-plug-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 遙控器在客廳風水裡常被聯想到控制家中聲音、螢幕與冷氣，有人會問遙控器集中放在茶几中央是否比較聚氣，或把所有按鍵朝上能不能讓家人少爭執。更實際的問題是：多支遙控器能不能一眼辨認？電池是否有漏液、過期或長時間不用仍留在機內？茶几上是否還放著熱飲、玩具和充電線？孩子或寵物能不能拿到？沒有任何朝向能替代電池管理和動線；本文把「掌握客廳節奏」轉成設備分類、清潔、回收與可觀察的取放流程。
 
-先量電視櫃、茶几、沙發、遙控器收納盒、插座、充電位置和主要通行路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較茶几分格、電視櫃抽屜與側邊收納的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納盒不會擋住櫃門、插座或音響，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試坐下、起身、端飲料和多人通過。工具只協助配置，不取代設備說明、電池警示或所在地回收規定。
+先量電視櫃、茶几、沙發、遙控器收納盒、插座、充電位置和主要通行路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較茶几分格、電視櫃抽屜與側邊收納的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納盒不會擋住櫃門、插座或音響，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試坐下、起身、端飲料和多人通過。工具只協助配置，不取代設備說明、電池警示或所在地回收規定。
 
 ## 先替每支遙控器找回「對應設備」
 

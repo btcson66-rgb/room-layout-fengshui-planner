@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-bottom-dust-cleaning-feng-shui
   - entryway-doorframe-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 玄關門檻清潔風水常被說成「門檻守住家氣」，但門口實際承受的是鞋底帶入的砂土、雨水、落葉、油膜、寵物毛、門縫灰塵和頻繁踩踏。門檻附近積水可能來自雨水、鞋底、地面坡度、止水條或門扇密合，不一定是「財水外流」；高差、鬆動的壓條和捲邊地墊則可能讓人絆倒。風水可以用來討論入口界線與收納秩序，但不能保證守財、止水或防跌。
 
-先量玄關長寬、門扇開啟方向、門檻高度與寬度、室內外地坪、地墊、鞋櫃、傘架、電鈴、照明和常用通路。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、換鞋、放傘、搬物和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃和長凳不會讓門檻前只剩側身寬度；若入口連接客廳或樓梯，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)模擬夜間、雨天和提重物進出。工具只能協助平面比較，不能判定建築高差、防水、門鎖或結構安全。
+先量玄關長寬、門扇開啟方向、門檻高度與寬度、室內外地坪、地墊、鞋櫃、傘架、電鈴、照明和常用通路。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、換鞋、放傘、搬物和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃和長凳不會讓門檻前只剩側身寬度；若入口連接客廳或樓梯，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬夜間、雨天和提重物進出。工具只能協助平面比較，不能判定建築高差、防水、門鎖或結構安全。
 
 ## 先分辨乾砂、泥水、油膜、鏽痕與止水條老化
 

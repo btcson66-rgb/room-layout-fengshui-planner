@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-curtain-feng-shui
   - living-room-window-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳窗簾軌道清潔風水常被說成「窗簾開合順，家中的氣才進得來」，但軌道真正會累積的是窗邊灰塵、棉絮、寵物毛、油膜、昆蟲殘骸和清潔劑乾掉的薄膜。滑輪卡住可能來自變形、螺絲鬆動或掛鉤受力，不一定是氣流不順；軌道附近有霉味也可能與窗框結露、牆面滲水或通風不足有關。風水可作為整理採光的語言，但不能保證財運、空氣品質或家庭關係。
 
-先量客廳長寬、窗戶寬度、窗簾盒或軌道高度、沙發、茶几、冷氣、插座和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出窗簾開合範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認拉開窗簾時不會撞到櫃體；若窗邊是家人常走的路線，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試拉簾、開窗和清潔時的站位。工具只能協助平面比較，不能取代高處作業、窗框漏水或軌道維修判斷。
+先量客廳長寬、窗戶寬度、窗簾盒或軌道高度、沙發、茶几、冷氣、插座和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出窗簾開合範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認拉開窗簾時不會撞到櫃體；若窗邊是家人常走的路線，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拉簾、開窗和清潔時的站位。工具只能協助平面比較，不能取代高處作業、窗框漏水或軌道維修判斷。
 
 ## 先分辨軌道灰塵、棉絮、油膜與黴味
 

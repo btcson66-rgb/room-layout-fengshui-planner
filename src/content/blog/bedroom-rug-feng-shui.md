@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-width-guide/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-rug-feng-shui
   - bedroom-foot-of-bed-feng-shui

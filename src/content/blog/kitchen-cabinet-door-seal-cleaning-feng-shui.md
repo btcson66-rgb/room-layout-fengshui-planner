@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-cabinet-door-cleaning-feng-shui
   - kitchen-cabinet-hinge-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 廚房櫃門封邊是門板四周的貼皮、塑膠邊條、塗層或接縫，容易接觸油煙、蒸氣、洗碗水、手汗、麵粉和清潔劑。封邊發黑不一定是單純灰塵，翹起、脫膠、膨脹、門片歪斜和開合卡住也可能表示板材或五金受潮。風水常把廚房櫃體說成收納與財庫，實際應轉成食材和工具可取、門片能開、封邊不藏油、檯面可乾、熱源和水源有界線，不把櫃門整齊寫成聚財保證。
 
-先記錄廚房約 240 × 300 公分、櫃門封邊、把手、鉸鏈、爐具、水槽、洗碗區、冰箱、備餐面和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開櫃、洗手、備餐、端鍋和清潔的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃門開啟角度不撞抽屜、電器和人；用 [房間通行寬度檢查](/zh/room-circulation-check/)測試兩人錯身。工具只能協助配置，不能代替板材、防潮、電器和鉸鏈維修判斷。
+先記錄廚房約 240 × 300 公分、櫃門封邊、把手、鉸鏈、爐具、水槽、洗碗區、冰箱、備餐面和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開櫃、洗手、備餐、端鍋和清潔的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫃門開啟角度不撞抽屜、電器和人；用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試兩人錯身。工具只能協助配置，不能代替板材、防潮、電器和鉸鏈維修判斷。
 
 ## 油膜、粉屑、水痕與封邊脫膠要分流
 

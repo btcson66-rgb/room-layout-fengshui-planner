@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-width-guide/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-mirror-feng-shui
   - toilet-door-facing-bed
@@ -94,7 +94,7 @@ howToSteps:
 
 第一版保留平開門並改門向，開啟後不擋洗手台但要重新確認入口；第二版改推拉門，外側空間較清楚但滑軌清潔和救援開啟要測試；第三版採固定玻璃加浴簾，門片碰撞減少，隱私和水花控制則要觀察。用紙板模擬三版，穿拖鞋、提衣物、抱物品和從外側協助開門，才能比較真正的差異。
 
-可用 [房間家具配置工具](/zh/room-layout-planner/)標出浴室入口、洗手台、馬桶、淋浴區和門片外框，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)思考固定設備的關係；[房間動線寬度指南](/zh/room-circulation-width-guide/)只能協助平面比較，不會驗證防水、排水、玻璃五金、扶手或無障礙規範。
+可用 [房間家具配置工具](/zh/room-layout-planner/)標出浴室入口、洗手台、馬桶、淋浴區和門片外框，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)思考固定設備的關係；[房間動線寬度指南](/zh/blog/room-circulation-width-guide/)只能協助平面比較，不會驗證防水、排水、玻璃五金、扶手或無障礙規範。
 
 案例中若向外開門會撞洗手台，先改門向或推拉，不要用縮小洗手台來勉強保留；若長者需要協助，先確認門片和轉身空間，再選透明度和材質。淋浴門的民俗偏好可以納入，但不能凌駕於防滑、通風、清潔和照顧者進出。
 

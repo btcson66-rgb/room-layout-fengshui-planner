@@ -16,9 +16,8 @@ keywords:
   - 淋浴門把濕手防滑
   - 浴室開門動線
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-door-hinge-cleaning-feng-shui
   - bathroom-shower-door-bottom-seal-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 浴室淋浴門把在風水裡容易被聯想到進出、界線與水氣開合，但真正需要維護的是水垢、肥皂膜、濕手接觸、門把固定、玻璃門重量、鉸鏈、門檻和濕區通行。門把每天被濕手抓取，卻常在清潔玻璃時被忽略；表面擦亮，也不代表螺絲、門框和地面沒有滑倒風險。本文把「浴室出入有界」轉成可觀察的材質確認、清潔、乾燥、固定、開門與防滑驗收，不把門把方向當成健康、桃花或運勢保證。
 
-先記錄浴室約 180 × 240 公分、淋浴門材質、門把形狀、鉸鏈、玻璃門、門檻、排水口、毛巾區、馬桶和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)畫出淋浴、取毛巾和開門路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認門把不切入外部動線；濕區進出可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代玻璃門、五金或防滑維修判斷。
+先記錄浴室約 180 × 240 公分、淋浴門材質、門把形狀、鉸鏈、玻璃門、門檻、排水口、毛巾區、馬桶和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出淋浴、取毛巾和開門路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認門把不切入外部動線；濕區進出可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代玻璃門、五金或防滑維修判斷。
 
 ## 先分辨水垢、肥皂膜、霉斑與門把鬆動
 
