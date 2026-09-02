@@ -5033,13 +5033,22 @@ for (let index = 0; index < expandedEntries.length; index += 1) {
   }
 }
 
+// 廣告 loader 與版位一定出現在 markup，不會出現在樣式表裡；反過來說，
+// CSS 選擇器可以合法地提到 AdSense 的類別或屬性（例如收合未填充版位的規則），
+// 而 Astro 會把 global.css 內聯進「每一頁」，包含不放廣告的 noindex 頁。
+// 因此比對前先去掉 <style> 區塊——檢查的是「有沒有廣告」，
+// 不是「有沒有出現這串字」。同 CLAUDE.md 紅線第 5 條：原始碼字串 ≠ 線上實際行為。
+const withoutStyleBlocks = (html) => html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+const AD_MARKUP_PATTERN = /pagead2\.googlesyndication|adsbygoogle|data-ad-slot/i;
+const hasAdMarkup = (html) => AD_MARKUP_PATTERN.test(withoutStyleBlocks(html));
+
 for (const slug of allSlugs) {
   const htmlPath = path.join(distRoot, 'zh', 'blog', slug, 'index.html');
   const html = await fs.readFile(htmlPath, 'utf8');
   const reviewReady = reviewReadyBlogSlugs.has(slug);
   check(`render:${slug}:robots`, reviewReady ? !/name="robots"[^>]+noindex/i.test(html) : /name="robots"[^>]+noindex/i.test(html), reviewReady ? 'indexable' : 'noindex');
   if (!reviewReady) {
-    check(`render:${slug}:no-ad-loader`, !/pagead2\.googlesyndication|adsbygoogle|data-ad-slot/i.test(html), 'held pages must not load or host ads');
+    check(`render:${slug}:no-ad-loader`, !hasAdMarkup(html), 'held pages must not load or host ads');
     check(`render:${slug}:no-affiliate`, !/Shopee Affiliate|shopee\.tw/i.test(html), 'held pages must not show affiliate offers');
   } else {
     check(`render:${slug}:substantial-main`, htmlText(html).replace(/\s/g, '').length >= 1800, htmlText(html).replace(/\s/g, '').length);
@@ -5071,7 +5080,7 @@ const notFound = await fs.readFile(path.join(distRoot, '404.html'), 'utf8');
 check('404:robots', /name="robots"[^>]+content="[^"]*noindex/i.test(notFound), 'error page must be noindex');
 check(
   '404:no-ad-loader',
-  !/pagead2\.googlesyndication|adsbygoogle|data-ad-slot/i.test(notFound),
+  !hasAdMarkup(notFound),
   'error page must not load or host ads',
 );
 
