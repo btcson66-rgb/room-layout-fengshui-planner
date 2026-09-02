@@ -7,7 +7,7 @@ const contentRoot = path.join(root, 'src', 'content', 'blog');
 const distRoot = path.join(root, 'dist');
 const failures = [];
 const checks = [];
-const expectedReviewReadyCount = 1006;
+const expectedReviewReadyCount = 1009;
 const expandedArticleRequirements = new Map([
   ['bed-facing-door-feng-shui', {
     required: [/15 分鐘/, /一晚/, /cdc\.gov\/sleep/i, /usfa\.fema\.gov/i, /cpsc\.gov/i, /\/disclaimer\//],
