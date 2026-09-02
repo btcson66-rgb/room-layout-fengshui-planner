@@ -7,7 +7,7 @@ category: bedroom
 tags: [床對門, 臥室照明, 夜間動線, 臥室風水]
 keywords: [床對門晚上, 床對門門縫光, 床尾對門照明, 臥室夜燈風水]
 relatedTools: [/zh/bed-door-fix-selector/, /zh/feng-shui-bedroom-checker/, /zh/blog/room-circulation-width-guide/]
-relatedPosts: [bed-facing-door-feng-shui, bedroom-bed-facing-door-privacy-buffer-feng-shui, bedroom-night-walkway-feng-shui, bedroom-ceiling-light-feng-shui]
+relatedPosts: [bed-facing-door-feng-shui, bedroom-bed-doorway-morning-light-feng-shui, bedroom-night-walkway-feng-shui, bedroom-ceiling-light-feng-shui]
 howToName: 檢查床對門的夜間光線與起身動線
 howToTotalTime: PT30M
 howToSteps:
@@ -90,4 +90,3 @@ howToSteps:
 - [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)
 - [CPSC：Window Covering Cords](https://www.cpsc.gov/gocordless)
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)
-
