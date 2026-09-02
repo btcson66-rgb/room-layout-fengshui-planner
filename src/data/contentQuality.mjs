@@ -1125,6 +1125,16 @@ export const reviewReadyBlogSlugs = new Set([
   'bed-facing-door-shared-bedroom-feng-shui',
   'bed-facing-door-home-office-zoning-feng-shui',
   'bed-facing-door-window-blinds-feng-shui',
+  'beam-over-desk-chair-height-clearance-feng-shui',
+  'beam-over-desk-monitor-glare-zone-feng-shui',
+  'beam-over-desk-standing-up-route-feng-shui',
+  'beam-over-desk-rental-no-drill-lighting-feng-shui',
+  'beam-over-desk-low-ceiling-storage-boundary-feng-shui',
+  'beam-over-bed-head-clearance-feng-shui',
+  'beam-over-bed-pillow-zone-feng-shui',
+  'beam-over-bed-night-exit-feng-shui',
+  'beam-over-bed-bedside-table-feng-shui',
+  'beam-over-bed-window-condensation-feng-shui',
 ]);
 
 export const reviewReadyCategorySlugs = new Set([
