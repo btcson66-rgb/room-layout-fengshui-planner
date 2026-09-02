@@ -33,7 +33,7 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
 {affiliateEnabled && products.length > 0 && (
   <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-batch-size={products.length}>
     <div class="affiliate-recs__header">
-      <p class="affiliate-recs__kicker">支持 RoomFeng · Shopee 聯盟行銷</p>
+      <p class="affiliate-recs__kicker">支持 RoomFeng · 蝦皮與酷澎聯盟行銷</p>
       <h2 id={`${sectionId}-heading`}>{heading}</h2>
       <p>{intro}</p>
     </div>
@@ -45,7 +45,7 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
             <h3 data-affiliate-field="name">{product.name}</h3>
             <p data-affiliate-field="description">{product.description}</p>
             <p class="affiliate-recs__price" data-affiliate-field="price" hidden={!product.optionalPriceLabel}>{product.optionalPriceLabel}</p>
-            <p class="affiliate-recs__shop" data-affiliate-field="shop">來源商店：{product.shop}</p>
+            <p class="affiliate-recs__shop" data-affiliate-field="shop">來源平台：{product.shop}</p>
             <ul class="affiliate-recs__tags" aria-label="情境標籤" data-affiliate-field="tags">
               {product.tags.map((tag) => <li>{tag}</li>)}
             </ul>
@@ -59,7 +59,8 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
             data-product-id={product.id}
             data-product-name={product.name}
             data-product-category={product.category}
-          >前往蝦皮查看商品</a>
+            data-product-platform={product.platform}
+          >前往{product.platform === 'coupang' ? '酷澎' : product.platform === 'amazon' ? 'Amazon' : '蝦皮'}查看商品</a>
         </article>
       ))}
     </div>
@@ -69,7 +70,7 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
         <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">第 1 組</p>
       </div>
     )}
-    <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以蝦皮商品頁為準。本區塊含蝦皮聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以蝦皮商品頁為準。</p>
+    <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以商品頁為準。</p>
     <script is:inline type="application/json" data-affiliate-products set:html={productsJson}></script>
   </section>
 )}
@@ -111,7 +112,7 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
         price.textContent = product.optionalPriceLabel || '';
         price.hidden = !product.optionalPriceLabel;
       }
-      if (shop) shop.textContent = `來源商店：${product.shop}`;
+      if (shop) shop.textContent = `來源平台：${product.shop}`;
       if (tags) {
         tags.replaceChildren(...(product.tags || []).map((tag) => {
           const item = document.createElement('li');
@@ -125,6 +126,8 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
         link.dataset.productId = product.id;
         link.dataset.productName = product.name;
         link.dataset.productCategory = product.category;
+        link.dataset.productPlatform = product.platform;
+        link.textContent = `前往${product.platform === 'coupang' ? '酷澎' : product.platform === 'amazon' ? 'Amazon' : '蝦皮'}查看商品`;
       }
     };
     document.querySelectorAll('[data-affiliate-image]').forEach(bindAffiliateImageFallback);
@@ -167,6 +170,7 @@ const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
             product_id: link.dataset.productId || '',
             product_name: link.dataset.productName || '',
             product_category: link.dataset.productCategory || '',
+            product_platform: link.dataset.productPlatform || '',
           });
         }
       } catch (_) {

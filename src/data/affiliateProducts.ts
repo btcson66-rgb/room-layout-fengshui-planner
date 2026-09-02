@@ -1,147 +1,122 @@
-/** Central Shopee support catalogue generated from the verified workbook. */
-export type AffiliateProductCategory = 'furniture' | 'storage' | 'mats' | 'bedding' | 'decor' | 'moving';
+/**
+ * Shared affiliate catalogue adapter.
+ *
+ * `support-products.json` is copied from FunnyTools' canonical public catalogue.
+ * Keep the raw records intact so every company site can consume the same IDs,
+ * platforms, URLs, images, and price snapshots while this adapter provides the
+ * fields used by RoomFeng's contextual cards.
+ */
+import catalogue from './support-products.json';
+
+export type AffiliatePlatform = 'shopee' | 'coupang' | 'amazon' | string;
+
+interface SharedAffiliateProduct {
+  id: string;
+  status?: string;
+  category?: string;
+  title?: string;
+  shortTitle?: string;
+  description?: string;
+  platform?: AffiliatePlatform;
+  affiliateUrl?: string;
+  fallbackUrl?: string;
+  imageUrl?: string;
+  tags?: string[];
+  priority?: number;
+  optionalDescription?: string;
+  optionalPriceLabel?: string;
+}
 
 export interface AffiliateProduct {
   id: string;
   sourceProductId: string;
   name: string;
+  shortTitle?: string;
   shop: string;
   description: string;
-  category: AffiliateProductCategory;
+  category: string;
   tags: string[];
   image: string;
   url: string;
+  platform: AffiliatePlatform;
   optionalPriceLabel?: string;
+  priority?: number;
 }
 
-const image = (id: string) => `/assets/support-products/${id}.webp`;
+export const affiliateCatalog = catalogue as SharedAffiliateProduct[];
+const platformLabels: Record<string, string> = { shopee: '蝦皮', coupang: '酷澎', amazon: 'Amazon' };
+const isHttpsUrl = (value: string | undefined) => {
+  try { return Boolean(value && new URL(value).protocol === 'https:'); } catch { return false; }
+};
 
-export const affiliateProducts: AffiliateProduct[] = [
-  { id: "shopee-17468232287", sourceProductId: "17468232287", name: "【隔日到貨免運費！升級鋁合金輪座 加贈彈力繩】折疊推車 摺疊推車 買菜車 手推車 鋁合金拉桿車 摺疊車 購物車 工作車", shop: "【好物臻選】口罩 收納 居家 車用 廚房 濕紙巾 日韓美妝 洗衣球 口罩 衣架", description: "依居家生活 > 五金修繕 > 工具梯 、手推車整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "moving", tags: ["搬運", "moving"], image: image("17468232287"), url: "https://s.shopee.tw/1LfQRQ2zSr", optionalPriceLabel: "NT$789（2026-09-01 快照）" },
-  { id: "shopee-22753177498", sourceProductId: "22753177498", name: "免運【台灣現貨】🚀梯子 折疊梯子 加厚加寬 便攜人字梯 加固工具梯 多功能梯子 工作梯 三階四階 梯凳 居家生活 A字梯", shop: "興星嚴選店", description: "依居家生活 > 五金修繕 > 工具梯 、手推車整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "moving", tags: ["搬運", "moving"], image: image("22753177498"), url: "https://s.shopee.tw/5foPbNmUgM", optionalPriceLabel: "NT$599（2026-09-01 快照）" },
-  { id: "shopee-42701426369", sourceProductId: "42701426369", name: "多功能排水管接頭 五通【178小舖】水管接頭 地漏 排水孔 排水管 落水頭 排水管接頭 洗衣機排水管 防臭地漏 排水孔蓋", shop: "178小舖 官方旗艦館 178shop", description: "依居家生活 > 五金修繕 > 水龍頭、水料整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "moving", tags: ["清潔整理", "moving"], image: image("42701426369"), url: "https://s.shopee.tw/6AkgCIkafV", optionalPriceLabel: "NT$139（2026-09-01 快照）" },
-  { id: "shopee-7160059458", sourceProductId: "7160059458", name: "HOPMA工業風二抽一格書桌 台灣製造 工作桌 抽屜 收納 電腦桌 辦公桌E-GS9033", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 書桌、電腦桌整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "工作區", "3c", "storage"], image: image("7160059458"), url: "https://s.shopee.tw/2VrLwfa5bL", optionalPriceLabel: "NT$1,699（2026-09-01 快照）" },
-  { id: "shopee-14776761987", sourceProductId: "14776761987", name: "HOPMA實木腳滑門鞋櫃 台灣製造 玄關櫃 收納櫃 置物櫃 鞋架 通風透氣C-950", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 衣櫃、衣櫥整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("14776761987"), url: "https://s.shopee.tw/5VUzP4n81J", optionalPriceLabel: "NT$1,999（2026-09-01 快照）" },
-  { id: "shopee-22477987025", sourceProductId: "22477987025", name: "HOPMA德國海福樂鉸鏈 嵌入式美背極緻二門五格衣櫃 台灣製造 衣櫥 收納櫃 衣物收納櫃A-905", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 衣櫃、衣櫥整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("22477987025"), url: "https://s.shopee.tw/9fKYMjXGZG", optionalPriceLabel: "NT$2,499（2026-09-01 快照）" },
-  { id: "shopee-3442325099", sourceProductId: "3442325099", name: "HOPMA斯麥四門收納櫃 台灣製造 置物櫃 書櫃 四門櫃 四層櫃G-D406", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 衣櫃、衣櫥整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("3442325099"), url: "https://s.shopee.tw/8AVkZycyb2", optionalPriceLabel: "NT$699（2026-09-01 快照）" },
-  { id: "shopee-18674368578", sourceProductId: "18674368578", name: "HOPMA組合式玻璃門收納櫃組合 台灣製造 美背 模型公仔櫃 四層展示櫃 精品包包櫃G-GS830+G-GS930", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 衣櫃、衣櫥整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("18674368578"), url: "https://s.shopee.tw/5As90SoOgw", optionalPriceLabel: "NT$2,850（2026-09-01 快照）" },
-  { id: "shopee-18252003703", sourceProductId: "18252003703", name: "HOPMA美背多功能玻璃門收納櫃模型公仔櫃 台灣製造 四層展示櫃 儲藏收納 玄關櫃 置物書櫃G-GS830", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 衣櫃、衣櫥整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("18252003703"), url: "https://s.shopee.tw/gPjeC5Wov", optionalPriceLabel: "NT$1,538（2026-09-01 快照）" },
-  { id: "shopee-13827568158", sourceProductId: "13827568158", name: "HOPMA美背奇克二門二抽衣櫃 台灣製造 衣櫥 抽屜櫃 衣物收納櫃A-NW775", shop: "HOPMA 合馬家具", description: "依居家生活 > 傢俱 > 衣櫃、衣櫥整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("13827568158"), url: "https://s.shopee.tw/80CKNfdbw1", optionalPriceLabel: "NT$2,538（2026-09-01 快照）" },
-  { id: "shopee-6376946507", sourceProductId: "6376946507", name: "HOYACASA 100%精梳純棉兩用被床包組(天絲入棉30%)｜多款任選｜(雙人/加大)｜畢業禮物", shop: "HOYACASA 禾雅寢具官方旗艦", description: "依居家生活 > 寢具整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "bedding", tags: ["臥室", "bedding"], image: image("6376946507"), url: "https://s.shopee.tw/2BEXQwzom4", optionalPriceLabel: "NT$2,080（2026-09-01 快照）" },
-  { id: "shopee-9678417818", sourceProductId: "9678417818", name: "【夢之語】60支 100%純天絲 床包兩用被組(多款任選) 雙人/加大 天絲 床包 萊賽爾 裸睡首選TENCEL", shop: "夢之語寢具生活館", description: "依居家生活 > 寢具整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "bedding", tags: ["臥室", "bedding"], image: image("9678417818"), url: "https://s.shopee.tw/40gBcJsq3d", optionalPriceLabel: "NT$1,680（2026-09-01 快照）" },
-  { id: "shopee-26800541800", sourceProductId: "26800541800", name: "半價搶【除螨抑菌】涼蓆 冰絲涼席 冰藤涼席 單人 雙人 涼席床墊 空調席 夏季艾草涼席 可機洗 三件套涼席枕套", shop: "最優居家生活", description: "依居家生活 > 寢具 > 冰涼墊、蓆類整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "bedding", tags: ["臥室", "bedding"], image: image("26800541800"), url: "https://s.shopee.tw/50Yio9p21v", optionalPriceLabel: "NT$399（2026-09-01 快照）" },
-  { id: "shopee-5008922471", sourceProductId: "5008922471", name: "【 Famo 】蝦皮獨家 適中｜三線 石墨烯 乳膠 獨立筒床墊 側邊強化 台灣製造 免運配送【 蝦幣5倍送 】", shop: "Famo 法摩官方旗艦店", description: "依居家生活 > 寢具 > 床墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "bedding", tags: ["臥室", "bedding"], image: image("5008922471"), url: "https://s.shopee.tw/3B72jZ65Zd", optionalPriceLabel: "NT$4,811（2026-09-01 快照）" },
-  { id: "shopee-24628932210", sourceProductId: "24628932210", name: "【夢之語】素色 冰淇淋涼感被 (多款任選) 150x200cm 3M吸濕排汗 冰冰被 涼感被 空調被 冷氣被 夏被", shop: "夢之語寢具生活館", description: "依居家生活 > 寢具 > 毯子、被子、被套整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "bedding", tags: ["臥室", "bedding"], image: image("24628932210"), url: "https://s.shopee.tw/9pdyZ2WdEJ", optionalPriceLabel: "NT$368（2026-09-01 快照）" },
-  { id: "shopee-18081885505", sourceProductId: "18081885505", name: "【生活市集】24H台灣現貨 韓系小花抱枕 可拆洗抱枕 抱枕套 坐墊沙發抱枕造型抱枕北歐抱枕兩用沙發靠墊枕頭套", shop: "HOMU生活市集", description: "依居家生活 > 寢具 > 長枕頭、抱枕整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "bedding", tags: ["臥室", "客廳", "bedding"], image: image("18081885505"), url: "https://s.shopee.tw/9zxOlLVztM", optionalPriceLabel: "NT$89（2026-09-01 快照）" },
-  { id: "shopee-16019224350", sourceProductId: "16019224350", name: "《易購商城》長毛地毯 長毛地墊 絨毛地墊 絨毛地毯 客廳房間臥室床邊毯 毛絨大地墊 毛地毯 絲毛床邊墊 地毯北歐風大地墊", shop: "《易購商城》", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["臥室", "地墊／桌面", "客廳", "mats"], image: image("16019224350"), url: "https://s.shopee.tw/4LJ20vrZNj", optionalPriceLabel: "NT$219（2026-09-01 快照）" },
-  { id: "shopee-10826760335", sourceProductId: "10826760335", name: "【生活市集】台灣現貨 北歐仿羊絨地毯 地墊 加厚浴室地墊 臥室地毯 防滑地毯 床邊地毯 吸水地墊 吸水地毯 絨毛地毯", shop: "HOMU生活市集", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["臥室", "地墊／桌面", "浴室", "mats"], image: image("10826760335"), url: "https://s.shopee.tw/3B74cmw0kc", optionalPriceLabel: "NT$65（2026-09-01 快照）" },
-  { id: "shopee-29070538302", sourceProductId: "29070538302", name: "【蝦皮直營】加厚矽藻土軟墊 吸水地墊 軟地墊 踏墊 腳踏墊 硅藻泥軟墊 硅藻土地墊 軟式 地毯 廚房 浴室地墊 防滑", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "浴室", "廚房", "mats"], image: image("29070538302"), url: "https://s.shopee.tw/20v7Ee0S73", optionalPriceLabel: "NT$44（2026-09-01 快照）" },
-  { id: "shopee-20480171534", sourceProductId: "20480171534", name: "【隔日到貨】硅藻軟地墊 腳踏墊 珪藻土軟墊 地墊 吸水地墊 防滑吸水地墊 浴室地墊 洗手間地墊 腳踏墊 硅藻地墊 地墊", shop: "Good Lab 好宅家居", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "浴室", "mats"], image: image("20480171534"), url: "https://s.shopee.tw/7VG3mkfVxd", optionalPriceLabel: "NT$38（2026-09-01 快照）" },
-  { id: "shopee-12693629103", sourceProductId: "12693629103", name: "加厚矽藻土軟地墊 珪藻土軟墊 軟式吸水地墊 踏墊 腳踏墊 硅藻泥軟墊 廚房浴室地墊 防滑墊 卡通地墊 硅藻土地墊 軟地墊", shop: "咪咪購物~生活百貨.日用品 居家生活收納 日韓美妝 洗衣球 口罩 衣架 破壞袋", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "浴室", "廚房", "mats"], image: image("12693629103"), url: "https://s.shopee.tw/6L46ObjxKY", optionalPriceLabel: "NT$59（2026-09-01 快照）" },
-  { id: "shopee-22366001289", sourceProductId: "22366001289", name: "台灣公司附發票 地毯 短絨毛地毯 北歐絨毛大地毯 客廳臥室房間床邊毯 超柔軟床邊毛絨厚地毯 毛地毯地墊小地毯客製化尺", shop: "順利居家生活館", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["臥室", "地墊／桌面", "客廳", "mats"], image: image("22366001289"), url: "https://s.shopee.tw/904pyzzcDy", optionalPriceLabel: "NT$590（2026-09-01 快照）" },
-  { id: "shopee-25308036075", sourceProductId: "25308036075", name: "禾慕生活🐈 可愛貓貓軟地墊 浴室地墊 硅藻土地墊 珪藻土地墊 吸水地墊 硅藻土軟地墊 矽藻土地墊 矽藻土軟地墊 地墊", shop: "禾慕生活｜把喜歡的樣子住進生活裡♡ 質感家飾 沙發布 門簾 床包 沙發套 沙發墊", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "浴室", "mats"], image: image("25308036075"), url: "https://s.shopee.tw/7fZTz3escg", optionalPriceLabel: "NT$99（2026-09-01 快照）" },
-  { id: "shopee-11699140235", sourceProductId: "11699140235", name: "🏆隔日到貨🔥客製地墊🔥電腦椅保護墊 地板保護墊 地板防滑墊 減噪降噪地墊 辦公室地墊 降噪地墊 防滑地墊 椅子墊 免膠墊", shop: "【解憂購物】居家好物生活館", description: "依居家生活 > 居家裝飾 > 地毯、地墊整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "工作區", "3c", "mats"], image: image("11699140235"), url: "https://s.shopee.tw/BTT3H7Qpk", optionalPriceLabel: "NT$68（2026-09-01 快照）" },
-  { id: "shopee-29965372348", sourceProductId: "29965372348", name: "【TW現貨🔥贈掛勾】電子鐘 LED時鐘 萬年曆時鐘 電子時鐘 掛鐘 客廳時鐘 時鐘 數字鐘 壁掛鐘 辦公室鐘 健身房鐘", shop: "購思購生活 GOSGO 居家用品、廚房用品、戶外生活、收納", description: "依居家生活 > 居家裝飾 > 時鐘、掛鐘整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["工作區", "客廳", "decor"], image: image("29965372348"), url: "https://s.shopee.tw/4VcSDEqw2k", optionalPriceLabel: "NT$179（2026-09-01 快照）" },
-  { id: "shopee-9359491416", sourceProductId: "9359491416", name: "【附發票】客製化 免運🚚 透明防水防油桌墊 辦公桌墊 書桌墊 塑膠桌墊 餐桌桌墊 3mm厚度 茶几墊 圓桌墊 無味PVC", shop: "A X居家生活館", description: "依居家生活 > 居家裝飾 > 桌墊、桌布整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "工作區", "mats"], image: image("9359491416"), url: "https://s.shopee.tw/3LQUp5vNPh", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-14851084009", sourceProductId: "14851084009", name: "桌巾 桌布 棉麻桌巾 防水桌巾 防水桌布 餐桌巾 餐桌布 餐墊", shop: "卡厚買🍀怎麼選都好買", description: "依居家生活 > 居家裝飾 > 桌墊、桌布整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "mats"], image: image("14851084009"), url: "https://s.shopee.tw/1BM0F73co2", optionalPriceLabel: "NT$164（2026-09-01 快照）" },
-  { id: "shopee-8460075834", sourceProductId: "8460075834", name: "臺灣公司貨附發票 5mm桌墊 無味透明磨邊餐桌墊 客製化餐桌墊 防水防油防燙 透明桌墊 辦公桌墊 電腦桌墊 書桌墊 桌墊", shop: "ZX居家生活館主賣場", description: "依居家生活 > 居家裝飾 > 桌墊、桌布整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "工作區", "3c", "mats"], image: image("8460075834"), url: "https://s.shopee.tw/3qMlQ0tTOo", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-26605438710", sourceProductId: "26605438710", name: "【隔日到店+免運】防貓抓沙發套 防水沙發套 單人+雙人+三人+四人沙發套 L型貴妃椅沙發套 沙發墊 沙發椅套 可水洗罩套", shop: "T&J 特惠場", description: "依居家生活 > 居家裝飾 > 沙發套、椅套整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "furniture", tags: ["客廳", "furniture"], image: image("26605438710"), url: "https://s.shopee.tw/9V18AQXtuD", optionalPriceLabel: "NT$76（2026-09-01 快照）" },
-  { id: "shopee-11674641952", sourceProductId: "11674641952", name: "【隔日到貨 嘉義現貨】 超彈力防貓抓坐墊套 背靠套 加厚防耐磨沙發套 沙發墊套 沙發笠 沙發蓋布 沙發罩 寶來小舖", shop: "寶來小舖 嘉義現貨", description: "依居家生活 > 居家裝飾 > 沙發套、椅套整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "furniture", tags: ["客廳", "furniture"], image: image("11674641952"), url: "https://s.shopee.tw/2qUEEAxHQW", optionalPriceLabel: "NT$132（2026-09-01 快照）" },
-  { id: "shopee-7207184461", sourceProductId: "7207184461", name: "【送安裝包】客製化/客製化掛布/掛布/掛畫/掛毯/房間佈置/背景/家居裝飾/拍照道具", shop: "Wish&Box", description: "依居家生活 > 居家裝飾 > 相框、畫整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("7207184461"), url: "https://s.shopee.tw/2LXxdFzBR9", optionalPriceLabel: "NT$150（2026-09-01 快照）" },
-  { id: "shopee-16771394080", sourceProductId: "16771394080", name: "【24H現貨】硅藻軟地墊 腳踏墊 珪藻土軟墊 地墊 吸水地墊 防滑吸水地墊 浴室地墊 腳踏墊 洗手間地墊 硅藻地墊 地墊", shop: "Mii厝邊", description: "依居家生活 > 居家裝飾 > 踏墊、硅藻土地墊、地板貼、巧拼整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "浴室", "mats"], image: image("16771394080"), url: "https://s.shopee.tw/80CKNfdbx2", optionalPriceLabel: "NT$38（2026-09-01 快照）" },
-  { id: "shopee-16942602569", sourceProductId: "16942602569", name: "【生活市集】24H現貨 加厚🔥硅藻軟地墊 腳踏墊 珪藻土軟墊 地墊 吸水地墊 防滑吸水地墊 浴室地墊 腳踏墊 硅藻地墊", shop: "HOMU生活市集", description: "依居家生活 > 居家裝飾 > 踏墊、硅藻土地墊、地板貼、巧拼整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "浴室", "mats"], image: image("16942602569"), url: "https://s.shopee.tw/9AOHloZAZK", optionalPriceLabel: "NT$38（2026-09-01 快照）" },
-  { id: "shopee-17990090102", sourceProductId: "17990090102", name: "寵物地墊 拼接地墊 可裁剪地墊 防滑地墊 靜電吸附 止滑墊 日式地墊 吸附式【現貨※開發票※SGS試驗合格】", shop: "快樂小島潮流用品批發館", description: "依居家生活 > 居家裝飾 > 踏墊、硅藻土地墊、地板貼、巧拼整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "mats", tags: ["地墊／桌面", "mats"], image: image("17990090102"), url: "https://s.shopee.tw/8V8ZO51WEx", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-9584341351", sourceProductId: "9584341351", name: "HOPMA樂活九格組合式書櫃 台灣製造 收納櫃 置物櫃 多格層櫃 儲藏櫃 玄關櫃 門櫃 書架G-850", shop: "HOPMA 合馬家具", description: "依居家生活 > 收納 > 層架、置物架整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("9584341351"), url: "https://s.shopee.tw/1gIGq21imx", optionalPriceLabel: "NT$1,058（2026-09-01 快照）" },
-  { id: "shopee-3077605111", sourceProductId: "3077605111", name: "HOPMA法爾三格一門層櫃/四層櫃 台灣製造 收納櫃 儲藏櫃 書櫃 置物櫃 玄關櫃 門櫃 書架G-1D408+2050", shop: "HOPMA 合馬家具", description: "依居家生活 > 收納 > 層架、置物架整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("3077605111"), url: "https://s.shopee.tw/8fS1Atb4aD", optionalPriceLabel: "NT$699（2026-09-01 快照）" },
-  { id: "shopee-1183247257", sourceProductId: "1183247257", name: "HOPMA美背典藏三門二抽廚房櫃 台灣製造 電器櫥櫃 儲藏收納置物 微波爐櫃D-C186", shop: "HOPMA 合馬家具", description: "依居家生活 > 收納 > 層架、置物架整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "廚房", "storage"], image: image("1183247257"), url: "https://s.shopee.tw/8plRNCaRFE", optionalPriceLabel: "NT$2,080（2026-09-01 快照）" },
-  { id: "shopee-5162386294", sourceProductId: "5162386294", name: "【宏升角鋼】免螺絲角鋼架 【客製專區1元下單】｜角鋼｜三層架｜四層架｜五層架｜收納架｜置物架｜網拍｜層櫃｜真人快速回復", shop: "【HS宏升角鋼】免螺絲角鋼/層架/置物架", description: "依居家生活 > 收納 > 層架、置物架整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("5162386294"), url: "https://s.shopee.tw/AKaDZRuXWM", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-22277892176", sourceProductId: "22277892176", name: "洞洞板 洞洞板置物架 電箱洞洞板 【台灣出貨】 實木洞洞板 墻上置物架 木質洞洞板 洞洞板架子 電箱裝飾 金属洞洞板", shop: "宜佳家居館", description: "依居家生活 > 收納 > 層架、置物架整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("22277892176"), url: "https://s.shopee.tw/AAGnN8vArJ", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-14296820642", sourceProductId: "14296820642", name: "【熱銷百萬支】防滑衣架 衣架 曬衣架 不鏽鋼衣架 掛衣架 晾衣架 成人衣架 浸塑衣架 止滑衣架 三角衣架 兒童衣架", shop: "爸爸忘記了", description: "依居家生活 > 收納 > 衣架、衣夾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("14296820642"), url: "https://s.shopee.tw/80CInA3QFo", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-14215047952", sourceProductId: "14215047952", name: "【萬人回購！熱銷top1！】衣架 加粗實心不銹鋼衣架 不鏽鋼曬衣架 衣架 白鐵衣架 掛衣架 防滑衣架 曬衣架", shop: "懶餅乾家居", description: "依居家生活 > 收納 > 衣架、衣夾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("14215047952"), url: "https://s.shopee.tw/8AVizT2mur", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-51200280563", sourceProductId: "51200280563", name: "🔥無包裝限時免運🔥 加粗不鏽鋼衣架 10入組 衣架 不鏽鋼衣架 曬衣架 防滑衣架 不鏽鋼 金屬衣架 加粗 兩用衣架 成人", shop: "夢巴黎💖全館現貨、內衣、內褲、襪子、衣架、暖暖包、洗衣袋、居家生活百貨、日用品", description: "依居家生活 > 收納 > 衣架、衣夾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["收納", "storage"], image: image("51200280563"), url: "https://s.shopee.tw/20v7Ee0S84", optionalPriceLabel: "NT$59（2026-09-01 快照）" },
-  { id: "shopee-22524549146", sourceProductId: "22524549146", name: "金多多(耐重20公斤) 菜籃車 買菜車 買菜推車 摺疊購物車 買菜拉車 拉車 貨物推車 折疊伸縮菜籃車", shop: "金多多生活本舖", description: "依居家生活 > 日用品 > 其他整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "moving", tags: ["搬運", "moving"], image: image("22524549146"), url: "https://s.shopee.tw/8fS1Atb4bE", optionalPriceLabel: "NT$220（2026-09-01 快照）" },
-  { id: "shopee-24829452460", sourceProductId: "24829452460", name: "【蝦皮直營】妙管家 霉菌/水垢/皂垢/油垢/尿垢殺手 750g 廚房 廁所 浴室 除霉 清潔", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 其它家用清潔劑整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["浴室", "廚房", "清潔整理", "decor"], image: image("24829452460"), url: "https://s.shopee.tw/LmtFa6nUp", optionalPriceLabel: "NT$74（2026-09-01 快照）" },
-  { id: "shopee-25479457535", sourceProductId: "25479457535", name: "【蝦皮直營】刷樂 Shallop 超細滑單線/雙線牙線棒 (150支袋裝/250支盒裝/衛生包裝) 潔牙 牙齒清潔", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 口腔保健整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("25479457535"), url: "https://s.shopee.tw/30ncXG6iua", optionalPriceLabel: "NT$136（2026-09-01 快照）" },
-  { id: "shopee-42477564452", sourceProductId: "42477564452", name: "【蝦皮直營】泡舒洗潔精 洗碗精2800g/1000g/800g (綠茶/檸檬/小蘇打) 家庭號", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 廚房清潔劑整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "清潔整理", "decor"], image: image("42477564452"), url: "https://s.shopee.tw/5LBZClnlMG", optionalPriceLabel: "NT$56（2026-09-01 快照）" },
-  { id: "shopee-3570661366", sourceProductId: "3570661366", name: "【ARIEL】新誕生超濃縮深層抗菌除臭洗衣精補充包1030gx4、1030gx8包 (頑固污漬/室內晾衣型)", shop: "P&G寶僑旗艦店-幫寶適/一級幫/液體衛生棉/Ariel/官方旗艦店", description: "依居家生活 > 日用品 > 洗衣精、洗衣粉整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("3570661366"), url: "https://s.shopee.tw/1Vyokpdtd3", optionalPriceLabel: "NT$659（2026-09-01 快照）" },
-  { id: "shopee-40602393612", sourceProductId: "40602393612", name: "【蝦皮直營】Persil 寶瀅 深層酵解洗衣凝露 2.5L/1.4L 補充包1.5L", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 洗衣精、洗衣粉整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("40602393612"), url: "https://s.shopee.tw/4AzaE7I11h", optionalPriceLabel: "NT$239（2026-09-01 快照）" },
-  { id: "shopee-42310855559", sourceProductId: "42310855559", name: "【蝦皮直營】日本 P&G Ariel 超濃縮 抗菌 洗衣精 室內曬乾 除臭 除螨", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 洗衣精、洗衣粉整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("42310855559"), url: "https://s.shopee.tw/20v5LkbzcC", optionalPriceLabel: "NT$229（2026-09-01 快照）" },
-  { id: "shopee-24239513636", sourceProductId: "24239513636", name: "【蝦皮直營】白蘭香氛洗衣球23顆/袋七款任選清新白茶/質感小蒼蘭/純淨白麝香/玫瑰x青檸/雪松x鼠尾草/藍風鈴x麝香", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 洗衣膠球、凝膠球整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("24239513636"), url: "https://s.shopee.tw/3g3LDhu6jn", optionalPriceLabel: "NT$135（2026-09-01 快照）" },
-  { id: "shopee-40322393181", sourceProductId: "40322393181", name: "【蝦皮直營】德恩奈 美白牙膏/抗敏感三效牙膏/超氟牙膏/清淨涼牙膏/牙齦護理牙膏/夜用牙膏 氟素 德國", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙刷、牙膏、漱口水整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("40322393181"), url: "https://s.shopee.tw/1Vyqdj2M8v", optionalPriceLabel: "NT$76（2026-09-01 快照）" },
-  { id: "shopee-24929453599", sourceProductId: "24929453599", name: "【蝦皮直營】白人口腔護理漱口水720mlX2入組/6入組 清新 護齦", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙刷、牙膏、漱口水整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("24929453599"), url: "https://s.shopee.tw/5As7PxECzr", optionalPriceLabel: "NT$158（2026-09-01 快照）" },
-  { id: "shopee-54560814574", sourceProductId: "54560814574", name: "【蝦皮直營】高露潔全效抗牙菌斑-95g/全效牙膏-150g 美白 抗敏感 清恬薄荷 舒心沁涼 炭深潔 專業潔淨", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙刷、牙膏、漱口水整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("54560814574"), url: "https://s.shopee.tw/4AzbocsCie", optionalPriceLabel: "NT$109（2026-09-01 快照）" },
-  { id: "shopee-49910850350", sourceProductId: "49910850350", name: "【蝦皮直營】高露潔纖柔/強效潔淨/護齦/淨白牙刷 潔淨護齦牙刷 備長炭 口腔清潔 牙齒清潔", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙刷、牙膏、漱口水整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("49910850350"), url: "https://s.shopee.tw/qj9qV4tTw", optionalPriceLabel: "NT$78（2026-09-01 快照）" },
-  { id: "shopee-25741810919", sourceProductId: "25741810919", name: "【蝦皮直營】3M 細滑牙線棒 180支/盒 150支/袋 105單支/袋 50支/袋 35單支/袋 盒裝", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙線整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("25741810919"), url: "https://s.shopee.tw/1qbh2L15T1", optionalPriceLabel: "NT$57（2026-09-01 快照）" },
-  { id: "shopee-27842633319", sourceProductId: "27842633319", name: "【蝦皮直營】3M 細滑牙線棒-雙線(156支入) /薄荷(156支入) /單線(180支入) 盒裝", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙線整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("27842633319"), url: "https://s.shopee.tw/1qbfRpQtlX", optionalPriceLabel: "NT$169（2026-09-01 快照）" },
-  { id: "shopee-44474024677", sourceProductId: "44474024677", name: "【蝦皮直營】3M 細滑牙線棒-雙線(350支入) /薄荷(350支入) /單線(400支入) 補充包 牙線", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 牙線整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("44474024677"), url: "https://s.shopee.tw/50Yguvz6r2", optionalPriceLabel: "NT$329（2026-09-01 快照）" },
-  { id: "shopee-63771205", sourceProductId: "63771205", name: "【Kleenex 舒潔】棉柔舒適 100抽x72包/箱 / 蓬柔舒膚 100抽x64包/箱 抽取式衛生紙(箱購)", shop: "舒潔/可麗舒 官方旗艦商城", description: "依居家生活 > 日用品 > 衛生紙、紙巾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("63771205"), url: "https://s.shopee.tw/8AVkZycyc5", optionalPriceLabel: "NT$899（2026-09-01 快照）" },
-  { id: "shopee-27705427792", sourceProductId: "27705427792", name: "【蝦皮直營】倍潔雅 舒膚柔感抽取式衛生紙PEFC-150抽x 12包/串 抽取衛生紙", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 衛生紙、紙巾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("27705427792"), url: "https://s.shopee.tw/4VcQcjGkLn", optionalPriceLabel: "NT$135（2026-09-01 快照）" },
-  { id: "shopee-43477304004", sourceProductId: "43477304004", name: "【蝦皮直營】春風 超細柔抽取衛生紙(110抽x12包/串) 抽取式 柔軟 居家日用", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 衛生紙、紙巾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("43477304004"), url: "https://s.shopee.tw/3LQSvs5SEc", optionalPriceLabel: "NT$208（2026-09-01 快照）" },
-  { id: "shopee-40226146238", sourceProductId: "40226146238", name: "🔥在台現貨箱購36包 8640張 僅199元超低價🔥大尺寸衛生紙 全網cp值高 抽取式抽紙 加厚衛生紙 抽取式", shop: "拓米創新科技生活館", description: "依居家生活 > 日用品 > 衛生紙、紙巾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("40226146238"), url: "https://s.shopee.tw/50YhDeEqKo", optionalPriceLabel: "NT$199（2026-09-01 快照）" },
-  { id: "shopee-62773401", sourceProductId: "62773401", name: "全台最低 除濕袋 除濕包 除溼 除濕 防潮 吊掛型 掛袋 除溼包 除溼袋【JJ0101】", shop: "JOEKI 揪去購物 收納 家居百貨 口罩 日用品 運動健身 美髮保養 美妝小物", description: "依居家生活 > 日用品 > 防霉除濕整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["清潔整理", "decor"], image: image("62773401"), url: "https://s.shopee.tw/9zxNApvoCG", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-44452398304", sourceProductId: "44452398304", name: "【蝦皮直營】Combat威滅 滅蟻隊 居家防護6入/迷你無痕12入 除螞蟻 殺蟲劑", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 日用品 > 除蟲消毒整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("44452398304"), url: "https://s.shopee.tw/5As77EyTW5", optionalPriceLabel: "NT$129（2026-09-01 快照）" },
-  { id: "shopee-27262590751", sourceProductId: "27262590751", name: "【THERMOS膳魔師】 買1送1_不鏽鋼彈蓋真空保溫杯500ml+500ml(JNF-502+JNF-501)(組合)", shop: "THERMOS 膳魔師｜官方旗艦店", description: "依居家生活 > 水壺、杯子 > 保溫杯、保溫瓶整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("27262590751"), url: "https://s.shopee.tw/40g9j62usw", optionalPriceLabel: "NT$1,599（2026-09-01 快照）" },
-  { id: "shopee-22543292239", sourceProductId: "22543292239", name: "【THERMOS膳魔師】不鏽鋼彈蓋真空保溫瓶500ml(JNF-502)【不可拆卸】", shop: "THERMOS 膳魔師｜官方旗艦店", description: "依居家生活 > 水壺、杯子 > 保溫杯、保溫瓶整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("22543292239"), url: "https://s.shopee.tw/4qFGixRCs1", optionalPriceLabel: "NT$899（2026-09-01 快照）" },
-  { id: "shopee-17992752437", sourceProductId: "17992752437", name: "【康寧 Snapware】316不鏽鋼保溫保冰運動瓶1520ML/可加購布套", shop: "美國康寧餐具 CORELLE BRANDS 生活旗艦館", description: "依居家生活 > 水壺、杯子 > 保溫杯、保溫瓶整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("17992752437"), url: "https://s.shopee.tw/60RFzzlE0S", optionalPriceLabel: "NT$790（2026-09-01 快照）" },
-  { id: "shopee-28622373191", sourceProductId: "28622373191", name: "【樂扣樂扣】SU SU不鏽鋼吸管杯/750ml(304不鏽鋼、大容量、保溫保冰、手搖飲適用)", shop: "LocknLock樂扣樂扣旗艦店", description: "依居家生活 > 水壺、杯子 > 保溫杯、保溫瓶整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("28622373191"), url: "https://s.shopee.tw/3Vjt8B4otf", optionalPriceLabel: "NT$1,099（2026-09-01 快照）" },
-  { id: "shopee-29128478566", sourceProductId: "29128478566", name: "【蝦皮直營】WOKY 沃廚 雙層陶瓷渾圓杯750ml、550ml(二代防漏) 手提保溫杯 隨行杯", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 水壺、杯子 > 保溫杯、保溫瓶整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("29128478566"), url: "https://s.shopee.tw/40gA1oIeMe", optionalPriceLabel: "NT$899（2026-09-01 快照）" },
-  { id: "shopee-5486041835", sourceProductId: "5486041835", name: "一次性洗臉巾 現貨快速出貨 乾濕兩用棉柔巾 加厚加大不織布 美容巾 臉部清潔 拋棄式卸妝巾 擦臉巾 【WS0033】", shop: "JOEKI 揪去購物 收納 家居百貨 口罩 日用品 運動健身 美髮保養 美妝小物", description: "依居家生活 > 浴室 > 浴巾、毛巾、方巾整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["浴室", "清潔整理", "decor"], image: image("5486041835"), url: "https://s.shopee.tw/8Kp9Bm29Zu", optionalPriceLabel: "NT$25（2026-09-01 快照）" },
-  { id: "shopee-51456028166", sourceProductId: "51456028166", name: "【蝦皮直營】蓮蓬頭 負離子增壓 三擋調節 送5濾芯 沐浴過濾 省水節能 軟水淨化", shop: "蝦皮直營 _ 生活超市 - 最快當日到", description: "依居家生活 > 浴室 > 蓮蓬頭整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["浴室", "decor"], image: image("51456028166"), url: "https://s.shopee.tw/112YSIU4SA", optionalPriceLabel: "NT$152（2026-09-01 快照）" },
-  { id: "shopee-19982450309", sourceProductId: "19982450309", name: "🔥現貨🔥德國製 三檔蓮蓬頭 增壓蓮蓬頭 蓮蓬頭 蓮蓬頭濾芯 加壓蓮蓬頭 蓮蓬頭支架 蓮蓬頭組 過濾蓮蓬頭 軟管 濾芯", shop: "夢巴黎💖全館現貨、內衣、內褲、襪子、衣架、暖暖包、洗衣袋、居家生活百貨、日用品", description: "依居家生活 > 浴室 > 蓮蓬頭整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["浴室", "storage"], image: image("19982450309"), url: "https://s.shopee.tw/1gIGq21iny", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-28877481202", sourceProductId: "28877481202", name: "🔥臺灣出貨🔥隔日達 LED感應小夜燈 磁吸感應燈 全自動超亮 感應燈走廊不插電 展示燈 床頭燈 櫥櫃燈 床頭燈 櫥櫃燈", shop: "心怡小鋪❤️", description: "依居家生活 > 燈具 > 其他燈具整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "storage", tags: ["臥室", "收納", "storage"], image: image("28877481202"), url: "https://s.shopee.tw/Lmrf4Wbo6", optionalPriceLabel: "依規格報價（2026-09-01 快照）" },
-  { id: "shopee-3832725335", sourceProductId: "3832725335", name: "三年保固台灣製造🔥全台第一百萬銷售🔥LED燈泡🔥護眼無藍光 億光晶片國家認證 E27燈座省電節能球泡 10W13W16W", shop: "JOYA 雙北免費安裝吸頂燈(指定款)經銷LED燈具 燈泡 3C 充電線 貓抓板", description: "依居家生活 > 燈具 > 燈泡整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["decor"], image: image("3832725335"), url: "https://s.shopee.tw/9AOGBIyyt1", optionalPriceLabel: "NT$48（2026-09-01 快照）" },
-  { id: "shopee-12432772900", sourceProductId: "12432772900", name: "小米智慧家用電鑽 【小米官方旗艦店】30Nm 強力扭矩", shop: "小米官方旗艦店", description: "依居家生活 > 電動工具 > 電鑽、電動起子與配件整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "moving", tags: ["moving"], image: image("12432772900"), url: "https://s.shopee.tw/4LJ082T6ss", optionalPriceLabel: "NT$1,699（2026-09-01 快照）" },
-  { id: "shopee-19063806308", sourceProductId: "19063806308", name: "Tefal法國特福 煮FUN系列22CM不沾深平底鍋(加蓋)-(3色可選)", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("19063806308"), url: "https://s.shopee.tw/9AOHloZAaN", optionalPriceLabel: "NT$899（2026-09-01 快照）" },
-  { id: "shopee-12143315442", sourceProductId: "12143315442", name: "Tefa 法國特福 無縫膠圈 耐熱強化玻璃保鮮盒-0.18-1.1L 尺寸任選 2件88折 微波/蒸煮/烤箱適用 便當盒", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 保鮮盒、便當盒整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("12143315442"), url: "https://s.shopee.tw/8KpAmHcLH8", optionalPriceLabel: "NT$349（2026-09-01 快照）" },
-  { id: "shopee-22165790188", sourceProductId: "22165790188", name: "Tefal法國特福 Sunlight系列不沾平底鍋/炒鍋(尺寸任選)｜法國製", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("22165790188"), url: "https://s.shopee.tw/3Vjv1Ouk4i", optionalPriceLabel: "NT$699（2026-09-01 快照）" },
-  { id: "shopee-5337499266", sourceProductId: "5337499266", name: "Tefal法國特福 全新鈦升級-爵士系列24CM不沾深平鍋", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("5337499266"), url: "https://s.shopee.tw/30neQTwe5b", optionalPriceLabel: "NT$490（2026-09-01 快照）" },
-  { id: "shopee-6737496942", sourceProductId: "6737496942", name: "Tefal法國特福 全新鈦升級-爵士系列30CM不沾深平鍋(超值2入組)", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("6737496942"), url: "https://s.shopee.tw/70JnBphPyU", optionalPriceLabel: "NT$1,278（2026-09-01 快照）" },
-  { id: "shopee-3836747182", sourceProductId: "3836747182", name: "Tefal法國特福 全新鈦升級-爵士系列30CM不沾深平鍋(鍋+蓋/鍋+蓋+鏟)", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("3836747182"), url: "https://s.shopee.tw/AAGoxeVMYP", optionalPriceLabel: "NT$1,099（2026-09-01 快照）" },
-  { id: "shopee-29504395883", sourceProductId: "29504395883", name: "Tefal法國特福 巧變精靈不沾鍋2件組-奶茶粉(任選) 高硬度礦物添加 可拆式鍋具 IH、烤箱適用", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("29504395883"), url: "https://s.shopee.tw/4VcQK110s1", optionalPriceLabel: "NT$1,799（2026-09-01 快照）" },
-  { id: "shopee-42858590746", sourceProductId: "42858590746", name: "Tefal法國特福 巧變精靈系列不沾鍋4件組/11件組- 莫蘭迪綠.糖果綠/天空藍(任選) 礦物添加塗層 可拆式鍋具", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("42858590746"), url: "https://s.shopee.tw/2gAm8e7zaY", optionalPriceLabel: "NT$2,199（2026-09-01 快照）" },
-  { id: "shopee-26255143651", sourceProductId: "26255143651", name: "Tefal法國特福 抹茶時光系列 24CM/28CM不沾深平鍋+18CM/24CM湯鍋(電磁爐適用)(2入組任選))", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("26255143651"), url: "https://s.shopee.tw/W6JRt6A9q", optionalPriceLabel: "NT$1,598（2026-09-01 快照）" },
-  { id: "shopee-3563415958", sourceProductId: "3563415958", name: "Tefal法國特福 陽極32CM不沾炒鍋含蓋 2倍耐用塗層｜IH適用", shop: "法國特福 Tefal", description: "依居家生活 > 餐廚 > 炒鍋、平底鍋整理的商品參考；請先核對尺寸、材質、固定／防滑、清潔方式與賣場最新資訊。", category: "decor", tags: ["廚房", "decor"], image: image("3563415958"), url: "https://s.shopee.tw/7AdDO8gmdX", optionalPriceLabel: "NT$1,311（2026-09-01 快照）" },
-];
+/** Active records mirror FunnyTools' public loader: inactive history stays in the raw catalogue. */
+export const affiliateProducts: AffiliateProduct[] = affiliateCatalog
+  .filter((product) => product.status === 'active' && isHttpsUrl(product.affiliateUrl || product.fallbackUrl))
+  .map((product) => ({
+    id: product.id,
+    sourceProductId: product.id.replace(/^[^-]+-/, ''),
+    name: product.title || product.shortTitle || '實用支持商品',
+    shortTitle: product.shortTitle,
+    shop: platformLabels[product.platform || ''] || product.platform || '其他',
+    description: product.optionalDescription || product.description || '請先核對商品頁的尺寸、規格、庫存與最新資訊。',
+    category: product.category || 'general',
+    tags: Array.isArray(product.tags) ? product.tags : [],
+    image: product.imageUrl || '/assets/support-products/fallback.webp',
+    url: product.affiliateUrl || product.fallbackUrl || '',
+    platform: product.platform || 'other',
+    optionalPriceLabel: product.optionalPriceLabel,
+    priority: product.priority,
+  }));
 
 export const affiliateProductsById = new Map(affiliateProducts.map((product) => [product.id, product]));
+
 /** Existing page ids resolve to current verified products while page files migrate gradually. */
 export const affiliateProductAliases: Record<string, string> = {
-  "hopma-glass-display-cabinet": "shopee-18252003703",
-  "nordic-bedroom-rug": "shopee-10826760335",
-  "hopma-monitor-riser": "shopee-7160059458",
-  "washable-cushion": "shopee-18081885505",
-  "hopma-two-door-wardrobe": "shopee-13827568158",
-  "clear-waterproof-desk-mat": "shopee-9359491416",
-  "hopma-four-door-storage-cabinet": "shopee-3442325099",
-  "custom-wall-hanging": "shopee-7207184461",
-  "led-wall-clock": "shopee-29965372348",
-  "adjustable-clothes-rack": "shopee-14296820642",
-  "office-chair-floor-mat": "shopee-11699140235",
-  "amethyst-cave": "shopee-3442325099",
-  "lucky-cat": "shopee-29965372348",
-  "gold-koi-painting": "shopee-7207184461",
-  "obsidian-turtle": "shopee-18252003703",
-  "white-crystal-cluster": "shopee-10826760335",
-  "fengshui-mousepad": "shopee-9359491416",
-  "amethyst-egg": "shopee-18081885505",
-  "gold-koi-9-painting": "shopee-14851084009",
-  "stibnite-ore": "shopee-9584341351",
-  "topaz-ring": "shopee-7160059458",
-  "owl-carving": "shopee-7207184461",
+  'hopma-glass-display-cabinet': 'shopee-18252003703',
+  'nordic-bedroom-rug': 'shopee-10826760335',
+  'hopma-monitor-riser': 'shopee-7160059458',
+  'washable-cushion': 'shopee-18081885505',
+  'hopma-two-door-wardrobe': 'shopee-13827568158',
+  'clear-waterproof-desk-mat': 'shopee-9359491416',
+  'hopma-four-door-storage-cabinet': 'shopee-3442325099',
+  'custom-wall-hanging': 'shopee-7207184461',
+  'led-wall-clock': 'shopee-29965372348',
+  'adjustable-clothes-rack': 'shopee-14296820642',
+  'office-chair-floor-mat': 'shopee-11699140235',
+  'amethyst-cave': 'shopee-3442325099',
+  'lucky-cat': 'shopee-29965372348',
+  'gold-koi-painting': 'shopee-7207184461',
+  'obsidian-turtle': 'shopee-18252003703',
+  'white-crystal-cluster': 'shopee-10826760335',
+  'fengshui-mousepad': 'shopee-9359491416',
+  'amethyst-egg': 'shopee-18081885505',
+  'gold-koi-9-painting': 'shopee-14851084009',
+  'stibnite-ore': 'shopee-9584341351',
+  'topaz-ring': 'shopee-7160059458',
+  'owl-carving': 'shopee-7207184461',
 };
+
 export function resolveAffiliateProductId(id: string) { return affiliateProductAliases[id] ?? id; }
 
 const contextKeywords: Record<string, string[]> = {
-  bedroom: ['臥室', '床', '寢具'], 'feng-shui': ['臥室', '床', '鏡子', '書桌'], 'small-room': ['小房間', '收納', '租屋'],
-  'room-planning': ['房間', '家具', '收納'], storage: ['收納', '衣櫃', '層架'], 'living-room': ['客廳', '沙發', '地毯'], moving: ['搬家', '收納', '家具'],
+  bedroom: ['臥室', '床', '寢具'],
+  'feng-shui': ['臥室', '床', '鏡子', '書桌'],
+  'small-room': ['小房間', '收納', '租屋'],
+  'room-planning': ['房間', '家具', '收納'],
+  storage: ['收納', '衣櫃', '層架'],
+  'living-room': ['客廳', '沙發', '地毯'],
+  moving: ['搬家', '收納', '家具'],
 };
+
 export function selectAffiliateProducts(options: { category?: string; tags?: string[]; slug?: string; maxItems?: number } = {}) {
   const maxItems = Math.max(1, Math.min(options.maxItems ?? 3, affiliateProducts.length));
   const context = [options.category, ...(options.tags ?? []), options.slug].filter(Boolean).join(' ').toLowerCase();
-  const keywords = [...(contextKeywords[options.category ?? ''] ?? []), ...Object.entries(contextKeywords).filter(([key]) => context.includes(key)).flatMap(([, values]) => values)];
+  const keywords = [...(contextKeywords[options.category ?? ''] ?? []), ...Object.entries(contextKeywords)
+    .filter(([key]) => context.includes(key)).flatMap(([, values]) => values)];
   return affiliateProducts.map((product, index) => {
     const haystack = [product.name, product.description, product.category, ...product.tags].join(' ').toLowerCase();
     const score = keywords.reduce((sum, keyword) => sum + (haystack.includes(keyword.toLowerCase()) ? 2 : 0), 0);
     return { product, score, index };
-  }).sort((a, b) => b.score - a.score || a.index - b.index).slice(0, maxItems).map(({ product }) => product);
+  }).sort((a, b) => b.score - a.score || (b.product.priority ?? 0) - (a.product.priority ?? 0) || a.index - b.index)
+    .slice(0, maxItems).map(({ product }) => product);
 }
