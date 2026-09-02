@@ -1,0 +1,76 @@
+---
+// 分頁導覽：列出所有頁碼，讓任何一篇文章都能在兩次點擊內從索引頁到達。
+// 這是刻意的取捨——完整頁碼列比「上一頁／下一頁」多幾行 HTML，
+// 但可以把爬取深度從 20 層壓到 1 層。
+interface Props {
+  basePath: string;
+  currentPage: number;
+  lastPage: number;
+  label?: string;
+}
+
+const { basePath, currentPage, lastPage, label = '分頁導覽' } = Astro.props;
+const hrefFor = (page: number) => (page === 1 ? basePath : `${basePath}${page}/`);
+const pages = Array.from({ length: lastPage }, (_, index) => index + 1);
+---
+
+{lastPage > 1 && (
+  <nav class="pagination" aria-label={label}>
+    <p class="pagination__status">第 {currentPage} 頁，共 {lastPage} 頁</p>
+    <ul class="pagination__list">
+      {currentPage > 1 && (
+        <li><a rel="prev" href={hrefFor(currentPage - 1)}>上一頁</a></li>
+      )}
+      {pages.map((page) => (
+        <li>
+          {page === currentPage
+            ? <span aria-current="page">{page}</span>
+            : <a href={hrefFor(page)}>{page}</a>}
+        </li>
+      ))}
+      {currentPage < lastPage && (
+        <li><a rel="next" href={hrefFor(currentPage + 1)}>下一頁</a></li>
+      )}
+    </ul>
+  </nav>
+)}
+
+<style>
+  .pagination {
+    display: grid;
+    gap: var(--space-3);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  .pagination__status {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .pagination__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pagination__list a,
+  .pagination__list span {
+    display: inline-block;
+    min-width: 2.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+  }
+
+  .pagination__list span[aria-current='page'] {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+</style>

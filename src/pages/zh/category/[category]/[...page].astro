@@ -1,0 +1,116 @@
+---
+import type { GetStaticPaths, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../../../components/Layout.astro';
+import Pagination from '../../../../components/Pagination.astro';
+import RelatedLinks from '../../../../components/RelatedLinks.astro';
+import { isReviewReadyBlogSlug } from '../../../../data/contentQuality.mjs';
+import { categoryMeta, categorySlugs, formatDate, siteUrl, toolLinks } from '../../../../data/site';
+import { CATEGORY_PAGE_SIZE } from '../../../../data/pagination';
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const all = await getCollection('blog');
+  return categorySlugs.flatMap((category) => {
+    const posts = all
+      .filter((post) => post.data.category === category && !post.data.noindex && isReviewReadyBlogSlug(post.id))
+      .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
+    return paginate(posts, { params: { category }, pageSize: CATEGORY_PAGE_SIZE });
+  });
+};
+
+const { category } = Astro.params;
+const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
+const meta = categoryMeta[category ?? ''];
+const basePath = `/zh/category/${category}/`;
+const canonical = page.currentPage === 1 ? basePath : `${basePath}${page.currentPage}/`;
+const title = page.currentPage === 1
+  ? `${meta.title}｜RoomFeng`
+  : `${meta.title}（第 ${page.currentPage} 頁）｜RoomFeng`;
+const description = page.currentPage === 1
+  ? meta.description
+  : `${meta.description}這是第 ${page.currentPage} 頁，共 ${page.lastPage} 頁。`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description,
+    url: `${siteUrl}${canonical}`,
+    inLanguage: 'zh-TW',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}/zh/blog/` },
+      { '@type': 'ListItem', position: 3, name: meta.title, item: `${siteUrl}${basePath}` },
+    ],
+  },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd} noindex={page.total === 0}>
+  <section class="section">
+    <div class="container page-grid">
+      <header class="card">
+        <p class="meta"><a href="/zh/blog/">文章</a> / {meta.title}</p>
+        <h1>{meta.title}</h1>
+        <p class="lead">{meta.intro}</p>
+        {category === 'feng-shui' && (
+          <p>
+            風水相關內容僅作民俗文化與空間舒適度參考，不保證任何結果。實際房間配置請以安全、通風、採光、動線與個人需求為主，詳見 <a href="/disclaimer/">免責聲明</a>。
+          </p>
+        )}
+      </header>
+
+      <section class="card" aria-labelledby="category-posts">
+        <h2 id="category-posts">分類文章</h2>
+        {page.total === 0 && <p>這個分類目前沒有完成內容品質重寫的公開文章。請先使用下方工具；舊稿會在補足實測流程、案例與限制後再重新評估。</p>}
+        <div class="post-list">
+          {page.data.map((post) => (
+            <article>
+              <p class="meta">{formatDate(post.data.updated)}</p>
+              <h3><a href={`/zh/blog/${post.id}/`}>{post.data.title}</a></h3>
+              <p>{post.data.description}</p>
+              <p class="tag-list">{post.data.tags.map((tag: string) => <span>{tag}</span>)}</p>
+            </article>
+          ))}
+        </div>
+        <Pagination basePath={basePath} currentPage={page.currentPage} lastPage={page.lastPage} label={`${meta.title}分頁`} />
+      </section>
+
+      <RelatedLinks links={[...toolLinks, { href: '/zh/blog/', title: '全部房間規劃文章' }]} />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .post-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .post-list article {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+  }
+
+  .meta {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .tag-list span {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.05rem 0.45rem;
+    font-size: var(--text-xs);
+  }
+</style>

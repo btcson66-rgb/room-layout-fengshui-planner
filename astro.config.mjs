@@ -17,6 +17,14 @@ export default defineConfig({
         const path = new URL(page).pathname;
         const normalizedPath = normalizePath(path);
         if (normalizedPath === '/zh/bed-facing-door-feng-shui/') return false;
+
+        // 索引與分類的分頁網址（/zh/blog/2/、/zh/category/feng-shui/3/）要先認出來，
+        // 否則下面的 blogMatch 會把 "2" 當成文章 slug、查不到而整頁被排除。
+        const blogPageMatch = normalizedPath.match(/^\/zh\/blog\/(\d+)\/$/);
+        if (blogPageMatch) return true;
+        const categoryPageMatch = normalizedPath.match(/^\/zh\/category\/([^/]+)\/(\d+)\/$/);
+        if (categoryPageMatch) return reviewReadyCategorySlugs.has(categoryPageMatch[1]);
+
         const blogMatch = normalizedPath.match(/^\/zh\/blog\/([^/]+)\/$/);
         if (blogMatch && !reviewReadyBlogSlugs.has(blogMatch[1])) return false;
         const categoryMatch = normalizedPath.match(/^\/zh\/category\/([^/]+)\/$/);
