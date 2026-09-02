@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kids-room-layout-safety
   - room-layout-for-parents-baby
@@ -36,7 +36,7 @@ howToSteps:
 
 嬰兒監視器在房間風水裡常被聯想到守護、看顧和讓照護者掌握房內動靜，因此有人會把鏡頭放在嬰兒床正上方，或把電線沿床緣繞一圈，認為這樣視線最完整。但嬰兒房的設備安排首先涉及電線勒纏、睡眠區、家具固定、鏡頭權限、夜間光線和誤報；視線越大不等於照護越好。沒有任何監視器位置能保證嬰兒安全、健康或睡眠；本文把「守護」轉成距離、固定、最小必要視線與照護者仍能現場確認的做法。
 
-先量嬰兒床、監視器、電源線、插座、衣櫃、尿布台、門窗、照護者站位和夜間走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較牆面、櫃側和房門方向的視線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備不會被家具翻倒或掉落，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試抱嬰兒、餵奶和夜間離開。工具不能取代兒科、產品說明和安全睡眠專業建議。
+先量嬰兒床、監視器、電源線、插座、衣櫃、尿布台、門窗、照護者站位和夜間走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較牆面、櫃側和房門方向的視線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備不會被家具翻倒或掉落，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試抱嬰兒、餵奶和夜間離開。工具不能取代兒科、產品說明和安全睡眠專業建議。
 
 ## 「守護視線」不是把鏡頭放進睡眠區
 

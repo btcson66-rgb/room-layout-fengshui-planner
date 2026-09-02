@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-air-conditioner-filter-cleaning-feng-shui
   - living-room-air-conditioner-condensation-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室冷氣前面板的風水問題，常被說成「冷氣對床會傷身」，但日常更需要先處理面板積塵、卡扣鬆動、濾網堵塞、結露和送風角度。風水裡的「藏風聚氣」可以轉譯為氣流不直吹臉部、家具不擋進風、面板能穩定復位和睡前操作不必踩到雜物，不能把冷氣位置直接說成睡眠或健康結果。
 
-先量臥室長寬、冷氣機寬深、前面板開啟範圍、床頭、衣櫃、窗戶、門片和送風落點。以 320 × 420 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出床邊氣流，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)看衣櫃和窗簾是否擋住面板，最後用 [房間動線檢查](/zh/room-circulation-check/)檢查夜間開關與清潔站位。
+先量臥室長寬、冷氣機寬深、前面板開啟範圍、床頭、衣櫃、窗戶、門片和送風落點。以 320 × 420 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出床邊氣流，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)看衣櫃和窗簾是否擋住面板，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查夜間開關與清潔站位。
 
 ## 冷氣前面板的好風水是卡扣完整、進風不堵且送風可調
 

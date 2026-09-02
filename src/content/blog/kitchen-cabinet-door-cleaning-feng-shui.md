@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-cabinet-handle-cleaning-feng-shui
   - kitchen-cabinet-shelf-liner-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房櫥櫃門片在風水裡常被聯想到藏納、界線與家務秩序，但真正需要維護的是門面油煙、手印、邊緣積垢、鉸鏈、門縫、水氣與開門動線。門片表面擦得發亮，背面和鉸鏈仍可能藏著油膜；清潔時水量過多，也可能沿著門邊進入板材或五金。本文把「藏納有界」轉成可觀察的清空、分區清潔、乾燥、鉸鏈檢查和開門驗收，不把櫥櫃朝向當成食祿、衛生或運勢保證。
 
-先記錄門片寬高、開啟方向、把手、鉸鏈、板材、爐具、水槽、排油煙機、垃圾桶和走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出備餐和開門路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片開啟不會碰到牆面或另一扇門；多人備餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間規劃，不能取代門片材質、五金和家具維修說明。
+先記錄門片寬高、開啟方向、把手、鉸鏈、板材、爐具、水槽、排油煙機、垃圾桶和走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出備餐和開門路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片開啟不會碰到牆面或另一扇門；多人備餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間規劃，不能取代門片材質、五金和家具維修說明。
 
 ## 先分辨油煙、手印、水痕與鉸鏈異常
 

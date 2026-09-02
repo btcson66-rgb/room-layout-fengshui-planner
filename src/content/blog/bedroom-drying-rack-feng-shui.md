@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-clothes-rack-feng-shui
   - humid-bedroom-layout
@@ -36,7 +36,7 @@ howToSteps:
 
 曬衣架在臥室風水裡常被說成把濕氣帶進睡眠區、影響清爽感，因此有人會問衣架放在床尾、窗邊或財位是否比較好。但室內晾衣真正要處理的是濕衣重量、衣物間距、滴水、通風、牆面結露、床品、地面、電線和夜間收架。若濕衣貼著窗簾和床墊，或曬衣架展開後堵住臥室門，風水上的「氣不流通」其實是可觀察的潮濕與動線問題。沒有曬衣架位置能保證睡眠、健康或運勢；應先讓衣物乾燥和人能安全通行，再討論象徵意義。
 
-先量曬衣架收起與展開的長寬高、掛衣後外擴、衣物下擺、床、衣櫃、窗戶、窗簾、牆角、除濕設備和插座。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較晾衣區與床窗位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認曬衣架、衣櫃門和床邊不互撞；需要半夜起身或收架時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助看尺寸，不能代替濕度觀察、建材檢查或電器安全判斷。
+先量曬衣架收起與展開的長寬高、掛衣後外擴、衣物下擺、床、衣櫃、窗戶、窗簾、牆角、除濕設備和插座。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較晾衣區與床窗位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認曬衣架、衣櫃門和床邊不互撞；需要半夜起身或收架時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助看尺寸，不能代替濕度觀察、建材檢查或電器安全判斷。
 
 ## 先分辨晾衣、乾燥與收架狀態
 

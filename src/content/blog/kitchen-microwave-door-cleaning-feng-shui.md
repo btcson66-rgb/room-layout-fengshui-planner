@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-grease-filter-cleaning-feng-shui
   - kitchen-sandwich-maker-plate-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 微波爐在廚房風水裡常被聯想到快速、加熱和把食物送上桌，但真正需要維護的是門片、密封條、門鉤、轉盤、內壁、通風口、插座和取碗動線。湯汁與油漬長期堆在門邊，門片又因檯面太窄而無法完全開啟，這不只是「火氣被關住」的象徵，而是清潔、閉合、燙物和電器位置沒有分開。本文把「火氣有界」轉成可觀察的停機、門邊清潔、閉合驗收和端碗路徑，不把方位當成加熱、微波安全或運勢承諾。
 
-先記錄微波爐型號、門片、門鉤、密封條、轉盤、內壁、控制面板、插座、檯面深度和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出放入容器、開門、取碗和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門前有足夠工作面；多人用餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端熱食與家人避讓。工具不能取代產品說明與原廠維修判斷。
+先記錄微波爐型號、門片、門鉤、密封條、轉盤、內壁、控制面板、插座、檯面深度和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出放入容器、開門、取碗和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門前有足夠工作面；多人用餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端熱食與家人避讓。工具不能取代產品說明與原廠維修判斷。
 
 ## 先分辨油漬、殘渣與門片異常
 

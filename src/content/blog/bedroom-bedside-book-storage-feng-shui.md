@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bookshelf-feng-shui
   - bedside-table-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 書籍在臥室風水裡常被聯想到學習、智慧與文昌，有人會問書堆在床頭能不能增加考運、書架朝向哪裡比較有助於讀書。真正要先處理的是書本重量、書架是否穩定、床頭上方是否有掉落風險、夜讀時燈光是否刺眼、書本是否受潮積灰，以及起身和地震避難時會不會被書堆擋住。沒有一個方位能保證考試或工作結果；本文把「文昌」轉成可取用、可清潔、可固定和不妨礙休息的床邊書籍流程。
 
-先量臥室長寬、床、床頭櫃、書架、門扇、窗、燈具、插座、地毯和避難路徑，並記錄書籍單本、整疊、書架每層和床頭櫃的重量與尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床側窄架、牆邊書架和床尾收納的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認書架門片、床頭燈和抽屜不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間起身、開門、清潔和避難。工具只協助配置，不取代家具固定、地震防災或個人閱讀需求。
+先量臥室長寬、床、床頭櫃、書架、門扇、窗、燈具、插座、地毯和避難路徑，並記錄書籍單本、整疊、書架每層和床頭櫃的重量與尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床側窄架、牆邊書架和床尾收納的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認書架門片、床頭燈和抽屜不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間起身、開門、清潔和避難。工具只協助配置，不取代家具固定、地震防災或個人閱讀需求。
 
 ## 床邊只留今晚要讀的書
 

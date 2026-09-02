@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-lid-cleaning-feng-shui
   - bathroom-bidet-water-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶座體底部的風水常被說成「根基不穩會影響家運」，但實際要處理的是固定板、座體偏移、底部水痕、供水接頭、電源和清潔時的濕區。風水裡的「根基」可以轉譯為座體固定、接縫乾燥、供水與電氣不互相靠近，不能把座體穩固直接當成健康或家運保證。
 
-先量浴室長寬、馬桶座、免治座前後長度、固定板、供水管、插座、淋浴濕區和門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出座體與插座，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認拆裝手部空間，最後用 [房間動線檢查](/zh/room-circulation-check/)看工具與水桶是否堵住出口。
+先量浴室長寬、馬桶座、免治座前後長度、固定板、供水管、插座、淋浴濕區和門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出座體與插座，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認拆裝手部空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看工具與水桶是否堵住出口。
 
 ## 免治座體底部的好風水是固定穩、接縫乾與供電供水各有界線
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-hair-dryer-filter-cleaning-feng-shui
   - bathroom-electric-toothbrush-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電動刮鬍刀每天接觸鬍渣、皮脂、乳液和水氣，使用後可能放在洗手台、鏡櫃、充電座或毛巾旁。刀頭需要清潔，但不是每一款機身都能水洗；充電座若長期處在水花和濕氣裡，清潔與充電會互相干擾。浴室風水常談濕濁、鏡面和儀容，實務上應先確認刀頭能依說明處理、機身與充電器保持乾燥、鬍渣有清理路徑，且設備不會堵住洗手台與浴室通道。
 
-先記錄刮鬍刀型號、刀頭可否水洗、充電方式、轉接器、充電座、洗手台、淋浴水花、鏡櫃和通風位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出修容、沖洗、擦乾和充電路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認充電座不會被鏡櫃門撞到；濕區與乾區交界可用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查。工具不能代替製造商、電池或皮膚安全建議。
+先記錄刮鬍刀型號、刀頭可否水洗、充電方式、轉接器、充電座、洗手台、淋浴水花、鏡櫃和通風位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出修容、沖洗、擦乾和充電路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認充電座不會被鏡櫃門撞到；濕區與乾區交界可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查。工具不能代替製造商、電池或皮膚安全建議。
 
 ## 先分辨鬍渣、皮脂、皂膜與水痕
 

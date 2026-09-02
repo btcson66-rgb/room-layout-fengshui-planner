@@ -29,19 +29,40 @@ const blogPosts = await getCollection('blog');
 const blogTitleBySlug = new Map(
   blogPosts.filter((entry) => !entry.data.noindex && isReviewReadyBlogSlug(entry.id)).map((entry) => [entry.id, entry.data.title]),
 );
-const toolTitle = (href: string) => {
-  const map: Record<string, string> = {
-    '/zh/room-layout-planner/': '房間家具配置工具',
-    '/zh/furniture-fit-checker/': '家具尺寸檢查',
-    '/zh/small-bedroom-layout/': '小房間佈局規劃',
-    '/zh/studio-apartment-layout/': '小套房配置',
-    '/zh/bed-desk-wardrobe-layout/': '床桌衣櫃配置',
-    '/zh/rental-room-layout/': '租屋房間配置',
-    '/zh/moving-furniture-size-check/': '搬家家具尺寸檢查',
-    '/zh/feng-shui-bedroom-checker/': '臥室風水格局檢查',
-    '/zh/beam-layout-fix-check/': '樑下配置化解檢查器',
-  };
-  return map[href] ?? href;
+const TOOL_TITLES: Record<string, string> = {
+  '/zh/room-layout-planner/': '房間家具配置工具',
+  '/zh/furniture-fit-checker/': '家具尺寸檢查',
+  '/zh/small-bedroom-layout/': '小房間佈局規劃',
+  '/zh/studio-apartment-layout/': '小套房配置',
+  '/zh/bed-desk-wardrobe-layout/': '床桌衣櫃配置',
+  '/zh/rental-room-layout/': '租屋房間配置',
+  '/zh/moving-furniture-size-check/': '搬家家具尺寸檢查',
+  '/zh/feng-shui-bedroom-checker/': '臥室風水格局檢查',
+  '/zh/beam-layout-fix-check/': '樑下配置化解檢查器',
+  '/zh/bedroom-feng-shui-layout/': '臥室風水配置',
+  '/zh/living-room-furniture-layout/': '客廳家具配置',
+  '/zh/small-room-storage-planner/': '小房間收納規劃',
+  '/zh/room-furniture-size-advisor/': '房間家具尺寸建議',
+  '/zh/room-size-layout-templates/': '房型配置範本',
+  '/zh/storage-bed-selector/': '收納床選擇器',
+  '/zh/desk-placement-feng-shui/': '書桌位置風水',
+  '/zh/bed-door-fix-selector/': '床對門化解選擇器',
+  '/zh/desk-door-fix-check/': '書桌對門化解檢查',
+  '/zh/mirror-facing-bed-feng-shui/': '鏡子對床風水',
+  '/zh/blog/': '房間規劃文章',
+};
+
+// 只輸出能解析出真實標題的連結：未知路徑一律丟棄，
+// 避免把原始網址當成錨文字（曾造成 /zh/room-circulation-check/ 之類的 404 連結）。
+const resolveRelatedTool = (href: string) => {
+  const mapped = TOOL_TITLES[href];
+  if (mapped) return { href, title: mapped };
+  const blogMatch = href.match(/^\/zh\/blog\/([^/]+)\/$/);
+  if (blogMatch) {
+    const title = blogTitleBySlug.get(blogMatch[1]);
+    if (title) return { href, title };
+  }
+  return null;
 };
 const relatedPostLinks = post.data.relatedPosts
   .map((slug: string) => {
@@ -50,7 +71,9 @@ const relatedPostLinks = post.data.relatedPosts
   })
   .filter((link): link is { href: string; title: string } => link !== null);
 const relatedLinks = [
-  ...post.data.relatedTools.map((href: string) => ({ href, title: toolTitle(href) })),
+  ...post.data.relatedTools
+    .map((href: string) => resolveRelatedTool(href))
+    .filter((link): link is { href: string; title: string } => link !== null),
   ...relatedPostLinks,
   ...(reviewReadyCategorySlugs.has(post.data.category)
     ? [{ href: `/zh/category/${post.data.category}/`, title: category?.title ?? post.data.category }]

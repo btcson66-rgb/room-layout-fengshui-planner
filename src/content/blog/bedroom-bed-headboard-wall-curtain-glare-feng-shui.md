@@ -103,7 +103,7 @@ OSHA 的工作站資料把直接或間接眩光列為需要觀察的環境因素
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗簾、窗戶、床頭燈和反射面，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布料與燈具距離；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放低照度離床。若主要是陰影，可讀 [床頭窗簾陰影](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若有鏡面反射，參考 [床頭鏡面反光](/zh/blog/bedroom-bed-headboard-wall-mirror-reflection-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗簾、窗戶、床頭燈和反射面，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較布料與燈具距離；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放低照度離床。若主要是陰影，可讀 [床頭窗簾陰影](/zh/blog/bedroom-bed-headboard-wall-curtain-shadow-feng-shui/)；若有鏡面反射，參考 [床頭鏡面反光](/zh/blog/bedroom-bed-headboard-wall-mirror-reflection-feng-shui/)。
 
 ### 參考資料
 

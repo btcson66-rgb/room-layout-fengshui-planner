@@ -97,7 +97,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出房門掃掠、桌子與椅子後退區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌椅深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放起身與搬物。若螢幕隱私是主題，可看 [面向房門螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)；若入口視線是瓶頸，參考 [書桌面向房門能見度](/zh/blog/home-office-desk-facing-door-visibility-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出房門掃掠、桌子與椅子後退區，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌椅深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放起身與搬物。若螢幕隱私是主題，可看 [面向房門螢幕隱私](/zh/blog/home-office-desk-facing-door-monitor-privacy-feng-shui/)；若入口視線是瓶頸，參考 [書桌面向房門能見度](/zh/blog/home-office-desk-facing-door-visibility-feng-shui/)。
 
 ### 參考資料
 

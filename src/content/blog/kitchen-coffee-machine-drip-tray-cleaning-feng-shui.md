@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-water-tank-cleaning-feng-shui
   - kitchen-coffee-machine-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡機滴水盤的風水問題常被說成「水留在財位會漏財」，但真正需要處理的是滴水盤過滿、浮標卡在錯誤位置、咖啡渣黏在杯盤格下方、乳品殘留發臭、托盤沒有推到底，或檯面長期受潮。風水裡的「水有收納」可以轉譯為排水可見、托盤可取出、檯面保持乾燥和咖啡機不阻塞備餐動線，不能把積水直接當成財運或飲品品質結果。
 
-先量廚房長寬、咖啡機外框、滴水盤深度、杯盤格、插頭長度、水槽、飲水區和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出咖啡機、插座與取杯路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對機器前方拉出滴水盤的距離，最後以 [房間動線檢查](/zh/room-circulation-check/)測試沖煮時是否擋住水槽。工具只協助配置，不代替家電維修。
+先量廚房長寬、咖啡機外框、滴水盤深度、杯盤格、插頭長度、水槽、飲水區和站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出咖啡機、插座與取杯路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對機器前方拉出滴水盤的距離，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試沖煮時是否擋住水槽。工具只協助配置，不代替家電維修。
 
 ## 滴水盤的好風水是水位可辨、托盤能取出且檯面不留濕痕
 

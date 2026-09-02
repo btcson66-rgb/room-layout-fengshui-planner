@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - sofa-back-door-window-feng-shui
   - living-room-rug-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 坐墊在客廳風水裡常被聯想到承托、舒適與家人願意坐下來交流，有人會問坐墊靠沙發左側、疊在茶几旁或選某種顏色，是否能增加人氣與和氣。真正需要先分清的是：坐墊是乾淨備用、正在使用、沾到食物或寵物毛，還是洗後尚未完全乾？它會不會滑落、擋住沙發起身、壓住出風口、變成幼兒攀爬物，或因密閉收納把潮氣留在填充物裡？沒有任何布色或方位能替代清潔、乾燥和座位安全；本文把「承托」轉成可辨識的布品狀態、固定落點和實際使用流程。
 
-先量客廳長寬、沙發深度與座位數、茶几、電視櫃、地毯、收納籃、冷氣出風口、插座和主要通道，並記錄坐墊攤平、側放、疊放與收進籃子的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發側籃、電視櫃抽屜和獨立收納櫃，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認籃子不會卡住櫃門或出風，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試起身、端茶、掃地、抱小孩和多人交會。工具只協助配置，不取代產品洗滌標示或個人健康建議。
+先量客廳長寬、沙發深度與座位數、茶几、電視櫃、地毯、收納籃、冷氣出風口、插座和主要通道，並記錄坐墊攤平、側放、疊放與收進籃子的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較沙發側籃、電視櫃抽屜和獨立收納櫃，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認籃子不會卡住櫃門或出風，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試起身、端茶、掃地、抱小孩和多人交會。工具只協助配置，不取代產品洗滌標示或個人健康建議。
 
 ## 先替每一個坐墊標記使用狀態
 

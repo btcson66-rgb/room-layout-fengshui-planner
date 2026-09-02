@@ -89,7 +89,7 @@ OSHA 的桌面與工作站資料建議常用設備保持在適合的工作區，
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出托盤、桌子、房門和視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌前、側邊和抽屜外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取件、歸檔和離席。若公告板也在門口，可讀 [公告板文件視線](/zh/blog/home-office-desk-facing-door-notice-board-privacy-feng-shui/)；若你常通話，參考 [面向房門通話隱私](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出托盤、桌子、房門和視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌前、側邊和抽屜外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取件、歸檔和離席。若公告板也在門口，可讀 [公告板文件視線](/zh/blog/home-office-desk-facing-door-notice-board-privacy-feng-shui/)；若你常通話，參考 [面向房門通話隱私](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)。
 
 ### 參考資料
 

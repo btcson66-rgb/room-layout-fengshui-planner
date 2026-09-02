@@ -99,7 +99,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出折疊凳、床側和房門路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較收合與打開外緣；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放穿鞋、清潔和離開。若床邊收納是主題，可看 [床邊收納籃](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)；若掛放衣物是瓶頸，參考 [床邊掛鉤](/zh/blog/small-room-storage-bedside-hook-doorway-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出折疊凳、床側和房門路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較收合與打開外緣；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放穿鞋、清潔和離開。若床邊收納是主題，可看 [床邊收納籃](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)；若掛放衣物是瓶頸，參考 [床邊掛鉤](/zh/blog/small-room-storage-bedside-hook-doorway-feng-shui/)。
 
 ### 參考資料
 

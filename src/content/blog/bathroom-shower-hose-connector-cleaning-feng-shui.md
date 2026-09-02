@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-hose-kink-feng-shui
   - bathroom-hand-shower-head-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室蓮蓬頭軟管接頭清潔風水常被形容成「水路要順，財路才順」，但接頭每天承受水壓、旋轉、拉扯、皂垢、硬水水垢和洗澡後的濕氣。接頭外表有白膜不一定只是髒，軟管靠牆折成急角也不一定只是不好看；墊片老化會讓水從螺牙滴出，使用者為了拿高處蓮蓬頭而拉扯軟管，則可能把掛座、龍頭或牆面固定件一起帶動。風水可用來討論水流和秩序，但不能保證漏水消失、節水或健康。
 
-先量浴室長寬、淋浴站位、蓮蓬頭軟管長度、兩端接頭、掛座、混合龍頭、門檻和地漏。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拿取、沖洗、掛回和擦乾的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認軟管不會纏住沐浴架或門片；若人在淋浴時要轉身避開軟管，可用 [房間通行寬度檢查](/zh/room-circulation-check/)比較不同掛座高度。工具只能協助平面關係，不能判定水壓、牆內管線、電熱水器或接頭耐壓。
+先量浴室長寬、淋浴站位、蓮蓬頭軟管長度、兩端接頭、掛座、混合龍頭、門檻和地漏。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拿取、沖洗、掛回和擦乾的範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認軟管不會纏住沐浴架或門片；若人在淋浴時要轉身避開軟管，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較不同掛座高度。工具只能協助平面關係，不能判定水壓、牆內管線、電熱水器或接頭耐壓。
 
 ## 先分辨軟管水垢、皂膜與接頭滴漏
 

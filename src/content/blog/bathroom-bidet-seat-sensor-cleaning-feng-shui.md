@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bidet-seat-lid-cleaning-feng-shui
   - bathroom-bidet-deodorizing-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 免治馬桶著座感測器的風水常被說成「人到位才有氣」，但真正需要處理的是感應區污漬、座體水氣、便蓋遮擋、誤啟動和電源界線。風水裡的「有感」可以轉譯為設備依使用者反應、感應區保持乾燥、功能不被清潔劑干擾，不能把感應正常直接當成健康或家運保證。
 
-先量浴室長寬、免治座、感應區、便蓋開啟範圍、插座、淋浴濕區和門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出座體與濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔手部空間，最後用 [房間動線檢查](/zh/room-circulation-check/)測試濕腳離開時是否碰到座體。
+先量浴室長寬、免治座、感應區、便蓋開啟範圍、插座、淋浴濕區和門片掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出座體與濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認清潔手部空間，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試濕腳離開時是否碰到座體。
 
 ## 著座感測器的好風水是感應穩定、感應區乾燥與功能不誤啟動
 

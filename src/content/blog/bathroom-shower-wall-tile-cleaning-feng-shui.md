@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-silicone-mold-cleaning-feng-shui
   - bathroom-shower-door-water-stain-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 淋浴區牆面磁磚清潔風水常被說成「濕氣不留，家運才清」，但牆面真正面對的是皂液、皮脂、洗髮精、硬水礦物、毛髮、霉斑、清潔劑殘留與長時間水膜。黑色污點可能在填縫或矽利康，不一定是磁磚本體；白色霧膜可能是水垢，也可能是未沖乾淨的產品。風水可以用來討論乾濕界線與整理秩序，但不能保證防霉、防滑、健康或運勢。
 
-先量浴室長寬、淋浴牆面、蓮蓬頭、玻璃門、門檻、地漏、地墊、馬桶、洗手台、排風口與常用瓶罐位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出淋浴、擦乾、取物和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認層架、淋浴椅和瓶罐不會壓到轉身空間；入口需要保持清楚時，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試濕腳離開、拿毛巾和清潔工具。工具只能協助平面比較，不能判定防水層、磁磚黏著、霉菌或清潔劑相容性。
+先量浴室長寬、淋浴牆面、蓮蓬頭、玻璃門、門檻、地漏、地墊、馬桶、洗手台、排風口與常用瓶罐位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出淋浴、擦乾、取物和清潔站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認層架、淋浴椅和瓶罐不會壓到轉身空間；入口需要保持清楚時，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試濕腳離開、拿毛巾和清潔工具。工具只能協助平面比較，不能判定防水層、磁磚黏著、霉菌或清潔劑相容性。
 
 ## 先分辨皂垢、水垢、霉斑、鏽痕與填縫裂縫
 

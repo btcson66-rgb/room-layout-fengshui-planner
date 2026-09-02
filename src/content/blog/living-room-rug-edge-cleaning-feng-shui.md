@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-rug-cleaning-feng-shui
   - living-room-rug-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳地毯邊緣清潔風水常被寫成「地毯收住客廳氣場」，但地毯外框和四角每天承受鞋底灰塵、寵物毛、零食碎屑、茶水、沙發滑動、吸塵器拉扯和家具腳壓力。邊緣一旦捲起或脫線，走路時可能勾住拖鞋；地毯底部若長期不掀開，地板水痕、止滑墊粉化和潮味又不容易被發現。風水可以拿來討論空間界線，但不能保證招財、清潔或防跌效果。
 
-先量客廳長寬、地毯長寬、邊緣外露寬度、沙發腳、茶几、電視櫃、門口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出地毯與座位區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認沙發腳不會壓住嚴重捲邊；若地毯位於出入口或客廳很窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試吸塵、掀毯、端茶和離開路線。工具只能協助配置，不會替你判定纖維污染、止滑墊材質或地板受潮原因。
+先量客廳長寬、地毯長寬、邊緣外露寬度、沙發腳、茶几、電視櫃、門口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出地毯與座位區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認沙發腳不會壓住嚴重捲邊；若地毯位於出入口或客廳很窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試吸塵、掀毯、端茶和離開路線。工具只能協助配置，不會替你判定纖維污染、止滑墊材質或地板受潮原因。
 
 ## 先分辨地毯邊緣灰塵、碎屑與脫線
 

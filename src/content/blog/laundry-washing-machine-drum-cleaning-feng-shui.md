@@ -16,9 +16,8 @@ keywords:
   - 洗衣機洗劑殘留棉絮
   - 洗衣機洗後通風
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-detergent-drawer-cleaning-feng-shui
   - laundry-washing-machine-door-gasket-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機內桶在風水裡容易被聯想到循環、去舊與衣物更新，但真正需要維護的是洗劑殘留、棉絮、異味、積水、門膠圈、空桶清潔程式和洗後通風。洗衣機外觀看起來乾淨，不代表內桶和膠圈沒有殘留；啟動槽洗淨，也不代表所有機型都適合加入清潔劑。本文把「衣物循環不滯」轉成可觀察的清空、依機型程式、門膠圈清潔、乾燥和洗衣動線驗收，不把洗衣機方位當成洗淨、健康或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、內桶、門膠圈、洗劑盒、排水、門片、牆距、洗衣籃、晾衣區和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排空桶清潔、取衣和晾衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認門片與洗衣籃不互撞；維護時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不能取代製造商說明、電器安全或排水維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、內桶、門膠圈、洗劑盒、排水、門片、牆距、洗衣籃、晾衣區和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排空桶清潔、取衣和晾衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認門片與洗衣籃不互撞；維護時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不能取代製造商說明、電器安全或排水維修判斷。
 
 ## 先分辨洗劑殘留、棉絮、異味與積水
 

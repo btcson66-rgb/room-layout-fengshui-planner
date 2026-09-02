@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-washbasin-faucet-handle-cleaning-feng-shui
   - bathroom-washbasin-faucet-aerator-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室洗手台水龍頭底座的風水問題常被說成「水龍頭根部漏水會漏財」，但真正要處理的是底座積水形成白垢、皂膜卡在檯面接縫、龍頭根部滲水、矽利康老化，或擦乾時手臂碰到鏡面與洗手用品。風水裡的「水有出口」可以轉譯為水滴來源可追、檯面能擦乾、龍頭固定和洗手站位不互相碰撞，不能把底座乾濕直接當成財運或健康結果。
 
-先量浴室長寬、洗手台長寬、龍頭高度、底座直徑、檯面深度、鏡面、毛巾、清潔用品和入口。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、擦乾與進出路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對檯面與壁面，最後用 [房間動線檢查](/zh/room-circulation-check/)測試兩人交會。工具只協助配置，不代替水電與防水判斷。
+先量浴室長寬、洗手台長寬、龍頭高度、底座直徑、檯面深度、鏡面、毛巾、清潔用品和入口。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、擦乾與進出路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對檯面與壁面，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試兩人交會。工具只協助配置，不代替水電與防水判斷。
 
 ## 水龍頭底座的好風水是水滴可追、接縫乾燥且龍頭不晃動
 

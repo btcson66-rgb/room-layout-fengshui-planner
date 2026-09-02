@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-feng-shui
   - kitchen-dish-rack-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 海綿和抹布在廚房風水裡常被看成吸收油水、承接雜氣的用品，有人會問放在水槽左側、爐具旁或所謂財位，是否比較能把髒污留住。但這些物品真正要處理的是食品接觸面與地面清潔是否分開、洗後能否乾燥、滴水會不會流到木櫃、海綿是否已經有異味，以及家人能否在忙亂時拿對工具。沒有一個海綿方向能保證健康、財運或廚房清爽；本文把「去濁」轉成可檢查的用途標籤、瀝乾位置與替換流程。
 
-先量廚房、水槽、龍頭、瀝水架、備餐區、爐具、垃圾桶、洗碗機和抹布掛點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽側面、檯面角落與櫃門內側的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛桿、瀝水盤與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試洗菜、端鍋、擦檯面和清理地面。工具只能協助配置，不取代食品衛生、產品標示或清潔用品說明。
+先量廚房、水槽、龍頭、瀝水架、備餐區、爐具、垃圾桶、洗碗機和抹布掛點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽側面、檯面角落與櫃門內側的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛桿、瀝水盤與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試洗菜、端鍋、擦檯面和清理地面。工具只能協助配置，不取代食品衛生、產品標示或清潔用品說明。
 
 ## 先用顏色或標籤分開不同清潔任務
 

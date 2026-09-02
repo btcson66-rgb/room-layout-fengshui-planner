@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-play-mat-feng-shui
   - living-room-baby-gate-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玩具在客廳風水裡常被聯想到童氣、活力、家庭互動與讓空間有生氣，有人會問玩具箱放在沙發旁、客廳財位或入口附近是否比較能旺家。但玩具真正要處理的是孩子是否能拿到適齡物品、細小零件會不會被誤吞、玩具是否有銳邊或過長繩線、箱子與層架會不會傾倒，以及收玩具後客廳能否安全通行。沒有任何玩具箱方向能保證聰明、健康、財運或親子關係；本文把「讓孩子有活力」轉成可觀察的分類、照顧與動線。
 
-先量客廳、沙發、電視櫃、玩具箱、層架、遊戲地墊、門窗和通往浴室或玄關的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較低位玩具箱和遊戲區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認箱蓋、抽屜、層架和沙發不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試孩子跑動、成人彎腰、推車和清潔。工具只能協助配置，不取代玩具標示、照顧者監督或兒童安全建議。
+先量客廳、沙發、電視櫃、玩具箱、層架、遊戲地墊、門窗和通往浴室或玄關的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較低位玩具箱和遊戲區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認箱蓋、抽屜、層架和沙發不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試孩子跑動、成人彎腰、推車和清潔。工具只能協助配置，不取代玩具標示、照顧者監督或兒童安全建議。
 
 ## 玩具要先看適齡與商品標示
 

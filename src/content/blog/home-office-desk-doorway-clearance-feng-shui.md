@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - desk-facing-door-layout
   - home-office-bedroom-layout
@@ -87,7 +87,7 @@ howToSteps:
 
 ## 小房間書桌與床共用門口時，先保留主路線
 
-若書桌位於臥室，門口常同時服務床、衣櫃、書桌和窗戶。可參考 [書桌對門的視線與分心紀錄](/zh/blog/desk-facing-door-layout/)，但靠近房門的問題要再加上椅子退位和門片測試。用 [床書桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/) 比較桌子、床和衣櫃，再以 [房間動線檢查](/zh/room-circulation-check/) 走過開門、坐下、起身、取衣和清掃。
+若書桌位於臥室，門口常同時服務床、衣櫃、書桌和窗戶。可參考 [書桌對門的視線與分心紀錄](/zh/blog/desk-facing-door-layout/)，但靠近房門的問題要再加上椅子退位和門片測試。用 [床書桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/) 比較桌子、床和衣櫃，再以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 走過開門、坐下、起身、取衣和清掃。
 
 先把「門口到主要出口」當作固定路線，再安排工作椅後退區，最後才處理桌面朝向。若任何配置都要側身穿過、移椅子才能開門，代表家具數量或尺寸超過房間承載，不是再增加一個化解物就能解決。
 

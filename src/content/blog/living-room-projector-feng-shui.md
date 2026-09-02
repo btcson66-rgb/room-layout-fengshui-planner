@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - tv-facing-window-living-room-feng-shui
   - living-room-tv-console-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 投影機在客廳風水裡常被說成把影像與光聚到家人面前、形成新的聚氣中心，因此有人會問投影機放客廳中央是否更旺、畫面對窗會不會把好運反射出去。但投影機真正需要處理的是投影距離、鏡頭高度、吊掛或桌放穩定、散熱、電線、遮光、噪音、觀看距離和起身通道。若投影機放在茶几上被飲料碰到，電線橫過走道，或畫面需要一直遮住窗戶，象徵上的聚焦不能取代設備與人流安全。沒有投影機位置能保證財運、家庭關係或娛樂效果；本文把「光聚於一處」轉成可調整的客廳配置。
 
-先量投影機長寬高、鏡頭與出風口、投影距離、畫面尺寸、插座、電線、沙發、茶几、窗戶、窗簾和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較設備、畫面和座位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌放、吊架、茶几和門片不互撞；需要多人起身或端飲料時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替產品說明、吊掛施工、散熱或用電安全判斷。
+先量投影機長寬高、鏡頭與出風口、投影距離、畫面尺寸、插座、電線、沙發、茶几、窗戶、窗簾和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較設備、畫面和座位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌放、吊架、茶几和門片不互撞；需要多人起身或端飲料時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替產品說明、吊掛施工、散熱或用電安全判斷。
 
 ## 先分辨桌放、吊掛與觀影狀態
 

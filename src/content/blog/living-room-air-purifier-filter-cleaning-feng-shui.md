@@ -17,7 +17,7 @@ keywords:
   - 客廳空氣清淨機怎麼擺
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-uv-disinfection-lamp-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 空氣清淨機在客廳風水裡常被聯想到淨化、流動和把雜氣整理乾淨，但真正需要維護的是前置濾網、濾芯、進風格柵、出風口、感測器、電線與家具動線。機體被沙發或窗簾遮住時，濾網即使剛換也可能進氣不順；灰塵從窗戶、地毯和寵物活動區來，不能只靠改變方位解決。本文把「客廳氣流清明」轉成可觀察的濾網週期、進出風距離、灰塵來源、斷電和家人交接，不把設備當成健康或運勢承諾。
 
-先記錄空氣清淨機型號、前置濾網、濾芯、進風面、出風口、感測器、沙發、電視櫃、窗戶、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進風、出風、清潔和家人走動路線，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試取水、掃地和端食物是否會撞到機體；家具密集時可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對進出風空間。工具不能取代說明書與室內空氣專業判斷。
+先記錄空氣清淨機型號、前置濾網、濾芯、進風面、出風口、感測器、沙發、電視櫃、窗戶、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進風、出風、清潔和家人走動路線，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試取水、掃地和端食物是否會撞到機體；家具密集時可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對進出風空間。工具不能取代說明書與室內空氣專業判斷。
 
 ## 先分辨前置濾網灰塵、異味與故障
 

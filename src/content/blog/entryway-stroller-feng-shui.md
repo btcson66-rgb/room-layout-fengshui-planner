@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-bench-feng-shui
   - entryway-wet-shoes-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 嬰兒車在玄關風水裡常被說成「帶孩子的氣進門」「推車不能對門」，但對家庭來說，它是一件每天展開、收折、載重、沾泥水的移動設備。若推車卡住大門、輪子把水和砂帶進室內、煞車未固定，或收折後仍堵住逃生路線，實際問題就比方位更重要。沒有嬰兒車位置能保證孩子健康、家庭和諧或運勢；入口的安定感應先建立在推車能安全停放、家人能平地操作、通道不被占滿。
 
-先量大門完全開啟、嬰兒車展開與收折、鞋櫃、牆面、轉身區和室內第一段動線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出推車從門外到停放點的路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認車輪、把手和門片不互撞；玄關狹窄時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試抱嬰兒、提袋和推車同時進出。工具不會代替煞車、折疊鎖、兒童安全或建物逃生判斷。
+先量大門完全開啟、嬰兒車展開與收折、鞋櫃、牆面、轉身區和室內第一段動線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出推車從門外到停放點的路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認車輪、把手和門片不互撞；玄關狹窄時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試抱嬰兒、提袋和推車同時進出。工具不會代替煞車、折疊鎖、兒童安全或建物逃生判斷。
 
 ## 先分辨日用、清潔與長期收納
 

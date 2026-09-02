@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-sideboard-feng-shui
   - living-room-sideboard-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐邊櫃抽屜風水常被問成「抽屜朝哪裡才聚財」，但客廳與餐區每天真正要處理的是：抽屜拉出時是否撞到餐椅、滑軌是否卡有碎屑、餐具或文件重量是否讓底板下垂、清潔布是否能伸到後角、抽屜關閉時會不會夾手，以及拿取物品是否讓人堵在主要走道。風水裡的「收」可以轉成分類、可看見、可順利開關和家具穩定，不能把抽屜方向當成財運保證。
 
-先量客廳與餐區長寬、餐邊櫃寬深高、抽屜完全拉出深度、餐桌、餐椅後退距離、門片、電線和主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開抽屜、取物、用餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查拉出後是否侵入椅子或通道；若要檢查家具交會，可參考 [房間動線檢查](/zh/room-circulation-check/)。工具只協助配置，不代替家具固定、承重或滑軌維修判斷。
+先量客廳與餐區長寬、餐邊櫃寬深高、抽屜完全拉出深度、餐桌、餐椅後退距離、門片、電線和主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開抽屜、取物、用餐和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查拉出後是否侵入椅子或通道；若要檢查家具交會，可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)。工具只協助配置，不代替家具固定、承重或滑軌維修判斷。
 
 ## 抽屜的好風水是後角清得到、滑軌走得順且開啟不堵住餐區
 

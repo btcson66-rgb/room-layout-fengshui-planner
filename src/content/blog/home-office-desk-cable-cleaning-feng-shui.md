@@ -18,9 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - home-office-desk-layout
+  - home-office-bedroom-layout
   - home-office-desk-lamp-feng-shui
   - home-office-standing-desk-feng-shui
 howToName: "書桌線材、電源線、集線器、灰塵、散熱與腳部空間檢查"
@@ -36,7 +36,7 @@ howToSteps:
 
 線材風水常被說成「電線太亂會影響文昌」，但書桌每天真正需要處理的是：電源線是否被腳勾到、轉接器是否被紙張或布料覆蓋、線材接頭是否積塵、集線器是否過熱、桌面設備能不能安全插拔，以及清潔時是否會拉扯螢幕或主機。風水裡的「氣脈」可以轉譯為電線、資料、手部和腳部路徑有秩序，不能把線材顏色或方向當成專注或工作成果保證。
 
-先量書桌長寬高、螢幕與鍵盤、主機、插座、延長線、集線器、桌下托盤、椅子後退範圍和門口走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、插拔和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌下線圈不會進入腳部區；若要檢查工作區與門口交會，可參考 [房間動線檢查](/zh/room-circulation-check/)。工具只協助配置，不代替電氣安全與設備說明。
+先量書桌長寬高、螢幕與鍵盤、主機、插座、延長線、集線器、桌下托盤、椅子後退範圍和門口走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、插拔和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌下線圈不會進入腳部區；若要檢查工作區與門口交會，可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)。工具只協助配置，不代替電氣安全與設備說明。
 
 ## 線材的好風水是看得到接點、留得住散熱且腳下沒有絆倒物
 

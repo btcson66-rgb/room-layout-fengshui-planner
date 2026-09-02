@@ -17,7 +17,6 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/bedroom-layout/
 relatedPosts:
   - bed-facing-door-feng-shui
   - wardrobe-facing-bed-feng-shui

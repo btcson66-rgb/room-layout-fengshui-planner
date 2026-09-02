@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-sofa-cleaning-feng-shui
   - living-room-sofa-under-cushion-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 沙發座墊下方的風水問題常被問成「沙發底下藏東西會不會漏財」，但每天真正影響客廳的是座墊下是否堆著餅乾屑、硬幣、玩具、寵物毛，支撐帶是否變形，座墊回位後會不會滑動，以及起身時是否要跨過茶几。風水裡的「藏」可以轉譯為物品不阻塞、污染可被看見、座墊能乾燥回位和家人能安全起身，不能把沙發底部當成運勢開關。
 
-先量客廳長寬、沙發長寬高、座墊厚度、座墊下空間、扶手、沙發腳、茶几、地毯和主要通道。以 300 × 360 公分客廳為例，座墊取下後可能需要把它立在通道旁；若茶几離沙發太近，清潔和回位就會變成碰撞問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取墊和起身路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對茶几距離，最後用 [房間動線檢查](/zh/room-circulation-check/)測試清掃。工具只協助配置，不代替沙發結構和布料保養判斷。
+先量客廳長寬、沙發長寬高、座墊厚度、座墊下空間、扶手、沙發腳、茶几、地毯和主要通道。以 300 × 360 公分客廳為例，座墊取下後可能需要把它立在通道旁；若茶几離沙發太近，清潔和回位就會變成碰撞問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出取墊和起身路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對茶几距離，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試清掃。工具只協助配置，不代替沙發結構和布料保養判斷。
 
 ## 沙發座墊下的好風水是碎屑可取、支撐可查且坐起來不必閃躲
 

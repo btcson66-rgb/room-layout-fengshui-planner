@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/living-room-furniture-layout/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-candle-storage-feng-shui
   - living-room-air-purifier-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 擴香器在客廳風水裡常被聯想到調和氣場、讓空間有迎賓氣味，也有人會問擴香器放在客廳財位、玄關邊或沙發旁是否能讓家運更順。但擴香器真正要處理的是精油或香氛液體是否會漏、噴霧是否打到電器與木家具、設備是否需要通風、清潔頻率、插座與線材，以及同住者、兒童與寵物是否能接受。沒有任何香味或擺位能保證財運、健康、感情或淨化空氣；本文把「氣流和諧」轉成可觀察的使用邊界。
 
-先量客廳、擴香器本體、水箱或精油瓶、沙發、電視、窗、空調出風口、插座、延長線、地毯和寵物活動路徑。用 [客廳家具配置工具](/zh/living-room-furniture-layout/)比較邊桌、電視櫃側邊與獨立層架，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認加水、倒液、清潔和拔插不會撞到家具，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試起身、拿物、拖地和緊急離開。工具只能協助平面規劃，不取代產品手冊、室內空氣或醫療建議。
+先量客廳、擴香器本體、水箱或精油瓶、沙發、電視、窗、空調出風口、插座、延長線、地毯和寵物活動路徑。用 [客廳家具配置工具](/zh/living-room-furniture-layout/)比較邊桌、電視櫃側邊與獨立層架，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認加水、倒液、清潔和拔插不會撞到家具，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試起身、拿物、拖地和緊急離開。工具只能協助平面規劃，不取代產品手冊、室內空氣或醫療建議。
 
 ## 擴香不是通風，也不是清潔空氣
 

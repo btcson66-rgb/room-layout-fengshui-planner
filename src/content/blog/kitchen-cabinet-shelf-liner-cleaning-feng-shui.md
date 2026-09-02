@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-spice-rack-cleaning-feng-shui
   - kitchen-drawer-organizer-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房櫥櫃層板墊在風水裡常被聯想到承接、整齊與食物有序，但真正需要維護的是墊面油膜、食物碎屑、容器滲漏、底部積水、櫃板材質、門片開啟和補貨路徑。層板墊看起來只是薄薄一片，卻會把油污和水氣藏在墊子下面；若直接在原位噴清潔劑，液體可能沿著櫃板邊緣進入接縫，清潔反而變成受潮來源。本文把「櫃內有界」轉成可觀察的清空、乾濕分流、材質判斷、通風與回位驗收，不把櫥櫃方位當成食祿、衛生或運勢保證。
 
-先記錄櫥櫃內寬、深度、高度、層板墊材質、容器用途、爐具、水槽、排油煙機和備餐通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取物和補貨路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認層板墊不會捲邊、卡門或遮住可調層板；若櫥櫃門打開會占用走道，可用 [房間通行寬度檢查](/zh/room-circulation-check/)實測。工具只能協助尺寸與動線，不能取代層板墊、櫃體和食品容器的產品說明。
+先記錄櫥櫃內寬、深度、高度、層板墊材質、容器用途、爐具、水槽、排油煙機和備餐通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取物和補貨路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認層板墊不會捲邊、卡門或遮住可調層板；若櫥櫃門打開會占用走道，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)實測。工具只能協助尺寸與動線，不能取代層板墊、櫃體和食品容器的產品說明。
 
 ## 先分辨油膜、食物碎屑、積水與櫃板痕跡
 

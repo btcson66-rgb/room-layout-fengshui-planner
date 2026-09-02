@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bed-frame-cleaning-feng-shui
   - bedroom-bed-frame-joint-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室床頭板清潔風水常被解讀成「床頭有靠就能睡得穩」，但床頭板實際會累積頭髮、皮屑、灰塵、汗氣、寵物毛和床單纖維。布面床頭板的縫線、木板的接角、皮革的壓紋和固定件周圍，都是清潔工具不容易一次到達的地方；床頭板若緊貼潮濕牆面，還可能讓水痕、異味或霉斑被遮住。可維持的安定感，應建立在材質適用、清潔可達、牆面可檢查、固定穩定和睡前不堵路，而不是某個床頭方向能保證睡眠或運勢。
 
-先量臥室、床、床頭板外框、牆面、窗戶、床邊桌、衣櫃與清潔工具的站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床頭板與牆距，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較床架、床頭板、床邊桌和窗簾是否互相壓迫；若清潔時需要搬床，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)確認搬運和夜間起身路線。工具只能協助平面規劃，不能判定牆體、固定件或床頭板內部狀態。
+先量臥室、床、床頭板外框、牆面、窗戶、床邊桌、衣櫃與清潔工具的站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床頭板與牆距，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較床架、床頭板、床邊桌和窗簾是否互相壓迫；若清潔時需要搬床，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認搬運和夜間起身路線。工具只能協助平面規劃，不能判定牆體、固定件或床頭板內部狀態。
 
 ## 先判斷床頭板是髒、濕、壞還是固定失效
 

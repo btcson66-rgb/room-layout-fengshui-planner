@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-mattress-side-seam-cleaning-feng-shui
   - under-bed-storage-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 床邊地板清潔風水常被說成「床側留空，睡眠才安穩」，但床邊真正容易累積的是皮屑、毛髮、棉絮、寵物毛、拖地水、地墊碎屑和充電線。地板黑痕可能是床腳摩擦，黏膜可能是清潔劑殘留，潮味可能來自牆角或床墊下方；半夜踢到拖鞋或勾到線材，也不是單用「床氣受阻」可以處理。風水可以作為整理臥室界線的語言，但不能保證睡眠、健康或防跌。
 
-先量臥室長寬、床架外框、床邊走道、床腳、插座、地墊、衣櫃和門扇開啟範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床側落腳與清潔範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床架、床頭桌和地墊不互相重疊；若夜間要通往浴室或玄關，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試關燈後的實際動線。工具只能協助平面比較，不能判定地板、防滑或個人平衡能力。
+先量臥室長寬、床架外框、床邊走道、床腳、插座、地墊、衣櫃和門扇開啟範圍。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床側落腳與清潔範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床架、床頭桌和地墊不互相重疊；若夜間要通往浴室或玄關，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試關燈後的實際動線。工具只能協助平面比較，不能判定地板、防滑或個人平衡能力。
 
 ## 先分辨床邊灰塵、毛髮、水痕與地板刮痕
 

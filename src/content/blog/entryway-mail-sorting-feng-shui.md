@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-package-drop-zone-feng-shui
   - entryway-key-tray-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 信件在玄關風水裡常被聯想到外部消息、家宅入口與資訊流動，有人會問帳單放在門口左側是否容易破財、把信件收進紅色盒子能不能帶來好消息。真正需要先處理的是未拆信、待回覆文件、要保存的資料、含個資的紙張和一般廣告單是否混在一起，紙張會不會受潮、被踩到、靠近火源，或讓家人進出時反覆跨過。沒有一個顏色或方位能保證消息與財務結果；本文把「消息入門」轉成可清空、可查找、可銷毀和可回收的玄關流程。
 
-先量玄關長寬、門扇、鞋櫃、鑰匙盤、包裹落點、垃圾與回收桶、碎紙機插座和通往客廳的路徑，並記錄信件平放、直立、拆封、碎紙與回收袋的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鞋櫃上層、門側窄櫃和室內書桌旁的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認文件盒、碎紙機和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試進門、脫鞋、放包、拆信和清掃。工具只協助配置，不取代個資、文件保存和地方回收規定。
+先量玄關長寬、門扇、鞋櫃、鑰匙盤、包裹落點、垃圾與回收桶、碎紙機插座和通往客廳的路徑，並記錄信件平放、直立、拆封、碎紙與回收袋的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較鞋櫃上層、門側窄櫃和室內書桌旁的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認文件盒、碎紙機和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試進門、脫鞋、放包、拆信和清掃。工具只協助配置，不取代個資、文件保存和地方回收規定。
 
 ## 玄關先設「未拆」而不是把所有紙都叫雜物
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-water-dispenser-feng-shui
   - kitchen-toaster-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 咖啡機在廚房風水裡常被說成把香氣與人脈聚到家中，因此有人會問放在財位、入口旁或廚房中央是否更能旺工作運。但咖啡機同時涉及高功率插座、熱水、蒸氣、水箱、咖啡渣、杯子與清潔，位置要先處理平坦檯面、蒸氣孔、牆面、插座、濕手、熱杯落點和早餐動線。若水箱加水時會把水倒進電氣部位，蒸氣直衝上櫃，或端熱咖啡需要穿過孩子和寵物，風水象徵不能取代設備安全。沒有咖啡機位置能保證財運、工作成功或健康結果；本文把「香氣聚人」落到可測量的使用秩序。
 
-先量咖啡機外廓、水箱抽出方向、豆槽或粉槽、蒸氣孔、杯子高度、插座、水槽、備餐檯、窗戶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較咖啡機與早餐吧位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱、櫥櫃和電線不互撞；若多人在早上同時備餐，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替產品說明、插座負載、給水或維修判斷。
+先量咖啡機外廓、水箱抽出方向、豆槽或粉槽、蒸氣孔、杯子高度、插座、水槽、備餐檯、窗戶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較咖啡機與早餐吧位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水箱、櫥櫃和電線不互撞；若多人在早上同時備餐，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替產品說明、插座負載、給水或維修判斷。
 
 ## 先分辨加水、沖煮與清潔狀態
 

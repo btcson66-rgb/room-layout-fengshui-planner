@@ -87,7 +87,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫床、地毯和門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床頭櫃外框，最後以 [房間動線檢查](/zh/room-circulation-check/) 回放夜間路線。若床邊櫃也靠近門，可參考 [床頭櫃抽屜與房門](/zh/blog/bedroom-nightstand-drawer-doorway-clearance-feng-shui/)；若床尾是瓶頸，參考 [床尾對房門](/zh/blog/bedroom-bed-foot-doorway-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫床、地毯和門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較床頭櫃外框，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放夜間路線。若床邊櫃也靠近門，可參考 [床頭櫃抽屜與房門](/zh/blog/bedroom-nightstand-drawer-doorway-clearance-feng-shui/)；若床尾是瓶頸，參考 [床尾對房門](/zh/blog/bedroom-bed-foot-doorway-clearance-feng-shui/)。
 
 ### 參考資料
 

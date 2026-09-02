@@ -17,7 +17,7 @@ keywords:
   - 客廳遙控器共享動線
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-air-purifier-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電視遙控器在客廳風水裡常被聯想到掌控、共享和家庭交流，但真正需要維護的是按鍵縫隙、外殼、紅外線窗、電池槽、電池蓋、茶几和多人取用路徑。遙控器沾到飲料後仍放在沙發縫裡，電池漏液又沒有隔離，這不只是「控制權分散」的象徵，而是清潔、電池、共享和收納沒有界線。本文把「客廳掌控有序」轉成可觀察的取電池、乾燥清潔、漏液分流和共享收納，不把遙控器位置當成家庭關係或運勢保證。
 
-先記錄遙控器型號、按鍵、紅外線窗、電池蓋、電池槽、電池種類、茶几、電視櫃和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出沙發、茶几、電視和收納位置，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端餐、取遙控器和家人走動；茶几狹窄時可用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納盒不會擋住使用面。工具不能取代產品說明與電池安全判斷。
+先記錄遙控器型號、按鍵、紅外線窗、電池蓋、電池槽、電池種類、茶几、電視櫃和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出沙發、茶几、電視和收納位置，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端餐、取遙控器和家人走動；茶几狹窄時可用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納盒不會擋住使用面。工具不能取代產品說明與電池安全判斷。
 
 ## 先分辨灰塵、飲料污漬與電池漏液
 

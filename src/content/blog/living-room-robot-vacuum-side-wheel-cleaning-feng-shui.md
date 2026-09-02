@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-robot-vacuum-front-caster-cleaning-feng-shui
   - living-room-robot-vacuum-cliff-sensor-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人側輪的風水常被說成「左右平衡才走得順」，但真正需要處理的是左右輪阻力、輪槽毛髮、底盤異物、轉彎偏移和地面拖痕。風水裡的「平衡」可以轉譯為兩側輪子能受控轉動、地面不被拖傷、家具邊不反覆碰撞，不能把左右輪阻力相近直接當成客廳運勢或清掃效果保證。
 
-先量客廳長寬、機器人寬度、左右側輪、沙發底、茶几腳、地毯邊、門檻和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出清掃與轉彎路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對家具底部，最後用 [房間動線檢查](/zh/room-circulation-check/)確認機器人不會堵住主要走道。
+先量客廳長寬、機器人寬度、左右側輪、沙發底、茶几腳、地毯邊、門檻和充電座。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出清掃與轉彎路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對家具底部，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)確認機器人不會堵住主要走道。
 
 ## 側輪的好風水是左右阻力可比較、輪槽乾淨與轉彎不拖地
 

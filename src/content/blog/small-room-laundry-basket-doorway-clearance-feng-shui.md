@@ -89,7 +89,7 @@ NFPA 的居家逃生規劃強調門窗和出口要保持可用。洗衣籃即使
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫洗衣籃、床和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿籃外框，最後以 [房間動線檢查](/zh/room-circulation-check/) 回看搬運。若是衣物掛架靠門，可參考 [小房間衣物掛架](/zh/blog/small-room-clothes-rack-doorway-clearance-feng-shui/)；若是收納櫃與門衝突，參考 [抽屜櫃全開深度](/zh/blog/small-room-drawer-unit-doorway-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫洗衣籃、床和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿籃外框，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回看搬運。若是衣物掛架靠門，可參考 [小房間衣物掛架](/zh/blog/small-room-clothes-rack-doorway-clearance-feng-shui/)；若是收納櫃與門衝突，參考 [抽屜櫃全開深度](/zh/blog/small-room-drawer-unit-doorway-clearance-feng-shui/)。
 
 ### 參考資料
 

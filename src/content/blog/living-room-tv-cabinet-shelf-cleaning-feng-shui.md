@@ -17,7 +17,7 @@ keywords:
   - 客廳視聽櫃動線
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-tv-stand-bottom-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電視櫃層板在客廳風水裡常被聯想到聲光、交流與器物有序，但真正需要維護的是層板灰塵、設備熱量、線材彎折、櫃門通風、層板承重、遙控器和客廳人流。層板上放著電視盒、遊戲機、路由器或喇叭時，外觀整齊不代表散熱和拔電安全；灰塵也可能集中在設備底部與層板後緣。本文把「視聽有序」轉成可觀察的斷電、除塵、散熱、承重、線材分流與通行驗收，不把電視櫃方位當成人緣、設備性能或運勢保證。
 
-先記錄電視櫃寬深高、層板厚度、可調孔位、設備尺寸、線材出口、插座、牆面、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出觀看、清潔和拔電路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認櫃門與線材不侵入走道；設備與層板空間可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代設備說明、電源安全和家具承重判斷。
+先記錄電視櫃寬深高、層板厚度、可調孔位、設備尺寸、線材出口、插座、牆面、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出觀看、清潔和拔電路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認櫃門與線材不侵入走道；設備與層板空間可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代設備說明、電源安全和家具承重判斷。
 
 ## 先分辨層板灰塵、發熱、線材受拉與變形
 

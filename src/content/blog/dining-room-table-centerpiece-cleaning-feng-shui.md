@@ -18,9 +18,8 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - dining-room-table-centerpiece-feng-shui
   - dining-room-table-edge-cleaning-feng-shui
   - dining-room-table-under-cleaning-feng-shui
 howToName: "餐桌中央擺設、花器托盤與用餐留空檢查"

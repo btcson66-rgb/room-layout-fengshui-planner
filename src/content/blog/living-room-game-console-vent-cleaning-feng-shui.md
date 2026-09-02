@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-game-controller-cleaning-feng-shui
   - living-room-tv-console-back-cable-dust-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 遊戲主機常放在電視櫃、開放層架、地毯旁或沙發後方，長時間運轉會把周圍灰塵、寵物毛和纖維帶到進風口；若電視櫃太窄、主機貼牆、上方堆滿遊戲片，熱氣和灰塵便難以排出。客廳風水談氣流、娛樂和家人聚集，實務上更應檢查散熱孔是否被擋、主機是否放在硬質平面、清潔時是否斷電，以及主機周圍不會成為走道或飲料潑濺區。
 
-先記錄主機型號、直立或橫放方式、進風口、出風口、電源線、電視櫃深度、牆面、地毯和玩家座位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出主機、螢幕和沙發的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認主機不會被櫃板或遊戲收納壓住；若客廳多人走動，可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試線材和散熱區。工具不能代替原廠安全、保固或故障維修指引。
+先記錄主機型號、直立或橫放方式、進風口、出風口、電源線、電視櫃深度、牆面、地毯和玩家座位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出主機、螢幕和沙發的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認主機不會被櫃板或遊戲收納壓住；若客廳多人走動，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試線材和散熱區。工具不能代替原廠安全、保固或故障維修指引。
 
 ## 先分辨散熱孔灰塵、毛髮與油煙
 

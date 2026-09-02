@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-play-mat-feng-shui
   - living-room-high-chair-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 嬰兒安全門在客廳風水裡常被問成「隔開危險區會不會把氣切斷」「門放哪裡才守住孩子」。但安全門是承受孩子推拉、成人開關和可能碰撞的防護用品，位置要先處理門框、固定方式、鎖定機構、底部高差、家具和逃生動線。若安全門靠在不穩的家具上、門檻容易絆腳、成人抱孩子時無法開門，或把廚房危險物品誤當成已被隔離，象徵性的「守門」不能取代照顧。沒有嬰兒安全門位置能保證孩子健康、家庭和諧或運勢；它只能協助分區，不能取代成人看顧。
 
-先量門框內寬、牆面、門扇、門檻、遊戲墊、沙發、廚房入口、樓梯和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出孩子活動區與危險區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認安全門開合不會撞家具；客廳有多條通路時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試抱孩子、端熱水和緊急離開。工具不能代替產品安裝、鎖定、牆體和成人照顧判斷。
+先量門框內寬、牆面、門扇、門檻、遊戲墊、沙發、廚房入口、樓梯和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出孩子活動區與危險區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認安全門開合不會撞家具；客廳有多條通路時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試抱孩子、端熱水和緊急離開。工具不能代替產品安裝、鎖定、牆體和成人照顧判斷。
 
 ## 先分辨分區、照顧與通行任務
 

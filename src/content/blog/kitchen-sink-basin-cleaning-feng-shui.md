@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-faucet-cleaning-feng-shui
   - kitchen-sink-drain-strainer-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房水槽盆在風水裡常被聯想到水氣、清理與食材流動，但真正需要維護的是積水、油膜、食物碎屑、水垢、排水口、盆底、矽利康和櫥櫃下方。水槽盆看起來已沖洗乾淨，不代表底部沒有油膜或接縫沒有滲水；若濕抹布、海綿和食材長時間堆在盆內，也會讓來源難以判斷。本文把「水氣有界」轉成可觀察的清空、分流、材質清潔、排水與乾燥驗收，不把水槽方位當成財運、衛生或運勢保證。
 
-先記錄水槽盆尺寸、深度、材質、排水口、水龍頭、瀝水區、檯面、櫥櫃、爐具和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗菜、洗碗和備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水槽周邊物品不會壓住檯面接縫；多人洗滌時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助動線與尺寸，不能取代水槽、排水和管線維修判斷。
+先記錄水槽盆尺寸、深度、材質、排水口、水龍頭、瀝水區、檯面、櫥櫃、爐具和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗菜、洗碗和備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認水槽周邊物品不會壓住檯面接縫；多人洗滌時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助動線與尺寸，不能取代水槽、排水和管線維修判斷。
 
 ## 先分辨積水、油膜、碎屑與接縫漏水
 

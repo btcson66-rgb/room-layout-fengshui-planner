@@ -5046,10 +5046,23 @@ for (const slug of allSlugs) {
   }
 }
 
-const blogIndex = await fs.readFile(path.join(distRoot, 'zh', 'blog', 'index.html'), 'utf8');
-const blogIndexSlugs = new Set(
-  [...blogIndex.matchAll(/href="\/zh\/blog\/([^/"#?]+)\/"/g)].map((match) => match[1]),
-);
+// 索引頁自 2026-09 起分頁，所以要合併所有分頁（/zh/blog/ 與 /zh/blog/<n>/）再檢查。
+// 要守住的性質沒有變：每篇 review-ready 文章都能從索引到達，held 稿一篇都不能出現。
+const blogIndexDirectory = path.join(distRoot, 'zh', 'blog');
+const blogIndexPageFiles = [
+  path.join(blogIndexDirectory, 'index.html'),
+  ...(await fs.readdir(blogIndexDirectory, { withFileTypes: true }))
+    .filter((entry) => entry.isDirectory() && /^\d+$/.test(entry.name))
+    .map((entry) => path.join(blogIndexDirectory, entry.name, 'index.html')),
+];
+const blogIndexSlugs = new Set();
+for (const file of blogIndexPageFiles) {
+  const html = await fs.readFile(file, 'utf8');
+  for (const match of html.matchAll(/href="\/zh\/blog\/([^/"#?]+)\/"/g)) {
+    if (!/^\d+$/.test(match[1])) blogIndexSlugs.add(match[1]);
+  }
+}
+check('blog-index-pagination-pages', blogIndexPageFiles.length >= 1, blogIndexPageFiles.length);
 check('blog-index-count', blogIndexSlugs.size === reviewReadyBlogSlugs.size, [...blogIndexSlugs]);
 for (const slug of reviewReadyBlogSlugs) check(`blog-index:${slug}`, blogIndexSlugs.has(slug), 'must be linked');
 for (const slug of heldSlugs) check(`blog-index-held:${slug}`, !blogIndexSlugs.has(slug), 'must not be linked');
@@ -5101,6 +5114,39 @@ async function walk(directory) {
   }
 }
 await walk(distRoot);
+
+// 內部連結的目標必須真的存在。
+// AGENTS.md 第 10 節第 3 項一直把「No broken internal links」列為 quality gate，
+// 但在 2026-09 之前沒有任何檢查實作它，所以千頁內容上線時有 594 個頁面帶著
+// 指向 404 的內部連結進了 main（其中 /zh/room-circulation-check/ 被 551 篇引用）。
+const ASSET_EXTENSION = /\.(xml|txt|webp|png|jpe?g|svg|ico|pdf|css|js|json|webmanifest)$/i;
+const toPosix = (value) => value.split(path.sep).join('/');
+const distRoutes = new Set();
+for (const file of htmlFiles) {
+  const relative = toPosix(path.relative(distRoot, file));
+  distRoutes.add(`/${relative}`);
+  if (relative.endsWith('index.html')) {
+    distRoutes.add(`/${relative.slice(0, -'index.html'.length)}`.replace(/\/{2,}/g, '/'));
+  }
+}
+const brokenLinkSources = new Map();
+for (const file of htmlFiles) {
+  const html = await fs.readFile(file, 'utf8');
+  for (const match of html.matchAll(/href="(\/[^"]*)"/g)) {
+    const href = match[1].split(/[?#]/)[0];
+    if (href === '' || ASSET_EXTENSION.test(href)) continue;
+    const target = href.endsWith('/') ? href : `${href}/`;
+    if (distRoutes.has(target) || distRoutes.has(href)) continue;
+    const sources = brokenLinkSources.get(href) ?? new Set();
+    sources.add(toPosix(path.relative(distRoot, file)));
+    brokenLinkSources.set(href, sources);
+  }
+}
+for (const [href, sources] of brokenLinkSources) {
+  check(`internal-link:${href}`, false, `${sources.size} page(s), e.g. ${[...sources][0]}`);
+}
+check('internal-links-resolve', brokenLinkSources.size === 0, brokenLinkSources.size);
+
 const affiliateFiles = [];
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, 'utf8');

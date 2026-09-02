@@ -91,7 +91,7 @@ CPSC 的家具安全資料提醒家具和重物要依產品、固定件與家庭
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出箱體、箱蓋弧線、床側和房門，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較開蓋高度和站位；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放取物、清潔和夜間離床。若你考慮折疊箱，可讀 [折疊箱展開動線](/zh/blog/small-room-storage-bedside-folding-crate-feng-shui/)；若希望改成柔性收納，參考 [床邊掛袋突出](/zh/blog/small-room-storage-bedside-hanging-pocket-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出箱體、箱蓋弧線、床側和房門，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較開蓋高度和站位；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、清潔和夜間離床。若你考慮折疊箱，可讀 [折疊箱展開動線](/zh/blog/small-room-storage-bedside-folding-crate-feng-shui/)；若希望改成柔性收納，參考 [床邊掛袋突出](/zh/blog/small-room-storage-bedside-hanging-pocket-feng-shui/)。
 
 ### 參考資料
 

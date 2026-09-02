@@ -87,7 +87,7 @@ EPA 的室內空氣資料把污染源控制、通風和清潔列為改善室內�
 
 ## 相關工具與延伸閱讀
 
-用 [小房間收納規劃器](/zh/small-room-storage-planner/) 畫床架、箱體和走道，再用 [收納床選擇器](/zh/storage-bed-selector/) 比較抽屜與箱體；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放取物、清潔和換床單。若你常在床尾取物，可讀 [床下收納開啟空間](/zh/blog/small-room-storage-bed-opening-clearance-feng-shui/)；若收納的是換季衣物，參考 [床下換季衣物](/zh/blog/small-room-storage-bedside-underbed-seasonal-clothes-feng-shui/)。
+用 [小房間收納規劃器](/zh/small-room-storage-planner/) 畫床架、箱體和走道，再用 [收納床選擇器](/zh/storage-bed-selector/) 比較抽屜與箱體；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、清潔和換床單。若你常在床尾取物，可讀 [床下收納開啟空間](/zh/blog/small-room-storage-bed-opening-clearance-feng-shui/)；若收納的是換季衣物，參考 [床下換季衣物](/zh/blog/small-room-storage-bedside-underbed-seasonal-clothes-feng-shui/)。
 
 ### 參考資料
 

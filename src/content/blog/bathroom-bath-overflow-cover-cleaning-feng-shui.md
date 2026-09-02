@@ -18,11 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - bathroom-bath-cleaning-feng-shui
   - bathroom-bath-mat-cleaning-feng-shui
-  - bathroom-bath-drain-cleaning-feng-shui
 howToName: "浴缸溢水孔蓋、密封圈、浴缸排水、異味與地面動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +34,7 @@ howToSteps:
 
 浴缸溢水孔蓋的風水問題常被說成「水不能從浴缸流失」，但溢水孔真正的功能是當水位過高時提供額外排水路徑；孔蓋背後還可能連著密封件、溢水管和浴缸排水系統。日常較實際的問題是孔蓋積著水垢、皂膜和毛髮，浴缸滿水時排不動，或清潔後漏水到牆內。風水裡的「水有界」可以轉譯為水位可觀察、溢水路徑不被堵、地面保持乾燥，不能把溢水孔蓋外觀直接當成守財或安全結果。
 
-先量浴室長寬、浴缸長寬、溢水孔蓋高度、排水口、門片、洗手台、地墊、毛巾與進出浴缸站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進出浴缸、擦拭孔蓋和清空地面的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對浴缸側面，最後以 [房間動線檢查](/zh/room-circulation-check/)測試濕地面退讓。工具只協助配置，不代替水管、密封與防滑判斷。
+先量浴室長寬、浴缸長寬、溢水孔蓋高度、排水口、門片、洗手台、地墊、毛巾與進出浴缸站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進出浴缸、擦拭孔蓋和清空地面的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對浴缸側面，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試濕地面退讓。工具只協助配置，不代替水管、密封與防滑判斷。
 
 ## 溢水孔蓋的好風水是孔洞可見、水位可控且清潔不破壞密封
 
@@ -74,7 +72,7 @@ Watco 的浴缸與洗手台排水資料把浴缸排水、塞子和溢水部件�
 
 面板完全乾燥並復位後，先確認螺絲或固定件沒有鬆、旋鈕或拉桿能回到原位，再以少量清水觀察浴缸排水和孔蓋周邊。不要為了測試把浴缸裝滿，也不要讓人踩在濕地面上旋轉面板。測試後擦乾浴缸外側、門口和地墊下方。
 
-若孔蓋周圍有持續滲水、旋鈕無法操作、溢水路徑有異味或牆面出現新水痕，停止測試。可以參考 [浴缸清潔風水](/zh/blog/bathroom-bath-cleaning-feng-shui/)處理浴缸表面，但溢水孔蓋和牆內管路要獨立判斷。
+若孔蓋周圍有持續滲水、旋鈕無法操作、溢水路徑有異味或牆面出現新水痕，停止測試。可以參考 [浴室踏墊清潔風水](/zh/blog/bathroom-bath-mat-cleaning-feng-shui/)處理浴缸表面，但溢水孔蓋和牆內管路要獨立判斷。
 
 ## 七日觀察：孔蓋乾淨之外，也看水位和地面交接是否安全
 

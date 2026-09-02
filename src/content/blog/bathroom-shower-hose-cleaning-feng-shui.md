@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-hose-connector-cleaning-feng-shui
   - bathroom-shower-hose-kink-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 淋浴軟管的風水問題常被說成「水管亂垂會帶走浴室的氣」，但日常真正需要處理的是軟管是否扭結、表面是否卡皂垢、接頭是否滴水、掛回時有沒有拉扯龍頭，以及洗澡時是否踩到或被軟管掃到腳。風水裡的「水路順」可以轉譯為軟管有自然彎曲、接頭可觀察、使用後能瀝乾、掛放不妨礙站位，不能把軟管外觀當成防漏或安全保證。
 
-先量浴室長寬、淋浴區、軟管長度、蓮蓬頭、掛架、龍頭、玻璃門、門檻、地漏和站位。以 180 × 240 公分浴室為例，軟管若太長，掛回後可能垂到地面或跨過門檻；太短則拿取時拉扯接頭。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出自然下垂曲線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認蓮蓬頭和掛點，最後以 [房間動線檢查](/zh/room-circulation-check/)測試洗澡與離開。工具只協助配置，不代替管件、防滑、熱水和產品維修判斷。
+先量浴室長寬、淋浴區、軟管長度、蓮蓬頭、掛架、龍頭、玻璃門、門檻、地漏和站位。以 180 × 240 公分浴室為例，軟管若太長，掛回後可能垂到地面或跨過門檻；太短則拿取時拉扯接頭。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出自然下垂曲線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認蓮蓬頭和掛點，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試洗澡與離開。工具只協助配置，不代替管件、防滑、熱水和產品維修判斷。
 
 ## 淋浴軟管的好風水是彎曲自然、接頭乾燥且拿取不必拉扯
 

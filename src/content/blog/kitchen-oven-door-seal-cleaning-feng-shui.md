@@ -18,10 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-oven-door-hinge-cleaning-feng-shui
-  - kitchen-oven-door-cleaning-feng-shui
   - kitchen-oven-feng-shui
 howToName: "烤箱門封條、門縫、玻璃、閉合狀態與取盤熱區動線檢查"
 howToTotalTime: "PT30M"
@@ -36,7 +35,7 @@ howToSteps:
 
 烤箱門封條的風水問題常被問成「火氣從門縫跑出會不會散財」，但每天真正要處理的是封條褶皺是否卡著油膜和焦化殘渣，門片關閉後是否均勻接觸，玻璃門縫是否有異物，烘烤時熱氣是否從固定位置外逸，以及開門取盤會不會擋住廚房主要路徑。風水裡的「藏火、聚氣」可以轉譯為熱源可控、密封狀態可觀察、門前站位可退讓，不能把封條外觀直接當成財運或烘烤結果開關。
 
-先量廚房長寬、烤箱寬深、門片開啟深度、把手突出、封條位置、旁側櫃門、水槽、備餐檯和站位。以 240 × 300 公分廚房為例，烤箱在流理台下方，門片向下打開後會進入兩人交會路徑；若封條清潔時只看正面，可能漏掉下緣和兩側轉角。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片與熱區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體，最後用 [房間動線檢查](/zh/room-circulation-check/)測試取盤。工具只協助配置，不代替電器維修判斷。
+先量廚房長寬、烤箱寬深、門片開啟深度、把手突出、封條位置、旁側櫃門、水槽、備餐檯和站位。以 240 × 300 公分廚房為例，烤箱在流理台下方，門片向下打開後會進入兩人交會路徑；若封條清潔時只看正面，可能漏掉下緣和兩側轉角。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出門片與熱區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試取盤。工具只協助配置，不代替電器維修判斷。
 
 ## 烤箱門封條的好風水是接觸均勻、油膜可清且熱區不堵路
 

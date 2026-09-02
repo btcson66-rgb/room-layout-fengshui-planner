@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-curtain-cleaning-feng-shui
   - bedroom-curtain-rod-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室窗簾束帶的風水問題常被說成「把窗簾束起來就能引氣入室」，但真正要處理的是束帶卡灰、磁吸件沾毛髮、繫帶拉力讓布料變形、固定件鬆脫，或窗簾束起後床邊受直射光和窗扇開啟干涉。風水裡的「明暗有度」可以轉譯為採光和隱私可調、窗簾能順利束起、束帶不掉落以及開窗不需跨過床，不能把束帶位置直接當成睡眠或財運結果。
 
-先量臥室長寬、窗簾寬高、束帶高度、窗框、窗扇開啟方向、床、床頭櫃與站位。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出束簾、開窗和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與窗簾，最後用 [房間動線檢查](/zh/room-circulation-check/)測試夜間通行。工具只協助配置，不代替窗簾安裝與高處作業判斷。
+先量臥室長寬、窗簾寬高、束帶高度、窗框、窗扇開啟方向、床、床頭櫃與站位。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出束簾、開窗和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與窗簾，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試夜間通行。工具只協助配置，不代替窗簾安裝與高處作業判斷。
 
 ## 窗簾束帶的好風水是拉力均勻、固定可檢查且窗扇不被布料卡住
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-towel-rack-feng-shui
   - bathroom-towel-ring-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 毛巾架風水常被簡化成「掛在某個方位比較旺」，但每天真正影響浴室穩定感的，是毛巾洗完手能否順手掛回、掛桿是否被水柱直接噴濕、底座與牆面能否擦乾、毛巾之間是否留有通風空間，以及取用時會不會撞到門片或淋浴者。風水裡的「清」與「順」可以轉譯為可清潔、可乾燥、固定可靠和動線不互相干擾，不能用方向或顏色取代維護。
 
-先量浴室長寬、淋浴區、洗手台、馬桶、門片開啟弧線、毛巾架長寬、地漏、排風口和可晾曬位置。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、擦乾、掛回與取下的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查毛巾架、門片和人體站位是否重疊；若需要比較浴室整體動線，可參考 [房間動線檢查](/zh/room-circulation-check/)。工具只協助量測與配置，不代替牆體固定、電氣或漏水判斷。
+先量浴室長寬、淋浴區、洗手台、馬桶、門片開啟弧線、毛巾架長寬、地漏、排風口和可晾曬位置。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、擦乾、掛回與取下的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查毛巾架、門片和人體站位是否重疊；若需要比較浴室整體動線，可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)。工具只協助量測與配置，不代替牆體固定、電氣或漏水判斷。
 
 ## 毛巾架的好風水是摸得到乾燥、看得到固定且拿取不必跨過濕區
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-room-feng-shui
   - laundry-washing-machine-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗衣精在洗衣房風水裡常被聯想到洗去雜亂、讓家務循環順利，也有人會問洗衣精放在洗衣機上方、靠近門口或藏在櫃內是否比較能「除穢」。但清潔用品真正要處理的是陰涼乾燥、包裝標示、漏液、兒童與寵物安全、量取動作、洗衣機震動和搬運濕衣的路徑。沒有任何洗衣精位置能保證去除負能量、健康或家運；本文把「洗淨順流」轉成可檢查的分類、通風與家人能持續執行的收納規則。
 
-先量洗衣房或陽台、洗衣精與補充包、洗衣機、洗衣籃、層架、地漏、排水管、門窗和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗衣機側邊、牆面層架與獨立櫃的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶身、開門、補充包和洗衣機上蓋不互相撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端濕衣、晾衣和清理漏液。工具只能協助規劃，不取代產品標示與化學品安全建議。
+先量洗衣房或陽台、洗衣精與補充包、洗衣機、洗衣籃、層架、地漏、排水管、門窗和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較洗衣機側邊、牆面層架與獨立櫃的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶身、開門、補充包和洗衣機上蓋不互相撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端濕衣、晾衣和清理漏液。工具只能協助規劃，不取代產品標示與化學品安全建議。
 
 ## 收納整齊不等於適合放在洗衣機上
 

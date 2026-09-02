@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-water-dispenser-feng-shui
   - kitchen-oven-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電子鍋在廚房風水裡常被當作穀物、熟食與家人聚餐的象徵，因此有人會問放在財位是否比較旺、鍋蓋朝哪裡才不散氣。但電子鍋實際上會發熱、排出蒸氣，也可能使用較高功率；位置要先解決專用插座、平坦檯面、開蓋高度、熱湯與盛飯路徑。若蒸氣長期吹向上櫃、插座靠近水槽、內鍋放不穩，或盛飯時必須端著熱食穿越狹窄走道，真正需要修正的是工作流程，不是方位。沒有電子鍋位置能保證財運、家人健康或煮飯結果；風水只能作為整理生活節奏的文化角度。
 
-先量電子鍋寬深高、鍋蓋完全開啟後的高度、蒸氣出口、電線長度、插座、洗槽、爐具和盛飯落點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電子鍋與備餐區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查鍋蓋、上櫃和檯面是否干涉；若餐桌不在廚房內，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端飯路徑。工具可以幫忙畫尺寸，不能代替產品說明、插座負載或燙傷判斷。
+先量電子鍋寬深高、鍋蓋完全開啟後的高度、蒸氣出口、電線長度、插座、洗槽、爐具和盛飯落點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電子鍋與備餐區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查鍋蓋、上櫃和檯面是否干涉；若餐桌不在廚房內，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端飯路徑。工具可以幫忙畫尺寸，不能代替產品說明、插座負載或燙傷判斷。
 
 ## 先分辨煮飯、保溫與盛飯任務
 

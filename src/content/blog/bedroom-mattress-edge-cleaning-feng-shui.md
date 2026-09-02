@@ -18,11 +18,11 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-mattress-side-cleaning-feng-shui
   - bedroom-mattress-protector-cleaning-feng-shui
-  - bedroom-bed-frame-edge-cleaning-feng-shui
+  - bedroom-bed-frame-cleaning-feng-shui
 howToName: "床墊邊緣、包邊縫線、保護套、床架摩擦與上下床動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +36,7 @@ howToSteps:
 
 床墊邊緣的風水問題常被問成「床沿破損會不會影響睡眠運勢」，但每天真正要處理的是床墊包邊是否卡著皮屑、汗痕和毛髮，縫線是否因床單拉扯而鬆開，保護套是否捲到床下，以及上下床時是否會踩到床架邊角。風水裡的「承托、安定」可以轉譯為床沿可看、污染可分流、床墊不被硬拉和起身路徑不被雜物切斷，不能把包邊外觀直接當成運勢或睡眠品質開關。
 
-先量臥室長寬、床墊長寬高、床架外框、包邊厚度、床頭櫃、床尾、牆面和主要通道。以 280 × 320 公分臥室為例，床的右側靠牆，左側是上下床路徑；若床墊邊緣貼著床架且沒有取放空間，擦拭、換床單和查看液體痕跡都容易拉扯包邊。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床邊站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床頭櫃，最後以 [房間動線檢查](/zh/room-circulation-check/)測試上下床。工具只協助配置，不代替床墊材質與清潔判斷。
+先量臥室長寬、床墊長寬高、床架外框、包邊厚度、床頭櫃、床尾、牆面和主要通道。以 280 × 320 公分臥室為例，床的右側靠牆，左側是上下床路徑；若床墊邊緣貼著床架且沒有取放空間，擦拭、換床單和查看液體痕跡都容易拉扯包邊。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床邊站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床頭櫃，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試上下床。工具只協助配置，不代替床墊材質與清潔判斷。
 
 ## 床墊邊緣的好風水是包邊可查、污漬可分辨且上下床不碰撞
 

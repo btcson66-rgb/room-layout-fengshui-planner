@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-hot-pot-feng-shui
   - kitchen-induction-cooker-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電烤盤在廚房風水裡常被聯想到火氣、分享和把家人聚到同一張桌子，因此有人會把它放在餐桌正中央，或把高溫烤面當成象徵旺氣的中心。但電烤盤有高溫表面、集油盤、電線、接地、散熱與油水飛濺條件，放置位置若只追求「大家都夾得到」，可能反而讓手臂交錯、孩子靠近和電線受壓。沒有任何電烤盤方位能保證財運、健康或聚餐順利；本文把共享火氣轉成可操作的熱區、夾取區與退後路線。
 
-先量電烤盤外框、集油盤、插頭、散熱孔、桌面、餐椅、廚房出口和兒童可能站立的位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較廚房備餐檯與餐桌兩種方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認集油盤取出不會撞櫃，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端菜與離桌。工具不能取代產品說明、電氣條件或照護判斷。
+先量電烤盤外框、集油盤、插頭、散熱孔、桌面、餐椅、廚房出口和兒童可能站立的位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較廚房備餐檯與餐桌兩種方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認集油盤取出不會撞櫃，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端菜與離桌。工具不能取代產品說明、電氣條件或照護判斷。
 
 ## 火元素的中心感，不等於把人都圍在熱源旁
 

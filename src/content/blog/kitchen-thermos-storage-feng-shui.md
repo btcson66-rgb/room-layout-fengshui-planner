@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-water-dispenser-feng-shui
   - kitchen-fridge-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 保溫瓶在廚房風水裡常被聯想到蓄水、聚氣、讓家人飲食有延續，也有人會問保溫瓶放在爐具旁、飲水機旁或廚房財位是否更能留住好運。但保溫瓶真正要處理的是瓶身與瓶蓋是否完整、熱飲是否會燙傷、內膽與密封圈能否拆洗、裝過的飲品是否適合長時間保存，以及取放時會不會碰到爐火、刀具或濕地。沒有任何保溫瓶方位能保證健康、財運或家庭和諧；本文把「留住水氣」轉成可檢查的容器、溫度與家務流程。
 
-先量廚房、保溫瓶外徑與高度、瓶蓋、櫥櫃深度、飲水機或熱水壺、洗水槽、瀝水區、插座、爐具和備餐動線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽旁、櫃內和備餐區的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶身、櫃門、瓶蓋拆洗和熱水設備不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試倒水、端餐、開櫃和清理漏水。工具只能協助配置，不取代容器標示、食品衛生或燙傷預防建議。
+先量廚房、保溫瓶外徑與高度、瓶蓋、櫥櫃深度、飲水機或熱水壺、洗水槽、瀝水區、插座、爐具和備餐動線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽旁、櫃內和備餐區的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瓶身、櫃門、瓶蓋拆洗和熱水設備不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試倒水、端餐、開櫃和清理漏水。工具只能協助配置，不取代容器標示、食品衛生或燙傷預防建議。
 
 ## 保溫瓶不是所有飲料都適合長時間放
 

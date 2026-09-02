@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-game-console-vent-cleaning-feng-shui
   - living-room-tv-console-back-cable-dust-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 投影機把客廳牆面變成觀影區，常被放在茶几、電視櫃、吊架或開放層架。鏡頭會沾到灰塵和指紋，濾網與散熱孔則可能吸入地毯纖維、寵物毛和油煙；投影機剛關機時仍有熱度，直接擦鏡頭或用易燃氣體除塵可能傷害設備。客廳風水談光影、視線與聚會，實務上要先讓鏡頭清潔可控、濾網不堵塞、主機通風且線材不穿越人流。
 
-先記錄投影機型號、鏡頭蓋、濾網位置、散熱孔、投影距離、牆面、茶几、電源線和座位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出投影光路與玩家／觀眾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鏡頭前方沒有裝飾物與桌邊碰撞；多人觀影時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試取遙控器、端飲料和走動。工具不能代替原廠光學、電氣或保固指引。
+先記錄投影機型號、鏡頭蓋、濾網位置、散熱孔、投影距離、牆面、茶几、電源線和座位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出投影光路與玩家／觀眾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鏡頭前方沒有裝飾物與桌邊碰撞；多人觀影時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試取遙控器、端飲料和走動。工具不能代替原廠光學、電氣或保固指引。
 
 ## 先分辨鏡頭灰塵、指紋與畫面問題
 

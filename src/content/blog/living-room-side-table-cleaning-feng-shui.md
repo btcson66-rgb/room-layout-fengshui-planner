@@ -17,7 +17,7 @@ keywords:
   - 客廳充電線動線
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-coffee-table-top-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳邊桌在風水裡常被聯想到陪伴、靠山與交流節點，但真正需要維護的是飲料水痕、灰塵、抽屜雜物、充電線、桌角、桌腳、承重和沙發起身動線。邊桌靠近坐席，使用頻率往往比外觀看起來更高；如果桌面堆滿遙控器和杯子，清潔時就難以看到水痕與刮傷。本文把「座旁有靠」轉成可觀察的清空、共享物品分區、材質清潔、承重與起身通行驗收，不把邊桌位置當成人緣、財運或運勢保證。
 
-先記錄邊桌長寬高、桌面材質、抽屜、桌腳、沙發、地毯、電視櫃、插座和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、充電和清潔路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認桌角不切入通道；桌面與沙發距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助動線，不能取代家具材質、承重和電氣判斷。
+先記錄邊桌長寬高、桌面材質、抽屜、桌腳、沙發、地毯、電視櫃、插座和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、充電和清潔路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認桌角不切入通道；桌面與沙發距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助動線，不能取代家具材質、承重和電氣判斷。
 
 ## 先分辨飲料水痕、灰塵、油膜與桌腳異常
 

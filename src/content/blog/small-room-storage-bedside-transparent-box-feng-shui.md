@@ -81,7 +81,7 @@ EPA 的室內空氣資料把灰塵、室內污染物與通風、清潔習慣放�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床邊箱體、開口、窗光和下床路線，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較透明箱完全拉出與開蓋外框；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放取物、換床單和清潔。若你在比較有蓋箱，可讀 [床邊有蓋收納箱](/zh/blog/small-room-storage-bedside-lid-box-feng-shui/)；若要先建立物品分類，可參考 [小房間收納分區](/zh/blog/small-room-storage-zones/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床邊箱體、開口、窗光和下床路線，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較透明箱完全拉出與開蓋外框；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、換床單和清潔。若你在比較有蓋箱，可讀 [床邊有蓋收納箱](/zh/blog/small-room-storage-bedside-lid-box-feng-shui/)；若要先建立物品分類，可參考 [小房間收納分區](/zh/blog/small-room-storage-zones/)。
 
 ### 參考資料
 

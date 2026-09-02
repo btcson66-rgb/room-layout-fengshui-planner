@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-wardrobe-lighting-feng-shui
   - under-bed-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床包、被套在臥室風水裡常被聯想到包覆、安定與睡眠氣場，有人會問放床下、放衣櫃上層或放在床頭哪個位置比較能聚好氣。但床品真正要處理的是貼身織品是否乾淨、洗後是否完全乾燥、待洗和乾淨物品會不會混在一起、收納時是否被壓潮，以及換床單時能不能安全搬動。沒有任何床包方位能保證睡眠、健康或感情；本文把「安穩」轉成床品狀態、換洗頻率與取放動線。
 
-先量床墊、床架、衣櫃、抽屜、床底高度、曬衣或烘乾位置與房門路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較衣櫃、床底和獨立床品櫃，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認被子收折後不頂住櫃門，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拆床、搬運、換床單和夜間起身。工具只能協助配置，不取代清洗標示、過敏處理或居家環境建議。
+先量床墊、床架、衣櫃、抽屜、床底高度、曬衣或烘乾位置與房門路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較衣櫃、床底和獨立床品櫃，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認被子收折後不頂住櫃門，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拆床、搬運、換床單和夜間起身。工具只能協助配置，不取代清洗標示、過敏處理或居家環境建議。
 
 ## 乾淨床品、待洗床品與待乾床品要有不同狀態
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-threshold-cleaning-feng-shui
   - entryway-door-threshold-seal-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關門檻轉角的風水問題常被問成「門口髒會不會把財氣擋在外面」，但每天真正要處理的是砂塵和鞋底泥是否卡在轉角，門檻密封膠是否裂開，雨天水痕是否沿門底進入室內，地墊和鞋櫃是否縮窄開門區，以及家人搬物或換鞋時是否互相堵住。風水裡的「納氣、界線」可以轉譯為門口污染有去處、水痕來源可追、門扇能順利掃開和進出路徑可測，不能把門檻污垢直接當成財運開關。
 
-先量玄關長寬、門扇寬度、門檻高差、轉角寬度、門底掃掠區、鞋櫃、地墊、傘桶和室內主要路徑。以 180 × 240 公分玄關為例，大門向內開，右側是鞋櫃，門檻內角只有一個人能站立；若清潔時把鞋子和工具放在門後，反而會讓門扇碰撞。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對鞋櫃，最後以 [房間動線檢查](/zh/room-circulation-check/)測試換鞋與搬物。工具只協助配置，不代替門框、防水和鎖具維修判斷。
+先量玄關長寬、門扇寬度、門檻高差、轉角寬度、門底掃掠區、鞋櫃、地墊、傘桶和室內主要路徑。以 180 × 240 公分玄關為例，大門向內開，右側是鞋櫃，門檻內角只有一個人能站立；若清潔時把鞋子和工具放在門後，反而會讓門扇碰撞。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對鞋櫃，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試換鞋與搬物。工具只協助配置，不代替門框、防水和鎖具維修判斷。
 
 ## 門檻轉角的好風水是砂塵可取、水痕可辨且門扇不碰撞
 

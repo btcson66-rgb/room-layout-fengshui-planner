@@ -17,7 +17,7 @@ keywords:
   - 喇叭音箱通風清潔
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-wall-fan-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 喇叭在客廳風水裡常被聯想到聲音、人緣和家庭交流，但真正需要維護的是網罩、音箱、單體、通風孔、電線、擴大機、電視櫃和人流。網罩積滿灰塵時，清潔若用濕布硬壓或把整個音箱沖水，可能把水和纖維推進單體；電線散在沙發與茶几之間，也讓共享空間不容易維持。本文把「聲氣流通」轉成可觀察的斷電、網罩材質、音箱通風、電線收納和聆聽動線，不把喇叭位置當成音質、健康或運勢承諾。
 
-先記錄喇叭型號、網罩、單體、反射孔、通風孔、電線、擴大機、電視櫃、沙發和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出喇叭與聆聽區，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認電線、清潔工具和端餐不互相干擾；喇叭尺寸與櫃體距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代產品說明與音響維修判斷。
+先記錄喇叭型號、網罩、單體、反射孔、通風孔、電線、擴大機、電視櫃、沙發和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出喇叭與聆聽區，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認電線、清潔工具和端餐不互相干擾；喇叭尺寸與櫃體距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代產品說明與音響維修判斷。
 
 ## 先分辨網罩灰塵、毛髮與聲音異常
 

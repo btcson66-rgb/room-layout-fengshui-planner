@@ -17,7 +17,7 @@ keywords:
   - 客廳電視櫃通行動線
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-tv-remote-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電視櫃底部在客廳風水裡常被聯想到聲光、家庭交流與電器收納，但真正需要維護的是電線、插座、灰塵、散熱、櫃腳、底板、設備重量與人流。線材纏在櫃腳附近，清潔時容易拉到插頭；設備塞滿櫃格，灰塵和熱氣不易查看；櫃腳鬆動時，也不應用更多器材壓住。本文把「聲光有序」轉成可觀察的斷電、除塵、線材分流、散熱與家具穩定驗收，不把電視櫃方位當成人緣、健康或運勢保證。
 
-先記錄電視櫃尺寸、櫃腳、底板、後方通風、電視、遊戲機、路由器、插座、牆面與沙發。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拔電、清潔與視聽路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認線材和櫃體不侵入客廳通道；設備與櫃格距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代電器說明、插座容量與家具安全判斷。
+先記錄電視櫃尺寸、櫃腳、底板、後方通風、電視、遊戲機、路由器、插座、牆面與沙發。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拔電、清潔與視聽路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認線材和櫃體不侵入客廳通道；設備與櫃格距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代電器說明、插座容量與家具安全判斷。
 
 ## 先分辨底塵、線材受拉、發熱與櫃體異常
 

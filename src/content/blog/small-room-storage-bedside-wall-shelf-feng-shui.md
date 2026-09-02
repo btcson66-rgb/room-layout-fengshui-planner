@@ -105,7 +105,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出壁掛收納、床邊與房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較突出和取物高度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放下床、清潔和搬物。若籃子取物是主題，可看 [床邊收納籃](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)；若掛放衣物是瓶頸，參考 [床邊掛鉤](/zh/blog/small-room-storage-bedside-hook-doorway-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出壁掛收納、床邊與房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較突出和取物高度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放下床、清潔和搬物。若籃子取物是主題，可看 [床邊收納籃](/zh/blog/small-room-storage-bedside-basket-reach-feng-shui/)；若掛放衣物是瓶頸，參考 [床邊掛鉤](/zh/blog/small-room-storage-bedside-hook-doorway-feng-shui/)。
 
 ### 參考資料
 

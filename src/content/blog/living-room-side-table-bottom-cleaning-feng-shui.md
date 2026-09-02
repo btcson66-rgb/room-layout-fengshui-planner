@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-side-table-cleaning-feng-shui
   - living-room-side-table-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 邊桌底部風水常被問成「沙發旁邊桌放哪裡才不擋財路」，但客廳每天真正要處理的是：桌底是否積著灰塵和寵物毛、腳墊是否磨平、底板有沒有受潮、桌面物品是否過重，以及家人起身或掃地時會不會撞到桌腳。風水裡的「穩」可以轉譯為桌體站得穩、底部可清、物品不掉落、沙發側能起身和通道不被切斷，不能用邊桌位置保證旺運或不絆倒。
 
-先量客廳長寬、邊桌寬深高、桌腳外緣、底板離地高度、沙發扶手、茶几、地毯、插座和主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、取遙控器與清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌面、扶手和桌腳不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查多人交會。工具只協助配置，不代替家具承重、固定或材質判斷。
+先量客廳長寬、邊桌寬深高、桌腳外緣、底板離地高度、沙發扶手、茶几、地毯、插座和主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出坐下、起身、取遙控器與清掃路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌面、扶手和桌腳不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查多人交會。工具只協助配置，不代替家具承重、固定或材質判斷。
 
 ## 邊桌底部的好風水是看得到灰塵、擦得到腳墊且起身不撞桌
 

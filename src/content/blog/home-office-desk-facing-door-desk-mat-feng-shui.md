@@ -93,7 +93,7 @@ OSHA 的工作站資料強調桌面、鍵盤、滑鼠和工作姿勢要依任務
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌墊、鍵盤、滑鼠、電話和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌墊與桌邊外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放接聽、起身、清潔和收桌。若筆電架改變桌深，可讀 [面向房門書桌筆電架](/zh/blog/home-office-desk-facing-door-laptop-stand-feng-shui/)；若筆記本需要固定位置，參考 [面向房門書桌筆記本](/zh/blog/home-office-desk-facing-door-notebook-position-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌墊、鍵盤、滑鼠、電話和房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌墊與桌邊外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放接聽、起身、清潔和收桌。若筆電架改變桌深，可讀 [面向房門書桌筆電架](/zh/blog/home-office-desk-facing-door-laptop-stand-feng-shui/)；若筆記本需要固定位置，參考 [面向房門書桌筆記本](/zh/blog/home-office-desk-facing-door-notebook-position-feng-shui/)。
 
 ### 參考資料
 

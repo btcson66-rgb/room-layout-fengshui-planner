@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/desk-placement-feng-shui/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-webcam-feng-shui
   - home-office-cable-management-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 耳機在居家辦公風水裡常被聯想到專注、隔開干擾與把注意力收回自己，有人會問耳機掛在書桌左側、右側或背靠實牆是否比較能提升工作運。但耳機實際會影響音量、配戴時間、耳朵休息、麥克風收音、充電、線材、衛生與家人是否知道使用者正在通話。沒有任何耳機位置能保證專注、升遷、效率或財運；較務實的配置是讓耳機容易拿、容易靜音、能定時休息，也不會成為桌邊或地面的障礙。
 
-先量書桌、螢幕、耳機外框、掛架、充電座、椅子後退範圍、門窗、插座和共享通道。用 [書桌方位檢查](/zh/desk-placement-feng-shui/)比較靠窗、靠牆與桌側位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛架、充電座與螢幕不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試離席、家人進出和線材不跨路。工具只能協助配置，不取代產品說明或聽力專業建議。
+先量書桌、螢幕、耳機外框、掛架、充電座、椅子後退範圍、門窗、插座和共享通道。用 [書桌方位檢查](/zh/desk-placement-feng-shui/)比較靠窗、靠牆與桌側位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛架、充電座與螢幕不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試離席、家人進出和線材不跨路。工具只能協助配置，不取代產品說明或聽力專業建議。
 
 ## 耳機選購與音量不能用風水口訣代替
 

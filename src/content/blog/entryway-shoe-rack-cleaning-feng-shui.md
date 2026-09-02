@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-shoe-cabinet-feng-shui
   - entryway-shoe-cabinet-shelf-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 鞋架風水常被問成「鞋子要不要朝內、鞋架放哪個方向」，但玄關每天更需要處理的是：鞋底泥沙是否被帶進屋內、雨鞋能不能先瀝乾、鞋架層板是否看得見並擦得到、鞋子是否壓住門片或換鞋凳、取鞋時是否要站在濕地上，以及回家後的外出物品是否有固定交接點。風水裡的「納氣」可以轉成入口乾淨、濕鞋隔離、鞋架通風和動線清楚，不能用朝向保證運勢。
 
-先量玄關長寬、門片開啟弧線、鞋架寬深高、換鞋凳、地墊、鞋子外伸範圍、雨具暫放區與室內主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、脫鞋、放鞋、取鞋和進入客廳的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查鞋架、門片和腳尖站位是否重疊；也可參考 [房間動線檢查](/zh/room-circulation-check/)找出家人交會位置。工具只協助配置，不代替防滑、固定或鞋材保養判斷。
+先量玄關長寬、門片開啟弧線、鞋架寬深高、換鞋凳、地墊、鞋子外伸範圍、雨具暫放區與室內主要走道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、脫鞋、放鞋、取鞋和進入客廳的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查鞋架、門片和腳尖站位是否重疊；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)找出家人交會位置。工具只協助配置，不代替防滑、固定或鞋材保養判斷。
 
 ## 鞋架的好風水是鞋底可清理、濕鞋有暫放區且不堵住大門
 

@@ -16,9 +16,8 @@ keywords:
   - 木質馬桶座圈保養
   - 浴室座圈乾燥
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-seat-hinge-cleaning-feng-shui
   - bathroom-toilet-tank-lid-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶座圈在風水裡容易被聯想到坐臥、承托與浴室界線，但真正需要維護的是塑膠或木質表面、座圈鉸鏈、緩降結構、固定螺絲、清潔劑殘留、鉸鏈積水和座圈晃動。把座圈擦亮，不代表鉸鏈乾燥；座圈不晃，也不代表清潔劑沒有侵蝕表面。本文把「承托穩定、濁氣有界」轉成可觀察的材質辨識、分區清潔、固定驗收、乾燥和家人交接，不把座圈顏色或朝向當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、馬桶座圈材質、座圈與馬桶蓋、鉸鏈、緩降件、固定螺絲、馬桶邊緣、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)安排清潔、開蓋和擦乾路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會堵住馬桶；查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代衛生產品標示、座圈維修或浴室安全判斷。
+先記錄浴室約 180 × 240 公分、馬桶座圈材質、座圈與馬桶蓋、鉸鏈、緩降件、固定螺絲、馬桶邊緣、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排清潔、開蓋和擦乾路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會堵住馬桶；查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代衛生產品標示、座圈維修或浴室安全判斷。
 
 ## 先分辨材質、污垢、清潔劑殘留與座圈鬆動
 

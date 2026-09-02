@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-cleaning-feng-shui
   - dining-room-table-underside-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐桌桌底框的風水問題常被問成「桌底有橫框會不會壓住家運」，但每天真正影響用餐的，通常是桌底框藏著油膜和飯粒、桌腳接點有沒有鬆、椅子推回是否撞到橫框，以及掃地工具能不能通過。風水裡的「承托」可以轉譯為桌面穩定、底框可查看、腳部有空間和清潔不必搬空整張桌子，不能把桌底框形狀當成財運或關係的判定。
 
-先量餐廳長寬、餐桌長寬高、桌底框離地高度、框體寬度、桌腳、椅子、餐邊櫃、門片和掃把頭。以 220 × 300 公分餐廳為例，桌底框可能不影響坐下，卻會卡住椅子後退或掃地機器人的高度。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出腳部和清掃路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對椅子與橫框，最後以 [房間動線檢查](/zh/room-circulation-check/)測試端菜。工具只協助配置，不代替家具固定、承重與防碰撞判斷。
+先量餐廳長寬、餐桌長寬高、桌底框離地高度、框體寬度、桌腳、椅子、餐邊櫃、門片和掃把頭。以 220 × 300 公分餐廳為例，桌底框可能不影響坐下，卻會卡住椅子後退或掃地機器人的高度。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出腳部和清掃路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對椅子與橫框，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試端菜。工具只協助配置，不代替家具固定、承重與防碰撞判斷。
 
 ## 桌底框的好風水是污垢看得見、桌腳穩定且腳步不被迫閃躲
 

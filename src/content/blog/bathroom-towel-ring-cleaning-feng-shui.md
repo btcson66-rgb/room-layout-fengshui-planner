@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-towel-rack-feng-shui
   - bathroom-washbasin-faucet-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室毛巾環清潔風水和長桿毛巾架不同。毛巾環的內圈、底座、固定螺絲與牆面接縫面積小，卻常集中皂垢、水垢、毛髮、皮脂、清潔劑泡沫和濕毛巾滴水。環體若靠近洗手台，洗手時的水花會反覆打濕底座；若靠近淋浴區，蒸氣和水滴可能讓金屬表面失去光澤或出現鏽斑。使用者也可能在濕地上伸手拉毛巾，使鬆動的毛巾環承受突然的側向力量。這些問題可以透過清潔、固定、乾燥和實際動線來檢查，不能用位置或顏色保證健康與運勢。
 
-先量浴室長寬、淋浴區、洗手台、馬桶、門片開啟弧線、毛巾環外伸和人站立的位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出乾毛巾、濕毛巾、洗澡後擦身和換洗衣物的路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認環體與檯面、鏡面、門框沒有互撞；浴室狹窄時可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試進出、擦地和取巾。工具只協助平面比較，不能確認牆內管線、防水層、膠材壽命或固定強度。
+先量浴室長寬、淋浴區、洗手台、馬桶、門片開啟弧線、毛巾環外伸和人站立的位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出乾毛巾、濕毛巾、洗澡後擦身和換洗衣物的路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認環體與檯面、鏡面、門框沒有互撞；浴室狹窄時可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試進出、擦地和取巾。工具只協助平面比較，不能確認牆內管線、防水層、膠材壽命或固定強度。
 
 ## 先辨認皂垢、水垢與鏽蝕，不要一律用力刷
 

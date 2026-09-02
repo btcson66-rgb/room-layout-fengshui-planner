@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-curtain-feng-shui
   - bathroom-shower-curtain-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室浴簾桿清潔風水常被問成「浴簾拉開或拉起來會不會擋住氣」，但浴簾桿每天面對熱蒸氣、洗澡水、皂垢、洗髮精、手部拉扯和浴簾本身的重量。桿面有水痕不一定是髒污，桿端黑點不一定能用漂白水處理，伸縮桿滑落也不代表只要再旋緊即可。真正要先確認的是浴簾能否完整分隔水花、桿體是否穩定、簾子能否攤開乾燥，以及人進出時不會被濕布和積水絆到。風水象徵可以用來整理界線，但不能保證防霉、健康或運勢。
 
-先量浴室長寬、淋浴區、浴簾桿兩端、浴簾寬度與落水範圍、馬桶、洗手台、門片和排風口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉簾前後的乾濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桿端、掛環和浴簾下擺不會撞到燈具、架子或門片；若浴室只有一條窄通道，可用 [房間通行寬度檢查](/zh/room-circulation-check/)比較洗澡、擦地和進出的路線。工具只能協助平面規劃，不能判定牆面防水、固定承重或電器安全。
+先量浴室長寬、淋浴區、浴簾桿兩端、浴簾寬度與落水範圍、馬桶、洗手台、門片和排風口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉簾前後的乾濕區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桿端、掛環和浴簾下擺不會撞到燈具、架子或門片；若浴室只有一條窄通道，可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較洗澡、擦地和進出的路線。工具只能協助平面規劃，不能判定牆面防水、固定承重或電器安全。
 
 ## 先分辨浴簾桿上的皂垢、水痕與鏽蝕
 

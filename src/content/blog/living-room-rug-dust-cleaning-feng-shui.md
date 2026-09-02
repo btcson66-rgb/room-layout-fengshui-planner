@@ -17,7 +17,7 @@ keywords:
   - 客廳地毯怎麼擺
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-air-purifier-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 地毯在客廳風水裡常被聯想到聚氣、聚足和柔化動線，但它也會承接鞋底灰塵、食物碎屑、寵物毛、皮屑與潮氣。用乾掃把快速掃過，可能只是讓細小顆粒重新進入空氣；地毯底部長期貼地，則可能忽略潮味、滑動和家具壓痕。本文把「客廳聚氣有界」轉成可觀察的吸塵順序、材質限制、通風、止滑和人流管理，不把地毯位置當成空氣、健康或運勢保證。
 
-先記錄地毯尺寸、材質、底墊、沙發、茶几、門口、窗戶、寵物活動區、插座和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出吸塵、搬動家具和端餐路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認地毯邊緣不會堵住出入口；家具重時可用 [家具尺寸檢查](/zh/furniture-fit-checker/)估算是否需要兩人移動。工具不能取代地毯洗標、吸塵器說明或室內環境專業。
+先記錄地毯尺寸、材質、底墊、沙發、茶几、門口、窗戶、寵物活動區、插座和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出吸塵、搬動家具和端餐路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認地毯邊緣不會堵住出入口；家具重時可用 [家具尺寸檢查](/zh/furniture-fit-checker/)估算是否需要兩人移動。工具不能取代地毯洗標、吸塵器說明或室內環境專業。
 
 ## 先分辨表面灰塵、碎屑與潮味
 

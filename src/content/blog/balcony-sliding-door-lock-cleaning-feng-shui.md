@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-sliding-door-roller-cleaning-feng-shui
   - balcony-window-lock-handle-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台拉門鎖具的風水問題常被說成「門鎖不順會把家中氣留不住」，但真正需要處理的是鎖舌卡灰、把手鬆動、滑門對位偏移、門框受潮，或晾衣和植栽把門前站位堵住。風水裡的「出入有界」可以轉譯為門片能順利滑動、鎖具能確認狀態、通風時可控制以及陽台進出不必硬拉，不能把鎖具是否順暢直接當成財運或安全結果。
 
-先量陽台長寬、拉門寬高、門框、鎖舌、把手、門檻、紗門、曬衣架和主要站位。以 180 × 300 公分陽台為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、晾衣和搬物路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與門片，最後用 [房間動線檢查](/zh/room-circulation-check/)測試室內外交會。工具只協助配置，不代替門窗五金維修。
+先量陽台長寬、拉門寬高、門框、鎖舌、把手、門檻、紗門、曬衣架和主要站位。以 180 × 300 公分陽台為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、晾衣和搬物路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對櫃體與門片，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試室內外交會。工具只協助配置，不代替門窗五金維修。
 
 ## 拉門鎖具的好風水是鎖舌可辨、把手穩定且門片不靠硬推
 

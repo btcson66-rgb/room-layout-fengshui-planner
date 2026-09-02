@@ -18,10 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-ceiling-light-feng-shui
-  - bedroom-ceiling-fan-light-cleaning-feng-shui
+  - bedroom-ceiling-fan-cleaning-feng-shui
   - bedroom-floor-lamp-cleaning-feng-shui
 howToName: "臥室吸頂燈燈罩、積塵、LED 散熱、卡扣與床邊照明檢查"
 howToTotalTime: "PT30M"
@@ -36,7 +36,7 @@ howToSteps:
 
 臥室吸頂燈燈罩的風水問題常被說成「燈光壓床會影響睡眠」，但實際要處理的是燈罩積塵造成光線不均、LED 或燈泡散熱受阻、卡扣鬆動、燈具閃爍，或清潔梯具和床邊家具讓夜間動線變窄。風水裡的「光明有度」可以轉譯為照明可調、燈罩能檢查、散熱不被遮住和床邊不留絆倒物，不能把燈罩狀態直接當成睡眠或健康結果。
 
-先量臥室長寬、吸頂燈直徑或長寬、燈罩離床高度、床頭、衣櫃、開關和夜間通行路徑。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出清潔站位和床邊動線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與燈具位置，最後以 [房間動線檢查](/zh/room-circulation-check/)測試關燈後的離床路徑。工具只協助配置，不代替電氣與高處作業。
+先量臥室長寬、吸頂燈直徑或長寬、燈罩離床高度、床頭、衣櫃、開關和夜間通行路徑。以 300 × 360 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出清潔站位和床邊動線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與燈具位置，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試關燈後的離床路徑。工具只協助配置，不代替電氣與高處作業。
 
 ## 吸頂燈燈罩的好風水是光線均勻、燈具可檢查且散熱不被包住
 

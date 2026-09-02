@@ -87,7 +87,7 @@ EPA 的室內空氣品質指南提醒控制污染源、通風與保持區域乾�
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫桌、窗與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深和螢幕外框，最後以 [房間動線檢查](/zh/room-circulation-check/) 回看椅子與桌後通道。若你在意椅背靠牆，可參考 [書桌椅背靠牆與後退空間](/zh/blog/home-office-desk-chair-back-wall-clearance-feng-shui/)；若主要問題是窗光，參考 [書桌靠窗與窗簾狀態](/zh/blog/home-office-desk-window-curtain-clearance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫桌、窗與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌深和螢幕外框，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回看椅子與桌後通道。若你在意椅背靠牆，可參考 [書桌椅背靠牆與後退空間](/zh/blog/home-office-desk-chair-back-wall-clearance-feng-shui/)；若主要問題是窗光，參考 [書桌靠窗與窗簾狀態](/zh/blog/home-office-desk-window-curtain-clearance-feng-shui/)。
 
 ### 參考資料
 

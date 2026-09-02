@@ -17,7 +17,7 @@ keywords:
   - 展示櫃開門通道
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-sideboard-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳展示櫃玻璃門在風水裡常被聯想到展示、明亮與收藏，但真正需要維護的是指紋、水痕、玻璃邊角、門鉸鏈、層板承重、展示品重心、櫃體固定和開門通道。玻璃門反光漂亮，不代表沒有裂痕或手印；展示品排列整齊，也不代表櫃體穩定。本文把「明堂清楚」轉成可觀察的移除物品、玻璃清潔、材質乾燥、固定、承重和通行驗收，不把玻璃反射或展示方向當成人緣、財運或運勢保證。
 
-先記錄展示櫃寬深高、玻璃種類、門片方向、鉸鏈、磁吸、層板、展示品重量、底座、牆面、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取物和清潔路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認玻璃門不切入走道；櫃體與展示品尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助配置，不取代玻璃、承重與家具固定判斷。
+先記錄展示櫃寬深高、玻璃種類、門片方向、鉸鏈、磁吸、層板、展示品重量、底座、牆面、沙發和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取物和清潔路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認玻璃門不切入走道；櫃體與展示品尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具只能協助配置，不取代玻璃、承重與家具固定判斷。
 
 ## 先分辨指紋、水痕、灰塵與玻璃或鉸鏈異常
 

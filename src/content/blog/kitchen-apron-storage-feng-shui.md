@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-knife-storage-feng-shui
   - kitchen-sponge-cloth-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 圍裙在廚房風水裡常被聯想到把外界雜亂隔開、守住灶台與一家人的飲食，有人會問圍裙掛在爐台左邊是否比較聚財，或紅色圍裙能不能讓火氣更旺。更實際的問題是：這條圍裙剛接觸過生肉，還是只拿來端熟食？是否有油污、水氣、清潔劑或寵物毛？掛勾會不會靠近爐火、刀具和熱鍋？穿脫時是否擋住洗手、冰箱或出入口？沒有任何顏色或方位能替代食品衛生、熱源距離和清洗乾燥；本文把「灶台有序」轉成用途分類、明確掛點和可觀察的烹調流程。
 
-先量廚房長寬、流理台、爐台、水槽、冰箱、掛勾、垃圾桶、門扇與主要工作區，並記錄圍裙展開、掛起和清洗後晾乾的空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽旁、冰箱側邊和廚房入口的掛放位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛勾、圍裙和櫃門不會互相干涉，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試洗手、取刀、端鍋、開冰箱與兩人交會。工具只協助配置，不取代食品衛生規範、產品洗滌標示或消防判斷。
+先量廚房長寬、流理台、爐台、水槽、冰箱、掛勾、垃圾桶、門扇與主要工作區，並記錄圍裙展開、掛起和清洗後晾乾的空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽旁、冰箱側邊和廚房入口的掛放位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛勾、圍裙和櫃門不會互相干涉，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試洗手、取刀、端鍋、開冰箱與兩人交會。工具只協助配置，不取代食品衛生規範、產品洗滌標示或消防判斷。
 
 ## 先把圍裙用途和污染狀態說清楚
 

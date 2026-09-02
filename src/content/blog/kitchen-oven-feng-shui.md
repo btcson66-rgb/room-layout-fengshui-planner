@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-range-hood-feng-shui
   - kitchen-microwave-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電烤箱在廚房風水裡常被歸入火，於是有人問「放哪個方位才旺」「能不能和水槽相對」。但電烤箱是高功率、會產生高溫與熱氣的家電，位置首先要解決插座、散熱、烤門、熱烤盤、油污和清潔。若它放在不穩的推車上、緊貼牆面、被抹布覆蓋，或取烤盤時必須越過爐火，真正的風險不是火位吉凶。沒有烤箱位置能保證財運或烘焙成功；風水象徵可以作為整理角度，實際決策仍要回到設備說明與居家安全。
 
-先量電烤箱寬深高、烤門完全打開後的前方範圍、檯面承重、插座、電線、爐具、洗槽與耐熱暫放區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較烤箱和主要備餐區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、電線和檯面不互撞；廚房狹窄時再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端出烤盤後能否轉身。工具不會替你判斷商品檢驗標識、插座負載或高溫燙傷風險。
+先量電烤箱寬深高、烤門完全打開後的前方範圍、檯面承重、插座、電線、爐具、洗槽與耐熱暫放區。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較烤箱和主要備餐區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、電線和檯面不互撞；廚房狹窄時再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端出烤盤後能否轉身。工具不會替你判斷商品檢驗標識、插座負載或高溫燙傷風險。
 
 ## 先分辨預熱、烘烤與取盤任務
 

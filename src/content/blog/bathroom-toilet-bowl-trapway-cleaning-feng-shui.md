@@ -16,9 +16,8 @@ keywords:
   - 馬桶 trapway 異味回流
   - 浴室排水動線
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-rim-hole-cleaning-feng-shui
   - bathroom-toilet-tank-overflow-tube-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶存水彎在風水裡容易被聯想到留水、排濁與水路轉折，但真正需要維護的是彎管水垢、排水變慢、異味、回流、異物、沖水閥和陶瓷狀態。馬桶水面看似正常，不代表內部彎管沒有沉積；沖水一次能排掉，也不代表連續使用不會回堵。本文把「水路有界、濁物不回流」轉成可觀察的水位記錄、清潔範圍、沖水驗收、停用交接和浴室動線，不把存水彎形狀當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、馬桶型式、存水彎入口與出口、內緣出水孔、水箱、沖水閥、供水閥、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)畫出沖水、查看和關水路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認刷具和清潔用品不會堵住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代排水或衛浴維修判斷。
+先記錄浴室約 180 × 240 公分、馬桶型式、存水彎入口與出口、內緣出水孔、水箱、沖水閥、供水閥、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出沖水、查看和關水路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認刷具和清潔用品不會堵住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代排水或衛浴維修判斷。
 
 ## 先分辨彎管水垢、排水變慢、異味與回流
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - desk-window-lighting
   - desk-facing-door-layout
@@ -36,7 +36,7 @@ howToSteps:
 
 檯燈在書桌風水裡常被連結到文昌、專注與「左青龍右白虎」，但真正每天影響使用者的，是光線是否照到紙面、手部會不會投影、螢幕是否反光、燈具會不會碰到書本，以及電線是否跨過腿部動線。檯燈太亮可能讓螢幕和桌面反差過大，太暗則讓人靠近桌面；燈具不穩或插頭受壓也不是靠方位能解決。沒有檯燈方向能保證考試、工作效率或財運，應先把照明、坐姿和用電條件做成可以觀察的安排。
 
-先量桌面寬深、椅子後退距離、螢幕位置、檯燈底座與燈頭旋轉範圍、插座和電線落點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較書桌、窗戶與門，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈座不會撞螢幕或書本；若工作區靠近床或主要通道，再用 [房間通行寬度檢查](/zh/room-circulation-check/)看起身時腳不會勾到電線。工具只能協助配置，不能代替檯燈商品安全檢驗或視力專業建議。
+先量桌面寬深、椅子後退距離、螢幕位置、檯燈底座與燈頭旋轉範圍、插座和電線落點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較書桌、窗戶與門，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈座不會撞螢幕或書本；若工作區靠近床或主要通道，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)看起身時腳不會勾到電線。工具只能協助配置，不能代替檯燈商品安全檢驗或視力專業建議。
 
 ## 先分辨閱讀、螢幕與手作照明
 

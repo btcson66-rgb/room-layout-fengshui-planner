@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-microwave-turntable-cleaning-feng-shui
   - kitchen-microwave-door-seal-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 微波爐轉盤滾輪環在風水語境裡容易被說成「圓轉就能聚氣」，但日常真正需要處理的是滾輪下方卡著飯粒、糖漿或油膜，轉盤沒有坐回定位，滾輪環在爐腔底部刮擦，或取熱食時必須跨過水槽和刀具。風水裡的「流動」可以轉譯為轉盤能平穩轉動、食物容器不偏移、清潔後保持乾燥，不能把轉得順直接當成財運或受熱結果。
 
-先量廚房長寬、微波爐外框、門片開啟距離、轉盤直徑、滾輪環位置、插座、熱食暫放區和主要站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取盤、放置隔熱手套和離開熱區的路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)核對檯面與上櫃，最後用 [房間動線檢查](/zh/room-circulation-check/)測試端熱食時是否與備餐者交會。工具只協助配置，不代替微波爐說明與高溫安全。
+先量廚房長寬、微波爐外框、門片開啟距離、轉盤直徑、滾輪環位置、插座、熱食暫放區和主要站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取盤、放置隔熱手套和離開熱區的路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)核對檯面與上櫃，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試端熱食時是否與備餐者交會。工具只協助配置，不代替微波爐說明與高溫安全。
 
 ## 滾輪環的好風水是碎屑可見、轉盤平穩且熱食有安全暫放點
 

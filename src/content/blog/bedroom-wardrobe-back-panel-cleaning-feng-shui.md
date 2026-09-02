@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-wardrobe-shelf-liner-cleaning-feng-shui
   - bedroom-mattress-ventilation-dehumidifying-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 臥室衣櫃背板清潔風水常被說成「櫃後要留氣，衣物才不受阻」，但背板真正容易藏的是灰塵、蜘蛛網、蟲屑、牆面結露和潮味。背板鼓起可能是板材吸濕、牆面滲水或櫃體受力，衣服異味也可能來自衣物沒有乾透、櫃內密閉或牆角發霉，不是只把櫃子移開就能解決。風水可以作為家具與牆面關係的整理語言，但不能保證衣物乾燥、健康或運勢。
 
-先量臥室長寬、衣櫃外框、背板位置、櫃體深度、牆面、窗戶、冷氣、床架和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出衣櫃與牆面、床側的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和抽屜開啟後不會撞床；若背板靠近窄走道，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)評估清潔、換衣和家具移動。工具只能協助平面比較，不能判定櫃體承重、牆面防水或板材安全。
+先量臥室長寬、衣櫃外框、背板位置、櫃體深度、牆面、窗戶、冷氣、床架和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出衣櫃與牆面、床側的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和抽屜開啟後不會撞床；若背板靠近窄走道，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)評估清潔、換衣和家具移動。工具只能協助平面比較，不能判定櫃體承重、牆面防水或板材安全。
 
 ## 先分辨背板灰塵、蜘蛛網、霉斑與牆面水痕
 

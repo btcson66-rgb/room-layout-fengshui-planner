@@ -99,7 +99,7 @@ OSHA 的工作站資料建議常用物品放在適合的工作區，並依任務
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出文具盒、桌角、螢幕和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較收納外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放取物、進門和離席。若紙張也需要分類，可讀 [文件托盤可見性](/zh/blog/home-office-desk-facing-door-document-tray-privacy-feng-shui/)；若設備線材干擾，參考 [耳機線與離席](/zh/blog/home-office-desk-facing-door-headset-cable-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出文具盒、桌角、螢幕和房門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較收納外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、進門和離席。若紙張也需要分類，可讀 [文件托盤可見性](/zh/blog/home-office-desk-facing-door-document-tray-privacy-feng-shui/)；若設備線材干擾，參考 [耳機線與離席](/zh/blog/home-office-desk-facing-door-headset-cable-feng-shui/)。
 
 ### 參考資料
 

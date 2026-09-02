@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-water-dispenser-cleaning-feng-shui
   - kitchen-refrigerator-spill-shelf-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 冰箱蔬果抽屜容易留下菜葉、泥沙、果汁、包裝水珠和食材滴漏；抽屜底部積液、滑軌卡住、玻璃蓋有油膜或濕度控制沒有按型號操作，都會讓清潔後仍反覆出現異味與水痕。廚房風水常把冰箱視為食物收納和日常秩序的一部分，但可驗收的內容是抽屜能否順暢取出、食材是否有遮蓋、液體是否可追蹤，以及開門時是否擋住備餐路徑，不能把蔬果狀態直接等同財運。
 
-先記錄冰箱品牌、型號、抽屜名稱、玻璃蓋、滑軌、濕度控制、冷藏室門片和廚房工作檯位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示開門和抽屜拉出範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱與檯面距離，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)確認取菜時不會讓人站在門片或濕地旁。
+先記錄冰箱品牌、型號、抽屜名稱、玻璃蓋、滑軌、濕度控制、冷藏室門片和廚房工作檯位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示開門和抽屜拉出範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對冰箱與檯面距離，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認取菜時不會讓人站在門片或濕地旁。
 
 ## 抽屜底部、滑軌、玻璃蓋與濕度控制要分開
 

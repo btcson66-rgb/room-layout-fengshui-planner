@@ -81,7 +81,7 @@ EPA 的室內空氣品質指南把清潔與日常管理放在一起看；若補�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出每日用品、備品箱、補貨站和暫放區，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載與開口外框；最後透過 [房間動線檢查](/zh/room-circulation-check/) 回放取物、補貨、換床單和清潔。若需要更清楚的分類，可讀 [床邊收納標籤](/zh/blog/small-room-storage-bedside-label-system-feng-shui/)；若低頻物品要移出床邊，參考 [床下換季衣物收納](/zh/blog/small-room-storage-bedside-underbed-seasonal-clothes-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出每日用品、備品箱、補貨站和暫放區，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較滿載與開口外框；最後透過 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放取物、補貨、換床單和清潔。若需要更清楚的分類，可讀 [床邊收納標籤](/zh/blog/small-room-storage-bedside-label-system-feng-shui/)；若低頻物品要移出床邊，參考 [床下換季衣物收納](/zh/blog/small-room-storage-bedside-underbed-seasonal-clothes-feng-shui/)。
 
 ### 參考資料
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-door-bottom-seal-cleaning-feng-shui
   - bathroom-shower-door-track-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 淋浴門底部止水條在風水語境裡常被說成「把水留在浴室就能守財」，但實際要處理的是透明膠條積著皂垢、刮水片硬化、玻璃門底間隙不均、門片沒有壓到止水條，或洗澡後水已經流到門外。風水裡的「水有界」可以轉譯為水能回到排水區、門片能正常閉合、膠條可檢查和地面不妨礙通行，不能把止水條狀態直接當成財運或防滑結果。
 
-先量浴室長寬、淋浴門寬高、玻璃厚度、底部間隙、止水條、門檻、地漏、洗手台、馬桶、毛巾和開門掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、擦乾、淋浴和離開路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對清潔容器與門片，最後以 [房間動線檢查](/zh/room-circulation-check/)看濕地面上的退讓。工具只協助配置，不代替玻璃門、止水件和防滑安全判斷。
+先量浴室長寬、淋浴門寬高、玻璃厚度、底部間隙、止水條、門檻、地漏、洗手台、馬桶、毛巾和開門掃掠區。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、擦乾、淋浴和離開路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對清潔容器與門片，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看濕地面上的退讓。工具只協助配置，不代替玻璃門、止水件和防滑安全判斷。
 
 ## 止水條的好風水是水痕可追、膠條完整且門片不需要硬推
 

@@ -18,9 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - bedroom-feng-shui-layout
+  - bedroom-rug-feng-shui
   - bedroom-mattress-side-seam-cleaning-feng-shui
   - under-bed-storage-feng-shui
 howToName: "床架排骨條清潔、支撐與臥室動線檢查"
@@ -37,7 +37,7 @@ howToSteps:
 
 臥室床架排骨條清潔風水常被說成「床下要通風，睡氣才不受阻」，但排骨條實際承受床墊重量、翻身摩擦、皮屑、灰塵、濕氣和床架位移。木條吱吱作響可能是接點摩擦、螺絲鬆動或支撐不均，霉味也可能來自床墊底部、牆角結露或地面潮氣，不是單用「床氣不穩」就能解釋。風水可作為臥室整理的入口，但不能保證睡眠、骨骼或健康結果。
 
-先量臥室長寬、床架外框、排骨條間距、床墊厚度、床邊走道、窗戶、冷氣和插座。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床架與牆面的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床墊不會超出支撐範圍；若床側狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試換床單、清潔、起身和夜間取物。工具只能協助平面比較，不能判定床架承重、材料劣化或結構安全。
+先量臥室長寬、床架外框、排骨條間距、床墊厚度、床邊走道、窗戶、冷氣和插座。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出床架與牆面的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認床墊不會超出支撐範圍；若床側狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試換床單、清潔、起身和夜間取物。工具只能協助平面比較，不能判定床架承重、材料劣化或結構安全。
 
 ## 先分辨排骨條灰塵、皮屑、潮氣與霉味
 

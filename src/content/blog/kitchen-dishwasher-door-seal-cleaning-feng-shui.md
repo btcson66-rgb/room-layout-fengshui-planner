@@ -18,11 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-dishwasher-cleaning-feng-shui
   - kitchen-dishwasher-filter-cleaning-feng-shui
-  - kitchen-dishwasher-door-cleaning-feng-shui
 howToName: "洗碗機門封條、門槽、餐渣、水平、漏水與開門取碗動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +35,7 @@ howToSteps:
 
 洗碗機門封條的風水問題常被問成「水火設備放一起會不會破財」，但每天真正要處理的是門封條是否卡著油垢和餐渣、門槽是否有異物、門片能否平整關閉、洗程後門前是否有水痕，以及開門取碗會不會切斷備餐通道。風水裡的「藏水」可以轉譯為密封狀態可看見、漏水可定位、設備能乾燥和取碗路徑清楚，不能把洗碗機位置當成洗淨效果或健康保證。
 
-先量廚房長寬、洗碗機寬深、門片開啟深度、門封條、櫃體、地面、排水、垃圾桶和站位。以 240 × 300 公分廚房為例，洗碗機門完全放下後可能擋住水槽與備餐檯之間的路；清潔門封條時若只站在正面，也可能漏掉側角和下緣。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門和取碗路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對門片，最後用 [房間動線檢查](/zh/room-circulation-check/)測試兩人備餐。工具只協助配置，不代替電氣、給排水和設備維修判斷。
+先量廚房長寬、洗碗機寬深、門片開啟深度、門封條、櫃體、地面、排水、垃圾桶和站位。以 240 × 300 公分廚房為例，洗碗機門完全放下後可能擋住水槽與備餐檯之間的路；清潔門封條時若只站在正面，也可能漏掉側角和下緣。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門和取碗路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對門片，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試兩人備餐。工具只協助配置，不代替電氣、給排水和設備維修判斷。
 
 ## 洗碗機門封條的好風水是密封面可清、漏點可追且開門不堵住廚房
 

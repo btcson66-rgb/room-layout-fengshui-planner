@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-column-feng-shui
   - living-room-bookshelf-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 客廳掛畫常被問「山水畫應該掛哪個方向」「畫中水流向屋內才聚財嗎」「沙發上方掛畫會不會壓人」。畫面的題材和寓意可以是個人文化偏好，但掛畫同時是一件固定在牆面的物品，會受到畫框重量、掛鉤承重、牆面材質、地震、沙發視線、反光、灰塵和清潔動作影響。沒有一幅畫能保證財運、健康或家庭關係；先確認它不會掉落、擋視線、造成眩光，再討論故事和色彩。
 
-規劃前量牆面、沙發靠背、電視櫃、窗戶、燈具、插座和主要走道，把畫框外框、掛件位置與下方家具標出。可使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較畫框和家具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認外框、清潔空間和搬動路徑；若掛畫靠近入口或狹窄走道，可搭配 [房間通行寬度檢查](/zh/room-circulation-check/)看人是否會撞到。工具不能驗證牆體、掛鉤或安裝工程的實際承重。
+規劃前量牆面、沙發靠背、電視櫃、窗戶、燈具、插座和主要走道，把畫框外框、掛件位置與下方家具標出。可使用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較畫框和家具，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認外框、清潔空間和搬動路徑；若掛畫靠近入口或狹窄走道，可搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)看人是否會撞到。工具不能驗證牆體、掛鉤或安裝工程的實際承重。
 
 ## 先區分畫面喜好和牆面安全
 

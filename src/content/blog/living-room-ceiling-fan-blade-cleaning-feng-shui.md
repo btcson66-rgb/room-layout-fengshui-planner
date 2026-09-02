@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-window-cleaning-feng-shui
   - living-room-ceiling-light-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳吊扇葉片清潔風水常被說成「風要順，家運才流動」，但吊扇葉片真正會累積的是灰塵、棉絮、油膜、飛蟲和潮氣。轉動時搖晃可能來自葉片髒污不均、螺絲鬆動、吊桿或安裝問題；異音和發熱也不能用「氣場混亂」帶過。風水可以用來討論通風與空間感，但不能保證空氣品質、降溫、用電或運勢。
 
-先量客廳長寬、天花板高度、吊扇葉片直徑、沙發、茶几、電視、吊燈和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出旋轉範圍與家具位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認葉片和吊燈、櫃體沒有干涉；若扇下是家人常走路線，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)比較氣流、陰影與清潔站位。工具只能協助配置比較，不能判定吊扇固定、電路或高處作業安全。
+先量客廳長寬、天花板高度、吊扇葉片直徑、沙發、茶几、電視、吊燈和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出旋轉範圍與家具位置，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認葉片和吊燈、櫃體沒有干涉；若扇下是家人常走路線，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較氣流、陰影與清潔站位。工具只能協助配置比較，不能判定吊扇固定、電路或高處作業安全。
 
 ## 先分辨葉片灰塵、油膜、飛蟲與失衡
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-ice-dispenser-chute-cleaning-feng-shui
   - kitchen-refrigerator-door-gasket-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 冰箱飲水機可能包含門外出水嘴、按壓桿或感應區、內置水箱、閥件、濾芯、供水管和接水盤；不同型號未必全部具備。出水嘴有水垢、按壓桿髒、內置水箱有沉積、閥件密封圈沒有裝好，和濾芯堵塞、供水壓力不足是不同問題。廚房風水可以把飲水路徑轉成取水、擦乾、補水和備餐動線的檢查，但不能由水流快慢推定飲水品質、財運或健康。
 
-先記錄品牌、型號、是否接自來水、是否有內置水箱和濾芯，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出冰箱門片、杯子、檯面和水槽位置。用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查推車、垃圾桶和檯面物品是否妨礙開門取水，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認取水時不會堵住備餐路線。工具不能替代飲水機手冊或水質判斷。
+先記錄品牌、型號、是否接自來水、是否有內置水箱和濾芯，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出冰箱門片、杯子、檯面和水槽位置。用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查推車、垃圾桶和檯面物品是否妨礙開門取水，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認取水時不會堵住備餐路線。工具不能替代飲水機手冊或水質判斷。
 
 ## 出水嘴、按壓桿、水箱與濾芯的邊界
 

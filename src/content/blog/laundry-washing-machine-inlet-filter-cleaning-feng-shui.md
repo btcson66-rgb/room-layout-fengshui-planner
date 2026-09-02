@@ -16,9 +16,8 @@ keywords:
   - 洗衣機進水軟管漏水檢查
   - 洗衣區水流動線
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-inlet-hose-feng-shui
   - laundry-washing-machine-detergent-drawer-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 洗衣機進水濾網在風水裡容易被聯想到水流、更新與衣物去舊，但真正需要維護的是水垢、砂粒、進水慢、軟管彎折、濾網破損、接頭漏水和洗衣通道。濾網小而藏在軟管或進水閥內，常被忽略；進水變慢也不一定只是濾網堵塞。本文把「水流順暢」轉成可觀察的關水、斷電、來源辨識、依機型清潔、回裝漏水驗收和停用交接，不把洗衣機方位當成洗淨、財運或運勢保證。
 
-先記錄洗衣區約 180 × 220 公分、洗衣機型號、冷熱水接頭、進水軟管、濾網位置、水龍頭、排水、洗衣籃、晾衣區和主要通道。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排關水、拉機和取衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認軟管不被櫃體壓住；維護時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間配置，不取代電器說明、給水或漏水維修判斷。
+先記錄洗衣區約 180 × 220 公分、洗衣機型號、冷熱水接頭、進水軟管、濾網位置、水龍頭、排水、洗衣籃、晾衣區和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排關水、拉機和取衣路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認軟管不被櫃體壓住；維護時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間配置，不取代電器說明、給水或漏水維修判斷。
 
 ## 先分辨水垢、砂粒、進水慢與軟管漏水
 

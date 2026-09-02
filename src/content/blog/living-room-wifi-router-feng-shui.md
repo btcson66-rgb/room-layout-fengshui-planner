@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-baby-monitor-feng-shui
   - entryway-doorbell-camera-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 Wi-Fi 路由器在客廳風水裡常被聯想到資訊流通、家人連結和讓氣場順暢，因此有人會問放在客廳中央、財位或高處是否能讓網路與人際關係更順。但路由器真正要處理的是無線訊號遮擋、設備散熱、電源、網路線、重開機、帳號權限與家人使用區。沒有任何路由器方位能保證網速、健康、人際或財運；本文把「資訊流通」轉成可測的連線範圍、可維護的設備位置與不絆腳的線路。
 
-先量客廳、路由器、數據機、電視櫃、沙發、門、窗、插座和網路線到牆的距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電視櫃、獨立層架與書桌側邊的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備周圍不被音響或收納盒擠住，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試走道、掃地與孩子活動不會拉扯線材。工具不能取代電信業者、設備手冊或網路資安設定。
+先量客廳、路由器、數據機、電視櫃、沙發、門、窗、插座和網路線到牆的距離。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較電視櫃、獨立層架與書桌側邊的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備周圍不被音響或收納盒擠住，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試走道、掃地與孩子活動不會拉扯線材。工具不能取代電信業者、設備手冊或網路資安設定。
 
 ## 「氣流順」不等於把路由器藏起來
 

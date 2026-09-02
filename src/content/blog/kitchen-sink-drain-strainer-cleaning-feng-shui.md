@@ -17,7 +17,7 @@ keywords:
   - 水槽排水動線風水
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - kitchen-sink-faucet-base-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 水槽濾網在廚房風水裡常被聯想到去濁、納水與家務流動，但真正需要維護的是濾網孔、油膜、食物殘渣、積水、排水口、檯面、垃圾桶和洗碗動線。濾網裝滿菜渣卻沒有分流，容易讓水槽異味反覆；油污附著後直接用大量熱水或不明清潔劑處理，也可能傷害材質或把問題推進排水管。本文把「濁水有去處」轉成可觀察的廚餘分流、濾網清潔、瀝乾、排水與動線驗收，不把水槽方位當成財運、衛生或運勢保證。
 
-先記錄水槽材質、濾網尺寸、排水口、止水塞、垃圾桶、洗碗區、爐具和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出刮渣、沖洗、瀝乾與丟棄路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認倒廚餘時不會撞到家人；濾網與水槽尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代管線、材質與維修判斷。
+先記錄水槽材質、濾網尺寸、排水口、止水塞、垃圾桶、洗碗區、爐具和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出刮渣、沖洗、瀝乾與丟棄路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認倒廚餘時不會撞到家人；濾網與水槽尺寸可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代管線、材質與維修判斷。
 
 ## 先分辨食物殘渣、油膜、積水與異味
 

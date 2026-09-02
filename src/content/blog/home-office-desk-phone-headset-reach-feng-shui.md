@@ -85,7 +85,7 @@ OSHA 建議長時間通話可考慮免持耳機或免持功能，以避免夾電
 
 ## 相關工具與延伸閱讀
 
-可用 [房間配置規劃器](/zh/room-layout-planner/) 畫桌、門和電話架，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較設備底座與桌深，最後以 [房間動線檢查](/zh/room-circulation-check/) 回看椅子和線材。若工作區靠門，可參考 [書桌靠門的聲音與隱私](/zh/blog/home-office-desk-doorway-sound-privacy-feng-shui/)；若文件和螢幕互擠，參考 [書桌文件架視距](/zh/blog/home-office-desk-document-holder-viewing-distance-feng-shui/)。
+可用 [房間配置規劃器](/zh/room-layout-planner/) 畫桌、門和電話架，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較設備底座與桌深，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回看椅子和線材。若工作區靠門，可參考 [書桌靠門的聲音與隱私](/zh/blog/home-office-desk-doorway-sound-privacy-feng-shui/)；若文件和螢幕互擠，參考 [書桌文件架視距](/zh/blog/home-office-desk-document-holder-viewing-distance-feng-shui/)。
 
 ### 參考資料
 

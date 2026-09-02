@@ -17,7 +17,7 @@ keywords:
   - 沙發套拉鍊保養
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - living-room-rug-dust-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 沙發坐墊套在客廳風水裡常被聯想到承接、交流與家人座位，但真正需要維護的是布料纖維、縫線、拉鍊、泡棉、底布、寵物毛、汗味和沙發周邊動線。坐墊套拆洗後若沒有依洗標處理，可能縮水、變形或拉鍊無法閉合；泡棉尚未乾就套回，也會把濕氣留在內層。本文把「客廳有座」轉成可觀察的除塵、拆洗、乾燥、方向回裝與共享通行，不把坐墊顏色或位置當成人緣、健康或運勢保證。
 
-先記錄沙發尺寸、坐墊編號、布料、拉鍊、泡棉、底布、茶几、地毯和出入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆套、晾乾、回裝與坐下路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認暫放布套不堵住陽台或房門；坐墊與茶几距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代洗標、布料測試與家具維修判斷。
+先記錄沙發尺寸、坐墊編號、布料、拉鍊、泡棉、底布、茶几、地毯和出入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拆套、晾乾、回裝與坐下路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認暫放布套不堵住陽台或房門；坐墊與茶几距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。工具不能取代洗標、布料測試與家具維修判斷。
 
 ## 先分辨灰塵、寵物毛、汗味與水漬
 

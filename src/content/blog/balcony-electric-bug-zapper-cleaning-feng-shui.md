@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-electric-mosquito-repellent-cleaning-feng-shui
   - balcony-solar-panel-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電捕蚊燈在陽台風水裡常被聯想到把蚊蟲和濁氣引離室內，但它同時涉及燈管、高壓電網、集蟲盒、插頭、灰塵與潮濕。清潔時若直接用噴霧器朝電網噴，或把設備放在雨水、洗衣水和油煙附近，象徵驅濁不能代替觸電與短路風險。本文把陽台的「通風與清濁分界」轉成集蟲盒可清、電網不亂碰、設備乾燥和人流可驗收。
 
-先記錄捕蚊燈型號、燈管、電網、護網、集蟲盒、插頭、電線、窗戶、排水孔、欄杆和晾衣路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出設備與室內門窗的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認花架和收納櫃不會遮住護網；陽台走道可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能取代高壓電器和維修安全指引。
+先記錄捕蚊燈型號、燈管、電網、護網、集蟲盒、插頭、電線、窗戶、排水孔、欄杆和晾衣路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出設備與室內門窗的關係，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認花架和收納櫃不會遮住護網；陽台走道可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能取代高壓電器和維修安全指引。
 
 ## 先分辨集蟲盒、灰塵、油膜與設備異常
 

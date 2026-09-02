@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-desk-lamp-feng-shui
   - plug-outlet-room-layout
@@ -36,7 +36,7 @@ howToSteps:
 
 印表機在書房風水裡常被聯想到文件流通、考試成果、工作訊息和把想法落實成紙本，因此有人會問放在書桌左側、房間財位或靠近門口是不是比較順。但印表機實際要處理紙張、墨水或碳粉、列印熱氣、電源、噪音、卡紙、取件和文件隱私。沒有任何印表機位置能保證升職、考試或財運；本文把「文書順利」轉成紙張不受潮、設備可散熱、電源可管理、列印物不遺留，以及使用者能順手取件的空間條件。
 
-先量書房、書桌、印表機、出紙口、開蓋範圍、紙張櫃、插座、窗戶與房門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較放在桌側、獨立推車或櫃旁的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掃描上蓋和補紙空間不會撞牆，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試列印後取件、拉椅和開門。工具不能取代產品手冊、用電安全或文件保護判斷。
+先量書房、書桌、印表機、出紙口、開蓋範圍、紙張櫃、插座、窗戶與房門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較放在桌側、獨立推車或櫃旁的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掃描上蓋和補紙空間不會撞牆，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試列印後取件、拉椅和開門。工具不能取代產品手冊、用電安全或文件保護判斷。
 
 ## 「文書流通」不是把印表機放在門口
 

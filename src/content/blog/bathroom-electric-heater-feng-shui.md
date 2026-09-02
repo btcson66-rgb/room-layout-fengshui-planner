@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-water-heater-feng-shui
   - bathroom-toilet-ventilation-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室電暖器在風水裡常被聯想到溫暖、去寒和讓水氣空間更舒服，因此有人會把它放在浴室中央、朝向淋浴區，或把「暖位」當成只要靠近人就好的位置。但浴室是濺水、濕氣、赤腳、滑倒和電氣同時出現的區域；機型、防水等級、插座、通風、固定、排熱和可燃物距離都要先確認。沒有任何電暖器位置能保證健康、舒適或用電安全；本文把「暖而不亂」落到乾濕分界與離浴流程。
 
-先量浴室長寬、淋浴區、馬桶、洗手台、門片、插座、排風口、毛巾、浴簾和電暖器出風口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較壁掛與移動式方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備、門片和毛巾不互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試赤腳進出與照護者站位。工具不能取代產品安全規格、電氣工程或浴室施工判斷。
+先量浴室長寬、淋浴區、馬桶、洗手台、門片、插座、排風口、毛巾、浴簾和電暖器出風口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較壁掛與移動式方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認設備、門片和毛巾不互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試赤腳進出與照護者站位。工具不能取代產品安全規格、電氣工程或浴室施工判斷。
 
 ## 暖氣象徵不等於把熱源推進濕區
 

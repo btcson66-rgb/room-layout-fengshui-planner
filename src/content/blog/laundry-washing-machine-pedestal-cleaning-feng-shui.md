@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-feng-shui
   - laundry-washing-machine-leveling-foot-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗衣機底座的風水問題常被說成「機器墊高可以托住家運」，但日常真正要處理的是底座抽屜是否藏著洗劑粉、棉絮和包裝、機底是否有水痕、底座與洗衣機是否固定、脫水時是否震動，以及墊高後取衣和開門會不會撞到上櫃。風水裡的「承托」可以轉譯為底座穩定、抽屜可清、機體水平、排水可追，不能把墊高高度當成洗衣效率或安全保證。
 
-先量洗衣房長寬、洗衣機寬深高、底座寬深高、機門開啟、抽屜行程、牆距、排水管、插座、洗衣籃和站位。以 200 × 240 公分洗衣房為例，底座把門口高度提高後，取衣者可能要抬手；抽屜拉出後則可能擋住洗衣籃或排水檢查。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出機門、抽屜和籃子的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認底座和牆距，最後以 [房間動線檢查](/zh/room-circulation-check/)測試濕衣交接。工具只協助配置，不代替電氣、排水、固定與搬運安全判斷。
+先量洗衣房長寬、洗衣機寬深高、底座寬深高、機門開啟、抽屜行程、牆距、排水管、插座、洗衣籃和站位。以 200 × 240 公分洗衣房為例，底座把門口高度提高後，取衣者可能要抬手；抽屜拉出後則可能擋住洗衣籃或排水檢查。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出機門、抽屜和籃子的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認底座和牆距，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試濕衣交接。工具只協助配置，不代替電氣、排水、固定與搬運安全判斷。
 
 ## 洗衣機底座的好風水是底部可查、機體穩定且取衣不用繞路
 

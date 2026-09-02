@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/desk-placement-feng-shui/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-monitor-feng-shui
   - home-office-desk-lamp-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 網路攝影機在居家辦公風水裡常被聯想到看見機會、對外溝通與讓工作有「窗口」，有人會問鏡頭面向門、背靠實牆或對著窗戶是否更能提升事業運。但鏡頭真正會拍到門口、家人、文件、螢幕、窗戶和生活區；它也可能帶來逆光、背景雜亂、收音暴露、帳號權限、錄影狀態與斷線時的替代流程。沒有任何鏡頭方向能保證升遷、成交、效率或人際結果；本文把「看見機會」轉成可控制的畫面邊界、知情同意與工作動線。
 
-先量書桌、螢幕、鏡頭夾具、椅子後退範圍、門窗、背景牆、照明、插座、網路設備與家人通行路徑。用 [書桌方位檢查](/zh/desk-placement-feng-shui/)比較面門、側窗和靠牆方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鏡頭、螢幕和支架不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試離席、家人進出和清潔。工具只能協助空間配置，不取代產品安全設定、個資法令或公司資安政策。
+先量書桌、螢幕、鏡頭夾具、椅子後退範圍、門窗、背景牆、照明、插座、網路設備與家人通行路徑。用 [書桌方位檢查](/zh/desk-placement-feng-shui/)比較面門、側窗和靠牆方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鏡頭、螢幕和支架不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試離席、家人進出和清潔。工具只能協助空間配置，不取代產品安全設定、個資法令或公司資安政策。
 
 ## 鏡頭拍得到，不代表應該拍得到
 

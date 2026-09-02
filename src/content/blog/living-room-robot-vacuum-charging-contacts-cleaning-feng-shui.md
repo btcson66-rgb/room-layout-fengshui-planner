@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-robot-vacuum-dock-feng-shui
   - living-room-floor-fan-grille-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 掃地機器人充電接點的風水常被說成「回到原位才聚氣」，但真正需要處理的是機器人與充電座接點的灰塵、濕污、感測窗、充電座偏移和回充通道。風水裡的「回位」可以轉譯為設備能找到充電座、接點有效接觸、地面沒有電線和雜物阻擋，不能把回充成功直接說成聚財或清潔效果保證。
 
-先量客廳長寬、充電座寬深、牆面距離、機器人轉向空間、沙發、地毯和走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出回充路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認充電座與櫃體距離，最後用 [房間動線檢查](/zh/room-circulation-check/)看人行路徑是否和機器人回充路徑交錯。
+先量客廳長寬、充電座寬深、牆面距離、機器人轉向空間、沙發、地毯和走道。以 320 × 420 公分客廳為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出回充路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認充電座與櫃體距離，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看人行路徑是否和機器人回充路徑交錯。
 
 ## 充電接點的好風水是接觸清楚、座位固定與回充路徑不被堵
 

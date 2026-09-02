@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-feng-shui
   - kitchen-sponge-cloth-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 擦碗巾在廚房風水裡常被聯想到把水氣收乾、把家務收尾，也有人會問擦碗巾掛在水槽左側、爐台旁或選紅色，能不能讓財氣更順。真正需要先分清的是這塊布接觸過什麼：餐具、雙手、油污檯面、地面、清潔劑，還是剛洗完仍然濕著？如果一條布在不同用途之間來回使用，收得再整齊也不能取代清潔與分流。本文把「收水」轉成用途標記、清洗乾燥和不互相污染的廚房流程。
 
-先量廚房長寬、水槽、爐台、冰箱、洗碗機、掛鉤、垃圾桶、插座與主要走道，並記錄擦碗巾攤開、對折、掛起和放入待洗籃的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽側、洗碗機旁和獨立掛巾區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛鉤、籃子和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端鍋、洗碗、開冰箱和清掃。工具只協助配置，不取代食品衛生、清潔用品標示或瓦斯用火判斷。
+先量廚房長寬、水槽、爐台、冰箱、洗碗機、掛鉤、垃圾桶、插座與主要走道，並記錄擦碗巾攤開、對折、掛起和放入待洗籃的尺寸。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較水槽側、洗碗機旁和獨立掛巾區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認掛鉤、籃子和櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端鍋、洗碗、開冰箱和清掃。工具只協助配置，不取代食品衛生、清潔用品標示或瓦斯用火判斷。
 
 ## 先把擦碗巾和抹布分成用途
 

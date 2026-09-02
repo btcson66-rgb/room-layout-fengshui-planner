@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-drain-cover-cleaning-feng-shui
   - bathroom-shower-door-track-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 淋浴排水過濾網是排水口上方負責攔截毛髮、皮屑、砂粒和較大碎屑的可見部件。它和地漏蓋、排水芯、存水彎及更深處的管線不一定是同一件事。過濾網孔洞被毛髮與皂垢覆住時，水可能下降變慢；過濾網清乾淨後仍回堵，則要把問題交給內芯、管線、坡度或維修判斷。風水可以用「水路是否順、濕區是否有界」整理生活觀察，但不能把一個乾淨濾網寫成防臭、排水或財運保證。
 
-先記錄浴室約 180 × 240 公分的長寬、淋浴區、排水過濾網、門檻、淋浴門、馬桶、洗手台、地墊和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡、取毛巾、擦腳與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認淋浴椅、瓶架與收納籃不會壓住濕區；若入口狹窄，使用 [房間通行寬度檢查](/zh/room-circulation-check/)測試清潔工具和家人通行。這些工具能協助平面配置，不能判斷防水層、管內堵塞或清潔劑相容性。
+先記錄浴室約 180 × 240 公分的長寬、淋浴區、排水過濾網、門檻、淋浴門、馬桶、洗手台、地墊和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡、取毛巾、擦腳與離開的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認淋浴椅、瓶架與收納籃不會壓住濕區；若入口狹窄，使用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試清潔工具和家人通行。這些工具能協助平面配置，不能判斷防水層、管內堵塞或清潔劑相容性。
 
 ## 先分清楚過濾網、蓋板、防臭芯與管線
 

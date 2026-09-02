@@ -20,7 +20,7 @@ relatedTools:
   - /zh/furniture-fit-checker/
   - /zh/room-layout-planner/
 relatedPosts:
-  - living-room-sofa-feng-shui
+  - living-room-sofa-cleaning-feng-shui
   - living-room-coffee-table-feng-shui
   - sofa-back-door-window-feng-shui
   - living-room-room-divider-feng-shui

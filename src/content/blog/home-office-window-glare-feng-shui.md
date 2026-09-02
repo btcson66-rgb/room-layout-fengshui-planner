@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - home-office-monitor-feng-shui
   - desk-window-lighting
@@ -37,7 +37,7 @@ howToSteps:
 
 居家辦公窗戶眩光風水常被說成「書桌背窗，靠山不穩」，但螢幕看不清楚通常與窗戶直射、背光、桌面反射、天花板燈、螢幕角度、窗簾和牆面對比有關。為了避開反光把桌子硬轉到門後，可能又讓人背對出入口、電線橫過走道或長時間扭頸。風水可以幫助討論視線、靠背與工作界線，但不能保證專注、健康或工作成果。
 
-先量房間長寬、窗戶寬度與方向、日照時段、桌面深度、螢幕尺寸、椅子、門、插座、空調出風口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較螢幕面向窗戶、垂直窗戶和側向窗戶的方案，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌椅後移仍有插座與走道；若是臥室兼辦公，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試起身、開窗、拉簾和離開。工具只能協助平面比較，不能診斷眼睛、頸肩或空氣品質問題。
+先量房間長寬、窗戶寬度與方向、日照時段、桌面深度、螢幕尺寸、椅子、門、插座、空調出風口和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較螢幕面向窗戶、垂直窗戶和側向窗戶的方案，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌椅後移仍有插座與走道；若是臥室兼辦公，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試起身、開窗、拉簾和離開。工具只能協助平面比較，不能診斷眼睛、頸肩或空氣品質問題。
 
 ## 先分辨直射光、螢幕反光、背光與高對比
 

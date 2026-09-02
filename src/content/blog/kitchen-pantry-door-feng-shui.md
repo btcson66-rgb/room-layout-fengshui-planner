@@ -18,7 +18,6 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/kitchen-layout-planner/
 relatedPosts:
   - kitchen-dry-goods-cabinet-feng-shui
   - kitchen-door-feng-shui

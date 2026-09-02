@@ -21,7 +21,6 @@ relatedTools:
   - /zh/moving-furniture-size-check/
 relatedPosts:
   - bedroom-smoke-alarm-feng-shui
-  - bedroom-water-heater-feng-shui
   - bedroom-space-heater-feng-shui
 howToName: "臥室一氧化碳警報器、通風與睡眠安全檢查"
 howToTotalTime: "PT30M"

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-coffee-machine-feng-shui
   - kitchen-air-fryer-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 果汁機在廚房風水裡常被解讀為把新鮮、流動和活力帶進日常，因此有人會問放在財位、窗邊或入口側是不是比較能招來好運。但果汁機不是單純的裝飾物，它有高速刀片、旋轉杯體、杯蓋鎖定、食材容量、液體濺出、插座負載、濕手和清潔等實際條件。若為了讓它「看得見」而放在檯面邊緣，或把杯體、刀座與電線堆在水槽旁，象徵再漂亮也不能取代安全與可維護性。沒有任何果汁機位置能保證財運、健康或家庭關係；本文把「新鮮流動」轉成可檢查的備料、攪打、倒出和清潔秩序。
 
-先量果汁機底座、杯體高度、把手方向、杯蓋拆卸範圍、刀座、食材籃、插座、水槽、爐具、備餐檯與主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較乾燥檯面與水槽旁的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認杯體拿起後不會撞到上櫃；若早餐時間多人同時使用廚房，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端杯和進出。這些工具只能協助看空間，不能代替產品說明、插座規範或維修專業意見。
+先量果汁機底座、杯體高度、把手方向、杯蓋拆卸範圍、刀座、食材籃、插座、水槽、爐具、備餐檯與主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較乾燥檯面與水槽旁的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認杯體拿起後不會撞到上櫃；若早餐時間多人同時使用廚房，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端杯和進出。這些工具只能協助看空間，不能代替產品說明、插座規範或維修專業意見。
 
 ## 先把果汁機拆成五種工作狀態
 

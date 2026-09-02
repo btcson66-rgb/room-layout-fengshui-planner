@@ -16,9 +16,8 @@ keywords:
   - 馬桶座圈緩衝墊鬆動
   - 浴室座圈固定檢查
 relatedTools:
-  - /zh/bathroom-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-toilet-seat-cleaning-feng-shui
   - bathroom-toilet-seat-hinge-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 馬桶座圈緩衝墊在風水裡容易被聯想到承托、穩定與坐臥界線，但真正需要維護的是座圈底部膠墊、污垢、滑動、硬化、脫落、鉸鏈、陶瓷接觸和浴室乾燥。座圈不發出聲音，不代表緩衝墊仍均勻接觸；清潔後看起來白，也不代表膠墊沒有老化。本文把「承托穩、接觸有界」轉成可觀察的分區清潔、膠墊狀態、座圈固定、乾燥和使用驗收，不把膠墊數量或位置當成健康、財運或運勢保證。
 
-先記錄浴室約 180 × 240 公分、座圈材質、緩衝墊數量與位置、鉸鏈、固定螺絲、馬桶陶瓷邊緣、地面、門和主要通道。用 [浴室配置工具](/zh/bathroom-layout-planner/)安排掀座圈、擦拭和晾乾路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會卡住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助配置，不取代座圈維修或浴室安全判斷。
+先記錄浴室約 180 × 240 公分、座圈材質、緩衝墊數量與位置、鉸鏈、固定螺絲、馬桶陶瓷邊緣、地面、門和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)安排掀座圈、擦拭和晾乾路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認清潔用品不會卡住馬桶前方；查看時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助配置，不取代座圈維修或浴室安全判斷。
 
 ## 先分辨膠墊髒污、硬化、脫落與座圈滑動
 

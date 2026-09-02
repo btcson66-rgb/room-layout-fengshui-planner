@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-exhaust-fan-grille-cleaning-feng-shui
   - bathroom-exhaust-fan-noise-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 浴室排風扇逆止片常被放進「把濁氣送走」的風水說法裡，但設備真正的工作，是在排風停止或運轉時協助控制空氣路徑。逆止片可能是輕薄塑膠片、金屬片、重力風門或風管內的組件；它卡著灰塵、毛髮、油膜、膠帶或水氣時，可能出現拍打聲、開合不順或回風感。這些現象不能直接推論成運勢變差，也不能只靠香氛掩蓋。
 
-先量浴室長寬、排風扇位置、淋浴區、馬桶、洗手台、門片、門下間隙、窗戶、插座和安全站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡、斷電、清潔與離開的路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和清潔容器不會卡住，最後用 [房間動線檢查](/zh/room-circulation-check/)看濕地面上的退讓空間。工具只協助配置，不代替風管、電氣和高處作業判斷。
+先量浴室長寬、排風扇位置、淋浴區、馬桶、洗手台、門片、門下間隙、窗戶、插座和安全站位。以 180 × 240 公分浴室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗澡、斷電、清潔與離開的路徑，再以 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和清潔容器不會卡住，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看濕地面上的退讓空間。工具只協助配置，不代替風管、電氣和高處作業判斷。
 
 ## 逆止片的好風水是排風時能動、停止時不亂拍且檢查有邊界
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-leaf-cleaning-feng-shui
   - dining-room-table-under-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 伸縮餐桌延伸滑軌的風水問題常被說成「桌子打開才有聚人氣」，但真正會讓餐廳變得難用的，往往是滑軌藏著飯粒、油膜卡在接縫、桌板左右不同步、定位件沒有到位，或展開後桌腳把椅子和端菜路徑切成兩段。風水裡的「伸展」可以轉譯為家具能安全完成收起與展開、桌板接縫可檢查、桌腳位置可預測，不能把滑軌順不順當成運勢判定。
 
-先量餐廳長寬、餐桌收起／展開長寬、桌面高度、延伸滑軌入口與出口、桌腳、椅子、餐邊櫃、門片和清掃工具寬度。以 220 × 300 公分餐廳為例，餐桌收起時也許可留出廚房通道，但展開後兩張短邊椅可能讓人必須側身通過。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)建立兩個狀態，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)對照桌腳和滑軌行程，最後以 [房間動線檢查](/zh/room-circulation-check/)測試多人取餐。工具只協助空間規劃，不代替家具說明書、夾傷防護和五金維修。
+先量餐廳長寬、餐桌收起／展開長寬、桌面高度、延伸滑軌入口與出口、桌腳、椅子、餐邊櫃、門片和清掃工具寬度。以 220 × 300 公分餐廳為例，餐桌收起時也許可留出廚房通道，但展開後兩張短邊椅可能讓人必須側身通過。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)建立兩個狀態，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)對照桌腳和滑軌行程，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試多人取餐。工具只協助空間規劃，不代替家具說明書、夾傷防護和五金維修。
 
 ## 延伸滑軌的好風水是卡垢可見、左右同步且桌腳不製造盲區
 

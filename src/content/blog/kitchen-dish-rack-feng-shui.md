@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-feng-shui
   - kitchen-upper-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 瀝水架常被放進「廚房水氣太重」「水火相沖」的風水討論，但它也是每天接觸碗盤、杯子、刀叉和鍋具的工作設備。真正影響廚房感受的，通常是洗好的餐具是否能乾、滴水是否回到洗槽、架子會不會擋住備料、是否靠近高溫爐火，以及家人能不能把餐具放回固定位置。風水裡的水火平衡可以作為整理角度，卻不能取代餐具衛生、用電用火和防滑判斷；沒有一個瀝水架方向能保證財運或家人健康。
 
-先量洗槽內緣、龍頭旋轉範圍、瀝水架底座、滴水盤拉出距離、爐具邊界、備料區和上櫃門打開後的高度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看洗槽、爐具與主要站位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瀝水架不會撞龍頭或櫃門；若廚房是狹長型，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認端熱鍋、端菜和兩人交會時不必側身閃避。尺寸工具不會判斷食品接觸面清潔度，仍要依餐具材質、產品說明與衛生原則處理。
+先量洗槽內緣、龍頭旋轉範圍、瀝水架底座、滴水盤拉出距離、爐具邊界、備料區和上櫃門打開後的高度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)看洗槽、爐具與主要站位，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認瀝水架不會撞龍頭或櫃門；若廚房是狹長型，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認端熱鍋、端菜和兩人交會時不必側身閃避。尺寸工具不會判斷食品接觸面清潔度，仍要依餐具材質、產品說明與衛生原則處理。
 
 ## 先分辨瀝水、暫存與長期收納
 

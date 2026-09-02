@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-width-guide/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-mirror-feng-shui
   - dining-room-mirror-feng-shui
@@ -80,7 +80,7 @@ howToSteps:
 
 第一版保留 90 公分寬平鏡，鏡面不延伸到門框，搭配符合浴室環境的照明；第二版改成較深的鏡櫃，收納量增加，但門片開啟時侵入洗手台前方；第三版把鏡面縮小並偏向洗手台使用者，公共區看到的反射減少，卻要在旁邊安排小型收納。用紙板貼出三個外框，在門全開、洗澡後、夜間只開小燈和兩人同時使用時觀察，才能知道哪一版真正適合。
 
-可用 [房間家具配置工具](/zh/room-layout-planner/)標出門片、洗手台、鏡面和淋浴區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較鏡櫃門開啟後的外框；[房間動線寬度指南](/zh/room-circulation-width-guide/)只能協助規劃，不會檢查玻璃固定、浴室電氣、防潮或排風性能。
+可用 [房間家具配置工具](/zh/room-layout-planner/)標出門片、洗手台、鏡面和淋浴區，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較鏡櫃門開啟後的外框；[房間動線寬度指南](/zh/blog/room-circulation-width-guide/)只能協助規劃，不會檢查玻璃固定、浴室電氣、防潮或排風性能。
 
 案例中若鏡面反射到門外走道，先將鏡面偏轉或縮小；若洗澡後一直起霧，先改善排風、補風和濕氣來源，不要用更大的鏡子掩蓋。若鏡櫃門讓人轉身卡住，收納量再高也不值得保留。風水上的「藏氣」或「避沖」可以作為偏好，但最後選擇應能說明反射、通風、清潔與安全的理由。
 

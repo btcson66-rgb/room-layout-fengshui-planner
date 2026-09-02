@@ -1,0 +1,38 @@
+name: Preflight
+
+# 2026-09-02: 在這之前 CI 只在 push 到 main 時跑 `npm run build`，
+# 從來沒有執行過 `npm run preflight`。astro check、content-quality-audit.mjs
+# 與 www-redirect 測試因此只在有人手動跑本機指令時才會執行——千頁內容上線時
+# 594 個頁面帶著指向 404 的內部連結進了 main，就是因為沒有任何自動關卡。
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: preflight-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # scripts/sitemap-lastmod.mjs 用 `git log` 取每個路由的最後更新日期，
+          # 淺層 clone 會讓它整批退回檔案 mtime。
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # astro check + build + audit:content + test:www-redirect
+      - run: npm run preflight
+        env:
+          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
+          # 與 deploy-cloudflare-pages.yml 保持一致，讓 PR 驗的是與正式站
+          # 相同的輸出。這不是 secret；正式值同時要與 public/ads.txt 一致。
+          PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270

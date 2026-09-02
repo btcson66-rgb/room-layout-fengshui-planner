@@ -95,7 +95,7 @@ EPA 的室內空氣品質資料指出，通風要考慮室外空氣品質、天�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫窗戶開啟弧線、桌子與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開窗與離席。若桌燈反光是主問題，可參考 [工作桌燈與螢幕眩光](/zh/blog/home-office-desk-task-light-screen-glare-feng-shui/)；若螢幕距離是瓶頸，可看 [工作桌螢幕與牆距](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫窗戶開啟弧線、桌子與門，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌面深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開窗與離席。若桌燈反光是主問題，可參考 [工作桌燈與螢幕眩光](/zh/blog/home-office-desk-task-light-screen-glare-feng-shui/)；若螢幕距離是瓶頸，可看 [工作桌螢幕與牆距](/zh/blog/home-office-desk-monitor-wall-distance-feng-shui/)。
 
 ### 參考資料
 

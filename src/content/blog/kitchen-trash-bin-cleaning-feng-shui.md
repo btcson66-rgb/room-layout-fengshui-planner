@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-garbage-bin-feng-shui
   - kitchen-food-waste-bin-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 垃圾桶風水很容易被說成「垃圾不能放在某個方向」，但廚房每天更需要回答的是：備餐時是否要繞過垃圾桶、桶蓋是否能單手開啟、廚餘液體會不會流到地板、內桶能否拿出清洗、垃圾袋是否常破、回收物是否混在一起，以及清空後能不能把桶體完全擦乾。風水裡的「去濁」可以轉譯為及時移除、分類清楚、容器可清潔和路徑少折返，不能保證財運，也不能取代衛生管理。
 
-先量廚房長寬、流理台、爐具、冰箱、洗碗區、垃圾桶寬深高、抽拉櫃、門片開啟範圍和家人站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出切菜、沖洗、投放、綁袋、搬出和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶體不會卡住抽屜或冰箱門；若要檢查多人交會，可參考 [房間動線檢查](/zh/room-circulation-check/)。工具只協助規劃，不代替食品安全、害蟲、漏水或清潔劑使用判斷。
+先量廚房長寬、流理台、爐具、冰箱、洗碗區、垃圾桶寬深高、抽拉櫃、門片開啟範圍和家人站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出切菜、沖洗、投放、綁袋、搬出和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶體不會卡住抽屜或冰箱門；若要檢查多人交會，可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)。工具只協助規劃，不代替食品安全、害蟲、漏水或清潔劑使用判斷。
 
 ## 垃圾桶的好風水是看得到髒污、拿得出內桶且不切斷備餐線
 

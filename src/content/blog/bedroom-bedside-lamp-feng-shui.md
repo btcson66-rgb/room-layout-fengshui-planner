@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-ceiling-light-feng-shui
   - bedroom-lighting-guide
@@ -36,7 +36,7 @@ howToSteps:
 
 床頭燈在臥室風水裡常被聯想到夜間安定、伴侶各自的光明與睡眠儀式，有人會問兩盞燈要不要完全對稱，或把燈罩朝向床中央能不能讓感情更穩定。更實際的問題是：躺下時是否直視光源？開關能不能不用起身就操作？電線是否被床腳、床墊或收納箱壓住？燈具會不會被棉被、窗簾或紙張遮住？沒有任何左右方位能替代眩光控制、用電檢查和清楚的睡前動線；本文把「臥室有光」轉成可調整的照射方向、開關位置和電線管理。
 
-先量臥室長寬、床架、床頭櫃、牆面插座、窗戶、衣櫃和夜間通道，並記錄燈具底座、燈罩和開關所需空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、壁燈與床邊落地燈的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈具不會頂住櫃門、窗簾或插座，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試起身、夜間走動、換床單和兩人交會。工具只協助配置，不取代燈具說明、電氣安全或視力與睡眠方面的專業建議。
+先量臥室長寬、床架、床頭櫃、牆面插座、窗戶、衣櫃和夜間通道，並記錄燈具底座、燈罩和開關所需空間。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床頭櫃、壁燈與床邊落地燈的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認燈具不會頂住櫃門、窗簾或插座，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試起身、夜間走動、換床單和兩人交會。工具只協助配置，不取代燈具說明、電氣安全或視力與睡眠方面的專業建議。
 
 ## 先按使用情境決定床頭燈的任務
 

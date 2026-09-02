@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-shower-caddy-storage-feng-shui
   - bathroom-shower-caddy-shelf-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 淋浴壁龕的風水問題常被問成「壁龕放在吉方才不會漏財」，但每天真正要處理的是：瓶罐底部是否把皂垢帶進角落、壁龕底板是否留水、填縫是否變色或剝落、矽利康接縫是否裂開，以及洗澡時取瓶是否必須伸手穿過熱水或跨過濕滑區。風水裡的「藏而不滯」可以轉譯為物品有固定位置但不遮住積水和接縫，清潔後能乾燥、問題能被看見，不能把牆面方位當成防水或健康保證。
 
-先量浴室長寬、淋浴區、壁龕內寬內高內深、壁龕底板坡度、瓶罐高度、蓮蓬頭、門片、門檻、地漏和主要站位。以 180 × 240 公分浴室為例，壁龕若位在淋浴水柱正前方，取物方便但會長時間受水；若位在側牆，可能較乾，卻要確認轉身和伸手不會撞到龍頭或玻璃門。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出站位和取瓶路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)對照瓶罐、門片和手部活動，最後以 [房間動線檢查](/zh/room-circulation-check/)檢查洗澡後離開時是否必須踩回積水區。工具只協助配置，不代替防水層、填縫、清潔劑或施工判斷。
+先量浴室長寬、淋浴區、壁龕內寬內高內深、壁龕底板坡度、瓶罐高度、蓮蓬頭、門片、門檻、地漏和主要站位。以 180 × 240 公分浴室為例，壁龕若位在淋浴水柱正前方，取物方便但會長時間受水；若位在側牆，可能較乾，卻要確認轉身和伸手不會撞到龍頭或玻璃門。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出站位和取瓶路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)對照瓶罐、門片和手部活動，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查洗澡後離開時是否必須踩回積水區。工具只協助配置，不代替防水層、填縫、清潔劑或施工判斷。
 
 ## 淋浴壁龕的好風水是水能排、瓶底能擦且接縫狀態可看見
 

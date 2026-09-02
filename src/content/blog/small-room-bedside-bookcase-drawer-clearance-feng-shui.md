@@ -107,7 +107,7 @@ CPSC 的 Anchor It 資料強調使用製造商指示與適合牆面的固定方�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出書櫃、床和抽屜全開範圍，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放離床和房門。若床邊距離是核心，可看 [床邊書櫃與床距離](/zh/blog/small-room-bedside-bookcase-bed-clearance-feng-shui/)；若層板分區是問題，參考 [床邊書櫃層板高度](/zh/blog/small-room-bedside-bookcase-shelf-height-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出書櫃、床和抽屜全開範圍，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放離床和房門。若床邊距離是核心，可看 [床邊書櫃與床距離](/zh/blog/small-room-bedside-bookcase-bed-clearance-feng-shui/)；若層板分區是問題，參考 [床邊書櫃層板高度](/zh/blog/small-room-bedside-bookcase-shelf-height-feng-shui/)。
 
 ### 參考資料
 

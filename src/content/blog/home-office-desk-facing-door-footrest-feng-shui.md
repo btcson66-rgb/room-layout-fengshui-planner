@@ -85,7 +85,7 @@ OSHA 的工作站資料提到，若腳不能平放在地面，可使用腳踏支
 
 ## 工具與腳部空間延伸
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌腳、腳踏、椅輪與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌下和抽屜外框；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放起身、開門、取件和清潔。若桌下被抽屜壓縮，可讀 [書桌面向房門抽屜淨空](/zh/blog/home-office-desk-facing-door-drawer-clearance-feng-shui/)；若椅子離席是主問題，參考 [書桌面向房門椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌腳、腳踏、椅輪與房門掃掠，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌下和抽屜外框；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放起身、開門、取件和清潔。若桌下被抽屜壓縮，可讀 [書桌面向房門抽屜淨空](/zh/blog/home-office-desk-facing-door-drawer-clearance-feng-shui/)；若椅子離席是主問題，參考 [書桌面向房門椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)。
 
 ### 參考資料
 

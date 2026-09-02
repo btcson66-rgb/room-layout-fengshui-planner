@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-table-facing-door-feng-shui
   - dining-sideboard-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐椅常被問成「主位應該朝哪裡」「餐椅不成對是不是家運不穩」「椅背靠牆才有靠山嗎」。座位象徵可以是家庭文化的一部分，但餐椅每天承受坐下、起身、後退、轉身、端菜和清潔，實際要檢查的是椅子穩定、退位距離、桌腳位置、靠背支撐、兒童與長者使用、地面防滑和餐具動線。沒有一種座向能保證家庭關係、財運或健康；「有靠」也應先理解成不必在狹窄縫隙中倒退、不會被桌角或櫃門撞到。
 
-開始前量餐桌外框、桌腳、椅面深度、椅背厚度、牆面、餐邊櫃和進入廚房的通道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出桌椅與端菜路線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較椅子推入桌下的實際外框；若餐桌位於客廳和廚房之間，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)確認有人坐下時仍能通過。工具能協助空間比較，不能替你測試椅腳、地面或人體起身能力。
+開始前量餐桌外框、桌腳、椅面深度、椅背厚度、牆面、餐邊櫃和進入廚房的通道。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出桌椅與端菜路線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)比較椅子推入桌下的實際外框；若餐桌位於客廳和廚房之間，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認有人坐下時仍能通過。工具能協助空間比較，不能替你測試椅腳、地面或人體起身能力。
 
 ## 先按使用者和用餐任務安排座位
 

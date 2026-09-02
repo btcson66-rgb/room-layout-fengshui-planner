@@ -18,11 +18,9 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
-  - bedroom-mirror-feng-shui
-  - bedroom-mirror-frame-cleaning-feng-shui
-  - bedroom-mirror-frame-dust-cleaning-feng-shui
+  - bathroom-mirror-frame-dust-cleaning-feng-shui
 howToName: "臥室鏡面邊緣、框架、固定件與反射動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:
@@ -36,7 +34,7 @@ howToSteps:
 
 鏡子中央容易被注意，邊緣卻常累積灰塵、水痕、化妝品油膜和清潔液殘留；鏡框接角、背板、掛件和牆面也可能因潮氣或碰撞而鬆動。臥室風水常討論鏡子與床、門的反射關係，但實際可以檢查的是鏡面是否完整、液體有沒有流進邊緣、固定件是否穩固，以及夜間起身會不會撞到鏡角，不能把反光直接等同睡眠或感情結論。
 
-先記錄鏡子品牌、型號、尺寸、是否有框、掛牆或落地、邊緣鍍層、床、衣櫃和門片。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示鏡面反射和走動範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對鏡子與家具距離，最後以 [房間通行寬度檢查](/zh/room-circulation-check/)測試開門與夜間動線。
+先記錄鏡子品牌、型號、尺寸、是否有框、掛牆或落地、邊緣鍍層、床、衣櫃和門片。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標示鏡面反射和走動範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對鏡子與家具距離，最後以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試開門與夜間動線。
 
 ## 鏡面、邊緣、框架與背板要分開
 

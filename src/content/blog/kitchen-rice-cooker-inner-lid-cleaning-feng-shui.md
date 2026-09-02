@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-rice-cooker-steam-vent-cleaning-feng-shui
   - kitchen-pressure-cooker-gasket-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電子鍋在廚房風水裡常被聯想到一家人的飯氣與聚餐，但內蓋、蒸氣孔、鍋蓋邊緣、外鍋和加熱底座每天接觸米湯、澱粉膜、水珠與高溫蒸氣。若開蓋時水珠滴進插座，清潔內蓋時把整台機器拿到水槽沖洗，或蒸氣孔被抹布和櫃板遮住，風水中的「聚飯」不能代替設備安全。本文把飯氣整理成蒸氣有出口、污水有落點、內蓋能拆洗乾燥和取飯不堵路的可觀察流程。
 
-先記錄電子鍋型號、內蓋是否可拆、蒸氣閥位置、鍋蓋開啟方向、插座、爐具、水槽、飯碗和檯面深度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出煮飯、開蓋、盛飯和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋蓋掀起不撞上櫃底；多人用餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端鍋與取碗。工具不能取代產品說明、電氣安全或維修判斷。
+先記錄電子鍋型號、內蓋是否可拆、蒸氣閥位置、鍋蓋開啟方向、插座、爐具、水槽、飯碗和檯面深度。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出煮飯、開蓋、盛飯和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋蓋掀起不撞上櫃底；多人用餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端鍋與取碗。工具不能取代產品說明、電氣安全或維修判斷。
 
 ## 先分辨米湯、澱粉膜與鍋蓋水珠
 

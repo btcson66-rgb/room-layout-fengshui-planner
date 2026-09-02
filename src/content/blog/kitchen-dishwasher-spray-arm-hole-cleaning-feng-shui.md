@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-dishwasher-spray-arm-cleaning-feng-shui
   - kitchen-dishwasher-filter-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機噴孔是噴水臂上讓水流射出的細小開口，與噴水臂本體、中心座、供水管、濾網和循環泵浦並不是同一個部件。噴孔若卡住食物殘渣、硬水礦物或洗劑膜，水流方向會變少；餐具太高、鍋柄碰到噴臂，則可能讓噴孔本身乾淨卻仍洗不到某一區。廚房風水可以把這件事轉成「清洗路徑是否順、髒餐具是否有暫存邊界、洗後是否能收回原位」的配置檢查，但不能用水流象徵直接代替電器診斷。
 
-先記錄品牌、型號、噴水臂數量和噴孔位置，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗碗機門片完全打開、籃架拉出和人員取放餐具的範圍。用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對旁邊垃圾桶、推車或抽屜是否妨礙操作，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認開門後仍有安全站位。工具只能協助布局，不能取代產品手冊、斷電或維修人員。
+先記錄品牌、型號、噴水臂數量和噴孔位置，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗碗機門片完全打開、籃架拉出和人員取放餐具的範圍。用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對旁邊垃圾桶、推車或抽屜是否妨礙操作，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認開門後仍有安全站位。工具只能協助布局，不能取代產品手冊、斷電或維修人員。
 
 ## 噴孔和噴水臂要先分清楚
 

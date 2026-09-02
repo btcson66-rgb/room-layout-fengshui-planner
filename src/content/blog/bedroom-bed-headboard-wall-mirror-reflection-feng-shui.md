@@ -113,7 +113,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出鏡面、床頭與光源，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較外框與床架；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放坐起和離床。若床頭牆面裝飾是主題，可看 [床頭掛畫與壁燈](/zh/blog/bedroom-bed-headboard-wall-art-lighting-feng-shui/)；若時間顯示反光是瓶頸，參考 [床頭牆面時鐘](/zh/blog/bedroom-bed-headboard-wall-clock-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出鏡面、床頭與光源，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較外框與床架；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放坐起和離床。若床頭牆面裝飾是主題，可看 [床頭掛畫與壁燈](/zh/blog/bedroom-bed-headboard-wall-art-lighting-feng-shui/)；若時間顯示反光是瓶頸，參考 [床頭牆面時鐘](/zh/blog/bedroom-bed-headboard-wall-clock-clearance-feng-shui/)。
 
 ### 參考資料
 

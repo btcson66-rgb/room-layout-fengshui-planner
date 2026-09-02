@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-package-drop-zone-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 行李箱在玄關風水裡常被聯想到旅行、流動和把遠方機會帶回家，因此有人會把箱子放在大門旁、門後或走道中央，認為它能帶動流動的氣。但行李箱本身體積大、輪子容易帶入灰塵和水，箱體堆疊會影響門片、鞋櫃與逃生通道；「流動」若變成家人每天要跨過箱子，反而是入口秩序變差。沒有任何行李箱位置能保證旅運、財運或家運；本文把旅行象徵轉成不擋門、可搬動、乾燥和責任清楚的玄關安排。
 
-先量玄關、行李箱長寬高、門片弧線、鞋櫃、傘架、樓梯、電箱和通往客廳的路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門後、牆側與室內收納，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認箱蓋與把手不撞家具，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拖箱、穿鞋和夜間離開。工具不能取代消防、管理規約或建築現場判斷。
+先量玄關、行李箱長寬高、門片弧線、鞋櫃、傘架、樓梯、電箱和通往客廳的路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門後、牆側與室內收納，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認箱蓋與把手不撞家具，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拖箱、穿鞋和夜間離開。工具不能取代消防、管理規約或建築現場判斷。
 
 ## 流動象徵不能阻塞真正的入口
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/bed-desk-wardrobe-layout/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-blanket-storage-cleaning-feng-shui
   - bedroom-bedside-rug-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床上蓋毯在風水裡常被聯想到包覆、季節與睡眠區界線，但真正需要維護的是纖維灰塵、皮屑、汗氣、飲料污漬、寵物毛、洗標、完全乾燥和床尾動線。蓋毯每天接觸床品與人體，若白天折疊後仍有濕氣，晚上再蓋回去，異味和纖維狀態就不容易被察覺。本文把「床上有暖意」轉成可觀察的使用分區、材質清潔、乾燥、折疊與睡前動線驗收，不把蓋毯顏色或床尾位置當成好眠、健康或運勢保證。
 
-先記錄蓋毯尺寸、纖維、填充、洗標、床墊、床尾、床邊桌、窗戶、衣櫃與房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排晾曬和暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認蓋毯收起後不會堆住床邊；睡前展開和起床收回可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間配置，不能取代洗標和布品處理判斷。
+先記錄蓋毯尺寸、纖維、填充、洗標、床墊、床尾、床邊桌、窗戶、衣櫃與房門。用 [床桌衣櫃配置工具](/zh/bed-desk-wardrobe-layout/)安排晾曬和暫放區，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認蓋毯收起後不會堆住床邊；睡前展開和起床收回可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間配置，不能取代洗標和布品處理判斷。
 
 ## 先分辨灰塵、汗氣、污漬與潮感
 

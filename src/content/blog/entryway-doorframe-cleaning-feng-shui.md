@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-handle-cleaning-feng-shui
   - entryway-door-bottom-dust-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關門框清潔風水常被說成「門框乾淨，財氣才進得來」，但門框是手提物品、鞋塵、雨傘水滴、搬家碰撞、門扇摩擦和高頻開關門最常接觸的區域。上框容易積灰，鉸鏈側可能有異物，門檻附近會帶入泥沙，漆面若有水痕或起泡，則可能是滲水或清潔劑傷害。門框清潔不能只追求亮白，還要確認門扇能順利開關、逃生路線不被鞋櫃阻擋、手部不必碰到髒污才能關門。
 
-先量玄關長寬、門框內外寬度、門扇開啟弧線、鞋櫃、雨傘桶、地墊、牆角和主要轉身點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進門、關門、換鞋和提物路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃和地墊不會壓住門框；玄關只有 180 × 240 公分時，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)比較開門後是否還能安全轉身。工具只能協助平面比較，不能判定門鎖、鉸鏈、牆體、消防或結構安全。
+先量玄關長寬、門框內外寬度、門扇開啟弧線、鞋櫃、雨傘桶、地墊、牆角和主要轉身點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出進門、關門、換鞋和提物路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鞋櫃和地墊不會壓住門框；玄關只有 180 × 240 公分時，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較開門後是否還能安全轉身。工具只能協助平面比較，不能判定門鎖、鉸鏈、牆體、消防或結構安全。
 
 ## 先分辨門框手印、鞋塵與水痕
 

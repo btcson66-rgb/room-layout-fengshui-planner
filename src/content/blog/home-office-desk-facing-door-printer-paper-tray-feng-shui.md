@@ -89,7 +89,7 @@ OSHA 的工作站資料提醒設備和桌面要依任務與使用者調整，CPS
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出印表機、紙盤、桌子與房門，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較設備外框和散熱空間；最後用 [房間動線檢查](/zh/room-circulation-check/) 回放補紙、取件和離席。若紙張也放在文件托盤，可讀 [文件托盤可見性](/zh/blog/home-office-desk-facing-door-document-tray-privacy-feng-shui/)；若電線容易跨路，參考 [耳機線與離席](/zh/blog/home-office-desk-facing-door-headset-cable-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出印表機、紙盤、桌子與房門，再以 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較設備外框和散熱空間；最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放補紙、取件和離席。若紙張也放在文件托盤，可讀 [文件托盤可見性](/zh/blog/home-office-desk-facing-door-document-tray-privacy-feng-shui/)；若電線容易跨路，參考 [耳機線與離席](/zh/blog/home-office-desk-facing-door-headset-cable-feng-shui/)。
 
 ### 參考資料
 

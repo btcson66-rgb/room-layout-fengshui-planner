@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-hot-pot-plug-cleaning-feng-shui
   - kitchen-sandwich-maker-plate-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 排油煙機在廚房風水裡常被聯想到把濁氣帶走，但真正影響廚房是否容易維持的，是油網、濾脂網、油杯、風扇、排煙管、爐具和人員動線。油膜越積越厚，濾網清潔時又要跨過爐火或打開櫃門，這不只是「油煙不散」的象徵，而是設備保養、通風和清潔工作面沒有分開。本文把「濁氣外排」轉成可觀察的油脂分離、濾網狀態、排煙方向、斷電和收納流程，不把方位當成吸力、健康或運勢保證。
 
-先記錄排油煙機型號、電源開關、濾網、油杯、爐具、牆面、排煙管可見段和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出爐前站立、取鍋、拆濾網和清洗的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫥櫃與機罩不會妨礙拆洗；多人備餐時可用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查開門、端鍋與清潔交叉。工具不能取代產品說明、消防或電氣判斷。
+先記錄排油煙機型號、電源開關、濾網、油杯、爐具、牆面、排煙管可見段和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出爐前站立、取鍋、拆濾網和清洗的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認櫥櫃與機罩不會妨礙拆洗；多人備餐時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查開門、端鍋與清潔交叉。工具不能取代產品說明、消防或電氣判斷。
 
 ## 先分辨油膜、焦垢與設備異常
 

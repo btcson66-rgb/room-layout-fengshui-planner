@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-mattress-height-feng-shui
   - bedroom-bedding-storage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 保潔墊在臥室風水裡常被聯想到保護床墊、隔開外來干擾與維持床面乾淨，有人也會問白色、米色或某個方向是否比較能守住安定的氣。但保潔墊實際會影響床面高度、透氣、濕氣、摩擦、洗滌頻率、床包是否滑動，以及拆洗時能不能安全搬動。沒有任何顏色、材質或鋪設方向能保證睡眠、健康、財運或感情；較可靠的判斷是把「保護」拆成產品標示、清潔狀態、防潮與使用者能否順利換洗。
 
-先量床墊長寬、高度、床架外框、床頭板、床邊桌、門片、窗戶和通往浴室的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床面與衣櫃、窗邊的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認加上保潔墊後床包仍能套合，再用 [房間通行寬度檢查](/zh/room-circulation-check/)模擬拆床、抱走織品和夜間下床。工具只協助配置，不取代洗標、商品說明或健康專業建議。
+先量床墊長寬、高度、床架外框、床頭板、床邊桌、門片、窗戶和通往浴室的路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床面與衣櫃、窗邊的關係，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認加上保潔墊後床包仍能套合，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬拆床、抱走織品和夜間下床。工具只協助配置，不取代洗標、商品說明或健康專業建議。
 
 ## 保潔墊先看標示，不先看風水顏色
 

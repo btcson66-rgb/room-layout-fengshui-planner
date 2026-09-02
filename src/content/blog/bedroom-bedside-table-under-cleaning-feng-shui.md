@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-bedside-table-leg-cleaning-feng-shui
   - bedroom-bedside-table-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 床邊桌底部清潔風水常被寫成「床頭櫃下方不要藏雜物，睡氣才會流通」，但桌底真正容易累積的是頭髮、棉絮、紙屑、寵物毛、掉落藥片、充電線和拖地水分。桌底太低時吸塵器進不去，線材若繞過桌腳，半夜起身可能被腳勾住；床邊桌與床框太近，清潔布伸不進去，也難以發現地板刮痕和潮氣。風水可以作為收納討論的語言，但不能保證睡眠、健康或運勢。
 
-先量臥室長寬、床邊桌外框與底部高度、桌腳、床框、插座、延長線、地墊和起身站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出桌底清潔範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜與桌底物品不會妨礙床框；若床側狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試夜間離床、吸塵和換床單。工具只能協助空間比較，不能判定電線、家具結構或藥品安全。
+先量臥室長寬、床邊桌外框與底部高度、桌腳、床框、插座、延長線、地墊和起身站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出桌底清潔範圍，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認抽屜與桌底物品不會妨礙床框；若床側狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試夜間離床、吸塵和換床單。工具只能協助空間比較，不能判定電線、家具結構或藥品安全。
 
 ## 先分辨桌底灰塵、毛髮與潮氣
 

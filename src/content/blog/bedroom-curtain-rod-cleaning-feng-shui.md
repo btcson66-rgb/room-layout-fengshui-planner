@@ -17,7 +17,7 @@ keywords:
   - 高處清潔安全
 relatedTools:
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
   - /zh/furniture-fit-checker/
 relatedPosts:
   - bedroom-pillow-dust-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 窗簾桿在臥室風水裡常被聯想到遮蔽、安定與明暗調節，但真正需要維護的是桿體、支架、滑環、窗簾纖維、窗框、牆面和開窗動線。高處桿體積塵時，直接拉動窗簾可能把灰塵帶到床面；支架鬆動或桿體彎曲時，繼續掛著厚簾也可能增加負載。本文把「藏風聚氣」轉成可觀察的除塵、固定、通風、遮光與安全站位，不把窗簾方向當成睡眠、健康或運勢保證。
 
-先記錄桿體長度、材質、支架數量、牆面、窗戶、窗簾重量、床和周邊家具。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉簾、開窗與清潔路徑，再用 [房間通行寬度檢查](/zh/room-circulation-check/)確認床邊與窗前沒有堆放椅子、箱子；支架與家具距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。高處作業不能只依賴工具結果，仍要以穩固站位與產品說明為準。
+先記錄桿體長度、材質、支架數量、牆面、窗戶、窗簾重量、床和周邊家具。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉簾、開窗與清潔路徑，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)確認床邊與窗前沒有堆放椅子、箱子；支架與家具距離可用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對。高處作業不能只依賴工具結果，仍要以穩固站位與產品說明為準。
 
 ## 先分辨桿體積塵、纖維、鏽蝕與鬆動
 

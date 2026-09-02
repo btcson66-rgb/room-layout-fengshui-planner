@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-wardrobe-cleaning-feng-shui
   - bedroom-wardrobe-drawer-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 衣櫃抽屜滑軌的風水問題常被問成「抽屜直線才不會散財」，但每天真正影響臥室的，是滑軌是否卡著衣物纖維、抽屜拉出會不會撞床、衣物是否壓到滑軌、緩衝器是否失效，以及夜間取衣時需不需要側身閃躲。風水裡的「收納有序」可以轉譯為抽屜能平順拉出、衣物分類可維持、櫃體穩定和通道清楚，不能用抽屜方向推論財運或睡眠。
 
-先量臥室長寬、衣櫃寬深高、抽屜內外尺寸、滑軌拉出深度、床邊距離、門片和夜間通道。以 270 × 330 公分臥室為例，衣櫃抽屜拉出 35 公分後，可能與床邊只剩一個人側身的空間。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出抽屜和床邊路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認拉出深度，最後以 [房間動線檢查](/zh/room-circulation-check/)測試取衣與關燈。工具只協助配置，不代替衣櫃固定、抽屜承載或夜間安全判斷。
+先量臥室長寬、衣櫃寬深高、抽屜內外尺寸、滑軌拉出深度、床邊距離、門片和夜間通道。以 270 × 330 公分臥室為例，衣櫃抽屜拉出 35 公分後，可能與床邊只剩一個人側身的空間。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出抽屜和床邊路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認拉出深度，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試取衣與關燈。工具只協助配置，不代替衣櫃固定、抽屜承載或夜間安全判斷。
 
 ## 衣櫃抽屜滑軌的好風水是灰塵可清、衣物不壓軌且抽屜能完整回位
 

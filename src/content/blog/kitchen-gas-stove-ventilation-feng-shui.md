@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - stove-facing-door-feng-shui
   - kitchen-range-hood-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 瓦斯爐在廚房風水裡常被視為火位，會延伸出爐口朝向、爐灶對門、火水相沖和家運興旺等問題。但瓦斯爐真正要處理的是燃氣管線、通風、排煙、鍋具取放、可燃物、油鍋、溢湯、孩子與寵物，以及「人離火熄」的責任。沒有任何爐口方向能保證財運、健康或家庭和睦；本文把「火位穩」轉成可檢查的空氣流通、設備狀態與煮食者能安全操作的工作三角。
 
-先量廚房、瓦斯爐、門、窗、抽油煙機、水槽、冰箱、備料檯、插座、瓦斯管線與主要通行點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較爐台靠牆、靠窗和開放式檯面的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋柄、抽油煙機和檯面沒有互相擠壓，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端菜、開櫃、清潔和孩子通過。工具不能取代燃氣器具技術人員或消防安全建議。
+先量廚房、瓦斯爐、門、窗、抽油煙機、水槽、冰箱、備料檯、插座、瓦斯管線與主要通行點。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較爐台靠牆、靠窗和開放式檯面的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認鍋柄、抽油煙機和檯面沒有互相擠壓，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端菜、開櫃、清潔和孩子通過。工具不能取代燃氣器具技術人員或消防安全建議。
 
 ## 瓦斯爐對門、靠窗與靠水槽
 

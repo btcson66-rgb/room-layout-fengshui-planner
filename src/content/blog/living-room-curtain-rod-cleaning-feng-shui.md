@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-curtain-feng-shui
   - living-room-curtain-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 客廳窗簾桿比窗簾布更容易被忽略，但桿身、窗簾環、滑輪、端頭和支架會積灰，也會因拉動、布料重量、日照和牆面狀態產生阻力。窗簾拉不動不一定是「氣被擋住」，可能是環片卡住、桿身彎曲、支架偏移、牆面鬆脫或窗簾布過重。風水裡的採光與藏風可以轉成窗簾能平順開合、窗邊可清潔、沙發不堵窗、日間光線可調整和夜間隱私可維持，不是窗簾桿擦乾淨就能保證明亮或聚財。
 
-先記錄客廳約 360 × 420 公分、窗框、窗簾桿長度、支架數量與距離、窗簾布、沙發、茶几、地毯、窗邊插座和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉簾、開窗、擦窗、清潔桿身和沙發起身的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認窗簾下擺與沙發、盆栽、茶几不互撞；入口狹窄時用 [房間通行寬度檢查](/zh/room-circulation-check/)測試拉簾後的走道。工具只能協助空間比較，不能代替高處作業、牆體固定和窗簾桿承重判斷。
+先記錄客廳約 360 × 420 公分、窗框、窗簾桿長度、支架數量與距離、窗簾布、沙發、茶几、地毯、窗邊插座和通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出拉簾、開窗、擦窗、清潔桿身和沙發起身的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認窗簾下擺與沙發、盆栽、茶几不互撞；入口狹窄時用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試拉簾後的走道。工具只能協助空間比較，不能代替高處作業、牆體固定和窗簾桿承重判斷。
 
 ## 桿身灰塵、窗簾環卡住與支架鬆動要分查
 

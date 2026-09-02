@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-refrigerator-vegetable-drawer-cleaning-feng-shui
   - kitchen-refrigerator-shelf-rail-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 冰箱蔬果抽屜除了存放蔬菜水果，也會透過滑槽、滾輪、止擋、玻璃蓋和濕度控制改變取物與清潔方式。蔬菜水分、破袋液體、黏性汁液和碎葉可能流進抽屜兩側或滑槽，讓抽屜變得難拉、歪斜或回裝不到位。廚房風水常把蔬果視為生氣與庫存，但更可驗證的作法是先確認滑槽沒有溢漏、抽屜能順利拉出、食材不被錯誤密封，以及冰箱門前的站位不被阻擋。
 
-若有人問「蔬果抽屜卡住是不是廚房風水不流通？」應先分辨液體進入滑槽、抽屜未正確落在滑軌、周圍食材阻擋、玻璃蓋位置不正、濕度設定或滑槽部件髒污。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出冰箱門、抽屜拉出和水槽工作區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查門片與櫃體距離，再以 [房間通行寬度檢查](/zh/room-circulation-check/)測試取菜時是否需要長時間堵住通道。工具只協助空間整理，不取代冰箱手冊與食品管理。
+若有人問「蔬果抽屜卡住是不是廚房風水不流通？」應先分辨液體進入滑槽、抽屜未正確落在滑軌、周圍食材阻擋、玻璃蓋位置不正、濕度設定或滑槽部件髒污。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出冰箱門、抽屜拉出和水槽工作區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查門片與櫃體距離，再以 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試取菜時是否需要長時間堵住通道。工具只協助空間整理，不取代冰箱手冊與食品管理。
 
 ## 先辨認蔬果抽屜、滑槽、滾輪與玻璃蓋
 

@@ -16,9 +16,8 @@ keywords:
   - 大門安全鏈螺絲檢查
   - 玄關開門動線
 relatedTools:
-  - /zh/entryway-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-door-lock-cleaning-feng-shui
   - entryway-door-hinge-cleaning-feng-shui
@@ -36,7 +35,7 @@ howToSteps:
 
 玄關大門安全鏈在風水裡容易被聯想到門戶界線、內外分隔與迎客節奏，但真正需要維護的是鏈條鏽痕、固定座、螺絲、滑動片、門框受力、卡滯和夾手風險。安全鏈能扣上，不代表固定座一定牢固；鏈條表面擦亮，也不代表它可以承受撞擊或替代門鎖。本文把「門戶有界」轉成可觀察的表面清潔、固定狀態、有限開門、訪客交接和通行驗收，不把安全鏈位置當成防盜、財運或運勢保證。
 
-先記錄玄關約 160 × 240 公分、大門材質、安全鏈型式、鏈條長度、滑動座或扣座、固定螺絲、門框、門鎖、門檻、鞋櫃、包裹區和主要通道。用 [玄關配置工具](/zh/entryway-layout-planner/)畫出半開門、確認訪客、搬物和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會限制門扇；開門時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助空間判讀，不取代門鎖、五金或居家安全專業判斷。
+先記錄玄關約 160 × 240 公分、大門材質、安全鏈型式、鏈條長度、滑動座或扣座、固定螺絲、門框、門鎖、門檻、鞋櫃、包裹區和主要通道。用 [房間家具配置工具](/zh/room-layout-planner/)畫出半開門、確認訪客、搬物和進屋路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)確認鞋櫃與包裹不會限制門扇；開門時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助空間判讀，不取代門鎖、五金或居家安全專業判斷。
 
 ## 先分辨灰塵、鏽痕、卡滯與固定座鬆動
 

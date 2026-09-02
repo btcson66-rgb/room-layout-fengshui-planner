@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - dining-room-table-edge-cleaning-feng-shui
   - dining-room-table-under-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 餐桌桌角風水常被問成「桌角對到門會不會把財氣推出去」，但用餐區每天真正要處理的是：桌角是否沾到湯汁和油膜、桌腳接點是否積灰、椅子拉出會不會撞牆、桌角是否侵入通道，以及清潔布能否擦到靠牆的那一側。風水裡的「聚」可以轉譯為家人能坐下、食物能交接、桌面可清潔、桌腳穩定與通道清楚，不能用桌角方位保證聚財或家庭和諧。
 
-先量餐廳長寬、餐桌長寬高、桌角形狀、桌腳外緣、椅子拉出深度、牆面、餐櫃、門片與傳菜路徑。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座、端菜、擦拭和離開的路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌角、椅背和牆面不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查多人同時起身。工具只協助配置，不代替家具固定、表面材質或碰撞安全判斷。
+先量餐廳長寬、餐桌長寬高、桌角形狀、桌腳外緣、椅子拉出深度、牆面、餐櫃、門片與傳菜路徑。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出入座、端菜、擦拭和離開的路線，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桌角、椅背和牆面不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查多人同時起身。工具只協助配置，不代替家具固定、表面材質或碰撞安全判斷。
 
 ## 餐桌桌角的好風水是擦得到、看得清且不切斷椅子拉出路徑
 

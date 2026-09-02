@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - wardrobe-facing-bed-feng-shui
   - bedroom-ceiling-light-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 衣櫃燈常被解讀成「照亮財庫」「衣櫃有光就能帶旺氣」，但臥室裡的燈具也可能靠近衣物、紙盒、木板和布料。燈光過亮會直射床面，太暗又讓人找衣時必須伸手摸索；燈具、感應器或電線若安裝不當，還會增加碰撞、過熱和故障風險。風水裡的明堂、藏風與光線象徵可以保留，但不能用來替代用電安全。沒有衣櫃燈能保證財運、睡眠或健康，先確保光線只照需要看的地方，並且能安全維護。
 
-先量衣櫃外廓、內部分層、門片或拉門開啟範圍、床墊邊緣、床邊通道、插座、電源線和燈具預計位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較衣櫃、床和主要動線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開門後不會打到燈具或床頭；若夜間會從床走到浴室，再用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查燈光開啟後是否仍看得清地面。工具只能協助配置，不能判定燈具是否符合所在地電氣規範。
+先量衣櫃外廓、內部分層、門片或拉門開啟範圍、床墊邊緣、床邊通道、插座、電源線和燈具預計位置。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較衣櫃、床和主要動線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開門後不會打到燈具或床頭；若夜間會從床走到浴室，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查燈光開啟後是否仍看得清地面。工具只能協助配置，不能判定燈具是否符合所在地電氣規範。
 
 ## 先分辨找衣、整理和睡前照明
 

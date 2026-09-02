@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-basin-cleaning-feng-shui
   - kitchen-under-sink-moisture-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 廚房水槽下方排水管在風水裡容易被說成「水從財庫下漏」，但實際要先處理的是接頭水珠、排水回流、櫃板潮痕、異味、管件鬆動與收納遮蔽。櫃門關起來看不見，不代表沒有漏水；一次用水後沒有水珠，也不代表連續排水時不會滲漏。本文把「水流不外洩」轉成可觀察的清空、分段用水、擦乾、記錄、停用和維修交接，不把漏水與財運建立因果保證。
 
-先記錄水槽位置、排水管材質與路徑、接頭、存水彎、櫥櫃底板、牆面、垃圾桶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出洗菜、洗碗和查看櫃內的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納箱不會壓到管件；多人操作時可用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具只能協助尺寸與動線，不取代漏水、管線或建築維修判斷。
+先記錄水槽位置、排水管材質與路徑、接頭、存水彎、櫥櫃底板、牆面、垃圾桶和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出洗菜、洗碗和查看櫃內的路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收納箱不會壓到管件；多人操作時可用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具只能協助尺寸與動線，不取代漏水、管線或建築維修判斷。
 
 ## 先分辨接頭水珠、殘留水與持續滲漏
 

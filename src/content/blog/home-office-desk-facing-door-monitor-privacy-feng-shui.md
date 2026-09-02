@@ -95,7 +95,7 @@ OSHA 建議降低窗戶直射與螢幕反射，並可用窗簾或百葉調整光
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出房門、桌子和訪客視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較斜放後的門片空間；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放開門、離席和取文件。若入口能見度是主題，可看 [書桌面向房門能見度](/zh/blog/home-office-desk-facing-door-visibility-feng-shui/)；若窗光是瓶頸，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出房門、桌子和訪客視線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較斜放後的門片空間；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放開門、離席和取文件。若入口能見度是主題，可看 [書桌面向房門能見度](/zh/blog/home-office-desk-facing-door-visibility-feng-shui/)；若窗光是瓶頸，參考 [書桌靠窗反光](/zh/blog/home-office-desk-window-reflection-glare-feng-shui/)。
 
 ### 參考資料
 

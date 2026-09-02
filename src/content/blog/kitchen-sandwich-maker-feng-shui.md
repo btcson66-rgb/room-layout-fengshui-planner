@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-electric-griddle-feng-shui
   - kitchen-toaster-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 熱壓吐司機在廚房風水裡常被聯想到把零散食材壓成完整形狀、讓早餐快速成形，因此有人會把它放在廚房中央或餐桌邊，認為能讓家人聚氣。但熱壓吐司機有高溫烤面、鉸鏈、電線、碎屑、蒸氣、插座和取食動線，位置若只看方便，很容易讓開蓋碰到上櫃、熱機靠近紙袋或孩子伸手。沒有任何熱壓吐司機位置能保證財運、健康或早餐順利；本文把「成形」落到開合空間、散熱、清潔和取食路線。
 
-先量機體、上下蓋開合、烤盤、插座、備餐檯、紙袋、餐桌與主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆和靠近餐桌的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開蓋不會撞櫃，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試端吐司與家人進出。工具不能代替產品說明、用電安全或高溫燙傷判斷。
+先量機體、上下蓋開合、烤盤、插座、備餐檯、紙袋、餐桌與主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較靠牆和靠近餐桌的方案，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認開蓋不會撞櫃，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試端吐司與家人進出。工具不能代替產品說明、用電安全或高溫燙傷判斷。
 
 ## 「成形」不能把設備塞進最小角落
 

@@ -95,7 +95,7 @@ EPA 的室內空氣品質指南把通風、控制污染源和維持清潔視為�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、風扇、門與插座方向，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座占地；完成後以 [房間動線檢查](/zh/room-circulation-check/) 回放夜間路線。若床邊還有照明，可參考 [床邊立燈 clearance](/zh/blog/bedroom-bedside-floor-lamp-clearance-feng-shui/)；若電線整理是主問題，也可看 [床邊桌電線清潔](/zh/blog/bedroom-bedside-table-cable-cleaning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、風扇、門與插座方向，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較底座占地；完成後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放夜間路線。若床邊還有照明，可參考 [床邊立燈 clearance](/zh/blog/bedroom-bedside-floor-lamp-clearance-feng-shui/)；若電線整理是主問題，也可看 [床邊桌電線清潔](/zh/blog/bedroom-bedside-table-cable-cleaning-feng-shui/)。
 
 ### 參考資料
 

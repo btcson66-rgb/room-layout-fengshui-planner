@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-dishwasher-filter-cleaning-feng-shui
   - kitchen-dishwasher-rack-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機噴水臂位在餐具籃架下方、上方或機體頂部，靠水流壓力旋轉，把水送到不同方向。噴孔若被食物殘渣、水垢或洗劑膜影響，籃架高度不合、餐具太高或噴水臂卡到物品，也會讓水流覆蓋改變。廚房風水常把水流解讀為順流、清洗或聚散，但洗碗機更應先確認噴水臂能否自由轉動、噴孔是否可清潔、餐具是否遮擋，以及洗程後殘渣是否有固定位置。
 
-要回答「噴水臂不轉是不是廚房風水不好？」應先分辨是未啟動的噴臂、裝載碰撞、噴孔堵塞、水垢、籃架落位，還是循環泵與供水問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗碗機門片、籃架拉出和裝卸餐具路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查門前是否有固定物品，再用 [房間通行寬度檢查](/zh/room-circulation-check/)比較開門後是否擋住水槽或工作檯。工具不取代電器手冊、斷電和維修判斷。
+要回答「噴水臂不轉是不是廚房風水不好？」應先分辨是未啟動的噴臂、裝載碰撞、噴孔堵塞、水垢、籃架落位，還是循環泵與供水問題。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗碗機門片、籃架拉出和裝卸餐具路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)檢查門前是否有固定物品，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)比較開門後是否擋住水槽或工作檯。工具不取代電器手冊、斷電和維修判斷。
 
 ## 先分辨上下噴水臂與供水路徑
 

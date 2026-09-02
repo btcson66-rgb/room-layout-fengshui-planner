@@ -89,7 +89,7 @@ EPA 的居家空氣指南可作清潔與通風的背景；CPSC 的窗簾繩資�
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗框、布幅、重疊和床側外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較收起與閉合狀態；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放拉簾、下床、開門和清潔。若問題是反光，可讀 [床頭窗簾反光](/zh/blog/bedroom-bed-headboard-wall-curtain-glare-feng-shui/)；若問題是收束回位，參考 [床頭窗簾綁帶](/zh/blog/bedroom-bed-headboard-wall-curtain-tieback-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出窗框、布幅、重疊和床側外框，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較收起與閉合狀態；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放拉簾、下床、開門和清潔。若問題是反光，可讀 [床頭窗簾反光](/zh/blog/bedroom-bed-headboard-wall-curtain-glare-feng-shui/)；若問題是收束回位，參考 [床頭窗簾綁帶](/zh/blog/bedroom-bed-headboard-wall-curtain-tieback-feng-shui/)。
 
 ### 參考資料
 

@@ -18,10 +18,10 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-mirror-shelf-cleaning-feng-shui
-  - bathroom-washbasin-feng-shui
+  - bathroom-mirror-feng-shui
   - kitchen-sink-under-cabinet-storage-feng-shui
 howToName: "洗手台櫃層板、水氣、瓶罐、管線、門片與浴室動線檢查"
 howToTotalTime: "PT30M"
@@ -36,7 +36,7 @@ howToSteps:
 
 洗手台櫃層板風水常被問成「櫃子放在浴室哪一側才不漏財」，但每天真正要處理的是：水槽飛濺是否沿著瓶罐流到層板、排水管周圍是否潮濕、門片開啟會不會撞腿、層板是否堆太滿，以及清潔布能否伸到最深處。風水裡的「藏」可以轉譯為物品有固定位置、潮氣能被發現、管線可檢查、門片好開和洗漱不必折返，不能用櫃子方向保證守財或防漏水。
 
-先量浴室長寬、洗手台與櫃體寬深高、層板高度、門片開啟弧線、排水管、地漏、馬桶、淋浴區、門口和站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、取瓶、開櫃與擦乾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和腿部不會互撞；也可參考 [房間動線檢查](/zh/room-circulation-check/)檢查多人使用時的交會。工具只協助配置，不代替防水、管線、櫃體固定或衛生判斷。
+先量浴室長寬、洗手台與櫃體寬深高、層板高度、門片開啟弧線、排水管、地漏、馬桶、淋浴區、門口和站位。可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗手、取瓶、開櫃與擦乾路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片和腿部不會互撞；也可參考 [房間動線檢查](/zh/blog/room-circulation-width-guide/)檢查多人使用時的交會。工具只協助配置，不代替防水、管線、櫃體固定或衛生判斷。
 
 ## 洗手台櫃層板的好風水是潮氣看得見、物品擦得到且管線留有檢查口
 

@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-feng-shui-layout
   - balcony-drainage-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 摺疊椅在陽台風水裡常被聯想到把空間收放自如、需要時有人可坐，有人會問椅背朝向屋內是否比較留住人氣，或把椅子靠在欄杆旁是否能讓陽台更開闊。實際上要先處理的是椅子收折後會不會被強風吹倒、鉸鏈是否夾手、椅面是否淋雨積水、腳墊會不會堵排水孔、孩子是否拿來攀爬，以及開陽台門、晾衣和清掃時是否有足夠空間。沒有任何朝向能替代固定與防颱；本文把「收放有度」轉成摺疊椅狀態、固定、排水與使用動線。
 
-先量陽台長寬、欄杆、門扇開啟弧線、摺疊椅收起與展開尺寸、排水孔、曬衣架、室外機和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較椅子靠牆、收納櫃和門側位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收折後不會頂住門、窗或排水設備，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試搬椅、晾衣、掃地和雨天撤收。工具只協助配置，不取代建築、消防、防颱或家具安全判斷。
+先量陽台長寬、欄杆、門扇開啟弧線、摺疊椅收起與展開尺寸、排水孔、曬衣架、室外機和主要走道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較椅子靠牆、收納櫃和門側位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認收折後不會頂住門、窗或排水設備，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試搬椅、晾衣、掃地和雨天撤收。工具只協助配置，不取代建築、消防、防颱或家具安全判斷。
 
 ## 摺疊椅要分「可坐、已收折、待維修」狀態
 

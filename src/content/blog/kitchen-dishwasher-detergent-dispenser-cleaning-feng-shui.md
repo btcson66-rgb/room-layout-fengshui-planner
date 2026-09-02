@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-dishwasher-filter-cleaning-feng-shui
   - kitchen-dishwasher-door-seal-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 洗碗機洗劑盒的風水問題常被簡化為「廚房水火要分開」，但日常真正需要處理的是洗劑受潮結塊、盒蓋打不開、洗劑殘粉、餐具裝載遮擋噴水，或開門後有人要在同一條路徑端菜。風水裡的「有序」可以轉譯為洗劑能在指定時機釋放、門片能受控開合、餐具取放不與熱鍋交錯，不能把洗劑盒狀態直接說成財運結果。
 
-先量廚房長寬、洗碗機寬深、門片開啟深度、洗劑盒位置、上層碗籃高度、爐具、水槽與備餐站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗碗機開門和備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對設備與櫃體，最後用 [房間動線檢查](/zh/room-circulation-check/)看取碗時是否會穿越開啟門片。工具只協助量測，不代替家電維修判斷。
+先量廚房長寬、洗碗機寬深、門片開啟深度、洗劑盒位置、上層碗籃高度、爐具、水槽與備餐站位。以 240 × 300 公分廚房為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出洗碗機開門和備餐路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對設備與櫃體，最後用 [房間動線檢查](/zh/blog/room-circulation-width-guide/)看取碗時是否會穿越開啟門片。工具只協助量測，不代替家電維修判斷。
 
 ## 洗碗機洗劑盒的好風水是乾燥、可開合與投放時機清楚
 

@@ -21,7 +21,7 @@ relatedTools:
   - /zh/blog/kitchen-spice-drawer-feng-shui/
 relatedPosts:
   - kitchen-spice-drawer-feng-shui
-  - kitchen-drawer-organizer-feng-shui
+  - kitchen-drawer-organizer-cleaning-feng-shui
   - kitchen-countertop-cleaning-feng-shui
 howToName: "廚房抽屜碎屑、餐具、油膜與乾燥取物動線檢查"
 howToTotalTime: "PT40M"

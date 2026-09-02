@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-sink-feng-shui
   - kitchen-range-hood-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 飲水機在風水裡常被視為流動的水，於是有人把它放在財位、入口或爐具對面，期待帶來財氣；但現代飲水機同時有水箱、濾芯、加熱或冷卻元件、電源線和排水需求。放錯位置可能出現漏水、散熱不足、取熱水燙傷、插座受潮或檯面承重不夠。沒有飲水機位置能保證財運或健康，水火象徵可以作為整理框架，實際上應先讓加水、取水、清潔和維修安全。
 
-先量飲水機寬深高、出水口前方、杯子落點、插座、水槽、爐具、冰箱門和工作檯面。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較飲水機與主要工作區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、杯子和電線不互撞；廚房狹窄時再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試取水與端鍋是否交叉。工具不能取代漏水保護、產品說明與電氣檢查。
+先量飲水機寬深高、出水口前方、杯子落點、插座、水槽、爐具、冰箱門和工作檯面。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較飲水機與主要工作區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認門片、杯子和電線不互撞；廚房狹窄時再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試取水與端鍋是否交叉。工具不能取代漏水保護、產品說明與電氣檢查。
 
 ## 先分辨飲水、加水與維護任務
 

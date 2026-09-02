@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - balcony-feng-shui-layout
   - laundry-room-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 陽台曬衣架常被問成「衣服晾在陽台會不會把財氣曬走」「曬衣桿壓住陽台是不是破風水」。陽台在風水文化中常被視為住宅與外界交換光、風的邊界，但曬衣架也是承受衣物重量、風雨、升降操作和長時間日曬的設備。若它擋住窗戶、熱水器排氣、緊急出口或讓人必須伸出欄杆收衣，真正的問題是安全與維護，而不是某個方位不吉。沒有晾衣位置能保證運勢或家庭健康；應先讓衣物有通風、讓架子固定、讓陽台保持可進出。
 
-先量陽台內寬、深度、門窗開啟弧線、曬衣架下降後的高度、熱水器、冷氣室外機、排水孔和通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出晾衣與收衣動線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認衣架、門窗與設備不互撞；若陽台是主要清潔或避難位置，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試抱衣籃、推車和夜間通行。工具不能取代固定件、建物防墜或高處作業專業判斷。
+先量陽台內寬、深度、門窗開啟弧線、曬衣架下降後的高度、熱水器、冷氣室外機、排水孔和通往室內的門。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)標出晾衣與收衣動線，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認衣架、門窗與設備不互撞；若陽台是主要清潔或避難位置，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試抱衣籃、推車和夜間通行。工具不能取代固定件、建物防墜或高處作業專業判斷。
 
 ## 先分辨晾曬、暫掛與清潔任務
 

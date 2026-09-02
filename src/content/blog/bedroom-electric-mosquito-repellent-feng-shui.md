@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-air-purifier-feng-shui
   - bedroom-fan-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 電蚊香在臥室風水裡常被聯想到清除干擾、讓夜晚安靜，因此有人會把它放在床頭，或在門窗緊閉時長時間使用，認為這樣能守住臥室的氣。但電蚊香是加熱電器，也會散發環境用藥成分，位置要先處理通風、插座、藥液或蚊香片、發熱部位、窗簾、床品、兒童、寵物和睡前進出。環境部提醒，有人在室內要保持通風；若要在密閉空間防治，人和寵物必須離開，進入前還要先通風。沒有任何電蚊香位置能保證改善睡眠、健康或家運；本文把「驅除干擾」落到可觀察的防蚊、通風與使用流程。
 
-先量電蚊香器、插座、床、床頭櫃、門、窗、窗簾、冷氣和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門邊與窗邊位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認藥液瓶或蚊香片不會被家具碰撞；夜間起身和有寵物時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)檢查電線和腳步。工具不能代替產品標示、環境用藥規範或健康建議。
+先量電蚊香器、插座、床、床頭櫃、門、窗、窗簾、冷氣和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較門邊與窗邊位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認藥液瓶或蚊香片不會被家具碰撞；夜間起身和有寵物時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)檢查電線和腳步。工具不能代替產品標示、環境用藥規範或健康建議。
 
 ## 先分清驅趕、擊昏與密閉防治情境
 

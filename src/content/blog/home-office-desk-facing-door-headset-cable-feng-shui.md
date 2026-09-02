@@ -91,7 +91,7 @@ OSHA 的工作站和電話資料都提醒，設備太遠可能造成重複伸手
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌子、椅子、插座和線材路徑，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌後與門片距離；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放進門、離席和清潔。若主要是通話內容與入口視線，可看 [面向房門通話隱私](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)；若正在調整椅子，可讀 [面向房門椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出桌子、椅子、插座和線材路徑，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較桌後與門片距離；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放進門、離席和清潔。若主要是通話內容與入口視線，可看 [面向房門通話隱私](/zh/blog/home-office-desk-facing-door-phone-call-privacy-feng-shui/)；若正在調整椅子，可讀 [面向房門椅子轉身](/zh/blog/home-office-desk-facing-door-chair-turning-feng-shui/)。
 
 ### 參考資料
 

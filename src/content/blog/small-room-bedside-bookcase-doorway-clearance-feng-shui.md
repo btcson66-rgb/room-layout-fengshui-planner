@@ -103,7 +103,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫房門掃掠、書櫃和床，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度與抽屜外伸；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放進門、取書和離開。若門旁已有鏡面或開放層架，可參考 [小房間落地鏡與門口距離](/zh/blog/small-room-floor-mirror-doorway-clearance-feng-shui/) 與 [小房間開放層架與門](/zh/blog/small-room-open-shelf-door-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫房門掃掠、書櫃和床，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較深度與抽屜外伸；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放進門、取書和離開。若門旁已有鏡面或開放層架，可參考 [小房間落地鏡與門口距離](/zh/blog/small-room-floor-mirror-doorway-clearance-feng-shui/) 與 [小房間開放層架與門](/zh/blog/small-room-open-shelf-door-clearance-feng-shui/)。
 
 ### 參考資料
 

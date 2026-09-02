@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - living-room-air-purifier-feng-shui
   - bedroom-humidifier-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 空氣清淨機在臥室風水裡常被聯想到淨化濁氣、穩定環境和讓氣流重新循環，因此有人會把它放在床頭，或讓出風口直接朝向睡眠者。但空氣清淨機的效果與位置要一起看污染源、通風、進出風口、窗簾、家具、濾網、噪音、風感與臭氧風險；放得很顯眼不代表空氣就一定變好。美國環境保護署提醒，空氣清淨機是污染源控制與通風之外的補充，不能移除所有污染物；也要避免會刻意產生臭氧的產品。沒有任何清淨機位置能保證改善睡眠、過敏或健康；本文把「清氣」落到可檢查的氣流、維護和床邊使用秩序。
 
-先量機體、進風口、出風口、床、床頭櫃、窗簾、冷氣、窗戶、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床側與房間角落的氣流路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認濾網抽出和上蓋開合不被家具卡住；若夜間會起身或房內有兒童，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試電線與腳步。工具不會測量 CADR、污染物或醫療效果，不能取代產品資料與專業評估。
+先量機體、進風口、出風口、床、床頭櫃、窗簾、冷氣、窗戶、插座和主要通道。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較床側與房間角落的氣流路徑，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認濾網抽出和上蓋開合不被家具卡住；若夜間會起身或房內有兒童，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試電線與腳步。工具不會測量 CADR、污染物或醫療效果，不能取代產品資料與專業評估。
 
 ## 先分辨源頭控制、通風與清淨機
 

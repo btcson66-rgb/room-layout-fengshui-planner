@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - entryway-package-drop-zone-feng-shui
   - entryway-shoe-cabinet-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 玄關資源回收區在風水裡常被聯想到把不需要的東西送走、清理入口與讓新氣進來，有人會問回收桶放門左側、右側或靠近鞋櫃是否比較能招財。但玄關真正要處理的是回收物是否分對、容器是否倒空與略洗、紙箱是否壓扁、濕物有沒有滴水、異味是否進入室內，以及出門時會不會撞到桶子或踩到物品。沒有任何回收區方位能保證財運或家庭順利；較實際的判斷是讓分類、清潔、暫存和搬出各有位置。
 
-先量玄關門扇開啟弧線、鞋櫃深度、回收桶、包裹拆封區、雨具、樓梯或電梯路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較回收桶與鞋櫃、包裹區的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶蓋、紙箱與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試穿鞋、提袋、推嬰兒車、搬回收物和多人進出。工具只協助配置，不取代所在地環保局的排出規定。
+先量玄關門扇開啟弧線、鞋櫃深度、回收桶、包裹拆封區、雨具、樓梯或電梯路徑。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較回收桶與鞋櫃、包裹區的位置，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認桶蓋、紙箱與櫃門不會互撞，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試穿鞋、提袋、推嬰兒車、搬回收物和多人進出。工具只協助配置，不取代所在地環保局的排出規定。
 
 ## 回收區不是把所有廢物先堆在門口
 

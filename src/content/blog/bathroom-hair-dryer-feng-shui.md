@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-towel-rack-feng-shui
   - bathroom-shower-stool-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 吹風機在浴室風水裡常被說成以火氣帶走濕寒、讓人整理後重新出門，因此有人會問放在鏡子旁、浴室財位或洗手台上方是不是比較順。但標準檢驗局明確提醒不要在潮濕環境，例如浴室，使用吹風機；位置要先處理插座、濕手、地面水氣、進出風口、濾網、熱風、收納和離開浴室的動線。若把吹風機放在洗手台邊，或為了方便而讓電線垂進水盆，風水象徵不能取代觸電與過熱風險。沒有吹風機位置能保證健康、髮質或運勢；本文重點是建立乾燥、斷電和收納邊界。
 
-先量吹風機收納後的長寬高、電源線、插座、洗手台、鏡子、門片、毛巾、淋浴區和乾髮站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較浴室收納與乾燥區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認吹風機、毛巾架和櫃門不互撞；需要把吹風機帶到臥室或更衣區使用時，再用 [房間通行寬度檢查](/zh/room-circulation-check/)測試。工具不能代替電器說明、漏電保護、浴室規範或合格專業判斷。
+先量吹風機收納後的長寬高、電源線、插座、洗手台、鏡子、門片、毛巾、淋浴區和乾髮站位。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)比較浴室收納與乾燥區，用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認吹風機、毛巾架和櫃門不互撞；需要把吹風機帶到臥室或更衣區使用時，再用 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試。工具不能代替電器說明、漏電保護、浴室規範或合格專業判斷。
 
 ## 先分辨浴室收納與乾髮使用狀態
 

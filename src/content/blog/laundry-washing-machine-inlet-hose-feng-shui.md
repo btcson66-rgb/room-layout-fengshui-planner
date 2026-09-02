@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-feng-shui
   - laundry-washing-machine-filter-cleaning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 洗衣機進水管風水常被說成「水路順，家務才不滯」，但進水管真正關係到水龍頭接頭、管身耐久、機台震動、地面乾燥、插座安全和洗衣流程。漏水可能只出現在進水瞬間，也可能是接頭慢慢滲出；管子外觀看起來完整，不代表內層沒有老化。風水可以用來討論水路與家務秩序，但不能保證不漏水、節水、洗衣機壽命或運勢。
 
-先量洗衣區長寬、洗衣機外框、後方牆面、水龍頭、進水管、排水管、插座、地漏、洗衣籃、清潔劑和晾衣路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取衣和關水的站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認洗衣機後方沒有被櫃體壓住；若陽台或浴室洗衣區狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)測試搬衣、彎腰、擦水和撤離。工具只能協助平面比較，不能判定水電、接地或管件安全。
+先量洗衣區長寬、洗衣機外框、後方牆面、水龍頭、進水管、排水管、插座、地漏、洗衣籃、清潔劑和晾衣路線。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出開門、取衣和關水的站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認洗衣機後方沒有被櫃體壓住；若陽台或浴室洗衣區狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)測試搬衣、彎腰、擦水和撤離。工具只能協助平面比較，不能判定水電、接地或管件安全。
 
 ## 先分辨水龍頭接頭滲水、管身老化與地面回濕
 

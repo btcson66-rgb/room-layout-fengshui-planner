@@ -16,9 +16,8 @@ keywords:
   - 洗衣機棉絮洗劑殘留
   - 洗衣區異味與乾燥
 relatedTools:
-  - /zh/laundry-layout-planner/
   - /zh/room-layout-planner/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - laundry-washing-machine-drum-cleaning-feng-shui
   - laundry-washing-machine-filter-cleaning-feng-shui
@@ -37,7 +36,7 @@ howToSteps:
 
 洗衣機攪拌柱是部分直立式洗衣機桶中央的柱狀洗衣部件，會接觸洗劑水、衣物纖維、皮脂和棉絮。它和洗衣桶、桶底、濾網、排水管不是同一個清潔位置；有些機型的上蓋可拆，有些需要按壓、旋轉或完全不應由使用者拆卸。洗衣區風水談循環與去舊，可以轉成衣物能取出、攪拌柱可依說明維護、洗後可乾、洗衣籃不堵路，但不能承諾洗淨、除菌、健康或財運。
 
-先記錄洗衣區約 240 × 300 公分、品牌與型號、攪拌柱外形、上蓋、桶口、排水、牆距、洗衣籃、摺衣面和晾衣方向。用 [洗衣區配置工具](/zh/laundry-layout-planner/)安排開蓋、取衣、分色、放入洗衣籃和晾衣的路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)檢查門片與收納是否互撞；若前方狹窄，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)實測。工具不會代替型號手冊、觸電防護或機械維修判斷。
+先記錄洗衣區約 240 × 300 公分、品牌與型號、攪拌柱外形、上蓋、桶口、排水、牆距、洗衣籃、摺衣面和晾衣方向。用 [房間家具配置工具](/zh/room-layout-planner/)安排開蓋、取衣、分色、放入洗衣籃和晾衣的路徑，再用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)檢查門片與收納是否互撞；若前方狹窄，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)實測。工具不會代替型號手冊、觸電防護或機械維修判斷。
 
 ## 攪拌柱和無攪拌柱機型不能混用步驟
 

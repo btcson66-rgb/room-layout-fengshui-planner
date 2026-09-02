@@ -93,7 +93,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、書櫃、插座和充電路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較背板與維護區；最後以 [房間動線檢查](/zh/room-circulation-check/) 回放插拔和夜間起身。若門口視線是瓶頸，可看 [床邊書櫃擋門口視線](/zh/blog/small-room-bedside-bookcase-doorway-sightline-feng-shui/)；若抽屜外伸是問題，參考 [床邊書櫃抽屜](/zh/blog/small-room-bedside-bookcase-drawer-clearance-feng-shui/)。
+用 [房間配置規劃器](/zh/room-layout-planner/) 畫出床、書櫃、插座和充電路線，再用 [家具尺寸適配檢查器](/zh/furniture-fit-checker/) 比較背板與維護區；最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/) 回放插拔和夜間起身。若門口視線是瓶頸，可看 [床邊書櫃擋門口視線](/zh/blog/small-room-bedside-bookcase-doorway-sightline-feng-shui/)；若抽屜外伸是問題，參考 [床邊書櫃抽屜](/zh/blog/small-room-bedside-bookcase-drawer-clearance-feng-shui/)。
 
 ### 參考資料
 

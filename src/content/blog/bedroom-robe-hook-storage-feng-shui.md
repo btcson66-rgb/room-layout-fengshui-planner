@@ -21,7 +21,7 @@ relatedTools:
   - /zh/small-bedroom-layout/
 relatedPosts:
   - bedroom-worn-clothes-storage-feng-shui
-  - bedroom-wardrobe-placement-feng-shui
+  - bedroom-wardrobe-lighting-feng-shui
   - bedroom-bedside-rail-feng-shui
 howToName: "臥室睡袍掛鉤、承重與起身動線檢查"
 howToTotalTime: "PT25M"

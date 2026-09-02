@@ -18,12 +18,12 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-door-feng-shui
   - kitchen-pantry-door-feng-shui
   - dining-table-facing-door-feng-shui
-  - kitchen-cleaning-feng-shui
+  - kitchen-fridge-cleaning-feng-shui
 howToName: "廚房流理台、門片與備餐走道檢查"
 howToTotalTime: "PT45M"
 howToSteps:

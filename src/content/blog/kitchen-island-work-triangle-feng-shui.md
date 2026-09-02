@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - kitchen-island-feng-shui
   - kitchen-countertop-zoning-feng-shui
@@ -37,7 +37,7 @@ howToSteps:
 
 廚房中島工作三角風水常把冰箱、水槽和爐具連成一個「財氣流動」的三角形，但真正影響好不好用的，是取食材、清洗、切配、烹煮、盛盤和清潔之間是否少繞路、少碰撞。三角形太尖可能讓某個站位被迫穿越爐前；中島太大可能切斷冰箱到水槽的路；火源靠近人流則不是象徵上的火水衝突而已，也可能是端鍋和兒童活動的安全問題。風水可作為空間秩序的提問，不保證財運、效率或防火。
 
-先量廚房長寬、冰箱門開啟方向、水槽、爐具、抽油煙機、中島長寬、檯面深度、櫃門、抽屜、垃圾桶、洗碗機、窗戶和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出三個工作點與中島四側站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認中島不會擋住設備散熱、櫃門和維修；若是小廚房或多人使用，搭配 [房間通行寬度檢查](/zh/room-circulation-check/)模擬端鍋、開冰箱、倒水、取垃圾和撤離。工具只能協助平面比較，不能判定瓦斯、電氣、排煙或建築規範。
+先量廚房長寬、冰箱門開啟方向、水槽、爐具、抽油煙機、中島長寬、檯面深度、櫃門、抽屜、垃圾桶、洗碗機、窗戶和入口。用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出三個工作點與中島四側站位，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)確認中島不會擋住設備散熱、櫃門和維修；若是小廚房或多人使用，搭配 [房間通行寬度檢查](/zh/blog/room-circulation-width-guide/)模擬端鍋、開冰箱、倒水、取垃圾和撤離。工具只能協助平面比較，不能判定瓦斯、電氣、排煙或建築規範。
 
 ## 工作三角不是固定圖形，而是六段料理流程
 

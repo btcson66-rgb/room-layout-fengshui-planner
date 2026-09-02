@@ -18,7 +18,7 @@ keywords:
 relatedTools:
   - /zh/room-layout-planner/
   - /zh/furniture-fit-checker/
-  - /zh/room-circulation-check/
+  - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bedroom-closet-door-track-dust-cleaning-feng-shui
   - bedroom-wardrobe-door-track-cleaning-feng-shui
@@ -36,7 +36,7 @@ howToSteps:
 
 衣櫃門底部密封條在風水文章裡容易被說成「把氣留在衣櫃裡」，但實際生活問題往往是底部卡住毛髮和衣物纖維、滑門推動時磨擦、密封條被門片壓扁、灰塵從底縫進入，或開門後床邊只剩很窄的站位。風水裡的「藏、收、定」可以轉譯為衣物能乾燥收納、門片能穩定開合、底部可清潔和取衣不撞床，不能把密封條狀態直接當成聚氣或睡眠結果。
 
-先量臥室長寬、衣櫃外框、門片寬度、底部密封條、滑軌或鉸鏈、床、床頭櫃、走道與衣物取放站位。以 300 × 320 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出衣櫃門片開啟、換衣和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與櫃門，最後以 [房間動線檢查](/zh/room-circulation-check/)測試夜間起身。工具只協助配置，不代替衣櫃五金或密封材料維修。
+先量臥室長寬、衣櫃外框、門片寬度、底部密封條、滑軌或鉸鏈、床、床頭櫃、走道與衣物取放站位。以 300 × 320 公分臥室為例，可用 [RoomFeng 房間配置工具](/zh/room-layout-planner/)畫出衣櫃門片開啟、換衣和清潔路徑，再用 [家具尺寸檢查](/zh/furniture-fit-checker/)核對床與櫃門，最後以 [房間動線檢查](/zh/blog/room-circulation-width-guide/)測試夜間起身。工具只協助配置，不代替衣櫃五金或密封材料維修。
 
 ## 密封條的好風水是底縫可看、門片不磨且衣物不被潮氣困住
 
