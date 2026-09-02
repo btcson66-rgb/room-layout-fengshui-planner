@@ -103,8 +103,15 @@ try {
     report.status = 'submitted-and-verified';
     report.message = `Submitted ${submittedCount} unregistered sitemap entries and read back ${registeredCount} existing entries.`;
   } else if (stuckEntries.length > 0) {
+    // 2026-08-05 的修法明訂「任一筆 pending 且從未被下載超過 14 天就 exit 1」，
+    // faa573d 當時是靠「alerts 非空就 exit 1」達成的。cd0a426（PR #49）把退出碼
+    // 改寫成分支結構時這條漏掉了 process.exitCode，於是自 2026-08-31 起每次部署
+    // 都印出 STUCK 警告卻仍回報成功——正是 CLAUDE.md 紅線第 6 條禁止的靜默跳過。
+    //
+    // 這一步排在 Cloudflare 部署之後，失敗只會讓 workflow 變紅，不會擋住網站上線。
     report.status = 'registered-pending';
-    report.message = `Read back ${registeredCount} registered sitemap entries. Google download remains pending; no repeat PUT was sent.`;
+    report.message = `Read back ${registeredCount} registered sitemap entries. Google download remains pending; no repeat PUT was sent. Failing the step so this does not stay invisible.`;
+    process.exitCode = 1;
   } else {
     report.status = 'already-registered';
     report.message = `Read back ${registeredCount} registered sitemap entries; no repeat PUT was needed.`;
