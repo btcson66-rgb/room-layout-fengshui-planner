@@ -20,7 +20,10 @@ interface Props {
 const { productIds, category, tags = [], slug, maxItems = 3, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。' } = Astro.props;
 const affiliateEnabled = import.meta.env.PUBLIC_AFFILIATE_ENABLED !== 'false';
 const displayLimit = Math.max(2, Math.min(maxItems, 3));
-const selectionLimit = showAll ? affiliateProductsById.size : Math.max(displayLimit * 4, displayLimit);
+// Keep the complete active catalogue in the rotation pool so visitors can
+// browse every available product. The visible cards stay limited to three;
+// the button itself remains intentionally uncapped and wraps after the last batch.
+const selectionLimit = affiliateProductsById.size;
 const selectedProducts = productIds
   ? productIds.map(resolveAffiliateProductId).map((id) => affiliateProductsById.get(id)).filter((product): product is AffiliateProduct => Boolean(product))
   : selectAffiliateProducts({ category, tags, slug, maxItems: selectionLimit });
