@@ -19,29 +19,34 @@ interface Props {
 
 const { productIds, category, tags = [], slug, maxItems = 3, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。' } = Astro.props;
 const affiliateEnabled = import.meta.env.PUBLIC_AFFILIATE_ENABLED !== 'false';
+const displayLimit = Math.max(2, Math.min(maxItems, 3));
+const selectionLimit = showAll ? affiliateProductsById.size : Math.max(displayLimit * 4, displayLimit);
 const selectedProducts = productIds
   ? productIds.map(resolveAffiliateProductId).map((id) => affiliateProductsById.get(id)).filter((product): product is AffiliateProduct => Boolean(product))
-  : selectAffiliateProducts({ category, tags, slug, maxItems });
-const products = showAll ? selectedProducts : selectedProducts.slice(0, Math.max(2, Math.min(maxItems, 3)));
+  : selectAffiliateProducts({ category, tags, slug, maxItems: selectionLimit });
+const products = showAll ? selectedProducts : selectedProducts.slice(0, displayLimit);
+const canRotate = !showAll && selectedProducts.length > products.length;
+const sectionId = `affiliate-recs-${slug ?? 'catalog'}`;
+const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
 ---
 
 {affiliateEnabled && products.length > 0 && (
-  <section class="affiliate-recs" aria-labelledby="affiliate-recs-heading">
+  <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-batch-size={products.length}>
     <div class="affiliate-recs__header">
       <p class="affiliate-recs__kicker">支持 RoomFeng · Shopee 聯盟行銷</p>
-      <h2 id="affiliate-recs-heading">{heading}</h2>
+      <h2 id={`${sectionId}-heading`}>{heading}</h2>
       <p>{intro}</p>
     </div>
     <div class="affiliate-recs__grid">
-      {products.map((product) => (
-        <article class="affiliate-recs__card">
-          <img src={product.image} alt={`${product.name} 商品參考圖`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image />
+      {products.map((product, index) => (
+        <article class="affiliate-recs__card" data-affiliate-card data-product-index={index}>
+          <img src={product.image} alt={`${product.name} 商品參考圖`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image data-affiliate-field="image" />
           <div class="affiliate-recs__body">
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-            {product.optionalPriceLabel && <p class="affiliate-recs__price">{product.optionalPriceLabel}</p>}
-            <p class="affiliate-recs__shop">來源商店：{product.shop}</p>
-            <ul class="affiliate-recs__tags" aria-label="情境標籤">
+            <h3 data-affiliate-field="name">{product.name}</h3>
+            <p data-affiliate-field="description">{product.description}</p>
+            <p class="affiliate-recs__price" data-affiliate-field="price" hidden={!product.optionalPriceLabel}>{product.optionalPriceLabel}</p>
+            <p class="affiliate-recs__shop" data-affiliate-field="shop">來源商店：{product.shop}</p>
+            <ul class="affiliate-recs__tags" aria-label="情境標籤" data-affiliate-field="tags">
               {product.tags.map((tag) => <li>{tag}</li>)}
             </ul>
           </div>
@@ -58,22 +63,99 @@ const products = showAll ? selectedProducts : selectedProducts.slice(0, Math.max
         </article>
       ))}
     </div>
+    {canRotate && (
+      <div class="affiliate-recs__controls">
+        <button type="button" class="button affiliate-recs__next" data-affiliate-next aria-controls={sectionId}>換一批商品</button>
+        <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">第 1 組</p>
+      </div>
+    )}
     <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以蝦皮商品頁為準。本區塊含蝦皮聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以蝦皮商品頁為準。</p>
+    <script is:inline type="application/json" data-affiliate-products set:html={productsJson}></script>
   </section>
 )}
 
 <script is:inline>
   (() => {
-    if (document.documentElement.dataset.affiliateClickBound === 'true') return;
-    document.documentElement.dataset.affiliateClickBound = 'true';
-    document.querySelectorAll('[data-affiliate-image]').forEach((image) => {
+    const bindAffiliateImageFallback = (image) => {
+      if (!(image instanceof HTMLImageElement) || image.dataset.fallbackBound === 'true') return;
+      image.dataset.fallbackBound = 'true';
       image.addEventListener('error', () => {
-        if (image instanceof HTMLImageElement && !image.dataset.fallbackApplied) {
+        if (!image.dataset.fallbackApplied) {
           image.dataset.fallbackApplied = 'true';
           image.src = '/assets/support-products/fallback.webp';
         }
       }, { once: true });
+    };
+    const updateAffiliateCard = (card, product) => {
+      if (!(card instanceof HTMLElement) || !product) {
+        if (card instanceof HTMLElement) card.hidden = true;
+        return;
+      }
+      card.hidden = false;
+      const image = card.querySelector('[data-affiliate-field="image"]');
+      if (image instanceof HTMLImageElement) {
+        image.src = product.image;
+        image.alt = `${product.name} 商品參考圖`;
+        delete image.dataset.fallbackApplied;
+        delete image.dataset.fallbackBound;
+        bindAffiliateImageFallback(image);
+      }
+      const name = card.querySelector('[data-affiliate-field="name"]');
+      const description = card.querySelector('[data-affiliate-field="description"]');
+      const price = card.querySelector('[data-affiliate-field="price"]');
+      const shop = card.querySelector('[data-affiliate-field="shop"]');
+      const tags = card.querySelector('[data-affiliate-field="tags"]');
+      if (name) name.textContent = product.name;
+      if (description) description.textContent = product.description;
+      if (price) {
+        price.textContent = product.optionalPriceLabel || '';
+        price.hidden = !product.optionalPriceLabel;
+      }
+      if (shop) shop.textContent = `來源商店：${product.shop}`;
+      if (tags) {
+        tags.replaceChildren(...(product.tags || []).map((tag) => {
+          const item = document.createElement('li');
+          item.textContent = tag;
+          return item;
+        }));
+      }
+      const link = card.querySelector('[data-affiliate-product-link]');
+      if (link instanceof HTMLAnchorElement) {
+        link.href = product.url;
+        link.dataset.productId = product.id;
+        link.dataset.productName = product.name;
+        link.dataset.productCategory = product.category;
+      }
+    };
+    document.querySelectorAll('[data-affiliate-image]').forEach(bindAffiliateImageFallback);
+    document.querySelectorAll('[data-affiliate-recs]').forEach((section) => {
+      if (!(section instanceof HTMLElement) || section.dataset.affiliateBatchBound === 'true') return;
+      const data = section.querySelector('[data-affiliate-products]');
+      const button = section.querySelector('[data-affiliate-next]');
+      const status = section.querySelector('[data-affiliate-batch-status]');
+      const cards = [...section.querySelectorAll('[data-affiliate-card]')];
+      if (!data || !(button instanceof HTMLButtonElement) || cards.length === 0) return;
+      let products = [];
+      try { products = JSON.parse(data.textContent || '[]'); } catch (_) { return; }
+      const batchSize = Number(section.dataset.batchSize) || cards.length;
+      const batchCount = Math.ceil(products.length / batchSize);
+      if (batchCount <= 1) return;
+      let batchIndex = 0;
+      const renderBatch = () => {
+        const batch = products.slice(batchIndex * batchSize, (batchIndex + 1) * batchSize);
+        cards.forEach((card, index) => updateAffiliateCard(card, batch[index]));
+        if (status) status.textContent = `第 ${batchIndex + 1} 組／共 ${batchCount} 組`;
+        button.setAttribute('aria-label', `換一批商品（目前第 ${batchIndex + 1} 組，共 ${batchCount} 組）`);
+      };
+      button.addEventListener('click', () => {
+        batchIndex = (batchIndex + 1) % batchCount;
+        renderBatch();
+      });
+      section.dataset.affiliateBatchBound = 'true';
+      renderBatch();
     });
+    if (document.documentElement.dataset.affiliateClickBound === 'true') return;
+    document.documentElement.dataset.affiliateClickBound = 'true';
     document.addEventListener('click', (event) => {
       const target = event.target;
       if (!(target instanceof Element)) return;
@@ -108,5 +190,7 @@ const products = showAll ? selectedProducts : selectedProducts.slice(0, Math.max
   .affiliate-recs__tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
   .affiliate-recs__tags li { border: 1px solid var(--color-border); border-radius: 999px; padding: 0.05rem 0.45rem; color: var(--color-muted); font-size: var(--text-xs); }
   .affiliate-recs__card .button { justify-self: start; }
+  .affiliate-recs__controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
+  .affiliate-recs__batch-status { margin: 0; color: var(--color-muted); font-size: var(--text-sm); }
   @media (min-width: 760px) { .affiliate-recs__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 </style>

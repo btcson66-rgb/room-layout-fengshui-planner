@@ -136,7 +136,7 @@ const contextKeywords: Record<string, string[]> = {
   'room-planning': ['房間', '家具', '收納'], storage: ['收納', '衣櫃', '層架'], 'living-room': ['客廳', '沙發', '地毯'], moving: ['搬家', '收納', '家具'],
 };
 export function selectAffiliateProducts(options: { category?: string; tags?: string[]; slug?: string; maxItems?: number } = {}) {
-  const maxItems = Math.max(2, Math.min(options.maxItems ?? 3, 3));
+  const maxItems = Math.max(1, Math.min(options.maxItems ?? 3, affiliateProducts.length));
   const context = [options.category, ...(options.tags ?? []), options.slug].filter(Boolean).join(' ').toLowerCase();
   const keywords = [...(contextKeywords[options.category ?? ''] ?? []), ...Object.entries(contextKeywords).filter(([key]) => context.includes(key)).flatMap(([, values]) => values)];
   return affiliateProducts.map((product, index) => {
