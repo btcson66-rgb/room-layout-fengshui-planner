@@ -7,7 +7,7 @@ category: bedroom
 tags: [租屋床頭, 床頭不能鑽孔, 床頭靠牆, 租屋風水]
 keywords: [床頭不能鑽孔怎麼辦, 租屋床頭靠穩, 床頭板不鑽牆, 床頭無靠租屋]
 relatedTools: [/zh/feng-shui-bedroom-checker/, /zh/furniture-fit-checker/, /zh/blog/room-circulation-width-guide/]
-relatedPosts: [bed-head-against-wall, bedroom-headboard-stability-feng-shui, renter-no-drill-storage, rental-room-feng-shui-fixes]
+relatedPosts: [bed-head-against-wall, bedroom-headboard-stability-feng-shui, renter-no-drill-storage, bedroom-bed-head-wall-sound-buffer-rental-feng-shui]
 howToName: 檢查租屋床頭不鑽孔的穩定與動線
 howToTotalTime: PT35M
 howToSteps:
@@ -90,4 +90,3 @@ CPSC 的 Anchor It 資料提醒家具穩定與防傾倒要依產品和固定說�
 - [CPSC：Anchor It](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)
 - [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)
-

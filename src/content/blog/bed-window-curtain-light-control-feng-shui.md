@@ -7,7 +7,7 @@ category: bedroom
 tags: [床靠窗, 臥室風水, 窗簾遮光, 床位調整]
 keywords: [床靠窗怎麼辦, 床靠窗風水, 床邊窗簾, 床靠窗光線]
 relatedTools: [/zh/feng-shui-bedroom-checker/, /zh/room-layout-planner/, /zh/blog/room-circulation-width-guide/]
-relatedPosts: [bed-under-window-solutions, bedroom-window-blinds-feng-shui, bedroom-window-condensation-feng-shui, bedroom-night-walkway-feng-shui]
+relatedPosts: [bed-under-window-solutions, bedroom-window-blinds-feng-shui, bedroom-window-condensation-feng-shui, bedroom-bed-window-sill-maintenance-feng-shui]
 howToName: 檢查床靠窗的光線窗簾與開窗維護
 howToTotalTime: PT35M
 howToSteps:
@@ -90,4 +90,3 @@ CPSC 提醒窗簾繩與連續環狀拉繩可能造成兒童纏繞風險；EPA �
 - [CPSC：Window Covering Cords](https://www.cpsc.gov/gocordless)
 - [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)
-

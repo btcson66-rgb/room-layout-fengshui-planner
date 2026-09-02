@@ -4,6 +4,7 @@ export const reviewReadyBlogSlugs = new Set([
   'bed-facing-door-feng-shui',
   'bedroom-bed-facing-door-privacy-buffer-feng-shui',
   'bedroom-bed-doorway-night-light-control-feng-shui',
+  'bedroom-bed-doorway-morning-light-feng-shui',
   'bedroom-bed-doorway-sound-privacy-feng-shui',
   'bedroom-bed-doorway-visual-privacy-night-feng-shui',
   'bedroom-bed-foot-doorway-luggage-clearance-feng-shui',

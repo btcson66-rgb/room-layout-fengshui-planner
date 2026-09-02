@@ -7,7 +7,7 @@ category: small-room
 tags: [小房間收納, 門口收納, 房間動線, 收納風水]
 keywords: [小房間門口收納, 小房間收納不亂, 門口收納風水, 玄關物品回位]
 relatedTools: [/zh/small-room-storage-planner/, /zh/room-layout-planner/, /zh/blog/room-circulation-width-guide/]
-relatedPosts: [small-room-storage-zones, small-room-storage-doorway-feng-shui, entryway-bag-storage-feng-shui, entryway-package-drop-zone-feng-shui]
+relatedPosts: [small-room-storage-zones, small-room-storage-doorway-feng-shui, entryway-bag-storage-feng-shui, bedroom-bed-foot-doorway-luggage-clearance-feng-shui]
 howToName: 建立小房間門口收納回位流程與七日檢查
 howToTotalTime: PT40M
 howToSteps:
@@ -90,4 +90,3 @@ EPA 的室內空氣資料把污染源控制、通風與清潔列為室內環境�
 - [US EPA：What can I do to improve indoor air quality in my home?](https://www.epa.gov/indoor-air-quality-iaq/what-can-i-do-improve-indoor-air-quality-my-home)
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)
 - [CPSC：Anchor It](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)
-
