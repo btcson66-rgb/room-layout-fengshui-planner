@@ -5156,7 +5156,8 @@ const supportFile = affiliateFiles.find(({ file }) => file.endsWith(`${path.sep}
 check('affiliate-output-support-page', Boolean(supportFile), affiliateFiles.map(({ file }) => path.relative(distRoot, file)).join(', '));
 if (supportFile) {
   const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-product-id/g) ?? []).length;
-  check('affiliate-support-catalog-count', cardCount === 38, cardCount);
+  // The verified 2026-09-01 workbook supplies 84 valid 居家生活 items for RoomFeng.
+  check('affiliate-support-catalog-count', cardCount === 84, cardCount);
   check('affiliate-support-links-safe', /rel="sponsored nofollow noopener"/.test(supportFile.html), 'sponsored/nofollow/noopener');
   check('affiliate-support-images-lazy', /loading="lazy"/.test(supportFile.html), 'lazy image loading');
 }
