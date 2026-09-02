@@ -139,6 +139,18 @@ Each content (non-tool) landing page: intro, how-to use the planner for that sce
 6. AdSense slots are placeholders only, never breaking tool UX.
 7. No paid API or backend.
 
+**Reproducing production output locally.** `npm run preflight` builds without
+`PUBLIC_ADSENSE_CLIENT`, so `AdSlot.astro` renders nothing and ad markup is
+absent — production and PR CI both build *with* it. When touching ad slots or
+any layout around them, build the way production does:
+
+```
+PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270 npx astro build
+```
+
+This gap is how 2040 empty 250px ad placeholder boxes (2 per article page across
+1020 pages) shipped unnoticed on 2026-09-02.
+
 Gates 1-3 are enforced automatically: `.github/workflows/preflight.yml` runs
 `npm run preflight` on every pull request, and the deploy workflow runs the same
 steps before it publishes. Gate 3 is implemented by the internal-link check in

@@ -223,16 +223,29 @@ p {
   background: var(--color-surface);
 }
 
+/* 廣告版位在「沒有廣告可顯示」時必須不佔版面。
+   AdSense 帳號待審、爬蟲不跑 JS、或當次沒有填充時，<ins> 的高度都是 0；
+   容器若還保留 min-height / 虛線框 / 白底，讀者看到的就是一個 250px 的空框
+   （2026-09-02 回報：1020 篇文章頁上下各一個，共 2040 個）。
+   外觀交給填入的廣告本身決定，沒有廣告時容器自然收合。 */
 .ad-slot {
-  min-height: 250px;
   display: grid;
   place-items: center;
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.65);
-  color: var(--color-muted);
-  font-size: var(--text-sm);
-  text-align: center;
+}
+
+/* AdSense 判定無法填充時會標記 data-ad-status="unfilled"，此時整個版位收掉，
+   連 page-grid 的間距都不留。
+
+   只在「明確未填充」時隱藏。不寫成 :not(:has([data-ad-status='filled']))
+   那種預設隱藏的版本，有兩個理由：AdSense 尚未標記狀態時會把真的有填的廣告
+   一起藏掉；而且 display:none 的容器量不到寬度，AdSense 根本不會填，會變成
+   「隱藏 → 量不到 → 永遠不填 → 永遠隱藏」的死結。
+
+   選擇器刻意只用 data-ad-status，不寫 .adsbygoogle 類別名：這段 CSS 會被
+   內聯進每一頁，包含不放廣告的 noindex 頁，寫了類別名會讓那些頁面的 HTML
+   出現 AdSense 識別字串。內聯 style="display:block" 需要 !important 才蓋得過。 */
+.ad-slot:has(> [data-ad-status='unfilled']) {
+  display: none !important;
 }
 
 @media (min-width: 760px) {
