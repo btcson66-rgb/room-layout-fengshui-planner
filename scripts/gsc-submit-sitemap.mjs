@@ -13,6 +13,7 @@ import {
   sitemapEndpoint,
   sitemapStatus,
 } from './gsc-client.mjs';
+import { resolveSitemapOutcome } from './gsc-sitemap-outcome.mjs';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 const indexPath = join(projectRoot, 'dist', 'sitemap-index.xml');
@@ -95,20 +96,17 @@ try {
     );
   }
 
-  if (failureCount > 0) {
-    report.status = 'failed';
-    report.message = report.alerts.join(' ');
-    process.exitCode = 1;
-  } else if (submittedCount > 0) {
-    report.status = 'submitted-and-verified';
-    report.message = `Submitted ${submittedCount} unregistered sitemap entries and read back ${registeredCount} existing entries.`;
-  } else if (stuckEntries.length > 0) {
-    report.status = 'registered-pending';
-    report.message = `Read back ${registeredCount} registered sitemap entries. Google download remains pending; no repeat PUT was sent.`;
-  } else {
-    report.status = 'already-registered';
-    report.message = `Read back ${registeredCount} registered sitemap entries; no repeat PUT was needed.`;
-  }
+  const outcome = resolveSitemapOutcome({
+    failureCount,
+    submittedCount,
+    registeredCount,
+    stuckCount: stuckEntries.length,
+    alerts: report.alerts,
+  });
+  report.status = outcome.status;
+  report.message = outcome.message;
+  // 卡住的 sitemap 必須讓這一步失敗，否則警告會被印出來但沒有人看到。
+  if (outcome.exitCode !== 0) process.exitCode = outcome.exitCode;
 } catch (error) {
   report.message = error instanceof Error ? error.message : String(error);
   process.exitCode = 1;
