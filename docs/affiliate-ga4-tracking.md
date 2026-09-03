@@ -14,7 +14,7 @@
 - Stream ID: `15689413334`
 - Affiliate Measurement ID: `G-Q78WN8NZ0R`
 - Build variable: `PUBLIC_AFFILIATE_GA_ID`; the production workflow supplies the contract ID.
-- The affiliate config uses `send_page_view: false`. Existing `PUBLIC_GA_ID`, when present, keeps its normal config and page view. The shared head emits one loader and never waits for analytics before navigation.
+- The affiliate destination is sent with event-level `send_to`; it is not configured as a page-view destination. Existing `PUBLIC_GA_ID`, when present, keeps its normal config and page view. Affiliate events use beacon transport, and the shared head emits one loader without waiting for analytics before navigation.
 
 ## Shared event contract
 
@@ -51,4 +51,13 @@ All four sites send the same five event names to `G-Q78WN8NZ0R` with the same pa
 
 ## Validation
 
-Run `npm run check`, `npm run build`, `npm run audit:content`, `npm run test:www-redirect`, and `node --experimental-strip-types --test tests/affiliate-ga4.test.mjs`. Production DebugView, CI, deployment, and public click readback are intentionally outside this task.
+Run `npm run check`, `npm run build`, `npm run audit:content`, `npm run test:www-redirect`, and `node --experimental-strip-types --test tests/affiliate-ga4.test.mjs`.
+
+## Production readback (2026-09-03)
+
+- Merged PR #78 deployed the initial integration at merge commit `2071a87`; PR #79 fixed long-catalog module observation and beacon delivery at merge commit `a57462c`.
+- Deployment runs: [33754733590](https://github.com/btcson66-rgb/room-layout-fengshui-planner/actions/runs/33754733590) and [33756171738](https://github.com/btcson66-rgb/room-layout-fengshui-planner/actions/runs/33756171738); both completed successfully, including Cloudflare Pages and the existing sitemap step.
+- Smoke URLs: `https://roomfeng.win/support/?ga_debug=1` and `https://roomfeng.win/zh/blog/balcony-clothes-rack-feng-shui/?ga_debug=1`.
+- Support page returned HTTP 200 with 194 links; initial item views were 0, and after scrolling to the first visible cards only the visible first batch was observed. Returning to the first card did not duplicate its item view. The module view payload used `site_name=roomfeng`, `placement=support_page`, `surface_type=support`, `affiliate_network=mixed`, `batch_id=catalog-legacy`.
+- Article browser readback reached `G-Q78WN8NZ0R` with `affiliate_item_view` for `shopee-6376946507`, category `home`, position `1`; a real browser mouse click invoked `affiliate_click` with the same item fields. The link opened a native new tab; no close event is emitted because no close UI exists.
+- Public page views remained on the existing `G-9SCRT8E036`; no affiliate page view was observed after removing the affiliate config command. These browser requests do not confirm GA4 DebugView ingestion.
