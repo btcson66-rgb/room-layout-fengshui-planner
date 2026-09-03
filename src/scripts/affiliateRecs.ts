@@ -32,6 +32,7 @@ const bindAffiliateTracking = (section: HTMLElement): (() => void) => {
     const links = getLinks(section);
     const context = getContext(section);
     const networks = [...new Set(links.map((link) => link.dataset.affiliateNetwork || 'other'))];
+    const moduleTarget = section.querySelector<HTMLElement>('[data-affiliate-module-sentinel]') ?? section;
     moduleObserver = new IntersectionObserver((entries) => {
       if (entries.some((entry) => entry.isIntersecting && entry.intersectionRatio >= 0.5)) {
         trackAffiliateModuleView({
@@ -41,7 +42,7 @@ const bindAffiliateTracking = (section: HTMLElement): (() => void) => {
         moduleObserver?.disconnect();
       }
     }, { threshold: [0.5] });
-    moduleObserver.observe(section);
+    moduleObserver.observe(moduleTarget);
     itemObserver = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (!entry.isIntersecting || entry.intersectionRatio < 0.5) continue;

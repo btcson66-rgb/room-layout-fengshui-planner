@@ -28,7 +28,6 @@ const analyticsScript = [
   'function gtag(){dataLayer.push(arguments);}',
   "gtag('js', new Date());",
   gaId ? `gtag('config', '${gaId}');` : '',
-  affiliateGaId && affiliateGaId !== gaId ? `gtag('config', '${affiliateGaId}', { send_page_view: false });` : '',
 ].filter(Boolean).join('\n');
 const adsenseClient = import.meta.env.PUBLIC_ADSENSE_CLIENT || import.meta.env.PUBLIC_ADSENSE_ID;
 const locale = lang === 'zh' ? 'zh_TW' : 'en_US';
