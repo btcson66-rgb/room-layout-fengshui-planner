@@ -25,18 +25,28 @@ interface SharedAffiliateProduct {
   priority?: number;
   optionalDescription?: string;
   optionalPriceLabel?: string;
+  batch_id?: string;
 }
 
 export interface AffiliateProduct {
+  // Canonical company schema fields.
+  product_id: string;
+  category: string;
+  image: string;
+  price: number | string | null;
+  affiliate_url: string;
+  affiliate_network: AffiliatePlatform;
+  batch_id: string;
+  active: boolean;
+
+  // Compatibility fields retained for the current RoomFeng UI.
   id: string;
   sourceProductId: string;
   name: string;
   shortTitle?: string;
   shop: string;
   description: string;
-  category: string;
   tags: string[];
-  image: string;
   url: string;
   platform: AffiliatePlatform;
   optionalPriceLabel?: string;
@@ -53,15 +63,21 @@ const isHttpsUrl = (value: string | undefined) => {
 export const affiliateProducts: AffiliateProduct[] = affiliateCatalog
   .filter((product) => product.status === 'active' && isHttpsUrl(product.affiliateUrl || product.fallbackUrl))
   .map((product) => ({
+    product_id: product.id,
+    category: product.category || 'general',
+    image: product.imageUrl || '/assets/support-products/fallback.webp',
+    price: null,
+    affiliate_url: product.affiliateUrl || product.fallbackUrl || '',
+    affiliate_network: product.platform || 'other',
+    batch_id: product.batch_id || 'catalog-legacy',
+    active: true,
     id: product.id,
     sourceProductId: product.id.replace(/^[^-]+-/, ''),
     name: product.title || product.shortTitle || '實用支持商品',
     shortTitle: product.shortTitle,
     shop: platformLabels[product.platform || ''] || product.platform || '其他',
     description: product.optionalDescription || product.description || '請先核對商品頁的尺寸、規格、庫存與最新資訊。',
-    category: product.category || 'general',
     tags: Array.isArray(product.tags) ? product.tags : [],
-    image: product.imageUrl || '/assets/support-products/fallback.webp',
     url: product.affiliateUrl || product.fallbackUrl || '',
     platform: product.platform || 'other',
     optionalPriceLabel: product.optionalPriceLabel,

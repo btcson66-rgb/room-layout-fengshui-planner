@@ -5164,7 +5164,7 @@ for (const file of htmlFiles) {
 const supportFile = affiliateFiles.find(({ file }) => file.endsWith(`${path.sep}support${path.sep}index.html`));
 check('affiliate-output-support-page', Boolean(supportFile), affiliateFiles.map(({ file }) => path.relative(distRoot, file)).join(', '));
 if (supportFile) {
-  const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-product-id/g) ?? []).length;
+  const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-affiliate-product-id/g) ?? []).length;
   // RoomFeng mirrors FunnyTools' shared catalogue: 164 Shopee + 30 Coupang active records.
   check('affiliate-support-catalog-count', cardCount === 194, cardCount);
   check('affiliate-support-links-safe', /rel="sponsored nofollow noopener"/.test(supportFile.html), 'sponsored/nofollow/noopener');
