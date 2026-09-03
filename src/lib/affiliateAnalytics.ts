@@ -73,7 +73,11 @@ export function trackAffiliateEvent(eventName: AffiliateEventName, params: Affil
     console.debug('[Affiliate GA4]', eventName, payload);
   }
   try {
-    if (typeof window.gtag === 'function') window.gtag('event', eventName, { ...payload, send_to: AFFILIATE_GA_ID });
+    if (typeof window.gtag === 'function') {
+      // Affiliate links open a new tab. Beacon transport lets the event finish
+      // even when the browser starts navigating immediately after the click.
+      window.gtag('event', eventName, { ...payload, send_to: AFFILIATE_GA_ID, transport_type: 'beacon' });
+    }
   } catch {
     // Affiliate navigation must never depend on analytics availability.
   }
