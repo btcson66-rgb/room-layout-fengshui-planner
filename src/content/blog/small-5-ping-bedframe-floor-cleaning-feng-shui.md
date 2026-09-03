@@ -7,7 +7,7 @@ category: bedroom
 tags: [5坪房間, 床架高度, 床下清潔, 房間風水]
 keywords: [5坪房間床架高度, 床架離地, 床下清潔, 床架風水]
 relatedTools: [/zh/furniture-fit-checker/, /zh/room-layout-planner/, /zh/small-bedroom-layout/]
-relatedPosts: [small-5-ping-bed-walkway-feng-shui, small-5-ping-cleaning-tool-access-feng-shui, small-5-ping-seasonal-storage-reset-feng-shui, small-5-ping-floorplan-zones-feng-shui]
+relatedPosts: [small-5-ping-bed-walkway-feng-shui, small-5-ping-cleaning-tool-access-feng-shui, small-5-ping-seasonal-storage-reset-feng-shui, small-5-ping-floorplan-zones-feng-shui, small-5-ping-rug-edge-trip-clearance-feng-shui]
 howToName: 測量5坪房間床架高度與床下清潔
 howToTotalTime: PT30M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 床架離地高度會同時影響床的視覺重量、床下收納、灰塵和清潔工具。風水常把床下空或床體穩定解讀成不同感受，但沒有某個高度能保證睡眠、健康或運勢。5坪房間應先看吸塵器能否進入、床下箱能否拉出、床品是否會垂落，再選適合使用者的床架。
 
-先讀[5坪床邊走道](/zh/blog/small-5-ping-bed-walkway-feng-shui/)，再用[家具尺寸適配檢查](/zh/furniture-fit-checker/)比較床架。
+先讀[5坪床邊走道](/zh/blog/small-5-ping-bed-walkway-feng-shui/)，再用[家具尺寸適配檢查](/zh/furniture-fit-checker/)比較床架；若床側同時鋪地毯，參考[5坪地毯邊緣與防絆](/zh/blog/small-5-ping-rug-edge-trip-clearance-feng-shui/)一起回放清潔後的地面高度。
 
 ## 低床、高床和床下箱要分開畫
 

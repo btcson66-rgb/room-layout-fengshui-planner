@@ -7,7 +7,7 @@ category: bedroom
 tags: [5坪房間, 地毯, 床邊動線, 房間風水]
 keywords: [5坪房間地毯尺寸, 小房間地毯, 床邊地毯風水, 地毯防絆]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/small-bedroom-layout/]
-relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-bedside-lighting-feng-shui, small-5-ping-laundry-basket-ventilation-feng-shui]
+relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-bedside-lighting-feng-shui, small-5-ping-laundry-basket-ventilation-feng-shui, small-5-ping-window-blind-opening-feng-shui]
 howToName: 測試5坪房間地毯邊緣與床門動線
 howToTotalTime: PT25M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 地毯能改變腳感、視覺分區和床邊的冷硬感，但在5坪房間也會增加地面邊緣、灰塵、潮氣與門片碰撞。風水常把地毯顏色、形狀和區域象徵與聚氣連在一起，然而沒有地毯位置能保證運勢或睡眠。應先檢查下床、穿鞋、開門、吸塵和清潔後乾燥，再決定尺寸與方向。
 
-先讀[5坪床邊走道](/zh/blog/small-5-ping-bed-walkway-feng-shui/)，再用[家具尺寸適配檢查](/zh/furniture-fit-checker/)比較床腳和地毯外框。
+先讀[5坪床邊走道](/zh/blog/small-5-ping-bed-walkway-feng-shui/)，再用[家具尺寸適配檢查](/zh/furniture-fit-checker/)比較床腳和地毯外框；若地毯靠窗，另看[5坪窗簾開合與窗邊地面](/zh/blog/small-5-ping-window-blind-opening-feng-shui/)確認拉簾和清潔站位。
 
 ## 地毯要量到翹邊和止滑墊
 

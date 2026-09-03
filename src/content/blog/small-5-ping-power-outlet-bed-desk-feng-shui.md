@@ -7,7 +7,7 @@ category: room-planning
 tags: [5坪房間, 插座, 電線, 房間風水]
 keywords: [5坪房間插座配置, 小房間插座不夠, 床邊插座, 書桌電線風水]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/desk-placement-feng-shui/]
-relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bedside-table-footprint-feng-shui, small-5-ping-desk-window-light-feng-shui, small-5-ping-bedside-lighting-feng-shui]
+relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bedside-table-footprint-feng-shui, small-5-ping-desk-window-light-feng-shui, small-5-ping-bedside-lighting-feng-shui, small-5-ping-monitor-cable-floor-feng-shui]
 howToName: 檢查5坪房間床桌插座與電線路線
 howToTotalTime: PT30M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 小房間的插座問題很容易在家具搬入後才出現：床架壓住牆插、書桌遠離電源、床邊燈的線橫過走道，最後用多個延長線補救。風水常把電線雜亂和氣流、秩序連在一起，但不能用方位或物件保證用電安全。本文把床、桌、燈、冷氣和充電設備分開，檢查線材是否能沿牆回位且不跨腳步線。
 
-先看[5坪房間平面圖分區](/zh/blog/small-5-ping-floorplan-zones-feng-shui/)，再用[書桌擺放檢查](/zh/desk-placement-feng-shui/)比較工作區。
+先看[5坪房間平面圖分區](/zh/blog/small-5-ping-floorplan-zones-feng-shui/)，再用[書桌擺放檢查](/zh/desk-placement-feng-shui/)比較工作區；若螢幕和充電線仍要落地，接著讀[5坪螢幕電線與地面動線](/zh/blog/small-5-ping-monitor-cable-floor-feng-shui/)回放線材外框。
 
 ## 先做插座盤點表
 

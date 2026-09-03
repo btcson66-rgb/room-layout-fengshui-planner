@@ -7,7 +7,7 @@ category: room-planning
 tags: [5坪房間, 閱讀角, 照明, 房間風水]
 keywords: [5坪房間閱讀角, 小房間閱讀區, 閱讀燈位置, 閱讀角風水]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/small-bedroom-layout/]
-relatedPosts: [small-5-ping-bedside-lighting-feng-shui, small-5-ping-shared-bedroom-zoning-feng-shui, small-5-ping-desk-window-light-feng-shui, small-5-ping-bed-walkway-feng-shui]
+relatedPosts: [small-5-ping-bedside-lighting-feng-shui, small-5-ping-shared-bedroom-zoning-feng-shui, small-5-ping-desk-window-light-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-compact-chair-turning-feng-shui]
 howToName: 規劃5坪房間閱讀角與起身路線
 howToTotalTime: PT30M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 閱讀角看似只需要一張椅子，實際還要有坐姿、起身、放書、照明、腳凳與清潔外框。風水會討論安靜角落、明堂和光線，但沒有閱讀角位置能保證專注、睡眠或運勢。5坪房間應先讓椅子不堵床側和房門，再處理光線、書籍回位與視覺感受。
 
-先讀[5坪床邊燈照明](/zh/blog/small-5-ping-bedside-lighting-feng-shui/)，再用[房間配置工具](/zh/room-layout-planner/)比較閱讀區。
+先讀[5坪床邊燈照明](/zh/blog/small-5-ping-bedside-lighting-feng-shui/)，再用[房間配置工具](/zh/room-layout-planner/)比較閱讀區；若椅子需要反覆轉身，接著看[5坪小椅子轉身空間](/zh/blog/small-5-ping-compact-chair-turning-feng-shui/)。
 
 ## 椅子後退要算進去
 

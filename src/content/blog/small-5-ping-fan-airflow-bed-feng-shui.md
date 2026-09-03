@@ -7,7 +7,7 @@ category: bedroom
 tags: [5坪房間, 電風扇, 床位, 房間風水]
 keywords: [5坪房間電風扇位置, 電風扇對床風水, 小房間風扇, 電風扇走道]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/small-bedroom-layout/]
-relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-air-conditioner-route-feng-shui, small-5-ping-bed-window-curtain-feng-shui]
+relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-air-conditioner-route-feng-shui, small-5-ping-bed-window-curtain-feng-shui, small-5-ping-window-airflow-cleaning-feng-shui]
 howToName: 回放5坪房間電風扇與床側動線
 howToTotalTime: PT25M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 5坪房間的電風扇常被當成可以隨手移動的小物，但它有底座、扇頭旋轉、插頭、電線和需要清潔的網罩。風水會用氣流、門窗和床位解讀風扇方向，然而沒有對床吹或不對床吹就能保證運勢、健康或睡眠的通用結論。應先檢查風感、噪音、傾倒、線材和清潔，再決定位置。
 
-先讀[5坪房間平面分區](/zh/blog/small-5-ping-floorplan-zones-feng-shui/)，再用[家具尺寸適配檢查](/zh/furniture-fit-checker/)放入底座外框。
+先讀[5坪房間平面分區](/zh/blog/small-5-ping-floorplan-zones-feng-shui/)，再用[家具尺寸適配檢查](/zh/furniture-fit-checker/)放入底座外框；若風扇主要靠窗使用，參考[5坪窗邊氣流與清潔](/zh/blog/small-5-ping-window-airflow-cleaning-feng-shui/)確認開窗和擦拭路線。
 
 ## 量扇頭轉動而不是只量底座
 
