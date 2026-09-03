@@ -54,7 +54,7 @@ relatedPosts:
 
 看得出來**拉門與推門的差距是 60 公分**——這在小房間裡往往就是「放得下」與「放不下」的分界。門型的完整比較見[衣櫃門片類型怎麼選](/zh/blog/wardrobe-door-types/)。
 
-算的時候直接用[家具尺寸檢查工具](/zh/furniture-fit-checker/)輸入三段數字，比手算不容易漏。
+算的時候直接用[家具尺寸檢查工具](/zh/furniture-fit-checker/)輸入三段數字，比手算不容易漏；各品項最容易算錯的那個數字（床架比床墊大、沙發座深、床頭櫃高度）整理在[買家具前先做房間配置圖](/zh/blog/bedroom-layout-before-buying-furniture/)。
 
 ## 第三步：依床 → 衣櫃 → 書桌的順序決定尺寸
 
