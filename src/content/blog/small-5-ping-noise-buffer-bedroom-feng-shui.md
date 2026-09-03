@@ -7,7 +7,7 @@ category: bedroom
 tags: [5坪房間, 噪音, 床位, 房間風水]
 keywords: [5坪房間噪音, 小房間隔音配置, 床位噪音風水, 房間聲音動線]
 relatedTools: [/zh/room-layout-planner/, /zh/small-bedroom-layout/, /zh/desk-placement-feng-shui/]
-relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-window-curtain-feng-shui, small-5-ping-shared-bedroom-zoning-feng-shui, small-5-ping-air-conditioner-route-feng-shui]
+relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-window-curtain-feng-shui, small-5-ping-shared-bedroom-zoning-feng-shui, small-5-ping-air-conditioner-route-feng-shui, small-5-ping-doorway-night-noise-feng-shui]
 howToName: 回放5坪房間噪音來源與床桌位置
 howToTotalTime: PT35M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 小房間的噪音通常不是單一家具造成，而是窗戶、房門、冷氣、風扇、室友或街道聲音同時進入。風水會用動靜分區、門窗氣流和床位避煞描述感受，但不能保證移到某個方位就能隔音或改善健康。更實際的做法是定位聲音來源、記錄發生時段，再調整床桌與窗門的關係。
 
-先看[5坪床靠窗與窗簾](/zh/blog/small-5-ping-bed-window-curtain-feng-shui/)，再用[房間配置工具](/zh/room-layout-planner/)比較睡眠和工作區。
+先看[5坪床靠窗與窗簾](/zh/blog/small-5-ping-bed-window-curtain-feng-shui/)，再用[房間配置工具](/zh/room-layout-planner/)比較睡眠和工作區；若噪音集中在門外，接著讀[5坪房門夜間噪音](/zh/blog/small-5-ping-doorway-night-noise-feng-shui/)回放晚歸與開門狀態。
 
 ## 先畫聲音來源而不是先買隔音品
 

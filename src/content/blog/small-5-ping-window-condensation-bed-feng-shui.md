@@ -7,7 +7,7 @@ category: bedroom
 tags: [5坪房間, 窗戶結露, 床位, 房間風水]
 keywords: [5坪房間窗戶結露, 床靠窗結露, 小房間濕氣, 窗戶結露風水]
 relatedTools: [/zh/room-layout-planner/, /zh/small-bedroom-layout/, /zh/furniture-fit-checker/]
-relatedPosts: [small-5-ping-bed-window-curtain-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-air-conditioner-route-feng-shui, small-5-ping-floorplan-zones-feng-shui]
+relatedPosts: [small-5-ping-bed-window-curtain-feng-shui, small-5-ping-bed-walkway-feng-shui, small-5-ping-air-conditioner-route-feng-shui, small-5-ping-floorplan-zones-feng-shui, small-5-ping-plant-humidity-window-feng-shui]
 howToName: 檢查5坪房間窗戶結露與床位距離
 howToTotalTime: PT30M
 howToSteps:
@@ -21,7 +21,7 @@ howToSteps:
 
 5坪房間的床靠窗時，窗戶結露可能讓床頭板、床品、窗簾和牆角長期接近水氣。風水常把窗戶、氣流和床頭有靠放在一起討論，但結露不應只用民俗說法解釋，也不能保證移床後就能改善健康或睡眠。比較可靠的做法是記錄什麼時段結露、哪個表面受潮、清潔能否進入，再決定床位。
 
-可先讀[5坪床靠窗與窗簾](/zh/blog/small-5-ping-bed-window-curtain-feng-shui/)，再用[房間配置工具](/zh/room-layout-planner/)比較床與窗的外框。
+可先讀[5坪床靠窗與窗簾](/zh/blog/small-5-ping-bed-window-curtain-feng-shui/)，再用[房間配置工具](/zh/room-layout-planner/)比較床與窗的外框；若窗邊還要放盆栽，參考[5坪盆栽與窗邊濕度](/zh/blog/small-5-ping-plant-humidity-window-feng-shui/)一起檢查。
 
 ## 先畫結露後的狀態
 
