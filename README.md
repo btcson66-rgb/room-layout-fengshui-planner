@@ -73,6 +73,7 @@ Copy `.env.example` to `.env` if needed.
 
 ```bash
 PUBLIC_GA_ID=
+PUBLIC_AFFILIATE_GA_ID=G-Q78WN8NZ0R
 PUBLIC_AFFILIATE_ENABLED=true
 PUBLIC_ADSENSE_CLIENT=
 BREVO_API_KEY=
@@ -81,7 +82,7 @@ BREVO_WORTHCALC_LIST_ID=
 BREVO_FUNNYTOOLS_LIST_ID=
 ```
 
-If `PUBLIC_GA_ID` is set at build time, the shared head component injects GA4 `gtag` site-wide. If it is empty, no GA4 script is injected.
+If `PUBLIC_GA_ID` is set at build time, the shared head component preserves that GA4 destination. The affiliate event destination is `PUBLIC_AFFILIATE_GA_ID` (the four-site contract is `G-Q78WN8NZ0R`) and is configured with `send_page_view: false`; see `docs/affiliate-ga4-tracking.md` for the event contract. The affiliate destination still provides the single shared loader when the existing ID is empty.
 
 `PUBLIC_AFFILIATE_ENABLED` controls the optional public Shopee support catalogue and contextual article cards. It is enabled by default when unset; set it explicitly to `false` to hide those cards. The free planner and editorial content remain available either way.
 
@@ -116,17 +117,19 @@ Change this value only if the production domain changes, because canonical URLs,
 1. Connect the repository.
 2. Set build command to `npm run build`.
 3. Set output directory to `dist`.
-4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
-5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270` when submitting the site to Google AdSense.
-6. Add `BREVO_API_KEY`, `BREVO_ROOMFENG_LIST_ID`, `BREVO_WORTHCALC_LIST_ID`, and `BREVO_FUNNYTOOLS_LIST_ID` to enable the shared newsletter hub.
+4. Add `PUBLIC_GA_ID` only if the existing RoomFeng GA4 destination should be enabled.
+5. Add `PUBLIC_AFFILIATE_GA_ID=G-Q78WN8NZ0R` for the Btcson Affiliate Network event destination.
+6. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270` when submitting the site to Google AdSense.
+7. Add `BREVO_API_KEY`, `BREVO_ROOMFENG_LIST_ID`, `BREVO_WORTHCALC_LIST_ID`, and `BREVO_FUNNYTOOLS_LIST_ID` to enable the shared newsletter hub.
 
 ### Vercel
 
 1. Import the repository.
 2. Use the Astro framework preset or set build command to `npm run build`.
 3. Set output directory to `dist`.
-4. Add `PUBLIC_GA_ID` only if GA4 should be enabled.
-5. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270` when submitting the site to Google AdSense.
+4. Add `PUBLIC_GA_ID` only if the existing RoomFeng GA4 destination should be enabled.
+5. Add `PUBLIC_AFFILIATE_GA_ID=G-Q78WN8NZ0R` for the Btcson Affiliate Network event destination.
+6. Add `PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270` when submitting the site to Google AdSense.
 
 ### GitHub Pages
 
