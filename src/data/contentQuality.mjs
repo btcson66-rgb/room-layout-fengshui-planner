@@ -1269,6 +1269,11 @@ export const reviewReadyBlogSlugs = new Set([
   'bed-size-room-child-bed-transition-feng-shui',
   'bed-size-room-pet-bed-footprint-feng-shui',
   'bed-size-room-bedside-lamp-clearance-feng-shui',
+  // 2026-09-03 放行：W29 累積的三篇臥室長文（原 PR #24），
+  // 原稿約 1780 字、未達站上水準，補寫至 2400 字以上後放行。
+  'bed-head-direction',
+  'tv-facing-bed-bedroom',
+  'mattress-on-floor',
   // 2026-09-03 放行：原本 61 篇 held 文章全數改寫至 2300 字以上、
   // 每篇 ≥6 個 H2、≥3 個內部連結，並清掉內部用語與英文夾雜後放行。
   'bed-size-room-guide',
