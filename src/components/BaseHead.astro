@@ -22,6 +22,13 @@ const imageUrl = new URL(ogImage ?? '/og-image.png', site).toString();
 const logoUrl = new URL('/apple-touch-icon.png', site).toString();
 const siteOrigin = site.toString().replace(/\/$/, '');
 const gaId = import.meta.env.PUBLIC_GA_ID;
+const affiliateGaId = import.meta.env.PUBLIC_AFFILIATE_GA_ID?.trim() || 'G-Q78WN8NZ0R';
+const analyticsScript = [
+  'window.dataLayer = window.dataLayer || [];',
+  'function gtag(){dataLayer.push(arguments);}',
+  "gtag('js', new Date());",
+  gaId ? `gtag('config', '${gaId}');` : '',
+].filter(Boolean).join('\n');
 const adsenseClient = import.meta.env.PUBLIC_ADSENSE_CLIENT || import.meta.env.PUBLIC_ADSENSE_ID;
 const locale = lang === 'zh' ? 'zh_TW' : 'en_US';
 const alternateLinks = alternates
@@ -89,20 +96,12 @@ const jsonItems = (Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []).map(
 <meta name="twitter:image" content={imageUrl} />
 {alternateLinks.map((alt) => <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, site).toString()} />)}
 {jsonItems.map((item) => <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />)}
-{
-  gaId && (
-    <>
-      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-      <script
-        is:inline
-        set:html={`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${gaId}');`}
-      />
-    </>
-  )
-}
+{(gaId || affiliateGaId) && (
+  <>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId || affiliateGaId}`} />
+    <script is:inline set:html={analyticsScript} />
+  </>
+)}
 {/* AdSense 網站擁有權驗證。主控台在無法執行 loader script 時改讀這個 meta，
     它本身不發出廣告請求。條件與 loader 相同：noindex 頁一律不輸出。 */}
 {!noindex && adsenseClient && <meta name="google-adsense-account" content={adsenseClient} />}

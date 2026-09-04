@@ -7,7 +7,7 @@ const contentRoot = path.join(root, 'src', 'content', 'blog');
 const distRoot = path.join(root, 'dist');
 const failures = [];
 const checks = [];
-const expectedReviewReadyCount = 1273;
+const expectedReviewReadyCount = 1334;
 const expandedArticleRequirements = new Map([
   ['bed-facing-door-feng-shui', {
     required: [/15 分鐘/, /一晚/, /cdc\.gov\/sleep/i, /usfa\.fema\.gov/i, /cpsc\.gov/i, /\/disclaimer\//],
@@ -5164,9 +5164,18 @@ for (const file of htmlFiles) {
 const supportFile = affiliateFiles.find(({ file }) => file.endsWith(`${path.sep}support${path.sep}index.html`));
 check('affiliate-output-support-page', Boolean(supportFile), affiliateFiles.map(({ file }) => path.relative(distRoot, file)).join(', '));
 if (supportFile) {
-  const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-product-id/g) ?? []).length;
-  // RoomFeng mirrors FunnyTools' shared catalogue: 164 Shopee + 30 Coupang active records.
-  check('affiliate-support-catalog-count', cardCount === 194, cardCount);
+  const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-affiliate-product-id/g) ?? []).length;
+  // The support page now shows a rotating batch (like FunnyTools) instead of dumping the
+  // whole wall of cards: a small visible batch, with the complete shared catalogue
+  // (164 Shopee + 30 Coupang = 194 active records) embedded in the rotation pool so every
+  // product stays reachable via the「換一批商品」button. Guard both: the batch is small,
+  // and the pool still carries all 194 so nothing became unreachable.
+  check('affiliate-support-visible-batch', cardCount >= 2 && cardCount <= 3, cardCount);
+  const poolMatch = supportFile.html.match(/data-affiliate-products[^>]*>(\[.*?\])<\/script>/s);
+  let poolCount = 0;
+  try { poolCount = poolMatch ? JSON.parse(poolMatch[1]).length : 0; } catch { poolCount = 0; }
+  check('affiliate-support-catalog-count', poolCount === 194, poolCount);
+  check('affiliate-support-can-rotate', /data-affiliate-next/.test(supportFile.html), '換一批 button present');
   check('affiliate-support-links-safe', /rel="sponsored nofollow noopener"/.test(supportFile.html), 'sponsored/nofollow/noopener');
   check('affiliate-support-images-lazy', /loading="lazy"/.test(supportFile.html), 'lazy image loading');
 }
