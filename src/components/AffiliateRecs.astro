@@ -1,4 +1,5 @@
 ---
+import { AFFILIATE_ENABLED, AFFILIATE_DISCLOSURE } from '../config/affiliate';
 import {
   affiliateProductsById,
   resolveAffiliateProductId,
@@ -12,18 +13,26 @@ interface Props {
   tags?: string[];
   slug?: string;
   maxItems?: number;
+  /**
+   * 「換一批」可輪替的商品總數（＝嵌進 HTML 的 JSON 大小）。
+   * 目錄型頁面（/support/）用 productIds 明確傳入全部品項，不受這個上限影響。
+   */
+  rotationPoolSize?: number;
   showAll?: boolean;
   heading?: string;
   intro?: string;
 }
 
-const { productIds, category, tags = [], slug, maxItems = 3, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。' } = Astro.props;
-const affiliateEnabled = import.meta.env.PUBLIC_AFFILIATE_ENABLED !== 'false';
+const { productIds, category, tags = [], slug, maxItems = 3, rotationPoolSize = 24, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。' } = Astro.props;
 const displayLimit = Math.max(2, Math.min(maxItems, 3));
-// Keep the complete active catalogue in the rotation pool so visitors can
-// browse every available product. The visible cards stay limited to three;
-// the button itself remains intentionally uncapped and wraps after the last batch.
-const selectionLimit = affiliateProductsById.size;
+// The visible cards stay limited to three; the「換一批商品」button wraps after the
+// last batch. The pool is capped on contextual surfaces because it ships inline as
+// JSON in every page: the full 194-product catalogue was 146 KB of the 182 KB HTML
+// on each of the ~1,300 article pages — invisible bytes in front of the LCP element.
+// 24 products = 8 batches of 3, which keeps rotation meaningful at ~18 KB.
+// /support/ is the catalogue page and passes productIds explicitly, so it is
+// unaffected and still carries every active product.
+const selectionLimit = Math.min(rotationPoolSize, affiliateProductsById.size);
 const selectedProducts = productIds
   ? productIds.map(resolveAffiliateProductId).map((id) => affiliateProductsById.get(id)).filter((product): product is AffiliateProduct => Boolean(product))
   : selectAffiliateProducts({ category, tags, slug, maxItems: selectionLimit });
@@ -37,7 +46,7 @@ const placement = surfaceType === 'support' ? 'support_page' : surfaceType === '
 const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
 ---
 
-{affiliateEnabled && products.length > 0 && (
+{AFFILIATE_ENABLED && products.length > 0 && (
   <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
     <div class="affiliate-recs__header" data-affiliate-module-sentinel>
       <p class="affiliate-recs__kicker">支持 RoomFeng · 蝦皮與酷澎聯盟行銷</p>
@@ -78,7 +87,7 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
         <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">第 1 組</p>
       </div>
     )}
-    <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以商品頁為準。</p>
+    <p class="affiliate-recs__disclosure">{AFFILIATE_DISCLOSURE}</p>
     <script is:inline type="application/json" data-affiliate-products set:html={productsJson}></script>
   </section>
 )}

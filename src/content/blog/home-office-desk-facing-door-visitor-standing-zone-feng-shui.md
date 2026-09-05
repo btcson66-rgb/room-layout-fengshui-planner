@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 訪客站位, 工作隱私, 房門動線]
 keywords: [書桌對門有人站門口, 書桌對門訪客, 書桌門口談話位置, 書桌風水訪客動線]
-relatedTools: [/zh/room-layout-planner/, /zh/room-circulation-check/, /zh/furniture-fit-checker/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-shared-home-interruption-rules-feng-shui, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-evening-light-glare-feng-shui]
 howToName: 檢查書桌對門的訪客站位與工作隱私
 howToTotalTime: PT35M

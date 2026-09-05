@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 壁掛收納, 床邊收納, 房門動線]
 keywords: [小房間床邊壁掛收納, 床邊壁掛層架風水, 小房間牆面收納, 壁掛收納突出距離]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-basket-reach-feng-shui, small-room-storage-bedside-hook-doorway-feng-shui, small-room-bedside-bookcase-shelf-height-feng-shui, small-room-storage-doorway-feng-shui]
 howToName: 檢查小房間床邊壁掛收納、突出距離與取物動線
 howToTotalTime: PT30M

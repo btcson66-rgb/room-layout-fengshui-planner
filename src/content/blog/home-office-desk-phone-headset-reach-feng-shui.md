@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [居家辦公風水, 書桌電話, 耳機位置, 工作區動線]
 keywords: [書桌電話放哪裡, 電話耳機工作桌風水, 辦公桌電話距離, 耳機線材動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-document-holder-viewing-distance-feng-shui, home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-doorway-sound-privacy-feng-shui, home-office-desk-chair-back-wall-clearance-feng-shui]
 howToName: 檢查書桌電話與耳機的伸手和線材範圍
 howToTotalTime: PT25M

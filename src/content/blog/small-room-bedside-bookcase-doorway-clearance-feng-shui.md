@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 書櫃配置, 書櫃固定, 房門動線]
 keywords: [小房間書櫃靠門, 書櫃靠門風水, 小房間書櫃擺放, 書櫃防傾倒與動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-floor-mirror-doorway-clearance-feng-shui, small-room-open-shelf-door-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, bedroom-bed-foot-doorway-clearance-feng-shui]
 howToName: 檢查小房間書櫃靠門的開門、固定與轉身動線
 howToTotalTime: PT30M

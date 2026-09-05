@@ -41,7 +41,26 @@ function isDesign(value: unknown): value is Design {
   return Boolean(candidate.room && Array.isArray(candidate.items));
 }
 
+/**
+ * 文章與 Hub 頁的 CTA 用 `?preset=<key>` deep-link 進來，直接載入對應的範例格局。
+ * 這讓「用 Room Planner 模擬你的床、書桌與門」變成一次點擊就到位的動作，
+ * 而不是進到工具後還要自己找範例按鈕。
+ *
+ * 只有網址真的帶了合法 preset 時才覆蓋草稿；沒帶或帶了不存在的 key 一律
+ * 回到既有行為（讀 localStorage 草稿），避免不小心洗掉讀者畫到一半的房間。
+ */
+function presetFromLocation(strings: PlannerStrings): Design | null {
+  if (typeof window === 'undefined') return null;
+  const requested = new URLSearchParams(window.location.search).get('preset');
+  if (!requested) return null;
+  const presets = templateDesigns(strings.furniture);
+  const match = Object.prototype.hasOwnProperty.call(presets, requested) ? presets[requested] : null;
+  return match ? cloneDesign(match) : null;
+}
+
 function loadDesign(storageKey: string, strings: PlannerStrings): Design {
+  const preset = presetFromLocation(strings);
+  if (preset) return preset;
   const stored = localStorage.getItem(storageKey);
   if (!stored) return defaultDesign(strings.furniture);
   try {

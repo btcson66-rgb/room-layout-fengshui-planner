@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [玄關風水, 穿鞋凳, 玄關動線, 入門收納]
 keywords: [玄關穿鞋凳風水, 穿鞋凳不擋門, 玄關凳子擺放, 玄關門口動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [entryway-shoe-cabinet-feng-shui, entryway-shoe-cabinet-doorway-clearance-feng-shui, entryway-mirror-feng-shui, entryway-storage-feng-shui]
 howToName: 檢查玄關穿鞋凳與大門動線
 howToTotalTime: PT30M

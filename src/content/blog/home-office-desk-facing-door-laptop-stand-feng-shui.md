@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 筆電架, 螢幕高度]
 keywords: [書桌面向房門筆電架, 筆電架高度風水, 房門書桌螢幕位置, 筆電架桌面動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-monitor-height-feng-shui, home-office-desk-facing-door-notebook-position-feng-shui, home-office-desk-facing-door-keyboard-distance-feng-shui, home-office-desk-facing-door-phone-stand-feng-shui]
 howToName: 檢查面向房門書桌筆電架高度與視線
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊充電線, 插座整理, 夜間動線]
 keywords: [小房間床邊充電線, 床邊插座怎麼放, 充電線不擋動線, 小房間線材收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-rolling-cart-clearance-feng-shui, small-room-storage-bedside-wall-shelf-feng-shui, bedroom-bedside-lamp-feng-shui, small-room-storage-bedside-basket-reach-feng-shui]
 howToName: 檢查小房間床邊充電線、插座與夜間動線
 howToTotalTime: PT30M

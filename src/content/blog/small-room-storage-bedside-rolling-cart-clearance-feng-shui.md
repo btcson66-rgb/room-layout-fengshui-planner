@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊推車, 輪子動線, 移動收納]
 keywords: [小房間床邊推車風水, 床邊推車動線, 小房間移動收納, 推車輪子怎麼放]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-wall-shelf-feng-shui, small-room-storage-bedside-basket-reach-feng-shui, small-room-storage-bedside-folding-stool-feng-shui, bedroom-bedside-table-drawer-clearance-feng-shui]
 howToName: 檢查小房間床邊推車、輪子與取物動線
 howToTotalTime: PT30M

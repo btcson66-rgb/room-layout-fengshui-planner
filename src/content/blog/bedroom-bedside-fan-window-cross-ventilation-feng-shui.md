@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 電風扇通風, 跨窗通風, 窗戶安全]
 keywords: [臥室電風扇配窗戶, 電風扇朝窗戶, 跨窗通風風扇, 臥室通風風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-fan-airflow-angle-feng-shui, bedroom-bedside-fan-cord-clearance-feng-shui, bedroom-bed-window-sill-clearance-feng-shui, bedroom-bedside-curtain-draft-clearance-feng-shui]
 howToName: 測試臥室電風扇與窗戶的跨窗通風和安全路線
 howToTotalTime: PT30M

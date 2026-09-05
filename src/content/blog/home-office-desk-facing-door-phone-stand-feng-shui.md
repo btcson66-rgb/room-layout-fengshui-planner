@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 電話位置, 工作區動線]
 keywords: [書桌面向房門電話, 書桌對門電話風水, 電話放哪裡, 書桌接聽動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-mouse-placement-feng-shui, home-office-desk-facing-door-keyboard-distance-feng-shui, home-office-desk-facing-door-phone-call-privacy-feng-shui, home-office-desk-facing-door-monitor-height-feng-shui]
 howToName: 檢查面向房門書桌的電話位置與接聽動線
 howToTotalTime: PT30M

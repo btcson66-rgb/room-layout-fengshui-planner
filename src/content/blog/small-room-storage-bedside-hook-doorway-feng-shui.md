@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊掛鉤, 衣物收納, 房門動線]
 keywords: [小房間床邊掛鉤, 床邊衣物掛鉤風水, 門後掛鉤房間布局, 小房間衣物外凸]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-basket-reach-feng-shui, small-room-clothes-rack-doorway-feng-shui, small-room-storage-doorway-feng-shui, bedroom-robe-hook-storage-feng-shui]
 howToName: 檢查小房間床邊掛鉤、衣物外凸與房門動線
 howToTotalTime: PT30M

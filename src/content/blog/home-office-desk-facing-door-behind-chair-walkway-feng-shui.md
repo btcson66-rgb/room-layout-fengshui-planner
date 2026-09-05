@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 椅後走道, 共享房間, 工作區動線]
 keywords: [書桌對門椅子後面走道, 書桌椅背後方動線, 書桌背後有人走, 書桌風水椅背走道]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-shared-home-interruption-rules-feng-shui, home-office-desk-facing-door-rental-no-drill-privacy-feng-shui]
 howToName: 檢查書桌對門椅後共享走道與起身方向
 howToTotalTime: PT35M

@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 書桌靠窗, 窗光反光, 工作區風水]
 keywords: [書桌對門又靠窗, 書桌門窗位置, 書桌窗光螢幕反光, 書桌風水門窗配置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-evening-light-glare-feng-shui, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-corner-turning-feng-shui]
 howToName: 檢查書桌對門靠窗的門光與窗光平衡
 howToTotalTime: PT40M

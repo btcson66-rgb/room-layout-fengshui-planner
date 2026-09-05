@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [租屋書桌, 書桌對門, 折疊桌, 免鑽孔風水]
 keywords: [租屋書桌對門折疊桌, 折疊桌房門動線, 書桌收合不擋門, 折疊桌風水配置]
-relatedTools: [/zh/rental-room-layout/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/rental-room-layout/, /zh/furniture-fit-checker/, /zh/room-layout-planner/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-rental-no-drill-privacy-feng-shui, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-end-of-day-reset-feng-shui]
 howToName: 檢查租屋折疊桌對門的展開與收合動線
 howToTotalTime: PT45M

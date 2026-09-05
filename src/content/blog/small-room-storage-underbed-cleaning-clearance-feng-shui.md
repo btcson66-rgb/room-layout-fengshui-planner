@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: small-room
 tags: [小房間風水, 床下收納, 清潔動線, 收納空間]
 keywords: [小房間床下收納, 床下留空風水, 床下收納清潔, 床下收納動線]
-relatedTools: [/zh/small-room-storage-planner/, /zh/storage-bed-selector/, /zh/room-circulation-check/]
+relatedTools: [/zh/small-room-storage-planner/, /zh/storage-bed-selector/, /zh/room-layout-planner/]
 relatedPosts: [small-room-storage-bed-opening-clearance-feng-shui, small-room-storage-bedside-underbed-drawer-feng-shui, small-room-storage-bedside-underbed-seasonal-clothes-feng-shui, under-bed-storage-feng-shui]
 howToName: 檢查小房間床下收納的清潔與取物間距
 howToTotalTime: PT40M

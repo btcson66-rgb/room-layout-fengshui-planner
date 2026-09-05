@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 床下收納標籤, 小房間風水]
 keywords: [小房間床下收納標籤, 床邊收納標籤風水, 收納箱標籤位置, 小房間找物動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-label-system-feng-shui, small-room-storage-bedside-stacked-boxes-feng-shui, small-room-storage-bedside-storage-bag-feng-shui, small-room-storage-bedside-transparent-box-feng-shui]
 howToName: 檢查小房間床下收納標籤與找物動線
 howToTotalTime: PT30M

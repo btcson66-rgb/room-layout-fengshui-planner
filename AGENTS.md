@@ -129,6 +129,66 @@ Each content (non-tool) landing page: intro, how-to use the planner for that sce
 - `license-audit.md`: every dependency + license + note on self-made assets and arcada-planner MIT attribution stance.
 - `LICENSE` for this project (MIT).
 
+## 9b. Content architecture: consolidate, do not multiply
+
+**One query variation is NOT one article.** The 2026-09-05 audit found the site had
+grown to 1,334 articles, including 22 near-identical "beam over bed/desk + one extra
+object" pages (bedside table / lift-up bed / bunk bed / ceiling fan / child bed;
+chair / monitor / tall cabinet / rental / standing-up space). They shared the same
+search intent and competed with each other. They are now two guides:
+`beam-over-desk-bed-layout` (bed) and `beam-over-desk-workspace-guide` (desk).
+
+Before writing a new article, check whether the topic is a *section* of an existing
+guide. Split into a new page ONLY when the search intent, the required tool, or the
+reader's task is genuinely different — not when only the furniture in the example
+changes. Adding depth to a strong page beats adding another thin one.
+
+**Merging procedure** (order matters; preflight enforces it):
+
+1. Fold the substance into the target guide — real sections, not a stub.
+2. Delete the merged `.md` from `src/content/blog/`.
+3. Remove its slug from `reviewReadyBlogSlugs` in `src/data/contentQuality.mjs`
+   and update `expectedReviewReadyCount` in `scripts/content-quality-audit.mjs`.
+4. Register the 301 in `src/data/redirects.mjs` — one-to-one or many-to-one, always
+   to the most semantically related page. **Never redirect merged articles to the
+   home page.**
+5. Repair every remaining reference (body links, `relatedPosts`, `relatedTools`).
+6. Run `npm run preflight`.
+
+`scripts/postbuild-redirects.mjs` writes `dist/_redirects` for Cloudflare Pages and
+fails the build if a redirect source still produces HTML (Pages serves the file and
+the 301 would silently never fire) or if a target is missing.
+
+## 9c. Topic hubs and tool-first CTAs
+
+`/zh/category/<slug>/` pages are the site's topic hubs, not article lists. Hub copy
+lives in `src/data/hubs.ts`: intro (300–800 字), core questions, featured guides,
+matching tools, FAQ, and a planner preset. Hub content renders on page 1 only —
+repeating it on paginated pages creates duplicate content. FAQPage schema is emitted
+only where the FAQ is actually visible.
+
+Every public article renders `PlannerCta` with a `?preset=` deep link into
+`/zh/room-layout-planner/`. `src/planner/planner.ts` reads that query parameter and
+loads the matching example layout; it never overwrites an existing draft unless the
+URL asks for a preset. The internal-link contract enforced by the audit is:
+**1 hub link + 2–5 related articles + at least 1 tool link per article.**
+
+## 9d. Affiliate: one flag, one source of truth
+
+`src/config/affiliate.ts` owns `AFFILIATE_ENABLED`, the disclosure text, and the
+editorial policy line shown on `/` and `/about/`. No page may hardcode whether
+affiliate is on or off — that is how the site ended up saying "商品與聯盟推薦在
+AdSense 重新審查期間預設關閉" on the home page while every article rendered Shopee
+and Coupang cards. Set `PUBLIC_AFFILIATE_ENABLED=false` to turn the whole surface
+off, copy included.
+
+GA4 affiliate tracking (`affiliate_module_view`, `affiliate_item_view`,
+`affiliate_click`, `affiliate_refresh` and their `site_name` / `placement` /
+`surface_type` / `affiliate_network` / `product_id` / `product_category` /
+`batch_id` parameters) lives in `src/lib/affiliateAnalytics.ts` and hangs off the
+`data-affiliate-*` attributes in `AffiliateRecs.astro`. Never rename or drop those
+attributes; `content-quality-audit.mjs` checks each one survives a refactor.
+
 ## 10. Quality gates (must pass)
 
 1. `npm run build` succeeds.
@@ -150,6 +210,10 @@ PUBLIC_ADSENSE_CLIENT=ca-pub-9117672212804270 npx astro build
 
 This gap is how 2040 empty 250px ad placeholder boxes (2 per article page across
 1020 pages) shipped unnoticed on 2026-09-02.
+
+Gate 3 now also covers redirects, hub schema, the planner CTA, the internal-link
+contract, FAQ-schema/page consistency, and affiliate copy/behaviour consistency —
+see the checks at the end of `scripts/content-quality-audit.mjs`.
 
 Gates 1-3 are enforced automatically: `.github/workflows/preflight.yml` runs
 `npm run preflight` on every pull request, and the deploy workflow runs the same

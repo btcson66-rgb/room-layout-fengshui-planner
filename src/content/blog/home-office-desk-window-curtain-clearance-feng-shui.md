@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 書桌靠窗, 窗簾反光, 居家辦公動線]
 keywords: [書桌靠窗窗簾風水, 書桌窗邊配置, 螢幕反光窗簾, 居家辦公採光動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-window-glare-feng-shui, desk-window-lighting, home-office-monitor-feng-shui, home-office-desk-doorway-clearance-feng-shui]
 howToName: 檢查書桌靠窗的窗簾與居家辦公動線
 howToTotalTime: PT35M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [臥室風水, 開門見床, 床門視線, 床尾動線]
 keywords: [床和房門一直線風水, 開門見床怎麼辦, 床尾對門調整, 臥室房門視線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bed-facing-door-feng-shui, bedroom-bed-angle-to-door-feng-shui, bedroom-bed-foot-furniture-clearance-feng-shui, bedroom-bed-left-wall-access-feng-shui]
 howToName: 檢查床與房門同一直線的視線與通行
 howToTotalTime: PT40M

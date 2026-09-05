@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 補貨週期, 小房間風水]
 keywords: [小房間床邊收納補貨, 床邊備品收納, 小房間收納週期, 收納風水整理]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-label-system-feng-shui, small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-zones, small-room-storage-bedside-underbed-seasonal-clothes-feng-shui]
 howToName: 建立小房間床邊收納的補貨週期與回位路線
 howToTotalTime: PT35M

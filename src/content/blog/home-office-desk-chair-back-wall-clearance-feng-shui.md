@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [居家辦公風水, 書桌椅背靠牆, 書桌動線, 工作區配置]
 keywords: [書桌椅背靠牆距離, 書桌後面要留多少空間, 書桌椅背靠牆風水, 辦公椅後方走道]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-visibility-feng-shui, home-office-desk-doorway-sound-privacy-feng-shui, home-office-desk-window-opening-clearance-feng-shui, home-office-desk-chair-turning-clearance-feng-shui]
 howToName: 檢查書桌椅背靠牆的後退與起身空間
 howToTotalTime: PT30M

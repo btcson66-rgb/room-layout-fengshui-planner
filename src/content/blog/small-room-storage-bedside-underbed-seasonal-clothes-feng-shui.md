@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床下收納, 換季衣物, 防潮取物]
 keywords: [小房間床下收納換季衣物, 床底收納防潮, 換季衣物怎麼收, 小房間衣物風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-underbed-drawer-feng-shui, small-room-storage-bed-opening-clearance-feng-shui, small-room-storage-bedside-charging-cable-feng-shui, small-room-storage-bedside-basket-reach-feng-shui]
 howToName: 檢查小房間床下換季衣物收納與防潮
 howToTotalTime: PT35M

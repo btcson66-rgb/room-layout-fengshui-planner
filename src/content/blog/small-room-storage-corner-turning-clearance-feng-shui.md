@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [小房間風水, 收納轉角, L型收納, 轉身動線]
 keywords: [小房間收納轉角, L型櫃轉身空間, 小房間收納死角, 收納櫃轉角風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-aisle-turning-clearance-feng-shui, small-room-open-shelf-door-clearance-feng-shui, small-room-storage-zones, small-room-vertical-storage-feng-shui]
 howToName: 檢查小房間收納轉角的取物與轉身動線
 howToTotalTime: PT40M

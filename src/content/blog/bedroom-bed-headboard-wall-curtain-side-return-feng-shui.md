@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 側邊回位, 床側通道]
 keywords: [床頭牆面窗簾側邊, 窗簾收邊風水, 床邊布簾回位, 臥室窗簾綁帶]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-length-feng-shui, bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui, bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui, bedroom-bed-headboard-wall-curtain-shadow-feng-shui]
 howToName: 檢查床頭牆面窗簾側邊回位與床側空間
 howToTotalTime: PT30M

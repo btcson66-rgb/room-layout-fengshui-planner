@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 共享行事, 同住者進出, 工作風水]
 keywords: [書桌對門家人進出時間, 書桌工作時段安排, 共用房間門口規則, 書桌風水同住者]
-relatedTools: [/zh/room-layout-planner/, /zh/room-circulation-check/, /zh/bed-desk-wardrobe-layout/]
+relatedTools: [/zh/room-layout-planner/, /zh/bed-desk-wardrobe-layout/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-shared-home-interruption-rules-feng-shui, home-office-desk-facing-door-visitor-standing-zone-feng-shui, home-office-desk-facing-door-bedroom-work-sleep-zone-feng-shui]
 howToName: 建立書桌對門的共享行事與進出動線檢查
 howToTotalTime: PT40M

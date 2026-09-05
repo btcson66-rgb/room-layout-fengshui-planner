@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 滑鼠位置, 工作桌面]
 keywords: [書桌面向房門滑鼠, 書桌對門滑鼠風水, 滑鼠放哪邊, 桌角手臂距離]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-keyboard-distance-feng-shui, home-office-desk-facing-door-monitor-height-feng-shui, home-office-desk-facing-door-footrest-feng-shui, home-office-desk-facing-door-drawer-clearance-feng-shui]
 howToName: 檢查面向房門書桌的滑鼠位置與回位
 howToTotalTime: PT30M

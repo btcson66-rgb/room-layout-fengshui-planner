@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 收工整理, 工作區回位, 房間風水]
 keywords: [書桌對門收拾, 書桌工作完收納, 書桌風水收工, 房門工作區回位]
-relatedTools: [/zh/room-layout-planner/, /zh/small-room-storage-planner/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/small-room-storage-planner/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-bedroom-work-sleep-zone-feng-shui, home-office-desk-facing-door-doorway-bag-drop-zone-feng-shui]
 howToName: 建立書桌對門的收工回位與門口動線檢查
 howToTotalTime: PT30M

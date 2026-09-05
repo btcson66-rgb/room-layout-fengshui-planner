@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 文件托盤, 文件隱私]
 keywords: [書桌面向房門文件托盤, 書房文件收納, 文件托盤隱私, 房門對書桌紙張]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-notice-board-privacy-feng-shui, home-office-desk-facing-door-phone-call-privacy-feng-shui, home-office-desk-facing-door-headset-cable-feng-shui, home-office-desk-facing-door-monitor-privacy-feng-shui]
 howToName: 檢查書桌面向房門的文件托盤與紙張視線
 howToTotalTime: PT30M
