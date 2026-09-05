@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 門片掃掠, 桌角碰撞, 工作區動線]
 keywords: [書桌對門開門撞桌, 書桌門片掃掠, 書桌桌角對門, 書桌風水門片]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-behind-chair-walkway-feng-shui, home-office-desk-facing-door-shared-home-interruption-rules-feng-shui, home-office-desk-facing-door-rental-no-drill-privacy-feng-shui]
 howToName: 檢查書桌對門的門片掃掠與桌角碰撞
 howToTotalTime: PT30M

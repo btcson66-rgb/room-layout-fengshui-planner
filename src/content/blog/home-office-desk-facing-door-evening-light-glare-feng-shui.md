@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 夜間光線, 螢幕反光, 工作區風水]
 keywords: [書桌對門晚上反光, 門外燈照螢幕, 書桌門縫光, 書桌風水光線調整]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-shared-home-interruption-rules-feng-shui, home-office-desk-facing-door-rental-no-drill-privacy-feng-shui]
 howToName: 檢查書桌對門的夜間門外光線與螢幕反光
 howToTotalTime: PT30M

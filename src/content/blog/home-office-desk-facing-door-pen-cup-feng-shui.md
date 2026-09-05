@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌風水, 書桌對門, 筆筒收納, 居家辦公]
 keywords: [書桌對門筆筒, 筆筒擺放風水, 書桌收納位置, 書桌入口視線]
-relatedTools: [/zh/desk-placement-feng-shui/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/desk-placement-feng-shui/, /zh/furniture-fit-checker/, /zh/room-layout-planner/]
 relatedPosts: [home-office-desk-facing-door-desk-mat-feng-shui, home-office-desk-facing-door-document-tray-privacy-feng-shui, home-office-desk-facing-door-chair-turning-feng-shui, home-office-desk-facing-door-stationery-organizer-feng-shui]
 howToName: 檢查書桌對門時的筆筒位置與取用動線
 howToTotalTime: PT25M

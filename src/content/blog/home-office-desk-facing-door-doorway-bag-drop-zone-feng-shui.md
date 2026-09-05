@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: storage
 tags: [書桌對門, 門口收納, 包包暫放, 工作區動線]
 keywords: [書桌對門包包收納, 書桌旁門口堆東西, 房門旁暫放區, 書桌風水門口收納]
-relatedTools: [/zh/small-room-storage-planner/, /zh/room-layout-planner/, /zh/room-circulation-check/]
+relatedTools: [/zh/small-room-storage-planner/, /zh/room-layout-planner/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-behind-chair-walkway-feng-shui, home-office-desk-facing-door-end-of-day-reset-feng-shui]
 howToName: 建立書桌對門的門口暫放與回位檢查
 howToTotalTime: PT35M

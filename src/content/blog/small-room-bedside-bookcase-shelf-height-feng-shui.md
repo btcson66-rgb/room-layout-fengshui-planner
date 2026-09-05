@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 書櫃層板, 床邊收納, 書櫃固定]
 keywords: [小房間床邊書櫃層板高度, 床邊書櫃怎麼收, 書櫃層板風水, 床邊書本收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-bedside-bookcase-bed-clearance-feng-shui, small-room-bedside-bookcase-doorway-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, bedroom-bookshelf-feng-shui]
 howToName: 測試小房間床邊書櫃的層板高度、負載與取書路線
 howToTotalTime: PT30M

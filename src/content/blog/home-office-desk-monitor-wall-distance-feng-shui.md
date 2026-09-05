@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [居家辦公風水, 螢幕離牆, 書桌靠牆, 工作區反光]
 keywords: [書桌螢幕離牆距離, 螢幕靠牆風水, 書桌貼牆螢幕太近, 辦公桌螢幕視距]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-chair-back-wall-clearance-feng-shui, home-office-desk-facing-door-visibility-feng-shui, home-office-desk-window-opening-clearance-feng-shui, home-office-desk-window-curtain-clearance-feng-shui]
 howToName: 檢查書桌螢幕與牆面的視距和操作空間
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [租屋風水, 書桌對門, 家具量測, 小房間規劃]
 keywords: [租屋書桌對門調整, 書桌對門不用鑽牆, 租屋書桌風水, 書桌對門尺寸測量]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-rental-no-drill-privacy-feng-shui, home-office-desk-facing-door-folding-desk-rental-feng-shui, home-office-desk-facing-door-floor-cable-boundary-feng-shui]
 howToName: 租屋書桌對門的可復原量測與配置測試
 howToTotalTime: PT45M

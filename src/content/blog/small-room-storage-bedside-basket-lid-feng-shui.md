@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 收納籃上蓋, 小房間風水]
 keywords: [小房間床邊收納籃加蓋, 床邊收納籃上蓋風水, 收納籃透氣, 小房間開口收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-lid-box-feng-shui, small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-bedside-drawer-depth-feng-shui, small-room-storage-bedside-basket-reach-feng-shui]
 howToName: 檢查小房間床邊收納籃上蓋與取物動線
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭掛畫, 壁燈配置, 床頭固定]
 keywords: [床頭牆面掛畫風水, 床頭壁燈怎麼放, 床頭上方掛畫安全, 臥室牆面裝飾]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-shelf-clearance-feng-shui, bedroom-bed-headboard-stability-feng-shui, bedroom-bed-head-wall-gap-clearance-feng-shui, bedroom-bedside-lamp-feng-shui]
 howToName: 檢查床頭牆面掛畫、壁燈固定與夜間視線
 howToTotalTime: PT30M

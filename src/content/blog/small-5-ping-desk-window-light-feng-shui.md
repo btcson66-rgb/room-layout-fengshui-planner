@@ -7,7 +7,7 @@ category: room-planning
 tags: [5坪房間, 書桌靠窗, 窗光, 房間風水]
 keywords: [5坪房間書桌位置, 小房間書桌靠窗, 書桌窗邊風水, 5坪房間採光]
 relatedTools: [/zh/desk-placement-feng-shui/, /zh/room-layout-planner/, /zh/furniture-fit-checker/]
-relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-walkway-feng-shui, beam-over-desk-monitor-glare-zone-feng-shui, tiny-room-layout-under-5-ping]
+relatedPosts: [small-5-ping-floorplan-zones-feng-shui, small-5-ping-bed-walkway-feng-shui, beam-over-desk-workspace-guide, tiny-room-layout-under-5-ping]
 howToName: 測試5坪房間書桌靠窗的光線與動線
 howToTotalTime: PT30M
 howToSteps:
@@ -45,7 +45,7 @@ howToSteps:
 
 ## 反光和眩光的改善順序
 
-先調整螢幕角度、桌面方向和窗簾，再考慮補光。不要把燈直射螢幕，也不要為了避開反光把桌子堵在房門。若天花板、樑或高櫃造成陰影，記錄陰影出現時段；電氣固定與線路變更依產品和合格人員要求處理。樑下光線可參考[樑下螢幕反光](/zh/blog/beam-over-desk-monitor-glare-zone-feng-shui/)。
+先調整螢幕角度、桌面方向和窗簾，再考慮補光。不要把燈直射螢幕，也不要為了避開反光把桌子堵在房門。若天花板、樑或高櫃造成陰影，記錄陰影出現時段；電氣固定與線路變更依產品和合格人員要求處理。樑下光線可參考[樑下螢幕反光](/zh/blog/beam-over-desk-workspace-guide/)。
 
 ## 七次靠窗書桌回放
 

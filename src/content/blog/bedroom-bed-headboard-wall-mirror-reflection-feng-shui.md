@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭鏡子, 反光檢查, 牆面固定]
 keywords: [床頭牆面鏡子風水, 床頭鏡子反光, 臥室鏡子怎麼放, 床頭鏡面安全]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-art-lighting-feng-shui, bedroom-bed-headboard-wall-clock-clearance-feng-shui, bedroom-bed-head-wall-gap-clearance-feng-shui, bedroom-bedside-lamp-feng-shui]
 howToName: 檢查床頭牆面鏡子、反光與夜間視線
 howToTotalTime: PT30M

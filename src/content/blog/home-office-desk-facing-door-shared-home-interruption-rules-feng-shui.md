@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 同住者進出, 工作邊界, 居家辦公風水]
 keywords: [書桌對門家人一直進出, 書桌對門被打斷, 居家辦公房門干擾, 書桌風水工作邊界]
-relatedTools: [/zh/room-layout-planner/, /zh/room-circulation-check/, /zh/furniture-fit-checker/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-behind-chair-walkway-feng-shui, home-office-desk-facing-door-rental-no-drill-privacy-feng-shui]
 howToName: 檢查書桌對門的同住者進出與工作邊界
 howToTotalTime: PT40M

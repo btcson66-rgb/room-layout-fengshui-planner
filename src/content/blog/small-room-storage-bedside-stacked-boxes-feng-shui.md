@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 收納箱堆疊, 小房間風水]
 keywords: [小房間床邊收納箱堆疊, 收納箱堆疊風水, 床邊箱子穩定, 小房間垂直收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-seasonal-rotation-feng-shui, small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-bedside-lid-box-feng-shui, small-room-vertical-storage-feng-shui]
 howToName: 檢查小房間床邊收納箱堆疊與取用路線
 howToTotalTime: PT35M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 書桌靠門, 工作隱私, 門口聲音]
 keywords: [書桌靠門聲音, 書桌靠門隱私, 書桌門口動線, 居家辦公房門干擾]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-visibility-feng-shui, home-office-desk-doorway-clearance-feng-shui, desk-facing-door-layout, home-office-window-glare-feng-shui]
 howToName: 檢查書桌靠門的聲音、隱私與工作動線
 howToTotalTime: PT35M

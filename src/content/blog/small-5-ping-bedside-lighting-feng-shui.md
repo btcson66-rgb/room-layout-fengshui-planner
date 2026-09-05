@@ -7,7 +7,7 @@ category: bedroom
 tags: [5坪房間, 床邊燈, 夜間照明, 房間風水]
 keywords: [5坪房間床邊燈, 床頭燈位置, 小房間照明, 床邊燈風水]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/small-bedroom-layout/]
-relatedPosts: [small-5-ping-bed-walkway-feng-shui, small-5-ping-bedside-table-footprint-feng-shui, small-5-ping-bed-window-curtain-feng-shui, beam-over-bed-reading-light-feng-shui]
+relatedPosts: [small-5-ping-bed-walkway-feng-shui, small-5-ping-bedside-table-footprint-feng-shui, small-5-ping-bed-window-curtain-feng-shui, beam-over-desk-bed-layout]
 howToName: 回放5坪房間床邊燈與低光走道
 howToTotalTime: PT25M
 howToSteps:

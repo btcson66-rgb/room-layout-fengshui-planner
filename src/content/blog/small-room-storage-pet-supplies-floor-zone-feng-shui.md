@@ -6,8 +6,8 @@ updated: 2026-09-02
 category: small-room
 tags: [小房間收納, 寵物用品收納, 房間動線, 小房間風水]
 keywords: [小房間寵物用品收納, 寵物用品風水, 飼料放房間, 寵物玩具收納]
-relatedTools: [/zh/small-room-storage-planner/, /zh/blog/pet-friendly-room-layout/, /zh/blog/room-circulation-width-guide/]
-relatedPosts: [small-room-storage-zones, small-room-storage-shoes-entryway-capacity-feng-shui, small-room-storage-cleaning-tools-access-feng-shui, small-room-storage-hobby-supplies-sort-feng-shui]
+relatedTools: [/zh/small-room-storage-planner/, /zh/room-layout-planner/]
+relatedPosts: [small-room-storage-zones, pet-friendly-room-layout, room-circulation-width-guide, small-room-storage-cleaning-tools-access-feng-shui]
 howToName: 規劃小房間寵物用品的分區與地面通行測試
 howToTotalTime: PT40M
 howToSteps:

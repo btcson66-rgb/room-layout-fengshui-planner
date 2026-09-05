@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 靠窗書桌, 窗光反射, 螢幕眩光]
 keywords: [書桌靠窗反光, 窗邊書桌風水, 螢幕窗光眩光, 書桌窗戶方向]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-task-light-screen-glare-feng-shui, home-office-desk-window-opening-clearance-feng-shui, home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-facing-door-visibility-feng-shui]
 howToName: 測試靠窗書桌的自然光、螢幕眩光與離席路線
 howToTotalTime: PT30M

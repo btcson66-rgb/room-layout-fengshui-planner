@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: room-planning
 tags: [書桌對門, 桌角動線, 斜放書桌, 工作風水]
 keywords: [書桌對門斜放, 書桌桌角卡走道, 書桌轉角空間, 書桌風水斜擺]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-behind-chair-walkway-feng-shui, home-office-desk-facing-door-window-light-balance-feng-shui]
 howToName: 檢查斜放書桌對門的桌角與轉身空間
 howToTotalTime: PT35M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 螢幕隱私, 工作站視線]
 keywords: [書桌面向房門螢幕, 書桌對門螢幕風水, 螢幕隱私布局, 書桌門口視線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-visibility-feng-shui, home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-window-reflection-glare-feng-shui, home-office-desk-doorway-sound-privacy-feng-shui]
 howToName: 檢查面向房門的書桌螢幕、視線與工作隱私
 howToTotalTime: PT30M

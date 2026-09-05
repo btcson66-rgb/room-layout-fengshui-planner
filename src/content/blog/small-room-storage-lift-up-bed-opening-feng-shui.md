@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: small-room
 tags: [小房間風水, 掀床收納, 床下收納, 床尾動線]
 keywords: [小房間掀床收納, 掀床開啟空間, 掀床風水, 床下收納床尾距離]
-relatedTools: [/zh/storage-bed-selector/, /zh/small-room-storage-planner/, /zh/room-circulation-check/]
+relatedTools: [/zh/storage-bed-selector/, /zh/small-room-storage-planner/, /zh/room-layout-planner/]
 relatedPosts: [small-room-storage-bed-opening-clearance-feng-shui, small-room-storage-underbed-cleaning-clearance-feng-shui, small-room-storage-bedside-underbed-drawer-feng-shui, under-bed-storage-feng-shui]
 howToName: 檢查小房間掀床的開啟角度與床尾動線
 howToTotalTime: PT45M

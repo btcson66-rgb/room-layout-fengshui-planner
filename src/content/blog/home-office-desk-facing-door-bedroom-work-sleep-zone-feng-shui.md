@@ -6,7 +6,7 @@ updated: 2026-09-02
 category: bedroom
 tags: [臥室書桌, 書桌對門, 工作睡眠分區, 臥室風水]
 keywords: [臥室書桌對門靠床, 書桌床位分區, 房間工作區睡眠區, 書桌風水臥室配置]
-relatedTools: [/zh/bed-desk-wardrobe-layout/, /zh/room-layout-planner/, /zh/room-circulation-check/]
+relatedTools: [/zh/bed-desk-wardrobe-layout/, /zh/room-layout-planner/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-facing-door-door-swing-clearance-feng-shui, home-office-desk-facing-door-behind-chair-walkway-feng-shui, home-office-desk-facing-door-end-of-day-reset-feng-shui]
 howToName: 檢查臥室書桌對門的工作睡眠分區與收合動線
 howToTotalTime: PT45M

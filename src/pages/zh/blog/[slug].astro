@@ -5,6 +5,8 @@ import AdSlot from '../../../components/AdSlot.astro';
 import NewsletterSignup from '../../../components/NewsletterSignup.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import AffiliateRecs from '../../../components/AffiliateRecs.astro';
+import PlannerCta from '../../../components/PlannerCta.astro';
+import { hubContent } from '../../../data/hubs';
 import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
 import { categoryMeta, formatDate, siteUrl } from '../../../data/site';
 
@@ -70,6 +72,24 @@ const relatedPostLinks = post.data.relatedPosts
     return title ? { href: `/zh/blog/${slug}/`, title } : null;
   })
   .filter((link): link is { href: string; title: string } => link !== null);
+// 每篇文章都要有一個具體的工具入口。preset 用分類對應到最接近的房型範例，
+// CTA 文案則依 tag/標題裡真正出現的家具決定，避免千篇一律的「開啟工具」。
+const plannerPreset = hubContent[post.data.category]?.plannerPreset ?? 'studio';
+const ctaSubjects = [
+  { pattern: /床|寢具|睡/, label: '床' },
+  { pattern: /書桌|工作|辦公|螢幕/, label: '書桌' },
+  { pattern: /衣櫃|收納|櫃/, label: '衣櫃與收納' },
+  { pattern: /門|玄關|出入/, label: '門片開啟範圍' },
+  { pattern: /窗|採光|窗簾/, label: '窗戶' },
+  { pattern: /鏡/, label: '鏡子' },
+  { pattern: /樑|梁/, label: '樑的投影' },
+  { pattern: /沙發|客廳/, label: '沙發' },
+];
+const ctaHaystack = [post.data.title, post.data.description, ...post.data.tags].join(' ');
+const ctaMatched = ctaSubjects.filter((subject) => subject.pattern.test(ctaHaystack)).map((subject) => subject.label);
+const ctaItems = (ctaMatched.length > 0 ? ctaMatched : ['床', '書桌', '門片開啟範圍']).slice(0, 3);
+const plannerCtaText = `照這篇量到的尺寸，用 Room Planner 把${ctaItems.join('、')}的位置畫進平面圖，工具會即時檢查走道寬度、門口是否被擋住，並列出床對門、鏡子對床等格局提醒。`;
+
 const relatedLinks = [
   ...post.data.relatedTools
     .map((href: string) => resolveRelatedTool(href))
@@ -80,16 +100,22 @@ const relatedLinks = [
     : []),
 ];
 const body = (post.body ?? '').replace(/\r\n/g, '\n');
-const faqSection = body.match(/##\s*(常見問題|FAQ)([\s\S]*)/);
-const faqMatches = faqSection
-  ? [...faqSection[2].matchAll(/###\s+(.+?)\n\n([\s\S]*?)(?=\n###|\n## |$)/g)]
-      .filter((match) => match[1] && match[2])
-      .slice(0, 6)
-      .map((match) => ({
-        q: match[1].trim(),
-        a: match[2].replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[#*_`>-]/g, '').trim(),
-      }))
-  : [];
+// FAQ 區塊必須在「下一個 ## 標題」就結束。
+// 之前的寫法把 `## 常見問題` 之後的**整份剩餘內文**都當成 FAQ 來掃 `###`，
+// 於是「## 相關工具與延伸閱讀 / ### 參考資料」被當成一組問答塞進 FAQPage：
+// 283 篇文章因此輸出了一個畫面上不是問答的「參考資料」Question。
+// Schema 必須與畫面一致，所以這裡先把區塊切乾淨再抽問答。
+const faqHeading = body.match(/^##\s*(?:常見問題|FAQ).*$/m);
+const faqSectionBody = faqHeading
+  ? body.slice((faqHeading.index ?? 0) + faqHeading[0].length).split(/\n##\s+/)[0]
+  : '';
+const faqMatches = [...faqSectionBody.matchAll(/###\s+(.+?)\n\n([\s\S]*?)(?=\n###|$)/g)]
+  .filter((match) => match[1] && match[2])
+  .slice(0, 6)
+  .map((match) => ({
+    q: match[1].trim(),
+    a: match[2].replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[#*_`>-]/g, '').trim(),
+  }));
 const jsonLd: Record<string, unknown>[] = [
   {
     '@context': 'https://schema.org',
@@ -164,6 +190,8 @@ if (post.data.howToSteps.length > 0) {
       <div class="card article-body">
         <Content />
       </div>
+
+      <PlannerCta preset={plannerPreset} text={plannerCtaText} />
 
       {reviewReady && <AffiliateRecs category={post.data.category} tags={post.data.tags} slug={post.id} />}
 

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 視線遮蔽, 透光測試]
 keywords: [床頭牆面窗簾隱私, 臥室窗簾遮光風水, 床邊視線遮蔽, 窗簾透光怎麼選]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-shadow-feng-shui, bedroom-bed-headboard-wall-curtain-side-return-feng-shui, bedroom-bed-headboard-wall-curtain-length-feng-shui, bedroom-bed-window-curtain-clearance-feng-shui]
 howToName: 檢查床頭牆面窗簾透光與視線遮蔽
 howToTotalTime: PT30M

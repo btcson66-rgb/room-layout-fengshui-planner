@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 鍵盤距離, 工作桌深度]
 keywords: [書桌面向房門鍵盤距離, 書桌對門鍵盤風水, 鍵盤桌深, 書桌手腕空間]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-monitor-height-feng-shui, home-office-desk-facing-door-footrest-feng-shui, home-office-desk-facing-door-drawer-clearance-feng-shui, home-office-desk-facing-door-cable-channel-feng-shui]
 howToName: 檢查面向房門書桌的鍵盤距離與桌面深度
 howToTotalTime: PT30M
