@@ -189,6 +189,33 @@ GA4 affiliate tracking (`affiliate_module_view`, `affiliate_item_view`,
 `data-affiliate-*` attributes in `AffiliateRecs.astro`. Never rename or drop those
 attributes; `content-quality-audit.mjs` checks each one survives a refactor.
 
+## 9e. Which failures may turn the deploy red
+
+The deploy workflow's last step submits the sitemap to Search Console. It owns exactly
+one question: **did this deploy get the sitemap into GSC?** Submission failure (API
+error, expired credentials, rejected PUT) is a broken pipeline and must exit 1 — that
+is CLAUDE.md 紅線第 6 條, and it regressed once already (`cd0a426`, PR #49, dropped
+`process.exitCode` so warnings printed while the step reported success).
+
+**"Google has not downloaded the sitemap yet" is not that kind of failure.** It is an
+external state lasting weeks or months, unaffected by any push. PR #76 made it exit 1
+anyway; roomfeng then failed every single deploy on the same line for two weeks until
+the owner reported alert fatigue. A permanently red check is not monitoring — it is the
+most reliable way to switch monitoring off, and it hides the next real deploy failure
+behind an identical red badge.
+
+That signal is owned by fable-company's daily health check:
+`scripts/lib/gsc-sitemap-discovery.mjs` queries `sitemaps.list` for all three sites
+every morning, raises `sitemap-never-downloaded` (warning for one site, critical when
+all three are affected), and pairs it with URL Inspection so the report also says
+whether Googlebot is still crawling at all. It reaches the daily short report and
+Discord, and it clears itself when Google starts fetching.
+
+So: STUCK still prints to stderr in the deploy log and still sets `stuck: true` on the
+outcome object — it just does not fail the step. Do not "restore" it. Re-read the header
+of `scripts/gsc-sitemap-outcome.mjs` before touching that rule; the boundary between
+*silencing* an alert and *re-routing* it is the whole point.
+
 ## 10. Quality gates (must pass)
 
 1. `npm run build` succeeds.

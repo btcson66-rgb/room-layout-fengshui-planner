@@ -105,7 +105,16 @@ try {
   });
   report.status = outcome.status;
   report.message = outcome.message;
-  // 卡住的 sitemap 必須讓這一步失敗，否則警告會被印出來但沒有人看到。
+  // STUCK 不再讓這一步變紅（理由見 gsc-sitemap-outcome.mjs 的檔頭），但也不能就這樣
+  // 消失在一大片 JSON 裡。印到 stderr，GitHub Actions 會把它獨立標出來，
+  // 而真正的告警由 fable-company 每日健檢負責。
+  for (const alert of report.alerts) console.error(alert);
+  if (outcome.stuck) {
+    console.error(
+      'NOTE: stuck sitemaps do not fail this step. The daily health check owns this signal '
+      + '(fable-company scripts/lib/gsc-sitemap-discovery.mjs → issue code sitemap-never-downloaded).',
+    );
+  }
   if (outcome.exitCode !== 0) process.exitCode = outcome.exitCode;
 } catch (error) {
   report.message = error instanceof Error ? error.message : String(error);
