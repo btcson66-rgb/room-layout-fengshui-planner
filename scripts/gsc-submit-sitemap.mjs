@@ -92,7 +92,7 @@ try {
   const stuckEntries = findStuckSitemaps(report.entries);
   for (const entry of stuckEntries) {
     report.alerts.push(
-      `STUCK: ${entry.path} is pending with no lastDownloaded and was last submitted more than 14 days ago (${entry.lastSubmitted}).`,
+      `STUCK: GSC reports no download for ${entry.path}; it is still pending and was last submitted more than 14 days ago (${entry.lastSubmitted}). This means GSC has not reported a download, not that Google never fetched the file.`,
     );
   }
 
