@@ -11,6 +11,20 @@
 // 全部 lastDownloaded=null 時單站報 warning、三站全中報 critical，並附上
 // URL Inspection 的 Googlebot 爬取狀態。它會進每日短報告與 Discord 通知。
 //
+// ## 措辭為什麼是「GSC 沒有回報下載」而不是「Google 沒有下載」（2026-09-06）
+//
+// 這兩句話不一樣，而我們有證據顯示後者是錯的。2026-08-30 至 09-06 的 Cloudflare
+// httpRequestsAdaptiveGroups 顯示 funnytools 的 /sitemap* 被成功送出 3,767 次（HTTP 200），
+// 其中 30 次是回給帶 Googlebot／Google-InspectionTool UA 的用戶端——而同一段期間
+// GSC 仍然回報 lastDownloaded: null、已發現網址 0。
+//
+// 也就是說 `lastDownloaded: null` 只能證明「GSC 沒有回報下載」，不能證明「檔案沒被抓走」。
+// （警告：那 30 筆是用 UA 辨識的，當時的 token 讀不到 clientAsn，所以無法確認來自 AS15169。
+// 證據有折扣，但方向足以推翻「Google 抓不到」這個說法。）
+//
+// 訊息照實說，下一個看到它的人才不會從錯的前提開始查。完整脈絡見公司 Vault
+// 03_Incidents/2026-09-04-google-never-downloads-sitemaps-two-sites.md。
+//
 // ## 為什麼把 stuck 從這裡的退出碼移走（2026-09-06）
 //
 // 2026-09-04 起 roomfeng 每一次部署都紅，紅的都是同一件事：sitemap 自 08-18 起
@@ -50,7 +64,7 @@ export function resolveSitemapOutcome({
   }
 
   const stuckNote = stuckCount > 0
-    ? ` ${stuckCount} sitemap entr${stuckCount === 1 ? 'y is' : 'ies are'} still pending with no download from Google;`
+    ? ` GSC reports no download for ${stuckCount} sitemap entr${stuckCount === 1 ? 'y' : 'ies'};`
       + ' that is tracked daily by fable-company 的每日健檢（sitemap-never-downloaded），not by this deploy step.'
     : '';
 
