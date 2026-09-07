@@ -5,6 +5,7 @@ import {
   selectAffiliateProducts,
   type AffiliateProduct,
 } from '../data/affiliateProducts';
+import { amazonProducts } from '../data/amazonProducts';
 
 interface Props {
   productIds?: string[];
@@ -15,16 +16,43 @@ interface Props {
   showAll?: boolean;
   heading?: string;
   intro?: string;
+  amazon?: boolean;
+  lang?: 'zh' | 'en';
+  placement?: string;
 }
 
-const { productIds, category, tags = [], slug, maxItems = 3, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。' } = Astro.props;
+const { productIds, category, tags = [], slug, maxItems = 3, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。', amazon = false, lang = 'zh', placement: requestedPlacement } = Astro.props;
 const affiliateEnabled = import.meta.env.PUBLIC_AFFILIATE_ENABLED !== 'false';
+const amazonCopy = {
+  en: {
+    kicker: 'Optional Amazon product discovery',
+    heading: heading === '一起檢查實用配置' ? 'Recommended products' : heading,
+    intro: intro === '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。' ? 'These Amazon links are optional product-discovery resources. Check dimensions, specifications, availability, and current details on Amazon.' : intro,
+    cta: 'View on Amazon',
+    disclosure: 'Affiliate links: we may earn a commission from qualifying purchases at no extra cost to you.',
+    source: 'Amazon',
+    refresh: 'Refresh products',
+    batch: (index: number) => `Batch ${index}`,
+  },
+  zh: {
+    kicker: '支持 RoomFeng · 蝦皮與酷澎聯盟行銷',
+    heading,
+    intro,
+    cta: '前往商品頁',
+    disclosure: 'RoomFeng 的免費工具與內容優先；商品資訊可能變動，請以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。',
+    source: '來源平台',
+    refresh: '換一批商品',
+    batch: (index: number) => `第 ${index} 組`,
+  },
+}[lang];
 const displayLimit = Math.max(2, Math.min(maxItems, 3));
 // Keep the complete active catalogue in the rotation pool so visitors can
 // browse every available product. The visible cards stay limited to three;
 // the button itself remains intentionally uncapped and wraps after the last batch.
 const selectionLimit = affiliateProductsById.size;
-const selectedProducts = productIds
+const selectedProducts = amazon
+  ? amazonProducts
+  : productIds
   ? productIds.map(resolveAffiliateProductId).map((id) => affiliateProductsById.get(id)).filter((product): product is AffiliateProduct => Boolean(product))
   : selectAffiliateProducts({ category, tags, slug, maxItems: selectionLimit });
 const products = showAll ? selectedProducts : selectedProducts.slice(0, displayLimit);
@@ -32,30 +60,38 @@ const canRotate = !showAll && selectedProducts.length > products.length;
 const sectionId = `affiliate-recs-${slug ?? 'catalog'}`;
 const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
 const routePath = Astro.url.pathname;
-const surfaceType = routePath === '/support/' ? 'support' : routePath.startsWith('/zh/blog/') ? 'article' : 'tool';
-const placement = surfaceType === 'support' ? 'support_page' : surfaceType === 'article' ? 'article_inline' : 'product_card';
+const surfaceType = amazon ? (routePath.includes('/room-layout-planner/') ? 'tool' : 'article') : routePath === '/support/' ? 'support' : routePath.startsWith('/zh/blog/') ? 'article' : 'tool';
+const placement = requestedPlacement || (amazon ? (surfaceType === 'tool' ? 'tool_result' : 'recommended_products') : surfaceType === 'support' ? 'support_page' : surfaceType === 'article' ? 'article_inline' : 'product_card');
 const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
 ---
 
 {affiliateEnabled && products.length > 0 && (
-  <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
+  <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-affiliate-amazon={amazon ? 'true' : 'false'} data-affiliate-site="roomfeng" data-affiliate-locale={lang} data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
     <div class="affiliate-recs__header" data-affiliate-module-sentinel>
-      <p class="affiliate-recs__kicker">支持 RoomFeng · 蝦皮與酷澎聯盟行銷</p>
-      <h2 id={`${sectionId}-heading`}>{heading}</h2>
-      <p>{intro}</p>
+      <p class="affiliate-recs__kicker">{amazon ? amazonCopy.kicker : '支持 RoomFeng · 蝦皮與酷澎聯盟行銷'}</p>
+      <h2 id={`${sectionId}-heading`}>{amazon ? amazonCopy.heading : heading}</h2>
+      <p>{amazon ? amazonCopy.intro : intro}</p>
     </div>
     <div class="affiliate-recs__grid">
       {products.map((product, index) => (
         <article class="affiliate-recs__card" data-affiliate-card data-product-index={index}>
-          <img src={product.image} alt={`${product.name} 商品參考圖`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image data-affiliate-field="image" />
+          {amazon ? (
+            <a class="affiliate-recs__media-link" href={product.affiliate_url} target="_blank" rel="sponsored nofollow noopener" data-affiliate-product-link data-affiliate-product-id={product.product_id} data-affiliate-product-category={product.category} data-affiliate-network="amazon" data-affiliate-tracking-id={product.tracking_id} data-affiliate-batch={product.batch_id} data-affiliate-position={String(index + 1)}>
+              <img src={product.image} alt={product.alt_text || `${product.name} product image`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image data-affiliate-field="image" />
+            </a>
+          ) : (
+            <img src={product.image} alt={product.alt_text || `${product.name} product image`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image data-affiliate-field="image" />
+          )}
           <div class="affiliate-recs__body">
-            <h3 data-affiliate-field="name">{product.name}</h3>
+            <h3 data-affiliate-field="name">
+              {amazon ? <a href={product.affiliate_url} target="_blank" rel="sponsored nofollow noopener" data-affiliate-product-link data-affiliate-product-id={product.product_id} data-affiliate-product-category={product.category} data-affiliate-network="amazon" data-affiliate-tracking-id={product.tracking_id} data-affiliate-batch={product.batch_id} data-affiliate-position={String(index + 1)}>{product.name}</a> : product.name}
+            </h3>
             <p data-affiliate-field="description">{product.description}</p>
             <p class="affiliate-recs__price" data-affiliate-field="price" hidden={!product.optionalPriceLabel}>{product.optionalPriceLabel}</p>
-            <p class="affiliate-recs__shop" data-affiliate-field="shop">來源平台：{product.shop}</p>
-            <ul class="affiliate-recs__tags" aria-label="情境標籤" data-affiliate-field="tags">
+            {!amazon && <p class="affiliate-recs__shop" data-affiliate-field="shop">來源平台：{product.shop}</p>}
+            {!amazon && <ul class="affiliate-recs__tags" aria-label="情境標籤" data-affiliate-field="tags">
               {product.tags.map((tag) => <li>{tag}</li>)}
-            </ul>
+            </ul>}
           </div>
           <a
             class="button"
@@ -66,19 +102,20 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
             data-affiliate-product-id={product.product_id}
             data-affiliate-product-category={product.category}
             data-affiliate-network={product.affiliate_network}
+            data-affiliate-tracking-id={product.tracking_id}
             data-affiliate-batch={product.batch_id}
             data-affiliate-position={String(index + 1)}
-          >前往{product.platform === 'coupang' ? '酷澎' : product.platform === 'amazon' ? 'Amazon' : '蝦皮'}查看商品</a>
+          >{amazon ? (product.suggested_cta || amazonCopy.cta) : `前往${product.platform === 'coupang' ? '酷澎' : product.platform === 'amazon' ? 'Amazon' : '蝦皮'}查看商品`}</a>
         </article>
       ))}
     </div>
     {canRotate && (
       <div class="affiliate-recs__controls">
-        <button type="button" class="button affiliate-recs__next" data-affiliate-next aria-controls={sectionId}>換一批商品</button>
-        <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">第 1 組</p>
+        <button type="button" class="button affiliate-recs__next" data-affiliate-next aria-controls={sectionId}>{amazon ? amazonCopy.refresh : '換一批商品'}</button>
+        <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">{amazon ? amazonCopy.batch(1) : '第 1 組'}</p>
       </div>
     )}
-    <p class="affiliate-recs__disclosure">RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以商品頁為準。</p>
+    <p class="affiliate-recs__disclosure">{amazon ? amazonCopy.disclosure : 'RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以商品頁為準。'}</p>
     <script is:inline type="application/json" data-affiliate-products set:html={productsJson}></script>
   </section>
 )}
@@ -93,6 +130,8 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
   .affiliate-recs__grid { display: grid; gap: var(--space-3); }
   .affiliate-recs__card { display: grid; gap: var(--space-3); align-content: space-between; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface-muted); }
   .affiliate-recs__card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); background: var(--color-surface); }
+  .affiliate-recs__media-link { display: block; }
+  .affiliate-recs__body h3 a { color: inherit; text-decoration: none; }
   .affiliate-recs__body { display: grid; gap: var(--space-2); }
   .affiliate-recs__card h3 { font-size: 1.05rem; }
   .affiliate-recs__shop, .affiliate-recs__price, .affiliate-recs__disclosure { color: var(--color-muted); font-size: var(--text-sm); }

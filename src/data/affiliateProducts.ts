@@ -23,6 +23,9 @@ interface SharedAffiliateProduct {
   imageUrl?: string;
   tags?: string[];
   priority?: number;
+  tracking_id?: string;
+  alt_text?: string;
+  suggested_cta?: string;
   optionalDescription?: string;
   optionalPriceLabel?: string;
   batch_id?: string;
@@ -49,6 +52,9 @@ export interface AffiliateProduct {
   tags: string[];
   url: string;
   platform: AffiliatePlatform;
+  tracking_id?: string;
+  alt_text?: string;
+  suggested_cta?: string;
   optionalPriceLabel?: string;
   priority?: number;
 }
