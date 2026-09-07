@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 電風扇風向, 床邊氣流, 窗戶通風]
 keywords: [床邊電風扇風向, 電風扇角度怎麼調, 臥室風扇直吹, 床邊風扇通風]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-fan-cord-clearance-feng-shui, bedroom-fan-feng-shui, bedroom-bed-window-sill-clearance-feng-shui, bedroom-bedside-curtain-draft-clearance-feng-shui]
 howToName: 比較床邊電風扇三種風向與窗門氣流
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [小房間風水, 開放層架, 房門動線, 小房間收納]
 keywords: [小房間開放層架, 層架靠門風水, 開放式收納不擋門, 小房間層架擺放]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-doorway-feng-shui, small-room-vertical-storage-feng-shui, small-room-window-storage-clearance-feng-shui, bedroom-dresser-wall-anchor-cleaning-feng-shui]
 howToName: 檢查小房間開放層架靠門的取物與走道
 howToTotalTime: PT35M

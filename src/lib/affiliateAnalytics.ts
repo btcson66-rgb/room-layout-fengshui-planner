@@ -102,7 +102,7 @@ export function trackAffiliateClick(params: Omit<AffiliateEventParams, 'close_me
   trackAffiliateEvent('affiliate_click', params);
 }
 
-export function trackAffiliateRefresh(params: Omit<AffiliateEventParams, 'product_id' | 'product_category' | 'card_position' | 'close_method'>): void {
+export function trackAffiliateRefresh(params: Omit<AffiliateEventParams, 'card_position' | 'close_method'>): void {
   trackAffiliateEvent('affiliate_refresh', params);
 }
 

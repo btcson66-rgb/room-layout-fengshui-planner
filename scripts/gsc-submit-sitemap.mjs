@@ -13,6 +13,7 @@ import {
   sitemapEndpoint,
   sitemapStatus,
 } from './gsc-client.mjs';
+import { resolveSitemapOutcome } from './gsc-sitemap-outcome.mjs';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 const indexPath = join(projectRoot, 'dist', 'sitemap-index.xml');
@@ -91,24 +92,30 @@ try {
   const stuckEntries = findStuckSitemaps(report.entries);
   for (const entry of stuckEntries) {
     report.alerts.push(
-      `STUCK: ${entry.path} is pending with no lastDownloaded and was last submitted more than 14 days ago (${entry.lastSubmitted}).`,
+      `STUCK: GSC reports no download for ${entry.path}; it is still pending and was last submitted more than 14 days ago (${entry.lastSubmitted}). This means GSC has not reported a download, not that Google never fetched the file.`,
     );
   }
 
-  if (failureCount > 0) {
-    report.status = 'failed';
-    report.message = report.alerts.join(' ');
-    process.exitCode = 1;
-  } else if (submittedCount > 0) {
-    report.status = 'submitted-and-verified';
-    report.message = `Submitted ${submittedCount} unregistered sitemap entries and read back ${registeredCount} existing entries.`;
-  } else if (stuckEntries.length > 0) {
-    report.status = 'registered-pending';
-    report.message = `Read back ${registeredCount} registered sitemap entries. Google download remains pending; no repeat PUT was sent.`;
-  } else {
-    report.status = 'already-registered';
-    report.message = `Read back ${registeredCount} registered sitemap entries; no repeat PUT was needed.`;
+  const outcome = resolveSitemapOutcome({
+    failureCount,
+    submittedCount,
+    registeredCount,
+    stuckCount: stuckEntries.length,
+    alerts: report.alerts,
+  });
+  report.status = outcome.status;
+  report.message = outcome.message;
+  // STUCK 不再讓這一步變紅（理由見 gsc-sitemap-outcome.mjs 的檔頭），但也不能就這樣
+  // 消失在一大片 JSON 裡。印到 stderr，GitHub Actions 會把它獨立標出來，
+  // 而真正的告警由 fable-company 每日健檢負責。
+  for (const alert of report.alerts) console.error(alert);
+  if (outcome.stuck) {
+    console.error(
+      'NOTE: stuck sitemaps do not fail this step. The daily health check owns this signal '
+      + '(fable-company scripts/lib/gsc-sitemap-discovery.mjs → issue code sitemap-never-downloaded).',
+    );
   }
+  if (outcome.exitCode !== 0) process.exitCode = outcome.exitCode;
 } catch (error) {
   report.message = error instanceof Error ? error.message : String(error);
   process.exitCode = 1;

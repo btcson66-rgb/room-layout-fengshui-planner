@@ -1,4 +1,5 @@
 ﻿---
+import { AFFILIATE_POLICY_LINE } from '../config/affiliate';
 import Layout from '../components/Layout.astro';
 import Faq from '../components/Faq.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
@@ -44,6 +45,8 @@ const jsonLd = {
         <p>RoomFeng 的公開指南必須回答一個明確的居住任務，而不是只改標題去覆蓋相似關鍵字。編輯時會先確認房間與家具需要量哪些尺寸，再用規劃工具建立至少一個配置案例，逐項檢查門片、抽屜、椅子、走道、窗戶與插座是否真的能使用。</p>
         <p>文章中的距離或尺寸只作初步規劃與現場測試起點，不當成各地通用法規。涉及建築、消防、無障礙、兒童、長輩或固定工程時，讀者應依所在地規範並諮詢合格專業人員。民俗風水說法會和可觀察的光線、噪音、動線、濕氣與使用習慣分開說明。</p>
         <p>舊文章如果缺少案例、操作方法、限制或人工審查，會先退出 sitemap、站內文章清單與搜尋索引；頁面也不載入 Google 廣告或聯盟推薦。完成實質重寫、連結與行動版檢查後，才會重新列為公開核心內容。更新日期代表完成本流程的日期，不因小幅改字而刷新。</p>
+        <p><strong>合併優先於新增。</strong>同一個問題的不同情境（例如同一種格局在租屋、小房間、兒童房的變化）不另外開新頁，一律併進同一篇完整指南的不同段落。已經拆開的舊網址在合併後以 301 轉到語意最相關的指南，不會留下 404，也不會全部丟回首頁。</p>
+        <p>{AFFILIATE_POLICY_LINE}</p>
         <h2>English summary</h2>
         <p>RoomFeng is a static website for everyday room planning. It is built for renters, movers, and furniture buyers who need a practical browser-based way to check room dimensions and furniture placement. Feng shui notes are cultural and spatial-comfort references only, never promises or fortune-telling.</p>
       </article>

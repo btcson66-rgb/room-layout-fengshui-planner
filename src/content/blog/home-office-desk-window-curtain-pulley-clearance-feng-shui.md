@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 窗簾拉繩, 工作區安全, 螢幕眩光]
 keywords: [書桌窗簾拉繩整理, 窗簾拉繩靠桌, 無繩窗簾風水, 工作桌窗光動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-window-reflection-glare-feng-shui, home-office-desk-window-opening-clearance-feng-shui, home-office-desk-task-light-window-blinds-feng-shui, home-office-desk-task-light-screen-glare-feng-shui]
 howToName: 檢查書桌旁窗簾拉繩、螢幕反光與椅子動線
 howToTotalTime: PT30M

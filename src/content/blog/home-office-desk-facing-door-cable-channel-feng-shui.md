@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 線槽整理, 電線動線]
 keywords: [書桌面向房門線槽, 書房電線整理, 線槽怎麼走, 房門對書桌電線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-headset-cable-feng-shui, home-office-desk-facing-door-printer-paper-tray-feng-shui, home-office-desk-facing-door-stationery-organizer-feng-shui, home-office-desk-facing-door-phone-call-privacy-feng-shui]
 howToName: 檢查書桌面向房門的線槽與電線動線
 howToTotalTime: PT35M

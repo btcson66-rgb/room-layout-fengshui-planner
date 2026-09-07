@@ -17,12 +17,22 @@ const getLinks = (section: HTMLElement): HTMLAnchorElement[] => [...section.quer
 const getContext = (section: HTMLElement) => ({
   placement: section.dataset.affiliatePlacement || 'product_card',
   affiliate_placement: section.dataset.affiliatePlacement || 'product_card',
-  surface_type: section.dataset.affiliateSurface || 'tool',
+  surface_type: section.dataset.affiliateSurface || 'article',
   affiliate_site: section.dataset.affiliateSite || 'roomfeng',
   locale: section.dataset.affiliateLocale || document.documentElement.lang || 'zh',
-  page_type: section.dataset.affiliateSurface === 'tool' ? 'tool' : section.dataset.affiliateSurface === 'article' ? 'article' : 'support',
+  page_type: section.dataset.affiliatePageType || 'article',
   batch_id: section.dataset.affiliateBatch || 'catalog-legacy',
 });
+
+const getRotationCopy = (locale: string, currentBatch: number, totalBatches: number) => locale === 'en'
+  ? {
+      status: `Batch ${currentBatch} of ${totalBatches}`,
+      ariaLabel: `Refresh products — currently batch ${currentBatch} of ${totalBatches}`,
+    }
+  : {
+      status: `第 ${currentBatch} 組／共 ${totalBatches} 組`,
+      ariaLabel: `換一批商品（目前第 ${currentBatch} 組，共 ${totalBatches} 組）`,
+    };
 
 const linkParams = (section: HTMLElement, link: HTMLAnchorElement) => ({
   ...getContext(section),
@@ -156,27 +166,37 @@ document.querySelectorAll('[data-affiliate-recs]').forEach((section) => {
   try { products = data ? JSON.parse(data.textContent || '[]') as AffiliateProduct[] : []; } catch (_) { return; }
   if (section.dataset.affiliateAmazon === 'true') products = shuffle(products);
   const batchSize = Number(section.dataset.batchSize) || cards.length;
-  const batchCount = Math.ceil(products.length / batchSize);
+  const batchCount = Math.max(1, Math.ceil(products.length / batchSize));
   let batchIndex = 0;
   let refreshCount = 0;
+  const getBatch = (startIndex: number): AffiliateProduct[] => {
+    if (products.length === 0) return [];
+    const count = Math.min(batchSize, products.length);
+    return Array.from({ length: count }, (_, offset) => products[(startIndex + offset) % products.length]);
+  };
   const renderBatch = () => {
-    const batch = products.slice(batchIndex * batchSize, (batchIndex + 1) * batchSize);
+    const batch = getBatch(batchIndex * batchSize);
     cards.forEach((card, index) => updateAffiliateCard(card, batch[index]));
-    if (status && batchCount > 0) status.textContent = `第 ${batchIndex + 1} 組／共 ${batchCount} 組`;
-    if (button instanceof HTMLButtonElement && batchCount > 0) {
-      button.setAttribute('aria-label', `換一批商品（目前第 ${batchIndex + 1} 組，共 ${batchCount} 組）`);
+    const locale = section.dataset.affiliateLocale || document.documentElement.lang || 'zh';
+    const copy = getRotationCopy(locale, batchIndex + 1, batchCount);
+    if (status) status.textContent = copy.status;
+    if (button instanceof HTMLButtonElement) {
+      button.setAttribute('aria-label', copy.ariaLabel);
     }
   };
   if (button instanceof HTMLButtonElement && batchCount > 1) button.addEventListener('click', () => {
     batchIndex = (batchIndex + 1) % batchCount;
     refreshCount += 1;
     renderBatch();
-    const batch = products.slice(batchIndex * batchSize, (batchIndex + 1) * batchSize);
+    const batch = getBatch(batchIndex * batchSize);
     const networks = [...new Set(batch.map((product) => product.affiliate_network || 'other'))];
     trackAffiliateRefresh({
       ...getContext(section),
       affiliate_network: networks.length === 1 ? networks[0] : 'mixed',
       batch_id: batch[0]?.batch_id || getContext(section).batch_id,
+      tracking_id: batch[0]?.tracking_id || 'unknown',
+      product_id: batch[0]?.product_id || 'unknown',
+      product_category: batch[0]?.category || 'general',
       products_shown: batch.length,
       refresh_count: refreshCount,
     });

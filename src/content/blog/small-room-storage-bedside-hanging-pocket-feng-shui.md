@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊掛袋, 床側收納, 夜間取物]
 keywords: [小房間床邊掛袋風水, 床邊掛袋怎麼掛, 小房間垂直收納, 床側收納袋動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-wall-shelf-feng-shui, small-room-storage-bedside-charging-cable-feng-shui, small-room-storage-bedside-underbed-drawer-feng-shui, small-room-storage-bedside-rolling-cart-clearance-feng-shui]
 howToName: 檢查小房間床邊掛袋、突出與夜間取物
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 收納箱清潔, 小房間風水]
 keywords: [小房間床邊收納箱底部清潔, 床邊收納箱灰塵, 收納箱受潮風水, 小房間床邊清潔動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-stacked-boxes-feng-shui, small-room-storage-bedside-drawer-depth-feng-shui, small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-bedside-rolling-cart-clearance-feng-shui]
 howToName: 檢查小房間床邊收納箱底部清潔與回位
 howToTotalTime: PT35M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭櫃抽屜, 房門動線, 下床空間]
 keywords: [床頭櫃抽屜對門風水, 床頭櫃靠房門, 床頭櫃抽屜距離, 臥室下床動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-doorway-line-of-sight-feng-shui, bedroom-bed-left-wall-access-feng-shui, bedroom-bed-foot-doorway-clearance-feng-shui, bedroom-bedside-storage-turning-clearance-feng-shui]
 howToName: 檢查床頭櫃抽屜與房門下床動線
 howToTotalTime: PT30M

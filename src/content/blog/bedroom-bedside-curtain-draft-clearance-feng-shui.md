@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床邊窗簾, 開窗動線, 床靠窗]
 keywords: [床邊窗簾距離, 床靠窗簾風水, 床邊窗簾風隙, 臥室窗簾碰床]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-window-curtain-clearance-feng-shui, bedroom-bed-window-sill-clearance-feng-shui, bedroom-bedside-rug-night-route-feng-shui, bedroom-bed-foot-doorway-clearance-feng-shui]
 howToName: 檢查床邊窗簾與開窗和床位的風隙
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [小房間風水, 衣櫃門, 取衣動線, 衣櫃轉身]
 keywords: [小房間衣櫃門, 衣櫃門轉身空間, 衣櫃靠床風水, 小房間衣櫃動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-wardrobe-door-opening-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, bedroom-wardrobe-placement-feng-shui, bedroom-wardrobe-lighting-feng-shui]
 howToName: 檢查小房間衣櫃門的取衣與轉身動線
 howToTotalTime: PT40M

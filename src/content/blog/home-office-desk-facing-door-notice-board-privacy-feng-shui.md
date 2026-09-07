@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 公告板隱私, 文件收納]
 keywords: [書桌面向房門公告板, 書房公告板隱私, 房門對書桌文件, 公告板風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-phone-call-privacy-feng-shui, home-office-desk-facing-door-headset-cable-feng-shui, home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-facing-door-webcam-angle-feng-shui]
 howToName: 檢查書桌面向房門的公告板與文件視線
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 窗簾反光, 床頭燈]
 keywords: [床頭牆面窗簾反光, 臥室窗簾眩光, 床頭燈窗簾反射, 窗簾風水光線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-shadow-feng-shui, bedroom-bed-headboard-wall-curtain-privacy-feng-shui, bedroom-bed-headboard-wall-curtain-side-return-feng-shui, bedroom-bed-headboard-wall-mirror-reflection-feng-shui]
 howToName: 檢查床頭牆面窗簾反光與床頭燈視線
 howToTotalTime: PT30M

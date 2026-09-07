@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 腳踏, 桌下淨空]
 keywords: [書桌面向房門腳踏, 書桌腳踏風水, 桌下空間, 書桌對門坐姿]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-drawer-clearance-feng-shui, home-office-desk-facing-door-chair-turning-feng-shui, home-office-desk-facing-door-cable-channel-feng-shui, home-office-desk-facing-door-visibility-feng-shui]
 howToName: 檢查面向房門書桌的腳踏與起身路線
 howToTotalTime: PT30M

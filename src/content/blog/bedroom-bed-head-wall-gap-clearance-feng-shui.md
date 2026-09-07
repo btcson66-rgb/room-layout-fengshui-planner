@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [臥室風水, 床頭靠牆, 床頭留縫, 臥室牆面]
 keywords: [床頭靠牆要留縫嗎, 床頭與牆距離風水, 床頭靠牆插座, 床頭牆面潮濕]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bed-head-against-wall, bedroom-bed-head-wall-power-outlet-feng-shui, bedroom-mattress-wall-gap-feng-shui, bedroom-headboard-stability-feng-shui]
 howToName: 檢查床頭靠牆的留縫與臥室維護動線
 howToTotalTime: PT35M

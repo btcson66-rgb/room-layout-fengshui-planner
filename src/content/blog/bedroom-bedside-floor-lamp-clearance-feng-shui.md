@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床邊立燈, 夜間照明, 床邊動線]
 keywords: [床邊立燈風水, 臥室立燈放哪裡, 床邊燈具距離, 立燈電線動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-rug-night-route-feng-shui, bedroom-nightstand-drawer-doorway-clearance-feng-shui, bedroom-bed-foot-doorway-clearance-feng-shui, bedroom-bedside-curtain-draft-clearance-feng-shui]
 howToName: 檢查床邊立燈的照明、穩定與夜間動線
 howToTotalTime: PT30M

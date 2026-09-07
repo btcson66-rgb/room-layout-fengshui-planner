@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [臥室風水, 床尾對房門, 房門動線, 床尾距離]
 keywords: [床尾對房門距離, 床尾對門風水怎麼化解, 床尾房門動線, 臥室床尾留空間]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-doorway-line-of-sight-feng-shui, bedroom-bed-foot-furniture-clearance-feng-shui, bedroom-bed-window-sill-clearance-feng-shui, bedroom-bed-head-wall-gap-clearance-feng-shui]
 howToName: 檢查床尾對房門的開門與離床動線
 howToTotalTime: PT35M

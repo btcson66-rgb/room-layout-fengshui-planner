@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 布料清潔, 臥室維護]
 keywords: [床頭牆面窗簾清潔, 臥室窗簾積塵, 床頭布簾怎麼洗, 窗簾風水清潔]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-shadow-feng-shui, bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui, bedroom-curtain-rod-cleaning-feng-shui, bedroom-bed-window-curtain-clearance-feng-shui]
 howToName: 檢查床頭牆面窗簾積塵與清潔流程
 howToTotalTime: PT40M

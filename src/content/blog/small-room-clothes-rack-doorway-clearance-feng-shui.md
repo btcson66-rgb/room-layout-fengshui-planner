@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 衣物掛架, 房門動線, 開放式收納]
 keywords: [小房間衣物掛架靠門, 衣架門口距離, 開放式衣架風水, 衣物掛架動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-wardrobe-door-turning-clearance-feng-shui, small-room-drawer-unit-doorway-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, small-room-open-shelf-door-clearance-feng-shui]
 howToName: 檢查小房間衣物掛架靠門的外凸與出口動線
 howToTotalTime: PT30M

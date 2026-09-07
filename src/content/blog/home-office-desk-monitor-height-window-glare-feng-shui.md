@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 螢幕高度, 工作站布局, 窗光眩光]
 keywords: [書桌螢幕高度風水, 螢幕太高怎麼辦, 螢幕靠窗布局, 工作桌視線調整]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-window-reflection-glare-feng-shui, home-office-desk-task-light-screen-glare-feng-shui, home-office-desk-task-light-window-blinds-feng-shui]
 howToName: 檢查書桌螢幕高度、窗光方向與工作視線
 howToTotalTime: PT30M

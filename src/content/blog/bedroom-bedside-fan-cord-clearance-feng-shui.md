@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床邊電風扇, 電線整理, 夜間動線]
 keywords: [床邊電風扇風水, 臥室電風扇放哪裡, 電風扇電線整理, 床邊風扇安全距離]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-floor-lamp-clearance-feng-shui, bedroom-bedside-rug-night-route-feng-shui, bedroom-bedside-table-cable-cleaning-feng-shui, bedroom-fan-feng-shui]
 howToName: 檢查床邊電風扇的送風、電線與夜間動線
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 窗簾下擺, 床側距離]
 keywords: [床頭牆面窗簾下擺, 臥室窗簾長度風水, 床邊窗簾距離, 窗簾落地清潔]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-shadow-feng-shui, bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui, bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui, bedroom-bed-window-curtain-clearance-feng-shui]
 howToName: 檢查床頭牆面窗簾下擺與床側距離
 howToTotalTime: PT30M

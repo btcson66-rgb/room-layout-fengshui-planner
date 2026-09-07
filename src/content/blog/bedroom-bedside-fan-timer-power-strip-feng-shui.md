@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 電風扇定時, 延長線整理, 床邊插座]
 keywords: [床邊電風扇定時, 電風扇延長線怎麼放, 臥室風扇插座, 床邊風水電線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-fan-remote-control-night-route-feng-shui, bedroom-bedside-fan-cord-clearance-feng-shui, bedroom-bedside-fan-night-noise-feng-shui, bedroom-bedside-fan-window-cross-ventilation-feng-shui]
 howToName: 檢查床邊電風扇定時、延長線與夜間斷電路徑
 howToTotalTime: PT30M

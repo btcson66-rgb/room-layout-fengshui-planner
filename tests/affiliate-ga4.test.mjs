@@ -64,6 +64,8 @@ test('RoomFeng uses the four-site context and standard affiliate payload', () =>
     surface_type: 'article',
     affiliate_network: 'shopee',
     batch_id: 'catalog-legacy',
+    product_id: 'shopee-18252003703',
+    product_category: 'home',
   });
 
   assert.deepEqual(events, [
@@ -86,7 +88,8 @@ test('RoomFeng uses the four-site context and standard affiliate payload', () =>
     }],
     ['event', 'affiliate_refresh', {
       site_name: 'roomfeng', placement: 'article_inline', surface_type: 'article',
-      affiliate_network: 'shopee', batch_id: 'catalog-legacy', debug_mode: true,
+      affiliate_network: 'shopee', batch_id: 'catalog-legacy', product_id: 'shopee-18252003703',
+      product_category: 'home', debug_mode: true,
       send_to: 'G-Q78WN8NZ0R', transport_type: 'beacon',
     }],
   ]);

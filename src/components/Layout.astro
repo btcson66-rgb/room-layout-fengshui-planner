@@ -19,9 +19,19 @@ interface Props {
   };
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
   noindex?: boolean;
+  pageType?: 'tool' | 'calculator' | 'planner' | 'article' | 'guide' | 'hub';
 }
 
-const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd, noindex = false } = Astro.props;
+const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd, noindex = false, pageType } = Astro.props;
+const jsonLdItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
+const jsonLdTypes = jsonLdItems.map((item) => String(item['@type'] ?? ''));
+const titleLower = title.toLowerCase();
+const inferredPageType = pageType
+  ?? (jsonLdTypes.includes('WebSite') ? 'hub'
+    : jsonLdTypes.includes('WebApplication')
+      ? titleLower.includes('sizer') || titleLower.includes('calculator') ? 'calculator'
+        : titleLower.includes('planner') ? 'planner' : 'tool'
+      : jsonLdTypes.includes('Article') ? 'guide' : 'article');
 ---
 
 <!doctype html>
@@ -35,7 +45,7 @@ const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates,
     <Header lang={lang} />
     <main>
       <slot />
-      {lang === 'en' && !noindex && <AffiliateRecs amazon lang="en" slug={canonical} maxItems={3} />}
+      {lang === 'en' && !noindex && <AffiliateRecs amazon lang="en" slug={canonical} maxItems={3} pageType={inferredPageType} />}
     </main>
     <Footer lang={lang} />
   </body>

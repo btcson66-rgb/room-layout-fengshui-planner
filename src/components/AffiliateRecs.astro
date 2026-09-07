@@ -1,4 +1,5 @@
 ---
+import { AFFILIATE_ENABLED, AFFILIATE_DISCLOSURE } from '../config/affiliate';
 import {
   affiliateProductsById,
   resolveAffiliateProductId,
@@ -13,16 +14,22 @@ interface Props {
   tags?: string[];
   slug?: string;
   maxItems?: number;
+  /**
+   * 「換一批」可輪替的商品總數（＝嵌進 HTML 的 JSON 大小）。
+   * 目錄型頁面（/support/）用 productIds 明確傳入全部品項，不受這個上限影響。
+   */
+  rotationPoolSize?: number;
   showAll?: boolean;
   heading?: string;
   intro?: string;
   amazon?: boolean;
   lang?: 'zh' | 'en';
   placement?: string;
+  pageType?: 'tool' | 'calculator' | 'planner' | 'article' | 'guide' | 'hub';
 }
 
-const { productIds, category, tags = [], slug, maxItems = 3, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。', amazon = false, lang = 'zh', placement: requestedPlacement } = Astro.props;
-const affiliateEnabled = import.meta.env.PUBLIC_AFFILIATE_ENABLED !== 'false';
+const { productIds, category, tags = [], slug, maxItems = 3, rotationPoolSize = 24, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。', amazon = false, lang = 'zh', placement: requestedPlacement, pageType } = Astro.props;
+const affiliateEnabled = AFFILIATE_ENABLED;
 const amazonCopy = {
   en: {
     kicker: 'Optional Amazon product discovery',
@@ -32,7 +39,7 @@ const amazonCopy = {
     disclosure: 'Affiliate links: we may earn a commission from qualifying purchases at no extra cost to you.',
     source: 'Amazon',
     refresh: 'Refresh products',
-    batch: (index: number) => `Batch ${index}`,
+    batch: (index: number, total: number) => 'Batch ' + index + ' of ' + total,
   },
   zh: {
     kicker: '支持 RoomFeng · 蝦皮與酷澎聯盟行銷',
@@ -42,14 +49,14 @@ const amazonCopy = {
     disclosure: 'RoomFeng 的免費工具與內容優先；商品資訊可能變動，請以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。',
     source: '來源平台',
     refresh: '換一批商品',
-    batch: (index: number) => `第 ${index} 組`,
+    batch: (index: number, total: number) => '第 ' + index + ' 組／共 ' + total + ' 組',
   },
 }[lang];
 const displayLimit = Math.max(2, Math.min(maxItems, 3));
 // Keep the complete active catalogue in the rotation pool so visitors can
 // browse every available product. The visible cards stay limited to three;
 // the button itself remains intentionally uncapped and wraps after the last batch.
-const selectionLimit = affiliateProductsById.size;
+const selectionLimit = amazon ? amazonProducts.length : Math.min(rotationPoolSize, affiliateProductsById.size);
 const selectedProducts = amazon
   ? amazonProducts
   : productIds
@@ -57,16 +64,20 @@ const selectedProducts = amazon
   : selectAffiliateProducts({ category, tags, slug, maxItems: selectionLimit });
 const products = showAll ? selectedProducts : selectedProducts.slice(0, displayLimit);
 const canRotate = !showAll && selectedProducts.length > products.length;
+const batchCount = Math.max(1, Math.ceil(selectedProducts.length / displayLimit));
 const sectionId = `affiliate-recs-${slug ?? 'catalog'}`;
 const productsJson = JSON.stringify(selectedProducts).replace(/</g, '\\u003c');
 const routePath = Astro.url.pathname;
-const surfaceType = amazon ? (routePath.includes('/room-layout-planner/') ? 'tool' : 'article') : routePath === '/support/' ? 'support' : routePath.startsWith('/zh/blog/') ? 'article' : 'tool';
-const placement = requestedPlacement || (amazon ? (surfaceType === 'tool' ? 'tool_result' : 'recommended_products') : surfaceType === 'support' ? 'support_page' : surfaceType === 'article' ? 'article_inline' : 'product_card');
+const resolvedPageType = pageType || (amazon ? 'article' : undefined);
+const surfaceType = amazon
+  ? resolvedPageType === 'hub' ? 'hub' : ['tool', 'calculator', 'planner'].includes(resolvedPageType || '') ? 'tool' : 'article'
+  : routePath === '/support/' ? 'support' : routePath.startsWith('/zh/blog/') ? 'article' : 'tool';
+const placement = requestedPlacement || (amazon ? ['tool', 'calculator', 'planner'].includes(resolvedPageType || '') ? 'tool_result' : 'recommended_products' : surfaceType === 'support' ? 'support_page' : surfaceType === 'article' ? 'article_inline' : 'product_card');
 const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
 ---
 
 {affiliateEnabled && products.length > 0 && (
-  <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-affiliate-amazon={amazon ? 'true' : 'false'} data-affiliate-site="roomfeng" data-affiliate-locale={lang} data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
+  <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-affiliate-amazon={amazon ? 'true' : 'false'} data-affiliate-site="roomfeng" data-affiliate-locale={lang} data-affiliate-page-type={resolvedPageType} data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
     <div class="affiliate-recs__header" data-affiliate-module-sentinel>
       <p class="affiliate-recs__kicker">{amazon ? amazonCopy.kicker : '支持 RoomFeng · 蝦皮與酷澎聯盟行銷'}</p>
       <h2 id={`${sectionId}-heading`}>{amazon ? amazonCopy.heading : heading}</h2>
@@ -111,11 +122,11 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
     </div>
     {canRotate && (
       <div class="affiliate-recs__controls">
-        <button type="button" class="button affiliate-recs__next" data-affiliate-next aria-controls={sectionId}>{amazon ? amazonCopy.refresh : '換一批商品'}</button>
-        <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">{amazon ? amazonCopy.batch(1) : '第 1 組'}</p>
+        <button type="button" class="button affiliate-recs__next" data-affiliate-next aria-controls={sectionId} aria-label={amazon ? 'Refresh products — currently batch 1 of ' + batchCount : undefined}>{amazon ? amazonCopy.refresh : '換一批商品'}</button>
+        <p class="affiliate-recs__batch-status" data-affiliate-batch-status aria-live="polite">{amazon ? amazonCopy.batch(1, batchCount) : '第 1 組'}</p>
       </div>
     )}
-    <p class="affiliate-recs__disclosure">{amazon ? amazonCopy.disclosure : 'RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以商品頁為準。'}</p>
+    <p class="affiliate-recs__disclosure">{amazon ? amazonCopy.disclosure : AFFILIATE_DISCLOSURE}</p>
     <script is:inline type="application/json" data-affiliate-products set:html={productsJson}></script>
   </section>
 )}

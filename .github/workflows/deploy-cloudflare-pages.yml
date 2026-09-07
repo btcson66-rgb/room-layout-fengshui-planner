@@ -62,6 +62,13 @@ jobs:
       # (that silent-skip pattern is exactly how funnytools' equivalent step
       # went unnoticed for months). scripts/gsc-submit-sitemap.mjs itself
       # exits 1 when credentials or the API fail, but not merely for pending.
+      #
+      # 2026-09-06: PR #76 曾讓「Google 遲遲沒下載 sitemap」也 exit 1，違反上面這句
+      # 自己寫的契約，結果每一次部署都紅同一件事、連續兩週，紅燈失去意義。
+      # 現已改回：這一步只管提交有沒有成功；「Google 到底有沒有來抓」由
+      # fable-company 的每日健檢負責（scripts/lib/gsc-sitemap-discovery.mjs，
+      # issue code sitemap-never-downloaded，單站 warning／三站全中 critical，
+      # 並附 URL Inspection 的 Googlebot 爬取狀態）。STUCK 警告仍會印在本步驟的 log。
       - name: Submit sitemap to Google Search Console
         run: sleep 60 && npm run gsc:submit-sitemap
         env:

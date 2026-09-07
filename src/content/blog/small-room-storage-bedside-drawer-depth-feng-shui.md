@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 抽屜深度, 小房間風水]
 keywords: [小房間床邊抽屜深度, 床邊櫃抽屜風水, 床邊收納抽屜, 小房間取物距離]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-stacked-boxes-feng-shui, small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-bedside-basket-reach-feng-shui, small-room-storage-bedside-label-system-feng-shui]
 howToName: 檢查小房間床邊抽屜深度與拉出動線
 howToTotalTime: PT30M

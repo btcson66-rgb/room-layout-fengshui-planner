@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [臥室風水, 床靠窗, 窗簾動線, 開窗空間]
 keywords: [床靠窗窗簾風水, 床與窗簾距離, 床邊開窗動線, 臥室窗邊配置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bed-under-window-solutions, bedroom-curtain-feng-shui, bedroom-window-condensation-feng-shui, bedroom-window-sill-cleaning-feng-shui]
 howToName: 檢查床靠窗時的窗簾與臥室動線
 howToTotalTime: PT40M

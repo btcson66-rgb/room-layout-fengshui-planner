@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 陰影檢查, 窗簾安全]
 keywords: [床頭牆面窗簾風水, 床頭窗簾陰影, 臥室窗簾怎麼放, 窗簾低照度視線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-window-curtain-clearance-feng-shui, bedroom-bedside-curtain-draft-clearance-feng-shui, bedroom-bed-headboard-wall-mirror-reflection-feng-shui, bedroom-bed-headboard-wall-art-lighting-feng-shui]
 howToName: 檢查床頭牆面窗簾、陰影與夜間開合
 howToTotalTime: PT35M

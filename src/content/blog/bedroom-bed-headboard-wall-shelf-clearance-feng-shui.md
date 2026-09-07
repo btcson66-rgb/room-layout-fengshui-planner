@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭層板, 頭部距離, 家具固定]
 keywords: [床頭牆面層板風水, 床頭上方裝層板, 床頭層板高度, 臥室床頭收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-stability-feng-shui, bedroom-bed-head-wall-gap-clearance-feng-shui, bedroom-bed-head-wall-power-outlet-feng-shui, bedroom-bedside-book-storage-feng-shui]
 howToName: 檢查床頭牆面層板、頭部距離與掉落路徑
 howToTotalTime: PT30M

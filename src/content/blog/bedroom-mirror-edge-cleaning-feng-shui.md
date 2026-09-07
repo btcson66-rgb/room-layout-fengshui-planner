@@ -21,6 +21,8 @@ relatedTools:
   - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-mirror-frame-dust-cleaning-feng-shui
+  - mirror-facing-bed-bedroom
+  - bedroom-lighting-guide
 howToName: "臥室鏡面邊緣、框架、固定件與反射動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:

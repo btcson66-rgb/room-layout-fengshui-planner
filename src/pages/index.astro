@@ -1,17 +1,28 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '../components/Layout.astro';
 import Faq from '../components/Faq.astro';
 import NewsletterSignup from '../components/NewsletterSignup.astro';
+import PlannerCta from '../components/PlannerCta.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
-import { isReviewReadyBlogSlug } from '../data/contentQuality.mjs';
-import { categoryMeta, formatDate, siteUrl } from '../data/site';
+import { AFFILIATE_POLICY_LINE } from '../config/affiliate';
+import { reviewReadyCategorySlugs } from '../data/contentQuality.mjs';
+import { hubContent } from '../data/hubs';
+import { categoryMeta, siteUrl } from '../data/site';
 
-const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.noindex && isReviewReadyBlogSlug(post.id))
-  .sort((a, b) => b.data.updated.valueOf() - a.data.updated.valueOf());
-const latestPosts = posts.slice(0, 5);
-const popularPosts = posts.filter((post) => ['feng-shui', 'room-planning', 'small-room'].includes(post.data.category)).slice(0, 6);
+// 首頁刻意不再列「最新文章」。自動抓最新更新只會把首頁的內部連結權重
+// 灑到隨機的長尾頁面上，也讓首頁看起來像文章牆。改成連到 9 個主題 Hub
+// 與人工挑選的核心指南，讓 Google 從首頁就讀到「這個站分成哪些主題」。
+const hubs = Object.entries(categoryMeta)
+  .filter(([slug]) => reviewReadyCategorySlugs.has(slug) && hubContent[slug])
+  .map(([slug, meta]) => ({ href: `/zh/category/${slug}/`, title: meta.title, description: meta.description }));
+const keyGuides = [
+  { href: '/zh/blog/room-circulation-width-guide/', title: '房間走道要留多寬', text: '整站被引用最多的一篇：用門片、抽屜與椅子的實際尺寸反推走道，而不是背一個數字。' },
+  { href: '/zh/blog/bed-size-room-guide/', title: '床尺寸怎麼選', text: '先量走道再挑床。附台灣床墊尺寸對照與床架外框加值表。' },
+  { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床對門怎麼處理', text: '床頭對門與床尾對門要分開判斷，先看開門視線與實牆位置。' },
+  { href: '/zh/blog/beam-over-desk-bed-layout/', title: '橫樑壓床完整指南', text: '床型、床邊家具、靠窗與租屋不能移床，全部收在同一頁。' },
+  { href: '/zh/blog/tiny-room-layout-under-5-ping/', title: '5 坪以下房間怎麼設計', text: '先算扣掉樑柱與門片的淨尺寸，再分配床、桌與收納。' },
+  { href: '/zh/blog/small-room-storage-zones/', title: '小房間收納分區', text: '先盤點 30 件常用物品，再規劃五個存放區，不要先買收納盒。' },
+];
 const title = 'RoomFeng｜免費房間規劃與風水佈局工具';
 const description = '輸入房間尺寸、門窗位置與家具需求，快速取得臥室、小房間、小套房與書桌配置建議，並參考床位、鏡子、採光、收納與動線風水提醒。';
 const canonical = '/';
@@ -59,13 +70,6 @@ const tools = [
 ];
 const audiences = ['租屋族', '學生', '小房間使用者', '搬家前規劃', '想改善床位與收納的人', '想參考房間風水的人'];
 const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不好', '衣櫃擋住動線', '鏡子對床', '床對門', '房間收納混亂'];
-const fengShuiQuestions = [
-  { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床對門怎麼辦' },
-  { href: '/zh/blog/mirror-facing-bed-bedroom/', title: '鏡子對床怎麼辦' },
-  { href: '/zh/blog/bed-under-window-solutions/', title: '床頭靠窗怎麼辦：7 晚檢查' },
-  { href: '/zh/blog/desk-facing-door-layout/', title: '書桌要怎麼擺' },
-  { href: '/zh/blog/bed-head-against-wall/', title: '床頭要不要靠牆' },
-];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
@@ -117,33 +121,44 @@ const fengShuiQuestions = [
         </div>
       </section>
 
-      <section class="card" aria-labelledby="feng-heading">
-        <h2 id="feng-heading">熱門風水問題</h2>
-        <p>以下內容以「民俗上常見說法」與「室內配置舒適度」角度整理，不保證任何結果。請以實際安全、採光、通風、動線與居住需求為優先，並閱讀 <a href="/disclaimer/">免責聲明</a>。</p>
-        <ul>{fengShuiQuestions.map((item) => <li><a href={item.href}>{item.title}</a></li>)}</ul>
+      <section class="card" aria-labelledby="how-heading">
+        <h2 id="how-heading">Room Planner 怎麼用</h2>
+        <ol class="how-steps">
+          <li><strong>量三件事</strong>：房間內徑長寬、門片開啟方向與寬度、窗戶位置。有橫樑時再加樑的兩條投影線。</li>
+          <li><strong>拖進家具</strong>：床、書桌、衣櫃、沙發、門、窗、鏡子都可以旋轉與改尺寸，數字直接以公分輸入。</li>
+          <li><strong>看警示</strong>：工具會標出家具超出房間、門口被擋住、主要走道低於 60 公分，中文版另有床對門、鏡子對床、床頭無支撐等民俗參考提醒。</li>
+          <li><strong>匯出</strong>：存成 PNG 或 PDF，買家具、搬家或跟房東溝通時直接拿出來對。</li>
+        </ol>
+        <p class="muted">全部在瀏覽器裡運算，不需要註冊、沒有資料庫，草稿存在你自己的瀏覽器裡。</p>
       </section>
 
-      <section class="card" aria-labelledby="latest-heading">
-        <h2 id="latest-heading">最新文章</h2>
-        <div class="post-list">
-          {latestPosts.map((post) => (
+      <PlannerCta
+        preset="double"
+        heading="直接載入一個範例房間試試"
+        text="不想從空白開始的話，可以先載入雙人房範例，把尺寸改成你家的數字，再拖動床與衣櫃看警示怎麼變。"
+      />
+
+      <section class="card" aria-labelledby="hub-heading">
+        <h2 id="hub-heading">主題入口</h2>
+        <p>RoomFeng 的內容分成這幾個主題，每一個都有導讀、核心問題、精選指南與對應工具。</p>
+        <div class="scenario-grid">
+          {hubs.map((hub) => (
             <article>
-              <p class="meta">{formatDate(post.data.updated)} · <a href={`/zh/category/${post.data.category}/`}>{categoryMeta[post.data.category]?.title}</a></p>
-              <h3><a href={`/zh/blog/${post.id}/`}>{post.data.title}</a></h3>
-              <p>{post.data.description}</p>
+              <h3><a href={hub.href}>{hub.title}</a></h3>
+              <p>{hub.description}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section class="card" aria-labelledby="popular-heading">
-        <h2 id="popular-heading">熱門教學</h2>
+      <section class="card" aria-labelledby="guides-heading">
+        <h2 id="guides-heading">最值得先讀的指南</h2>
+        <p>這幾篇是人工挑選的核心指南，不是依更新時間自動排出來的清單。</p>
         <div class="post-list">
-          {popularPosts.map((post) => (
+          {keyGuides.map((guide) => (
             <article>
-              <p class="meta"><a href={`/zh/category/${post.data.category}/`}>{categoryMeta[post.data.category]?.title}</a></p>
-              <h3><a href={`/zh/blog/${post.id}/`}>{post.data.title}</a></h3>
-              <p>{post.data.description}</p>
+              <h3><a href={guide.href}>{guide.title}</a></h3>
+              <p>{guide.text}</p>
             </article>
           ))}
         </div>
@@ -156,7 +171,8 @@ const fengShuiQuestions = [
           <li>先量房間、門窗、插座與家具外徑，再寫配置結論。</li>
           <li>數字只作規劃起點，不能取代建築、消防、無障礙或專業設計規範。</li>
           <li>風水只分開標示為民俗文化參考，不包裝成健康或人生結果。</li>
-          <li>商品與聯盟推薦在 AdSense 重新審查期間預設關閉。</li>
+          <li>{AFFILIATE_POLICY_LINE}</li>
+          <li>相似搜尋詞不另開新頁，一律併進同一篇完整指南的不同段落；合併掉的舊網址以 301 轉到最相關的指南。</li>
         </ul>
         <p>內容方法、作者說明與更正方式可查看 <a href="/about/#editorial-process">編輯與審查流程</a>。</p>
       </section>
@@ -174,6 +190,18 @@ const fengShuiQuestions = [
 </Layout>
 
 <style>
+  .how-steps {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0 0 var(--space-3);
+    padding-left: 1.2rem;
+  }
+
+  .muted {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
   .how-it-works {
     display: flex;
     flex-wrap: wrap;

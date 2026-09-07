@@ -3,9 +3,11 @@ import type { GetStaticPaths, Page } from 'astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../../../components/Layout.astro';
 import Pagination from '../../../../components/Pagination.astro';
+import PlannerCta from '../../../../components/PlannerCta.astro';
 import RelatedLinks from '../../../../components/RelatedLinks.astro';
 import { isReviewReadyBlogSlug } from '../../../../data/contentQuality.mjs';
-import { categoryMeta, categorySlugs, formatDate, siteUrl, toolLinks } from '../../../../data/site';
+import { hubContent } from '../../../../data/hubs';
+import { categoryMeta, categorySlugs, formatDate, siteUrl } from '../../../../data/site';
 import { CATEGORY_PAGE_SIZE } from '../../../../data/pagination';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
@@ -21,15 +23,21 @@ export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
 const { category } = Astro.params;
 const { page } = Astro.props as { page: Page<CollectionEntry<'blog'>> };
 const meta = categoryMeta[category ?? ''];
+const hub = hubContent[category ?? ''];
 const basePath = `/zh/category/${category}/`;
 const canonical = page.currentPage === 1 ? basePath : `${basePath}${page.currentPage}/`;
+// 導讀、核心問題、精選指南與 FAQ 只出現在第 1 頁。
+// 分頁 2 之後重複同一份導讀等於自己製造重複內容，也會讓分頁的
+// title/description 之外的主體幾乎一模一樣。
+const isHubPage = page.currentPage === 1 && Boolean(hub);
 const title = page.currentPage === 1
   ? `${meta.title}｜RoomFeng`
   : `${meta.title}（第 ${page.currentPage} 頁）｜RoomFeng`;
 const description = page.currentPage === 1
   ? meta.description
   : `${meta.description}這是第 ${page.currentPage} 頁，共 ${page.lastPage} 頁。`;
-const jsonLd = [
+
+const jsonLd: Record<string, unknown>[] = [
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -37,36 +45,113 @@ const jsonLd = [
     description,
     url: `${siteUrl}${canonical}`,
     inLanguage: 'zh-TW',
+    isPartOf: { '@type': 'WebSite', name: 'RoomFeng', url: `${siteUrl}/` },
   },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: '首頁', item: `${siteUrl}/` },
-      { '@type': 'ListItem', position: 2, name: '文章', item: `${siteUrl}/zh/blog/` },
+      { '@type': 'ListItem', position: 2, name: '文章主題', item: `${siteUrl}/zh/blog/` },
       { '@type': 'ListItem', position: 3, name: meta.title, item: `${siteUrl}${basePath}` },
     ],
   },
 ];
+// 精選指南是這個 Hub 實際顯示的排序清單，所以輸出 ItemList；
+// FAQ 只有在畫面真的有 FAQ 區塊時（第 1 頁）才輸出 FAQPage。
+if (isHubPage && hub.featured.length > 0) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `${meta.title}：核心指南`,
+    itemListElement: hub.featured.map((link, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: link.title,
+      url: `${siteUrl}${link.href}`,
+    })),
+  });
+}
+if (isHubPage && hub.faq.length > 0) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: hub.faq.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  });
+}
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="zh" jsonLd={jsonLd} noindex={page.total === 0}>
   <section class="section">
     <div class="container page-grid">
       <header class="card">
-        <p class="meta"><a href="/zh/blog/">文章</a> / {meta.title}</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">首頁</a> / <a href="/zh/blog/">文章主題</a> / <span aria-current="page">{meta.title}</span>
+        </nav>
         <h1>{meta.title}</h1>
         <p class="lead">{meta.intro}</p>
+        {isHubPage && hub.lead.map((paragraph) => <p>{paragraph}</p>)}
         {category === 'feng-shui' && (
-          <p>
+          <p class="disclaimer-note">
             風水相關內容僅作民俗文化與空間舒適度參考，不保證任何結果。實際房間配置請以安全、通風、採光、動線與個人需求為主，詳見 <a href="/disclaimer/">免責聲明</a>。
           </p>
         )}
       </header>
 
+      {isHubPage && hub.coreQuestions.length > 0 && (
+        <section class="card" aria-labelledby="core-questions">
+          <h2 id="core-questions">這個主題最常要解決的問題</h2>
+          <dl class="core-questions">
+            {hub.coreQuestions.map((item) => (
+              <div>
+                <dt>{item.q}</dt>
+                <dd>{item.a} <a href={item.href}>{item.linkText}</a></dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      {isHubPage && hub.featured.length > 0 && (
+        <section class="card" aria-labelledby="featured-guides">
+          <h2 id="featured-guides">核心指南</h2>
+          <p>先看這幾篇。它們涵蓋這個主題的主要決策，其餘文章是特定情境的延伸。</p>
+          <ul class="featured-list">
+            {hub.featured.map((link) => (
+              <li>
+                <a href={link.href}>{link.title}</a>
+                {link.note && <span>{link.note}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {isHubPage && (
+        <PlannerCta preset={hub.plannerPreset} text={hub.plannerCta} />
+      )}
+
+      {isHubPage && hub.tools.length > 0 && (
+        <section class="card" aria-labelledby="hub-tools">
+          <h2 id="hub-tools">這個主題可以直接使用的工具</h2>
+          <ul class="featured-list">
+            {hub.tools.map((link) => (
+              <li>
+                <a href={link.href}>{link.title}</a>
+                {link.note && <span>{link.note}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section class="card" aria-labelledby="category-posts">
-        <h2 id="category-posts">分類文章</h2>
-        {page.total === 0 && <p>這個分類目前沒有完成內容品質重寫的公開文章。請先使用下方工具；舊稿會在補足實測流程、案例與限制後再重新評估。</p>}
+        <h2 id="category-posts">{page.currentPage === 1 ? '全部文章' : `全部文章（第 ${page.currentPage} 頁）`}</h2>
+        {page.total === 0 && <p>這個分類目前沒有完成內容品質重寫的公開文章。請先使用上方工具；舊稿會在補足實測流程、案例與限制後再重新評估。</p>}
         <div class="post-list">
           {page.data.map((post) => (
             <article>
@@ -80,12 +165,71 @@ const jsonLd = [
         <Pagination basePath={basePath} currentPage={page.currentPage} lastPage={page.lastPage} label={`${meta.title}分頁`} />
       </section>
 
-      <RelatedLinks links={[...toolLinks, { href: '/zh/blog/', title: '全部房間規劃文章' }]} />
+      {isHubPage && hub.faq.length > 0 && (
+        <section class="card" aria-labelledby="hub-faq">
+          <h2 id="hub-faq">常見問題</h2>
+          <div class="faq-list">
+            {hub.faq.map((item) => (
+              <article class="faq-item">
+                <h3>{item.q}</h3>
+                <p>{item.a}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <RelatedLinks links={[...(hub?.tools ?? []).map((tool) => ({ href: tool.href, title: tool.title })), { href: '/zh/blog/', title: '全部房間規劃主題' }]} />
     </div>
   </section>
 </Layout>
 
 <style>
+  .breadcrumb,
+  .meta {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .core-questions {
+    display: grid;
+    gap: var(--space-4);
+    margin: 0;
+  }
+
+  .core-questions dt {
+    font-weight: 700;
+  }
+
+  .core-questions dd {
+    margin: var(--space-1) 0 0;
+  }
+
+  .featured-list {
+    display: grid;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .featured-list li {
+    display: grid;
+    gap: var(--space-1);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-3);
+  }
+
+  .featured-list span {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .faq-list {
+    display: grid;
+    gap: var(--space-4);
+  }
+
   .post-list {
     display: grid;
     gap: var(--space-4);
@@ -96,9 +240,10 @@ const jsonLd = [
     padding-top: var(--space-4);
   }
 
-  .meta {
+  .disclaimer-note {
+    border-left: 4px solid var(--color-accent);
+    padding-left: var(--space-3);
     color: var(--color-muted);
-    font-size: var(--text-sm);
   }
 
   .tag-list {

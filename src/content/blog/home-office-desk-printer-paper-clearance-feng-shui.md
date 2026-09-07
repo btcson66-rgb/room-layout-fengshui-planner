@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [居家辦公風水, 印表機位置, 書桌動線, 紙張收納]
 keywords: [印表機放書桌哪裡, 印表機靠門風水, 印表機紙張動線, 書桌印表機空間]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-document-holder-viewing-distance-feng-shui, home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-doorway-sound-privacy-feng-shui, home-office-desk-chair-back-wall-clearance-feng-shui]
 howToName: 檢查書桌印表機的紙張操作與門口動線
 howToTotalTime: PT30M

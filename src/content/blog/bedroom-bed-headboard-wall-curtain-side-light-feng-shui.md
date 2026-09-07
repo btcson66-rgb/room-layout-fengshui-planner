@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 側邊進光, 窗簾回位]
 keywords: [床頭牆面窗簾側邊進光, 窗簾側光風水, 床頭窗簾漏光, 窗框側邊遮光]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-blackout-gap-feng-shui, bedroom-bed-headboard-wall-curtain-top-gap-feng-shui, bedroom-bed-headboard-wall-curtain-side-return-feng-shui, bedroom-bed-headboard-wall-curtain-glare-feng-shui]
 howToName: 檢查床頭牆面窗簾側邊進光與布幅回位
 howToTotalTime: PT30M

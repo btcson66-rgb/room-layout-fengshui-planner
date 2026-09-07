@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 視訊鏡頭, 工作隱私]
 keywords: [書桌對門鏡頭角度, 書桌面向房門視訊, 視訊鏡頭隱私布局, 工作區鏡頭位置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-facing-door-chair-turning-feng-shui, home-office-desk-facing-door-visibility-feng-shui, home-office-desk-window-reflection-glare-feng-shui]
 howToName: 檢查面向房門書桌的鏡頭角度與工作隱私
 howToTotalTime: PT30M

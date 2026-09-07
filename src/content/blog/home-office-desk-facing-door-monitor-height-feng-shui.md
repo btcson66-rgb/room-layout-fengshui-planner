@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 螢幕高度, 工作視線]
 keywords: [書桌面向房門螢幕高度, 書桌對門螢幕風水, 螢幕視線高度, 工作桌看門]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-footrest-feng-shui, home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-facing-door-task-light-feng-shui, home-office-desk-facing-door-drawer-clearance-feng-shui]
 howToName: 檢查面向房門書桌的螢幕高度與入口視線
 howToTotalTime: PT30M

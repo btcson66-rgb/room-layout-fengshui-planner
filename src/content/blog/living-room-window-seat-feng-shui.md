@@ -20,7 +20,6 @@ relatedTools:
   - /zh/furniture-fit-checker/
   - /zh/living-room-furniture-layout/
 relatedPosts:
-  - living-room-window-seat-feng-shui
   - living-room-curtain-feng-shui
   - bedroom-window-blinds-feng-shui
 howToName: "客廳窗台座坐靠、窗戶與安全檢查"

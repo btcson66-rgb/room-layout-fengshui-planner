@@ -5,6 +5,7 @@ import Layout from '../../../components/Layout.astro';
 import Pagination from '../../../components/Pagination.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
+import { hubContent } from '../../../data/hubs';
 import { categoryMeta, formatDate, siteUrl, toolLinks } from '../../../data/site';
 import { BLOG_PAGE_SIZE } from '../../../data/pagination';
 
@@ -59,12 +60,14 @@ const jsonLd = [
       </header>
 
       <section class="card" aria-labelledby="category-heading">
-        <h2 id="category-heading">文章分類</h2>
+        <h2 id="category-heading">主題入口</h2>
+        <p>從主題頁開始比從時間排序的清單開始快：每個主題頁都有導讀、核心問題、精選指南與可以直接使用的工具，再往下才是該主題的全部文章。</p>
         <div class="link-grid">
           {Object.entries(categoryMeta).filter(([slug]) => reviewReadyCategorySlugs.has(slug)).map(([slug, meta]) => (
             <a href={`/zh/category/${slug}/`}>
               <strong>{meta.title}</strong>
               <span>{meta.description}</span>
+              {hubContent[slug] && <span class="hub-count">核心指南 {hubContent[slug].featured.length} 篇 · 對應工具 {hubContent[slug].tools.length} 個</span>}
             </a>
           ))}
         </div>
@@ -110,6 +113,10 @@ const jsonLd = [
 
   .link-grid a {
     text-decoration: none;
+  }
+
+  .hub-count {
+    font-weight: 600;
   }
 
   .link-grid span,

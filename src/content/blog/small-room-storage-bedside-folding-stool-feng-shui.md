@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 折疊凳, 床邊收納, 房門動線]
 keywords: [小房間床邊折疊凳, 折疊凳放床邊風水, 小房間穿鞋凳, 折疊凳收納位置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-basket-reach-feng-shui, small-room-storage-bedside-hook-doorway-feng-shui, small-room-bedside-storage-turning-clearance-feng-shui, small-room-storage-doorway-feng-shui]
 howToName: 檢查小房間床邊折疊凳、收合位置與房門動線
 howToTotalTime: PT30M

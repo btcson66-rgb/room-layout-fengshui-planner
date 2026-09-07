@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 工作區照明, 桌燈反光, 螢幕眩光]
 keywords: [桌燈反光怎麼辦, 螢幕眩光書桌風水, 工作桌燈擺放, 書桌照明配置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-document-holder-viewing-distance-feng-shui, home-office-desk-facing-door-visibility-feng-shui, home-office-desk-lamp-feng-shui]
 howToName: 檢查工作桌燈、螢幕反光與工作視線
 howToTotalTime: PT30M

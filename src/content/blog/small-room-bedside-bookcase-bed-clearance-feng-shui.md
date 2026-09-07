@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊書櫃, 書櫃固定, 床邊動線]
 keywords: [小房間床邊書櫃, 床邊書櫃風水, 書櫃固定方法, 小房間書櫃距離床]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-bedside-bookcase-doorway-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, bedroom-bookshelf-feng-shui, bedroom-bed-head-wall-gap-clearance-feng-shui]
 howToName: 檢查小房間床邊書櫃的距離、固定與取書路線
 howToTotalTime: PT30M

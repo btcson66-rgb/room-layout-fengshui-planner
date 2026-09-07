@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 窗簾軌道清潔, 床頭牆面]
 keywords: [床頭牆面窗簾軌道清潔, 窗簾軌道灰塵風水, 床頭窗簾清潔, 窗簾軌道固定檢查]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui, bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui, bedroom-bed-headboard-wall-curtain-top-gap-feng-shui, bedroom-bedside-floor-cleaning-feng-shui]
 howToName: 檢查床頭牆面窗簾軌道清潔與回位
 howToTotalTime: PT35M

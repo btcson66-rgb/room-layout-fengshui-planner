@@ -1,0 +1,80 @@
+---
+/**
+ * 文章與 Hub 頁的 Room Planner 行動呼籲。
+ *
+ * RoomFeng 的差異化不是「又一個風水部落格」，而是讀者可以真的把自己的房間
+ * 畫出來。所以每一篇跟床、書桌、家具、動線、尺寸、門、鏡子、樑有關的文章
+ * 都應該有一個具體的入口——不是「開啟工具」，而是「把這個情境載入工具」。
+ *
+ * `preset` 對應 src/planner/templates.ts 的範例格局；planner.ts 會讀
+ * `?preset=` 直接套用，讓 CTA 成為真正的 deep link 而不只是首頁連結。
+ * 不帶 preset 時就是乾淨的工具入口，不會覆蓋讀者已存的草稿。
+ */
+export type PlannerPreset = 'studio' | 'student' | 'double' | 'living';
+
+interface Props {
+  /** 直接載入的範例格局；省略時只導向工具本身。 */
+  preset?: PlannerPreset;
+  /** 一句具體說明這個頁面能在工具裡驗證什麼。 */
+  text: string;
+  /** 主要按鈕文字，省略時依 preset 自動決定。 */
+  label?: string;
+  heading?: string;
+}
+
+const presetLabels: Record<PlannerPreset, string> = {
+  studio: '小套房範例',
+  student: '學生房／小房間範例',
+  double: '雙人房範例',
+  living: '客廳範例',
+};
+
+const { preset, text, label, heading = '在 Room Planner 裡實際試一次' } = Astro.props;
+const plannerHref = preset ? `/zh/room-layout-planner/?preset=${preset}` : '/zh/room-layout-planner/';
+const primaryLabel = label ?? (preset ? `載入${presetLabels[preset]}到 Room Planner` : '開啟 Room Planner');
+---
+
+<aside class="planner-cta" aria-labelledby="planner-cta-heading">
+  <div>
+    <p class="planner-cta__kicker">動手驗證</p>
+    <h2 id="planner-cta-heading">{heading}</h2>
+    <p>{text}</p>
+  </div>
+  <div class="planner-cta__actions">
+    <a class="button" href={plannerHref} data-planner-cta data-planner-preset={preset ?? ''}>{primaryLabel}</a>
+    <a class="button secondary" href="/zh/furniture-fit-checker/">先核對家具尺寸</a>
+  </div>
+</aside>
+
+<style>
+  .planner-cta {
+    display: grid;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    border: 2px solid var(--color-primary, #2f6f62);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+  }
+
+  .planner-cta__kicker {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    font-weight: 800;
+  }
+
+  .planner-cta h2 {
+    margin: var(--space-1) 0 var(--space-2);
+    font-size: 1.15rem;
+  }
+
+  .planner-cta p {
+    margin: 0;
+  }
+
+  .planner-cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+</style>

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 有蓋收納箱, 床邊收納, 開蓋動線]
 keywords: [小房間床邊有蓋收納箱, 床邊收納箱開蓋, 小房間箱子動線, 收納箱風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-folding-crate-feng-shui, small-room-storage-bedside-hanging-pocket-feng-shui, small-room-storage-bedside-underbed-drawer-feng-shui, small-room-storage-bedside-rolling-cart-clearance-feng-shui]
 howToName: 檢查小房間床邊有蓋收納箱開蓋與取物
 howToTotalTime: PT30M

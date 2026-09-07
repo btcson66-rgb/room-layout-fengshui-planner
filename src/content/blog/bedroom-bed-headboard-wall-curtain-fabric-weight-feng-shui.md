@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 窗簾布料重量, 軌道固定]
 keywords: [床頭牆面窗簾布料太重, 窗簾重量風水, 床頭窗簾軌道負重, 窗簾下垂檢查]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-top-gap-feng-shui, bedroom-bed-headboard-wall-curtain-rail-cleaning-feng-shui, bedroom-bed-headboard-wall-curtain-double-rail-feng-shui, bedroom-bed-headboard-wall-curtain-length-feng-shui]
 howToName: 檢查床頭窗簾布料重量與軌道回位
 howToTotalTime: PT35M

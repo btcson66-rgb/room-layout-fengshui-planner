@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [居家辦公風水, 書桌文件架, 螢幕視距, 工作區配置]
 keywords: [書桌文件架位置, 文件架螢幕距離, 文件架風水, 書桌看文件脖子酸]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-chair-back-wall-clearance-feng-shui, home-office-desk-facing-door-visibility-feng-shui, home-office-desk-window-opening-clearance-feng-shui]
 howToName: 檢查書桌文件架與螢幕的高度和視距
 howToTotalTime: PT25M

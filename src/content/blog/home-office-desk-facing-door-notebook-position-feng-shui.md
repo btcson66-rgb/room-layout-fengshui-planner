@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 筆記本位置, 工作區視線]
 keywords: [書桌面向房門筆記本, 筆記本放哪裡風水, 書桌手寫區配置, 房門書桌文件位置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-phone-stand-feng-shui, home-office-desk-facing-door-keyboard-distance-feng-shui, home-office-desk-facing-door-mouse-placement-feng-shui, home-office-desk-facing-door-monitor-height-feng-shui]
 howToName: 檢查面向房門書桌的筆記本位置與手寫動線
 howToTotalTime: PT30M

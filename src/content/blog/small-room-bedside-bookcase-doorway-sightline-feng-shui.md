@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 書櫃視線, 房門動線, 書櫃固定]
 keywords: [小房間床邊書櫃擋門, 書櫃擋門口視線, 床邊書櫃風水, 小房間入口配置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-bedside-bookcase-drawer-clearance-feng-shui, small-room-bedside-bookcase-corner-clearance-feng-shui, small-room-bedside-bookcase-doorway-clearance-feng-shui, bedroom-bed-doorway-line-of-sight-feng-shui]
 howToName: 檢查小房間床邊書櫃、房門視線與固定動線
 howToTotalTime: PT30M

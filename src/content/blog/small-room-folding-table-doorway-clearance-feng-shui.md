@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 折疊桌, 房門動線, 收合家具]
 keywords: [小房間折疊桌靠門, 折疊桌展開空間, 折疊桌風水, 折疊桌門口距離]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-drawer-unit-doorway-clearance-feng-shui, small-room-clothes-rack-doorway-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, small-room-open-shelf-door-clearance-feng-shui]
 howToName: 檢查小房間折疊桌靠門的展開與回位動線
 howToTotalTime: PT30M

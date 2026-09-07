@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 文具收納, 桌面動線]
 keywords: [書桌面向房門文具收納, 書房筆筒位置, 桌角收納風水, 文具盒動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-document-tray-privacy-feng-shui, home-office-desk-facing-door-printer-paper-tray-feng-shui, home-office-desk-facing-door-headset-cable-feng-shui, home-office-desk-facing-door-task-light-feng-shui]
 howToName: 檢查書桌面向房門的文具收納與桌面動線
 howToTotalTime: PT30M

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 窗簾綁帶, 床側動線]
 keywords: [床頭牆面窗簾綁帶, 窗簾綁帶風水, 床側窗簾回位, 床頭窗簾拉繩]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-air-gap-feng-shui, bedroom-bed-headboard-wall-curtain-side-return-feng-shui, bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui, bedroom-bed-headboard-wall-curtain-shadow-feng-shui]
 howToName: 檢查床頭牆面窗簾綁帶與布堆回位
 howToTotalTime: PT30M

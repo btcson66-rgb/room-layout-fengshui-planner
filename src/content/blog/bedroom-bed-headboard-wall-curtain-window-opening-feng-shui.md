@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 開窗動線, 窗扇與床]
 keywords: [床頭牆面窗簾開窗, 開窗窗簾碰床, 床頭窗戶風水, 窗扇床頭動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-air-gap-feng-shui, bedroom-bed-headboard-wall-curtain-top-gap-feng-shui, bedroom-bed-window-curtain-clearance-feng-shui, bedroom-bed-window-sill-clearance-feng-shui]
 howToName: 檢查床頭牆面窗簾開窗與床側動線
 howToTotalTime: PT30M
