@@ -29,9 +29,19 @@ jobs:
 
       - run: npm ci
 
+      - name: Refresh Amazon Product Advertising Content
+        run: npm run amazon:refresh
+        env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
+          AMAZON_CREATORS_API_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_API_CLIENT_ID }}
+          AMAZON_CREATORS_API_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_API_CLIENT_SECRET }}
+          AMAZON_CREATORS_API_VERSION: ${{ secrets.AMAZON_CREATORS_API_VERSION }}
+          AMAZON_CREATORS_API_MARKETPLACE: www.amazon.com
+
       # astro check + build + audit:content + test:www-redirect
       - run: npm run preflight
         env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
           # 與 deploy-cloudflare-pages.yml 保持一致，讓 PR 驗的是與正式站
           # 相同的輸出。這不是 secret；正式值同時要與 public/ads.txt 一致。

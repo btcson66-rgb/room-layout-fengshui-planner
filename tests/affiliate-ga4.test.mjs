@@ -23,6 +23,10 @@ test('RoomFeng uses the four-site context and standard affiliate payload', () =>
   assert.doesNotMatch(affiliateComponent, /affiliate_product_click/);
   assert.match(affiliateClient, /threshold: \[0\.5\]/);
   assert.match(affiliateClient, /data-affiliate-module-sentinel/);
+  assert.match(affiliateClient, /querySelectorAll<HTMLElement>\('\[data-affiliate-card\]'\)/);
+  assert.match(affiliateClient, /itemObserver\?\.observe\(card\)/);
+  assert.match(affiliateClient, /itemObserver\?\.unobserve\(card\)/);
+  assert.doesNotMatch(affiliateClient, /itemObserver\?\.observe\(link\)/);
   assert.match(affiliateClient, /link\.addEventListener\('click'/);
   assert.doesNotMatch(affiliateClient, /preventDefault\(/);
 

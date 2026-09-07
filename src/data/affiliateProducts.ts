@@ -24,6 +24,9 @@ interface SharedAffiliateProduct {
   tags?: string[];
   priority?: number;
   tracking_id?: string;
+  amazon_content_mode?: 'product_link' | 'text_only' | 'creators_api' | string;
+  official_product_link_code?: string;
+  product_link_type?: string;
   alt_text?: string;
   suggested_cta?: string;
   optionalDescription?: string;
@@ -53,6 +56,9 @@ export interface AffiliateProduct {
   url: string;
   platform: AffiliatePlatform;
   tracking_id?: string;
+  amazon_content_mode?: 'product_link' | 'text_only' | 'creators_api' | string;
+  official_product_link_code?: string;
+  product_link_type?: string;
   alt_text?: string;
   suggested_cta?: string;
   optionalPriceLabel?: string;

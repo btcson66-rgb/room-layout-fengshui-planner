@@ -21,6 +21,7 @@ const getContext = (section: HTMLElement) => ({
   affiliate_site: section.dataset.affiliateSite || 'roomfeng',
   locale: section.dataset.affiliateLocale || document.documentElement.lang || 'zh',
   page_type: section.dataset.affiliatePageType || 'article',
+  amazon_content_mode: section.dataset.affiliateContentMode || undefined,
   batch_id: section.dataset.affiliateBatch || 'catalog-legacy',
 });
 
@@ -53,6 +54,7 @@ const bindAffiliateTracking = (section: HTMLElement): (() => void) => {
     moduleObserver?.disconnect();
     itemObserver?.disconnect();
     const links = getLinks(section);
+    const cards = [...section.querySelectorAll<HTMLElement>('[data-affiliate-card]')];
     const context = getContext(section);
     const networks = [...new Set(links.map((link) => link.dataset.affiliateNetwork || 'other'))];
     const moduleTarget = section.querySelector<HTMLElement>('[data-affiliate-module-sentinel]') ?? section;
@@ -69,14 +71,16 @@ const bindAffiliateTracking = (section: HTMLElement): (() => void) => {
     itemObserver = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (!entry.isIntersecting || entry.intersectionRatio < 0.5) continue;
-        const link = entry.target;
+        const card = entry.target;
+        if (!(card instanceof HTMLElement)) continue;
+        const link = card.querySelector<HTMLAnchorElement>('a[data-affiliate-product-link]');
         if (!(link instanceof HTMLAnchorElement)) continue;
         trackAffiliateItemView(linkParams(section, link));
-        itemObserver?.unobserve(link);
+        itemObserver?.unobserve(card);
       }
     }, { threshold: [0.5] });
+    cards.forEach((card) => itemObserver?.observe(card));
     links.forEach((link) => {
-      itemObserver?.observe(link);
       if (link.dataset.affiliateClickBound === 'true') return;
       link.dataset.affiliateClickBound = 'true';
       link.addEventListener('click', () => trackAffiliateClick(linkParams(section, link)));
@@ -145,6 +149,7 @@ const updateAffiliateCard = (card: Element, product: AffiliateProduct | undefine
     link.dataset.affiliateProductCategory = product.category;
     link.dataset.affiliateNetwork = product.affiliate_network;
     link.dataset.affiliateTrackingId = product.tracking_id || '';
+    link.dataset.affiliateContentMode = product.amazon_content_mode || '';
     link.dataset.affiliateBatch = product.batch_id;
     link.dataset.affiliatePosition = String(Number(card.dataset.productIndex || 0) + 1);
     if (link.classList.contains('button')) {
@@ -156,6 +161,17 @@ const updateAffiliateCard = (card: Element, product: AffiliateProduct | undefine
 document.querySelectorAll('[data-affiliate-image]').forEach(bindAffiliateImageFallback);
 document.querySelectorAll('[data-affiliate-recs]').forEach((section) => {
   if (!(section instanceof HTMLElement) || section.dataset.affiliateBatchBound === 'true') return;
+  if (section.dataset.affiliateAmazon === 'true') {
+    const expiresAt = Date.parse(section.dataset.affiliateContentExpiresAt || '');
+    const removeExpiredContent = () => {
+      if (Date.now() >= expiresAt) section.remove();
+    };
+    if (Number.isFinite(expiresAt)) {
+      removeExpiredContent();
+      if (!section.isConnected) return;
+      window.setTimeout(removeExpiredContent, Math.max(0, expiresAt - Date.now() + 1));
+    }
+  }
   const data = section.querySelector('[data-affiliate-products]');
   const button = section.querySelector('[data-affiliate-next]');
   const status = section.querySelector('[data-affiliate-batch-status]');

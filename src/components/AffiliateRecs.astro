@@ -6,7 +6,7 @@ import {
   selectAffiliateProducts,
   type AffiliateProduct,
 } from '../data/affiliateProducts';
-import { amazonProducts } from '../data/amazonProducts';
+import { amazonContentExpiresAt, amazonProducts } from '../data/amazonProducts';
 
 interface Props {
   productIds?: string[];
@@ -77,7 +77,7 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
 ---
 
 {affiliateEnabled && products.length > 0 && (
-  <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-affiliate-amazon={amazon ? 'true' : 'false'} data-affiliate-site="roomfeng" data-affiliate-locale={lang} data-affiliate-page-type={resolvedPageType} data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
+    <section id={sectionId} class="affiliate-recs" aria-labelledby={`${sectionId}-heading`} data-affiliate-recs data-affiliate-amazon={amazon ? 'true' : 'false'} data-affiliate-content-expires-at={amazon ? amazonContentExpiresAt : undefined} data-affiliate-content-mode={amazon ? (selectedProducts[0]?.amazon_content_mode || 'text_only') : undefined} data-affiliate-site="roomfeng" data-affiliate-locale={lang} data-affiliate-page-type={resolvedPageType} data-batch-size={products.length} data-affiliate-placement={placement} data-affiliate-surface={surfaceType} data-affiliate-batch={moduleBatchId}>
     <div class="affiliate-recs__header" data-affiliate-module-sentinel>
       <p class="affiliate-recs__kicker">{amazon ? amazonCopy.kicker : '支持 RoomFeng · 蝦皮與酷澎聯盟行銷'}</p>
       <h2 id={`${sectionId}-heading`}>{amazon ? amazonCopy.heading : heading}</h2>
@@ -86,16 +86,18 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
     <div class="affiliate-recs__grid">
       {products.map((product, index) => (
         <article class="affiliate-recs__card" data-affiliate-card data-product-index={index}>
-          {amazon ? (
-            <a class="affiliate-recs__media-link" href={product.affiliate_url} target="_blank" rel="sponsored nofollow noopener" data-affiliate-product-link data-affiliate-product-id={product.product_id} data-affiliate-product-category={product.category} data-affiliate-network="amazon" data-affiliate-tracking-id={product.tracking_id} data-affiliate-batch={product.batch_id} data-affiliate-position={String(index + 1)}>
+          {amazon && product.image ? (
+            <a class="affiliate-recs__media-link" href={product.affiliate_url} target="_blank" rel="sponsored nofollow noopener" data-affiliate-product-link data-affiliate-product-id={product.product_id} data-affiliate-product-category={product.category} data-affiliate-network="amazon" data-affiliate-tracking-id={product.tracking_id} data-affiliate-content-mode={product.amazon_content_mode} data-affiliate-batch={product.batch_id} data-affiliate-position={String(index + 1)}>
               <img src={product.image} alt={product.alt_text || `${product.name} product image`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image data-affiliate-field="image" />
             </a>
+          ) : amazon ? (
+            <div class="affiliate-recs__media affiliate-recs__media--text-only" aria-hidden="true"></div>
           ) : (
             <img src={product.image} alt={product.alt_text || `${product.name} product image`} width="640" height="480" loading="lazy" decoding="async" data-affiliate-image data-affiliate-field="image" />
           )}
           <div class="affiliate-recs__body">
             <h3 data-affiliate-field="name">
-              {amazon ? <a href={product.affiliate_url} target="_blank" rel="sponsored nofollow noopener" data-affiliate-product-link data-affiliate-product-id={product.product_id} data-affiliate-product-category={product.category} data-affiliate-network="amazon" data-affiliate-tracking-id={product.tracking_id} data-affiliate-batch={product.batch_id} data-affiliate-position={String(index + 1)}>{product.name}</a> : product.name}
+              {amazon ? <a href={product.affiliate_url} target="_blank" rel="sponsored nofollow noopener" data-affiliate-product-link data-affiliate-product-id={product.product_id} data-affiliate-product-category={product.category} data-affiliate-network="amazon" data-affiliate-tracking-id={product.tracking_id} data-affiliate-content-mode={product.amazon_content_mode} data-affiliate-batch={product.batch_id} data-affiliate-position={String(index + 1)}>{product.name}</a> : product.name}
             </h3>
             <p data-affiliate-field="description">{product.description}</p>
             <p class="affiliate-recs__price" data-affiliate-field="price" hidden={!product.optionalPriceLabel}>{product.optionalPriceLabel}</p>
@@ -114,6 +116,7 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
             data-affiliate-product-category={product.category}
             data-affiliate-network={product.affiliate_network}
             data-affiliate-tracking-id={product.tracking_id}
+            data-affiliate-content-mode={product.amazon_content_mode}
             data-affiliate-batch={product.batch_id}
             data-affiliate-position={String(index + 1)}
           >{amazon ? (product.suggested_cta || amazonCopy.cta) : `前往${product.platform === 'coupang' ? '酷澎' : product.platform === 'amazon' ? 'Amazon' : '蝦皮'}查看商品`}</a>
@@ -142,6 +145,7 @@ const moduleBatchId = selectedProducts[0]?.batch_id ?? 'catalog-legacy';
   .affiliate-recs__card { display: grid; gap: var(--space-3); align-content: space-between; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface-muted); }
   .affiliate-recs__card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); background: var(--color-surface); }
   .affiliate-recs__media-link { display: block; }
+  .affiliate-recs__media--text-only { min-height: 0.5rem; }
   .affiliate-recs__body h3 a { color: inherit; text-decoration: none; }
   .affiliate-recs__body { display: grid; gap: var(--space-2); }
   .affiliate-recs__card h3 { font-size: 1.05rem; }
