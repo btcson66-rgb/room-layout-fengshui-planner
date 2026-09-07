@@ -12,7 +12,7 @@ export type AffiliateEventParams = {
   batch_id: string;
   affiliate_site?: string;
   affiliate_placement?: string;
-  tracking_id?: string;
+  affiliate_tracking_id?: string;
   locale?: string;
   page_type?: string;
   amazon_content_mode?: 'product_link' | 'text_only' | 'creators_api' | string;
@@ -33,6 +33,7 @@ declare global {
 
 const buildEnv = (import.meta as ImportMeta & { env?: Record<string, string | undefined> }).env;
 export const AFFILIATE_GA_ID = buildEnv?.PUBLIC_AFFILIATE_GA_ID?.trim() || 'G-Q78WN8NZ0R';
+const VALID_AFFILIATE_GA_ID = /^G-[A-Z0-9]+$/;
 const dedupe = new Map<string, number>();
 const transientDedupeMs = 1200;
 
@@ -72,7 +73,7 @@ export function trackAffiliateEvent(eventName: AffiliateEventName, params: Affil
     affiliate_network: params.affiliate_network,
     batch_id: params.batch_id,
   };
-  for (const key of ['affiliate_site', 'affiliate_placement', 'tracking_id', 'locale', 'page_type', 'amazon_content_mode', 'product_id', 'product_category', 'card_position', 'products_shown', 'refresh_count', 'close_method'] as const) {
+  for (const key of ['affiliate_site', 'affiliate_placement', 'affiliate_tracking_id', 'locale', 'page_type', 'amazon_content_mode', 'product_id', 'product_category', 'card_position', 'products_shown', 'refresh_count', 'close_method'] as const) {
     const value = params[key];
     if (value !== undefined) payload[key] = value;
   }
@@ -81,6 +82,10 @@ export function trackAffiliateEvent(eventName: AffiliateEventName, params: Affil
     console.debug('[Affiliate GA4]', eventName, payload);
   }
   try {
+    if (!VALID_AFFILIATE_GA_ID.test(AFFILIATE_GA_ID)) {
+      if (isDebugMode()) console.error('[Affiliate GA4] Invalid affiliate destination', AFFILIATE_GA_ID);
+      return;
+    }
     if (typeof window.gtag === 'function') {
       // Affiliate links open a new tab. Beacon transport lets the event finish
       // even when the browser starts navigating immediately after the click.
