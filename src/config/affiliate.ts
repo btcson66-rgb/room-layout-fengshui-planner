@@ -19,6 +19,8 @@
 
 export const AFFILIATE_ENABLED = import.meta.env.PUBLIC_AFFILIATE_ENABLED !== 'false';
 
+export const AMAZON_ASSOCIATE_DISCLOSURE = 'As an Amazon Associate I earn from qualifying purchases.';
+
 /** 商品區塊底部的揭露聲明。開啟時才會輸出。 */
 export const AFFILIATE_DISCLOSURE =
   'RoomFeng 的免費工具與內容優先；商品圖片為本站保存的公開商品圖，款式與顏色仍以商品頁為準。本區塊含蝦皮與酷澎聯盟行銷連結，透過連結購買時本站可能獲得分潤，不影響你的購買價格。價格標示為 2026-09-01 快照，客製或規格型商品可能顯示「依規格報價」；商品名稱、規格、庫存與其他資訊可能變動，請以商品頁為準。';

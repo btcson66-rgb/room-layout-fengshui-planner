@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
 
 concurrency:
   group: cloudflare-pages
@@ -24,6 +26,14 @@ jobs:
 
       - run: npm ci
 
+      - run: npm run amazon:refresh
+        env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
+          AMAZON_CREATORS_API_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_API_CLIENT_ID }}
+          AMAZON_CREATORS_API_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_API_CLIENT_SECRET }}
+          AMAZON_CREATORS_API_VERSION: ${{ secrets.AMAZON_CREATORS_API_VERSION }}
+          AMAZON_CREATORS_API_MARKETPLACE: www.amazon.com
+
       # 2026-09-02: 這個 job 過去只跑 `npm run build`，所以 astro check、
       # content-quality-audit.mjs 與 www-redirect 測試從來沒有在 CI 執行過。
       # 下面把 `npm run preflight` 的四個步驟攤開跑，順序與它一致
@@ -34,6 +44,7 @@ jobs:
 
       - run: npm run build
         env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
           PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
           # 2026-08-24: migrated off the old AdSense account (btcson66).

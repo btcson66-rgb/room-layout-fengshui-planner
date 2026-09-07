@@ -16,8 +16,10 @@
     "gsc:sitemap-health": "node scripts/gsc-sitemap-health.mjs",
     "test:scripts": "node --test scripts/test/*.test.mjs",
     "test:www-redirect": "node --test infra/www-redirect-worker/test/*.test.mjs",
+    "amazon:refresh": "node scripts/amazon-content-lifecycle.mjs --refresh",
+    "amazon:preflight": "node scripts/amazon-content-lifecycle.mjs --check",
     "deploy:www-redirect": "wrangler deploy --config infra/www-redirect-worker/wrangler.jsonc",
-    "preflight": "npm run check && npm run build && npm run audit:content && npm run test:scripts && npm run test:www-redirect"
+    "preflight": "npm run amazon:preflight && npm run check && npm run build && npm run audit:content && npm run test:scripts && npm run test:www-redirect"
   },
   "keywords": [],
   "author": "",

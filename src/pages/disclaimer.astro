@@ -2,6 +2,7 @@
 import Layout from '../components/Layout.astro';
 import Faq from '../components/Faq.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
+import { AMAZON_ASSOCIATE_DISCLOSURE } from '../config/affiliate';
 
 const title = '免責聲明｜風水格局參考與房間尺寸工具限制';
 const description = '本免責聲明說明房間尺寸檢查、家具配置與風水格局內容的限制：僅供參考，不保證任何結果。';
@@ -33,6 +34,9 @@ const jsonLd = {
         <p>本網站可能連結到第三方服務、分析工具或廣告平台。第三方內容、政策與可用性由其提供者負責。使用者應自行閱讀相關服務條款與隱私政策。若你不同意本免責聲明，請停止使用本網站內容與工具。</p>
         <h2>聯盟行銷揭露</h2>
         <p>本站部分頁面可能包含蝦皮聯盟行銷連結。若您透過這些連結前往賣場並完成購買，本站可能獲得分潤，但不會影響您的購買價格。頁面是否推薦某項商品，不以分潤多寡作為唯一依據；實際商品內容、價格、庫存、配送、售後與品質，仍請以蝦皮賣場及賣家頁面資訊為準。</p>
+        <p><strong>{AMAZON_ASSOCIATE_DISCLOSURE}</strong></p>
+        <p lang="en"><strong>CERTAIN CONTENT THAT APPEARS ON THIS SITE COMES FROM AMAZON. THIS CONTENT IS PROVIDED ‘AS IS’ AND IS SUBJECT TO CHANGE OR REMOVAL AT ANY TIME.</strong></p>
+        <p>English pages may include optional Amazon Associates links. Product details, availability, and current terms are controlled by Amazon and the seller; please confirm them on the linked product page.</p>
         <h2>English summary</h2>
         <p>All room planning and feng shui content is for general reference only. Feng shui notes are cultural and spatial-arrangement references, not fortune-telling and not guarantees of wealth, health, relationships, career, luck, or any outcome. They do not replace professional architecture, interior design, medical, or legal advice.</p>
       </article>
