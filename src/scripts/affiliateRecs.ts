@@ -40,7 +40,7 @@ const linkParams = (section: HTMLElement, link: HTMLAnchorElement) => ({
   affiliate_network: link.dataset.affiliateNetwork || 'other',
   product_id: link.dataset.affiliateProductId || 'unknown',
   product_category: link.dataset.affiliateProductCategory || 'general',
-  tracking_id: link.dataset.affiliateTrackingId || undefined,
+  affiliate_tracking_id: link.dataset.affiliateTrackingId || undefined,
   batch_id: link.dataset.affiliateBatch || getContext(section).batch_id,
   card_position: Number(link.dataset.affiliatePosition || 0),
 });
@@ -210,7 +210,7 @@ document.querySelectorAll('[data-affiliate-recs]').forEach((section) => {
       ...getContext(section),
       affiliate_network: networks.length === 1 ? networks[0] : 'mixed',
       batch_id: batch[0]?.batch_id || getContext(section).batch_id,
-      tracking_id: batch[0]?.tracking_id || 'unknown',
+      affiliate_tracking_id: batch[0]?.tracking_id || 'unknown',
       product_id: batch[0]?.product_id || 'unknown',
       product_category: batch[0]?.category || 'general',
       products_shown: batch.length,
