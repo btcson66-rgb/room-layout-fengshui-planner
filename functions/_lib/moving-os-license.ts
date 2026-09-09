@@ -30,9 +30,15 @@ function base64Url(bytes: Uint8Array): string {
 }
 
 function decodeBase64Url(value: string): Uint8Array {
+  // Reject non-canonical encodings. Some runtimes ignore non-zero trailing
+  // bits in the final base64 quantum, which would otherwise allow a token to
+  // be modified without changing the decoded AES-GCM/HMAC bytes.
+  if (!/^[A-Za-z0-9_-]*$/.test(value) || value.length % 4 === 1) throw new Error('invalid base64url');
   const padded = value.replace(/-/g, '+').replace(/_/g, '/') + '='.repeat((4 - value.length % 4) % 4);
   const binary = atob(padded);
-  return Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  if (base64Url(bytes) !== value) throw new Error('non-canonical base64url');
+  return bytes;
 }
 
 function bufferSource(bytes: Uint8Array): ArrayBuffer {
