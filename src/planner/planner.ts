@@ -119,6 +119,7 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
     class: `planner-item ${selected ? 'is-selected' : ''}`,
     tabindex: '0',
     role: 'button',
+    'aria-pressed': selected ? 'true' : 'false',
     'data-id': item.id,
     transform: `rotate(${item.rotation} ${item.x + item.w / 2} ${item.y + item.h / 2})`,
   });
@@ -327,7 +328,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
       <section class="planner-canvas-wrap" aria-label="Room plan">
         <div class="planner-area-line"></div>
-        <svg class="planner-svg" role="img" aria-label="Room floor plan"></svg>
+        <svg class="planner-svg" role="group" aria-label="Room floor plan"></svg>
       </section>
       <aside class="planner-panel planner-side" aria-label="Planner checks">
         <div class="planner-selection"></div>
@@ -695,6 +696,23 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   svg.addEventListener('pointerup', finishPointerInteraction);
   svg.addEventListener('pointercancel', finishPointerInteraction);
+
+  svg.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const target = event.target as Element;
+    const group = target.closest<SVGGElement>('.planner-item');
+    const id = group?.dataset.id;
+    if (!group || !id) return;
+    event.preventDefault();
+    if (state.selectedId === id) return;
+    state.selectedId = id;
+    rerender();
+    window.requestAnimationFrame(() => {
+      const selected = Array.from(svg.querySelectorAll<SVGGElement>('.planner-item'))
+        .find((candidate) => candidate.dataset.id === id);
+      selected?.focus();
+    });
+  });
 
   renderControls();
   rerender();

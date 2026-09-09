@@ -99,6 +99,11 @@
   outline: none;
 }
 
+.planner-item:focus-visible {
+  outline: 3px solid var(--color-primary-strong);
+  outline-offset: 3px;
+}
+
 .planner-item:focus-visible text,
 .planner-item.is-selected text {
   font-weight: 800;
