@@ -47,6 +47,13 @@ jobs:
           AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
           PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_MOVING_OS_PAYHIP_CHECKOUT_URL: ${{ vars.PUBLIC_MOVING_OS_PAYHIP_CHECKOUT_URL }}
+          PUBLIC_MOVING_OS_PAYHIP_PRODUCT_LINK: ${{ vars.PUBLIC_MOVING_OS_PAYHIP_PRODUCT_LINK }}
+          PUBLIC_MOVING_OS_GUMROAD_CHECKOUT_URL: ${{ vars.PUBLIC_MOVING_OS_GUMROAD_CHECKOUT_URL }}
+          PUBLIC_MOVING_OS_GUMROAD_PRODUCT_ID: ${{ vars.PUBLIC_MOVING_OS_GUMROAD_PRODUCT_ID }}
+          PUBLIC_MOVING_OS_SUPPORT_EMAIL: ${{ vars.PUBLIC_MOVING_OS_SUPPORT_EMAIL }}
+          PUBLIC_MOVING_OS_REFUND_POLICY_URL: ${{ vars.PUBLIC_MOVING_OS_REFUND_POLICY_URL }}
+          PUBLIC_MOVING_OS_RELEASE_DATE: ${{ vars.PUBLIC_MOVING_OS_RELEASE_DATE }}
           # 2026-08-24: migrated off the old AdSense account (btcson66).
           # That account's sign-in mailbox is no longer accessible, so the site
           # is being re-submitted for review under account zxc851558. Keep this

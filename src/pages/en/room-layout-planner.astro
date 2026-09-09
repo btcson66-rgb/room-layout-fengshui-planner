@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import '../../styles/planner.css';
 
 const title = 'Room Layout Planner | Free Online Furniture Planner';
@@ -77,6 +78,8 @@ const relatedLinks = [
         </div>
         <a class="button secondary" href="/privacy/">How drafts are stored</a>
       </section>
+
+      <MovingOsContextCta locale="en" placement="en_room_planner" heading="Planning the whole move, not just one room?" copy="Moving & New Home OS combines measurements, furniture decisions, packing, budget and move-day planning in one private workspace." label="Plan My Move" />
 
       <Faq items={faqItems} />
       <RelatedLinks links={relatedLinks} />

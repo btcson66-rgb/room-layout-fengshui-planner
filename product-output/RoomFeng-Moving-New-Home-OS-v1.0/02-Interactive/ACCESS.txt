@@ -1,0 +1,13 @@
+Interactive edition access
+
+1. Open the language-specific activation page:
+- https://roomfeng.win/en/moving-new-home-os/activate/
+- https://roomfeng.win/zh/moving-new-home-os/activate/
+2. Choose the marketplace where you purchased (Payhip or Gumroad), then enter that receipt's license key.
+3. After activation, use the stable app URL:
+- https://roomfeng.win/en/moving-new-home-os/app/
+- https://roomfeng.win/zh/moving-new-home-os/app/
+
+Activation requires internet. The app then supports a short offline grace period and periodically requires re-verification. Project data stays in the current browser unless you export it. Keep the JSON backup in a location you control.
+
+Purchased but cannot activate? Check the key, check your connection, retry once, then use the support contact shown on the RoomFeng sales page.

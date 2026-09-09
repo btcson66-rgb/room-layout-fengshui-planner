@@ -53,11 +53,13 @@ const analyticsScript = [
       const render = () => {
         const choice = readChoice();
         banner.hidden = Boolean(choice);
+        banner.style.display = choice ? 'none' : 'grid';
         settings.hidden = !choice;
+        settings.style.display = choice ? 'block' : 'none';
       };
       widget.addEventListener('click', (event) => {
         const action = event.target.closest('[data-consent-action]')?.getAttribute('data-consent-action');
-        if (action === 'settings') { banner.hidden = false; settings.hidden = true; return; }
+        if (action === 'settings') { banner.hidden = false; banner.style.display = 'grid'; settings.hidden = true; settings.style.display = 'none'; return; }
         if (action !== 'accept' && action !== 'reject') return;
         const choice = action === 'accept' ? 'accepted' : 'rejected';
         try { window.localStorage.setItem('btcson_consent_v1', choice); } catch {}

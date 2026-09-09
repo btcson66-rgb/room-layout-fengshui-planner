@@ -7,5 +7,6 @@ dist/
 .env
 .env.local
 .dev.vars
+.dev.vars.*
 .codex-content/
 room_planner_content_pack.zip

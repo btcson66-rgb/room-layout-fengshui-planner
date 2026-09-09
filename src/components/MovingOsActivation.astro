@@ -1,0 +1,58 @@
+---
+import { movingOsProduct } from '../config/products';
+interface Props { locale: 'en' | 'zh-TW'; appHref: string }
+const { locale, appHref } = Astro.props;
+const zh = locale === 'zh-TW';
+const supportHref = movingOsProduct.supportEmail ? `mailto:${movingOsProduct.supportEmail}` : '/contact/';
+---
+<section class="activation-shell" data-moving-os-activation data-locale={locale} data-app-href={appHref}>
+  <div class="activation-card">
+    <p class="product-kicker">ROOMFENG / LICENSE ACTIVATION</p>
+    <h1>{zh ? '啟用 RoomFeng 搬家規劃系統' : 'Activate RoomFeng Moving OS'}</h1>
+    <p>{zh ? '輸入購買後取得的授權碼。驗證只會傳送授權碼，不會傳送你的地址、房間、家具、預算或搬家資料。' : 'Enter the license key from your purchase. Verification sends only the key—not your address, rooms, furniture, budget, or moving project.'}</p>
+    <form data-activation-form>
+      <label>{zh ? '購買平台' : 'Where did you purchase?'}<select name="provider" required><option value="payhip">Payhip</option><option value="gumroad">Gumroad</option></select></label>
+      <label>{zh ? '授權碼' : 'License key'}<input name="licenseKey" required minlength="8" maxlength="128" autocomplete="off" autocapitalize="characters" spellcheck="false" inputmode="text" /></label>
+      <button class="button" type="submit" data-activate>{zh ? '啟用' : 'Activate'}</button>
+      <p class="activation-status" role="status" aria-live="polite" data-activation-status></p>
+    </form>
+    <details><summary>{zh ? '授權碼在哪裡？' : 'Where do I find my license key?'}</summary><p>{zh ? '請選擇購買平台；Payhip 或 Gumroad 的收據／購買資訊會提供授權碼。' : 'Select your marketplace; the Payhip or Gumroad receipt or purchase information provides the license key.'}</p></details>
+    <div class="activation-help"><h2>{zh ? '已購買但無法啟用？' : "Purchased but can't activate?"}</h2><ol><li>{zh ? '重新確認授權碼，避免多餘空格。' : 'Check the license key and remove extra spaces.'}</li><li>{zh ? '確認目前可連上網路。' : 'Check your internet connection.'}</li><li>{zh ? '稍後重試一次。' : 'Retry once after a short wait.'}</li><li><a href={supportHref}>{zh ? '聯絡支援' : 'Contact support'}</a></li></ol></div>
+    <p class="activation-note">{zh ? '啟用需要網路。成功後，此裝置可在短時間離線使用；授權會定期重新驗證。v1.0 不執行裝置數量限制。' : 'Activation requires internet. After success, this device can work offline briefly; the license is periodically re-verified. v1.0 does not enforce a device limit.'}</p>
+  </div>
+</section>
+
+<script>
+  import { trackProductEvent } from '../moving-os/productAnalytics';
+  const root = document.querySelector<HTMLElement>('[data-moving-os-activation]');
+  if (root) {
+    const locale = root.dataset.locale || 'en';
+    const zh = locale === 'zh-TW';
+    const form = root.querySelector<HTMLFormElement>('[data-activation-form]');
+    const button = root.querySelector<HTMLButtonElement>('[data-activate]');
+    const status = root.querySelector<HTMLElement>('[data-activation-status]');
+    trackProductEvent('product_activation_view', 'activation_page', locale);
+    if (new URLSearchParams(window.location.search).get('reason') === 'revoked' && status) status.textContent = zh ? '這組授權已失效。請重新輸入授權碼，或聯絡支援。你的本機 MovingProject 沒有被刪除。' : 'Your license is no longer active. Re-enter your license key or contact support. Your local MovingProject has not been deleted.';
+    fetch('/api/product/license/session', { credentials: 'same-origin', headers: { accept: 'application/json' } }).then((response) => response.ok ? response.json() : null).then((data) => { if (data?.active) window.location.replace(root.dataset.appHref || '/'); }).catch(() => undefined);
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!button || !status) return;
+      const formData = new FormData(form);
+      const provider = String(formData.get('provider') || '');
+      const licenseKey = String(formData.get('licenseKey') || '').trim();
+      button.disabled = true; button.textContent = zh ? '驗證中…' : 'Verifying…'; status.textContent = '';
+      try {
+        const response = await fetch('/api/product/license/verify', { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify({ provider, licenseKey, product: 'roomfeng-moving-new-home-os-v1' }) });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || !data.ok) {
+          const messages: Record<string,string> = zh ? { invalid_provider:'請選擇正確的購買平台。', invalid_product:'產品版本不符，請從購買頁提供的連結進入。', invalid_license:'無法驗證這組授權碼。', disabled_license:'這組授權已停用、退款或爭議中。', rate_limited:'嘗試次數過多，請稍後再試。', network_error:'目前無法連線驗證，請稍後再試。', not_configured:'授權服務尚未完成設定。' } : { invalid_provider:'Choose the marketplace where you purchased.', invalid_product:'This product version does not match the activation page.', invalid_license:'This license key could not be verified.', disabled_license:'This license is no longer active, refunded, or disputed.', rate_limited:'Too many attempts. Please try again.', network_error:"We couldn't verify your license right now. Please try again.", not_configured:'License activation is not configured yet.' };
+          const code = String(data.code || 'network_error'); status.textContent = messages[code] || messages.network_error; trackProductEvent('product_activation_error', code, locale); return;
+        }
+        status.textContent = zh ? '啟用成功，正在開啟 Moving OS…' : 'Activation successful. Opening Moving OS…';
+        trackProductEvent('product_activation_success', 'activation_page', locale);
+        window.location.assign(root.dataset.appHref || '/');
+      } catch { status.textContent = zh ? '目前無法連線驗證，請稍後再試。' : "We couldn't verify your license right now. Please try again."; trackProductEvent('product_activation_error', 'network_error', locale); }
+      finally { button.disabled = false; button.textContent = zh ? '啟用' : 'Activate'; }
+    });
+  }
+</script>

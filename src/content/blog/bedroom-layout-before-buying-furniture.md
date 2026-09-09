@@ -99,6 +99,8 @@ relatedPosts:
 
 排配置先用[房間佈局規劃工具](/zh/room-layout-planner/)試幾種擺法，最容易踩的坑整理在[房間配置常見 15 個錯誤](/zh/blog/room-layout-mistakes/)。
 
+如果這件家具是搬家前採購的一部分，可以用 [RoomFeng 搬家與新居規劃系統](/zh/moving-new-home-os/)把候選 A／B／C 的價格、尺寸、配送與目的房間放在一起比較；確認放得下、用得順，再決定購買。
+
 ## 常見問題
 
 **Q：只買一件小家具，也要走完整個流程嗎？**

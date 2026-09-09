@@ -5129,8 +5129,26 @@ await walk(distRoot);
 // AGENTS.md 第 10 節第 3 項一直把「No broken internal links」列為 quality gate，
 // 但在 2026-09 之前沒有任何檢查實作它，所以千頁內容上線時有 594 個頁面帶著
 // 指向 404 的內部連結進了 main（其中 /zh/room-circulation-check/ 被 551 篇引用）。
-const ASSET_EXTENSION = /\.(xml|txt|webp|png|jpe?g|svg|ico|pdf|css|js|json|webmanifest)$/i;
+const ASSET_EXTENSION = /\.(xml|txt|webp|png|jpe?g|svg|ico|pdf|zip|css|js|json|webmanifest)$/i;
 const toPosix = (value) => value.split(path.sep).join('/');
+async function distAssetExists(href) {
+  let decodedHref;
+  try {
+    decodedHref = decodeURIComponent(href);
+  } catch {
+    return false;
+  }
+
+  const assetPath = path.resolve(distRoot, `.${decodedHref}`);
+  const relative = path.relative(distRoot, assetPath);
+  if (relative.startsWith('..') || path.isAbsolute(relative)) return false;
+
+  try {
+    return (await fs.stat(assetPath)).isFile();
+  } catch {
+    return false;
+  }
+}
 const distRoutes = new Set();
 for (const file of htmlFiles) {
   const relative = toPosix(path.relative(distRoot, file));
@@ -5144,7 +5162,14 @@ for (const file of htmlFiles) {
   const html = await fs.readFile(file, 'utf8');
   for (const match of html.matchAll(/href="(\/[^"]*)"/g)) {
     const href = match[1].split(/[?#]/)[0];
-    if (href === '' || ASSET_EXTENSION.test(href)) continue;
+    if (href === '') continue;
+    if (ASSET_EXTENSION.test(href)) {
+      if (await distAssetExists(href)) continue;
+      const sources = brokenLinkSources.get(href) ?? new Set();
+      sources.add(toPosix(path.relative(distRoot, file)));
+      brokenLinkSources.set(href, sources);
+      continue;
+    }
     const target = href.endsWith('/') ? href : `${href}/`;
     if (distRoutes.has(target) || distRoutes.has(href)) continue;
     const sources = brokenLinkSources.get(href) ?? new Set();

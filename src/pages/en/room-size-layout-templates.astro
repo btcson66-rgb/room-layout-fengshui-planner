@@ -2,6 +2,7 @@
 import Layout from '../../components/Layout.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { siteUrl } from '../../data/site';
 
 const title = 'Room Sizer & Layout Templates | 150–450 sq ft Plans';
@@ -118,6 +119,8 @@ const relatedLinks = [
         </ol>
         <p>If the obstacle is not the room but the route into it, use the <a href="/en/moving-furniture-size-check/">moving furniture size check</a> to compare doors, corridors, corners, and elevators. Room fit and delivery-path fit are separate decisions; a Queen may work perfectly in the room and still fail at a stair turn.</p>
       </article>
+
+      <MovingOsContextCta locale="en" placement="en_room_size_templates" heading="Planning the whole move, not just one room?" copy="Moving & New Home OS combines measurements, furniture decisions, packing, budget and move-day planning in one private workspace." label="Plan My Move" />
 
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
