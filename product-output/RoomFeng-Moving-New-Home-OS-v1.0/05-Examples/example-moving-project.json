@@ -1,0 +1,653 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "exampleData": true,
+  "updatedAt": "2026-09-09",
+  "project": {
+    "name": "Example: Studio to 2-bedroom move",
+    "currentHome": "City studio",
+    "newHome": "2-bedroom apartment",
+    "moveDate": "2026-10-21",
+    "currency": "USD",
+    "unit": "cm",
+    "householdSize": 2,
+    "bedrooms": 2,
+    "moveType": "couple"
+  },
+  "rooms": [
+    {
+      "id": "room-living",
+      "name": "Living room",
+      "lengthMm": 4800,
+      "widthMm": 3600,
+      "ceilingMm": 2800,
+      "doors": [
+        {
+          "id": "door-living",
+          "name": "Entry",
+          "widthMm": 900,
+          "heightMm": 2100,
+          "swing": "left"
+        }
+      ],
+      "windows": [
+        {
+          "id": "window-living",
+          "name": "Balcony window",
+          "widthMm": 1800,
+          "heightMm": 1500,
+          "sillHeightMm": 700
+        }
+      ],
+      "fixedObjects": [
+        {
+          "id": "column",
+          "type": "column",
+          "note": "40 x 40 cm column, northeast corner"
+        }
+      ]
+    },
+    {
+      "id": "room-bedroom",
+      "name": "Main bedroom",
+      "lengthMm": 3600,
+      "widthMm": 3200,
+      "ceilingMm": 2800,
+      "doors": [
+        {
+          "id": "door-bedroom",
+          "name": "Bedroom door",
+          "widthMm": 820,
+          "heightMm": 2050,
+          "swing": "right"
+        }
+      ],
+      "windows": [],
+      "fixedObjects": []
+    }
+  ],
+  "entryRoute": {
+    "oldHomeExitWidthMm": 880,
+    "oldHomeExitHeightMm": 2050,
+    "elevatorWidthMm": 1600,
+    "elevatorDepthMm": 1500,
+    "elevatorHeightMm": 2300,
+    "elevatorDoorWidthMm": 900,
+    "corridorWidthMm": 1050,
+    "stairWidthMm": 1000,
+    "landingWidthMm": 1600,
+    "landingDepthMm": 1500,
+    "entranceWidthMm": 920,
+    "entranceHeightMm": 2100,
+    "interiorDoorWidthMm": 820,
+    "interiorDoorHeightMm": 2050
+  },
+  "furniture": [
+    {
+      "id": "FUR-001",
+      "name": "Queen bed frame",
+      "category": "bed",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-bedroom",
+      "dimensions": {
+        "width": 1520,
+        "depth": 2000,
+        "height": 1000
+      },
+      "canDisassemble": true,
+      "disassembledDimensions": {
+        "width": 700,
+        "depth": 180,
+        "height": 1000
+      },
+      "fragile": false,
+      "expensive": false,
+      "requiresMovers": false,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-002",
+      "name": "Queen mattress",
+      "category": "mattress",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-bedroom",
+      "dimensions": {
+        "width": 1520,
+        "depth": 2000,
+        "height": 280
+      },
+      "canDisassemble": false,
+      "disassembledDimensions": null,
+      "fragile": false,
+      "expensive": true,
+      "requiresMovers": true,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-003",
+      "name": "Three-seat sofa",
+      "category": "sofa",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-living",
+      "dimensions": {
+        "width": 2100,
+        "depth": 900,
+        "height": 850
+      },
+      "canDisassemble": false,
+      "disassembledDimensions": null,
+      "fragile": false,
+      "expensive": false,
+      "requiresMovers": true,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-004",
+      "name": "Double wardrobe",
+      "category": "wardrobe",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-bedroom",
+      "dimensions": {
+        "width": 1200,
+        "depth": 600,
+        "height": 2200
+      },
+      "canDisassemble": true,
+      "disassembledDimensions": {
+        "width": 700,
+        "depth": 180,
+        "height": 2000
+      },
+      "fragile": false,
+      "expensive": false,
+      "requiresMovers": true,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-005",
+      "name": "Work desk",
+      "category": "desk",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-living",
+      "dimensions": {
+        "width": 1200,
+        "depth": 600,
+        "height": 740
+      },
+      "canDisassemble": true,
+      "disassembledDimensions": {
+        "width": 700,
+        "depth": 180,
+        "height": 740
+      },
+      "fragile": false,
+      "expensive": false,
+      "requiresMovers": false,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-006",
+      "name": "Dining table",
+      "category": "dining-table",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-living",
+      "dimensions": {
+        "width": 1400,
+        "depth": 800,
+        "height": 750
+      },
+      "canDisassemble": true,
+      "disassembledDimensions": {
+        "width": 700,
+        "depth": 180,
+        "height": 750
+      },
+      "fragile": false,
+      "expensive": false,
+      "requiresMovers": false,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-007",
+      "name": "TV console",
+      "category": "tv",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-living",
+      "dimensions": {
+        "width": 1600,
+        "depth": 420,
+        "height": 520
+      },
+      "canDisassemble": false,
+      "disassembledDimensions": null,
+      "fragile": true,
+      "expensive": false,
+      "requiresMovers": false,
+      "decision": "keep",
+      "notes": ""
+    },
+    {
+      "id": "FUR-008",
+      "name": "Bookcase",
+      "category": "shelving",
+      "currentRoom": "Studio",
+      "destinationRoomId": "room-living",
+      "dimensions": {
+        "width": 900,
+        "depth": 320,
+        "height": 1800
+      },
+      "canDisassemble": true,
+      "disassembledDimensions": {
+        "width": 700,
+        "depth": 180,
+        "height": 1800
+      },
+      "fragile": false,
+      "expensive": false,
+      "requiresMovers": false,
+      "decision": "keep",
+      "notes": ""
+    }
+  ],
+  "timeline": [
+    {
+      "id": "TASK-01",
+      "title": "Book movers",
+      "dueDate": "2026-09-12",
+      "phase": "Move plan",
+      "completed": true
+    },
+    {
+      "id": "TASK-02",
+      "title": "Measure elevator and turns",
+      "dueDate": "2026-09-15",
+      "phase": "Move plan",
+      "completed": true
+    },
+    {
+      "id": "TASK-03",
+      "title": "Confirm building move-in rules",
+      "dueDate": "2026-09-18",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-04",
+      "title": "Schedule internet installation",
+      "dueDate": "2026-09-21",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-05",
+      "title": "Sell furniture not moving",
+      "dueDate": "2026-09-24",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-06",
+      "title": "Pack valuables separately",
+      "dueDate": "2026-09-27",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-07",
+      "title": "Prepare first-night box",
+      "dueDate": "2026-09-30",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-08",
+      "title": "Defrost refrigerator",
+      "dueDate": "2026-10-03",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-09",
+      "title": "Label furniture destinations",
+      "dueDate": "2026-10-06",
+      "phase": "Move plan",
+      "completed": false
+    },
+    {
+      "id": "TASK-10",
+      "title": "Photograph rental condition",
+      "dueDate": "2026-10-09",
+      "phase": "Move plan",
+      "completed": false
+    }
+  ],
+  "boxes": [
+    {
+      "id": "LIV-001",
+      "roomId": "room-living",
+      "contents": "Books",
+      "fragile": false,
+      "priority": "high",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "LIV-002",
+      "roomId": "room-living",
+      "contents": "Kitchenware",
+      "fragile": true,
+      "priority": "high",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "LIV-003",
+      "roomId": "room-living",
+      "contents": "Winter clothes",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "LIV-004",
+      "roomId": "room-living",
+      "contents": "Bedding",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "LIV-005",
+      "roomId": "room-living",
+      "contents": "Books",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "LIV-006",
+      "roomId": "room-living",
+      "contents": "Kitchenware",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "BDR-007",
+      "roomId": "room-bedroom",
+      "contents": "Winter clothes",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": true,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "BDR-008",
+      "roomId": "room-bedroom",
+      "contents": "Bedding",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": true,
+      "openFirst": true,
+      "packed": false,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "BDR-009",
+      "roomId": "room-bedroom",
+      "contents": "Books",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": false,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "BDR-010",
+      "roomId": "room-bedroom",
+      "contents": "Kitchenware",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": false,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "BDR-011",
+      "roomId": "room-bedroom",
+      "contents": "Winter clothes",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": false,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    },
+    {
+      "id": "BDR-012",
+      "roomId": "room-bedroom",
+      "contents": "Bedding",
+      "fragile": false,
+      "priority": "normal",
+      "firstNight": false,
+      "openFirst": false,
+      "packed": false,
+      "loaded": false,
+      "delivered": false,
+      "unpacked": false
+    }
+  ],
+  "budget": [
+    {
+      "id": "BUD-01",
+      "category": "movers",
+      "label": "Movers",
+      "estimated": 650,
+      "actual": 640,
+      "paid": false,
+      "dueDate": "2026-09-28",
+      "notes": ""
+    },
+    {
+      "id": "BUD-02",
+      "category": "packing",
+      "label": "Packing supplies",
+      "estimated": 95,
+      "actual": 82,
+      "paid": true,
+      "dueDate": "2026-10-03",
+      "notes": ""
+    },
+    {
+      "id": "BUD-03",
+      "category": "cleaning",
+      "label": "Move-out cleaning",
+      "estimated": 160,
+      "actual": 0,
+      "paid": false,
+      "dueDate": "2026-10-08",
+      "notes": ""
+    },
+    {
+      "id": "BUD-04",
+      "category": "internet",
+      "label": "Internet installation",
+      "estimated": 70,
+      "actual": 0,
+      "paid": false,
+      "dueDate": "2026-10-13",
+      "notes": ""
+    }
+  ],
+  "shopping": [
+    {
+      "id": "SHOP-A",
+      "group": "sofa",
+      "candidate": "A",
+      "product": "Compact fabric sofa",
+      "category": "sofa",
+      "store": "Store A",
+      "url": "https://example.com/sofa-a",
+      "price": 699,
+      "dimensions": {
+        "width": 1800,
+        "depth": 820,
+        "height": 790
+      },
+      "roomId": "room-living",
+      "priority": "normal",
+      "status": "research",
+      "delivery": "7-14 days",
+      "notes": ""
+    },
+    {
+      "id": "SHOP-B",
+      "group": "sofa",
+      "candidate": "B",
+      "product": "Two-seat modular sofa",
+      "category": "sofa",
+      "store": "Store B",
+      "url": "https://example.com/sofa-b",
+      "price": 790,
+      "dimensions": {
+        "width": 1800,
+        "depth": 880,
+        "height": 790
+      },
+      "roomId": "room-living",
+      "priority": "normal",
+      "status": "research",
+      "delivery": "7-14 days",
+      "notes": ""
+    },
+    {
+      "id": "SHOP-C",
+      "group": "sofa",
+      "candidate": "C",
+      "product": "Shallow sofa",
+      "category": "sofa",
+      "store": "Store C",
+      "url": "https://example.com/sofa-c",
+      "price": 620,
+      "dimensions": {
+        "width": 1800,
+        "depth": 760,
+        "height": 790
+      },
+      "roomId": "room-living",
+      "priority": "normal",
+      "status": "research",
+      "delivery": "7-14 days",
+      "notes": ""
+    }
+  ],
+  "layouts": [],
+  "moveDay": {
+    "moverContact": "Example Moving Co. / 0900-000-000",
+    "buildingContact": "Example building desk",
+    "parking": "Rear loading area 09:00-12:00",
+    "elevatorReservation": "Reserved 09:00-11:00",
+    "notes": "Example data. Replace with real contacts."
+  },
+  "firstNight": [
+    {
+      "id": "NIGHT-01",
+      "label": "Toiletries",
+      "packed": true
+    },
+    {
+      "id": "NIGHT-02",
+      "label": "Medication",
+      "packed": true
+    },
+    {
+      "id": "NIGHT-03",
+      "label": "Phone charger",
+      "packed": true
+    },
+    {
+      "id": "NIGHT-04",
+      "label": "Bedding",
+      "packed": true
+    },
+    {
+      "id": "NIGHT-05",
+      "label": "Towel",
+      "packed": false
+    },
+    {
+      "id": "NIGHT-06",
+      "label": "Change of clothes",
+      "packed": false
+    },
+    {
+      "id": "NIGHT-07",
+      "label": "Water",
+      "packed": false
+    },
+    {
+      "id": "NIGHT-08",
+      "label": "Cleaning supplies",
+      "packed": false
+    },
+    {
+      "id": "NIGHT-09",
+      "label": "Toilet paper",
+      "packed": false
+    },
+    {
+      "id": "NIGHT-10",
+      "label": "Important documents",
+      "packed": false
+    }
+  ]
+}

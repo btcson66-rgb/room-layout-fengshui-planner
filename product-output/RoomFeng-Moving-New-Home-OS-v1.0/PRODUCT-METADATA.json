@@ -1,0 +1,11 @@
+{
+  "product": "RoomFeng Moving & New Home OS",
+  "productVersion": "1.0.0",
+  "schemaVersion": 1,
+  "releaseDate": null,
+  "providers": [
+    "Payhip",
+    "Gumroad"
+  ],
+  "licenseRequiredForOnlineApp": true
+}

@@ -10,10 +10,11 @@ This audit covers the direct dependencies installed for this project. Licenses w
 | `jspdf` | 4.2.1 | MIT | PDF export | Used by the planner tool's "Export PDF" feature. PNG export uses the native Canvas API with no extra dependency. |
 | `typescript` | 6.0.3 | Apache-2.0 | Type checking | Installed package metadata reports Apache-2.0. |
 | `sharp` | 0.34.5 | Apache-2.0 | Build-time brand asset generation | Dev dependency used by `scripts/generate-brand-assets.mjs` to rasterize self-made SVG artwork into committed PNG files. |
+| `exceljs` | 4.4.0 | MIT | On-demand XLSX generation | Loaded only when a Moving OS purchaser requests an XLSX export. |
 
 ## Self-Made Assets
 
-All furniture, door, window, mirror, UI logo/icon, favicon, Apple touch icon, and Open Graph image representations in this project are self-made SVG or CSS shapes (see `src/planner/`, the shared components, and `scripts/generate-brand-assets.mjs`). No third-party icon set, font, or unclear visual asset is used. The site uses the system font stack only.
+All furniture, door, window, mirror, UI logo/icon, favicon, Apple touch icon, Moving OS floor-plan diagrams, and Open Graph image representations in this project are self-made SVG or CSS shapes (see `src/planner/`, `src/moving-os/`, the shared components, and `scripts/generate-brand-assets.mjs`). No third-party icon set, font, stock photo, or unclear visual asset is used. The site uses commercially available system fonts only.
 
 ## Imported Editorial Content
 

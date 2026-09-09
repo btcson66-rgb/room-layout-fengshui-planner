@@ -1,0 +1,30 @@
+{
+  "product": "RoomFeng Moving & New Home OS",
+  "version": "1.0.0",
+  "schemaVersion": 1,
+  "generated": "2026-09-09",
+  "files": [
+    "01-Quick-Start/Quick-Start-Guide.pdf",
+    "01-Quick-Start/\u5feb\u901f\u958b\u59cb\u6307\u5357.pdf",
+    "02-Interactive/ACCESS.txt",
+    "03-Spreadsheets/RoomFeng-Moving-New-Home-OS.xlsx",
+    "04-Printable/RoomFeng-Moving-Planner-A4.pdf",
+    "04-Printable/RoomFeng-Moving-Planner-US-Letter.pdf",
+    "05-Examples/example-moving-project.json",
+    "06-Backups/BACKUP-AND-RECOVERY.txt",
+    "06-Backups/example-backup.json",
+    "07-Preview-Images/preview-01-hero.png",
+    "07-Preview-Images/preview-02-dashboard.png",
+    "07-Preview-Images/preview-03-fit.png",
+    "07-Preview-Images/preview-04-timeline.png",
+    "07-Preview-Images/preview-05-boxes.png",
+    "07-Preview-Images/preview-06-spreadsheet.png",
+    "07-Preview-Images/preview-07-pdf.png",
+    "07-Preview-Images/preview-08-budget.png",
+    "07-Preview-Images/preview-09-move-day.png",
+    "07-Preview-Images/preview-10-included.png",
+    "LICENSE-OR-USAGE.txt",
+    "PRODUCT-METADATA.json",
+    "README.txt"
+  ]
+}

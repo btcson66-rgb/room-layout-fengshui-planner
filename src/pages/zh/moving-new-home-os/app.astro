@@ -1,0 +1,11 @@
+---
+import Layout from '../../../components/Layout.astro';
+import MovingOsApp from '../../../components/MovingOsApp.astro';
+const title = '搬家與新居規劃系統 App｜RoomFeng';
+const description = 'local-first 搬家專案工作區：新家測量、家具三關判斷、工作、紙箱、預算、採購比較與匯出。';
+const canonical = '/zh/moving-new-home-os/app/';
+const alternates = { en: '/en/moving-new-home-os/app/', zh: canonical };
+---
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} noindex pageType="planner">
+  <MovingOsApp locale="zh-TW" />
+</Layout>

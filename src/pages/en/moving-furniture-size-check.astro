@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { en } from '../../i18n/en';
 
 const title = 'Will It Fit Through the Door or Up the Stairs? | Size Check';
@@ -86,6 +87,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
+      <MovingOsContextCta locale="en" placement="en_moving_size" heading="Planning the whole move, not just one room?" copy="Moving & New Home OS combines measurements, furniture decisions, packing, budget and move-day planning in one private workspace." label="Plan My Move" />
       <AdSlot id="en-moving-mid" adSlot="en-moving-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
