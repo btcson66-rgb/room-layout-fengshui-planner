@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { en } from '../../i18n/en';
 
 const title = 'Furniture Fit Checker | Will It Fit Your Room and Door?';
@@ -86,6 +87,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
+      <MovingOsContextCta locale="en" placement="en_furniture_fit" heading="Checking one piece or planning the whole move?" copy="A fit check answers one item. Moving &amp; New Home OS helps you decide what comes with you, where it lands, how it gets packed, and what the move will cost." label="Plan the whole move" />
       <AdSlot id="en-fit-mid" adSlot="en-furniture-fit-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />

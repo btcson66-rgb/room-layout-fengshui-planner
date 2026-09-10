@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { en } from '../../i18n/en';
 
 const title = 'Small Bedroom Layout Planner | Bed Desk Wardrobe Ideas for Tight Rooms';
@@ -86,6 +87,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
+      <MovingOsContextCta locale="en" placement="en_small_bedroom" heading="Moving into a small room soon?" copy="Once the bed, desk, and wardrobe are measured, keep the rest of the move in one place: what to bring, how to pack it, and which tasks come first." label="Organize my move" />
       <AdSlot id="en-small-bedroom-mid" adSlot="en-small-bedroom-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
