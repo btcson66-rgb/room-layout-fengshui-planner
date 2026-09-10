@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { en } from '../../i18n/en';
 
 const title = 'Studio Apartment Layout Planner | Plan Sleep Work and Dining Zones';
@@ -89,6 +90,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
+      <MovingOsContextCta locale="en" placement="en_studio_apartment" heading="Turning a studio plan into a move plan?" copy="Carry the measured zones into a practical move workflow with furniture decisions, box tracking, budget, and move-day tasks—not just a final floor plan." label="Plan move-in" />
       <AdSlot id="en-studio-mid" adSlot="en-studio-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />

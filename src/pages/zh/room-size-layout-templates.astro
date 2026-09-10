@@ -2,6 +2,7 @@
 import Layout from '../../components/Layout.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { siteUrl } from '../../data/site';
 
 const title = '5坪房間設計範本｜3～8坪睡眠、讀書、收納配置';
@@ -132,6 +133,8 @@ const relatedLinks = [
         <h2>配置範本、收納與家具尺寸工具怎麼分工</h2>
         <p>本頁先回答「同一坪數有哪些配置起點」；若你要整理小房間收納區與歸位方式，使用 <a href="/zh/small-room-storage-planner/">小房間收納規劃工具</a>；若你已看中床、桌或衣櫃，則用 <a href="/zh/room-furniture-size-advisor/">房間家具尺寸建議工具</a> 檢查單件家具上限。最後再把選定版本放進 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，加入真實門窗位置完成細調。</p>
       </article>
+
+      <MovingOsContextCta locale="zh-TW" placement="zh_room_size_templates" heading="範本選好之後，還有整次搬家要管理" copy="範本只能提供房型起點；如果你要決定家具帶不帶、紙箱怎麼分、預算怎麼追與搬家日先做什麼，可把實際尺寸接到完整搬家專案。" label="接著規劃整次搬家" />
 
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
