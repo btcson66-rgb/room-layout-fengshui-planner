@@ -17,6 +17,14 @@
     "test:scripts": "node --test scripts/test/*.test.mjs",
     "test:www-redirect": "node --test infra/www-redirect-worker/test/*.test.mjs",
     "test:moving-os": "node --experimental-strip-types --test tests/moving-os.test.mjs tests/moving-os-license.test.mjs",
+    "test:product-002:entitlement": "node --experimental-strip-types --test tests/product-002-entitlement.test.mjs",
+    "test:product-002:browser": "playwright test --config=playwright.product-002.config.mjs",
+    "test:product-002": "node --experimental-strip-types --test tests/product-002-geometry.test.mjs",
+    "test:product-002:phase3": "node --test tests/product-002-phase3.test.mjs",
+    "product-002:dataset": "node --experimental-strip-types scripts/product-002-dataset.mjs",
+    "product-002:persona": "node --experimental-strip-types scripts/product-002-personas.mjs",
+    "product-002:phase2-qa": "node --experimental-strip-types scripts/product-002-phase2-qa.mjs",
+    "product-002:qa": "node scripts/product-002-layout-qa.mjs",
     "qa:moving-os-browsers": "node --experimental-strip-types tests/moving-os-cross-browser.cjs",
     "amazon:refresh": "node scripts/amazon-content-lifecycle.mjs --refresh",
     "amazon:preflight": "node scripts/amazon-content-lifecycle.mjs --check",
@@ -37,6 +45,7 @@
     "typescript": "^6.0.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "sharp": "^0.35.4"
   }
 }

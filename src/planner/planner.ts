@@ -3,6 +3,7 @@ import { exportPdf, exportPng } from './export';
 import { defaultDesign, makeItem, templateDesigns } from './templates';
 import type { Design, FurnitureItem, FurnitureType, PlannerOptions, PlannerStrings, Unit } from './types';
 import { formatArea, fromCm, toCm } from './units';
+import { readPlannerHandoff } from '../small-space/handoff';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DEFAULT_STORAGE_KEY = 'room-layout-planner:draft';
@@ -59,6 +60,8 @@ function presetFromLocation(strings: PlannerStrings): Design | null {
 }
 
 function loadDesign(storageKey: string, strings: PlannerStrings): Design {
+  const handoff = readPlannerHandoff();
+  if (handoff) return cloneDesign(handoff);
   const preset = presetFromLocation(strings);
   if (preset) return preset;
   const stored = localStorage.getItem(storageKey);

@@ -3,7 +3,7 @@ import type { LicenseProvider } from './moving-os-license.ts';
 import { verifyAndActivatePayhipLicense, verifyPayhipLicense, type ProviderResult as PayhipResult } from './payhip.ts';
 
 export type NormalizedLicenseResult =
-  | { ok: true; provider: LicenseProvider; purchaseActive: true; refunded: false; disputed: false; uses: number }
+  | { ok: true; provider: LicenseProvider; providerProductIdentity: string; purchaseActive: true; refunded: false; disputed: false; uses: number }
   | { ok: false; provider: LicenseProvider; code: 'invalid_license' | 'disabled_license' | 'network_error' };
 
 export interface ProviderConfig {
@@ -14,7 +14,10 @@ export interface ProviderConfig {
 
 function normalize(provider: LicenseProvider, result: PayhipResult | GumroadResult): NormalizedLicenseResult {
   if (!result.ok) return { ok: false, provider, code: result.code };
-  return { ok: true, provider, purchaseActive: true, refunded: false, disputed: false, uses: result.data.uses };
+  const providerProductIdentity = provider === 'payhip'
+    ? (result as Extract<PayhipResult, { ok: true }>).data.product_link
+    : (result as Extract<GumroadResult, { ok: true }>).data.productId;
+  return { ok: true, provider, providerProductIdentity, purchaseActive: true, refunded: false, disputed: false, uses: result.data.uses };
 }
 
 export async function verifyAndActivateLicense(provider: LicenseProvider, licenseKey: string, config: ProviderConfig, fetcher: typeof fetch = fetch): Promise<NormalizedLicenseResult> {

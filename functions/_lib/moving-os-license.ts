@@ -1,5 +1,11 @@
+import { PRODUCT_IDS } from '../../src/config/product-registry.ts';
+
+/** PRODUCT-001 cookie names are retained for live-session compatibility. */
 export const SESSION_COOKIE = '__Host-rf_moving_os_session';
 export const ENTITLEMENT_COOKIE = 'rf_entitlement';
+export interface ProductCookieNames { session: string; entitlement: string }
+export const MOVING_OS_COOKIE_NAMES: ProductCookieNames = { session: SESSION_COOKIE, entitlement: ENTITLEMENT_COOKIE };
+export const LAYOUT_VAULT_COOKIE_NAMES: ProductCookieNames = { session: '__Host-rf_layout_vault_session', entitlement: 'rf_entitlement_layout_vault' };
 export const SESSION_TTL_SECONDS = 24 * 60 * 60;
 export const OFFLINE_GRACE_SECONDS = 24 * 60 * 60;
 export const ENTITLEMENT_TTL_SECONDS = SESSION_TTL_SECONDS + OFFLINE_GRACE_SECONDS;
@@ -7,7 +13,8 @@ export const REVALIDATION_INTERVAL_SECONDS = 15 * 60;
 export const MAX_REQUEST_BYTES = 2048;
 export const LICENSE_PATTERN = /^[A-Za-z0-9][A-Za-z0-9-]{6,126}[A-Za-z0-9]$/;
 export type LicenseProvider = 'payhip' | 'gumroad';
-export const MOVING_OS_PRODUCT_ID = 'roomfeng-moving-new-home-os-v1';
+export const MOVING_OS_PRODUCT_ID = PRODUCT_IDS.movingOs;
+export const LAYOUT_VAULT_PRODUCT_ID = PRODUCT_IDS.layoutVault;
 
 export interface LicenseEnv {
   PAYHIP_PRODUCT_SECRET?: string;
@@ -15,11 +22,18 @@ export interface LicenseEnv {
   GUMROAD_PRODUCT_ID?: string;
   MOVING_OS_PRODUCT_ID?: string;
   MOVING_OS_SESSION_SECRET?: string;
+  LAYOUT_VAULT_PAYHIP_PRODUCT_SECRET?: string;
+  LAYOUT_VAULT_PAYHIP_PRODUCT_LINK?: string;
+  LAYOUT_VAULT_GUMROAD_PRODUCT_ID?: string;
+  LAYOUT_VAULT_SESSION_SECRET?: string;
+  LAYOUT_VAULT_ENTITLEMENT_ENCRYPTION_KEY?: string;
+  ROOMFENG_LAYOUT_VAULT_DEV_BYPASS?: string;
+  ENVIRONMENT?: string;
   ENTITLEMENT_ENCRYPTION_KEY?: string;
 }
 
 export interface SessionPayload { v: 2; product: string; provider: LicenseProvider; licenseHash: string; iat: number; exp: number }
-export interface EntitlementPayload { v: 1; product: string; provider: LicenseProvider; licenseKey: string; issuedAt: number; lastVerifiedAt: number; expiresAt: number }
+export interface EntitlementPayload { v: 1; product: string; provider: LicenseProvider; providerProductIdentity?: string; licenseKey: string; issuedAt: number; lastVerifiedAt: number; expiresAt: number }
 
 const encoder = new TextEncoder();
 
@@ -103,12 +117,12 @@ export async function verifySessionToken(token: string | undefined, secret: stri
   return Boolean(await readVerifiedSession(token, secret, productId, providerOrNow, maybeNowSeconds));
 }
 
-export function sessionCookie(token: string): string {
-  return `${SESSION_COOKIE}=${token}; Path=/; Max-Age=${SESSION_TTL_SECONDS}; HttpOnly; Secure; SameSite=Lax`;
+export function sessionCookie(token: string, names: ProductCookieNames = MOVING_OS_COOKIE_NAMES): string {
+  return `${names.session}=${token}; Path=/; Max-Age=${SESSION_TTL_SECONDS}; HttpOnly; Secure; SameSite=Lax`;
 }
 
-export function expiredSessionCookie(): string {
-  return `${SESSION_COOKIE}=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
+export function expiredSessionCookie(names: ProductCookieNames = MOVING_OS_COOKIE_NAMES): string {
+  return `${names.session}=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
 }
 
 function decodeSecret(value: string): Uint8Array | undefined {
@@ -144,17 +158,23 @@ export async function readEntitlementToken(token: string | undefined, secret: st
   try {
     const plaintext = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bufferSource(decodeBase64Url(nonceText)), additionalData: bufferSource(encoder.encode('roomfeng-entitlement-v1')) }, key, bufferSource(decodeBase64Url(ciphertextText)));
     const payload = JSON.parse(new TextDecoder().decode(plaintext)) as Partial<EntitlementPayload>;
-    if (payload.v !== 1 || payload.product !== productId || (payload.provider !== 'payhip' && payload.provider !== 'gumroad') || typeof payload.licenseKey !== 'string' || !normalizeLicenseKey(payload.licenseKey) || normalizeLicenseKey(payload.licenseKey) !== payload.licenseKey || typeof payload.issuedAt !== 'number' || typeof payload.lastVerifiedAt !== 'number' || typeof payload.expiresAt !== 'number' || payload.issuedAt > nowSeconds + 60 || payload.lastVerifiedAt > nowSeconds + 60 || payload.lastVerifiedAt < payload.issuedAt || payload.expiresAt <= nowSeconds) return undefined;
+    if (payload.v !== 1 || payload.product !== productId || (payload.provider !== 'payhip' && payload.provider !== 'gumroad') || (payload.providerProductIdentity !== undefined && (typeof payload.providerProductIdentity !== 'string' || payload.providerProductIdentity.length === 0)) || typeof payload.licenseKey !== 'string' || !normalizeLicenseKey(payload.licenseKey) || normalizeLicenseKey(payload.licenseKey) !== payload.licenseKey || typeof payload.issuedAt !== 'number' || typeof payload.lastVerifiedAt !== 'number' || typeof payload.expiresAt !== 'number' || payload.issuedAt > nowSeconds + 60 || payload.lastVerifiedAt > nowSeconds + 60 || payload.lastVerifiedAt < payload.issuedAt || payload.expiresAt <= nowSeconds) return undefined;
     return payload as EntitlementPayload;
   } catch { return undefined; }
 }
 
-export function entitlementCookie(token: string): string {
-  return `${ENTITLEMENT_COOKIE}=${token}; Path=/; Max-Age=${ENTITLEMENT_TTL_SECONDS}; HttpOnly; Secure; SameSite=Lax`;
+export function entitlementCookie(token: string, names: ProductCookieNames = MOVING_OS_COOKIE_NAMES): string {
+  return `${names.entitlement}=${token}; Path=/; Max-Age=${ENTITLEMENT_TTL_SECONDS}; HttpOnly; Secure; SameSite=Lax`;
 }
 
-export function expiredEntitlementCookie(): string {
-  return `${ENTITLEMENT_COOKIE}=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
+export function expiredEntitlementCookie(names: ProductCookieNames = MOVING_OS_COOKIE_NAMES): string {
+  return `${names.entitlement}=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax`;
+}
+
+export function cookieNamesForProduct(productId: string): ProductCookieNames | undefined {
+  if (productId === PRODUCT_IDS.movingOs) return MOVING_OS_COOKIE_NAMES;
+  if (productId === PRODUCT_IDS.layoutVault) return LAYOUT_VAULT_COOKIE_NAMES;
+  return undefined;
 }
 
 export function maskedLicenseKey(key: string): string {

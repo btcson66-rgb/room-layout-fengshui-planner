@@ -18,6 +18,9 @@ export default defineConfig({
         const normalizedPath = normalizePath(path);
         if (normalizedPath === '/zh/bed-facing-door-feng-shui/') return false;
         if (/^\/(?:en|zh)\/moving-new-home-os\/(?:app|activate)\/$/.test(normalizedPath)) return false;
+        // PRODUCT-002 Phase 2 is a private/noindex UX surface; keep it out of
+        // the public sitemap until a separate launch decision is approved.
+        if (/^\/(?:en|zh)\/layout-vault\/(?:activate\/)?$/.test(normalizedPath)) return false;
 
         // 索引與分類的分頁網址（/zh/blog/2/、/zh/category/feng-shui/3/）要先認出來，
         // 否則下面的 blogMatch 會把 "2" 當成文章 slug、查不到而整頁被排除。

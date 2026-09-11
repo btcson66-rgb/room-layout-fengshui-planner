@@ -1,0 +1,19 @@
+---
+import Layout from '../../components/Layout.astro';
+import LayoutVaultPreview from '../../components/LayoutVaultPreview.astro';
+import { approvedLayouts } from '../../small-space/approved-layouts';
+
+const title = 'Free Room Layout Matcher Preview | RoomFeng';
+const description = 'Try a free, local-first matcher preview with real room dimensions, bed size, furniture requirements, and one validated small-space layout result.';
+const canonical = '/en/room-layout-matcher/';
+const sampleIds = ['BR-SQ-001', 'BR-1012-001', 'BR-MN-001', 'BR-N-001', 'ST-MICRO-001', 'ST-SMALL-001'];
+const samples = sampleIds.map((id) => approvedLayouts.find((layout) => layout.id === id)).filter((layout): layout is (typeof approvedLayouts)[number] => Boolean(layout));
+const jsonLd = [{ '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'DesignApplication', operatingSystem: 'Any', url: `https://roomfeng.win${canonical}`, description, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://roomfeng.win/en/' }, { '@type': 'ListItem', position: 2, name: 'Room layout matcher', item: `https://roomfeng.win${canonical}` }] }];
+---
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ en: canonical, zh: '/zh/room-layout-matcher/' }} jsonLd={jsonLd} pageType="tool" showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <header><p class="layout-sales-kicker">ROOMFENG / FREE PREVIEW</p><h1>What are you trying to fit?</h1><p class="lead">Enter the basics and get one complete, dimension-validated starting point. The preview is local-first, needs no signup, and uses the same real layout records as Layout Vault.</p><p>Want every matching strategy, detailed clearances, comparison and Planner handoff? <a href="/en/small-space-layout-vault/">See Layout Vault</a>.</p></header>
+    <LayoutVaultPreview layouts={samples} locale="en" salesHref="/en/small-space-layout-vault/" />
+    <p><a href="/en/room-layout-planner/">Open the free RoomFeng Planner</a> when you are ready to add your measured doors, windows and furniture.</p>
+  </div></section>
+</Layout>

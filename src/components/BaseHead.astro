@@ -21,17 +21,48 @@ const url = new URL(canonical, site).toString();
 const imageUrl = new URL(ogImage ?? '/og-image.png', site).toString();
 const logoUrl = new URL('/apple-touch-icon.png', site).toString();
 const siteOrigin = site.toString().replace(/\/$/, '');
-const gaId = import.meta.env.PUBLIC_GA_ID;
-const affiliateGaId = import.meta.env.PUBLIC_AFFILIATE_GA_ID?.trim() || 'G-Q78WN8NZ0R';
+const gaId = import.meta.env.PUBLIC_GA_ID?.trim();
+// The shared loader must use the site's verified GA4 stream.  The affiliate
+// destination is event-level only (see affiliateAnalytics.ts); configuring it
+// here makes gtag.js attempt a second loader request, and an unavailable
+// affiliate stream can be returned as HTML and blocked by ORB.  Production
+// supplies PUBLIC_GA_ID (G-9SCRT8E036); when it is absent we keep analytics
+// disabled rather than inventing a loader destination.
+const loaderGaId = gaId;
+const googleTagConfigs = [
+  gaId ? `gtag('config', '${gaId}');` : '',
+].filter(Boolean).join('\n');
 const analyticsScript = [
   'window.dataLayer = window.dataLayer || [];',
-  'function gtag(){dataLayer.push(arguments);}',
+  'window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };',
+  'window.__RF_PRODUCT_002_ANALYTICS_ENABLED__ = window.__RF_PRODUCT_002_ANALYTICS_ENABLED__ === true;',
   "gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });",
+  `window.__roomfengLoadGoogleTag = window.__roomfengLoadGoogleTag || function () {
+    if (!window.__roomfengGoogleTagConfigured) {
+      window.__roomfengGoogleTagConfigured = true;
+      gtag('js', new Date());
+      ${googleTagConfigs}
+    }
+    if (window.__roomfengGoogleTagPromise) return window.__roomfengGoogleTagPromise;
+    var existing = document.querySelector('script[data-roomfeng-google-tag]');
+    window.__roomfengGoogleTagPromise = new Promise(function (resolve, reject) {
+      if (existing) {
+        existing.addEventListener('load', function () { window.__roomfengGoogleTagLoaded = true; resolve(); }, { once: true });
+        existing.addEventListener('error', reject, { once: true });
+        return;
+      }
+      var script = document.createElement('script');
+      script.async = true;
+      script.dataset.roomfengGoogleTag = 'true';
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(loaderGaId)}';
+      script.onload = function () { window.__roomfengGoogleTagLoaded = true; resolve(); };
+      script.onerror = function () { reject(new Error('google-tag-load-failed')); };
+      document.head.appendChild(script);
+    });
+    return window.__roomfengGoogleTagPromise;
+  };`,
   "var savedConsent = null; try { savedConsent = window.localStorage.getItem('btcson_consent_v1'); } catch (error) {}",
-  "if (savedConsent === 'accepted') gtag('consent', 'update', { analytics_storage: 'granted' });",
-  "gtag('js', new Date());",
-  gaId ? `gtag('config', '${gaId}');` : '',
-  affiliateGaId && affiliateGaId !== gaId ? `gtag('config', '${affiliateGaId}', { send_page_view: false });` : '',
+  "if (savedConsent === 'accepted') { window.__RF_PRODUCT_002_ANALYTICS_ENABLED__ = true; gtag('consent', 'update', { analytics_storage: 'granted' }); window.__roomfengLoadGoogleTag(); }",
   `(() => {
     const initConsentUi = () => {
       if (document.querySelector('[data-consent-widget]')) return;
@@ -63,7 +94,9 @@ const analyticsScript = [
         if (action !== 'accept' && action !== 'reject') return;
         const choice = action === 'accept' ? 'accepted' : 'rejected';
         try { window.localStorage.setItem('btcson_consent_v1', choice); } catch {}
+        window.__RF_PRODUCT_002_ANALYTICS_ENABLED__ = choice === 'accepted';
         window.gtag('consent', 'update', { analytics_storage: choice === 'accepted' ? 'granted' : 'denied' });
+        if (choice === 'accepted') window.__roomfengLoadGoogleTag?.();
         render();
       });
       document.body.appendChild(widget);
@@ -140,9 +173,8 @@ const jsonItems = (Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []).map(
 <meta name="twitter:image" content={imageUrl} />
 {alternateLinks.map((alt) => <link rel="alternate" hreflang={alt.lang} href={new URL(alt.href, site).toString()} />)}
 {jsonItems.map((item) => <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />)}
-{(gaId || affiliateGaId) && (
+{loaderGaId && (
   <>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId || affiliateGaId}`} />
     <script is:inline set:html={analyticsScript} />
   </>
 )}

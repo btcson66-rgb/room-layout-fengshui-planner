@@ -1,0 +1,44 @@
+---
+import type { LayoutRecord } from '../small-space/types';
+import '../styles/layout-vault-preview.css';
+
+interface Props {
+  layouts: LayoutRecord[];
+  locale: 'en' | 'zh';
+  salesHref: string;
+}
+
+const { layouts, locale, salesHref } = Astro.props;
+const data = JSON.stringify(layouts).replaceAll('<', '\\u003c');
+---
+
+<section class="layout-preview" data-layout-preview data-locale={locale} data-sales-href={salesHref}>
+  <script is:inline type="application/json" id={`layout-preview-data-${locale}`} set:html={data}></script>
+  <div class="layout-preview-shell" data-layout-preview-app>
+    <div class="layout-preview-copy">
+      <p class="layout-preview-kicker">{locale === 'en' ? 'FREE MATCHER PREVIEW' : '免費配對預覽'}</p>
+      <h2>{locale === 'en' ? 'Try one real room before you decide.' : '先用一個真實房間試試，再決定要不要購買。'}</h2>
+      <p>{locale === 'en' ? 'Enter the basics and receive one complete, dimension-validated starting point. No signup and no email gate.' : '輸入基本條件，取得一個完整、經過尺寸驗證的起點。不需註冊，也不收集電子信箱。'}</p>
+    </div>
+    <div class="layout-preview-form" data-preview-form-host></div>
+    <div class="layout-preview-result" data-preview-result aria-live="polite"></div>
+  </div>
+</section>
+
+<script>
+  import { initLayoutVaultPreview } from '../small-space/preview';
+  import type { LayoutRecord } from '../small-space/types';
+
+  const root = document.querySelector<HTMLElement>('[data-layout-preview]');
+  const dataNode = document.getElementById(`layout-preview-data-${root?.dataset.locale ?? 'en'}`);
+  const host = root?.querySelector<HTMLElement>('[data-preview-form-host]');
+  const result = root?.querySelector<HTMLElement>('[data-preview-result]');
+  if (root && dataNode && host && result) {
+    try {
+      const layouts = JSON.parse(dataNode.textContent ?? '[]') as LayoutRecord[];
+      initLayoutVaultPreview(host, result, layouts, root.dataset.locale === 'zh' ? 'zh' : 'en', root.dataset.salesHref ?? '#');
+    } catch {
+      result.innerHTML = `<p role="alert">${root.dataset.locale === 'zh' ? '預覽暫時無法載入，請重新整理。' : 'The preview could not load. Please refresh and try again.'}</p>`;
+    }
+  }
+</script>

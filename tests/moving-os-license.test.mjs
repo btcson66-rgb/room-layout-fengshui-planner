@@ -116,7 +116,13 @@ test('status revalidation does not increment Gumroad uses and refreshes the encr
   globalThis.fetch = async (url, init) => { call = [String(url), init]; return Response.json({ success: true, uses: 2, purchase: { product_id: 'gumroad-product', refunded: false, disputed: false } }); };
   try {
     const response = await licenseStatus({ request: request('/api/product/license/status', { headers: { cookie: `${SESSION_COOKIE}=${session}; ${ENTITLEMENT_COOKIE}=${entitlement}` } }), env: { MOVING_OS_PRODUCT_ID: product, GUMROAD_PRODUCT_ID: 'gumroad-product', MOVING_OS_SESSION_SECRET: secret, ENTITLEMENT_ENCRYPTION_KEY: encryptionKey } });
-    assert.equal(response.status, 200); assert.deepEqual(await response.json(), { active: true, reason: 'verified', nextCheckAt: now + 900 });
+    assert.equal(response.status, 200);
+    const status = await response.json();
+    assert.equal(status.active, true);
+    assert.equal(status.reason, 'verified');
+    // The route samples the current second independently from the fixture's `now`.
+    // Accept the one-second boundary without weakening the 15-minute recheck contract.
+    assert.ok(status.nextCheckAt >= now + 900 && status.nextCheckAt <= now + 901);
     assert.match(String(call[1].body), /increment_uses_count=false/); assert.match(response.headers.get('set-cookie') || '', new RegExp(ENTITLEMENT_COOKIE));
   } finally { globalThis.fetch = previousFetch; }
 });

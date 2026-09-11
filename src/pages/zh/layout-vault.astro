@@ -1,0 +1,18 @@
+---
+import Layout from '../../components/Layout.astro';
+import LayoutVault from '../../components/LayoutVault.astro';
+import { approvedLayouts } from '../../small-space/approved-layouts';
+
+const title = '格局範本庫｜尺寸驗證的房間配置｜RoomFeng';
+const description = '輸入房間與家具條件，從尺寸驗證過的臥室與套房格局中找到適合方向，比較取捨，再交給免費 RoomFeng Planner 微調。';
+const canonical = '/zh/layout-vault/';
+const alternates = { en: '/en/layout-vault/', zh: canonical };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} noindex pageType="tool" showAffiliateRecs={false}>
+  <section class="section layout-vault-section">
+    <div class="container">
+      <LayoutVault layouts={approvedLayouts} locale="zh" />
+    </div>
+  </section>
+</Layout>
