@@ -89,6 +89,20 @@ export function createSitemapLastmodLookup(projectRoot) {
     if (!committedDate) fallbackRoutes.push({ route, sourceFile, date });
   }
 
+  // PRODUCT-002 Phase 3 has six intentionally curated, localized guide
+  // routes generated from one dynamic Astro source file. Dynamic segments are
+  // skipped by routeForAstroPage, so map the concrete public paths explicitly
+  // to the source file's git/mtime signal instead of weakening the sitemap
+  // last-modified gate for all dynamic routes.
+  const guideSlugs = ['10x10-bedroom-layout', '10x12-bedroom-queen-desk', '3x3m-bedroom-layout', '3x3-6m-bedroom-layout', 'narrow-bedroom-layout', '300-sq-ft-studio-layout'];
+  for (const locale of ['en', 'zh']) {
+    const sourceFile = join(pagesDirectory, locale, 'layout-guides', '[slug].astro');
+    const committedDate = gitAuthorDate(projectRoot, sourceFile);
+    const date = committedDate ?? mtimeDate(sourceFile);
+    for (const slug of guideSlugs) routeDates.set(normalizeRoute(`/${locale}/layout-guides/${slug}/`), date);
+    if (!committedDate) fallbackRoutes.push({ route: `/${locale}/layout-guides/[slug]/`, sourceFile, date });
+  }
+
   const blogPosts = walkFiles(blogDirectory, '.md').map((sourceFile) => {
     const frontmatter = parseFrontmatter(sourceFile);
     const slug = toPosixPath(relative(blogDirectory, sourceFile)).replace(/\.md$/, '');

@@ -11,7 +11,10 @@ test('RoomFeng affiliate events keep Amazon tracking metadata separate from GA d
   assert.doesNotMatch(analyticsSource, /\btracking_id\?:/);
   assert.match(analyticsSource, /send_to: AFFILIATE_GA_ID/);
   assert.match(analyticsSource, /VALID_AFFILIATE_GA_ID/);
-  assert.match(headSource, /gtag\('config', '\$\{affiliateGaId\}', \{ send_page_view: false \}\)/);
+  // The affiliate property remains an event-level `send_to` destination. It
+  // must not be configured in the shared loader: doing so makes gtag.js fetch
+  // a second stream script and can trigger ORB when that stream is unavailable.
+  assert.doesNotMatch(headSource, /gtag\('config', '\$\{affiliateGaId\}', \{ send_page_view: false \}\)/);
   assert.match(clientSource, /affiliate_tracking_id: link\.dataset\.affiliateTrackingId/);
   assert.match(clientSource, /affiliate_tracking_id: batch\[0\]\?\.tracking_id/);
   assert.match(clientSource, /querySelectorAll<HTMLElement>\('\[data-affiliate-card\]'\)/);

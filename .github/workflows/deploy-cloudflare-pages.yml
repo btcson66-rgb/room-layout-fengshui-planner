@@ -24,7 +24,14 @@ jobs:
           node-version: 22
           cache: npm
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
       - run: npm ci
+
+      - name: Build PRODUCT-002 package fixture for integrity tests
+        run: python -m pip install --disable-pip-version-check reportlab pillow && python scripts/generate-product-002-package.py
 
       - run: npm run amazon:refresh
         env:
@@ -54,6 +61,12 @@ jobs:
           PUBLIC_MOVING_OS_SUPPORT_EMAIL: ${{ vars.PUBLIC_MOVING_OS_SUPPORT_EMAIL }}
           PUBLIC_MOVING_OS_REFUND_POLICY_URL: ${{ vars.PUBLIC_MOVING_OS_REFUND_POLICY_URL }}
           PUBLIC_MOVING_OS_RELEASE_DATE: ${{ vars.PUBLIC_MOVING_OS_RELEASE_DATE }}
+          PUBLIC_LAYOUT_VAULT_PAYHIP_CHECKOUT_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_PAYHIP_CHECKOUT_URL }}
+          PUBLIC_LAYOUT_VAULT_PAYHIP_PRODUCT_LINK: ${{ vars.PUBLIC_LAYOUT_VAULT_PAYHIP_PRODUCT_LINK }}
+          PUBLIC_LAYOUT_VAULT_GUMROAD_CHECKOUT_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_GUMROAD_CHECKOUT_URL }}
+          PUBLIC_LAYOUT_VAULT_GUMROAD_PRODUCT_ID: ${{ vars.PUBLIC_LAYOUT_VAULT_GUMROAD_PRODUCT_ID }}
+          PUBLIC_LAYOUT_VAULT_SUPPORT_EMAIL: ${{ vars.PUBLIC_LAYOUT_VAULT_SUPPORT_EMAIL }}
+          PUBLIC_LAYOUT_VAULT_REFUND_POLICY_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_REFUND_POLICY_URL }}
           # 2026-08-24: migrated off the old AdSense account (btcson66).
           # That account's sign-in mailbox is no longer accessible, so the site
           # is being re-submitted for review under account zxc851558. Keep this
@@ -63,6 +76,18 @@ jobs:
       - run: npm run audit:content
 
       - run: npm run test:www-redirect
+
+      - name: Verify PRODUCT-002 analytics routing
+        run: node --test tests/affiliate-ga4-routing.test.mjs tests/affiliate-ga4.test.mjs
+
+      - name: Verify PRODUCT-002 Phase 3 gates
+        run: npm run test:product-002:phase3
+
+      - name: Verify PRODUCT-002 geometry and matching
+        run: npm run test:product-002
+
+      - name: Verify PRODUCT-002 entitlement isolation
+        run: npm run test:product-002:entitlement
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
