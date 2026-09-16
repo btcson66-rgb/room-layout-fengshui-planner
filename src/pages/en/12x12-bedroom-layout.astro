@@ -1,0 +1,7 @@
+---
+import UsSeoGuidePage from '../../components/UsSeoGuidePage.astro';
+import { bedroomPages } from '../../us-seo/content';
+const page = bedroomPages.find((item) => item.slug === '12x12-bedroom-layout');
+if (!page) throw new Error('Missing 12x12 bedroom page data');
+---
+<UsSeoGuidePage data={page} />

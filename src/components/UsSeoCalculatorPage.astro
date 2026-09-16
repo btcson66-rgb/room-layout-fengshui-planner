@@ -1,0 +1,115 @@
+---
+import Layout from './Layout.astro';
+import '../styles/us-seo.css';
+import { MATTRESS_DIMENSIONS_IN } from '../us-seo/calculators';
+
+type CalculatorKind = 'couch' | 'furniture' | 'bed';
+interface FaqItem { question: string; answer: string; }
+interface RelatedLink { href: string; title: string; }
+interface Props {
+  kind: CalculatorKind;
+  title: string;
+  description: string;
+  canonical: string;
+  h1: string;
+  lead: string;
+  faq: FaqItem[];
+  related: RelatedLink[];
+}
+
+const { kind, title, description, canonical, h1, lead, faq, related } = Astro.props;
+const siteUrl = 'https://roomfeng.win';
+const calculatorName = kind === 'couch' ? 'Couch Fit Through Door Calculator' : kind === 'furniture' ? 'Furniture Fit Calculator' : 'Bed Room Fit Calculator';
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebApplication', name: calculatorName, description, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Any', inLanguage: 'en-US', isAccessibleForFree: true, url: `${siteUrl}${canonical}`, provider: { '@type': 'Organization', name: 'RoomFeng', url: siteUrl } },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` }, { '@type': 'ListItem', position: 2, name: calculatorName, item: `${siteUrl}${canonical}` }] },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+];
+const bedOptions = Object.entries(MATTRESS_DIMENSIONS_IN).map(([key, value]) => ({ key, label: key.replace(/([A-Z])/g, ' $1').replace(/^./, (letter) => letter.toUpperCase()), width: value.width, length: value.length }));
+const inputId = (id: string, unit: 'ft' | 'in' | 'cm') => `${id}-${unit}`;
+const fields = kind === 'couch'
+  ? [['door-width', 'Clear door width', '3', ''], ['door-height', 'Clear door height', '6', '8'], ['couch-depth', 'Couch depth', '3', ''], ['couch-height', 'Couch height', '3', ''], ['leg-reduction', 'Optional removable-leg reduction', '', '0']]
+  : kind === 'furniture'
+    ? [['room-width', 'Room width', '10', ''], ['room-length', 'Room length', '12', ''], ['furniture-width', 'Furniture width', '5', ''], ['furniture-depth', 'Furniture depth', '3', ''], ['clear-left', 'Left clearance', '1', '6'], ['clear-right', 'Right clearance', '1', '6'], ['clear-front', 'Front clearance', '2', ''], ['clear-back', 'Back clearance', '1', '']]
+    : [['bed-room-width', 'Room width', '10', ''], ['bed-room-length', 'Room length', '10', ''], ['bed-clear-left', 'Left clearance', '2', ''], ['bed-clear-right', 'Right clearance', '2', ''], ['bed-clear-foot', 'Foot clearance', '2', '6'], ['bed-clear-head', 'Optional head clearance', '', '0']];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" pageType="calculator" jsonLd={jsonLd}>
+  <section class="section us-seo-page">
+    <div class="container page-grid">
+      <article class="card us-seo-copy">
+        <p class="eyebrow">Free RoomFeng measurement tool</p>
+        <h1>{h1}</h1>
+        <p class="lead">{lead}</p>
+        {kind === 'couch' && <><p>This is a preliminary opening-fit check. It compares the clear door opening with two simple couch orientations; it does not simulate a full 3D move, a stair turn, an elevator, packaging, wall thickness, or a person carrying the item.</p><h2>Measure the opening, not the listing headline</h2><p>Measure the narrowest clear width and height with the door open. Measure the couch outside depth and height, including arms, feet and fixed parts. If legs can be removed, enter only the verified reduction.</p></>}
+        {kind === 'furniture' && <><p>A furniture item can fit inside the room rectangle and still block a route, door, drawer, wardrobe swing or chair pullback. This calculator reports physical rectangle fit separately from the clearances you request.</p><h2>Use outside dimensions and active clearances</h2><p>Use the largest outside footprint of the item, then enter the clearance you need on each side. Test both orientations because rotating a rectangular piece may change the answer.</p></>}
+        {kind === 'bed' && <><p>Choose a common US mattress size as a starting point, or switch to Custom when you know the actual bed-frame footprint. A frame can be larger than its mattress.</p><h2>Separate mattress fit from access fit</h2><p>The result shows whether the bed rectangle fits physically and whether the requested left, right, foot and optional head clearances also fit. Verify doors, closets, windows and frame hardware in the planner.</p></>}
+      </article>
+
+      <section class="card us-seo-calculator" aria-labelledby="calculator-heading" data-calculator={kind}>
+        <div class="us-seo-calculator-header"><div><p class="eyebrow">Runs in your browser</p><h2 id="calculator-heading">{calculatorName}</h2></div><label class="us-seo-unit-switch" for="unit-system">Units<select id="unit-system"><option value="imperial" selected>US feet + inches</option><option value="metric">Metric centimetres</option></select></label></div>
+        {kind === 'bed' && <div class="us-seo-field"><label for="bed-size">Bed size preset</label><select id="bed-size">{bedOptions.map((option) => <option value={option.key}>{option.label} — {option.width} × {option.length} in mattress</option>)}<option value="Custom">Custom frame dimensions</option></select><p class="field-note">US mattress dimensions are planning anchors. Enter the real frame footprint when it differs.</p></div>}
+        {kind === 'bed' && <div id="custom-bed-fields" class="us-seo-measure-grid" hidden>{['custom-bed-width', 'custom-bed-length'].map((id) => <div class="us-seo-field us-seo-measure"><label for={inputId(id, 'ft')}>{id.endsWith('width') ? 'Custom frame width' : 'Custom frame length'}</label><div class="imperial-inputs"><input id={inputId(id, 'ft')} type="number" min="0" step="0.01" inputmode="decimal" aria-label={`${id} feet`} /><span>ft</span><input id={inputId(id, 'in')} type="number" min="0" max="11.99" step="0.1" inputmode="decimal" aria-label={`${id} inches`} /><span>in</span></div><div class="metric-input" hidden><input id={inputId(id, 'cm')} type="number" min="0" step="0.1" inputmode="decimal" aria-label={`${id} centimetres`} /><span>cm</span></div></div>)}</div>}
+        <div class="us-seo-measure-grid">{fields.map(([id, label, feet, inches]) => <div class="us-seo-field us-seo-measure"><label for={inputId(id, 'ft')}>{label}</label><div class="imperial-inputs"><input id={inputId(id, 'ft')} type="number" min="0" step="0.01" inputmode="decimal" value={feet} aria-label={`${label} feet`} /><span>ft</span><input id={inputId(id, 'in')} type="number" min="0" max="11.99" step="0.1" inputmode="decimal" value={inches} aria-label={`${label} inches`} /><span>in</span></div><div class="metric-input" hidden><input id={inputId(id, 'cm')} type="number" min="0" step="0.1" inputmode="decimal" aria-label={`${label} centimetres`} /><span>cm</span></div></div>)}</div>
+        {kind === 'furniture' && <p class="field-note">Clearances are summed by orientation. Physical fit and requested-clearance fit are reported separately.</p>}
+        {kind === 'bed' && <p class="field-note">Bed access uses the requested clearances; zero head clearance means the head may be against a wall.</p>}
+        {kind === 'couch' && <p class="field-note">A 2-inch or smaller remaining margin is labelled TIGHT. Anything outside the opening is FAILED.</p>}
+        <button class="button" type="button" id="run-calculation">Check dimensions</button>
+        <div id="calculation-result" class="us-seo-result" role="status" aria-live="polite"><p class="result-placeholder">Enter measurements and run the check.</p></div>
+        <p class="disclaimer"><strong>Planning disclaimer:</strong> This deterministic check is not a guarantee of delivery, installation, accessibility, structural, electrical, fire-safety or feng shui outcomes.</p>
+      </section>
+
+      {kind === 'bed' && <section class="card us-seo-table-card"><h2>Common US mattress dimensions</h2><p>These are mattress footprints only. A frame can be larger.</p><div class="table-wrap"><table><thead><tr><th>Size</th><th>Mattress width</th><th>Mattress length</th></tr></thead><tbody>{bedOptions.map((option) => <tr><th scope="row">{option.label}</th><td>{option.width} in</td><td>{option.length} in</td></tr>)}</tbody></table></div></section>}
+      <section class="card us-seo-copy"><h2>How to read the result</h2>{kind === 'couch' ? <ul><li><strong>BASIC OPENING CHECK PASSED:</strong> at least one tested orientation fits.</li><li><strong>TIGHT:</strong> an orientation fits only with a small remaining margin.</li><li><strong>REVIEW:</strong> close conditions need a real-world review.</li><li><strong>FAILED:</strong> neither simple orientation fits.</li></ul> : <ul><li><strong>Physical fit:</strong> the rectangle fits in at least one orientation.</li><li><strong>Requested access:</strong> the rectangle plus your clearances fits.</li><li><strong>Rotate and remeasure:</strong> doors, windows, closets and actual furniture operation still need a site check.</li></ul>}<p>The calculation is local-first: values stay in this page while you use it. No login, server storage, cookies or fingerprinting are needed.</p></section>
+      <div class="cta-band"><div><h2>Need a full room plan?</h2><p>Place doors, windows and multiple furniture items together in RoomFeng's planner.</p></div><a class="button" href="/en/room-layout-planner/">Open the Room Planner</a></div>
+      <section class="card us-seo-copy"><h2>Frequently asked questions</h2>{faq.map((item) => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</section>
+      <nav class="card related-links" aria-label="Related RoomFeng guides"><h2>Related guides</h2><ul>{related.map((link) => <li><a href={link.href}>{link.title}</a></li>)}</ul></nav>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { calculateBedRoomFit, calculateDoorOpeningFit, calculateFurnitureFit, MATTRESS_DIMENSIONS_IN } from '../us-seo/calculators';
+  import { convertToMm } from '../small-space/units';
+  import type { CalculationStatus, DimensionInput } from '../us-seo/calculators';
+  type CalculatorKind = 'couch' | 'furniture' | 'bed';
+  const kind = (document.querySelector('[data-calculator]')?.getAttribute('data-calculator') ?? 'furniture') as CalculatorKind;
+  const unitSystem = document.querySelector<HTMLSelectElement>('#unit-system');
+  const result = document.querySelector('#calculation-result');
+  const runButton = document.querySelector('#run-calculation');
+  const bedSize = document.querySelector<HTMLSelectElement>('#bed-size');
+  const customBedFields = document.querySelector('#custom-bed-fields');
+  const dim = (value: number): DimensionInput => ({ value, unit: 'mm' });
+  const number = (id: string) => { const value = Number(document.querySelector<HTMLInputElement>(`#${id}`)?.value ?? ''); if (!Number.isFinite(value) || value < 0) throw new Error(`Enter a valid value for ${id.replaceAll('-', ' ')}.`); return value; };
+  const measure = (id: string, optional = false) => { if (unitSystem?.value === 'metric') { const value = number(`${id}-cm`); if (optional && value === 0) return 0; return convertToMm(value, 'cm'); } const feet = number(`${id}-ft`); const inches = number(`${id}-in`); if (inches >= 12) throw new Error(`Keep ${id.replaceAll('-', ' ')} inches below 12.`); if (optional && feet === 0 && inches === 0) return 0; const value = convertToMm(feet, 'ft') + convertToMm(inches, 'in'); if (value <= 0) throw new Error(`Enter a value for ${id.replaceAll('-', ' ')}.`); return value; };
+  const show = (element: Element | null, visible: boolean) => { if (element instanceof HTMLElement) element.hidden = !visible; };
+  const setUnits = () => { const metric = unitSystem?.value === 'metric'; document.querySelectorAll('.imperial-inputs').forEach((element) => show(element, !metric)); document.querySelectorAll('.metric-input').forEach((element) => show(element, metric)); };
+  const statusLabel = (status: CalculationStatus) => status === 'fit' ? 'PASSED' : status === 'tight' ? 'TIGHT' : 'FAILED';
+  const formatMm = (value: number) => `${(value / 25.4).toFixed(1)} in`;
+  const track = (eventName: string, status: string) => { const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag; if (typeof gtag === 'function') gtag('event', eventName, { calculator_id: kind, result: status }); };
+  const render = (titleText: string, lines: string[], status: CalculationStatus) => { if (!result) return; result.innerHTML = `<h3>${titleText}</h3><p class="result-status result-${status}">${statusLabel(status)}</p><ul>${lines.map((line) => `<li>${line}</li>`).join('')}</ul>`; track('roomfeng_calculator_result', status); };
+  const doorStatus = (orientation: { fits: boolean; widthRemainingMm: number; heightRemainingMm: number }): CalculationStatus => !orientation.fits ? 'fail' : Math.min(orientation.widthRemainingMm, orientation.heightRemainingMm) <= convertToMm(2, 'in') ? 'tight' : 'fit';
+  const readCalculator = () => {
+    if (kind === 'couch') {
+      const output = calculateDoorOpeningFit({ doorWidth: dim(measure('door-width')), doorHeight: dim(measure('door-height')), couchDepth: dim(measure('couch-depth')), couchHeight: dim(measure('couch-height')), removableLegReduction: dim(measure('leg-reduction', true)) });
+      const best = output.passedOrientation ?? output.orientations[0];
+      render(`Opening check: ${statusLabel(output.status)}`, [`Orientation A: ${statusLabel(doorStatus(output.orientations[0]))} with ${formatMm(Math.min(output.orientations[0].widthRemainingMm, output.orientations[0].heightRemainingMm))} remaining.`, `Orientation B: ${statusLabel(doorStatus(output.orientations[1]))} with ${formatMm(Math.min(output.orientations[1].widthRemainingMm, output.orientations[1].heightRemainingMm))} remaining.`, best.fits ? `Best preliminary orientation: ${best.label}.` : 'Both simple orientations fail the entered clear opening.', 'Review door trim, packaging, stairs, turns, elevator clearance and removable parts.'], output.status);
+      return;
+    }
+    if (kind === 'furniture') {
+      const output = calculateFurnitureFit({ roomWidth: dim(measure('room-width')), roomLength: dim(measure('room-length')), furnitureWidth: dim(measure('furniture-width')), furnitureDepth: dim(measure('furniture-depth')), left: dim(measure('clear-left')), right: dim(measure('clear-right')), front: dim(measure('clear-front')), back: dim(measure('clear-back')) });
+      const best = output.orientations.find((orientation) => orientation.requestedClearanceFit) ?? output.orientations.find((orientation) => orientation.physicalFit) ?? output.orientations[0];
+      render(`Furniture fit: ${output.requestedClearanceFit ? 'ACCESS FIT' : output.physicalFit ? 'PHYSICAL FIT ONLY' : 'NO FIT'}`, [`Orientation A: ${output.orientations[0].physicalFit ? 'physical fit' : 'no physical fit'}; ${output.orientations[0].requestedClearanceFit ? 'requested clearances fit' : 'requested clearances do not fit'}.`, `Orientation B: ${output.orientations[1].physicalFit ? 'physical fit' : 'no physical fit'}; ${output.orientations[1].requestedClearanceFit ? 'requested clearances fit' : 'requested clearances do not fit'}.`, `Best tested item envelope: ${formatMm(best.itemWidthMm)} × ${formatMm(best.itemLengthMm)}.`, 'Check doors, windows, drawer travel, chair pullback and the route separately.'], output.requestedClearanceFit ? 'fit' : output.physicalFit ? 'tight' : 'fail');
+      return;
+    }
+    const preset = bedSize?.value ?? 'Queen';
+    const mattress = MATTRESS_DIMENSIONS_IN[preset as keyof typeof MATTRESS_DIMENSIONS_IN] ?? MATTRESS_DIMENSIONS_IN.Queen;
+    const bed = preset === 'Custom' ? { width: measure('custom-bed-width'), depth: measure('custom-bed-length') } : { width: convertToMm(mattress.width, 'in'), depth: convertToMm(mattress.length, 'in') };
+    const output = calculateBedRoomFit({ roomWidth: dim(measure('bed-room-width')), roomLength: dim(measure('bed-room-length')), bedWidth: dim(bed.width), bedLength: dim(bed.depth), left: dim(measure('bed-clear-left')), right: dim(measure('bed-clear-right')), foot: dim(measure('bed-clear-foot')), head: dim(measure('bed-clear-head', true)) });
+    render(`Bed room fit: ${output.requestedClearanceFit ? 'ACCESS FIT' : output.physicalFit ? 'PHYSICAL FIT ONLY' : 'NO FIT'}`, [`Orientation A: ${output.orientations[0].physicalFit ? 'physical fit' : 'no physical fit'}; ${output.orientations[0].requestedClearanceFit ? 'requested access fits' : 'requested access does not fit'}.`, `Orientation B: ${output.orientations[1].physicalFit ? 'physical fit' : 'no physical fit'}; ${output.orientations[1].requestedClearanceFit ? 'requested access fits' : 'requested access does not fit'}.`, `Bed footprint used: ${formatMm(bed.width)} × ${formatMm(bed.depth)}.`, 'Confirm the actual frame, headboard, closet operation, doors, windows and route on site.'], output.requestedClearanceFit ? 'fit' : output.physicalFit ? 'tight' : 'fail');
+  };
+  unitSystem?.addEventListener('change', setUnits);
+  bedSize?.addEventListener('change', () => show(customBedFields, bedSize.value === 'Custom'));
+  runButton?.addEventListener('click', () => { try { readCalculator(); track('roomfeng_calculator_use', 'submitted'); } catch (error) { if (result) result.innerHTML = `<p class="result-status result-fail">CHECK INPUTS</p><p>${error instanceof Error ? error.message : 'Enter valid measurements.'}</p>`; } });
+  setUnits();
+</script>

@@ -1,0 +1,81 @@
+---
+import Layout from './Layout.astro';
+import type { FengShuiPageData } from '../us-seo/content';
+import '../styles/us-seo.css';
+
+interface Props {
+  data: FengShuiPageData;
+}
+
+const { data } = Astro.props;
+const siteUrl = 'https://roomfeng.win';
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: data.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: data.title, description: data.description, url: `${siteUrl}${data.path}`, inLanguage: 'en-US' },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` }, { '@type': 'ListItem', position: 2, name: data.h1, item: `${siteUrl}${data.path}` }] },
+  faqJsonLd,
+];
+---
+
+<Layout title={data.title} description={data.description} canonical={data.path} lang="en" jsonLd={jsonLd} pageType="guide">
+  <section class="us-seo-page">
+    <div class="container">
+      <header class="us-seo-hero">
+        <p class="us-seo-kicker">RoomFeng / traditional feng shui reference</p>
+        <h1>{data.h1}</h1>
+        <p class="lead">{data.lead}</p>
+        <p class="us-seo-caution"><strong>Scope:</strong> This is a traditional feng shui placement guide. It does not perform a feng shui calculation and does not promise health, wealth, relationships, luck or any supernatural outcome.</p>
+      </header>
+
+      <section class="us-seo-section" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">Quick answer</h2>
+        <p class="us-seo-answer">{data.quickAnswer}</p>
+      </section>
+
+      <section class="us-seo-section" aria-labelledby="measurable-heading">
+        <h2 id="measurable-heading">Measurable room constraints</h2>
+        <p>Use the practical checks below to keep the layout usable. These measurements are separate from traditional concepts.</p>
+        <ul class="us-seo-list">{data.measurable.map((item) => <li>{item}</li>)}</ul>
+      </section>
+
+      <section class="us-seo-section" aria-labelledby="traditional-heading">
+        <h2 id="traditional-heading">Traditional feng shui concepts</h2>
+        <p>In traditional feng shui practice, some people prefer the following arrangements. Traditions differ, so treat these as optional cultural perspectives rather than factual predictions.</p>
+        <ul class="us-seo-list">{data.traditional.map((item) => <li>{item}</li>)}</ul>
+      </section>
+
+      <section class="us-seo-section" aria-labelledby="steps-heading">
+        <h2 id="steps-heading">A practical way to compare options</h2>
+        <ol class="us-seo-list">{data.steps.map((item) => <li>{item}</li>)}</ol>
+      </section>
+
+      <section class="us-seo-section" aria-labelledby="mistakes-heading">
+        <h2 id="mistakes-heading">Mistakes to avoid</h2>
+        <ul class="us-seo-list">{data.mistakes.map((item) => <li>{item}</li>)}</ul>
+      </section>
+
+      <section class="cta-band" aria-label="Measurable planning step">
+        <div><h2>Check the room geometry separately</h2><p>The English planner focuses on measurable room fit, openings and clearance. It does not perform feng shui checks.</p></div>
+        <a class="button" href="/en/room-layout-planner/">Open the RoomFeng Room Planner</a>
+      </section>
+
+      <section class="us-seo-section us-seo-faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        {data.faq.map((item) => <article><h3>{item.question}</h3><p>{item.answer}</p></article>)}
+      </section>
+
+      <nav class="us-seo-section us-seo-related" aria-labelledby="related-heading">
+        <h2 id="related-heading">Related RoomFeng pages</h2>
+        <ul>{data.related.map((link) => <li><a href={link.href}>{link.title}</a></li>)}</ul>
+      </nav>
+    </div>
+  </section>
+</Layout>

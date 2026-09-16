@@ -1,0 +1,7 @@
+---
+import UsSeoGuidePage from '../../components/UsSeoGuidePage.astro';
+import { studioPages } from '../../us-seo/content';
+const page = studioPages.find((item) => item.slug === '450-sq-ft-studio-apartment-layout');
+if (!page) throw new Error('Missing 450 sq ft studio page data');
+---
+<UsSeoGuidePage data={page} />

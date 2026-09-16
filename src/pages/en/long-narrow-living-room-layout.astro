@@ -1,0 +1,7 @@
+---
+import UsSeoGuidePage from '../../components/UsSeoGuidePage.astro';
+import { livingRoomPages } from '../../us-seo/content';
+const page = livingRoomPages.find((item) => item.slug === 'long-narrow-living-room-layout');
+if (!page) throw new Error('Missing long narrow living room page data');
+---
+<UsSeoGuidePage data={page} />

@@ -1,0 +1,10 @@
+---
+import UsSeoCalculatorPage from '../../components/UsSeoCalculatorPage.astro';
+const faq = [
+  { question: 'What is the difference between physical fit and access fit?', answer: 'Physical fit checks only the furniture rectangle against the room in two orientations. Access fit adds the left, right, front and back clearances you request, so it is a stricter planning check.' },
+  { question: 'Should I check both orientations?', answer: 'Yes. A rectangular item may fit with its width on either room dimension. The result compares both mathematical orientations, but openings, windows and furniture operation still need a site check.' },
+  { question: 'Does this replace the RoomFeng planner?', answer: 'No. This quick check is useful for one item. Use the planner when you need to place multiple items, doors, windows and fixed obstacles together.' },
+];
+const related = [{ href: '/en/furniture-fit-checker/', title: 'Read the furniture fit guide' }, { href: '/en/bed-room-fit-calculator/', title: 'Check a bed and access clearances' }, { href: '/en/room-layout-planner/', title: 'Open the full room planner' }];
+---
+<UsSeoCalculatorPage kind="furniture" title="Furniture Fit Calculator | RoomFeng" description="Check furniture width, depth and requested clearances against a room in two orientations with a local-first fit calculator." canonical="/en/furniture-fit-calculator/" h1="Furniture fit calculator" lead="Check whether a furniture footprint fits your room, then see whether your requested walking and operating clearances fit too." faq={faq} related={related} />

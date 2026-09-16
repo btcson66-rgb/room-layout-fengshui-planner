@@ -1,0 +1,10 @@
+---
+import UsSeoCalculatorPage from '../../components/UsSeoCalculatorPage.astro';
+const faq = [
+  { question: 'Does this prove my couch will get through the door?', answer: 'No. It is a preliminary two-orientation opening check. Stairs, turns, packaging, wall thickness, door trim, elevator clearance and the carrying angle can change the real result.' },
+  { question: 'What couch measurements should I use?', answer: 'Use the outside depth and height of the couch in its moving configuration. Include arms and fixed parts, and subtract only a removable-leg reduction that you have verified.' },
+  { question: 'What does TIGHT mean?', answer: 'TIGHT means a passing orientation has a remaining width or height margin of 2 inches or less. Treat it as a review condition, not a delivery guarantee.' },
+];
+const related = [{ href: '/en/furniture-fit-calculator/', title: 'Check furniture placement in a room' }, { href: '/en/moving-furniture-size-check/', title: 'Read the moving furniture size guide' }, { href: '/en/room-layout-planner/', title: 'Open the full room planner' }];
+---
+<UsSeoCalculatorPage kind="couch" title="Couch Fit Through Door Calculator | RoomFeng" description="Check whether a couch opening profile fits through a clear door width and height in two preliminary orientations." canonical="/en/couch-fit-through-door-calculator/" h1="Couch fit through door calculator" lead="Compare a couch's measured depth and height with the clear door opening before scheduling delivery. This is an opening-fit screen, not a 3D moving guarantee." faq={faq} related={related} />
