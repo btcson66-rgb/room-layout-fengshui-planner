@@ -9,7 +9,8 @@
 - The pre-existing dirty RoomFeng worktree at `D:\room-layout-fengshui-planner` was not modified, reset, stashed, or overwritten.
 - Commit pushed for review: `3cc6d7d38dd06d08f8aabc34eaf6b30d95b747c1`.
 - Pull request: [#95](https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/95), with GitHub `preflight` passing before merge.
-- At this evidence snapshot, merge, Cloudflare deployment, GSC sitemap submission, and Request Indexing had not yet been performed.
+- PR #95 was merged at `2026-09-16T11:46:30Z` as `685db026864633dc715d6d279a21bdb3c31540a1`.
+- The main-branch deployment workflow completed successfully in [run 35092133522](https://github.com/btcson66-rgb/room-layout-fengshui-planner/actions/runs/35092133522). Its existing sitemap step completed; no Request Indexing action was performed.
 
 ## Production baseline captured before changes
 
@@ -87,4 +88,16 @@ After the expansion implementation, the static build produced 1,457 pages and a 
 [us-seo-audit] PASS: 20 intents, 17 new URLs, 1447 sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.
 ```
 
-Production results remain unevaluated until an explicitly authorized deploy/readback. GSC indexing, impressions, ranking, traffic, conversions, and hosted rendering are not inferred from this local build.
+## Final production readback
+
+The post-merge public readback was performed on 2026-09-16 after deployment:
+
+| Check | Result |
+| --- | --- |
+| Target URL smoke | 20/20 target intent URLs returned HTTP 200 with a unique title, H1, self-canonical, and no `noindex`. |
+| Critical existing pages | Homepage, planner, room-size templates, studio pillar, and moving OS returned HTTP 200 with self-canonical metadata. |
+| Public sitemap | Sitemap index HTTP 200; one child sitemap; 1,447 URLs; zero duplicate `<loc>` values; all 20 target URLs present. |
+| Robots | `/robots.txt` HTTP 200 with the production sitemap index reference. |
+| Calculator browser smoke | 3/3 calculators executed client-side with a result status, no page errors, and no horizontal overflow at desktop viewport. |
+
+This proves deployment and public HTML/browser readback only. GSC indexing state, impressions, ranking, traffic, and conversions remain unevaluated and are not inferred from this deployment. No Request Indexing action was performed.
