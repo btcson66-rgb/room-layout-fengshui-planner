@@ -66,8 +66,6 @@ const fields = kind === 'couch'
       <nav class="card related-links" aria-label="Related RoomFeng guides"><h2>Related guides</h2><ul>{related.map((link) => <li><a href={link.href}>{link.title}</a></li>)}</ul></nav>
     </div>
   </section>
-</Layout>
-
 <script>
   import { calculateBedRoomFit, calculateDoorOpeningFit, calculateFurnitureFit, MATTRESS_DIMENSIONS_IN } from '../us-seo/calculators';
   import { convertToMm } from '../small-space/units';
@@ -113,3 +111,5 @@ const fields = kind === 'couch'
   runButton?.addEventListener('click', () => { try { readCalculator(); track('roomfeng_calculator_use', 'submitted'); } catch (error) { if (result) result.innerHTML = `<p class="result-status result-fail">CHECK INPUTS</p><p>${error instanceof Error ? error.message : 'Enter valid measurements.'}</p>`; } });
   setUnits();
 </script>
+
+</Layout>
