@@ -5,9 +5,11 @@
 - Date: 2026-09-16, Asia/Taipei.
 - Scope: RoomFeng US-English SEO expansion for `https://roomfeng.win`.
 - Implementation branch: `seo/roomfeng-us-expansion-001`.
-- Isolated base: `5ac235f7d830fd5ce11a58eb3cfbd775c80dd4dc` (`feat(roomfeng): launch small space layout vault`).
+- Isolated base: `c4c90eeebe3e36bf54c230e71dfbf0909d6d3e83` (current `origin/main`; same production-aligned tree after rebase).
 - The pre-existing dirty RoomFeng worktree at `D:\room-layout-fengshui-planner` was not modified, reset, stashed, or overwritten.
-- No commit, push, merge, Cloudflare deployment, GSC submission, or Request Indexing action was performed in this work order.
+- Commit pushed for review: `3cc6d7d38dd06d08f8aabc34eaf6b30d95b747c1`.
+- Pull request: [#95](https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/95), with GitHub `preflight` passing before merge.
+- At this evidence snapshot, merge, Cloudflare deployment, GSC sitemap submission, and Request Indexing had not yet been performed.
 
 ## Production baseline captured before changes
 
