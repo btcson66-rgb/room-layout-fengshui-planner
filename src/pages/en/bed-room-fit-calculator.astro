@@ -1,0 +1,10 @@
+---
+import UsSeoCalculatorPage from '../../components/UsSeoCalculatorPage.astro';
+const faq = [
+  { question: 'Which mattress sizes does this bed room fit calculator support?', answer: 'It includes Twin, Twin XL, Full, Queen, King and California King US mattress presets, plus Custom frame dimensions. Presets are mattress footprints; actual frames can be larger.' },
+  { question: 'What clearances should I enter around a bed?', answer: 'Enter the clearances you actually need for bedside access and getting around the foot of the bed. The calculator does not declare a universal code minimum or accessibility standard.' },
+  { question: 'Can a bed fit physically but fail the access check?', answer: 'Yes. The mattress or frame rectangle may fit while the requested side, foot or head clearances do not. That distinction is why the calculator reports both results.' },
+];
+const related = [{ href: '/en/small-bedroom-layout-planner/', title: 'Plan a small bedroom' }, { href: '/en/furniture-fit-calculator/', title: 'Check another furniture item' }, { href: '/en/room-layout-planner/', title: 'Open the full room planner' }];
+---
+<UsSeoCalculatorPage kind="bed" title="Bed Room Fit Calculator | RoomFeng" description="Check US mattress or custom bed-frame dimensions against room size and requested side, foot and head clearances." canonical="/en/bed-room-fit-calculator/" h1="Bed room fit calculator" lead="Choose a common US mattress size or enter the actual frame, then compare physical fit with the access space you want around the bed." faq={faq} related={related} />

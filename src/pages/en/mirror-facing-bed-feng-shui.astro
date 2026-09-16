@@ -1,0 +1,7 @@
+---
+import UsSeoFengShuiPage from '../../components/UsSeoFengShuiPage.astro';
+import { fengShuiPages } from '../../us-seo/content';
+const page = fengShuiPages.find((item) => item.slug === 'mirror-facing-bed-feng-shui');
+if (!page) throw new Error('Missing mirror facing bed feng shui page data');
+---
+<UsSeoFengShuiPage data={page} />
