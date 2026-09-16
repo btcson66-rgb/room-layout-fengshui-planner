@@ -198,7 +198,10 @@ export function calculateDoorOpeningFit(input: DoorOpeningInput): DoorOpeningRes
   const couchDepthMm = toPositiveMm(input.couchDepth, 'Couch depth');
   const couchHeightMm = toPositiveMm(input.couchHeight, 'Couch height');
   const removableLegReductionMm = toNonNegativeMm(input.removableLegReduction, 'Removable leg reduction');
-  const effectiveHeightMm = Math.max(1, couchHeightMm - removableLegReductionMm);
+  if (removableLegReductionMm >= couchHeightMm) {
+    throw new RangeError('Removable leg reduction must be smaller than couch height.');
+  }
+  const effectiveHeightMm = couchHeightMm - removableLegReductionMm;
   const orientations: DoorOrientationFit[] = [
     {
       label: 'Orientation A',

@@ -54,6 +54,14 @@ test('door opening check tests both orientations and reports tight openings', ()
   assert.equal(failed.passedOrientation, null);
 });
 
+test('removable-leg reduction must be smaller than couch height', () => {
+  const input = (reduction) => ({ doorWidth: d(40), doorHeight: d(80), couchDepth: d(34), couchHeight: d(30), removableLegReduction: d(reduction) });
+  assert.throws(() => calculateDoorOpeningFit(input(30)), /Removable leg reduction must be smaller than couch height\./);
+  assert.throws(() => calculateDoorOpeningFit(input(31)), /Removable leg reduction must be smaller than couch height\./);
+  const valid = calculateDoorOpeningFit(input(5));
+  assert.ok(['fit', 'tight', 'fail'].includes(valid.status));
+});
+
 test('boundary equality fits and a slightly larger item fails', () => {
   const exact = calculateFurnitureFit({ roomWidth: d(60), roomLength: d(80), furnitureWidth: d(60), furnitureDepth: d(80), left: d(0), right: d(0), front: d(0), back: d(0) });
   assert.equal(exact.physicalFit, true);
