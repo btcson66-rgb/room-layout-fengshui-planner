@@ -92,6 +92,19 @@ for (const path of ['/en/layout-guides/10x10-bedroom-layout/', '/en/layout-guide
   assert.ok(!existsSync(fileFor(path.replace('/layout-guides/', '/'))), `${path}: duplicate flat route unexpectedly built`);
 }
 
+const preExistingEnglishInboundTargets = [
+  '/en/long-narrow-living-room-layout/',
+  '/en/awkward-living-room-layout/',
+  '/en/living-room-layout-with-fireplace-and-tv/',
+  '/en/feng-shui-bed-placement/',
+  '/en/bed-facing-door-feng-shui/',
+  '/en/mirror-facing-bed-feng-shui/',
+];
+const englishHomepage = htmlFor('/en/');
+for (const target of preExistingEnglishInboundTargets) {
+  assert.ok(englishHomepage.includes(`href="${target}"`), `pre-existing English homepage inbound link missing: ${target}`);
+}
+
 const sitemapFiles = readdirSync(dist).filter((name) => /^sitemap-\d+\.xml$/.test(name));
 assert.ok(sitemapFiles.length > 0, 'sitemap child file missing');
 const sitemap = sitemapFiles.map((name) => readFileSync(join(dist, name), 'utf8')).join('\n');

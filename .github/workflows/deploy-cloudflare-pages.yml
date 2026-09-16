@@ -75,6 +75,10 @@ jobs:
 
       - run: npm run audit:content
 
+      - run: npm run test:us-seo
+
+      - run: npm run audit:us-seo
+
       - run: npm run test:www-redirect
 
       - name: Verify PRODUCT-002 analytics routing

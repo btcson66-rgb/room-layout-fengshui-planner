@@ -25,7 +25,7 @@ const jsonLd = [
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` }, { '@type': 'ListItem', position: 2, name: calculatorName, item: `${siteUrl}${canonical}` }] },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
 ];
-const bedOptions = Object.entries(MATTRESS_DIMENSIONS_IN).map(([key, value]) => ({ key, label: key.replace(/([A-Z])/g, ' $1').replace(/^./, (letter) => letter.toUpperCase()), width: value.width, length: value.length }));
+const bedOptions = Object.entries(MATTRESS_DIMENSIONS_IN).map(([key, value]) => ({ key, label: key, width: value.width, length: value.length }));
 const inputId = (id: string, unit: 'ft' | 'in' | 'cm') => `${id}-${unit}`;
 const fields = kind === 'couch'
   ? [['door-width', 'Clear door width', '3', ''], ['door-height', 'Clear door height', '6', '8'], ['couch-depth', 'Couch depth', '3', ''], ['couch-height', 'Couch height', '3', ''], ['leg-reduction', 'Optional removable-leg reduction', '', '0']]

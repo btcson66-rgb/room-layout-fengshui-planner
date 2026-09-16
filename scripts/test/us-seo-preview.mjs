@@ -38,6 +38,16 @@ const visit = async (page, path, expected = null) => {
   if (path.includes('calculator')) {
     await page.locator('#run-calculation').click();
     assert.ok((await page.locator('#calculation-result').innerText()).length > 20, `${path}: calculator did not render a result`);
+    if (path === '/en/bed-room-fit-calculator/') {
+      assert.equal(await page.locator('#bed-size option[value="Twin XL"]').textContent(), 'Twin XL — 38 × 80 in mattress', `${path}: Twin XL label changed`);
+      assert.equal(await page.locator('#bed-size option[value="California King"]').textContent(), 'California King — 72 × 84 in mattress', `${path}: California King label changed`);
+    }
+    if (path === '/en/couch-fit-through-door-calculator/') {
+      await page.locator('#leg-reduction-ft').fill('3');
+      await page.locator('#leg-reduction-in').fill('0');
+      await page.locator('#run-calculation').click();
+      assert.match(await page.locator('#calculation-result').innerText(), /Removable leg reduction must be smaller than couch height\./, `${path}: invalid leg reduction was not rejected`);
+    }
     await page.locator('#unit-system').selectOption('metric');
     assert.ok(await page.locator('.metric-input:not([hidden])').count() > 0, `${path}: metric toggle did not expose inputs`);
   }
@@ -45,6 +55,17 @@ const visit = async (page, path, expected = null) => {
     const storage = await page.evaluate(() => { localStorage.setItem('__roomfeng_preview_check', 'ok'); const value = localStorage.getItem('__roomfeng_preview_check'); localStorage.removeItem('__roomfeng_preview_check'); return value; });
     assert.equal(storage, 'ok', `${path}: localStorage unavailable`);
     assert.ok(await page.locator('[data-planner]').count() === 1, `${path}: planner root missing`);
+    assert.ok(await page.getByText('Structural checks', { exact: true }).count() >= 1, `${path}: structural checks missing`);
+  }
+  if (path === '/en/') {
+    for (const target of [
+      '/en/long-narrow-living-room-layout/',
+      '/en/awkward-living-room-layout/',
+      '/en/living-room-layout-with-fireplace-and-tv/',
+      '/en/feng-shui-bed-placement/',
+      '/en/bed-facing-door-feng-shui/',
+      '/en/mirror-facing-bed-feng-shui/',
+    ]) assert.ok(await page.locator(`a[href="${target}"]`).count() >= 1, `${path}: missing inbound reference link ${target}`);
   }
   if (pageErrors.length) errors.push(`${path}: ${pageErrors.join('; ')}`);
 };
