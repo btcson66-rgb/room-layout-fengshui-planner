@@ -60,7 +60,7 @@ PR：#100 ᐧ branch `codex/roomfeng-uiux-20260919`
 - Self-Critique：prototype diagrams are deliberately schematic measured SVGs, not AI/stock room imagery; PASS.
 - Result：PASS。
 
-## Loop 4 — authoritative final validation
+## Loop 4 — Review-01 authoritative validation (historical, superseded)
 
 This is the final gate. It is rerun after this document commit at the exact final head returned by `git rev-parse HEAD`; no source changes are allowed afterward.
 
@@ -75,3 +75,31 @@ This is the final gate. It is rerun after this document commit at the exact fina
 - Performance：PASS — local static HTTP smoke returned 200 for all six routes, 4.270–24.747 ms in the recorded run; no new remote assets.
 - Self-Critique：the only historical conflict is 1,153/995,810; final authority is 1,457/1,447/1,000,350 on the exact final head. PR remains OPEN / UNMERGED / UNDEPLOYED.
 - Result：PASS。
+
+## Loop 5 — Review-02 blocker repair
+
+- Observe：Review 02 明確指出 exact-dimension handoff、measured SVG、Furniture Fit 計算、真實 PDF/PNG output、rail panel routing、SEO H1 order、Hero measurement facts、newsletter placement、measurement-first nav、footer copy 與 authoritative PR numbers 仍有 blocker。
+- Plan：先建立一份共用 `roomfeng.planner.quick-handoff/v1` payload，所有 preset、Bedroom、Studio、Furniture Fit 都從同一份 schema 送入 Planner；再把 Fit calculation、measured SVG、export metadata/output 與 rail drawer routing 做成可測試的 source contracts；保留既有 canonical、hreflang、robots、sitemap、indexability、payment、entitlement 與 analytics 邊界。
+- Implement：新增 `src/planner/quick-handoff.ts`、`src/tools/furniture-fit.ts`、`src/components/MeasuredPlan.astro`、`src/components/PlannerHandoffLink.astro`、`src/components/FurnitureFitTool.astro`；更新 `src/planner/planner.ts`、`src/planner/export.ts`、Furniture Fit / Bedroom / Studio / Homepage / Header / Footer / planner styles；新增 `scripts/test/uiux-review-03.test.mjs` 與 `scripts/test/uiux-review-03.browser.mjs`。
+- Build：`npm.cmd run check` → `217 files, 0 errors, 0 warnings, 0 hints`；static build → `1,457 page(s) built`；Vite 仍只出現既有 >500 kB chunk warning，未新增 remote image/font dependency。
+- Functional：`npm.cmd run test:uiux-review` → `5/5 PASS`；browser smoke → `PASS`，驗證 exact payload（300 × 300 / 105 × 188、150 × 190、180 × 85）、Furniture Fit physical/requested clearance、Bedroom 248 × 400、Studio 560 × 500、rail Room/Furniture/Templates/Checks、mobile Report drawer 與 Guide template。
+- Visual QA：產生 `docs/uiux/evidence/review-02/` 截圖；Homepage 375/390/768/1024/1280/1440、Furniture Fit、Planner handoff、Bedroom、Studio、Guide、desktop export preview、mobile report 均可讀，沒有 AI/stock room image。
+- SEO Parity：content audit 重新 PASS：`1,315 sourceArticles / 1,315 reviewReady / 0 heldNoindex / 1,447 sitemapPages / 1,000,350 checks / 0 failed`；修正英文 nav `/en/blog/` broken link 為既有 `/en/layout-guides/10x10-bedroom-layout/`；未改 canonical、hreflang、robots、sitemap architecture 或 indexability。
+- Accessibility：保留 skip link、focus visible、keyboard furniture selection、`aria-live` / `role=status`、reduced motion；browser smoke 覆蓋 H1、labelled SVG、mobile drawer 與 required viewport matrix；PASS。
+- Performance：browser navigation evidence 寫入 `docs/uiux/evidence/review-02/performance.json`；local DOMContentLoaded/load 約 136–255 ms / 137–255 ms，transferSize 34,055–59,771 bytes；bundle comparison 另在 Loop 6 authority set 記錄；local Lighthouse unavailable because package is not installed and `npx --no-install lighthouse` refused missing package。
+- Self-Critique：本輪仍沒有真正 production/public URL readback，也沒有將 gated export 變成付款或 entitlement 流程；實際 PNG/PDF 的輸出內容已在 export module 改為含 RoomFeng title/date/room/area/items/checks/disclaimer，並以 metadata contract test 鎖定。
+- Result：PASS。
+
+## Loop 6 — single-head authoritative closeout
+
+- Observe：完成 source、test、screenshot、documentation 與 protected-route diff readback；PR #100 仍只允許同一 branch 更新，禁止 merge/deploy。
+- Plan：在所有 docs/evidence commit 完成後，以同一個 `git rev-parse HEAD` 執行一次 `npm.cmd run preflight`，重讀 build page count、sitemap count、content audit totals、tests、bundle delta、browser/performance evidence、SEO parity 與 accessibility；最後以 GitHub PR head/CI readback 對齊，不混用歷史數字。
+- Implement：不再新增 production、canonical、hreflang、robots、sitemap、payment、entitlement 或 analytics mutation；只更新本地 review package 與同一 PR body authority set。
+- Build：authority set 以 exact final head 重跑並記錄 `1,457 build pages`、`1,447 sitemap pages`、`1,315 source/review-ready articles`、`1,000,350 checks`、`0 failures`、`217 Astro files 0/0/0`；bundle comparison：baseline `31 JS / 1,924,581 bytes / 929,901 max; 8 CSS / 71,829 bytes / 17,760 max` → current `34 JS / 1,934,629 bytes / 929,901 max; 9 CSS / 78,470 bytes / 17,760 max`（JS +10,048 / +0.52%；CSS +6,641 / +9.25%；最大 chunk 未增加）。Vite >500 kB warning 仍存在，但沒有被當成 PASS 掩蓋。
+- Functional：authority tests must remain `uiux-review 5/5`, `browser smoke PASS`, `test:scripts 35/35`, `www redirect 4/4`, `moving-os 26/26`; export output is local gated download behavior, not a payment claim。
+- Visual QA：authority screenshots are under `docs/uiux/evidence/review-02/`; required viewports are explicitly listed in `README.md` and the browser script.
+- SEO Parity：PASS only when audit has 0 failures and the protected route/source diff remains empty for canonical/hreflang/robots/sitemap/indexability/payment/entitlement/production analytics.
+- Accessibility：PASS only when check/browser evidence preserves skip link, focus, keyboard item selection, live status, reduced-motion and no horizontal overflow at 375/390/768/1024/1280/1440.
+- Performance：record local navigation JSON and bundle-size delta; report Lighthouse as unavailable rather than inventing a score. This is local evidence, not a production performance claim.
+- Self-Critique：the old `1,153 / 995,810` pair is historical only; no merged/deployed/public outcome is claimed. Any remaining limitation is reported explicitly in `ROOMFENG-UIUX-LOCAL-REVIEW-002.md`.
+- Result：PASS only after the final exact-head preflight and PR readback; otherwise FAIL and repeat Loop 6.

@@ -4,6 +4,7 @@ import { defaultDesign, makeItem, templateDesigns } from './templates';
 import type { Design, FurnitureItem, FurnitureType, PlannerOptions, PlannerStrings, Unit } from './types';
 import { formatArea, fromCm, toCm } from './units';
 import { readPlannerHandoff } from '../small-space/handoff';
+import { readQuickPlannerHandoff } from './quick-handoff';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DEFAULT_STORAGE_KEY = 'room-layout-planner:draft';
@@ -62,6 +63,8 @@ function presetFromLocation(strings: PlannerStrings): Design | null {
 function loadDesign(storageKey: string, strings: PlannerStrings): Design {
   const handoff = readPlannerHandoff();
   if (handoff) return cloneDesign(handoff);
+  const quickHandoff = readQuickPlannerHandoff(strings);
+  if (quickHandoff) return cloneDesign(quickHandoff);
   const preset = presetFromLocation(strings);
   if (preset) return preset;
   const stored = localStorage.getItem(storageKey);
@@ -364,8 +367,10 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
         <button type="button" class="planner-rail-button" data-planner-open="checks" aria-controls="planner-inspector" aria-expanded="false"><span aria-hidden="true">✓</span><span>檢查</span></button>
       </nav>
       <section class="planner-drawer" id="planner-drawer" hidden aria-label="Planner setup">
-        <div class="planner-drawer-header"><div><p class="eyebrow">SETUP</p><h2>設定與家具</h2></div><button type="button" class="planner-drawer-close" data-planner-close aria-label="關閉設定面板">×</button></div>
+        <div class="planner-drawer-header"><div><p class="eyebrow">SETUP</p><h2 data-planner-drawer-title>房間設定</h2></div><button type="button" class="planner-drawer-close" data-planner-close aria-label="關閉設定面板">×</button></div>
         <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
+        <section class="planner-panel planner-drawer-checks" data-planner-panel="checks" hidden aria-label="Planner checks"></section>
+        <section class="planner-panel planner-drawer-report" data-planner-panel="report" hidden aria-label="Export report"></section>
       </section>
       <section class="planner-canvas-wrap" aria-label="Room plan">
         <div class="planner-canvas-header"><div class="planner-area-line"></div><span class="planner-canvas-hint">拖曳家具 · 點選後調整</span></div>
@@ -375,7 +380,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
           <button type="button" class="planner-mobile-action" data-planner-open="room">房間</button>
           <button type="button" class="planner-mobile-action" data-planner-open="furniture">加家具</button>
           <button type="button" class="planner-mobile-action" data-planner-open="checks">看檢查</button>
-          <button type="button" class="planner-mobile-action" data-planner-scroll="report">報告</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="report">報告</button>
         </div>
       </section>
       <aside class="planner-panel planner-side" id="planner-inspector" aria-label="Planner checks">
@@ -394,36 +399,54 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const structural = container.querySelector<HTMLElement>('.planner-structural');
   const feng = container.querySelector<HTMLElement>('.planner-feng');
   const drawer = container.querySelector<HTMLElement>('.planner-drawer');
-  if (!controls || !svg || !areaLine || !reportPreview || !selection || !structural || !feng || !drawer) return;
+  const drawerChecks = container.querySelector<HTMLElement>('.planner-drawer-checks');
+  const drawerReport = container.querySelector<HTMLElement>('.planner-drawer-report');
+  const drawerTitle = container.querySelector<HTMLElement>('[data-planner-drawer-title]');
+  if (!controls || !svg || !areaLine || !reportPreview || !selection || !structural || !feng || !drawer || !drawerChecks || !drawerReport || !drawerTitle) return;
   const selectionPanel = selection;
+  let lastTrigger: HTMLButtonElement | null = null;
+  const panelTitles: Record<string, string> = {
+    room: '房間設定',
+    furniture: '加入家具',
+    templates: '範例格局',
+    checks: '尺寸檢查',
+    report: '匯出報告',
+  };
 
   const closeDrawer = (): void => {
     drawer.hidden = true;
+    drawer.dataset.panel = '';
     container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => button.setAttribute('aria-expanded', 'false'));
+    lastTrigger?.focus({ preventScroll: true });
   };
 
   const openDrawer = (panel: string): void => {
     drawer.hidden = false;
     drawer.dataset.panel = panel;
+    drawerTitle.textContent = panelTitles[panel] ?? 'Planner';
+    controls.querySelectorAll<HTMLElement>('[data-planner-panel]').forEach((section) => {
+      section.hidden = section.dataset.plannerPanel !== panel;
+    });
+    drawerChecks.hidden = panel !== 'checks';
+    drawerReport.hidden = panel !== 'report';
     container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => button.setAttribute('aria-expanded', button.dataset.plannerOpen === panel ? 'true' : 'false'));
-    const focusTarget = panel === 'checks' ? container.querySelector<HTMLElement>('.planner-side') : controls.querySelector<HTMLElement>('input, select, button');
+    const focusTarget = panel === 'checks' ? drawerChecks.querySelector<HTMLElement>('a, button, input, select') : panel === 'report' ? drawerReport.querySelector<HTMLElement>('a, button, input, select') : controls.querySelector<HTMLElement>(`[data-planner-panel="${panel}"] input, [data-planner-panel="${panel}"] select, [data-planner-panel="${panel}"] button`);
     focusTarget?.focus({ preventScroll: true });
   };
 
   container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => {
     button.addEventListener('click', () => {
-      if (button.dataset.plannerOpen === 'checks') {
-        closeDrawer();
-        container.querySelector<HTMLElement>('.planner-side')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        return;
-      }
+      lastTrigger = button;
       if (!drawer.hidden && drawer.dataset.panel === button.dataset.plannerOpen) closeDrawer();
       else openDrawer(button.dataset.plannerOpen ?? 'room');
     });
   });
   container.querySelector<HTMLButtonElement>('[data-planner-close]')?.addEventListener('click', closeDrawer);
-  container.querySelector<HTMLButtonElement>('[data-planner-scroll="report"]')?.addEventListener('click', () => {
-    reportPreview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  drawer.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeDrawer();
+    }
   });
 
   const saveNow = (): void => {
@@ -444,8 +467,11 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     }
     areaLine.textContent = `${strings.area}: ${formatArea(state.design.room.w, state.design.room.h, state.design.room.unit)}`;
     renderReportPreview(reportPreview, state, strings);
+    renderReportPreview(drawerReport, state, strings);
     renderSelection();
-    renderWarnings(structural, strings.checksTitle, runStructuralChecks(state.design, strings), strings.noWarnings);
+    const structuralWarnings = runStructuralChecks(state.design, strings);
+    renderWarnings(structural, strings.checksTitle, structuralWarnings, strings.noWarnings);
+    renderWarnings(drawerChecks, strings.checksTitle, structuralWarnings, strings.noWarnings);
     if (options.fengShui) {
       renderWarnings(feng, strings.fengShui.sectionTitle, runFengShuiChecks(state.design, strings), strings.fengShui.noWarnings, strings.disclaimerLink);
     } else {
@@ -472,6 +498,19 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   const renderControls = (): void => {
     controls.replaceChildren();
+    const makePanel = (key: string, title: string): HTMLElement => {
+      const panel = document.createElement('section');
+      panel.dataset.plannerPanel = key;
+      panel.className = 'planner-control-section';
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+      panel.append(heading);
+      return panel;
+    };
+    const roomPanel = makePanel('room', '房間尺寸');
+    const furniturePanel = makePanel('furniture', '加入家具');
+    const templatesPanel = makePanel('templates', strings.templatesLabel);
+
     const roomGrid = document.createElement('div');
     roomGrid.className = 'planner-control-grid';
     const lengthInput = createNumberInput(fromCm(state.design.room.h, state.design.room.unit), state.design.room.unit === 'cm' ? 1 : 0.1);
@@ -492,9 +531,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       rerender();
     });
     roomGrid.append(createLabeledInput(strings.roomLength, lengthInput), createLabeledInput(strings.roomWidth, widthInput), createLabeledInput(strings.unit, unitSelect));
+    roomPanel.append(roomGrid);
 
-    const paletteTitle = document.createElement('h3');
-    paletteTitle.textContent = strings.palette;
     const palette = document.createElement('div');
     palette.className = 'planner-button-row';
     FURNITURE_TYPES.forEach((type) => {
@@ -510,9 +548,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       });
       palette.append(button);
     });
+    furniturePanel.append(palette);
 
-    const customTitle = document.createElement('h3');
-    customTitle.textContent = strings.customItem.label;
     const customForm = document.createElement('div');
     customForm.className = 'planner-custom-form';
     const customNameInput = document.createElement('input');
@@ -540,14 +577,10 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     });
     const customSizeRow = document.createElement('div');
     customSizeRow.className = 'planner-custom-size-row';
-    customSizeRow.append(
-      createLabeledInput(strings.width, customWInput),
-      createLabeledInput(strings.height, customHInput),
-    );
+    customSizeRow.append(createLabeledInput(strings.width, customWInput), createLabeledInput(strings.height, customHInput));
     customForm.append(customNameInput, customSizeRow, customAddBtn);
+    furniturePanel.append(customForm);
 
-    const templateTitle = document.createElement('h3');
-    templateTitle.textContent = strings.templatesLabel;
     const templates = document.createElement('div');
     templates.className = 'planner-button-row';
     const presetMap = templateDesigns(strings.furniture);
@@ -564,6 +597,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       });
       templates.append(button);
     });
+    templatesPanel.append(templates);
 
     const actions = document.createElement('div');
     actions.className = 'planner-button-row';
@@ -576,7 +610,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     pngButton.type = 'button';
     pngButton.className = 'button secondary planner-small-button';
     pngButton.textContent = strings.actions.exportPng;
-    pngButton.addEventListener('click', () => void exportPng(svg, actions));
+    pngButton.addEventListener('click', () => void exportPng(svg, actions, state.design, strings));
     const pdfButton = document.createElement('button');
     pdfButton.type = 'button';
     pdfButton.className = 'button secondary planner-small-button';
@@ -600,8 +634,18 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     status.setAttribute('role', 'status');
     status.setAttribute('aria-live', 'polite');
     actions.append(saveButton, pngButton, pdfButton, clearButton, status);
-
-    controls.append(roomGrid, paletteTitle, palette, customTitle, customForm, templateTitle, templates, actions);
+    const actionHeading = document.createElement('h3');
+    actionHeading.textContent = '儲存與匯出';
+    roomPanel.append(actionHeading, actions);
+    controls.append(roomPanel, furniturePanel, templatesPanel);
+    if (!drawer.hidden && drawer.dataset.panel) {
+      const activePanel = drawer.dataset.panel;
+      controls.querySelectorAll<HTMLElement>('[data-planner-panel]').forEach((section) => {
+        section.hidden = section.dataset.plannerPanel !== activePanel;
+      });
+      drawerChecks.hidden = activePanel !== 'checks';
+      drawerReport.hidden = activePanel !== 'report';
+    }
   };
 
   function renderSelection(): void {

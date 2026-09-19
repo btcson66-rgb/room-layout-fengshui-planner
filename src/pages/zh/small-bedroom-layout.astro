@@ -4,6 +4,8 @@ import AdSlot from '../../components/AdSlot.astro';
 import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MeasuredPlan from '../../components/MeasuredPlan.astro';
+import PlannerHandoffLink from '../../components/PlannerHandoffLink.astro';
 import '../../styles/uiux-prototypes.css';
 
 const title = '小房間配置指南｜床、書桌、衣櫃怎麼放才不擠';
@@ -50,28 +52,35 @@ const relatedArticles = [
   { href: '/zh/blog/nordic-small-room-layout/', title: '北歐風小房間配置' },
   { href: '/zh/blog/tatami-platform-bedroom/', title: '和室架高臥室配置' },
 ];
+const bedroomItems = [
+  { id: 'bedroom-bed', type: 'bed' as const, label: '單人床', widthCm: 105, depthCm: 188, xCm: 16, yCm: 45, rotationDeg: 0 },
+  { id: 'bedroom-desk', type: 'desk' as const, label: '窄桌', widthCm: 100, depthCm: 45, xCm: 132, yCm: 45, rotationDeg: 0 },
+];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
+      <header class="landing-intro card">
+        <p class="eyebrow">BEDROOM SIZE · MEASURED START</p>
+        <h1>小房間配置指南｜床、書桌、衣櫃怎麼放才不擠</h1>
+        <p class="lead">先從一個 248 × 400 cm 的房間起點看床、窄桌與 60 cm 椅後參考，再把你量到的外框帶進 Planner。</p>
+      </header>
       <section class="measured-landing" aria-labelledby="bedroom-prototype-heading">
-        <header class="measured-landing-header"><div><p class="eyebrow">BEDROOM SIZE · MEASURED START</p><h2 id="bedroom-prototype-heading">3 坪小房間：先保留每天會走的路</h2></div><p>這是一個尺寸起點，不是通用保證。把房間內徑、床架外框與門片開啟區重新量過，再帶進 Planner。</p></header>
+        <header class="measured-landing-header"><div><h2 id="bedroom-prototype-heading">3 坪小房間：先保留每天會走的路</h2></div><p>這是一個尺寸起點，不是通用保證。SVG 使用同一個公分座標系繪製房間與家具；把房間內徑、床架外框與門片開啟區重新量過，再帶進 Planner。</p></header>
         <div class="measured-layout-grid">
           <div class="measured-plan" aria-label="3 坪小房間尺寸示意圖">
-            <svg viewBox="0 0 600 390" role="img" aria-label="248 x 400 公分小房間，包含單人床、窄桌與走道">
-              <rect class="wall" x="70" y="48" width="410" height="280" />
-              <rect class="bed" x="105" y="90" width="126" height="235" /><text x="137" y="207">105 × 188</text><text x="145" y="226">BED</text>
-              <rect class="desk" x="338" y="90" width="76" height="98" /><text x="350" y="142">100 × 45</text><text x="361" y="159">DESK</text>
-              <path class="route" d="M275 306 C284 250 286 191 286 86" /><path class="dimension" d="M70 24h410M70 17v14M480 17v14" /><text x="258" y="18">248 cm</text><path class="dimension" d="M510 48v280M503 48h14M503 328h14" /><text x="537" y="194" transform="rotate(90 537 194)">400 cm</text>
-            </svg>
+            <MeasuredPlan roomWidthCm={248} roomLengthCm={400} ariaLabel="248 x 400 公分小房間，包含 105 x 188 單人床、100 x 45 窄桌與走道" furniture={[
+              { x: 16, y: 45, width: 105, depth: 188, label: 'BED', className: 'bed' },
+              { x: 132, y: 45, width: 100, depth: 45, label: 'DESK', className: 'desk' },
+            ]} route="M 124 370 L 124 250 L 124 235" />
           </div>
-          <div class="measured-facts"><dl><dt>房間內徑</dt><dd>248 × 400 cm</dd><dt>睡眠錨點</dt><dd>105 × 188 cm</dd><dt>窄桌</dt><dd>100 × 45 cm</dd><dt>椅後參考</dt><dd>約 60 cm</dd></dl><div class="measured-check"><strong>先檢查這件事</strong><span>床與桌之間的固定淨寬約 113 cm；椅子後退後，仍要在你的實際門窗位置重新確認。</span></div><a class="button" href="/zh/room-layout-planner/?preset=student">Try this size in Planner</a></div>
+          <div class="measured-facts"><dl><dt>房間內徑</dt><dd>248 × 400 cm</dd><dt>睡眠錨點</dt><dd>105 × 188 cm</dd><dt>窄桌</dt><dd>100 × 45 cm</dd><dt>椅後參考</dt><dd>約 60 cm</dd></dl><div class="measured-check"><strong>先檢查這件事</strong><span>床與桌之間的固定淨寬約 113 cm；椅子後退後，仍要在你的實際門窗位置重新確認。</span></div><PlannerHandoffLink href="/zh/room-layout-planner/?rf_quick_handoff=1" label="Try this size in Planner" roomWidthCm={248} roomLengthCm={400} source="small-bedroom-layout" items={bedroomItems} /></div>
         </div>
         <div class="measured-flow"><div><span>01 · MEASURE</span><strong>量內徑與障礙物</strong></div><div><span>02 · PLAN</span><strong>先放最大件床</strong></div><div><span>03 · CHECK</span><strong>看椅後與門口</strong></div></div>
       </section>
-      <article class="card">
-        <h1>小房間配置指南</h1>
+      <article class="card seo-article">
+        <h2>小房間家具配置原則</h2>
         <p class="lead">小房間不是只能把家具塞滿，而是要先保留每天會用到的走道、開門、坐下與收納動作。</p>
         <p>小臥室最常見的問題，是床、書桌、衣櫃三件家具各自尺寸都合理，放在一起卻互相打架。床擺下後衣櫃門打不開，書桌椅子一拉就撞到床尾，門口進來第一步就被床角擋住。要讓小房間好用，第一步不是找最漂亮的擺法，而是把必要動作列出來：進門、上下床、坐到桌前、打開衣櫃、拿行李、打掃地面。只要其中一個動作每天都卡，房間就會很快變亂。</p>
         <p>規劃時可以先決定床的位置，因為床通常最大，也最不容易頻繁移動。單人床可考慮長邊靠牆，雙人床若兩人使用，至少要思考其中一側上下床是否可接受。書桌最好接近插座與自然光，但不要讓椅背完全堵住主要通道。衣櫃若是平開門，要把門片打開的弧度或深度算進去；若是拉門衣櫃，也要留站立與拿衣服的距離。窗戶附近不要被高櫃完全擋住，以免通風與採光變差。</p>

@@ -1,0 +1,50 @@
+---
+interface FurnitureSpec {
+  x: number;
+  y: number;
+  width: number;
+  depth: number;
+  label: string;
+  className?: string;
+}
+
+interface ZoneSpec {
+  x: number;
+  y: number;
+  width: number;
+  depth: number;
+  label: string;
+}
+
+interface Props {
+  roomWidthCm: number;
+  roomLengthCm: number;
+  ariaLabel: string;
+  furniture: FurnitureSpec[];
+  zones?: ZoneSpec[];
+  route?: string;
+}
+
+const { roomWidthCm, roomLengthCm, ariaLabel, furniture, zones = [], route } = Astro.props;
+const fontSize = Math.max(8, Math.min(18, roomWidthCm / 32));
+---
+
+<svg class="measured-plan-svg" viewBox={`0 0 ${roomWidthCm} ${roomLengthCm}`} role="img" aria-label={ariaLabel} data-measured-plan="true" data-room-width={roomWidthCm} data-room-length={roomLengthCm}>
+  <rect class="measured-room-boundary" x="0" y="0" width={roomWidthCm} height={roomLengthCm} />
+  <text class="measured-dimension-label" x={roomWidthCm / 2} y={fontSize * 1.5} text-anchor="middle">{roomWidthCm} cm</text>
+  <text class="measured-dimension-label" x={roomWidthCm - fontSize} y={roomLengthCm / 2} text-anchor="middle" transform={`rotate(90 ${roomWidthCm - fontSize} ${roomLengthCm / 2})`}>{roomLengthCm} cm</text>
+  {zones.map((zone) => (
+    <g class="measured-zone">
+      <rect x={zone.x} y={zone.y} width={zone.width} height={zone.depth} />
+      <text x={zone.x + zone.width / 2} y={zone.y + zone.depth / 2} text-anchor="middle">{zone.label}</text>
+    </g>
+  ))}
+  {route && <path class="measured-route" d={route} />}
+  {furniture.map((item) => (
+    <g class:list={['measured-furniture', item.className ?? '']}>
+      <rect x={item.x} y={item.y} width={item.width} height={item.depth} />
+      <text x={item.x + item.width / 2} y={item.y + item.depth / 2} text-anchor="middle">{item.label}</text>
+      <text class="measured-furniture-size" x={item.x + item.width / 2} y={item.y + item.depth / 2 + fontSize * 1.5} text-anchor="middle">{item.width} × {item.depth}</text>
+    </g>
+  ))}
+</svg>

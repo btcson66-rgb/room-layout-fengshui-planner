@@ -11,17 +11,25 @@ const t = lang === 'en' ? en : zh;
 const homeHref = lang === 'en' ? '/en/' : '/';
 const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
 const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
-const supportHref = '/support/';
 const pathname = Astro.url.pathname;
 const isCurrent = (href: string) => href === homeHref ? pathname === homeHref || (lang === 'zh' && pathname === '/zh/') : pathname === href || pathname.startsWith(href);
-const navItems = [
-  { href: homeHref, label: t.nav.home },
-  { href: plannerHref, label: t.nav.planner },
-  ...(lang === 'zh' ? [{ href: '/zh/feng-shui-bedroom-checker/', label: '風水檢查' }] : []),
-  { href: fitCheckerHref, label: t.nav.fitChecker },
-  ...(lang === 'zh' ? [{ href: '/zh/blog/', label: '部落格' }] : []),
-  { href: supportHref, label: '支持我們' },
-];
+const navItems = lang === 'zh'
+  ? [
+      { href: plannerHref, label: 'Planner' },
+      { href: fitCheckerHref, label: 'Furniture Fit' },
+      { href: '/zh/room-size-layout-templates/', label: 'Room Sizes' },
+      { href: '/zh/blog/', label: 'Guides' },
+      { href: '/zh/moving-furniture-size-check/', label: 'Moving' },
+      { href: '/about/', label: 'About' },
+    ]
+  : [
+      { href: plannerHref, label: 'Planner' },
+      { href: fitCheckerHref, label: 'Furniture Fit' },
+      { href: '/en/room-size-layout-templates/', label: 'Room Sizes' },
+      { href: '/en/layout-guides/10x10-bedroom-layout/', label: 'Guides' },
+      { href: '/en/moving-furniture-size-check/', label: 'Moving' },
+      { href: '/about/', label: 'About' },
+    ];
 ---
 
 <header class="site-header">

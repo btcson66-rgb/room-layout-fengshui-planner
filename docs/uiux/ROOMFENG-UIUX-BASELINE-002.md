@@ -1,11 +1,11 @@
 # ROOMFENG UIUX BASELINE 002
 
 日期：2026-09-19
-範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。
+範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。此文件同時保留 Review 01 初始基線，並記錄 Review 02 blocker 的修正前狀態。
 
 ## Baseline identity
 
-- Review target：`ROOMFENG-UIUX-REDESIGN-002-REVIEW-01.md`
+- Review target：`ROOMFENG-UIUX-REDESIGN-002-REVIEW-01.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-02.md`
 - PR：[#100](https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/100)
 - Baseline head at observation：`0b934e60d48523b55238c63ab67eb469b262061e`
 - Base branch：`main`
@@ -34,6 +34,19 @@ Review-01 identified a partial visual refresh instead of a complete prototype sy
 - Existing local-only planner draft and export behavior.
 - Existing canonical, hreflang, robots, sitemap and content-audit architecture.
 
+## Review-02 blocker baseline
+
+Review 02 的 blocker 在本輪實作前逐項核對如下：
+
+1. `Try this size` 的 prototype payload 尚未保證與畫面文字完全相同；Bedroom / Studio handoff 仍有 template 尺寸不一致。
+2. Bedroom measured SVG 仍以固定示意 viewBox 繪製；Furniture Fit 仍是文章下方的靜態 cards。
+3. PDF/PNG export 的 report preview 已更新，但實際 export module 尚未同步輸出 RoomFeng report metadata。
+4. Room / Furniture / Templates rail 共用同一組 controls；mobile report action 沒有自己的 bottom sheet content。
+5. SEO landing prototype H2 出現在 page H1 前；Homepage Hero 缺少 room、furniture、door 與 clearance 的真實數字。
+6. Newsletter 緊貼 Hero；英文 nav 指向不存在的 `/en/blog/`；footer 仍有 abstract slogan。
+
+本輪 acceptance contract 因此加入 executable checks：exact-dimension handoff、Furniture Fit calculation、export metadata/output、rail panel selection，以及 H1-before-prototype SEO order。所有 prototype 圖均使用 inline measured SVG / CSS，沒有加入 AI 圖片、室內 stock photo 或 generic SaaS 素材。
+
 ## Initial quantitative reference
 
 The previous branch preflight record at the observed PR head reported:
@@ -46,6 +59,10 @@ The previous branch preflight record at the observed PR head reported:
 - Moving OS tests：26 passed.
 
 The review-01 record also preserved an older run with 1,153 build pages and 995,810 checks. Those values are treated as historical input only; the final package will use one fresh build/audit run on one final head SHA as the sole authority.
+
+## Review-02 rebaseline after blocker fixes
+
+The fresh build/audit authority used for this revision is the consistent set `1,457 build pages / 1,447 sitemap pages / 1,315 source articles / 1,000,350 audit checks / 0 failures`. The previous `1,153 / 995,810` pair is not mixed into the final result. The current Astro check result is `217 files, 0 errors, 0 warnings, 0 hints`; the full test and preflight result is recorded in the loop log and local review after the final head is committed.
 
 ## Prototype acceptance contract
 
