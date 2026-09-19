@@ -1,0 +1,12 @@
+BACKUP
+1. Open Exports & backup.
+2. Choose Export JSON backup.
+3. Store the file in a location you control.
+
+RECOVERY
+1. Open the same module.
+2. Choose Import JSON backup.
+3. Select a RoomFeng JSON backup under 5 MB.
+4. Confirm the dashboard counts and project name.
+
+Imported files are validated for schema version, required lists, list size, and overall size before they replace the current local project.

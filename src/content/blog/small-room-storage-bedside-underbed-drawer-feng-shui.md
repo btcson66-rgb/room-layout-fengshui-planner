@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床下抽屜, 低位收納, 拉出動線]
 keywords: [小房間床下抽屜風水, 床下收納抽屜距離, 床底抽屜怎麼放, 小房間低位收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bed-opening-clearance-feng-shui, small-room-storage-bedside-rolling-cart-clearance-feng-shui, small-room-storage-bedside-charging-cable-feng-shui, small-room-storage-bedside-basket-reach-feng-shui]
 howToName: 檢查小房間床下抽屜拉出與低位收納
 howToTotalTime: PT30M

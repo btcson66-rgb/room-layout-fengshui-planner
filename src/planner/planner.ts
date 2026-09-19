@@ -3,6 +3,7 @@ import { exportPdf, exportPng } from './export';
 import { defaultDesign, makeItem, templateDesigns } from './templates';
 import type { Design, FurnitureItem, FurnitureType, PlannerOptions, PlannerStrings, Unit } from './types';
 import { formatArea, fromCm, toCm } from './units';
+import { readPlannerHandoff } from '../small-space/handoff';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DEFAULT_STORAGE_KEY = 'room-layout-planner:draft';
@@ -41,7 +42,28 @@ function isDesign(value: unknown): value is Design {
   return Boolean(candidate.room && Array.isArray(candidate.items));
 }
 
+/**
+ * 文章與 Hub 頁的 CTA 用 `?preset=<key>` deep-link 進來，直接載入對應的範例格局。
+ * 這讓「用 Room Planner 模擬你的床、書桌與門」變成一次點擊就到位的動作，
+ * 而不是進到工具後還要自己找範例按鈕。
+ *
+ * 只有網址真的帶了合法 preset 時才覆蓋草稿；沒帶或帶了不存在的 key 一律
+ * 回到既有行為（讀 localStorage 草稿），避免不小心洗掉讀者畫到一半的房間。
+ */
+function presetFromLocation(strings: PlannerStrings): Design | null {
+  if (typeof window === 'undefined') return null;
+  const requested = new URLSearchParams(window.location.search).get('preset');
+  if (!requested) return null;
+  const presets = templateDesigns(strings.furniture);
+  const match = Object.prototype.hasOwnProperty.call(presets, requested) ? presets[requested] : null;
+  return match ? cloneDesign(match) : null;
+}
+
 function loadDesign(storageKey: string, strings: PlannerStrings): Design {
+  const handoff = readPlannerHandoff();
+  if (handoff) return cloneDesign(handoff);
+  const preset = presetFromLocation(strings);
+  if (preset) return preset;
   const stored = localStorage.getItem(storageKey);
   if (!stored) return defaultDesign(strings.furniture);
   try {
@@ -102,7 +124,7 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
     tabindex: '0',
     role: 'button',
     'aria-label': `${label}${selected ? '，已選取' : ''}`,
-    'aria-pressed': String(selected),
+    'aria-pressed': selected ? 'true' : 'false',
     'data-id': item.id,
     transform: `rotate(${item.rotation} ${item.x + item.w / 2} ${item.y + item.h / 2})`,
   });
@@ -310,7 +332,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
       <section class="planner-canvas-wrap" aria-label="Room plan">
         <div class="planner-area-line"></div>
-        <svg class="planner-svg" role="img" aria-label="Room floor plan"></svg>
+        <svg class="planner-svg" role="group" aria-label="Room floor plan"></svg>
       </section>
       <aside class="planner-panel planner-side" aria-label="Planner checks">
         <div class="planner-selection"></div>
@@ -692,6 +714,23 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   svg.addEventListener('pointerup', finishPointerInteraction);
   svg.addEventListener('pointercancel', finishPointerInteraction);
+
+  svg.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const target = event.target as Element;
+    const group = target.closest<SVGGElement>('.planner-item');
+    const id = group?.dataset.id;
+    if (!group || !id) return;
+    event.preventDefault();
+    if (state.selectedId === id) return;
+    state.selectedId = id;
+    rerender();
+    window.requestAnimationFrame(() => {
+      const selected = Array.from(svg.querySelectorAll<SVGGElement>('.planner-item'))
+        .find((candidate) => candidate.dataset.id === id);
+      selected?.focus();
+    });
+  });
 
   renderControls();
   rerender();

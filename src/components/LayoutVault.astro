@@ -1,0 +1,36 @@
+---
+import type { LayoutRecord } from '../small-space/types';
+import '../styles/layout-vault.css';
+
+interface Props {
+  layouts: LayoutRecord[];
+  locale: 'en' | 'zh';
+}
+
+const { layouts, locale } = Astro.props;
+const data = JSON.stringify(layouts).replaceAll('<', '\\u003c');
+---
+
+<div class="layout-vault-page" data-layout-vault data-locale={locale}>
+  <script is:inline type="application/json" id={`layout-vault-data-${locale}`} set:html={data}></script>
+  <div class="layout-vault-app" data-layout-vault-app>
+    <p class="lv-loading">Loading Layout Vault…</p>
+  </div>
+</div>
+
+<script>
+  import { initLayoutVault } from '../small-space/ui';
+  import type { LayoutRecord } from '../small-space/types';
+
+  const root = document.querySelector<HTMLElement>('[data-layout-vault]');
+  const dataNode = document.getElementById(`layout-vault-data-${root?.dataset.locale ?? 'en'}`);
+  const app = root?.querySelector<HTMLElement>('[data-layout-vault-app]');
+  if (root && dataNode && app) {
+    try {
+      const layouts = JSON.parse(dataNode.textContent ?? '[]') as LayoutRecord[];
+      initLayoutVault(app, layouts, root.dataset.locale === 'zh' ? 'zh' : 'en');
+    } catch {
+      app.innerHTML = '<p class="lv-error">Unable to load the validated layout library. Please refresh and try again.</p>';
+    }
+  }
+</script>

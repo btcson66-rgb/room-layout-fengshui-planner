@@ -6,8 +6,8 @@ updated: 2026-09-01
 category: room-planning
 tags: [浴室風水, 淋浴門, 乾濕分離, 浴室動線]
 keywords: [浴室淋浴門風水, 淋浴門走道, 浴室乾濕分區, 浴室門動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
-relatedPosts: [bathroom-door-feng-shui, bathroom-cleaning-feng-shui, bathroom-window-ventilation-feng-shui, small-bathroom-storage-feng-shui]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
+relatedPosts: [bathroom-cleaning-feng-shui, bathroom-shower-door-feng-shui, bathroom-toilet-ventilation-feng-shui, room-circulation-width-guide]
 howToName: 檢查浴室淋浴門與通行動線
 howToTotalTime: PT35M
 howToSteps:

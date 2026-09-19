@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 桌燈, 鍵盤陰影, 工作區照明]
 keywords: [鍵盤陰影怎麼辦, 書桌燈鍵盤陰影, 工作桌照明風水, 桌燈手部陰影]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-task-light-screen-glare-feng-shui, home-office-desk-window-reflection-glare-feng-shui, home-office-desk-monitor-wall-distance-feng-shui, home-office-desk-document-holder-viewing-distance-feng-shui]
 howToName: 檢查書桌燈的鍵盤陰影、螢幕反光與手部空間
 howToTotalTime: PT30M

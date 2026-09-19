@@ -76,15 +76,22 @@ PUBLIC_GA_ID=
 PUBLIC_AFFILIATE_GA_ID=G-Q78WN8NZ0R
 PUBLIC_AFFILIATE_ENABLED=true
 PUBLIC_ADSENSE_CLIENT=
+PUBLIC_MOVING_OS_CHECKOUT_URL=
 BREVO_API_KEY=
 BREVO_ROOMFENG_LIST_ID=
 BREVO_WORTHCALC_LIST_ID=
 BREVO_FUNNYTOOLS_LIST_ID=
 ```
 
+`PUBLIC_MOVING_OS_CHECKOUT_URL` is the single configurable Payhip/Gumroad destination for the Moving & New Home OS sales pages. Leave it empty during product review; no checkout link or payment integration is rendered. The interactive edition remains browser-only and stores its versioned project data under `roomfeng:moving-os:v1`. Purchasers can export and restore JSON backups.
+
 If `PUBLIC_GA_ID` is set at build time, the shared head component preserves that GA4 destination. The affiliate event destination is `PUBLIC_AFFILIATE_GA_ID` (the four-site contract is `G-Q78WN8NZ0R`) and is configured with `send_page_view: false`; see `docs/affiliate-ga4-tracking.md` for the event contract. The affiliate destination still provides the single shared loader when the existing ID is empty.
 
 `PUBLIC_AFFILIATE_ENABLED` controls the optional public Shopee support catalogue and contextual article cards. It is enabled by default when unset; set it explicitly to `false` to hide those cards. The free planner and editorial content remain available either way.
+
+## Moving OS commercial access
+
+The paid Moving OS uses Payhip as its single v1 checkout/license provider and Cloudflare Pages Functions as the server-side verification boundary. See `docs/moving-os-commercial-launch.md` for the exact public variables, encrypted runtime secrets, session/device policy, staging checklist, and unresolved production gates. The product secret must never use a `PUBLIC_` prefix.
 
 If `PUBLIC_ADSENSE_CLIENT` is set at build time, the shared head component injects the Google AdSense script site-wide and `AdSlot.astro` renders live ad units with each page's configured slot. The production AdSense value for `roomfeng.win` is:
 

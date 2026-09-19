@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 窗台接觸, 窗簾下擺]
 keywords: [床頭牆面窗簾碰窗台, 窗簾下擺風水, 床頭窗簾灰塵, 窗台與床頭動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-length-feng-shui, bedroom-bed-headboard-wall-curtain-air-gap-feng-shui, bedroom-bed-headboard-wall-curtain-blackout-gap-feng-shui, bedroom-window-sill-cleaning-feng-shui]
 howToName: 檢查床頭牆面窗簾下擺與窗台接觸
 howToTotalTime: PT30M

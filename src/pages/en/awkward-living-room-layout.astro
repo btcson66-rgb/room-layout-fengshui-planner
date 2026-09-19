@@ -1,0 +1,7 @@
+---
+import UsSeoGuidePage from '../../components/UsSeoGuidePage.astro';
+import { livingRoomPages } from '../../us-seo/content';
+const page = livingRoomPages.find((item) => item.slug === 'awkward-living-room-layout');
+if (!page) throw new Error('Missing awkward living room page data');
+---
+<UsSeoGuidePage data={page} />

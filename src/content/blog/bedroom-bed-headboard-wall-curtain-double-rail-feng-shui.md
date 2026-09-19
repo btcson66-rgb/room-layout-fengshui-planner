@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 雙層窗簾, 軌道開合, 床頭布簾]
 keywords: [床頭雙層窗簾軌道, 雙層窗簾風水, 臥室窗簾開合, 床邊布堆動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-glare-feng-shui, bedroom-bed-headboard-wall-curtain-privacy-feng-shui, bedroom-bed-headboard-wall-curtain-side-return-feng-shui, bedroom-bed-headboard-wall-curtain-rod-fix-feng-shui]
 howToName: 檢查床頭牆面雙層窗簾軌道與開合規則
 howToTotalTime: PT35M

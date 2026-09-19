@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭靠窗, 窗簾結露, 臥室通風]
 keywords: [床頭牆面窗簾結露, 床頭靠窗濕氣, 臥室窗簾發霉, 窗簾風水通風]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-fabric-cleaning-feng-shui, bedroom-bed-headboard-wall-curtain-length-feng-shui, bedroom-window-condensation-feng-shui, bedroom-window-condensation-cleaning-feng-shui]
 howToName: 檢查床頭牆面窗簾結露與通風路徑
 howToTotalTime: PT35M

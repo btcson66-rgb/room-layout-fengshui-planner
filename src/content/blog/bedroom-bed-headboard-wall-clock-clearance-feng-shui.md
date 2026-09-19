@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭時鐘, 牆面時鐘, 夜間視線]
 keywords: [床頭牆面時鐘風水, 床頭掛鐘怎麼放, 臥室時鐘滴答聲, 床頭時鐘反光]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-art-lighting-feng-shui, bedroom-bedside-clock-display-brightness-feng-shui, bedroom-bedside-clock-feng-shui, bedroom-bed-head-wall-gap-clearance-feng-shui]
 howToName: 檢查床頭牆面時鐘、聲音反光與夜間操作
 howToTotalTime: PT30M

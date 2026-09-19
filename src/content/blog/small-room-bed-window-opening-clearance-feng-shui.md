@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [小房間風水, 床靠窗, 小宅格局, 開窗動線]
 keywords: [小房間床靠窗, 小房間開窗空間, 床靠窗怎麼擺, 小房間床窗風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bed-under-window-solutions, small-bedroom-bed-placement, small-room-window-storage-clearance-feng-shui, bedroom-window-condensation-feng-shui]
 howToName: 檢查小房間床靠窗的開窗與生活動線
 howToTotalTime: PT40M

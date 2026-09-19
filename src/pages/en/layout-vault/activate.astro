@@ -1,0 +1,17 @@
+---
+import Layout from '../../../components/Layout.astro';
+import ProductLicenseActivation from '../../../components/ProductLicenseActivation.astro';
+import { layoutVaultProduct } from '../../../config/products';
+import '../../../styles/moving-os-activation.css';
+---
+<Layout title="Activate Layout Vault | RoomFeng" description="Activate your purchased RoomFeng Layout Vault license." canonical="/en/layout-vault/activate/" lang="en" noindex pageType="tool" showAffiliateRecs={false}>
+  <ProductLicenseActivation
+    locale="en"
+    productId={layoutVaultProduct.id}
+    productName={layoutVaultProduct.name}
+    appHref="/en/layout-vault/"
+    verifyEndpoint="/api/product/layout-vault/license/verify"
+    sessionEndpoint="/api/product/layout-vault/license/session"
+    supportEmail={layoutVaultProduct.supportEmail}
+  />
+</Layout>

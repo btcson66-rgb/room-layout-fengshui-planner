@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 床側留縫, 臥室清潔]
 keywords: [床頭牆面窗簾留縫, 床頭窗簾距離, 窗簾靠床風水, 床側清潔縫]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-condensation-feng-shui, bedroom-bed-headboard-wall-curtain-side-return-feng-shui, bedroom-bed-headboard-wall-curtain-length-feng-shui, bedroom-bed-headboard-wall-shelf-clearance-feng-shui]
 howToName: 檢查床頭牆面窗簾與床側的留縫和回位
 howToTotalTime: PT30M

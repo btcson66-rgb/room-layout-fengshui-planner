@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 耳機線整理, 離席動線]
 keywords: [書桌面向房門耳機線, 書房線材整理, 房門對書桌走線, 耳機線不擋動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-phone-call-privacy-feng-shui, home-office-desk-facing-door-task-light-feng-shui, home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-facing-door-chair-turning-feng-shui]
 howToName: 檢查書桌面向房門的耳機線與離席動線
 howToTotalTime: PT30M

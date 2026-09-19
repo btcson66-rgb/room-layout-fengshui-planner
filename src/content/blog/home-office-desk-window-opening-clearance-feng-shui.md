@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 書桌靠窗, 開窗空間, 居家辦公配置]
 keywords: [書桌靠窗開窗空間, 書桌與窗戶距離, 開窗撞書桌, 書桌窗邊風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-window-curtain-clearance-feng-shui, home-office-window-glare-feng-shui, desk-window-lighting, home-office-desk-doorway-clearance-feng-shui]
 howToName: 檢查書桌靠窗的開窗與工作動線
 howToTotalTime: PT35M

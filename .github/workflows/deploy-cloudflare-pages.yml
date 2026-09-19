@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
 
 concurrency:
   group: cloudflare-pages
@@ -22,7 +24,22 @@ jobs:
           node-version: 22
           cache: npm
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
       - run: npm ci
+
+      - name: Build PRODUCT-002 package fixture for integrity tests
+        run: python -m pip install --disable-pip-version-check reportlab pillow && python scripts/generate-product-002-package.py
+
+      - run: npm run amazon:refresh
+        env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
+          AMAZON_CREATORS_API_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_API_CLIENT_ID }}
+          AMAZON_CREATORS_API_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_API_CLIENT_SECRET }}
+          AMAZON_CREATORS_API_VERSION: ${{ secrets.AMAZON_CREATORS_API_VERSION }}
+          AMAZON_CREATORS_API_MARKETPLACE: www.amazon.com
 
       # 2026-09-02: 這個 job 過去只跑 `npm run build`，所以 astro check、
       # content-quality-audit.mjs 與 www-redirect 測試從來沒有在 CI 執行過。
@@ -34,8 +51,22 @@ jobs:
 
       - run: npm run build
         env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
           PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_MOVING_OS_PAYHIP_CHECKOUT_URL: ${{ vars.PUBLIC_MOVING_OS_PAYHIP_CHECKOUT_URL }}
+          PUBLIC_MOVING_OS_PAYHIP_PRODUCT_LINK: ${{ vars.PUBLIC_MOVING_OS_PAYHIP_PRODUCT_LINK }}
+          PUBLIC_MOVING_OS_GUMROAD_CHECKOUT_URL: ${{ vars.PUBLIC_MOVING_OS_GUMROAD_CHECKOUT_URL }}
+          PUBLIC_MOVING_OS_GUMROAD_PRODUCT_ID: ${{ vars.PUBLIC_MOVING_OS_GUMROAD_PRODUCT_ID }}
+          PUBLIC_MOVING_OS_SUPPORT_EMAIL: ${{ vars.PUBLIC_MOVING_OS_SUPPORT_EMAIL }}
+          PUBLIC_MOVING_OS_REFUND_POLICY_URL: ${{ vars.PUBLIC_MOVING_OS_REFUND_POLICY_URL }}
+          PUBLIC_MOVING_OS_RELEASE_DATE: ${{ vars.PUBLIC_MOVING_OS_RELEASE_DATE }}
+          PUBLIC_LAYOUT_VAULT_PAYHIP_CHECKOUT_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_PAYHIP_CHECKOUT_URL }}
+          PUBLIC_LAYOUT_VAULT_PAYHIP_PRODUCT_LINK: ${{ vars.PUBLIC_LAYOUT_VAULT_PAYHIP_PRODUCT_LINK }}
+          PUBLIC_LAYOUT_VAULT_GUMROAD_CHECKOUT_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_GUMROAD_CHECKOUT_URL }}
+          PUBLIC_LAYOUT_VAULT_GUMROAD_PRODUCT_ID: ${{ vars.PUBLIC_LAYOUT_VAULT_GUMROAD_PRODUCT_ID }}
+          PUBLIC_LAYOUT_VAULT_SUPPORT_EMAIL: ${{ vars.PUBLIC_LAYOUT_VAULT_SUPPORT_EMAIL }}
+          PUBLIC_LAYOUT_VAULT_REFUND_POLICY_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_REFUND_POLICY_URL }}
           # 2026-08-24: migrated off the old AdSense account (btcson66).
           # That account's sign-in mailbox is no longer accessible, so the site
           # is being re-submitted for review under account zxc851558. Keep this
@@ -44,7 +75,23 @@ jobs:
 
       - run: npm run audit:content
 
+      - run: npm run test:us-seo
+
+      - run: npm run audit:us-seo
+
       - run: npm run test:www-redirect
+
+      - name: Verify PRODUCT-002 analytics routing
+        run: node --test tests/affiliate-ga4-routing.test.mjs tests/affiliate-ga4.test.mjs
+
+      - name: Verify PRODUCT-002 Phase 3 gates
+        run: npm run test:product-002:phase3
+
+      - name: Verify PRODUCT-002 geometry and matching
+        run: npm run test:product-002
+
+      - name: Verify PRODUCT-002 entitlement isolation
+        run: npm run test:product-002:entitlement
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
@@ -62,6 +109,13 @@ jobs:
       # (that silent-skip pattern is exactly how funnytools' equivalent step
       # went unnoticed for months). scripts/gsc-submit-sitemap.mjs itself
       # exits 1 when credentials or the API fail, but not merely for pending.
+      #
+      # 2026-09-06: PR #76 曾讓「Google 遲遲沒下載 sitemap」也 exit 1，違反上面這句
+      # 自己寫的契約，結果每一次部署都紅同一件事、連續兩週，紅燈失去意義。
+      # 現已改回：這一步只管提交有沒有成功；「Google 到底有沒有來抓」由
+      # fable-company 的每日健檢負責（scripts/lib/gsc-sitemap-discovery.mjs，
+      # issue code sitemap-never-downloaded，單站 warning／三站全中 critical，
+      # 並附 URL Inspection 的 Googlebot 爬取狀態）。STUCK 警告仍會印在本步驟的 log。
       - name: Submit sitemap to Google Search Console
         run: sleep 60 && npm run gsc:submit-sitemap
         env:

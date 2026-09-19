@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 桌墊, 桌面工作區]
 keywords: [書桌面向房門桌墊, 桌墊尺寸風水, 書桌桌墊滑動, 房門工作區邊界]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-laptop-stand-feng-shui, home-office-desk-facing-door-notebook-position-feng-shui, home-office-desk-facing-door-mouse-placement-feng-shui, home-office-desk-facing-door-phone-stand-feng-shui]
 howToName: 檢查面向房門書桌桌墊邊界與設備動線
 howToTotalTime: PT30M

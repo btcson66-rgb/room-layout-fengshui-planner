@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 耳機收納, 工作區線材]
 keywords: [書桌面向房門耳機位置, 耳機放哪裡風水, 書房耳機收納, 耳機線材桌面動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-phone-stand-feng-shui, home-office-desk-facing-door-phone-call-privacy-feng-shui, home-office-desk-facing-door-mouse-placement-feng-shui, home-office-desk-facing-door-keyboard-distance-feng-shui]
 howToName: 檢查面向房門書桌的耳機停靠與線材路徑
 howToTotalTime: PT30M

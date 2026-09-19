@@ -34,6 +34,7 @@
 .planner-svg { width: 100%; height: auto; min-height: 280px; max-height: 72vh; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: #fffefa; touch-action: none; }
 .planner-item { cursor: grab; outline: none; }
 .planner-item:active { cursor: grabbing; }
+.planner-item:focus-visible { outline: 3px solid var(--color-primary-strong); outline-offset: 3px; }
 .planner-item:focus-visible text, .planner-item.is-selected text { font-weight: 800; }
 .planner-item.is-selected { filter: drop-shadow(0 4px 5px rgba(111, 83, 27, 0.12)); }
 

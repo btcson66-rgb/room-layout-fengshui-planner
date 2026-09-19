@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 書桌抽屜, 工作區淨空]
 keywords: [書桌面向房門抽屜, 書桌抽屜風水, 書桌膝部空間, 書桌對門收納]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-chair-turning-feng-shui, home-office-desk-facing-door-document-tray-privacy-feng-shui, home-office-desk-facing-door-cable-channel-feng-shui, home-office-desk-doorway-clearance-feng-shui]
 howToName: 檢查面向房門書桌的抽屜開合與膝部空間
 howToTotalTime: PT30M

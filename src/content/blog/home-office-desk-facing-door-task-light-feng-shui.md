@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 桌燈位置, 螢幕反射]
 keywords: [書桌對門桌燈, 書桌面向房門照明, 桌燈螢幕反光, 工作區任務照明]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-webcam-angle-feng-shui, home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-task-light-screen-glare-feng-shui, home-office-desk-task-light-keyboard-shadow-feng-shui]
 howToName: 檢查面向房門書桌的桌燈、螢幕反射與離席路線
 howToTotalTime: PT30M

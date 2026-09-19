@@ -13,6 +13,20 @@
 - [套房格局配置](https://roomfeng.win/zh/studio-apartment-layout/)
 - [租屋房間配置](https://roomfeng.win/zh/rental-room-layout/)
 
+## 主題入口（Topic Hub）
+
+每個主題頁都有導讀、核心問題、精選指南與對應工具，比文章列表更適合當入口。
+
+- [臥室風水與民俗參考](https://roomfeng.win/zh/category/feng-shui/)
+- [臥室家具配置](https://roomfeng.win/zh/category/bedroom/)
+- [房間規劃與尺寸檢查](https://roomfeng.win/zh/category/room-planning/)
+- [小房間與租屋佈局](https://roomfeng.win/zh/category/small-room/)
+- [收納與衣櫃配置](https://roomfeng.win/zh/category/storage/)
+- [搬家與家具尺寸](https://roomfeng.win/zh/category/moving/)
+- [客廳與沙發配置](https://roomfeng.win/zh/category/living-room/)
+- [房間規劃工具教學](https://roomfeng.win/zh/category/tutorial/)
+- [房間規劃常見問題](https://roomfeng.win/zh/category/faq/)
+
 ## 核心文章
 
 - [床對門風水怎麼看？臥室床位、門口動線與改善方式](https://roomfeng.win/zh/blog/bed-facing-door-feng-shui/)
@@ -25,6 +39,8 @@
 - [租屋房間配置規劃：不施工也能改善床位、收納與動線](https://roomfeng.win/zh/blog/rental-room-layout-planning/)
 - [套房分區佈置：睡眠、工作、用餐與收納怎麼分](https://roomfeng.win/zh/blog/studio-zoning-layout/)
 - [房間走道寬度要留多少？床邊、衣櫃前與門口尺寸指南](https://roomfeng.win/zh/blog/room-circulation-width-guide/)
+- [橫樑壓床完整指南：床型、床邊家具與不能移床時怎麼辦](https://roomfeng.win/zh/blog/beam-over-desk-bed-layout/)
+- [橫樑壓書桌完整指南：椅子、起身空間、螢幕與租屋工作區](https://roomfeng.win/zh/blog/beam-over-desk-workspace-guide/)
 
 ## 關於本站
 

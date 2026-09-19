@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 洗衣籃, 房門動線, 衣物收納]
 keywords: [小房間洗衣籃放哪裡, 洗衣籃靠門風水, 洗衣籃房門距離, 小房間髒衣籃動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-clothes-rack-doorway-clearance-feng-shui, small-room-drawer-unit-doorway-clearance-feng-shui, small-room-folding-table-doorway-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui]
 howToName: 檢查小房間洗衣籃靠門的滿籃與搬運動線
 howToTotalTime: PT25M

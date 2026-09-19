@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">客廳掛鐘位置判斷示意</title>
+  <desc id="desc">長方形客廳平面示意，標出側牆與入口側兩個可測試位置、窗戶對面反光檢查區，以及沙發正上方的排除位置。</desc>
+  <rect width="960" height="560" rx="24" fill="#f7f4eb"/>
+  <rect x="90" y="70" width="780" height="410" rx="8" fill="#fff" stroke="#33443b" stroke-width="8"/>
+  <rect x="300" y="375" width="360" height="70" rx="18" fill="#c9d5ce" stroke="#33443b" stroke-width="4"/>
+  <text x="480" y="418" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#26352e">主要沙發</text>
+  <rect x="720" y="165" width="95" height="170" rx="8" fill="#dbe8ef" stroke="#3e6675" stroke-width="4"/>
+  <text x="768" y="255" text-anchor="middle" font-family="sans-serif" font-size="23" fill="#294d59" transform="rotate(-90 768 255)">窗戶</text>
+  <path d="M90 330h95" stroke="#fff" stroke-width="14"/>
+  <path d="M90 330a95 95 0 0 1 95 95" fill="none" stroke="#806d50" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="118" y="305" font-family="sans-serif" font-size="22" fill="#5e4e37">入口</text>
+  <g font-family="sans-serif" font-weight="700" text-anchor="middle">
+    <circle cx="255" cy="120" r="34" fill="#2f7d57"/><text x="255" y="129" font-size="25" fill="#fff">A</text>
+    <text x="255" y="175" font-size="21" fill="#245b42">入口側身可見</text>
+    <circle cx="690" cy="105" r="34" fill="#2f7d57"/><text x="690" y="114" font-size="25" fill="#fff">B</text>
+    <text x="690" y="155" font-size="21" fill="#245b42">座位自然抬眼</text>
+    <circle cx="480" cy="346" r="34" fill="#b54a46"/><text x="480" y="355" font-size="25" fill="#fff">X</text>
+    <text x="480" y="305" font-size="21" fill="#913835">先排除座位正上方</text>
+    <rect x="650" y="200" width="60" height="100" rx="12" fill="#d7a43d" opacity=".9"/>
+    <text x="598" y="244" text-anchor="end" font-size="20" fill="#795914">反光複測</text>
+  </g>
+  <path d="M480 375L480 345" stroke="#b54a46" stroke-width="5"/>
+  <path d="M720 250L710 250" stroke="#d7a43d" stroke-width="5"/>
+  <text x="480" y="525" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#4a5c52">A、B 是候選觀看牆；X 是先排除區。仍需依牆材、掛件與實際視線驗證。</text>
+</svg>

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 落地鏡, 房門視線, 家具固定]
 keywords: [小房間落地鏡靠門, 落地鏡對房門風水, 落地鏡動線, 落地鏡防傾倒]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-clothes-rack-doorway-clearance-feng-shui, small-room-drawer-unit-doorway-clearance-feng-shui, small-room-folding-table-doorway-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui]
 howToName: 檢查小房間落地鏡靠門的反射與固定動線
 howToTotalTime: PT30M

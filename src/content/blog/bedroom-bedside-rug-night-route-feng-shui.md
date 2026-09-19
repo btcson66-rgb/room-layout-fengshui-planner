@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床邊地毯, 夜間動線, 防滑]
 keywords: [床邊地毯風水, 臥室地毯怎麼放, 床邊地毯尺寸, 床邊地毯會絆倒嗎]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-nightstand-drawer-doorway-clearance-feng-shui, bedroom-bed-foot-doorway-clearance-feng-shui, bedroom-bed-left-wall-access-feng-shui, bedroom-bed-window-sill-clearance-feng-shui]
 howToName: 檢查床邊地毯的夜間起身與防滑動線
 howToTotalTime: PT25M
