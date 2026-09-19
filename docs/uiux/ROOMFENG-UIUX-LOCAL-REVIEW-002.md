@@ -17,29 +17,56 @@
 
 Final `git diff --name-only` / GitHub `changedFiles` readback is limited to the scoped UIUX implementation, tests, evidence and review files below; the exact GitHub count is written into PR #100 after push.
 
+- `docs/uiux/ROOMFENG-UIUX-BASELINE-002.md`
+- `docs/uiux/ROOMFENG-UIUX-LOCAL-REVIEW-002.md`
+- `docs/uiux/ROOMFENG-UIUX-REDESIGN-002-LOOP-LOG.md`
+- `docs/uiux/evidence/README.md`
+- `docs/uiux/evidence/bedroom-size-1280-full.png`
+- `docs/uiux/evidence/bedroom-size-1280.png`
+- `docs/uiux/evidence/export-preview-1280-full.png`
+- `docs/uiux/evidence/final-preflight.log`
+- `docs/uiux/evidence/furniture-fit-1280-full.png`
+- `docs/uiux/evidence/furniture-fit-1280.png`
+- `docs/uiux/evidence/guide-1280-full.png`
+- `docs/uiux/evidence/guide-1280.png`
+- `docs/uiux/evidence/homepage-1024.png`
+- `docs/uiux/evidence/homepage-1280.png`
+- `docs/uiux/evidence/homepage-1440.png`
+- `docs/uiux/evidence/homepage-375.png`
+- `docs/uiux/evidence/homepage-390.png`
+- `docs/uiux/evidence/homepage-768.png`
+- `docs/uiux/evidence/planner-1024.png`
+- `docs/uiux/evidence/planner-1280.png`
+- `docs/uiux/evidence/planner-1440.png`
+- `docs/uiux/evidence/planner-375.png`
+- `docs/uiux/evidence/planner-390.png`
+- `docs/uiux/evidence/planner-768.png`
+- `docs/uiux/evidence/review-02/*`
+- `docs/uiux/evidence/studio-size-1280-full.png`
+- `docs/uiux/evidence/studio-size-1280.png`
 - `package.json`
+- `scripts/test/uiux-review-03.browser.mjs`
+- `scripts/test/uiux-review-03.test.mjs`
 - `src/components/Footer.astro`
-- `src/components/Header.astro`
 - `src/components/FurnitureFitTool.astro`
+- `src/components/Header.astro`
+- `src/components/Layout.astro`
 - `src/components/MeasuredPlan.astro`
 - `src/components/PlannerHandoffLink.astro`
 - `src/pages/index.astro`
 - `src/pages/zh/furniture-fit-checker.astro`
+- `src/pages/zh/layout-guides/[slug].astro`
+- `src/pages/zh/room-layout-planner.astro`
 - `src/pages/zh/small-bedroom-layout.astro`
 - `src/pages/zh/studio-apartment-layout.astro`
 - `src/planner/export.ts`
 - `src/planner/planner.ts`
 - `src/planner/quick-handoff.ts`
-- `src/tools/furniture-fit.ts`
+- `src/styles/global.css`
+- `src/styles/layout-guide.css`
 - `src/styles/planner.css`
 - `src/styles/uiux-prototypes.css`
-- `scripts/test/uiux-review-03.test.mjs`
-- `scripts/test/uiux-review-03.browser.mjs`
-- `docs/uiux/ROOMFENG-UIUX-BASELINE-002.md`
-- `docs/uiux/ROOMFENG-UIUX-REDESIGN-002-LOOP-LOG.md`
-- `docs/uiux/ROOMFENG-UIUX-LOCAL-REVIEW-002.md`
-- `docs/uiux/evidence/README.md`
-- `docs/uiux/evidence/review-02/*`
+- `src/tools/furniture-fit.ts`
 
 ## Authority set — one final head only
 
