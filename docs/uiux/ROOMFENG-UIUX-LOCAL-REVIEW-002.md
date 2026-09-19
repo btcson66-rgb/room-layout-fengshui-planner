@@ -1,17 +1,33 @@
 # ROOMFENG UIUX LOCAL REVIEW 002
 
-狀態：READY FOR INDEPENDENT REVIEW（Review 03 blocker closeout；Review 04 handoff）
-目的：提供 Review 03 blocker 修正後的同一 head SHA、prototype、SEO parity、accessibility、performance 與 evidence 封裝。
+狀態：READY FOR INDEPENDENT REVIEW 05（Review 04 Phase G closeout）
+目的：提供 Review 04 whole-site rollout 與 trust/localization/consistency 修正後的同一 head SHA、prototype、SEO parity、accessibility、performance 與 evidence 封裝。
 邊界：PR #100 保持 OPEN / UNMERGED / UNDEPLOYED；本 review 不代表 production 已更新。
 
 ## Final identity
 
 - PR：#100 — `https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/100`
 - Branch：`codex/roomfeng-uiux-20260919`
-- Final head SHA：本地最後一個 docs/evidence commit 後以 `git rev-parse HEAD` 取得；CI 與 final response 只採用該 exact hex。Review-03 source validation 在 commit 前已 PASS；final docs/evidence commit 後會再次 read back。
+- Final head SHA：待本輪所有 scoped docs/evidence commit 後填入 exact `git rev-parse HEAD`；CI、PR body 與 final response 只採用該 exact hex。
 - Production URL：unchanged
 - Merge：NOT MERGED
 - Deploy：NOT DEPLOYED
+
+## Review-04 Phase G execution evidence
+
+- English Homepage now uses the same measurement-first product system: exact `360 × 300 cm` room, `150 × 190 cm` bed, `120 × 60 cm` desk, `72 cm` clearance and `80 cm` door opening; the primary CTA is planning and Furniture Fit is secondary. Existing English SEO copy remains below the product value.
+- English Furniture Fit is the shared interactive `FurnitureFitTool locale="en"` before its existing SEO article. It uses the same canonical cm calculation, unit conversion, requested-clearance result, measured SVG, and exact Planner handoff as zh.
+- English bedroom and studio measured landings use the same geometry and payload contracts as zh: bedroom `248 × 400 cm`, bed `105 × 188 cm`, desk `100 × 45 cm`, `127 cm` route and `47 cm` gap; studio `560 × 500 cm` with shared zone/furniture measurements.
+- English and Chinese Guide routes use the shared measured-guide flow: `MEASURE → COMPARE → TRY`, direct answer, comparison content, and Planner CTA while preserving existing article content.
+- Chinese navigation is localized without URL changes; Planner action labels are text-first (`01/02/03`) rather than emoji. English export omits the Feng Shui cultural-reference block; zh export has one heading and one explanatory body. Date formatting uses explicit locale options.
+- Furniture Fit asymmetric PASS placement is calculated from each requested side (`left + extraX / 2`, `back + extraY / 2`) and FAIL shows the physical footprint honestly. Tests cover the asymmetric case.
+- CI now contains a dedicated `uiux-browser` job that builds, starts Astro preview, runs Playwright browser smoke, and cleans up without any deploy step.
+
+Evidence directory: `docs/uiux/evidence/review-04/`
+
+- Responsive homepage and Planner screenshots exist for zh/en at `375/390/768/1024/1280/1440`.
+- zh/en Furniture Fit, exact handoff, measured bedroom/studio, Guide, rail selection, mobile bottom sheets, and actual PNG/PDF outputs are recorded.
+- `seo-parity.json`, `bundle-comparison.json`, `accessibility.json`, and `performance.json` are the machine-readable local evidence records.
 
 ## Changed files
 
@@ -75,9 +91,11 @@ Final `git diff --name-only` / GitHub `changedFiles` readback is limited to the 
 - Build page count：1,457 static pages。
 - Sitemap page count：1,447 pages。
 - Content audit：1,315 source articles；1,315 review-ready；0 held noindex；1,000,350 checks；0 failures。
-- Test results：Review-03 unit contract included in `test:scripts`; `test:scripts` 38/38；browser smoke PASS；`test:www-redirect` 4/4；`test:moving-os` 26/26。
-- CI / preflight：final exact-head local `npm.cmd run preflight` and GitHub Actions run are recorded after the final commit/push; no deployment job is authorized。
-- Performance：current local browser navigation evidence is `docs/uiux/evidence/review-03/performance.json`; current-head Planner/Homepage viewport matrix and no-overflow assertions pass. Bundle comparison is current `33 JS / 1,935,906 bytes / 929,901 max; 9 CSS / 78,470 bytes / 17,760 max` versus prior `31 JS / 1,924,581 bytes / 929,901 max; 8 CSS / 71,829 bytes / 17,760 max`. Local Lighthouse is unavailable; no score is claimed.
+- Test results：`test:scripts` 42/42；`test:uiux-review` 12/12；Review-04 browser smoke PASS；`test:www-redirect` 4/4；`test:moving-os` 26/26。
+- CI / preflight：final exact-head local `npm.cmd run preflight` and GitHub Actions `uiux-browser` run are recorded after the final commit/push; no deployment job is authorized。
+- Performance：current local browser navigation evidence is `docs/uiux/evidence/review-04/performance.json`; current zh/en Homepage and Planner matrix, route smoke, and no-overflow assertions pass. Bundle comparison is current `33 JS / 1,937,876 bytes / 929,901 max; 10 CSS / 83,642 bytes / 17,760 max` versus Review-03 `33 JS / 1,935,906 bytes / 929,901 max; 9 CSS / 78,470 bytes / 17,760 max` (JS +1,970 / +0.10%; CSS +5,172 / +6.59%; max chunks unchanged). Local Lighthouse is unavailable because the package is not installed; no score is claimed.
+- SEO parity：`docs/uiux/evidence/review-04/seo-parity.json` PASS for all touched zh/en routes; canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement and production analytics are unchanged。
+- Accessibility：`docs/uiux/evidence/review-04/accessibility.json` PASS — skip link, focus-visible, keyboard furniture selection, aria-live/status, reduced motion, labelled SVGs and no-overflow matrix retained。
 - Accessibility：six required routes each have skip link, one H1 and 0 missing image alt; no overflow at 375/390/768/1024/1280/1440; keyboard furniture selection, focus, live status and reduced motion retained。
 - SEO parity：PASS — touched canonical/alternates/JSON-LD route declarations unchanged; no robots/sitemap/indexability/payment/entitlement/production analytics files changed。
 

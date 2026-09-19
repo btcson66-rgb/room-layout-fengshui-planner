@@ -51,6 +51,7 @@
 .fit-result-svg { display: block; width: 100%; max-height: 32rem; }
 .fit-room-boundary { fill: #fff; stroke: var(--color-primary-strong); stroke-width: 3; }
 .fit-clearance-box { fill: rgba(82, 106, 93, .08); stroke: var(--color-primary); stroke-width: 2; stroke-dasharray: 10 7; }
+.fit-clearance-box.is-fail { fill: rgba(139, 64, 50, .08); stroke: #8b4032; }
 .fit-furniture-box { fill: #dce8e1; stroke: var(--color-primary-strong); stroke-width: 2; }
 .fit-result-svg text { fill: var(--color-text); font: 700 12px var(--font-sans); }
 .furniture-fit-presets { display: grid; gap: var(--space-3); }

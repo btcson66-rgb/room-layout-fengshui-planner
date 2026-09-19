@@ -53,3 +53,16 @@ The browser evidence asserts exact payload dimensions, viewBox dimensions, physi
 - Navigation/performance evidence: `review-03/performance.json`.
 
 This is local evidence only. It does not claim production deployment, public URL readback, Lighthouse score or completed email delivery.
+
+## Review-04 Phase G evidence
+
+The current whole-site rollout evidence is in `review-04/`, generated from the local Astro preview at `http://127.0.0.1:4321` by `npm.cmd run test:uiux-review-04-browser`.
+
+- Homepage and Planner screenshots exist for both zh and en at every required viewport: `375`, `390`, `768`, `1024`, `1280`, and `1440`.
+- Furniture Fit exists in both locales with interactive unit/input state, measured SVG, asymmetric clearance placement, Fit/Clearance result and exact Planner handoff.
+- Measured Bedroom and Studio evidence exists in zh and en; English routes are `small-bedroom-layout-planner` and `studio-apartment-layout`.
+- Guide evidence exists in both locales; rail selection and mobile bottom-sheet evidence are captured through the browser test.
+- `planner-zh-export.png`, `planner-zh-export.pdf`, `planner-en-export.png`, and `planner-en-export.pdf` are actual browser-produced output binaries from the export builders, not report-preview screenshots.
+- `seo-parity.json`, `bundle-comparison.json`, `accessibility.json`, and `performance.json` are the machine-readable authority records for this local run.
+
+This remains local visual/functional evidence. It does not claim production deployment, public URL readback, email delivery, payment, entitlement, or a Lighthouse score. Lighthouse was attempted with `npx --no-install` and is unavailable because the package is not installed.

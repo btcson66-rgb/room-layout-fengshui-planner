@@ -403,7 +403,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const drawerReport = container.querySelector<HTMLElement>('.planner-drawer-report');
   const drawerTitle = container.querySelector<HTMLElement>('[data-planner-drawer-title]');
   if (!controls || !svg || !areaLine || !reportPreview || !selection || !structural || !feng || !drawer || !drawerChecks || !drawerReport || !drawerTitle) return;
-  if (import.meta.env.DEV) {
+  if (import.meta.env.DEV || window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
     const testWindow = window as typeof window & { __roomfengExportTest?: { png: () => Promise<Blob>; pdf: () => Promise<Blob> } };
     testWindow.__roomfengExportTest = {
       png: () => svgToPngBlob(svg, state.design, strings),

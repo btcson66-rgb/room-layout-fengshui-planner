@@ -1,11 +1,11 @@
 # ROOMFENG UIUX BASELINE 002
 
 日期：2026-09-19
-範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。此文件同時保留 Review 01/02 初始基線，並記錄 Review 03 blocker 的修正前狀態。
+範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。此文件保留 Review 01/02/03 歷史基線，並補記 Review 04 Phase G whole-site rollout 的 observation 與 acceptance contract。
 
 ## Baseline identity
 
-- Review target：`ROOMFENG-UIUX-REDESIGN-002-REVIEW-01.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-02.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-03.md`
+- Review target：`ROOMFENG-UIUX-REDESIGN-002-REVIEW-01.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-02.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-03.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-04.md`
 - PR：[#100](https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/100)
 - Baseline head at observation：`0b934e60d48523b55238c63ab67eb469b262061e`
 - Base branch：`main`
@@ -93,3 +93,20 @@ Review 03 的修正前狀態補充如下：Planner shared chrome、report previe
 - Homepage 與 Planner 在 `375/390/768/1024/1280/1440` 無水平溢出；current-head evidence 只採 `review-03/`。
 
 Review-03 closeout authority（final docs/evidence commit 後再填 exact SHA）：`1,457 build pages / 1,447 sitemap pages / 1,315 source articles / 1,000,350 audit checks / 0 failures`; Astro check `217 files, 0/0/0`; `test:scripts 38/38`; browser smoke PASS。這些數字取代舊的 1,153 / 995,810 pair；後者只保留為歷史衝突，不進入 final authority set。
+
+## Review-04 Phase G baseline and acceptance contract
+
+Review 04 的剩餘 blocker 是 whole-site rollout 與 trust/localization/consistency，而不是推翻已通過的中文核心 prototype。觀察到的修正範圍：英文 Homepage 尚未與中文 measurement-first product system 對齊；英文 Furniture Fit 仍 article-only；英文 bedroom/studio landing 與 Guide template 尚未 measured parity；中文 nav 仍是英文 labels；Planner 的「After the plan」仍使用 emoji；PDF cultural section 會重複標題與內文；Furniture Fit diagram 未依不對稱 clearance 放置家具；date locale 依標題猜測；CI 沒有獨立 browser gate。
+
+本輪 contract：
+
+- 英文首頁保留既有 canonical/alternates/SEO copy，但 Hero 改為「Will it fit? Check before you buy or move it.」，以實際 `360 × 300 cm` room、`150 × 190 cm` bed、`120 × 60 cm` desk、`72 cm` clearance band 與 `80 cm` door opening code-rendered SVG 呈現；primary 為 `Start Planning — Free`，secondary 為 `Check Furniture Fit`。
+- `FurnitureFitTool` 改為 `locale="zh"|"en"` 共用計算與 handoff 邏輯；英文工具在既有 SEO article 前渲染，支援 unit、room/furniture dimensions、requested clearance、physical/requested clearance 結果與 exact Planner handoff。
+- English bedroom (`/en/small-bedroom-layout-planner/`) 與 studio (`/en/studio-apartment-layout/`) 使用與中文相同的 `248 × 400 cm` / `560 × 500 cm` prototype、家具外框、SVG 座標與 `Try this size` payload；English Guide 加入 shared `MEASURE → COMPARE → TRY` template 與 Planner CTA。
+- Furniture Fit asymmetric pass 使用 `left + extra/2`、`back + extra/2` placement；fail 仍顯示實際 furniture footprint 與超出的 requested clearance box，不把示意圖當成通過結果。
+- zh nav 改為 房間規劃／家具適配／房間尺寸／指南／搬家／關於；emoji 改為文字編號；English export 預設不輸出 Feng Shui cultural section；日期改由 explicit `dateLocale`。
+- CI 增加 `uiux-browser` job：build、Astro preview、Playwright Chromium、`test:uiux-review-04-browser`、清理 preview；無 merge/deploy job 變更。
+
+Review-04 本地驗證 authority（source validation）：`1,457 build pages / 1,447 sitemap pages / 1,315 source articles / 1,000,350 audit checks / 0 failures`; `test:scripts 42/42`; Review-04 browser PASS，evidence 在 `docs/uiux/evidence/review-04/`。Bundle 為 `33 JS / 1,937,876 bytes / 929,901 max`、`10 CSS / 83,642 bytes / 17,760 max`；Review-03 comparison 為 `33 JS / 1,935,906 bytes / 929,901 max`、`9 CSS / 78,470 bytes / 17,760 max`。Local Lighthouse 已嘗試但套件未安裝，沒有虛構分數。
+
+本 baseline 仍是 local observation record；PR #100 的 OPEN / UNMERGED / UNDEPLOYED 狀態與 final exact head 由 final local review、CI readback 與最後一次 authoritative validation 確認。

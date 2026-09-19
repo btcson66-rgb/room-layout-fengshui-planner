@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "skipLink": true,
+    "focusVisible": true,
+    "keyboardFurnitureSelection": true,
+    "ariaLiveAndRoleStatus": true,
+    "reducedMotion": true,
+    "labelledMeasuredSvg": true,
+    "noHorizontalOverflow": true,
+    "viewports": [375, 390, 768, 1024, 1280, 1440],
+    "locales": ["zh", "en"]
+  },
+  "method": "Astro check, source contracts, and Playwright browser smoke; no axe score is claimed because axe is not part of this repository's installed test dependencies."
+}

@@ -55,7 +55,7 @@ export interface ExportMetadata {
   area: string;
   items: string[];
   checks: string[];
-  culturalReference: string;
+  culturalReference?: string;
   disclaimer: string;
 }
 
@@ -63,7 +63,7 @@ export function buildExportMetadata(design: Design, strings: PlannerStrings, dat
   const checks = runStructuralChecks(design, strings).map((warning) => `${warning.severity}: ${warning.message}`);
   return {
     title: strings.exportReport.title,
-    exportedAt: new Intl.DateTimeFormat(strings.exportReport.title.includes('dimension') ? 'en-US' : 'zh-TW', { dateStyle: 'medium' }).format(date),
+    exportedAt: new Intl.DateTimeFormat(strings.dateLocale ?? strings.locale ?? 'en-US', { dateStyle: 'medium' }).format(date),
     room: `${formatLength(design.room.w, design.room.unit)} × ${formatLength(design.room.h, design.room.unit)}`,
     area: formatArea(design.room.w, design.room.h, design.room.unit),
     items: design.items.map((item, index) => `${index + 1}. ${item.label?.trim() || strings.furniture[item.type]} · ${formatLength(item.w, design.room.unit)} × ${formatLength(item.h, design.room.unit)}`),
@@ -166,8 +166,10 @@ function buildPdfRows(design: Design, strings: PlannerStrings): PdfTextRow[] {
   } else {
     metadata.checks.forEach((check) => rows.push({ text: check }));
   }
-  rows.push({ text: strings.exportReport.culturalReference, strong: true });
-  rows.push({ text: metadata.culturalReference });
+  if (strings.exportReport.culturalHeading && metadata.culturalReference) {
+    rows.push({ text: strings.exportReport.culturalHeading, strong: true });
+    rows.push({ text: metadata.culturalReference });
+  }
   rows.push({ text: metadata.disclaimer, strong: true });
   return rows;
 }

@@ -93,19 +93,19 @@ const relatedArticles = [
         <h2 id="next-heading">完成平面圖後 — 下一步</h2>
         <div class="next-steps-grid">
           <article class="next-step-card">
-            <div class="next-step-icon" aria-hidden="true">📋</div>
+            <div class="next-step-icon" aria-hidden="true">01</div>
             <h3>取得文字規劃建議</h3>
             <p>用表單填入門窗條件與家具需求，取得配置、動線、收納與風水參考的文字建議。</p>
             <a class="button secondary" href="/zh/blog/bedroom-layout-before-buying-furniture/">閱讀買家具前規劃教學</a>
           </article>
           <article class="next-step-card">
-            <div class="next-step-icon" aria-hidden="true">🪄</div>
+            <div class="next-step-icon" aria-hidden="true">02</div>
             <h3>臥室風水格局檢查</h3>
             <p>用 checklist 參考床對門、鏡子對床、床頭靠窗與動線的民俗說法與空間舒適度提醒。</p>
             <a class="button secondary" href="/zh/feng-shui-bedroom-checker/">前往風水檢查工具</a>
           </article>
           <article class="next-step-card">
-            <div class="next-step-icon" aria-hidden="true">📐</div>
+            <div class="next-step-icon" aria-hidden="true">03</div>
             <h3>確認家具放得下嗎？</h3>
             <p>不確定床、桌、衣櫃放得進去嗎？閱讀家具尺寸與走道空間的實用建議。</p>
             <a class="button secondary" href="/zh/furniture-fit-checker/">家具尺寸適配檢查</a>
@@ -228,6 +228,8 @@ const relatedArticles = [
   import { initPlanner } from '../../planner/planner';
 
   const strings = {
+    locale: 'zh-TW',
+    dateLocale: 'zh-TW',
     roomLength: '房間長度',
     roomWidth: '房間寬度',
     unit: '單位',
@@ -289,7 +291,7 @@ const relatedArticles = [
     accessibility: { selectedSuffix: '，已選取' },
     exportReport: {
       title: 'RoomFeng 尺寸規劃報告', exportedAt: '匯出日期', room: '房間尺寸', area: '面積', furniture: '家具外框（依目前設計）', noFurniture: '目前沒有家具', checks: '尺寸檢查', noChecks: '目前沒有結構性警示；仍需現場核對。',
-      culturalReference: '中文風水提示僅作民俗文化與空間舒適度參考，不是尺寸或安全檢查結果。', disclaimer: '規劃僅供參考。購買、安裝、搬家或施工前，請核對現場實際尺寸。', pngSubtitle: 'MEASURE · PLAN · CHECK',
+      culturalHeading: '民俗文化參考', culturalReference: '中文風水提示僅作民俗文化與空間舒適度參考，不是尺寸或安全檢查結果。', disclaimer: '規劃僅供參考。購買、安裝、搬家或施工前，請核對現場實際尺寸。', pngSubtitle: 'MEASURE · PLAN · CHECK',
     },
     templates: {
       studio: '小套房',

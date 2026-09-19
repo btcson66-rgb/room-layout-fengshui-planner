@@ -15,12 +15,12 @@ const pathname = Astro.url.pathname;
 const isCurrent = (href: string) => href === homeHref ? pathname === homeHref || (lang === 'zh' && pathname === '/zh/') : pathname === href || pathname.startsWith(href);
 const navItems = lang === 'zh'
   ? [
-      { href: plannerHref, label: 'Planner' },
-      { href: fitCheckerHref, label: 'Furniture Fit' },
-      { href: '/zh/room-size-layout-templates/', label: 'Room Sizes' },
-      { href: '/zh/blog/', label: 'Guides' },
-      { href: '/zh/moving-furniture-size-check/', label: 'Moving' },
-      { href: '/about/', label: 'About' },
+      { href: plannerHref, label: '房間規劃' },
+      { href: fitCheckerHref, label: '家具適配' },
+      { href: '/zh/room-size-layout-templates/', label: '房間尺寸' },
+      { href: '/zh/blog/', label: '指南' },
+      { href: '/zh/moving-furniture-size-check/', label: '搬家' },
+      { href: '/about/', label: '關於' },
     ]
   : [
       { href: plannerHref, label: 'Planner' },

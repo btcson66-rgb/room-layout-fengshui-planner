@@ -42,6 +42,8 @@ export interface PlannerWarning {
 }
 
 export interface PlannerStrings {
+  locale?: string;
+  dateLocale?: string;
   roomLength: string;
   roomWidth: string;
   unit: string;
@@ -124,7 +126,8 @@ export interface PlannerStrings {
     noFurniture: string;
     checks: string;
     noChecks: string;
-    culturalReference: string;
+    culturalHeading?: string;
+    culturalReference?: string;
     disclaimer: string;
     pngSubtitle: string;
   };

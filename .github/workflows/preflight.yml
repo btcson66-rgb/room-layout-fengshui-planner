@@ -79,3 +79,40 @@ jobs:
 
       - name: Verify PRODUCT-002 entitlement isolation
         run: npm run test:product-002:entitlement
+
+  uiux-browser:
+    name: UIUX browser evidence
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+        env:
+          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
+          PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+      - name: Start Astro preview
+        shell: bash
+        run: |
+          npm run preview -- --host 127.0.0.1 > preview.log 2>&1 &
+          echo $! > preview.pid
+          for i in {1..60}; do
+            if curl --fail --silent http://127.0.0.1:4321/ > /dev/null; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:4321/ > /dev/null
+      - name: Run Review 04 browser gate
+        run: npm run test:uiux-review-04-browser
+      - name: Stop Astro preview
+        if: always()
+        shell: bash
+        run: if [ -f preview.pid ]; then kill "$(cat preview.pid)" || true; fi

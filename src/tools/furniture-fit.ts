@@ -23,6 +23,14 @@ export interface FurnitureFitResult {
   recommendedRotation: 0 | 90 | null;
 }
 
+export interface FurnitureFitPlacement {
+  xCm: number;
+  yCm: number;
+  widthCm: number;
+  depthCm: number;
+  requestedClearanceFit: boolean;
+}
+
 export function isValidFurnitureFitInput(input: FurnitureFitInput): boolean {
   const dimensions = [input.roomWidthCm, input.roomLengthCm, input.furnitureWidthCm, input.furnitureDepthCm];
   const clearances = [input.clearance.leftCm, input.clearance.rightCm, input.clearance.frontCm, input.clearance.backCm];
@@ -65,5 +73,25 @@ export function calculateFurnitureFit(input: FurnitureFitInput): FurnitureFitRes
     physicalFit: orientations.some((orientation) => orientation.physicalFit),
     requestedClearanceFit: orientations.some((orientation) => orientation.requestedClearanceFit),
     recommendedRotation: recommended?.rotation ?? null,
+  };
+}
+
+export function getFurnitureFitPlacement(input: FurnitureFitInput, rotation: 0 | 90 | null): FurnitureFitPlacement {
+  const widthCm = rotation === 90 ? input.furnitureDepthCm : input.furnitureWidthCm;
+  const depthCm = rotation === 90 ? input.furnitureWidthCm : input.furnitureDepthCm;
+  const orientation = calculateFurnitureFit(input).orientations.find((item) => item.rotation === rotation);
+  const requestedClearanceFit = orientation?.requestedClearanceFit ?? false;
+  const extraX = input.roomWidthCm - widthCm - input.clearance.leftCm - input.clearance.rightCm;
+  const extraY = input.roomLengthCm - depthCm - input.clearance.frontCm - input.clearance.backCm;
+  return {
+    widthCm,
+    depthCm,
+    requestedClearanceFit,
+    xCm: requestedClearanceFit
+      ? input.clearance.leftCm + Math.max(0, extraX) / 2
+      : Math.max(0, (input.roomWidthCm - widthCm) / 2),
+    yCm: requestedClearanceFit
+      ? input.clearance.backCm + Math.max(0, extraY) / 2
+      : Math.max(0, (input.roomLengthCm - depthCm) / 2),
   };
 }
