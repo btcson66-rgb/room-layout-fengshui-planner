@@ -12,32 +12,53 @@ const homeHref = lang === 'en' ? '/en/' : '/';
 const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
 const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
 const supportHref = '/support/';
+const pathname = Astro.url.pathname;
+const isCurrent = (href: string) => href === homeHref ? pathname === homeHref || (lang === 'zh' && pathname === '/zh/') : pathname === href || pathname.startsWith(href);
+const navItems = [
+  { href: homeHref, label: t.nav.home },
+  { href: plannerHref, label: t.nav.planner },
+  ...(lang === 'zh' ? [{ href: '/zh/feng-shui-bedroom-checker/', label: '風水檢查' }] : []),
+  { href: fitCheckerHref, label: t.nav.fitChecker },
+  ...(lang === 'zh' ? [{ href: '/zh/blog/', label: '部落格' }] : []),
+  { href: supportHref, label: '支持我們' },
+];
 ---
 
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href={homeHref} aria-label="RoomFeng">
-      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true" role="img">
-        <rect x="4" y="5" width="28" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2" />
-        <rect x="8" y="19" width="11" height="8" rx="1" fill="#2f6f62" />
-        <rect x="21" y="9" width="7" height="12" rx="1" fill="#b86b3d" />
-        <path d="M8 15h9M22 25h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <svg class="brand-mark" width="38" height="38" viewBox="0 0 38 38" aria-hidden="true" role="img">
+        <rect x="4" y="4" width="30" height="30" rx="2" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path d="M4 23h30M20 4v30" stroke="currentColor" stroke-width="1" opacity=".35" />
+        <rect x="8" y="26" width="8" height="5" rx="1" fill="currentColor" />
+        <rect x="23" y="10" width="7" height="11" rx="1" fill="var(--color-primary)" />
+        <path d="M8 16h8M23 25h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
       </svg>
-      <span>RoomFeng</span>
+      <span class="brand-copy"><strong>RoomFeng</strong><small>ROOM · LAYOUT · CULTURE</small></span>
     </a>
-    <nav aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href={homeHref}>{t.nav.home}</a></li>
-        <li><a href={plannerHref} style="font-weight:700">{t.nav.planner}</a></li>
-        {lang === 'zh' && <li><a href="/zh/feng-shui-bedroom-checker/">風水檢查</a></li>}
-        <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
-        {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
-        <li><a href={supportHref}>支持我們</a></li>
-      </ul>
+    <nav class="site-nav" aria-label={lang === 'en' ? 'Main navigation' : '主要選單'}>
+      <details>
+        <summary class="site-nav-toggle"><span>{lang === 'en' ? 'Menu' : '選單'}</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></summary>
+        <div class="site-nav-panel">
+          <ul class="nav-list">
+            {navItems.map((item) => <li><a class={isCurrent(item.href) ? 'is-active' : undefined} href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>)}
+          </ul>
+          <div class="language-switcher" aria-label={lang === 'en' ? 'Language switcher' : '語言切換'}>
+            <a class={lang === 'zh' ? 'is-active' : undefined} href="/" lang="zh" aria-current={lang === 'zh' ? 'page' : undefined}>{t.nav.languageZh}</a>
+            <a class={lang === 'en' ? 'is-active' : undefined} href="/en/" lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.languageEn}</a>
+          </div>
+        </div>
+      </details>
+      <div class="site-nav-desktop">
+        <ul class="nav-list">
+          {navItems.map((item) => <li><a class={isCurrent(item.href) ? 'is-active' : undefined} href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>)}
+        </ul>
+        <div class="language-switcher" aria-label={lang === 'en' ? 'Language switcher' : '語言切換'}>
+          <a class={lang === 'zh' ? 'is-active' : undefined} href="/" lang="zh" aria-current={lang === 'zh' ? 'page' : undefined}>{t.nav.languageZh}</a>
+          <a class={lang === 'en' ? 'is-active' : undefined} href="/en/" lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.languageEn}</a>
+        </div>
+      </div>
     </nav>
-    <div class="language-switcher" aria-label="Language switcher">
-      <a href="/" lang="zh">{t.nav.languageZh}</a>
-      <a href="/en/" lang="en">{t.nav.languageEn}</a>
-    </div>
+    <a class="header-cta" href={plannerHref}>{lang === 'en' ? 'Open planner' : '開始規劃'}</a>
   </div>
 </header>

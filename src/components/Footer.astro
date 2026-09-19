@@ -15,23 +15,32 @@ const supportHref = '/support/';
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div>
+    <div class="footer-brand">
+      <p class="eyebrow">ROOMFENG</p>
+      <p class="footer-tagline">{lang === 'en' ? 'Make room for better decisions.' : '先把空間想清楚，再把日子過得順。'}</p>
+      <p class="footer-disclaimer">{t.footer.folkDisclaimer} <a href="/disclaimer/">{t.footer.disclaimer}</a></p>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">{lang === 'en' ? 'Explore' : '探索'}</p>
+      <ul class="footer-links">
+        <li><a href={plannerHref}>{t.nav.planner}</a></li>
+        <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
+        {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
+        <li><a href={supportHref}>支持我們</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <p class="footer-label">{lang === 'en' ? 'About' : '關於'}</p>
       <ul class="footer-links">
         <li><a href="/about/">{t.footer.about}</a></li>
         <li><a href="/privacy/">{t.footer.privacy}</a></li>
         <li><a href="/terms/">{t.footer.terms}</a></li>
         <li><a href="/contact/">{t.footer.contact}</a></li>
-        <li><a href="/disclaimer/">{t.footer.disclaimer}</a></li>
         <li><a href="/changelog/">{t.footer.changelog}</a></li>
-        {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
-        <li><a href={supportHref}>支持我們</a></li>
-        <li><a href={plannerHref}>{t.nav.planner}</a></li>
-        <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
       </ul>
-      <p>{t.footer.folkDisclaimer} <a href="/disclaimer/">{t.footer.disclaimer}</a></p>
     </div>
     <p class="footer-site-stats" data-site-stats="roomfeng.win" data-lang={lang} hidden data-nosnippet></p>
-    <p>&copy; 2026 RoomFeng. A Btcson Project.</p>
+    <div class="footer-bottom"><p>&copy; 2026 RoomFeng. A Btcson Project.</p><p>Designed for measured living.</p></div>
   </div>
 </footer>
 

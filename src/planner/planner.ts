@@ -96,14 +96,16 @@ function createLabeledInput(label: string, input: HTMLInputElement | HTMLSelectE
 }
 
 function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: PlannerStrings, selected: boolean): void {
+  const label = item.label ?? strings.furniture[item.type];
   const group = svgEl('g', {
     class: `planner-item ${selected ? 'is-selected' : ''}`,
     tabindex: '0',
     role: 'button',
+    'aria-label': `${label}${selected ? '，已選取' : ''}`,
+    'aria-pressed': String(selected),
     'data-id': item.id,
     transform: `rotate(${item.rotation} ${item.x + item.w / 2} ${item.y + item.h / 2})`,
   });
-  const label = item.label ?? strings.furniture[item.type];
 
   if (item.type === 'door') {
     group.append(svgEl('path', {
@@ -141,8 +143,8 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
   group.append(text);
 
   if (selected) {
-    group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#2f6f62', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
-    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#2f6f62', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
+    group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#947228', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
+    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#947228', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
   }
 
   parent.append(group);
@@ -166,7 +168,7 @@ function renderEmptyHint(svg: SVGSVGElement, room: Design['room'], message: stri
 function renderGrid(svg: SVGSVGElement, room: Design['room']): void {
   const defs = svgEl('defs');
   const pattern = svgEl('pattern', { id: 'planner-grid', width: 50, height: 50, patternUnits: 'userSpaceOnUse' });
-  pattern.append(svgEl('path', { d: 'M 50 0 L 0 0 0 50', fill: 'none', stroke: '#d8d4c8', 'stroke-width': 1 }));
+  pattern.append(svgEl('path', { d: 'M 50 0 L 0 0 0 50', fill: 'none', stroke: '#ded8ca', 'stroke-width': 1 }));
   defs.append(pattern);
   svg.append(defs);
   svg.append(svgEl('rect', { x: PAD, y: PAD, width: room.w, height: room.h, fill: 'url(#planner-grid)' }));
@@ -497,6 +499,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     });
     const status = document.createElement('span');
     status.className = 'planner-save-status planner-muted';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
     actions.append(saveButton, pngButton, pdfButton, clearButton, status);
 
     controls.append(roomGrid, paletteTitle, palette, customTitle, customForm, templateTitle, templates, actions);
@@ -588,6 +592,18 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     actions.append(rotateButton, deleteButton);
     selectionPanel.append(grid, actions);
   }
+
+  svg.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const target = (event.target as Element).closest<SVGGElement>('.planner-item');
+    const id = target?.dataset.id;
+    if (!id) return;
+    event.preventDefault();
+    state.selectedId = id;
+    state.dragging = null;
+    state.resizing = null;
+    rerender();
+  });
 
   svg.addEventListener('pointerdown', (event) => {
     const target = event.target as Element;

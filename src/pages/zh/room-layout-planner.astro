@@ -61,7 +61,8 @@ const relatedArticles = [
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <header>
+      <header class="tool-page-intro">
+        <p class="eyebrow">ROOM PLANNER · FREE TOOL</p>
         <h1>房間家具配置工具</h1>
         <p class="lead">
           輸入房間長寬，拖曳家具放入平面圖，確認動線與門口，再匯出 PNG / PDF 或取得規劃建議。
@@ -87,6 +88,7 @@ const relatedArticles = [
       <AdSlot id="planner-mid-zh" adSlot="room-layout-planner-zh-mid" />
 
       <section class="next-steps-panel" aria-labelledby="next-heading">
+        <p class="eyebrow">AFTER THE PLAN</p>
         <h2 id="next-heading">完成平面圖後 — 下一步</h2>
         <div class="next-steps-grid">
           <article class="next-step-card">
@@ -136,20 +138,22 @@ const relatedArticles = [
     margin: var(--space-3) 0 0;
   }
 
-  .step-flow-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    padding: var(--space-2) var(--space-3);
-    background: var(--color-surface-muted, #f7f6f3);
-    border-radius: 999px;
-    font-size: var(--text-sm);
-    color: var(--color-muted);
-  }
+    .step-flow-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-3) var(--space-2) 0;
+      background: var(--color-surface-muted, #f7f6f3);
+      border-radius: 0;
+      border-bottom: 2px solid var(--color-border);
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+    }
 
-  .step-flow-item[aria-current="step"] {
-    background: #2f6f62;
-    color: #fff;
+    .step-flow-item[aria-current="step"] {
+    border-bottom-color: var(--color-primary);
+    color: var(--color-primary-strong);
+    font-weight: 800;
   }
 
   .step-num {
@@ -160,20 +164,20 @@ const relatedArticles = [
     border-radius: 50%;
     font-weight: 800;
     font-size: 0.85em;
-    background: rgba(0,0,0,.12);
+    background: var(--color-surface-muted);
     flex-shrink: 0;
   }
 
   .step-flow-item[aria-current="step"] .step-num {
-    background: rgba(255,255,255,.25);
+    background: var(--color-primary-soft);
   }
 
   /* ── Next steps panel ── */
   .next-steps-panel {
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     padding: var(--space-5);
-    background: var(--color-surface);
+    background: var(--color-surface-strong);
   }
 
   .next-steps-panel h2 {
@@ -194,7 +198,13 @@ const relatedArticles = [
   }
 
   .next-step-icon {
-    font-size: 1.75rem;
+    display: grid;
+    place-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: var(--color-primary-soft);
+    font-size: 1.2rem;
   }
 
   .disclaimer-note {
