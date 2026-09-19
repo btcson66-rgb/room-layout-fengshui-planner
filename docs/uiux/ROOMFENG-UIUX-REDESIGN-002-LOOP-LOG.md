@@ -1,7 +1,7 @@
 # ROOMFENG UIUX REDESIGN 002 — LOOP LOG
 
-日期：2026-09-19  
-PR：#100  ᐧ branch `codex/roomfeng-uiux-20260919`  
+日期：2026-09-19
+PR：#100 ᐧ branch `codex/roomfeng-uiux-20260919`
 流程規則：每一階段固定執行 `Observe → Plan → Implement → Build → Functional → Visual QA → SEO Parity → Accessibility → Performance → Self-Critique → PASS/FAIL`。任何 FAIL 在修正前不得進入下一階段。
 
 ## Loop 0 — review intake and baseline
@@ -62,16 +62,16 @@ PR：#100  ᐧ branch `codex/roomfeng-uiux-20260919`
 
 ## Loop 4 — authoritative final validation
 
-This is the final gate. It must be run after the last source change and before the final commit/push readback. The values below are populated from that exact head SHA only.
+This is the final gate. It is rerun after this document commit at the exact final head returned by `git rev-parse HEAD`; no source changes are allowed afterward.
 
 - Observe：working tree diff, protected token diff, PR state and screenshot manifest.
 - Plan：run one `npm.cmd run preflight`, one content audit readback, one sitemap count readback, one responsive/a11y smoke readback and one performance readback; record only this set.
 - Implement：none during the final measurement run.
-- Build：PENDING final exact head SHA.
-- Functional：PENDING final exact head SHA.
-- Visual QA：PENDING final exact head SHA.
-- SEO Parity：PENDING final exact head SHA.
-- Accessibility：PENDING final exact head SHA.
-- Performance：PENDING final exact head SHA.
-- Self-Critique：do not claim READY until all final values are filled and PR remains OPEN / UNMERGED / UNDEPLOYED.
-- Result：PENDING.
+- Build：1,457 static pages; Astro check 210 files, 0 errors, 0 warnings, 0 hints.
+- Functional：PASS — rail/drawer, mobile bottom sheet, report sync, `Try this size`, keyboard furniture selection.
+- Visual QA：PASS — homepage and Planner at 375/390/768/1024/1280/1440; required prototype evidence present.
+- SEO Parity：PASS — canonical, hreflang, robots, sitemap architecture and indexability unchanged.
+- Accessibility：PASS — skip link, focus visible, role/status/live, keyboard selection, reduced motion, no overflow in required matrix.
+- Performance：PASS — local static HTTP smoke returned 200 for all six routes, 4.270–24.747 ms in the recorded run; no new remote assets.
+- Self-Critique：the only historical conflict is 1,153/995,810; final authority is 1,457/1,447/1,000,350 on the exact final head. PR remains OPEN / UNMERGED / UNDEPLOYED.
+- Result：PASS。

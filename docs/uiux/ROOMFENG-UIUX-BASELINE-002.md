@@ -1,6 +1,6 @@
 # ROOMFENG UIUX BASELINE 002
 
-日期：2026-09-19  
+日期：2026-09-19
 範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。
 
 ## Baseline identity

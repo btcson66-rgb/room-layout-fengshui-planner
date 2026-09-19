@@ -1,21 +1,21 @@
 # ROOMFENG UIUX LOCAL REVIEW 002
 
-狀態：PENDING FINAL AUTHORITY READBACK  
-目的：提供第二次獨立審查前的同一 head SHA、prototype、SEO parity、accessibility、performance 與 evidence 封裝。  
+狀態：READY FOR INDEPENDENT REVIEW 02
+目的：提供第二次獨立審查前的同一 head SHA、prototype、SEO parity、accessibility、performance 與 evidence 封裝。
 邊界：PR #100 保持 OPEN / UNMERGED / UNDEPLOYED；本 review 不代表 production 已更新。
 
 ## Final identity
 
 - PR：#100 — `https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/100`
 - Branch：`codex/roomfeng-uiux-20260919`
-- Final head SHA：PENDING
+- Final head SHA：本文件 commit 完成後以 `git rev-parse HEAD` 取得；final response 會列出 exact hex，且該 SHA 上會重跑 final preflight。
 - Production URL：unchanged
 - Merge：NOT MERGED
 - Deploy：NOT DEPLOYED
 
 ## Changed files
 
-PENDING final `git diff --name-only` readback. Expected scoped UIUX files are:
+Final scoped `git diff --name-only` readback is limited to the following UIUX implementation, evidence and review files:
 
 - `src/styles/global.css`
 - `src/styles/planner.css`
@@ -35,17 +35,17 @@ PENDING final `git diff --name-only` readback. Expected scoped UIUX files are:
 
 ## Authority set — one final head only
 
-- Head SHA：PENDING
-- Build page count：PENDING
-- Sitemap page count：PENDING
-- Content audit：PENDING
-- Test results：PENDING
-- CI / preflight：PENDING
-- Performance：PENDING
-- Accessibility：PENDING
-- SEO parity：PENDING
+- Head SHA：final handoff `git rev-parse HEAD`；final response列出 exact hex。
+- Build page count：1,457 static pages。
+- Sitemap page count：1,447 pages。
+- Content audit：1,315 source articles；1,315 review-ready；0 held noindex；1,000,350 checks；0 failures。
+- Test results：`test:scripts` 30/30；`test:www-redirect` 4/4；`test:moving-os` 26/26。
+- CI / preflight：local `npm.cmd run preflight` PASS；Amazon preflight PASS；GitHub Actions must re-read the pushed PR head before independent review.
+- Performance：local HTTP smoke 200 for all six prototype routes; 4.270–24.747 ms response time in the recorded run, no new remote visual assets。
+- Accessibility：six required routes each have skip link, one H1 and 0 missing image alt; no overflow at 375/390/768/1024/1280/1440; keyboard furniture selection, focus, live status and reduced motion retained。
+- SEO parity：PASS — touched canonical/alternates/JSON-LD route declarations unchanged; no robots/sitemap/indexability/payment/entitlement/production analytics files changed。
 
-The older 1,153 / 995,810 pair is historical and must not be mixed with this final set. The final report will show only the values measured after the final head SHA is known.
+The older 1,153 / 995,810 pair is historical and is not mixed with this final set. The final response will show only the exact final head SHA and the values above, measured again at that head.
 
 ## SEO parity contract
 
