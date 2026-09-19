@@ -1,6 +1,6 @@
 {
   "source": "http://127.0.0.1:4321",
-  "generatedAt": "2026-09-19T15:42:47.275Z",
+  "generatedAt": "2026-09-19T15:47:37.264Z",
   "viewports": [
     375,
     390,
@@ -12,14 +12,20 @@
   "navigation": [
     {
       "route": "/",
-      "domContentLoadedMs": 216,
-      "loadEventMs": 217,
+      "domContentLoadedMs": 208,
+      "loadEventMs": 208,
       "transferSizeBytes": 10449
     },
     {
       "route": "/",
-      "domContentLoadedMs": 202,
-      "loadEventMs": 202,
+      "domContentLoadedMs": 208,
+      "loadEventMs": 208,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 204,
+      "loadEventMs": 204,
       "transferSizeBytes": 10449
     },
     {
@@ -30,8 +36,8 @@
     },
     {
       "route": "/",
-      "domContentLoadedMs": 148,
-      "loadEventMs": 149,
+      "domContentLoadedMs": 149,
+      "loadEventMs": 150,
       "transferSizeBytes": 10449
     },
     {
@@ -41,10 +47,10 @@
       "transferSizeBytes": 10449
     },
     {
-      "route": "/",
-      "domContentLoadedMs": 150,
-      "loadEventMs": 151,
-      "transferSizeBytes": 10449
+      "route": "/en/",
+      "domContentLoadedMs": 121,
+      "loadEventMs": 121,
+      "transferSizeBytes": 10930
     },
     {
       "route": "/en/",
@@ -54,8 +60,14 @@
     },
     {
       "route": "/en/",
-      "domContentLoadedMs": 128,
-      "loadEventMs": 128,
+      "domContentLoadedMs": 120,
+      "loadEventMs": 120,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 115,
+      "loadEventMs": 115,
       "transferSizeBytes": 10930
     },
     {
@@ -66,50 +78,50 @@
     },
     {
       "route": "/en/",
-      "domContentLoadedMs": 114,
-      "loadEventMs": 114,
-      "transferSizeBytes": 10930
-    },
-    {
-      "route": "/en/",
-      "domContentLoadedMs": 21,
-      "loadEventMs": 53,
-      "transferSizeBytes": 10930
-    },
-    {
-      "route": "/en/",
-      "domContentLoadedMs": 18,
-      "loadEventMs": 48,
+      "domContentLoadedMs": 113,
+      "loadEventMs": 113,
       "transferSizeBytes": 10930
     },
     {
       "route": "/zh/furniture-fit-checker/",
       "domContentLoadedMs": 22,
-      "loadEventMs": 181,
+      "loadEventMs": 180,
       "transferSizeBytes": 7421
     },
     {
       "route": "/en/furniture-fit-checker/",
-      "domContentLoadedMs": 123,
-      "loadEventMs": 125,
+      "domContentLoadedMs": 116,
+      "loadEventMs": 119,
       "transferSizeBytes": 11362
     },
     {
       "route": "/zh/room-layout-planner/",
-      "domContentLoadedMs": 188,
-      "loadEventMs": 189,
+      "domContentLoadedMs": 200,
+      "loadEventMs": 201,
       "transferSizeBytes": 7272
     },
     {
       "route": "/zh/room-layout-planner/",
-      "domContentLoadedMs": 188,
-      "loadEventMs": 189,
+      "domContentLoadedMs": 193,
+      "loadEventMs": 194,
       "transferSizeBytes": 7272
     },
     {
       "route": "/zh/room-layout-planner/",
-      "domContentLoadedMs": 199,
-      "loadEventMs": 200,
+      "domContentLoadedMs": 37,
+      "loadEventMs": 69,
+      "transferSizeBytes": 7272
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 191,
+      "loadEventMs": 192,
+      "transferSizeBytes": 7272
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 192,
+      "loadEventMs": 194,
       "transferSizeBytes": 7272
     },
     {
@@ -119,33 +131,15 @@
       "transferSizeBytes": 7272
     },
     {
-      "route": "/zh/room-layout-planner/",
-      "domContentLoadedMs": 199,
-      "loadEventMs": 200,
-      "transferSizeBytes": 7272
-    },
-    {
-      "route": "/zh/room-layout-planner/",
-      "domContentLoadedMs": 40,
-      "loadEventMs": 71,
-      "transferSizeBytes": 7272
-    },
-    {
       "route": "/en/room-layout-planner/",
-      "domContentLoadedMs": 126,
-      "loadEventMs": 127,
+      "domContentLoadedMs": 36,
+      "loadEventMs": 67,
       "transferSizeBytes": 8863
     },
     {
       "route": "/en/room-layout-planner/",
-      "domContentLoadedMs": 132,
-      "loadEventMs": 133,
-      "transferSizeBytes": 8863
-    },
-    {
-      "route": "/en/room-layout-planner/",
-      "domContentLoadedMs": 132,
-      "loadEventMs": 133,
+      "domContentLoadedMs": 130,
+      "loadEventMs": 131,
       "transferSizeBytes": 8863
     },
     {
@@ -156,14 +150,20 @@
     },
     {
       "route": "/en/room-layout-planner/",
-      "domContentLoadedMs": 37,
-      "loadEventMs": 68,
+      "domContentLoadedMs": 134,
+      "loadEventMs": 135,
       "transferSizeBytes": 8863
     },
     {
       "route": "/en/room-layout-planner/",
-      "domContentLoadedMs": 126,
-      "loadEventMs": 127,
+      "domContentLoadedMs": 37,
+      "loadEventMs": 69,
+      "transferSizeBytes": 8863
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 134,
+      "loadEventMs": 134,
       "transferSizeBytes": 8863
     },
     {
@@ -174,32 +174,32 @@
     },
     {
       "route": "/zh/studio-apartment-layout/",
-      "domContentLoadedMs": 19,
-      "loadEventMs": 50,
+      "domContentLoadedMs": 235,
+      "loadEventMs": 235,
       "transferSizeBytes": 8908
     },
     {
       "route": "/en/small-bedroom-layout-planner/",
-      "domContentLoadedMs": 149,
-      "loadEventMs": 149,
+      "domContentLoadedMs": 139,
+      "loadEventMs": 139,
       "transferSizeBytes": 11130
     },
     {
       "route": "/en/studio-apartment-layout/",
       "domContentLoadedMs": 137,
-      "loadEventMs": 137,
+      "loadEventMs": 138,
       "transferSizeBytes": 11508
     },
     {
       "route": "/zh/layout-guides/10x10-bedroom-layout/",
-      "domContentLoadedMs": 14,
-      "loadEventMs": 45,
+      "domContentLoadedMs": 177,
+      "loadEventMs": 177,
       "transferSizeBytes": 6375
     },
     {
       "route": "/en/layout-guides/10x10-bedroom-layout/",
-      "domContentLoadedMs": 133,
-      "loadEventMs": 133,
+      "domContentLoadedMs": 135,
+      "loadEventMs": 135,
       "transferSizeBytes": 5971
     }
   ]
