@@ -3,7 +3,9 @@
 ## DISCOVERY
 
 - GSC queries：繁中床位／門／書桌問題為主；最高機會集中在既有頁 position 5–9 的 CTR 改善，不是新 keyword 數量。
-- AI Search：`UNKNOWN`。本輪沒有 GSC Generative AI export；Cloudflare crawler observation 不當作 citation 證據。
+- AI Search（GSC Generative AI Features 最新匯出）：United States 約 108 次 Generative AI impressions；page-level exposure overwhelmingly concentrated on Chinese-language RoomFeng content，English page-level exposure currently extremely small。Leading Chinese AI-visible clusters include 床頭靠牆、床對門、書桌對門、鏡子對床，以及其他具體臥室／格局問題。
+- Aggregation boundary：上述約 108 是 property/country-level total；page rows 是另一個 aggregation view，若兩者有些微差異，記錄 row／分組邊界，不強行使 totals 相等。
+- Interpretation：此 AI Search evidence supports continued optimization of existing Chinese winners，但不 justify mass URL expansion，也不證明 clicks、conversions、ranking lift 或 causality。Cloudflare crawler data ≠ GSC AI Search；crawler observation ≠ citation proof；AI impression ≠ click。
 - SERP gaps：
   - `床左邊靠牆怎麼辦`：RoomFeng 已有 300 × 360 公分三方案、雙人／單人分流、換床單與七晚驗收；外部結果多為一般原則，保持既有 owner 並觀察。
   - `床頭一定要靠牆嗎`：RoomFeng 已有靠牆／靠窗／懸空判斷，但標題未直接使用問題句；本輪優化 title、description、H1 與首屏決策表。
@@ -32,7 +34,8 @@
 
 - `/zh/blog/tiny-room-layout-under-5-ping/` 與既有 5 坪 floor-plan owner：持續看 query/page split、CTR 與是否出現新的實際問題，不因 `5坪` 曝光就拆頁。
 - EN-US：USA 有 4,300 impressions／16 clicks 的 28 天 country evidence，但目前只有 36 個 sitemap URLs；先查 exact page/query owner 與 shared shell stability，再決定是否優化英文既有頁。
-- GSC URL Inspection、GSC Generative AI、T+7/T+14/T+28：尚未可判定，維持 `UNKNOWN`／`NOT YET EVALUATED`。
+- GSC URL Inspection、T+7/T+14/T+28：尚未可判定，維持 `UNKNOWN`／`NOT YET EVALUATED`。
+- GSC Generative AI page-level evidence 已可用，但只支持持續優化既有中文 winners；不改變 `OPTIMIZE_EXISTING` 決策，不將候選升級為 `BUILD`。
 
 ### REJECT
 

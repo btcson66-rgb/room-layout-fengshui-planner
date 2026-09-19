@@ -49,7 +49,9 @@ Sitemap URL 數是可公開發現的 URL surface，不等於 Google 已索引 UR
 - GA4：23 active users、40 sessions、52 pageviews、35.0% engagement rate；前週為 195、223、281、56.5%。這是流量觀測，不用來推估搜尋需求。
 - Cloudflare 28 天：91,360 requests、43,238 pageviews、15,941 unique visitors、507 threats blocked。
 - Cloudflare AI crawler observation：本週共記錄多個自我識別 crawler，並有 745 筆疑似敏感路徑探測；這不是 GSC Generative AI exposure 證據。
-- GSC Generative AI export／AI Search page rows：本輪沒有可用的第一方匯出，記錄為 `UNKNOWN`。Cloudflare crawler pages 只能作 crawl observation，不能宣稱 AI citation 或 AI Search 曝光。
+- GSC Generative AI Features（使用者提供的最新匯出）：United States 約 108 次 Generative AI impressions。這是 property/country-level total；page-level rows 是另一個 aggregation view，若與 property total 有些微差異，保留分組／row boundary，不強行相加。
+- AI Search page-level exposure overwhelmingly concentrated on Chinese-language RoomFeng content；English page-level exposure currently extremely small。Leading Chinese AI-visible clusters include 床頭靠牆、床對門、書桌對門、鏡子對床，以及其他具體臥室／格局問題。
+- Interpretation：此 evidence supports continued optimization of existing Chinese winners，但不 justify mass URL expansion；AI impression ≠ click，亦不等於 conversion、ranking lift 或 causality。Cloudflare crawler data remains separate from GSC AI Search，crawler observation ≠ citation proof。
 
 ## 內容 registry 與既有治理
 
@@ -60,4 +62,4 @@ Sitemap URL 數是可公開發現的 URL surface，不等於 Google 已索引 UR
 
 ## Baseline conclusion
 
-本輪最強證據是既有繁中床位／書桌頁在 position 5–9 仍有曝光，但 CTR 偏低；因此先做三頁 `OPTIMIZE_EXISTING`。現有 5 坪與床側靠牆內容已能承接 query，不建立 keyword permutation pages。索引狀態、GSC AI Search 與持續轉化仍維持 `UNKNOWN`／`NOT YET EVALUATED`。
+本輪最強證據是既有繁中床位／書桌頁在 position 5–9 仍有曝光，但 CTR 偏低；因此先做三頁 `OPTIMIZE_EXISTING`。現有 5 坪與床側靠牆內容已能承接 query，不建立 keyword permutation pages。索引狀態與持續轉化仍維持 `UNKNOWN`／`NOT YET EVALUATED`；最新 GSC Generative AI evidence supports existing Chinese optimization only，且不將任何候選升級為 `BUILD`。
