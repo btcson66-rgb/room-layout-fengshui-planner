@@ -273,6 +273,23 @@ const relatedArticles = [
       exportPdf: '匯出 PDF',
       save: '手動儲存',
       clear: '清除設計',
+      saveExport: '儲存與匯出',
+    },
+    navigation: {
+      room: '房間', furniture: '家具', templates: '範例', checks: '檢查', report: '報告',
+      toolsLabel: '規劃工具', setupEyebrow: '設定', closeDrawer: '關閉設定面板', canvasLabel: '房間平面圖',
+      canvasHint: '拖曳家具 · 點選後調整', mobileActionsLabel: '手機規劃操作',
+    },
+    drawer: { roomTitle: '房間設定', furnitureTitle: '加入家具', templatesTitle: '範例格局', checksTitle: '尺寸檢查', reportTitle: '匯出報告' },
+    report: {
+      eyebrow: 'EXPORT REPORT · LOCAL PREVIEW', title: 'RoomFeng 尺寸規劃報告', status: '本機草稿', room: '房間', area: '面積', furniture: '家具', checks: '檢查',
+      checksPass: '可繼續核對', checksNeedsReview: (count: number) => `${count} 項需複核`, moreItems: (count: number) => `另有 ${count} 件家具未展開`,
+      note: '報告會保留房間尺寸、家具外框與結構檢查；下單或搬家前仍需核對現場門寬、轉角與實體外尺寸。',
+    },
+    accessibility: { selectedSuffix: '，已選取' },
+    exportReport: {
+      title: 'RoomFeng 尺寸規劃報告', exportedAt: '匯出日期', room: '房間尺寸', area: '面積', furniture: '家具外框（依目前設計）', noFurniture: '目前沒有家具', checks: '尺寸檢查', noChecks: '目前沒有結構性警示；仍需現場核對。',
+      culturalReference: '中文風水提示僅作民俗文化與空間舒適度參考，不是尺寸或安全檢查結果。', disclaimer: '規劃僅供參考。購買、安裝、搬家或施工前，請核對現場實際尺寸。', pngSubtitle: 'MEASURE · PLAN · CHECK',
     },
     templates: {
       studio: '小套房',

@@ -1,11 +1,11 @@
 # ROOMFENG UIUX BASELINE 002
 
 日期：2026-09-19
-範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。此文件同時保留 Review 01 初始基線，並記錄 Review 02 blocker 的修正前狀態。
+範圍：PR #100 `codex/roomfeng-uiux-20260919`；只做 local branch / same-PR revision，未 merge、未 deploy、未修改 production。此文件同時保留 Review 01/02 初始基線，並記錄 Review 03 blocker 的修正前狀態。
 
 ## Baseline identity
 
-- Review target：`ROOMFENG-UIUX-REDESIGN-002-REVIEW-01.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-02.md`
+- Review target：`ROOMFENG-UIUX-REDESIGN-002-REVIEW-01.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-02.md` → `ROOMFENG-UIUX-REDESIGN-002-REVIEW-03.md`
 - PR：[#100](https://github.com/btcson66-rgb/room-layout-fengshui-planner/pull/100)
 - Baseline head at observation：`0b934e60d48523b55238c63ab67eb469b262061e`
 - Base branch：`main`
@@ -79,3 +79,17 @@ The revised package must visibly include:
 - Screenshot evidence for 375, 390, 768, 1024, 1280 and 1440 widths.
 
 This baseline is an observation record, not a deployment claim.
+
+## Review-03 blocker baseline and repair contract
+
+Review 03 的修正前狀態補充如下：Planner shared chrome、report preview、PNG/PDF metadata 仍有中文硬編碼；Bedroom prototype 的文案 113 cm 與其實際座標不一致；Furniture Fit preset 在 m/ft 下把 cm 數字直接寫入表單；current-head Planner evidence 未覆蓋完整 viewport；Guide smoke 只測英文；PDF/PNG 尚未留下實際瀏覽器輸出 binary；`final-preflight.log` 仍是舊 run。
+
+本輪 acceptance contract：
+
+- zh/en Planner rail、drawer、mobile actions、report preview 與 accessibility label 必須使用 shared strings。
+- zh/en export metadata、PNG header/footer、PDF rows 必須使用 shared strings；瀏覽器 evidence 必須產出非零 `image/png` 與 `application/pdf`。
+- Bedroom 顯示的 clearance 必須由與 SVG/handoff 相同的 room/item geometry 計算；目前 route width `127 cm`、床尾至桌前 `47 cm`。
+- Furniture Fit preset 在 `cm`、`m`、`ft` 顯示值轉回 canonical cm 後必須保留 preset dimensions；無效輸入不得產生 SVG 或 handoff。
+- Homepage 與 Planner 在 `375/390/768/1024/1280/1440` 無水平溢出；current-head evidence 只採 `review-03/`。
+
+Review-03 closeout authority（final docs/evidence commit 後再填 exact SHA）：`1,457 build pages / 1,447 sitemap pages / 1,315 source articles / 1,000,350 audit checks / 0 failures`; Astro check `217 files, 0/0/0`; `test:scripts 38/38`; browser smoke PASS。這些數字取代舊的 1,153 / 995,810 pair；後者只保留為歷史衝突，不進入 final authority set。

@@ -4,7 +4,7 @@ import test from 'node:test';
 
 import { buildExportMetadata, EXPORT_DISCLAIMER } from '../../src/planner/export.ts';
 import { createQuickHandoff, handoffToPlannerDesign } from '../../src/planner/quick-handoff.ts';
-import { calculateFurnitureFit } from '../../src/tools/furniture-fit.ts';
+import { calculateFurnitureFit, fromFurnitureFitCm, isValidFurnitureFitInput, toFurnitureFitCm } from '../../src/tools/furniture-fit.ts';
 
 const strings = {
   roomLength: '房間長度',
@@ -27,10 +27,20 @@ const strings = {
   furniture: { bed: '床', desk: '書桌', wardrobe: '衣櫃', sofa: '沙發', diningTable: '餐桌', door: '門', window: '窗', mirror: '鏡子', custom: '自訂' },
   customItem: { label: '自訂家具', namePlaceholder: '家具名稱', addButton: '加入', editNameLabel: '名稱' },
   units: { cm: '公分', m: '公尺', ft: '英尺' },
-  actions: { add: '加入', rotate90: '旋轉', delete: '刪除', exportPng: 'PNG', exportPdf: 'PDF', save: '儲存', clear: '清空' },
   templates: { studio: '套房', student: '學生房', double: '雙人房', living: '客廳' },
   warnings: { bounds: '超出', door: '門被擋', aisle: '走道窄' },
+  actions: { add: '加入', rotate90: '旋轉', delete: '刪除', exportPng: 'PNG', exportPdf: 'PDF', save: '儲存', clear: '清空', saveExport: '儲存與匯出' },
+  navigation: { room: '房間', furniture: '家具', templates: '範例', checks: '檢查', report: '報告', toolsLabel: '規劃工具', setupEyebrow: '設定', closeDrawer: '關閉', canvasLabel: '平面圖', canvasHint: '拖曳', mobileActionsLabel: '操作' },
+  drawer: { roomTitle: '房間設定', furnitureTitle: '加入家具', templatesTitle: '範例格局', checksTitle: '尺寸檢查', reportTitle: '匯出報告' },
+  report: { eyebrow: 'EXPORT REPORT', title: 'RoomFeng 尺寸規劃報告', status: '本機草稿', room: '房間', area: '面積', furniture: '家具', checks: '檢查', checksPass: '可繼續核對', checksNeedsReview: (count) => `${count} 項需複核`, moreItems: (count) => `另有 ${count} 件`, note: '核對。' },
+  accessibility: { selectedSuffix: '，已選取' },
+  exportReport: { title: 'RoomFeng 尺寸規劃報告', exportedAt: '匯出日期', room: '房間尺寸', area: '面積', furniture: '家具外框', noFurniture: '目前沒有家具', checks: '尺寸檢查', noChecks: '目前沒有警示', culturalReference: '文化參考', disclaimer: EXPORT_DISCLAIMER, pngSubtitle: 'MEASURE · PLAN · CHECK' },
   fengShui: { sectionTitle: '文化參考', bedFacingDoor: '床門', mirrorFacingBed: '鏡床', deskNoSupport: '桌', doorwayBlocked: '門', headboardNoWall: '床頭', noWarnings: '無' },
+};
+
+const stringsEn = {
+  ...strings,
+  exportReport: { ...strings.exportReport, title: 'RoomFeng dimension plan report', exportedAt: 'Exported', room: 'Room dimensions', area: 'Area', furniture: 'Furniture footprints', noFurniture: 'No furniture yet', checks: 'Dimension checks', noChecks: 'No structural warnings', culturalReference: 'Cultural reference', disclaimer: 'Planning reference only.', pngSubtitle: 'MEASURE · PLAN · CHECK' },
 };
 
 test('exact-dimension handoff preserves room, item type, width, depth and rotation', () => {
@@ -70,15 +80,46 @@ test('export metadata is the contract used by PDF and PNG output', () => {
     room: { w: 248, h: 400, unit: 'cm' },
     items: [{ id: 'bed', type: 'bed', label: '單人床', x: 16, y: 45, w: 105, h: 188, rotation: 0 }],
   }, strings, new Date('2026-09-19T00:00:00Z'));
-  assert.equal(metadata.title, 'RoomFeng 尺寸規劃報告');
+  assert.equal(metadata.title, strings.exportReport.title);
   assert.match(metadata.room, /248/);
   assert.match(metadata.room, /400/);
   assert.match(metadata.items[0], /105/);
-  assert.equal(metadata.disclaimer, EXPORT_DISCLAIMER);
+  assert.equal(metadata.disclaimer, strings.exportReport.disclaimer);
   const source = fs.readFileSync(new URL('../../src/planner/export.ts', import.meta.url), 'utf8');
   assert.match(source, /export async function exportPng\(svg: SVGSVGElement, anchor\?: HTMLElement \| null, design\?:/);
   assert.match(source, /EXPORT_DISCLAIMER/);
-  assert.match(source, /RoomFeng 尺寸規劃/);
+  assert.match(source, /strings\.exportReport/);
+  assert.match(source, /buildPdfBlob/);
+});
+
+test('export metadata is localized for both zh and en output contracts', () => {
+  const design = { room: { w: 300, h: 300, unit: 'cm' }, items: [] };
+  assert.equal(buildExportMetadata(design, strings).title, 'RoomFeng 尺寸規劃報告');
+  assert.equal(buildExportMetadata(design, stringsEn).title, 'RoomFeng dimension plan report');
+  assert.equal(buildExportMetadata(design, stringsEn).disclaimer, 'Planning reference only.');
+});
+
+test('Furniture Fit presets retain exact centimetre geometry in cm, m, and ft', () => {
+  for (const unit of ['cm', 'm', 'ft']) {
+    for (const value of [300, 105, 188, 60]) {
+      assert.ok(Math.abs(toFurnitureFitCm(fromFurnitureFitCm(value, unit), unit) - value) < 0.000001, `${unit} ${value}`);
+    }
+  }
+  assert.equal(isValidFurnitureFitInput({ roomWidthCm: 300, roomLengthCm: 300, furnitureWidthCm: 105, furnitureDepthCm: 188, clearance: { leftCm: 0, rightCm: 0, frontCm: 60, backCm: 0 } }), true);
+  assert.equal(isValidFurnitureFitInput({ roomWidthCm: Number.NaN, roomLengthCm: 300, furnitureWidthCm: 105, furnitureDepthCm: 188, clearance: { leftCm: 0, rightCm: 0, frontCm: 60, backCm: 0 } }), false);
+});
+
+test('Bedroom measured route and displayed clearance derive from the same geometry', () => {
+  const source = fs.readFileSync(new URL('../../src/pages/zh/small-bedroom-layout.astro', import.meta.url), 'utf8');
+  const roomWidth = Number(source.match(/const bedroomRoomWidthCm = (\d+)/)?.[1]);
+  const bed = { x: Number(source.match(/xCm: (\d+)/)?.[1]), width: Number(source.match(/widthCm: (\d+)/)?.[1]) };
+  const deskY = Number(source.match(/yCm: (\d+)/g)?.[1].match(/\d+/)?.[0]);
+  const bedY = Number(source.match(/yCm: (\d+)/)?.[1]);
+  const bedDepth = Number(source.match(/depthCm: (\d+)/)?.[1]);
+  assert.equal(roomWidth - bed.x - bed.width, 127);
+  assert.equal(deskY - bedY - bedDepth, 47);
+  assert.match(source, /bedroomRightRouteCm/);
+  assert.match(source, /bedroomBedToDeskGapCm/);
 });
 
 test('rail controls expose distinct room, furniture, templates, checks and report panels', () => {

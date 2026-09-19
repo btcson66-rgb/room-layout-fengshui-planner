@@ -23,9 +23,18 @@ export interface FurnitureFitResult {
   recommendedRotation: 0 | 90 | null;
 }
 
+export function isValidFurnitureFitInput(input: FurnitureFitInput): boolean {
+  const dimensions = [input.roomWidthCm, input.roomLengthCm, input.furnitureWidthCm, input.furnitureDepthCm];
+  const clearances = [input.clearance.leftCm, input.clearance.rightCm, input.clearance.frontCm, input.clearance.backCm];
+  return dimensions.every((value) => Number.isFinite(value) && value > 0)
+    && clearances.every((value) => Number.isFinite(value) && value >= 0)
+    && input.clearance.leftCm >= 0 && input.clearance.rightCm >= 0
+    && input.clearance.frontCm >= 0 && input.clearance.backCm >= 0;
+}
+
 export function toFurnitureFitCm(value: number, unit: FurnitureFitUnit): number {
-  if (unit === 'm') return value * 100;
-  if (unit === 'ft') return value * 30.48;
+  if (unit === 'm') return Math.round(value * 100 * 10000) / 10000;
+  if (unit === 'ft') return Math.round(value * 30.48 * 10000) / 10000;
   return value;
 }
 

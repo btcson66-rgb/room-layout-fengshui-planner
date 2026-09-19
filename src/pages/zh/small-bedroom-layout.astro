@@ -54,8 +54,14 @@ const relatedArticles = [
 ];
 const bedroomItems = [
   { id: 'bedroom-bed', type: 'bed' as const, label: '單人床', widthCm: 105, depthCm: 188, xCm: 16, yCm: 45, rotationDeg: 0 },
-  { id: 'bedroom-desk', type: 'desk' as const, label: '窄桌', widthCm: 100, depthCm: 45, xCm: 132, yCm: 45, rotationDeg: 0 },
+  { id: 'bedroom-desk', type: 'desk' as const, label: '窄桌', widthCm: 100, depthCm: 45, xCm: 16, yCm: 280, rotationDeg: 0 },
 ];
+const bedroomRoomWidthCm = 248;
+const bedroomRoomLengthCm = 400;
+const bedroomBed = bedroomItems[0];
+const bedroomDesk = bedroomItems[1];
+const bedroomRightRouteCm = bedroomRoomWidthCm - (bedroomBed.xCm + bedroomBed.widthCm);
+const bedroomBedToDeskGapCm = bedroomDesk.yCm - (bedroomBed.yCm + bedroomBed.depthCm);
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
@@ -70,12 +76,12 @@ const bedroomItems = [
         <header class="measured-landing-header"><div><h2 id="bedroom-prototype-heading">3 坪小房間：先保留每天會走的路</h2></div><p>這是一個尺寸起點，不是通用保證。SVG 使用同一個公分座標系繪製房間與家具；把房間內徑、床架外框與門片開啟區重新量過，再帶進 Planner。</p></header>
         <div class="measured-layout-grid">
           <div class="measured-plan" aria-label="3 坪小房間尺寸示意圖">
-            <MeasuredPlan roomWidthCm={248} roomLengthCm={400} ariaLabel="248 x 400 公分小房間，包含 105 x 188 單人床、100 x 45 窄桌與走道" furniture={[
+            <MeasuredPlan roomWidthCm={bedroomRoomWidthCm} roomLengthCm={bedroomRoomLengthCm} ariaLabel="248 x 400 公分小房間，包含 105 x 188 單人床、100 x 45 窄桌與走道" furniture={[
               { x: 16, y: 45, width: 105, depth: 188, label: 'BED', className: 'bed' },
-              { x: 132, y: 45, width: 100, depth: 45, label: 'DESK', className: 'desk' },
-            ]} route="M 124 370 L 124 250 L 124 235" />
+              { x: 16, y: 280, width: 100, depth: 45, label: 'DESK', className: 'desk' },
+            ]} route="M 220 370 L 220 20" />
           </div>
-          <div class="measured-facts"><dl><dt>房間內徑</dt><dd>248 × 400 cm</dd><dt>睡眠錨點</dt><dd>105 × 188 cm</dd><dt>窄桌</dt><dd>100 × 45 cm</dd><dt>椅後參考</dt><dd>約 60 cm</dd></dl><div class="measured-check"><strong>先檢查這件事</strong><span>床與桌之間的固定淨寬約 113 cm；椅子後退後，仍要在你的實際門窗位置重新確認。</span></div><PlannerHandoffLink href="/zh/room-layout-planner/?rf_quick_handoff=1" label="Try this size in Planner" roomWidthCm={248} roomLengthCm={400} source="small-bedroom-layout" items={bedroomItems} /></div>
+          <div class="measured-facts"><dl><dt>房間內徑</dt><dd>{bedroomRoomWidthCm} × {bedroomRoomLengthCm} cm</dd><dt>睡眠錨點</dt><dd>105 × 188 cm</dd><dt>窄桌</dt><dd>100 × 45 cm</dd><dt>右側主通道</dt><dd>{bedroomRightRouteCm} cm</dd></dl><div class="measured-check"><strong>先檢查這件事</strong><span>床右側主通道由 {bedroomRoomWidthCm} − ({bedroomBed.xCm} + {bedroomBed.widthCm}) 計算為 {bedroomRightRouteCm} cm；床尾到桌前的縱向間隔由幾何座標計算為 {bedroomBedToDeskGapCm} cm，仍要代入實際門窗與椅後操作區。</span></div><PlannerHandoffLink href="/zh/room-layout-planner/?rf_quick_handoff=1" label="Try this size in Planner" roomWidthCm={bedroomRoomWidthCm} roomLengthCm={bedroomRoomLengthCm} source="small-bedroom-layout" items={bedroomItems} /></div>
         </div>
         <div class="measured-flow"><div><span>01 · MEASURE</span><strong>量內徑與障礙物</strong></div><div><span>02 · PLAN</span><strong>先放最大件床</strong></div><div><span>03 · CHECK</span><strong>看椅後與門口</strong></div></div>
       </section>
@@ -93,7 +99,7 @@ const bedroomItems = [
         <p>以下都用矩形房的室內淨尺寸計算，不把牆厚、樑柱或櫃體算成可用面積。數字的用途是先判斷「這組家具是否值得畫進平面圖」，不是保證任何同坪數房間都能照放；只要門窗位置不同，就要在<a href="/zh/room-layout-planner/">規劃器</a>重新排一次。</p>
 
         <h3>3 坪：約 248 × 400 公分，單人睡眠＋窄桌</h3>
-        <p>採 90 × 188 公分標準單人床靠長牆，對牆放 100 × 45 公分窄桌，床沿到桌沿的固定淨寬是 248－90－45＝113 公分。椅子向後使用 55 公分時，仍剩約 58 公分可通過；這條路徑已接近 60 公分基本參考，不宜再把 60 公分深標準書桌換進來，否則椅子拉出後只剩 43 公分。</p>
+        <p>這個 prototype 將 105 × 188 公分單人床與 100 × 45 公分窄桌放在左側帶狀區，右側保留由房間寬度與床右緣推導的 {bedroomRightRouteCm} 公分主通道；床尾到桌前另保留 {bedroomBedToDeskGapCm} 公分縱向間隔。椅子後退、門片開啟與實際床架外擴仍須重新量測，不能把通道數字當成通用保證。</p>
         <p>衣物收納可放在床尾外的長邊餘量：400－188＝212 公分。選 90 寬 × 50 深公分拉門衣櫃後，仍要在平面圖確認它沒有占到房門開啟區；若床下也要收納，先用<a href="/zh/storage-bed-selector/">收納床／掀床選型規劃器</a>比較抽屜全拉與掀床操作空間，不能只看床架關閉尺寸。</p>
 
         <h3>4 坪：約 287 × 460 公分，加大單人床＋工作桌</h3>

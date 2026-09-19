@@ -26,7 +26,7 @@ const supportHref = '/support/';
         <li><a href={plannerHref}>{t.nav.planner}</a></li>
         <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
         {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
-        <li><a href={supportHref}>支持我們</a></li>
+        <li><a href={supportHref}>{lang === 'en' ? 'Support' : '支持我們'}</a></li>
       </ul>
     </div>
     <div class="footer-column">

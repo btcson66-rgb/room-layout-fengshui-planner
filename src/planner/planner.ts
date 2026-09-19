@@ -1,5 +1,5 @@
 import { runFengShuiChecks, runStructuralChecks } from './checks';
-import { exportPdf, exportPng } from './export';
+import { buildPdfBlob, exportPdf, exportPng, svgToPngBlob } from './export';
 import { defaultDesign, makeItem, templateDesigns } from './templates';
 import type { Design, FurnitureItem, FurnitureType, PlannerOptions, PlannerStrings, Unit } from './types';
 import { formatArea, fromCm, toCm } from './units';
@@ -126,7 +126,7 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
     class: `planner-item ${selected ? 'is-selected' : ''}`,
     tabindex: '0',
     role: 'button',
-    'aria-label': `${label}${selected ? '，已選取' : ''}`,
+    'aria-label': `${label}${selected ? strings.accessibility.selectedSuffix : ''}`,
     'aria-pressed': selected ? 'true' : 'false',
     'data-id': item.id,
     transform: `rotate(${item.rotation} ${item.x + item.w / 2} ${item.y + item.h / 2})`,
@@ -315,10 +315,10 @@ function renderReportPreview(container: HTMLElement, state: PlannerState, string
   container.replaceChildren();
   const heading = document.createElement('div');
   heading.className = 'planner-report-heading';
-  heading.innerHTML = '<div><p class="eyebrow">EXPORT REPORT · LOCAL PREVIEW</p><h3>RoomFeng 尺寸規劃報告</h3></div><span class="planner-report-status">本機草稿</span>';
+  heading.innerHTML = `<div><p class="eyebrow">${strings.report.eyebrow}</p><h3>${strings.report.title}</h3></div><span class="planner-report-status">${strings.report.status}</span>`;
   const summary = document.createElement('div');
   summary.className = 'planner-report-summary';
-  summary.innerHTML = `<div><span>房間</span><strong>${Math.round(room.w)} × ${Math.round(room.h)} ${room.unit}</strong></div><div><span>面積</span><strong>${formatArea(room.w, room.h, room.unit)}</strong></div><div><span>家具</span><strong>${items.length} 件</strong></div><div><span>檢查</span><strong>${checks.length === 0 ? '可繼續核對' : `${checks.length} 項需複核`}</strong></div>`;
+  summary.innerHTML = `<div><span>${strings.report.room}</span><strong>${Math.round(room.w)} × ${Math.round(room.h)} ${room.unit}</strong></div><div><span>${strings.report.area}</span><strong>${formatArea(room.w, room.h, room.unit)}</strong></div><div><span>${strings.report.furniture}</span><strong>${items.length}</strong></div><div><span>${strings.report.checks}</span><strong>${checks.length === 0 ? strings.report.checksPass : strings.report.checksNeedsReview(checks.length)}</strong></div>`;
   const list = document.createElement('ul');
   list.className = 'planner-report-items';
   items.slice(0, 5).forEach((item) => {
@@ -328,12 +328,12 @@ function renderReportPreview(container: HTMLElement, state: PlannerState, string
   });
   if (items.length > 5) {
     const more = document.createElement('li');
-    more.textContent = `另有 ${items.length - 5} 件家具未展開`;
+    more.textContent = strings.report.moreItems(items.length - 5);
     list.append(more);
   }
   const note = document.createElement('p');
   note.className = 'planner-muted';
-  note.textContent = '報告會保留房間尺寸、家具外框與結構檢查；下單或搬家前仍需核對現場門寬、轉角與實體外尺寸。';
+  note.textContent = strings.report.note;
   container.append(heading, summary, list, note);
 }
 
@@ -360,27 +360,27 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   container.classList.add('planner-tool');
   container.innerHTML = `
     <div class="planner-shell">
-      <nav class="planner-rail" aria-label="Planner tools">
-        <button type="button" class="planner-rail-button is-active" data-planner-open="room" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">▦</span><span>房間</span></button>
-        <button type="button" class="planner-rail-button" data-planner-open="furniture" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">＋</span><span>家具</span></button>
-        <button type="button" class="planner-rail-button" data-planner-open="templates" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">◇</span><span>範例</span></button>
-        <button type="button" class="planner-rail-button" data-planner-open="checks" aria-controls="planner-inspector" aria-expanded="false"><span aria-hidden="true">✓</span><span>檢查</span></button>
+      <nav class="planner-rail" aria-label="${strings.navigation.toolsLabel}">
+        <button type="button" class="planner-rail-button is-active" data-planner-open="room" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">▦</span><span>${strings.navigation.room}</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="furniture" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">＋</span><span>${strings.navigation.furniture}</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="templates" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">◇</span><span>${strings.navigation.templates}</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="checks" aria-controls="planner-inspector" aria-expanded="false"><span aria-hidden="true">✓</span><span>${strings.navigation.checks}</span></button>
       </nav>
-      <section class="planner-drawer" id="planner-drawer" hidden aria-label="Planner setup">
-        <div class="planner-drawer-header"><div><p class="eyebrow">SETUP</p><h2 data-planner-drawer-title>房間設定</h2></div><button type="button" class="planner-drawer-close" data-planner-close aria-label="關閉設定面板">×</button></div>
+      <section class="planner-drawer" id="planner-drawer" hidden aria-label="${strings.navigation.toolsLabel}">
+        <div class="planner-drawer-header"><div><p class="eyebrow">${strings.navigation.setupEyebrow}</p><h2 data-planner-drawer-title>${strings.drawer.roomTitle}</h2></div><button type="button" class="planner-drawer-close" data-planner-close aria-label="${strings.navigation.closeDrawer}">×</button></div>
         <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
         <section class="planner-panel planner-drawer-checks" data-planner-panel="checks" hidden aria-label="Planner checks"></section>
         <section class="planner-panel planner-drawer-report" data-planner-panel="report" hidden aria-label="Export report"></section>
       </section>
-      <section class="planner-canvas-wrap" aria-label="Room plan">
-        <div class="planner-canvas-header"><div class="planner-area-line"></div><span class="planner-canvas-hint">拖曳家具 · 點選後調整</span></div>
-        <svg class="planner-svg" role="group" aria-label="Room floor plan"></svg>
+      <section class="planner-canvas-wrap" aria-label="${strings.navigation.canvasLabel}">
+        <div class="planner-canvas-header"><div class="planner-area-line"></div><span class="planner-canvas-hint">${strings.navigation.canvasHint}</span></div>
+        <svg class="planner-svg" role="group" aria-label="${strings.navigation.canvasLabel}"></svg>
         <div class="planner-report-preview" aria-label="Export report preview"></div>
-        <div class="planner-mobile-actions" aria-label="Mobile planner actions">
-          <button type="button" class="planner-mobile-action" data-planner-open="room">房間</button>
-          <button type="button" class="planner-mobile-action" data-planner-open="furniture">加家具</button>
-          <button type="button" class="planner-mobile-action" data-planner-open="checks">看檢查</button>
-          <button type="button" class="planner-mobile-action" data-planner-open="report">報告</button>
+        <div class="planner-mobile-actions" aria-label="${strings.navigation.mobileActionsLabel}">
+          <button type="button" class="planner-mobile-action" data-planner-open="room">${strings.navigation.room}</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="furniture">${strings.navigation.furniture}</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="checks">${strings.navigation.checks}</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="report">${strings.navigation.report}</button>
         </div>
       </section>
       <aside class="planner-panel planner-side" id="planner-inspector" aria-label="Planner checks">
@@ -403,14 +403,21 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const drawerReport = container.querySelector<HTMLElement>('.planner-drawer-report');
   const drawerTitle = container.querySelector<HTMLElement>('[data-planner-drawer-title]');
   if (!controls || !svg || !areaLine || !reportPreview || !selection || !structural || !feng || !drawer || !drawerChecks || !drawerReport || !drawerTitle) return;
+  if (import.meta.env.DEV) {
+    const testWindow = window as typeof window & { __roomfengExportTest?: { png: () => Promise<Blob>; pdf: () => Promise<Blob> } };
+    testWindow.__roomfengExportTest = {
+      png: () => svgToPngBlob(svg, state.design, strings),
+      pdf: () => buildPdfBlob(svg, state.design, strings),
+    };
+  }
   const selectionPanel = selection;
   let lastTrigger: HTMLButtonElement | null = null;
   const panelTitles: Record<string, string> = {
-    room: '房間設定',
-    furniture: '加入家具',
-    templates: '範例格局',
-    checks: '尺寸檢查',
-    report: '匯出報告',
+    room: strings.drawer.roomTitle,
+    furniture: strings.drawer.furnitureTitle,
+    templates: strings.drawer.templatesTitle,
+    checks: strings.drawer.checksTitle,
+    report: strings.drawer.reportTitle,
   };
 
   const closeDrawer = (): void => {
@@ -463,7 +470,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const rerender = (): void => {
     renderSvg(svg, state, strings);
     if (state.design.items.length === 0) {
-      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? '選擇家具新增，或套用範例格局。');
+      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? strings.navigation.furniture);
     }
     areaLine.textContent = `${strings.area}: ${formatArea(state.design.room.w, state.design.room.h, state.design.room.unit)}`;
     renderReportPreview(reportPreview, state, strings);
@@ -507,8 +514,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       panel.append(heading);
       return panel;
     };
-    const roomPanel = makePanel('room', '房間尺寸');
-    const furniturePanel = makePanel('furniture', '加入家具');
+    const roomPanel = makePanel('room', strings.drawer.roomTitle);
+    const furniturePanel = makePanel('furniture', strings.drawer.furnitureTitle);
     const templatesPanel = makePanel('templates', strings.templatesLabel);
 
     const roomGrid = document.createElement('div');
@@ -635,7 +642,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     status.setAttribute('aria-live', 'polite');
     actions.append(saveButton, pngButton, pdfButton, clearButton, status);
     const actionHeading = document.createElement('h3');
-    actionHeading.textContent = '儲存與匯出';
+    actionHeading.textContent = strings.actions.saveExport;
     roomPanel.append(actionHeading, actions);
     controls.append(roomPanel, furniturePanel, templatesPanel);
     if (!drawer.hidden && drawer.dataset.panel) {

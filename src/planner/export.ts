@@ -62,14 +62,14 @@ export interface ExportMetadata {
 export function buildExportMetadata(design: Design, strings: PlannerStrings, date = new Date()): ExportMetadata {
   const checks = runStructuralChecks(design, strings).map((warning) => `${warning.severity}: ${warning.message}`);
   return {
-    title: 'RoomFeng 尺寸規劃報告',
-    exportedAt: new Intl.DateTimeFormat('zh-TW', { dateStyle: 'medium' }).format(date),
+    title: strings.exportReport.title,
+    exportedAt: new Intl.DateTimeFormat(strings.exportReport.title.includes('dimension') ? 'en-US' : 'zh-TW', { dateStyle: 'medium' }).format(date),
     room: `${formatLength(design.room.w, design.room.unit)} × ${formatLength(design.room.h, design.room.unit)}`,
     area: formatArea(design.room.w, design.room.h, design.room.unit),
     items: design.items.map((item, index) => `${index + 1}. ${item.label?.trim() || strings.furniture[item.type]} · ${formatLength(item.w, design.room.unit)} × ${formatLength(item.h, design.room.unit)}`),
     checks,
-    culturalReference: '中文風水提示僅作民俗文化與空間舒適度參考，不是尺寸或安全檢查結果。',
-    disclaimer: EXPORT_DISCLAIMER,
+    culturalReference: strings.exportReport.culturalReference,
+    disclaimer: strings.exportReport.disclaimer,
   };
 }
 
@@ -86,14 +86,14 @@ export async function svgToPngBlob(svg: SVGSVGElement, design?: Design, strings?
   if (!context) throw new Error('Canvas is unavailable.');
   context.fillStyle = '#ffffff';
   context.fillRect(0, 0, width, height);
+  const metadata = design && strings ? buildExportMetadata(design, strings) : null;
   context.fillStyle = '#385046';
   context.font = `700 32px ${TEXT_FONT_STACK}`;
-  context.fillText('RoomFeng 尺寸規劃', 56, 58);
+  context.fillText(metadata?.title ?? 'RoomFeng dimension plan report', 56, 58);
   context.fillStyle = '#626b64';
   context.font = `400 20px ${TEXT_FONT_STACK}`;
-  const metadata = design && strings ? buildExportMetadata(design, strings) : null;
-  context.fillText(metadata ? `MEASURE · PLAN · CHECK · ${metadata.exportedAt}` : 'MEASURE · PLAN · CHECK', 56, 96);
-  if (metadata) context.fillText(`房間 ${metadata.room} · ${metadata.area}`, 56, 126);
+  context.fillText(metadata ? `${strings?.exportReport.pngSubtitle ?? 'MEASURE · PLAN · CHECK'} · ${metadata.exportedAt}` : 'MEASURE · PLAN · CHECK', 56, 96);
+  if (metadata && strings) context.fillText(`${strings.exportReport.room} ${metadata.room} · ${strings.exportReport.area} ${metadata.area}`, 56, 126);
   const maxWidth = width - 112;
   const maxHeight = height - headerHeight - footerHeight - 40;
   const scale = Math.min(maxWidth / planWidth, maxHeight / planHeight);
@@ -149,24 +149,24 @@ function imageSize(dataUrl: string): Promise<{ width: number; height: number }> 
 function buildPdfRows(design: Design, strings: PlannerStrings): PdfTextRow[] {
   const metadata = buildExportMetadata(design, strings);
   const rows: PdfTextRow[] = [
-    { text: `匯出日期：${metadata.exportedAt}` },
-    { text: `房間尺寸：${metadata.room}` },
-    { text: `面積：${metadata.area}` },
-    { text: '家具外框（依目前設計）', strong: true },
+    { text: `${strings.exportReport.exportedAt}：${metadata.exportedAt}` },
+    { text: `${strings.exportReport.room}：${metadata.room}` },
+    { text: `${strings.exportReport.area}：${metadata.area}` },
+    { text: strings.exportReport.furniture, strong: true },
   ];
 
   if (metadata.items.length === 0) {
-    rows.push({ text: '目前沒有家具' });
+    rows.push({ text: strings.exportReport.noFurniture });
   } else {
     metadata.items.forEach((item) => rows.push({ text: item }));
   }
-  rows.push({ text: '尺寸檢查', strong: true });
+  rows.push({ text: strings.exportReport.checks, strong: true });
   if (metadata.checks.length === 0) {
-    rows.push({ text: '目前沒有結構性警示；仍需現場核對。' });
+    rows.push({ text: strings.exportReport.noChecks });
   } else {
     metadata.checks.forEach((check) => rows.push({ text: check }));
   }
-  rows.push({ text: '文化參考', strong: true });
+  rows.push({ text: strings.exportReport.culturalReference, strong: true });
   rows.push({ text: metadata.culturalReference });
   rows.push({ text: metadata.disclaimer, strong: true });
   return rows;
@@ -228,6 +228,16 @@ export async function exportPdf(
   strings: PlannerStrings,
   anchor?: HTMLElement | null,
 ): Promise<void> {
+  const pdf = await buildPdfBlob(svg, design, strings);
+  requestGatedDownload({
+    tool: toolSlug('pdf'),
+    anchor,
+    getFile: () => ({ blob: pdf, filename: 'room-layout-plan.pdf' }),
+    fallback: () => triggerDownload(pdf, 'room-layout-plan.pdf'),
+  });
+}
+
+export async function buildPdfBlob(svg: SVGSVGElement, design: Design, strings: PlannerStrings): Promise<Blob> {
   const { jsPDF } = await import('jspdf');
   const planImage = await svgToImage(svg);
   const planCanvas = document.createElement('canvas');
@@ -259,7 +269,7 @@ export async function exportPdf(
   const firstTextHeight = pageHeight - PDF_MARGIN_MM - textStartY;
   const firstRows = rowsForHeight(firstTextHeight, contentWidth);
   const fullRows = rowsForHeight(contentHeight, contentWidth);
-  const heading = 'RoomFeng 尺寸規劃報告';
+  const heading = strings.exportReport.title;
   const textPanels = buildTextPanels(textRows, heading, firstRows, fullRows);
 
   textPanels.forEach((panel, index) => {
@@ -269,10 +279,5 @@ export async function exportPdf(
     pdf.addImage(panel.toDataURL('image/png'), 'PNG', PDF_MARGIN_MM, panelY, contentWidth, panelHeight);
   });
 
-  requestGatedDownload({
-    tool: toolSlug('pdf'),
-    anchor,
-    getFile: () => ({ blob: pdf.output('blob'), filename: 'room-layout-plan.pdf' }),
-    fallback: () => pdf.save('room-layout-plan.pdf'),
-  });
+  return pdf.output('blob');
 }

@@ -44,7 +44,7 @@ import PlannerHandoffLink from './PlannerHandoffLink.astro';
 </section>
 
 <script>
-  import { calculateFurnitureFit, fromFurnitureFitCm, toFurnitureFitCm, type FurnitureFitUnit } from '../tools/furniture-fit';
+  import { calculateFurnitureFit, fromFurnitureFitCm, isValidFurnitureFitInput, toFurnitureFitCm, type FurnitureFitUnit } from '../tools/furniture-fit';
   import { createQuickHandoff, writeQuickHandoff } from '../planner/quick-handoff';
 
   const root = document.querySelector<HTMLElement>('[data-furniture-fit-tool]');
@@ -60,6 +60,7 @@ import PlannerHandoffLink from './PlannerHandoffLink.astro';
     const names = ['roomWidth', 'roomLength', 'furnitureWidth', 'furnitureDepth', 'leftClearance', 'rightClearance', 'frontClearance', 'backClearance'];
     const labels = { bed: '床', sofa: '沙發', desk: '書桌', wardrobe: '衣櫃', custom: '自訂家具' };
     const status = (pass: boolean): string => `<strong class="fit-status ${pass ? 'is-pass' : 'is-fail'}">${pass ? 'PASS' : 'FAIL'}</strong>`;
+    const displayValue = (value: number): string => String(Math.round(value * 1000000) / 1000000);
 
     const read = () => {
       const selectedUnit = (unit?.value ?? 'cm') as FurnitureFitUnit;
@@ -92,14 +93,19 @@ import PlannerHandoffLink from './PlannerHandoffLink.astro';
 
     const calculate = (): void => {
       const input = read();
+      const oldLink = root.querySelector<HTMLAnchorElement>('[data-fit-handoff]');
+      oldLink?.remove();
+      if (!isValidFurnitureFitInput(input)) {
+        if (result) result.innerHTML = '<p class="fit-error" role="alert">請輸入有效的正數房間、家具尺寸；淨空不可小於 0。</p>';
+        diagram?.replaceChildren();
+        return;
+      }
       const fit = calculateFurnitureFit(input);
       const orientations = fit.orientations.map((orientation) => `<li>${orientation.rotation}°：實體 ${status(orientation.physicalFit)} · 淨空 ${status(orientation.requestedClearanceFit)}</li>`).join('');
       if (result) result.innerHTML = `<div class="fit-result-summary"><div><span>Physical fit</span>${status(fit.physicalFit)}</div><div><span>Requested clearance</span>${status(fit.requestedClearanceFit)}</div><div><span>可用方向</span><strong>${fit.recommendedRotation === null ? '無' : `${fit.recommendedRotation}°`}</strong></div></div><ul class="fit-orientation-list">${orientations}</ul><p class="planner-muted">方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。</p>`;
       renderDiagram(input, fit.recommendedRotation);
       const itemType = (type?.value ?? 'custom') as 'bed' | 'sofa' | 'desk' | 'wardrobe' | 'custom';
       const payload = createQuickHandoff({ source: 'furniture-fit-checker', roomWidthCm: input.roomWidthCm, roomLengthCm: input.roomLengthCm, items: [{ id: 'fit-item', type: itemType, label: labels[itemType], widthCm: input.furnitureWidthCm, depthCm: input.furnitureDepthCm, rotationDeg: fit.recommendedRotation ?? 0 }] });
-      const oldLink = root.querySelector<HTMLAnchorElement>('[data-fit-handoff]');
-      oldLink?.remove();
       const link = document.createElement('a');
       link.className = 'button';
       link.href = '/zh/room-layout-planner/?rf_quick_handoff=1';
@@ -114,7 +120,7 @@ import PlannerHandoffLink from './PlannerHandoffLink.astro';
       const next = unit.value as FurnitureFitUnit;
       names.forEach((name) => {
         const input = getInput(name);
-        if (input) input.value = String(Math.round(fromFurnitureFitCm(toFurnitureFitCm(Number(input.value), previous), next) * 100) / 100);
+        if (input) input.value = displayValue(fromFurnitureFitCm(toFurnitureFitCm(Number(input.value), previous), next));
       });
       unit.dataset.previousUnit = next;
       calculate();
@@ -123,10 +129,11 @@ import PlannerHandoffLink from './PlannerHandoffLink.astro';
     form?.addEventListener('submit', (event) => { event.preventDefault(); calculate(); });
     inputs.forEach((input) => input.addEventListener('change', calculate));
     root.querySelectorAll<HTMLButtonElement>('[data-fit-preset]').forEach((button) => button.addEventListener('click', () => {
+      const selectedUnit = (unit?.value ?? 'cm') as FurnitureFitUnit;
       ['roomWidth', 'roomLength', 'furnitureWidth', 'furnitureDepth'].forEach((name) => {
         const source = name === 'roomWidth' ? button.dataset.roomWidth : name === 'roomLength' ? button.dataset.roomLength : name === 'furnitureWidth' ? button.dataset.furnitureWidth : button.dataset.furnitureDepth;
         const input = getInput(name);
-        if (input && source) input.value = source;
+        if (input && source) input.value = displayValue(fromFurnitureFitCm(Number(source), selectedUnit));
       });
       if (type && button.dataset.furnitureType) type.value = button.dataset.furnitureType;
       calculate();
