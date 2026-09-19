@@ -165,8 +165,8 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
   group.append(text);
 
   if (selected) {
-    group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#947228', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
-    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#947228', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
+    group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#526a5d', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
+    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#526a5d', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
   }
 
   parent.append(group);
@@ -306,6 +306,34 @@ function renderWarnings(container: HTMLElement, title: string, warnings: ReturnT
   container.append(list);
 }
 
+function renderReportPreview(container: HTMLElement, state: PlannerState, strings: PlannerStrings): void {
+  const checks = runStructuralChecks(state.design, strings);
+  const { room, items } = state.design;
+  container.replaceChildren();
+  const heading = document.createElement('div');
+  heading.className = 'planner-report-heading';
+  heading.innerHTML = '<div><p class="eyebrow">EXPORT REPORT · LOCAL PREVIEW</p><h3>RoomFeng 尺寸規劃報告</h3></div><span class="planner-report-status">本機草稿</span>';
+  const summary = document.createElement('div');
+  summary.className = 'planner-report-summary';
+  summary.innerHTML = `<div><span>房間</span><strong>${Math.round(room.w)} × ${Math.round(room.h)} ${room.unit}</strong></div><div><span>面積</span><strong>${formatArea(room.w, room.h, room.unit)}</strong></div><div><span>家具</span><strong>${items.length} 件</strong></div><div><span>檢查</span><strong>${checks.length === 0 ? '可繼續核對' : `${checks.length} 項需複核`}</strong></div>`;
+  const list = document.createElement('ul');
+  list.className = 'planner-report-items';
+  items.slice(0, 5).forEach((item) => {
+    const row = document.createElement('li');
+    row.textContent = `${item.label ?? strings.furniture[item.type]} · ${Math.round(item.w)} × ${Math.round(item.h)} ${room.unit}`;
+    list.append(row);
+  });
+  if (items.length > 5) {
+    const more = document.createElement('li');
+    more.textContent = `另有 ${items.length - 5} 件家具未展開`;
+    list.append(more);
+  }
+  const note = document.createElement('p');
+  note.className = 'planner-muted';
+  note.textContent = '報告會保留房間尺寸、家具外框與結構檢查；下單或搬家前仍需核對現場門寬、轉角與實體外尺寸。';
+  container.append(heading, summary, list, note);
+}
+
 function createNumberInput(value: number, step: number): HTMLInputElement {
   const input = document.createElement('input');
   input.type = 'number';
@@ -329,12 +357,28 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   container.classList.add('planner-tool');
   container.innerHTML = `
     <div class="planner-shell">
-      <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
-      <section class="planner-canvas-wrap" aria-label="Room plan">
-        <div class="planner-area-line"></div>
-        <svg class="planner-svg" role="group" aria-label="Room floor plan"></svg>
+      <nav class="planner-rail" aria-label="Planner tools">
+        <button type="button" class="planner-rail-button is-active" data-planner-open="room" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">▦</span><span>房間</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="furniture" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">＋</span><span>家具</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="templates" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">◇</span><span>範例</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="checks" aria-controls="planner-inspector" aria-expanded="false"><span aria-hidden="true">✓</span><span>檢查</span></button>
+      </nav>
+      <section class="planner-drawer" id="planner-drawer" hidden aria-label="Planner setup">
+        <div class="planner-drawer-header"><div><p class="eyebrow">SETUP</p><h2>設定與家具</h2></div><button type="button" class="planner-drawer-close" data-planner-close aria-label="關閉設定面板">×</button></div>
+        <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
       </section>
-      <aside class="planner-panel planner-side" aria-label="Planner checks">
+      <section class="planner-canvas-wrap" aria-label="Room plan">
+        <div class="planner-canvas-header"><div class="planner-area-line"></div><span class="planner-canvas-hint">拖曳家具 · 點選後調整</span></div>
+        <svg class="planner-svg" role="group" aria-label="Room floor plan"></svg>
+        <div class="planner-report-preview" aria-label="Export report preview"></div>
+        <div class="planner-mobile-actions" aria-label="Mobile planner actions">
+          <button type="button" class="planner-mobile-action" data-planner-open="room">房間</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="furniture">加家具</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="checks">看檢查</button>
+          <button type="button" class="planner-mobile-action" data-planner-scroll="report">報告</button>
+        </div>
+      </section>
+      <aside class="planner-panel planner-side" id="planner-inspector" aria-label="Planner checks">
         <div class="planner-selection"></div>
         <div class="planner-structural"></div>
         <div class="planner-feng"></div>
@@ -345,11 +389,42 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const controls = container.querySelector<HTMLElement>('.planner-controls');
   const svg = container.querySelector<SVGSVGElement>('.planner-svg');
   const areaLine = container.querySelector<HTMLElement>('.planner-area-line');
+  const reportPreview = container.querySelector<HTMLElement>('.planner-report-preview');
   const selection = container.querySelector<HTMLElement>('.planner-selection');
   const structural = container.querySelector<HTMLElement>('.planner-structural');
   const feng = container.querySelector<HTMLElement>('.planner-feng');
-  if (!controls || !svg || !areaLine || !selection || !structural || !feng) return;
+  const drawer = container.querySelector<HTMLElement>('.planner-drawer');
+  if (!controls || !svg || !areaLine || !reportPreview || !selection || !structural || !feng || !drawer) return;
   const selectionPanel = selection;
+
+  const closeDrawer = (): void => {
+    drawer.hidden = true;
+    container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => button.setAttribute('aria-expanded', 'false'));
+  };
+
+  const openDrawer = (panel: string): void => {
+    drawer.hidden = false;
+    drawer.dataset.panel = panel;
+    container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => button.setAttribute('aria-expanded', button.dataset.plannerOpen === panel ? 'true' : 'false'));
+    const focusTarget = panel === 'checks' ? container.querySelector<HTMLElement>('.planner-side') : controls.querySelector<HTMLElement>('input, select, button');
+    focusTarget?.focus({ preventScroll: true });
+  };
+
+  container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => {
+    button.addEventListener('click', () => {
+      if (button.dataset.plannerOpen === 'checks') {
+        closeDrawer();
+        container.querySelector<HTMLElement>('.planner-side')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        return;
+      }
+      if (!drawer.hidden && drawer.dataset.panel === button.dataset.plannerOpen) closeDrawer();
+      else openDrawer(button.dataset.plannerOpen ?? 'room');
+    });
+  });
+  container.querySelector<HTMLButtonElement>('[data-planner-close]')?.addEventListener('click', closeDrawer);
+  container.querySelector<HTMLButtonElement>('[data-planner-scroll="report"]')?.addEventListener('click', () => {
+    reportPreview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 
   const saveNow = (): void => {
     localStorage.setItem(storageKey, JSON.stringify(state.design));
@@ -368,6 +443,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       renderEmptyHint(svg, state.design.room, strings.emptyHint ?? '選擇家具新增，或套用範例格局。');
     }
     areaLine.textContent = `${strings.area}: ${formatArea(state.design.room.w, state.design.room.h, state.design.room.unit)}`;
+    renderReportPreview(reportPreview, state, strings);
     renderSelection();
     renderWarnings(structural, strings.checksTitle, runStructuralChecks(state.design, strings), strings.noWarnings);
     if (options.fengShui) {

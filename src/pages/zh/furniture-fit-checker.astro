@@ -4,6 +4,7 @@ import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
+import '../../styles/uiux-prototypes.css';
 
 const title = '家具尺寸適配檢查｜買家具前確認放得下、進得去';
 const description = '買床、桌、衣櫃或沙發前，用房間配置規劃器檢查家具尺寸、門口寬度、走道距離與開門空間，降低買錯尺寸的風險。';
@@ -70,6 +71,18 @@ const relatedArticles = [
         </ol>
         <p>如果想加入中文民俗格局角度，例如床是否正對門、鏡子是否對床，請把它當作常見說法與空間舒適度參考，並閱讀 <a href="/disclaimer/">免責聲明</a>。家具是否適合，仍應以實際尺寸、使用習慣與安全通行為主。</p>
       </article>
+      <section class="fit-prototype" aria-labelledby="fit-prototype-heading">
+        <div>
+          <p class="eyebrow">TRY THIS SIZE</p>
+          <h2 id="fit-prototype-heading">從一個已知外框開始，再帶進 Planner</h2>
+          <p class="lead">先用接近你要買的家具尺寸做快速起點；進入 Planner 後仍可改成商品頁的精確外框，檢查房間、門口與走道。</p>
+        </div>
+        <div class="fit-prototype-grid">
+          <article class="fit-option"><strong>單人床 · 105 × 188 cm</strong><p>先檢查床邊走道與書桌椅的後退空間。</p><a class="button secondary" href="/zh/room-layout-planner/?preset=student">Try this size</a></article>
+          <article class="fit-option"><strong>雙人床 · 150 × 190 cm</strong><p>先檢查兩側上下床與床尾到衣櫃的距離。</p><a class="button secondary" href="/zh/room-layout-planner/?preset=double">Try this size</a></article>
+          <article class="fit-option"><strong>套房沙發 · 180 × 85 cm</strong><p>先檢查沙發、餐桌與入口主要路徑是否重疊。</p><a class="button secondary" href="/zh/room-layout-planner/?preset=studio">Try this size</a></article>
+        </div>
+      </section>
       <div class="cta-band">
         <div>
           <h2>先把商品尺寸放進平面圖</h2>

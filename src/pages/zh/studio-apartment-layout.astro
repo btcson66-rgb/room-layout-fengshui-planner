@@ -5,6 +5,7 @@ import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
+import '../../styles/uiux-prototypes.css';
 
 const title = '套房格局配置｜單房空間分出睡眠、工作與用餐區';
 const description = '套房與 studio apartment 配置建議，教你用家具、走道與收納分區，並用房間配置規劃器先測試床、桌、沙發和餐桌位置。';
@@ -52,6 +53,22 @@ const relatedArticles = [
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
+      <section class="measured-landing" aria-labelledby="studio-prototype-heading">
+        <header class="measured-landing-header"><div><p class="eyebrow">STUDIO SIZE · ZONING START</p><h2 id="studio-prototype-heading">套房先分區，再把家具放進去</h2></div><p>用一條清楚的入口到床邊動線，把睡眠、工作與用餐先拆開；分區完成後再核對你的實際外框。</p></header>
+        <div class="measured-layout-grid">
+          <div class="measured-plan" aria-label="套房尺寸與分區示意圖">
+            <svg viewBox="0 0 600 390" role="img" aria-label="560 x 500 公分套房，分成睡眠、工作、用餐與收納區">
+              <rect class="wall" x="70" y="48" width="410" height="280" />
+              <rect class="bed" x="100" y="88" width="165" height="106" /><text x="140" y="142">SLEEP</text><text x="127" y="162">150 × 190</text>
+              <rect class="desk" x="326" y="83" width="86" height="50" /><text x="343" y="113">WORK</text>
+              <rect class="storage" x="332" y="238" width="112" height="54" /><text x="347" y="270">STORAGE</text>
+              <path class="route" d="M90 302 C176 265 222 246 301 244 C364 242 404 196 422 143" /><path class="dimension" d="M70 24h410M70 17v14M480 17v14" /><text x="257" y="18">560 cm</text><path class="dimension" d="M510 48v280M503 48h14M503 328h14" /><text x="537" y="194" transform="rotate(90 537 194)">500 cm</text>
+            </svg>
+          </div>
+          <div class="measured-facts"><dl><dt>開放區起點</dt><dd>560 × 500 cm</dd><dt>睡眠區</dt><dd>床與入口錯開</dd><dt>工作區</dt><dd>靠近插座與光線</dd><dt>主動線</dt><dd>入口 → 床 → 收納</dd></dl><div class="measured-check"><strong>先檢查這件事</strong><span>高櫃或隔板會改變採光與通風；套房 prototype 只代表分區起點，不把廚房、浴室與柱子算進可用面積。</span></div><a class="button" href="/zh/room-layout-planner/?preset=studio">Try this size in Planner</a></div>
+        </div>
+        <div class="measured-flow"><div><span>01 · ZONE</span><strong>先留連續入口路徑</strong></div><div><span>02 · PLACE</span><strong>再放床、桌、收納</strong></div><div><span>03 · CHECK</span><strong>核對採光與轉身</strong></div></div>
+      </section>
       <article class="card">
         <h1>套房格局配置</h1>
         <p class="lead">套房只有一個主要空間，更需要用家具位置和走道，把睡眠、工作、用餐與收納分清楚。</p>
