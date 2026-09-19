@@ -1,0 +1,20 @@
+{
+  "status": "PASS_LOCAL_NON_REGRESSION",
+  "current": {
+    "javascript": { "files": 33, "bytes": 1937876, "largestBytes": 929901 },
+    "css": { "files": 10, "bytes": 83642, "largestBytes": 17760 }
+  },
+  "review03": {
+    "javascript": { "files": 33, "bytes": 1935906, "largestBytes": 929901 },
+    "css": { "files": 9, "bytes": 78470, "largestBytes": 17760 }
+  },
+  "delta": {
+    "javascriptBytes": 1970,
+    "javascriptPercent": 0.10,
+    "cssBytes": 5172,
+    "cssPercent": 6.59,
+    "largestChunkChanged": false
+  },
+  "warning": "Astro/Vite continues to report the existing >500 kB chunk warning; the largest chunk did not increase.",
+  "lighthouse": "NOT_AVAILABLE_LOCALLY — package is not installed; no score claimed"
+}

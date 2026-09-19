@@ -92,6 +92,8 @@ const relatedLinks = [
   import { initPlanner } from '../../planner/planner';
 
   const strings = {
+    locale: 'en',
+    dateLocale: 'en-US',
     roomLength: 'Room length',
     roomWidth: 'Room width',
     unit: 'Unit',
@@ -137,6 +139,23 @@ const relatedLinks = [
       exportPdf: 'Export PDF',
       save: 'Save',
       clear: 'Clear design',
+      saveExport: 'Save and export',
+    },
+    navigation: {
+      room: 'Room', furniture: 'Furniture', templates: 'Templates', checks: 'Checks', report: 'Report',
+      toolsLabel: 'Planner tools', setupEyebrow: 'SETUP', closeDrawer: 'Close setup panel', canvasLabel: 'Room floor plan',
+      canvasHint: 'Drag furniture · Select to adjust', mobileActionsLabel: 'Mobile planner actions',
+    },
+    drawer: { roomTitle: 'Room setup', furnitureTitle: 'Add furniture', templatesTitle: 'Layout templates', checksTitle: 'Dimension checks', reportTitle: 'Export report' },
+    report: {
+      eyebrow: 'EXPORT REPORT · LOCAL PREVIEW', title: 'RoomFeng dimension plan report', status: 'Local draft', room: 'Room', area: 'Area', furniture: 'Furniture', checks: 'Checks',
+      checksPass: 'Ready to review', checksNeedsReview: (count: number) => `${count} to review`, moreItems: (count: number) => `${count} more furniture items`,
+      note: 'The report keeps room dimensions, furniture footprints, and structural checks. Verify door widths, turns, and actual outside dimensions before buying or moving.',
+    },
+    accessibility: { selectedSuffix: ', selected' },
+    exportReport: {
+      title: 'RoomFeng dimension plan report', exportedAt: 'Exported', room: 'Room dimensions', area: 'Area', furniture: 'Furniture footprints (current design)', noFurniture: 'No furniture yet', checks: 'Dimension checks', noChecks: 'No structural warnings right now; verify on site.',
+      disclaimer: 'Planning reference only. Verify actual on-site dimensions before purchase, installation, moving, or construction.', pngSubtitle: 'MEASURE · PLAN · CHECK',
     },
     templates: {
       studio: 'Studio',

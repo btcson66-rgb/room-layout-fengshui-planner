@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Review-04 touched zh/en routes",
+  "protectedArchitectureChanged": false,
+  "routes": [
+    { "route": "/", "canonical": "https://roomfeng.win/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 4 },
+    { "route": "/en/", "canonical": "https://roomfeng.win/en/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 4 },
+    { "route": "/zh/room-layout-planner/", "canonical": "https://roomfeng.win/zh/room-layout-planner/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/en/room-layout-planner/", "canonical": "https://roomfeng.win/en/room-layout-planner/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/zh/furniture-fit-checker/", "canonical": "https://roomfeng.win/zh/furniture-fit-checker/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/en/furniture-fit-checker/", "canonical": "https://roomfeng.win/en/furniture-fit-checker/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/zh/small-bedroom-layout/", "canonical": "https://roomfeng.win/zh/small-bedroom-layout/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/en/small-bedroom-layout-planner/", "canonical": "https://roomfeng.win/en/small-bedroom-layout-planner/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/zh/studio-apartment-layout/", "canonical": "https://roomfeng.win/zh/studio-apartment-layout/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/en/studio-apartment-layout/", "canonical": "https://roomfeng.win/en/studio-apartment-layout/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 3 },
+    { "route": "/zh/layout-guides/10x10-bedroom-layout/", "canonical": "https://roomfeng.win/zh/layout-guides/10x10-bedroom-layout/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 2 },
+    { "route": "/en/layout-guides/10x10-bedroom-layout/", "canonical": "https://roomfeng.win/en/layout-guides/10x10-bedroom-layout/", "alternates": ["zh", "en", "x-default"], "indexable": true, "inSitemap": true, "jsonLd": 2 }
+  ],
+  "notes": [
+    "Canonical, hreflang, robots, sitemap architecture and indexability were read from the local dist output.",
+    "Payment, entitlement and production analytics configuration were not changed."
+  ]
+}

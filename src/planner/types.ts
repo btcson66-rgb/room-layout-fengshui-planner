@@ -42,6 +42,8 @@ export interface PlannerWarning {
 }
 
 export interface PlannerStrings {
+  locale?: string;
+  dateLocale?: string;
   roomLength: string;
   roomWidth: string;
   unit: string;
@@ -77,6 +79,57 @@ export interface PlannerStrings {
     exportPdf: string;
     save: string;
     clear: string;
+    saveExport: string;
+  };
+  navigation: {
+    room: string;
+    furniture: string;
+    templates: string;
+    checks: string;
+    report: string;
+    toolsLabel: string;
+    setupEyebrow: string;
+    closeDrawer: string;
+    canvasLabel: string;
+    canvasHint: string;
+    mobileActionsLabel: string;
+  };
+  drawer: {
+    roomTitle: string;
+    furnitureTitle: string;
+    templatesTitle: string;
+    checksTitle: string;
+    reportTitle: string;
+  };
+  report: {
+    eyebrow: string;
+    title: string;
+    status: string;
+    room: string;
+    area: string;
+    furniture: string;
+    checks: string;
+    checksPass: string;
+    checksNeedsReview: (count: number) => string;
+    moreItems: (count: number) => string;
+    note: string;
+  };
+  accessibility: {
+    selectedSuffix: string;
+  };
+  exportReport: {
+    title: string;
+    exportedAt: string;
+    room: string;
+    area: string;
+    furniture: string;
+    noFurniture: string;
+    checks: string;
+    noChecks: string;
+    culturalHeading?: string;
+    culturalReference?: string;
+    disclaimer: string;
+    pngSubtitle: string;
   };
   templates: {
     studio: string;

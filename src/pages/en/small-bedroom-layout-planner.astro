@@ -5,6 +5,9 @@ import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { en } from '../../i18n/en';
+import MeasuredPlan from '../../components/MeasuredPlan.astro';
+import PlannerHandoffLink from '../../components/PlannerHandoffLink.astro';
+import '../../styles/uiux-prototypes.css';
 
 const title = 'Small Bedroom Layout Planner | Bed Desk Wardrobe Ideas for Tight Rooms';
 const description = 'Plan a small bedroom layout with practical bed, desk, wardrobe, storage, and walkway tips for renters, students, and compact apartments.';
@@ -42,16 +45,38 @@ const relatedLinks = [
   { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
   { href: '/en/studio-apartment-layout/', title: 'Studio apartment layout' },
 ];
+const bedroomItems = [
+  { id: 'bedroom-bed', type: 'bed' as const, label: 'Single bed', widthCm: 105, depthCm: 188, xCm: 16, yCm: 45, rotationDeg: 0 },
+  { id: 'bedroom-desk', type: 'desk' as const, label: 'Narrow desk', widthCm: 100, depthCm: 45, xCm: 16, yCm: 280, rotationDeg: 0 },
+];
+const bedroomRoomWidthCm = 248;
+const bedroomRoomLengthCm = 400;
+const bedroomBed = bedroomItems[0];
+const bedroomDesk = bedroomItems[1];
+const bedroomRightRouteCm = bedroomRoomWidthCm - (bedroomBed.xCm + bedroomBed.widthCm);
+const bedroomBedToDeskGapCm = bedroomDesk.yCm - (bedroomBed.yCm + bedroomBed.depthCm);
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <article class="card">
+      <header class="landing-intro card">
+        <p class="eyebrow">BEDROOM SIZE · MEASURED START</p>
         <h1>Small bedroom layout planner</h1>
-        <p class="lead">
-          A small bedroom works best when the large items are honest about space. Plan the bed, desk, wardrobe, and walking route together instead of squeezing each piece in one by one.
-        </p>
+        <p class="lead">Start with a 248 × 400 cm room, a single-bed footprint, and a narrow desk; then replace the prototype with your measured outside dimensions in Planner.</p>
+      </header>
+      <section class="measured-landing" aria-labelledby="bedroom-prototype-heading">
+        <header class="measured-landing-header"><div><h2 id="bedroom-prototype-heading">A small bedroom: protect the route you use every day</h2></div><p>This is a measured starting point, not a universal promise. The SVG uses one centimetre coordinate system for the room and furniture; re-measure the clear room, bed frame, and door swing before you move anything.</p></header>
+        <div class="measured-layout-grid">
+          <div class="measured-plan" aria-label="248 by 400 centimetre small bedroom measured diagram">
+            <MeasuredPlan roomWidthCm={bedroomRoomWidthCm} roomLengthCm={bedroomRoomLengthCm} ariaLabel="248 by 400 centimetre small bedroom with 105 by 188 single bed, 100 by 45 narrow desk, and route" furniture={[{ x: 16, y: 45, width: 105, depth: 188, label: 'BED', className: 'bed' }, { x: 16, y: 280, width: 100, depth: 45, label: 'DESK', className: 'desk' }]} route="M 220 370 L 220 20" />
+          </div>
+          <div class="measured-facts"><dl><dt>Clear room</dt><dd>{bedroomRoomWidthCm} × {bedroomRoomLengthCm} cm</dd><dt>Sleep anchor</dt><dd>105 × 188 cm</dd><dt>Narrow desk</dt><dd>100 × 45 cm</dd><dt>Right route</dt><dd>{bedroomRightRouteCm} cm</dd></dl><div class="measured-check"><strong>Check this first</strong><span>The right route is {bedroomRoomWidthCm} − ({bedroomBed.xCm} + {bedroomBed.widthCm}) = {bedroomRightRouteCm} cm; the bed-to-desk gap is {bedroomBedToDeskGapCm} cm. Add your real door, window, and chair pull-back zone before treating it as usable.</span></div><PlannerHandoffLink href="/en/room-layout-planner/?rf_quick_handoff=1" label="Try this size in Planner" roomWidthCm={bedroomRoomWidthCm} roomLengthCm={bedroomRoomLengthCm} source="small-bedroom-layout" items={bedroomItems} /></div>
+        </div>
+        <div class="measured-flow"><div><span>01 · MEASURE</span><strong>Measure clear room and obstacles</strong></div><div><span>02 · PLAN</span><strong>Place the largest item first</strong></div><div><span>03 · CHECK</span><strong>Check chair and door space</strong></div></div>
+      </section>
+      <article class="card seo-article">
+        <p class="lead">A small bedroom works best when the large items are honest about space. Plan the bed, desk, wardrobe, and walking route together instead of squeezing each piece in one by one.</p>
         <p>
           The usual small-bedroom mistake is choosing furniture by wall length alone. A bed may fit against the long wall, a wardrobe may fit beside the door, and a desk may fit under the window, but the room can still feel cramped if every action overlaps. You need space to enter the room, open storage, sit at the desk, make the bed, and move around without stepping sideways all the time. A simple to-scale plan helps you see those conflicts before moving furniture repeatedly.
         </p>

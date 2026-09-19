@@ -1,9 +1,10 @@
 import { runFengShuiChecks, runStructuralChecks } from './checks';
-import { exportPdf, exportPng } from './export';
+import { buildPdfBlob, exportPdf, exportPng, svgToPngBlob } from './export';
 import { defaultDesign, makeItem, templateDesigns } from './templates';
 import type { Design, FurnitureItem, FurnitureType, PlannerOptions, PlannerStrings, Unit } from './types';
 import { formatArea, fromCm, toCm } from './units';
 import { readPlannerHandoff } from '../small-space/handoff';
+import { readQuickPlannerHandoff } from './quick-handoff';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const DEFAULT_STORAGE_KEY = 'room-layout-planner:draft';
@@ -62,6 +63,8 @@ function presetFromLocation(strings: PlannerStrings): Design | null {
 function loadDesign(storageKey: string, strings: PlannerStrings): Design {
   const handoff = readPlannerHandoff();
   if (handoff) return cloneDesign(handoff);
+  const quickHandoff = readQuickPlannerHandoff(strings);
+  if (quickHandoff) return cloneDesign(quickHandoff);
   const preset = presetFromLocation(strings);
   if (preset) return preset;
   const stored = localStorage.getItem(storageKey);
@@ -118,15 +121,16 @@ function createLabeledInput(label: string, input: HTMLInputElement | HTMLSelectE
 }
 
 function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: PlannerStrings, selected: boolean): void {
+  const label = item.label ?? strings.furniture[item.type];
   const group = svgEl('g', {
     class: `planner-item ${selected ? 'is-selected' : ''}`,
     tabindex: '0',
     role: 'button',
+    'aria-label': `${label}${selected ? strings.accessibility.selectedSuffix : ''}`,
     'aria-pressed': selected ? 'true' : 'false',
     'data-id': item.id,
     transform: `rotate(${item.rotation} ${item.x + item.w / 2} ${item.y + item.h / 2})`,
   });
-  const label = item.label ?? strings.furniture[item.type];
 
   if (item.type === 'door') {
     group.append(svgEl('path', {
@@ -164,8 +168,8 @@ function drawFurniture(parent: SVGGElement, item: FurnitureItem, strings: Planne
   group.append(text);
 
   if (selected) {
-    group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#2f6f62', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
-    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#2f6f62', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
+    group.append(svgEl('rect', { x: item.x - 4, y: item.y - 4, width: item.w + 8, height: item.h + 8, rx: 5, fill: 'none', stroke: '#526a5d', 'stroke-width': 2, 'stroke-dasharray': '6 4' }));
+    group.append(svgEl('rect', { x: item.x + item.w - 6, y: item.y + item.h - 6, width: 12, height: 12, rx: 2, fill: '#526a5d', 'data-resize': item.id, style: 'cursor:nwse-resize' }));
   }
 
   parent.append(group);
@@ -189,7 +193,7 @@ function renderEmptyHint(svg: SVGSVGElement, room: Design['room'], message: stri
 function renderGrid(svg: SVGSVGElement, room: Design['room']): void {
   const defs = svgEl('defs');
   const pattern = svgEl('pattern', { id: 'planner-grid', width: 50, height: 50, patternUnits: 'userSpaceOnUse' });
-  pattern.append(svgEl('path', { d: 'M 50 0 L 0 0 0 50', fill: 'none', stroke: '#d8d4c8', 'stroke-width': 1 }));
+  pattern.append(svgEl('path', { d: 'M 50 0 L 0 0 0 50', fill: 'none', stroke: '#ded8ca', 'stroke-width': 1 }));
   defs.append(pattern);
   svg.append(defs);
   svg.append(svgEl('rect', { x: PAD, y: PAD, width: room.w, height: room.h, fill: 'url(#planner-grid)' }));
@@ -305,6 +309,34 @@ function renderWarnings(container: HTMLElement, title: string, warnings: ReturnT
   container.append(list);
 }
 
+function renderReportPreview(container: HTMLElement, state: PlannerState, strings: PlannerStrings): void {
+  const checks = runStructuralChecks(state.design, strings);
+  const { room, items } = state.design;
+  container.replaceChildren();
+  const heading = document.createElement('div');
+  heading.className = 'planner-report-heading';
+  heading.innerHTML = `<div><p class="eyebrow">${strings.report.eyebrow}</p><h3>${strings.report.title}</h3></div><span class="planner-report-status">${strings.report.status}</span>`;
+  const summary = document.createElement('div');
+  summary.className = 'planner-report-summary';
+  summary.innerHTML = `<div><span>${strings.report.room}</span><strong>${Math.round(room.w)} × ${Math.round(room.h)} ${room.unit}</strong></div><div><span>${strings.report.area}</span><strong>${formatArea(room.w, room.h, room.unit)}</strong></div><div><span>${strings.report.furniture}</span><strong>${items.length}</strong></div><div><span>${strings.report.checks}</span><strong>${checks.length === 0 ? strings.report.checksPass : strings.report.checksNeedsReview(checks.length)}</strong></div>`;
+  const list = document.createElement('ul');
+  list.className = 'planner-report-items';
+  items.slice(0, 5).forEach((item) => {
+    const row = document.createElement('li');
+    row.textContent = `${item.label ?? strings.furniture[item.type]} · ${Math.round(item.w)} × ${Math.round(item.h)} ${room.unit}`;
+    list.append(row);
+  });
+  if (items.length > 5) {
+    const more = document.createElement('li');
+    more.textContent = strings.report.moreItems(items.length - 5);
+    list.append(more);
+  }
+  const note = document.createElement('p');
+  note.className = 'planner-muted';
+  note.textContent = strings.report.note;
+  container.append(heading, summary, list, note);
+}
+
 function createNumberInput(value: number, step: number): HTMLInputElement {
   const input = document.createElement('input');
   input.type = 'number';
@@ -328,12 +360,30 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   container.classList.add('planner-tool');
   container.innerHTML = `
     <div class="planner-shell">
-      <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
-      <section class="planner-canvas-wrap" aria-label="Room plan">
-        <div class="planner-area-line"></div>
-        <svg class="planner-svg" role="group" aria-label="Room floor plan"></svg>
+      <nav class="planner-rail" aria-label="${strings.navigation.toolsLabel}">
+        <button type="button" class="planner-rail-button is-active" data-planner-open="room" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">▦</span><span>${strings.navigation.room}</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="furniture" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">＋</span><span>${strings.navigation.furniture}</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="templates" aria-controls="planner-drawer" aria-expanded="false"><span aria-hidden="true">◇</span><span>${strings.navigation.templates}</span></button>
+        <button type="button" class="planner-rail-button" data-planner-open="checks" aria-controls="planner-inspector" aria-expanded="false"><span aria-hidden="true">✓</span><span>${strings.navigation.checks}</span></button>
+      </nav>
+      <section class="planner-drawer" id="planner-drawer" hidden aria-label="${strings.navigation.toolsLabel}">
+        <div class="planner-drawer-header"><div><p class="eyebrow">${strings.navigation.setupEyebrow}</p><h2 data-planner-drawer-title>${strings.drawer.roomTitle}</h2></div><button type="button" class="planner-drawer-close" data-planner-close aria-label="${strings.navigation.closeDrawer}">×</button></div>
+        <section class="planner-panel planner-controls" aria-label="Planner controls"></section>
+        <section class="planner-panel planner-drawer-checks" data-planner-panel="checks" hidden aria-label="Planner checks"></section>
+        <section class="planner-panel planner-drawer-report" data-planner-panel="report" hidden aria-label="Export report"></section>
       </section>
-      <aside class="planner-panel planner-side" aria-label="Planner checks">
+      <section class="planner-canvas-wrap" aria-label="${strings.navigation.canvasLabel}">
+        <div class="planner-canvas-header"><div class="planner-area-line"></div><span class="planner-canvas-hint">${strings.navigation.canvasHint}</span></div>
+        <svg class="planner-svg" role="group" aria-label="${strings.navigation.canvasLabel}"></svg>
+        <div class="planner-report-preview" aria-label="Export report preview"></div>
+        <div class="planner-mobile-actions" aria-label="${strings.navigation.mobileActionsLabel}">
+          <button type="button" class="planner-mobile-action" data-planner-open="room">${strings.navigation.room}</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="furniture">${strings.navigation.furniture}</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="checks">${strings.navigation.checks}</button>
+          <button type="button" class="planner-mobile-action" data-planner-open="report">${strings.navigation.report}</button>
+        </div>
+      </section>
+      <aside class="planner-panel planner-side" id="planner-inspector" aria-label="Planner checks">
         <div class="planner-selection"></div>
         <div class="planner-structural"></div>
         <div class="planner-feng"></div>
@@ -344,11 +394,67 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const controls = container.querySelector<HTMLElement>('.planner-controls');
   const svg = container.querySelector<SVGSVGElement>('.planner-svg');
   const areaLine = container.querySelector<HTMLElement>('.planner-area-line');
+  const reportPreview = container.querySelector<HTMLElement>('.planner-report-preview');
   const selection = container.querySelector<HTMLElement>('.planner-selection');
   const structural = container.querySelector<HTMLElement>('.planner-structural');
   const feng = container.querySelector<HTMLElement>('.planner-feng');
-  if (!controls || !svg || !areaLine || !selection || !structural || !feng) return;
+  const drawer = container.querySelector<HTMLElement>('.planner-drawer');
+  const drawerChecks = container.querySelector<HTMLElement>('.planner-drawer-checks');
+  const drawerReport = container.querySelector<HTMLElement>('.planner-drawer-report');
+  const drawerTitle = container.querySelector<HTMLElement>('[data-planner-drawer-title]');
+  if (!controls || !svg || !areaLine || !reportPreview || !selection || !structural || !feng || !drawer || !drawerChecks || !drawerReport || !drawerTitle) return;
+  if (import.meta.env.DEV || window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
+    const testWindow = window as typeof window & { __roomfengExportTest?: { png: () => Promise<Blob>; pdf: () => Promise<Blob> } };
+    testWindow.__roomfengExportTest = {
+      png: () => svgToPngBlob(svg, state.design, strings),
+      pdf: () => buildPdfBlob(svg, state.design, strings),
+    };
+  }
   const selectionPanel = selection;
+  let lastTrigger: HTMLButtonElement | null = null;
+  const panelTitles: Record<string, string> = {
+    room: strings.drawer.roomTitle,
+    furniture: strings.drawer.furnitureTitle,
+    templates: strings.drawer.templatesTitle,
+    checks: strings.drawer.checksTitle,
+    report: strings.drawer.reportTitle,
+  };
+
+  const closeDrawer = (): void => {
+    drawer.hidden = true;
+    drawer.dataset.panel = '';
+    container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => button.setAttribute('aria-expanded', 'false'));
+    lastTrigger?.focus({ preventScroll: true });
+  };
+
+  const openDrawer = (panel: string): void => {
+    drawer.hidden = false;
+    drawer.dataset.panel = panel;
+    drawerTitle.textContent = panelTitles[panel] ?? 'Planner';
+    controls.querySelectorAll<HTMLElement>('[data-planner-panel]').forEach((section) => {
+      section.hidden = section.dataset.plannerPanel !== panel;
+    });
+    drawerChecks.hidden = panel !== 'checks';
+    drawerReport.hidden = panel !== 'report';
+    container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => button.setAttribute('aria-expanded', button.dataset.plannerOpen === panel ? 'true' : 'false'));
+    const focusTarget = panel === 'checks' ? drawerChecks.querySelector<HTMLElement>('a, button, input, select') : panel === 'report' ? drawerReport.querySelector<HTMLElement>('a, button, input, select') : controls.querySelector<HTMLElement>(`[data-planner-panel="${panel}"] input, [data-planner-panel="${panel}"] select, [data-planner-panel="${panel}"] button`);
+    focusTarget?.focus({ preventScroll: true });
+  };
+
+  container.querySelectorAll<HTMLButtonElement>('[data-planner-open]').forEach((button) => {
+    button.addEventListener('click', () => {
+      lastTrigger = button;
+      if (!drawer.hidden && drawer.dataset.panel === button.dataset.plannerOpen) closeDrawer();
+      else openDrawer(button.dataset.plannerOpen ?? 'room');
+    });
+  });
+  container.querySelector<HTMLButtonElement>('[data-planner-close]')?.addEventListener('click', closeDrawer);
+  drawer.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeDrawer();
+    }
+  });
 
   const saveNow = (): void => {
     localStorage.setItem(storageKey, JSON.stringify(state.design));
@@ -364,11 +470,15 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
   const rerender = (): void => {
     renderSvg(svg, state, strings);
     if (state.design.items.length === 0) {
-      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? '選擇家具新增，或套用範例格局。');
+      renderEmptyHint(svg, state.design.room, strings.emptyHint ?? strings.navigation.furniture);
     }
     areaLine.textContent = `${strings.area}: ${formatArea(state.design.room.w, state.design.room.h, state.design.room.unit)}`;
+    renderReportPreview(reportPreview, state, strings);
+    renderReportPreview(drawerReport, state, strings);
     renderSelection();
-    renderWarnings(structural, strings.checksTitle, runStructuralChecks(state.design, strings), strings.noWarnings);
+    const structuralWarnings = runStructuralChecks(state.design, strings);
+    renderWarnings(structural, strings.checksTitle, structuralWarnings, strings.noWarnings);
+    renderWarnings(drawerChecks, strings.checksTitle, structuralWarnings, strings.noWarnings);
     if (options.fengShui) {
       renderWarnings(feng, strings.fengShui.sectionTitle, runFengShuiChecks(state.design, strings), strings.fengShui.noWarnings, strings.disclaimerLink);
     } else {
@@ -395,6 +505,19 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   const renderControls = (): void => {
     controls.replaceChildren();
+    const makePanel = (key: string, title: string): HTMLElement => {
+      const panel = document.createElement('section');
+      panel.dataset.plannerPanel = key;
+      panel.className = 'planner-control-section';
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+      panel.append(heading);
+      return panel;
+    };
+    const roomPanel = makePanel('room', strings.drawer.roomTitle);
+    const furniturePanel = makePanel('furniture', strings.drawer.furnitureTitle);
+    const templatesPanel = makePanel('templates', strings.templatesLabel);
+
     const roomGrid = document.createElement('div');
     roomGrid.className = 'planner-control-grid';
     const lengthInput = createNumberInput(fromCm(state.design.room.h, state.design.room.unit), state.design.room.unit === 'cm' ? 1 : 0.1);
@@ -415,9 +538,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       rerender();
     });
     roomGrid.append(createLabeledInput(strings.roomLength, lengthInput), createLabeledInput(strings.roomWidth, widthInput), createLabeledInput(strings.unit, unitSelect));
+    roomPanel.append(roomGrid);
 
-    const paletteTitle = document.createElement('h3');
-    paletteTitle.textContent = strings.palette;
     const palette = document.createElement('div');
     palette.className = 'planner-button-row';
     FURNITURE_TYPES.forEach((type) => {
@@ -433,9 +555,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       });
       palette.append(button);
     });
+    furniturePanel.append(palette);
 
-    const customTitle = document.createElement('h3');
-    customTitle.textContent = strings.customItem.label;
     const customForm = document.createElement('div');
     customForm.className = 'planner-custom-form';
     const customNameInput = document.createElement('input');
@@ -463,14 +584,10 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     });
     const customSizeRow = document.createElement('div');
     customSizeRow.className = 'planner-custom-size-row';
-    customSizeRow.append(
-      createLabeledInput(strings.width, customWInput),
-      createLabeledInput(strings.height, customHInput),
-    );
+    customSizeRow.append(createLabeledInput(strings.width, customWInput), createLabeledInput(strings.height, customHInput));
     customForm.append(customNameInput, customSizeRow, customAddBtn);
+    furniturePanel.append(customForm);
 
-    const templateTitle = document.createElement('h3');
-    templateTitle.textContent = strings.templatesLabel;
     const templates = document.createElement('div');
     templates.className = 'planner-button-row';
     const presetMap = templateDesigns(strings.furniture);
@@ -487,6 +604,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
       });
       templates.append(button);
     });
+    templatesPanel.append(templates);
 
     const actions = document.createElement('div');
     actions.className = 'planner-button-row';
@@ -499,7 +617,7 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     pngButton.type = 'button';
     pngButton.className = 'button secondary planner-small-button';
     pngButton.textContent = strings.actions.exportPng;
-    pngButton.addEventListener('click', () => void exportPng(svg, actions));
+    pngButton.addEventListener('click', () => void exportPng(svg, actions, state.design, strings));
     const pdfButton = document.createElement('button');
     pdfButton.type = 'button';
     pdfButton.className = 'button secondary planner-small-button';
@@ -520,9 +638,21 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     });
     const status = document.createElement('span');
     status.className = 'planner-save-status planner-muted';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
     actions.append(saveButton, pngButton, pdfButton, clearButton, status);
-
-    controls.append(roomGrid, paletteTitle, palette, customTitle, customForm, templateTitle, templates, actions);
+    const actionHeading = document.createElement('h3');
+    actionHeading.textContent = strings.actions.saveExport;
+    roomPanel.append(actionHeading, actions);
+    controls.append(roomPanel, furniturePanel, templatesPanel);
+    if (!drawer.hidden && drawer.dataset.panel) {
+      const activePanel = drawer.dataset.panel;
+      controls.querySelectorAll<HTMLElement>('[data-planner-panel]').forEach((section) => {
+        section.hidden = section.dataset.plannerPanel !== activePanel;
+      });
+      drawerChecks.hidden = activePanel !== 'checks';
+      drawerReport.hidden = activePanel !== 'report';
+    }
   };
 
   function renderSelection(): void {
@@ -611,6 +741,18 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
     actions.append(rotateButton, deleteButton);
     selectionPanel.append(grid, actions);
   }
+
+  svg.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const target = (event.target as Element).closest<SVGGElement>('.planner-item');
+    const id = target?.dataset.id;
+    if (!id) return;
+    event.preventDefault();
+    state.selectedId = id;
+    state.dragging = null;
+    state.resizing = null;
+    rerender();
+  });
 
   svg.addEventListener('pointerdown', (event) => {
     const target = event.target as Element;

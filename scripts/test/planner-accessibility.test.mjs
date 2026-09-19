@@ -38,7 +38,7 @@ test('affiliate kicker resolves to an existing text token that passes AA on its 
 });
 
 test('planner exposes a named group containing single-level furniture buttons', () => {
-  assert.match(plannerSource, /<svg class="planner-svg" role="group" aria-label="Room floor plan"><\/svg>/);
+  assert.match(plannerSource, /<svg class="planner-svg" role="group" aria-label="\$\{strings\.navigation\.canvasLabel\}"><\/svg>/);
   assert.doesNotMatch(plannerSource, /<svg class="planner-svg" role="img"/);
   assert.match(plannerSource, /role: 'button'/);
   assert.match(plannerSource, /tabindex: '0'/);

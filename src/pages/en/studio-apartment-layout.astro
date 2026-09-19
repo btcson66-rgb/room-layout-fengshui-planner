@@ -5,6 +5,9 @@ import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { en } from '../../i18n/en';
+import MeasuredPlan from '../../components/MeasuredPlan.astro';
+import PlannerHandoffLink from '../../components/PlannerHandoffLink.astro';
+import '../../styles/uiux-prototypes.css';
 
 const title = 'Studio Apartment Layout Planner | Plan Sleep Work and Dining Zones';
 const description = 'Plan a studio apartment layout with practical zoning tips for sleeping, working, eating, storage, walkways, and furniture fit in one open room.';
@@ -47,16 +50,33 @@ const relatedLinks = [
   { href: '/en/450-sq-ft-studio-apartment-layout/', title: '450 sq ft studio layout guide' },
   { href: '/en/500-sq-ft-studio-apartment-layout/', title: '500 sq ft studio layout guide' },
 ];
+const studioItems = [
+  { id: 'studio-bed', type: 'bed' as const, label: 'Bed', widthCm: 150, depthCm: 190, xCm: 30, yCm: 40, rotationDeg: 0 },
+  { id: 'studio-desk', type: 'desk' as const, label: 'Work desk', widthCm: 100, depthCm: 50, xCm: 250, yCm: 50, rotationDeg: 0 },
+  { id: 'studio-storage', type: 'wardrobe' as const, label: 'Storage', widthCm: 120, depthCm: 45, xCm: 400, yCm: 350, rotationDeg: 0 },
+];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <article class="card">
+      <header class="landing-intro card">
+        <p class="eyebrow">STUDIO SIZE · MEASURED START</p>
         <h1>Studio apartment layout planner</h1>
-        <p class="lead">
-          A studio apartment has to support sleeping, working, eating, relaxing, storage, and entry circulation in one room. The goal is not to fill every wall, but to make each zone usable.
-        </p>
+        <p class="lead">Start with a 560 × 500 cm open area, then place the 150 × 190 cm bed, work desk, and storage footprint before replacing the prototype with your measured room.</p>
+      </header>
+      <section class="measured-landing" aria-labelledby="studio-prototype-heading">
+        <header class="measured-landing-header"><div><h2 id="studio-prototype-heading">A studio starts with zones, then furniture</h2></div><p>Keep one clear route from entry to the daily anchors. The SVG uses the same centimetre coordinate system for the room, zones, and footprints; kitchen, bathroom, columns, and fixed services still need their own measurements.</p></header>
+        <div class="measured-layout-grid">
+          <div class="measured-plan" aria-label="560 by 500 centimetre studio measured zoning diagram">
+            <MeasuredPlan roomWidthCm={560} roomLengthCm={500} ariaLabel="560 by 500 centimetre studio with 150 by 190 bed, 100 by 50 desk, and 120 by 45 storage" zones={[{ x: 0, y: 0, width: 220, depth: 250, label: 'SLEEP ZONE' }, { x: 220, y: 0, width: 180, depth: 180, label: 'WORK ZONE' }, { x: 390, y: 280, width: 170, depth: 220, label: 'STORAGE ZONE' }]} furniture={[{ x: 30, y: 40, width: 150, depth: 190, label: 'BED', className: 'bed' }, { x: 250, y: 50, width: 100, depth: 50, label: 'DESK', className: 'desk' }, { x: 400, y: 350, width: 120, depth: 45, label: 'STORAGE', className: 'storage' }]} route="M 20 460 L 190 300 L 230 260 L 230 230" />
+          </div>
+          <div class="measured-facts"><dl><dt>Open-area start</dt><dd>560 × 500 cm</dd><dt>Sleep anchor</dt><dd>150 × 190 cm bed</dd><dt>Work zone</dt><dd>100 × 50 cm desk</dd><dt>Storage zone</dt><dd>120 × 45 cm cabinet</dd><dt>Main route</dt><dd>Entry → bed → storage</dd></dl><div class="measured-check"><strong>Check this first</strong><span>A tall cabinet or divider changes light and ventilation. This studio prototype is a zoning start, not the full usable area of an apartment.</span></div><PlannerHandoffLink href="/en/room-layout-planner/?rf_quick_handoff=1" label="Try this size in Planner" roomWidthCm={560} roomLengthCm={500} source="studio-apartment-layout" items={studioItems} /></div>
+        </div>
+        <div class="measured-flow"><div><span>01 · ZONE</span><strong>Keep the entry route continuous</strong></div><div><span>02 · PLACE</span><strong>Place bed, desk, and storage</strong></div><div><span>03 · CHECK</span><strong>Check light and turning space</strong></div></div>
+      </section>
+      <article class="card seo-article">
+        <p class="lead">A studio apartment has to support sleeping, working, eating, relaxing, storage, and entry circulation in one room. The goal is not to fill every wall, but to make each zone usable.</p>
         <p>
           Studio planning is different from bedroom planning because every piece affects multiple routines. A bed beside the entry may save wall space but make the home feel less private. A sofa floating in the middle can create a living zone but may narrow the route to the kitchen. A desk by the window may be pleasant for work but can block a curtain, heater, or balcony door. A floor plan helps you test these relationships before choosing furniture that locks you into one awkward setup.
         </p>

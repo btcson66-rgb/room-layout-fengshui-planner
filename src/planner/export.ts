@@ -1,6 +1,7 @@
-import { requestGatedDownload } from './downloadGate';
-import type { Design, PlannerStrings } from './types';
-import { formatArea, formatLength } from './units';
+import { requestGatedDownload } from './downloadGate.ts';
+import { runStructuralChecks } from './checks.ts';
+import type { Design, PlannerStrings } from './types.ts';
+import { formatArea, formatLength } from './units.ts';
 
 const PDF_MARGIN_MM = 12;
 const PDF_GAP_MM = 6;
@@ -11,6 +12,7 @@ const TEXT_PADDING_Y = 42;
 const TEXT_LINE_HEIGHT = 34;
 const TEXT_HEADING_HEIGHT = 46;
 const TEXT_FONT_STACK = '"Microsoft JhengHei", "Noto Sans TC", "PingFang TC", Arial, sans-serif';
+export const EXPORT_DISCLAIMER = 'Planning reference only. Verify actual on-site dimensions before purchase, installation, moving, or construction.';
 
 interface PdfTextRow {
   text: string;
@@ -26,7 +28,7 @@ function triggerDownload(blob: Blob, filename: string): void {
   URL.revokeObjectURL(url);
 }
 
-export async function svgToPngBlob(svg: SVGSVGElement): Promise<Blob> {
+async function svgToImage(svg: SVGSVGElement): Promise<{ image: HTMLImageElement; width: number; height: number }> {
   const clone = svg.cloneNode(true) as SVGSVGElement;
   clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
   const serialized = new XMLSerializer().serializeToString(clone);
@@ -37,24 +39,70 @@ export async function svgToPngBlob(svg: SVGSVGElement): Promise<Blob> {
   const viewBox = svg.viewBox.baseVal;
   const width = Math.max(900, viewBox.width * 2);
   const height = Math.max(650, viewBox.height * 2);
-  const canvas = document.createElement('canvas');
-  canvas.width = width;
-  canvas.height = height;
-  const context = canvas.getContext('2d');
-  if (!context) {
-    URL.revokeObjectURL(url);
-    throw new Error('Canvas is unavailable.');
-  }
-
   await new Promise<void>((resolve, reject) => {
     image.onload = () => resolve();
     image.onerror = () => reject(new Error('Unable to render SVG.'));
     image.src = url;
   });
+  URL.revokeObjectURL(url);
+  return { image, width, height };
+}
+
+export interface ExportMetadata {
+  title: string;
+  exportedAt: string;
+  room: string;
+  area: string;
+  items: string[];
+  checks: string[];
+  culturalReference?: string;
+  disclaimer: string;
+}
+
+export function buildExportMetadata(design: Design, strings: PlannerStrings, date = new Date()): ExportMetadata {
+  const checks = runStructuralChecks(design, strings).map((warning) => `${warning.severity}: ${warning.message}`);
+  return {
+    title: strings.exportReport.title,
+    exportedAt: new Intl.DateTimeFormat(strings.dateLocale ?? strings.locale ?? 'en-US', { dateStyle: 'medium' }).format(date),
+    room: `${formatLength(design.room.w, design.room.unit)} × ${formatLength(design.room.h, design.room.unit)}`,
+    area: formatArea(design.room.w, design.room.h, design.room.unit),
+    items: design.items.map((item, index) => `${index + 1}. ${item.label?.trim() || strings.furniture[item.type]} · ${formatLength(item.w, design.room.unit)} × ${formatLength(item.h, design.room.unit)}`),
+    checks,
+    culturalReference: strings.exportReport.culturalReference,
+    disclaimer: strings.exportReport.disclaimer,
+  };
+}
+
+export async function svgToPngBlob(svg: SVGSVGElement, design?: Design, strings?: PlannerStrings): Promise<Blob> {
+  const { image, width: planWidth, height: planHeight } = await svgToImage(svg);
+  const width = Math.max(1400, planWidth);
+  const headerHeight = 150;
+  const footerHeight = 84;
+  const height = Math.max(900, planHeight + headerHeight + footerHeight + 96);
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext('2d');
+  if (!context) throw new Error('Canvas is unavailable.');
   context.fillStyle = '#ffffff';
   context.fillRect(0, 0, width, height);
-  context.drawImage(image, 0, 0, width, height);
-  URL.revokeObjectURL(url);
+  const metadata = design && strings ? buildExportMetadata(design, strings) : null;
+  context.fillStyle = '#385046';
+  context.font = `700 32px ${TEXT_FONT_STACK}`;
+  context.fillText(metadata?.title ?? 'RoomFeng dimension plan report', 56, 58);
+  context.fillStyle = '#626b64';
+  context.font = `400 20px ${TEXT_FONT_STACK}`;
+  context.fillText(metadata ? `${strings?.exportReport.pngSubtitle ?? 'MEASURE · PLAN · CHECK'} · ${metadata.exportedAt}` : 'MEASURE · PLAN · CHECK', 56, 96);
+  if (metadata && strings) context.fillText(`${strings.exportReport.room} ${metadata.room} · ${strings.exportReport.area} ${metadata.area}`, 56, 126);
+  const maxWidth = width - 112;
+  const maxHeight = height - headerHeight - footerHeight - 40;
+  const scale = Math.min(maxWidth / planWidth, maxHeight / planHeight);
+  const renderedWidth = planWidth * scale;
+  const renderedHeight = planHeight * scale;
+  context.drawImage(image, (width - renderedWidth) / 2, headerHeight, renderedWidth, renderedHeight);
+  context.fillStyle = '#626b64';
+  context.font = `400 17px ${TEXT_FONT_STACK}`;
+  context.fillText(metadata?.disclaimer ?? EXPORT_DISCLAIMER, 56, height - 42, width - 112);
 
   return await new Promise<Blob>((resolve, reject) => {
     canvas.toBlob((blob) => {
@@ -70,8 +118,8 @@ function toolSlug(suffix: string): string {
   return `${last}-${suffix}`;
 }
 
-export async function exportPng(svg: SVGSVGElement, anchor?: HTMLElement | null): Promise<void> {
-  const blob = await svgToPngBlob(svg);
+export async function exportPng(svg: SVGSVGElement, anchor?: HTMLElement | null, design?: Design, strings?: PlannerStrings): Promise<void> {
+  const blob = await svgToPngBlob(svg, design, strings);
   requestGatedDownload({
     tool: toolSlug('png'),
     anchor,
@@ -99,25 +147,30 @@ function imageSize(dataUrl: string): Promise<{ width: number; height: number }> 
 }
 
 function buildPdfRows(design: Design, strings: PlannerStrings): PdfTextRow[] {
-  const { room, items } = design;
+  const metadata = buildExportMetadata(design, strings);
   const rows: PdfTextRow[] = [
-    { text: `${strings.roomLength}: ${formatLength(room.h, room.unit)}` },
-    { text: `${strings.roomWidth}: ${formatLength(room.w, room.unit)}` },
-    { text: `${strings.area}: ${formatArea(room.w, room.h, room.unit)}` },
-    { text: strings.itemList, strong: true },
+    { text: `${strings.exportReport.exportedAt}：${metadata.exportedAt}` },
+    { text: `${strings.exportReport.room}：${metadata.room}` },
+    { text: `${strings.exportReport.area}：${metadata.area}` },
+    { text: strings.exportReport.furniture, strong: true },
   ];
 
-  if (items.length === 0) {
-    rows.push({ text: '0' });
-    return rows;
+  if (metadata.items.length === 0) {
+    rows.push({ text: strings.exportReport.noFurniture });
+  } else {
+    metadata.items.forEach((item) => rows.push({ text: item }));
   }
-
-  items.forEach((item, index) => {
-    const label = item.label?.trim() || strings.furniture[item.type];
-    rows.push({
-      text: `${index + 1}. ${label} - ${formatLength(item.w, room.unit)} x ${formatLength(item.h, room.unit)}`,
-    });
-  });
+  rows.push({ text: strings.exportReport.checks, strong: true });
+  if (metadata.checks.length === 0) {
+    rows.push({ text: strings.exportReport.noChecks });
+  } else {
+    metadata.checks.forEach((check) => rows.push({ text: check }));
+  }
+  if (strings.exportReport.culturalHeading && metadata.culturalReference) {
+    rows.push({ text: strings.exportReport.culturalHeading, strong: true });
+    rows.push({ text: metadata.culturalReference });
+  }
+  rows.push({ text: metadata.disclaimer, strong: true });
   return rows;
 }
 
@@ -177,8 +230,27 @@ export async function exportPdf(
   strings: PlannerStrings,
   anchor?: HTMLElement | null,
 ): Promise<void> {
+  const pdf = await buildPdfBlob(svg, design, strings);
+  requestGatedDownload({
+    tool: toolSlug('pdf'),
+    anchor,
+    getFile: () => ({ blob: pdf, filename: 'room-layout-plan.pdf' }),
+    fallback: () => triggerDownload(pdf, 'room-layout-plan.pdf'),
+  });
+}
+
+export async function buildPdfBlob(svg: SVGSVGElement, design: Design, strings: PlannerStrings): Promise<Blob> {
   const { jsPDF } = await import('jspdf');
-  const blob = await svgToPngBlob(svg);
+  const planImage = await svgToImage(svg);
+  const planCanvas = document.createElement('canvas');
+  planCanvas.width = planImage.width;
+  planCanvas.height = planImage.height;
+  const planContext = planCanvas.getContext('2d');
+  if (!planContext) throw new Error('Canvas is unavailable.');
+  planContext.fillStyle = '#ffffff';
+  planContext.fillRect(0, 0, planCanvas.width, planCanvas.height);
+  planContext.drawImage(planImage.image, 0, 0, planImage.width, planImage.height);
+  const blob = await new Promise<Blob>((resolve, reject) => planCanvas.toBlob((value) => value ? resolve(value) : reject(new Error('Unable to render plan.')), 'image/png'));
   const dataUrl = await blobToDataUrl(blob);
   const size = await imageSize(dataUrl);
   const pdf = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
@@ -199,7 +271,7 @@ export async function exportPdf(
   const firstTextHeight = pageHeight - PDF_MARGIN_MM - textStartY;
   const firstRows = rowsForHeight(firstTextHeight, contentWidth);
   const fullRows = rowsForHeight(contentHeight, contentWidth);
-  const heading = `${strings.roomLength} / ${strings.roomWidth}`;
+  const heading = strings.exportReport.title;
   const textPanels = buildTextPanels(textRows, heading, firstRows, fullRows);
 
   textPanels.forEach((panel, index) => {
@@ -209,10 +281,5 @@ export async function exportPdf(
     pdf.addImage(panel.toDataURL('image/png'), 'PNG', PDF_MARGIN_MM, panelY, contentWidth, panelHeight);
   });
 
-  requestGatedDownload({
-    tool: toolSlug('pdf'),
-    anchor,
-    getFile: () => ({ blob: pdf.output('blob'), filename: 'room-layout-plan.pdf' }),
-    fallback: () => pdf.save('room-layout-plan.pdf'),
-  });
+  return pdf.output('blob');
 }

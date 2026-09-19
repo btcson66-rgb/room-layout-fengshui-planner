@@ -5,6 +5,9 @@ import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
+import MeasuredPlan from '../../components/MeasuredPlan.astro';
+import PlannerHandoffLink from '../../components/PlannerHandoffLink.astro';
+import '../../styles/uiux-prototypes.css';
 
 const title = '套房格局配置｜單房空間分出睡眠、工作與用餐區';
 const description = '套房與 studio apartment 配置建議，教你用家具、走道與收納分區，並用房間配置規劃器先測試床、桌、沙發和餐桌位置。';
@@ -47,13 +50,41 @@ const relatedArticles = [
   { href: '/zh/blog/sofa-bedroom-layout/', title: '沙發臥室配置' },
   { href: '/zh/blog/rental-room-layout-planning/', title: '租屋房間規劃' },
 ];
+const studioItems = [
+  { id: 'studio-bed', type: 'bed' as const, label: '床', widthCm: 150, depthCm: 190, xCm: 30, yCm: 40, rotationDeg: 0 },
+  { id: 'studio-desk', type: 'desk' as const, label: '工作桌', widthCm: 100, depthCm: 50, xCm: 250, yCm: 50, rotationDeg: 0 },
+  { id: 'studio-storage', type: 'wardrobe' as const, label: '收納', widthCm: 120, depthCm: 45, xCm: 400, yCm: 350, rotationDeg: 0 },
+];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <article class="card">
-        <h1>套房格局配置</h1>
+      <header class="landing-intro card">
+        <p class="eyebrow">STUDIO SIZE · ZONING START</p>
+        <h1>套房格局配置｜單房空間分出睡眠、工作與用餐區</h1>
+        <p class="lead">先用 560 × 500 cm 的可用空間分區，再把 150 × 190 cm 床、工作桌與收納的實際外框帶進 Planner。</p>
+      </header>
+      <section class="measured-landing" aria-labelledby="studio-prototype-heading">
+        <header class="measured-landing-header"><div><h2 id="studio-prototype-heading">套房先分區，再把家具放進去</h2></div><p>用一條清楚的入口到床邊動線，把睡眠、工作與用餐先拆開；SVG 使用同一個公分座標系繪製房間、分區與家具，分區完成後再核對你的實際外框。</p></header>
+        <div class="measured-layout-grid">
+          <div class="measured-plan" aria-label="套房尺寸與分區示意圖">
+            <MeasuredPlan roomWidthCm={560} roomLengthCm={500} ariaLabel="560 x 500 公分套房，包含 150 x 190 床、100 x 50 工作桌與 120 x 45 收納" zones={[
+              { x: 0, y: 0, width: 220, depth: 250, label: 'SLEEP ZONE' },
+              { x: 220, y: 0, width: 180, depth: 180, label: 'WORK ZONE' },
+              { x: 390, y: 280, width: 170, depth: 220, label: 'STORAGE ZONE' },
+            ]} furniture={[
+              { x: 30, y: 40, width: 150, depth: 190, label: 'BED', className: 'bed' },
+              { x: 250, y: 50, width: 100, depth: 50, label: 'DESK', className: 'desk' },
+              { x: 400, y: 350, width: 120, depth: 45, label: 'STORAGE', className: 'storage' },
+            ]} route="M 20 460 L 190 300 L 230 260 L 230 230" />
+          </div>
+          <div class="measured-facts"><dl><dt>開放區起點</dt><dd>560 × 500 cm</dd><dt>睡眠錨點</dt><dd>床 150 × 190 cm</dd><dt>工作區</dt><dd>桌 100 × 50 cm</dd><dt>收納區</dt><dd>櫃 120 × 45 cm</dd><dt>主動線</dt><dd>入口 → 床 → 收納</dd></dl><div class="measured-check"><strong>先檢查這件事</strong><span>高櫃或隔板會改變採光與通風；套房 prototype 只代表分區起點，不把廚房、浴室與柱子算進可用面積。</span></div><PlannerHandoffLink href="/zh/room-layout-planner/?rf_quick_handoff=1" label="Try this size in Planner" roomWidthCm={560} roomLengthCm={500} source="studio-apartment-layout" items={studioItems} /></div>
+        </div>
+        <div class="measured-flow"><div><span>01 · ZONE</span><strong>先留連續入口路徑</strong></div><div><span>02 · PLACE</span><strong>再放床、桌、收納</strong></div><div><span>03 · CHECK</span><strong>核對採光與轉身</strong></div></div>
+      </section>
+      <article class="card seo-article">
+        <h2>套房分區配置原則</h2>
         <p class="lead">套房只有一個主要空間，更需要用家具位置和走道，把睡眠、工作、用餐與收納分清楚。</p>
         <p>studio 或小套房的難點，不是家具數量一定很多，而是所有生活行為都在同一個房間發生。床太靠入口會缺少休息感，書桌放在床邊容易讓工作和睡眠混在一起，餐桌沒有固定位置就會變成雜物堆。好的套房配置會先保留一條從入口到床、桌、衛浴或陽台的連續動線，再把家具當作分區邊界，而不是把所有家具沿牆排滿。</p>
         <p>規劃時可以把空間分為四塊：睡眠區、工作區、用餐或休息區、收納區。睡眠區通常需要比較安定的位置，避免床邊就是主要入口動線。工作區要靠近插座與光線，但螢幕不要被窗光嚴重反射。用餐或休息區可以用小餐桌、折疊桌或沙發椅形成，不一定要很大，但要有固定落點。收納區則盡量集中，避免開放衣架、行李箱與雜物分散在每個角落。</p>

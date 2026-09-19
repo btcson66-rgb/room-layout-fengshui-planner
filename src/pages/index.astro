@@ -75,44 +75,75 @@ const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不�
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <header class="card">
-        <h1>免費房間家具配置規劃工具</h1>
-        <p class="lead">輸入房間尺寸、拖曳家具放入平面圖、確認動線與門口，再匯出 PNG 或 PDF。適合租屋族、搬家族、買家具前想確認尺寸的一般人。</p>
-        <ol class="how-it-works">
-          <li><strong>① 設定房間</strong> — 輸入長、寬、選單位</li>
-          <li><strong>② 拖曳家具</strong> — 放床、桌、衣櫃、門窗等，可旋轉、調整尺寸</li>
-          <li><strong>③ 匯出 / 取得建議</strong> — 存 PNG/PDF，或參考風水格局與規劃建議</li>
-        </ol>
-        <div class="cta-row">
-          <a class="button" href="/zh/room-layout-planner/">開始畫房間平面圖</a>
-          <a class="button secondary" href="/zh/feng-shui-bedroom-checker/">檢查風水格局參考</a>
+      <header class="home-hero">
+        <div class="home-hero-copy">
+          <p class="eyebrow">MEASURE · PLAN · CHECK</p>
+          <h1>先確認放不放得下，再搬、再買。</h1>
+          <p class="lead">RoomFeng 先把房間內徑、門窗與家具外框放進同一張平面圖，再檢查動線與操作空間。把「看起來放得下」變成「每天用起來順」。</p>
+          <div class="cta-row">
+            <a class="button" href="/zh/room-layout-planner/">開始畫房間平面圖 <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="/zh/furniture-fit-checker/">先檢查家具尺寸</a>
+          </div>
+          <p class="hero-note"><span aria-hidden="true">●</span> 免費使用 · 不需註冊 · 草稿留在你的瀏覽器</p>
         </div>
+          <div class="hero-plan" aria-label="360 x 300 公分房間，150 x 190 公分床，120 x 60 公分書桌，床尾 72 公分淨空帶與 80 公分門片開啟範圍">
+          <span class="hero-plan-label">A MEASURED PLAN</span>
+          <svg viewBox="0 0 360 300" role="img" aria-hidden="true">
+            <rect class="plan-room" x="0" y="0" width="360" height="300" />
+            <path class="plan-door" d="M0 220h80M0 220a80 80 0 0 1 80 80" />
+            <rect class="plan-bed" x="34" y="28" width="150" height="190" rx="3" />
+            <rect class="plan-clearance-band" x="34" y="218" width="150" height="72" rx="2" />
+            <rect class="plan-pillow" x="42" y="36" width="134" height="28" rx="3" />
+            <rect class="plan-desk" x="220" y="34" width="120" height="60" rx="3" />
+            <rect class="plan-wardrobe" x="260" y="174" width="80" height="55" rx="3" />
+            <path class="plan-route" d="M84 270c48-25 82-29 126-18s74 6 105-33" />
+            <text x="180" y="16">ROOM 360 × 300 cm</text>
+            <text x="109" y="132">BED 150 × 190</text><text x="280" y="68">DESK 120 × 60</text><text x="300" y="204">STORAGE</text>
+            <text class="plan-measurement" x="109" y="257">CLEARANCE BAND 72 cm</text><text class="plan-measurement" x="45" y="238">DOOR 80 cm</text>
+          </svg>
+          <span class="hero-plan-caption">先量尺寸，再決定家具怎麼走、怎麼放。</span>
+        </div>
+        <ol class="how-it-works" aria-label="使用步驟">
+          <li><span>01</span><strong>Measure 量尺寸</strong><small>房間、門窗、家具外框</small></li>
+          <li><span>02</span><strong>Plan 排配置</strong><small>放置、旋轉、調整尺寸</small></li>
+          <li><span>03</span><strong>Check 看結果</strong><small>動線、開門與匯出報告</small></li>
+        </ol>
       </header>
 
-      <NewsletterSignup placement="home" />
+      <section class="measurement-ribbon" aria-labelledby="measurement-heading">
+        <div>
+          <p class="eyebrow">THE CORE QUESTION</p>
+          <h2 id="measurement-heading">先確認放不放得下，再談風格。</h2>
+        </div>
+        <p>尺寸、門片、家具外框與每天會走的路，是 RoomFeng 的第一層答案。中文站的風水內容則放在完成測量後，作為次要的民俗文化與舒適度參考。</p>
+      </section>
 
-      <section class="card" aria-labelledby="tools-heading">
-        <h2 id="tools-heading">工具入口</h2>
+      <section class="home-section tools-section" aria-labelledby="tools-heading">
+        <div class="section-heading"><div><p class="eyebrow">START HERE</p><h2 id="tools-heading">先從一個明確問題開始</h2></div><span class="section-count">09 tools</span></div>
         <div class="tool-primary">
           <article class="tool-card-main">
-            <h3><a href="/zh/room-layout-planner/">🗂 拖拉式房間平面圖工具</a></h3>
-            <p>輸入房間尺寸，拖曳家具（床、書桌、衣櫃、沙發、門、窗、鏡子），檢查動線、門口、走道寬度，匯出 PNG 或 PDF。<strong>這是主要工具。</strong></p>
+            <div class="tool-card-index">01 · FEATURED TOOL</div>
+            <h3><a href="/zh/room-layout-planner/">拖拉式房間平面圖工具 <span aria-hidden="true">↗</span></a></h3>
+            <p>輸入房間尺寸，拖曳床、書桌、衣櫃、沙發、門、窗與鏡子，檢查動線、門口與走道寬度，再匯出 PNG 或 PDF。</p>
             <a class="button" href="/zh/room-layout-planner/">立即使用</a>
           </article>
         </div>
-        <div class="scenario-grid" style="margin-top:var(--space-4)">
-          {tools.map((tool) => (
-            <article>
-              <h3><a href={tool.href}>{tool.title}</a></h3>
+        <div class="scenario-grid">
+          {tools.map((tool, index) => (
+            <article class="tool-card">
+              <span class="tool-card-index">{String(index + 2).padStart(2, '0')}</span>
+              <h3><a href={tool.href}>{tool.title} <span aria-hidden="true">↗</span></a></h3>
               <p>{tool.text}</p>
             </article>
           ))}
         </div>
       </section>
 
+      <NewsletterSignup placement="home" />
+
       <section class="card split-section" aria-labelledby="audience-heading">
         <div>
-          <h2 id="audience-heading">適合誰使用</h2>
+          <p class="eyebrow">A BETTER STARTING POINT</p><h2 id="audience-heading">為正在做決定的人整理</h2>
           <ul>{audiences.map((item) => <li>{item}</li>)}</ul>
         </div>
         <div>
@@ -121,7 +152,7 @@ const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不�
         </div>
       </section>
 
-      <section class="card" aria-labelledby="how-heading">
+      <section class="card editorial-section" aria-labelledby="how-heading">
         <h2 id="how-heading">Room Planner 怎麼用</h2>
         <ol class="how-steps">
           <li><strong>量三件事</strong>：房間內徑長寬、門片開啟方向與寬度、窗戶位置。有橫樑時再加樑的兩條投影線。</li>
@@ -138,11 +169,11 @@ const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不�
         text="不想從空白開始的話，可以先載入雙人房範例，把尺寸改成你家的數字，再拖動床與衣櫃看警示怎麼變。"
       />
 
-      <section class="card" aria-labelledby="hub-heading">
+      <section class="card editorial-section" aria-labelledby="hub-heading">
         <h2 id="hub-heading">主題入口</h2>
         <p>RoomFeng 的內容分成這幾個主題，每一個都有導讀、核心問題、精選指南與對應工具。</p>
         <div class="scenario-grid">
-          {hubs.map((hub) => (
+           {hubs.map((hub) => (
             <article>
               <h3><a href={hub.href}>{hub.title}</a></h3>
               <p>{hub.description}</p>
@@ -151,7 +182,7 @@ const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不�
         </div>
       </section>
 
-      <section class="card" aria-labelledby="guides-heading">
+      <section class="card editorial-section" aria-labelledby="guides-heading">
         <h2 id="guides-heading">最值得先讀的指南</h2>
         <p>這幾篇是人工挑選的核心指南，不是依更新時間自動排出來的清單。</p>
         <div class="post-list">
@@ -164,7 +195,7 @@ const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不�
         </div>
       </section>
 
-      <section class="card" aria-labelledby="editorial-heading">
+      <section class="card editorial-section" aria-labelledby="editorial-heading">
         <h2 id="editorial-heading">RoomFeng 如何整理公開指南</h2>
         <p>本站不以大量短文覆蓋相似搜尋詞。未達公開標準的內容不會列入文章清單與搜尋索引；只有完成實際尺寸檢查流程、可執行案例、限制說明、站內工具驗證與人工編輯的指南才會公開。</p>
         <ul>
@@ -190,74 +221,88 @@ const problems = ['床不知道怎麼擺', '小房間太擠', '書桌採光不�
 </Layout>
 
 <style>
-  .how-steps {
+  .how-steps { display: grid; gap: var(--space-3); margin: 0 0 var(--space-3); padding-left: 1.2rem; }
+  .muted { color: var(--color-muted); font-size: var(--text-sm); }
+  .home-hero {
     display: grid;
-    gap: var(--space-3);
-    margin: 0 0 var(--space-3);
-    padding-left: 1.2rem;
+    gap: var(--space-6);
+    padding: clamp(1.35rem, 5vw, 4.5rem) 0;
+    border-block: 1px solid var(--color-border);
+    background: transparent;
   }
 
-  .muted {
-    color: var(--color-muted);
-    font-size: var(--text-sm);
-  }
+  .home-hero-copy { position: relative; z-index: 1; }
+  .home-hero h1 { max-width: 10ch; }
+  .home-hero .lead { max-width: 58ch; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .hero-note { margin: var(--space-4) 0 0; color: var(--color-muted); font-size: var(--text-sm); }
+  .hero-note span { color: var(--color-sage); font-size: 0.65rem; vertical-align: 0.1em; }
 
-  .how-it-works {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3) var(--space-5);
-    padding: var(--space-3) var(--space-4);
-    margin: var(--space-3) 0 var(--space-4);
-    background: var(--color-surface-muted, #f7f6f3);
-    border-radius: var(--radius-md);
-    list-style: none;
-    font-size: var(--text-sm);
-  }
-
-  .tool-primary {
-    margin-bottom: var(--space-4);
-  }
-
-  .tool-card-main {
-    border: 2px solid var(--color-primary, #2f6f62);
-    border-radius: var(--radius-md);
+  .hero-plan {
+    position: relative;
+    display: grid;
+    align-content: center;
+    min-height: 290px;
     padding: var(--space-4);
-    display: grid;
-    gap: var(--space-3);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-muted);
+    overflow: hidden;
   }
+  .hero-plan::before { position: absolute; content: 'N  01'; top: 0.8rem; right: 1rem; color: var(--color-muted); font-size: 0.68rem; letter-spacing: 0.12em; }
+  .hero-plan-label { position: absolute; top: 0.8rem; left: 1rem; color: var(--color-primary-strong); font-size: var(--text-xs); font-weight: 800; letter-spacing: 0.12em; }
+  .hero-plan svg { width: min(100%, 420px); margin-inline: auto; }
+  .hero-plan .plan-room { fill: var(--color-surface-strong); stroke: var(--color-primary-strong); stroke-width: 2; }
+  .hero-plan .plan-door, .hero-plan .plan-route { fill: none; stroke: var(--color-accent); stroke-width: 2; }
+  .hero-plan .plan-route { stroke: var(--color-sage); stroke-dasharray: 5 6; }
+  .hero-plan .plan-bed { fill: #dce8e1; stroke: var(--color-primary-strong); stroke-width: 1.5; }
+  .hero-plan .plan-pillow { fill: #f7faf8; stroke: #b7c9bf; }
+  .hero-plan .plan-desk { fill: #e5ece8; stroke: var(--color-sage); stroke-width: 1.5; }
+  .hero-plan .plan-wardrobe { fill: #ecebe3; stroke: var(--color-accent); stroke-width: 1.5; }
+  .hero-plan text { fill: var(--color-muted); font-size: 9px; font-weight: 800; letter-spacing: 0.04em; text-anchor: middle; }
+  .hero-plan .plan-measurement { fill: var(--color-primary-strong); font-size: 8px; }
+  .hero-plan-caption { display: block; max-width: 27rem; margin: -0.5rem auto 0; color: var(--color-muted); font-family: var(--font-sans); font-size: var(--text-lg); line-height: 1.25; text-align: center; }
 
-  .cta-row,
-  .post-list,
-  .scenario-grid {
-    display: grid;
-    gap: var(--space-4);
-  }
+  .measurement-ribbon { display: grid; gap: var(--space-4); align-items: start; padding: var(--space-5) 0; border-bottom: 1px solid var(--color-border); }
+  .measurement-ribbon h2 { margin: 0; }
+  .measurement-ribbon p:last-child { max-width: 62ch; margin: 0; color: var(--color-muted); }
 
-  .scenario-grid article,
-  .post-list article {
-    border-top: 1px solid var(--color-border);
-    padding-top: var(--space-4);
-  }
+  .how-it-works { display: grid; gap: 0; padding: 0; margin: 0; border-top: 1px solid var(--color-border); list-style: none; }
+  .how-it-works li { display: grid; grid-template-columns: auto 1fr; column-gap: 0.75rem; padding: 0.85rem 0; border-bottom: 1px solid var(--color-border); }
+  .how-it-works li > span { grid-row: span 2; color: var(--color-primary); font-size: var(--text-xs); font-weight: 800; letter-spacing: 0.08em; }
+  .how-it-works strong { font-size: var(--text-sm); }
+  .how-it-works small { color: var(--color-muted); font-size: var(--text-sm); }
 
-  .split-section {
-    display: grid;
-    gap: var(--space-5);
-  }
-
-  .meta {
-    color: var(--color-muted);
-    font-size: var(--text-sm);
-  }
+  .home-section { padding-block: var(--space-5); }
+  .section-heading { display: flex; align-items: end; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-5); }
+  .section-heading h2 { margin: 0; }
+  .section-count { margin-bottom: 0.25rem; color: var(--color-muted); white-space: nowrap; }
+  .tool-primary { margin-bottom: var(--space-4); }
+  .tool-card-main { display: grid; gap: var(--space-3); padding: clamp(1.2rem, 3vw, 2rem); border: 1px solid var(--color-primary); border-left: 6px solid var(--color-primary); background: var(--color-primary-soft); }
+  .tool-card-main h3 { font-family: var(--font-sans); font-size: clamp(1.4rem, 1.15rem + 0.7vw, 2rem); }
+  .tool-card-main .button { justify-self: start; }
+  .scenario-grid, .post-list { display: grid; gap: 0; border-top: 1px solid var(--color-border); }
+  .tool-card, .post-list article { min-height: 100%; padding: var(--space-4) 0; border-bottom: 1px solid var(--color-border); }
+  .tool-card { display: grid; gap: 0.35rem; }
+  .tool-card h3 { margin-bottom: 0; }
+  .tool-card h3 a, .post-list h3 a { color: var(--color-text); text-decoration: none; }
+  .tool-card h3 a:hover, .post-list h3 a:hover { color: var(--color-primary-strong); text-decoration: underline; text-decoration-thickness: 2px; }
+  .tool-card p, .post-list p:last-child { margin: 0; color: var(--color-muted); font-size: var(--text-sm); }
+  .tool-card-index { margin-bottom: 0.35rem; }
+  .split-section { display: grid; gap: var(--space-5); }
+  .split-section ul { padding-left: 1.2rem; margin-bottom: 0; }
+  .split-section li + li { margin-top: 0.35rem; }
+  .editorial-section h2 { margin-top: 0; }
+  .meta { color: var(--color-muted); font-size: var(--text-sm); }
 
   @media (min-width: 760px) {
-    .cta-row {
-      grid-template-columns: repeat(2, max-content);
-    }
-
-    .scenario-grid,
-    .post-list,
-    .split-section {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+    .home-hero { grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr); align-items: center; }
+    .home-hero .how-it-works { grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); }
+    .how-it-works li { padding: 0.9rem 1rem; border-right: 1px solid var(--color-border); border-bottom: 0; }
+    .how-it-works li:first-child { padding-left: 0; }
+    .how-it-works li:last-child { border-right: 0; }
+    .scenario-grid, .post-list, .split-section { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--space-5); }
+    .measurement-ribbon { grid-template-columns: minmax(260px, .7fr) minmax(0, 1fr); }
+    .tool-card:nth-child(odd), .post-list article:nth-child(odd) { padding-right: var(--space-5); }
+    .tool-card:nth-child(even), .post-list article:nth-child(even) { padding-left: var(--space-5); border-left: 1px solid var(--color-border); }
   }
 </style>

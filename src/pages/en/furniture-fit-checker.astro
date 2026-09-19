@@ -4,6 +4,8 @@ import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
+import FurnitureFitTool from '../../components/FurnitureFitTool.astro';
+import '../../styles/uiux-prototypes.css';
 import { en } from '../../i18n/en';
 
 const title = 'Furniture Fit Checker | Will It Fit Your Room and Door?';
@@ -48,6 +50,7 @@ const relatedLinks = [
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
+      <FurnitureFitTool locale="en" />
       <article class="card">
         <h1>Furniture fit checker</h1>
         <p class="lead">
