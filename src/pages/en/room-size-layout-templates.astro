@@ -53,6 +53,13 @@ const relatedLinks = [
         <p><strong>Quick answer:</strong> square footage tells you how much floor exists, but room width decides whether a bed, another furniture zone, and a useful path can sit side by side. A 200 sq ft room shaped 10 × 20 ft behaves differently from a square room of the same area, so every result below states the rectangle it assumes.</p>
         <p>These are planning templates for an open room, not complete apartment plans. They do not silently count a bathroom, built-in closet, kitchen run, or wall thickness as usable furniture area. After choosing a template, transfer the dimensions to the <a href="/en/room-layout-planner/">free room layout planner</a> and add your actual doors, windows, columns, radiators, and outlets.</p>
         <p>This page owns the “room sizer” job: it turns a selected floor area into two transparent starting rectangles. For a draggable custom drawing, use the room planner; for a room-by-room buying sequence across a whole home, use the <a href="/en/apartment-furniture-planner/">apartment furniture planner</a>. Keeping those jobs separate prevents a preset from being mistaken for a measured apartment plan.</p>
+        <aside class="cta-band" aria-labelledby="contractor-margin-guard-cta-heading">
+          <div>
+            <h2 id="contractor-margin-guard-cta-heading">Pricing the renovation as a contractor?</h2>
+            <p>Keep the estimate, actual costs, change orders, and projected margin together with Contractor Margin Guard.</p>
+          </div>
+          <a class="button secondary" data-product006-context-cta data-placement="room_planning" data-destination="payhip" href="https://payhip.com/b/Y9gwv?utm_source=roomfeng&utm_medium=owned&utm_campaign=product006_launch&utm_content=room_planning">See Contractor Margin Guard — $29</a>
+        </aside>
       </header>
 
       <section class="card template-card" aria-labelledby="template-heading">
@@ -168,6 +175,22 @@ const relatedLinks = [
     form?.addEventListener('submit', render);
   </script>
 </Layout>
+
+<script is:inline>
+  document.querySelectorAll('[data-product006-context-cta]').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'product_006_cta_click', {
+          product_id: 'PRODUCT-006',
+          product_name: 'Contractor Margin Guard',
+          placement: link.getAttribute('data-placement') || 'contextual',
+          destination: link.getAttribute('data-destination') || 'unknown',
+          source_page: window.location.pathname,
+        });
+      }
+    });
+  });
+</script>
 
 <style>
   .template-form,
