@@ -4,7 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
-const baseUrl = 'http://127.0.0.1:4321';
+const baseUrl = process.env.ROOMFENG_UIUX_ORIGIN ?? 'http://127.0.0.1:4321';
 const evidenceDir = path.resolve(process.env.ROOMFENG_UIUX_EVIDENCE_DIR ?? path.join(path.dirname(fileURLToPath(import.meta.url)), '../../docs/uiux/evidence/review-04'));
 fs.mkdirSync(evidenceDir, { recursive: true });
 const navigationEvidence = [];

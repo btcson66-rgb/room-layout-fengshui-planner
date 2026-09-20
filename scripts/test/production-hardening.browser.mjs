@@ -9,7 +9,7 @@ import {
   DEFAULT_PRODUCTION_ORIGIN,
 } from '../production-signal-classifier.mjs';
 
-const origin = DEFAULT_PRODUCTION_ORIGIN;
+const origin = process.env.ROOMFENG_PRODUCTION_ORIGIN ?? DEFAULT_PRODUCTION_ORIGIN;
 const evidenceDir = path.resolve(process.env.ROOMFENG_PRODUCTION_EVIDENCE_DIR ?? 'docs/uiux/evidence/hardening-003/production-browser');
 fs.mkdirSync(evidenceDir, { recursive: true });
 const routes = [
@@ -24,6 +24,9 @@ const smokeRoutes = routes.filter(([name]) => name.includes('home') || name.incl
 const errors = [];
 const runs = [];
 const browser = await chromium.launch({ headless: true });
+const diagnosticText = (item) => `${item?.message ?? ''}\n${item?.stack ?? ''}`;
+const isAdsenseZeroWidthError = (item) => /adsbygoogle\.push\(\).*no slot size for availableWidth=0|no slot size for availableWidth=0/i.test(diagnosticText(item));
+const isDuplicateAdsenseError = (item) => /adsbygoogle.*(already initialized|duplicate initialization|already pushed)/i.test(diagnosticText(item));
 
 async function prepare(page, route) {
   await page.goto(`${origin}${route}`, { waitUntil: 'domcontentloaded', timeout: 30000 });
@@ -115,6 +118,18 @@ try {
           if (!matchedCdp.has(error)) pageErrors.push(classifyPageError(error, origin));
         }
         const classifiedUnhandledRejections = runtime.unhandledRejections.map((error) => classifyPageError(error, origin));
+        const adsenseDiagnostics = [...consoleErrors, ...pageErrors, ...classifiedUnhandledRejections];
+        const adsenseStats = await page.evaluate(() => {
+          const stats = window.__roomfengAdSenseStats ?? {};
+          return {
+            initializedSlots: Number(stats.initializedSlots ?? 0),
+            duplicateInitializations: Number(stats.duplicateInitializations ?? 0),
+            lastInitialization: stats.lastInitialization ?? null,
+          };
+        });
+        const adsenseZeroWidthErrors = adsenseDiagnostics.filter(isAdsenseZeroWidthError).length;
+        const duplicateAdsbygoogleInitializations = adsenseStats.duplicateInitializations
+          + adsenseDiagnostics.filter(isDuplicateAdsenseError).length;
         const overflow = await page.evaluate(() => ({ document: document.documentElement.scrollWidth - innerWidth, body: document.body.scrollWidth - innerWidth }));
         assert.ok(overflow.document <= 1 && overflow.body <= 1, `${name} overflow ${JSON.stringify(overflow)}`);
         if (route.includes('furniture-fit-checker')) assert.equal(await page.locator('[data-furniture-fit-tool]').count(), 1);
@@ -145,10 +160,15 @@ try {
           firstPartyPageErrors,
           firstPartyUnhandledRejections,
           firstPartyNetwork,
+          adsenseZeroWidthErrors,
+          duplicateAdsbygoogleInitializations,
+          adsenseStats,
           pass: firstPartyConsoleErrors.length === 0
             && firstPartyPageErrors.length === 0
             && firstPartyUnhandledRejections.length === 0
-            && firstPartyNetwork.length === 0,
+            && firstPartyNetwork.length === 0
+            && adsenseZeroWidthErrors === 0
+            && duplicateAdsbygoogleInitializations === 0,
         });
       } catch (error) {
         errors.push({ name, route, iteration, error: error.message });
@@ -180,10 +200,19 @@ const summary = {
     unhandledRejections: controllableFirstPartyErrors.filter((item) => item.kind === 'unhandledrejection').length,
     failedRequestsOrHttpErrors: controllableFirstPartyErrors.filter((item) => item.kind === 'network').length,
   },
+  adsenseZeroWidthErrors: runs.reduce((total, run) => total + (run.adsenseZeroWidthErrors ?? 0), 0),
+  duplicateAdsbygoogleInitializations: runs.reduce((total, run) => total + (run.duplicateAdsbygoogleInitializations ?? 0), 0),
   controllableFirstPartyErrors,
   pass: errors.length === 0 && runs.length === routes.length * 3 && runs.every((run) => run.pass),
 };
 fs.writeFileSync(path.join(evidenceDir, 'console-network-summary.json'), `${JSON.stringify(summary, null, 2)}\n`);
 if (errors.length) console.error(JSON.stringify(errors, null, 2));
-console.log(JSON.stringify({ pass: summary.pass, evidenceDir, runCount: runs.length, controllableFirstPartyErrors: summary.controllableFirstPartyErrors.length }, null, 2));
+console.log(JSON.stringify({
+  pass: summary.pass,
+  evidenceDir,
+  runCount: runs.length,
+  adsenseZeroWidthErrors: summary.adsenseZeroWidthErrors,
+  duplicateAdsbygoogleInitializations: summary.duplicateAdsbygoogleInitializations,
+  controllableFirstPartyErrors: summary.controllableFirstPartyErrors.length,
+}, null, 2));
 process.exitCode = summary.pass ? 0 : 1;

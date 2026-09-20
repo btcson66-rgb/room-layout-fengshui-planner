@@ -1,0 +1,37 @@
+{
+  "status": "PASS_LOCAL",
+  "origin": "http://127.0.0.1:4322",
+  "modes": ["desktop", "mobile"],
+  "routeRuns": 18,
+  "thresholds": {
+    "lcpMs": 2500,
+    "tbtMs": 200,
+    "cls": 0.1,
+    "categoryScores": 95,
+    "plannerEngineeringLcpMs": 2200,
+    "plannerEngineeringTbtMs": 150,
+    "plannerEngineeringCls": 0
+  },
+  "plannerMobile": {
+    "en": {
+      "performance": 100,
+      "lcpMs": 1355.83,
+      "tbtMs": 0,
+      "cls": 0,
+      "accessibility": 98,
+      "bestPractices": 100,
+      "seo": 100
+    },
+    "zh": {
+      "performance": 100,
+      "lcpMs": 1355.75,
+      "tbtMs": 3.5,
+      "cls": 0,
+      "accessibility": 98,
+      "bestPractices": 100,
+      "seo": 100
+    }
+  },
+  "pass": true,
+  "knownRunnerWarning": "Lighthouse process cleanup warning is emitted after valid report generation; parsed report failures were empty for all 18 runs."
+}

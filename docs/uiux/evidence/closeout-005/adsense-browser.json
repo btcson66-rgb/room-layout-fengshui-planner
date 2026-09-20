@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "generatedAt": "2026-09-20T14:47:05.935Z",
+  "origin": "http://127.0.0.1:4322",
+  "routes": [
+    {
+      "route": "/zh/room-layout-planner/",
+      "beforeActivation": {
+        "resourceRequests": 10,
+        "firstPartyJavascript": {
+          "requests": 9,
+          "transferBytes": 24993,
+          "encodedBytes": 22293,
+          "decodedBytes": 58631,
+          "urls": [
+            "http://127.0.0.1:4322/_astro/page.CmFj6_gu.js",
+            "http://127.0.0.1:4322/_astro/MovingOsContextCta.astro_astro_type_script_index_0_lang.B4ppOjGu.js",
+            "http://127.0.0.1:4322/_astro/room-layout-planner.astro_astro_type_script_index_0_lang.CUD5audz.js",
+            "http://127.0.0.1:4322/_astro/AffiliateRecs.astro_astro_type_script_index_0_lang.0Iz-r--R.js",
+            "http://127.0.0.1:4322/_astro/productAnalytics.DmgBoS11.js",
+            "http://127.0.0.1:4322/_astro/planner.kMdrwxyL.js",
+            "http://127.0.0.1:4322/_astro/quick-handoff.CrPjj4H8.js",
+            "http://127.0.0.1:4322/_astro/handoff.BKioB45d.js",
+            "http://127.0.0.1:4322/_astro/preload-helper.L5lOfJxi.js"
+          ]
+        },
+        "adsense": {
+          "requests": 0,
+          "transferBytes": 0,
+          "encodedBytes": 0,
+          "decodedBytes": 0,
+          "urls": []
+        },
+        "longTasks": {
+          "count": 1,
+          "durationMs": 154
+        }
+      },
+      "afterActivation": {
+        "resourceRequests": 13,
+        "firstPartyJavascript": {
+          "requests": 9,
+          "transferBytes": 24993,
+          "encodedBytes": 22293,
+          "decodedBytes": 58631,
+          "urls": [
+            "http://127.0.0.1:4322/_astro/page.CmFj6_gu.js",
+            "http://127.0.0.1:4322/_astro/MovingOsContextCta.astro_astro_type_script_index_0_lang.B4ppOjGu.js",
+            "http://127.0.0.1:4322/_astro/room-layout-planner.astro_astro_type_script_index_0_lang.CUD5audz.js",
+            "http://127.0.0.1:4322/_astro/AffiliateRecs.astro_astro_type_script_index_0_lang.0Iz-r--R.js",
+            "http://127.0.0.1:4322/_astro/productAnalytics.DmgBoS11.js",
+            "http://127.0.0.1:4322/_astro/planner.kMdrwxyL.js",
+            "http://127.0.0.1:4322/_astro/quick-handoff.CrPjj4H8.js",
+            "http://127.0.0.1:4322/_astro/handoff.BKioB45d.js",
+            "http://127.0.0.1:4322/_astro/preload-helper.L5lOfJxi.js"
+          ]
+        },
+        "adsense": {
+          "requests": 1,
+          "transferBytes": 0,
+          "encodedBytes": 0,
+          "decodedBytes": 0,
+          "urls": [
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117672212804270"
+          ]
+        },
+        "longTasks": {
+          "count": 1,
+          "durationMs": 154
+        }
+      },
+      "stats": {
+        "initAttempts": 1,
+        "initializedSlots": 1,
+        "duplicateInitializations": 0,
+        "loaderLoaded": true,
+        "lastInitialization": {
+          "id": "planner-mid-zh",
+          "rootWidth": 358,
+          "rootHeight": 0,
+          "adWidth": 358,
+          "adHeight": 0,
+          "rootDisplay": "grid",
+          "adDisplay": "block"
+        }
+      }
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "beforeActivation": {
+        "resourceRequests": 10,
+        "firstPartyJavascript": {
+          "requests": 9,
+          "transferBytes": 24161,
+          "encodedBytes": 21461,
+          "decodedBytes": 57764,
+          "urls": [
+            "http://127.0.0.1:4322/_astro/page.CmFj6_gu.js",
+            "http://127.0.0.1:4322/_astro/MovingOsContextCta.astro_astro_type_script_index_0_lang.B4ppOjGu.js",
+            "http://127.0.0.1:4322/_astro/room-layout-planner.astro_astro_type_script_index_0_lang.WpfoFFkd.js",
+            "http://127.0.0.1:4322/_astro/AffiliateRecs.astro_astro_type_script_index_0_lang.0Iz-r--R.js",
+            "http://127.0.0.1:4322/_astro/productAnalytics.DmgBoS11.js",
+            "http://127.0.0.1:4322/_astro/planner.kMdrwxyL.js",
+            "http://127.0.0.1:4322/_astro/quick-handoff.CrPjj4H8.js",
+            "http://127.0.0.1:4322/_astro/handoff.BKioB45d.js",
+            "http://127.0.0.1:4322/_astro/preload-helper.L5lOfJxi.js"
+          ]
+        },
+        "adsense": {
+          "requests": 0,
+          "transferBytes": 0,
+          "encodedBytes": 0,
+          "decodedBytes": 0,
+          "urls": []
+        },
+        "longTasks": {
+          "count": 1,
+          "durationMs": 85
+        }
+      },
+      "afterActivation": {
+        "resourceRequests": 11,
+        "firstPartyJavascript": {
+          "requests": 9,
+          "transferBytes": 24161,
+          "encodedBytes": 21461,
+          "decodedBytes": 57764,
+          "urls": [
+            "http://127.0.0.1:4322/_astro/page.CmFj6_gu.js",
+            "http://127.0.0.1:4322/_astro/MovingOsContextCta.astro_astro_type_script_index_0_lang.B4ppOjGu.js",
+            "http://127.0.0.1:4322/_astro/room-layout-planner.astro_astro_type_script_index_0_lang.WpfoFFkd.js",
+            "http://127.0.0.1:4322/_astro/AffiliateRecs.astro_astro_type_script_index_0_lang.0Iz-r--R.js",
+            "http://127.0.0.1:4322/_astro/productAnalytics.DmgBoS11.js",
+            "http://127.0.0.1:4322/_astro/planner.kMdrwxyL.js",
+            "http://127.0.0.1:4322/_astro/quick-handoff.CrPjj4H8.js",
+            "http://127.0.0.1:4322/_astro/handoff.BKioB45d.js",
+            "http://127.0.0.1:4322/_astro/preload-helper.L5lOfJxi.js"
+          ]
+        },
+        "adsense": {
+          "requests": 1,
+          "transferBytes": 0,
+          "encodedBytes": 0,
+          "decodedBytes": 0,
+          "urls": [
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9117672212804270"
+          ]
+        },
+        "longTasks": {
+          "count": 1,
+          "durationMs": 85
+        }
+      },
+      "stats": {
+        "initAttempts": 1,
+        "initializedSlots": 1,
+        "duplicateInitializations": 0,
+        "loaderLoaded": true,
+        "lastInitialization": {
+          "id": "planner-mid-en",
+          "rootWidth": 358,
+          "rootHeight": 0,
+          "adWidth": 358,
+          "adHeight": 0,
+          "rootDisplay": "grid",
+          "adDisplay": "block"
+        }
+      }
+    }
+  ],
+  "assertions": {
+    "zeroWidthErrors": 0,
+    "duplicateInitializations": 0,
+    "plannerRoutesWithoutAdSenseBeforeActivation": true,
+    "plannerRoutesWithAdSenseAfterActivation": true
+  }
+}

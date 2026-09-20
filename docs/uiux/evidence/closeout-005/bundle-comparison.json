@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-20T14:43:49.510Z",
+  "baselinePath": "D:\\Fable company\\worktrees\\roomfeng-final-release-integrity-004\\docs\\uiux\\evidence\\review-04\\bundle-comparison.json",
+  "baseline": {
+    "javascript": {
+      "files": 33,
+      "bytes": 1937876,
+      "largestBytes": 929901
+    },
+    "css": {
+      "files": 10,
+      "bytes": 83642,
+      "largestBytes": 17760
+    }
+  },
+  "current": {
+    "javascript": {
+      "files": 33,
+      "bytes": 1938061,
+      "largestBytes": 929901,
+      "largestFile": "exceljs.min.BVySwZGD.js"
+    },
+    "css": {
+      "files": 0,
+      "bytes": 0,
+      "largestBytes": 0,
+      "largestFile": null
+    }
+  },
+  "delta": {
+    "javascript": {
+      "files": 0,
+      "bytes": 185,
+      "largestBytes": 0
+    },
+    "css": {
+      "files": -10,
+      "bytes": -83642,
+      "largestBytes": -17760
+    }
+  }
+}

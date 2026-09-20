@@ -123,6 +123,8 @@ jobs:
           curl --fail --silent http://127.0.0.1:4321/ > /dev/null
       - name: Run Review 04 browser gate
         run: npm run test:uiux-review-04-browser
+      - name: Run AdSense initialization browser regression
+        run: npm run test:adsense:browser
       - name: Stop Astro preview
         if: always()
         shell: bash

@@ -17,6 +17,7 @@
     "test:seo-production-parity": "node scripts/seo-production-parity.mjs",
     "test:lighthouse:production": "node scripts/lighthouse-production.mjs",
     "test:production-hardening-browser": "node scripts/test/production-hardening.browser.mjs",
+    "test:adsense:browser": "node scripts/test/adsense-integration.browser.mjs",
     "audit:us-seo": "node scripts/us-seo-audit.mjs",
     "gsc:submit-sitemap": "node scripts/gsc-submit-sitemap.mjs",
     "gsc:sitemap-health": "node scripts/gsc-sitemap-health.mjs",
