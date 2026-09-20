@@ -31,6 +31,15 @@ test('console classification uses the message source URL, not error text', () =>
   assert.equal(thirdParty.external, true);
 });
 
+test('console diagnostics with no location can use an explicit third-party target URL', () => {
+  const reportOnlyCsp = classifyConsoleMessage({
+    text: () => 'Framing https://www.google.com/ violates frame-ancestors',
+    location: () => ({ url: '' }),
+  });
+  assert.equal(reportOnlyCsp.external, true);
+  assert.equal(reportOnlyCsp.sourceUrl, 'https://www.google.com/');
+});
+
 test('page errors without an explicit third-party stack source remain first-party', () => {
   assert.equal(classifyPageError({ message: 'Wl', stack: '' }).external, false);
   assert.equal(classifyPageError({ message: 'Wl', stack: '', sourceUrl: 'https://www.googletagmanager.com/gtm.js' }).external, true);
