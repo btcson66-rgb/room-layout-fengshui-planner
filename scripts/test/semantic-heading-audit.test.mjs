@@ -20,3 +20,9 @@ test('semantic heading audit skips explicitly noindex documents', () => {
   assert.equal(result.indexable, false);
   assert.equal(result.pass, true);
 });
+
+test('semantic heading audit ignores heading-like markup inside scripts and styles', () => {
+  const result = auditHtml('<script>widget.innerHTML = "<h2>Consent</h2>";</script><style>h2 { color: red; }</style><main><h1>Room planner</h1><h2>Check</h2></main>', 'fixture.html');
+  assert.equal(result.pass, true);
+  assert.deepEqual(result.headings.map((heading) => heading.level), [1, 2]);
+});

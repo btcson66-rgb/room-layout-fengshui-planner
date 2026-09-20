@@ -5,13 +5,21 @@ import { pathToFileURL } from 'node:url';
 
 const headingPattern = /<h([1-6])\b[^>]*>/gi;
 
+function stripNonDocumentMarkup(html) {
+  return html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '');
+}
+
 export function auditHtml(html, file = '<html>') {
   const robotsMatch = html.match(/<meta\s+[^>]*name=["']robots["'][^>]*content=["']([^"']*)["'][^>]*>/i);
   const robots = robotsMatch?.[1]?.toLowerCase() ?? '';
   const indexable = !robots.includes('noindex');
   const headings = [];
+  const documentHtml = stripNonDocumentMarkup(html);
   let match;
-  while ((match = headingPattern.exec(html)) !== null) {
+  headingPattern.lastIndex = 0;
+  while ((match = headingPattern.exec(documentHtml)) !== null) {
     headings.push({ level: Number(match[1]), index: match.index });
   }
 
