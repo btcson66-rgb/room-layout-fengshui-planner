@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join, normalize, resolve } from 'node:path';
+import { ROOMFENG_RELEASE_AUTHORITY } from './release-authority.mjs';
 
 const root = resolve(process.cwd());
 const dist = join(root, 'dist');
@@ -9,6 +10,7 @@ const baselineSitemapUrls = 1430;
 const expectedNewUrls = 17;
 // PRODUCT-006 adds one intentional commercial landing route outside the US SEO batch.
 const expectedCommercialRoutes = 1;
+const expectedSitemapUrls = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const records = [
   ['8x10 bedroom layout', '/en/8x10-bedroom-layout/', 'new'],
   ['9x10 bedroom layout', '/en/9x10-bedroom-layout/', 'new'],
@@ -113,10 +115,11 @@ const sitemap = sitemapFiles.map((name) => readFileSync(join(dist, name), 'utf8'
 for (const path of targetPaths) assert.ok(sitemap.includes(`${siteUrl}${path}`), `${path}: missing from sitemap`);
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 assert.equal(
-  sitemapUrls.length,
   baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes,
-  `sitemap URL count changed unexpectedly: ${sitemapUrls.length}`,
+  expectedSitemapUrls,
+  'US SEO inventory arithmetic must match the current release authority',
 );
+assert.equal(sitemapUrls.length, expectedSitemapUrls, `sitemap URL count changed unexpectedly: ${sitemapUrls.length}`);
 
 for (const [path, html] of targetHtml) {
   const hrefs = [...html.matchAll(/\bhref="([^"]+)"/g)].map((match) => match[1]).filter((href) => href.startsWith('/') && !/\.[a-z0-9]+$/i.test(href));
@@ -126,4 +129,4 @@ for (const [path, html] of targetHtml) {
   }
 }
 
-console.log(`[us-seo-audit] PASS: ${records.length} intents, ${expectedNewUrls} US SEO URLs + ${expectedCommercialRoutes} commercial route, ${baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes} sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.`);
+console.log(`[us-seo-audit] PASS: ${records.length} intents, ${expectedNewUrls} US SEO URLs + ${expectedCommercialRoutes} commercial route, ${expectedSitemapUrls} sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.`);

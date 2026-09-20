@@ -68,6 +68,11 @@ jobs:
           # 相同的輸出。這不是 secret；正式值同時要與 public/ads.txt 一致。
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
 
+      - name: Verify current build and sitemap authority
+        run: node scripts/release-build-authority.mjs
+        env:
+          ROOMFENG_BUILD_AUTHORITY_PATH: docs/uiux/evidence/ci-build-authority.json
+
       - name: Verify PRODUCT-002 analytics routing
         run: node --test tests/affiliate-ga4-routing.test.mjs tests/affiliate-ga4.test.mjs
 
@@ -123,8 +128,8 @@ jobs:
         shell: bash
         run: if [ -f preview.pid ]; then kill "$(cat preview.pid)" || true; fi
 
-  production-lighthouse:
-    name: Production Lighthouse
+  lighthouse-preview:
+    name: Lighthouse Preview
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -140,7 +145,7 @@ jobs:
         env:
           PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
-      - name: Start Astro preview for Lighthouse release audit
+      - name: Start Astro preview for Lighthouse candidate audit
         shell: bash
         run: |
           npm run preview -- --host 127.0.0.1 > lighthouse-preview.log 2>&1 &
@@ -153,9 +158,11 @@ jobs:
       - name: Use the installed Chromium for Lighthouse
         shell: bash
         run: echo "CHROME_PATH=$(node --input-type=module -e 'import { chromium } from "playwright"; console.log(chromium.executablePath())')" >> "$GITHUB_ENV"
-      - run: npm run test:lighthouse:production
+      - name: Run Lighthouse preview gate
+        run: npm run test:lighthouse:production
         env:
           ROOMFENG_LIGHTHOUSE_ORIGIN: http://127.0.0.1:4321
+          ROOMFENG_LIGHTHOUSE_MODES: desktop
           ROOMFENG_LIGHTHOUSE_DIR: docs/uiux/evidence/ci-lighthouse
       - name: Stop Astro preview
         if: always()
