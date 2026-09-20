@@ -203,3 +203,17 @@ The Loop 9 record in `ROOMFENG-UIUX-REDESIGN-002-LOOP-LOG.md` contains the requi
 ### Historical evidence handling
 
 Earlier `1,153` build pages / `995,810` audit checks and earlier Lighthouse-unavailable statements are historical records from prior review loops. They are not part of the final hardening authority set. The release authority is the single exact final head and its post-deploy readback.
+
+## Final Hardening 003 source / CI closeout
+
+- Source head: `18089398f9e52f12c7ba9a82739ff3d4c12bc2d7`.
+- PR #102: OPEN before merge gate; source branch `codex/roomfeng-uiux-final-hardening-003`.
+- GitHub Actions run `35489635586`: `preflight` PASS, `UIUX browser evidence` PASS, `Production Lighthouse` PASS.
+- Branch protection: main now requires strict `preflight`, `UIUX browser evidence`, and `Production Lighthouse`; admins enforced; force push and deletion disabled; conversation resolution enabled; required approving review count `0` for the single-maintainer repository.
+- Exact source authority: build `1,457`; sitemap `1,447`; content audit `1,315` source / `1,315` review-ready / `0` held / `1,000,350` checks / `0` failures; semantic heading audit `1,457 HTML / 1,448 indexable`; Astro check `225 files 0/0/0`.
+- Full preflight tests: scripts `46/46`, www redirect `4/4`, Moving OS `26/26`; Product geometry `16/16`, Phase 3 `9/9`, entitlement `8/8`; UIUX unit `12/12`; UIUX browser and preview Lighthouse PASS.
+- Final-local browser screenshots and real export binaries: `docs/uiux/evidence/hardening-003/final-local-browser/`.
+- Final-local Lighthouse reports: `docs/uiux/evidence/hardening-003/final-local-lighthouse/`.
+- Final SEO parity and bundle evidence: `docs/uiux/evidence/hardening-003/final-seo/seo-parity.json` and `docs/uiux/evidence/hardening-003/final-bundle-comparison.json`.
+
+This source closeout does not claim merge or deployment. Production browser, production Lighthouse, SEO readback, production commit equality and deployment workflow success must be recorded after the protected merge.

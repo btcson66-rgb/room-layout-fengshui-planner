@@ -125,3 +125,16 @@ Hardening acceptance contract：
 - bundle comparison 由 `npm run audit:bundle` 重新讀取 `dist/_astro`，並與 Review-04 baseline 對照。
 
 本輪 local Lighthouse 首次抓到 Planner CLS `0.36/0.27`，因此未往下宣告通過；修正 ad slot 與 Planner mount reservation 後，最新 local Lighthouse 9/9 routes PASS，zh/en Planner CLS 均為 `0`。這是 hardening 的可追溯修正基線。
+
+## Final Hardening 003 source authority correction
+
+Source head `18089398f9e52f12c7ba9a82739ff3d4c12bc2d7` is the authoritative hardening head after the CI heading-audit regression fix. The heading audit now removes only `script` and `style` blocks before evaluating document headings, so consent markup embedded in JavaScript cannot be mistaken for a visible H2. Production-like local preflight and GitHub Actions run `35489635586` both report:
+
+- Build: `1,457` static pages.
+- Sitemap: `1,447` URLs in the existing sitemap-index/child architecture.
+- Content audit: `1,315` source / `1,315` review-ready / `0` held / `1,000,350` checks / `0` failures.
+- Astro check: `225` files / `0` errors / `0` warnings / `0` hints.
+- Semantic heading audit: `1,457` HTML files / `1,448` indexable documents.
+- CI checks: `preflight`, `UIUX browser evidence`, and `Production Lighthouse` all PASS.
+
+The earlier `1,153 / 995,810` pair remains historical only and is not part of this authority set.

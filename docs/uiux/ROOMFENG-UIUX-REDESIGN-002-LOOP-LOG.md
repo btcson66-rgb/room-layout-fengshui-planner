@@ -145,3 +145,17 @@ This is the final gate. It is rerun after this document commit at the exact fina
 - Performance：local Lighthouse 9/9 PASS after CLS repair; content Accessibility/Best Practices/SEO scores `98–100`, all CLS `0`, content LCP `243.59–326.05 ms`, content TBT `0`; Planner scores Accessibility `98/99`, Best Practices `100`, SEO `100`, CLS `0`, LCP `369.5/369.6 ms`. Current bundle is `33 JS / 1,937,919 bytes / 929,901 max` and `10 CSS / 83,852 bytes / 17,760 max`; Review-04 baseline was `33 JS / 1,937,876 bytes / 929,901 max` and `10 CSS / 83,642 bytes / 17,760 max`.
 - Self-Critique：首次 Lighthouse FAIL 被當作 blocker 並修正，而非調高 threshold；production beacon 以 dashboard 設定處理，不以第三方訊號掩蓋 first-party errors；historical `1,153 / 995,810` 數字不進入 hardening authority set。尚未在此段宣告 merge/deploy，直到新 PR checks、branch protection、部署與同一 head production readback 全部通過。
 - Result：source hardening PASS；release remains gated on exact-head PR/CI, branch protection, merge/deploy, production browser, Lighthouse and SEO readback。
+
+## Loop 10 — Final Hardening 003 CI regression correction
+
+- Observe：PR run `35489164931` failed its new semantic heading gate on all `1,448` indexable documents when `PUBLIC_GA_ID` was present. The failure came from `<h2>` strings inside the inline consent script, not from rendered page headings.
+- Plan：correct the reusable audit to exclude only non-document `script` and `style` blocks, add a regression test for heading-like markup inside both blocks, and rerun the same production-like env locally and in GitHub Actions.
+- Implement：updated `scripts/semantic-heading-audit.mjs` and `scripts/test/semantic-heading-audit.test.mjs`; no page markup, analytics code, URL, canonical, hreflang, robots, sitemap, payment or entitlement behavior changed.
+- Build：production-like local build `1,457` pages and heading audit `1,457 HTML / 1,448 indexable` PASS; local `npm.cmd run preflight` PASS with Astro check `225 files 0/0/0`, content audit `1,315 / 1,315 / 0 / 1,000,350 / 0`, and script tests `46/46`.
+- Functional：semantic heading unit tests `4/4` and full CI preflight regression suite PASS; existing Furniture Fit, Planner, export, responsive and accessibility contracts remain green.
+- Visual QA：previous final-local browser evidence remains the source visual package; this fix changes audit parsing only and does not alter rendered UI.
+- SEO Parity：CI production-origin parity PASS with `1,447` unique sitemap URLs and unchanged canonical/hreflang/robots/indexability architecture.
+- Accessibility：CI UIUX browser evidence PASS at `375/390/768/1024/1280/1440`; existing focus, keyboard, live status and reduced-motion contracts remain present.
+- Performance：CI Production Lighthouse PASS for all nine preview routes; local final Lighthouse remains `9/9` PASS with Planner CLS `0`.
+- Self-Critique：the first CI FAIL was retained as evidence and corrected at the parser boundary; no threshold was weakened and no production claim was made from the failed run.
+- Result：PASS — source head `18089398f9e52f12c7ba9a82739ff3d4c12bc2d7`; CI run `35489635586`; PR #102 is ready for the branch-protected merge gate.
