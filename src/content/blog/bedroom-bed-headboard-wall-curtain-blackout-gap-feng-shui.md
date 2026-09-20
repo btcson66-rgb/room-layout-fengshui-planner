@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 側邊漏光, 遮光配置]
 keywords: [床頭牆面窗簾漏光, 窗簾側邊漏光風水, 床頭窗簾遮光, 臥室窗簾重疊]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-tieback-feng-shui, bedroom-bed-headboard-wall-curtain-air-gap-feng-shui, bedroom-bed-headboard-wall-curtain-glare-feng-shui, bedroom-bed-headboard-wall-curtain-double-rail-feng-shui]
 howToName: 檢查床頭牆面窗簾側邊漏光與布幅重疊
 howToTotalTime: PT30M

@@ -2,6 +2,7 @@
 import BaseHead from './BaseHead.astro';
 import Header from './Header.astro';
 import Footer from './Footer.astro';
+import AffiliateRecs from './AffiliateRecs.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -18,9 +19,20 @@ interface Props {
   };
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
   noindex?: boolean;
+  pageType?: 'tool' | 'calculator' | 'planner' | 'article' | 'guide' | 'hub';
+  showAffiliateRecs?: boolean;
 }
 
-const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd, noindex = false } = Astro.props;
+const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates, jsonLd, noindex = false, pageType, showAffiliateRecs = true } = Astro.props;
+const jsonLdItems = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
+const jsonLdTypes = jsonLdItems.map((item) => String(item['@type'] ?? ''));
+const titleLower = title.toLowerCase();
+const inferredPageType = pageType
+  ?? (jsonLdTypes.includes('WebSite') ? 'hub'
+    : jsonLdTypes.includes('WebApplication')
+      ? titleLower.includes('sizer') || titleLower.includes('calculator') ? 'calculator'
+        : titleLower.includes('planner') ? 'planner' : 'tool'
+      : jsonLdTypes.includes('Article') ? 'guide' : 'article');
 ---
 
 <!doctype html>
@@ -31,9 +43,11 @@ const { title, description, canonical, lang = 'zh', ogImage, ogType, alternates,
     <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} alternates={alternates} jsonLd={jsonLd} noindex={noindex} />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">跳到主要內容</a>
     <Header lang={lang} />
-    <main>
+    <main id="main-content" tabindex="-1">
       <slot />
+      {lang === 'en' && !noindex && showAffiliateRecs && <AffiliateRecs amazon lang="en" slug={canonical} maxItems={3} pageType={inferredPageType} />}
     </main>
     <Footer lang={lang} />
   </body>

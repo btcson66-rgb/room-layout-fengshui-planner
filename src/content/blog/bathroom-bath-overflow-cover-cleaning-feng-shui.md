@@ -21,6 +21,8 @@ relatedTools:
   - /zh/blog/room-circulation-width-guide/
 relatedPosts:
   - bathroom-bath-mat-cleaning-feng-shui
+  - bathroom-floor-drain-cleaning-feng-shui
+  - bathroom-cleaning-feng-shui
 howToName: "浴缸溢水孔蓋、密封圈、浴缸排水、異味與地面動線檢查"
 howToTotalTime: "PT30M"
 howToSteps:

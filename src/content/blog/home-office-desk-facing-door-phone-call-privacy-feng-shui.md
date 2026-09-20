@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 電話通話隱私, 工作區動線]
 keywords: [書桌面向房門通電話, 書房通話隱私, 房門對書桌風水, 書桌電話位置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-doorway-sound-privacy-feng-shui, home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-facing-door-webcam-angle-feng-shui, home-office-desk-facing-door-chair-turning-feng-shui]
 howToName: 檢查書桌面向房門的電話通話隱私
 howToTotalTime: PT30M

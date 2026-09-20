@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊收納, 收納籃, 下床動線]
 keywords: [小房間床邊收納籃, 床邊籃子放哪裡, 小房間收納風水, 床邊取物距離]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-bedside-storage-turning-clearance-feng-shui, small-room-storage-bed-opening-clearance-feng-shui, small-room-storage-aisle-turning-clearance-feng-shui, bedroom-bedside-book-storage-feng-shui]
 howToName: 檢查小房間床邊收納籃、取物距離與下床動線
 howToTotalTime: PT30M

@@ -1,0 +1,29 @@
+.layout-preview { margin-block: clamp(3rem, 8vw, 7rem); }
+.layout-preview-shell { display: grid; grid-template-columns: minmax(0, .8fr) minmax(320px, 1.2fr); gap: clamp(1.5rem, 4vw, 4rem); padding: clamp(1.25rem, 4vw, 3rem); color: #173a34; background: #f5f1e8; border: 1px solid #bdc7bd; box-shadow: 12px 12px 0 #d6d3c8; }
+.layout-preview-copy h2 { max-width: 18ch; margin: 0; font: 600 clamp(1.8rem, 4vw, 3.25rem)/1.06 Georgia, "Noto Serif TC", serif; letter-spacing: -.025em; }
+.layout-preview-copy p:not(.layout-preview-kicker) { max-width: 46ch; color: #526862; line-height: 1.65; }
+.layout-preview-kicker { margin: 0 0 .8rem; color: #91451f; font-size: .72rem; font-weight: 800; letter-spacing: .16em; }
+.layout-preview-form-host { display: grid; gap: 1rem; }
+.layout-preview-form { display: grid; gap: 1rem; align-content: start; }
+.layout-preview-form fieldset { display: grid; gap: .8rem; padding: 1rem; margin: 0; border: 1px solid #c7d0c8; background: #fff; }
+.layout-preview-form legend { padding-inline: .3rem; font-weight: 800; }
+.layout-preview-form .preview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.layout-preview-form label { display: grid; gap: .3rem; color: #526862; font-size: .9rem; }
+.layout-preview-form input, .layout-preview-form select { min-height: 2.7rem; padding: .45rem .55rem; color: #173a34; background: #fff; border: 1px solid #9eafa2; border-radius: .2rem; font: inherit; }
+.layout-preview-form input:focus-visible, .layout-preview-form select:focus-visible, .layout-preview-form button:focus-visible { outline: 3px solid #bd6b40; outline-offset: 2px; }
+.layout-preview-form .preview-choice { display: flex; flex-wrap: wrap; gap: .6rem; }
+.layout-preview-form .preview-choice label { display: inline-flex; grid-template-columns: auto 1fr; align-items: center; gap: .35rem; min-height: 2.2rem; padding: .35rem .6rem; color: #173a34; background: #eef2ec; border: 1px solid #c7d0c8; cursor: pointer; }
+.layout-preview-form button { min-height: 2.9rem; padding: .7rem 1rem; color: #fff; background: #173a34; border: 1px solid #173a34; border-radius: .2rem; font: 700 1rem Georgia, serif; cursor: pointer; }
+.layout-preview-result { min-height: 3rem; grid-column: 1 / -1; }
+.layout-preview-result .preview-match { display: grid; grid-template-columns: minmax(240px, .9fr) minmax(0, 1.1fr); gap: 1.25rem; padding-top: 1.2rem; border-top: 1px solid #bdc7bd; }
+.layout-preview-result h3 { margin: .15rem 0 .45rem; font: 600 1.55rem/1.1 Georgia, serif; }
+.layout-preview-result p { color: #526862; line-height: 1.55; }
+.layout-preview-result .preview-plan { padding: .75rem; background: #fff; border: 1px solid #c7d0c8; }
+.layout-preview-result .preview-plan svg { display: block; width: 100%; height: auto; }
+.layout-preview-result .preview-meta { display: grid; gap: .7rem; align-content: start; }
+.layout-preview-result .preview-badge { display: inline-flex; width: fit-content; padding: .3rem .55rem; color: #173a34; background: #d9e8dc; border: 1px solid #86a18d; font-size: .78rem; font-weight: 800; }
+.layout-preview-result ul { padding-left: 1.15rem; color: #526862; }
+.layout-preview-result .preview-upgrade { display: inline-flex; margin-top: .4rem; padding: .75rem 1rem; color: #fff; background: #91451f; text-decoration: none; font-weight: 800; }
+.layout-preview-result .preview-note { margin-top: .7rem; color: #6b746d; font-size: .82rem; }
+@media (max-width: 780px) { .layout-preview-shell { grid-template-columns: 1fr; box-shadow: 6px 6px 0 #d6d3c8; }.layout-preview-result .preview-match { grid-template-columns: 1fr; } }
+@media (max-width: 460px) { .layout-preview-form .preview-grid { grid-template-columns: 1fr; }.layout-preview-shell { padding: 1rem; } }

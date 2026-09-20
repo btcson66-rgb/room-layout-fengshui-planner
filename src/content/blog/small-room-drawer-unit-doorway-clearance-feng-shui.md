@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 抽屜櫃靠門, 收納動線, 家具固定]
 keywords: [小房間抽屜櫃靠門, 抽屜櫃門口距離, 小房間收納風水, 抽屜全開動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-aisle-turning-clearance-feng-shui, small-room-wardrobe-door-turning-clearance-feng-shui, small-room-open-shelf-door-clearance-feng-shui, small-room-storage-corner-turning-clearance-feng-shui]
 howToName: 檢查小房間抽屜櫃靠門的全開與取物動線
 howToTotalTime: PT35M

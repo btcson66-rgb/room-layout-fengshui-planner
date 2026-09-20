@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 面向房門, 椅子轉身, 離席動線]
 keywords: [書桌對門椅子空間, 書桌面向房門布局, 書桌椅子轉身, 工作區離席動線]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-monitor-privacy-feng-shui, home-office-desk-facing-door-visibility-feng-shui, home-office-desk-chair-back-wall-clearance-feng-shui, home-office-desk-doorway-clearance-feng-shui]
 howToName: 檢查面向房門書桌的椅子轉身與離席空間
 howToTotalTime: PT30M

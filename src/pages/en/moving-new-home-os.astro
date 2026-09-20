@@ -1,0 +1,31 @@
+---
+import Layout from '../../components/Layout.astro';
+import MovingOsSales from '../../components/MovingOsSales.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { movingOsProduct } from '../../config/products';
+import '../../styles/product-sales.css';
+const title = 'Moving & New Home OS | Furniture Fit, Boxes & Budget | RoomFeng';
+const description = 'Plan a real move with furniture entry and room-fit checks, measurements, timeline, boxes, budget, shopping comparisons, XLSX, printable sheets, and local backups.';
+const canonical = '/en/moving-new-home-os/';
+const alternates = { en: canonical, zh: '/zh/moving-new-home-os/' };
+const jsonLd = [
+  { '@context':'https://schema.org', '@type':'Product', name:movingOsProduct.name, description, brand:{'@type':'Brand',name:'RoomFeng'}, category:'Moving planning software and digital workbook', offers:{'@type':'Offer',price:'12.99',priceCurrency:'USD',availability:'https://schema.org/InStock',url:`https://roomfeng.win${canonical}`} },
+  { '@context':'https://schema.org', '@type':'BreadcrumbList', itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:'https://roomfeng.win/en/'},{'@type':'ListItem',position:2,name:'Moving & New Home OS',item:`https://roomfeng.win${canonical}`}] },
+];
+const faqItems = [
+  { q:'Does the fit result guarantee that furniture can be moved in?', a:'No. It is a preliminary measurement check. Complex three-dimensional rotation, material flexibility, site obstacles, and mover technique require an on-site review.' },
+  { q:'Do I need a RoomFeng account?', a:'No. The product uses a purchased provider license; no RoomFeng account is required.' },
+  { q:'Is this a subscription?', a:'No. v1.0 is a one-time purchase at the price shown by the checkout provider.' },
+  { q:'Where is my move data stored?', a:'Room dimensions, addresses, furniture, budget, boxes, and notes stay in this browser. Only the license key is sent to the secure verification endpoint.' },
+  { q:'What happens if I change computers?', a:'Export a JSON backup from the first browser, activate the product on the other browser with your valid license, then restore the backup.' },
+  { q:'Can I change currency or measurement units?', a:'Yes. The interface supports millimetres, centimetres, and inches, with canonical millimetre storage, plus TWD, USD, EUR, GBP, JPY, KRW, HKD, and SGD without exchange-rate conversion.' },
+  { q:'Is this CAD software?', a:'No. It is a practical moving decision system for ordinary households, not architectural, engineering, or professional CAD software.' },
+  { q:'Is Payhip or Gumroad different?', a:'No. Both providers deliver the same v1.0 product at US$12.99; choose the checkout you prefer.' },
+];
+const relatedLinks = [{href:'/en/moving-furniture-size-check/',title:'Moving furniture size check'}, {href:'/en/room-layout-planner/',title:'Free room layout planner'}, {href:'/privacy/',title:'RoomFeng privacy policy'}];
+---
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd} pageType="tool" showAffiliateRecs={false}>
+  <MovingOsSales locale="en" activationHref="/en/moving-new-home-os/activate/" previewHref={movingOsProduct.previewPackUrl} providers={movingOsProduct.providers} priceLabel={`${movingOsProduct.displayPrice.currency} ${movingOsProduct.displayPrice.amount.toFixed(2)}`} supportEmail={movingOsProduct.supportEmail} refundPolicyUrl={movingOsProduct.refundPolicyUrl} />
+  <section class="section"><div class="container"><Faq items={faqItems} /><RelatedLinks links={relatedLinks} /></div></section>
+</Layout>

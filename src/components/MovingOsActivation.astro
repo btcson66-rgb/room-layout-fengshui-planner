@@ -1,0 +1,17 @@
+---
+import ProductLicenseActivation from './ProductLicenseActivation.astro';
+import { movingOsProduct } from '../config/products';
+
+interface Props { locale: 'en' | 'zh-TW'; appHref: string }
+const { locale, appHref } = Astro.props;
+---
+<ProductLicenseActivation
+  locale={locale}
+  productId={movingOsProduct.id}
+  productName={movingOsProduct.name}
+  appHref={appHref}
+  verifyEndpoint="/api/product/license/verify"
+  sessionEndpoint="/api/product/license/session"
+  supportEmail={movingOsProduct.supportEmail}
+  movingOsMarker
+/>

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 書桌對門, 工作視線, 居家辦公動線]
 keywords: [書桌對門視線, 書桌正對門怎麼辦, 書桌對門風水調整, 書桌坐位看門]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [desk-facing-door-layout, home-office-desk-doorway-clearance-feng-shui, desk-placement-feng-shui, home-office-monitor-feng-shui]
 howToName: 檢查書桌對門的視線與辦公動線
 howToTotalTime: PT35M

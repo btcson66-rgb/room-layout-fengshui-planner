@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [小房間風水, 收納走道, 家具轉身, 小房間配置]
 keywords: [小房間收納走道, 收納轉身空間, 小房間家具動線, 收納櫃前走道風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-zones, small-room-vertical-storage-feng-shui, small-room-storage-bed-opening-clearance-feng-shui, room-circulation-width-guide]
 howToName: 檢查小房間收納走道的轉身與取物動線
 howToTotalTime: PT40M

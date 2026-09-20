@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 折疊收納箱, 床邊收納, 展開動線]
 keywords: [小房間床邊折疊箱, 折疊收納箱風水, 床側收納箱動線, 小房間收納展開]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-hanging-pocket-feng-shui, small-room-storage-bedside-rolling-cart-clearance-feng-shui, small-room-storage-bedside-underbed-drawer-feng-shui, small-room-storage-bedside-wall-shelf-feng-shui]
 howToName: 檢查小房間床邊折疊箱展開與收合動線
 howToTotalTime: PT30M

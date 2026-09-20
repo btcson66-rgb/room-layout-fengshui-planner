@@ -1,0 +1,160 @@
+---
+import PlannerHandoffLink from './PlannerHandoffLink.astro';
+
+interface Props {
+  locale?: 'zh' | 'en';
+}
+
+const { locale = 'zh' } = Astro.props;
+const en = locale === 'en';
+const copy = en ? {
+  eyebrow: 'MEASURED FIT CHECK',
+  heading: 'Enter room and furniture footprints to see Fit / Clearance',
+  intro: 'This is a geometry first check: confirm the furniture footprint fits, then check whether your requested left, right, front, and back clearances remain. It is not a safety, moving, or building certification.',
+  dimensions: 'Room and furniture dimensions',
+  unit: 'Unit', roomWidth: 'Room width', roomLength: 'Room length', furnitureWidth: 'Furniture width', furnitureDepth: 'Furniture depth', furnitureType: 'Furniture type',
+  clearance: 'Requested clearance (optional)', left: 'Left', right: 'Right', front: 'Front', back: 'Back', calculate: 'Calculate Fit / Clearance',
+  diagramLabel: 'Furniture fit diagram drawn to the entered dimensions', trySize: 'TRY THIS SIZE', tryHeading: 'Start with a labelled measured size', load: 'Load into checker', planner: 'Try this size in Planner',
+  physical: 'Physical fit', requested: 'Requested clearance', available: 'Available orientation', none: 'None', note: 'Orientation results compare the room plane and entered footprint only. Check door width, turns, stairs, fire access, and on-site tolerance separately.',
+  invalid: 'Enter positive room and furniture dimensions; clearances cannot be negative.', exact: 'Open this exact configuration in Room Planner',
+  furniture: { bed: 'Bed', sofa: 'Sofa', desk: 'Desk', wardrobe: 'Wardrobe', custom: 'Custom furniture' },
+  presets: [
+    { id: 'single-bed-preset', title: '300 × 300 cm room · Single bed 105 × 188 cm', description: 'Check the bedside route and space behind a desk chair.', type: 'bed' as const, width: 105, depth: 188, itemLabel: 'Single bed', source: 'furniture-fit-checker:single-bed' },
+    { id: 'double-bed-preset', title: '300 × 300 cm room · Double bed 150 × 190 cm', description: 'Check bed access on both sides and the foot route.', type: 'bed' as const, width: 150, depth: 190, itemLabel: 'Double bed', source: 'furniture-fit-checker:double-bed' },
+    { id: 'studio-sofa-preset', title: '300 × 300 cm room · Sofa 180 × 85 cm', description: 'Check sofa depth and the entry route.', type: 'sofa' as const, width: 180, depth: 85, itemLabel: 'Sofa', source: 'furniture-fit-checker:studio-sofa' },
+  ],
+} : {
+  eyebrow: 'MEASURED FIT CHECK', heading: '輸入房間與家具外框，直接看 Fit / Clearance',
+  intro: '這裡只做幾何初檢：先確認家具本體能不能放進房間，再看你要求的左右、前後淨空是否也保留。結果不是安全、搬運或建築認證。',
+  dimensions: '房間與家具尺寸', unit: '單位', roomWidth: '房間寬', roomLength: '房間長', furnitureWidth: '家具寬', furnitureDepth: '家具深', furnitureType: '家具類型',
+  clearance: '想保留的淨空（可選）', left: '左側', right: '右側', front: '前方', back: '後方', calculate: '計算 Fit / Clearance',
+  diagramLabel: '依實際尺寸比例繪製的家具適配圖', trySize: 'TRY THIS SIZE', tryHeading: '先用一組有標示的尺寸', load: '載入到檢查器', planner: 'Try this size in Planner',
+  physical: 'Physical fit', requested: 'Requested clearance', available: '可用方向', none: '無', note: '方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。',
+  invalid: '請輸入有效的正數房間、家具尺寸；淨空不可小於 0。', exact: 'Open this exact configuration in Room Planner',
+  furniture: { bed: '床', sofa: '沙發', desk: '書桌', wardrobe: '衣櫃', custom: '自訂家具' },
+  presets: [
+    { id: 'single-bed-preset', title: '300 × 300 房間 · 單人床 105 × 188 cm', description: '檢查床邊走道與桌前空間。', type: 'bed' as const, width: 105, depth: 188, itemLabel: '單人床', source: 'furniture-fit-checker:single-bed' },
+    { id: 'double-bed-preset', title: '300 × 300 房間 · 雙人床 150 × 190 cm', description: '檢查兩側上下床與床尾距離。', type: 'bed' as const, width: 150, depth: 190, itemLabel: '雙人床', source: 'furniture-fit-checker:double-bed' },
+    { id: 'studio-sofa-preset', title: '300 × 300 房間 · 套房沙發 180 × 85 cm', description: '檢查沙發深度與入口動線。', type: 'sofa' as const, width: 180, depth: 85, itemLabel: '沙發', source: 'furniture-fit-checker:studio-sofa' },
+  ],
+};
+const handoffHref = en ? '/en/room-layout-planner/?rf_quick_handoff=1' : '/zh/room-layout-planner/?rf_quick_handoff=1';
+---
+
+<section class="furniture-fit-tool" data-furniture-fit-tool data-fit-locale={locale} aria-labelledby="furniture-fit-tool-heading">
+  <div class="furniture-fit-tool__intro">
+    <p class="eyebrow">{copy.eyebrow}</p>
+    <h2 id="furniture-fit-tool-heading">{copy.heading}</h2>
+    <p>{copy.intro}</p>
+  </div>
+  <form class="furniture-fit-form" data-fit-form>
+    <fieldset>
+      <legend>{copy.dimensions}</legend>
+      <div class="fit-form-grid">
+        <label>{copy.unit}<select name="unit" data-fit-unit><option value="cm">{en ? 'cm' : '公分'}</option><option value="m">{en ? 'm' : '公尺'}</option><option value="ft">{en ? 'ft' : '英尺'}</option></select></label>
+        <label>{copy.roomWidth}<input name="roomWidth" data-fit-input type="number" min="0.1" step="0.1" value="300" required /></label>
+        <label>{copy.roomLength}<input name="roomLength" data-fit-input type="number" min="0.1" step="0.1" value="300" required /></label>
+        <label>{copy.furnitureWidth}<input name="furnitureWidth" data-fit-input type="number" min="0.1" step="0.1" value="150" required /></label>
+        <label>{copy.furnitureDepth}<input name="furnitureDepth" data-fit-input type="number" min="0.1" step="0.1" value="190" required /></label>
+        <label>{copy.furnitureType}<select name="furnitureType" data-fit-type>{Object.entries(copy.furniture).map(([value, label]) => <option value={value}>{label}</option>)}</select></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>{copy.clearance}</legend>
+      <div class="fit-form-grid fit-clearance-grid">
+        <label>{copy.left}<input name="leftClearance" data-fit-input type="number" min="0" step="0.1" value="0" /></label>
+        <label>{copy.right}<input name="rightClearance" data-fit-input type="number" min="0" step="0.1" value="0" /></label>
+        <label>{copy.front}<input name="frontClearance" data-fit-input type="number" min="0" step="0.1" value="60" /></label>
+        <label>{copy.back}<input name="backClearance" data-fit-input type="number" min="0" step="0.1" value="0" /></label>
+      </div>
+    </fieldset>
+    <button class="button" type="submit">{copy.calculate}</button>
+  </form>
+  <div class="furniture-fit-result" data-fit-result aria-live="polite"></div>
+  <div class="furniture-fit-diagram" data-fit-diagram aria-label={copy.diagramLabel}></div>
+  <div class="furniture-fit-presets" aria-labelledby="fit-presets-heading">
+    <div><p class="eyebrow">{copy.trySize}</p><h3 id="fit-presets-heading">{copy.tryHeading}</h3></div>
+    <div class="fit-prototype-grid">
+      {copy.presets.map((preset) => (
+        <article class="fit-option">
+          <strong>{preset.title}</strong><p>{preset.description}</p>
+          <div class="fit-option-actions">
+            <button type="button" class="button secondary" data-fit-preset data-room-width="300" data-room-length="300" data-furniture-width={preset.width} data-furniture-depth={preset.depth} data-furniture-type={preset.type}>{copy.load}</button>
+            <PlannerHandoffLink href={handoffHref} label={copy.planner} roomWidthCm={300} roomLengthCm={300} source={preset.source} items={[{ id: preset.id, type: preset.type, label: preset.itemLabel, widthCm: preset.width, depthCm: preset.depth, rotationDeg: 0 }]} />
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  import { calculateFurnitureFit, fromFurnitureFitCm, getFurnitureFitPlacement, isValidFurnitureFitInput, toFurnitureFitCm, type FurnitureFitUnit } from '../tools/furniture-fit';
+  import { createQuickHandoff, writeQuickHandoff } from '../planner/quick-handoff';
+
+  const root = document.querySelector<HTMLElement>('[data-furniture-fit-tool]');
+  if (root) {
+    const form = root.querySelector<HTMLFormElement>('[data-fit-form]');
+    const result = root.querySelector<HTMLElement>('[data-fit-result]');
+    const diagram = root.querySelector<HTMLElement>('[data-fit-diagram]');
+    const unit = root.querySelector<HTMLSelectElement>('[data-fit-unit]');
+    const type = root.querySelector<HTMLSelectElement>('[data-fit-type]');
+    const inputs = Array.from(root.querySelectorAll<HTMLInputElement>('[data-fit-input]'));
+    const getInput = (name: string): HTMLInputElement => form?.elements.namedItem(name) as HTMLInputElement;
+    const num = (name: string): number => Number(getInput(name)?.value || 0);
+    const names = ['roomWidth', 'roomLength', 'furnitureWidth', 'furnitureDepth', 'leftClearance', 'rightClearance', 'frontClearance', 'backClearance'];
+    const isEnglish = root.dataset.fitLocale === 'en';
+    const labels = isEnglish ? { bed: 'Bed', sofa: 'Sofa', desk: 'Desk', wardrobe: 'Wardrobe', custom: 'Custom furniture' } : { bed: '床', sofa: '沙發', desk: '書桌', wardrobe: '衣櫃', custom: '自訂家具' };
+    const copy = isEnglish ? {
+      pass: 'PASS', fail: 'FAIL', available: 'Available orientation', none: 'None', physical: 'Physical fit', requested: 'Requested clearance', note: 'Orientation results compare the room plane and entered footprint only. Check door width, turns, stairs, fire access, and on-site tolerance separately.', invalid: 'Enter positive room and furniture dimensions; clearances cannot be negative.', exact: 'Open this exact configuration in Room Planner', room: 'room', furniture: 'furniture', clearance: 'requested clearance',
+    } : {
+      pass: 'PASS', fail: 'FAIL', available: '可用方向', none: '無', physical: 'Physical fit', requested: 'Requested clearance', note: '方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。', invalid: '請輸入有效的正數房間、家具尺寸；淨空不可小於 0。', exact: 'Open this exact configuration in Room Planner', room: '房間', furniture: '家具', clearance: '要求淨空',
+    };
+    const status = (pass: boolean): string => `<strong class="fit-status ${pass ? 'is-pass' : 'is-fail'}">${pass ? copy.pass : copy.fail}</strong>`;
+    const displayValue = (value: number): string => String(Math.round(value * 1000000) / 1000000);
+
+    const read = () => {
+      const selectedUnit = (unit?.value ?? 'cm') as FurnitureFitUnit;
+      return {
+        unit: selectedUnit,
+        roomWidthCm: toFurnitureFitCm(num('roomWidth'), selectedUnit), roomLengthCm: toFurnitureFitCm(num('roomLength'), selectedUnit),
+        furnitureWidthCm: toFurnitureFitCm(num('furnitureWidth'), selectedUnit), furnitureDepthCm: toFurnitureFitCm(num('furnitureDepth'), selectedUnit),
+        clearance: { leftCm: toFurnitureFitCm(num('leftClearance'), selectedUnit), rightCm: toFurnitureFitCm(num('rightClearance'), selectedUnit), frontCm: toFurnitureFitCm(num('frontClearance'), selectedUnit), backCm: toFurnitureFitCm(num('backClearance'), selectedUnit) },
+      };
+    };
+
+    const renderDiagram = (input: ReturnType<typeof read>, rotation: 0 | 90 | null): void => {
+      if (!diagram) return;
+      const placement = getFurnitureFitPlacement(input, rotation);
+      const { widthCm: itemWidth, depthCm: itemDepth, xCm: x, yCm: y } = placement;
+      const title = `${input.roomWidthCm} × ${input.roomLengthCm} cm ${copy.room} · ${itemWidth} × ${itemDepth} cm ${copy.furniture}`;
+      const requestedX = x - input.clearance.leftCm; const requestedY = y - input.clearance.backCm;
+      const requestedWidth = itemWidth + input.clearance.leftCm + input.clearance.rightCm; const requestedHeight = itemDepth + input.clearance.frontCm + input.clearance.backCm;
+      const clearanceClass = placement.requestedClearanceFit ? 'fit-clearance-box is-pass' : 'fit-clearance-box is-fail';
+      diagram.innerHTML = `<svg class="fit-result-svg" viewBox="0 0 ${input.roomWidthCm} ${input.roomLengthCm}" role="img" aria-label="${title}" data-room-width="${input.roomWidthCm}" data-room-length="${input.roomLengthCm}" data-furniture-width="${itemWidth}" data-furniture-depth="${itemDepth}" data-furniture-x="${x}" data-furniture-y="${y}" data-clearance-fit="${placement.requestedClearanceFit}" data-clearance-left="${input.clearance.leftCm}" data-clearance-right="${input.clearance.rightCm}" data-clearance-front="${input.clearance.frontCm}" data-clearance-back="${input.clearance.backCm}"><rect class="fit-room-boundary" x="0" y="0" width="${input.roomWidthCm}" height="${input.roomLengthCm}"/><rect class="${clearanceClass}" x="${requestedX}" y="${requestedY}" width="${requestedWidth}" height="${requestedHeight}"/><rect class="fit-furniture-box" x="${x}" y="${y}" width="${itemWidth}" height="${itemDepth}"/><text x="${input.roomWidthCm / 2}" y="${Math.max(12, input.roomLengthCm * .06)}" text-anchor="middle">${copy.room.toUpperCase()} ${input.roomWidthCm} × ${input.roomLengthCm} cm</text><text x="${x + itemWidth / 2}" y="${y + itemDepth / 2}" text-anchor="middle">${itemWidth} × ${itemDepth} cm</text></svg>`;
+    };
+
+    const calculate = (): void => {
+      const input = read();
+      root.querySelector<HTMLAnchorElement>('[data-fit-handoff]')?.remove();
+      if (!isValidFurnitureFitInput(input)) {
+        if (result) result.innerHTML = `<p class="fit-error" role="alert">${copy.invalid}</p>`;
+        diagram?.replaceChildren(); return;
+      }
+      const fit = calculateFurnitureFit(input);
+      const orientations = fit.orientations.map((orientation) => `<li>${orientation.rotation}°: ${copy.physical} ${status(orientation.physicalFit)} · ${copy.clearance} ${status(orientation.requestedClearanceFit)}</li>`).join('');
+      if (result) result.innerHTML = `<div class="fit-result-summary"><div><span>${copy.physical}</span>${status(fit.physicalFit)}</div><div><span>${copy.requested}</span>${status(fit.requestedClearanceFit)}</div><div><span>${copy.available}</span><strong>${fit.recommendedRotation === null ? copy.none : `${fit.recommendedRotation}°`}</strong></div></div><ul class="fit-orientation-list">${orientations}</ul><p class="planner-muted">${copy.note}</p>`;
+      renderDiagram(input, fit.recommendedRotation);
+      const itemType = (type?.value ?? 'custom') as 'bed' | 'sofa' | 'desk' | 'wardrobe' | 'custom';
+      const payload = createQuickHandoff({ source: 'furniture-fit-checker', roomWidthCm: input.roomWidthCm, roomLengthCm: input.roomLengthCm, items: [{ id: 'fit-item', type: itemType, label: labels[itemType], widthCm: input.furnitureWidthCm, depthCm: input.furnitureDepthCm, rotationDeg: fit.recommendedRotation ?? 0 }] });
+      const link = document.createElement('a'); link.className = 'button'; link.href = isEnglish ? '/en/room-layout-planner/?rf_quick_handoff=1' : '/zh/room-layout-planner/?rf_quick_handoff=1'; link.textContent = copy.exact; link.dataset.fitHandoff = 'true'; link.dataset.plannerHandoff = JSON.stringify(payload); link.addEventListener('click', () => writeQuickHandoff(payload)); result?.append(link);
+    };
+
+    unit?.addEventListener('change', () => { const previous = (unit.dataset.previousUnit ?? 'cm') as FurnitureFitUnit; const next = unit.value as FurnitureFitUnit; names.forEach((name) => { const input = getInput(name); if (input) input.value = displayValue(fromFurnitureFitCm(toFurnitureFitCm(Number(input.value), previous), next)); }); unit.dataset.previousUnit = next; calculate(); });
+    type?.addEventListener('change', calculate);
+    form?.addEventListener('submit', (event) => { event.preventDefault(); calculate(); });
+    inputs.forEach((input) => input.addEventListener('change', calculate));
+    root.querySelectorAll<HTMLButtonElement>('[data-fit-preset]').forEach((button) => button.addEventListener('click', () => { const selectedUnit = (unit?.value ?? 'cm') as FurnitureFitUnit; ['roomWidth', 'roomLength', 'furnitureWidth', 'furnitureDepth'].forEach((name) => { const source = name === 'roomWidth' ? button.dataset.roomWidth : name === 'roomLength' ? button.dataset.roomLength : name === 'furnitureWidth' ? button.dataset.furnitureWidth : button.dataset.furnitureDepth; const input = getInput(name); if (input && source) input.value = displayValue(fromFurnitureFitCm(Number(source), selectedUnit)); }); if (type && button.dataset.furnitureType) type.value = button.dataset.furnitureType; calculate(); result?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }));
+    calculate();
+  }
+</script>

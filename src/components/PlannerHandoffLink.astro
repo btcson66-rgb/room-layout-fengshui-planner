@@ -1,0 +1,29 @@
+---
+import type { QuickHandoffItem } from '../planner/quick-handoff';
+
+interface Props {
+  href: string;
+  label: string;
+  class?: string;
+  roomWidthCm: number;
+  roomLengthCm: number;
+  source: string;
+  items: QuickHandoffItem[];
+}
+
+const { href, label, class: className = 'button secondary', roomWidthCm, roomLengthCm, source, items } = Astro.props;
+const handoff = JSON.stringify({
+  schema: 'roomfeng.planner.quick-handoff/v1',
+  source,
+  createdAt: new Date().toISOString(),
+  room: { widthCm: roomWidthCm, lengthCm: roomLengthCm },
+  items,
+});
+---
+
+<a class={className} href={href} data-planner-handoff={handoff}>{label}</a>
+
+<script>
+  import { installPlannerHandoffLinks } from '../planner/quick-handoff';
+  installPlannerHandoffLinks();
+</script>

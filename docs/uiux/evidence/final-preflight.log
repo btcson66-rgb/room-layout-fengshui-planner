@@ -1,0 +1,20 @@
+ROOMFENG UIUX 002 — Review-04 Phase G final-preflight evidence
+Generated: 2026-09-19 (local source validation before commit; exact final head is recorded in the local review and PR readback)
+Scope: PR #100 / codex/roomfeng-uiux-20260919 / no merge / no deploy
+
+The source-and-evidence working tree passed the full preflight before this evidence record was committed. The final PR head is read back after the documentation-only commit and CI; no source changes are allowed after this record.
+
+amazon:preflight: PASS — bootstrap, 100 ASINs, text-only fallback available
+astro check: PASS — 219 files, 0 errors, 0 warnings, 0 hints
+static build: PASS — 1,457 page(s) built
+content audit: PASS — 1,315 sourceArticles; 1,315 reviewReady; 0 heldNoindex; 1,447 sitemapPages; 1,000,350 checks; 0 failures
+test:scripts: PASS — 42/42
+test:uiux-review: PASS — 12/12
+Review-04 browser smoke: PASS — zh/en Homepage and Planner 375, 390, 768, 1024, 1280, 1440; Furniture Fit; asymmetric placement; exact handoff; measured bedroom/studio; Guide; rail selection; bottom sheets; real PNG/PDF output
+test:www-redirect: PASS — 4/4
+test:moving-os: PASS — 26/26
+bundle comparison: PASS as local non-regression — current 33 JS / 1,937,876 bytes / 929,901 max; 10 CSS / 83,642 bytes / 17,760 max; Review-03 33 JS / 1,935,906 bytes / 929,901 max; 9 CSS / 78,470 bytes / 17,760 max
+Lighthouse: NOT AVAILABLE LOCALLY — no score claimed
+SEO parity: PASS — canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement and production analytics unchanged
+Accessibility: PASS — skip link, focus-visible, keyboard furniture selection, aria-live/status, reduced motion, no-overflow matrix
+PR state: OPEN / UNMERGED / UNDEPLOYED

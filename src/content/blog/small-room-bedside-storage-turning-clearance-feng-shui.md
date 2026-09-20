@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [小房間風水, 床邊收納, 床頭櫃, 夜間動線]
 keywords: [小房間床邊收納, 床頭櫃轉身空間, 床邊收納風水, 小房間床邊走道]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-aisle-turning-clearance-feng-shui, bedroom-bedside-table-cleaning-feng-shui, bedroom-bedside-table-drawer-cleaning-feng-shui, bedroom-bedside-rug-walkway-feng-shui]
 howToName: 檢查小房間床邊收納的取物與轉身動線
 howToTotalTime: PT35M

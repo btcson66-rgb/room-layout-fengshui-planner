@@ -27,12 +27,137 @@ jobs:
           node-version: 22
           cache: npm
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
       - run: npm ci
+
+      - name: Build PRODUCT-002 package fixture for integrity tests
+        run: python -m pip install --disable-pip-version-check reportlab pillow && python scripts/generate-product-002-package.py
+
+      - name: Refresh Amazon Product Advertising Content
+        run: npm run amazon:refresh
+        env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
+          AMAZON_CREATORS_API_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_API_CLIENT_ID }}
+          AMAZON_CREATORS_API_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_API_CLIENT_SECRET }}
+          AMAZON_CREATORS_API_VERSION: ${{ secrets.AMAZON_CREATORS_API_VERSION }}
+          AMAZON_CREATORS_API_MARKETPLACE: www.amazon.com
 
       # astro check + build + audit:content + test:www-redirect
       - run: npm run preflight
         env:
+          AMAZON_AFFILIATE_BOOTSTRAP_MODE: auto
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
+          PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_MOVING_OS_PAYHIP_CHECKOUT_URL: ${{ vars.PUBLIC_MOVING_OS_PAYHIP_CHECKOUT_URL }}
+          PUBLIC_MOVING_OS_PAYHIP_PRODUCT_LINK: ${{ vars.PUBLIC_MOVING_OS_PAYHIP_PRODUCT_LINK }}
+          PUBLIC_MOVING_OS_GUMROAD_CHECKOUT_URL: ${{ vars.PUBLIC_MOVING_OS_GUMROAD_CHECKOUT_URL }}
+          PUBLIC_MOVING_OS_GUMROAD_PRODUCT_ID: ${{ vars.PUBLIC_MOVING_OS_GUMROAD_PRODUCT_ID }}
+          PUBLIC_MOVING_OS_SUPPORT_EMAIL: ${{ vars.PUBLIC_MOVING_OS_SUPPORT_EMAIL }}
+          PUBLIC_MOVING_OS_REFUND_POLICY_URL: ${{ vars.PUBLIC_MOVING_OS_REFUND_POLICY_URL }}
+          PUBLIC_MOVING_OS_RELEASE_DATE: ${{ vars.PUBLIC_MOVING_OS_RELEASE_DATE }}
+          PUBLIC_LAYOUT_VAULT_PAYHIP_CHECKOUT_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_PAYHIP_CHECKOUT_URL }}
+          PUBLIC_LAYOUT_VAULT_PAYHIP_PRODUCT_LINK: ${{ vars.PUBLIC_LAYOUT_VAULT_PAYHIP_PRODUCT_LINK }}
+          PUBLIC_LAYOUT_VAULT_GUMROAD_CHECKOUT_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_GUMROAD_CHECKOUT_URL }}
+          PUBLIC_LAYOUT_VAULT_GUMROAD_PRODUCT_ID: ${{ vars.PUBLIC_LAYOUT_VAULT_GUMROAD_PRODUCT_ID }}
+          PUBLIC_LAYOUT_VAULT_SUPPORT_EMAIL: ${{ vars.PUBLIC_LAYOUT_VAULT_SUPPORT_EMAIL }}
+          PUBLIC_LAYOUT_VAULT_REFUND_POLICY_URL: ${{ vars.PUBLIC_LAYOUT_VAULT_REFUND_POLICY_URL }}
           # 與 deploy-cloudflare-pages.yml 保持一致，讓 PR 驗的是與正式站
           # 相同的輸出。這不是 secret；正式值同時要與 public/ads.txt 一致。
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+
+      - name: Verify PRODUCT-002 analytics routing
+        run: node --test tests/affiliate-ga4-routing.test.mjs tests/affiliate-ga4.test.mjs
+
+      - name: Verify PRODUCT-002 Phase 3 gates
+        run: npm run test:product-002:phase3
+
+      - name: Verify PRODUCT-002 geometry and matching
+        run: npm run test:product-002
+
+      - name: Verify PRODUCT-002 entitlement isolation
+        run: npm run test:product-002:entitlement
+
+      - name: Verify production SEO parity
+        run: npm run test:seo-production-parity
+
+  uiux-browser:
+    name: UIUX browser evidence
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+        env:
+          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
+          PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+
+      - name: Compare built asset sizes
+        run: npm run audit:bundle
+      - name: Start Astro preview
+        shell: bash
+        run: |
+          npm run preview -- --host 127.0.0.1 > preview.log 2>&1 &
+          echo $! > preview.pid
+          for i in {1..60}; do
+            if curl --fail --silent http://127.0.0.1:4321/ > /dev/null; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:4321/ > /dev/null
+      - name: Run Review 04 browser gate
+        run: npm run test:uiux-review-04-browser
+      - name: Stop Astro preview
+        if: always()
+        shell: bash
+        run: if [ -f preview.pid ]; then kill "$(cat preview.pid)" || true; fi
+
+  production-lighthouse:
+    name: Production Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+        env:
+          PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+      - name: Start Astro preview for Lighthouse release audit
+        shell: bash
+        run: |
+          npm run preview -- --host 127.0.0.1 > lighthouse-preview.log 2>&1 &
+          echo $! > lighthouse-preview.pid
+          for i in {1..60}; do
+            if curl --fail --silent http://127.0.0.1:4321/ > /dev/null; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:4321/ > /dev/null
+      - name: Use the installed Chromium for Lighthouse
+        shell: bash
+        run: echo "CHROME_PATH=$(node --input-type=module -e 'import { chromium } from "playwright"; console.log(chromium.executablePath())')" >> "$GITHUB_ENV"
+      - run: npm run test:lighthouse:production
+        env:
+          ROOMFENG_LIGHTHOUSE_ORIGIN: http://127.0.0.1:4321
+          ROOMFENG_LIGHTHOUSE_DIR: docs/uiux/evidence/ci-lighthouse
+      - name: Stop Astro preview
+        if: always()
+        shell: bash
+        run: if [ -f lighthouse-preview.pid ]; then kill "$(cat lighthouse-preview.pid)" || true; fi

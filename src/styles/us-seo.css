@@ -1,0 +1,391 @@
+.us-seo-page {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.us-seo-page .container {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+}
+
+.us-seo-page .container > * {
+  min-width: 0;
+}
+
+.us-seo-hero,
+.us-seo-section,
+.us-seo-calculator {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+.us-seo-kicker {
+  color: var(--color-accent);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.us-seo-hero h1 {
+  max-width: 24ch;
+}
+
+.us-seo-hero .lead {
+  max-width: 70ch;
+}
+
+.us-seo-answer {
+  border-left: 4px solid var(--color-primary);
+  background: var(--color-info-bg);
+  padding: 1rem 1.1rem;
+}
+
+.us-seo-math {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-block: 1rem;
+}
+
+.us-seo-math > div,
+.us-seo-fact {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+  padding: .8rem;
+}
+
+.us-seo-math dt,
+.us-seo-fact dt {
+  color: var(--color-muted);
+  font-size: .82rem;
+}
+
+.us-seo-math dd,
+.us-seo-fact dd {
+  font-weight: 750;
+  margin: .2rem 0 0;
+}
+
+.us-seo-table-wrap {
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.us-seo-table {
+  border-collapse: collapse;
+  min-width: 620px;
+  width: 100%;
+}
+
+.us-seo-table th,
+.us-seo-table td {
+  border: 1px solid var(--color-border);
+  padding: .65rem .75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.us-seo-table th {
+  background: var(--color-surface-muted);
+}
+
+.us-seo-diagram-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.us-seo-diagram {
+  border: 1px solid var(--color-border);
+  background: #fbfaf6;
+  margin: 0;
+  padding: .75rem;
+}
+
+.us-seo-diagram svg {
+  display: block;
+  height: 260px;
+  width: 100%;
+}
+
+.us-seo-diagram figcaption {
+  color: var(--color-muted);
+  font-size: .92rem;
+  margin-top: .65rem;
+}
+
+.us-seo-list {
+  display: grid;
+  gap: .55rem;
+  padding-left: 1.25rem;
+}
+
+.us-seo-caution {
+  background: var(--color-warning-bg);
+  border: 1px solid #e4c56b;
+  color: var(--color-warning-text);
+  padding: .9rem 1rem;
+}
+
+.us-seo-faq {
+  display: grid;
+  gap: .75rem;
+}
+
+.us-seo-faq article {
+  border-top: 1px solid var(--color-border);
+  padding-top: .8rem;
+}
+
+.us-seo-faq h3 {
+  font-size: 1.05rem;
+}
+
+.us-seo-related ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem 1.25rem;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.us-seo-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.us-seo-form-grid {
+  display: grid;
+  gap: .9rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.us-seo-field {
+  display: grid;
+  gap: .35rem;
+}
+
+.us-seo-field > label,
+.us-seo-field > span {
+  font-weight: 700;
+}
+
+.us-seo-input-row {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.us-seo-field input,
+.us-seo-field select {
+  border: 1px solid #9a978e;
+  border-radius: var(--radius-sm);
+  font: inherit;
+  min-height: 44px;
+  min-width: 0;
+  padding: .55rem .65rem;
+}
+
+.us-seo-field input {
+  width: 7.5rem;
+}
+
+.us-seo-input-row input[data-inches],
+.us-seo-input-row input[data-feet] {
+  width: 5.1rem;
+}
+
+.us-seo-field input:focus-visible,
+.us-seo-field select:focus-visible,
+.us-seo-page a:focus-visible,
+.us-seo-page button:focus-visible {
+  outline: 3px solid #d38b3d;
+  outline-offset: 2px;
+}
+
+.us-seo-error {
+  color: #8b1e1e;
+  font-weight: 650;
+}
+
+.us-seo-result {
+  border: 2px solid var(--color-primary);
+  background: #f3faf7;
+  padding: 1rem;
+}
+
+.us-seo-result[data-status='fail'] {
+  border-color: #a33a2d;
+  background: #fff4f1;
+}
+
+.us-seo-result[data-status='tight'] {
+  border-color: #a46c1f;
+  background: #fff8e7;
+}
+
+.us-seo-result h3 {
+  margin-top: 0;
+}
+
+.us-seo-result-grid {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.us-seo-status {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+.us-seo-disclaimer {
+  color: var(--color-muted);
+  font-size: .92rem;
+}
+
+.us-seo-copy {
+  line-height: 1.7;
+}
+
+.us-seo-copy h1,
+.us-seo-copy h2,
+.us-seo-copy h3 {
+  line-height: 1.2;
+}
+
+.us-seo-calculator-header {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.us-seo-unit-switch,
+.us-seo-unit-switch select {
+  display: grid;
+  gap: .35rem;
+}
+
+.us-seo-unit-switch {
+  font-weight: 700;
+  min-width: 11rem;
+}
+
+.us-seo-measure-grid {
+  display: grid;
+  gap: .9rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-block: 1rem;
+}
+
+.imperial-inputs,
+.metric-input {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
+
+.imperial-inputs input,
+.metric-input input {
+  max-width: 7rem;
+}
+
+.field-note,
+.disclaimer {
+  color: var(--color-muted);
+  font-size: .92rem;
+}
+
+.us-seo-result {
+  margin-top: 1rem;
+}
+
+.result-status {
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  font-weight: 800;
+  letter-spacing: .04em;
+  padding: .35rem .6rem;
+}
+
+.result-fit {
+  background: #dff3e8;
+  color: #145c37;
+}
+
+.result-tight {
+  background: #fff0c7;
+  color: #704700;
+}
+
+.result-fail {
+  background: #ffe0da;
+  color: #8b1e1e;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table-wrap table {
+  border-collapse: collapse;
+  min-width: 32rem;
+  width: 100%;
+}
+
+.table-wrap th,
+.table-wrap td {
+  border: 1px solid var(--color-border);
+  padding: .6rem .7rem;
+  text-align: left;
+}
+
+.table-wrap th {
+  background: var(--color-surface-muted);
+}
+
+.us-seo-copy details {
+  border-top: 1px solid var(--color-border);
+  padding: .8rem 0;
+}
+
+.us-seo-copy summary {
+  cursor: pointer;
+  font-weight: 750;
+}
+
+@media (max-width: 560px) {
+  .us-seo-page .container {
+    width: min(100% - 1rem, var(--container));
+  }
+
+  .us-seo-hero,
+  .us-seo-section,
+  .us-seo-calculator {
+    padding: 1rem;
+  }
+
+  .us-seo-diagram svg {
+    height: 220px;
+  }
+
+  .us-seo-calculator-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .us-seo-unit-switch {
+    min-width: 0;
+  }
+}

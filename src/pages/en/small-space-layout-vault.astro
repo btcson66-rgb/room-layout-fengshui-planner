@@ -1,0 +1,18 @@
+---
+import Layout from '../../components/Layout.astro';
+import LayoutVaultSales from '../../components/LayoutVaultSales.astro';
+import { layoutVaultProduct } from '../../config/products';
+import { approvedLayouts } from '../../small-space/approved-layouts';
+
+const title = 'Small Space Layout Vault | Validated Bedroom & Studio Matcher | RoomFeng';
+const description = 'Enter your actual room size, furniture and priorities. Compare validated bedroom and studio layout strategies instead of starting from an empty floor plan.';
+const canonical = '/en/small-space-layout-vault/';
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'Product', name: layoutVaultProduct.name, description, brand: { '@type': 'Brand', name: 'RoomFeng' }, category: 'Room layout planning software', offers: { '@type': 'Offer', price: layoutVaultProduct.price.amount.toFixed(2), priceCurrency: layoutVaultProduct.price.currency, availability: 'https://schema.org/OnlineOnly', url: `https://roomfeng.win${canonical}` } },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://roomfeng.win/en/' }, { '@type': 'ListItem', position: 2, name: layoutVaultProduct.name, item: `https://roomfeng.win${canonical}` }] },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ en: canonical, zh: '/zh/small-space-layout-vault/' }} jsonLd={jsonLd} pageType="tool" showAffiliateRecs={false}>
+  <LayoutVaultSales locale="en" previewHref={layoutVaultProduct.previewPaths.en} plannerHref="/en/room-layout-planner/" samplePackHref={layoutVaultProduct.packageDownload} providers={layoutVaultProduct.providers} layouts={approvedLayouts} supportEmail={layoutVaultProduct.supportEmail} refundPolicyUrl={layoutVaultProduct.refundPolicyUrl} />
+</Layout>

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 換季收納, 小房間風水]
 keywords: [小房間床邊收納換季, 床邊換季收納, 小房間衣物輪替, 換季收納風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-restock-cycle-feng-shui, small-room-storage-bedside-label-system-feng-shui, small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-bedside-underbed-seasonal-clothes-feng-shui]
 howToName: 規劃小房間床邊收納的換季輪替與封存
 howToTotalTime: PT40M

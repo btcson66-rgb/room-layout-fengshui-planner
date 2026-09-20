@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間收納, 床邊收納, 收納標籤, 小房間風水]
 keywords: [小房間床邊收納標籤, 收納箱標籤風水, 床邊分類, 小房間找物]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-storage-bedside-transparent-box-feng-shui, small-room-storage-bedside-lid-box-feng-shui, small-room-storage-bedside-basket-reach-feng-shui, small-room-storage-zones]
 howToName: 建立小房間床邊收納標籤與回位系統
 howToTotalTime: PT30M

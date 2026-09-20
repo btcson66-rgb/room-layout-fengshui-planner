@@ -3,6 +3,9 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
+import FurnitureFitTool from '../../components/FurnitureFitTool.astro';
+import '../../styles/uiux-prototypes.css';
 import { en } from '../../i18n/en';
 
 const title = 'Furniture Fit Checker | Will It Fit Your Room and Door?';
@@ -40,14 +43,25 @@ const relatedLinks = [
   { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
   { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner' },
   { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
+  { href: '/en/furniture-fit-calculator/', title: 'Quick furniture fit calculator' },
 ];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <article class="card">
+      <header class="landing-intro card">
+        <p class="eyebrow">MEASURE → PLAN → CHECK</p>
         <h1>Furniture fit checker</h1>
+        <p class="lead">
+          Check the real room size, furniture dimensions, and everyday clearances before you buy, move, or rearrange a piece.
+        </p>
+        <p>Measure first, then use the checker below to see whether the item fits physically and leaves the clearance you asked for.</p>
+      </header>
+
+      <FurnitureFitTool locale="en" />
+
+      <article class="card seo-article">
         <p class="lead">
           Before you buy a bed, desk, wardrobe, sofa, or dining table, check the real room size and the everyday clearances around it. A piece can technically fit in a room and still be wrong for the way you live.
         </p>
@@ -86,6 +100,7 @@ const relatedLinks = [
         </div>
         <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
       </div>
+      <MovingOsContextCta locale="en" placement="en_furniture_fit" heading="Checking one piece or planning the whole move?" copy="A fit check answers one item. Moving &amp; New Home OS helps you decide what comes with you, where it lands, how it gets packed, and what the move will cost." label="Plan the whole move" />
       <AdSlot id="en-fit-mid" adSlot="en-furniture-fit-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />

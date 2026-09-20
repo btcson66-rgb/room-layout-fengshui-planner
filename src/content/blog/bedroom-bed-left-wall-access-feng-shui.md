@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [臥室風水, 床左側靠牆, 雙人床配置, 下床動線]
 keywords: [床左邊靠牆怎麼辦, 床左側靠牆風水, 雙人床靠牆, 床邊走道配置]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bed-head-against-wall, double-bed-against-wall-feng-shui, bedroom-bed-head-wall-power-outlet-feng-shui, bedroom-bedside-rug-walkway-feng-shui]
 howToName: 檢查床左側靠牆的下床與臥室動線
 howToTotalTime: PT40M

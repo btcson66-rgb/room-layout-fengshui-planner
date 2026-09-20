@@ -1,0 +1,82 @@
+---
+import type { LayoutRecord } from '../small-space/types';
+import { renderLayoutSvg } from '../small-space/renderer';
+import '../styles/layout-vault-sales.css';
+
+interface Provider { enabled: boolean; checkoutUrl: string; productId?: string; productLink?: string }
+interface Props {
+  locale: 'en' | 'zh';
+  previewHref: string;
+  plannerHref: string;
+  samplePackHref: string;
+  providers: { payhip: Provider; gumroad: Provider };
+  layouts: LayoutRecord[];
+  supportEmail: string;
+  refundPolicyUrl: string;
+}
+
+const { locale, previewHref, plannerHref, samplePackHref, providers, layouts, supportEmail, refundPolicyUrl } = Astro.props;
+const zh = locale === 'zh';
+const payhip = providers.payhip;
+const gumroad = providers.gumroad;
+const demoIds = ['BR-1012-001', 'BR-1012-002', 'BR-1012-003'];
+const demoLayouts = demoIds.map((id) => layouts.find((layout) => layout.id === id)).filter(Boolean) as LayoutRecord[];
+const hasCheckout = (provider: Provider) => provider.enabled && Boolean(provider.checkoutUrl);
+const productId = 'roomfeng-layout-vault-v1';
+const strategies = zh ? ['工作優先', '開闊動線', '收納平衡'] : ['Work-first', 'Open circulation', 'Storage-balanced'];
+---
+
+<div class="layout-sales" data-product-id={productId}>
+  <section class="layout-sales-hero">
+    <div class="container layout-sales-hero-grid">
+      <div>
+        <p class="layout-sales-kicker">ROOMFENG / LAYOUT VAULT</p>
+        <h1>{zh ? '輸入房間尺寸，直接找到真正放得下的配置。' : 'Find a layout that fits your actual room.'}</h1>
+        <p class="layout-sales-lead">{zh ? '不用從空白平面圖慢慢試。輸入床型、書桌、衣櫃與生活需求，直接比較適合你的配置策略。' : 'Enter your room size, furniture and priorities. Compare validated bedroom and studio layouts instead of starting from an empty floor plan.'}</p>
+        <div class="layout-sales-actions" data-product-cta-view="sales_hero">
+          <a class="layout-sales-button" href={previewHref} data-product-cta="try_room">{zh ? '配對我的房間' : 'Try My Room'}</a>
+          <a class="layout-sales-button secondary" href="#included" data-product-cta="see_included">{zh ? '查看內容' : "See What's Included"}</a>
+        </div>
+        <p class="layout-sales-micro">{zh ? '一次購買 · US$17.99 · 不需帳號 · 不是 AI · 尺寸驗證規則可追溯' : 'One-time purchase · US$17.99 · No account · No AI · Traceable dimension-validation rules'}</p>
+      </div>
+      <div class="layout-sales-hero-mark" aria-label={zh ? '同一個房間的三種驗證策略' : 'Three validated strategies for the same room'}>
+        <div class="layout-sales-mark-label"><span>10 × 12 ft</span><span>Queen · Desk · Wardrobe</span></div>
+        <div class="layout-sales-mark-plans">{demoLayouts.map((layout, index) => <figure><div class="layout-sales-mini-plan">{layout && <Fragment set:html={renderLayoutSvg(layout, { locale: zh ? 'zh' : 'en', mode: 'simple' })} />}</div><figcaption><span>0{index + 1}</span>{strategies[index]}</figcaption></figure>)}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="layout-sales-proof container" aria-labelledby="proof-heading">
+    <p class="layout-sales-kicker">THE DECISION, NOT THE GALLERY</p>
+    <h2 id="proof-heading">{zh ? '先看到同一個房間的取捨，再決定要不要調整。' : 'See the trade-offs for one room before you start rearranging everything.'}</h2>
+    <p class="layout-sales-intro">{zh ? '這三個方案不是把床平移幾公分，而是三種不同的生活優先順序。' : 'These are not three near-duplicates. They are three different answers to the same room and furniture brief.'}</p>
+    <div class="layout-sales-strategy-grid">{demoLayouts.map((layout, index) => <article><div class="layout-sales-strategy-plan">{layout && <Fragment set:html={renderLayoutSvg(layout, { locale: zh ? 'zh' : 'en', mode: 'measurements' })} />}</div><div><p class="layout-sales-index">0{index + 1} / {strategies[index]}</p><h3>{zh ? ['工作先行', '衣櫃集中', '床桌平衡'][index] : ['Work zone first', 'Storage wall first', 'Bed–desk balance'][index]}</h3><p>{zh ? [ '把可用工作面放在最清楚的位置，換來一側床邊較緊。', '把收納集中在一面牆，中央動線更容易維持。', '在床位、書桌與衣櫃之間保留可執行的折衷。' ][index] : [ 'A clear work zone wins; one side of the bed becomes the tighter approach.', 'Storage is concentrated on one wall so the centre can stay open.', 'A measured compromise between bed access, desk usability and storage.' ][index]}</p></div></article>)}</div>
+  </section>
+
+  <section class="layout-sales-section layout-sales-dark">
+    <div class="container layout-sales-two-col"><div><p class="layout-sales-kicker">WHY NOT START FROM BLANK?</p><h2>{zh ? '空白 Planner 很自由，但自由也代表你要自己排除錯誤。' : 'A blank Planner is flexible. It also makes you do all the elimination yourself.'}</h2></div><div><p>{zh ? 'Layout Vault 先從 30 個已核准、尺寸驗證過的臥室與套房方案中，依你的房間、家具與優先順序縮小範圍。你看到的不只是圖，而是每個方案為什麼成立、哪裡會犧牲，以及什麼情況應該改選。' : 'Layout Vault narrows 30 approved, dimension-validated bedroom and studio layouts using your room, furniture and priorities. You get a reason, a trade-off and an honest alternative—not a gallery of inspiration.'}</p><p>{zh ? '找到方向後，再一鍵把房間尺寸、家具座標與旋轉交給免費 RoomFeng Planner 微調。' : 'Once a direction is clear, hand the room, furniture coordinates and rotations to the free RoomFeng Planner for refinement.'}</p><a class="layout-sales-text-link" href={plannerHref}>{zh ? '查看免費 Planner' : 'See the free Planner'} →</a></div></div>
+  </section>
+
+  <section id="included" class="layout-sales-section container"><p class="layout-sales-kicker">WHAT YOU GET</p><h2>{zh ? '買的是決策加速，不是另一份 PDF。' : 'You are buying decision acceleration, not another PDF.'}</h2><div class="layout-sales-included"><article><b>01</b><h3>{zh ? 'Interactive Matcher' : 'Interactive Matcher'}</h3><p>{zh ? '輸入尺寸、地區床型、必要家具與兩個優先順序。' : 'Enter dimensions, regional bed presets, must-fit furniture and two priorities.'}</p></article><article><b>02</b><h3>{zh ? '完整格局庫' : 'Full Layout Vault'}</h3><p>{zh ? '全部符合條件的方案、Top 3 策略、細節與假設。' : 'All matching layouts, Top 3 strategies, details and assumptions.'}</p></article><article><b>03</b><h3>{zh ? '比較與取捨' : 'Compare & Trade-offs'}</h3><p>{zh ? '把動線、床側進出、工作可用性與收納放在一起比較。' : 'Compare circulation, bed access, work usability and storage side by side.'}</p></article><article><b>04</b><h3>{zh ? 'Planner 交接' : 'Planner Handoff'}</h3><p>{zh ? '把選定起點建立成新的 Planner 專案，不覆蓋既有資料。' : 'Create a new Planner project from the selected starting point without overwriting existing data.'}</p></article><article><b>05</b><h3>{zh ? 'PDF 型錄' : 'Layout Catalog PDF'}</h3><p>{zh ? '臥室與套房 30 個核准格局、家具與取捨說明。' : '30 approved bedroom and studio layouts with furniture and trade-offs.'}</p></article><article><b>06</b><h3>{zh ? '列印規劃工具包' : 'Printable Planning Kit'}</h3><p>{zh ? '公制、英制格紙、家具剪裁、量測與比較工作表。' : 'Metric and imperial graph paper, furniture cutouts, measurement and comparison sheets.'}</p></article></div></section>
+
+  <section class="layout-sales-section layout-sales-paper"><div class="container layout-sales-two-col"><div><p class="layout-sales-kicker">FREE VS. LAYOUT VAULT</p><h2>{zh ? '免費工具保留；付費版幫你更快找到方向。' : 'The free tools stay free. The Vault gets you to a decision faster.'}</h2></div><div class="layout-sales-table-wrap"><table><thead><tr><th>{zh ? '免費 RoomFeng' : 'Free RoomFeng'}</th><th>Layout Vault</th></tr></thead><tbody><tr><td>{zh ? '空白房間規劃器' : 'Blank room planner'}</td><td>{zh ? '尺寸驗證起點' : 'Validated starting layouts'}</td></tr><tr><td>{zh ? '手動比較' : 'Manual comparison'}</td><td>{zh ? 'Top 3 策略比較' : 'Top 3 strategy comparison'}</td></tr><tr><td>{zh ? '自己找問題' : 'Find conflicts yourself'}</td><td>{zh ? '理由、動線與取捨' : 'Reasons, clearances and trade-offs'}</td></tr><tr><td>{zh ? '單向開始' : 'Start from zero'}</td><td>{zh ? '交接到新 Planner 專案' : 'Handoff to a new Planner project'}</td></tr><tr><td>—</td><td>{zh ? '型錄 PDF＋列印工具包' : 'Catalog PDF + printable kit'}</td></tr></tbody></table></div></div></section>
+
+  <section class="layout-sales-section container layout-sales-trust"><div><p class="layout-sales-kicker">LOCAL-FIRST / HONEST LIMITS</p><h2>{zh ? '你的房間留在你的裝置。' : 'Your room stays on your device.'}</h2></div><div><p>{zh ? '尺寸、家具、門窗、收藏與筆記不送進廣告分析。產品互動事件只記錄產品、語系、策略與寬泛的操作情境。License verification 需要連網；實際家具與固定物仍需再次核對。' : 'Room size, furniture, doors, windows, favorites and notes are not sent to ad analytics. Product interaction events use product, locale, strategy and broad context only. License verification needs internet; verify actual furniture and fixed elements again.'}</p><ul><li>{zh ? '不是專業 CAD 或建築圖' : 'Not professional CAD or architectural drawings'}</li><li>{zh ? '不是 AI 生成器' : 'Not an AI generator'}</li><li>{zh ? '不保證實際搬運或施工結果' : 'No guarantee of moving or construction outcomes'}</li></ul></div></section>
+
+  <section class="layout-sales-section layout-sales-dark"><div class="container layout-sales-start"><div><p class="layout-sales-kicker">START WITH YOUR ROOM</p><h2>{zh ? '先免費試一個真實結果。' : 'Try one real result for free.'}</h2><p>{zh ? '不需註冊、不收信箱，先看看你的條件能否找到可靠起點。' : 'No signup and no email gate. See whether your conditions have a reliable starting point before buying.'}</p></div><div class="layout-sales-actions"><a class="layout-sales-button" href={previewHref} data-product-cta="try_preview_final">{zh ? '免費配對我的房間' : 'Try the free matcher'}</a><a class="layout-sales-button secondary" href={samplePackHref} download data-product-cta="download_sample">{zh ? '下載免費樣本包' : 'Download the free sample pack'}</a></div></div></section>
+
+  <section class="layout-sales-section container layout-sales-price" data-product-cta-view="sales_price"><div><p class="layout-sales-kicker">ONE-TIME PURCHASE · V1.0</p><h2>US$17.99</h2><p>{zh ? '包含目前 v1.x 產品檔案。沒有訂閱，沒有假倒數，沒有評價灌水。' : 'Includes the current v1.x product files. No subscription, fake countdown or invented reviews.'}</p></div><div class="layout-sales-actions">{hasCheckout(payhip) && <a class="layout-sales-button" href={payhip.checkoutUrl} rel="nofollow" data-product-checkout="price" data-provider="payhip" data-product-id={productId}>{zh ? '在 Payhip 購買' : 'Buy on Payhip'}</a>}{hasCheckout(gumroad) && <a class="layout-sales-button secondary" href={gumroad.checkoutUrl} rel="nofollow" data-product-checkout="price" data-provider="gumroad" data-product-id={productId}>{zh ? '在 Gumroad 購買' : 'Buy on Gumroad'}</a>}{!hasCheckout(payhip) && !hasCheckout(gumroad) && <a class="layout-sales-button" href={previewHref}>{zh ? '先免費試用' : 'Try the free preview'}</a>}</div><p class="layout-sales-support">{refundPolicyUrl && <a href={refundPolicyUrl}>{zh ? '補充購買與退款說明' : 'Supplemental purchase and refund policy'}</a>} {supportEmail ? <span>{zh ? `支援：${supportEmail}` : `Support: ${supportEmail}`}</span> : <span>{zh ? '正式支援信箱將於平台上線前設定。' : 'Production support email will be configured before marketplace launch.'}</span>}</p></section>
+
+  <section class="layout-sales-faq container"><p class="layout-sales-kicker">FAQ</p><details><summary>{zh ? '這是訂閱嗎？' : 'Is this a subscription?'}</summary><p>{zh ? '不是。這是一次購買的 v1.0 產品。' : 'No. It is a one-time purchase for the v1.0 product.'}</p></details><details><summary>{zh ? '這是 AI 嗎？' : 'Is this AI?'}</summary><p>{zh ? '不是。配對是可追溯的 deterministic 規則，依房間尺寸與 clearance 驗證。' : 'No. Matching uses deterministic, traceable rules based on room dimensions and clearance checks.'}</p></details><details><summary>{zh ? '它能保證家具一定放得下嗎？' : 'Can it guarantee everything will fit?'}</summary><p>{zh ? '不能。實際家具外框、門窗、固定物與現場搬運仍要再次核對。' : 'No. Verify actual furniture footprints, doors, windows, fixed objects and the move route.'}</p></details><details><summary>{zh ? '需要建立帳號嗎？' : 'Do I need an account?'}</summary><p>{zh ? '不需要。付費區使用 Payhip 或 Gumroad license 驗證。' : 'No. Paid access uses the Payhip or Gumroad license verification flow.'}</p></details><details><summary>{zh ? '如果沒有符合的格局呢？' : 'What if no layout fits?'}</summary><p>{zh ? '系統會誠實顯示沒有驗證方案，並指出可以改變哪個條件。' : 'The product reports no validated match honestly and suggests which constraint to change.'}</p></details></section>
+</div>
+
+<script>
+  import { trackProductEvent } from '../moving-os/productAnalytics';
+  const locale = document.documentElement.lang || 'en';
+  const productId = 'roomfeng-layout-vault-v1';
+  trackProductEvent('product_view', 'sales_page', locale, { product_id: productId });
+  document.querySelectorAll<HTMLElement>('[data-product-cta]').forEach((element) => element.addEventListener('click', () => trackProductEvent('product_cta_click', element.dataset.productCta || 'unknown', locale, { product_id: productId })));
+  document.querySelectorAll<HTMLElement>('[data-product-checkout]').forEach((element) => element.addEventListener('click', () => trackProductEvent('product_checkout_click', element.dataset.productCheckout || 'unknown', locale, { product_id: productId, provider: element.dataset.provider || 'unknown' })));
+  const views = document.querySelectorAll<HTMLElement>('[data-product-cta-view]');
+  if ('IntersectionObserver' in window) { const observer = new IntersectionObserver((entries) => entries.filter((entry) => entry.isIntersecting).forEach((entry) => { const element = entry.target as HTMLElement; trackProductEvent('product_cta_view', element.dataset.productCtaView || 'unknown', locale, { product_id: productId }); observer.unobserve(element); }), { threshold: .25 }); views.forEach((element) => observer.observe(element)); } else views.forEach((element) => trackProductEvent('product_cta_view', element.dataset.productCtaView || 'unknown', locale, { product_id: productId }));
+</script>

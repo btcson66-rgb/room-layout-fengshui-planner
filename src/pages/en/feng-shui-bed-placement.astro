@@ -1,0 +1,7 @@
+---
+import UsSeoFengShuiPage from '../../components/UsSeoFengShuiPage.astro';
+import { fengShuiPages } from '../../us-seo/content';
+const page = fengShuiPages.find((item) => item.slug === 'feng-shui-bed-placement');
+if (!page) throw new Error('Missing feng shui bed placement page data');
+---
+<UsSeoFengShuiPage data={page} />

@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: small-room
 tags: [小房間風水, 床邊書櫃, 插座動線, 家具固定]
 keywords: [床邊書櫃擋插座, 小房間插座布局, 書櫃靠牆風水, 床邊充電線整理]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [small-room-bedside-bookcase-doorway-sightline-feng-shui, small-room-bedside-bookcase-doorway-clearance-feng-shui, small-room-bedside-bookcase-drawer-clearance-feng-shui, small-room-bedside-bookcase-bed-clearance-feng-shui]
 howToName: 檢查小房間床邊書櫃、插座可達性與充電路線
 howToTotalTime: PT30M

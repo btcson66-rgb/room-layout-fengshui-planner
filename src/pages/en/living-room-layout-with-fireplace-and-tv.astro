@@ -1,0 +1,7 @@
+---
+import UsSeoGuidePage from '../../components/UsSeoGuidePage.astro';
+import { livingRoomPages } from '../../us-seo/content';
+const page = livingRoomPages.find((item) => item.slug === 'living-room-layout-with-fireplace-and-tv');
+if (!page) throw new Error('Missing fireplace and TV page data');
+---
+<UsSeoGuidePage data={page} />

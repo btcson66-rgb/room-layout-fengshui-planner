@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 電風扇清潔, 床邊灰塵, 床邊動線]
 keywords: [床邊電風扇清潔, 電風扇積塵風水, 風扇護網怎麼清, 臥室風扇灰塵整理]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-fan-window-cross-ventilation-feng-shui, bedroom-bedside-fan-airflow-angle-feng-shui, bedroom-bedside-fan-cord-clearance-feng-shui, bedroom-fan-feng-shui]
 howToName: 檢查床邊電風扇積塵、清潔範圍與夜間回位
 howToTotalTime: PT30M

@@ -4,6 +4,7 @@ import AdSlot from '../../components/AdSlot.astro';
 import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import '../../styles/planner.css';
 
 const title = '房間家具配置工具｜房間平面圖與風水格局參考';
@@ -42,7 +43,7 @@ const faqItems = [
   },
   {
     q: '可以用手機拖曳家具嗎？',
-    a: '可以。工具使用 pointer events，支援滑鼠與觸控操作；手機畫面會把控制列、平面圖與檢查結果直向排列。',
+    a: '可以。工具使用 pointer events，支援滑鼠與觸控操作；手機先看到畫布，再從底部 action bar 開啟房間、家具或檢查 bottom sheet。',
   },
 ];
 const relatedLinks = [
@@ -61,7 +62,8 @@ const relatedArticles = [
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <header>
+      <header class="tool-page-intro">
+        <p class="eyebrow">ROOM PLANNER · FREE TOOL</p>
         <h1>房間家具配置工具</h1>
         <p class="lead">
           輸入房間長寬，拖曳家具放入平面圖，確認動線與門口，再匯出 PNG / PDF 或取得規劃建議。
@@ -84,32 +86,36 @@ const relatedArticles = [
 
       <div id="room-planner" data-planner></div>
 
-      <AdSlot id="planner-mid-zh" adSlot="room-layout-planner-zh-mid" />
+      <div class="planner-ad-slot"><AdSlot id="planner-mid-zh" adSlot="room-layout-planner-zh-mid" /></div>
 
       <section class="next-steps-panel" aria-labelledby="next-heading">
+        <p class="eyebrow">AFTER THE PLAN</p>
         <h2 id="next-heading">完成平面圖後 — 下一步</h2>
         <div class="next-steps-grid">
           <article class="next-step-card">
-            <div class="next-step-icon" aria-hidden="true">📋</div>
+            <div class="next-step-icon" aria-hidden="true">01</div>
             <h3>取得文字規劃建議</h3>
             <p>用表單填入門窗條件與家具需求，取得配置、動線、收納與風水參考的文字建議。</p>
             <a class="button secondary" href="/zh/blog/bedroom-layout-before-buying-furniture/">閱讀買家具前規劃教學</a>
           </article>
           <article class="next-step-card">
-            <div class="next-step-icon" aria-hidden="true">🪄</div>
+            <div class="next-step-icon" aria-hidden="true">02</div>
             <h3>臥室風水格局檢查</h3>
             <p>用 checklist 參考床對門、鏡子對床、床頭靠窗與動線的民俗說法與空間舒適度提醒。</p>
             <a class="button secondary" href="/zh/feng-shui-bedroom-checker/">前往風水檢查工具</a>
           </article>
           <article class="next-step-card">
-            <div class="next-step-icon" aria-hidden="true">📐</div>
+            <div class="next-step-icon" aria-hidden="true">03</div>
             <h3>確認家具放得下嗎？</h3>
             <p>不確定床、桌、衣櫃放得進去嗎？閱讀家具尺寸與走道空間的實用建議。</p>
             <a class="button secondary" href="/zh/furniture-fit-checker/">家具尺寸適配檢查</a>
           </article>
         </div>
         <p class="disclaimer-note">風水內容僅作民俗文化與空間舒適度參考，詳見 <a href="/disclaimer/">免責聲明</a>。</p>
+        <p class="disclaimer-note">如果這張圖要用來決定搬家或下單，請把家具的實際外尺寸、房門與搬入路線再核對一次；完成圖面後可接著做<a href="/zh/moving-furniture-size-check/">搬家家具尺寸檢查</a>，因為室內放得下不代表一定搬得進去。</p>
       </section>
+
+      <MovingOsContextCta locale="zh-TW" placement="zh_room_planner" heading="平面圖只是第一步。" copy="如果你還要管理哪些家具要帶、搬入順序、紙箱、預算與搬家當天安排，可以用 Moving & New Home OS 把整次搬家接著規劃下去。" label="建立我的搬家專案" />
 
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
@@ -136,20 +142,22 @@ const relatedArticles = [
     margin: var(--space-3) 0 0;
   }
 
-  .step-flow-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    padding: var(--space-2) var(--space-3);
-    background: var(--color-surface-muted, #f7f6f3);
-    border-radius: 999px;
-    font-size: var(--text-sm);
-    color: var(--color-muted);
-  }
+    .step-flow-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-2) var(--space-3) var(--space-2) 0;
+      background: var(--color-surface-muted, #f7f6f3);
+      border-radius: 0;
+      border-bottom: 2px solid var(--color-border);
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+    }
 
-  .step-flow-item[aria-current="step"] {
-    background: #2f6f62;
-    color: #fff;
+    .step-flow-item[aria-current="step"] {
+    border-bottom-color: var(--color-primary);
+    color: var(--color-primary-strong);
+    font-weight: 800;
   }
 
   .step-num {
@@ -160,20 +168,20 @@ const relatedArticles = [
     border-radius: 50%;
     font-weight: 800;
     font-size: 0.85em;
-    background: rgba(0,0,0,.12);
+    background: var(--color-surface-muted);
     flex-shrink: 0;
   }
 
   .step-flow-item[aria-current="step"] .step-num {
-    background: rgba(255,255,255,.25);
+    background: var(--color-primary-soft);
   }
 
   /* ── Next steps panel ── */
   .next-steps-panel {
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     padding: var(--space-5);
-    background: var(--color-surface);
+    background: var(--color-surface-strong);
   }
 
   .next-steps-panel h2 {
@@ -194,7 +202,13 @@ const relatedArticles = [
   }
 
   .next-step-icon {
-    font-size: 1.75rem;
+    display: grid;
+    place-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: var(--color-primary-soft);
+    font-size: 1.2rem;
   }
 
   .disclaimer-note {
@@ -214,6 +228,8 @@ const relatedArticles = [
   import { initPlanner } from '../../planner/planner';
 
   const strings = {
+    locale: 'zh-TW',
+    dateLocale: 'zh-TW',
     roomLength: '房間長度',
     roomWidth: '房間寬度',
     unit: '單位',
@@ -259,6 +275,23 @@ const relatedArticles = [
       exportPdf: '匯出 PDF',
       save: '手動儲存',
       clear: '清除設計',
+      saveExport: '儲存與匯出',
+    },
+    navigation: {
+      room: '房間', furniture: '家具', templates: '範例', checks: '檢查', report: '報告',
+      toolsLabel: '規劃工具', setupEyebrow: '設定', closeDrawer: '關閉設定面板', canvasLabel: '房間平面圖',
+      canvasHint: '拖曳家具 · 點選後調整', mobileActionsLabel: '手機規劃操作',
+    },
+    drawer: { roomTitle: '房間設定', furnitureTitle: '加入家具', templatesTitle: '範例格局', checksTitle: '尺寸檢查', reportTitle: '匯出報告' },
+    report: {
+      eyebrow: 'EXPORT REPORT · LOCAL PREVIEW', title: 'RoomFeng 尺寸規劃報告', status: '本機草稿', room: '房間', area: '面積', furniture: '家具', checks: '檢查',
+      checksPass: '可繼續核對', checksNeedsReview: (count: number) => `${count} 項需複核`, moreItems: (count: number) => `另有 ${count} 件家具未展開`,
+      note: '報告會保留房間尺寸、家具外框與結構檢查；下單或搬家前仍需核對現場門寬、轉角與實體外尺寸。',
+    },
+    accessibility: { selectedSuffix: '，已選取' },
+    exportReport: {
+      title: 'RoomFeng 尺寸規劃報告', exportedAt: '匯出日期', room: '房間尺寸', area: '面積', furniture: '家具外框（依目前設計）', noFurniture: '目前沒有家具', checks: '尺寸檢查', noChecks: '目前沒有結構性警示；仍需現場核對。',
+      culturalHeading: '民俗文化參考', culturalReference: '中文風水提示僅作民俗文化與空間舒適度參考，不是尺寸或安全檢查結果。', disclaimer: '規劃僅供參考。購買、安裝、搬家或施工前，請核對現場實際尺寸。', pngSubtitle: 'MEASURE · PLAN · CHECK',
     },
     templates: {
       studio: '小套房',

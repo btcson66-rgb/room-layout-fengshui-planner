@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書房風水, 書桌面向房門, 印表機紙盤, 紙張動線]
 keywords: [書桌面向房門印表機, 印表機紙盤位置, 書房紙張收納, 印表機風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-facing-door-document-tray-privacy-feng-shui, home-office-desk-facing-door-notice-board-privacy-feng-shui, home-office-desk-facing-door-headset-cable-feng-shui, home-office-desk-facing-door-task-light-feng-shui]
 howToName: 檢查書桌面向房門的印表機紙盤與散熱動線
 howToTotalTime: PT35M

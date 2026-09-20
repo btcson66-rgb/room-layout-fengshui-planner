@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 電風扇遙控器, 床邊收納, 夜間動線]
 keywords: [床邊電風扇遙控器放哪, 電風扇遙控器收納, 臥室風扇夜間操作, 床邊風水整理]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-fan-night-noise-feng-shui, bedroom-bedside-fan-cord-clearance-feng-shui, bedroom-bedside-fan-dust-cleaning-feng-shui, bedroom-bedside-fan-airflow-angle-feng-shui]
 howToName: 檢查床邊電風扇遙控器、電線與夜間路線
 howToTotalTime: PT30M

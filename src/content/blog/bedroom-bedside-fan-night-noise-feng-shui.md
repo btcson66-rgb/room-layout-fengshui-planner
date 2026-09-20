@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 電風扇噪音, 風扇震動, 夜間動線]
 keywords: [床邊電風扇噪音, 電風扇震動怎麼辦, 臥室風扇聲音, 床邊風扇風水]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bedside-fan-dust-cleaning-feng-shui, bedroom-bedside-fan-airflow-angle-feng-shui, bedroom-bedside-fan-cord-clearance-feng-shui, bedroom-fan-feng-shui]
 howToName: 檢查床邊電風扇夜間噪音、震動與回位
 howToTotalTime: PT30M

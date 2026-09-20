@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 桌燈擴散罩, 工作照明, 螢幕眩光]
 keywords: [工作桌燈擴散罩, 桌燈柔光風水, 桌燈陰影改善, 螢幕眩光擴散光]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-task-light-screen-glare-feng-shui, home-office-desk-task-light-keyboard-shadow-feng-shui, home-office-desk-window-reflection-glare-feng-shui, home-office-desk-lamp-feng-shui]
 howToName: 測試工作桌燈擴散罩、文件亮度與螢幕反光
 howToTotalTime: PT30M

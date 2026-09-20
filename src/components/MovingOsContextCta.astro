@@ -1,0 +1,48 @@
+---
+interface Props {
+  locale: 'en' | 'zh-TW';
+  placement: string;
+  heading: string;
+  copy: string;
+  label: string;
+  href?: string;
+}
+
+const { locale, placement, heading, copy, label, href = locale === 'zh-TW' ? '/zh/moving-new-home-os/' : '/en/moving-new-home-os/' } = Astro.props;
+---
+
+<section class="moving-os-context-cta cta-band" data-product-cta-view={placement}>
+  <div>
+    <p class="moving-os-context-kicker">{locale === 'zh-TW' ? '完整搬家工作流程' : 'THE WHOLE MOVE, NOT ONE ROOM'}</p>
+    <h2>{heading}</h2>
+    <p>{copy}</p>
+  </div>
+  <a class="button" href={href} data-product-cta={placement}>{label}</a>
+</section>
+
+<script>
+  import { trackProductEvent } from '../moving-os/productAnalytics';
+
+  const locale = document.documentElement.lang === 'zh' ? 'zh-TW' : 'en';
+  document.querySelectorAll<HTMLElement>('.moving-os-context-cta[data-product-cta-view]').forEach((root) => {
+    const markView = () => trackProductEvent('product_cta_view', root.dataset.productCtaView || 'unknown', locale);
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          markView();
+          observer.disconnect();
+        }
+      }, { threshold: 0.25 });
+      observer.observe(root);
+    } else markView();
+    root.querySelector<HTMLElement>('[data-product-cta]')?.addEventListener('click', () => trackProductEvent('product_cta_click', root.dataset.productCtaView || 'unknown', locale));
+  });
+</script>
+
+<style>
+  .moving-os-context-cta { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:2rem; align-items:center; margin-block:2rem; }
+  .moving-os-context-cta h2 { margin:.25rem 0 .6rem; }
+  .moving-os-context-cta p { max-width:68ch; margin:0; }
+  .moving-os-context-kicker { color:var(--color-primary,#2f6f62); font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+  @media (max-width:640px) { .moving-os-context-cta { grid-template-columns:1fr; } }
+</style>

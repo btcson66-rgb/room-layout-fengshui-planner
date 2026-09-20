@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: room-planning
 tags: [書桌風水, 百葉窗, 窗簾調光, 螢幕眩光]
 keywords: [書桌百葉窗反光, 窗簾螢幕眩光, 書桌窗光風水, 工作區遮光]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [home-office-desk-window-reflection-glare-feng-shui, home-office-desk-task-light-screen-glare-feng-shui, home-office-desk-task-light-diffuser-feng-shui, home-office-desk-window-opening-clearance-feng-shui]
 howToName: 測試書桌窗簾百葉、窗光反射與螢幕工作視線
 howToTotalTime: PT30M

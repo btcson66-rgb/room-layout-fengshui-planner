@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾桿, 牆面固定, 布簾動線]
 keywords: [床頭牆面窗簾桿風水, 窗簾桿怎麼固定, 臥室窗簾桿承重, 床頭布簾安全]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-shadow-feng-shui, bedroom-curtain-rod-cleaning-feng-shui, bedroom-bed-window-curtain-clearance-feng-shui, bedroom-bed-headboard-wall-shelf-clearance-feng-shui]
 howToName: 檢查床頭牆面窗簾桿固定與拉動
 howToTotalTime: PT35M

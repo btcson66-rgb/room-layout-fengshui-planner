@@ -6,7 +6,7 @@ updated: 2026-09-01
 category: bedroom
 tags: [臥室風水, 床頭窗簾, 上方漏光, 窗簾軌道]
 keywords: [床頭牆面窗簾上方漏光, 窗簾軌道高度風水, 臥室窗簾頂部漏光, 床頭窗簾盒縫隙]
-relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/room-circulation-check/]
+relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]
 relatedPosts: [bedroom-bed-headboard-wall-curtain-blackout-gap-feng-shui, bedroom-bed-headboard-wall-curtain-sill-contact-feng-shui, bedroom-bed-headboard-wall-curtain-glare-feng-shui, bedroom-bed-headboard-wall-curtain-double-rail-feng-shui]
 howToName: 檢查床頭牆面窗簾上緣漏光與軌道高度
 howToTotalTime: PT30M

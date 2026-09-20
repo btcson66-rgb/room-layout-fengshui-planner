@@ -3,7 +3,6 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
-import { en } from '../../i18n/en';
 
 const title = 'RoomFeng | Free Room Furniture Layout Tool';
 const description = 'Plan room furniture layouts online before buying, moving, or rearranging. Use a free browser-based planner with local drafts, clear sizing checks, and PNG or PDF export.';
@@ -44,6 +43,7 @@ const scenarios = [
   { href: '/en/bed-desk-wardrobe-layout/', title: 'Bed desk wardrobe layout', text: 'Arrange the three core bedroom pieces together and avoid layouts that only work on paper.' },
   { href: '/en/apartment-furniture-planner/', title: 'Apartment furniture planner', text: 'Sketch practical living spaces, bedrooms, and dining areas before committing to furniture sizes.' },
   { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check', text: 'Prepare for a move by checking room dimensions, door swings, hallway clearance, and large-item placement.' },
+  { href: '/en/room-size-layout-templates/', title: 'US room size layout guides', text: 'Compare measured bedroom and studio footprints before transferring one to the full planner.' },
 ];
 const faq = [
   {
@@ -59,8 +59,8 @@ const faq = [
     a: 'Yes. A tape-measured room length, width, doors, windows, and furniture dimensions are enough for a useful first-pass layout.',
   },
   {
-    q: 'Does the English section include feng shui content?',
-    a: 'No. The English pages focus on practical furniture sizing, room fit, clearance, and moving preparation.',
+    q: 'Does the room planner perform feng shui checks?',
+    a: 'No. The planner itself focuses on measurable room fit and clearance. Separate RoomFeng guides explain selected traditional feng shui placement concepts for readers who want that perspective.',
   },
 ];
 const relatedLinks = [
@@ -68,31 +68,59 @@ const relatedLinks = [
   { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
   { href: '/en/small-bedroom-layout-planner/', title: 'Small bedroom layout planner' },
   { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
+  { href: '/en/furniture-fit-calculator/', title: 'Furniture fit calculator' },
+  { href: '/en/bed-room-fit-calculator/', title: 'Bed room fit calculator' },
 ];
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <header class="card hero">
-        <h1>Plan a room layout before you buy, move, or rearrange furniture</h1>
-        <p class="lead">
-          RoomFeng includes a practical English room planner for renters, movers, students, and furniture buyers who need a fast way to test whether a layout can work in a real room.
-        </p>
-        <p>
-          A furniture layout often fails for simple reasons: the bed fits but the wardrobe door cannot open, the sofa clears the wall but blocks the entry, or the desk leaves no comfortable route across the room. Those problems are hard to spot from a product photo or a quick measurement in a store. This site helps you turn room dimensions into a clear floor plan, add common furniture pieces, and see the tradeoffs before you spend money or move heavy items.
-        </p>
-        <p>
-          The planner is intentionally simple. Enter the room length and width, choose the unit you measured in, add furniture such as a bed, desk, wardrobe, sofa, dining table, door, window, or mirror, then drag and resize each item. The browser checks for furniture outside the room, possible door obstruction, and a main walkway that may feel too narrow. It will not replace judgment, but it gives you a useful drawing to discuss with a roommate, family member, seller, mover, or landlord.
-        </p>
-        <div class="cta-band">
-          <div>
-            <h2>Start with your real room size</h2>
-            <p>Build a quick to-scale layout, save the draft locally, and export a PNG or PDF when you need to compare options.</p>
+      <header class="home-hero">
+        <div class="home-hero-copy">
+          <p class="eyebrow">MEASURE · PLAN · CHECK</p>
+          <h1>Will it fit? Check before you buy or move it.</h1>
+          <p class="lead">RoomFeng puts the room footprint, door route, and furniture outside dimensions on one measured plan before you move a heavy item or place an order.</p>
+          <div class="cta-row">
+            <a class="button" href="/en/room-layout-planner/">Start Planning — Free <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="/en/furniture-fit-checker/">Check Furniture Fit</a>
           </div>
-          <a class="button" href="/en/room-layout-planner/">{en.cta.openPlanner}</a>
+          <p class="hero-note"><span aria-hidden="true">●</span> Free to use · No account · Drafts stay in your browser</p>
         </div>
+        <div class="hero-plan" aria-label="Measured example: 360 by 300 centimetre room, 150 by 190 centimetre bed, 120 by 60 centimetre desk, 72 centimetre clearance band, and 80 centimetre door opening">
+          <span class="hero-plan-label">A MEASURED PLAN</span>
+          <svg viewBox="0 0 360 300" role="img" aria-hidden="true">
+            <rect class="plan-room" x="0" y="0" width="360" height="300" />
+            <path class="plan-door" d="M0 220h80M0 220a80 80 0 0 1 80 80" />
+            <rect class="plan-bed" x="34" y="28" width="150" height="190" rx="3" />
+            <rect class="plan-clearance-band" x="34" y="218" width="150" height="72" rx="2" />
+            <rect class="plan-pillow" x="42" y="36" width="134" height="28" rx="3" />
+            <rect class="plan-desk" x="220" y="34" width="120" height="60" rx="3" />
+            <rect class="plan-wardrobe" x="260" y="174" width="80" height="55" rx="3" />
+            <path class="plan-route" d="M84 270c48-25 82-29 126-18s74 6 105-33" />
+            <text x="180" y="16">ROOM 360 × 300 cm</text>
+            <text x="109" y="132">BED 150 × 190</text><text x="280" y="68">DESK 120 × 60</text><text x="300" y="204">STORAGE</text>
+            <text class="plan-measurement" x="109" y="257">CLEARANCE BAND 72 cm</text><text class="plan-measurement" x="45" y="238">DOOR 80 cm</text>
+          </svg>
+          <span class="hero-plan-caption">Measure the room first, then decide how furniture moves and fits.</span>
+        </div>
+        <ol class="how-it-works" aria-label="How RoomFeng works">
+          <li><span>01</span><strong>Measure</strong><small>Room, doors, furniture footprints</small></li>
+          <li><span>02</span><strong>Plan</strong><small>Place, rotate, and resize</small></li>
+          <li><span>03</span><strong>Check</strong><small>Routes, door swings, and export</small></li>
+        </ol>
       </header>
+
+      <section class="measurement-ribbon" aria-labelledby="measurement-heading">
+        <div><p class="eyebrow">THE CORE QUESTION</p><h2 id="measurement-heading">Confirm the fit before the style.</h2></div>
+        <p>Room dimensions, door swings, furniture footprints, and the route you use every day come first. Cultural feng shui references stay separate and secondary to the measurable plan.</p>
+      </section>
+
+      <section class="card editorial-section" aria-labelledby="english-home-method-heading">
+        <h2 id="english-home-method-heading">A practical room plan, not a product photo</h2>
+        <p>A furniture layout often fails for simple reasons: the bed fits but the wardrobe door cannot open, the sofa clears the wall but blocks the entry, or the desk leaves no comfortable route across the room. Those problems are hard to spot from a product photo or a quick measurement in a store. RoomFeng turns room dimensions into a clear floor plan, adds common furniture pieces, and shows the tradeoffs before you spend money or move heavy items.</p>
+        <p>Enter the room length and width, choose the unit you measured in, add a bed, desk, wardrobe, sofa, dining table, door, window, or mirror, then drag and resize each item. The browser checks for furniture outside the room, possible door obstruction, and a main walkway that may feel too narrow. It will not replace judgment, but it gives you a useful drawing to discuss with a roommate, family member, seller, mover, or landlord.</p>
+      </section>
 
       <section class="card" aria-labelledby="pages-heading">
         <h2 id="pages-heading">Choose the planning guide that matches your situation</h2>
@@ -116,6 +144,16 @@ const relatedLinks = [
         </p>
       </section>
 
+      <section class="card" aria-labelledby="reference-heading">
+        <h2 id="reference-heading">Measured layout and traditional references</h2>
+        <p>
+          For a room-specific living-area comparison, see the <a href="/en/long-narrow-living-room-layout/">long narrow living room layout</a>, <a href="/en/awkward-living-room-layout/">awkward living room layout</a>, and <a href="/en/living-room-layout-with-fireplace-and-tv/">living room layout with a fireplace and TV</a> guides. They are measured planning studies, not promises about a particular room.
+        </p>
+        <p>
+          The planner itself performs measurable layout checks. These separate <strong>traditional feng shui references</strong> describe selected cultural concepts: <a href="/en/feng-shui-bed-placement/">bed placement</a>, <a href="/en/bed-facing-door-feng-shui/">bed facing a door</a>, and <a href="/en/mirror-facing-bed-feng-shui/">mirror facing a bed</a>. They are not feng shui calculators and do not promise health, wealth, luck, or any other guaranteed outcome.
+        </p>
+      </section>
+
       <AdSlot id="en-home-mid" adSlot="en-home-mid" />
       <Faq items={faq} />
       <RelatedLinks links={relatedLinks} />
@@ -124,9 +162,36 @@ const relatedLinks = [
 </Layout>
 
 <style>
-  .hero h2 {
-    margin-top: 0;
-  }
+  .home-hero { display: grid; gap: var(--space-6); padding: clamp(1.35rem, 5vw, 4.5rem) 0; border-block: 1px solid var(--color-border); }
+  .home-hero-copy { position: relative; z-index: 1; }
+  .home-hero h1 { max-width: 24ch; }
+  .home-hero .lead { max-width: 58ch; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+  .hero-note { margin: var(--space-4) 0 0; color: var(--color-muted); font-size: var(--text-sm); }
+  .hero-note span { color: var(--color-sage); font-size: 0.65rem; vertical-align: 0.1em; }
+  .hero-plan { position: relative; display: grid; align-content: center; min-height: 290px; padding: var(--space-4); border: 1px solid var(--color-border); background: var(--color-surface-muted); overflow: hidden; }
+  .hero-plan::before { position: absolute; content: 'N  01'; top: 0.8rem; right: 1rem; color: var(--color-muted); font-size: 0.68rem; letter-spacing: 0.12em; }
+  .hero-plan-label { position: absolute; top: 0.8rem; left: 1rem; color: var(--color-primary-strong); font-size: var(--text-xs); font-weight: 800; letter-spacing: 0.12em; }
+  .hero-plan svg { width: min(100%, 420px); margin-inline: auto; }
+  .hero-plan .plan-room { fill: var(--color-surface-strong); stroke: var(--color-primary-strong); stroke-width: 2; }
+  .hero-plan .plan-door, .hero-plan .plan-route { fill: none; stroke: var(--color-accent); stroke-width: 2; }
+  .hero-plan .plan-route { stroke: var(--color-sage); stroke-dasharray: 5 6; }
+  .hero-plan .plan-bed { fill: #dce8e1; stroke: var(--color-primary-strong); stroke-width: 1.5; }
+  .hero-plan .plan-clearance-band { fill: rgba(82, 106, 93, .09); stroke: var(--color-primary); stroke-dasharray: 4 4; }
+  .hero-plan .plan-pillow { fill: #f7faf8; stroke: #b7c9bf; }
+  .hero-plan .plan-desk { fill: #e5ece8; stroke: var(--color-sage); stroke-width: 1.5; }
+  .hero-plan .plan-wardrobe { fill: #ecebe3; stroke: var(--color-accent); stroke-width: 1.5; }
+  .hero-plan text { fill: var(--color-muted); font-size: 9px; font-weight: 800; letter-spacing: 0.04em; text-anchor: middle; }
+  .hero-plan .plan-measurement { fill: var(--color-primary-strong); font-size: 8px; }
+  .hero-plan-caption { display: block; max-width: 27rem; margin: -0.5rem auto 0; color: var(--color-muted); font-family: var(--font-sans); font-size: var(--text-lg); line-height: 1.25; text-align: center; }
+  .measurement-ribbon { display: grid; gap: var(--space-4); align-items: start; padding: var(--space-5) 0; border-bottom: 1px solid var(--color-border); }
+  .measurement-ribbon h2 { margin: 0; }
+  .measurement-ribbon p:last-child { max-width: 62ch; margin: 0; color: var(--color-muted); }
+  .how-it-works { display: grid; gap: 0; padding: 0; margin: 0; border-top: 1px solid var(--color-border); list-style: none; }
+  .how-it-works li { display: grid; grid-template-columns: auto 1fr; column-gap: 0.75rem; padding: 0.85rem 0; border-bottom: 1px solid var(--color-border); }
+  .how-it-works li > span { grid-row: span 2; color: var(--color-primary); font-size: var(--text-xs); font-weight: 800; letter-spacing: 0.08em; }
+  .how-it-works strong { font-size: var(--text-sm); }
+  .how-it-works small { color: var(--color-muted); font-size: var(--text-sm); }
 
   .scenario-grid {
     display: grid;
@@ -139,6 +204,12 @@ const relatedLinks = [
   }
 
   @media (min-width: 760px) {
+    .home-hero { grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr); align-items: center; }
+    .home-hero .how-it-works { grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); }
+    .how-it-works li { padding: 0.9rem 1rem; border-right: 1px solid var(--color-border); border-bottom: 0; }
+    .how-it-works li:first-child { padding-left: 0; }
+    .how-it-works li:last-child { border-right: 0; }
+    .measurement-ribbon { grid-template-columns: minmax(260px, .7fr) minmax(0, 1fr); }
     .scenario-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
