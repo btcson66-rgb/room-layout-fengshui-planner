@@ -6,6 +6,12 @@ import { promisify } from 'node:util';
 
 const execFileAsync = promisify(execFile);
 const origin = process.env.ROOMFENG_LIGHTHOUSE_ORIGIN ?? 'https://roomfeng.win';
+const modes = (process.env.ROOMFENG_LIGHTHOUSE_MODES ?? 'desktop,mobile')
+  .split(',')
+  .map((mode) => mode.trim())
+  .filter((mode) => mode === 'desktop' || mode === 'mobile');
+if (modes.length === 0) throw new Error('ROOMFENG_LIGHTHOUSE_MODES must contain desktop and/or mobile');
+
 const urls = [
   '/',
   '/en/',
@@ -46,8 +52,10 @@ function thresholdFailures(entry) {
   return failures;
 }
 
-function buildEntry(report, pathname, url, warning) {
+function buildEntry(report, pathname, url, mode, warning) {
   const entry = {
+    origin,
+    mode,
     url,
     path: pathname,
     planner: plannerPaths.has(pathname),
@@ -75,39 +83,52 @@ await fs.mkdir(evidenceDir, { recursive: true });
 const lighthouseCli = path.resolve('node_modules/lighthouse/cli/index.js');
 const results = [];
 
-for (const pathname of urls) {
-  const reportPath = path.join(evidenceDir, `${slug(pathname)}.json`);
-  const url = `${origin}${pathname}`;
-  try {
-    await execFileAsync(process.execPath, [lighthouseCli,
-      url,
-      '--output=json',
-      `--output-path=${reportPath}`,
-      '--preset=desktop',
-      '--only-categories=performance,accessibility,best-practices,seo',
-      '--skip-audits=third-party-cookies,errors-in-console,inspector-issues',
-      '--chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage',
-      '--quiet',
-    ], { windowsHide: true, maxBuffer: 8 * 1024 * 1024 });
-    const report = JSON.parse(await fs.readFile(reportPath, 'utf8'));
-    results.push(buildEntry(report, pathname, url));
-  } catch (error) {
+for (const mode of modes) {
+  for (const pathname of urls) {
+    const reportPath = path.join(evidenceDir, `${slug(pathname)}-${mode}.json`);
+    const url = `${origin}${pathname}`;
+    const modeArgs = mode === 'mobile'
+      ? ['--form-factor=mobile', '--screenEmulation.mobile', '--screenEmulation.width=390', '--screenEmulation.height=844', '--screenEmulation.deviceScaleFactor=1']
+      : ['--preset=desktop'];
     try {
+      await execFileAsync(process.execPath, [lighthouseCli,
+        url,
+        '--output=json',
+        `--output-path=${reportPath}`,
+        ...modeArgs,
+        '--only-categories=performance,accessibility,best-practices,seo',
+        '--skip-audits=third-party-cookies,errors-in-console,inspector-issues',
+        '--chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage',
+        '--quiet',
+      ], { windowsHide: true, maxBuffer: 8 * 1024 * 1024 });
       const report = JSON.parse(await fs.readFile(reportPath, 'utf8'));
-      results.push(buildEntry(report, pathname, url, `Lighthouse process cleanup warning: ${error.message.split('\n')[0]}`));
-    } catch {
-      results.push({ url, path: pathname, planner: plannerPaths.has(pathname), pass: false, failures: [`Lighthouse execution failed: ${error.message}`] });
+      results.push(buildEntry(report, pathname, url, mode));
+    } catch (error) {
+      try {
+        const report = JSON.parse(await fs.readFile(reportPath, 'utf8'));
+        results.push(buildEntry(report, pathname, url, mode, `Lighthouse process cleanup warning: ${error.message.split('\n')[0]}`));
+      } catch {
+        results.push({ origin, mode, url, path: pathname, planner: plannerPaths.has(pathname), pass: false, failures: [`Lighthouse execution failed: ${error.message}`] });
+      }
     }
   }
 }
 
 const summary = {
   origin,
+  modes,
   generatedAt: new Date().toISOString(),
-  thresholds: { contentScores: 95, plannerScores: 95, lcpMs: 2500, cls: 0.1, tbtMs: 200, skippedExternalAudits: ['third-party-cookies', 'errors-in-console', 'inspector-issues'] },
+  thresholds: {
+    contentScores: 95,
+    plannerScores: 95,
+    lcpMs: 2500,
+    cls: 0.1,
+    tbtMs: 200,
+    skippedExternalAudits: ['third-party-cookies', 'errors-in-console', 'inspector-issues'],
+  },
   results,
-  pass: results.length === urls.length && results.every((result) => result.pass),
+  pass: results.length === urls.length * modes.length && results.every((result) => result.pass),
 };
-await fs.writeFile(path.join(path.dirname(evidenceDir), 'lighthouse-summary.json'), `${JSON.stringify(summary, null, 2)}\n`);
+await fs.writeFile(path.join(evidenceDir, 'lighthouse-summary.json'), `${JSON.stringify(summary, null, 2)}\n`);
 console.log(JSON.stringify(summary, null, 2));
 process.exitCode = summary.pass ? 0 : 1;

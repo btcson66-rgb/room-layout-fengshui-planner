@@ -11,6 +11,13 @@ export default defineConfig({
   output: 'static',
   site: 'https://roomfeng.win',
   prefetch: true,
+  build: {
+    // Keep the first viewport from waiting on small route-scoped stylesheets.
+    // Astro still emits the same CSS rules; they are inlined per static page
+    // so the production gate measures the rendered candidate, not a CSS
+    // network race.
+    inlineStylesheets: 'always',
+  },
   integrations: [
     sitemap({
       filter(page) {
