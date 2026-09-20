@@ -13,6 +13,10 @@ const browser = await chromium.launch({ headless: true });
 const screenshot = async (page, name, fullPage = true) => page.screenshot({ path: path.join(evidenceDir, name), fullPage });
 const open = async (page, route) => {
   await page.goto(`${baseUrl}${route}`, { waitUntil: 'networkidle' });
+  const rejectConsent = page.locator('[data-consent-action="reject"]');
+  if (await rejectConsent.isVisible().catch(() => false)) await rejectConsent.click().catch(() => {});
+  const consentWidget = page.locator('[data-consent-widget]');
+  if (await consentWidget.isVisible().catch(() => false)) await consentWidget.evaluate((element) => { element.style.display = 'none'; });
   await page.waitForTimeout(150);
   navigationEvidence.push(await page.evaluate((pathname) => {
     const entry = performance.getEntriesByType('navigation')[0];
