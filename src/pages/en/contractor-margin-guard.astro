@@ -1,0 +1,341 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { siteUrl } from '../../data/site';
+
+const title = 'Contractor Margin Guard | Local Job Profit Tracker';
+const description = 'Track contractor estimates, actual costs, change orders, projected margin, and profit leakage in a local-first job profitability tool for small crews.';
+const canonical = '/en/contractor-margin-guard/';
+const productId = 'PRODUCT-006';
+const productName = 'Contractor Margin Guard';
+const payhipUrl = 'https://payhip.com/b/Y9gwv';
+const gumroadUrl = 'https://btcsonlab01.gumroad.com/l/contractor-margin-guard';
+const utm = (url: string, content: string) => `${url}?utm_source=roomfeng&utm_medium=owned&utm_campaign=product006_launch&utm_content=${content}`;
+const payhipHero = utm(payhipUrl, 'hero');
+const gumroadHero = utm(gumroadUrl, 'hero');
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: productName,
+    description,
+    sku: productId,
+    brand: { '@type': 'Brand', name: 'RoomFeng' },
+    image: `${siteUrl}/assets/contractor-margin-guard/01-gumroad-hero.png`,
+    offers: {
+      '@type': 'Offer',
+      price: '29',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: payhipHero,
+      seller: { '@type': 'Organization', name: 'BtcsonLab1' },
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: productName, item: `${siteUrl}${canonical}` },
+    ],
+  },
+];
+const faq = [
+  { q: 'What does Contractor Margin Guard track?', a: 'It compares the original estimate with actual costs, approved and pending change orders, current forecasts, projected margin, and profit leakage while a job is in progress.' },
+  { q: 'Does it replace accounting or invoicing software?', a: 'No. It is a planning and estimating tool. It does not provide accounting, tax, legal, payroll, payment processing, invoicing, scheduling, or construction-management services.' },
+  { q: 'Do I need to install anything or create an account?', a: 'No. Download the ZIP, extract it, open START-HERE.html, and click Launch the app in Chrome or Edge. No account, subscription, or cloud service is required.' },
+  { q: 'Where is project data stored?', a: 'The app is local-first and stores working data in browser storage on the device. Export JSON backups regularly because clearing browser storage can remove local data.' },
+  { q: 'Is the $29 price a promise of profit?', a: 'No. The tool shows calculations based on the figures you enter. Users remain responsible for project pricing, contracts, taxes, legal obligations, and business decisions.' },
+];
+const relatedLinks = [
+  { href: '/en/beam-layout-fix-check/', title: 'Beam clearance layout checker' },
+  { href: '/en/room-size-layout-templates/', title: 'Room sizer and calculated templates' },
+  { href: '/en/room-layout-planner/', title: 'Free room layout planner' },
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" ogImage="/assets/contractor-margin-guard/01-gumroad-hero.png" jsonLd={jsonLd}>
+  <section class="section product-hero-section">
+    <div class="container product-hero">
+      <div class="product-hero-copy">
+        <p class="warning-badge info">Contractor job costing · v1.0.0 RC1</p>
+        <h1>Contractor Margin Guard</h1>
+        <p class="lead"><strong>Know whether the job is still profitable before it’s too late.</strong></p>
+        <p>Your estimate may look profitable on day one. Materials cost more, labor runs long, extra work appears, and change orders get missed. Contractor Margin Guard keeps the estimate, real costs, current forecast, and margin check in one local-first browser tool.</p>
+        <div class="product-promise-grid" aria-label="Product benefits">
+          <span>Estimate vs actual</span>
+          <span>Change orders</span>
+          <span>Profit leakage</span>
+          <span>Job closeout</span>
+        </div>
+        <div class="product-cta-row">
+          <a class="button" data-product006-cta data-placement="hero" data-destination="payhip" href={payhipHero}>Get Contractor Margin Guard — $29</a>
+          <a class="button secondary" data-product006-cta data-placement="hero" data-destination="gumroad" href={gumroadHero}>Buy on Gumroad</a>
+        </div>
+        <p class="product-microcopy">One-time launch price: US$29. No monthly subscription. Chrome or Edge recommended.</p>
+      </div>
+      <figure class="product-hero-media">
+        <img src="/assets/contractor-margin-guard/01-gumroad-hero.png" width="1200" height="630" alt="Contractor Margin Guard dashboard showing projected profit, current margin, and profit leakage" loading="eager" />
+        <figcaption>Estimate it. Track it. Protect your profit.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container page-grid">
+      <article class="card">
+        <h2>Why a profitable estimate can turn into a thin job</h2>
+        <p>A signed estimate is a starting point, not a live margin report. A material overrun, an extra site visit, unbilled labor, or a change order that stays in a text thread can quietly consume the expected profit.</p>
+        <p>Margin Guard gives the job a repeatable review: compare what you planned, what has actually cost money, what extra work is approved, and what the current forecast says before closeout.</p>
+      </article>
+
+      <section aria-labelledby="workflow-heading">
+        <h2 id="workflow-heading">How Contractor Margin Guard works</h2>
+        <div class="product-feature-grid">
+          <article class="card">
+            <h3>1. Start with the estimate</h3>
+            <p>Record contract revenue, estimated materials, labor, subcontractor, equipment, overhead, and other costs so the original assumption remains visible.</p>
+          </article>
+          <article class="card">
+            <h3>2. Record what changes</h3>
+            <p>Log actual costs and change orders separately. Approved work can be compared with work that is still pending instead of being treated as collected revenue.</p>
+          </article>
+          <article class="card">
+            <h3>3. Review the forecast</h3>
+            <p>Compare conservative, base, and aggressive scenarios to see how remaining cost exposure could affect projected profit and margin.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-screenshot-grid" aria-label="Product feature screenshots">
+        <article class="card product-screenshot-card">
+          <img src="/assets/contractor-margin-guard/06-feature-estimate-vs-actual.png" width="1200" height="630" alt="Estimate versus actual cost view in Contractor Margin Guard" loading="lazy" />
+          <h2>Estimate vs actual</h2>
+          <p>See where the original job budget and current costs diverge by category.</p>
+        </article>
+        <article class="card product-screenshot-card">
+          <img src="/assets/contractor-margin-guard/05-feature-change-orders.png" width="1200" height="630" alt="Change order tracking view in Contractor Margin Guard" loading="lazy" />
+          <h2>Change orders</h2>
+          <p>Keep approved, pending, and unbilled extra work visible during the job.</p>
+        </article>
+        <article class="card product-screenshot-card">
+          <img src="/assets/contractor-margin-guard/04-feature-profit-leakage.png" width="1200" height="630" alt="Profit leakage view in Contractor Margin Guard" loading="lazy" />
+          <h2>Profit leakage</h2>
+          <p>Use a current forecast to spot exposure before the final invoice or closeout.</p>
+        </article>
+      </section>
+
+      <article class="card product-two-column">
+        <div>
+          <h2>Markup is not the same as margin</h2>
+          <p>A markup is commonly calculated from cost; margin is commonly discussed as profit as a share of revenue. Confusing the two can make a quote look safer than it is. Margin Guard keeps the numbers and assumptions visible so you can review the result in the context of your own pricing method.</p>
+        </div>
+        <div>
+          <h2>Close the job with a useful record</h2>
+          <p>Job closeout is more than marking a project complete. Review what was estimated, what actually happened, which extra work was approved, and what you want to remember for the next estimate.</p>
+        </div>
+      </article>
+
+      <section class="product-screenshot-grid" aria-label="More product screenshots">
+        <article class="card product-screenshot-card">
+          <img src="/assets/contractor-margin-guard/08-feature-job-closeout.png" width="1200" height="630" alt="Job closeout review in Contractor Margin Guard" loading="lazy" />
+          <h2>Job closeout</h2>
+          <p>Capture lessons from the finished job while the figures and decisions are still clear.</p>
+        </article>
+        <article class="card product-screenshot-card">
+          <img src="/assets/contractor-margin-guard/09-feature-client-proposal.png" width="1200" height="630" alt="Client proposal view that keeps internal profit private" loading="lazy" />
+          <h2>Keep the proposal client-ready</h2>
+          <p>Create a client-facing proposal without exposing the internal margin review.</p>
+        </article>
+      </section>
+
+      <section class="product-two-column">
+        <article class="card">
+          <h2>Who it’s for</h2>
+          <ul>
+            <li>Solo contractors and small owner-operated crews</li>
+            <li>Remodelers, painters, handymen, and landscapers</li>
+            <li>Fence, deck, repair, and other project-based trades</li>
+            <li>Anyone who wants a repeatable estimate-to-closeout review</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Who it’s not for</h2>
+          <ul>
+            <li>Accounting, tax, legal, payroll, or invoicing advice</li>
+            <li>Payment processing, scheduling, or enterprise construction management</li>
+            <li>A guarantee of pricing accuracy, margin, or profitability</li>
+            <li>A replacement for contracts, professional advice, or business judgment</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cta-band product-download-band">
+        <div>
+          <h2>Local-first, one-time purchase</h2>
+          <p>Download the ZIP, extract it, open <code>START-HERE.html</code>, and launch the app in Chrome or Edge. There is no installation, account, subscription, cloud database, or runtime API. Export JSON backups regularly because browser storage can be cleared.</p>
+        </div>
+        <a class="button" data-product006-cta data-placement="local_first" data-destination="payhip" href={utm(payhipUrl, 'margin_guard')}>Get it for US$29</a>
+      </section>
+
+      <section class="card product-disclaimer">
+        <h2>Planning-tool disclaimer</h2>
+        <p>Contractor Margin Guard is a planning and estimating tool. It does not provide accounting advice, tax advice, legal advice, payroll services, payment processing, guaranteed pricing, or guaranteed profitability. Users remain responsible for their own project pricing, contracts, taxes, legal obligations, and business decisions.</p>
+      </section>
+
+      <Faq items={faq} />
+
+      <section class="cta-band product-final-cta">
+        <div>
+          <h2>Make the margin check part of the job</h2>
+          <p>Choose the marketplace checkout that fits your workflow. Both public listings are available at the same US$29 launch price.</p>
+        </div>
+        <div class="product-cta-row">
+          <a class="button" data-product006-cta data-placement="footer" data-destination="payhip" href={utm(payhipUrl, 'footer')}>Get Contractor Margin Guard</a>
+          <a class="button secondary" data-product006-cta data-placement="footer" data-destination="gumroad" href={utm(gumroadUrl, 'footer')}>Gumroad option</a>
+        </div>
+      </section>
+
+      <RelatedLinks links={relatedLinks} />
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  (() => {
+    const base = { product_id: 'PRODUCT-006', product_name: 'Contractor Margin Guard', source_page: window.location.pathname };
+    const track = (name, params) => {
+      if (typeof window.gtag === 'function') window.gtag('event', name, { ...base, ...params });
+    };
+    track('product_006_view', { placement: 'landing_page' });
+    document.querySelectorAll('[data-product006-cta]').forEach((link) => {
+      link.addEventListener('click', () => {
+        const destination = link.getAttribute('data-destination') || 'unknown';
+        const placement = link.getAttribute('data-placement') || 'unknown';
+        track('product_006_cta_click', { placement, destination });
+        track('product_006_marketplace_click', { placement, destination });
+      });
+    });
+  })();
+</script>
+
+<style>
+  .product-hero-section {
+    padding-block: var(--space-6);
+    background: var(--color-surface-muted);
+  }
+
+  .product-hero {
+    display: grid;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  .product-hero-copy h1 {
+    max-width: 16ch;
+    margin-block: var(--space-3);
+  }
+
+  .product-hero-media {
+    margin: 0;
+  }
+
+  .product-hero-media img,
+  .product-screenshot-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+  }
+
+  .product-hero-media figcaption,
+  .product-microcopy {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .product-promise-grid,
+  .product-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .product-promise-grid {
+    margin-block: var(--space-4);
+  }
+
+  .product-promise-grid span {
+    padding: 0.45rem 0.7rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-surface);
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    font-weight: 700;
+  }
+
+  .product-feature-grid,
+  .product-screenshot-grid,
+  .product-two-column {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .product-screenshot-card {
+    display: grid;
+    gap: var(--space-3);
+    align-content: start;
+  }
+
+  .product-screenshot-card h2,
+  .product-screenshot-card p {
+    margin: 0;
+  }
+
+  .product-two-column ul {
+    margin-bottom: 0;
+  }
+
+  .product-download-band,
+  .product-final-cta {
+    margin-block: var(--space-2);
+  }
+
+  .product-disclaimer {
+    background: var(--color-surface-muted);
+  }
+
+  @media (min-width: 760px) {
+    .product-hero {
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    }
+
+    .product-feature-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .product-screenshot-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .product-screenshot-grid:has(.product-screenshot-card:nth-child(2):last-child) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .product-two-column {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 759px) {
+    .product-hero-copy h1 {
+      font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .product-cta-row .button {
+      width: 100%;
+    }
+  }
+</style>
