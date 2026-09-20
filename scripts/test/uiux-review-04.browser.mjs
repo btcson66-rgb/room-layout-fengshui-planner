@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
 const baseUrl = 'http://127.0.0.1:4321';
-const evidenceDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../docs/uiux/evidence/review-04');
+const evidenceDir = path.resolve(process.env.ROOMFENG_UIUX_EVIDENCE_DIR ?? path.join(path.dirname(fileURLToPath(import.meta.url)), '../../docs/uiux/evidence/review-04'));
 fs.mkdirSync(evidenceDir, { recursive: true });
 const navigationEvidence = [];
 const viewports = [375, 390, 768, 1024, 1280, 1440];
@@ -89,6 +89,13 @@ try {
     const fit = await browser.newPage({ viewport: { width: 1280, height: 1000 } });
     await open(fit, route);
     assert.equal(await fit.locator('h1').first().textContent(), expectedH1);
+    assert.equal(await fit.locator('h1').count(), 1, `${locale} Furniture Fit must have one document H1`);
+    const headingOrder = await fit.evaluate(() => {
+      const h1 = document.querySelector('h1');
+      const toolHeading = document.querySelector('[data-furniture-fit-tool] h2');
+      return { h1Index: h1 ? [...document.querySelectorAll('h1, h2')].indexOf(h1) : -1, toolHeadingIndex: toolHeading ? [...document.querySelectorAll('h1, h2')].indexOf(toolHeading) : -1 };
+    });
+    assert.ok(headingOrder.h1Index >= 0 && headingOrder.h1Index < headingOrder.toolHeadingIndex, `${locale} page H1 must precede Furniture Fit tool H2`);
     assert.equal(await fit.locator('[data-furniture-fit-tool]').getAttribute('data-fit-locale'), locale);
     await fit.locator('[data-fit-preset]').first().click();
     assert.match(await fit.locator('[data-fit-result]').textContent(), /Physical fit/);
@@ -104,11 +111,13 @@ try {
     await fit.locator('[data-fit-form]').locator('button[type="submit"]').click();
     const asym = await fit.locator('[data-fit-diagram] svg').evaluate((svg) => Object.fromEntries(['data-furniture-x', 'data-furniture-y', 'data-clearance-fit', 'data-clearance-left', 'data-clearance-right', 'data-clearance-front', 'data-clearance-back'].map((key) => [key, svg.getAttribute(key)])));
     assert.deepEqual(asym, { 'data-furniture-x': '160', 'data-furniture-y': '110', 'data-clearance-fit': 'true', 'data-clearance-left': '120', 'data-clearance-right': '0', 'data-clearance-front': '0', 'data-clearance-back': '20' });
-    const presetPayloads = await fit.locator('a[data-planner-handoff]').evaluateAll((links) => links.map((link) => JSON.parse(link.dataset.plannerHandoff).items[0]).map((item) => [item.widthCm, item.depthCm, item.type]));
+    const customHandoff = JSON.parse(await fit.locator('[data-fit-handoff]').getAttribute('data-planner-handoff'));
+    assert.deepEqual({ room: customHandoff.room, item: customHandoff.items[0] }, { room: { widthCm: 300, lengthCm: 300 }, item: { id: 'fit-item', type: 'bed', label: locale === 'en' ? 'Bed' : '床', widthCm: 100, depthCm: 100, rotationDeg: 0 } });
+    const presetPayloads = await fit.locator('a[data-planner-handoff]:not([data-fit-handoff])').evaluateAll((links) => links.map((link) => JSON.parse(link.dataset.plannerHandoff).items[0]).map((item) => [item.widthCm, item.depthCm, item.type]));
     assert.deepEqual(presetPayloads, [[105, 188, 'bed'], [150, 190, 'bed'], [180, 85, 'sofa']]);
     await screenshot(fit, `furniture-fit-${locale}-1280.png`);
     await assertNoHorizontalOverflow(fit, `furniture-fit-${locale}-1280`);
-    await fit.locator('a[data-planner-handoff]').first().click();
+    await fit.locator('a[data-planner-handoff]:not([data-fit-handoff])').first().click();
     await fit.waitForURL(new RegExp(`${plannerRoute.replaceAll('/', '\\/')}\\?rf_quick_handoff=1`));
     await fit.waitForTimeout(250);
     const handoff = await fit.locator('.planner-svg').evaluate((svg) => {

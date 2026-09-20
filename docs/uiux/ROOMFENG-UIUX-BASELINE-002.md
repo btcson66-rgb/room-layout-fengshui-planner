@@ -110,3 +110,18 @@ Review 04 的剩餘 blocker 是 whole-site rollout 與 trust/localization/consis
 Review-04 本地驗證 authority（source validation）：`1,457 build pages / 1,447 sitemap pages / 1,315 source articles / 1,000,350 audit checks / 0 failures`; `test:scripts 42/42`; Review-04 browser PASS，evidence 在 `docs/uiux/evidence/review-04/`。Bundle 為 `33 JS / 1,937,876 bytes / 929,901 max`、`10 CSS / 83,642 bytes / 17,760 max`；Review-03 comparison 為 `33 JS / 1,935,906 bytes / 929,901 max`、`9 CSS / 78,470 bytes / 17,760 max`。Local Lighthouse 已嘗試但套件未安裝，沒有虛構分數。
 
 本 baseline 仍是 local observation record；PR #100 的 OPEN / UNMERGED / UNDEPLOYED 狀態與 final exact head 由 final local review、CI readback 與最後一次 authoritative validation 確認。
+
+## Final Hardening 003 baseline and release contract
+
+本分支以 production `6a9f43d5a7312652236b6df5c3601327803aca97` 為觀察基準，建立 `codex/roomfeng-uiux-final-hardening-003`，不修改原始 repo `D:\room-layout-fengshui-planner`。本輪只修正已確認的 semantic heading、Lighthouse/CLS、測試與 release evidence gate；不改 URL、canonical、hreflang、robots、sitemap architecture、indexability、payment、entitlement 或 production analytics。
+
+Hardening acceptance contract：
+
+- `/en/furniture-fit-checker/` 與 `/zh/furniture-fit-checker/` 各 exactly one H1，且 page H1 在第一個 Furniture Fit H2 之前；semantic audit 掃描整個 `dist`。
+- Planner 的 ad slot 與 client mount 具有穩定的 reserved height；desktop/mobile canvas-first interaction、rail/drawer/bottom-sheet、Furniture Fit exact handoff、measured SVG、PNG/PDF output contract 維持通過。
+- Lighthouse script 可用 production origin（預設 `https://roomfeng.win`），CI PR job 以同一 script 對 build preview 執行 release thresholds；production URL 另以 final release readback 執行。
+- production SEO parity script 驗證 canonical、hreflang、robots/indexability、JSON-LD、H1、internal anchors、sitemap index/child、1,447 unique URLs，以及 `/sitemap.xml` 維持 404 architecture。
+- browser smoke 三次覆蓋 zh/en homepage、Planner、Furniture Fit、Bedroom、Studio、Guide；只允許已分類的外部 Google/Cloudflare request signal，RoomFeng first-party errors 必須為 0。
+- bundle comparison 由 `npm run audit:bundle` 重新讀取 `dist/_astro`，並與 Review-04 baseline 對照。
+
+本輪 local Lighthouse 首次抓到 Planner CLS `0.36/0.27`，因此未往下宣告通過；修正 ad slot 與 Planner mount reservation 後，最新 local Lighthouse 9/9 routes PASS，zh/en Planner CLS 均為 `0`。這是 hardening 的可追溯修正基線。

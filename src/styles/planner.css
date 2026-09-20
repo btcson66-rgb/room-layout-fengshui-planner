@@ -1,4 +1,6 @@
 .planner-tool { margin-block: var(--space-5); }
+.planner-ad-slot { min-height: 250px; }
+#room-planner { min-height: 1230px; }
 .planner-shell { position: relative; display: grid; grid-template-columns: 4.25rem minmax(0, 1fr) minmax(15rem, 18rem); gap: var(--space-3); align-items: start; }
 .planner-rail { position: sticky; top: 6.5rem; display: grid; gap: .35rem; padding: .35rem; border: 1px solid var(--color-border); background: var(--color-surface-strong); }
 .planner-rail-button, .planner-mobile-action { display: grid; justify-items: center; gap: .15rem; min-height: 3.6rem; padding: .45rem .2rem; border: 1px solid transparent; border-radius: var(--radius-sm); background: transparent; color: var(--color-muted); font-size: .7rem; font-weight: 800; }
@@ -59,6 +61,7 @@
   .planner-drawer { left: 3.8rem; width: min(22rem, calc(100% - 4.2rem)); }
 }
 @media (max-width: 640px) {
+  .planner-ad-slot { min-height: 180px; }
   .planner-shell { display: block; padding-bottom: 4.6rem; }
   .planner-rail { display: none; }
   .planner-canvas-wrap { display: grid; gap: var(--space-3); border-inline: 0; padding-inline: 0; }
@@ -71,3 +74,5 @@
   .planner-report-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .planner-canvas-hint { display: none; }
 }
+@media (min-width: 641px) { #room-planner { min-height: 960px; } }
+@media (min-width: 1200px) { #room-planner { min-height: 1080px; } }

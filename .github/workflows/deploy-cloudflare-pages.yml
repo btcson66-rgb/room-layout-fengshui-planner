@@ -75,9 +75,16 @@ jobs:
 
       - run: npm run audit:content
 
+      - run: npm run audit:headings
+
+      - run: npm run audit:bundle
+
       - run: npm run test:us-seo
 
       - run: npm run audit:us-seo
+
+      - name: Verify current production SEO parity before deploy
+        run: npm run test:seo-production-parity
 
       - run: npm run test:www-redirect
 
