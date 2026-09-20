@@ -217,3 +217,53 @@ Earlier `1,153` build pages / `995,810` audit checks and earlier Lighthouse-unav
 - Final SEO parity and bundle evidence: `docs/uiux/evidence/hardening-003/final-seo/seo-parity.json` and `docs/uiux/evidence/hardening-003/final-bundle-comparison.json`.
 
 This source closeout does not claim merge or deployment. Production browser, production Lighthouse, SEO readback, production commit equality and deployment workflow success must be recorded after the protected merge.
+
+## Final Performance Closeout 005 — source review
+
+### Scope
+
+- Base production SHA: `056bc7ac031259f7b2b2cb10d89f06b750b92d4f`.
+- Candidate branch: `codex/roomfeng-final-performance-closeout-005`.
+- Scope is limited to Planner Lighthouse hard gating, AdSense zero-width/duplicate-init protection and lazy loading; no UI redesign or SEO architecture change is included.
+- PR remains unmerged and deployment remains pending until all required checks pass.
+
+### Source authority and functional evidence
+
+| Gate | Result |
+| --- | --- |
+| Astro build | PASS — 1,458 pages |
+| Sitemap authority | PASS — 1,448 URLs |
+| Content audit | PASS — 1,000,355 checks / 0 failures |
+| Astro check | PASS — 237 files, 0 errors, 0 warnings, 0 hints |
+| Script tests | PASS — 55/55 in the full local preflight |
+| AdSense browser regression | PASS — zh/en Planner, 0 zero-width, 0 duplicate init; no AdSense request before activation and loader request after activation |
+| Local production-browser smoke | PASS — 27/27, 0 controllable first-party errors |
+| Local Lighthouse | PASS — 18/18, hard thresholds applied to both Planner locales |
+| Production-origin SEO parity baseline | PASS — 1,448 unique sitemap URLs and representative metadata/route checks |
+| Semantic heading audit | PASS — 1,458 HTML files, 1,449 indexable documents |
+
+### Performance evidence
+
+- English Planner mobile: Performance 100, LCP 1,355.83 ms, TBT 0 ms, CLS 0, Accessibility 98, Best Practices 100, SEO 100.
+- Chinese Planner mobile: Performance 100, LCP 1,355.75 ms, TBT 3.5 ms, CLS 0, Accessibility 98, Best Practices 100, SEO 100.
+- Planner target: LCP ≤ 2,200 ms, TBT ≤ 150 ms, CLS = 0 — PASS locally for both locales.
+- Bundle comparison: current `33 JS / 1,938,061 bytes / 929,901 largest`; Review-04 `33 JS / 1,937,876 bytes / 929,901 largest`; largest chunk unchanged. Current CSS is inlined and emitted CSS count is `0`; this is recorded as observed output, not treated as a missing measurement.
+- Network evidence: first-party Planner JavaScript transfer was `24,161–24,993` bytes before activation; AdSense requests were `0` before activation and `1` after activation. Long-task observations are recorded in `docs/uiux/evidence/closeout-005/adsense-browser.json`.
+
+### Evidence paths
+
+- Baseline: `docs/uiux/ROOMFENG-UIUX-BASELINE-002.md`
+- LOOP log: `docs/uiux/ROOMFENG-UIUX-REDESIGN-002-LOOP-LOG.md`
+- Closeout evidence manifest: `docs/uiux/evidence/closeout-005/README.md`
+- AdSense sequencing/network evidence: `docs/uiux/evidence/closeout-005/adsense-browser.json`
+- Bundle comparison: `docs/uiux/evidence/closeout-005/bundle-comparison.json`
+- Build/sitemap authority: `docs/uiux/evidence/closeout-005/build-authority.json`
+- Local Lighthouse raw run: `release-evidence/closeout-005-local-lighthouse-final/` in the working tree; the tracked summary is in the closeout evidence manifest.
+- Responsive visual evidence: `docs/uiux/evidence/review-04/` and `docs/uiux/evidence/hardening-003/final-local-browser/`.
+
+### Known limitations before release
+
+- The local AdSense browser test uses a deterministic loader stub; production AdSense delivery and third-party response behavior remain production-gate evidence.
+- Lighthouse reports show the existing cleanup warning after valid report generation; the aggregate result is based on parsed report failures and is PASS.
+- Existing Vite >500 kB chunk warning remains; largest chunk did not grow.
+- Current production browser/SEO evidence is a baseline until the candidate is deployed. This document does not claim merge, deployment, indexing, revenue or GSC outcome.

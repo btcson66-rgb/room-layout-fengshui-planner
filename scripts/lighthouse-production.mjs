@@ -45,10 +45,8 @@ function thresholdFailures(entry) {
     if (entry.scores[category] === null || entry.scores[category] < 95) failures.push(`${category} ${entry.scores[category] ?? 'unavailable'} < 95`);
   }
   if (entry.metrics.cls === null || entry.metrics.cls > 0.1) failures.push(`CLS ${entry.metrics.cls ?? 'unavailable'} > 0.1`);
-  if (!entry.planner) {
-    if (entry.metrics.lcp === null || entry.metrics.lcp > 2500) failures.push(`LCP ${entry.metrics.lcp ?? 'unavailable'}ms > 2500ms`);
-    if (entry.metrics.tbt === null || entry.metrics.tbt > 200) failures.push(`TBT ${entry.metrics.tbt ?? 'unavailable'}ms > 200ms`);
-  }
+  if (entry.metrics.lcp === null || entry.metrics.lcp > 2500) failures.push(`LCP ${entry.metrics.lcp ?? 'unavailable'}ms > 2500ms`);
+  if (entry.metrics.tbt === null || entry.metrics.tbt > 200) failures.push(`TBT ${entry.metrics.tbt ?? 'unavailable'}ms > 200ms`);
   return failures;
 }
 

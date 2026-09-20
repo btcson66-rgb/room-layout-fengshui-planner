@@ -861,6 +861,8 @@ export function initPlanner(container: HTMLElement, options: PlannerOptions): vo
 
   renderControls();
   rerender();
+  container.dataset.plannerReady = 'true';
+  window.dispatchEvent(new CustomEvent('roomfeng:planner-ready'));
 }
 
 export type { PlannerOptions, PlannerStrings } from './types';
