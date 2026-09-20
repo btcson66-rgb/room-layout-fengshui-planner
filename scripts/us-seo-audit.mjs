@@ -7,6 +7,8 @@ const dist = join(root, 'dist');
 const siteUrl = 'https://roomfeng.win';
 const baselineSitemapUrls = 1430;
 const expectedNewUrls = 17;
+// PRODUCT-006 adds one intentional commercial landing route outside the US SEO batch.
+const expectedCommercialRoutes = 1;
 const records = [
   ['8x10 bedroom layout', '/en/8x10-bedroom-layout/', 'new'],
   ['9x10 bedroom layout', '/en/9x10-bedroom-layout/', 'new'],
@@ -110,7 +112,11 @@ assert.ok(sitemapFiles.length > 0, 'sitemap child file missing');
 const sitemap = sitemapFiles.map((name) => readFileSync(join(dist, name), 'utf8')).join('\n');
 for (const path of targetPaths) assert.ok(sitemap.includes(`${siteUrl}${path}`), `${path}: missing from sitemap`);
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-assert.equal(sitemapUrls.length, baselineSitemapUrls + expectedNewUrls, `sitemap URL count changed unexpectedly: ${sitemapUrls.length}`);
+assert.equal(
+  sitemapUrls.length,
+  baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes,
+  `sitemap URL count changed unexpectedly: ${sitemapUrls.length}`,
+);
 
 for (const [path, html] of targetHtml) {
   const hrefs = [...html.matchAll(/\bhref="([^"]+)"/g)].map((match) => match[1]).filter((href) => href.startsWith('/') && !/\.[a-z0-9]+$/i.test(href));
@@ -120,4 +126,4 @@ for (const [path, html] of targetHtml) {
   }
 }
 
-console.log(`[us-seo-audit] PASS: ${records.length} intents, ${expectedNewUrls} new URLs, ${baselineSitemapUrls + expectedNewUrls} sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.`);
+console.log(`[us-seo-audit] PASS: ${records.length} intents, ${expectedNewUrls} US SEO URLs + ${expectedCommercialRoutes} commercial route, ${baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes} sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.`);
