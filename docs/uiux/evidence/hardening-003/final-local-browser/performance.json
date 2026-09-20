@@ -1,0 +1,206 @@
+{
+  "source": "http://127.0.0.1:4321",
+  "generatedAt": "2026-09-20T04:24:26.463Z",
+  "viewports": [
+    375,
+    390,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "navigation": [
+    {
+      "route": "/",
+      "domContentLoadedMs": 212,
+      "loadEventMs": 212,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 203,
+      "loadEventMs": 203,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 202,
+      "loadEventMs": 202,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 209,
+      "loadEventMs": 209,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 14,
+      "loadEventMs": 45,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 200,
+      "loadEventMs": 200,
+      "transferSizeBytes": 10449
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 116,
+      "loadEventMs": 116,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 112,
+      "loadEventMs": 112,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 115,
+      "loadEventMs": 115,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 118,
+      "loadEventMs": 118,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 116,
+      "loadEventMs": 117,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/en/",
+      "domContentLoadedMs": 112,
+      "loadEventMs": 112,
+      "transferSizeBytes": 10930
+    },
+    {
+      "route": "/zh/furniture-fit-checker/",
+      "domContentLoadedMs": 178,
+      "loadEventMs": 181,
+      "transferSizeBytes": 7419
+    },
+    {
+      "route": "/en/furniture-fit-checker/",
+      "domContentLoadedMs": 40,
+      "loadEventMs": 164,
+      "transferSizeBytes": 11472
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 186,
+      "loadEventMs": 187,
+      "transferSizeBytes": 7287
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 35,
+      "loadEventMs": 65,
+      "transferSizeBytes": 7287
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 191,
+      "loadEventMs": 192,
+      "transferSizeBytes": 7287
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 36,
+      "loadEventMs": 66,
+      "transferSizeBytes": 7287
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 189,
+      "loadEventMs": 190,
+      "transferSizeBytes": 7287
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 33,
+      "loadEventMs": 65,
+      "transferSizeBytes": 7287
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 121,
+      "loadEventMs": 122,
+      "transferSizeBytes": 8878
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 41,
+      "loadEventMs": 72,
+      "transferSizeBytes": 8878
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 136,
+      "loadEventMs": 137,
+      "transferSizeBytes": 8878
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 124,
+      "loadEventMs": 126,
+      "transferSizeBytes": 8878
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 37,
+      "loadEventMs": 69,
+      "transferSizeBytes": 8878
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "domContentLoadedMs": 128,
+      "loadEventMs": 129,
+      "transferSizeBytes": 8878
+    },
+    {
+      "route": "/zh/small-bedroom-layout/",
+      "domContentLoadedMs": 249,
+      "loadEventMs": 249,
+      "transferSizeBytes": 10362
+    },
+    {
+      "route": "/zh/studio-apartment-layout/",
+      "domContentLoadedMs": 233,
+      "loadEventMs": 234,
+      "transferSizeBytes": 8908
+    },
+    {
+      "route": "/en/small-bedroom-layout-planner/",
+      "domContentLoadedMs": 137,
+      "loadEventMs": 137,
+      "transferSizeBytes": 11130
+    },
+    {
+      "route": "/en/studio-apartment-layout/",
+      "domContentLoadedMs": 143,
+      "loadEventMs": 144,
+      "transferSizeBytes": 11508
+    },
+    {
+      "route": "/zh/layout-guides/10x10-bedroom-layout/",
+      "domContentLoadedMs": 170,
+      "loadEventMs": 170,
+      "transferSizeBytes": 6375
+    },
+    {
+      "route": "/en/layout-guides/10x10-bedroom-layout/",
+      "domContentLoadedMs": 157,
+      "loadEventMs": 157,
+      "transferSizeBytes": 5971
+    }
+  ]
+}

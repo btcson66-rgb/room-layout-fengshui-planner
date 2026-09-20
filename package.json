@@ -12,6 +12,11 @@
     "assets:brand": "node scripts/generate-brand-assets.mjs",
     "assets:affiliate": "node scripts/generate-affiliate-assets.mjs",
     "audit:content": "node scripts/content-quality-audit.mjs",
+    "audit:headings": "node scripts/semantic-heading-audit.mjs",
+    "audit:bundle": "node scripts/bundle-size-audit.mjs",
+    "test:seo-production-parity": "node scripts/seo-production-parity.mjs",
+    "test:lighthouse:production": "node scripts/lighthouse-production.mjs",
+    "test:production-hardening-browser": "node scripts/test/production-hardening.browser.mjs",
     "audit:us-seo": "node scripts/us-seo-audit.mjs",
     "gsc:submit-sitemap": "node scripts/gsc-submit-sitemap.mjs",
     "gsc:sitemap-health": "node scripts/gsc-sitemap-health.mjs",
@@ -34,7 +39,7 @@
     "amazon:refresh": "node scripts/amazon-content-lifecycle.mjs --refresh",
     "amazon:preflight": "node scripts/amazon-content-lifecycle.mjs --check",
     "deploy:www-redirect": "wrangler deploy --config infra/www-redirect-worker/wrangler.jsonc",
-    "preflight": "npm run amazon:preflight && npm run check && npm run build && npm run audit:content && npm run test:scripts && npm run test:www-redirect && npm run test:moving-os"
+    "preflight": "npm run amazon:preflight && npm run check && npm run build && npm run audit:content && npm run audit:headings && npm run test:scripts && npm run test:www-redirect && npm run test:moving-os"
   },
   "keywords": [],
   "author": "",
@@ -51,6 +56,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
+    "lighthouse": "^13.5.0",
     "sharp": "^0.35.4"
   }
 }

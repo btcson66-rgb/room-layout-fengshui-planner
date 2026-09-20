@@ -147,7 +147,7 @@ const handoffHref = en ? '/en/room-layout-planner/?rf_quick_handoff=1' : '/zh/ro
       renderDiagram(input, fit.recommendedRotation);
       const itemType = (type?.value ?? 'custom') as 'bed' | 'sofa' | 'desk' | 'wardrobe' | 'custom';
       const payload = createQuickHandoff({ source: 'furniture-fit-checker', roomWidthCm: input.roomWidthCm, roomLengthCm: input.roomLengthCm, items: [{ id: 'fit-item', type: itemType, label: labels[itemType], widthCm: input.furnitureWidthCm, depthCm: input.furnitureDepthCm, rotationDeg: fit.recommendedRotation ?? 0 }] });
-      const link = document.createElement('a'); link.className = 'button'; link.href = isEnglish ? '/en/room-layout-planner/?rf_quick_handoff=1' : '/zh/room-layout-planner/?rf_quick_handoff=1'; link.textContent = copy.exact; link.dataset.fitHandoff = 'true'; link.addEventListener('click', () => writeQuickHandoff(payload)); result?.append(link);
+      const link = document.createElement('a'); link.className = 'button'; link.href = isEnglish ? '/en/room-layout-planner/?rf_quick_handoff=1' : '/zh/room-layout-planner/?rf_quick_handoff=1'; link.textContent = copy.exact; link.dataset.fitHandoff = 'true'; link.dataset.plannerHandoff = JSON.stringify(payload); link.addEventListener('click', () => writeQuickHandoff(payload)); result?.append(link);
     };
 
     unit?.addEventListener('change', () => { const previous = (unit.dataset.previousUnit ?? 'cm') as FurnitureFitUnit; const next = unit.value as FurnitureFitUnit; names.forEach((name) => { const input = getInput(name); if (input) input.value = displayValue(fromFurnitureFitCm(toFurnitureFitCm(Number(input.value), previous), next)); }); unit.dataset.previousUnit = next; calculate(); });

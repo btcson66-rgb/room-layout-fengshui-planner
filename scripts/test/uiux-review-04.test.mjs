@@ -42,9 +42,18 @@ test('English measured landings hand off the exact same centimetre dimensions as
 });
 
 test('Furniture Fit and export report keep locale-specific visible contracts', () => {
-  const fit = fs.readFileSync(new URL('../../src/pages/en/furniture-fit-checker.astro', import.meta.url), 'utf8');
-  assert.match(fit, /FurnitureFitTool locale="en"/);
-  assert.ok(fit.indexOf('FurnitureFitTool locale="en"') < fit.indexOf('<article'));
+  for (const [locale, heading] of [['en', 'Furniture fit checker'], ['zh', '家具尺寸適配檢查']]) {
+    const fit = fs.readFileSync(new URL(`../../src/pages/${locale}/furniture-fit-checker.astro`, import.meta.url), 'utf8');
+    const h1 = fit.indexOf('<h1>');
+    const tool = fit.indexOf('<FurnitureFitTool');
+    const firstH2 = fit.indexOf('<h2>');
+    assert.ok(h1 >= 0, `${locale} page must provide the document H1`);
+    assert.ok(tool > h1, `${locale} tool must follow the document H1`);
+    assert.ok(firstH2 < 0 || h1 < firstH2, `${locale} H1 must precede page H2 content`);
+    assert.equal((fit.match(/<h1\b/g) ?? []).length, 1, `${locale} page must have exactly one source H1`);
+    assert.match(fit, new RegExp(`<h1>${heading}</h1>`));
+    assert.match(fit, /FurnitureFitTool(?: locale="[a-z]+")?/);
+  }
   assert.match(fs.readFileSync(new URL('../../src/components/FurnitureFitTool.astro', import.meta.url), 'utf8'), /getFurnitureFitPlacement/);
   assert.equal(buildExportMetadata({ room: { w: 300, h: 300, unit: 'cm' }, items: [] }, baseStrings, new Date('2026-09-19T00:00:00Z')).culturalReference, baseStrings.exportReport.culturalReference);
   assert.equal(buildExportMetadata({ room: { w: 300, h: 300, unit: 'cm' }, items: [] }, enStrings, new Date('2026-09-19T00:00:00Z')).culturalReference, undefined);

@@ -50,9 +50,18 @@ const relatedLinks = [
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
-      <FurnitureFitTool locale="en" />
-      <article class="card">
+      <header class="landing-intro card">
+        <p class="eyebrow">MEASURE → PLAN → CHECK</p>
         <h1>Furniture fit checker</h1>
+        <p class="lead">
+          Check the real room size, furniture dimensions, and everyday clearances before you buy, move, or rearrange a piece.
+        </p>
+        <p>Measure first, then use the checker below to see whether the item fits physically and leaves the clearance you asked for.</p>
+      </header>
+
+      <FurnitureFitTool locale="en" />
+
+      <article class="card seo-article">
         <p class="lead">
           Before you buy a bed, desk, wardrobe, sofa, or dining table, check the real room size and the everyday clearances around it. A piece can technically fit in a room and still be wrong for the way you live.
         </p>

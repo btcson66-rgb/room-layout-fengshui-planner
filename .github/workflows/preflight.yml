@@ -80,6 +80,9 @@ jobs:
       - name: Verify PRODUCT-002 entitlement isolation
         run: npm run test:product-002:entitlement
 
+      - name: Verify production SEO parity
+        run: npm run test:seo-production-parity
+
   uiux-browser:
     name: UIUX browser evidence
     runs-on: ubuntu-latest
@@ -100,6 +103,9 @@ jobs:
           PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
           PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+
+      - name: Compare built asset sizes
+        run: npm run audit:bundle
       - name: Start Astro preview
         shell: bash
         run: |
@@ -116,3 +122,42 @@ jobs:
         if: always()
         shell: bash
         run: if [ -f preview.pid ]; then kill "$(cat preview.pid)" || true; fi
+
+  production-lighthouse:
+    name: Production Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+        env:
+          PUBLIC_AFFILIATE_GA_ID: G-Q78WN8NZ0R
+          PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
+      - name: Start Astro preview for Lighthouse release audit
+        shell: bash
+        run: |
+          npm run preview -- --host 127.0.0.1 > lighthouse-preview.log 2>&1 &
+          echo $! > lighthouse-preview.pid
+          for i in {1..60}; do
+            if curl --fail --silent http://127.0.0.1:4321/ > /dev/null; then break; fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:4321/ > /dev/null
+      - name: Use the installed Chromium for Lighthouse
+        shell: bash
+        run: echo "CHROME_PATH=$(node --input-type=module -e 'import { chromium } from "playwright"; console.log(chromium.executablePath())')" >> "$GITHUB_ENV"
+      - run: npm run test:lighthouse:production
+        env:
+          ROOMFENG_LIGHTHOUSE_ORIGIN: http://127.0.0.1:4321
+          ROOMFENG_LIGHTHOUSE_DIR: docs/uiux/evidence/ci-lighthouse
+      - name: Stop Astro preview
+        if: always()
+        shell: bash
+        run: if [ -f lighthouse-preview.pid ]; then kill "$(cat lighthouse-preview.pid)" || true; fi

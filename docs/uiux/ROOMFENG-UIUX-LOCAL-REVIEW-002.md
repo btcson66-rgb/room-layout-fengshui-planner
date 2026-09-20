@@ -156,3 +156,64 @@ The final check must record local static navigation timing for homepage, Planner
 - The export preview is a local report presentation; the actual PNG/PDF module now includes RoomFeng title/date/room/area/items/checks/disclaimer metadata and continues to use the existing local download gate. This is not a payment or entitlement flow.
 - Measured SVGs are schematic planning aids. They do not certify accessibility, building, fire, structural, moving-route or professional design requirements.
 - No production deployment, public URL readback or production analytics claim is made in this package.
+
+## Final Hardening 003 local review
+
+### Scope and branch
+
+- Branch: `codex/roomfeng-uiux-final-hardening-003`
+- Base production commit: `6a9f43d5a7312652236b6df5c3601327803aca97`
+- Original repo was not modified.
+- Protected SEO, URL, sitemap, payment, entitlement and production analytics files remain unchanged by this hardening.
+
+### Source authority before PR
+
+| Gate | Result |
+| --- | --- |
+| Astro check | PASS — 224 files, 0 errors, 0 warnings, 0 hints |
+| Build | PASS — 1,457 static pages |
+| Sitemap | PASS — 1,447 pages in the existing index + child architecture |
+| Content audit | PASS — 1,315 source, 1,315 review-ready, 0 held, 1,000,350 checks, 0 failures |
+| Heading audit | PASS — 1,457 HTML files, 1,448 indexable documents |
+| Script tests | PASS — 45/45 |
+| UIUX unit tests | PASS — 12/12 |
+| Redirect / Moving OS | PASS — 4/4 and 26/26 |
+| Product regression | PASS — geometry 16/16, Phase 3 9/9, entitlement 8/8 |
+| UIUX browser evidence | PASS — required routes, dimensions, rails, sheets, exports and viewport matrix |
+| SEO production-origin parity | PASS — 1,447 unique sitemap URLs and representative metadata/links |
+| Local Lighthouse | PASS — 9/9 routes, Planner CLS 0 after reservation repair |
+| Production browser smoke | PASS — 27 runs, 0 controllable first-party errors |
+
+### Evidence
+
+- Local visual/functional evidence: `docs/uiux/evidence/hardening-003/local-browser/`
+- Production browser evidence: `docs/uiux/evidence/hardening-003/production-browser/`
+- Local Lighthouse reports: `docs/uiux/evidence/hardening-003/lighthouse-local-2/`
+- SEO parity: `docs/uiux/evidence/hardening-003/seo/seo-parity.json`
+- Bundle comparison: `docs/uiux/evidence/hardening-003/bundle-comparison.json`
+- Heading audit implementation: `scripts/semantic-heading-audit.mjs`
+- Production SEO parity implementation: `scripts/seo-production-parity.mjs`
+- Lighthouse implementation: `scripts/lighthouse-production.mjs`
+- Production browser implementation: `scripts/test/production-hardening.browser.mjs`
+
+### Hardening loop status
+
+The Loop 9 record in `ROOMFENG-UIUX-REDESIGN-002-LOOP-LOG.md` contains the required sequence: Observe → Plan → Implement → Build → Functional → Visual QA → SEO Parity → Accessibility → Performance → Self-Critique → PASS/FAIL. The first Lighthouse FAIL was corrected and rerun before this source PASS. The final production release result is recorded only after the exact PR head is merged, deployed and read back.
+
+### Historical evidence handling
+
+Earlier `1,153` build pages / `995,810` audit checks and earlier Lighthouse-unavailable statements are historical records from prior review loops. They are not part of the final hardening authority set. The release authority is the single exact final head and its post-deploy readback.
+
+## Final Hardening 003 source / CI closeout
+
+- Source head: `18089398f9e52f12c7ba9a82739ff3d4c12bc2d7`.
+- PR #102: OPEN before merge gate; source branch `codex/roomfeng-uiux-final-hardening-003`.
+- GitHub Actions run `35489635586`: `preflight` PASS, `UIUX browser evidence` PASS, `Production Lighthouse` PASS.
+- Branch protection: main now requires strict `preflight`, `UIUX browser evidence`, and `Production Lighthouse`; admins enforced; force push and deletion disabled; conversation resolution enabled; required approving review count `0` for the single-maintainer repository.
+- Exact source authority: build `1,457`; sitemap `1,447`; content audit `1,315` source / `1,315` review-ready / `0` held / `1,000,350` checks / `0` failures; semantic heading audit `1,457 HTML / 1,448 indexable`; Astro check `225 files 0/0/0`.
+- Full preflight tests: scripts `46/46`, www redirect `4/4`, Moving OS `26/26`; Product geometry `16/16`, Phase 3 `9/9`, entitlement `8/8`; UIUX unit `12/12`; UIUX browser and preview Lighthouse PASS.
+- Final-local browser screenshots and real export binaries: `docs/uiux/evidence/hardening-003/final-local-browser/`.
+- Final-local Lighthouse reports: `docs/uiux/evidence/hardening-003/final-local-lighthouse/`.
+- Final SEO parity and bundle evidence: `docs/uiux/evidence/hardening-003/final-seo/seo-parity.json` and `docs/uiux/evidence/hardening-003/final-bundle-comparison.json`.
+
+This source closeout does not claim merge or deployment. Production browser, production Lighthouse, SEO readback, production commit equality and deployment workflow success must be recorded after the protected merge.
