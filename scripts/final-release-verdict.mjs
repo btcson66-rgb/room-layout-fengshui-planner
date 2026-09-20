@@ -8,6 +8,10 @@ const failures = [];
 const requirePass = (name, value) => { if (value !== true) failures.push(name); };
 
 const browser = await readJson('production-browser/console-network-summary.json');
+const liveCrawl = await readJson('live-crawl/live-crawl-summary.json');
+const adsense = await readJson('live-crawl/adsense-network-summary.json');
+const localization = await readJson('live-crawl/localization-summary.json');
+const responsiveHeader = await readJson('live-crawl/responsive-header-summary.json');
 const lighthouse = await readJson('production-lighthouse/lighthouse-summary.json');
 const seo = await readJson('production-seo/seo-parity.json');
 const build = await readJson('build-authority.json');
@@ -23,6 +27,22 @@ requirePass('first-party console errors', browser.firstPartyCounts?.consoleError
 requirePass('first-party page errors', browser.firstPartyCounts?.pageErrors === 0);
 requirePass('first-party unhandled rejections', browser.firstPartyCounts?.unhandledRejections === 0);
 requirePass('first-party failed requests or HTTP errors', browser.firstPartyCounts?.failedRequestsOrHttpErrors === 0);
+requirePass('production live crawl', liveCrawl.pass);
+requirePass('production live crawl origin', liveCrawl.origin === 'https://roomfeng.win');
+requirePass('production live crawl routes', liveCrawl.requiredRouteCount === 14 && liveCrawl.routes?.length >= 14);
+requirePass('production live crawl localization', liveCrawl.localization?.englishFaqHeading === 'PASS'
+  && liveCrawl.localization?.englishRelatedHeading === 'PASS'
+  && liveCrawl.localization?.chineseFurnitureFit === 'PASS'
+  && liveCrawl.localization?.englishFurnitureFit === 'PASS');
+requirePass('production localization artifact', localization.englishFaqHeading === 'PASS'
+  && localization.englishRelatedHeading === 'PASS'
+  && localization.chineseFurnitureFit === 'PASS'
+  && localization.englishFurnitureFit === 'PASS');
+requirePass('production responsive header', responsiveHeader.pass && responsiveHeader.runs?.length === 10);
+requirePass('manual AdSense slots are numeric', adsense.invalidManualSlots === 0 && adsense.numericManualSlotsRendered === adsense.manualSlotsRendered);
+requirePass('AdSense integration HTTP 400', adsense.adsense400Responses === 0);
+requirePass('AdSense zero-width errors', adsense.zeroWidthErrors === 0);
+requirePass('AdSense duplicate initialization', adsense.duplicateInitializations === 0);
 requirePass('build authority', build.pass && build.htmlFiles === ROOMFENG_RELEASE_AUTHORITY.buildPages);
 requirePass('build sitemap authority', build.sitemapUrls === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls);
 requirePass('production Lighthouse', lighthouse.pass);
@@ -60,6 +80,17 @@ const report = {
   sitemapAuthority: ROOMFENG_RELEASE_AUTHORITY.sitemapUrls,
   authorityTransition: ROOMFENG_RELEASE_AUTHORITY.transition,
   productionBrowser: browser.pass ? 'PASS' : 'FAIL',
+  productionLiveCrawl: liveCrawl.pass ? 'PASS' : 'FAIL',
+  productionLocalization: liveCrawl.localization,
+  productionResponsiveHeader: responsiveHeader.pass ? 'PASS' : 'FAIL',
+  adsense: {
+    manualSlotsRendered: adsense.manualSlotsRendered,
+    numericManualSlotsRendered: adsense.numericManualSlotsRendered,
+    invalidManualSlots: adsense.invalidManualSlots,
+    adsense400Responses: adsense.adsense400Responses,
+    zeroWidthErrors: adsense.zeroWidthErrors,
+    duplicateInitializations: adsense.duplicateInitializations,
+  },
   productionLighthouse: lighthouse.pass ? 'PASS' : 'FAIL',
   productionLighthouseModes: lighthouse.modes,
   productionSeoParity: seo.pass ? 'PASS' : 'FAIL',
@@ -71,6 +102,10 @@ const report = {
   productionFirstPartyFailedRequests: browser.firstPartyCounts?.failedRequestsOrHttpErrors ?? null,
   evidence: {
     browser: 'production-browser/',
+    liveCrawl: 'live-crawl/live-crawl-summary.json',
+    adsense: 'live-crawl/adsense-network-summary.json',
+    localization: 'live-crawl/localization-summary.json',
+    responsiveHeader: 'live-crawl/responsive-header-summary.json',
     lighthouse: 'production-lighthouse/',
     seo: 'production-seo/seo-parity.json',
     readback: 'production-readback/production-readback.json',

@@ -86,7 +86,7 @@ const relatedArticles = [
 
       <div id="room-planner" data-planner></div>
 
-      <div class="planner-ad-slot"><AdSlot id="planner-mid-zh" adSlot="room-layout-planner-zh-mid" /></div>
+      <div class="planner-ad-slot"><AdSlot id="planner-mid-zh" placement="room-layout-planner-zh-mid" /></div>
 
       <section class="next-steps-panel" aria-labelledby="next-heading">
         <p class="eyebrow">AFTER THE PLAN</p>
@@ -125,8 +125,8 @@ const relatedArticles = [
       </section>
 
       <AffiliateRecs productIds={['hopma-four-door-storage-cabinet', 'custom-wall-hanging']} />
-      <Faq items={faqItems} />
-      <RelatedLinks links={relatedLinks} />
+      <Faq lang="zh" items={faqItems} />
+      <RelatedLinks lang="zh" links={relatedLinks} />
     </div>
   </section>
 </Layout>

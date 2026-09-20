@@ -179,7 +179,7 @@ if (isHubPage && hub.faq.length > 0) {
         </section>
       )}
 
-      <RelatedLinks links={[...(hub?.tools ?? []).map((tool) => ({ href: tool.href, title: tool.title })), { href: '/zh/blog/', title: '全部房間規劃主題' }]} />
+      <RelatedLinks lang="zh" links={[...(hub?.tools ?? []).map((tool) => ({ href: tool.href, title: tool.title })), { href: '/zh/blog/', title: '全部房間規劃主題' }]} />
     </div>
   </section>
 </Layout>

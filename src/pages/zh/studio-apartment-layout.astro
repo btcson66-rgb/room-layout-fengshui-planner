@@ -110,7 +110,7 @@ const studioItems = [
         <a class="button" href="/zh/room-layout-planner/">規劃套房格局</a>
       </div>
       <MovingOsContextCta locale="zh-TW" placement="zh_studio_apartment" heading="套房配置完成，搬家清單才剛開始" copy="把床、桌、收納與動線確認後，繼續整理家具取捨、紙箱、預算與搬家當天的先後順序。" label="整理我的搬家專案" />
-      <AdSlot id="zh-studio-mid" adSlot="zh-studio-mid" />
+      <AdSlot id="zh-studio-mid" placement="zh-studio-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>
@@ -118,8 +118,8 @@ const studioItems = [
         </ul>
       </section>
       <AffiliateRecs productIds={['clear-waterproof-desk-mat', 'washable-cushion']} />
-      <Faq items={faq} />
-      <RelatedLinks links={relatedLinks} />
+      <Faq lang="zh" items={faq} />
+      <RelatedLinks lang="zh" links={relatedLinks} />
     </div>
   </section>
 </Layout>

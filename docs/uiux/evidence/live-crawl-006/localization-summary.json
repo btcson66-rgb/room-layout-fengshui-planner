@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-09-20T16:05:52.070Z",
+  "origin": "http://127.0.0.1:4324",
+  "englishFaqHeading": "PASS",
+  "englishRelatedHeading": "PASS",
+  "chineseFurnitureFit": "PASS",
+  "englishFurnitureFit": "PASS",
+  "headerZh": "PASS",
+  "headerEn": "PASS",
+  "runs": [
+    {
+      "route": "/",
+      "locale": "zh",
+      "faqHeading": "常見問題",
+      "relatedHeading": "相關頁面",
+      "forbiddenFound": [],
+      "faqExpected": "常見問題",
+      "relatedExpected": "相關頁面",
+      "fitExpected": [
+        "本體適配",
+        "要求淨空",
+        "把這組尺寸帶入 Room Planner",
+        "在 Planner 試這個尺寸"
+      ],
+      "fitText": "",
+      "pass": true
+    },
+    {
+      "route": "/en/",
+      "locale": "en",
+      "faqHeading": "Frequently asked questions",
+      "relatedHeading": "Related pages",
+      "forbiddenFound": [],
+      "faqExpected": "Frequently asked questions",
+      "relatedExpected": "Related pages",
+      "fitExpected": [
+        "Physical fit",
+        "Requested clearance"
+      ],
+      "fitText": "",
+      "pass": true
+    },
+    {
+      "route": "/zh/furniture-fit-checker/",
+      "locale": "zh",
+      "faqHeading": "常見問題",
+      "relatedHeading": "相關頁面",
+      "forbiddenFound": [],
+      "faqExpected": "常見問題",
+      "relatedExpected": "相關頁面",
+      "fitExpected": [
+        "本體適配",
+        "要求淨空",
+        "把這組尺寸帶入 Room Planner",
+        "在 Planner 試這個尺寸"
+      ],
+      "fitText": "MEASURED FIT CHECK輸入房間與家具外框，直接看 Fit / Clearance這裡只做幾何初檢：先確認家具本體能不能放進房間，再看你要求的左右、前後淨空是否也保留。結果不是安全、搬運或建築認證。房間與家具尺寸單位公分公尺英尺房間寬房間長家具寬家具深家具類型床沙發書桌衣櫃自訂家具想保留的淨空（可選）左側右側前方後方計算 Fit / Clearance本體適配PASS要求淨空PASS可用方向0°0°: 本體適配 PASS · 要求淨空 PASS90°: 本體適配 PASS · 要求淨空 PASS方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。把這組尺寸帶入 Room Planner房間 300 × 300 cm105 × 188 cm試試這個尺寸先用一組有標示的尺寸300 × 300 房間 · 單人床 105 × 188 cm檢查床邊走道與桌前空間。載入到檢查器在 Planner 試這個尺寸300 × 300 房間 · 雙人床 150 × 190 cm檢查兩側上下床與床尾距離。載入到檢查器在 Planner 試這個尺寸300 × 300 房間 · 套房沙發 180 × 85 cm檢查沙發深度與入口動線。載入到檢查器在 Planner 試這個尺寸",
+      "pass": true
+    },
+    {
+      "route": "/en/furniture-fit-checker/",
+      "locale": "en",
+      "faqHeading": "Frequently asked questions",
+      "relatedHeading": "Related pages",
+      "forbiddenFound": [],
+      "faqExpected": "Frequently asked questions",
+      "relatedExpected": "Related pages",
+      "fitExpected": [
+        "Physical fit",
+        "Requested clearance"
+      ],
+      "fitText": "MEASURED FIT CHECKEnter room and furniture footprints to see Fit / ClearanceThis is a geometry first check: confirm the furniture footprint fits, then check whether your requested left, right, front, and back clearances remain. It is not a safety, moving, or building certification.Room and furniture dimensionsUnitcmmftRoom widthRoom lengthFurniture widthFurniture depthFurniture typeBedSofaDeskWardrobeCustom furnitureRequested clearance (optional)LeftRightFrontBackCalculate Fit / ClearancePhysical fitPASSRequested clearancePASSAvailable orientation0°0°: Physical fit PASS · requested clearance PASS90°: Physical fit PASS · requested clearance PASSOrientation results compare the room plane and entered footprint only. Check door width, turns, stairs, fire access, and on-site tolerance separately.Open this exact configuration in Room PlannerROOM 300 × 300 cm105 × 188 cmTRY THIS SIZEStart with a labelled measured size300 × 300 cm room · Single bed 105 × 188 cmCheck the bedside route and space behind a desk chair.Load into checkerTry this size in Planner300 × 300 cm room · Double bed 150 × 190 cmCheck bed access on both sides and the foot route.Load into checkerTry this size in Planner300 × 300 cm room · Sofa 180 × 85 cmCheck sofa depth and the entry route.Load into checkerTry this size in Planner",
+      "pass": true
+    }
+  ]
+}

@@ -78,15 +78,15 @@ const relatedArticles = [
         <a class="button" href="/zh/room-layout-planner/">做搬家尺寸檢查</a>
       </div>
       <MovingOsContextCta locale="zh-TW" placement="zh_moving_size" heading="正在規劃整次搬家？" copy="Moving & New Home OS 把家具尺寸、搬運路線、房間配置、紙箱、預算與搬家工作放在同一個地方。" label="建立我的搬家專案" />
-      <AdSlot id="zh-moving-mid" adSlot="zh-moving-mid" />
+      <AdSlot id="zh-moving-mid" placement="zh-moving-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>
           {relatedArticles.map((a) => <li><a href={a.href}>{a.title}</a></li>)}
         </ul>
       </section>
-      <Faq items={faq} />
-      <RelatedLinks links={relatedLinks} />
+      <Faq lang="zh" items={faq} />
+      <RelatedLinks lang="zh" links={relatedLinks} />
     </div>
   </section>
 </Layout>

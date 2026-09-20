@@ -121,14 +121,35 @@ jobs:
             sleep 1
           done
           curl --fail --silent http://127.0.0.1:4321/ > /dev/null
+      - name: Run Review 03 browser regression
+        run: npm run test:uiux-browser
+        env:
+          ROOMFENG_UIUX_ORIGIN: http://127.0.0.1:4321
+          ROOMFENG_UIUX_EVIDENCE_DIR: docs/uiux/evidence/ci-live-crawl/review-03
       - name: Run Review 04 browser gate
         run: npm run test:uiux-review-04-browser
       - name: Run AdSense initialization browser regression
         run: npm run test:adsense:browser
+        env:
+          ROOMFENG_UIUX_ORIGIN: http://127.0.0.1:4321
+          ROOMFENG_ADSENSE_EVIDENCE_DIR: docs/uiux/evidence/ci-live-crawl
+      - name: Run Final Live Crawl 006 browser regression
+        run: npm run test:live-crawl:browser
+        env:
+          ROOMFENG_LIVE_CRAWL_ORIGIN: http://127.0.0.1:4321
+          ROOMFENG_LIVE_CRAWL_EVIDENCE_DIR: docs/uiux/evidence/ci-live-crawl
       - name: Stop Astro preview
         if: always()
         shell: bash
         run: if [ -f preview.pid ]; then kill "$(cat preview.pid)" || true; fi
+      - name: Upload UIUX browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: roomfeng-uiux-live-crawl-006-${{ github.sha }}
+          path: docs/uiux/evidence/ci-live-crawl/
+          if-no-files-found: error
+          retention-days: 30
 
   lighthouse-preview:
     name: Lighthouse Preview

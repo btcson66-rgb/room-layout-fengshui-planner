@@ -27,5 +27,5 @@ const relatedLinks = [{href:'/zh/moving-furniture-size-check/',title:'搬家家�
 ---
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd} pageType="tool">
   <MovingOsSales locale="zh-TW" activationHref="/zh/moving-new-home-os/activate/" previewHref={movingOsProduct.previewPackUrl} providers={movingOsProduct.providers} priceLabel={`${movingOsProduct.displayPrice.currency} ${movingOsProduct.displayPrice.amount.toFixed(2)}`} supportEmail={movingOsProduct.supportEmail} refundPolicyUrl={movingOsProduct.refundPolicyUrl} />
-  <section class="section"><div class="container"><Faq items={faqItems} /><RelatedLinks links={relatedLinks} /></div></section>
+  <section class="section"><div class="container"><Faq lang="zh" items={faqItems} /><RelatedLinks lang="zh" links={relatedLinks} /></div></section>
 </Layout>

@@ -98,7 +98,7 @@ try {
     assert.ok(headingOrder.h1Index >= 0 && headingOrder.h1Index < headingOrder.toolHeadingIndex, `${locale} page H1 must precede Furniture Fit tool H2`);
     assert.equal(await fit.locator('[data-furniture-fit-tool]').getAttribute('data-fit-locale'), locale);
     await fit.locator('[data-fit-preset]').first().click();
-    assert.match(await fit.locator('[data-fit-result]').textContent(), /Physical fit/);
+    assert.match(await fit.locator('[data-fit-result]').textContent(), locale === 'en' ? /Physical fit/ : /本體適配/);
     assert.equal(await fit.locator('[data-fit-diagram] svg').getAttribute('viewBox'), '0 0 300 300');
     await fit.locator('[name="roomWidth"]').fill('300');
     await fit.locator('[name="roomLength"]').fill('300');

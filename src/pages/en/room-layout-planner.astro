@@ -72,7 +72,7 @@ const relatedLinks = [
 
       <div id="room-planner" data-planner></div>
 
-      <div class="planner-ad-slot"><AdSlot id="planner-mid-en" adSlot="room-layout-planner-en-mid" /></div>
+      <div class="planner-ad-slot"><AdSlot id="planner-mid-en" placement="room-layout-planner-en-mid" /></div>
 
       <section class="cta-band">
         <div>
@@ -84,8 +84,8 @@ const relatedLinks = [
 
       <MovingOsContextCta locale="en" placement="en_room_planner" heading="Planning the whole move, not just one room?" copy="Moving & New Home OS combines measurements, furniture decisions, packing, budget and move-day planning in one private workspace." label="Plan My Move" />
 
-      <Faq items={faqItems} />
-      <RelatedLinks links={relatedLinks} />
+      <Faq lang="en" items={faqItems} />
+      <RelatedLinks lang="en" links={relatedLinks} />
     </div>
   </section>
 <script>
