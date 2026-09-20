@@ -1,5 +1,6 @@
 const thirdPartyHostRoots = [
   'googletagmanager.com',
+  'google.com',
   'google-analytics.com',
   'googlesyndication.com',
   'doubleclick.net',
@@ -41,10 +42,14 @@ export function classifyUrl(value, firstPartyOrigin = DEFAULT_PRODUCTION_ORIGIN)
 
 export function classifyConsoleMessage(message, firstPartyOrigin = DEFAULT_PRODUCTION_ORIGIN) {
   const location = typeof message?.location === 'function' ? message.location() : {};
+  const messageText = typeof message?.text === 'function' ? message.text() : String(message?.message ?? '');
+  const locationUrl = location.url ?? '';
+  const explicitDiagnosticUrl = urlsFromText(messageText).find((url) => isThirdPartyUrl(url, firstPartyOrigin)) ?? '';
   return {
-    message: typeof message?.text === 'function' ? message.text() : String(message?.message ?? ''),
-    sourceUrl: location.url ?? '',
-    external: isThirdPartyUrl(location.url, firstPartyOrigin),
+    message: messageText,
+    sourceUrl: locationUrl || explicitDiagnosticUrl,
+    external: isThirdPartyUrl(locationUrl, firstPartyOrigin)
+      || (!locationUrl && Boolean(explicitDiagnosticUrl)),
   };
 }
 
