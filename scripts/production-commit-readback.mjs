@@ -30,6 +30,8 @@ const [mainCommit, workflowRun, relatedPulls] = await Promise.all([
   githubJson(`/repos/${repository}/commits/${expectedSha}/pulls`, 'application/vnd.github+json'),
 ]);
 const pull = relatedPulls.find((candidate) => candidate.base?.ref === 'main') ?? null;
+const workflowStatePass = workflowRun.status === 'in_progress'
+  || (workflowRun.status === 'completed' && workflowRun.conclusion === 'success');
 const report = {
   generatedAt: new Date().toISOString(),
   repository,
@@ -39,6 +41,7 @@ const report = {
   workflowHeadSha: workflowRun.head_sha ?? null,
   workflowStatus: workflowRun.status ?? null,
   workflowConclusion: workflowRun.conclusion ?? null,
+  workflowStatePass,
   pullRequest: pull ? {
     number: pull.number,
     state: pull.state,
@@ -48,8 +51,7 @@ const report = {
   } : null,
   pass: mainCommit.sha === expectedSha
     && workflowRun.head_sha === expectedSha
-    && workflowRun.status === 'completed'
-    && workflowRun.conclusion === 'success'
+    && workflowStatePass
     && Boolean(pull?.merged_at)
     && pull?.base?.ref === 'main'
     && Boolean(pull?.head?.sha),
