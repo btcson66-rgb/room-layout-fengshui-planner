@@ -1,18 +1,22 @@
 ---
 interface Props {
   id: string;
-  adSlot?: string;
-  slot?: string;
+  placement: string;
+  slotId?: string;
 }
 
-const { id, adSlot, slot: legacySlot } = Astro.props;
+import { resolveAdSenseSlot } from '../config/adsense.mjs';
+
+const { id, placement, slotId } = Astro.props;
 const adsenseClient = import.meta.env.PUBLIC_ADSENSE_CLIENT || import.meta.env.PUBLIC_ADSENSE_ID;
-const adUnitSlot = adSlot || legacySlot;
+const adUnitSlot = resolveAdSenseSlot(placement, slotId);
 const adSlotScript = `
 (() => {
   const root = document.getElementById(${JSON.stringify(id)});
   const ad = root?.querySelector('.adsbygoogle');
   if (!(root instanceof HTMLElement) || !(ad instanceof HTMLElement)) return;
+  const slotId = ad.dataset.adSlot || '';
+  if (!/^\d+$/.test(slotId)) return;
 
   const stats = window.__roomfengAdSenseStats = window.__roomfengAdSenseStats || {
     initAttempts: 0,
@@ -117,8 +121,8 @@ const adSlotScript = `
 `;
 ---
 
-{adUnitSlot && adsenseClient && (
-  <aside class="ad-slot" id={id} data-ad-slot={adUnitSlot} aria-label="Advertisement">
+<aside class="ad-slot" id={id} data-ad-placement={placement} data-ad-configured={adUnitSlot && adsenseClient ? 'true' : 'false'} aria-label="Advertisement">
+  {adUnitSlot && adsenseClient && (
     <ins
       class="adsbygoogle"
       style="display:block;width:100%;min-width:1px"
@@ -128,5 +132,5 @@ const adSlotScript = `
       data-full-width-responsive="true"
     ></ins>
     <script is:inline set:html={adSlotScript} />
-  </aside>
-)}
+  )}
+</aside>

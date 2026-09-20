@@ -185,7 +185,7 @@ if (post.data.howToSteps.length > 0) {
         )}
       </header>
 
-      {reviewReady && <AdSlot id="zh-blog-top" adSlot="zh-blog-top" />}
+      {reviewReady && <AdSlot id="zh-blog-top" placement="zh-blog-top" />}
 
       <div class="card article-body">
         <Content />
@@ -195,11 +195,11 @@ if (post.data.howToSteps.length > 0) {
 
       {reviewReady && <AffiliateRecs category={post.data.category} tags={post.data.tags} slug={post.id} />}
 
-      {reviewReady && <AdSlot id="zh-blog-bottom" adSlot="zh-blog-bottom" />}
+      {reviewReady && <AdSlot id="zh-blog-bottom" placement="zh-blog-bottom" />}
 
       {reviewReady && <NewsletterSignup placement="article" />}
 
-      <RelatedLinks links={relatedLinks} />
+      <RelatedLinks lang="zh" links={relatedLinks} />
     </div>
   </article>
 </Layout>

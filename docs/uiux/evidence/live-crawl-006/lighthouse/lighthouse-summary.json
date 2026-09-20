@@ -1,0 +1,419 @@
+{
+  "origin": "http://127.0.0.1:4324",
+  "modes": [
+    "desktop",
+    "mobile"
+  ],
+  "generatedAt": "2026-09-20T16:15:37.928Z",
+  "thresholds": {
+    "contentScores": 95,
+    "plannerScores": 95,
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "tbtMs": 200,
+    "skippedExternalAudits": [
+      "third-party-cookies",
+      "errors-in-console",
+      "inspector-issues"
+    ]
+  },
+  "results": [
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/",
+      "path": "/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 550,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 302.88
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\home-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/en/",
+      "path": "/en/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 557.92,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 283.74
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/zh/room-layout-planner/",
+      "path": "/zh/room-layout-planner/",
+      "planner": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 99,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 368.56,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 306.42
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/zh/room-layout-planner/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\zh--room-layout-planner-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/en/room-layout-planner/",
+      "path": "/en/room-layout-planner/",
+      "planner": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 367.01,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 305.26
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/room-layout-planner/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--room-layout-planner-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/zh/furniture-fit-checker/",
+      "path": "/zh/furniture-fit-checker/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 522.23,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 294.39
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/zh/furniture-fit-checker/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\zh--furniture-fit-checker-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/en/furniture-fit-checker/",
+      "path": "/en/furniture-fit-checker/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 558.8,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 328.22
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/furniture-fit-checker/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--furniture-fit-checker-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/en/small-bedroom-layout-planner/",
+      "path": "/en/small-bedroom-layout-planner/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 728.14,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 506.51
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/small-bedroom-layout-planner/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--small-bedroom-layout-planner-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/en/studio-apartment-layout/",
+      "path": "/en/studio-apartment-layout/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 715.6,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 499.83
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/studio-apartment-layout/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--studio-apartment-layout-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "desktop",
+      "url": "http://127.0.0.1:4324/en/layout-guides/10x10-bedroom-layout/",
+      "path": "/en/layout-guides/10x10-bedroom-layout/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 509.03,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 263.92
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/layout-guides/10x10-bedroom-layout/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--layout-guides--10x10-bedroom-layout-desktop.json --preset=desktop --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/",
+      "path": "/",
+      "planner": false,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 1944.56,
+        "cls": 0,
+        "tbt": 47,
+        "fcp": 1194.31
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\home-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/en/",
+      "path": "/en/",
+      "planner": false,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 1940.1,
+        "cls": 0,
+        "tbt": 34,
+        "fcp": 1053.34
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/zh/room-layout-planner/",
+      "path": "/zh/room-layout-planner/",
+      "planner": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 1358.52,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 1157.83
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/zh/room-layout-planner/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\zh--room-layout-planner-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/en/room-layout-planner/",
+      "path": "/en/room-layout-planner/",
+      "planner": true,
+      "scores": {
+        "performance": 100,
+        "accessibility": 98,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 1359,
+        "cls": 0,
+        "tbt": 0,
+        "fcp": 1131.75
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/room-layout-planner/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--room-layout-planner-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/zh/furniture-fit-checker/",
+      "path": "/zh/furniture-fit-checker/",
+      "planner": false,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 1965.58,
+        "cls": 0,
+        "tbt": 57,
+        "fcp": 1073.47
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/zh/furniture-fit-checker/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\zh--furniture-fit-checker-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/en/furniture-fit-checker/",
+      "path": "/en/furniture-fit-checker/",
+      "planner": false,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 2102.68,
+        "cls": 0,
+        "tbt": 56,
+        "fcp": 1205.63
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/furniture-fit-checker/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--furniture-fit-checker-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/en/small-bedroom-layout-planner/",
+      "path": "/en/small-bedroom-layout-planner/",
+      "planner": false,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 2105.35,
+        "cls": 0,
+        "tbt": 65,
+        "fcp": 1204.51
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/small-bedroom-layout-planner/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--small-bedroom-layout-planner-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/en/studio-apartment-layout/",
+      "path": "/en/studio-apartment-layout/",
+      "planner": false,
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 2108.19,
+        "cls": 0,
+        "tbt": 57,
+        "fcp": 1205.26
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/studio-apartment-layout/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--studio-apartment-layout-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    },
+    {
+      "origin": "http://127.0.0.1:4324",
+      "mode": "mobile",
+      "url": "http://127.0.0.1:4324/en/layout-guides/10x10-bedroom-layout/",
+      "path": "/en/layout-guides/10x10-bedroom-layout/",
+      "planner": false,
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "lcp": 1788.4,
+        "cls": 0,
+        "tbt": 43,
+        "fcp": 978.86
+      },
+      "executionWarning": "Lighthouse process cleanup warning: Command failed: C:\\Program Files\\nodejs\\node.exe D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\node_modules\\lighthouse\\cli\\index.js http://127.0.0.1:4324/en/layout-guides/10x10-bedroom-layout/ --output=json --output-path=D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\docs\\uiux\\evidence\\live-crawl-006\\lighthouse\\en--layout-guides--10x10-bedroom-layout-mobile.json --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=1 --only-categories=performance,accessibility,best-practices,seo --skip-audits=third-party-cookies,errors-in-console,inspector-issues --chrome-flags=--headless=new --no-sandbox --disable-dev-shm-usage --quiet",
+      "failures": [],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

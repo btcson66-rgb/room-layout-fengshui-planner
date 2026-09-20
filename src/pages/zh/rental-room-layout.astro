@@ -79,7 +79,7 @@ const relatedArticles = [
         <a class="button" href="/zh/room-layout-planner/">規劃租屋房間</a>
       </div>
       <MovingOsContextCta locale="zh-TW" placement="zh_rental_room" heading="第一次租屋，不只要把房間塞滿" copy="先把要買、要帶、要延後的家具分清楚，再用同一個搬家專案整理紙箱、預算與入住前後的待辦。" label="規劃我的第一次搬家" />
-      <AdSlot id="zh-rental-mid" adSlot="zh-rental-mid" />
+      <AdSlot id="zh-rental-mid" placement="zh-rental-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>
@@ -87,8 +87,8 @@ const relatedArticles = [
         </ul>
       </section>
       <AffiliateRecs productIds={['clear-waterproof-desk-mat', 'adjustable-clothes-rack']} />
-      <Faq items={faq} />
-      <RelatedLinks links={relatedLinks} />
+      <Faq lang="zh" items={faq} />
+      <RelatedLinks lang="zh" links={relatedLinks} />
     </div>
   </section>
 </Layout>

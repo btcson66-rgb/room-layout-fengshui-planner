@@ -267,3 +267,42 @@ This source closeout does not claim merge or deployment. Production browser, pro
 - Lighthouse reports show the existing cleanup warning after valid report generation; the aggregate result is based on parsed report failures and is PASS.
 - Existing Vite >500 kB chunk warning remains; largest chunk did not grow.
 - Current production browser/SEO evidence is a baseline until the candidate is deployed. This document does not claim merge, deployment, indexing, revenue or GSC outcome.
+
+## Final Live Crawl Fix 006 — source review
+
+### Authority
+
+- Base production SHA: `b4804899299047a5c0b3cca95416307de3d07c66`.
+- Candidate branch: `codex/roomfeng-final-live-crawl-fix-006`.
+- Current authority: `1,458` build pages / `1,448` sitemap URLs / `1,000,355` content-audit checks / `0` failures.
+- Transition: previous `1,457` / `1,447`; `/en/contractor-margin-guard/` added by merged PR #103; baseline corrected by merged PR #104. The authoritative source is `scripts/release-authority.mjs`.
+
+### Source gate results
+
+| Gate | Result |
+| --- | --- |
+| Astro check | PASS — 240 files, 0 errors, 0 warnings, 0 hints |
+| Build / sitemap | PASS — 1,458 pages / 1,448 URLs |
+| Content audit | PASS — 1,315 source, 1,315 review-ready, 0 held, 1,000,355 checks, 0 failures |
+| Script tests | PASS — 61/61 |
+| Review-03 browser | PASS — exact handoff, measured SVG, furniture calculation, export, rails, mobile drawer |
+| Review-04 browser | PASS — zh/en whole-site prototype and responsive evidence |
+| Final Live Crawl 006 | PASS — 14 required routes, 10 header runs, 0 first-party errors/network failures |
+| AdSense safety | PASS — invalid slots 0, HTTP 400 0, zero-width 0, duplicate init 0 |
+| Local Lighthouse | PASS — 18/18 desktop/mobile entries |
+| Bundle comparison | PASS — 33 JS / 1,938,043 bytes / 929,901 max; +167 JS bytes, largest unchanged |
+
+### Local evidence
+
+- Browser and screenshot evidence: `docs/uiux/evidence/live-crawl-006/`.
+- AdSense network summary: `docs/uiux/evidence/live-crawl-006/adsense-network-summary.json`.
+- Localization summary: `docs/uiux/evidence/live-crawl-006/localization-summary.json`.
+- Responsive header summary: `docs/uiux/evidence/live-crawl-006/responsive-header-summary.json`.
+- Live crawl summary: `docs/uiux/evidence/live-crawl-006/live-crawl-summary.json`.
+- Local Lighthouse: `docs/uiux/evidence/live-crawl-006/lighthouse/`.
+- Build authority: `docs/uiux/evidence/ci-build-authority.json`.
+- Bundle comparison: `docs/uiux/evidence/hardening-003/bundle-comparison.json`.
+
+### Scope and limitations
+
+Manual AdSense slots are intentionally unconfigured because no numeric publisher slot IDs exist in the repository or GitHub environment; placement containers remain, but no invalid `<ins>` is emitted. The local loader is stubbed. Lighthouse writes valid parsed reports but the CLI emits its existing process-cleanup warning after report generation; all 18 entries have empty `failures` and pass thresholds. Production evidence, merge state, deployment state, commit equality, production sitemap readback and GSC submission are not claimed by this source review.

@@ -28,9 +28,9 @@ const copy = en ? {
   intro: '這裡只做幾何初檢：先確認家具本體能不能放進房間，再看你要求的左右、前後淨空是否也保留。結果不是安全、搬運或建築認證。',
   dimensions: '房間與家具尺寸', unit: '單位', roomWidth: '房間寬', roomLength: '房間長', furnitureWidth: '家具寬', furnitureDepth: '家具深', furnitureType: '家具類型',
   clearance: '想保留的淨空（可選）', left: '左側', right: '右側', front: '前方', back: '後方', calculate: '計算 Fit / Clearance',
-  diagramLabel: '依實際尺寸比例繪製的家具適配圖', trySize: 'TRY THIS SIZE', tryHeading: '先用一組有標示的尺寸', load: '載入到檢查器', planner: 'Try this size in Planner',
-  physical: 'Physical fit', requested: 'Requested clearance', available: '可用方向', none: '無', note: '方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。',
-  invalid: '請輸入有效的正數房間、家具尺寸；淨空不可小於 0。', exact: 'Open this exact configuration in Room Planner',
+  diagramLabel: '依實際尺寸比例繪製的家具適配圖', trySize: '試試這個尺寸', tryHeading: '先用一組有標示的尺寸', load: '載入到檢查器', planner: '在 Planner 試這個尺寸',
+  physical: '本體適配', requested: '要求淨空', available: '可用方向', none: '無', note: '方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。',
+  invalid: '請輸入有效的正數房間、家具尺寸；淨空不可小於 0。', exact: '把這組尺寸帶入 Room Planner',
   furniture: { bed: '床', sofa: '沙發', desk: '書桌', wardrobe: '衣櫃', custom: '自訂家具' },
   presets: [
     { id: 'single-bed-preset', title: '300 × 300 房間 · 單人床 105 × 188 cm', description: '檢查床邊走道與桌前空間。', type: 'bed' as const, width: 105, depth: 188, itemLabel: '單人床', source: 'furniture-fit-checker:single-bed' },
@@ -108,7 +108,7 @@ const handoffHref = en ? '/en/room-layout-planner/?rf_quick_handoff=1' : '/zh/ro
     const copy = isEnglish ? {
       pass: 'PASS', fail: 'FAIL', available: 'Available orientation', none: 'None', physical: 'Physical fit', requested: 'Requested clearance', note: 'Orientation results compare the room plane and entered footprint only. Check door width, turns, stairs, fire access, and on-site tolerance separately.', invalid: 'Enter positive room and furniture dimensions; clearances cannot be negative.', exact: 'Open this exact configuration in Room Planner', room: 'room', furniture: 'furniture', clearance: 'requested clearance',
     } : {
-      pass: 'PASS', fail: 'FAIL', available: '可用方向', none: '無', physical: 'Physical fit', requested: 'Requested clearance', note: '方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。', invalid: '請輸入有效的正數房間、家具尺寸；淨空不可小於 0。', exact: 'Open this exact configuration in Room Planner', room: '房間', furniture: '家具', clearance: '要求淨空',
+      pass: 'PASS', fail: 'FAIL', available: '可用方向', none: '無', physical: '本體適配', requested: '要求淨空', note: '方向結果只比較房間平面與你輸入的外框；門寬、轉角、樓梯、消防與現場誤差仍需另外核對。', invalid: '請輸入有效的正數房間、家具尺寸；淨空不可小於 0。', exact: '把這組尺寸帶入 Room Planner', room: '房間', furniture: '家具', clearance: '要求淨空',
     };
     const status = (pass: boolean): string => `<strong class="fit-status ${pass ? 'is-pass' : 'is-fail'}">${pass ? copy.pass : copy.fail}</strong>`;
     const displayValue = (value: number): string => String(Math.round(value * 1000000) / 1000000);

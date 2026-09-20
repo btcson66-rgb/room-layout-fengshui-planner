@@ -27,6 +27,7 @@ const browser = await chromium.launch({ headless: true });
 const diagnosticText = (item) => `${item?.message ?? ''}\n${item?.stack ?? ''}`;
 const isAdsenseZeroWidthError = (item) => /adsbygoogle\.push\(\).*no slot size for availableWidth=0|no slot size for availableWidth=0/i.test(diagnosticText(item));
 const isDuplicateAdsenseError = (item) => /adsbygoogle.*(already initialized|duplicate initialization|already pushed)/i.test(diagnosticText(item));
+const isAdsenseIntegrationUrl = (url) => /(?:googlesyndication|googleads|doubleclick|adsbygoogle|pagead)/i.test(url);
 
 async function prepare(page, route) {
   await page.goto(`${origin}${route}`, { waitUntil: 'domcontentloaded', timeout: 30000 });
@@ -77,6 +78,7 @@ try {
       const rawPageErrors = [];
       const failedRequests = [];
       const badResponses = [];
+      const adsenseBadResponses = [];
       page.on('console', (message) => { if (message.type() === 'error') consoleErrors.push(classifyConsoleMessage(message, origin)); });
       page.on('pageerror', (error) => rawPageErrors.push({ message: error.message, stack: error.stack ?? '' }));
       page.on('requestfailed', (request) => failedRequests.push({
@@ -85,11 +87,11 @@ try {
         ...classifyUrl(request.url(), origin),
       }));
       page.on('response', (response) => {
-        if (response.status() >= 400) badResponses.push({
-          url: response.url(),
-          status: response.status(),
-          ...classifyUrl(response.url(), origin),
-        });
+        if (response.status() >= 400) {
+          const item = { url: response.url(), status: response.status(), ...classifyUrl(response.url(), origin) };
+          badResponses.push(item);
+          if (isAdsenseIntegrationUrl(response.url())) adsenseBadResponses.push(item);
+        }
       });
       try {
         await prepare(page, route);
@@ -130,6 +132,8 @@ try {
         const adsenseZeroWidthErrors = adsenseDiagnostics.filter(isAdsenseZeroWidthError).length;
         const duplicateAdsbygoogleInitializations = adsenseStats.duplicateInitializations
           + adsenseDiagnostics.filter(isDuplicateAdsenseError).length;
+        const manualSlots = await page.evaluate(() => [...document.querySelectorAll('[data-ad-placement] .adsbygoogle')].map((element) => element.getAttribute('data-ad-slot') ?? ''));
+        const invalidManualSlots = manualSlots.filter((slot) => !/^\d+$/.test(slot)).length;
         const overflow = await page.evaluate(() => ({ document: document.documentElement.scrollWidth - innerWidth, body: document.body.scrollWidth - innerWidth }));
         assert.ok(overflow.document <= 1 && overflow.body <= 1, `${name} overflow ${JSON.stringify(overflow)}`);
         if (route.includes('furniture-fit-checker')) assert.equal(await page.locator('[data-furniture-fit-tool]').count(), 1);
@@ -162,13 +166,19 @@ try {
           firstPartyNetwork,
           adsenseZeroWidthErrors,
           duplicateAdsbygoogleInitializations,
+          manualSlotsRendered: manualSlots.length,
+          numericManualSlotsRendered: manualSlots.filter((slot) => /^\d+$/.test(slot)).length,
+          invalidManualSlots,
+          adsense400Responses: adsenseBadResponses,
           adsenseStats,
           pass: firstPartyConsoleErrors.length === 0
             && firstPartyPageErrors.length === 0
             && firstPartyUnhandledRejections.length === 0
             && firstPartyNetwork.length === 0
             && adsenseZeroWidthErrors === 0
-            && duplicateAdsbygoogleInitializations === 0,
+            && duplicateAdsbygoogleInitializations === 0
+            && invalidManualSlots === 0
+            && adsenseBadResponses.length === 0,
         });
       } catch (error) {
         errors.push({ name, route, iteration, error: error.message });
@@ -202,10 +212,24 @@ const summary = {
   },
   adsenseZeroWidthErrors: runs.reduce((total, run) => total + (run.adsenseZeroWidthErrors ?? 0), 0),
   duplicateAdsbygoogleInitializations: runs.reduce((total, run) => total + (run.duplicateAdsbygoogleInitializations ?? 0), 0),
+  manualSlotsRendered: runs.reduce((total, run) => total + (run.manualSlotsRendered ?? 0), 0),
+  numericManualSlotsRendered: runs.reduce((total, run) => total + (run.numericManualSlotsRendered ?? 0), 0),
+  invalidManualSlots: runs.reduce((total, run) => total + (run.invalidManualSlots ?? 0), 0),
+  adsense400Responses: runs.reduce((total, run) => total + (run.adsense400Responses?.length ?? 0), 0),
   controllableFirstPartyErrors,
   pass: errors.length === 0 && runs.length === routes.length * 3 && runs.every((run) => run.pass),
 };
 fs.writeFileSync(path.join(evidenceDir, 'console-network-summary.json'), `${JSON.stringify(summary, null, 2)}\n`);
+fs.writeFileSync(path.join(evidenceDir, 'adsense-network-summary.json'), `${JSON.stringify({
+  origin,
+  generatedAt: new Date().toISOString(),
+  manualSlotsRendered: summary.manualSlotsRendered,
+  numericManualSlotsRendered: summary.numericManualSlotsRendered,
+  invalidManualSlots: summary.invalidManualSlots,
+  adsense400Responses: summary.adsense400Responses,
+  zeroWidthErrors: summary.adsenseZeroWidthErrors,
+  duplicateInitializations: summary.duplicateAdsbygoogleInitializations,
+}, null, 2)}\n`);
 if (errors.length) console.error(JSON.stringify(errors, null, 2));
 console.log(JSON.stringify({
   pass: summary.pass,

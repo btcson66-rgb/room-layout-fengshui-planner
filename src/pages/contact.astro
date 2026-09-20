@@ -1,4 +1,4 @@
-﻿---
+---
 import Layout from '../components/Layout.astro';
 import Faq from '../components/Faq.astro';
 import RelatedLinks from '../components/RelatedLinks.astro';
@@ -37,8 +37,8 @@ const jsonLd = {
         <p>回報前可先查看免責聲明，確認風水參考的語氣與限制。</p>
         <a class="button" href="/disclaimer/">查看免責聲明</a>
       </div>
-      <Faq items={faq} />
-      <RelatedLinks links={[{ href: '/about/', title: '關於本站' }, { href: '/privacy/', title: '隱私權政策' }, { href: '/changelog/', title: '更新紀錄' }]} />
+      <Faq lang="zh" items={faq} />
+      <RelatedLinks lang="zh" links={[{ href: '/about/', title: '關於本站' }, { href: '/privacy/', title: '隱私權政策' }, { href: '/changelog/', title: '更新紀錄' }]} />
     </div>
   </section>
 </Layout>

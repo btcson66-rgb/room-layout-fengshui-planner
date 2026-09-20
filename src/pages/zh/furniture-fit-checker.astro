@@ -70,8 +70,8 @@ const relatedArticles = [
         <h2>如何把結果帶進 Room Planner</h2>
         <ol>
           <li>在上方輸入房間內徑、家具外框與想保留的淨空。</li>
-          <li>先看 Physical fit，再看 Requested clearance；兩者不是同一個結果。</li>
-          <li>按「Open this exact configuration in Room Planner」，工具會帶入同一組公分尺寸。</li>
+          <li>先看本體適配，再看要求淨空；兩者不是同一個結果。</li>
+          <li>按「把這組尺寸帶入 Room Planner」，工具會帶入同一組公分尺寸。</li>
           <li>在 Planner 裡加入門窗與其他家具，再核對搬入路線、門寬、轉角與現場誤差。</li>
           <li>把可行版本匯出 PNG 或 PDF，購買前再拿現場尺寸核對一次。</li>
         </ol>
@@ -85,15 +85,15 @@ const relatedArticles = [
         <a class="button" href="/zh/room-layout-planner/">開始檢查尺寸</a>
       </div>
       <MovingOsContextCta locale="zh-TW" placement="zh_furniture_fit" heading="下單前，把候選家具一起比較。" copy="記錄尺寸、價格、房間、搬運限制與是否值得帶進新家，再把選擇接到完整搬家專案。" label="建立我的搬家專案" />
-      <AdSlot id="zh-fit-mid" adSlot="zh-furniture-fit-mid" />
+      <AdSlot id="zh-fit-mid" placement="zh-furniture-fit-mid" />
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
         <ul>
           {relatedArticles.map((a) => <li><a href={a.href}>{a.title}</a></li>)}
         </ul>
       </section>
-      <Faq items={faq} />
-      <RelatedLinks links={relatedLinks} />
+      <Faq lang="zh" items={faq} />
+      <RelatedLinks lang="zh" links={relatedLinks} />
     </div>
   </section>
 </Layout>

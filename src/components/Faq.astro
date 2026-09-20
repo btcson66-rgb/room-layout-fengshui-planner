@@ -6,9 +6,11 @@ interface FaqItem {
 
 interface Props {
   items: FaqItem[];
+  lang?: 'zh' | 'en';
 }
 
-const { items } = Astro.props;
+const { items, lang = (Astro.currentLocale === 'en' || Astro.url.pathname.startsWith('/en/')) ? 'en' : 'zh' } = Astro.props;
+const heading = lang === 'en' ? 'Frequently asked questions' : '常見問題';
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -23,8 +25,8 @@ const faqJsonLd = {
 };
 ---
 
-<section aria-labelledby="faq-heading">
-  <h2 id="faq-heading">常見問題 / FAQ</h2>
+<section data-roomfeng-component="faq" data-locale={lang} aria-labelledby="faq-heading">
+  <h2 id="faq-heading">{heading}</h2>
   <div class="faq-list">
     {items.map((item) => (
       <article class="faq-item">

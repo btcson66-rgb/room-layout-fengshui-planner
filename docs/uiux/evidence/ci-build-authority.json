@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-09-20T16:12:00.480Z",
+  "distDir": "D:\\Fable company\\worktrees\\roomfeng-final-live-crawl-fix-006\\dist",
+  "htmlFiles": 1458,
+  "sitemapUrls": 1448,
+  "expectedBuildPages": 1458,
+  "expectedSitemapUrls": 1448,
+  "authorityTransition": {
+    "previousBuildPages": 1457,
+    "previousSitemapUrls": 1447,
+    "addedRoute": "/en/contractor-margin-guard/",
+    "sourcePullRequest": 103,
+    "baselineCorrectionPullRequest": 104
+  },
+  "pass": true
+}

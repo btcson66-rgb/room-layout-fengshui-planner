@@ -138,3 +138,14 @@ Source head `18089398f9e52f12c7ba9a82739ff3d4c12bc2d7` is the authoritative hard
 - CI checks: `preflight`, `UIUX browser evidence`, and `Production Lighthouse` all PASS.
 
 The earlier `1,153 / 995,810` pair remains historical only and is not part of this authority set.
+
+## Final Live Crawl Fix 006 authority correction
+
+This source package starts from the merged production head `b4804899299047a5c0b3cca95416307de3d07c66`. The current authority is the single manifest `scripts/release-authority.mjs` and is not inferred from historical reports:
+
+- Build authority: `1,458` HTML pages.
+- Sitemap authority: `1,448` URLs.
+- Content audit: `1,315` source / `1,315` review-ready / `0` held / `1,000,355` checks / `0` failures.
+- Authority transition: previous `1,457` build / `1,447` sitemap; added `/en/contractor-margin-guard/` from merged PR #103; baseline correction from merged PR #104; current `1,458` / `1,448`.
+
+Only current release authority uses these values. Historical baselines remain unchanged for traceability. No URL, canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement, or production analytics contract was changed.

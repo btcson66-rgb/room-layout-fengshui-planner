@@ -18,6 +18,7 @@
     "test:lighthouse:production": "node scripts/lighthouse-production.mjs",
     "test:production-hardening-browser": "node scripts/test/production-hardening.browser.mjs",
     "test:adsense:browser": "node scripts/test/adsense-integration.browser.mjs",
+    "test:live-crawl:browser": "node scripts/test/live-crawl-006.browser.mjs",
     "audit:us-seo": "node scripts/us-seo-audit.mjs",
     "gsc:submit-sitemap": "node scripts/gsc-submit-sitemap.mjs",
     "gsc:sitemap-health": "node scripts/gsc-sitemap-health.mjs",

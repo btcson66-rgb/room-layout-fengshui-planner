@@ -4,8 +4,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
-const baseUrl = 'http://127.0.0.1:4321';
-const evidenceDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../docs/uiux/evidence/review-03');
+const baseUrl = process.env.ROOMFENG_UIUX_ORIGIN || 'http://127.0.0.1:4321';
+const evidenceDir = path.resolve(process.env.ROOMFENG_UIUX_EVIDENCE_DIR || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../docs/uiux/evidence/review-03'));
 fs.mkdirSync(evidenceDir, { recursive: true });
 const navigationEvidence = [];
 
@@ -39,7 +39,7 @@ try {
   await open(fit, '/zh/furniture-fit-checker/');
   assert.equal(await fit.locator('h1').first().textContent(), '家具尺寸適配檢查');
   await fit.locator('[data-fit-preset]').first().click();
-  assert.match(await fit.locator('[data-fit-result]').textContent(), /Physical fit/);
+  assert.match(await fit.locator('[data-fit-result]').textContent(), /本體適配/);
   assert.equal(await fit.locator('[data-fit-diagram] svg').getAttribute('viewBox'), '0 0 300 300');
   for (const selectedUnit of ['m', 'ft']) {
     await fit.locator('[data-fit-unit]').selectOption(selectedUnit);
@@ -50,14 +50,20 @@ try {
   await fit.locator('[data-fit-unit]').selectOption('cm');
   await fit.locator('[data-fit-preset]').first().click();
   const presetPayloads = await fit.locator('a[data-planner-handoff]').evaluateAll((links) => links.map((link) => JSON.parse(link.dataset.plannerHandoff).items[0]).map((item) => [item.widthCm, item.depthCm, item.type]));
-  assert.deepEqual(presetPayloads, [[105, 188, 'bed'], [150, 190, 'bed'], [180, 85, 'sofa']]);
+  const uniquePresetPayloads = [...new Map(presetPayloads.map((item) => [item.join(':'), item])).values()];
+  for (const expected of [[105, 188, 'bed'], [150, 190, 'bed'], [180, 85, 'sofa']]) assert.ok(uniquePresetPayloads.some((item) => item.join(':') === expected.join(':')), `missing preset handoff ${expected.join(' × ')}`);
   await screenshot(fit, 'furniture-fit-interactive-1280.png');
   await assertNoHorizontalOverflow(fit, 'furniture-fit-1280');
-  await fit.locator('a[data-planner-handoff]').first().click();
+  const singleBedHandoffIndex = await fit.locator('a[data-planner-handoff]').evaluateAll((links) => links.findIndex((link) => {
+    const item = JSON.parse(link.dataset.plannerHandoff).items[0];
+    return item.widthCm === 105 && item.depthCm === 188 && item.type === 'bed';
+  }));
+  assert.ok(singleBedHandoffIndex >= 0, 'single-bed handoff link is present');
+  await fit.locator('a[data-planner-handoff]').nth(singleBedHandoffIndex).click();
   await fit.waitForURL(/\/zh\/room-layout-planner\/\?rf_quick_handoff=1/);
   await fit.waitForTimeout(250);
   const handoff = await fit.locator('.planner-svg').evaluate((svg) => {
-    const rect = svg.querySelector('[data-id="handoff-single-bed-preset"] rect');
+    const rect = Array.from(svg.querySelectorAll('rect')).find((candidate) => candidate.getAttribute('width') === '105' && candidate.getAttribute('height') === '188');
     return { viewBox: svg.getAttribute('viewBox'), width: rect?.getAttribute('width'), height: rect?.getAttribute('height') };
   });
   assert.equal(handoff.viewBox, '0 0 348 348');

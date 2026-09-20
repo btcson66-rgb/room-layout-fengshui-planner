@@ -27,5 +27,5 @@ const relatedLinks = [{href:'/en/moving-furniture-size-check/',title:'Moving fur
 ---
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd} pageType="tool" showAffiliateRecs={false}>
   <MovingOsSales locale="en" activationHref="/en/moving-new-home-os/activate/" previewHref={movingOsProduct.previewPackUrl} providers={movingOsProduct.providers} priceLabel={`${movingOsProduct.displayPrice.currency} ${movingOsProduct.displayPrice.amount.toFixed(2)}`} supportEmail={movingOsProduct.supportEmail} refundPolicyUrl={movingOsProduct.refundPolicyUrl} />
-  <section class="section"><div class="container"><Faq items={faqItems} /><RelatedLinks links={relatedLinks} /></div></section>
+  <section class="section"><div class="container"><Faq lang="en" items={faqItems} /><RelatedLinks lang="en" links={relatedLinks} /></div></section>
 </Layout>

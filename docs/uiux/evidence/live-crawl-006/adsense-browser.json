@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "generatedAt": "2026-09-20T16:03:55.489Z",
+  "origin": "http://127.0.0.1:4324",
+  "configuration": {
+    "missingSlot": "PASS",
+    "numericTestSlot": "PASS",
+    "manualSlotsConfigured": false
+  },
+  "routes": [
+    {
+      "route": "/zh/room-layout-planner/",
+      "placement": "room-layout-planner-zh-mid",
+      "configured": "false",
+      "manualInsCount": 0,
+      "slotAttributes": [],
+      "loaderCount": 0,
+      "stats": {
+        "initAttempts": 0,
+        "initializedSlots": 0,
+        "duplicateInitializations": 0,
+        "loaderLoaded": false
+      },
+      "googleRequests": []
+    },
+    {
+      "route": "/en/room-layout-planner/",
+      "placement": "room-layout-planner-en-mid",
+      "configured": "false",
+      "manualInsCount": 0,
+      "slotAttributes": [],
+      "loaderCount": 0,
+      "stats": {
+        "initAttempts": 0,
+        "initializedSlots": 0,
+        "duplicateInitializations": 0,
+        "loaderLoaded": false
+      },
+      "googleRequests": []
+    }
+  ],
+  "assertions": {
+    "invalidManualSlots": 0,
+    "adsense400Responses": 0,
+    "zeroWidthErrors": 0,
+    "duplicateInitializations": 0
+  },
+  "failures": [],
+  "pass": true
+}

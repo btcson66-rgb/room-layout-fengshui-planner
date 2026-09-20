@@ -141,6 +141,12 @@ jobs:
         env:
           ROOMFENG_PRODUCTION_EVIDENCE_DIR: release-evidence/production-browser
 
+      - name: Run Final Live Crawl 006 production browser gate
+        run: npm run test:live-crawl:browser
+        env:
+          ROOMFENG_LIVE_CRAWL_ORIGIN: https://roomfeng.win
+          ROOMFENG_LIVE_CRAWL_EVIDENCE_DIR: release-evidence/live-crawl
+
       - name: Run production Lighthouse gate (desktop and mobile)
         run: npm run test:lighthouse:production
         env:

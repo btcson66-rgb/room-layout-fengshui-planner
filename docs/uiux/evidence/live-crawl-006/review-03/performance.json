@@ -1,0 +1,102 @@
+{
+  "source": "http://127.0.0.1:4324",
+  "generatedAt": "2026-09-20T16:22:55.488Z",
+  "navigation": [
+    {
+      "route": "/",
+      "domContentLoadedMs": 214,
+      "loadEventMs": 376,
+      "transferSizeBytes": 14847
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 13,
+      "loadEventMs": 378,
+      "transferSizeBytes": 14847
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 12,
+      "loadEventMs": 365,
+      "transferSizeBytes": 14847
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 13,
+      "loadEventMs": 368,
+      "transferSizeBytes": 14847
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 12,
+      "loadEventMs": 360,
+      "transferSizeBytes": 14847
+    },
+    {
+      "route": "/",
+      "domContentLoadedMs": 210,
+      "loadEventMs": 374,
+      "transferSizeBytes": 14847
+    },
+    {
+      "route": "/zh/furniture-fit-checker/",
+      "domContentLoadedMs": 215,
+      "loadEventMs": 344,
+      "transferSizeBytes": 11830
+    },
+    {
+      "route": "/zh/small-bedroom-layout/",
+      "domContentLoadedMs": 327,
+      "loadEventMs": 459,
+      "transferSizeBytes": 14944
+    },
+    {
+      "route": "/zh/studio-apartment-layout/",
+      "domContentLoadedMs": 260,
+      "loadEventMs": 397,
+      "transferSizeBytes": 13317
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 195,
+      "loadEventMs": 196,
+      "transferSizeBytes": 11856
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 196,
+      "loadEventMs": 197,
+      "transferSizeBytes": 11856
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 184,
+      "loadEventMs": 184,
+      "transferSizeBytes": 11856
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 183,
+      "loadEventMs": 184,
+      "transferSizeBytes": 11856
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 201,
+      "loadEventMs": 202,
+      "transferSizeBytes": 11856
+    },
+    {
+      "route": "/zh/room-layout-planner/",
+      "domContentLoadedMs": 189,
+      "loadEventMs": 190,
+      "transferSizeBytes": 11856
+    },
+    {
+      "route": "/zh/layout-guides/10x10-bedroom-layout/",
+      "domContentLoadedMs": 193,
+      "loadEventMs": 322,
+      "transferSizeBytes": 9409
+    }
+  ]
+}
