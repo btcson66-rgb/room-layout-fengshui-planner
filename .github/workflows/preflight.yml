@@ -68,6 +68,11 @@ jobs:
           # 相同的輸出。這不是 secret；正式值同時要與 public/ads.txt 一致。
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
 
+      - name: Verify current build and sitemap authority
+        run: node scripts/release-build-authority.mjs
+        env:
+          ROOMFENG_BUILD_AUTHORITY_PATH: docs/uiux/evidence/ci-build-authority.json
+
       - name: Verify PRODUCT-002 analytics routing
         run: node --test tests/affiliate-ga4-routing.test.mjs tests/affiliate-ga4.test.mjs
 

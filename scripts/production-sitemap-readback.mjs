@@ -1,8 +1,9 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { ROOMFENG_RELEASE_AUTHORITY } from './release-authority.mjs';
 
 const origin = 'https://roomfeng.win';
-const expectedCount = 1447;
+const expectedCount = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const outputPath = path.resolve(process.env.ROOMFENG_SITEMAP_READBACK_PATH ?? 'release-evidence/production-sitemap-readback.json');
 
 async function fetchText(pathname) {

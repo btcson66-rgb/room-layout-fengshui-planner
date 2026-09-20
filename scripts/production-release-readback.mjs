@@ -13,6 +13,7 @@ const routeChecks = [
   { path: '/en/small-bedroom-layout-planner/', status: 200, document: true },
   { path: '/en/studio-apartment-layout/', status: 200, document: true },
   { path: '/en/layout-guides/10x10-bedroom-layout/', status: 200, document: true },
+  { path: '/en/contractor-margin-guard/', status: 200, document: true },
   { path: '/robots.txt', status: 200, document: false },
   { path: '/sitemap-index.xml', status: 200, document: false },
   { path: '/sitemap-0.xml', status: 200, document: false },

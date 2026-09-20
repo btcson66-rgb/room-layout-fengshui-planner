@@ -1,10 +1,11 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import { ROOMFENG_RELEASE_AUTHORITY } from './release-authority.mjs';
 
 const origin = process.env.ROOMFENG_SEO_ORIGIN ?? 'https://roomfeng.win';
 const evidenceDir = path.resolve(process.env.ROOMFENG_SEO_EVIDENCE_DIR ?? 'docs/uiux/evidence/hardening-003/seo');
-const expectedSitemapUrlCount = 1447;
+const expectedSitemapUrlCount = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const representatives = [
   { path: '/', canonical: '/', sitemap: true },
   { path: '/en/', canonical: '/en/', sitemap: true },
