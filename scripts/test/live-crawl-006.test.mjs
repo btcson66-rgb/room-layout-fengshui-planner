@@ -63,9 +63,10 @@ test('Chinese Furniture Fit has no known English operation sentences', () => {
   assert.match(source, /在 Planner 試這個尺寸/);
 });
 
-test('Header keeps compact navigation until 1080px and preserves touch sizing', () => {
+test('Header uses the measured 1120px desktop breakpoint and preserves touch sizing', () => {
   const css = read('src/styles/global.css');
-  assert.match(css, /@media \(min-width: 1080px\)/);
+  assert.match(css, /@media \(min-width: 1120px\)/);
+  assert.match(css, /\.site-nav-desktop \.nav-list \{[^}]*flex-wrap: nowrap;/s);
   assert.match(css, /\.site-nav-toggle[^\n]*min-height: 44px/);
   assert.match(css, /\.nav-list a, \.language-switcher a[^\n]*min-height: 44px/);
   assert.match(css, /\.language-switcher a[^\n]*white-space: nowrap/);

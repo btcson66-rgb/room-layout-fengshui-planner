@@ -306,3 +306,51 @@ This source closeout does not claim merge or deployment. Production browser, pro
 ### Scope and limitations
 
 Manual AdSense slots are intentionally unconfigured because no numeric publisher slot IDs exist in the repository or GitHub environment; placement containers remain, but no invalid `<ins>` is emitted. The local loader is stubbed. Lighthouse writes valid parsed reports but the CLI emits its existing process-cleanup warning after report generation; all 18 entries have empty `failures` and pass thresholds. Production evidence, merge state, deployment state, commit equality, production sitemap readback and GSC submission are not claimed by this source review.
+
+## Final Header Closeout 007 — local review
+
+### Scope and source
+
+- Base production SHA: `f679082f4219e03d91825073ec45837792a006cd`.
+- Candidate branch: `codex/roomfeng-final-header-closeout-007`.
+- Scope: close the English desktop header two-row regression at `1080px` without changing any protected product or SEO surface.
+- Fix: compact nav through `<1120px`; desktop nav from `>=1120px`; desktop nav list explicitly `flex-wrap: nowrap`.
+
+### Source-local gates
+
+| Gate | Result |
+| --- | --- |
+| Astro check | PASS — 241 files, 0 errors, 0 warnings, 0 hints |
+| Static build | PASS — 1,458 pages |
+| Sitemap | PASS — 1,448 URLs |
+| Content audit | PASS — 1,315 source, 1,315 review-ready, 0 held, 1,000,355 checks, 0 failures |
+| Script tests | PASS — 62/62 |
+| Review-04 browser regression | PASS — zh/en functional and visual contracts retained |
+| Header browser matrix | PASS — 18 runs across 9 widths, zh/en |
+| Preview Lighthouse | PASS — 18/18 threshold entries |
+| Bundle comparison | PASS — +119 JS bytes, largest chunk unchanged |
+
+### Header evidence
+
+- `docs/uiux/evidence/header-closeout-007/local-browser/responsive-header-summary.json`
+- `docs/uiux/evidence/header-closeout-007/local-browser/live-crawl-summary.json`
+- `docs/uiux/evidence/header-closeout-007/local-browser/en-header-1024.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/en-header-1080.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/en-header-1200.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/en-header-1280.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/en-header-1440.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/zh-header-1024.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/zh-header-1080.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/zh-header-1200.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/zh-header-1280.png`
+- `docs/uiux/evidence/header-closeout-007/local-browser/zh-header-1440.png`
+
+### SEO, accessibility and performance
+
+- SEO parity: PASS by protected-route/source contract; the candidate changes no URL, canonical, hreflang, robots, sitemap architecture or indexability behavior. Authority is build `1,458` / sitemap `1,448`.
+- Accessibility: PASS; existing skip link, focus-visible, keyboard furniture selection, `aria-live` / `role=status`, reduced motion and 44px targets remain intact. Header row/overflow checks pass at all required widths.
+- Performance: PASS locally; Preview Lighthouse 18/18 passes configured content/accessibility/best-practices/SEO/LCP/CLS/TBT thresholds. Existing Vite large-chunk warning and Lighthouse process cleanup warning are known tooling observations, not hidden failures.
+
+### Release boundary
+
+This local review does not claim merge, deployment, production browser, production Lighthouse, production commit equality, production sitemap readback or GSC outcome. Those are required after the candidate is pushed and the protected release workflow runs.

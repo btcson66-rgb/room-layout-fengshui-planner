@@ -149,3 +149,9 @@ This source package starts from the merged production head `b4804899299047a5c0b3
 - Authority transition: previous `1,457` build / `1,447` sitemap; added `/en/contractor-margin-guard/` from merged PR #103; baseline correction from merged PR #104; current `1,458` / `1,448`.
 
 Only current release authority uses these values. Historical baselines remain unchanged for traceability. No URL, canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement, or production analytics contract was changed.
+
+## Final Header Closeout 007 baseline
+
+Final Header Closeout 007 starts from production `f679082f4219e03d91825073ec45837792a006cd` and is limited to the measured desktop header regression. At the old `1080px` desktop state, English header fit had only `3.44px` measured safety margin; `1120px` had `43.44px`, so `1120px` is the minimum tested desktop breakpoint meeting the `>=32px` margin contract. The candidate keeps compact navigation at `390/768/1024/1080` and desktop navigation at `1120/1180/1200/1280/1440` for both zh and en.
+
+The source-local authority remains `1,458` build pages / `1,448` sitemap URLs / `1,315` source and review-ready articles / `1,000,355` content-audit checks / `0` failures. The new regression gate requires desktop nav item top deltas `<=2px`, language/CTA control row delta `<=2px`, header height `<=82px`, no horizontal overflow, and desktop nav `flex-wrap: nowrap`. Existing URLs, canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement and production analytics are protected.

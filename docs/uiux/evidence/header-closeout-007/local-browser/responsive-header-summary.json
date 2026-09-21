@@ -1,0 +1,1809 @@
+{
+  "origin": "http://127.0.0.1:4325",
+  "generatedAt": "2026-09-21T01:42:35.994Z",
+  "runs": [
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 390,
+      "viewportWidth": 390,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "選單",
+          "width": 70.40625,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 768,
+      "viewportWidth": 768,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "選單",
+          "width": 70.40625,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1024,
+      "viewportWidth": 1024,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "選單",
+          "width": 70.40625,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1080,
+      "viewportWidth": 1080,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "選單",
+          "width": 70.40625,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1120,
+      "viewportWidth": 1120,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "開始規劃",
+          "width": 84.796875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 84.796875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 194.375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1180,
+      "viewportWidth": 1180,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "開始規劃",
+          "width": 84.796875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 84.796875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 254.375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1200,
+      "viewportWidth": 1200,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "開始規劃",
+          "width": 84.796875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 84.796875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 266.375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1280,
+      "viewportWidth": 1280,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "開始規劃",
+          "width": 84.796875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 84.796875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 266.375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "zh",
+      "route": "/",
+      "width": 1440,
+      "viewportWidth": 1440,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "房間規劃",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "房間規劃",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "家具適配",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "房間尺寸",
+          "width": 79.984375,
+          "height": 44
+        },
+        {
+          "text": "指南",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "搬家",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "關於",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "開始規劃",
+          "width": 84.796875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 84.796875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 266.375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 390,
+      "viewportWidth": 390,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "Menu",
+          "width": 81.703125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 768,
+      "viewportWidth": 768,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "Menu",
+          "width": 81.703125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1024,
+      "viewportWidth": 1024,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "Menu",
+          "width": 81.703125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1080,
+      "viewportWidth": 1080,
+      "compact": true,
+      "desktop": false,
+      "interactive": [
+        {
+          "text": "Menu",
+          "width": 81.703125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 0,
+      "navItemCount": 0,
+      "navItemRowDelta": null,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "wrap",
+      "safetyMargin": null,
+      "navItemTops": [],
+      "languageTop": null,
+      "ctaTop": 0,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1120,
+      "viewportWidth": 1120,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 78.15625,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 111.28125,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 103.109375,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 71.03125,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 73.984375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 65.140625,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Open planner",
+          "width": 126.546875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 126.546875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 43.4375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1180,
+      "viewportWidth": 1180,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 78.15625,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 111.28125,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 103.109375,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 71.03125,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 73.984375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 65.140625,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Open planner",
+          "width": 126.546875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 126.546875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 103.4375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1200,
+      "viewportWidth": 1200,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 78.15625,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 111.28125,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 103.109375,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 71.03125,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 73.984375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 65.140625,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Open planner",
+          "width": 126.546875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 126.546875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 115.4375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1280,
+      "viewportWidth": 1280,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 78.15625,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 111.28125,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 103.109375,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 71.03125,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 73.984375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 65.140625,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Open planner",
+          "width": 126.546875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 126.546875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 115.4375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    },
+    {
+      "locale": "en",
+      "route": "/en/",
+      "width": 1440,
+      "viewportWidth": 1440,
+      "compact": false,
+      "desktop": true,
+      "interactive": [
+        {
+          "text": "Planner",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 262,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Planner",
+          "width": 78.15625,
+          "height": 44
+        },
+        {
+          "text": "Furniture Fit",
+          "width": 111.28125,
+          "height": 44
+        },
+        {
+          "text": "Room Sizes",
+          "width": 103.109375,
+          "height": 44
+        },
+        {
+          "text": "Guides",
+          "width": 71.03125,
+          "height": 44
+        },
+        {
+          "text": "Moving",
+          "width": 73.984375,
+          "height": 44
+        },
+        {
+          "text": "About",
+          "width": 65.140625,
+          "height": 44
+        },
+        {
+          "text": "中文",
+          "width": 51.1875,
+          "height": 44
+        },
+        {
+          "text": "English",
+          "width": 74.328125,
+          "height": 44
+        },
+        {
+          "text": "Open planner",
+          "width": 126.546875,
+          "height": 44
+        }
+      ],
+      "nowrapFailures": [],
+      "overlaps": false,
+      "headerHeight": 77,
+      "brandWidth": 206.453125,
+      "ctaWidth": 126.546875,
+      "navItemCount": 6,
+      "navItemRowDelta": 0,
+      "controlRowDelta": 0,
+      "navListFlexWrap": "nowrap",
+      "safetyMargin": 115.4375,
+      "navItemTops": [
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "languageTop": 16,
+      "ctaTop": 16,
+      "issues": [],
+      "pass": true,
+      "overflow": {
+        "document": 0,
+        "body": 0
+      }
+    }
+  ],
+  "pass": true
+}

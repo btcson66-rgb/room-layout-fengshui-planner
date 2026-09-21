@@ -194,10 +194,10 @@ p { margin: 0 0 var(--space-4); }
 .ad-slot { display: grid; place-items: center; }
 .ad-slot:has(> [data-ad-status='unfilled']) { display: none !important; }
 
-@media (min-width: 1080px) {
+@media (min-width: 1120px) {
   .site-nav-toggle { display: none; }
   .site-nav-desktop { display: flex; align-items: center; gap: 0.5rem; }
-  .nav-list { display: flex; justify-content: center; }
+  .site-nav-desktop .nav-list { display: flex; justify-content: center; flex-wrap: nowrap; }
   .language-switcher { margin: 0 0 0 0.35rem; padding: 0 0 0 0.35rem; border-top: 0; border-left: 1px solid var(--color-border); }
   .header-cta { display: inline-flex; }
   .footer-inner { grid-template-columns: minmax(0, 1.6fr) minmax(9rem, 0.7fr) minmax(9rem, 0.7fr); align-items: start; }
