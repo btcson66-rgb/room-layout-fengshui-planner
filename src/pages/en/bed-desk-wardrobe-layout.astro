@@ -3,10 +3,12 @@ import Layout from '../../components/Layout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
+import MeasuredPlan from '../../components/MeasuredPlan.astro';
 import { en } from '../../i18n/en';
+import '../../styles/uiux-prototypes.css';
 
-const title = 'Bed Desk Wardrobe Layout | Arrange Core Bedroom Furniture';
-const description = 'Plan a bedroom around the bed, desk, and wardrobe with practical clearance tips for walking, working, storage access, and room fit.';
+const title = 'Small Bedroom Layout with Bed, Desk & Wardrobe | Measured Setups';
+const description = 'Compare measured 8x10, 9x10 and 10x10 bedroom setups with a bed, desk and wardrobe. See tradeoffs in walkway, chair and storage clearance.';
 const canonical = '/en/bed-desk-wardrobe-layout/';
 const alternates = { zh: '/zh/bed-desk-wardrobe-layout/', en: '/en/bed-desk-wardrobe-layout/' };
 const siteUrl = 'https://roomfeng.win';
@@ -14,7 +16,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Bed Desk Wardrobe Layout',
+    headline: 'Small Bedroom Layout with Bed, Desk and Wardrobe',
     description,
     inLanguage: 'en',
     author: { '@type': 'Organization', name: 'RoomFeng' },
@@ -41,15 +43,19 @@ const relatedLinks = [
   { href: '/en/furniture-fit-checker/', title: 'Furniture fit checker' },
   { href: '/en/moving-furniture-size-check/', title: 'Moving furniture size check' },
 ];
+const measuredRoomCm = 304.8;
+const measuredBedCm = { x: 12, y: 24, width: 152.4, depth: 203.2 };
+const measuredWardrobeCm = { x: 232, y: 24, width: 60, depth: 121.9 };
+const measuredDeskCm = { x: 12, y: 245, width: 106.7, depth: 50.8 };
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
   <section class="section">
     <div class="container page-grid">
       <article class="card">
-        <h1>Bed desk wardrobe layout</h1>
+        <h1>Small bedroom layout with bed, desk and wardrobe</h1>
         <p class="lead">
-          The bed, desk, and wardrobe are the three pieces that decide whether a bedroom feels usable. Plan them together so sleeping, working, and storage do not fight for the same floor space.
+          A bed, desk and wardrobe can fit in many small bedrooms, but “fits” is not the same as “works.” The three pieces compete for walking space, chair pull-back and storage access. Start with the bed footprint, subtract wardrobe depth from the opposite side, then test where the desk and chair can operate without using the same narrow route.
         </p>
         <p>
           Many bedrooms look simple until these three items arrive. The bed consumes the largest rectangle, the wardrobe needs access in front, and the desk needs both a surface and a chair zone. If you place each one independently, the leftover space may become a narrow path that is inconvenient every day. The better approach is to choose a priority order and test the group as a system.
@@ -57,6 +63,31 @@ const relatedLinks = [
         <p>
           The bed usually comes first because its size is hardest to ignore. Check whether it should run along the longest wall, sit under a window, or be centered with access on one or both sides. Then place the wardrobe where clothing access is convenient and door or drawer clearance does not collide with the bed. Finally, place the desk where the chair can move without blocking the wardrobe or the main route from the door. If you work or study daily, the desk may deserve more space than a small bedside table.
         </p>
+
+        <h2>Three measured room-size checks</h2>
+        <h3>8 × 10 ft room</h3>
+        <p>Room: <strong>96 × 120 in</strong>. Illustrative items: Full mattress 54 × 75 in, wardrobe depth 24 in, and compact desk 36 × 18 in.</p>
+        <p>Cross-room screening: <strong>96 − 54 − 24 = 18 in</strong>. That 18 in is a very tight leftover strip before actual bed-frame thickness, baseboards, door position, and chair movement. An 8×10 room may physically hold all three pieces, but placing the wardrobe directly opposite a Full bed creates a poor cross-room route. It is not a recommended walkway.</p>
+
+        <h3>9 × 10 ft room</h3>
+        <p>Room: <strong>108 × 120 in</strong>. Illustrative items: Queen mattress 60 × 80 in, wardrobe depth 24 in, and compact desk 40 × 18 in.</p>
+        <p>Cross-room screening: <strong>108 − 60 − 24 = 24 in</strong>. This is better than 8×10, but still tight if the same strip serves chair movement, wardrobe access, and the main entry route.</p>
+
+        <h3>10 × 10 ft room</h3>
+        <p>Room: <strong>120 × 120 in</strong>. Illustrative items: Queen mattress 60 × 80 in, wardrobe depth 24 in, and desk 42 × 20 in.</p>
+        <p>Cross-room screening: <strong>120 − 60 − 24 = 36 in</strong>. The 36 in strip provides more flexibility before the real bed frame and room obstacles are included. It may allow a clearer side route, better wardrobe operation, and separate desk placement, but it still needs to be tested against the real door, window, and chair zone.</p>
+
+        <div class="measured-landing" aria-labelledby="bedroom-measured-plan-heading">
+          <header class="measured-landing-header"><div><h2 id="bedroom-measured-plan-heading">10 × 10 ft measured screening diagram</h2></div><p>This original geometry study shows one possible Queen, wardrobe, desk, and route arrangement. It is a planning study, not a universal room standard.</p></header>
+          <div class="measured-layout-grid">
+            <div class="measured-plan" aria-label="10 by 10 foot bedroom screening diagram with Queen bed, wardrobe, compact desk, and route">
+              <MeasuredPlan roomWidthCm={measuredRoomCm} roomLengthCm={measuredRoomCm} ariaLabel="304.8 by 304.8 centimetre room with 152.4 by 203.2 Queen bed, wardrobe, compact desk, and remaining route" furniture={[{ x: measuredBedCm.x, y: measuredBedCm.y, width: measuredBedCm.width, depth: measuredBedCm.depth, label: 'QUEEN', className: 'bed' }, { x: measuredWardrobeCm.x, y: measuredWardrobeCm.y, width: measuredWardrobeCm.width, depth: measuredWardrobeCm.depth, label: 'WARDROBE', className: 'storage' }, { x: measuredDeskCm.x, y: measuredDeskCm.y, width: measuredDeskCm.width, depth: measuredDeskCm.depth, label: 'DESK', className: 'desk' }]} route="M 200 295 L 200 220 L 200 24" />
+            </div>
+            <div class="measured-facts"><dl><dt>Room</dt><dd>120 × 120 in</dd><dt>Queen mattress</dt><dd>60 × 80 in</dd><dt>Wardrobe depth</dt><dd>24 in</dd><dt>Cross-room screen</dt><dd>36 in before obstacles</dd></dl><div class="measured-check"><strong>Check this first</strong><span>The remaining route is a screening strip. Add the actual bed frame, baseboards, door swing, window, wardrobe opening, and chair pull-back before treating it as usable.</span></div></div>
+          </div>
+        </div>
+
+        <p><strong>Important:</strong> mattress dimensions are not necessarily bed-frame dimensions. Actual frames can be larger. These examples are planning studies, not universal room standards.</p>
 
         <h2>Clearance tips for the three-piece layout</h2>
         <p>
@@ -77,6 +108,7 @@ const relatedLinks = [
         <p>
           If the planner warns about a narrow route or blocked door, do not treat it as a minor detail. In a bedroom used every day, small clearance problems become repeated annoyances.
         </p>
+        <p>Need a broader room-size workflow before choosing the three pieces? <a href="/en/small-bedroom-layout-planner/">Start with the general small-bedroom planning workflow</a>.</p>
       </article>
 
       <div class="cta-band">
