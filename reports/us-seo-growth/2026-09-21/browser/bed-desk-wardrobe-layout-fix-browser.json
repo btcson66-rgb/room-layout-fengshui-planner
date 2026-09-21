@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "origin": "http://127.0.0.1:4325",
+  "route": "/en/bed-desk-wardrobe-layout/",
+  "widths": [375, 390, 768, 1024, 1440],
+  "results": [
+    { "width": 375, "status": 200, "horizontalOverflow": false, "svgClipped": false, "gapCm": "67.6", "gapIn": "26.6", "pageErrors": 0, "consoleErrors": 0, "firstPartyFailures": 0 },
+    { "width": 390, "status": 200, "horizontalOverflow": false, "svgClipped": false, "gapCm": "67.6", "gapIn": "26.6", "pageErrors": 0, "consoleErrors": 0, "firstPartyFailures": 0 },
+    { "width": 768, "status": 200, "horizontalOverflow": false, "svgClipped": false, "gapCm": "67.6", "gapIn": "26.6", "pageErrors": 0, "consoleErrors": 0, "firstPartyFailures": 0 },
+    { "width": 1024, "status": 200, "horizontalOverflow": false, "svgClipped": false, "gapCm": "67.6", "gapIn": "26.6", "pageErrors": 0, "consoleErrors": 0, "firstPartyFailures": 0 },
+    { "width": 1440, "status": 200, "horizontalOverflow": false, "svgClipped": false, "gapCm": "67.6", "gapIn": "26.6", "pageErrors": 0, "consoleErrors": 0, "firstPartyFailures": 0 }
+  ],
+  "screenshots": [
+    "bed-desk-wardrobe-layout-fix-375.png",
+    "bed-desk-wardrobe-layout-fix-1440.png"
+  ]
+}

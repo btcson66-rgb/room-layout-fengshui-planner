@@ -95,6 +95,17 @@ test('US SEO Growth 002 keeps the current authority and URL surface', async () =
   for (const term of ['96 × 120', '108 × 120', '120 × 120', '18 in', '24 in', '36 in', 'mattress dimensions are not necessarily bed-frame dimensions']) {
     assert.match(bed, new RegExp(term.replace(/[×]/g, '×'), 'i'), `bed/desk/wardrobe page missing ${term}`);
   }
+  assert.match(bed, /idealized cross-room arithmetic screen/i, '10×10 arithmetic must be explicitly idealized');
+  assert.match(bed, /ignores placement offsets and does not describe the exact gap drawn below/i, '10×10 arithmetic must be separated from diagram placement');
+  const actualGapCm = Number(bed.match(/data-bed-to-wardrobe-gap-cm="([\d.]+)"/i)?.[1]);
+  const actualGapIn = Number(bed.match(/data-bed-to-wardrobe-gap-in="([\d.]+)"/i)?.[1]);
+  assert.ok(Number.isFinite(actualGapCm) && Number.isFinite(actualGapIn), 'actual diagram gap must be rendered from geometry');
+  assert.ok(Math.abs(actualGapCm - (232 - (12 + 152.4))) < 0.01, 'actual gap cm must derive from bed and wardrobe geometry');
+  assert.ok(Math.abs(actualGapIn - actualGapCm / 2.54) < 0.05, 'actual gap inches must derive from actual gap cm');
+  assert.ok(Math.abs(actualGapIn - 26.6) < 0.1, `actual diagram gap should be approximately 26.6 in, received ${actualGapIn}`);
+  assert.match(bed, /actual bed-to-wardrobe gap[\s\S]{0,300}26\.6 in/i, 'rendered actual gap must be visible beside the diagram');
+  assert.match(bed, /actual bed frame[\s\S]*baseboards[\s\S]*door swing[\s\S]*window[\s\S]*wardrobe operation[\s\S]*desk\/chair zone/i, 'diagram caveat must name real-world clearance constraints');
+  assert.match(bed, /mathematical fit ≠ usable layout clearance/i, 'diagram caveat must distinguish mathematical fit from usable clearance');
   assert.ok(hrefsFrom(bed).includes('/en/small-bedroom-layout-planner/'), 'bed/desk/wardrobe page missing general workflow handoff');
   assert.ok(count(bed, /data-measured-plan="true"/g) >= 1, 'bed/desk/wardrobe page missing original measured diagram');
 

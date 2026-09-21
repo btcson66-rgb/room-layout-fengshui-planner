@@ -26,6 +26,8 @@ Date: 2026-09-21 (Asia/Taipei)
 - Reframed metadata and H1 around the exact small-bedroom bed + desk + wardrobe intent.
 - Added measured 8 × 10, 9 × 10, and 10 × 10 ft screening studies with explicit assumptions and caveats.
 - Added one original measured `MeasuredPlan` diagram using the existing component and stylesheet; diagram furniture was positioned with safe label clearance after visual QA.
+- Clarified that `120 − 60 − 24 = 36 in` is an idealized cross-room arithmetic screen, not the exact SVG gap; the diagram now renders the geometry-derived actual bed-to-wardrobe gap of approximately `26.6 in` from the existing constants.
+- Added copy explaining that the SVG is one placement example and that actual bed frames, baseboards, door swing, windows, wardrobe operation, and the desk/chair zone still determine usable clearance.
 - Added the mattress-versus-bed-frame caveat and links to the general small-bedroom workflow and existing planner.
 
 ### `/en/small-bedroom-layout-planner/`

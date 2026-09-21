@@ -47,6 +47,9 @@ const measuredRoomCm = 304.8;
 const measuredBedCm = { x: 12, y: 24, width: 152.4, depth: 203.2 };
 const measuredWardrobeCm = { x: 232, y: 24, width: 60, depth: 121.9 };
 const measuredDeskCm = { x: 12, y: 245, width: 106.7, depth: 50.8 };
+const measuredBedToWardrobeGapCm = measuredWardrobeCm.x - (measuredBedCm.x + measuredBedCm.width);
+const measuredBedToWardrobeGapIn = measuredBedToWardrobeGapCm / 2.54;
+const measuredBedToWardrobeGapInDisplay = measuredBedToWardrobeGapIn.toFixed(1);
 ---
 
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={alternates} jsonLd={jsonLd}>
@@ -75,7 +78,7 @@ const measuredDeskCm = { x: 12, y: 245, width: 106.7, depth: 50.8 };
 
         <h3>10 × 10 ft room</h3>
         <p>Room: <strong>120 × 120 in</strong>. Illustrative items: Queen mattress 60 × 80 in, wardrobe depth 24 in, and desk 42 × 20 in.</p>
-        <p>Cross-room screening: <strong>120 − 60 − 24 = 36 in</strong>. The 36 in strip provides more flexibility before the real bed frame and room obstacles are included. It may allow a clearer side route, better wardrobe operation, and separate desk placement, but it still needs to be tested against the real door, window, and chair zone.</p>
+        <p>The <strong>idealized cross-room arithmetic screen</strong> is <strong>120 − 60 − 24 = 36 in</strong>. That simple number ignores placement offsets and does not describe the exact gap drawn below. It provides a useful first screen before the real bed frame and room obstacles are included; the layout still needs to be tested against the door, window, chair zone, and wardrobe operation.</p>
 
         <div class="measured-landing" aria-labelledby="bedroom-measured-plan-heading">
           <header class="measured-landing-header"><div><h2 id="bedroom-measured-plan-heading">10 × 10 ft measured screening diagram</h2></div><p>This original geometry study shows one possible Queen, wardrobe, desk, and route arrangement. It is a planning study, not a universal room standard.</p></header>
@@ -83,7 +86,7 @@ const measuredDeskCm = { x: 12, y: 245, width: 106.7, depth: 50.8 };
             <div class="measured-plan" aria-label="10 by 10 foot bedroom screening diagram with Queen bed, wardrobe, compact desk, and route">
               <MeasuredPlan roomWidthCm={measuredRoomCm} roomLengthCm={measuredRoomCm} ariaLabel="304.8 by 304.8 centimetre room with 152.4 by 203.2 Queen bed, wardrobe, compact desk, and remaining route" furniture={[{ x: measuredBedCm.x, y: measuredBedCm.y, width: measuredBedCm.width, depth: measuredBedCm.depth, label: 'QUEEN', className: 'bed' }, { x: measuredWardrobeCm.x, y: measuredWardrobeCm.y, width: measuredWardrobeCm.width, depth: measuredWardrobeCm.depth, label: 'WARDROBE', className: 'storage' }, { x: measuredDeskCm.x, y: measuredDeskCm.y, width: measuredDeskCm.width, depth: measuredDeskCm.depth, label: 'DESK', className: 'desk' }]} route="M 200 295 L 200 220 L 200 24" />
             </div>
-            <div class="measured-facts"><dl><dt>Room</dt><dd>120 × 120 in</dd><dt>Queen mattress</dt><dd>60 × 80 in</dd><dt>Wardrobe depth</dt><dd>24 in</dd><dt>Cross-room screen</dt><dd>36 in before obstacles</dd></dl><div class="measured-check"><strong>Check this first</strong><span>The remaining route is a screening strip. Add the actual bed frame, baseboards, door swing, window, wardrobe opening, and chair pull-back before treating it as usable.</span></div></div>
+            <div class="measured-facts" data-bed-to-wardrobe-gap-cm={measuredBedToWardrobeGapCm} data-bed-to-wardrobe-gap-in={measuredBedToWardrobeGapInDisplay}><dl><dt>Room</dt><dd>120 × 120 in</dd><dt>Queen mattress</dt><dd>60 × 80 in</dd><dt>Wardrobe depth</dt><dd>24 in</dd><dt>Idealized arithmetic screen</dt><dd>36 in before placement offsets</dd><dt>Actual bed-to-wardrobe gap</dt><dd>≈ {measuredBedToWardrobeGapInDisplay} in ({measuredBedToWardrobeGapCm.toFixed(1)} cm)</dd></dl><div class="measured-check"><strong>Check this first</strong><span>The 36 in value is a simple mathematical screen; this SVG is one actual placement example with an approximately {measuredBedToWardrobeGapInDisplay} in bed-to-wardrobe gap. Check the actual bed frame, baseboards, door swing, window, wardrobe operation, and desk/chair zone. Mathematical fit ≠ usable layout clearance.</span></div></div>
           </div>
         </div>
 

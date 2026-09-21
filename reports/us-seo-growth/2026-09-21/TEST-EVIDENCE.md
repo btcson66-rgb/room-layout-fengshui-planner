@@ -20,6 +20,16 @@ All required local checks and scoped browser checks passed against the isolated 
 | Browser QA | PASS | 25 page/viewport combinations; no horizontal overflow, page errors, console errors, or same-origin response failures |
 | Furniture-fit interaction | PASS | Form interaction at 390 px produced result text |
 
+## Independent review fix
+
+- Fixed the measured-content consistency issue on `/en/bed-desk-wardrobe-layout/`.
+- The `36 in` value remains as the `idealized cross-room arithmetic screen` for `120 − 60 − 24`; copy now states that it ignores placement offsets and is not the exact SVG gap.
+- The actual diagram gap is calculated from the existing source constants: `232 − (12 + 152.4) = 67.6 cm`, rendered as approximately `26.6 in`.
+- The scoped regression test verifies the rendered data attributes, recalculates the relationship, checks the approximately `26.6 in` result, and requires the distinction/caveat wording.
+- Targeted browser QA was rerun for the bed/desk/wardrobe page at 375, 390, 768, 1024, and 1440 px; all passed with readable arithmetic and actual-gap facts, no SVG clipping, no horizontal overflow, and no console/page errors.
+- Targeted machine-readable result: `reports/us-seo-growth/2026-09-21/browser/bed-desk-wardrobe-layout-fix-browser.json`.
+- Targeted screenshots: `reports/us-seo-growth/2026-09-21/browser/bed-desk-wardrobe-layout-fix-375.png` and `bed-desk-wardrobe-layout-fix-1440.png`.
+
 The production-like build was served locally and the complete 25-combination browser matrix was rerun against that output. A first immediate pass observed one non-reproducible third-party-looking page error (`Vl`) on the moving page; a direct diagnostic and the final complete rerun produced no page errors, console errors, or first-party response failures. The scoped browser result recorded above is the final rerun.
 
 ## Browser matrix
