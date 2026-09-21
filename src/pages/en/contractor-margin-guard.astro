@@ -3,6 +3,7 @@ import Layout from '../../components/Layout.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { siteUrl } from '../../data/site';
+import { buildProductJsonLd } from '../../data/productSchema';
 
 const title = 'Contractor Margin Guard | Local Job Profit Tracker';
 const description = 'Track contractor estimates, actual costs, change orders, projected margin, and profit leakage in a local-first job profitability tool for small crews.';
@@ -14,24 +15,25 @@ const gumroadUrl = 'https://btcsonlab01.gumroad.com/l/contractor-margin-guard';
 const utm = (url: string, content: string) => `${url}?utm_source=roomfeng&utm_medium=owned&utm_campaign=product006_launch&utm_content=${content}`;
 const payhipHero = utm(payhipUrl, 'hero');
 const gumroadHero = utm(gumroadUrl, 'hero');
+const productImages = [
+  '/assets/contractor-margin-guard/01-gumroad-hero.png',
+  '/assets/contractor-margin-guard/06-feature-estimate-vs-actual.png',
+  '/assets/contractor-margin-guard/04-feature-profit-leakage.png',
+] as const;
 const jsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
+  buildProductJsonLd({
     name: productName,
     description,
     sku: productId,
-    brand: { '@type': 'Brand', name: 'RoomFeng' },
-    image: `${siteUrl}/assets/contractor-margin-guard/01-gumroad-hero.png`,
-    offers: {
-      '@type': 'Offer',
+    images: productImages,
+    offer: {
       price: '29',
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: payhipHero,
-      seller: { '@type': 'Organization', name: 'BtcsonLab1' },
+      sellerName: 'BtcsonLab1',
     },
-  },
+  }),
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

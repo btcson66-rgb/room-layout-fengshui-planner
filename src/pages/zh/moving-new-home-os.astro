@@ -4,13 +4,25 @@ import MovingOsSales from '../../components/MovingOsSales.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import { movingOsProduct } from '../../config/products';
+import { buildProductJsonLd } from '../../data/productSchema';
 import '../../styles/product-sales.css';
 const title = '搬家與新居規劃系統｜家具尺寸、紙箱、預算一次管理｜RoomFeng';
 const description = '用三關模型檢查家具搬運與房間尺寸，集中管理新家測量、搬家時間軸、紙箱、預算、家具採購、XLSX、列印表與本機備份。';
 const canonical = '/zh/moving-new-home-os/';
 const alternates = { en: '/en/moving-new-home-os/', zh: canonical };
 const jsonLd = [
-  { '@context':'https://schema.org', '@type':'Product', name:'RoomFeng 搬家與新居規劃系統', description, brand:{'@type':'Brand',name:'RoomFeng'}, category:'搬家規劃軟體與數位工作簿', offers:{'@type':'Offer',price:'12.99',priceCurrency:'USD',availability:'https://schema.org/InStock',url:`https://roomfeng.win${canonical}`} },
+  buildProductJsonLd({
+    name: 'RoomFeng 搬家與新居規劃系統',
+    description,
+    sku: movingOsProduct.id,
+    images: movingOsProduct.coverImages,
+    offer: {
+      price: movingOsProduct.displayPrice.amount.toFixed(2),
+      priceCurrency: movingOsProduct.displayPrice.currency,
+      availability: 'https://schema.org/InStock',
+      url: canonical,
+    },
+  }),
   { '@context':'https://schema.org', '@type':'BreadcrumbList', itemListElement:[{'@type':'ListItem',position:1,name:'首頁',item:'https://roomfeng.win/zh/'},{'@type':'ListItem',position:2,name:'搬家與新居規劃系統',item:`https://roomfeng.win${canonical}`}] },
 ];
 const faqItems = [
@@ -25,7 +37,7 @@ const faqItems = [
 ];
 const relatedLinks = [{href:'/zh/moving-furniture-size-check/',title:'搬家家具尺寸檢查'}, {href:'/zh/room-layout-planner/',title:'免費房間配置工具'}, {href:'/privacy/',title:'RoomFeng 隱私政策'}];
 ---
-<Layout title={title} description={description} canonical={canonical} lang="zh" alternates={alternates} jsonLd={jsonLd} pageType="tool">
+<Layout title={title} description={description} canonical={canonical} lang="zh" ogImage={movingOsProduct.coverImages[0]} alternates={alternates} jsonLd={jsonLd} pageType="tool">
   <MovingOsSales locale="zh-TW" activationHref="/zh/moving-new-home-os/activate/" previewHref={movingOsProduct.previewPackUrl} providers={movingOsProduct.providers} priceLabel={`${movingOsProduct.displayPrice.currency} ${movingOsProduct.displayPrice.amount.toFixed(2)}`} supportEmail={movingOsProduct.supportEmail} refundPolicyUrl={movingOsProduct.refundPolicyUrl} />
   <section class="section"><div class="container"><Faq lang="zh" items={faqItems} /><RelatedLinks lang="zh" links={relatedLinks} /></div></section>
 </Layout>

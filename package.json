@@ -11,6 +11,7 @@
     "lint": "astro check",
     "assets:brand": "node scripts/generate-brand-assets.mjs",
     "assets:affiliate": "node scripts/generate-affiliate-assets.mjs",
+    "assets:products": "node scripts/generate-product-assets.mjs",
     "audit:content": "node scripts/content-quality-audit.mjs",
     "audit:headings": "node scripts/semantic-heading-audit.mjs",
     "audit:bundle": "node scripts/bundle-size-audit.mjs",

@@ -5364,6 +5364,60 @@ if (someArticleShowsAffiliate) {
   }
 }
 
+// 商家資訊（Merchant listings）結構化資料閘門。
+// Search Console 在 2026-09-18 開出重大問題：付費產品頁的 Product 節點缺少
+// `image`，Google 直接把整筆商家資訊判為無效（0 個有效項目、0 次曝光），同時
+// 把自由文字的 `category` 判為無效值。那些 JSON-LD 原本散在各頁手寫，沒有任何
+// 檢查擋得住，所以四個產品頁同時帶著同一個缺陷上線。這裡把每個輸出的 Product
+// 節點對照商家資訊必要欄位檢一次，並確認它指到的圖片真的存在於 dist。
+const MERCHANT_ORIGIN = 'https://roomfeng.win';
+// Google 以自家 product taxonomy 驗證 `category`，只接受 "A > B > C" 這種分類
+// 路徑；描述性的句子一律會被判為無效值，所以寧可不填也不要手寫。
+const TAXONOMY_PATH = /^[\w&,'()./+-]+(?: [\w&,'()./+-]+)*(?: > [\w&,'()./+-]+(?: [\w&,'()./+-]+)*)+$/;
+const productNodes = [];
+for (const file of htmlFiles) {
+  const html = await fs.readFile(file, 'utf8');
+  for (const block of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    const page = toPosix(path.relative(distRoot, file));
+    let parsed;
+    try {
+      parsed = JSON.parse(block[1]);
+    } catch {
+      check(`json-ld-parse:${page}`, false, 'JSON-LD must be valid JSON');
+      continue;
+    }
+    for (const node of Array.isArray(parsed) ? parsed : [parsed]) {
+      if (node && node['@type'] === 'Product') productNodes.push({ page, node });
+    }
+  }
+}
+
+check('merchant-listing-coverage', productNodes.length >= 5, `the paid landing pages must keep publishing Product structured data (found ${productNodes.length})`);
+
+for (const { page, node } of productNodes) {
+  const route = `/${page.replace(/index\.html$/, '')}`;
+  const images = [node.image ?? []].flat().filter((value) => typeof value === 'string' && value.length > 0);
+  check(`merchant-listing-image:${route}`, images.length > 0, 'Product requires `image`; Google drops a merchant listing without one');
+  for (const image of images) {
+    check(`merchant-listing-image-absolute:${route}`, image.startsWith('https://'), `product image must be an absolute https URL: ${image}`);
+    if (!image.startsWith(`${MERCHANT_ORIGIN}/`)) continue;
+    const local = image.slice(MERCHANT_ORIGIN.length);
+    check(`merchant-listing-image-exists:${route}:${local}`, await distAssetExists(local), `product image is missing from dist: ${local}`);
+  }
+  for (const field of ['name', 'description', 'sku']) {
+    check(`merchant-listing-${field}:${route}`, typeof node[field] === 'string' && node[field].trim().length > 0, `Product requires a non-empty ${field}`);
+  }
+  const offers = node.offers ?? {};
+  for (const field of ['price', 'priceCurrency', 'availability', 'url']) {
+    check(`merchant-listing-offer-${field}:${route}`, typeof offers[field] === 'string' && offers[field].trim().length > 0, `Product offer requires ${field}`);
+  }
+  check(
+    `merchant-listing-category:${route}`,
+    node.category === undefined || TAXONOMY_PATH.test(node.category),
+    `category must be a Google product taxonomy path, not prose: ${node.category}`,
+  );
+}
+
 const report = {
   status: failures.length === 0 ? 'PASS' : 'FAIL',
   totals: {
