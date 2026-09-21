@@ -10,6 +10,7 @@ const read = (relative) => fs.readFileSync(path.join(root, relative), 'utf8');
 test('Final Header Closeout 007 locks the measured desktop breakpoint and row gates', () => {
   const css = read('src/styles/global.css');
   const browser = read('scripts/test/live-crawl-006.browser.mjs');
+  const verdict = read('scripts/final-release-verdict.mjs');
   assert.match(css, /@media \(min-width: 1200px\)/);
   assert.match(css, /\.site-nav-desktop \.nav-list \{[^}]*flex-wrap: nowrap;/s);
   assert.match(browser, /const DESKTOP_HEADER_BREAKPOINT = 1200/);
@@ -19,4 +20,6 @@ test('Final Header Closeout 007 locks the measured desktop breakpoint and row ga
   assert.match(browser, /safetyMargin/);
   assert.match(browser, /header height exceeds 82px/);
   assert.match(browser, /desktop nav flex-wrap/);
+  assert.match(verdict, /responsiveHeader\.runs\?\.length === 18/);
+  assert.doesNotMatch(verdict, /responsiveHeader\.runs\?\.length === 10/);
 });
