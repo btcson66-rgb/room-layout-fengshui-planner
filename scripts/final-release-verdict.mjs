@@ -38,7 +38,10 @@ requirePass('production localization artifact', localization.englishFaqHeading =
   && localization.englishRelatedHeading === 'PASS'
   && localization.chineseFurnitureFit === 'PASS'
   && localization.englishFurnitureFit === 'PASS');
-requirePass('production responsive header', responsiveHeader.pass && responsiveHeader.runs?.length === 10);
+// Final Header Closeout 007 measures both locales at all nine required
+// widths: 390, 768, 1024, 1080, 1120, 1180, 1200, 1280, and 1440.
+// The responsive-header artifact stores those 18 records under `runs`.
+requirePass('production responsive header', responsiveHeader.pass && responsiveHeader.runs?.length === 18);
 requirePass('manual AdSense slots are numeric', adsense.invalidManualSlots === 0 && adsense.numericManualSlotsRendered === adsense.manualSlotsRendered);
 requirePass('AdSense integration HTTP 400', adsense.adsense400Responses === 0);
 requirePass('AdSense zero-width errors', adsense.zeroWidthErrors === 0);
