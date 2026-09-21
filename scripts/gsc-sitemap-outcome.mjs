@@ -11,6 +11,18 @@
 // 全部 lastDownloaded=null 時單站報 warning、三站全中報 critical，並附上
 // URL Inspection 的 Googlebot 爬取狀態。它會進每日短報告與 Discord 通知。
 //
+// ## 2026-09-21 更正：這個狀態在 GSC 介面上叫「無法擷取」
+//
+// API 的 sitemap 資源沒有獨立的「擷取失敗」旗標。`isPending: true` +
+// `lastDownloaded: null` + `errors: "0"` 這一組，在 GSC 網頁介面上顯示的是
+// **「無法擷取 / Couldn't fetch」、類型「未知」**——不是「排隊中」。
+// 本檔以前把它讀成「等 Google 有空來抓」，那是誤讀，下面那一段的推論也因此偏軟。
+//
+// 同時修掉的是另一半：`gsc-submit-sitemap.mjs` 以前只要看到 GSC 已註冊就跳過 PUT，
+// 所以 roomfeng 自 2026-09-06、funnytools 自 2026-09-03 之後再也沒有重新提交過，
+// 狀態永遠凍在無法擷取。現在從未被下載的項目每 7 天會重送一次
+// （gsc-client.mjs 的 RESUBMIT_AFTER_DAYS），Google 才有機會重試。
+//
 // ## 措辭為什麼是「GSC 沒有回報下載」而不是「Google 沒有下載」（2026-09-06）
 //
 // 這兩句話不一樣，而我們有證據顯示後者是錯的。2026-08-30 至 09-06 的 Cloudflare
@@ -64,8 +76,10 @@ export function resolveSitemapOutcome({
   }
 
   const stuckNote = stuckCount > 0
-    ? ` GSC reports no download for ${stuckCount} sitemap entr${stuckCount === 1 ? 'y' : 'ies'};`
-      + ' that is tracked daily by fable-company 的每日健檢（sitemap-never-downloaded），not by this deploy step.'
+    ? ` Search Console has never reported a download for ${stuckCount} sitemap entr${stuckCount === 1 ? 'y' : 'ies'}`
+      + ' (its web UI shows them as 無法擷取 / Couldn\'t fetch); never-fetched entries are re-submitted on a'
+      + ' RESUBMIT_AFTER_DAYS cadence, and the standing alert is owned by fable-company 的每日健檢'
+      + '（sitemap-never-downloaded）, not by this deploy step.'
     : '';
 
   if (submittedCount > 0) {
@@ -79,8 +93,8 @@ export function resolveSitemapOutcome({
 
   if (stuckCount > 0) {
     return {
-      status: 'registered-pending',
-      message: `Read back ${registeredCount} registered sitemap entries; no repeat PUT was sent.${stuckNote}`,
+      status: 'registered-never-fetched',
+      message: `Read back ${registeredCount} registered sitemap entries.${stuckNote}`,
       stuck: true,
       exitCode: 0,
     };

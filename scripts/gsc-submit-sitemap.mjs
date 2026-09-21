@@ -9,6 +9,7 @@ import {
   fetchJson,
   findStuckSitemaps,
   googleAccessToken,
+  needsResubmission,
   resolveGscSiteUrl,
   sitemapEndpoint,
   sitemapStatus,
@@ -43,10 +44,16 @@ try {
       headers: { Authorization: `Bearer ${token}` },
     });
 
-    if (before.response.ok && !forceSubmit) {
+    // A registered entry Google has already downloaded needs nothing further.
+    // One Search Console has never fetched does: leaving it alone is how both
+    // roomfeng and funnytools sat at "無法擷取" for weeks without the pipeline
+    // ever asking Google to try again. See RESUBMIT_AFTER_DAYS in gsc-client.mjs.
+    const beforeStatus = before.response.ok ? sitemapStatus(before.json, sitemapUrl) : null;
+    const resubmitting = Boolean(beforeStatus && needsResubmission(beforeStatus));
+    if (before.response.ok && !forceSubmit && !resubmitting) {
       registeredCount += 1;
       report.entries.push({
-        ...sitemapStatus(before.json, sitemapUrl),
+        ...beforeStatus,
         action: 'already_registered',
         getStatus: before.response.status,
       });
@@ -76,9 +83,12 @@ try {
     const status = sitemapStatus(get.json, sitemapUrl);
     report.entries.push({
       ...status,
-      action: forceSubmit ? 'force_submitted' : 'submitted_unregistered',
+      action: forceSubmit
+        ? 'force_submitted'
+        : resubmitting ? 'resubmitted_never_fetched' : 'submitted_unregistered',
       putStatus: put.response.status,
       getStatus: get.response.status,
+      ...(resubmitting ? { previousSubmission: beforeStatus.lastSubmitted } : {}),
     });
 
     if (!get.response.ok) {
@@ -92,7 +102,7 @@ try {
   const stuckEntries = findStuckSitemaps(report.entries);
   for (const entry of stuckEntries) {
     report.alerts.push(
-      `STUCK: GSC reports no download for ${entry.path}; it is still pending and was last submitted more than 14 days ago (${entry.lastSubmitted}). This means GSC has not reported a download, not that Google never fetched the file.`,
+      `NEVER FETCHED: Search Console has never reported a download for ${entry.path} (submitted ${entry.lastSubmitted}). Its web UI shows this entry as 無法擷取 / Couldn't fetch. That is Google's fetcher failing or not having run, not a defect in the file itself — the post-deploy readback gate fetches the same URL over the public internet on every deploy.`,
     );
   }
 
