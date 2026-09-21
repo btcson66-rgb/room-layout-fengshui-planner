@@ -4,7 +4,25 @@ import { readFile } from 'node:fs/promises';
 export const SITE_ORIGIN = 'https://roomfeng.win';
 export const GSC_DOMAIN_PROPERTY = 'sc-domain:roomfeng.win';
 export const SITEMAP_INDEX_URL = `${SITE_ORIGIN}/sitemap-index.xml`;
-export const STUCK_AFTER_DAYS = 14;
+// Search Console 的 sitemap 資源沒有「擷取失敗」這個獨立旗標。GSC 網頁介面顯示
+// 「無法擷取／類型：未知」的那一筆，API 讀回來長這樣：
+//   isPending: true, lastDownloaded: null, errors: "0", warnings: "0"
+// 也就是說 `lastDownloaded == null` 同時涵蓋「還沒輪到」與「Google 抓了但失敗」，
+// 兩者只能靠「距離上次提交多久」來區分。2026-09-21 roomfeng.win 的 GSC 兩筆
+// sitemap 都是這個狀態，已送出日期停在 2026-09-06。
+export const NEVER_FETCHED_AFTER_DAYS = 2;
+// 一筆已註冊但從未被成功下載的 sitemap，每隔這麼多天重送一次 PUT。
+//
+// 為什麼要重送：Google 對「無法擷取」的官方處理方式就是修好之後重新提交。在此之前
+// 這支腳本只要看到 GSC 已註冊就直接跳過 PUT，於是 roomfeng 從 2026-09-06、
+// funnytools 從 2026-09-03 之後再也沒有送出過任何一次提交——狀態就這樣凍在
+// 「無法擷取」，自動化永遠不會請 Google 再試一次。
+//
+// 為什麼要有間隔：每次部署都 PUT 一樣是錯的（roomfeng 一天可以部署十幾次），
+// 那會讓 lastSubmitted 永遠是「剛剛」，抹掉「已註冊」與「剛提交」的區別，也讓
+// 下面的 never-fetched 判定永遠不會成立。7 天讓兩個訊號都活著：重送後 2 天
+// 警告會再次出現，7 天後再重送一次。
+export const RESUBMIT_AFTER_DAYS = 7;
 
 function base64Url(input) {
   return Buffer.from(input).toString('base64').replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
@@ -167,15 +185,25 @@ export function sitemapStatus(entry, requestedPath = null) {
   };
 }
 
+function olderThanDays(entry, days, now) {
+  const submittedAt = Date.parse(entry.lastSubmitted ?? '');
+  return Number.isFinite(submittedAt) && submittedAt < now - days * 24 * 60 * 60 * 1000;
+}
+
+/** Registered with Search Console, but Google has never reported a download. */
 export function findStuckSitemaps(entries, now = Date.now()) {
-  const cutoff = now - STUCK_AFTER_DAYS * 24 * 60 * 60 * 1000;
-  return entries.filter((entry) => {
-    const submittedAt = Date.parse(entry.lastSubmitted ?? '');
-    return entry.isPending === true
-      && !entry.lastDownloaded
-      && Number.isFinite(submittedAt)
-      && submittedAt < cutoff;
-  });
+  return entries.filter((entry) => entry.isPending === true
+    && !entry.lastDownloaded
+    && olderThanDays(entry, NEVER_FETCHED_AFTER_DAYS, now));
+}
+
+/**
+ * True when a registered entry should get a fresh PUT so Google retries it.
+ * Registered-and-downloaded entries never qualify: this only re-sends the ones
+ * Search Console has never managed to fetch.
+ */
+export function needsResubmission(entry, now = Date.now()) {
+  return !entry.lastDownloaded && olderThanDays(entry, RESUBMIT_AFTER_DAYS, now);
 }
 
 export async function discoverSitemapUrls(indexPath) {

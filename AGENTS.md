@@ -197,6 +197,14 @@ error, expired credentials, rejected PUT) is a broken pipeline and must exit 1 �
 is CLAUDE.md 紅線第 6 條, and it regressed once already (`cd0a426`, PR #49, dropped
 `process.exitCode` so warnings printed while the step reported success).
 
+**2026-09-21 更正：這個狀態在 GSC 介面上叫「無法擷取」。** API 沒有獨立的擷取失敗
+旗標，`isPending: true` + `lastDownloaded: null` + `errors: 0` 在網頁介面顯示的是
+「無法擷取 / Couldn't fetch」、類型「未知」，不是「排隊中」。同時修掉的是另一半：
+`gsc-submit-sitemap.mjs` 以前只要 GSC 回報已註冊就跳過 PUT，於是 roomfeng 自
+2026-09-06、funnytools 自 2026-09-03 之後再也沒有送出過任何一次提交，狀態永遠凍在
+無法擷取。現在從未被下載的項目每 `RESUBMIT_AFTER_DAYS`（7 天）重送一次，Google 才
+有機會重試；已經成功下載過的項目永遠不重送。下面這一段的退出碼規則不變。
+
 **"Google has not downloaded the sitemap yet" is not that kind of failure.** It is an
 external state lasting weeks or months, unaffected by any push. PR #76 made it exit 1
 anyway; roomfeng then failed every single deploy on the same line for two weeks until

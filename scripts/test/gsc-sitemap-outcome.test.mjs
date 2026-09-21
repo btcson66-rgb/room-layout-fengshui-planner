@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 
 import { resolveSitemapOutcome } from '../gsc-sitemap-outcome.mjs';
-import { findStuckSitemaps } from '../gsc-client.mjs';
+import { findStuckSitemaps, needsResubmission } from '../gsc-client.mjs';
 
 const root = new URL('../../', import.meta.url);
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -23,9 +23,9 @@ const daysAgo = (n) => new Date(now.getTime() - n * DAY_MS).toISOString();
 // 兩者不可互換：把上面那條放寬是紅線；把下面那條改回擋部署會讓部署永久紅，
 // 反而讓真正的部署失敗看不出來。
 
-test('sitemap 卡住不擋部署，但狀態與訊息必須保留下來', () => {
+test('sitemap 從未被擷取不擋部署，但狀態與訊息必須保留下來', () => {
   const outcome = resolveSitemapOutcome({ registeredCount: 2, stuckCount: 2 });
-  assert.equal(outcome.status, 'registered-pending');
+  assert.equal(outcome.status, 'registered-never-fetched');
   assert.equal(outcome.exitCode, 0);
   assert.equal(outcome.stuck, true);
   // 訊息要明說這條線由誰負責，否則下一個人會以為它被吃掉了。
@@ -76,15 +76,43 @@ test('沒有任何輸入時不會爆，視為全部已註冊', () => {
   assert.equal(outcome.exitCode, 0);
 });
 
-test('findStuckSitemaps 的判定：只有 pending、未下載、且超過 14 天才算卡住', () => {
+// GSC 介面把 isPending + lastDownloaded=null 顯示為「無法擷取」，不是排隊中。
+// 判定只留兩天寬限，是為了不把剛送出去、Google 還沒輪到的那一筆誤報。
+test('findStuckSitemaps：已註冊、從未被下載、且送出超過兩天才算從未擷取', () => {
   const entries = [
     { path: 'a', isPending: true, lastDownloaded: null, lastSubmitted: daysAgo(15) },
     { path: 'b', isPending: true, lastDownloaded: daysAgo(1), lastSubmitted: daysAgo(15) },
     { path: 'c', isPending: true, lastDownloaded: null, lastSubmitted: daysAgo(3) },
     { path: 'd', isPending: false, lastDownloaded: null, lastSubmitted: daysAgo(30) },
+    { path: 'e', isPending: true, lastDownloaded: null, lastSubmitted: daysAgo(1) },
   ];
   const stuck = findStuckSitemaps(entries, now).map((entry) => entry.path);
-  assert.deepEqual(stuck, ['a']);
+  assert.deepEqual(stuck, ['a', 'c']);
+});
+
+// 這一組守的是 2026-09-21 修掉的凍結狀態：只要 GSC 回報「已註冊」就永遠不再 PUT，
+// roomfeng 自 09-06、funnytools 自 09-03 起就再也沒有送出過任何一次提交。
+test('needsResubmission：從未被下載且超過七天才重送', () => {
+  assert.equal(needsResubmission({ lastDownloaded: null, lastSubmitted: daysAgo(8) }, now), true);
+  assert.equal(needsResubmission({ lastDownloaded: null, lastSubmitted: daysAgo(6) }, now), false);
+});
+
+test('needsResubmission：Google 已經下載過的項目永遠不重送', () => {
+  assert.equal(
+    needsResubmission({ lastDownloaded: daysAgo(20), lastSubmitted: daysAgo(30) }, now),
+    false,
+  );
+});
+
+test('needsResubmission：沒有可解析的送出時間就不重送，避免無限 PUT', () => {
+  assert.equal(needsResubmission({ lastDownloaded: null, lastSubmitted: null }, now), false);
+});
+
+test('提交腳本真的會在從未擷取時改走 PUT，而不是直接 continue', async () => {
+  const script = await readFile(new URL('scripts/gsc-submit-sitemap.mjs', root), 'utf8');
+  assert.match(script, /needsResubmission/);
+  assert.match(script, /!forceSubmit && !resubmitting/);
+  assert.match(script, /resubmitted_never_fetched/);
 });
 
 test('提交腳本確實使用這個純函式，而不是自己再寫一組分支', async () => {
