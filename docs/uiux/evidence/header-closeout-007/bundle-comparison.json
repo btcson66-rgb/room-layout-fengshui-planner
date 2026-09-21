@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-09-21T01:48:20.583Z",
+  "baseline": {
+    "label": "Review-04",
+    "javascript": { "files": 33, "bytes": 1937876, "largestBytes": 929901 },
+    "css": { "files": 10, "bytes": 83642, "largestBytes": 17760 }
+  },
+  "current": {
+    "label": "Final Header Closeout 007 local build",
+    "javascript": { "files": 33, "bytes": 1937995, "largestBytes": 929901, "largestFile": "exceljs.min.BVySwZGD.js" },
+    "css": { "files": 0, "bytes": 0, "largestBytes": 0, "largestFile": null }
+  },
+  "delta": {
+    "javascript": { "files": 0, "bytes": 119, "largestBytes": 0 },
+    "css": { "files": -10, "bytes": -83642, "largestBytes": -17760 }
+  },
+  "pass": true,
+  "note": "CSS is inlined in the current static output; the observed zero emitted CSS files is retained as measurement, not treated as missing evidence. Largest JavaScript chunk is unchanged."
+}

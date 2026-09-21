@@ -28,7 +28,8 @@ const requiredRoutes = [
   ['zh-moving', '/zh/moving-furniture-size-check/', 1024], ['en-moving', '/en/moving-furniture-size-check/', 1024],
 ];
 const headerRuns = [];
-const headerWidths = [390, 768, 1024, 1080, 1440];
+const DESKTOP_HEADER_BREAKPOINT = 1200;
+const headerWidths = [390, 768, 1024, 1080, 1120, 1180, 1200, 1280, 1440];
 const headerRoutes = [['zh', '/'], ['en', '/en/']];
 const runs = [];
 const localizationRuns = [];
@@ -198,8 +199,10 @@ async function inspectHeader(page, locale, route, width) {
     const header = document.querySelector('[data-roomfeng-component="header"]');
     const visible = (element) => element && getComputedStyle(element).display !== 'none' && element.getBoundingClientRect().width > 0;
     const rect = (selector) => document.querySelector(selector)?.getBoundingClientRect().toJSON() ?? null;
+    const desktopNav = document.querySelector('.site-nav-desktop');
+    const navList = desktopNav?.querySelector('.nav-list');
     const compact = visible(document.querySelector('.site-nav-toggle'));
-    const desktop = visible(document.querySelector('.site-nav-desktop'));
+    const desktop = visible(desktopNav);
     const interactive = [...document.querySelectorAll('.site-nav-toggle, .site-nav a, .language-switcher a, .header-cta')]
       .filter((element) => visible(element)).map((element) => ({ text: element.textContent?.trim() ?? '', width: element.getBoundingClientRect().width, height: element.getBoundingClientRect().height }));
     const nowrapFailures = interactive.filter((item) => item.height < 44 && !item.text.includes('')).map((item) => item.text);
@@ -207,14 +210,51 @@ async function inspectHeader(page, locale, route, width) {
     const brandRect = rect('.brand');
     const ctaRect = rect('.header-cta');
     const navRect = desktop ? rect('.site-nav-desktop') : rect('.site-nav');
+    const innerRect = rect('.header-inner');
+    const languageRect = desktop ? rect('.site-nav-desktop .language-switcher') : null;
+    const navItems = desktop ? [...navList.querySelectorAll(':scope > li')].filter(visible).map((element) => {
+      const itemRect = element.getBoundingClientRect();
+      return { text: element.textContent?.trim() ?? '', top: itemRect.top, bottom: itemRect.bottom, width: itemRect.width, height: itemRect.height };
+    }) : [];
+    const navItemTops = navItems.map((item) => item.top);
+    const controlTops = [navItemTops[0], languageRect?.top, ctaRect?.top].filter((value) => Number.isFinite(value));
+    const navItemRowDelta = navItemTops.length ? Math.max(...navItemTops) - Math.min(...navItemTops) : null;
+    const controlRowDelta = controlTops.length ? Math.max(...controlTops) - Math.min(...controlTops) : null;
+    const gap = innerRect ? Number.parseFloat(getComputedStyle(document.querySelector('.header-inner')).gap) : 0;
+    const requiredWidth = desktop && brandRect && navRect && ctaRect ? brandRect.width + navRect.width + ctaRect.width + gap * 2 : null;
+    const safetyMargin = innerRect && requiredWidth !== null ? innerRect.width - requiredWidth : null;
     const overlaps = Boolean(navRect && ctaRect && navRect.right > ctaRect.left && ctaRect.right > navRect.left);
-    return { viewportWidth, compact, desktop, interactive, nowrapFailures, overlaps, headerHeight: headerRect?.height ?? null, brandWidth: brandRect?.width ?? null, ctaWidth: ctaRect?.width ?? 0 };
+    return {
+      viewportWidth,
+      compact,
+      desktop,
+      interactive,
+      nowrapFailures,
+      overlaps,
+      headerHeight: headerRect?.height ?? null,
+      brandWidth: brandRect?.width ?? null,
+      ctaWidth: ctaRect?.width ?? 0,
+      navItemCount: navItems.length,
+      navItemRowDelta,
+      controlRowDelta,
+      navListFlexWrap: navList ? getComputedStyle(navList).flexWrap : null,
+      safetyMargin,
+      navItemTops,
+      languageTop: languageRect?.top ?? null,
+      ctaTop: ctaRect?.top ?? null,
+    };
   }, width);
   const issues = [];
-  if (width < 1080 && (!evidence.compact || evidence.desktop)) issues.push('compact menu breakpoint incorrect');
-  if (width >= 1080 && (evidence.compact || !evidence.desktop)) issues.push('desktop nav breakpoint incorrect');
+  if (width < DESKTOP_HEADER_BREAKPOINT && (!evidence.compact || evidence.desktop)) issues.push('compact menu breakpoint incorrect');
+  if (width >= DESKTOP_HEADER_BREAKPOINT && (evidence.compact || !evidence.desktop)) issues.push('desktop nav breakpoint incorrect');
   if (evidence.overlaps) issues.push('planner CTA overlaps navigation');
   if (evidence.interactive.some((item) => item.height < 44)) issues.push('interactive target below 44px');
+  if (evidence.headerHeight === null || evidence.headerHeight > 82) issues.push(`header height exceeds 82px (${evidence.headerHeight})`);
+  if (evidence.desktop && evidence.navItemCount === 0) issues.push('desktop nav items missing');
+  if (evidence.desktop && evidence.navItemRowDelta > 2) issues.push(`desktop nav row delta ${evidence.navItemRowDelta}`);
+  if (evidence.desktop && evidence.controlRowDelta > 2) issues.push(`desktop control row delta ${evidence.controlRowDelta}`);
+  if (evidence.desktop && evidence.navListFlexWrap !== 'nowrap') issues.push(`desktop nav flex-wrap ${evidence.navListFlexWrap}`);
+  if (evidence.desktop && evidence.safetyMargin < 32) issues.push(`desktop safety margin ${evidence.safetyMargin}`);
   const run = { locale, route, width, ...evidence, issues, pass: issues.length === 0 };
   headerRuns.push(run);
   return run;
@@ -278,6 +318,7 @@ const localizationSummary = {
 const summary = {
   generatedAt: new Date().toISOString(),
   origin,
+  desktopHeaderBreakpoint: DESKTOP_HEADER_BREAKPOINT,
   routes: runs,
   requiredRouteCount: requiredRoutes.length,
   headerRuns,
