@@ -8,8 +8,8 @@ import FurnitureFitTool from '../../components/FurnitureFitTool.astro';
 import '../../styles/uiux-prototypes.css';
 import { en } from '../../i18n/en';
 
-const title = 'Furniture Fit Checker | Will It Fit Your Room and Door?';
-const description = 'Will your sofa fit through the door? Check in seconds by comparing furniture dimensions with room size, clearances, door swings, and moving paths.';
+const title = 'Furniture Fit Checker | Room Fit & Clearance';
+const description = 'Check whether a sofa, bed, desk, wardrobe or table fits inside a room and leaves the clearance you need. Check doors, halls, stairs and elevators separately.';
 const canonical = '/en/furniture-fit-checker/';
 const alternates = { zh: '/zh/furniture-fit-checker/', en: '/en/furniture-fit-checker/' };
 const siteUrl = 'https://roomfeng.win';
@@ -17,7 +17,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Furniture Fit Checker',
+    headline: 'Furniture Fit Checker for Room Fit and Clearance',
     description,
     inLanguage: 'en',
     author: { '@type': 'Organization', name: 'RoomFeng' },
@@ -33,10 +33,10 @@ const jsonLd = [
   },
 ];
 const faq = [
-  { q: 'What measurements do I need before using the furniture fit checker?', a: 'Measure the room length and width, the furniture width and depth, door and window positions, door swing space, and any narrow route the item must pass through.' },
-  { q: 'Should I use product dimensions or packaging dimensions?', a: 'Use product dimensions for room placement, but also check packaging dimensions and diagonal size if the item must pass through tight doors, elevators, or stair turns.' },
-  { q: 'How much clearance should I leave around furniture?', a: 'For everyday movement, about 60 cm is a useful minimum walkway target. Chairs, wardrobe doors, drawers, and beds often need more practical clearance.' },
-  { q: 'Can the planner prove a furniture item will fit through a hallway?', a: 'No. It helps you reason from measurements, but tight moving routes also depend on height, diagonal angle, packaging, stairs, turns, and whether legs or parts can be removed.' },
+  { q: 'What measurements do I need before using the furniture fit checker?', a: 'Measure the clear room length and width, the furniture width and depth, fixed obstacles, and the everyday space needed for doors, drawers, chairs, and walking.' },
+  { q: 'Should I use product dimensions or packaging dimensions?', a: 'Use product or bed-frame dimensions for room placement. Check packaging, doorway, hallway, stair, and elevator measurements separately for delivery-route planning.' },
+  { q: 'How much clearance should I leave around furniture?', a: 'About 60 cm can be a practical starting target for a small-room route, but chairs, wardrobe doors, drawers, beds, and entry zones may need more.' },
+  { q: 'Does this tool prove a furniture item will fit through a hallway?', a: 'No. This tool checks an in-room footprint and requested clearances; it does not model stair turns, elevator geometry, hallway-corner rotation, or a full delivery route.' },
 ];
 const relatedLinks = [
   { href: '/en/room-layout-planner/', title: 'Room layout planner' },
@@ -54,9 +54,10 @@ const relatedLinks = [
         <p class="eyebrow">MEASURE → PLAN → CHECK</p>
         <h1>Furniture fit checker</h1>
         <p class="lead">
-          Check the real room size, furniture dimensions, and everyday clearances before you buy, move, or rearrange a piece.
+          Check whether a piece fits inside the destination room and leaves the clearance you want. This tool does not model the full delivery route.
         </p>
-        <p>Measure first, then use the checker below to see whether the item fits physically and leaves the clearance you asked for.</p>
+        <p>Measure the room and furniture first, then use the checker below to compare the footprint, in-room rotation, and requested everyday clearance.</p>
+        <p>Need to check doors, hallways, stairs or an elevator? <a href="/en/moving-furniture-size-check/">Measure the full delivery route</a>.</p>
       </header>
 
       <FurnitureFitTool locale="en" />
@@ -66,7 +67,7 @@ const relatedLinks = [
           Before you buy a bed, desk, wardrobe, sofa, or dining table, check the real room size and the everyday clearances around it. A piece can technically fit in a room and still be wrong for the way you live.
         </p>
         <p>
-          Furniture fit is not only a width-by-depth question. The item has to sit in the room, leave a route from the door, allow drawers or wardrobe doors to open, and avoid blocking windows, radiators, outlets, or the only comfortable walkway. Buyers often compare the product dimensions with one wall and stop there. That catches obvious problems, but it misses the second layer: what happens when a person needs to walk past the bed, pull out a chair, open a storage door, or carry laundry through the room.
+          Furniture fit is not only a width-by-depth question. The item has to sit in the room, leave an everyday route from the door, allow drawers or wardrobe doors to open, and avoid blocking windows, radiators, outlets, or the only comfortable walkway. Buyers often compare product dimensions with one wall and stop there. That catches obvious problems, but it misses what happens when a person needs to walk past the bed, pull out a chair, open storage, or carry laundry through the room.
         </p>
         <p>
           Start by measuring the room at floor level, not from a listing photo. Note the usable wall lengths after subtracting doors, built-in closets, low windows, columns, pipes, or baseboard heaters. Then measure the furniture itself. For a bed, include the full frame, not only the mattress. For a wardrobe, include door swing or drawer pull-out depth. For a desk, include chair space behind it. For a sofa, check both the length along the wall and the depth into the room, because a deep sofa can make a narrow living room feel blocked even when the length looks fine.
@@ -77,7 +78,7 @@ const relatedLinks = [
           Use about 60 cm as a practical minimum walking route in a small room. More is better near a bed side, wardrobe, desk chair, dining chair, or entry. If a route is below that, the room may still be usable, but carrying a bag, making the bed, vacuuming, or moving past another person can become frustrating. Leave space for door arcs and keep the entry clear before adding optional pieces such as side tables or storage carts.
         </p>
         <p>
-          For large purchases, check the delivery path separately. Measure the front door, elevator, stairwell, hallway turns, and any tight corners. A sofa with removable legs or a bed frame that arrives flat-packed is very different from a fully assembled cabinet. If a seller provides only product dimensions, ask for package dimensions as well.
+          For large purchases, check the delivery path separately rather than treating this checker as a route calculator. Measure the front door, elevator, stairwell, hallway turns, and tight corners. A sofa with removable legs or a bed frame that arrives flat-packed is a different delivery problem from an assembled cabinet. Use the <a href="/en/moving-furniture-size-check/">moving furniture size check</a> for that ordered route review.
         </p>
 
         <h2>How to do this with the planner</h2>
@@ -89,7 +90,7 @@ const relatedLinks = [
           <li>Export a PNG or PDF to compare with the product page, store listing, or moving checklist.</li>
         </ol>
         <p>
-          Treat the result as a practical planning draft. If the layout only works when furniture touches every wall and the walkway warning stays visible, consider a smaller size, a different orientation, or a furniture piece with built-in storage that replaces another item.
+          Treat the result as a practical in-room planning draft. If the layout only works when furniture touches every wall and the walkway warning stays visible, consider a smaller size, a different orientation, or a furniture piece with built-in storage that replaces another item. A separate route check is still required before delivery.
         </p>
       </article>
 

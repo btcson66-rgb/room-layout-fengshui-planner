@@ -1,0 +1,275 @@
+{
+  "status": "PASS",
+  "baseUrl": "http://127.0.0.1:4325",
+  "widths": [
+    375,
+    390,
+    768,
+    1024,
+    1440
+  ],
+  "pages": [
+    {
+      "path": "/en/moving-furniture-size-check/",
+      "width": 375,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/moving-furniture-size-check/",
+      "width": 390,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/moving-furniture-size-check/",
+      "width": 768,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/moving-furniture-size-check/",
+      "width": 1024,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/moving-furniture-size-check/",
+      "width": 1440,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/bed-desk-wardrobe-layout/",
+      "width": 375,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/bed-desk-wardrobe-layout/",
+      "width": 390,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/bed-desk-wardrobe-layout/",
+      "width": 768,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/bed-desk-wardrobe-layout/",
+      "width": 1024,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/bed-desk-wardrobe-layout/",
+      "width": 1440,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/small-bedroom-layout-planner/",
+      "width": 375,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/small-bedroom-layout-planner/",
+      "width": 390,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/small-bedroom-layout-planner/",
+      "width": 768,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/small-bedroom-layout-planner/",
+      "width": 1024,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/small-bedroom-layout-planner/",
+      "width": 1440,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/studio-apartment-layout/",
+      "width": 375,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/studio-apartment-layout/",
+      "width": 390,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/studio-apartment-layout/",
+      "width": 768,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/studio-apartment-layout/",
+      "width": 1024,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/studio-apartment-layout/",
+      "width": 1440,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/furniture-fit-checker/",
+      "width": 375,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/furniture-fit-checker/",
+      "width": 390,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/furniture-fit-checker/",
+      "width": 768,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/furniture-fit-checker/",
+      "width": 1024,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    },
+    {
+      "path": "/en/furniture-fit-checker/",
+      "width": 1440,
+      "status": 200,
+      "horizontalOverflow": false,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "firstPartyRequestFailures": 0,
+      "adSlots": 1
+    }
+  ],
+  "screenshots": [
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-moving-furniture-size-check-375.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-moving-furniture-size-check-1440.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-bed-desk-wardrobe-layout-375.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-bed-desk-wardrobe-layout-1440.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-small-bedroom-layout-planner-375.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-small-bedroom-layout-planner-1440.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-studio-apartment-layout-375.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-studio-apartment-layout-1440.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-furniture-fit-checker-375.png",
+    "D:\\Fable company\\worktrees\\roomfeng-us-seo-growth-002-20260921\\reports\\us-seo-growth\\2026-09-21\\browser\\en-furniture-fit-checker-1440.png"
+  ]
+}
