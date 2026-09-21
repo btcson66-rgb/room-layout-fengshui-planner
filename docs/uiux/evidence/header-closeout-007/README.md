@@ -2,7 +2,7 @@
 
 ## Scope
 
-This evidence package covers only the measured English desktop header regression. The fix changes the compact/desktop transition to `1120px` and explicitly keeps the desktop navigation on one row. No URL, canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement, AdSense, Planner, Furniture Fit, content or production analytics contract was changed.
+This evidence package covers only the measured English desktop header regression. The final fix changes the compact/desktop transition to `1200px` and explicitly keeps the desktop navigation on one row. No URL, canonical, hreflang, robots, sitemap architecture, indexability, payment, entitlement, AdSense, Planner, Furniture Fit, content or production analytics contract was changed.
 
 ## Source-local authority
 
@@ -18,9 +18,9 @@ This evidence package covers only the measured English desktop header regression
 
 `local-browser/responsive-header-summary.json` contains zh/en runs at `390`, `768`, `1024`, `1080`, `1120`, `1180`, `1200`, `1280`, and `1440`.
 
-- `390 / 768 / 1024 / 1080`: compact menu, desktop nav hidden.
-- `1120 / 1180 / 1200 / 1280 / 1440`: desktop nav visible.
-- English `1120px` safety margin: `43.44px`.
+- `390 / 768 / 1024 / 1080 / 1120 / 1180`: compact menu, desktop nav hidden.
+- `1200 / 1280 / 1440`: desktop nav visible.
+- CI English `1200px` safety margin: `43.86px`; CI `1180px` was `31.86px` and therefore correctly remained compact.
 - Desktop nav item row delta: `0px` in every desktop run.
 - Language/CTA control row delta: `0px` in every desktop run.
 - Header height: `77px` in every run; gate `<=82px`.

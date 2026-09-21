@@ -190,12 +190,12 @@ This is the final gate. It is rerun after this document commit at the exact fina
 
 ## Loop 13 — Final Header Closeout 007
 
-- Observe：production `f679082f4219e03d91825073ec45837792a006cd` 的 English desktop header 在 `1080px` 存在兩列回歸風險；live measurement 顯示 English 1080 的原始可用餘裕只有 `3.44px`，而 1120 為 `43.44px`。
-- Plan：只把 compact/desktop breakpoint 調整到最小有 `>=32px` safety margin 的 `1120px`；desktop nav 使用顯式 `flex-wrap: nowrap`；保留所有 44px touch target、brand、language、CTA、URL/SEO/AdSense/Planner/Furniture Fit 與 production analytics 邊界。
+- Observe：production `f679082f4219e03d91825073ec45837792a006cd` 的 English desktop header 在 `1080px` 存在兩列回歸風險；初版 1120 breakpoint 在 CI Linux 實測為 `-28.14px` 且 12px overflow，1180 只有 `31.86px`，仍未達 `>=32px`；1200 為 `43.86px`。
+- Plan：將 compact/desktop breakpoint 修正為跨環境實測達到 `>=32px` safety margin 的最小 `1200px`；desktop nav 使用顯式 `flex-wrap: nowrap`；保留所有 44px touch target、brand、language、CTA、URL/SEO/AdSense/Planner/Furniture Fit 與 production analytics 邊界。
 - Implement：更新 `src/styles/global.css` 的 breakpoint 與 desktop nav row contract；擴充 `scripts/test/live-crawl-006.browser.mjs` 的 9-width zh/en header matrix、nav item row delta、language/CTA row delta、header height、overflow、nowrap 與 safety-margin assertions；新增 `scripts/test/header-closeout-007.test.mjs`。
 - Build：`npm.cmd run check` PASS（241 files, 0 errors, 0 warnings, 0 hints）；static build PASS（1,458 pages）；sitemap child PASS（1,448 URLs）；content audit PASS（1,315 source / 1,315 review-ready / 0 held / 1,000,355 checks / 0 failures）。
 - Functional：`npm.cmd run test:scripts` PASS（62/62）；local live crawl PASS（15 required route runs, 18 header runs, first-party errors/network 0, AdSense 400 0, invalid slots 0, duplicate init 0）；existing Review-04 browser regression PASS（zh/en prototype, rail, handoff, export checks）。
-- Visual QA：`docs/uiux/evidence/header-closeout-007/local-browser/` 產出 zh/en `390/768/1024/1080/1120/1180/1200/1280/1440` 截圖；desktop nav row delta `0px`、language/CTA row delta `0px`、header `77px`、overflow `0px`；PASS。
+- Visual QA：`docs/uiux/evidence/header-closeout-007/local-browser/` 產出 zh/en `390/768/1024/1080/1120/1180/1200/1280/1440` 截圖；1120/1180 compact，1200/1280/1440 desktop；desktop nav row delta `0px`、language/CTA row delta `0px`、header `77px`、overflow `0px`；PASS。
 - SEO Parity：只變更 CSS 與測試/evidence/docs；authority manifest 仍為 build `1,458`、sitemap `1,448`；canonical、hreflang、robots、sitemap architecture、indexability、payment、entitlement、production analytics 未修改；PASS。
 - Accessibility：保留 skip link、focus-visible、keyboard furniture selection、`aria-live` / `role=status`、reduced motion 與 44px interactive targets；新 header gate 驗證所有 required widths 無 overflow 與 row wrap；PASS。
 - Performance：local Lighthouse `18/18` desktop/mobile threshold PASS（含 zh/en Planner/Furniture Fit）；bundle audit current JS `33 files / 1,937,995 bytes / 929,901 largest` 對 Review-04 `1,937,876 bytes`，增加 `119 bytes`，largest chunk unchanged；existing Vite `>500 kB` warning and Lighthouse cleanup warning remain explicitly recorded。

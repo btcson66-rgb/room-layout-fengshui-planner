@@ -28,7 +28,7 @@ const requiredRoutes = [
   ['zh-moving', '/zh/moving-furniture-size-check/', 1024], ['en-moving', '/en/moving-furniture-size-check/', 1024],
 ];
 const headerRuns = [];
-const DESKTOP_HEADER_BREAKPOINT = 1120;
+const DESKTOP_HEADER_BREAKPOINT = 1200;
 const headerWidths = [390, 768, 1024, 1080, 1120, 1180, 1200, 1280, 1440];
 const headerRoutes = [['zh', '/'], ['en', '/en/']];
 const runs = [];

@@ -194,7 +194,7 @@ p { margin: 0 0 var(--space-4); }
 .ad-slot { display: grid; place-items: center; }
 .ad-slot:has(> [data-ad-status='unfilled']) { display: none !important; }
 
-@media (min-width: 1120px) {
+@media (min-width: 1200px) {
   .site-nav-toggle { display: none; }
   .site-nav-desktop { display: flex; align-items: center; gap: 0.5rem; }
   .site-nav-desktop .nav-list { display: flex; justify-content: center; flex-wrap: nowrap; }

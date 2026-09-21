@@ -314,7 +314,7 @@ Manual AdSense slots are intentionally unconfigured because no numeric publisher
 - Base production SHA: `f679082f4219e03d91825073ec45837792a006cd`.
 - Candidate branch: `codex/roomfeng-final-header-closeout-007`.
 - Scope: close the English desktop header two-row regression at `1080px` without changing any protected product or SEO surface.
-- Fix: compact nav through `<1120px`; desktop nav from `>=1120px`; desktop nav list explicitly `flex-wrap: nowrap`.
+- Fix: compact nav through `<1200px`; desktop nav from `>=1200px`; desktop nav list explicitly `flex-wrap: nowrap`.
 
 ### Source-local gates
 
