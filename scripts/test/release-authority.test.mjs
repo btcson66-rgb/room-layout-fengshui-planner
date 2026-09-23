@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { ROOMFENG_RELEASE_AUTHORITY } from '../release-authority.mjs';
 
 test('current release authority records the six English trust routes and preserves prior transition', () => {
@@ -19,4 +20,9 @@ test('current release authority records the six English trust routes and preserv
       baselineCorrectionPullRequest: 104,
     },
   });
+});
+
+test('post-deploy SEO parity cannot accept the pre-deploy sitemap count', () => {
+  const workflow = readFileSync(new URL('../../.github/workflows/deploy-cloudflare-pages.yml', import.meta.url), 'utf8');
+  assert.match(workflow, /- name: Run post-deploy production SEO parity gate[\s\S]{0,180}ROOMFENG_SEO_REQUIRE_DEPLOYED: '1'/);
 });

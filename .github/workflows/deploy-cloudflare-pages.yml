@@ -156,6 +156,7 @@ jobs:
         run: npm run test:seo-production-parity
         env:
           ROOMFENG_SEO_EVIDENCE_DIR: release-evidence/production-seo
+          ROOMFENG_SEO_REQUIRE_DEPLOYED: '1'
 
       - name: Run post-deploy sitemap readback gate
         run: node scripts/production-sitemap-readback.mjs

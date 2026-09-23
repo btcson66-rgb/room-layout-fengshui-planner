@@ -7,6 +7,7 @@ const origin = process.env.ROOMFENG_SEO_ORIGIN ?? 'https://roomfeng.win';
 const evidenceDir = path.resolve(process.env.ROOMFENG_SEO_EVIDENCE_DIR ?? 'docs/uiux/evidence/hardening-003/seo');
 const expectedSitemapUrlCount = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const pendingRepair = ROOMFENG_RELEASE_AUTHORITY.productionRepair001;
+const requireDeployed = process.env.ROOMFENG_SEO_REQUIRE_DEPLOYED === '1';
 const representatives = [
   { path: '/', canonical: '/', sitemap: true },
   { path: '/en/', canonical: '/en/', sitemap: true },
@@ -65,6 +66,7 @@ const pendingUrls = pendingRepair.addedRoutes.map((route) => `https://roomfeng.w
 const isDeployed = uniqueSitemapUrls.length === expectedSitemapUrlCount;
 const isPreDeploy = uniqueSitemapUrls.length === pendingRepair.previousSitemapUrls;
 check('sitemap count matches deployed or exact pre-deploy authority', isDeployed || isPreDeploy, `${uniqueSitemapUrls.length} vs ${pendingRepair.previousSitemapUrls}/${expectedSitemapUrlCount}`);
+check('post-deploy gate requires deployed sitemap', !requireDeployed || isDeployed, `${uniqueSitemapUrls.length} vs ${expectedSitemapUrlCount}`);
 if (isDeployed) {
   for (const url of pendingUrls) check(`deployed sitemap includes ${url}`, sitemapSet.has(url), url);
 } else if (isPreDeploy) {
@@ -140,6 +142,7 @@ const report = {
   expectedSitemapUrlCount,
   sitemapUrlCount: uniqueSitemapUrls.length,
   releaseState: isDeployed ? 'DEPLOYED' : isPreDeploy ? 'PRE_DEPLOY_EXACT_SIX_ROUTE_DELTA' : 'UNEXPECTED',
+  requireDeployed,
   sitemapIndexStatus: sitemapIndex.status,
   childSitemapStatus: childSitemap.status,
   robotsStatus: robots.status,
