@@ -44,7 +44,7 @@ const inferredPageType = pageType
     <BaseHead title={title} description={description} canonical={canonical} lang={lang} ogImage={ogImage} ogType={ogType} alternates={alternates} jsonLd={jsonLd} noindex={noindex} adsenseDeferred={adsenseDeferred} />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">跳到主要內容</a>
+    <a class="skip-link" href="#main-content">{lang === 'en' ? 'Skip to main content' : '跳到主要內容'}</a>
     <Header lang={lang} />
     <main id="main-content" tabindex="-1">
       <slot />

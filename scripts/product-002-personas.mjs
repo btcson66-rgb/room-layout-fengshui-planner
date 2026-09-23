@@ -7,7 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dir = path.join(root, 'docs', 'product-002', 'review');
 const layouts = JSON.parse(await readFile(path.join(dir, 'approved-layouts.json'), 'utf8'));
 const personas = [
-  { id: 'P01', label: '10x10 Queen + desk WFH', request: { width: 300, length: 300, unit: 'cm', shape: 'square', requiredFurniture: ['bed', 'desk'], occupancy: 'couple', priorities: ['work'] }, expectedFamilies: ['square-small-bedroom'] },
+  { id: 'P01', label: '3x3m Queen + desk WFH', request: { width: 300, length: 300, unit: 'cm', shape: 'square', requiredFurniture: ['bed', 'desk'], occupancy: 'couple', priorities: ['work'] }, expectedFamilies: ['square-small-bedroom'] },
   { id: 'P02', label: '240x300 single + desk student', request: { width: 240, length: 300, unit: 'cm', shape: 'rectangle', requiredFurniture: ['bed', 'desk'], occupancy: 'single', priorities: ['study'] }, expectedFamilies: ['compact-single-bedroom'] },
   { id: 'P03', label: '240x360 narrow double storage', request: { width: 240, length: 360, unit: 'cm', shape: 'rectangle', requiredFurniture: ['bed', 'wardrobe'], occupancy: 'single', priorities: ['storage'] }, expectedFamilies: ['narrow-bedroom'] },
   { id: 'P04', label: '3048x3658 queen + desk + wardrobe', request: { width: 3048, length: 3658, unit: 'mm', shape: 'rectangle', requiredFurniture: ['bed', 'desk', 'wardrobe'], occupancy: 'couple', priorities: ['work', 'storage'] }, expectedFamilies: ['10x12-bedroom'] },

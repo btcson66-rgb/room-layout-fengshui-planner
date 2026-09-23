@@ -1,0 +1,33 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const canonical = '/en/changelog/';
+const title = 'What Has Changed at RoomFeng | Updates';
+const description = 'A plain-language record of meaningful updates to RoomFeng tools, room planning guides, links, and policy information.';
+const faq = [
+  { q: 'Where can I see current tool features?', a: 'Visit the Planner or Furniture Fit Checker to try the current experience with your own measurements.' },
+  { q: 'How do I report outdated information?', a: 'Send the page address and the detail that needs review through the contact email.' },
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: `https://roomfeng.win${canonical}`, inLanguage: 'en' };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ zh: '/changelog/', en: canonical }} jsonLd={jsonLd} showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <article class="card">
+      <h1>RoomFeng updates</h1>
+      <p class="lead">This page highlights changes that affect how visitors use RoomFeng. The live tools and current policy pages are the best place to check a feature before relying on it.</p>
+      <h2>September 2026: clearer paths from guides to tools</h2>
+      <p>We grouped related room planning topics so readers can move from a measurement question to a relevant tool without working through several near-identical articles. Some older guide addresses now lead to a more complete page on the same topic. The goal is to make the explanation and its limits easier to find, while keeping useful links working.</p>
+      <h2>Room planning and furniture checks</h2>
+      <p>The browser-based Room Planner supports measured room outlines, movable furniture, and export options. Furniture Fit and room-size pages provide smaller checks for a specific purchase or room shape. A diagram remains a first pass: actual furniture frames, door movement, and the route into the home need their own measurements. We continue to refine the wording around clearances so a planning target is not mistaken for a universal safety rule.</p>
+      <h2>English and Chinese information</h2>
+      <p>RoomFeng has separate English and Chinese site entrances. Our English trust pages explain the same essential visitor choices as the Chinese pages, including local drafts, optional email features, third-party links, and the limits of feng shui references. If you find a link that opens the wrong language or a statement that no longer matches a live feature, <a href="/en/contact/">tell us</a> the exact page address.</p>
+      <p>For current guidance on data handling, read <a href="/en/privacy/">Privacy</a>. For the limits of tools and cultural notes, read the <a href="/en/disclaimer/">Disclaimer</a>. This update page does not replace those policies.</p>
+    </article>
+    <div class="cta-band"><p>Check a room with your own dimensions.</p><a class="button" href="/en/room-layout-planner/">Open Room Planner</a></div>
+    <Faq lang="en" items={faq} />
+    <RelatedLinks lang="en" links={[{ href: '/en/about/', title: 'About' }, { href: '/en/privacy/', title: 'Privacy' }, { href: '/en/contact/', title: 'Contact' }]} />
+  </div></section>
+</Layout>

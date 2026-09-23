@@ -1,0 +1,37 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const canonical = '/en/privacy/';
+const title = 'Privacy Policy | RoomFeng';
+const description = 'Learn how RoomFeng handles local room drafts, optional email features, analytics, advertising, and affiliate interactions.';
+const faq = [
+  { q: 'Are my room drafts uploaded when I save them?', a: 'No. Saved Planner drafts use your browser’s localStorage. Emailing an export is a separate action you choose.' },
+  { q: 'Can I remove a saved draft?', a: 'Yes. Use the Planner’s clear design control or remove RoomFeng site data in your browser.' },
+  { q: 'What happens when I enter an email address?', a: 'The newsletter form uses it for subscription. The optional export email flow uses it to deliver a file and may add it to a site updates list; the flow explains this before submission.' },
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: `https://roomfeng.win${canonical}`, inLanguage: 'en' };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ zh: '/privacy/', en: canonical }} jsonLd={jsonLd} showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <article class="card">
+      <h1>Privacy Policy</h1>
+      <p class="lead">RoomFeng's planning tools run in your browser. This page explains when information stays on your device and when an optional service receives information you submit.</p>
+      <h2>Room plans and local storage</h2>
+      <p>The Room Planner uses browser storage for saved drafts and preferences. Room dimensions, furniture positions, and draft contents are not uploaded simply because you save a plan. PNG and PDF exports are created in your browser. Clearing site data, changing browsers, or using a private session can remove saved drafts; we cannot recover them from a server. The Planner also offers a clear design control.</p>
+      <h2>Email features</h2>
+      <p>If you choose the export-by-email option, the site sends your email address, tool name, and the file you selected to its email delivery service. The file is used for that delivery. The export flow may also add your address to a RoomFeng updates list, as stated beside the email field. If delivery is unavailable or the file is too large, the tool falls back to a local download. This is separate from saving a local draft.</p>
+      <p>If you use a newsletter form, the address you enter is sent to the email service to manage subscriptions and unsubscribes. The form may be unavailable when the service is not configured. You can request that we stop sending updates or delete your subscription information through <a href="/en/contact/">Contact</a>. Please avoid sending private addresses, payment details, or identity documents in a support email.</p>
+      <h2>Analytics, advertising, and affiliate links</h2>
+      <p>Where enabled, Google Analytics 4 measures page use and general interactions. Our cookie choice interface lets you accept or reject analytics storage and change that choice later. Affiliate modules can record product impressions, refreshes, and outbound clicks; those events do not include your room draft or furniture coordinates. Product links take you to third-party sites, whose own privacy policies apply.</p>
+      <p>If Google AdSense is enabled, Google and its partners may use cookies or similar technology for ad delivery and measurement. The advertising and analytics services may receive browser, device, approximate location, and interaction information under their own policies. RoomFeng does not use these services to retrieve your local draft. You can manage browser cookies and site data in your browser settings.</p>
+      <h2>Questions</h2>
+      <p>For privacy questions or a request about information you submitted by email, write to <a href="mailto:btcson224@gmail.com">btcson224@gmail.com</a>. Tell us which feature you used so we can identify the relevant service without asking for your room layout.</p>
+    </article>
+    <div class="cta-band"><p>Need help with information you submitted?</p><a class="button" href="/en/contact/">Contact RoomFeng</a></div>
+    <Faq lang="en" items={faq} />
+    <RelatedLinks lang="en" links={[{ href: '/en/terms/', title: 'Terms' }, { href: '/en/contact/', title: 'Contact' }, { href: '/en/disclaimer/', title: 'Disclaimer' }]} />
+  </div></section>
+</Layout>

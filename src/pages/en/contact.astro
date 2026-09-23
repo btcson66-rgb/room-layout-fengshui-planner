@@ -1,0 +1,34 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const canonical = '/en/contact/';
+const title = 'Contact RoomFeng | Questions and Feedback';
+const description = 'Contact RoomFeng about a tool bug, privacy question, business inquiry, or suggestion for a room planning guide.';
+const faq = [
+  { q: 'How do I report a tool bug?', a: 'Email the page URL, browser and device, the steps you took, and what happened. A simple example measurement can help.' },
+  { q: 'Can I ask about privacy or a subscription?', a: 'Yes. Tell us which feature you used and the email address involved, without sending room drafts or identity documents.' },
+  { q: 'Do you offer personal feng shui readings?', a: 'No. RoomFeng provides general cultural and spatial-comfort information, not personal readings or guaranteed outcomes.' },
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'ContactPage', name: title, description, url: `https://roomfeng.win${canonical}`, inLanguage: 'en' };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ zh: '/contact/', en: canonical }} jsonLd={jsonLd} showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <article class="card">
+      <h1>Contact RoomFeng</h1>
+      <p class="lead">Write to <a href="mailto:btcson224@gmail.com">btcson224@gmail.com</a> for help with the site, a correction, a privacy question, or a partnership inquiry.</p>
+      <h2>Report a problem</h2>
+      <p>If a tool behaves unexpectedly, include the page address, your browser and device, the steps you followed, and the result you expected. A small example with approximate measurements can make a bug easier to understand. If the issue involves an export, tell us whether you chose a local download or email delivery. Please do not send your full room plan unless you want us to examine it.</p>
+      <h2>Privacy and email</h2>
+      <p>For a question about analytics, an email export, or a newsletter subscription, mention which feature you used. You can also ask us to stop updates or address information you submitted. Planner drafts saved in browser storage are not held in a RoomFeng account, so we generally cannot retrieve a draft after browser data has been removed.</p>
+      <h2>Business and general feedback</h2>
+      <p>We welcome relevant business or partnership proposals and suggestions for clearer room planning guidance. If a measurement, product link, accessibility detail, or article statement needs correction, send the exact page and the passage that concerns you. We review messages as capacity allows and cannot promise a particular response time.</p>
+      <p>Do not email passwords, identity documents, payment card details, full home addresses, or other sensitive information. RoomFeng does not offer personal fortune telling or guaranteed feng shui outcomes. The <a href="/en/disclaimer/">disclaimer</a> explains how to use the site's cultural references and size estimates.</p>
+    </article>
+    <div class="cta-band"><p>Have a specific page in mind? Include its URL in your email.</p><a class="button" href="mailto:btcson224@gmail.com">Email RoomFeng</a></div>
+    <Faq lang="en" items={faq} />
+    <RelatedLinks lang="en" links={[{ href: '/en/privacy/', title: 'Privacy' }, { href: '/en/about/', title: 'About' }, { href: '/en/disclaimer/', title: 'Disclaimer' }]} />
+  </div></section>
+</Layout>

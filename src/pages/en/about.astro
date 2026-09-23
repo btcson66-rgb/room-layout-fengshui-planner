@@ -1,0 +1,34 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const canonical = '/en/about/';
+const title = 'About RoomFeng | Plan a Room Before You Buy';
+const description = 'Meet RoomFeng: practical room planning, furniture fit checks, and measured layout guides for renters, movers, and furniture buyers.';
+const faq = [
+  { q: 'Who is RoomFeng for?', a: 'Anyone planning a room, comparing furniture sizes, or preparing for a move. You do not need design software or an account.' },
+  { q: 'Does RoomFeng offer professional design advice?', a: 'No. The tools provide planning estimates. Check the real room, product dimensions, and local requirements before buying or building.' },
+  { q: 'Are feng shui suggestions guaranteed?', a: 'No. They are presented as cultural and spatial-comfort references, without promises about health, wealth, or other outcomes.' },
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'AboutPage', name: title, description, url: `https://roomfeng.win${canonical}`, inLanguage: 'en' };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ zh: '/about/', en: canonical }} jsonLd={jsonLd} showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <article class="card">
+      <h1>About RoomFeng</h1>
+      <p class="lead">RoomFeng helps you make room decisions with measurements before you buy furniture, move into a space, or rearrange what you already own.</p>
+      <p>Start with the room's clear inside dimensions, then add the furniture you actually use. The free <a href="/en/room-layout-planner/">Room Planner</a> lets you place and adjust items, check obvious conflicts around doors and walkways, and export a plan as a PNG or PDF. Your saved draft stays in your browser. For a single purchase, the <a href="/en/furniture-fit-checker/">Furniture Fit Checker</a> helps you think through the space needed to use a piece, rather than only the space its body occupies.</p>
+      <p>Room sizes on product listings rarely tell the whole story. A bed frame can be wider than its mattress. A chair needs space to pull out. Wardrobe doors, skirting boards, radiators, and the path from the entrance all matter. Our guides show measured starting points and their compromises so you can test a plan against your own room. A diagram is useful for screening options, but it cannot replace a tape measure or a walk through the space.</p>
+      <h2>How we describe a good fit</h2>
+      <p>We distinguish physical fit from everyday use. A layout can place every rectangle inside the room and still leave an awkward route. Clearance figures are planning targets, not universal safety or accessibility standards. Your body size, mobility needs, door swings, and local requirements may call for more space. Before making a purchase or alteration, check the actual furniture specifications and, when relevant, seek qualified advice.</p>
+      <h2>Who is behind the site</h2>
+      <p>RoomFeng is maintained by the independent Btcson Project team. We focus on clear room measurements, practical comparisons, and corrections readers can check. Chinese-language feng shui notes are identified as folk-culture and comfort references; they do not predict or guarantee life outcomes. Read our <a href="/en/disclaimer/">disclaimer</a> for the limits of the tools and guides.</p>
+      <p>Found an unclear measurement, a broken link, or a case we should explain better? We welcome specific feedback at <a href="mailto:btcson224@gmail.com">btcson224@gmail.com</a>. Please include the page and the issue, but leave out private addresses and other sensitive information.</p>
+    </article>
+    <div class="cta-band"><p>Try a plan using your own measurements.</p><a class="button" href="/en/room-layout-planner/">Open Room Planner</a></div>
+    <Faq lang="en" items={faq} />
+    <RelatedLinks lang="en" links={[{ href: '/en/privacy/', title: 'Privacy' }, { href: '/en/disclaimer/', title: 'Disclaimer' }, { href: '/en/contact/', title: 'Contact' }]} />
+  </div></section>
+</Layout>

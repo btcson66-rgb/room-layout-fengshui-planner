@@ -52,6 +52,7 @@ export interface AffiliateProduct {
   shortTitle?: string;
   shop: string;
   description: string;
+  best_for?: string;
   tags: string[];
   url: string;
   platform: AffiliatePlatform;

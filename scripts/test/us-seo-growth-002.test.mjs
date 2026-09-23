@@ -33,28 +33,35 @@ const childSitemap = () => {
   return sitemapFiles.map((name) => readFileSync(join(dist, name), 'utf8')).join('\n');
 };
 
-test('US SEO Growth 002 keeps the current authority and URL surface', async () => {
+test('US SEO Growth 002 retains its URLs while repair 001 adds only six trust routes', async () => {
   assert.ok(existsSync(dist), 'dist does not exist; run npm.cmd run build first');
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 1458, 'build authority changed unexpectedly');
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 1448, 'sitemap authority changed unexpectedly');
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 1464, 'build authority changed unexpectedly');
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 1454, 'sitemap authority changed unexpectedly');
 
   const sitemap = childSitemap();
   const candidateUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   const uniqueCandidateUrls = [...new Set(candidateUrls)];
-  assert.equal(uniqueCandidateUrls.length, 1448, 'candidate sitemap URL count must remain 1,448');
+  assert.equal(uniqueCandidateUrls.length, 1454, 'candidate sitemap URL count must be 1,454');
   assert.equal(candidateUrls.length, uniqueCandidateUrls.length, 'candidate sitemap must not contain duplicates');
 
   const baselineResponse = await fetch(`${siteUrl}/sitemap-0.xml`);
   assert.equal(baselineResponse.status, 200, 'public baseline sitemap must be readable');
   const baselineXml = await baselineResponse.text();
   const baselineUrls = [...baselineXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(baselineUrls.length, 1448, 'public baseline sitemap must contain 1,448 URLs');
-  assert.deepEqual([...new Set(candidateUrls)].sort(), [...new Set(baselineUrls)].sort(), 'candidate sitemap route set changed');
+  const baselineCount = baselineUrls.length;
+  assert.ok(baselineCount === 1448 || baselineCount === 1454, `unexpected public sitemap count ${baselineCount}`);
+  const expectedAdditions = ROOMFENG_RELEASE_AUTHORITY.productionRepair001.addedRoutes.map((path) => `${siteUrl}${path}`);
+  const candidateSet = new Set(candidateUrls);
+  const baselineSet = new Set(baselineUrls);
+  const added = [...candidateSet].filter((url) => !baselineSet.has(url)).sort();
+  const removed = [...baselineSet].filter((url) => !candidateSet.has(url)).sort();
+  assert.deepEqual(added, baselineCount === 1448 ? expectedAdditions.sort() : [], 'unexpected candidate URL additions');
+  assert.deepEqual(removed, [], 'candidate removed a public URL');
 
   for (const path of targetPaths) {
     assert.ok(sitemap.includes(`${siteUrl}${path}`), `${path}: missing from candidate sitemap`);
   }
-  assert.equal(uniqueCandidateUrls.length - new Set(baselineUrls).size, 0, 'new sitemap URLs must be 0');
+  assert.equal(uniqueCandidateUrls.length - baselineSet.size, added.length, 'candidate sitemap count differs from exact URL delta');
 
   const titles = new Set();
   const h1s = new Set();
@@ -126,5 +133,5 @@ test('US SEO Growth 002 keeps the current authority and URL surface', async () =
   assert.match(checker, /does not model the full delivery route/i, 'checker must separate route intent');
   assert.ok(hrefsFrom(checker).includes('/en/moving-furniture-size-check/'), 'checker missing full-route handoff');
 
-  console.log(JSON.stringify({ status: 'PASS', sitemapBefore: 1448, sitemapAfter: uniqueCandidateUrls.length, addedUrls: 0, removedUrls: 0, canonicalDelta: 0, redirectDelta: 0, noindexDelta: 0, targets: targetPaths.length }));
+  console.log(JSON.stringify({ status: 'PASS', sitemapBefore: baselineCount, sitemapAfter: uniqueCandidateUrls.length, addedUrls: added.length, removedUrls: removed.length, canonicalDelta: 0, redirectDelta: 0, noindexDelta: 0, targets: targetPaths.length }));
 });

@@ -11,6 +11,7 @@ const t = lang === 'en' ? en : zh;
 const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
 const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
 const supportHref = '/support/';
+const trustHref = (page: string) => lang === 'en' ? `/en/${page}/` : `/${page}/`;
 ---
 
 <footer class="site-footer">
@@ -18,7 +19,7 @@ const supportHref = '/support/';
     <div class="footer-brand">
       <p class="eyebrow">ROOMFENG</p>
       <p class="footer-tagline">{lang === 'en' ? 'Measure. Plan. Check.' : '先量，再排，再確認。'}</p>
-      <p class="footer-disclaimer">{t.footer.folkDisclaimer} <a href="/disclaimer/">{t.footer.disclaimer}</a></p>
+      <p class="footer-disclaimer">{t.footer.folkDisclaimer} <a href={trustHref('disclaimer')}>{t.footer.disclaimer}</a></p>
     </div>
     <div class="footer-column">
       <p class="footer-label">{lang === 'en' ? 'Explore' : '探索'}</p>
@@ -26,17 +27,17 @@ const supportHref = '/support/';
         <li><a href={plannerHref}>{t.nav.planner}</a></li>
         <li><a href={fitCheckerHref}>{t.nav.fitChecker}</a></li>
         {lang === 'zh' && <li><a href="/zh/blog/">部落格</a></li>}
-        <li><a href={supportHref}>{lang === 'en' ? 'Support' : '支持我們'}</a></li>
+        {lang === 'zh' && <li><a href={supportHref}>支持我們</a></li>}
       </ul>
     </div>
     <div class="footer-column">
       <p class="footer-label">{lang === 'en' ? 'About' : '關於'}</p>
       <ul class="footer-links">
-        <li><a href="/about/">{t.footer.about}</a></li>
-        <li><a href="/privacy/">{t.footer.privacy}</a></li>
-        <li><a href="/terms/">{t.footer.terms}</a></li>
-        <li><a href="/contact/">{t.footer.contact}</a></li>
-        <li><a href="/changelog/">{t.footer.changelog}</a></li>
+        <li><a href={trustHref('about')}>{t.footer.about}</a></li>
+        <li><a href={trustHref('privacy')}>{t.footer.privacy}</a></li>
+        <li><a href={trustHref('terms')}>{t.footer.terms}</a></li>
+        <li><a href={trustHref('contact')}>{t.footer.contact}</a></li>
+        <li><a href={trustHref('changelog')}>{t.footer.changelog}</a></li>
       </ul>
     </div>
     <p class="footer-site-stats" data-site-stats="roomfeng.win" data-lang={lang} hidden data-nosnippet></p>
