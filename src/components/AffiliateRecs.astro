@@ -6,7 +6,7 @@ import {
   selectAffiliateProducts,
   type AffiliateProduct,
 } from '../data/affiliateProducts';
-import { amazonContentExpiresAt, amazonProducts } from '../data/amazonProducts';
+import { amazonContentExpiresAt, amazonProducts, amazonProductsById } from '../data/amazonProducts';
 
 interface Props {
   productIds?: string[];
@@ -58,7 +58,9 @@ const displayLimit = Math.max(2, Math.min(maxItems, 3));
 // the button itself remains intentionally uncapped and wraps after the last batch.
 const selectionLimit = amazon ? amazonProducts.length : Math.min(rotationPoolSize, affiliateProductsById.size);
 const selectedProducts = amazon
-  ? amazonProducts
+  ? productIds
+    ? productIds.map((id) => amazonProductsById.get(id)).filter((product): product is AffiliateProduct => Boolean(product))
+    : amazonProducts
   : productIds
   ? productIds.map(resolveAffiliateProductId).map((id) => affiliateProductsById.get(id)).filter((product): product is AffiliateProduct => Boolean(product))
   : selectAffiliateProducts({ category, tags, slug, maxItems: selectionLimit });

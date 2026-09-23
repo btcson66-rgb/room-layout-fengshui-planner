@@ -1,0 +1,402 @@
+---
+/**
+ * ClearanceChecker.astro — 嵌在文章內的「輸入你的房間尺寸，立刻知道放不放得下」小工具。
+ *
+ * 為什麼這是 RoomFeng 最重要的差異化
+ * ----------------------------------
+ * 「床對門」「衣櫃對床」這些詞的前幾名全是設計公司與床墊商的圖文章，
+ * 有些是 2017~2019 年的舊文。它們都只能「解釋」，沒有一個能「幫使用者的房間算」。
+ * 把這個工具放進每篇文章，使用者需要輸入自己的數字才能得到答案 ——
+ * 這正是 AI 摘要取代不了的頁面，也是停留時間與回訪的來源。
+ *
+ * 設計原則
+ * --------
+ * 1. 零相依、零建置步驟。純 vanilla JS，Astro 會原樣輸出。
+ * 2. 全部在瀏覽器計算，不送任何資料出去（和站上隱私說明一致）。
+ * 3. 只回答「可量測」的問題（能不能放得下、走道剩幾公分、門開不開得了），
+ *    不對財運健康做任何宣稱。風水提示只標為民俗參考。
+ * 4. 結果可複製，讓使用者拿去跟房東、賣場、搬家公司溝通。
+ *
+ * 用法
+ * ----
+ *   <ClearanceChecker preset="bed-door" />     床對門
+ *   <ClearanceChecker preset="wardrobe" />     衣櫃門開啟
+ *   <ClearanceChecker preset="desk" />         書桌與椅子後退
+ *   <ClearanceChecker preset="aircon" />       冷氣出風與床頭距離
+ *   <ClearanceChecker preset="generic" />      通用走道檢查
+ *
+ * 依據的尺寸來自一般住宅慣用值，頁面已標明僅供規劃起點，
+ * 不能取代建築、消防或無障礙規範。
+ */
+
+export interface Props {
+  preset?: "bed-door" | "wardrobe" | "desk" | "aircon" | "generic";
+  plannerUrl?: string;
+}
+
+const { preset = "generic", plannerUrl = "/zh/room-layout-planner/" } =
+  Astro.props as Props;
+
+const PRESETS: Record<string, {
+  heading: string;
+  intro: string;
+  fields: { id: string; label: string; unit: string; def: number; hint?: string }[];
+  note: string;
+}> = {
+  "bed-door": {
+    heading: "床對門檢查：量三個數字就知道要不要移床",
+    intro: "先確認是不是真的「正對」。門框兩側往房內延伸的範圍才算正對，站在門口看得到床不算。",
+    fields: [
+      { id: "roomW", label: "房間淨寬", unit: "cm", def: 300, hint: "牆到牆，不含踢腳板" },
+      { id: "bedW", label: "床外框寬", unit: "cm", def: 152, hint: "床架外緣，不是床墊" },
+      { id: "doorW", label: "門框淨寬", unit: "cm", def: 80 },
+      { id: "doorX", label: "門框左緣距左牆", unit: "cm", def: 40 },
+      { id: "bedX", label: "床左緣距左牆", unit: "cm", def: 70 },
+    ],
+    note: "床尾正對門在民俗上稱沖床煞，床頭背門稱背氣煞；兩者處理方式不同。本工具只判斷幾何上的重疊與可移動空間。",
+  },
+  wardrobe: {
+    heading: "衣櫃門開得開嗎：櫃深＋門片＋站立空間",
+    intro: "開門式衣櫃真正佔掉的不只是櫃體深度，還要加門片打開的深度和一個人站著拿衣服的空間。",
+    fields: [
+      { id: "roomW", label: "衣櫃到對面家具的距離", unit: "cm", def: 120 },
+      { id: "cabD", label: "衣櫃深度", unit: "cm", def: 60 },
+      { id: "doorD", label: "門片寬度（開門式填門片寬，推拉門填 0）", unit: "cm", def: 45 },
+    ],
+    note: "推拉門省空間但同一時間只能開一半，選推拉門前先確認常用的那半邊放什麼。",
+  },
+  desk: {
+    heading: "書桌後面留得夠嗎：椅子後退與通行要分開算",
+    intro: "書桌背後要分兩段：椅子往後退坐下需要的距離，以及有人要從背後走過需要的距離。",
+    fields: [
+      { id: "roomD", label: "書桌前緣到對面牆或家具", unit: "cm", def: 150 },
+      { id: "deskD", label: "書桌深度", unit: "cm", def: 60 },
+      { id: "passBy", label: "背後需要有人通過嗎？（要填 1，不要填 0）", unit: "", def: 1 },
+    ],
+    note: "椅子後退約需 75~90 cm；若還要有人通過，再加 60 cm。",
+  },
+  aircon: {
+    heading: "冷氣會不會直吹床頭：量水平距離與出風方向",
+    intro: "冷氣在床頭上方的實際困擾是溫差與噪音，不是玄學。先量出風口到床頭的水平距離。",
+    fields: [
+      { id: "acX", label: "冷氣出風口中心距左牆", unit: "cm", def: 150 },
+      { id: "bedX", label: "床頭中心距左牆", unit: "cm", def: 150 },
+      { id: "roomW", label: "房間淨寬", unit: "cm", def: 300 },
+      { id: "bedW", label: "床外框寬", unit: "cm", def: 152 },
+    ],
+    note: "無法移床時，可用導風板改變出風角度，或把送風模式改成上吹。這是物理問題，不是化解問題。",
+  },
+  generic: {
+    heading: "走道寬度檢查：放得下不等於用得順",
+    intro: "家具外框加總後剩下的才是走道。低於 60 cm 會讓鋪床、開抽屜、拉椅子每天卡住。",
+    fields: [
+      { id: "roomW", label: "房間淨寬", unit: "cm", def: 300 },
+      { id: "f1", label: "家具一外框寬", unit: "cm", def: 152 },
+      { id: "f2", label: "家具二外框寬（沒有填 0）", unit: "cm", def: 60 },
+      { id: "f3", label: "家具三外框寬（沒有填 0）", unit: "cm", def: 0 },
+    ],
+    note: "60 cm 是單人側身通過的下限，主要動線建議 75~90 cm。",
+  },
+};
+
+const cfg = PRESETS[preset] ?? PRESETS.generic;
+const uid = `rfc-${preset}-${Math.random().toString(36).slice(2, 8)}`;
+---
+
+<section class="rfc" id={uid} data-preset={preset}>
+  <h2 class="rfc__h">{cfg.heading}</h2>
+  <p class="rfc__intro">{cfg.intro}</p>
+
+  <form class="rfc__form" novalidate>
+    {cfg.fields.map((f) => (
+      <label class="rfc__field">
+        <span class="rfc__label">
+          {f.label}{f.unit && <em>（{f.unit}）</em>}
+        </span>
+        <input
+          type="number"
+          inputmode="numeric"
+          data-k={f.id}
+          value={f.def}
+          min="0"
+          max="2000"
+          step="1"
+        />
+        {f.hint && <small class="rfc__hint">{f.hint}</small>}
+      </label>
+    ))}
+  </form>
+
+  <output class="rfc__out" aria-live="polite"></output>
+
+  <div class="rfc__actions">
+    <button type="button" class="rfc__copy">複製結果</button>
+    <a class="rfc__plan" href={plannerUrl}>把這些數字畫成平面圖 →</a>
+  </div>
+  <textarea class="rfc__fallback" aria-label="手動複製檢查結果" readonly hidden></textarea>
+
+  <p class="rfc__note">{cfg.note}</p>
+  <p class="rfc__disc">
+    全部在你的瀏覽器計算，數字不會送出。結果僅供規劃起點，
+    不能取代建築、消防或無障礙規範，也不保證任何民俗結果。
+  </p>
+</section>
+
+<script is:inline define:vars={{ uid, preset }}>
+  (function () {
+    const root = document.getElementById(uid);
+    if (!root) return;
+    const out = root.querySelector(".rfc__out");
+    const get = (k) => {
+      const el = root.querySelector(`input[data-k="${k}"]`);
+      const v = el ? parseFloat(el.value) : NaN;
+      return v;
+    };
+
+    const PASS = 60;   // 單人側身通過下限
+    const GOOD = 75;   // 主要動線建議值
+    const CHAIR = 80;  // 椅子後退
+
+    function row(state, text) {
+      const icon = state === "ok" ? "✓" : state === "warn" ? "!" : "✕";
+      return `<li class="rfc__r rfc__r--${state}"><b>${icon}</b><span>${text}</span></li>`;
+    }
+
+    function calc() {
+      const L = [];
+      let summary = "";
+      const inputs = [...root.querySelectorAll('input[data-k]')];
+      const invalid = inputs.some((input) => {
+        const value = Number(input.value);
+        const zeroAllowed = ['doorD', 'passBy', 'f2', 'f3', 'doorX', 'bedX', 'acX'].includes(input.dataset.k);
+        return input.value.trim() === '' || !Number.isFinite(value) || value < 0 || value > 2000 || (!zeroAllowed && value === 0);
+      });
+      if (invalid) {
+        out.textContent = '請輸入 0 至 2000 cm 的有效尺寸；房間與主要家具尺寸須大於 0。';
+        out.dataset.summary = '尺寸無效';
+        out.dataset.plain = out.textContent;
+        return;
+      }
+
+      if (preset === "bed-door") {
+        const roomW = get("roomW"), bedW = get("bedW"),
+              doorW = get("doorW"), doorX = get("doorX"), bedX = get("bedX");
+        const doorL = doorX, doorR = doorX + doorW;
+        const bedL = bedX, bedR = bedX + bedW;
+        if (doorR > roomW || bedR > roomW) {
+          out.textContent = '門框或床的右緣超出房間淨寬，請重新量測位置與外框寬。';
+          out.dataset.summary = '尺寸無效';
+          out.dataset.plain = out.textContent;
+          return;
+        }
+        const overlap = Math.max(0, Math.min(doorR, bedR) - Math.max(doorL, bedL));
+        const side = roomW - bedW - bedX;
+
+        if (overlap <= 0) {
+          L.push(row("ok", "床沒有落在門框的延伸範圍內，幾何上不算正對。"));
+          summary = "不算正對";
+        } else {
+          L.push(row("bad", `床有 <b>${overlap.toFixed(0)} cm</b> 落在門框延伸線內，屬於正對。`));
+          summary = `正對 ${overlap.toFixed(0)} cm`;
+          // 往左移到「床尾在門框左緣之前」：需移動 bedR - doorL
+          // 往右移到「床頭在門框右緣之後」：需移動 doorR - bedL
+          const needLeft = bedR <= doorL ? 0 : bedR - doorL;
+          const needRight = bedL >= doorR ? 0 : doorR - bedL;
+          const canLeft = bedL, canRight = roomW - bedR;
+          if (needLeft <= canLeft && needLeft > 0)
+            L.push(row("ok", `往左移 <b>${needLeft.toFixed(0)} cm</b> 可完全避開（左側可移動 ${canLeft.toFixed(0)} cm）。`));
+          if (needRight <= canRight && needRight > 0)
+            L.push(row("ok", `往右移 <b>${needRight.toFixed(0)} cm</b> 可完全避開（右側可移動 ${canRight.toFixed(0)} cm）。`));
+          if (needLeft > canLeft && needRight > canRight)
+            L.push(row("warn", "左右都移不開。可改用屏風、矮櫃或一片式門簾遮擋視線直沖，並保持房門關閉。"));
+        }
+        if (roomW - bedW < 0) L.push(row("bad", "床比房間還寬，先確認量的是床架外框不是床墊。"));
+        else if (side < PASS)
+          L.push(row("warn", `床另一側只剩 <b>${side.toFixed(0)} cm</b>，低於 ${PASS} cm，鋪床與清潔會卡。`));
+        else L.push(row("ok", `床另一側剩 ${side.toFixed(0)} cm，通行沒問題。`));
+
+      } else if (preset === "wardrobe") {
+        const roomW = get("roomW"), cabD = get("cabD"), doorD = get("doorD");
+        const used = cabD + doorD;
+        const left = roomW - used;
+        L.push(row("ok", `衣櫃實際佔用 <b>${used.toFixed(0)} cm</b>（櫃深 ${cabD} ＋ 門片 ${doorD}）。`));
+        summary = `剩 ${left.toFixed(0)} cm`;
+        if (left < 0) L.push(row("bad", "門片打不開，空間不足。改推拉門或換較淺的櫃體。"));
+        else if (left < PASS)
+          L.push(row("bad", `開門後只剩 <b>${left.toFixed(0)} cm</b>，站不下一個人拿衣服（需 ${PASS} cm 以上）。`));
+        else if (left < GOOD)
+          L.push(row("warn", `開門後剩 <b>${left.toFixed(0)} cm</b>，堪用但會擠。`));
+        else L.push(row("ok", `開門後剩 <b>${left.toFixed(0)} cm</b>，操作順暢。`));
+        if (doorD === 0) L.push(row("ok", "推拉門不佔開啟深度，但同時只能開一半，常用衣物放在容易開的那側。"));
+
+      } else if (preset === "desk") {
+        const roomD = get("roomD"), deskD = get("deskD"), passBy = get("passBy");
+        const behind = roomD - deskD;
+        const need = CHAIR + (passBy >= 1 ? PASS : 0);
+        L.push(row("ok", `書桌後方可用 <b>${behind.toFixed(0)} cm</b>。`));
+        summary = `後方 ${behind.toFixed(0)} cm / 需要 ${need} cm`;
+        if (behind < CHAIR)
+          L.push(row("bad", `不足椅子後退所需的 ${CHAIR} cm，每次坐下都要側身。`));
+        else if (behind < need)
+          L.push(row("warn", `夠坐（${CHAIR} cm）但不夠有人通過（再需 ${PASS} cm）。`));
+        else L.push(row("ok", `同時滿足椅子後退與通行，共需 ${need} cm。`));
+
+      } else if (preset === "aircon") {
+        const acX = get("acX"), bedX = get("bedX"), roomW = get("roomW"), bedW = get("bedW");
+        const d = Math.abs(acX - bedX);
+        const bedL = bedX - bedW / 2, bedR = bedX + bedW / 2;
+        if (acX > roomW || bedL < 0 || bedR > roomW) {
+          out.textContent = '出風口或床超出房間淨寬，請重新量測中心位置與床外框寬。';
+          out.dataset.summary = '尺寸無效';
+          out.dataset.plain = out.textContent;
+          return;
+        }
+        const over = acX >= bedL && acX <= bedR;
+        L.push(row(over ? "warn" : "ok",
+          over ? "出風口位於床的正上方投影範圍內。"
+               : `出風口偏離床中心 <b>${d.toFixed(0)} cm</b>，不在床頭正上方。`));
+        summary = over ? "位於床上方" : `偏離 ${d.toFixed(0)} cm`;
+        // 判斷式把剛好碰到邊界也算在投影內，因此移動量加 1 cm。
+        const moveL = bedR - acX + 1, moveR = acX - bedL + 1;
+        if (over) {
+          const feasible = [
+            { amount: moveL, dir: '左', available: bedL },
+            { amount: moveR, dir: '右', available: roomW - bedR },
+          ].filter((move) => move.amount <= move.available).sort((a, b) => a.amount - b.amount);
+          if (feasible.length)
+            L.push(row("ok", `床往${feasible[0].dir}移 <b>${feasible[0].amount.toFixed(0)} cm</b> 即可讓出風口離開床的投影範圍。`));
+          else
+            L.push(row("warn", "移不開。改用導風板、把送風改成上吹，或在睡覺時段改用定時與微風。"));
+        }
+
+      } else {
+        const roomW = get("roomW");
+        const items = [get("f1"), get("f2"), get("f3")].filter((v) => v > 0);
+        const used = items.reduce((a, b) => a + b, 0);
+        const left = roomW - used;
+        L.push(row("ok", `家具合計 <b>${used.toFixed(0)} cm</b>，房間 ${roomW} cm。`));
+        summary = `走道 ${left.toFixed(0)} cm`;
+        if (left < 0) L.push(row("bad", `超出 <b>${(-left).toFixed(0)} cm</b>，排不下。`));
+        else if (left < PASS)
+          L.push(row("bad", `只剩 <b>${left.toFixed(0)} cm</b>，低於單人通過的 ${PASS} cm。`));
+        else if (left < GOOD)
+          L.push(row("warn", `剩 <b>${left.toFixed(0)} cm</b>，可通過但不寬裕（建議 ${GOOD} cm）。`));
+        else L.push(row("ok", `剩 <b>${left.toFixed(0)} cm</b>，動線舒適。`));
+      }
+
+      out.innerHTML = `<ul class="rfc__list">${L.join("")}</ul>`;
+      out.dataset.summary = summary;
+      out.dataset.plain = L
+        .map((h) => h.replace(/<[^>]+>/g, "").trim())
+        .join("\n");
+    }
+
+    root.addEventListener("input", (e) => {
+      if (e.target instanceof HTMLInputElement) calc();
+    });
+    root.querySelector(".rfc__copy").addEventListener("click", async () => {
+      const btn = root.querySelector(".rfc__copy");
+      const vals = [...root.querySelectorAll("input[data-k]")]
+        .map((i) => `${i.closest("label").querySelector(".rfc__label").textContent.trim()}：${i.value}`)
+        .join("\n");
+      const text = `RoomFeng 檢查結果\n${vals}\n\n${out.dataset.plain || ""}\n\nroomfeng.win`;
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.textContent = "已複製";
+      } catch {
+        const fallback = root.querySelector('.rfc__fallback');
+        fallback.value = text;
+        fallback.hidden = false;
+        fallback.focus();
+        fallback.select();
+        btn.textContent = "請手動複製下方文字";
+      }
+      setTimeout(() => (btn.textContent = "複製結果"), 2000);
+    });
+    calc();
+  })();
+</script>
+
+<style>
+  .rfc {
+    margin: 2rem 0;
+    padding: 1.25rem;
+    border: 2px solid var(--rf-accent, #0f9e95);
+    border-radius: 14px;
+    background: var(--rf-surface, #fff);
+  }
+  .rfc__h { font-size: 1.1rem; margin: 0 0 0.4rem; }
+  .rfc__intro { margin: 0 0 1rem; line-height: 1.7; color: var(--rf-muted, #4b5563); }
+  .rfc__form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 0.75rem;
+  }
+  .rfc__field { display: flex; flex-direction: column; gap: 0.25rem; }
+  .rfc__label { font-size: 0.85rem; font-weight: 600; }
+  .rfc__label em { font-style: normal; color: var(--rf-muted, #6b7280); font-weight: 400; }
+  .rfc__field input {
+    font: inherit;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--rf-border, #d1d5db);
+    border-radius: 8px;
+    background: var(--rf-surface, #fff);
+    color: inherit;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .rfc__hint { font-size: 0.72rem; color: var(--rf-muted, #6b7280); }
+  .rfc__out { display: block; margin-top: 1rem; }
+  .rfc__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+  .rfc__r {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    padding: 0.6rem 0.75rem;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 0.93rem;
+  }
+  .rfc__r b { flex: none; font-size: 0.95rem; }
+  .rfc__r--ok   { background: #e8f5f3; color: #0b5c56; }
+  .rfc__r--warn { background: #fdf3e0; color: #7a4a06; }
+  .rfc__r--bad  { background: #fdeaea; color: #8a1c1c; }
+  .rfc__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+  .rfc__copy {
+    font: inherit;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--rf-border, #d1d5db);
+    border-radius: 8px;
+    background: var(--rf-surface, #fff);
+    color: inherit;
+    cursor: pointer;
+  }
+  .rfc__fallback { display: block; width: 100%; min-height: 8rem; margin-top: 0.75rem; box-sizing: border-box; }
+  .rfc__fallback[hidden] { display: none; }
+  .rfc__plan {
+    font-weight: 600;
+    color: var(--rf-accent, #0f9e95);
+    text-decoration: none;
+  }
+  .rfc__plan:hover { text-decoration: underline; }
+  .rfc__note, .rfc__disc {
+    font-size: 0.8rem;
+    line-height: 1.65;
+    color: var(--rf-muted, #6b7280);
+    margin: 0.9rem 0 0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .rfc { background: #12161c; }
+    :root:not([data-theme="light"]) .rfc__field input { background: #161a20; border-color: #2a3139; }
+    :root:not([data-theme="light"]) .rfc__copy { background: #161a20; border-color: #2a3139; }
+    :root:not([data-theme="light"]) .rfc__r--ok   { background: #0e2b28; color: #7fd6cf; }
+    :root:not([data-theme="light"]) .rfc__r--warn { background: #2e2413; color: #e5b96b; }
+    :root:not([data-theme="light"]) .rfc__r--bad  { background: #2e1616; color: #ef9a9a; }
+  }
+</style>

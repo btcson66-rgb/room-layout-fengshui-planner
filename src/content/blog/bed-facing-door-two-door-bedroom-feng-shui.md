@@ -21,7 +21,7 @@ howToSteps:
 
 有些臥室同時連接走廊、浴室、陽台或更衣區。若只問「床對門好不好」，很容易把兩道門混成一個問題；民俗風水的門床說法，應先拆成每道門的開啟、視線、聲音、隱私與離房路線。本文是空間與民俗參考，不保證睡眠、健康、感情、財運或任何結果。
 
-浴室、陽台和逃生門的設備與建築要求優先，不能為了床位遮住門窗。先讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)，再用本文的主次門方法整理。
+浴室、陽台和逃生門的設備與建築要求優先，不能為了床位遮住門窗。先讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)，再用本文的主次門方法整理。
 
 ## 先替兩道門命名
 
@@ -63,7 +63,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-先讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)，再看 [床對門視線](/zh/blog/bedroom-bed-doorway-line-of-sight-feng-shui/)。入口緩衝可讀 [正方形房間門口緩衝](/zh/blog/square-bedroom-layout-doorway-privacy-buffer-feng-shui/)，多功能空間可參考 [套房床對門配置](/zh/blog/bed-facing-door-studio-layout-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
+先讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)，再看 [床對門視線](/zh/blog/bedroom-bed-doorway-line-of-sight-feng-shui/)。入口緩衝可讀 [正方形房間門口緩衝](/zh/blog/square-bedroom-layout-doorway-privacy-buffer-feng-shui/)，多功能空間可參考 [套房床對門配置](/zh/blog/bed-facing-door-studio-layout-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
 
 ### 參考資料
 
