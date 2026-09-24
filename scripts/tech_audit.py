@@ -54,8 +54,16 @@ TIMEOUT = 25
 # sitemap
 # --------------------------------------------------------------------------
 def fetch(url, session, allow_redirects=True):
-    return session.get(url, headers=HEADERS, timeout=TIMEOUT,
-                       allow_redirects=allow_redirects)
+    # A single slow CDN response must not become a false indexing BLOCKER.
+    # Retry timeouts only; a persistent timeout still propagates to FETCH_ERROR.
+    for attempt in range(3):
+        try:
+            return session.get(url, headers=HEADERS, timeout=TIMEOUT,
+                               allow_redirects=allow_redirects)
+        except requests.exceptions.Timeout:
+            if attempt == 2:
+                raise
+            time.sleep(0.5 * (attempt + 1))
 
 
 def parse_sitemap(url, session, seen=None, depth=0):
