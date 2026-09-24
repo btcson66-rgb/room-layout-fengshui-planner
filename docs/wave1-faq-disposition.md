@@ -6,7 +6,7 @@ Gate：每頁至少 4 個互不重複、意圖相符且可實質回答的查詢�
 
 | URL | GSC observed queries | Semantic candidates | Qualified unique queries | Rejected queries | Rejection reason | FAQ implemented | Question count | Schema validation | Notes |
 | --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
-| /zh/blog/living-room-window-film-feng-shui/ | 客廳窗戶風水 | 客廳窗戶風水 | — | 客廳窗戶風水 | ANOMALOUS_QUERY | NO | 0 | N/A | 僅一個一般語意候選；另有任務明令排除的異常反光查詢，不納入 FAQ。 |
+| /zh/blog/living-room-window-film-feng-shui/ | 客廳窗戶風水 | 客廳窗戶風水 | 客廳窗戶風水 | — | INSUFFICIENT_QUERY_EVIDENCE | NO | 0 | N/A | 僅一個一般語意候選；另有任務明令排除的異常反光查詢，不納入 FAQ。 |
 | /zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/ | 房門打開看到衣櫃；開門對衣櫃角；房間開門見衣櫃；開門對衣櫃；開門見衣櫃側邊；衣櫃可以對門嗎；開門見衣櫃好嗎；開門見衣櫃 | 房門打開看到衣櫃；開門對衣櫃角；房間開門見衣櫃；開門對衣櫃；開門見衣櫃側邊；衣櫃可以對門嗎；開門見衣櫃好嗎；開門見衣櫃 | 房門打開看到衣櫃；開門對衣櫃角；開門見衣櫃側邊；衣櫃可以對門嗎 | 房間開門見衣櫃；開門對衣櫃；開門見衣櫃好嗎；開門見衣櫃 | QUALIFIED | YES | 4 | PASS: Schema.org 0 errors / 0 warnings (2026-09-24) | 四種任務分別是入口視線、櫃角、櫃側與雙門可用性；其餘為同義改寫。 |
 | /zh/blog/bedroom-bed-head-wall-power-outlet-feng-shui/ | 床頭不靠牆；床頭一定要靠牆嗎；床頭不靠牆化解；床頭靠牆；床頭要靠牆嗎；床頭沒有靠牆；床頭靠門牆化解；冷氣在床頭上方 | — | — | 床頭不靠牆；床頭一定要靠牆嗎；床頭不靠牆化解；床頭靠牆；床頭要靠牆嗎；床頭沒有靠牆；床頭靠門牆化解；冷氣在床頭上方 | QUERY_PAGE_MISMATCH | NO | 0 | N/A | 候選集中於床頭靠牆或冷氣，未問本頁主題插座與床頭牆。 |
 | /zh/blog/bedroom-air-conditioner-wardrobe-clearance-feng-shui/ | 冷氣下可以放衣櫃嗎；冷氣在床頭上方；客廳冷氣位置風水；冷氣在床側邊；冷氣室外機擺放位置風水；冷氣在頭上風水；床頭上方有冷氣；冷氣裝在床頭上 | 冷氣下可以放衣櫃嗎 | 冷氣下可以放衣櫃嗎 | 冷氣在床頭上方；客廳冷氣位置風水；冷氣在床側邊；冷氣室外機擺放位置風水；冷氣在頭上風水；床頭上方有冷氣；冷氣裝在床頭上 | INSUFFICIENT_QUERY_EVIDENCE | NO | 0 | N/A | 其餘偏床頭、客廳或室外機，不能搬進衣櫃淨空頁。 |
@@ -28,6 +28,6 @@ Gate：每頁至少 4 個互不重複、意圖相符且可實質回答的查詢�
 
 總計：19 reviewed candidates；3 qualified / implemented；16 evidence-gated skipped。
 
-Reason breakdown：ANOMALOUS_QUERY 1；QUALIFIED 3；QUERY_PAGE_MISMATCH 6；INSUFFICIENT_QUERY_EVIDENCE 4；REDIRECTED_URL 1；DUPLICATE_INTENT 4。
+Reason breakdown：INSUFFICIENT_QUERY_EVIDENCE 5；QUALIFIED 3；QUERY_PAGE_MISMATCH 6；REDIRECTED_URL 1；DUPLICATE_INTENT 4。
 
 三個實作頁的 Schema.org Validator 結果為本機 build JSON-LD 片段測試；正式站部署與 Google SERP 呈現不在此證據範圍。

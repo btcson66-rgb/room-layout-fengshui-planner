@@ -1,5 +1,5 @@
 [
-  { "url": "/zh/blog/living-room-window-film-feng-shui/", "semantic": ["客廳窗戶風水"], "qualified": [], "reason": "ANOMALOUS_QUERY", "notes": "僅一個一般語意候選；另有任務明令排除的異常反光查詢，不納入 FAQ。" },
+  { "url": "/zh/blog/living-room-window-film-feng-shui/", "semantic": ["客廳窗戶風水"], "qualified": ["客廳窗戶風水"], "reason": "INSUFFICIENT_QUERY_EVIDENCE", "notes": "僅一個一般語意候選；另有任務明令排除的異常反光查詢，不納入 FAQ。" },
   { "url": "/zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/", "semantic": ["房門打開看到衣櫃", "開門對衣櫃角", "房間開門見衣櫃", "開門對衣櫃", "開門見衣櫃側邊", "衣櫃可以對門嗎", "開門見衣櫃好嗎", "開門見衣櫃"], "qualified": ["房門打開看到衣櫃", "開門對衣櫃角", "開門見衣櫃側邊", "衣櫃可以對門嗎"], "reason": "QUALIFIED", "notes": "四種任務分別是入口視線、櫃角、櫃側與雙門可用性；其餘為同義改寫。" },
   { "url": "/zh/blog/bedroom-bed-head-wall-power-outlet-feng-shui/", "semantic": [], "qualified": [], "reason": "QUERY_PAGE_MISMATCH", "notes": "候選集中於床頭靠牆或冷氣，未問本頁主題插座與床頭牆。" },
   { "url": "/zh/blog/bedroom-air-conditioner-wardrobe-clearance-feng-shui/", "semantic": ["冷氣下可以放衣櫃嗎"], "qualified": ["冷氣下可以放衣櫃嗎"], "reason": "INSUFFICIENT_QUERY_EVIDENCE", "notes": "其餘偏床頭、客廳或室外機，不能搬進衣櫃淨空頁。" },
