@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { ROOMFENG_RELEASE_AUTHORITY } from './release-authority.mjs';
+import { isSuccessfulSitemapSubmissionStatus } from './gsc-sitemap-outcome.mjs';
 
 const evidenceDir = path.resolve(process.env.ROOMFENG_RELEASE_EVIDENCE_DIR ?? 'release-evidence');
 const readJson = async (relativePath) => JSON.parse(await fs.readFile(path.join(evidenceDir, relativePath), 'utf8'));
@@ -19,6 +20,7 @@ const readback = await readJson('production-readback/production-readback.json');
 const commitReadback = await readJson('commit-readback.json');
 const sitemap = await readJson('production-sitemap-readback.json');
 const gscLog = await fs.readFile(path.join(evidenceDir, 'gsc-submission.log'), 'utf8');
+const gscSubmissionStatus = /"status"\s*:\s*"([^"]+)"/i.exec(gscLog)?.[1] ?? 'UNKNOWN';
 
 requirePass('production browser', browser.pass);
 requirePass('production browser origin', browser.origin === 'https://roomfeng.win');
@@ -61,7 +63,7 @@ requirePass('production commit readback', commitReadback.pass);
 requirePass('production content readback matches main SHA', readback.expectedProductionSha === commitReadback.mainSha);
 requirePass('production sitemap readback', sitemap.pass);
 requirePass('production sitemap count', sitemap.count === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls && sitemap.expectedCount === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls);
-requirePass('GSC submission request', /"status"\s*:\s*"(?:submitted-and-verified|already-registered|registered-pending)"/i.test(gscLog));
+requirePass('GSC submission request', isSuccessfulSitemapSubmissionStatus(gscSubmissionStatus));
 
 const sha = commitReadback.mainSha ?? process.env.GITHUB_SHA ?? null;
 const report = {
@@ -98,7 +100,7 @@ const report = {
   productionLighthouseModes: lighthouse.modes,
   productionSeoParity: seo.pass ? 'PASS' : 'FAIL',
   sitemap: `${seo.sitemapUrlCount}/${seo.expectedSitemapUrlCount}`,
-  gscSubmission: /"status"\s*:\s*"([^"]+)"/i.exec(gscLog)?.[1] ?? 'UNKNOWN',
+  gscSubmission: gscSubmissionStatus,
   productionFirstPartyConsoleErrors: browser.firstPartyCounts?.consoleErrors ?? null,
   productionFirstPartyPageErrors: browser.firstPartyCounts?.pageErrors ?? null,
   productionFirstPartyUnhandledRejections: browser.firstPartyCounts?.unhandledRejections ?? null,

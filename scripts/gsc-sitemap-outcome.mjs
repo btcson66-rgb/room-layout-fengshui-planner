@@ -107,3 +107,12 @@ export function resolveSitemapOutcome({
     exitCode: 0,
   };
 }
+
+// The final release verdict must use the same success boundary as the
+// submission step. GSC not reporting a download is monitored separately;
+// an API/auth/PUT failure must still block the release.
+export function isSuccessfulSitemapSubmissionStatus(status) {
+  return status === 'submitted-and-verified'
+    || status === 'already-registered'
+    || status === 'registered-never-fetched';
+}

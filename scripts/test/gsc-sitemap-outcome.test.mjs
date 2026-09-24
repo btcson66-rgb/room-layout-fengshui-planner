@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 
-import { resolveSitemapOutcome } from '../gsc-sitemap-outcome.mjs';
+import { isSuccessfulSitemapSubmissionStatus, resolveSitemapOutcome } from '../gsc-sitemap-outcome.mjs';
 import { findStuckSitemaps, needsResubmission } from '../gsc-client.mjs';
 
 const root = new URL('../../', import.meta.url);
@@ -68,6 +68,15 @@ test('有路徑失敗時，失敗優先於其他判定', () => {
   assert.equal(outcome.status, 'failed');
   assert.equal(outcome.exitCode, 1);
   assert.equal(outcome.message, 'boom');
+});
+
+test('最終發布判定接受已註冊但尚未擷取，仍拒絕真正提交失敗或未知狀態', () => {
+  for (const status of ['submitted-and-verified', 'already-registered', 'registered-never-fetched']) {
+    assert.equal(isSuccessfulSitemapSubmissionStatus(status), true, status);
+  }
+  for (const status of ['failed', 'registered-pending', 'UNKNOWN', null]) {
+    assert.equal(isSuccessfulSitemapSubmissionStatus(status), false, String(status));
+  }
 });
 
 test('沒有任何輸入時不會爆，視為全部已註冊', () => {
