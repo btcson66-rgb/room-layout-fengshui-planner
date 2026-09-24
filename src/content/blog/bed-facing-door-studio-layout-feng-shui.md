@@ -21,7 +21,7 @@ howToSteps:
 
 套房只有一個主要空間，床對門時，房門視線可能同時看到床、書桌、衣物和生活用品。民俗風水常把這種格局稱為門床相對，但套房更實際的難題是入口與睡眠區沒有界線、進門包裹無處放、工作物品延伸到床上。本文把風水語彙轉成可觀察的分區、視線和回位任務，不保證睡眠、健康、財運、感情或任何結果。
 
-若房門是唯一出口，不能用屏風或收納堵住；租屋的固定、鑽孔和掛簾也要依租約。先讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)，本文集中處理套房的多功能衝突。
+若房門是唯一出口，不能用屏風或收納堵住；租屋的固定、鑽孔和掛簾也要依租約。先讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)，本文集中處理套房的多功能衝突。
 
 如果套房同時出現床邊過窄，請再對照 [床對門床邊出口](/zh/blog/bed-facing-door-bedside-exit-feng-shui/)的起身與清潔測試；兩個問題都存在時，出口優先於遮擋。
 
@@ -65,7 +65,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-先讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)，再用 [床對門化解選擇器](/zh/bed-door-fix-selector/)比較方案。入口視線可參考 [正方形房間門口緩衝](/zh/blog/square-bedroom-layout-doorway-privacy-buffer-feng-shui/)，租屋限制可讀 [正方形房間租屋量測](/zh/blog/square-bedroom-layout-rental-measurement-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
+先讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)，再用 [床對門化解選擇器](/zh/bed-door-fix-selector/)比較方案。入口視線可參考 [正方形房間門口緩衝](/zh/blog/square-bedroom-layout-doorway-privacy-buffer-feng-shui/)，租屋限制可讀 [正方形房間租屋量測](/zh/blog/square-bedroom-layout-rental-measurement-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
 
 ### 參考資料
 
