@@ -236,11 +236,50 @@ function sharedSpecificTokens(source, target) {
 
 const links = {};
 let edges = 0;
+const selectedInbound = new Map();
+
+// RelatedLinks.astro 只在 blog 路由讀取此圖，且每篇文章最多顯示 5 個文章連結。
+// 圖檔必須描述實際會渲染的邊，否則「有圖」會誤報成「有可爬取內鏈」。
+function existingRelatedBlogLinks(url) {
+  const slug = url.match(/^\/zh\/blog\/([^/]+)\/$/)?.[1];
+  if (!slug) return null;
+  const file = path.join('src', 'content', 'blog', `${slug}.md`);
+  if (!fs.existsSync(file)) return null;
+  const content = fs.readFileSync(file, 'utf8');
+  const frontmatter = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+    ?.[1] ?? '';
+  function list(name) {
+    const field = frontmatter.match(new RegExp(`^${name}:[ \\t]*(.*)$`, 'm'));
+    if (!field) return [];
+    const raw = field[1].trim();
+    if (raw.startsWith('[')) {
+      const end = raw.indexOf(']');
+      if (end <= 0) throw new Error(`invalid ${name} list: ${file}`);
+      return raw.slice(1, end).split(',').map((item) => item.trim().replace(/^['"]|['"]$/g, '')).filter(Boolean);
+    }
+    const items = [];
+    for (const line of frontmatter.slice((field.index ?? 0) + field[0].length).split(/\r?\n/).slice(1)) {
+      const item = line.match(/^\s+-\s+(.+)$/);
+      if (!item) break;
+      items.push(item[1].trim().replace(/^['"]|['"]$/g, ''));
+    }
+    return items;
+  }
+  return [
+    ...list('relatedPosts').map((slug) => `/zh/blog/${slug}/`),
+    ...list('relatedTools').filter((href) => href.startsWith('/zh/blog/')),
+  ];
+}
 
 for (const src of pages) {
+  const relatedBlogLinks = existingRelatedBlogLinks(src.url);
+  if (relatedBlogLinks === null) continue;
+  const existingTargets = new Set(relatedBlogLinks);
+  const articleSlots = Math.max(0, Math.min(PER_PAGE, 5 - relatedBlogLinks.length));
+  if (articleSlots === 0) continue;
   const cand = new Map();
   for (const p of pages) {
-    if (p.url === src.url || p.family !== src.family) continue;
+    if (p.url === src.url || p.family !== src.family || !p.url.startsWith('/zh/blog/') || existingTargets.has(p.url)) continue;
     const shared = sharedSpecificTokens(src, p);
     if (shared === 0 && src.family === 'other') continue;
     const need = p.pos > 10 && p.pos <= 30 ? 90 : p.pos <= 5 ? 0 : 35;
@@ -249,8 +288,11 @@ for (const src of pages) {
   }
 
   const picked = [...cand.values()]
-    .sort((a, b) => b.score - a.score)
-    .slice(0, PER_PAGE)
+    // 同等語意關聯時，優先給尚無圖譜入鏈的頁面，避免所有來源反覆指向同幾篇。
+    .sort((a, b) =>
+      (b.score + (selectedInbound.has(b.page.url) ? 0 : 200))
+      - (a.score + (selectedInbound.has(a.page.url) ? 0 : 200)))
+    .slice(0, articleSlots)
     .map(({ page }) => ({
       url: page.url,
       anchor: anchorFor(page.url),
@@ -262,6 +304,7 @@ for (const src of pages) {
   if (picked.length) {
     links[src.url] = picked;
     edges += picked.length;
+    for (const target of picked) selectedInbound.set(target.url, (selectedInbound.get(target.url) ?? 0) + 1);
   }
 }
 

@@ -1,0 +1,21 @@
+[
+  { "url": "/zh/blog/living-room-window-film-feng-shui/", "semantic": ["客廳窗戶風水"], "qualified": [], "reason": "ANOMALOUS_QUERY", "notes": "僅一個一般語意候選；另有任務明令排除的異常反光查詢，不納入 FAQ。" },
+  { "url": "/zh/blog/small-room-wardrobe-door-turning-clearance-feng-shui/", "semantic": ["房門打開看到衣櫃", "開門對衣櫃角", "房間開門見衣櫃", "開門對衣櫃", "開門見衣櫃側邊", "衣櫃可以對門嗎", "開門見衣櫃好嗎", "開門見衣櫃"], "qualified": ["房門打開看到衣櫃", "開門對衣櫃角", "開門見衣櫃側邊", "衣櫃可以對門嗎"], "reason": "QUALIFIED", "notes": "四種任務分別是入口視線、櫃角、櫃側與雙門可用性；其餘為同義改寫。" },
+  { "url": "/zh/blog/bedroom-bed-head-wall-power-outlet-feng-shui/", "semantic": [], "qualified": [], "reason": "QUERY_PAGE_MISMATCH", "notes": "候選集中於床頭靠牆或冷氣，未問本頁主題插座與床頭牆。" },
+  { "url": "/zh/blog/bedroom-air-conditioner-wardrobe-clearance-feng-shui/", "semantic": ["冷氣下可以放衣櫃嗎"], "qualified": ["冷氣下可以放衣櫃嗎"], "reason": "INSUFFICIENT_QUERY_EVIDENCE", "notes": "其餘偏床頭、客廳或室外機，不能搬進衣櫃淨空頁。" },
+  { "url": "/zh/blog/air-conditioner-bedroom-layout/", "semantic": ["冷氣在床頭上方", "冷氣在床側邊", "冷氣在頭上風水", "床頭上方有冷氣", "冷氣裝在床頭上", "冷氣下可以放衣櫃嗎"], "qualified": ["冷氣在床頭上方", "冷氣在床側邊", "冷氣在頭上風水", "冷氣下可以放衣櫃嗎"], "reason": "QUALIFIED", "notes": "分別回答床頭位置、床側風路、民俗解讀及高櫃維修；其他床頭措辭重複，客廳與室外機不屬本頁。" },
+  { "url": "/zh/storage-bed-selector/", "semantic": ["掀床收納", "小坪數收納床規劃"], "qualified": ["掀床收納", "小坪數收納床規劃"], "reason": "INSUFFICIENT_QUERY_EVIDENCE", "notes": "兩個不同候選，未達四題；工具既有內容照常保留。" },
+  { "url": "/zh/blog/bed-head-against-wall-small-room-wardrobe-zone-feng-shui/", "semantic": ["床頭衣櫃風水"], "qualified": ["床頭衣櫃風水"], "reason": "QUERY_PAGE_MISMATCH", "notes": "其他候選是一般床頭靠牆問題，不是此頁小房間衣櫃分區任務。" },
+  { "url": "/zh/blog/beam-over-bed-bunk-bed-clearance-feng-shui/", "semantic": ["樑下床"], "qualified": [], "reason": "REDIRECTED_URL", "notes": "此舊頁已轉址；其餘鏡子、冷氣、床窗查詢亦不匹配。" },
+  { "url": "/zh/blog/small-room-storage-shoes-entryway-capacity-feng-shui/", "semantic": ["小房間 收納", "小房間收納"], "qualified": ["小房間 收納"], "reason": "DUPLICATE_INTENT", "notes": "有空格與無空格是同一搜尋意圖；安全帽與收納床是其他頁任務。" },
+  { "url": "/zh/blog/home-office-desk-window-opening-clearance-feng-shui/", "semantic": ["書桌靠窗"], "qualified": ["書桌靠窗"], "reason": "INSUFFICIENT_QUERY_EVIDENCE", "notes": "僅一個相關查詢，未達四題。" },
+  { "url": "/zh/bed-desk-wardrobe-layout/", "semantic": ["衣櫃對床風水", "衣櫃對床尾", "衣櫃對床", "衣櫃可以對床嗎", "衣櫃擺放位置", "床尾對衣櫃", "床頭衣櫃風水", "床頭後面是衣櫃"], "qualified": ["衣櫃對床風水", "衣櫃對床尾", "衣櫃可以對床嗎", "衣櫃擺放位置"], "reason": "QUALIFIED", "notes": "分別回答民俗解讀、床尾操作、對床可行性與櫃位比較；同義對床／床尾變體不另立題，床頭後櫃不由本頁回答。" },
+  { "url": "/zh/blog/bed-head-against-wall-bedside-access-feng-shui/", "semantic": ["床頭不靠牆", "床頭一定要靠牆嗎", "床頭不靠牆化解", "床頭靠牆", "床頭要靠牆嗎", "床頭沒有靠牆", "床頭靠門牆化解"], "qualified": [], "reason": "DUPLICATE_INTENT", "notes": "全是床頭靠牆主題的同義簇，且與本頁床側上下床走道主軸不同。" },
+  { "url": "/zh/blog/entryway-schoolbag-storage-feng-shui/", "semantic": [], "qualified": [], "reason": "QUERY_PAGE_MISMATCH", "notes": "安全帽收納不是書包收納。" },
+  { "url": "/zh/blog/living-room-air-purifier-feng-shui/", "semantic": [], "qualified": [], "reason": "QUERY_PAGE_MISMATCH", "notes": "冷氣位置不是空氣清淨機擺位。" },
+  { "url": "/zh/blog/bed-head-against-wall-pillow-gap-feng-shui/", "semantic": ["床頭不靠牆", "床頭一定要靠牆嗎", "床頭不靠牆化解", "床頭靠牆", "床頭要靠牆嗎", "床頭沒有靠牆"], "qualified": [], "reason": "DUPLICATE_INTENT", "notes": "同一床頭靠牆意圖的多種措辭；未針對本頁枕頭間隙提供四種獨立問題。" },
+  { "url": "/zh/blog/bedroom-bed-headboard-wall-clock-clearance-feng-shui/", "semantic": ["時鐘對床尾"], "qualified": ["時鐘對床尾"], "reason": "INSUFFICIENT_QUERY_EVIDENCE", "notes": "左側靠牆與床頭靠牆查詢屬其他意圖；本頁僅時鐘對床尾一題。" },
+  { "url": "/zh/blog/small-room-storage-lift-up-bed-opening-feng-shui/", "semantic": ["小坪數收納床規劃", "小房間 收納", "小房間收納", "掀床收納"], "qualified": ["小坪數收納床規劃", "小房間 收納", "掀床收納"], "reason": "DUPLICATE_INTENT", "notes": "小房間收納的空格變體不可拆成第四題；僅三個不同問題。" },
+  { "url": "/zh/blog/home-office-desk-chair-back-wall-clearance-feng-shui/", "semantic": [], "qualified": [], "reason": "QUERY_PAGE_MISMATCH", "notes": "餐桌靠牆查詢不能搬到書桌椅背靠牆頁。" },
+  { "url": "/zh/blog/desk-placement-printer-ventilation-feng-shui/", "semantic": ["書桌擺放位置圖"], "qualified": [], "reason": "QUERY_PAGE_MISMATCH", "notes": "一般書桌位置圖未涵蓋本頁印表機與通風的主要意圖。" }
+]
