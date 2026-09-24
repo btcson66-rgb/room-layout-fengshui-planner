@@ -8,6 +8,9 @@ interface AmazonCatalogueRecord {
   asin: string;
   internal_display_name: string;
   internal_description: string;
+  product_name?: string;
+  short_description?: string;
+  best_for?: string;
   internal_alt_text: string;
   official_product_link_code?: string;
   product_link_type?: string;
@@ -65,15 +68,28 @@ const cacheIsFresh = Boolean(
 );
 const freshRecords: AmazonContentRecord[] = cacheIsFresh && contentCache ? contentCache.records : [];
 const contentByAsin = new Map(freshRecords.map((record) => [record.asin, record]));
+const activeCatalogue = (catalogue as AmazonCatalogueRecord[])
+  .filter((product) => product.enabled && product.status === 'active')
+  .filter((product) => product.target_site === 'RoomFeng' && product.target_locale !== 'zh');
+const genericNameCounts = new Map<string, number>();
+for (const product of activeCatalogue) {
+  const name = product.internal_display_name.trim();
+  genericNameCounts.set(name, (genericNameCounts.get(name) || 0) + 1);
+}
 export const amazonContentExpiresAt = amazonMode !== 'bootstrap' && cacheIsFresh ? contentCache?.expires_at ?? null : null;
 
-export const amazonProducts: AffiliateProduct[] = (catalogue as AmazonCatalogueRecord[])
-  .filter((product) => product.enabled && product.status === 'active')
-  .filter((product) => product.target_site === 'RoomFeng' && product.target_locale !== 'zh')
+export const amazonProducts: AffiliateProduct[] = activeCatalogue
   .map((product) => {
     const content = contentByAsin.get(product.asin);
     const useCreators = amazonMode !== 'bootstrap' && Boolean(content?.title && content?.image_url && isHttpsUrl(content.image_url));
     if (amazonMode === 'creators_api' && !useCreators) return null;
+    const authoredName = product.product_name?.trim();
+    const fallbackName = genericNameCounts.get(product.internal_display_name.trim())! > 1
+      ? `${product.internal_category} · ASIN ${product.asin}`
+      : product.internal_display_name;
+    const name = useCreators ? content!.title : authoredName || fallbackName;
+    const shortDescription = product.short_description?.trim()
+      || `${product.internal_category} option, cataloged as ASIN ${product.asin}. Confirm the exact item and dimensions on Amazon.`;
     return {
       product_id: product.asin,
       category: product.internal_category,
@@ -85,15 +101,16 @@ export const amazonProducts: AffiliateProduct[] = (catalogue as AmazonCatalogueR
       active: true,
       id: product.product_id,
       sourceProductId: product.asin,
-      name: useCreators ? content?.title || product.internal_display_name : product.internal_display_name,
+      name,
       shop: 'Amazon',
-      description: product.internal_description,
+      description: useCreators ? product.internal_description : shortDescription,
+      best_for: product.best_for,
       tags: [product.internal_category],
       url: product.affiliate_url_full,
       platform: 'amazon',
       priority: product.priority_score,
       tracking_id: product.tracking_id,
-      alt_text: useCreators ? `${content?.title || product.internal_display_name} product image` : product.internal_alt_text,
+      alt_text: useCreators ? `${name} product image` : product.internal_alt_text,
       suggested_cta: product.suggested_cta,
       amazon_content_mode: useCreators ? 'creators_api' : product.official_product_link_code ? 'product_link' : 'text_only',
     };

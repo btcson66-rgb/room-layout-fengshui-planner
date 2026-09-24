@@ -3,6 +3,9 @@
 .layout-guide-kicker { color: var(--color-primary-strong); font-size: .78rem; letter-spacing: .14em; font-weight: 800; }
 .layout-guide-header h1 { font-family: var(--font-sans); font-size: clamp(2rem, 4vw, 3.4rem); color: var(--color-text); }
 .layout-guide-lead { color: var(--color-muted); font-size: 1.15rem; max-width: 66ch; }
+.layout-guide .guide-measure-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; padding: 0; margin: 1.5rem 0 0; list-style: none; border: 1px solid var(--color-border); background: var(--color-border); }
+.layout-guide .guide-measure-flow li { display: grid; gap: .2rem; padding: .9rem; background: var(--color-surface-strong); }
+.layout-guide .guide-measure-flow span { color: var(--color-primary-strong); font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
 .layout-guide-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr); gap: 2rem; align-items: start; }
 .layout-guide-main, .layout-guide-aside { background: var(--color-surface-strong); border: 1px solid var(--color-border); padding: clamp(1.2rem, 3vw, 2.2rem); }
 .layout-guide-main h2 { font-family: var(--font-sans); color: var(--color-text); margin-top: 2rem; }
@@ -22,4 +25,5 @@
 .layout-guide-cta a { color: #fff; }
 .layout-guide-cta:hover { background: var(--color-primary-strong); color: #fff; }
 @media (max-width: 800px) { .layout-guide-grid { grid-template-columns: 1fr; } .layout-guide { padding-block: 2.3rem 3.5rem; } }
+@media (max-width: 640px) { .layout-guide .guide-measure-flow { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

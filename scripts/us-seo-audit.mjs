@@ -10,6 +10,7 @@ const baselineSitemapUrls = 1430;
 const expectedNewUrls = 17;
 // PRODUCT-006 adds one intentional commercial landing route outside the US SEO batch.
 const expectedCommercialRoutes = 1;
+const expectedTrustRoutes = ROOMFENG_RELEASE_AUTHORITY.productionRepair001.addedRoutes.length;
 const expectedSitemapUrls = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const records = [
   ['8x10 bedroom layout', '/en/8x10-bedroom-layout/', 'new'],
@@ -115,7 +116,7 @@ const sitemap = sitemapFiles.map((name) => readFileSync(join(dist, name), 'utf8'
 for (const path of targetPaths) assert.ok(sitemap.includes(`${siteUrl}${path}`), `${path}: missing from sitemap`);
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 assert.equal(
-  baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes,
+  baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes + expectedTrustRoutes,
   expectedSitemapUrls,
   'US SEO inventory arithmetic must match the current release authority',
 );

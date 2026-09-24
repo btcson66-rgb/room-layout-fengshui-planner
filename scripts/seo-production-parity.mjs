@@ -6,6 +6,8 @@ import { ROOMFENG_RELEASE_AUTHORITY } from './release-authority.mjs';
 const origin = process.env.ROOMFENG_SEO_ORIGIN ?? 'https://roomfeng.win';
 const evidenceDir = path.resolve(process.env.ROOMFENG_SEO_EVIDENCE_DIR ?? 'docs/uiux/evidence/hardening-003/seo');
 const expectedSitemapUrlCount = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
+const pendingRepair = ROOMFENG_RELEASE_AUTHORITY.productionRepair001;
+const requireDeployed = process.env.ROOMFENG_SEO_REQUIRE_DEPLOYED === '1';
 const representatives = [
   { path: '/', canonical: '/', sitemap: true },
   { path: '/en/', canonical: '/en/', sitemap: true },
@@ -58,9 +60,25 @@ check('child sitemap status', childSitemap.status === 200, childSitemap.status);
 check('sitemap index has child', /<loc>https:\/\/roomfeng\.win\/sitemap-0\.xml<\/loc>/i.test(sitemapIndex.text), sitemapIndex.text);
 const sitemapUrls = [...childSitemap.text.matchAll(/<loc>(https:\/\/roomfeng\.win[^<]*)<\/loc>/gi)].map((match) => match[1]);
 const uniqueSitemapUrls = [...new Set(sitemapUrls)];
-check('sitemap unique URL count', uniqueSitemapUrls.length === expectedSitemapUrlCount, `${uniqueSitemapUrls.length} vs ${expectedSitemapUrlCount}`);
 check('sitemap has no duplicate URLs', sitemapUrls.length === uniqueSitemapUrls.length, `${sitemapUrls.length} total`);
 const sitemapSet = new Set(uniqueSitemapUrls);
+const pendingUrls = pendingRepair.addedRoutes.map((route) => `https://roomfeng.win${route}`);
+const isDeployed = uniqueSitemapUrls.length === expectedSitemapUrlCount;
+const isPreDeploy = uniqueSitemapUrls.length === pendingRepair.previousSitemapUrls;
+check('sitemap count matches deployed or exact pre-deploy authority', isDeployed || isPreDeploy, `${uniqueSitemapUrls.length} vs ${pendingRepair.previousSitemapUrls}/${expectedSitemapUrlCount}`);
+check('post-deploy gate requires deployed sitemap', !requireDeployed || isDeployed, `${uniqueSitemapUrls.length} vs ${expectedSitemapUrlCount}`);
+if (isDeployed) {
+  for (const url of pendingUrls) check(`deployed sitemap includes ${url}`, sitemapSet.has(url), url);
+} else if (isPreDeploy) {
+  const candidateXml = await fs.readFile(path.resolve('dist/sitemap-0.xml'), 'utf8');
+  const candidateUrls = [...candidateXml.matchAll(/<loc>(https:\/\/roomfeng\.win[^<]*)<\/loc>/gi)].map((match) => match[1]);
+  const candidateSet = new Set(candidateUrls);
+  const added = [...candidateSet].filter((url) => !sitemapSet.has(url)).sort();
+  const removed = [...sitemapSet].filter((url) => !candidateSet.has(url)).sort();
+  check('candidate sitemap count', candidateSet.size === expectedSitemapUrlCount && candidateUrls.length === candidateSet.size, `${candidateUrls.length} vs ${expectedSitemapUrlCount}`);
+  check('pre-deploy added URLs are exactly the six approved trust pages', JSON.stringify(added) === JSON.stringify(pendingUrls.sort()), added);
+  check('pre-deploy candidate removes no production URLs', removed.length === 0, removed);
+}
 
 const representative = [];
 for (const entry of representatives) {
@@ -108,11 +126,23 @@ for (const entry of representatives) {
 const sitemapXmlAlias = await fetchText('/sitemap.xml');
 check('legacy sitemap alias remains absent', sitemapXmlAlias.status === 404, sitemapXmlAlias.status);
 
+if (isDeployed) {
+  for (const route of pendingRepair.addedRoutes) {
+    const result = await fetchText(route);
+    check(`deployed trust route ${route}`, result.status === 200 && canonicalFrom(result.text) === absolute(route)
+      && !/\bnoindex\b/i.test(robotsFrom(result.text))
+      && JSON.stringify(hreflangFrom(result.text)) === JSON.stringify(['en', 'x-default', 'zh']),
+    { status: result.status, canonical: canonicalFrom(result.text), hreflang: hreflangFrom(result.text) });
+  }
+}
+
 const report = {
   generatedAt: new Date().toISOString(),
   source: origin,
   expectedSitemapUrlCount,
   sitemapUrlCount: uniqueSitemapUrls.length,
+  releaseState: isDeployed ? 'DEPLOYED' : isPreDeploy ? 'PRE_DEPLOY_EXACT_SIX_ROUTE_DELTA' : 'UNEXPECTED',
+  requireDeployed,
   sitemapIndexStatus: sitemapIndex.status,
   childSitemapStatus: childSitemap.status,
   robotsStatus: robots.status,

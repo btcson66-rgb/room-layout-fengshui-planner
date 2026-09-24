@@ -12,6 +12,9 @@ const homeHref = lang === 'en' ? '/en/' : '/';
 const plannerHref = lang === 'en' ? '/en/room-layout-planner/' : '/zh/room-layout-planner/';
 const fitCheckerHref = lang === 'en' ? '/en/furniture-fit-checker/' : '/zh/furniture-fit-checker/';
 const pathname = Astro.url.pathname;
+const trustPage = pathname.match(/^\/(?:en\/)?(about|privacy|terms|contact|disclaimer|changelog)\/$/)?.[1];
+const zhLocaleHref = trustPage ? `/${trustPage}/` : '/';
+const enLocaleHref = trustPage ? `/en/${trustPage}/` : '/en/';
 const isCurrent = (href: string) => href === homeHref ? pathname === homeHref || (lang === 'zh' && pathname === '/zh/') : pathname === href || pathname.startsWith(href);
 const navItems = lang === 'zh'
   ? [
@@ -28,7 +31,7 @@ const navItems = lang === 'zh'
       { href: '/en/room-size-layout-templates/', label: 'Room Sizes' },
       { href: '/en/layout-guides/10x10-bedroom-layout/', label: 'Guides' },
       { href: '/en/moving-furniture-size-check/', label: 'Moving' },
-      { href: '/about/', label: 'About' },
+      { href: '/en/about/', label: 'About' },
     ];
 ---
 
@@ -52,8 +55,8 @@ const navItems = lang === 'zh'
             {navItems.map((item) => <li><a class={isCurrent(item.href) ? 'is-active' : undefined} href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>)}
           </ul>
           <div class="language-switcher" aria-label={lang === 'en' ? 'Language switcher' : '語言切換'}>
-            <a class={lang === 'zh' ? 'is-active' : undefined} href="/" lang="zh" aria-current={lang === 'zh' ? 'page' : undefined}>{t.nav.languageZh}</a>
-            <a class={lang === 'en' ? 'is-active' : undefined} href="/en/" lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.languageEn}</a>
+            <a class={lang === 'zh' ? 'is-active' : undefined} href={zhLocaleHref} lang="zh" aria-current={lang === 'zh' ? 'page' : undefined}>{t.nav.languageZh}</a>
+            <a class={lang === 'en' ? 'is-active' : undefined} href={enLocaleHref} lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.languageEn}</a>
           </div>
         </div>
       </details>
@@ -62,8 +65,8 @@ const navItems = lang === 'zh'
           {navItems.map((item) => <li><a class={isCurrent(item.href) ? 'is-active' : undefined} href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>)}
         </ul>
         <div class="language-switcher" aria-label={lang === 'en' ? 'Language switcher' : '語言切換'}>
-          <a class={lang === 'zh' ? 'is-active' : undefined} href="/" lang="zh" aria-current={lang === 'zh' ? 'page' : undefined}>{t.nav.languageZh}</a>
-          <a class={lang === 'en' ? 'is-active' : undefined} href="/en/" lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.languageEn}</a>
+          <a class={lang === 'zh' ? 'is-active' : undefined} href={zhLocaleHref} lang="zh" aria-current={lang === 'zh' ? 'page' : undefined}>{t.nav.languageZh}</a>
+          <a class={lang === 'en' ? 'is-active' : undefined} href={enLocaleHref} lang="en" aria-current={lang === 'en' ? 'page' : undefined}>{t.nav.languageEn}</a>
         </div>
       </div>
     </nav>

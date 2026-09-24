@@ -1,0 +1,37 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import { AMAZON_ASSOCIATE_DISCLOSURE } from '../../config/affiliate';
+
+const canonical = '/en/disclaimer/';
+const title = 'Disclaimer | RoomFeng Planning Guides';
+const description = 'Understand the limits of RoomFeng room measurements, walkway estimates, cultural feng shui references, and affiliate recommendations.';
+const faq = [
+  { q: 'Are clearance numbers legal or accessibility requirements?', a: 'No. They are planning references. Check the rules that apply in your location and the needs of the people using the space.' },
+  { q: 'Can a drawing confirm that furniture will fit?', a: 'No. Check the real furniture, room, door swings, obstructions, and delivery path before making a decision.' },
+  { q: 'Do feng shui guides guarantee a result?', a: 'No. They describe cultural ideas and spatial comfort only.' },
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: `https://roomfeng.win${canonical}`, inLanguage: 'en' };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ zh: '/disclaimer/', en: canonical }} jsonLd={jsonLd} showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <article class="card">
+      <h1>Disclaimer</h1>
+      <p class="lead">RoomFeng provides general room planning information. Its drawings and checks are a starting point for decisions, not a guarantee of fit, safety, or a particular outcome.</p>
+      <h2>Measurements and everyday use</h2>
+      <p>The tools simplify furniture and rooms into shapes based on your inputs. They can flag obvious boundary, door, or circulation conflicts, but they cannot represent every skirting board, handle, uneven wall, stair turn, electrical outlet, or installation requirement. A mattress size is not always the outside size of its frame. Check the actual product, room, and route before buying, moving, or installing anything.</p>
+      <p>Clearance and walkway suggestions are practical planning targets. They are not universal building rules, accessible-design certification, fire-safety approval, or professional design advice. A route that works for one person may not work for someone using a mobility aid or carrying large objects. Consider door swing, drawers, chair movement, the people using the room, and applicable local rules.</p>
+      <h2>Feng shui and other guidance</h2>
+      <p>Our feng shui content discusses traditional beliefs and how an arrangement may affect comfort or the feel of a room. It is not fortune telling or a scientific prediction. We do not promise changes to wealth, health, relationships, work, luck, or any other life outcome. Put practical safety, ventilation, light, structural requirements, and the needs of residents first.</p>
+      <h2>Products and third-party content</h2>
+      <p>Some pages contain optional affiliate links. <strong>{AMAZON_ASSOCIATE_DISCLOSURE}</strong> Product names, specifications, price, availability, shipping, and return terms can change; confirm current details with the retailer. An affiliate recommendation does not establish that a product will fit your room.</p>
+      <p><strong>CERTAIN CONTENT THAT APPEARS ON THIS SITE COMES FROM AMAZON. THIS CONTENT IS PROVIDED “AS IS” AND IS SUBJECT TO CHANGE OR REMOVAL AT ANY TIME.</strong></p>
+      <p>Other linked stores, advertising services, and websites have their own content and policies. Read their terms before relying on them. If you spot a misleading dimension or broken link on RoomFeng, please <a href="/en/contact/">contact us</a> with the page address so we can review it.</p>
+    </article>
+    <div class="cta-band"><p>Check the actual room and product before committing.</p><a class="button" href="/en/terms/">Read the terms</a></div>
+    <Faq lang="en" items={faq} />
+    <RelatedLinks lang="en" links={[{ href: '/en/terms/', title: 'Terms' }, { href: '/en/privacy/', title: 'Privacy' }, { href: '/en/contact/', title: 'Contact' }]} />
+  </div></section>
+</Layout>

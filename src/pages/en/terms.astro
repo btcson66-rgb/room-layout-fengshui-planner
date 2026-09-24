@@ -1,0 +1,35 @@
+---
+import Layout from '../../components/Layout.astro';
+import Faq from '../../components/Faq.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+
+const canonical = '/en/terms/';
+const title = 'Terms of Use | RoomFeng';
+const description = 'Terms for using RoomFeng room planning tools, layout guides, third-party links, and optional digital products.';
+const faq = [
+  { q: 'Can a fit result replace measuring the room?', a: 'No. Check the actual opening, room, furniture, and delivery route before buying or altering a space.' },
+  { q: 'Do I need to purchase Layout Vault to use free tools?', a: 'No. The Planner and free fit tools are separate from the optional Layout Vault product.' },
+  { q: 'Do feng shui notes promise a result?', a: 'No. They are cultural references, not a guarantee of any outcome.' },
+];
+const jsonLd = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: `https://roomfeng.win${canonical}`, inLanguage: 'en' };
+---
+
+<Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ zh: '/terms/', en: canonical }} jsonLd={jsonLd} showAffiliateRecs={false}>
+  <section class="section"><div class="container page-grid">
+    <article class="card">
+      <h1>Terms of Use</h1>
+      <p class="lead">RoomFeng offers practical tools and guides for preliminary room planning. By using them, you agree to evaluate the results against your own measurements and circumstances.</p>
+      <h2>Using the tools</h2>
+      <p>Our Planner, fit checks, and room-size guides help compare options before you buy, move, or rearrange furniture. They use simplified shapes and the measurements you provide. A result that appears to fit on screen does not establish that a product can pass through a doorway, clear a radiator, or work safely in daily use. Verify product dimensions with the seller and measure the room, doors, stairs, and delivery route in person.</p>
+      <p>Walkway figures and other clearances are planning references. They are not a building-code certificate, an accessibility assessment, or a substitute for professional advice. Requirements vary with the people using the room, the furniture, and the location. You remain responsible for decisions about purchases, construction, safety, and compliance.</p>
+      <h2>Content and third-party services</h2>
+      <p>RoomFeng's feng shui articles describe cultural traditions and possible effects on how a space feels. They do not predict wealth, health, relationships, luck, or other outcomes. Please read the <a href="/en/disclaimer/">full disclaimer</a> before relying on a guide.</p>
+      <p>Some pages include affiliate product links and some may include advertising. Linked stores set their own product descriptions, availability, prices, delivery terms, and return rules. Review those details on the store before ordering. Optional digital products such as Layout Vault have their own purchase and access steps shown on their product pages; these terms do not change that checkout process.</p>
+      <h2>Availability and feedback</h2>
+      <p>We may correct content, improve tools, or change availability as the site develops. If a calculation or link looks wrong, send the page address and a description to <a href="/en/contact/">Contact</a>. Do not include sensitive personal or payment information in a report. Local browser drafts can be lost when site data is cleared, so keep a copy of anything important to you.</p>
+    </article>
+    <div class="cta-band"><p>Check the limits of size and cultural guidance.</p><a class="button" href="/en/disclaimer/">Read the disclaimer</a></div>
+    <Faq lang="en" items={faq} />
+    <RelatedLinks lang="en" links={[{ href: '/en/privacy/', title: 'Privacy' }, { href: '/en/disclaimer/', title: 'Disclaimer' }, { href: '/en/contact/', title: 'Contact' }]} />
+  </div></section>
+</Layout>

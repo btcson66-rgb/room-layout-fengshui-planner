@@ -12,7 +12,7 @@ const targetPaths = [
   '/en/mirror-facing-bed-feng-shui/',
 ];
 const critical = {
-  '/en/': { title: 'RoomFeng | Free Room Furniture Layout Tool', h1: 'Plan a room layout before you buy, move, or rearrange furniture' },
+  '/en/': { title: 'RoomFeng | Free Room Furniture Layout Tool', h1: 'Will it fit? Check before you buy or move it.' },
   '/en/room-layout-planner/': { title: 'Room Layout Planner | Free Online Furniture Planner', h1: 'RoomFeng Room Planner' },
   '/en/room-size-layout-templates/': { title: 'Room Sizer & Layout Templates | 150–450 sq ft Plans', h1: 'Room sizer with calculated layout templates' },
   '/en/studio-apartment-layout/': { title: 'Studio Apartment Layout Planner | Plan Sleep Work and Dining Zones', h1: 'Studio apartment layout planner' },
