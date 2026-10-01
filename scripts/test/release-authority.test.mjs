@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { ROOMFENG_RELEASE_AUTHORITY } from '../release-authority.mjs';
 
-test('current release authority records the six English trust routes and preserves prior transition', () => {
+test('current release authority preserves repair 001 and records the Wave 1 alias transition', () => {
   assert.deepEqual(ROOMFENG_RELEASE_AUTHORITY, {
-    buildPages: 1464,
+    buildPages: 1463,
     sitemapUrls: 1454,
     productionRepair001: {
       previousBuildPages: 1458,
@@ -13,11 +13,11 @@ test('current release authority records the six English trust routes and preserv
       addedRoutes: ['/en/about/', '/en/privacy/', '/en/terms/', '/en/contact/', '/en/disclaimer/', '/en/changelog/'],
     },
     transition: {
-      previousBuildPages: 1457,
-      previousSitemapUrls: 1447,
-      addedRoute: '/en/contractor-margin-guard/',
-      sourcePullRequest: 103,
-      baselineCorrectionPullRequest: 104,
+      previousBuildPages: 1464,
+      previousSitemapUrls: 1454,
+      removedRoute: '/zh/bed-facing-door-feng-shui/',
+      reason: 'Canonical alias replaced by a server-side 301',
+      sourcePullRequest: 116,
     },
   });
 });

@@ -72,12 +72,22 @@ const languageRootRedirects = [
   { from: '/zh/', to: '/', note: '中文站首頁就是網站根目錄' },
 ];
 
+/** 舊床對門 landing 與文章重複，合併至文章的唯一 canonical。 */
+const bedDoorAliasRedirects = [
+  {
+    from: '/zh/bed-facing-door-feng-shui/',
+    to: '/zh/blog/bed-facing-door-feng-shui/',
+    note: '舊 landing 與床對門文章重複，改用伺服器端 301',
+  },
+];
+
 /** @type {Redirect[]} */
 export const redirects = [
   ...beamBedRedirects,
   ...beamDeskRedirects,
   ...legacyToolRedirects,
   ...languageRootRedirects,
+  ...bedDoorAliasRedirects,
 ];
 
 export const redirectSources = new Set(redirects.map((entry) => entry.from));

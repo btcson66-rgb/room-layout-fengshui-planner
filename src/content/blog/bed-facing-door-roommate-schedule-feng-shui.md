@@ -21,7 +21,7 @@ howToSteps:
 
 共享臥室的床對門不只是一個平面角度問題。晚回家的室友開門、早起的人取衣、另一人仍在床上休息，門光、聲音和腳步會重複發生。民俗風水會把門與床的關係說成「沖」，但更有用的做法是把它拆成時間、視線、照明和共用規則。本文只作民俗與空間安排參考，不保證睡眠、健康、感情、財運或其他結果。
 
-共享空間不能用家具阻擋出口；租屋的掛簾、隔板和固定方式要先看租約。若要先確認床門基本條件，可讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)。
+共享空間不能用家具阻擋出口；租屋的掛簾、隔板和固定方式要先看租約。若要先確認床門基本條件，可讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)。
 
 若兩人共用的不是套房而是兩張床同室，請再讀 [共用臥室床對門分區](/zh/blog/bed-facing-door-shared-bedroom-feng-shui/)，把共同出口和個人物品回位規則一起納入。
 
@@ -65,7 +65,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-先讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)，再看 [正方形房間共享臥室分區](/zh/blog/square-bedroom-layout-shared-bedroom-zoning-feng-shui/)。門光聲音可讀 [床邊聲光隱私](/zh/blog/bedroom-bed-doorway-sound-privacy-feng-shui/)，夜燈路線可參考 [正方形房間夜燈位置](/zh/blog/square-bedroom-layout-night-light-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
+先讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)，再看 [正方形房間共享臥室分區](/zh/blog/square-bedroom-layout-shared-bedroom-zoning-feng-shui/)。門光聲音可讀 [床邊聲光隱私](/zh/blog/bedroom-bed-doorway-sound-privacy-feng-shui/)，夜燈路線可參考 [正方形房間夜燈位置](/zh/blog/square-bedroom-layout-night-light-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
 
 ### 參考資料
 

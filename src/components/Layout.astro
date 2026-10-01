@@ -48,7 +48,7 @@ const inferredPageType = pageType
     <Header lang={lang} />
     <main id="main-content" tabindex="-1">
       <slot />
-      {lang === 'en' && !noindex && showAffiliateRecs && <AffiliateRecs amazon lang="en" slug={canonical} maxItems={3} pageType={inferredPageType} />}
+      {lang === 'en' && !noindex && showAffiliateRecs && <AffiliateRecs amazon lang="en" slug={canonical} maxItems={canonical === '/en/' ? 2 : 3} productIds={canonical === '/en/' ? ['AMZ-RO-0101', 'AMZ-RO-0121'] : undefined} pageType={inferredPageType} />}
     </main>
     <Footer lang={lang} />
   </body>

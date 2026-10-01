@@ -5,7 +5,7 @@
  * provenance. Historical baselines remain in their original evidence files.
  */
 export const ROOMFENG_RELEASE_AUTHORITY = Object.freeze({
-  buildPages: 1464,
+  buildPages: 1463,
   sitemapUrls: 1454,
   productionRepair001: Object.freeze({
     previousBuildPages: 1458,
@@ -20,10 +20,10 @@ export const ROOMFENG_RELEASE_AUTHORITY = Object.freeze({
     ]),
   }),
   transition: Object.freeze({
-    previousBuildPages: 1457,
-    previousSitemapUrls: 1447,
-    addedRoute: '/en/contractor-margin-guard/',
-    sourcePullRequest: 103,
-    baselineCorrectionPullRequest: 104,
+    previousBuildPages: 1464,
+    previousSitemapUrls: 1454,
+    removedRoute: '/zh/bed-facing-door-feng-shui/',
+    reason: 'Canonical alias replaced by a server-side 301',
+    sourcePullRequest: 116,
   }),
 });

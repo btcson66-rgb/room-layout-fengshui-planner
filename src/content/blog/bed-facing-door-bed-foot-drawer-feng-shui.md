@@ -65,7 +65,7 @@ howToSteps:
 
 ## 相關工具與延伸閱讀
 
-先讀 [床對門總體判斷](/zh/bed-facing-door-feng-shui/)，再看 [正方形房間床尾距離](/zh/blog/square-bedroom-layout-bed-foot-clearance-feng-shui/)。收納維護可讀 [小房間床下清潔](/zh/blog/small-room-storage-underbed-cleaning-clearance-feng-shui/)，入口路線可參考 [正方形房間入口收納](/zh/blog/square-bedroom-layout-entryway-storage-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
+先讀 [床對門總體判斷](/zh/blog/bed-facing-door-feng-shui/)，再看 [正方形房間床尾距離](/zh/blog/square-bedroom-layout-bed-foot-clearance-feng-shui/)。收納維護可讀 [小房間床下清潔](/zh/blog/small-room-storage-underbed-cleaning-clearance-feng-shui/)，入口路線可參考 [正方形房間入口收納](/zh/blog/square-bedroom-layout-entryway-storage-feng-shui/)。風水內容屬民俗與空間安排參考，請閱讀 [使用說明與免責聲明](/disclaimer/)。
 
 ### 參考資料
 
