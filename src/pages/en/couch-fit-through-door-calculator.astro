@@ -7,4 +7,38 @@ const faq = [
 ];
 const related = [{ href: '/en/furniture-fit-calculator/', title: 'Check furniture placement in a room' }, { href: '/en/moving-furniture-size-check/', title: 'Read the moving furniture size guide' }, { href: '/en/room-layout-planner/', title: 'Open the full room planner' }];
 ---
-<UsSeoCalculatorPage kind="couch" title="Couch Fit Through Door Calculator | RoomFeng" description="Check whether a couch opening profile fits through a clear door width and height in two preliminary orientations." canonical="/en/couch-fit-through-door-calculator/" h1="Couch fit through door calculator" lead="Compare a couch's measured depth and height with the clear door opening before scheduling delivery. This is an opening-fit screen, not a 3D moving guarantee." faq={faq} related={related} />
+<UsSeoCalculatorPage kind="couch" title="Couch Fit Through Door Calculator | RoomFeng" description="Check whether a couch opening profile fits through a clear door width and height in two preliminary orientations." canonical="/en/couch-fit-through-door-calculator/" h1="Couch fit through door calculator" lead="Compare a couch's measured depth and height with the clear door opening before scheduling delivery. This is an opening-fit screen, not a 3D moving guarantee." faq={faq} related={related}>
+  <section slot="measurement-study" class="card us-seo-copy" aria-labelledby="couch-measurement-heading">
+    <h2 id="couch-measurement-heading">How to measure couch depth before delivery</h2>
+    <p><strong>Overall depth</strong> runs from the furthest fixed front point to the furthest fixed back point. <strong>Seat depth</strong> measures the sitting surface and is not a substitute. Measure outside height and full end-to-end width or length too, including fixed arms and protrusions.</p>
+    <figure>
+      <svg viewBox="0 0 440 240" role="img" aria-labelledby="couch-measuring-title couch-measuring-desc" style="width:100%;height:auto;max-width:660px" xmlns="http://www.w3.org/2000/svg">
+        <title id="couch-measuring-title">Sofa side view: overall depth, seat depth and outside height</title>
+        <desc id="couch-measuring-desc">Overall depth covers the entire fixed front-to-back profile. Seat depth is shorter and measures only the sitting surface. Height includes the frame and feet in the measured configuration. Drawing is schematic, not to scale.</desc>
+        <rect x="80" y="40" width="38" height="110" rx="6" fill="#dce8e4" stroke="#26352f" />
+        <rect x="80" y="115" width="210" height="45" rx="6" fill="#dce8e4" stroke="#26352f" />
+        <rect x="105" y="160" width="10" height="25" fill="#26352f" /><rect x="255" y="160" width="10" height="25" fill="#26352f" />
+        <path d="M80 198H290 M80 190V206 M290 190V206 M118 94H290 M118 88V100 M290 88V100 M320 40V185 M314 40H326 M314 185H326" stroke="#26352f" stroke-width="2" fill="none" />
+        <g fill="#26352f" font-family="system-ui,sans-serif" font-size="14"><text x="185" y="224" text-anchor="middle">Overall depth</text><text x="204" y="83" text-anchor="middle">Seat depth</text><text x="333" y="110">Outside</text><text x="333" y="128">height</text></g>
+      </svg>
+      <figcaption>Schematic side view, not to scale. Measure the widest fixed profile, not just the cushion. The full end-to-end length must be checked separately against the delivery route.</figcaption>
+    </figure>
+    <h3>Record the configuration you will actually move</h3>
+    <p>Remove only parts the manufacturer allows you to remove, and remeasure the remaining fixed frame. Do not subtract a cushion from a dimension that already excludes it. For the calculator’s leg-reduction field, enter the height including legs and subtract only a verified removable-leg reduction; do not count it twice.</p>
+    <p>Measure the narrowest clear doorway width and height with the door open, allowing for trim and hardware. This calculator tests the depth–height profile in two simple orientations. It has no input for sofa length or diagonal depth, and does not model a tilted 3D route. Measure length, hallway turns, stairs and space on both sides of the door separately.</p>
+    <h3>Three examples you can enter in the calculator</h3>
+    <p>All examples use a clear 32 × 80 in doorway (81.28 × 203.2 cm). Dimensions are illustrative, not product specifications. Orientation A uses depth across the opening; B uses the effective height across it.</p>
+    <div class="us-seo-table-wrap"><table class="us-seo-table">
+      <thead><tr><th scope="col">Depth × height</th><th scope="col">Verified leg reduction</th><th scope="col">Two tested profiles</th><th scope="col">Expected result</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">36 × 34 in</th><td>4 in</td><td>A: 36 × 30 fails. B: 30 × 36 fits with 2 in width margin.</td><td>TIGHT — review the real delivery route.</td></tr>
+        <tr><th scope="row">36 × 38 in</th><td>0 in</td><td>A: 36 × 38 fails. B: 38 × 36 fails.</td><td>FAILED — neither tested orientation fits.</td></tr>
+        <tr><th scope="row">30 × 29 in</th><td>0 in</td><td>A has 2 in width margin; B has 3 in width margin and 50 in height margin.</td><td>PASSED — basic opening check; the better tested margin is B.</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Why a passing doorway check can still fail on moving day</h3>
+    <p>A long sofa may not turn in a narrow hallway even when its tested cross-section fits the opening. Packaging, a low stair ceiling, wall thickness or insufficient tilting space can change the result. A failed two-orientation check does not prove that every possible 3D route fails. Request a delivery review rather than forcing the item through.</p>
+    <p>Manufacturer diagonal-depth measurements, a doorway diagonal and a sofa’s 3D diagonal describe different things. Do not use one diagonal comparison as a delivery guarantee. <a href="https://www.crateandbarrel.com/ideas-and-advice/how-to-measure-furniture">Crate &amp; Barrel’s furniture measurement guide</a> explains checking the product and complete route, including room to turn and tilt (checked October 1, 2026).</p>
+    <p>After checking the delivery route, use the <a href="/en/furniture-fit-calculator/">furniture fit calculator</a> to compare the sofa’s footprint in the room, and the <a href="/en/room-layout-planner/">room planner</a> to place surrounding furniture and openings.</p>
+  </section>
+</UsSeoCalculatorPage>

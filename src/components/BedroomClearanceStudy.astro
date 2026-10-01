@@ -1,0 +1,63 @@
+---
+import { renderFloorPlanSvg, type DiagramPlan } from '../us-seo/renderer';
+interface Props { study: 'side' | 'foot'; }
+const { study } = Astro.props;
+const side = study === 'side';
+const roomWidth = side ? 132 : 144;
+const roomLength = 144;
+const openings: DiagramPlan['items'] = [
+  { label: 'Door', x: 0, y: 108, width: 36, height: 36, tone: 'fixed' },
+  { label: 'Closet', x: roomWidth - 36, y: 108, width: 36, height: 36, tone: 'fixed' },
+];
+const plans: Array<DiagramPlan & { caption: string }> = side
+  ? [60, 76].map((width) => ({
+      title: width === 60 ? 'Queen with an opposite work zone' : 'King: the desk-zone gap is only 8 inches',
+      roomWidth, roomLength, unit: 'in',
+      items: [
+        { label: width === 60 ? 'Queen' : 'King', x: 0, y: 0, width, height: 80, tone: 'bed' },
+        { label: 'Desk', x: 108, y: 0, width: 24, height: 36, tone: 'work' },
+        { label: 'Chair', x: 84, y: 0, width: 24, height: 36, tone: 'feature' },
+        ...openings,
+      ],
+      caption: `Across the desk zone: 132 − ${width} − 24 − 24 = ${132 - width - 48} in. The 24 in chair zone is an illustrative allowance, not a universal requirement. Keep the opening zones clear and measure their real locations.`,
+    }))
+  : [false, true].map((dresser) => ({
+      title: dresser ? 'Queen with a dresser and open drawer' : 'Queen with a foot-wall desk and chair',
+      roomWidth, roomLength, unit: 'in',
+      items: [
+        { label: 'Queen', x: 42, y: 0, width: 60, height: 80, tone: 'bed' },
+        { label: dresser ? 'Dresser' : 'Desk', x: 42, y: dresser ? 126 : 120, width: 60, height: dresser ? 18 : 24, tone: 'storage' },
+        { label: dresser ? 'Open drawer' : 'Chair zone', x: 42, y: dresser ? 108 : 96, width: 60, height: dresser ? 18 : 24, tone: 'feature' },
+        ...openings,
+      ],
+      caption: dresser
+        ? 'At the foot: 144 − 80 − 18 − 18 = 28 in between the mattress and the open drawer zone. Drawer travel and dresser depth are assumed, not product specifications.'
+        : 'At the foot: 144 − 80 − 24 − 24 = 16 in between the mattress and chair zone. Do not make this constrained gap your only route to the entrance.',
+    }));
+// Reserve a label strip above the room so furniture cannot cover its dimensions.
+const renderStudy = (plan: DiagramPlan) => renderFloorPlanSvg(plan)
+  .replace(`viewBox="0 0 ${plan.roomWidth} ${plan.roomLength}"`, `viewBox="0 -16 ${plan.roomWidth} ${plan.roomLength + 16}"`)
+  .replace(/(<text x="[^"]+" )y="[^"]+"/, '$1y="-5"');
+---
+<section class="us-seo-section" aria-labelledby="clearance-study-heading">
+  <h2 id="clearance-study-heading">{side ? 'Queen vs King: calculate the strip you can actually use' : 'Queen with a desk, or Queen with a dresser?'}</h2>
+  <p>{side ? 'An 11 × 12 ft room is 132 × 144 in (335.28 × 365.76 cm).' : 'A 12 × 12 ft room is 144 × 144 in (365.76 × 365.76 cm).'} The examples use a nominal Queen mattress of 60 × 80 in (152.4 × 203.2 cm) and King of 76 × 80 in (193.04 × 203.2 cm). Use the actual frame footprint for your final plan.</p>
+  {side ? <>
+    <p>A Queen leaves 72 in of total room width; a King leaves 56 in. If the mattress alone is centred, that is 36 in per side for the Queen and 28 in for the King. These are empty-room comparisons, before frames, nightstands, storage or openings.</p>
+    <p>With the mattress against one wall, an opposite 24 in desk and 24 in chair-use zone leave a gap of 24 in for the Queen but only 8 in for the King. These are study assumptions, not comfort standards or legal minima. A larger frame reduces the gap further. If the chair blocks your everyday route, move the work zone to another wall or compare a smaller bed.</p>
+  </> : <>
+    <p>A Queen leaves 84 in of total width and 64 in beyond its length. Centred in an otherwise empty room, it leaves 42 in on each side. Furnishing those strips changes the usable route.</p>
+    <p>Compare two separate foot-wall options: a 24 in desk plus a 24 in chair zone leaves 16 in beyond the mattress, while an 18 in dresser plus 18 in of drawer travel leaves 28 in. A longer frame reduces both gaps. Move the furniture, change its depth or keep the foot wall open if the occupied chair or open drawer blocks the only entrance route.</p>
+  </>}
+  <div class="us-seo-diagram-grid">
+    {plans.map(plan => <figure class="us-seo-diagram"><div set:html={renderStudy(plan)}></div><figcaption><strong>{plan.title}.</strong> {plan.caption}</figcaption></figure>)}
+  </div>
+  <p class="us-seo-caution">The shaded door and closet zones are illustrative keep-clear areas, not measured openings in your home. Replace them with the actual door leaf and swing, closet opening, windows and fixed obstacles. This study omits the bed frame and uses assumed furniture sizes; it does not certify accessibility or safe evacuation.</p>
+  <h3>Try the comparison in your measured room</h3>
+  <ol class="us-seo-list">
+    <li>Open the <a href="/en/room-layout-planner/">room planner</a> and enter {side ? '11 × 12 ft' : '12 × 12 ft'} only if those are your measured interior dimensions.</li>
+    <li>Add the actual outside bed frame, desk or dresser. Draw a separate chair-use or drawer-opening area and place the real door and closet.</li>
+    <li>Compare the two options, then mark the narrowest gap with tape on the floor. Test access with the chair occupied, drawers open and doors operating before buying.</li>
+  </ol>
+  <p>Dimension reference: <a href="https://www.saatva.com/mattresses?sizes=queen">Saatva’s US mattress dimensions</a> (checked October 1, 2026). These are reference dimensions, not a recommendation of a mattress brand. Diagram measurements and furniture allowances above are RoomFeng planning studies.</p>
+</section>

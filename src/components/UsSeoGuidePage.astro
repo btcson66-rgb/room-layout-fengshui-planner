@@ -106,6 +106,8 @@ const squareFootNote = data.footprintNote;
         <ol class="us-seo-list">{data.measureNext.map((item) => <li>{item}</li>)}</ol>
       </section>
 
+      <slot name="measurement-study" />
+
       <section class="cta-band" aria-label="Next planning step">
         <div><h2>Test your measured room</h2><p>Use the free planner after replacing the reference dimensions with the real outside dimensions of your furniture and openings.</p></div>
         <a class="button" href={data.ctaHref ?? '/en/room-layout-planner/'}>{data.ctaLabel ?? 'Open the RoomFeng Room Planner'}</a>
