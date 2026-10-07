@@ -91,10 +91,11 @@ async function main() {
   const log = { baseline: previous ? 'PREVIOUS_ACCEPTED' : 'INITIAL_NO_BULK', urls, configured: Boolean(key), submitted: false, attempts: [] };
   try {
     if (process.env.INDEXNOW_SUBMIT === '1' && !key) throw new Error('INDEXNOW_KEY missing; configure repository secret before enabling deployment integration');
-    if (urls.length && process.env.INDEXNOW_SUBMIT === '1') {
+    if (process.env.INDEXNOW_SUBMIT === '1') {
       if (!key) throw new Error('INDEXNOW_KEY missing; changed URLs not submitted');
       log.attempts = await submit(urls, key);
-      log.submitted = true;
+      log.keyVerified = true;
+      log.submitted = urls.length > 0;
     }
     if (process.env.INDEXNOW_SUBMIT === '1') await fs.writeFile(`${dir}/accepted.json`, JSON.stringify(current, null, 2));
   } catch (error) {

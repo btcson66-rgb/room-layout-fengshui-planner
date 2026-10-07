@@ -25,3 +25,12 @@ test('verified key, small batches, retries and no key in logs', async () => {
 test('failed production verification prevents submissions', async () => {
   await assert.rejects(submit(['https://roomfeng.win/'],'examplekey',async()=>({ status:404, text:async()=>'' }),async()=>{}), /verification failed/);
 });
+test('initial zero-URL baseline verifies the public key without POST', async () => {
+  let gets=0;
+  const logs=await submit([], 'examplekey', async (_url,options)=>{
+    assert.equal(options?.method,undefined); gets++;
+    return {status:200,text:async ()=>'examplekey'};
+  });
+  assert.equal(gets,1); assert.deepEqual(logs,[]);
+  await assert.rejects(submit([], 'examplekey', async()=>({status:404,text:async()=>''})), /verification failed/);
+});
