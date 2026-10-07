@@ -13,6 +13,7 @@ concurrency:
 
 permissions:
   contents: read
+  actions: read
   pull-requests: read
 
 jobs:
@@ -80,6 +81,11 @@ jobs:
           # value in sync with public/ads.txt — AdSense matches the two.
           PUBLIC_ADSENSE_CLIENT: ca-pub-9117672212804270
 
+      - name: Prepare IndexNow verification file and canonical manifest
+        run: node scripts/indexnow-changed.mjs --prepare
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+
       - name: Verify current build and sitemap authority
         run: node scripts/release-build-authority.mjs
         env:
@@ -129,6 +135,35 @@ jobs:
           ROOMFENG_RELEASE_READBACK_DIR: release-evidence/production-readback
           ROOMFENG_RELEASE_READBACK_WAIT_MS: 10000
           ROOMFENG_RELEASE_READBACK_ATTEMPTS: 18
+
+      - name: Restore previous accepted IndexNow manifest
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          run_id=$(gh run list --workflow deploy-cloudflare-pages.yml --branch main --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if [ -n "$run_id" ]; then
+            count=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${run_id}/artifacts" --jq '[.artifacts[] | select(.name == "roomfeng-indexnow-state" and .expired == false)] | length')
+            if [ "$count" != "0" ]; then
+              gh run download "$run_id" --name roomfeng-indexnow-state --dir release-evidence/indexnow/prior
+              cp release-evidence/indexnow/prior/accepted.json release-evidence/indexnow/previous.json
+            fi
+          fi
+
+      - name: Notify IndexNow of changed published URLs
+        run: node scripts/indexnow-changed.mjs
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+          INDEXNOW_SUBMIT: '1'
+
+      - name: Save accepted IndexNow manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: roomfeng-indexnow-state
+          path: release-evidence/indexnow/accepted.json
+          if-no-files-found: error
+          retention-days: 90
 
       - name: Read back merged commit and deployment workflow SHA
         run: node scripts/production-commit-readback.mjs

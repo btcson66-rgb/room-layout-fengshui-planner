@@ -1,0 +1,12 @@
+
+> room-layout-fengshui-planner@1.0.0 test:production-hardening-browser
+> node scripts/test/production-hardening.browser.mjs
+
+{
+  "pass": true,
+  "evidenceDir": "D:\\Fable company\\worktrees\\seo-cross-roomfeng-20261007\\docs\\seo\\evidence\\cross-audit-20261007\\local-browser",
+  "runCount": 27,
+  "adsenseZeroWidthErrors": 0,
+  "duplicateAdsbygoogleInitializations": 0,
+  "controllableFirstPartyErrors": 0
+}

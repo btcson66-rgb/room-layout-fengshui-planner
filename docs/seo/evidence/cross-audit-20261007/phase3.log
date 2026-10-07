@@ -1,0 +1,21 @@
+
+> room-layout-fengshui-planner@1.0.0 test:product-002:phase3
+> node --test tests/product-002-phase3.test.mjs
+
+✔ commercial product config is frozen at 17.99 with separate identity and paths (2.1489ms)
+✔ package contains the required document sections and no interactive app (4.7862ms)
+✔ package manifest hashes and archive are real (7.7459ms)
+✔ sales pages use honest Product offers and paid route remains noindex (2.2915ms)
+✔ free preview exposes exactly six real sample layouts and public matcher routes (2.02ms)
+✔ six SEO guide topics have both localized routes and real layout IDs (0.9471ms)
+✔ listing graphics and Pinterest metadata are prepared but unpublished (0.5639ms)
+✔ analytics wiring uses P2 identity and avoids exact room/PII payloads (1.4ms)
+✔ P2 activation UI and consent-aware Google tag loader are wired (1.5485ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 96.1862

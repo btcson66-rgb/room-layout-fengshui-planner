@@ -1,0 +1,36 @@
+{
+  "result": "PASS",
+  "before_pages": 1458,
+  "after_pages": 1457,
+  "allowed_paths": [
+    "/cdn-cgi/l/email-protection"
+  ],
+  "errors": [],
+  "editorial_changes": [
+    {
+      "path": "/",
+      "field": "description",
+      "before": "輸入房間尺寸、門窗位置與家具需求，快速取得臥室、小房間、小套房與書桌配置建議，並參考床位、鏡子、採光、收納與動線風水提醒。",
+      "after": "租屋、搬家或買家具前，輸入房間與家具尺寸，在平面圖上拖曳床、書桌、衣櫃及門窗，檢查開門範圍與走道，再匯出 PNG 或 PDF。免費使用、不需註冊，草稿存於自己的瀏覽器；風水提醒僅供民俗參考。"
+    },
+    {
+      "path": "/zh/blog/floor-mattress-feng-shui/",
+      "field": "description",
+      "before": "床墊落地省空間又好搬，但要一起評估潮濕、通風、清潔、起身高度與地板冷凝。本文整理落地床的風水常見說法，並比較短期試睡、薄床架、排骨床架與可收床墊四種做法。",
+      "after": "夏天睡地上或床墊落地，不能據此判斷財運。先看床底通風、潮濕、清潔與起身高度，再比較短期試睡、薄床架、排骨床架與收床方案；用七天檢查決定是否適合自己的房間。"
+    },
+    {
+      "path": "/zh/blog/living-room-window-film-feng-shui/",
+      "field": "title",
+      "before": "客廳隔熱窗膜風水怎麼選？採光、熱感、反光與窗戶安全配置｜RoomFeng",
+      "after": "客廳窗戶反光怎麼辦？隔熱窗膜風水、採光與遮陽取捨｜RoomFeng"
+    },
+    {
+      "path": "/zh/blog/living-room-window-film-feng-shui/",
+      "field": "description",
+      "before": "客廳隔熱窗膜風水要一起看遮陽、採光、玻璃反射、通風、窗戶防墜與大樓外觀規範。本文以 360 × 400 公分案例與五日觀察整理。",
+      "after": "夏天客廳窗戶反光，先分辨日照眩光、玻璃反射與室內燈光，再比較窗簾、坐位調整及隔熱窗膜。以 360 × 400 公分配置和五日觀察檢查採光、開窗與維護；風水僅供民俗參考。"
+    }
+  ],
+  "scope": "Static production/local crawl comparison; does not establish deployment or search indexing."
+}

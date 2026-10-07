@@ -10,3 +10,10 @@ dist/
 .dev.vars.*
 .codex-content/
 room_planner_content_pack.zip
+
+# SEO cross audit: retain raw public responses and screenshots locally
+docs/seo/evidence/**/responses/
+docs/seo/evidence/**/*.png
+docs/seo/evidence/**/*.zip
+docs/seo/evidence/**/*.pdf
+__pycache__/
