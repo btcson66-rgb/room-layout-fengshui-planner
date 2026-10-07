@@ -1,0 +1,104 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "description": "輸入房間尺寸、門窗位置與家具需求，快速取得臥室、小房間、小套房與書桌配置建議，並參考床位、鏡子、採光、收納與動線風水提醒。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/",
+    "hreflang": [
+      "<link rel=\"alternate\" hreflang=\"zh\" href=\"https://roomfeng.win/\">",
+      "<link rel=\"alternate\" hreflang=\"en\" href=\"https://roomfeng.win/en/\">",
+      "<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://roomfeng.win/\">"
+    ]
+  },
+  {
+    "path": "/en/",
+    "status": 200,
+    "description": "Plan room furniture layouts online before buying, moving, or rearranging. Use a free browser-based planner with local drafts, clear sizing checks, and PNG or PDF export.",
+    "robots": "",
+    "canonical": "https://roomfeng.win/en/",
+    "hreflang": [
+      "<link rel=\"alternate\" hreflang=\"zh\" href=\"https://roomfeng.win/\">",
+      "<link rel=\"alternate\" hreflang=\"en\" href=\"https://roomfeng.win/en/\">",
+      "<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://roomfeng.win/\">"
+    ]
+  },
+  {
+    "path": "/zh/blog/kitchen-knife-storage-feng-shui/",
+    "status": 200,
+    "description": "廚房刀具收納風水不只看刀架朝向，還要處理刀刃保護、刀具與砧板用途、生熟食界線、兒童接觸風險、清潔乾燥與備餐動線。本文附 240 × 290 公分案例與五日觀察。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/zh/blog/kitchen-knife-storage-feng-shui/",
+    "hreflang": []
+  },
+  {
+    "path": "/zh/blog/bed-head-against-wall/",
+    "status": 200,
+    "description": "床頭無法靠實牆時，床頭板、矮櫃、隔屏各需要多少深度。先量牆面與走道，再決定用哪一種，附可列印的尺寸對照。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/zh/blog/bed-head-against-wall/",
+    "hreflang": []
+  },
+  {
+    "path": "/zh/blog/bed-facing-door-feng-shui/",
+    "status": 200,
+    "description": "床頭對門和床尾對門要分開判斷。用實際門寬、視線與實牆位置決定化解方式，附每種做法需要的最小公分數，可直接用免費平面圖工具驗證。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/zh/blog/bed-facing-door-feng-shui/",
+    "hreflang": []
+  },
+  {
+    "path": "/zh/blog/bedroom-feng-shui-checklist/",
+    "status": 200,
+    "description": "把常見的臥室風水說法整理成可逐條核對的清單，分成床位、門窗、鏡子、樑柱、電器五組。每一條同時說明民俗講法與對應的空間道理，並標示哪些值得做、哪些不必為它犧牲動線。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/zh/blog/bedroom-feng-shui-checklist/",
+    "hreflang": []
+  },
+  {
+    "path": "/zh/blog/kitchen-sink-feng-shui/",
+    "status": 200,
+    "description": "廚房水槽風水常被簡化成水火相沖，但真正影響日常的是濺水、排水異味、檯面高度、清洗備餐順序、插座與地面防滑。本文附 240 × 300 公分案例與七天測試。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/zh/blog/kitchen-sink-feng-shui/",
+    "hreflang": []
+  },
+  {
+    "path": "/zh/room-layout-planner/",
+    "status": 200,
+    "description": "免費線上房間家具配置工具，可拖曳床、書桌、衣櫃、沙發、門窗與鏡子，檢查尺寸、動線、門口遮擋，並提供民俗風水格局參考。",
+    "robots": "",
+    "canonical": "https://roomfeng.win/zh/room-layout-planner/",
+    "hreflang": [
+      "<link rel=\"alternate\" hreflang=\"zh\" href=\"https://roomfeng.win/zh/room-layout-planner/\">",
+      "<link rel=\"alternate\" hreflang=\"en\" href=\"https://roomfeng.win/en/room-layout-planner/\">",
+      "<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://roomfeng.win/zh/room-layout-planner/\">"
+    ]
+  },
+  {
+    "path": "/en/room-layout-planner/",
+    "status": 200,
+    "description": "Drag furniture onto a to-scale floor plan, enter actual room and furniture dimensions, check fit and walkways, and export your layout free with no sign-up.",
+    "robots": "",
+    "canonical": "https://roomfeng.win/en/room-layout-planner/",
+    "hreflang": [
+      "<link rel=\"alternate\" hreflang=\"zh\" href=\"https://roomfeng.win/zh/room-layout-planner/\">",
+      "<link rel=\"alternate\" hreflang=\"en\" href=\"https://roomfeng.win/en/room-layout-planner/\">",
+      "<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://roomfeng.win/zh/room-layout-planner/\">"
+    ]
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "robots": "",
+    "hreflang": [],
+    "body": "User-agent: *\nAllow: /\n\nSitemap: https://roomfeng.win/sitemap-index.xml\nSitemap: https://roomfeng.win/sitemap-0.xml\n"
+  },
+  {
+    "path": "/sitemap-index.xml",
+    "status": 200,
+    "robots": "",
+    "hreflang": [],
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><sitemap><loc>https://roomfeng.win/sitemap-0.xml</loc><lastmod>2026-10-01T00:00:00.000Z</lastmod></sitemap></sitemapindex>"
+  }
+]
