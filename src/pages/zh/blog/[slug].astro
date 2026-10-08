@@ -4,6 +4,7 @@ import Layout from '../../../components/Layout.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import NewsletterSignup from '../../../components/NewsletterSignup.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
+import ClearanceChecker from '../../../components/ClearanceChecker.astro';
 import AffiliateRecs from '../../../components/AffiliateRecs.astro';
 import PlannerCta from '../../../components/PlannerCta.astro';
 import { hubContent } from '../../../data/hubs';
@@ -100,6 +101,50 @@ const relatedLinks = [
     : []),
 ];
 const body = (post.body ?? '').replace(/\r\n/g, '\n');
+// 只在曝光前段、主題確實可量測的文章嵌入工具。兩個異常查詢頁不在此表。
+// 保留原始 Content 路徑給其餘文章，避免更動整站的 Markdown 呈現。
+const embeddedPresetBySlug: Record<string, 'bed-door' | 'wardrobe' | 'desk' | 'aircon' | 'generic'> = {
+  'bed-facing-door-feng-shui': 'bed-door',
+  'bed-head-against-wall': 'generic',
+  'desk-facing-door-layout': 'desk',
+  'tiny-room-layout-under-5-ping': 'generic',
+  'wardrobe-facing-bed-feng-shui': 'wardrobe',
+  'bedroom-wardrobe-door-opening-clearance-feng-shui': 'wardrobe',
+  'bedroom-air-conditioner-ceiling-direction-feng-shui': 'aircon',
+  'desk-placement-wall-support-feng-shui': 'desk',
+  'beam-over-desk-bed-layout': 'generic',
+  'bed-under-window-solutions': 'generic',
+  'square-bedroom-layout': 'generic',
+  'bedroom-ceiling-fan-feng-shui': 'generic',
+  'living-room-air-conditioner-feng-shui': 'aircon',
+  'entryway-shoe-cabinet-feng-shui': 'wardrobe',
+  'bedroom-bed-left-wall-access-feng-shui': 'generic',
+  'small-room-wardrobe-door-turning-clearance-feng-shui': 'wardrobe',
+  'bedroom-air-conditioner-wardrobe-clearance-feng-shui': 'aircon',
+  'air-conditioner-bedroom-layout': 'aircon',
+  'small-room-storage-zones': 'generic',
+  'home-office-desk-doorway-clearance-feng-shui': 'desk',
+  'bed-head-against-wall-small-room-wardrobe-zone-feng-shui': 'wardrobe',
+};
+// 前 20 高曝光文章中不適合尺寸 checker 的主題，只加有脈絡的工具連結。
+const inlineToolOnlyBySlug: Record<string, string> = {
+  'mirror-facing-bed-bedroom': '把床、鏡面與房門的位置畫在一起，檢查視線和床邊走道',
+  'kitchen-fridge-feng-shui': '標出冰箱外框、開門範圍與廚房主要走道',
+  'tv-facing-bed-feng-shui': '比較床、電視家具和夜間通行路線',
+  'entryway-door-hinge-squeak-cleaning-feng-shui': '標出房門開啟弧線、門檻和玄關可通行寬度',
+  'entryway-umbrella-stand-feng-shui': '量雨傘架外框與進門後的通行寬度',
+  'entryway-doormat-feng-shui': '確認地墊不會卡住房門開啟範圍或入口走道',
+  'dining-table-facing-door-feng-shui': '標出餐桌、椅子拉出與房門之間的通道',
+};
+const embeddedPreset = embeddedPresetBySlug[post.id];
+const renderedHtml = post.rendered?.html ?? '';
+const firstH2End = renderedHtml.indexOf('</h2>');
+const hasInlineTool = Boolean((embeddedPreset || inlineToolOnlyBySlug[post.id]) && firstH2End >= 0);
+const bodyBeforeTool = hasInlineTool ? renderedHtml.slice(0, firstH2End + 5) : '';
+const bodyAfterTool = hasInlineTool ? renderedHtml.slice(firstH2End + 5) : '';
+const checkerTool = post.id.includes('storage') || post.id.includes('wardrobe') || post.id.includes('bed-head') || post.id.includes('bedroom-bed')
+  ? { href: '/zh/storage-bed-selector/', label: '收納床選擇器', detail: '比較掀床與抽屜床的開啟空間' }
+  : { href: '/zh/room-layout-planner/', label: '房間配置工具', detail: '把床、桌、門片和走道畫進同一張平面圖' };
 // FAQ 區塊必須在「下一個 ## 標題」就結束。
 // 之前的寫法把 `## 常見問題` 之後的**整份剩餘內文**都當成 FAQ 來掃 `###`，
 // 於是「## 相關工具與延伸閱讀 / ### 參考資料」被當成一組問答塞進 FAQPage：
@@ -188,7 +233,14 @@ if (post.data.howToSteps.length > 0) {
       {reviewReady && <AdSlot id="zh-blog-top" placement="zh-blog-top" />}
 
       <div class="card article-body">
-        <Content />
+        {hasInlineTool ? (
+          <>
+            <Fragment set:html={bodyBeforeTool} />
+            {embeddedPreset && <ClearanceChecker preset={embeddedPreset} />}
+            <p>量好尺寸後，可用<a href={checkerTool.href}>{checkerTool.label}</a>{inlineToolOnlyBySlug[post.id] ?? checkerTool.detail}，再對照本文的配置建議。</p>
+            <Fragment set:html={bodyAfterTool} />
+          </>
+        ) : <Content />}
       </div>
 
       <PlannerCta preset={plannerPreset} text={plannerCtaText} />
@@ -199,7 +251,7 @@ if (post.data.howToSteps.length > 0) {
 
       {reviewReady && <NewsletterSignup placement="article" />}
 
-      <RelatedLinks lang="zh" links={relatedLinks} />
+      <RelatedLinks lang="zh" links={relatedLinks} path={canonical} max={6} />
     </div>
   </article>
 </Layout>
