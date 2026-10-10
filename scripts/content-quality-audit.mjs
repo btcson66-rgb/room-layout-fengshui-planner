@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { reviewReadyBlogSlugs, reviewReadyCategorySlugs } from '../src/data/contentQuality.mjs';
+import { demandHeldBlogSlugs } from '../src/data/searchDemandPolicy.mjs';
 import { redirects } from '../src/data/redirects.mjs';
 
 const root = process.cwd();
@@ -8,7 +9,7 @@ const contentRoot = path.join(root, 'src', 'content', 'blog');
 const distRoot = path.join(root, 'dist');
 const failures = [];
 const checks = [];
-const expectedReviewReadyCount = 1315;
+const expectedReviewReadyCount = 411;
 const expandedArticleRequirements = new Map([
   ['bed-facing-door-feng-shui', {
     required: [/15 分鐘/, /一晚/, /cdc\.gov\/sleep/i, /usfa\.fema\.gov/i, /cpsc\.gov/i, /\/disclaimer\//],
@@ -4982,6 +4983,9 @@ const heldSlugs = allSlugs.filter((slug) => !reviewReadyBlogSlugs.has(slug));
 
 check('review-ready-count', reviewReadyBlogSlugs.size === expectedReviewReadyCount, reviewReadyBlogSlugs.size);
 check('held-count', heldSlugs.length === markdownFiles.length - expectedReviewReadyCount, heldSlugs.length);
+// 搜尋需求閘門清單不得指向不存在的文章（文章合併／刪除後要重跑 gsc-demand-policy）。
+const staleDemandHeld = [...demandHeldBlogSlugs].filter((slug) => !allSlugs.includes(slug));
+check('demand-held-sources-exist', staleDemandHeld.length === 0, staleDemandHeld.slice(0, 5));
 
 const expandedArticleBodies = new Map();
 

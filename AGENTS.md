@@ -159,6 +159,22 @@ changes. Adding depth to a strong page beats adding another thin one.
 fails the build if a redirect source still produces HTML (Pages serves the file and
 the 301 would silently never fire) or if a target is missing.
 
+## 9b-2. Search-demand gate (indexable ≠ published)
+
+Editorial approval is necessary but not sufficient. `reviewReadyBlogSlugs` is
+`editorialApprovedBlogSlugs` minus `demandHeldBlogSlugs`
+(`src/data/searchDemandPolicy.mjs`), which `scripts/gsc-demand-policy.mjs` generates
+from a real GSC "網頁" export: an article stays indexable only with ≥2 clicks or ≥50
+impressions in the export window, or when a site page / hub / `llms.txt` / redirect
+names it directly. Held articles keep their URL but render noindex, leave the sitemap,
+blog index and category pages, and load no ads.
+
+Why: 1,236 articles shipped 2026-08-29 → 09-03, AdSense rejected the site twice for
+low-value content, and 904 of those articles had no measurable search demand after
+five weeks. To release a held article, rewrite or merge it (§9b) and regenerate the
+policy — do not hand-edit the generated file. Changing the indexable count also
+requires updating `expectedReviewReadyCount` and `scripts/release-authority.mjs`.
+
 ## 9c. Topic hubs and tool-first CTAs
 
 `/zh/category/<slug>/` pages are the site's topic hubs, not article lists. Hub copy

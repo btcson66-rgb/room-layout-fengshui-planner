@@ -1,4 +1,7 @@
-export const reviewReadyBlogSlugs = new Set([
+import { demandHeldBlogSlugs } from './searchDemandPolicy.mjs';
+
+// 編輯審核通過的文章（內容品質閘門）。是否真的可索引還要再過搜尋需求閘門，見下方。
+export const editorialApprovedBlogSlugs = new Set([
   'air-conditioner-bedroom-layout',
   'beam-over-desk-bed-layout',
   'beam-over-desk-workspace-guide',
@@ -1319,6 +1322,12 @@ export const reviewReadyBlogSlugs = new Set([
   'wardrobe-placement-bedroom',
   'west-facing-room-heat',
 ]);
+
+// 可索引文章 = 編輯審核通過 − 搜尋需求不足（GSC 3 個月 clicks／impressions 未達門檻）。
+// 需求閘門由 scripts/gsc-demand-policy.mjs 依真實 GSC 匯出產生，理由見該腳本開頭。
+export const reviewReadyBlogSlugs = new Set(
+  [...editorialApprovedBlogSlugs].filter((slug) => !demandHeldBlogSlugs.has(slug)),
+);
 
 export const reviewReadyCategorySlugs = new Set([
   'bedroom',
