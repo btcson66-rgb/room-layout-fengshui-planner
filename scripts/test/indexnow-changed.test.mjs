@@ -34,3 +34,18 @@ test('initial zero-URL baseline verifies the public key without POST', async () 
   assert.equal(gets,1); assert.deepEqual(logs,[]);
   await assert.rejects(submit([], 'examplekey', async()=>({status:404,text:async()=>''})), /verification failed/);
 });
+test('removed URLs do not count toward the 1,000 changed-page cap', async () => {
+  const live = Object.fromEntries(Array.from({length:300},(_,i)=>[`https://roomfeng.win/live-${i}/`,'a'.repeat(64)]));
+  const removed = Array.from({length:900},(_,i)=>`https://roomfeng.win/gone-${i}/`);
+  const urls = [...Object.keys(live), ...removed];
+  let submitted=0;
+  const request=async (_url, options) => {
+    if (!options?.method) return { status:200, text:async ()=>'examplekey' };
+    submitted += JSON.parse(options.body).urlList.length; return { status:202 };
+  };
+  await submit(urls,'examplekey',request,async()=>{},live);
+  assert.equal(submitted,1200);
+  const tooManyLive = Object.fromEntries(Array.from({length:1001},(_,i)=>[`https://roomfeng.win/p-${i}/`,'a'.repeat(64)]));
+  await assert.rejects(submit(Object.keys(tooManyLive),'examplekey',request,async()=>{},tooManyLive),/exceeds 1000/);
+  await assert.rejects(submit(urls,'examplekey',request,async()=>{}),/exceeds 1000/);
+});
