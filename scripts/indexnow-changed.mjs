@@ -38,7 +38,10 @@ export async function manifest(dist = 'dist') {
   await walk(dist);
   return result;
 }
-export async function submit(urls, key, request = fetch, pause = ms => new Promise(r => setTimeout(r, ms))) {
+// 1,000 上限是防止誤觸整站重送（例如改頁尾讓每頁 hash 都變）。只計算「仍可索引且有變更」的網址；
+// 離開索引（改 noindex 或不再產生）的網址已由 release-authority 的 sitemap 數量閘門把關，
+// 一律照送，讓搜尋引擎盡快知道它們退出索引。未提供 current 時全部計入上限。
+export async function submit(urls, key, request = fetch, pause = ms => new Promise(r => setTimeout(r, ms)), current = undefined) {
   if (!/^[a-zA-Z0-9-]{8,128}$/.test(key ?? '')) throw new Error('Invalid IndexNow key');
   for (const url of urls) {
     const parsed = new URL(url);
@@ -47,7 +50,8 @@ export async function submit(urls, key, request = fetch, pause = ms => new Promi
   const endpoint = process.env.INDEXNOW_ENDPOINT ?? 'https://api.indexnow.org/indexnow';
   if (!['https://api.indexnow.org/indexnow', 'https://www.bing.com/indexnow'].includes(endpoint)) throw new Error('Unsupported IndexNow endpoint');
   const logs = [];
-  if (urls.length > 1000) throw new Error('IndexNow changed subset exceeds 1000; inspect before submitting');
+  const cappedCount = current ? urls.filter(url => Object.hasOwn(current, url)).length : urls.length;
+  if (cappedCount > 1000) throw new Error('IndexNow changed subset exceeds 1000; inspect before submitting');
   const keyLocation = `${ORIGIN}/${key}.txt`;
   const verification = await request(keyLocation, { signal: AbortSignal.timeout(15000) });
   if (verification.status !== 200 || (await verification.text()).trim() !== key) throw new Error('IndexNow production key verification failed');
@@ -93,7 +97,7 @@ async function main() {
     if (process.env.INDEXNOW_SUBMIT === '1' && !key) throw new Error('INDEXNOW_KEY missing; configure repository secret before enabling deployment integration');
     if (process.env.INDEXNOW_SUBMIT === '1') {
       if (!key) throw new Error('INDEXNOW_KEY missing; changed URLs not submitted');
-      log.attempts = await submit(urls, key);
+      log.attempts = await submit(urls, key, fetch, undefined, current);
       log.keyVerified = true;
       log.submitted = urls.length > 0;
     }
