@@ -2,11 +2,13 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 import { ROOMFENG_RELEASE_AUTHORITY } from './release-authority.mjs';
+import { isSearchDemandPruneRemoval } from './search-demand-prune.mjs';
 
 const origin = process.env.ROOMFENG_SEO_ORIGIN ?? 'https://roomfeng.win';
 const evidenceDir = path.resolve(process.env.ROOMFENG_SEO_EVIDENCE_DIR ?? 'docs/uiux/evidence/hardening-003/seo');
 const expectedSitemapUrlCount = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const pendingRepair = ROOMFENG_RELEASE_AUTHORITY.productionRepair001;
+const pendingPrune = ROOMFENG_RELEASE_AUTHORITY.searchDemandPrune001;
 const requireDeployed = process.env.ROOMFENG_SEO_REQUIRE_DEPLOYED === '1';
 const representatives = [
   { path: '/', canonical: '/', sitemap: true },
@@ -64,8 +66,8 @@ check('sitemap has no duplicate URLs', sitemapUrls.length === uniqueSitemapUrls.
 const sitemapSet = new Set(uniqueSitemapUrls);
 const pendingUrls = pendingRepair.addedRoutes.map((route) => `https://roomfeng.win${route}`);
 const isDeployed = uniqueSitemapUrls.length === expectedSitemapUrlCount;
-const isPreDeploy = uniqueSitemapUrls.length === pendingRepair.previousSitemapUrls;
-check('sitemap count matches deployed or exact pre-deploy authority', isDeployed || isPreDeploy, `${uniqueSitemapUrls.length} vs ${pendingRepair.previousSitemapUrls}/${expectedSitemapUrlCount}`);
+const isPreDeploy = uniqueSitemapUrls.length === pendingPrune.previousSitemapUrls;
+check('sitemap count matches deployed or exact pre-deploy authority', isDeployed || isPreDeploy, `${uniqueSitemapUrls.length} vs ${pendingPrune.previousSitemapUrls}/${expectedSitemapUrlCount}`);
 check('post-deploy gate requires deployed sitemap', !requireDeployed || isDeployed, `${uniqueSitemapUrls.length} vs ${expectedSitemapUrlCount}`);
 if (isDeployed) {
   for (const url of pendingUrls) check(`deployed sitemap includes ${url}`, sitemapSet.has(url), url);
@@ -76,8 +78,9 @@ if (isDeployed) {
   const added = [...candidateSet].filter((url) => !sitemapSet.has(url)).sort();
   const removed = [...sitemapSet].filter((url) => !candidateSet.has(url)).sort();
   check('candidate sitemap count', candidateSet.size === expectedSitemapUrlCount && candidateUrls.length === candidateSet.size, `${candidateUrls.length} vs ${expectedSitemapUrlCount}`);
-  check('pre-deploy added URLs are exactly the six approved trust pages', JSON.stringify(added) === JSON.stringify(pendingUrls.sort()), added);
-  check('pre-deploy candidate removes no production URLs', removed.length === 0, removed);
+  check('pre-deploy candidate adds no URLs', added.length === 0, added);
+  const unexpectedRemovals = removed.filter((url) => !isSearchDemandPruneRemoval(url));
+  check('pre-deploy removals are only search-demand held articles and shrunk pagination', unexpectedRemovals.length === 0, unexpectedRemovals.slice(0, 10));
 }
 
 const representative = [];

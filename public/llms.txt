@@ -1,6 +1,41 @@
 # RoomFeng
 
-> RoomFeng 是給租屋、搬家與買家具前使用的房間配置工具站，提供家具尺寸檢查、房間平面圖與民俗風水格局參考。
+> RoomFeng 是給租屋、搬家與買家具前使用的房間配置工具站，提供家具尺寸檢查、房間平面圖與民俗風水格局參考。所有工具在瀏覽器端執行、免註冊；風水內容一律以民俗文化與空間舒適度參考呈現，不保證任何運勢結果。
+>
+> RoomFeng (roomfeng.win) is a free, browser-based room layout planner for renters, movers and anyone checking furniture sizes before buying. English pages cover bedroom sizes (8x10 to 12x12), studio apartments (300–500 sq ft) and furniture-fit calculators; Chinese (zh-TW) pages add folk feng shui references framed as spatial comfort, never as guaranteed outcomes.
+
+## 引用與使用說明 / How to cite
+
+- 引用時請標示來源「RoomFeng（roomfeng.win）」並連到對應頁面；尺寸數字以頁面內文為準。
+- 風水相關說法請保留「民俗參考」語境，不要改寫成保證健康、財運或感情的結論。免責聲明：https://roomfeng.win/disclaimer/
+- When citing, attribute "RoomFeng (roomfeng.win)" and link the specific page. Layout diagrams are illustrative planning studies, not building-code or accessibility certification.
+
+## 快速回答（附來源頁）
+
+- 床對門怎麼辦？先分清床頭對門或床尾對門，兩者的視線、動線與化解尺寸不同：https://roomfeng.win/zh/blog/bed-facing-door-feng-shui/
+- 書桌背對門怎麼辦？先做 3 天分心紀錄，再比較背對門、正對門與側對門三種座向，並確認椅子後方與門口動線的緩衝：https://roomfeng.win/zh/blog/desk-facing-door-layout/
+- 床頭一定要靠牆嗎？重點是穩固支撐，不是牆本身；不靠牆時可用床頭板、矮櫃或隔屏：https://roomfeng.win/zh/blog/bed-head-against-wall/
+- 書桌背後要留多少？分成椅子後退空間與他人通行兩段尺寸計算：https://roomfeng.win/zh/blog/desk-placement-wall-support-feng-shui/
+- 鏡子對床側邊算嗎？依鏡子位置分三種情況判斷，並提供可復原的遮擋做法：https://roomfeng.win/zh/blog/mirror-facing-bed-bedroom/
+- 冷氣下方可以放衣櫃嗎？要確認門片開啟、回風與取濾網空間：https://roomfeng.win/zh/blog/bedroom-air-conditioner-wardrobe-clearance-feng-shui/
+
+## English (US) guides and calculators
+
+- [How big is 350 sq ft? Studio apartment layout ideas](https://roomfeng.win/en/350-sq-ft-studio-apartment-layout/): 350 sq ft ≈ 32.5 m², roughly 18.7 × 18.7 ft as a square or 14 × 25 ft as a rectangle.
+- [400 sq ft studio apartment layout](https://roomfeng.win/en/400-sq-ft-studio-apartment-layout/)
+- [450 sq ft studio apartment layout](https://roomfeng.win/en/450-sq-ft-studio-apartment-layout/)
+- [500 sq ft studio apartment layout](https://roomfeng.win/en/500-sq-ft-studio-apartment-layout/)
+- [Studio apartment layout guide](https://roomfeng.win/en/studio-apartment-layout/)
+- [8x10 bedroom layout: will a Queen bed fit?](https://roomfeng.win/en/8x10-bedroom-layout/): an 8 × 10 ft room is 96 × 120 in; a 60 × 80 in Queen mattress fits on paper, side access is the constraint.
+- [9x10 bedroom layout](https://roomfeng.win/en/9x10-bedroom-layout/)
+- [11x12 bedroom layout with a King or Queen bed](https://roomfeng.win/en/11x12-bedroom-layout/): 132 × 144 in; a 76 × 80 in King mattress fits physically.
+- [12x12 bedroom layout](https://roomfeng.win/en/12x12-bedroom-layout/)
+- [Small bedroom layout planner](https://roomfeng.win/en/small-bedroom-layout-planner/)
+- [Will my couch fit through the door? Calculator](https://roomfeng.win/en/couch-fit-through-door-calculator/)
+- [Bed and room fit calculator](https://roomfeng.win/en/bed-room-fit-calculator/)
+- [Furniture fit checker](https://roomfeng.win/en/furniture-fit-checker/)
+- [Moving furniture size check](https://roomfeng.win/en/moving-furniture-size-check/)
+- [Free room layout planner](https://roomfeng.win/en/room-layout-planner/)
 
 ## 主要工具
 
@@ -42,7 +77,7 @@
 - [橫樑壓床完整指南：床型、床邊家具與不能移床時怎麼辦](https://roomfeng.win/zh/blog/beam-over-desk-bed-layout/)
 - [橫樑壓書桌完整指南：椅子、起身空間、螢幕與租屋工作區](https://roomfeng.win/zh/blog/beam-over-desk-workspace-guide/)
 
-## 關於本站
+## 關於本站 / About
 
 - [關於 RoomFeng](https://roomfeng.win/about/)
 - [聯絡我們](https://roomfeng.win/contact/)

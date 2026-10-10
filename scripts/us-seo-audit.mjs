@@ -117,8 +117,8 @@ for (const path of targetPaths) assert.ok(sitemap.includes(`${siteUrl}${path}`),
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 assert.equal(
   baselineSitemapUrls + expectedNewUrls + expectedCommercialRoutes + expectedTrustRoutes,
-  expectedSitemapUrls,
-  'US SEO inventory arithmetic must match the current release authority',
+  ROOMFENG_RELEASE_AUTHORITY.searchDemandPrune001.previousSitemapUrls,
+  'US SEO inventory arithmetic must match the pre-prune release authority',
 );
 assert.equal(sitemapUrls.length, expectedSitemapUrls, `sitemap URL count changed unexpectedly: ${sitemapUrls.length}`);
 

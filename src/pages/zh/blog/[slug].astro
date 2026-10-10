@@ -72,6 +72,19 @@ const relatedPostLinks = post.data.relatedPosts
     return title ? { href: `/zh/blog/${slug}/`, title } : null;
   })
   .filter((link): link is { href: string; title: string } => link !== null);
+// relatedPosts 指到的文章可能被搜尋需求閘門暫停索引；不足 3 篇時，
+// 從同分類可索引文章依共同標籤數補齊，維持內鏈契約（2–5 篇）。
+if (relatedPostLinks.length < 3) {
+  const linked = new Set([post.id, ...relatedPostLinks.map((link) => link.href)]);
+  const tags = new Set(post.data.tags);
+  const fillers = blogPosts
+    .filter((entry) => entry.data.category === post.data.category && blogTitleBySlug.has(entry.id))
+    .filter((entry) => !linked.has(entry.id) && !linked.has(`/zh/blog/${entry.id}/`))
+    .map((entry) => ({ entry, shared: entry.data.tags.filter((tag: string) => tags.has(tag)).length }))
+    .sort((a, b) => b.shared - a.shared || a.entry.id.localeCompare(b.entry.id))
+    .slice(0, 3 - relatedPostLinks.length);
+  for (const { entry } of fillers) relatedPostLinks.push({ href: `/zh/blog/${entry.id}/`, title: entry.data.title });
+}
 // 每篇文章都要有一個具體的工具入口。preset 用分類對應到最接近的房型範例，
 // CTA 文案則依 tag/標題裡真正出現的家具決定，避免千篇一律的「開啟工具」。
 const plannerPreset = hubContent[post.data.category]?.plannerPreset ?? 'studio';

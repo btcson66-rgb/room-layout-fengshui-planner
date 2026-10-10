@@ -3,6 +3,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import test from 'node:test';
 import { ROOMFENG_RELEASE_AUTHORITY } from '../release-authority.mjs';
+import { isSearchDemandPruneRemoval } from '../search-demand-prune.mjs';
 
 const root = resolve(process.cwd());
 const dist = join(root, 'dist');
@@ -35,13 +36,14 @@ const childSitemap = () => {
 
 test('US SEO Growth 002 retains its URLs while repair 001 adds only six trust routes', async () => {
   assert.ok(existsSync(dist), 'dist does not exist; run npm.cmd run build first');
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 1464, 'build authority changed unexpectedly');
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 1454, 'sitemap authority changed unexpectedly');
+  const prune = ROOMFENG_RELEASE_AUTHORITY.searchDemandPrune001;
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 1428, 'build authority changed unexpectedly');
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 514, 'sitemap authority changed unexpectedly');
 
   const sitemap = childSitemap();
   const candidateUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   const uniqueCandidateUrls = [...new Set(candidateUrls)];
-  assert.equal(uniqueCandidateUrls.length, 1454, 'candidate sitemap URL count must be 1,454');
+  assert.equal(uniqueCandidateUrls.length, ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 'candidate sitemap URL count must match release authority');
   assert.equal(candidateUrls.length, uniqueCandidateUrls.length, 'candidate sitemap must not contain duplicates');
 
   const baselineResponse = await fetch(`${siteUrl}/sitemap-0.xml`);
@@ -49,19 +51,18 @@ test('US SEO Growth 002 retains its URLs while repair 001 adds only six trust ro
   const baselineXml = await baselineResponse.text();
   const baselineUrls = [...baselineXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   const baselineCount = baselineUrls.length;
-  assert.ok(baselineCount === 1448 || baselineCount === 1454, `unexpected public sitemap count ${baselineCount}`);
-  const expectedAdditions = ROOMFENG_RELEASE_AUTHORITY.productionRepair001.addedRoutes.map((path) => `${siteUrl}${path}`);
+  assert.ok(baselineCount === prune.previousSitemapUrls || baselineCount === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, `unexpected public sitemap count ${baselineCount}`);
   const candidateSet = new Set(candidateUrls);
   const baselineSet = new Set(baselineUrls);
   const added = [...candidateSet].filter((url) => !baselineSet.has(url)).sort();
   const removed = [...baselineSet].filter((url) => !candidateSet.has(url)).sort();
-  assert.deepEqual(added, baselineCount === 1448 ? expectedAdditions.sort() : [], 'unexpected candidate URL additions');
-  assert.deepEqual(removed, [], 'candidate removed a public URL');
+  assert.deepEqual(added, [], 'unexpected candidate URL additions');
+  assert.deepEqual(removed.filter((url) => !isSearchDemandPruneRemoval(url)), [], 'candidate removed a public URL outside the search-demand prune');
 
   for (const path of targetPaths) {
     assert.ok(sitemap.includes(`${siteUrl}${path}`), `${path}: missing from candidate sitemap`);
   }
-  assert.equal(uniqueCandidateUrls.length - baselineSet.size, added.length, 'candidate sitemap count differs from exact URL delta');
+  assert.equal(uniqueCandidateUrls.length - baselineSet.size, added.length - removed.length, 'candidate sitemap count differs from exact URL delta');
 
   const titles = new Set();
   const h1s = new Set();
