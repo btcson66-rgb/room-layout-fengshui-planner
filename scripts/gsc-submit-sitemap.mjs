@@ -28,6 +28,43 @@ const report = {
   alerts: [],
 };
 const forceSubmit = process.argv.includes('--force');
+const INSPECTION_URLS = [
+  'https://roomfeng.win/',
+  'https://roomfeng.win/zh/blog/bed-facing-door-feng-shui/',
+  'https://roomfeng.win/zh/blog/desk-facing-door-layout/',
+];
+
+async function inspectSitemapKnowledge(token, siteUrl) {
+  const results = [];
+  for (const inspectionUrl of INSPECTION_URLS) {
+    try {
+      const { response, json } = await fetchJson('https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+        body: JSON.stringify({ siteUrl, inspectionUrl }),
+      });
+      if (!response.ok) {
+        results.push({ url: inspectionUrl, httpStatus: response.status, error: json?.error?.message ?? 'inspection failed' });
+        continue;
+      }
+      const state = json?.inspectionResult?.indexStatusResult ?? {};
+      results.push({
+        url: inspectionUrl,
+        coverageState: state.coverageState ?? null,
+        lastCrawlTime: state.lastCrawlTime ?? null,
+        googleKnownSitemaps: Array.isArray(state.sitemap) ? state.sitemap : [],
+        referringUrlCount: Array.isArray(state.referringUrls) ? state.referringUrls.length : 0,
+      });
+    } catch (error) {
+      results.push({ url: inspectionUrl, error: error instanceof Error ? error.message : String(error) });
+    }
+  }
+  const knownBySitemap = results.some((item) => item.googleKnownSitemaps?.length);
+  console.error(knownBySitemap
+    ? 'SITEMAP EVIDENCE: URL Inspection lists our sitemap for at least one URL — Google has read it even if the Sitemaps report still says 無法擷取.'
+    : 'SITEMAP EVIDENCE: URL Inspection lists no sitemap for the probed URLs.');
+  return { knownBySitemap, results };
+}
 
 try {
   const sitemapUrls = await discoverSitemapUrls(indexPath);
@@ -98,6 +135,12 @@ try {
       submittedCount += 1;
     }
   }
+
+  // Sitemaps 報表說「無法擷取」不等於 Google 沒讀過 sitemap（見 gsc-sitemap-outcome.mjs 檔頭的
+  // Cloudflare 反證）。URL Inspection 的 indexStatusResult.sitemap 是 Google 自己對
+  // 「這個網址列在哪些 sitemap」的回答：只要出現我們的 sitemap，就代表 Google 讀過它。
+  // 純觀測，失敗只記錄、不影響退出碼（提交成敗的邊界不變）。
+  report.inspection = await inspectSitemapKnowledge(token, gscSiteUrl);
 
   const stuckEntries = findStuckSitemaps(report.entries);
   for (const entry of stuckEntries) {

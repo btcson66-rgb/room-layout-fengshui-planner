@@ -5329,6 +5329,20 @@ for (const file of htmlFiles) {
 }
 check('faq-schema-has-no-section-headings', faqSchemaLeaks.length === 0, faqSchemaLeaks.slice(0, 5));
 
+// 反方向：畫面上有問答，就必須有 FAQPage。2026-10-14 前 FAQ 偵測只認開頭是
+// 「常見問題／FAQ」的標題，93 篇可索引文章的可見問答因此沒有任何結構化資料。
+const faqMissingSchema = [];
+for (const slug of reviewReadyBlogSlugs) {
+  const source = await fs.readFile(path.join(contentRoot, `${slug}.md`), 'utf8');
+  const heading = source.match(/^##\s+[^\n]*(?:常見問題|常見問答|FAQ)[^\n]*$/m);
+  if (!heading) continue;
+  const section = source.slice((heading.index ?? 0) + heading[0].length).split(/\n##\s+/)[0];
+  if (!/^###\s+\S/m.test(section) && !/^\*\*Q[：:]/m.test(section)) continue;
+  const html = await fs.readFile(path.join(distRoot, 'zh', 'blog', slug, 'index.html'), 'utf8');
+  if (!/"@type":"FAQPage"/.test(html)) faqMissingSchema.push(slug);
+}
+check('visible-faq-emits-faq-schema', faqMissingSchema.length === 0, faqMissingSchema.slice(0, 5));
+
 // --- affiliate 一致性 ---------------------------------------------------
 // 首頁曾經寫「商品與聯盟推薦在 AdSense 重新審查期間預設關閉」，同時文章頁
 // 實際顯示蝦皮／酷澎商品卡。文案與實際行為必須由 src/config/affiliate.ts
