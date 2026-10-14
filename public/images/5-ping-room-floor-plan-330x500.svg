@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" role="img" aria-labelledby="title desc">
+  <title id="title">5 坪房間平面圖（330 × 500 公分）</title>
+  <desc id="desc">5 坪、淨尺寸 330 乘 500 公分的房間配置：房門在上方短牆左側，衣櫃靠左牆，雙人床床頭靠上方實牆並貼右側長牆，書桌放在下方窗前，左側保留約 118 公分的主要通行。</desc>
+  <rect width="640" height="600" rx="20" fill="#f7f4eb"/>
+  <rect x="40" y="50" width="330" height="500" fill="#fff" stroke="#33443b" stroke-width="6"/>
+  <path d="M60 50H145" stroke="#fff" stroke-width="10"/>
+  <path d="M60 50V135A85 85 0 0 0 145 50" fill="none" stroke="#806d50" stroke-width="3" stroke-dasharray="8 6"/>
+  <path d="M120 550H300" stroke="#3e6675" stroke-width="10"/>
+  <g font-family="sans-serif" fill="#26352e" text-anchor="middle">
+    <rect x="40" y="150" width="60" height="120" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/>
+    <text x="70" y="208" font-size="16" transform="rotate(-90 70 208)">衣櫃 120×60</text>
+    <rect x="218" y="50" width="152" height="188" rx="6" fill="#dce7df" stroke="#33443b" stroke-width="3"/>
+    <rect x="232" y="58" width="56" height="28" rx="8" fill="#fff" stroke="#33443b" stroke-width="2"/>
+    <rect x="300" y="58" width="56" height="28" rx="8" fill="#fff" stroke="#33443b" stroke-width="2"/>
+    <text x="294" y="160" font-size="17">雙人床</text>
+    <text x="294" y="182" font-size="15">152×188</text>
+    <rect x="60" y="490" width="120" height="60" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/>
+    <text x="120" y="526" font-size="16">書桌 120×60</text>
+    <rect x="98" y="440" width="45" height="42" rx="6" fill="#fff" stroke="#33443b" stroke-width="2"/>
+    <text x="210" y="575" font-size="16" fill="#294d59">窗</text>
+    <text x="102" y="40" font-size="15" fill="#5e4e37">房門</text>
+    <path d="M102 140C130 260 150 360 160 430M150 300C175 290 195 280 214 270" fill="none" stroke="#2f7d57" stroke-width="4" stroke-dasharray="10 7"/>
+    <text x="232" y="400" font-size="15" fill="#245b42">衣櫃與床相距 118 公分</text>
+    <text x="205" y="598" font-size="14" fill="#4a5c52">330 公分</text>
+    <text x="22" y="300" font-size="14" fill="#4a5c52" transform="rotate(-90 22 300)">500 公分</text>
+  </g>
+  <g font-family="sans-serif" fill="#26352e">
+    <text x="395" y="90" font-size="22" font-weight="700">5 坪 ≈ 16.5 m²</text>
+    <text x="395" y="122" font-size="16">≈ 178 平方英尺</text>
+    <text x="395" y="148" font-size="16">≈ 10 張榻榻米</text>
+    <text x="395" y="190" font-size="16">本圖：淨尺寸</text>
+    <text x="395" y="214" font-size="16">330 × 500 公分</text>
+    <text x="395" y="262" font-size="15">床頭靠實牆、不在窗下</text>
+    <text x="395" y="288" font-size="15">書桌在窗前、側向採光</text>
+    <text x="395" y="314" font-size="15">衣櫃門不擋房門</text>
+    <text x="395" y="340" font-size="15">床尾下方可放五斗櫃</text>
+    <path d="M395 380h40" stroke="#2f7d57" stroke-width="4" stroke-dasharray="10 7"/>
+    <text x="445" y="386" font-size="14">綠虛線＝通行路線</text>
+  </g>
+</svg>
