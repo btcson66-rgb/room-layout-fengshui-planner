@@ -9,8 +9,8 @@
  *   1. 佇列中前面的 PR 都已合併；有被關閉而未合併的就停止（佇列被人工中斷）。
  *   2. 今天（Asia/Taipei）已經合併過一個 → 跳過，不算失敗。
  *   3. main 上最近一次 Deploy to Cloudflare Pages 必須是 success（前一天的發布沒壞）。
- *   4. 目標 PR 的所有 check run 都已完成且通過。
- *   5. 目標 PR mergeable（無衝突）。
+ *   4. 目標 PR mergeable（無衝突）。落後 main 時先同步 main 並在分支上重跑 Preflight。
+ *   5. 目標 PR 目前 head 的必要 check（preflight／UIUX／Lighthouse Preview）都已完成且通過。
  * 合併後主動觸發部署：用 GITHUB_TOKEN 合併不會產生 push 事件，部署 workflow 不會自己跑。
  *
  * 行事曆全部合併後本 workflow 只會回報 done；之後可以刪除這兩個檔案。
@@ -20,6 +20,7 @@ import fs from 'node:fs';
 export const QUEUE = [132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145];
 export const TIME_ZONE = 'Asia/Taipei';
 const DEPLOY_WORKFLOW = 'deploy-cloudflare-pages.yml';
+const PREFLIGHT_WORKFLOW = 'preflight.yml';
 const PASSING = new Set(['success', 'neutral', 'skipped']);
 
 export function dateIn(timeZone, value) {
@@ -49,14 +50,28 @@ export function decideNext(prs, today, timeZone = TIME_ZONE) {
   return { action: 'done', pr: null, reason: '行事曆的 PR 已全部合併' };
 }
 
-/** 純函式：check run 是否全部完成且通過。 */
-export function checksPassed(checkRuns) {
-  if (!checkRuns.length) return { ok: false, reason: '沒有任何 check run' };
-  const pending = checkRuns.filter((run) => run.status !== 'completed');
-  if (pending.length) return { ok: false, reason: `仍在執行：${pending.map((run) => run.name).join('、')}` };
-  const failed = checkRuns.filter((run) => !PASSING.has(run.conclusion));
-  if (failed.length) return { ok: false, reason: `未通過：${failed.map((run) => `${run.name}=${run.conclusion}`).join('、')}` };
-  return { ok: true, reason: `${checkRuns.length} 個 check run 全部通過` };
+// main 的分支保護要求這三個 check（見 final-release-verdict 的 branchProtection）。
+export const REQUIRED_CHECKS = ['preflight', 'UIUX browser evidence', 'Lighthouse Preview'];
+
+/**
+ * 純函式：check run 是否全部完成且通過。pending=true 表示還值得等（必要 check 尚未出現或仍在跑）。
+ * 同名 check 有多筆（重跑）時只看最新一筆。
+ */
+export function checksPassed(checkRuns, required = REQUIRED_CHECKS) {
+  const latest = new Map();
+  for (const run of checkRuns) {
+    const prev = latest.get(run.name);
+    if (!prev || (run.started_at ?? '') > (prev.started_at ?? '')) latest.set(run.name, run);
+  }
+  const runs = [...latest.values()];
+  const missing = required.filter((name) => !latest.has(name));
+  if (missing.length) return { ok: false, pending: true, reason: `必要 check 尚未出現：${missing.join('、')}` };
+  if (!runs.length) return { ok: false, pending: true, reason: '沒有任何 check run' };
+  const running = runs.filter((run) => run.status !== 'completed');
+  if (running.length) return { ok: false, pending: true, reason: `仍在執行：${running.map((run) => run.name).join('、')}` };
+  const failed = runs.filter((run) => !PASSING.has(run.conclusion));
+  if (failed.length) return { ok: false, pending: false, reason: `未通過：${failed.map((run) => `${run.name}=${run.conclusion}`).join('、')}` };
+  return { ok: true, pending: false, reason: `${runs.length} 個 check run 全部通過` };
 }
 
 // 部署後的 production Lighthouse 門檻在網站已經上線之後才跑，量的是 runner 上的實驗室 TBT，
@@ -143,22 +158,56 @@ async function main() {
     break;
   }
 
-  // 4. 目標 PR 的 CI。
-  let pr = prs.find((item) => item.number === decision.pr);
-  const { check_runs: checkRuns } = await api(`/repos/${repo}/commits/${pr.head.sha}/check-runs?per_page=100`);
-  const checks = checksPassed(checkRuns);
-  report(`#${pr.number} CI：${checks.reason}`);
-  if (!checks.ok) return finish(1);
-
-  // 5. 可合併（mergeable 可能先是 null，GitHub 背景計算中）。
-  for (let attempt = 0; pr.mergeable === null && attempt < 6; attempt += 1) {
-    await sleep(10_000);
-    pr = await api(`/repos/${repo}/pulls/${pr.number}`);
-  }
+  // 4. 可合併（mergeable 可能先是 null，GitHub 背景計算中）。
+  const fetchPr = async (number) => {
+    let current = await api(`/repos/${repo}/pulls/${number}`);
+    for (let attempt = 0; current.mergeable === null && attempt < 12; attempt += 1) {
+      await sleep(10_000);
+      current = await api(`/repos/${repo}/pulls/${number}`);
+    }
+    return current;
+  };
+  let pr = await fetchPr(decision.pr);
   if (pr.mergeable !== true) {
     report(`#${pr.number} 無法合併（mergeable=${pr.mergeable}，mergeable_state=${pr.mergeable_state}），需要人工處理衝突`);
     return finish(1);
   }
+
+  // 5. 分支保護要求與 main 同步：前一天的合併讓下一個 PR 落後 main（mergeable_state=behind）。
+  //    用 API 把 main 合進 PR 分支；GITHUB_TOKEN 的 push 不會觸發 pull_request CI，
+  //    所以再以 workflow_dispatch 在 PR 分支跑 preflight.yml，讓新 head 產生必要 check。
+  if (pr.mergeable_state === 'behind') {
+    const oldSha = pr.head.sha;
+    await api(`/repos/${repo}/pulls/${pr.number}/update-branch`, {
+      method: 'PUT',
+      body: JSON.stringify({ expected_head_sha: oldSha }),
+    });
+    for (let attempt = 0; pr.head.sha === oldSha && attempt < 30; attempt += 1) {
+      await sleep(5_000);
+      pr = await api(`/repos/${repo}/pulls/${pr.number}`);
+    }
+    if (pr.head.sha === oldSha) {
+      report(`#${pr.number} 同步 main 後 head 沒有更新，停止`);
+      return finish(1);
+    }
+    await api(`/repos/${repo}/actions/workflows/${PREFLIGHT_WORKFLOW}/dispatches`, {
+      method: 'POST',
+      body: JSON.stringify({ ref: pr.head.ref }),
+    });
+    report(`#${pr.number} 已同步 main（${oldSha.slice(0, 7)} → ${pr.head.sha.slice(0, 7)}），並在分支上觸發 Preflight`);
+  }
+
+  // 6. 目標 PR 目前 head 的 CI（等待中的最多等 40 分鐘）。
+  let checks;
+  for (let attempt = 0; ; attempt += 1) {
+    const { check_runs: checkRuns } = await api(`/repos/${repo}/commits/${pr.head.sha}/check-runs?per_page=100`);
+    checks = checksPassed(checkRuns);
+    if (!checks.pending || attempt >= 40) break;
+    console.log(`#${pr.number} CI：${checks.reason}，等待 60 秒…`);
+    await sleep(60_000);
+  }
+  report(`#${pr.number} CI（${pr.head.sha.slice(0, 7)}）：${checks.reason}`);
+  if (!checks.ok) return finish(1);
 
   if (pr.draft) {
     await api('/graphql', {

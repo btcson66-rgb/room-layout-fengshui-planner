@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { QUEUE, checksPassed, dateIn, decideNext, deployHealthy } from '../scheduled-content-merge.mjs';
+import { QUEUE, REQUIRED_CHECKS, checksPassed, dateIn, decideNext, deployHealthy } from '../scheduled-content-merge.mjs';
+
+const pick = ({ ok, pending }) => ({ ok, pending });
 
 const open = (number) => ({ number, state: 'open', merged: false, merged_at: null });
 const merged = (number, at) => ({ number, state: 'closed', merged: true, merged_at: at });
@@ -35,13 +37,31 @@ test('reports done when everything is merged', () => {
 });
 
 test('checks must all be completed and passing', () => {
-  assert.equal(checksPassed([]).ok, false);
-  assert.equal(checksPassed([{ name: 'preflight', status: 'in_progress', conclusion: null }]).ok, false);
-  assert.equal(checksPassed([{ name: 'preflight', status: 'completed', conclusion: 'failure' }]).ok, false);
+  assert.deepEqual(pick(checksPassed([], [])), { ok: false, pending: true });
+  assert.deepEqual(pick(checksPassed([{ name: 'preflight', status: 'in_progress', conclusion: null }], ['preflight'])), { ok: false, pending: true });
+  assert.deepEqual(pick(checksPassed([{ name: 'preflight', status: 'completed', conclusion: 'failure' }], ['preflight'])), { ok: false, pending: false });
   assert.equal(checksPassed([
     { name: 'preflight', status: 'completed', conclusion: 'success' },
     { name: 'optional', status: 'completed', conclusion: 'skipped' },
-  ]).ok, true);
+  ], ['preflight']).ok, true);
+});
+
+test('required checks that have not appeared yet are waited for, not passed', () => {
+  // After update-branch the new head starts with no check runs until the dispatched Preflight registers them.
+  const onlyPreflight = [{ name: 'preflight', status: 'completed', conclusion: 'success' }];
+  const result = checksPassed(onlyPreflight, REQUIRED_CHECKS);
+  assert.equal(result.ok, false);
+  assert.equal(result.pending, true);
+  const all = REQUIRED_CHECKS.map((name) => ({ name, status: 'completed', conclusion: 'success' }));
+  assert.equal(checksPassed(all).ok, true);
+});
+
+test('a re-run check is judged by its newest attempt', () => {
+  const runs = [
+    { name: 'preflight', status: 'completed', conclusion: 'failure', started_at: '2026-10-15T01:00:00Z' },
+    { name: 'preflight', status: 'completed', conclusion: 'success', started_at: '2026-10-15T02:00:00Z' },
+  ];
+  assert.equal(checksPassed(runs, ['preflight']).ok, true);
 });
 
 test('latest completed deploy must be a success', () => {
