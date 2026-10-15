@@ -1,0 +1,32 @@
+name: Scheduled content merge (14-day calendar)
+
+# 老闆 2026-10-15 核准：14 天內容行事曆 PR #132～#145 每天自動合併一個。
+# 邏輯與安全條件見 scripts/scheduled-content-merge.mjs；全部合併後只會回報 done，可刪除本檔。
+on:
+  schedule:
+    - cron: '47 1 * * *' # 每天 09:47（Asia/Taipei）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+  checks: read
+
+concurrency:
+  group: scheduled-content-merge
+  cancel-in-progress: false
+
+jobs:
+  merge-next:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Merge the next calendar PR and deploy
+        run: node scripts/scheduled-content-merge.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
