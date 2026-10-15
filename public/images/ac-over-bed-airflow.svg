@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">冷氣在床頭上方出風落點圖解</title>
+  <desc id="desc">側面示意：冷氣室內機在床頭上方時，擺葉水平或朝上冷風沿天花板擴散最舒服；擺葉朝前下時落點多在床中段；擺葉朝下或上下掃風才會直吹枕頭。</desc>
+  <rect width="960" height="540" rx="20" fill="#f7f4eb"/>
+  <path d="M60 470H900" stroke="#33443b" stroke-width="6"/>
+  <path d="M60 60V470" stroke="#33443b" stroke-width="8"/>
+  <rect x="64" y="90" width="150" height="55" rx="10" fill="#fff" stroke="#33443b" stroke-width="4"/>
+  <text x="139" y="123" font-family="sans-serif" font-size="16" fill="#33443b" text-anchor="middle">冷氣室內機</text>
+  <rect x="64" y="340" width="30" height="130" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/>
+  <rect x="94" y="380" width="400" height="90" rx="10" fill="#dce7df" stroke="#33443b" stroke-width="3"/>
+  <rect x="104" y="366" width="80" height="22" rx="8" fill="#fff" stroke="#33443b" stroke-width="2"/>
+  <text x="300" y="435" font-family="sans-serif" font-size="17" fill="#33443b" text-anchor="middle">床（枕頭在牆邊）</text>
+  <path d="M200 150Q330 200 420 360" fill="none" stroke="#2f7d57" stroke-width="6" stroke-dasharray="14 9"/>
+  <path d="M180 150Q175 260 150 355" fill="none" stroke="#b54a46" stroke-width="6" stroke-dasharray="14 9"/>
+  <path d="M210 120Q450 90 760 150" fill="none" stroke="#2f7d57" stroke-width="6"/>
+  <text x="600" y="95" font-family="sans-serif" font-size="17" fill="#2f7d57" text-anchor="middle" font-weight="700">擺葉水平／朝上：冷風沿天花板擴散（最舒服）</text>
+  <text x="455" y="330" font-family="sans-serif" font-size="17" fill="#2f7d57" text-anchor="start" font-weight="700">擺葉朝前下：落點多在床中段或床尾</text>
+  <text x="195" y="292" font-family="sans-serif" font-size="17" fill="#b54a46" text-anchor="start" font-weight="700">朝下／掃風：直吹枕頭</text>
+  <text x="480" y="515" font-family="sans-serif" font-size="17" fill="#4a5c52" text-anchor="middle">先用紙條找冷風落點，再決定調擺葉、加導風板或移床；不要只把床往房間中央拉。</text>
+
+</svg>
