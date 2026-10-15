@@ -52,6 +52,16 @@ test('latest completed deploy must be a success', () => {
   assert.equal(deployHealthy([]).ok, false);
 });
 
+test('a failure only in the post-deploy Lighthouse gate does not stall the calendar', () => {
+  const failed = { status: 'completed', conclusion: 'failure', html_url: 'u3' };
+  assert.equal(deployHealthy([failed], ['Run production Lighthouse gate (desktop and mobile)']).ok, true);
+  assert.equal(deployHealthy([failed], ['Run production Lighthouse gate (desktop and mobile)', 'Deploy to Cloudflare Pages']).ok, false);
+  assert.equal(deployHealthy([failed], ['Run npm run build']).ok, false);
+  assert.equal(deployHealthy([failed], ['Install Chromium for post-deploy browser and Lighthouse gates']).ok, false, 'pre-deploy step stays blocking');
+  assert.equal(deployHealthy([failed], []).ok, false, 'unknown failure stays blocking');
+  assert.equal(deployHealthy([{ status: 'completed', conclusion: 'cancelled', html_url: 'u4' }], []).ok, false);
+});
+
 test('Taipei date conversion', () => {
   assert.equal(dateIn('Asia/Taipei', '2026-10-15T15:59:59Z'), '2026-10-15');
   assert.equal(dateIn('Asia/Taipei', '2026-10-15T16:00:00Z'), '2026-10-16');

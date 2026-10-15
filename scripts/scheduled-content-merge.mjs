@@ -59,14 +59,28 @@ export function checksPassed(checkRuns) {
   return { ok: true, reason: `${checkRuns.length} 個 check run 全部通過` };
 }
 
-/** 純函式：main 上最近一次完成的部署是否成功。runs 為 API 回傳順序（新到舊）。 */
-export function deployHealthy(runs) {
+// 部署後的 production Lighthouse 門檻在網站已經上線之後才跑，量的是 runner 上的實驗室 TBT，
+// 同一個 commit 會隨機過或不過（2026-10-14 run 38642045473：首頁 mobile TBT 437ms，四小時前同 commit 通過）。
+// 它失敗不代表網站壞了，所以「唯一失敗的步驟是這個門檻」時只記警告、不擋發布；其他任何步驟失敗都要擋。
+// 只放行「Run production Lighthouse gate」本身；部署前的 Chromium 安裝等名稱也含 Lighthouse 的步驟失敗仍要擋。
+export const NON_BLOCKING_FAILED_STEPS = [/^Run production Lighthouse gate\b/];
+
+/**
+ * 純函式：main 上最近一次完成的部署是否健康。runs 為 API 回傳順序（新到舊）；
+ * failedSteps 為最近一次完成的 run 中 conclusion=failure 的步驟名稱。
+ */
+export function deployHealthy(runs, failedSteps = []) {
   const latest = runs.find((run) => run.status === 'completed');
   if (!latest) return { ok: false, reason: '找不到已完成的部署紀錄' };
-  if (latest.conclusion !== 'success') {
-    return { ok: false, reason: `最近一次部署 ${latest.html_url} 結論為 ${latest.conclusion}，暫停發布` };
+  if (latest.conclusion === 'success') return { ok: true, reason: `最近一次部署成功：${latest.html_url}` };
+  const blocking = failedSteps.filter((name) => !NON_BLOCKING_FAILED_STEPS.some((pattern) => pattern.test(name)));
+  if (latest.conclusion === 'failure' && failedSteps.length > 0 && blocking.length === 0) {
+    return { ok: true, reason: `警告：最近一次部署 ${latest.html_url} 只有部署後的 Lighthouse 門檻失敗（${failedSteps.join('、')}），網站已上線，繼續發布` };
   }
-  return { ok: true, reason: `最近一次部署成功：${latest.html_url}` };
+  return {
+    ok: false,
+    reason: `最近一次部署 ${latest.html_url} 結論為 ${latest.conclusion}${blocking.length ? `（失敗步驟：${blocking.join('、')}）` : ''}，暫停發布`,
+  };
 }
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -117,7 +131,13 @@ async function main() {
       await sleep(60_000);
       continue;
     }
-    const health = deployHealthy(runs);
+    const latest = runs.find((run) => run.status === 'completed');
+    let failedSteps = [];
+    if (latest && latest.conclusion === 'failure') {
+      const { jobs } = await api(`/repos/${repo}/actions/runs/${latest.id}/jobs`);
+      failedSteps = jobs.flatMap((job) => (job.steps ?? []).filter((step) => step.conclusion === 'failure').map((step) => step.name));
+    }
+    const health = deployHealthy(runs, failedSteps);
     report(health.reason);
     if (!health.ok) return finish(1);
     break;
