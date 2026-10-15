@@ -118,11 +118,18 @@ const body = (post.body ?? '').replace(/\r\n/g, '\n');
 // 於是「## 相關工具與延伸閱讀 / ### 參考資料」被當成一組問答塞進 FAQPage：
 // 283 篇文章因此輸出了一個畫面上不是問答的「參考資料」Question。
 // Schema 必須與畫面一致，所以這裡先把區塊切乾淨再抽問答。
-const faqHeading = body.match(/^##\s*(?:常見問題|FAQ).*$/m);
+// 標題只要「含有」常見問題／常見問答／FAQ 就算 FAQ 區塊：原本只認開頭是這兩個詞，
+// 「## 浴室吹風機風水的常見問答」「## 快速判斷 FAQ」這類 72 篇畫面上有問答的文章
+// 因此完全沒有輸出 FAQPage。問答格式另外接受 21 篇舊文用的「**Q：問題**」寫法。
+const faqHeading = body.match(/^##\s+[^\n]*(?:常見問題|常見問答|FAQ)[^\n]*$/m);
 const faqSectionBody = faqHeading
   ? body.slice((faqHeading.index ?? 0) + faqHeading[0].length).split(/\n##\s+/)[0]
   : '';
-const faqMatches = [...faqSectionBody.matchAll(/###\s+(.+?)\n\n([\s\S]*?)(?=\n###|$)/g)]
+const faqHeadingMatches = [...faqSectionBody.matchAll(/###\s+(.+?)\n\n([\s\S]*?)(?=\n###|$)/g)];
+const faqBoldMatches = faqHeadingMatches.length
+  ? []
+  : [...faqSectionBody.matchAll(/^\*\*Q[：:]\s*(.+?)\*\*\s*\n([\s\S]*?)(?=\n\*\*Q[：:]|$)/gm)];
+const faqMatches = [...faqHeadingMatches, ...faqBoldMatches]
   .filter((match) => match[1] && match[2])
   .slice(0, 6)
   .map((match) => ({
