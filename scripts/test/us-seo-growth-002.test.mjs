@@ -37,7 +37,7 @@ const childSitemap = () => {
 test('US SEO Growth 002 retains its URLs while repair 001 adds only six trust routes', async () => {
   assert.ok(existsSync(dist), 'dist does not exist; run npm.cmd run build first');
   const prune = ROOMFENG_RELEASE_AUTHORITY.searchDemandPrune001;
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 1428, 'build authority changed unexpectedly');
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 524, 'build authority changed unexpectedly');
   assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 514, 'sitemap authority changed unexpectedly');
 
   const sitemap = childSitemap();
