@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">床頭靠窗窗台高度與床頭板圖解</title>
+  <desc id="desc">側面示意：床頭靠窗時先量窗台離地高度與深度；窗台高而深時用低於窗台下緣的床頭板並離窗 5 到 10 公分，窗台淺又低或窗扇會碰床時應移床讓床頭靠實牆。</desc>
+  <rect width="960" height="540" rx="20" fill="#f7f4eb"/>
+  <path d="M40 470H920" stroke="#33443b" stroke-width="6"/>
+  <path d="M120 60V470" stroke="#33443b" stroke-width="10"/>
+  <rect x="106" y="130" width="28" height="160" fill="#dbe8ef" stroke="#3e6675" stroke-width="3"/>
+  <text x="150" y="120" font-family="sans-serif" font-size="16" fill="#294d59" text-anchor="start" font-weight="700">窗戶</text>
+  <rect x="125" y="290" width="75" height="12" fill="#e9d9c9" stroke="#33443b" stroke-width="2"/>
+  <path d="M125 312H200" stroke="#c28a1e" stroke-width="3"/><path d="M125 306V318M200 306V318" stroke="#c28a1e" stroke-width="3"/>
+  <text x="162" y="336" font-family="sans-serif" font-size="15" fill="#c28a1e" text-anchor="middle" font-weight="700">窗台深度</text>
+  <path d="M80 296V470" stroke="#c28a1e" stroke-width="3" stroke-dasharray="6 5"/><path d="M70 296H90M70 470H90" stroke="#c28a1e" stroke-width="3"/>
+  <text x="66" y="390" font-family="sans-serif" font-size="15" fill="#c28a1e" font-weight="700" text-anchor="middle" transform="rotate(-90 66 390)">窗台離地高度</text>
+  <rect x="215" y="352" width="16" height="118" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/>
+  <rect x="231" y="400" width="300" height="70" rx="10" fill="#dce7df" stroke="#33443b" stroke-width="3"/>
+  <rect x="241" y="384" width="80" height="22" rx="8" fill="#fff" stroke="#33443b" stroke-width="2"/>
+  <path d="M231 352L300 330" stroke="#2f7d57" stroke-width="2"/>
+  <text x="305" y="330" font-family="sans-serif" font-size="15" fill="#2f7d57" text-anchor="start" font-weight="700">床頭板低於窗台、離窗 5～10 公分</text>
+  <text x="560" y="170" font-family="sans-serif" font-size="18" fill="#2f7d57" text-anchor="start" font-weight="700">窗台高又深（15 公分以上）：</text>
+  <text x="560" y="198" font-family="sans-serif" font-size="17" fill="#33443b" text-anchor="start">加低於窗台的床頭板，</text>
+  <text x="560" y="224" font-family="sans-serif" font-size="17" fill="#33443b" text-anchor="start">窗台可當床頭置物台。</text>
+  <text x="560" y="276" font-family="sans-serif" font-size="18" fill="#b54a46" text-anchor="start" font-weight="700">窗台淺又低、窗扇內開會碰床：</text>
+  <text x="560" y="304" font-family="sans-serif" font-size="17" fill="#33443b" text-anchor="start">直接移床，讓床頭靠實牆。</text>
+  <text x="480" y="520" font-family="sans-serif" font-size="17" fill="#4a5c52" text-anchor="middle">先量窗台離地高度與深度，這兩個數字決定能用哪一種做法。</text>
+
+</svg>

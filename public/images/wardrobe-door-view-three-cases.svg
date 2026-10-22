@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-labelledby="title desc">
+  <title id="title">開門見衣櫃三種情況圖解</title>
+  <desc id="desc">三張平面示意：開門見衣櫃正面時房門與櫃門開啟範圍可能重疊；看到衣櫃側面時側板像屏障通常沒問題；看到衣櫃角時夜間最容易撞到，可貼防撞條或轉向。</desc>
+  <rect width="960" height="400" rx="20" fill="#f7f4eb"/>
+  <rect x="30" y="80" width="270" height="220" fill="#fff" stroke="#33443b" stroke-width="5"/>
+  <path d="M60 80H120" stroke="#fff" stroke-width="9"/>
+  <path d="M60 80V140A60 60 0 0 0 120 80" fill="none" stroke="#806d50" stroke-width="3" stroke-dasharray="7 5"/>
+  <rect x="50" y="240" width="200" height="55" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/>
+  <path d="M50 240A60 60 0 0 1 110 180" fill="none" stroke="#806d50" stroke-width="3" stroke-dasharray="7 5"/>
+  <path d="M90 85L90 238" stroke="#b54a46" stroke-width="4" stroke-dasharray="10 7"/>
+  <text x="165.0" y="46" font-family="sans-serif" font-size="19" fill="#33443b" text-anchor="middle" font-weight="700">開門見衣櫃正面</text>
+  <circle cx="284" cy="40" r="16" fill="#b54a46"/><path d="M276 32l16 16M292 32l-16 16" stroke="#fff" stroke-width="4"/>
+  <text x="165.0" y="334" font-family="sans-serif" font-size="15" fill="#b54a46" text-anchor="middle" font-weight="700">房門與櫃門開啟範圍會重疊</text>
+  <rect x="340" y="80" width="270" height="220" fill="#fff" stroke="#33443b" stroke-width="5"/>
+  <path d="M370 80H430" stroke="#fff" stroke-width="9"/>
+  <path d="M370 80V140A60 60 0 0 0 430 80" fill="none" stroke="#806d50" stroke-width="3" stroke-dasharray="7 5"/>
+  <rect x="450" y="90" width="55" height="160" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/>
+  <path d="M400 85L400 290" stroke="#2f7d57" stroke-width="4" stroke-dasharray="10 7"/>
+  <text x="475.0" y="46" font-family="sans-serif" font-size="19" fill="#33443b" text-anchor="middle" font-weight="700">開門見衣櫃側面</text>
+  <circle cx="594" cy="40" r="16" fill="#2f7d57"/><path d="M585 40l6 7 12-14" stroke="#fff" stroke-width="4" fill="none"/>
+  <text x="475.0" y="334" font-family="sans-serif" font-size="15" fill="#2f7d57" text-anchor="middle" font-weight="700">側板像屏障，通常沒問題</text>
+  <rect x="650" y="80" width="270" height="220" fill="#fff" stroke="#33443b" stroke-width="5"/>
+  <path d="M680 80H740" stroke="#fff" stroke-width="9"/>
+  <path d="M680 80V140A60 60 0 0 0 740 80" fill="none" stroke="#806d50" stroke-width="3" stroke-dasharray="7 5"/>
+  <g transform="rotate(35 800 230)"><rect x="760" y="200" width="120" height="55" fill="#e9d9c9" stroke="#33443b" stroke-width="3"/></g>
+  <path d="M710 85L755 200" stroke="#b54a46" stroke-width="4" stroke-dasharray="10 7"/>
+  <text x="785.0" y="46" font-family="sans-serif" font-size="19" fill="#33443b" text-anchor="middle" font-weight="700">開門見衣櫃角</text>
+  <circle cx="904" cy="40" r="16" fill="#b54a46"/><path d="M896 32l16 16M912 32l-16 16" stroke="#fff" stroke-width="4"/>
+  <text x="785.0" y="334" font-family="sans-serif" font-size="15" fill="#b54a46" text-anchor="middle" font-weight="700">夜間最容易撞到：防撞條或轉向</text>
+  <text x="480" y="380" font-family="sans-serif" font-size="16" fill="#4a5c52" text-anchor="middle">正面看櫃門開啟範圍、側面看通行寬度（80 公分以上順手）、櫃角看夜間動線。</text>
+
+</svg>
