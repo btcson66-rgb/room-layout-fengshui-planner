@@ -11,6 +11,8 @@
  *   3. main 上最近一次 Deploy to Cloudflare Pages 必須是 success（前一天的發布沒壞）。
  *   4. 目標 PR mergeable（無衝突）。落後 main 時先同步 main 並在分支上重跑 Preflight。
  *   5. 目標 PR 目前 head 的必要 check（preflight／UIUX／Lighthouse Preview）都已完成且通過。
+ *      bot 同步後 GitHub 建立的 pull_request run 會停在 action_required（等待核准），
+ *      分支保護因此一直顯示必要 check「expected」；本腳本會核准這些 run，讓 check 正常產生。
  * 合併後主動觸發部署：用 GITHUB_TOKEN 合併不會產生 push 事件，部署 workflow 不會自己跑。
  *
  * 行事曆全部合併後本 workflow 只會回報 done；之後可以刪除這兩個檔案。
@@ -98,6 +100,22 @@ export function deployHealthy(runs, failedSteps = []) {
   };
 }
 
+/**
+ * 純函式：這個 head 上停在 action_required（等待核准）的 pull_request run。
+ *
+ * 2026-10-22～25 #136 連續四天 405「3 of 3 required status checks are expected」的根因：
+ * update-branch 由 github-actions[bot] 推送，GitHub 為它建立的 pull_request Preflight run
+ * 不會執行，而是停在 action_required。分支保護認的是這個 run 的 check，
+ * workflow_dispatch 補跑出來的同名綠勾不算數，所以 check 全綠也合併不了。
+ * 人推的同步（例如 10-20 #134／#135）不會停在 action_required，因此那兩天合併得進去。
+ */
+export function runsAwaitingApproval(runs, headSha) {
+  return runs.filter((run) => run.event === 'pull_request'
+    && run.head_sha === headSha
+    && run.status === 'completed'
+    && run.conclusion === 'action_required');
+}
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function main() {
@@ -174,8 +192,8 @@ async function main() {
   }
 
   // 5. 分支保護要求與 main 同步：前一天的合併讓下一個 PR 落後 main（mergeable_state=behind）。
-  //    用 API 把 main 合進 PR 分支；GITHUB_TOKEN 的 push 不會觸發 pull_request CI，
-  //    所以再以 workflow_dispatch 在 PR 分支跑 preflight.yml，讓新 head 產生必要 check。
+  //    用 API 把 main 合進 PR 分支。這個 push 來自 github-actions[bot]，GitHub 為它建立的
+  //    pull_request run 會停在 action_required；下面的 releaseApprovalHolds 負責核准它。
   if (pr.mergeable_state === 'behind') {
     const oldSha = pr.head.sha;
     await api(`/repos/${repo}/pulls/${pr.number}/update-branch`, {
@@ -190,11 +208,52 @@ async function main() {
       report(`#${pr.number} 同步 main 後 head 沒有更新，停止`);
       return finish(1);
     }
+    report(`#${pr.number} 已同步 main（${oldSha.slice(0, 7)} → ${pr.head.sha.slice(0, 7)}）`);
+  }
+
+  //    不論今天有沒有同步，head 上若有等待核准的 pull_request run 都先核准
+  //    （#136 的 57fd187 就是 10-22 同步後一直卡著的那一種）。
+  //    剛同步完的 run 可能還沒建立，最多等 2 分鐘。
+  const findHolds = async () => {
+    const { workflow_runs: runs } = await api(`/repos/${repo}/actions/runs?head_sha=${pr.head.sha}&event=pull_request&per_page=50`);
+    return { runs, holds: runsAwaitingApproval(runs, pr.head.sha) };
+  };
+  let { runs: prRuns, holds } = await findHolds();
+  for (let attempt = 0; !prRuns.length && attempt < 12; attempt += 1) {
+    await sleep(10_000);
+    ({ runs: prRuns, holds } = await findHolds());
+  }
+  let approvalFailed = false;
+  const approved = [];
+  for (const run of holds) {
+    try {
+      await api(`/repos/${repo}/actions/runs/${run.id}/approve`, { method: 'POST' });
+      approved.push(run);
+      report(`#${pr.number} 已核准等待中的 pull_request run：${run.html_url}`);
+    } catch (error) {
+      approvalFailed = true;
+      report(`#${pr.number} 無法核准 ${run.html_url}（${error.message}）`);
+    }
+  }
+  // 同一個 head 上可能已有 workflow_dispatch 補跑的舊綠勾，checksPassed 會直接放行；
+  // 但分支保護等的是剛核准的這個 run，所以要等它本身跑完且成功（最多 40 分鐘）。
+  for (const run of approved) {
+    let current = run;
+    for (let attempt = 0; attempt < 40; attempt += 1) {
+      await sleep(60_000);
+      current = await api(`/repos/${repo}/actions/runs/${run.id}`);
+      if (current.status === 'completed' && current.conclusion !== 'action_required') break;
+    }
+    report(`#${pr.number} 核准後的 run 結論：${current.status}／${current.conclusion}（${current.html_url}）`);
+    if (current.status !== 'completed' || current.conclusion !== 'success') return finish(1);
+  }
+  if (approvalFailed || !prRuns.length) {
+    // 沒有 pull_request run 可用時，退回舊做法：在分支上補跑 Preflight 讓 head 至少有 check 可判斷。
     await api(`/repos/${repo}/actions/workflows/${PREFLIGHT_WORKFLOW}/dispatches`, {
       method: 'POST',
       body: JSON.stringify({ ref: pr.head.ref }),
     });
-    report(`#${pr.number} 已同步 main（${oldSha.slice(0, 7)} → ${pr.head.sha.slice(0, 7)}），並在分支上觸發 Preflight`);
+    report(`#${pr.number} 已在分支上觸發 Preflight（workflow_dispatch）`);
   }
 
   // 6. 目標 PR 目前 head 的 CI（等待中的最多等 40 分鐘）。
@@ -208,6 +267,10 @@ async function main() {
   }
   report(`#${pr.number} CI（${pr.head.sha.slice(0, 7)}）：${checks.reason}`);
   if (!checks.ok) return finish(1);
+  if (approvalFailed) {
+    report(`#${pr.number} 的 pull_request run 仍在等待核准，分支保護會拒絕合併：請到 Actions 頁面按 Approve and run，或由人推一次同步`);
+    return finish(1);
+  }
 
   if (pr.draft) {
     await api('/graphql', {
