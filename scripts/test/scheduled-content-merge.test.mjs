@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { QUEUE, REQUIRED_CHECKS, checksPassed, dateIn, decideNext, deployHealthy } from '../scheduled-content-merge.mjs';
+import { QUEUE, REQUIRED_CHECKS, checksPassed, dateIn, decideNext, deployHealthy, runsAwaitingApproval } from '../scheduled-content-merge.mjs';
 
 const pick = ({ ok, pending }) => ({ ok, pending });
 
@@ -85,4 +85,18 @@ test('a failure only in the post-deploy Lighthouse gate does not stall the calen
 test('Taipei date conversion', () => {
   assert.equal(dateIn('Asia/Taipei', '2026-10-15T15:59:59Z'), '2026-10-15');
   assert.equal(dateIn('Asia/Taipei', '2026-10-15T16:00:00Z'), '2026-10-16');
+});
+
+test('finds pull_request runs held at action_required on the current head only', () => {
+  // 2026-10-22 #136: update-branch by github-actions[bot] left run 39734932882 at action_required,
+  // while the workflow_dispatch run on the same head succeeded but did not satisfy branch protection.
+  const head = '57fd18725268a1f4497e75bd2e18c9360a3b6e45';
+  const runs = [
+    { id: 39734936546, event: 'workflow_dispatch', head_sha: head, status: 'completed', conclusion: 'success' },
+    { id: 39734932882, event: 'pull_request', head_sha: head, status: 'completed', conclusion: 'action_required' },
+    { id: 38647266943, event: 'pull_request', head_sha: 'f8b0aa0', status: 'completed', conclusion: 'action_required' },
+    { id: 1, event: 'pull_request', head_sha: head, status: 'completed', conclusion: 'success' },
+  ];
+  assert.deepEqual(runsAwaitingApproval(runs, head).map((run) => run.id), [39734932882]);
+  assert.deepEqual(runsAwaitingApproval([], head), []);
 });
