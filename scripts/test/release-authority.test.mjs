@@ -3,10 +3,14 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { ROOMFENG_RELEASE_AUTHORITY } from '../release-authority.mjs';
 
-test('current release authority records the search-demand prune and preserves prior transitions', () => {
+test('current release authority records the demand consolidation and preserves prior transitions', () => {
   assert.deepEqual(ROOMFENG_RELEASE_AUTHORITY, {
-    buildPages: 1428,
+    buildPages: 524,
     sitemapUrls: 514,
+    demandConsolidation001: {
+      previousBuildPages: 1428,
+      redirectedBlogArticles: 904,
+    },
     searchDemandPrune001: {
       previousBuildPages: 1464,
       previousSitemapUrls: 1454,
