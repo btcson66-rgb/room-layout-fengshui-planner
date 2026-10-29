@@ -13,7 +13,7 @@ import { access, readFile, rename, writeFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { redirects, renderRedirectsFile } from '../src/data/redirects.mjs';
+import { CLOUDFLARE_STATIC_REDIRECT_LIMIT, redirects, renderRedirectsFile } from '../src/data/redirects.mjs';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 const distDirectory = join(projectRoot, 'dist');
@@ -29,6 +29,13 @@ const exists = async (path) => {
 };
 
 const outputPathForRoute = (route) => join(distDirectory, ...route.split('/').filter(Boolean), 'index.html');
+
+// Cloudflare Pages 超過上限的規則會被靜默忽略，網址就變回 404。
+if (redirects.length > CLOUDFLARE_STATIC_REDIRECT_LIMIT) {
+  throw new Error(
+    `[postbuild-redirects] ${redirects.length} rules exceed the Cloudflare Pages static limit of ${CLOUDFLARE_STATIC_REDIRECT_LIMIT}; extra rules would be silently ignored.`,
+  );
+}
 
 const seen = new Set();
 for (const entry of redirects) {
