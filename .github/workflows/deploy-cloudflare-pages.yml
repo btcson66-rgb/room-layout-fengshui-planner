@@ -182,11 +182,6 @@ jobs:
           ROOMFENG_LIVE_CRAWL_ORIGIN: https://roomfeng.win
           ROOMFENG_LIVE_CRAWL_EVIDENCE_DIR: release-evidence/live-crawl
 
-      - name: Run production Lighthouse gate (desktop and mobile)
-        run: npm run test:lighthouse:production
-        env:
-          ROOMFENG_LIGHTHOUSE_DIR: release-evidence/production-lighthouse
-
       - name: Run post-deploy production SEO parity gate
         run: npm run test:seo-production-parity
         env:
@@ -225,6 +220,15 @@ jobs:
           FABLE_OPS_OAUTH_CLIENT_JSON: ${{ secrets.FABLE_OPS_OAUTH_CLIENT_JSON }}
           FABLE_OPS_REFRESH_TOKEN: ${{ secrets.FABLE_OPS_REFRESH_TOKEN }}
           GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+
+      # 2026-10-25：Lighthouse 門檻原本排在 SEO parity／sitemap readback／GSC 提交之前。
+      # 它量的是 runner 上的實驗室 TBT（手機版長期在 185～214ms 間擺動，門檻 200ms），
+      # 同一個 commit 會隨機過或不過；10-23～25 連續 6 次紅燈都讓後面的 GSC 提交被 skipped。
+      # 移到最後：門檻照樣會讓 job 變紅、final verdict 照樣不寫，但不再擋掉與效能無關的發布後步驟。
+      - name: Run production Lighthouse gate (desktop and mobile)
+        run: npm run test:lighthouse:production
+        env:
+          ROOMFENG_LIGHTHOUSE_DIR: release-evidence/production-lighthouse
 
       - name: Write final release verdict
         run: node scripts/final-release-verdict.mjs
