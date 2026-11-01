@@ -51,6 +51,11 @@ for (const line of csv.split(/\r?\n/).slice(1)) {
 const contentRoot = path.join(root, 'src', 'content', 'blog');
 const slugs = (await fs.readdir(contentRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
 
+// GSC 匯出會持續列出已刪除、改 301 的舊文章（例如 2026-10-19 需求閘門合併的 904 篇）。
+// 它們不在 src/content/blog/，只算數字不進清單，否則 demand-held-sources-exist 會擋下。
+const slugSet = new Set(slugs);
+const redirectedInExport = [...metrics.keys()].filter((slug) => !slugSet.has(slug)).length;
+
 // 支柱文章：站內非文章頁、Hub 資料與 llms.txt 直接指名的 /zh/blog/<slug>/。
 const pinned = new Set();
 async function collectPins(dir) {
@@ -100,6 +105,7 @@ const summary = {
   pinned: [...pinned].filter((slug) => slugs.includes(slug)).length,
   keptClicksShare: pct(keptClicks, totalClicks),
   keptImpressionsShare: pct(keptImpressions, totalImpressions),
+  missingFromContentInExport: redirectedInExport,
 };
 
 const output = `// 由 scripts/gsc-demand-policy.mjs 產生，請勿手動編輯；重跑腳本更新。

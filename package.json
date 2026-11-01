@@ -51,6 +51,7 @@
   "type": "module",
   "dependencies": {
     "@astrojs/check": "^0.9.9",
+    "@astrojs/markdown-satteri": "0.3.8",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.2.8",
     "exceljs": "^4.4.0",

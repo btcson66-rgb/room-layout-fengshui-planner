@@ -17,7 +17,15 @@
  * 的 reviewReadyBlogSlugs 移除，再在這裡登記轉址。順序反了 preflight 會擋下來。
  */
 
+import { demandConsolidation } from './demandConsolidation.mjs';
+
 /** @typedef {{ from: string; to: string; note: string }} Redirect */
+
+/**
+ * Cloudflare Pages `_redirects` 的靜態規則上限是 2,000 條（另有 100 條動態）。
+ * 超過的規則會被靜默忽略，所以 postbuild 與測試都以此為硬上限。
+ */
+export const CLOUDFLARE_STATIC_REDIRECT_LIMIT = 2000;
 
 /** 橫樑（樑下床）系列：15 篇情境分頁合併回床位總指南。 */
 const beamBedRedirects = [
@@ -72,12 +80,24 @@ const languageRootRedirects = [
   { from: '/zh/', to: '/', note: '中文站首頁就是網站根目錄' },
 ];
 
+/**
+ * 2026-10-10 搜尋需求閘門暫停的 904 篇零需求模板文章：刪檔後各自 301 到語意最近的
+ * 保留文章（或分類 Hub）。對照表由 scripts/build-demand-consolidation.mjs 產生；
+ * 這批不搬內容的理由見 AGENTS.md §9b-2。
+ */
+const demandConsolidationRedirects = demandConsolidation.map((entry) => ({
+  from: `/zh/blog/${entry.slug}/`,
+  to: entry.to,
+  note: `2026-10-19 需求閘門合併（score ${entry.score}）`,
+}));
+
 /** @type {Redirect[]} */
 export const redirects = [
   ...beamBedRedirects,
   ...beamDeskRedirects,
   ...legacyToolRedirects,
   ...languageRootRedirects,
+  ...demandConsolidationRedirects,
 ];
 
 export const redirectSources = new Set(redirects.map((entry) => entry.from));

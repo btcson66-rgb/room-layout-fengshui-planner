@@ -5,8 +5,14 @@
  * provenance. Historical baselines remain in their original evidence files.
  */
 export const ROOMFENG_RELEASE_AUTHORITY = Object.freeze({
-  buildPages: 1428,
+  buildPages: 524,
   sitemapUrls: 514,
+  // 2026-10-19 需求閘門合併：下面暫停索引的 904 篇刪檔、改 301 到語意最近的保留文章
+  // （src/data/demandConsolidation.mjs），sitemap 不變。
+  demandConsolidation001: Object.freeze({
+    previousBuildPages: 1428,
+    redirectedBlogArticles: 904,
+  }),
   // 2026-10-10 搜尋需求閘門：904 篇 GSC 3 個月需求不足的文章改 noindex 並移出 sitemap，
   // 文章索引／分類分頁因此少 36 頁。清單見 src/data/searchDemandPolicy.mjs。
   searchDemandPrune001: Object.freeze({

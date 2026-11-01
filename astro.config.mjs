@@ -3,6 +3,8 @@ import sitemap from '@astrojs/sitemap';
 import { fileURLToPath } from 'node:url';
 import { reviewReadyBlogSlugs, reviewReadyCategorySlugs } from './src/data/contentQuality.mjs';
 import { createSitemapLastmodLookup } from './scripts/sitemap-lastmod.mjs';
+import { satteri } from '@astrojs/markdown-satteri';
+import { redirectLinksPlugin } from './src/lib/remark-redirect-links.mjs';
 
 const normalizePath = (pathname) => (pathname.endsWith('/') ? pathname : `${pathname}/`);
 const lastmodForUrl = createSitemapLastmodLookup(fileURLToPath(new URL('.', import.meta.url)));
@@ -17,6 +19,11 @@ export default defineConfig({
     // so the production gate measures the rendered candidate, not a CSS
     // network race.
     inlineStylesheets: 'always',
+  },
+  markdown: {
+    // 內文連到已 301 的舊文章時，build 時直接改連最終頁面（見 src/lib/remark-redirect-links.mjs）。
+    // Astro 7 預設處理器是 Sätteri，remarkPlugins 已不適用，外掛改掛在 mdastPlugins。
+    processor: satteri({ mdastPlugins: [redirectLinksPlugin()] }),
   },
   integrations: [
     sitemap({
