@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { reviewReadyBlogSlugs, reviewReadyCategorySlugs } from '../src/data/contentQuality.mjs';
 import { demandHeldBlogSlugs } from '../src/data/searchDemandPolicy.mjs';
-import { redirects } from '../src/data/redirects.mjs';
+import { CLOUDFLARE_STATIC_REDIRECT_LIMIT, redirects } from '../src/data/redirects.mjs';
 
 const root = process.cwd();
 const contentRoot = path.join(root, 'src', 'content', 'blog');
@@ -5236,6 +5236,32 @@ for (const entry of redirects) {
   check(`redirect-target-exists:${entry.to}`, distRoutes.has(entry.to), 'redirect target is missing from dist');
   check(`redirect-not-home:${entry.from}`, entry.from.startsWith('/zh/blog/') ? entry.to !== '/' : true, 'merged articles must not all land on the home page');
 }
+check('redirects:within-cloudflare-limit', redirects.length <= CLOUDFLARE_STATIC_REDIRECT_LIMIT, `${redirects.length} / ${CLOUDFLARE_STATIC_REDIRECT_LIMIT}`);
+// 合併文章的目標必須是可索引的保留文章：301 到 noindex 頁等於把權重丟掉。
+for (const entry of redirects) {
+  const targetSlug = entry.to.match(/^\/zh\/blog\/([^/]+)\/$/)?.[1];
+  if (targetSlug) check(`redirect-target-indexable:${entry.to}`, reviewReadyBlogSlugs.has(targetSlug), 'redirect target must be a review-ready article');
+}
+// 站內連結不得再指向 301 來源：多一跳浪費爬取，也讓審核員一直撞到轉址。
+// Markdown 內文由 src/lib/remark-redirect-links.mjs 在 build 時改寫；這裡檢查最終 HTML，
+// 元件、Hub 資料、relatedPosts 任何一處漏改都會被擋下。
+const redirectSourceSet = new Set(redirects.map((entry) => entry.from));
+const hrefsToRedirectSources = new Map();
+for (const file of htmlFiles) {
+  const html = await fs.readFile(file, 'utf8');
+  for (const match of html.matchAll(/href="(?:https:\/\/roomfeng\.win)?(\/[^"]*)"/g)) {
+    const href = match[1].split(/[?#]/)[0];
+    const normalized = href.endsWith('/') ? href : `${href}/`;
+    if (!redirectSourceSet.has(normalized)) continue;
+    const sources = hrefsToRedirectSources.get(normalized) ?? new Set();
+    sources.add(toPosix(path.relative(distRoot, file)));
+    hrefsToRedirectSources.set(normalized, sources);
+  }
+}
+for (const [href, sources] of hrefsToRedirectSources) {
+  check(`href-to-redirect-source:${href}`, false, `${sources.size} page(s), e.g. ${[...sources][0]}`);
+}
+check('no-href-to-redirect-source', hrefsToRedirectSources.size === 0, hrefsToRedirectSources.size);
 
 // --- 工具轉換 -----------------------------------------------------------
 // RoomFeng 的差異化是「讀者可以真的規劃房間」。每一篇公開文章都必須帶著
