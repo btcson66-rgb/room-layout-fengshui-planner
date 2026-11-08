@@ -123,7 +123,7 @@ const relatedArticles = [
 
       <MovingOsContextCta locale="zh-TW" placement="zh_room_planner" heading="平面圖只是第一步。" copy="如果你還要管理哪些家具要帶、搬入順序、紙箱、預算與搬家當天安排，可以用 Moving & New Home OS 把整次搬家接著規劃下去。" label="建立我的搬家專案" />
 
-      <section class="card" aria-labelledby="size-reference-heading">
+      <section class="card size-reference-card" aria-labelledby="size-reference-heading">
         <h2 id="size-reference-heading">輸入前先備好的家具尺寸與留寬（公分）</h2>
         <p>工具會依你輸入的尺寸檢查走道與門片遮擋。下表是常見的起始數字，放進工具前請改成實際家具的外徑。走道與門片的數字是規劃抓法，不是法規值。</p>
         <div class="table-scroll">
@@ -236,6 +236,13 @@ const relatedArticles = [
     border-radius: 50%;
     background: var(--color-primary-soft);
     font-size: 1.2rem;
+  }
+
+  /* Grid items default to min-width:auto, so the table's min-content width
+     would widen the whole .page-grid track on phones; let the card shrink and
+     the table scroll inside it instead. */
+  .size-reference-card {
+    min-width: 0;
   }
 
   .table-scroll {
