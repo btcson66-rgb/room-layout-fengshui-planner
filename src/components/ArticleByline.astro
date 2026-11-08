@@ -1,0 +1,35 @@
+---
+import { TEAM_AUTHOR_NAME, TEAM_AUTHOR_NAME_EN, TEAM_AUTHOR_PATH } from '../lib/articleSchema';
+
+interface Props {
+  lang: 'zh' | 'en';
+  datePublished: string;
+  dateModified: string;
+}
+
+const { lang, datePublished, dateModified } = Astro.props;
+const fmt = (iso: string) =>
+  new Intl.DateTimeFormat(lang === 'zh' ? 'zh-TW' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${iso}T00:00:00Z`));
+---
+
+{lang === 'zh' ? (
+  <p class="byline article-byline">
+    作者：<a rel="author" href={TEAM_AUTHOR_PATH}>{TEAM_AUTHOR_NAME}</a> ·
+    發布時間：<time datetime={datePublished}>{fmt(datePublished)}</time> ·
+    更新時間：<time datetime={dateModified}>{fmt(dateModified)}</time>
+  </p>
+) : (
+  <p class="byline article-byline">
+    By <a rel="author" href={TEAM_AUTHOR_PATH}>{TEAM_AUTHOR_NAME_EN}</a> ·
+    Published <time datetime={datePublished}>{fmt(datePublished)}</time> ·
+    Updated <time datetime={dateModified}>{fmt(dateModified)}</time>
+  </p>
+)}
+
+<style>
+  .article-byline {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+    margin: 0.5rem 0 0;
+  }
+</style>

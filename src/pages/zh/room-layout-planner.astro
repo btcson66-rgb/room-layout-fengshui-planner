@@ -5,6 +5,8 @@ import AffiliateRecs from '../../components/AffiliateRecs.astro';
 import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
+import ArticleByline from '../../components/ArticleByline.astro';
+import { techArticleSchema } from '../../lib/articleSchema';
 import '../../styles/planner.css';
 
 const title = '房間家具配置工具｜房間平面圖與風水格局參考';
@@ -12,7 +14,10 @@ const description = '免費線上房間家具配置工具，可拖曳床、書�
 const canonical = '/zh/room-layout-planner/';
 const alternates = { zh: '/zh/room-layout-planner/', en: '/en/room-layout-planner/' };
 const siteUrl = 'https://roomfeng.win';
+const datePublished = '2026-08-25';
+const dateModified = '2026-11-08';
 const jsonLd = [
+  techArticleSchema({ path: canonical, headline: title, description, datePublished, dateModified, lang: 'zh' }),
   {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -68,6 +73,7 @@ const relatedArticles = [
         <p class="lead">
           輸入房間長寬，拖曳家具放入平面圖，確認動線與門口，再匯出 PNG / PDF 或取得規劃建議。
         </p>
+        <ArticleByline lang="zh" datePublished={datePublished} dateModified={dateModified} />
         <ol class="step-flow" aria-label="使用步驟">
           <li class="step-flow-item" aria-current="step">
             <span class="step-num">1</span>
@@ -116,6 +122,27 @@ const relatedArticles = [
       </section>
 
       <MovingOsContextCta locale="zh-TW" placement="zh_room_planner" heading="平面圖只是第一步。" copy="如果你還要管理哪些家具要帶、搬入順序、紙箱、預算與搬家當天安排，可以用 Moving & New Home OS 把整次搬家接著規劃下去。" label="建立我的搬家專案" />
+
+      <section class="card size-reference-card" aria-labelledby="size-reference-heading">
+        <h2 id="size-reference-heading">輸入前先備好的家具尺寸與留寬（公分）</h2>
+        <p>工具會依你輸入的尺寸檢查走道與門片遮擋。下表是常見的起始數字，放進工具前請改成實際家具的外徑。走道與門片的數字是規劃抓法，不是法規值。</p>
+        <div class="table-scroll">
+          <table class="size-reference-table">
+            <thead>
+              <tr><th scope="col">項目</th><th scope="col">常見尺寸（公分）</th><th scope="col">工具檢查時要留的寬度</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">標準雙人床</th><td>152 × 188</td><td>單側上下床走道 60～80</td></tr>
+              <tr><th scope="row">單人加大床</th><td>106 × 188</td><td>單側走道 60</td></tr>
+              <tr><th scope="row">衣櫃</th><td>深 60，寬 120～180</td><td>櫃前站位 60～80；開門式再加門片弧線</td></tr>
+              <tr><th scope="row">書桌</th><td>120 × 60</td><td>椅子後退至少 60</td></tr>
+              <tr><th scope="row">房門（單開）</th><td>寬 80～90</td><td>門片掃過的 80～90 公分半徑內不放家具</td></tr>
+              <tr><th scope="row">主要走道</th><td>–</td><td>最窄處建議 60，工具預設以約 60 提示過窄</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>面積也可以先心算：1 坪約 3.3058 平方公尺，5 坪約 16.5 平方公尺。想知道某個坪數大概是幾公分，請看 <a href="/zh/blog/ping-size-conversion-guide/">1～20 坪長寬公分換算速查表</a>；5 坪房間的完整配置算法見 <a href="/zh/blog/tiny-room-layout-under-5-ping/">5 坪多大與配置方法</a>。</p>
+      </section>
 
       <section class="card" aria-labelledby="related-articles-heading">
         <h2 id="related-articles-heading">相關文章</h2>
@@ -209,6 +236,35 @@ const relatedArticles = [
     border-radius: 50%;
     background: var(--color-primary-soft);
     font-size: 1.2rem;
+  }
+
+  /* Grid items default to min-width:auto, so the table's min-content width
+     would widen the whole .page-grid track on phones; let the card shrink and
+     the table scroll inside it instead. */
+  .size-reference-card {
+    min-width: 0;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  .size-reference-table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+  }
+
+  .size-reference-table th,
+  .size-reference-table td {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .size-reference-table thead {
+    background: var(--color-surface-muted, #f7f6f3);
   }
 
   .disclaimer-note {

@@ -4,6 +4,8 @@ import Faq from '../../components/Faq.astro';
 import RelatedLinks from '../../components/RelatedLinks.astro';
 import MovingOsContextCta from '../../components/MovingOsContextCta.astro';
 import { siteUrl } from '../../data/site';
+import ArticleByline from '../../components/ArticleByline.astro';
+import { techArticleSchema } from '../../lib/articleSchema';
 
 const title = '5坪房間設計範本｜3～8坪睡眠、讀書、收納配置';
 const description = '5坪房間怎麼設計？選擇 3、4、5、6、8 坪與睡眠、讀書、收納或上下舖需求，取得 2 種配置範本、走道寬度、家具尺寸上限與常見錯誤。';
@@ -15,7 +17,10 @@ const faq = [
   { q: '5 坪房間真的放得下床＋書桌嗎？', a: '依本頁的假設比例（約 3.17 × 5.2 公尺），單人床加一張書桌通常算得出可行的走道寬度，但這是簡化試算，沒有算入樑柱、插座與門窗位置；建議把結果帶進房間平面圖工具，放入實際門窗再次確認。' },
   { q: '3 坪房間適合放上下舖嗎？', a: '數字上可能算出及格的走道寬度，但 3 坪（約 9.9 平方公尺）要同時容納兩人日常生活相當緊繃，通常只夠放床架和一套共用收納，缺乏個人分區與隱私。若條件允許，建議至少抓 5～6 坪再考慮兩人共用房間，本頁在這個組合下也會特別提示。' },
 ];
+const datePublished = '2026-09-07';
+const dateModified = '2026-11-08';
 const jsonLd = [
+  techArticleSchema({ path: canonical, headline: title, description, datePublished, dateModified, lang: 'zh' }),
   {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -50,6 +55,7 @@ const relatedLinks = [
     <div class="container page-grid">
       <header class="card">
         <h1>坪數房間配置範本庫</h1>
+        <ArticleByline lang="zh" datePublished={datePublished} dateModified={dateModified} />
         <p class="lead">選擇房間坪數與主要需求組合，立即取得 2 種配置範本：走道最小寬度、家具尺寸上限與常見錯誤都會依你的坪數算出來，不是同一套文字套用到所有大小。</p>
         <p><strong>速答：</strong>1 坪約等於 3.3058 平方公尺，所以 5坪房間約為 16.5 平方公尺；先保留約 60 公分主要走道，再決定床、書桌與衣櫃深度。坪數只能估面積，正式配置仍要量室內淨長寬，因為同樣 5 坪的方正房與狹長房會有不同擺法。</p>
         <p>房間規劃最常見的困擾，是搜尋到的建議都用「你的房間夠大」當前提。這個工具反過來做：先固定坪數與需求，再老實算出在這個大小下，家具能放到多深、走道會剩多少、哪種配置比較合理。結果仍是簡化試算，正式決定前請用 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a> 放入實際門窗與家具細調。</p>
@@ -132,6 +138,11 @@ const relatedLinks = [
       <article class="card">
         <h2>配置範本、收納與家具尺寸工具怎麼分工</h2>
         <p>本頁先回答「同一坪數有哪些配置起點」；若你要整理小房間收納區與歸位方式，使用 <a href="/zh/small-room-storage-planner/">小房間收納規劃工具</a>；若你已看中床、桌或衣櫃，則用 <a href="/zh/room-furniture-size-advisor/">房間家具尺寸建議工具</a> 檢查單件家具上限。最後再把選定版本放進 <a href="/zh/room-layout-planner/">房間佈局規劃工具</a>，加入真實門窗位置完成細調。</p>
+      </article>
+
+      <article class="card" aria-labelledby="sources-heading">
+        <h2 id="sources-heading">資料來源與適用範圍</h2>
+        <p>坪數換算採 1 坪約 3.3058 平方公尺；60 公分走道與家具深度是規劃抓法，不是法規值。逃生通道不應堆積雜物，可參考中華民國內政部消防署的公開說明：<a href="https://www.nfa.gov.tw/cht/index.php?article_id=11657&code=list&flag=detail&ids=1468" rel="noopener">消防署：樓梯間等堆積雜物，逃生避難原則</a>（查閱日期 2026-11-08）。試算結果不取代建築、消防、無障礙或施工的專業意見。</p>
       </article>
 
       <MovingOsContextCta locale="zh-TW" placement="zh_room_size_templates" heading="範本選好之後，還有整次搬家要管理" copy="範本只能提供房型起點；如果你要決定家具帶不帶、紙箱怎麼分、預算怎麼追與搬家日先做什麼，可把實際尺寸接到完整搬家專案。" label="接著規劃整次搬家" />
