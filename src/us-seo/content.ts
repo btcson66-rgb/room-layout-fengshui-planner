@@ -25,6 +25,17 @@ export interface GuidePageData {
   ctaLabel?: string;
   squareFeet?: number;
   footprintNote?: string;
+  /** Optional imperial dimension budget (table rows plus worked dimension-chain checks). */
+  dimensionBudget?: {
+    heading: string;
+    intro: string;
+    rows: Array<{ item: string; size: string; note: string }>;
+    checks: string[];
+  };
+  /** Real first-publish date (YYYY-MM-DD). Defaults to the 2026-09-16 US expansion launch. */
+  datePublished?: string;
+  /** Last substantive change (YYYY-MM-DD). Defaults to 2026-10-10 (last content revision). */
+  dateModified?: string;
 }
 
 export interface FengShuiPageData {
@@ -330,6 +341,23 @@ const studioSpecs: Array<Omit<StudioPageData, 'plans'>> = [
     ],
     squareFeet: 350,
     footprintNote: '14 × 25 ft and 17.5 × 20 ft are illustrative footprint studies; they are not listing or market averages.',
+    dateModified: '2026-11-08',
+    dimensionBudget: {
+      heading: 'Dimension budget for the 14 × 25 ft footprint',
+      intro: 'Use these example sizes as a checklist, then replace them with the outside dimensions of the furniture you actually plan to buy. The walkway figures are planning targets, not code minimums.',
+      rows: [
+        { item: 'Queen mattress', size: '60 × 80 in (5 × 6.7 ft, about 33 sq ft)', note: 'The frame is usually larger than the mattress, so measure the outside of the frame.' },
+        { item: 'Walkway beside the bed and along the main route', size: '30–36 in', note: 'Aim for 36 in on the side used to enter the bed and where the entry route passes.' },
+        { item: 'Loveseat', size: 'about 58 × 36 in (example)', note: 'A compact loveseat leaves more floor than a 90 in sofa; check the delivery path separately.' },
+        { item: 'Desk', size: '48 × 24 in, plus about 30 in chair pullback', note: 'The pullback zone can overlap a walkway only if the route stays at least 30 in clear.' },
+        { item: 'Entry door', size: '32–36 in wide', note: 'Keep the door swing arc clear of the bed, sofa and desk chair.' },
+      ],
+      checks: [
+        'Across the 14 ft (168 in) width: Queen 60 in + walkway 36 in + loveseat depth 36 in = 132 in, which leaves 36 in.',
+        'Along the 25 ft (300 in) length: bed 80 in + foot-of-bed route 36 in + desk depth 24 in + chair pullback 30 in = 170 in, which leaves 130 in (about 10.8 ft) for the entry, kitchen and bath blocks.',
+        'Furniture footprint: Queen 33.3 sq ft + loveseat 14.5 sq ft + desk 8.0 sq ft = about 55.8 sq ft, or 16% of 350 sq ft, before counting walkways.',
+      ],
+    },
   },
   {
     slug: '400-sq-ft-studio-apartment-layout',
@@ -396,6 +424,23 @@ const studioSpecs: Array<Omit<StudioPageData, 'plans'>> = [
     ],
     squareFeet: 450,
     footprintNote: '15 × 30 ft and 18 × 25 ft are illustrative footprint studies; they are not listing or market averages.',
+    dateModified: '2026-11-08',
+    dimensionBudget: {
+      heading: 'Dimension budget for the 15 × 30 ft footprint',
+      intro: 'These example sizes show how much of 450 sq ft the main furniture uses. Replace them with the outside dimensions of your own furniture; the walkway figures are planning targets, not code minimums.',
+      rows: [
+        { item: 'Queen mattress', size: '60 × 80 in (about 33 sq ft)', note: 'Measure the outside of the frame, which is often larger than the mattress.' },
+        { item: 'Walkway beside the bed and along the main route', size: '30–36 in', note: 'Use 36 in where guests and the kitchen route pass the bed.' },
+        { item: 'Apartment sofa', size: 'about 84 × 36 in (about 21 sq ft)', note: 'Keep its depth from pinching the route between the entrance and the kitchen.' },
+        { item: 'Four-seat dining table', size: '30 × 48 in, plus 30–36 in chair pullback on each side', note: 'The seating zone is about 90–102 in by 108–120 in (7.5–8.5 ft by 9–10 ft).' },
+        { item: 'Desk', size: '48 × 24 in, plus about 30 in chair pullback', note: 'Check daylight and whether the chair blocks the guest route.' },
+      ],
+      checks: [
+        'Across the 15 ft (180 in) width: Queen 60 in + walkway 36 in + sofa depth 36 in = 132 in, which leaves 48 in.',
+        'Along the 30 ft (360 in) length: bed 80 in + foot-of-bed route 36 in + sofa width 84 in = 200 in, which leaves 160 in (about 13.3 ft) for the entry, kitchen, bath and dining blocks.',
+        'Furniture footprint: Queen 33.3 sq ft + sofa 21 sq ft + desk 8 sq ft + dining table 10 sq ft = about 72.3 sq ft, or 16% of 450 sq ft, before chair pullback and walkways.',
+      ],
+    },
   },
   {
     slug: '500-sq-ft-studio-apartment-layout',
