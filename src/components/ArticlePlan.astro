@@ -1,0 +1,99 @@
+---
+// 文章內的平面示意圖：資料來自文章 frontmatter 的 `plans`（見 src/content.config.ts），
+// 由 src/components/ArticleH2.astro 在對應的 H2 之後渲染。
+import MeasuredPlan from './MeasuredPlan.astro';
+
+interface Props {
+  plan: any;
+}
+
+const { plan } = Astro.props;
+---
+
+<figure class="article-plan" data-plan-id={plan.id}>
+  <MeasuredPlan
+    roomWidthCm={plan.roomWidthCm}
+    roomLengthCm={plan.roomLengthCm}
+    ariaLabel={plan.ariaLabel}
+    furniture={plan.furniture}
+    zones={plan.zones}
+    route={plan.route}
+    openings={plan.openings}
+    wallItems={plan.wallItems}
+    sightLines={plan.sightLines}
+    article={{ id: plan.id }}
+  />
+  <figcaption>
+    <strong>圖：</strong>{plan.caption}
+    <span class="article-plan-note">示意範例：房間 {plan.roomWidthCm} × {plan.roomLengthCm} 公分，圖面依比例繪製；不是實際量測的空間。</span>
+  </figcaption>
+</figure>
+
+<style>
+  .article-plan {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 34rem;
+    min-width: 0;
+    margin: var(--space-4) auto;
+    padding: var(--space-3);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: #f7faf8;
+  }
+
+  .article-plan :global(svg.measured-plan-article) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .article-plan :global(.measured-room-boundary) { fill: #fff; stroke: var(--color-primary-strong); stroke-width: 3; }
+  .article-plan :global(.measured-furniture rect) { fill: #dce8e1; stroke: var(--color-primary-strong); stroke-width: 2; }
+  .article-plan :global(.measured-furniture.desk rect) { fill: #e5ece8; stroke: var(--color-sage); }
+  .article-plan :global(.measured-furniture.storage rect) { fill: #ecebe3; stroke: var(--color-accent); }
+  .article-plan :global(.measured-zone rect) { fill: rgba(82, 106, 93, .06); stroke: var(--color-border); stroke-width: 1.5; stroke-dasharray: 8 6; }
+  .article-plan :global(.measured-zone.avoid rect) { fill: rgba(176, 74, 58, .08); stroke: #b04a3a; }
+  .article-plan :global(.measured-hatch-line) { stroke: rgba(176, 74, 58, .35); stroke-width: 2; }
+  .article-plan :global(.measured-route) { fill: none; stroke: var(--color-primary); stroke-width: 5; stroke-dasharray: 14 10; }
+  .article-plan :global(.measured-opening-gap) { stroke: #fff; stroke-width: 6; }
+  .article-plan :global(.measured-door-leaf) { stroke: var(--color-primary-strong); stroke-width: 3; }
+  .article-plan :global(.measured-door-arc) { fill: none; stroke: var(--color-muted); stroke-width: 1.5; stroke-dasharray: 5 4; }
+  .article-plan :global(.measured-window-line) { stroke: #4f8fa8; stroke-width: 5; }
+  .article-plan :global(.measured-wall-item rect) { fill: var(--color-accent); stroke: var(--color-accent); stroke-width: 1; }
+  .article-plan :global(.measured-sight polyline) { fill: none; stroke: #b04a3a; stroke-width: 2.5; stroke-dasharray: 9 6; }
+  .article-plan :global(.measured-arrow-head) { fill: #b04a3a; }
+
+  .article-plan :global(text) {
+    fill: var(--color-text);
+    font: 700 var(--plan-font, 12px) var(--font-sans);
+    paint-order: stroke;
+    stroke: #fff;
+    stroke-width: 3px;
+    stroke-linejoin: round;
+  }
+
+  .article-plan :global(.measured-dimension-label) { fill: var(--color-primary-strong); stroke: none; }
+  .article-plan :global(.measured-furniture-size) { fill: var(--color-muted); font-weight: 600; }
+  .article-plan :global(.measured-zone.avoid text) { fill: #8a3426; }
+  .article-plan :global(.measured-sight text) { fill: #8a3426; }
+  .article-plan :global(.measured-wall-item text) { fill: #6d521f; }
+  .article-plan :global(.measured-opening-label) { fill: var(--color-muted); }
+
+  .article-plan figcaption {
+    margin-top: var(--space-2);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .article-plan-note {
+    display: block;
+    color: var(--color-muted);
+    font-size: var(--text-xs);
+  }
+</style>

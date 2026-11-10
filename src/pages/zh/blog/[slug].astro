@@ -5,6 +5,7 @@ import AdSlot from '../../../components/AdSlot.astro';
 import NewsletterSignup from '../../../components/NewsletterSignup.astro';
 import RelatedLinks from '../../../components/RelatedLinks.astro';
 import AffiliateRecs from '../../../components/AffiliateRecs.astro';
+import ArticleBody from '../../../components/ArticleBody.astro';
 import PlannerCta from '../../../components/PlannerCta.astro';
 import { hubContent } from '../../../data/hubs';
 import { isReviewReadyBlogSlug, reviewReadyCategorySlugs } from '../../../data/contentQuality.mjs';
@@ -17,6 +18,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+// 帶有平面示意圖的文章：由 ArticleBody 在錨點 H2 之後渲染（見該元件說明）。
+const articlePlans = post.data.plans ?? [];
 const canonical = `/zh/blog/${post.id}/`;
 const category = categoryMeta[post.data.category];
 const reviewReady = !post.data.noindex && isReviewReadyBlogSlug(post.id);
@@ -208,7 +211,7 @@ if (post.data.howToSteps.length > 0) {
       {reviewReady && <AdSlot id="zh-blog-top" placement="zh-blog-top" />}
 
       <div class="card article-body">
-        <Content />
+        <ArticleBody plans={articlePlans} slug={post.id}><Content /></ArticleBody>
       </div>
 
       <PlannerCta preset={plannerPreset} text={plannerCtaText} />
@@ -244,6 +247,10 @@ if (post.data.howToSteps.length > 0) {
 
   .article-body :global(li) {
     margin-bottom: var(--space-2);
+  }
+
+  .article-body :global(figure) {
+    min-width: 0;
   }
 
   .article-body :global(table) {

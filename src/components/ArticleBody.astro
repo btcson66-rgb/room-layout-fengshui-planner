@@ -1,0 +1,51 @@
+---
+// 文章內文容器。沒有 `plans` 的文章原樣輸出；有的話，在 frontmatter `plans[].after`
+// 指定的 H2 之後（該段第一個段落之後）插入 <ArticlePlan> 示意圖。
+// Astro 7 的 Sätteri 處理器不支援 Markdown 的 `components` 覆寫，所以在渲染後的 HTML 上定位。
+// 找不到錨點 H2 時直接丟錯讓 build 失敗，圖不會靜默消失。
+import ArticlePlan from './ArticlePlan.astro';
+
+interface Props {
+  plans?: any[];
+  slug: string;
+}
+
+const { plans = [], slug } = Astro.props;
+let html: string = await Astro.slots.render('default');
+
+const decode = (value: string) =>
+  value
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .trim();
+
+const insertions: Array<{ at: number; planId: string }> = [];
+for (const plan of plans) {
+  const headings = [...html.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/g)].filter((match) => decode(match[1]) === plan.after.trim());
+  if (headings.length !== 1) {
+    throw new Error(`[article-plans] ${slug}: plan "${plan.id}" anchor H2 "${plan.after}" matched ${headings.length} headings (need exactly 1)`);
+  }
+  const headingEnd = (headings[0].index ?? 0) + headings[0][0].length;
+  const tail = html.slice(headingEnd);
+  const firstParagraph = tail.match(/^\s*<p\b[^>]*>[\s\S]*?<\/p>/);
+  insertions.push({ at: headingEnd + (firstParagraph ? firstParagraph[0].length : 0), planId: plan.id });
+}
+
+// 由後往前切，位置才不會位移。
+const ordered = [...insertions].sort((a, b) => a.at - b.at);
+const chunks: Array<{ html: string; planId?: string }> = [];
+let cursor = 0;
+for (const insertion of ordered) {
+  chunks.push({ html: html.slice(cursor, insertion.at) });
+  chunks.push({ html: '', planId: insertion.planId });
+  cursor = insertion.at;
+}
+chunks.push({ html: html.slice(cursor) });
+const planById = new Map(plans.map((plan: any) => [plan.id, plan]));
+---
+
+{chunks.map((chunk) => (chunk.planId ? <ArticlePlan plan={planById.get(chunk.planId)} /> : <Fragment set:html={chunk.html} />))}
