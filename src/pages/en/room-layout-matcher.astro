@@ -8,12 +8,21 @@ const description = 'Try a free, local-first matcher preview with real room dime
 const canonical = '/en/room-layout-matcher/';
 const sampleIds = ['BR-SQ-001', 'BR-1012-001', 'BR-MN-001', 'BR-N-001', 'ST-MICRO-001', 'ST-SMALL-001'];
 const samples = sampleIds.map((id) => approvedLayouts.find((layout) => layout.id === id)).filter((layout): layout is (typeof approvedLayouts)[number] => Boolean(layout));
+const familyCount = new Set(approvedLayouts.map((layout) => layout.family)).size;
+const areasSqm = approvedLayouts.map((layout) => layout.areaMm2 / 1_000_000);
+const minSqm = Math.min(...areasSqm).toFixed(1);
+const maxSqm = Math.max(...areasSqm).toFixed(1);
 const jsonLd = [{ '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'DesignApplication', operatingSystem: 'Any', url: `https://roomfeng.win${canonical}`, description, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://roomfeng.win/en/' }, { '@type': 'ListItem', position: 2, name: 'Room layout matcher', item: `https://roomfeng.win${canonical}` }] }];
 ---
 <Layout title={title} description={description} canonical={canonical} lang="en" alternates={{ en: canonical, zh: '/zh/room-layout-matcher/' }} jsonLd={jsonLd} pageType="tool" showAffiliateRecs={false}>
   <section class="section"><div class="container page-grid">
     <header><p class="layout-sales-kicker">ROOMFENG / FREE PREVIEW</p><h1>What are you trying to fit?</h1><p class="lead">Enter the basics and get one complete, dimension-validated starting point. The preview is local-first, needs no signup, and uses the same real layout records as Layout Vault.</p><p>Want every matching strategy, detailed clearances, comparison and Planner handoff? <a href="/en/small-space-layout-vault/">See Layout Vault</a>.</p></header>
     <LayoutVaultPreview layouts={samples} locale="en" salesHref="/en/small-space-layout-vault/" />
+    <section class="card" aria-labelledby="matcher-how"><h2 id="matcher-how">How the matching works</h2>
+      <p>The library holds {approvedLayouts.length} reviewed layouts in {familyCount} room families, from {minSqm} m² to {maxSqm} m². Each layout is a fixed rectangle; the matcher never scales or stretches one. A layout only counts as a match when both its room edges fit inside the dimensions you enter.</p>
+      <p>Matches are then ranked by how closely the layout fills your room, whether the furniture types you ticked appear in it, your stated priorities and the room shape. Furniture a layout does not include, and the trade-offs it carries, are listed in the result rather than hidden.</p>
+      <p>A result is a planning starting point, not a construction drawing and not a guarantee of fit: openings are template assumptions and furniture uses common sizes, so redraw your measured doors, windows and furniture in the planner. To see how one room size plays out first, read the guides for <a href="/en/layout-guides/3x3m-bedroom-layout/">3 × 3 m</a>, <a href="/en/layout-guides/3x3-6m-bedroom-layout/">3 × 3.6 m</a>, <a href="/en/layout-guides/narrow-bedroom-layout/">narrow rooms</a>, <a href="/en/layout-guides/10x10-bedroom-layout/">10 × 10 ft</a>, <a href="/en/layout-guides/10x12-bedroom-queen-desk/">10 × 12 ft</a> or a <a href="/en/layout-guides/300-sq-ft-studio-layout/">300 sq ft studio</a>.</p>
+    </section>
     <p><a href="/en/room-layout-planner/">Open the free RoomFeng Planner</a> when you are ready to add your measured doors, windows and furniture.</p>
   </div></section>
 </Layout>

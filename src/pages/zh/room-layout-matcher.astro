@@ -8,12 +8,22 @@ const description = '輸入房間尺寸、床型、必要家具與優先順序�
 const canonical = '/zh/room-layout-matcher/';
 const sampleIds = ['BR-SQ-001', 'BR-1012-001', 'BR-MN-001', 'BR-N-001', 'ST-MICRO-001', 'ST-SMALL-001'];
 const samples = sampleIds.map((id) => approvedLayouts.find((layout) => layout.id === id)).filter((layout): layout is (typeof approvedLayouts)[number] => Boolean(layout));
+const familyCount = new Set(approvedLayouts.map((layout) => layout.family)).size;
+const areasSqm = approvedLayouts.map((layout) => layout.areaMm2 / 1_000_000);
+const minSqm = Math.min(...areasSqm).toFixed(1);
+const maxSqm = Math.max(...areasSqm).toFixed(1);
 const jsonLd = [{ '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'DesignApplication', operatingSystem: 'Any', url: `https://roomfeng.win${canonical}`, description, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } }, { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: '首頁', item: 'https://roomfeng.win/zh/' }, { '@type': 'ListItem', position: 2, name: '房間格局配對', item: `https://roomfeng.win${canonical}` }] }];
 ---
 <Layout title={title} description={description} canonical={canonical} lang="zh" alternates={{ en: '/en/room-layout-matcher/', zh: canonical }} jsonLd={jsonLd} pageType="tool" showAffiliateRecs={false}>
   <section class="section"><div class="container page-grid">
     <header><p class="layout-sales-kicker">ROOMFENG / 免費預覽</p><h1>你的房間需要放下什麼？</h1><p class="lead">輸入基本條件，取得一個完整、經過尺寸驗證的起點。不需註冊、不收信箱；預覽使用與 Layout Vault 相同的真實格局資料。</p><p>想看所有符合方案、細部動線、比較與 Planner 交接？<a href="/zh/small-space-layout-vault/">查看小空間格局庫</a>。</p></header>
     <LayoutVaultPreview layouts={samples} locale="zh" salesHref="/zh/small-space-layout-vault/" />
+    <section class="card" aria-labelledby="matcher-how"><h2 id="matcher-how">配對怎麼運作</h2>
+      <p>資料庫目前有 {approvedLayouts.length} 個已審查的格局，分成 {familyCount} 種房型，房間面積從 {minSqm} m² 到 {maxSqm} m²。每個格局都是固定尺寸的矩形房間，配對時不會把格局縮放或拉伸；只有房間的長寬都放得進你輸入的尺寸，這個格局才算符合。</p>
+      <p>符合的格局會再依房間尺寸的貼合程度、你勾選的必要家具有沒有出現在格局裡、你選的優先順序與房型形狀排序；沒有放進格局的家具與取捨，會在結果裡直接列出，而不是藏起來。</p>
+      <p>配對結果是規劃起點，不是施工圖，也不是保證放得下：門窗位置是範本假設，家具使用常見尺寸，請在規劃器補上你量到的門窗與家具外框再確認。想先看某個尺寸怎麼排，可以讀這幾份比較指南：
+        <a href="/zh/layout-guides/3x3m-bedroom-layout/">3 × 3 公尺臥室</a>、<a href="/zh/layout-guides/3x3-6m-bedroom-layout/">3 × 3.6 公尺臥室</a>、<a href="/zh/layout-guides/narrow-bedroom-layout/">狹長臥室</a>、<a href="/zh/layout-guides/10x10-bedroom-layout/">10 × 10 英尺臥室</a>、<a href="/zh/layout-guides/10x12-bedroom-queen-desk/">10 × 12 英尺臥室</a>、<a href="/zh/layout-guides/300-sq-ft-studio-layout/">300 平方英尺套房</a>。</p>
+    </section>
     <p><a href="/zh/room-layout-planner/">開啟免費 RoomFeng 房間規劃器</a>，再補上實際門窗與家具尺寸。</p>
   </div></section>
 </Layout>
