@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { reviewReadyBlogSlugs, reviewReadyCategorySlugs } from '../src/data/contentQuality.mjs';
 import { demandHeldBlogSlugs } from '../src/data/searchDemandPolicy.mjs';
+import { anchorProblems, geometryProblems, parsePlans, renderProblems, textProblems } from './lib/article-plans.mjs';
 import { CLOUDFLARE_STATIC_REDIRECT_LIMIT, redirects } from '../src/data/redirects.mjs';
 
 const root = process.cwd();
@@ -5057,6 +5058,17 @@ for (const slug of allSlugs) {
     check(`render:${slug}:no-affiliate`, !/Shopee Affiliate|shopee\.tw/i.test(html), 'held pages must not show affiliate offers');
   } else {
     check(`render:${slug}:substantial-main`, htmlText(html).replace(/\s/g, '').length >= 1800, htmlText(html).replace(/\s/g, '').length);
+    // 文章內平面圖：錨點、渲染位置、幾何、與內文尺寸一致（見 scripts/lib/article-plans.mjs）。
+    const planSource = await fs.readFile(path.join(contentRoot, `${slug}.md`), 'utf8');
+    const planBody = bodyFromMarkdown(planSource);
+    const plans = parsePlans(planSource);
+    check(`render:${slug}:plan-count`, (html.match(/<figure[^>]*data-plan-id=/g) ?? []).length === plans.length, `${plans.length} plan(s) in frontmatter`);
+    for (const plan of plans) {
+      check(`plan:${slug}:${plan.id}:anchor`, anchorProblems(plan, planBody).length === 0, anchorProblems(plan, planBody));
+      check(`plan:${slug}:${plan.id}:geometry`, geometryProblems(plan).length === 0, geometryProblems(plan));
+      check(`plan:${slug}:${plan.id}:text-dimensions`, textProblems(plan, planBody).length === 0, textProblems(plan, planBody));
+      check(`plan:${slug}:${plan.id}:rendered`, renderProblems(plan, planBody, html).length === 0, renderProblems(plan, planBody, html));
+    }
   }
 }
 

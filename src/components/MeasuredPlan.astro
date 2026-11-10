@@ -6,6 +6,10 @@ interface FurnitureSpec {
   depth: number;
   label: string;
   className?: string;
+  /** Put the label above/below the rectangle instead of inside it (for items too small to hold text). */
+  labelPlacement?: 'inside' | 'above' | 'below';
+  /** Hide the "w × d" line under the label. */
+  hideSize?: boolean;
 }
 
 interface ZoneSpec {
@@ -14,6 +18,41 @@ interface ZoneSpec {
   width: number;
   depth: number;
   label: string;
+  /** 'avoid' draws a hatched "do not place here" zone. */
+  kind?: 'area' | 'avoid';
+}
+
+type Wall = 'top' | 'bottom' | 'left' | 'right';
+
+interface OpeningSpec {
+  kind: 'door' | 'window' | 'opening';
+  wall: Wall;
+  /** Distance in cm from the wall's start (left end for top/bottom walls, top end for left/right walls). */
+  offset: number;
+  width: number;
+  /** Doors only: which way the leaf opens. Default 'in'. */
+  swing?: 'in' | 'out';
+  /** Doors only: which end of the opening carries the hinge. Default 'start'. */
+  hinge?: 'start' | 'end';
+  label?: string;
+}
+
+interface WallItemSpec {
+  wall: Wall;
+  offset: number;
+  width: number;
+  label: string;
+  /** Shift the label away from its default spot beside the marker (cm). */
+  labelDx?: number;
+  labelDy?: number;
+}
+
+interface SightLineSpec {
+  /** Polyline in room coordinates (cm); an arrow is drawn at the last point. */
+  points: Array<[number, number]>;
+  label?: string;
+  labelX?: number;
+  labelY?: number;
 }
 
 interface Props {
@@ -23,28 +62,161 @@ interface Props {
   furniture: FurnitureSpec[];
   zones?: ZoneSpec[];
   route?: string;
+  openings?: OpeningSpec[];
+  wallItems?: WallItemSpec[];
+  sightLines?: SightLineSpec[];
+  /** Article diagrams: dimensions drawn outside the room, larger labels, and a unique id for SVG defs. */
+  article?: { id: string };
 }
 
-const { roomWidthCm, roomLengthCm, ariaLabel, furniture, zones = [], route } = Astro.props;
-const fontSize = Math.max(8, Math.min(18, roomWidthCm / 32));
+const {
+  roomWidthCm,
+  roomLengthCm,
+  ariaLabel,
+  furniture,
+  zones = [],
+  route,
+  openings = [],
+  wallItems = [],
+  sightLines = [],
+  article,
+} = Astro.props;
+const isArticle = Boolean(article);
+const fontSize = isArticle
+  ? Math.max(12, Math.round(roomWidthCm / 22))
+  : Math.max(8, Math.min(18, roomWidthCm / 32));
+const pad = isArticle ? Math.round(fontSize * 2.4) : 0;
+const viewBox = isArticle
+  ? `${-Math.round(fontSize * 0.6)} ${-pad} ${roomWidthCm + Math.round(fontSize * 0.6) + pad} ${roomLengthCm + pad + Math.round(fontSize * 0.6)}`
+  : `0 0 ${roomWidthCm} ${roomLengthCm}`;
+const markerId = `plan-arrow-${article?.id ?? 'x'}`;
+const hatchId = `plan-hatch-${article?.id ?? 'x'}`;
+const WALL_THICK = Math.max(6, Math.round(fontSize * 0.7));
+
+const wallGeometry = (wall: Wall, offset: number, width: number) => {
+  switch (wall) {
+    case 'top': return { sx: offset, sy: 0, dx: 1, dy: 0, nx: 0, ny: 1, width };
+    case 'bottom': return { sx: offset, sy: roomLengthCm, dx: 1, dy: 0, nx: 0, ny: -1, width };
+    case 'left': return { sx: 0, sy: offset, dx: 0, dy: 1, nx: 1, ny: 0, width };
+    default: return { sx: roomWidthCm, sy: offset, dx: 0, dy: 1, nx: -1, ny: 0, width };
+  }
+};
+
+const openingShapes = openings.map((opening) => {
+  const g = wallGeometry(opening.wall, opening.offset, opening.width);
+  const x0 = g.sx;
+  const y0 = g.sy;
+  const x1 = g.sx + g.dx * g.width;
+  const y1 = g.sy + g.dy * g.width;
+  let leaf: { hx: number; hy: number; tx: number; ty: number; arc: string } | null = null;
+  if (opening.kind === 'door') {
+    const hingeAtStart = (opening.hinge ?? 'start') === 'start';
+    const hx = hingeAtStart ? x0 : x1;
+    const hy = hingeAtStart ? y0 : y1;
+    const qx = hingeAtStart ? x1 : x0;
+    const qy = hingeAtStart ? y1 : y0;
+    const s = (opening.swing ?? 'in') === 'in' ? 1 : -1;
+    const tx = hx + g.nx * s * g.width;
+    const ty = hy + g.ny * s * g.width;
+    const cross = (qx - hx) * (ty - hy) - (qy - hy) * (tx - hx);
+    leaf = { hx, hy, tx, ty, arc: `M ${qx} ${qy} A ${g.width} ${g.width} 0 0 ${cross > 0 ? 1 : 0} ${tx} ${ty}` };
+  }
+  return { opening, x0, y0, x1, y1, leaf, g };
+});
+
+const wallItemShapes = wallItems.map((item) => {
+  const g = wallGeometry(item.wall, item.offset, item.width);
+  const horizontal = item.wall === 'top' || item.wall === 'bottom';
+  const w = horizontal ? item.width : WALL_THICK;
+  const h = horizontal ? WALL_THICK : item.width;
+  const x = item.wall === 'right' ? roomWidthCm - WALL_THICK : g.sx;
+  const y = item.wall === 'bottom' ? roomLengthCm - WALL_THICK : g.sy;
+  let lx = x + w / 2;
+  let ly = y + h / 2;
+  let anchor: 'start' | 'middle' | 'end' = 'middle';
+  if (item.wall === 'top') ly = y + h + fontSize;
+  if (item.wall === 'bottom') ly = y - fontSize * 0.4;
+  if (item.wall === 'left') { lx = x + w + fontSize * 0.5; anchor = 'start'; ly = y + h / 2 + fontSize * 0.35; }
+  if (item.wall === 'right') { lx = x - fontSize * 0.5; anchor = 'end'; ly = y + h / 2 + fontSize * 0.35; }
+  return { item, x, y, w, h, lx: lx + (item.labelDx ?? 0), ly: ly + (item.labelDy ?? 0), anchor };
+});
+
+const labelPos = (item: FurnitureSpec) => {
+  const cx = item.x + item.width / 2;
+  const placement = item.labelPlacement ?? 'inside';
+  if (placement === 'above') return { x: cx, y: item.y - fontSize * 0.5, sizeY: null as number | null };
+  if (placement === 'below') return { x: cx, y: item.y + item.depth + fontSize * 1.1, sizeY: null as number | null };
+  return { x: cx, y: item.y + item.depth / 2 + (item.hideSize ? fontSize * 0.35 : -fontSize * 0.1), sizeY: item.y + item.depth / 2 + fontSize * 1.2 };
+};
 ---
 
-<svg class="measured-plan-svg" viewBox={`0 0 ${roomWidthCm} ${roomLengthCm}`} role="img" aria-label={ariaLabel} data-measured-plan="true" data-room-width={roomWidthCm} data-room-length={roomLengthCm}>
+<svg class:list={['measured-plan-svg', isArticle && 'measured-plan-article']} viewBox={viewBox} role="img" aria-label={ariaLabel} data-measured-plan="true" data-room-width={roomWidthCm} data-room-length={roomLengthCm} style={isArticle ? `--plan-font:${fontSize}px` : undefined}>
+  {isArticle && (
+    <defs>
+      <marker id={markerId} viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" class="measured-arrow-head" /></marker>
+      <pattern id={hatchId} width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" class="measured-hatch-line" /></pattern>
+    </defs>
+  )}
   <rect class="measured-room-boundary" x="0" y="0" width={roomWidthCm} height={roomLengthCm} />
-  <text class="measured-dimension-label" x={roomWidthCm / 2} y={fontSize * 1.5} text-anchor="middle">{roomWidthCm} cm</text>
-  <text class="measured-dimension-label" x={roomWidthCm - fontSize} y={roomLengthCm / 2} text-anchor="middle" transform={`rotate(90 ${roomWidthCm - fontSize} ${roomLengthCm / 2})`}>{roomLengthCm} cm</text>
+  {isArticle ? (
+    <>
+      <text class="measured-dimension-label" x={roomWidthCm / 2} y={-fontSize * 0.7} text-anchor="middle">{roomWidthCm} cm</text>
+      <text class="measured-dimension-label" x={roomWidthCm + fontSize * 1.3} y={roomLengthCm / 2} text-anchor="middle" transform={`rotate(90 ${roomWidthCm + fontSize * 1.3} ${roomLengthCm / 2})`}>{roomLengthCm} cm</text>
+    </>
+  ) : (
+    <>
+      <text class="measured-dimension-label" x={roomWidthCm / 2} y={fontSize * 1.5} text-anchor="middle">{roomWidthCm} cm</text>
+      <text class="measured-dimension-label" x={roomWidthCm - fontSize} y={roomLengthCm / 2} text-anchor="middle" transform={`rotate(90 ${roomWidthCm - fontSize} ${roomLengthCm / 2})`}>{roomLengthCm} cm</text>
+    </>
+  )}
   {zones.map((zone) => (
-    <g class="measured-zone">
+    <g class:list={['measured-zone', zone.kind === 'avoid' && 'avoid']}>
       <rect x={zone.x} y={zone.y} width={zone.width} height={zone.depth} />
+      {zone.kind === 'avoid' && isArticle && <rect class="measured-zone-hatch" x={zone.x} y={zone.y} width={zone.width} height={zone.depth} style={`fill:url(#${hatchId});stroke:none`} />}
       <text x={zone.x + zone.width / 2} y={zone.y + zone.depth / 2} text-anchor="middle">{zone.label}</text>
     </g>
   ))}
+  {openingShapes.map((shape) => (
+    <g class:list={['measured-opening', `measured-${shape.opening.kind}`]}>
+      <line class="measured-opening-gap" x1={shape.x0} y1={shape.y0} x2={shape.x1} y2={shape.y1} />
+      {shape.leaf && <path class="measured-door-arc" d={shape.leaf.arc} />}
+      {shape.leaf && <line class="measured-door-leaf" x1={shape.leaf.hx} y1={shape.leaf.hy} x2={shape.leaf.tx} y2={shape.leaf.ty} />}
+      {shape.opening.kind === 'window' && <line class="measured-window-line" x1={shape.x0} y1={shape.y0} x2={shape.x1} y2={shape.y1} />}
+      {shape.opening.label && (
+        <text
+          class="measured-opening-label"
+          x={shape.g.nx === 0 ? (shape.x0 + shape.x1) / 2 : shape.x0 + shape.g.nx * (fontSize * (shape.g.nx > 0 ? 0.6 : -0.6))}
+          y={shape.g.ny === 0 ? (shape.y0 + shape.y1) / 2 : shape.y0 + shape.g.ny * fontSize * 1.6}
+          text-anchor={shape.g.nx === 0 ? 'middle' : shape.g.nx > 0 ? 'start' : 'end'}
+          dy={shape.g.nx === 0 ? 0 : '.35em'}
+          transform={undefined}
+        >{shape.opening.label}</text>
+      )}
+    </g>
+  ))}
   {route && <path class="measured-route" d={route} />}
-  {furniture.map((item) => (
-    <g class:list={['measured-furniture', item.className ?? '']}>
-      <rect x={item.x} y={item.y} width={item.width} height={item.depth} />
-      <text x={item.x + item.width / 2} y={item.y + item.depth / 2} text-anchor="middle">{item.label}</text>
-      <text class="measured-furniture-size" x={item.x + item.width / 2} y={item.y + item.depth / 2 + fontSize * 1.5} text-anchor="middle">{item.width} × {item.depth}</text>
+  {furniture.map((item) => {
+    const pos = labelPos(item);
+    return (
+      <g class:list={['measured-furniture', item.className ?? '']}>
+        <rect x={item.x} y={item.y} width={item.width} height={item.depth} />
+        <text x={pos.x} y={isArticle ? pos.y : item.y + item.depth / 2} text-anchor="middle">{item.label}</text>
+        {!(item.hideSize && isArticle) && (isArticle ? pos.sizeY !== null : true) && (
+          <text class="measured-furniture-size" x={item.x + item.width / 2} y={isArticle ? (pos.sizeY as number) : item.y + item.depth / 2 + fontSize * 1.5} text-anchor="middle">{item.width} × {item.depth}</text>
+        )}
+      </g>
+    );
+  })}
+  {wallItemShapes.map((shape) => (
+    <g class="measured-wall-item">
+      <rect x={shape.x} y={shape.y} width={shape.w} height={shape.h} />
+      <text x={shape.lx} y={shape.ly} text-anchor={shape.anchor}>{shape.item.label}</text>
+    </g>
+  ))}
+  {sightLines.map((line) => (
+    <g class="measured-sight">
+      <polyline points={line.points.map((point) => point.join(',')).join(' ')} marker-end={isArticle ? `url(#${markerId})` : undefined} />
+      {line.label && <text x={line.labelX ?? line.points[0][0]} y={line.labelY ?? line.points[0][1]} text-anchor="middle">{line.label}</text>}
     </g>
   ))}
 </svg>
