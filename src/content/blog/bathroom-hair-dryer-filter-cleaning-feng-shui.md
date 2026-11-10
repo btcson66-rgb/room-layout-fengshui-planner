@@ -3,7 +3,7 @@ title: "吹風機進風口濾網怎麼清？從棉絮、頭髮到浴室風水"
 description: "吹風機進風口濾網清潔風水要處理棉絮、頭髮、出風口、電線、浴室濕氣與 180 × 160 公分吹髮動線。本文附七日觀察。"
 date: "2026-08-31"
 updated: "2026-08-31"
-category: "feng-shui"
+category: "bathroom"
 tags:
   - 浴室風水
   - 吹風機清潔

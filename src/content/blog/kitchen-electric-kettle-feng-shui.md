@@ -3,7 +3,7 @@ title: "廚房快煮壺風水怎麼放？水位、插座、蒸氣與倒水動線
 description: "廚房快煮壺風水要一起看水位、插座、壺蓋、蒸氣、基座、檯面穩定與倒熱水動線。本文附 240 × 300 公分案例與五日觀察。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "kitchen"
 tags:
   - 廚房風水
   - 快煮壺

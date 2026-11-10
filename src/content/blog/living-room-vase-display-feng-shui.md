@@ -3,7 +3,7 @@ title: "客廳玻璃花瓶風水怎麼擺？從展示重心、窗邊日照到清
 description: "客廳玻璃花瓶風水要看展示櫃重心、玻璃破損、花材積水、窗邊日照、兒童寵物與清潔動線。本文附 360 × 420 公分案例與七日觀察。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 花瓶擺設

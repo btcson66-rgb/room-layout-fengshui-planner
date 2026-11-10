@@ -3,7 +3,7 @@ title: "客廳投影機風水怎麼放？投影距離、散熱、遮光與觀影
 description: "客廳投影機風水要一起看投影距離、吊掛或桌放、散熱、電線、遮光、音量、走道與收納。本文附 320 × 400 公分案例與七日觀察。"
 date: "2026-08-29"
 updated: "2026-08-29"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 投影機

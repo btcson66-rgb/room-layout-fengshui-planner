@@ -3,7 +3,7 @@ title: "客廳唱盤風水怎麼擺？從唱片、避震、電線到聆聽動線
 description: "客廳唱盤風水要一起檢查唱盤、唱片、擴大機、喇叭、避震、灰塵、電源線、窗光與家人通行。本文附 360 × 420 公分案例與七日觀察。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 唱盤擺放

@@ -43,7 +43,7 @@ export interface HubContent {
 export const hubContent: Record<string, HubContent> = {
   'feng-shui': {
     lead: [
-      '這個主題整理臥室、廚房、浴室、玄關與陽台的民俗風水說法，但處理方式和一般風水站不同：每一條說法都會先拆成「可以量的東西」——樑下淨高、床到門的視線、鏡面反射角度、排水與濕氣、夜間動線的落腳點。能量的先量，量不出來的就說明它只是民俗描述。',
+      '這個主題整理臥室、陽台、洗衣區、餐廳與書房的民俗風水說法（客廳、廚房、浴室與玄關各有獨立的主題頁），但處理方式和一般風水站不同：每一條說法都會先拆成「可以量的東西」——樑下淨高、床到門的視線、鏡面反射角度、排水與濕氣、夜間動線的落腳點。能量的先量，量不出來的就說明它只是民俗描述。',
       '會這樣寫，是因為多數「化解」其實同時解決了兩件事：一件是文化上的心理安定，一件是真實的居住問題。床對門讓人睡不安穩，通常不是因為氣場，而是開門瞬間的視線與聲音；鏡子對床的不適，多半來自夜裡半醒時的反光。把兩件事分開講，讀者才知道哪些調整值得花錢、哪些只是心理層面的取捨。',
       '所有內容只作民俗文化與空間舒適度參考，不保證財運、健康、感情、事業或任何人生結果，也不取代建築、消防、電氣、醫療或法律專業建議。涉及配線、天花板施工、固定與消防設備時，一律交由合格人員處理。',
     ],
@@ -51,7 +51,7 @@ export const hubContent: Record<string, HubContent> = {
       { q: '床對門一定要移床嗎？', a: '先分清楚是床頭對門還是床尾對門，兩者的視線與動線問題完全不同；很多情況只要調整開門視線或加一道緩衝就夠。', href: '/zh/blog/bed-facing-door-feng-shui/', linkText: '床頭對門、床尾對門要分開處理' },
       { q: '橫樑壓床怎麼判斷要不要搬？', a: '量樑投影與躺下、坐起、站立三個高度；只有頭部所在的高頻區真的會碰撞才需要動床。', href: '/zh/blog/beam-over-desk-bed-layout/', linkText: '橫樑壓床完整指南' },
       { q: '床頭一定要靠牆嗎？', a: '重點是「有穩固支撐」，不是牆本身。床頭靠窗時要處理的是溫差、結露與窗簾操作。', href: '/zh/blog/bed-head-against-wall/', linkText: '床頭不靠牆可以，前提是有穩固支撐' },
-      { q: '廚房的水火位置真的有講究嗎？', a: '民俗說法背後對應的是濺水、油煙與備餐動線；先把生熟食分區與清潔路線排好，形式問題通常一起解決。', href: '/zh/blog/kitchen-countertop-zoning-feng-shui/', linkText: '廚房檯面分區風水怎麼規劃' },
+      { q: '陽台的排水與逃生要怎麼一起顧？', a: '先確認排水孔不被雜物堵住、避難通道不被堆放物佔用，再談擺設的風水說法。', href: '/zh/blog/balcony-drainage-feng-shui/', linkText: '陽台排水孔風水怎麼整理' },
     ],
     featured: [
       { href: '/zh/blog/bed-facing-door-feng-shui/', title: '床頭對門、床尾對門要分開處理', note: '臥室最常見的風水問題，附實牆與開門視線判斷' },
@@ -59,9 +59,9 @@ export const hubContent: Record<string, HubContent> = {
       { href: '/zh/blog/beam-over-desk-workspace-guide/', title: '橫樑壓書桌完整指南', note: '椅子、起身空間、螢幕反光與租屋工作區' },
       { href: '/zh/blog/bed-head-against-wall/', title: '床頭靠牆與床頭靠窗怎麼選', note: '支撐感、溫差與窗邊結露的處理順序' },
       { href: '/zh/blog/bed-under-window-solutions/', title: '床頭靠窗好嗎？7 晚檢查與改善順序' },
-      { href: '/zh/blog/kitchen-sink-feng-shui/', title: '廚房水槽風水怎麼擺', note: '水火距離、濺水、排水與備餐動線' },
-      { href: '/zh/blog/entryway-shoe-cabinet-feng-shui/', title: '玄關鞋櫃怎麼擺才順', note: '大門開啟範圍、收納容量與換鞋動線' },
-      { href: '/zh/blog/bathroom-toilet-ventilation-feng-shui/', title: '浴室廁所通風風水怎麼做' },
+      { href: '/zh/blog/balcony-drainage-feng-shui/', title: '陽台排水孔風水怎麼整理', note: '防颱、積水、雜物與逃生動線' },
+      { href: '/zh/blog/dining-table-facing-door-feng-shui/', title: '開門見餐桌怎麼化解', note: '餐桌對大門的調整與走道尺寸' },
+      { href: '/zh/blog/laundry-room-feng-shui/', title: '洗衣房風水怎麼規劃', note: '洗衣機排水、通風、收納與晾衣動線' },
     ],
     tools: [
       { href: '/zh/feng-shui-bedroom-checker/', title: '臥室風水格局檢查', note: '床、門、窗、鏡子與樑一次檢查' },
@@ -97,6 +97,10 @@ export const hubContent: Record<string, HubContent> = {
       { href: '/zh/blog/sleep-quality-bedroom-layout/', title: '睡眠環境的房間配置', note: '光、聲、溫濕度與床位的可控變因' },
       { href: '/zh/blog/air-conditioner-bedroom-layout/', title: '冷氣對床怎麼調', note: '不用猜距離的風向測試' },
       { href: '/zh/blog/desk-facing-door-layout/', title: '書桌對門不一定要移' },
+      { href: '/zh/layout-guides/3x3m-bedroom-layout/', title: '3 × 3 公尺臥室格局比較', note: '三種已檢查尺寸的配置：置中雙人床、工作優先、中央留白' },
+      { href: '/zh/layout-guides/3x3-6m-bedroom-layout/', title: '3 × 3.6 公尺臥室格局比較', note: '雙人床、書桌與衣櫃在 2700 × 3600 mm 的三種取捨' },
+      { href: '/zh/layout-guides/10x10-bedroom-layout/', title: '10 × 10 英尺臥室格局比較', note: '3048 × 3048 mm 的床位、工作區與動線' },
+      { href: '/zh/layout-guides/10x12-bedroom-queen-desk/', title: '10 × 12 英尺臥室格局比較', note: '雙人床加書桌的三個範本，附尺寸與通道' },
     ],
     tools: [
       { href: '/zh/bed-desk-wardrobe-layout/', title: '床桌衣櫃配置工具' },
@@ -131,6 +135,8 @@ export const hubContent: Record<string, HubContent> = {
       { href: '/zh/blog/rental-room-layout-planning/', title: '租屋房間配置怎麼規劃' },
       { href: '/zh/blog/small-5-ping-floorplan-zones-feng-shui/', title: '5 坪房間平面圖怎麼畫' },
       { href: '/zh/blog/renter-no-drill-storage/', title: '租屋不能釘牆怎麼收納' },
+      { href: '/zh/layout-guides/narrow-bedroom-layout/', title: '狹長臥室格局比較', note: '2400 × 3600 mm 的單人床、書桌與清楚動線' },
+      { href: '/zh/layout-guides/300-sq-ft-studio-layout/', title: '300 平方英尺套房格局比較', note: '睡眠、工作與收納的三種分區策略，附坪數與平方呎換算' },
     ],
     tools: [
       { href: '/zh/small-bedroom-layout/', title: '小房間佈局規劃' },
@@ -248,16 +254,25 @@ export const hubContent: Record<string, HubContent> = {
   'living-room': {
     lead: [
       '客廳與沙發配置要同時處理通行、視線、收納與使用習慣。沙發是全家最常坐的家具，位置一旦選錯，每天都會用繞路與伸手不順來付代價。',
-      '判斷順序通常是：先確定主要通行帶（大門到各房間的那條線）不能被家具切斷，再決定沙發面向哪裡、茶几留多少距離、電視或投影的視距是否舒適，最後才處理收納與裝飾。套房裡的沙發還多一層任務——它常常同時是隔斷，要一併考慮兩側的視線與噪音。',
-      '這個主題也涵蓋臥室放沙發的情境：小空間放沙發不是不行，但要先確認它不會擋住床邊通道或衣櫃門片。',
+      '判斷順序通常是：先確定主要通行帶（大門到各房間的那條線）不能被家具切斷，再決定沙發面向哪裡、茶几留多少距離、電視或投影的視距是否舒適，最後才處理收納與裝飾。套房裡的沙發還多一層任務——它常常同時是隔斷，要一併考慮兩側的視線與噪音。臥室放沙發的情境也在這個主題裡，前提是不擋住床邊通道與衣櫃門片。',
+      '客廳的風水說法多半落在具體的物件上：茶几、電視與電視櫃、落地燈、冷氣與吊扇、窗戶、植物與展示櫃，還有「沙發背後是窗戶或門」這類常被問的位置。文章把這些說法拆成視距、反光、散熱、電線、採光與通風等可以觀察的條件，並涵蓋投影機、喇叭、Wi-Fi 路由器、掃地機器人充電座與空氣清淨機這些現代客廳常見的設備。',
+      '風水內容只作民俗文化與空間舒適度參考，不保證任何結果；吊扇、壁掛電視與高櫃的固定與用電，請依產品說明並交由合格人員處理。',
     ],
     coreQuestions: [
       { q: '房間可以放沙發嗎？', a: '可以，但要先確認床邊通道與衣櫃門片不受影響。', href: '/zh/blog/sofa-bedroom-layout/', linkText: '房間可以放沙發嗎' },
       { q: '茶几要離沙發多遠？', a: '要留得下小腿與起身空間，同時不能切斷主要通行帶。', href: '/zh/blog/living-room-coffee-table-feng-shui/', linkText: '客廳茶几怎麼擺' },
+      { q: '沙發後面是窗戶或門怎麼辦？', a: '先分辨在意的是安全感、採光還是動線，再選不需要施工的調整方式。', href: '/zh/blog/sofa-back-door-window-feng-shui/', linkText: '沙發靠窗、背對門的免施工化解' },
+      { q: '電視要放多遠、多高？', a: '觀看距離與螢幕高度要和沙發位置、反光與散熱一起比較，沒有一個通用的風水數字。', href: '/zh/blog/living-room-tv-viewing-distance-feng-shui/', linkText: '客廳電視觀看距離與高度' },
     ],
     featured: [
       { href: '/zh/blog/sofa-bedroom-layout/', title: '房間可以放沙發嗎', note: '臥室、小套房與客廳沙發配置檢查' },
       { href: '/zh/blog/living-room-coffee-table-feng-shui/', title: '客廳茶几怎麼擺', note: '沙發距離、走道、尖角與聚氣參考' },
+      { href: '/zh/blog/sofa-back-door-window-feng-shui/', title: '沙發後面是窗戶怎麼辦', note: '沙發靠窗與背對門的免施工調整' },
+      { href: '/zh/blog/living-room-tv-console-feng-shui/', title: '客廳電視櫃風水怎麼擺', note: '固定、反光、電線與觀看距離' },
+      { href: '/zh/blog/living-room-tv-viewing-distance-feng-shui/', title: '客廳電視風水怎麼放', note: '觀看距離、螢幕高度、散熱與沙發動線' },
+      { href: '/zh/blog/living-room-floor-lamp-feng-shui/', title: '客廳落地燈風水怎麼擺', note: '照明方向、沙發視線、電線與夜間動線' },
+      { href: '/zh/blog/living-room-air-conditioner-feng-shui/', title: '客廳冷氣位置怎麼選', note: '沙發、出風角度與坪數的對照' },
+      { href: '/zh/blog/living-room-window-feng-shui/', title: '客廳窗戶風水怎麼規劃', note: '家具距離、採光、開窗、通風與防墜' },
     ],
     tools: [
       { href: '/zh/living-room-furniture-layout/', title: '客廳家具配置' },
@@ -267,9 +282,119 @@ export const hubContent: Record<string, HubContent> = {
     faq: [
       { q: '沙發一定要靠牆嗎？', a: '不一定。沙發背後有穩定的視覺依靠會比較安定，但在開放空間裡把沙發當隔斷也很常見，重點是背後留得下通行寬度。' },
       { q: '小客廳要選多大的沙發？', a: '先量主要通行帶要留多少，剩下的寬度再減去茶几距離，才是沙發可用的長度。' },
+      { q: '客廳的風水說法可以當成保證嗎？', a: '不可以。茶几、電視、植物與燈具的擺法都只是民俗文化與空間舒適度參考，不保證任何結果；請以安全、採光、通風與動線為準。' },
     ],
     plannerPreset: 'living',
     plannerCta: '用 Room Planner 把沙發、茶几與餐桌放進客廳平面圖，先確認主要通行帶沒有被切斷。',
+  },
+
+  kitchen: {
+    lead: [
+      '廚房是風水說法最密集、也最容易出問題的空間：爐灶、水槽、冰箱與大門的相對位置，民間有「水火相沖」「爐灶對門」等講法。這個主題的做法是先把每一個說法拆成廚房裡真的會發生的事——濺水落在哪、熱鍋放哪、油煙往哪走、兩個人同時煮飯會不會互相卡住。能量出來的先量，量不出來的就標明只是民俗描述。',
+      '主題裡的文章分成兩條線。第一條是設備位置：水槽、瓦斯爐與抽油煙機、冰箱、中島、吊櫃與廚房門，多數文章附一個以公分標示的假設廚房案例，示範怎麼比較不同擺法。第二條是日常維護與收納：檯面分區、砧板與刀具、廚餘桶、調味料、小家電與水箱濾網的清潔，這些不涉及象徵，卻最常決定廚房好不好用。',
+      '所有內容只作民俗文化與空間使用參考，不保證財運、健康或任何結果。用火、用電、用水與排煙屬於安全問題，瓦斯與電氣施工、排水與管線更動請交給合格人員，不要用擺設或化解物取代檢修。',
+    ],
+    coreQuestions: [
+      { q: '水槽和爐灶一定不能靠近嗎？', a: '沒有一個適用所有廚房的固定距離。要看濺水、熱鍋放置面與兩人動線，靠近後互相干擾才需要重排。', href: '/zh/blog/kitchen-sink-feng-shui/', linkText: '廚房水槽風水怎麼擺' },
+      { q: '爐灶對門要怎麼處理？', a: '先分清楚是視線、開門動線還是通風問題，再選低施工的調整；化解物不要放在火源旁。', href: '/zh/blog/stove-facing-door-feng-shui/', linkText: '瓦斯爐對門、水槽對門差在哪' },
+      { q: '檯面要怎麼分區？', a: '依清潔程度把生食、備料、烹調與熟食排成一條順序，並留出放熱鍋的位置。', href: '/zh/blog/kitchen-countertop-zoning-feng-shui/', linkText: '廚房檯面分區風水怎麼規劃' },
+      { q: '冰箱放哪裡才順手？', a: '先找出它每天服務的路線，再比較開門方向與周邊的清潔空間。', href: '/zh/blog/kitchen-fridge-feng-shui/', linkText: '冰箱位置怎麼擺' },
+    ],
+    featured: [
+      { href: '/zh/blog/kitchen-sink-feng-shui/', title: '廚房水槽風水怎麼擺', note: '水火距離、濺水、排水與備餐動線' },
+      { href: '/zh/blog/kitchen-gas-stove-ventilation-feng-shui/', title: '廚房瓦斯爐風水怎麼放', note: '通風、離火、油煙與煮食動線' },
+      { href: '/zh/blog/stove-facing-door-feng-shui/', title: '瓦斯爐對門、水槽對門差在哪', note: '低成本的調整方式與距離判斷' },
+      { href: '/zh/blog/kitchen-countertop-zoning-feng-shui/', title: '廚房檯面分區風水怎麼規劃', note: '生熟食、火水位置與清潔動線' },
+      { href: '/zh/blog/kitchen-fridge-feng-shui/', title: '冰箱位置怎麼擺', note: '兩台冰箱與爐火距離的判斷' },
+      { href: '/zh/blog/kitchen-island-feng-shui/', title: '廚房中島風水怎麼規劃', note: '爐灶、水槽、走道與開放式動線' },
+      { href: '/zh/blog/kitchen-upper-cabinet-feng-shui/', title: '廚房吊櫃風水怎麼規劃', note: '高度、開門、收納重量、油煙與固定' },
+      { href: '/zh/blog/kitchen-door-feng-shui/', title: '廚房門風水怎麼選', note: '平開門、拉門、油煙、通風與動線比較' },
+    ],
+    tools: [
+      { href: '/zh/room-layout-planner/', title: '房間家具配置工具', note: '輸入廚房長寬，畫出設備、門片掃掠線與走道' },
+      { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查', note: '確認冰箱、櫃體與餐桌放不放得下' },
+      { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查', note: '換冰箱或大型電器前先確認搬運路線' },
+    ],
+    faq: [
+      { q: '廚房的風水說法可以當成保證嗎？', a: '不可以。水火相沖、爐灶對門等都是民俗文化說法，不保證財運、健康或任何結果；實際配置以用火、用電、排煙與清潔安全為準。' },
+      { q: '為什麼文章都先談通風與排水？', a: '因為用火與用水的風險是實際發生的：油煙、積水、漏水與異味。這些問題用擺設化解不了，需要先檢查設備與管線，必要時請合格人員處理。' },
+      { q: '租屋廚房不能施工怎麼辦？', a: '可移動的收納、檯面分區、乾燥架與垃圾桶位置都能調整；管線、瓦斯、插座與固定櫃體的更動需要房東同意，並由合格人員處理。' },
+    ],
+    plannerPreset: 'studio',
+    plannerCta: 'Room Planner 沒有廚房專用的範例格局，但可以輸入你的廚房長寬，把櫃體、冰箱與餐桌外框放進去，檢查門片掃掠與走道是否被壓縮。',
+  },
+
+  bathroom: {
+    lead: [
+      '浴室在風水說法裡常被歸為濕氣與穢氣的位置，但居住上真正的問題很具體：通風夠不夠、乾濕有沒有分開、地面會不會滑、毛巾與牙刷放在哪一側。這個主題把「廁所門對床」「馬桶蓋要不要蓋」這類說法，拆成可以觀察的條件——水氣往哪裡排、濺水落在哪、物品有沒有乾燥的機會、家人進出會不會碰撞。',
+      '文章分成兩條線。空間與設備：通風扇、浴簾、淋浴門檻、毛巾架與防滑墊、鏡面結露、馬桶水箱與排水。日常收納與清潔：牙刷、拖鞋、衛生紙、吹風機、馬桶刷與清潔劑怎麼放，以及洗手台與蓮蓬頭的清潔。多數文章附以公分標示的假設浴室案例，並建議用幾天的觀察記錄判斷擺法是否真的比較乾燥、好清。',
+      '浴室同時有水與電，插座、排風扇、暖風機與熱水器的安裝請由合格人員處理；防水層與排水管的問題不能用擺設化解。所有風水內容僅作民俗文化與空間使用參考，不保證財運、健康或任何結果。',
+    ],
+    coreQuestions: [
+      { q: '沒有窗的浴室要怎麼通風？', a: '先分辨是「沒有窗」還是「沒有出口」；水氣與異味是兩件事，各自要有排出的路徑。', href: '/zh/blog/bathroom-toilet-ventilation-feng-shui/', linkText: '浴室廁所通風風水怎麼做' },
+      { q: '浴簾怎麼掛才好用？', a: '先分遮水、進出與晾乾三個任務，再看長度、下緣與排水。', href: '/zh/blog/bathroom-shower-curtain-feng-shui/', linkText: '浴室浴簾風水怎麼掛' },
+      { q: '毛巾架放哪裡？', a: '乾毛巾與濕毛巾不要混成同一個位置，並考慮洗澡後取用與排風。', href: '/zh/blog/bathroom-towel-rack-feng-shui/', linkText: '浴室毛巾架風水放哪裡' },
+      { q: '套房的床對著廁所門怎麼辦？', a: '這是民俗說法；實務上先處理異味、濕氣與夜間視線，可以用不拆牆的門簾、屏風或調整床位。', href: '/zh/blog/toilet-door-facing-bed/', linkText: '套房床對廁所門的不拆牆化解' },
+    ],
+    featured: [
+      { href: '/zh/blog/bathroom-toilet-ventilation-feng-shui/', title: '浴室廁所通風風水怎麼做', note: '排氣、異味、濕氣與門片動線' },
+      { href: '/zh/blog/bathroom-shower-curtain-feng-shui/', title: '浴室浴簾風水怎麼掛', note: '乾濕分區、防滑、通風與進出動線' },
+      { href: '/zh/blog/bathroom-towel-rack-feng-shui/', title: '浴室毛巾架風水放哪裡', note: '乾濕分流、通風、固定與洗澡後動線' },
+      { href: '/zh/blog/bathroom-bath-mat-feng-shui/', title: '浴室防滑墊風水怎麼放', note: '乾濕分區、門檻與清潔檢查' },
+      { href: '/zh/blog/bathroom-mirror-condensation-feng-shui/', title: '浴室鏡子結露風水怎麼看', note: '水珠、通風與鏡面清潔動線' },
+      { href: '/zh/blog/bathroom-exhaust-fan-noise-feng-shui/', title: '浴室通風扇異音風水怎麼看', note: '從灰塵、共鳴到排風管檢查' },
+      { href: '/zh/blog/bathroom-toilet-lid-feng-shui/', title: '浴室馬桶蓋風水要不要蓋', note: '沖水飛濺、清潔與通風動線' },
+      { href: '/zh/blog/bathroom-shower-threshold-seal-feng-shui/', title: '淋浴間止水門檻風水怎麼看', note: '防水膠條、坡度與防滑動線' },
+    ],
+    tools: [
+      { href: '/zh/room-layout-planner/', title: '房間家具配置工具', note: '輸入浴室長寬，畫出門片掃掠與設備間距' },
+      { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查', note: '確認置物櫃、洗衣籃等放不放得下' },
+      { href: '/zh/small-room-storage-planner/', title: '小房間收納規劃器', note: '小空間收納的分區方法也適用於浴室' },
+    ],
+    faq: [
+      { q: '浴室的風水說法可以當成保證嗎？', a: '不可以。這些都是民俗文化說法，不保證財運、健康或任何結果；浴室配置以通風、防滑、防水與用電安全為準。' },
+      { q: '吹風機、電動牙刷可以放浴室嗎？', a: '要看插座位置與濺水範圍。文章依各項物品說明收納與乾髮區的安排；用電與安裝請依產品說明，必要時請合格人員處理。' },
+      { q: '租屋不能改設備怎麼辦？', a: '浴簾、可移動置物架、防滑墊與乾濕分區的收納都可以調整；防水、管線與固定設備的更動需要房東同意。' },
+    ],
+    plannerPreset: 'studio',
+    plannerCta: 'Room Planner 沒有浴室專用的範例格局，但可以輸入你的浴室長寬，放進置物櫃或洗衣籃的外框，檢查門片掃掠與走道是否被壓縮。',
+  },
+
+  entryway: {
+    lead: [
+      '玄關是進門後第一個決定動線的地方：鞋要脫在哪、傘與包裹放哪、門開到多大、人站著換鞋時背後有沒有東西。民俗風水對玄關的說法很多，例如「鏡子對大門」「開門見灶」「開門見餐桌」，這個主題逐條拆成可以量的東西：門扇弧線、換鞋站位、視線與採光、潮濕與排水。',
+      '文章分成兩條線。空間與家具：鞋櫃、穿鞋椅、門扇開啟半徑、屏風、鏡子、地墊、傘架與衣帽架，多數附以公分標示的假設玄關案例。日常落點：包裹、書包、鑰匙、安全帽、嬰兒車、寵物牽繩與資源回收的暫放位置，以及門框、門鈴、門檻等常被忽略的清潔項目。',
+      '大門與玄關同時是出入口與逃生路線，擺放東西前要先確認門能完整開啟、走道不被堵住；滅火器等消防設備與公共走道的規定，以社區管理規約與法規為準。風水內容僅作民俗文化與空間使用參考，不保證財運、平安或任何結果。',
+    ],
+    coreQuestions: [
+      { q: '鞋櫃要多深、走道留多寬？', a: '先算門扇弧線、換鞋站位與鞋量，再決定鞋櫃的深度與高度，不用單一風水數字。', href: '/zh/blog/entryway-shoe-cabinet-feng-shui/', linkText: '玄關鞋櫃怎麼配置' },
+      { q: '鞋櫃門打不開怎麼辦？', a: '從開門範圍與換鞋站位找原因，再決定改門型、改位置還是改收納量。', href: '/zh/blog/entryway-shoe-cabinet-doorway-clearance-feng-shui/', linkText: '玄關鞋櫃門打不開怎麼辦' },
+      { q: '鏡子對大門怎麼辦？', a: '先分清楚正對、側牆與櫃內三種位置，再看固定方式與反射的實際問題。', href: '/zh/blog/entryway-mirror-feng-shui/', linkText: '鏡子對大門怎麼化解' },
+      { q: '玄關要不要放屏風？', a: '先分辨需要的是遮蔽還是收納，再比較不同屏風形式對採光與動線的影響。', href: '/zh/blog/entryway-screen-feng-shui/', linkText: '玄關屏風風水怎麼做' },
+    ],
+    featured: [
+      { href: '/zh/blog/entryway-shoe-cabinet-feng-shui/', title: '玄關鞋櫃怎麼配置', note: '門片開啟、走道寬與鞋量的三項檢查' },
+      { href: '/zh/blog/entryway-door-opening-radius-feng-shui/', title: '玄關門扇開啟半徑怎麼規劃', note: '大門轉身、鞋櫃與通行空間' },
+      { href: '/zh/blog/entryway-mirror-feng-shui/', title: '鏡子對大門怎麼化解', note: '玄關鏡改放側牆、櫃內與三種補救' },
+      { href: '/zh/blog/entryway-screen-feng-shui/', title: '玄關屏風風水怎麼做', note: '穿堂視線、採光通風與動線尺寸判斷' },
+      { href: '/zh/blog/entryway-doormat-feng-shui/', title: '玄關地墊風水怎麼選', note: '門內門外擺放、門底淨高與尺寸速查' },
+      { href: '/zh/blog/entryway-bench-feng-shui/', title: '玄關穿鞋椅風水怎麼放', note: '坐下起身、門片、鞋櫃與走道一起量' },
+      { href: '/zh/blog/entryway-umbrella-stand-feng-shui/', title: '玄關傘架怎麼放', note: '門片迴轉範圍與排水的實際位置' },
+      { href: '/zh/blog/entryway-package-drop-zone-feng-shui/', title: '玄關包裹暫放風水怎麼規劃', note: '紙箱、隱私、門片與逃生動線' },
+    ],
+    tools: [
+      { href: '/zh/room-layout-planner/', title: '房間家具配置工具', note: '輸入玄關長寬，畫出門扇弧線、鞋櫃與穿鞋椅' },
+      { href: '/zh/furniture-fit-checker/', title: '家具尺寸適配檢查', note: '確認鞋櫃、穿鞋椅放不放得下' },
+      { href: '/zh/moving-furniture-size-check/', title: '搬家家具尺寸檢查', note: '大件家具進門前先量門寬與轉角' },
+      { href: '/zh/small-room-storage-planner/', title: '小房間收納規劃器' },
+    ],
+    faq: [
+      { q: '玄關的風水說法可以當成保證嗎？', a: '不可以。鏡子對大門、開門見灶等都是民俗文化說法，不保證財運、平安或任何結果；實際配置以門能開、路能走、東西有落點為準。' },
+      { q: '小玄關放不下鞋櫃怎麼辦？', a: '先決定門扇弧線與換鞋站位要留多少，再把鞋量與鞋櫃深度放進剩餘空間；穿鞋椅與傘架也要算進門扇開啟範圍。' },
+      { q: '租屋怎麼改善玄關？', a: '地墊、掛鉤、可移動鞋架與屏風都是可還原的做法；門、門框與固定五金的更動需要房東同意。' },
+    ],
+    plannerPreset: 'studio',
+    plannerCta: 'Room Planner 沒有玄關專用的範例格局，但可以輸入你的玄關長寬，放進鞋櫃與穿鞋椅的外框，檢查門扇開啟後是否還走得過去。',
   },
 
   tutorial: {

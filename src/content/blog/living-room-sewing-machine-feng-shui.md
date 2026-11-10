@@ -3,7 +3,7 @@ title: "客廳縫紉機風水怎麼擺？從針具安全、照明到收合工作
 description: "客廳縫紉機風水要檢查工作桌、針具、踏板、電線、照明、布料暫存與收合後的家庭動線。本文以 360 × 420 公分案例與五日觀察整理。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 縫紉機

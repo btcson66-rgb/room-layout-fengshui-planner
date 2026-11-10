@@ -3,7 +3,7 @@ title: "大門異音怎麼處理？鉸鏈、門檻與地墊的逐項排查"
 description: "異音來源通常是鉸鏈、門檻高低差或地墊卡門。依序排查，每一步都標明要量哪個尺寸。"
 date: "2026-08-31"
 updated: "2026-10-14"
-category: "feng-shui"
+category: "entryway"
 tags:
   - 玄關風水
   - 門鉸鏈異音
