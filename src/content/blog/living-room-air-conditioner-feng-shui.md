@@ -3,7 +3,7 @@ title: "客廳冷氣位置怎麼選？沙發、出風角度與坪數的對照"
 description: "冷氣避免直吹沙發主要座位。依客廳坪數與格局給出三種安裝位置與對應的出風角度。"
 date: "2026-08-29"
 updated: "2026-10-14"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 冷氣配置

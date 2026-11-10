@@ -3,7 +3,7 @@ title: "客廳搖椅風水怎麼擺？搖動範圍、扶手、視線與走道檢
 description: "客廳搖椅風水要檢查搖動前後的佔地、扶手、椅腳、視線、窗邊採光、兒童寵物活動與清潔。本文以 360 × 420 公分案例與五日觀察整理。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 搖椅

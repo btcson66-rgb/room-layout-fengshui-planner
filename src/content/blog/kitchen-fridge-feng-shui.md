@@ -3,7 +3,7 @@ title: "冰箱位置怎麼擺？兩台冰箱與爐火距離的實際判斷"
 description: "冰箱與爐火的距離先看散熱與動線。含兩台冰箱、冰箱對門與冰箱貼牆的散熱最小間距。"
 date: "2026-08-29"
 updated: "2026-10-14"
-category: "feng-shui"
+category: "kitchen"
 tags:
   - 廚房風水
   - 冰箱位置

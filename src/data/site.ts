@@ -19,10 +19,28 @@ type CategoryMeta = {
 
 export const categoryMeta: Record<string, CategoryMeta> = {
   'feng-shui': {
-    title: '臥室風水與民俗參考',
-    description: '以民俗常見說法與空間舒適度角度整理床位、鏡子、書桌、門口動線等臥室配置參考。',
+    title: '居家風水與民俗參考',
+    description: '以民俗常見說法與空間舒適度角度整理臥室床位、鏡子、書桌，以及陽台、洗衣區、餐廳與書房的配置參考。',
     intro:
-      '這個分類整理床對門、鏡子對床、床頭靠牆、租屋風水改善等主題。所有內容都以民俗文化與空間舒適度作為參考，不保證任何財運、健康、感情或其他結果；實際配置仍應以安全、採光、通風、動線與個人需求為準。',
+      '這個分類整理床對門、鏡子對床、床頭靠牆、租屋風水改善等臥室主題，也收錄陽台、洗衣區、餐廳、居家辦公與不規則房型。客廳、廚房、浴室與玄關各有獨立的主題頁。所有內容都以民俗文化與空間舒適度作為參考，不保證任何財運、健康、感情或其他結果；實際配置仍應以安全、採光、通風、動線與個人需求為準。',
+  },
+  kitchen: {
+    title: '廚房配置與民俗參考',
+    description: '水槽、爐灶、冰箱、檯面分區與廚房電器的配置檢查，並把水火相沖、爐灶對門等民俗說法拆成可以實際觀察的條件。',
+    intro:
+      '廚房同時涉及用火、用水、用電與食物，配置先看安全與清潔，再談民俗說法。這裡整理設備位置、檯面分區、收納與日常維護的文章，風水說法僅作民俗文化與空間使用參考。',
+  },
+  bathroom: {
+    title: '浴室配置與民俗參考',
+    description: '浴室通風、乾濕分區、毛巾與日用品收納、馬桶與洗手台維護的配置檢查，並說明廁所門對床等民俗說法背後可觀察的條件。',
+    intro:
+      '浴室的難題是水氣、異味與濕滑，配置的重點是讓水氣有出口、物品有乾燥的機會、進出動線不打滑。這裡整理通風、收納與清潔的文章，風水說法僅作民俗文化與空間使用參考。',
+  },
+  entryway: {
+    title: '玄關配置與民俗參考',
+    description: '鞋櫃、門扇開啟範圍、穿鞋椅、鏡子、屏風與日常物品落點的玄關配置檢查，並把鏡子對大門等民俗說法拆成可以量測的條件。',
+    intro:
+      '玄關是進出與逃生的第一段動線，配置先確認門能完整開啟、換鞋有站位、東西有固定的落點。這裡整理鞋櫃、門扇、鏡子與日常物品收納的文章，風水說法僅作民俗文化與空間使用參考。',
   },
   'small-room': {
     title: '小房間與租屋佈局',
@@ -68,13 +86,19 @@ export const categoryMeta: Record<string, CategoryMeta> = {
   },
   'living-room': {
     title: '客廳與沙發配置',
-    description: '客廳、套房沙發、臥室沙發與公共空間家具配置的動線檢查建議。',
+    description: '客廳沙發、茶几、電視、燈具、冷氣與家電的配置檢查，含民俗風水說法的參考與可量測的動線、視距與固定條件。',
     intro:
-      '客廳與沙發配置要同時考慮通行、視線、收納與使用習慣。這裡整理沙發位置、套房分區與生活動線的檢查方法。',
+      '客廳與沙發配置要同時考慮通行、視線、收納與使用習慣。這裡整理沙發位置、茶几、電視與燈具、冷氣與吊扇、窗邊擺放與套房分區的檢查方法；風水說法僅作民俗文化與空間舒適度參考。',
   },
 };
 
 export const categorySlugs = Object.keys(categoryMeta);
+
+/** 文章內容含民俗風水說法的分類：分類頁要顯示免責聲明。 */
+export const folkCustomCategorySlugs = new Set(['feng-shui', 'kitchen', 'bathroom', 'entryway', 'living-room']);
+
+/** 以「房間／空間」分類的主題頁，分類頁底部互相連結，讓讀者能從一個空間跳到另一個空間。 */
+export const roomHubSlugs = ['living-room', 'kitchen', 'bathroom', 'entryway', 'bedroom', 'feng-shui'];
 
 export function formatDate(date: Date) {
   return new Intl.DateTimeFormat('zh-TW', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(date);

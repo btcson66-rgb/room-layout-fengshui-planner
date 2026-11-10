@@ -3,7 +3,7 @@ title: "玄關傘架怎麼放？門片迴轉範圍與排水的實際位置"
 description: "傘架常卡在門片迴轉範圍內。先量門開啟的弧線，再決定擺放位置與是否需要底盤排水。"
 date: "2026-08-29"
 updated: "2026-10-14"
-category: "feng-shui"
+category: "entryway"
 tags:
   - 玄關風水
   - 雨傘架

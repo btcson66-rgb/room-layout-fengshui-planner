@@ -3,7 +3,7 @@ title: "安全帽收納怎麼做？玄關層板深度與通風的實際尺寸"
 description: "安全帽需要約 30 公分深度與通風。附層板、吊掛與櫃內三種做法的尺寸與適用玄關寬度。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "entryway"
 tags:
   - 玄關風水
   - 安全帽收納

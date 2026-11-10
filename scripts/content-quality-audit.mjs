@@ -5193,6 +5193,28 @@ for (const file of htmlFiles) {
 }
 const supportFile = affiliateFiles.find(({ file }) => file.endsWith(`${path.sep}support${path.sep}index.html`));
 check('affiliate-output-support-page', Boolean(supportFile), affiliateFiles.map(({ file }) => path.relative(distRoot, file)).join(', '));
+// 2026-11-10：AdSense 第四次駁回後，商品區塊只能出現在 /support/（見 src/config/affiliate.ts
+// 的 AFFILIATE_INCONTENT_ENABLED）。除非明確以 PUBLIC_AFFILIATE_INCONTENT_ENABLED=true 建置，
+// 其他任何頁面（文章、工具、指南、落地頁）都不得出現蝦皮／酷澎商品連結或商品圖。
+const incontentAffiliateBuild = process.env.PUBLIC_AFFILIATE_INCONTENT_ENABLED === 'true';
+const affiliateOutsideSupport = affiliateFiles
+  .filter(({ file }) => !file.endsWith(`${path.sep}support${path.sep}index.html`))
+  .map(({ file }) => path.relative(distRoot, file));
+check(
+  'affiliate-only-on-support-page',
+  incontentAffiliateBuild || affiliateOutsideSupport.length === 0,
+  `${affiliateOutsideSupport.length} page(s) outside /support/ render affiliate links, e.g. ${affiliateOutsideSupport.slice(0, 3).join(', ')}`,
+);
+const articlesWithProductImages = [];
+for (const slug of reviewReadyBlogSlugs) {
+  const html = await fs.readFile(path.join(distRoot, 'zh', 'blog', slug, 'index.html'), 'utf8');
+  if (/support-products|data-affiliate-recs/.test(html)) articlesWithProductImages.push(slug);
+}
+check(
+  'affiliate-no-product-block-on-articles',
+  incontentAffiliateBuild || articlesWithProductImages.length === 0,
+  `${articlesWithProductImages.length} article(s) render the product block, e.g. ${articlesWithProductImages.slice(0, 3).join(', ')}`,
+);
 if (supportFile) {
   const cardCount = (supportFile.html.match(/data-affiliate-product-link\s+data-affiliate-product-id/g) ?? []).length;
   // The support page now shows a rotating batch (like FunnyTools) instead of dumping the
@@ -5375,11 +5397,15 @@ check('visible-faq-emits-faq-schema', faqMissingSchema.length === 0, faqMissingS
 // 這個單一開關決定，任何頁面都不得再自行 hardcode 狀態。
 const homeHtml = await fs.readFile(path.join(distRoot, 'index.html'), 'utf8');
 const homeSaysDisabled = /商品與聯盟推薦目前全站關閉/.test(homeHtml);
+const homeSaysSupportOnly = /文章與工具頁不放商品推薦/.test(homeHtml);
 const someArticleShowsAffiliate = affiliateFiles.some(({ file }) => file.includes(`${path.sep}zh${path.sep}blog${path.sep}`));
+const someContentPageShowsAffiliate = affiliateOutsideSupport.length > 0;
 check(
   'affiliate-copy-matches-behaviour',
-  !(homeSaysDisabled && someArticleShowsAffiliate),
-  `home says disabled=${homeSaysDisabled}, article cards rendered=${someArticleShowsAffiliate}`,
+  !(homeSaysDisabled && affiliateFiles.length > 0)
+    && !(homeSaysSupportOnly && someContentPageShowsAffiliate)
+    && !(!homeSaysDisabled && !homeSaysSupportOnly && !someContentPageShowsAffiliate),
+  `home says disabled=${homeSaysDisabled}, support-only=${homeSaysSupportOnly}; affiliate pages=${affiliateFiles.length}, content pages with affiliate=${someContentPageShowsAffiliate}, articles=${someArticleShowsAffiliate}`,
 );
 check(
   'affiliate-no-hardcoded-review-copy',
@@ -5389,8 +5415,10 @@ check(
 
 // --- GA4 affiliate tracking 未被破壞 ------------------------------------
 // 重構 affiliate component 時最容易無聲弄丟的就是這些 data-* 掛勾。
-if (someArticleShowsAffiliate) {
-  const sample = affiliateFiles.find(({ file }) => file.includes(`${path.sep}zh${path.sep}blog${path.sep}`));
+// 商品區塊現在只在 /support/ 輸出，所以用 /support/ 當取樣頁（內容頁開啟時優先用文章頁）。
+const trackingSample = affiliateFiles.find(({ file }) => file.includes(`${path.sep}zh${path.sep}blog${path.sep}`)) ?? supportFile;
+if (trackingSample) {
+  const sample = trackingSample;
   for (const attribute of [
     'data-affiliate-recs',
     'data-affiliate-placement',

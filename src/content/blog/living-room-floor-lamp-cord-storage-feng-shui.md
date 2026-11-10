@@ -3,7 +3,7 @@ title: "客廳立燈電線收納風水怎麼做？從照明位置到走道避絆
 description: "客廳立燈電線收納風水要同時看插座距離、電線走向、地毯邊緣、沙發與夜間照明。本文附 360 × 420 公分案例與五日觀察。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 立燈電線

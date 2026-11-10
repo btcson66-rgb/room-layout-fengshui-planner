@@ -92,12 +92,24 @@ const demandConsolidationRedirects = demandConsolidation.map((entry) => ({
 }));
 
 /** @type {Redirect[]} */
+/**
+ * 分類分頁縮減：2026-11-10 把 feng-shui 分類的客廳、廚房、浴室、玄關文章移到各自的
+ * 主題頁後，feng-shui 從 6 頁變 3 頁。已不存在的分頁轉回該分類第一頁，避免留下 404。
+ * 若日後 feng-shui 文章數回升到需要第 4 頁，規則 1 會讓 preflight 擋下來，屆時刪除對應條目。
+ */
+const categoryPaginationRedirects = [4, 5, 6].map((page) => ({
+  from: `/zh/category/feng-shui/${page}/`,
+  to: '/zh/category/feng-shui/',
+  note: 'feng-shui 分類拆出四個房間主題後，分頁由 6 頁縮為 3 頁',
+}));
+
 export const redirects = [
   ...beamBedRedirects,
   ...beamDeskRedirects,
   ...legacyToolRedirects,
   ...languageRootRedirects,
   ...demandConsolidationRedirects,
+  ...categoryPaginationRedirects,
 ];
 
 export const redirectSources = new Set(redirects.map((entry) => entry.from));

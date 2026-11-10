@@ -3,7 +3,7 @@ title: "玄關鞋櫃怎麼配置？門片開啟、走道寬與鞋量的三項檢
 description: "鞋櫃深度通常要 35～40 公分，加上門片與蹲下空間才是實際佔用。先算走道剩幾公分再決定深度。"
 date: "2026-08-29"
 updated: "2026-10-14"
-category: "feng-shui"
+category: "entryway"
 tags:
   - 玄關風水
   - 鞋櫃擺放

@@ -3,7 +3,7 @@ title: "客廳吉他收納風水怎麼做？從防潮、琴架、音量到通行
 description: "客廳吉他收納風水要檢查琴架穩定、琴袋、濕度、窗光、插座、撥片、音箱、寵物與練習時段。本文附 360 × 420 公分案例與七日觀察。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - 吉他收納

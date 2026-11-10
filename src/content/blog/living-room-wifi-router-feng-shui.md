@@ -3,7 +3,7 @@ title: "客廳 Wi-Fi 路由器風水怎麼放？訊號、散熱、電線與家�
 description: "客廳 Wi-Fi 路由器風水要一起看訊號遮擋、散熱、電源、網路線、隱私與家人使用區。本文附 270 × 330 公分案例與七日觀察。"
 date: "2026-08-30"
 updated: "2026-08-30"
-category: "feng-shui"
+category: "living-room"
 tags:
   - 客廳風水
   - Wi-Fi 路由器

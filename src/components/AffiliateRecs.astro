@@ -1,5 +1,5 @@
 ---
-import { AFFILIATE_ENABLED, AFFILIATE_DISCLOSURE } from '../config/affiliate';
+import { AFFILIATE_ENABLED, AFFILIATE_INCONTENT_ENABLED, AFFILIATE_DISCLOSURE } from '../config/affiliate';
 import {
   affiliateProductsById,
   resolveAffiliateProductId,
@@ -26,10 +26,15 @@ interface Props {
   lang?: 'zh' | 'en';
   placement?: string;
   pageType?: 'tool' | 'calculator' | 'planner' | 'article' | 'guide' | 'hub';
+  /**
+   * 這個區塊是否放在專屬的商品頁（/support/）。內容頁（文章、工具、指南、落地頁）
+   * 只有在 AFFILIATE_INCONTENT_ENABLED 開啟時才會輸出商品區塊，預設不輸出。
+   */
+  supportPage?: boolean;
 }
 
-const { productIds, category, tags = [], slug, maxItems = 3, rotationPoolSize = 24, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。', amazon = false, lang = 'zh', placement: requestedPlacement, pageType } = Astro.props;
-const affiliateEnabled = AFFILIATE_ENABLED;
+const { productIds, category, tags = [], slug, maxItems = 3, rotationPoolSize = 24, showAll = false, heading = '一起檢查實用配置', intro = '以下是依頁面情境整理的居家實用品，請先量尺寸、確認動線，再自行比較是否需要。', amazon = false, lang = 'zh', placement: requestedPlacement, pageType, supportPage = false } = Astro.props;
+const affiliateEnabled = AFFILIATE_ENABLED && (supportPage || AFFILIATE_INCONTENT_ENABLED);
 const amazonCopy = {
   en: {
     kicker: 'Optional Amazon product discovery',

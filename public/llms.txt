@@ -60,7 +60,10 @@
 
 每個主題頁都有導讀、核心問題、精選指南與對應工具，比文章列表更適合當入口。
 
-- [臥室風水與民俗參考](https://roomfeng.win/zh/category/feng-shui/)
+- [居家風水與民俗參考](https://roomfeng.win/zh/category/feng-shui/)
+- [廚房配置與民俗參考](https://roomfeng.win/zh/category/kitchen/)
+- [浴室配置與民俗參考](https://roomfeng.win/zh/category/bathroom/)
+- [玄關配置與民俗參考](https://roomfeng.win/zh/category/entryway/)
 - [臥室家具配置](https://roomfeng.win/zh/category/bedroom/)
 - [房間規劃與尺寸檢查](https://roomfeng.win/zh/category/room-planning/)
 - [小房間與租屋佈局](https://roomfeng.win/zh/category/small-room/)

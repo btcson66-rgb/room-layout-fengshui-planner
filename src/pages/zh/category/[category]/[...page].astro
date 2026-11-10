@@ -7,7 +7,7 @@ import PlannerCta from '../../../../components/PlannerCta.astro';
 import RelatedLinks from '../../../../components/RelatedLinks.astro';
 import { isReviewReadyBlogSlug } from '../../../../data/contentQuality.mjs';
 import { hubContent } from '../../../../data/hubs';
-import { categoryMeta, categorySlugs, formatDate, siteUrl } from '../../../../data/site';
+import { categoryMeta, categorySlugs, folkCustomCategorySlugs, formatDate, roomHubSlugs, siteUrl } from '../../../../data/site';
 import { CATEGORY_PAGE_SIZE } from '../../../../data/pagination';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
@@ -95,7 +95,7 @@ if (isHubPage && hub.faq.length > 0) {
         <h1>{meta.title}</h1>
         <p class="lead">{meta.intro}</p>
         {isHubPage && hub.lead.map((paragraph) => <p>{paragraph}</p>)}
-        {category === 'feng-shui' && (
+        {folkCustomCategorySlugs.has(category ?? '') && (
           <p class="disclaimer-note">
             風水相關內容僅作民俗文化與空間舒適度參考，不保證任何結果。實際房間配置請以安全、通風、採光、動線與個人需求為主，詳見 <a href="/disclaimer/">免責聲明</a>。
           </p>
@@ -179,7 +179,11 @@ if (isHubPage && hub.faq.length > 0) {
         </section>
       )}
 
-      <RelatedLinks lang="zh" links={[...(hub?.tools ?? []).map((tool) => ({ href: tool.href, title: tool.title })), { href: '/zh/blog/', title: '全部房間規劃主題' }]} />
+      <RelatedLinks lang="zh" links={[
+        ...(hub?.tools ?? []).map((tool) => ({ href: tool.href, title: tool.title })),
+        ...(roomHubSlugs.includes(category ?? '') ? roomHubSlugs.filter((slug) => slug !== category).map((slug) => ({ href: `/zh/category/${slug}/`, title: categoryMeta[slug].title })) : []),
+        { href: '/zh/blog/', title: '全部房間規劃主題' },
+      ]} />
     </div>
   </section>
 </Layout>

@@ -3,7 +3,7 @@ title: "浴室浴簾風水怎麼掛？乾濕分區、防滑、通風與進出動
 description: "浴室浴簾風水要一起看浴簾長度、淋浴進出、防滑、積水、通風、清潔、扶手與馬桶動線。本文附 180 × 220 公分案例與五日觀察。"
 date: "2026-08-29"
 updated: "2026-08-29"
-category: "feng-shui"
+category: "bathroom"
 tags:
   - 浴室風水
   - 浴簾

@@ -5,8 +5,14 @@ import { ROOMFENG_RELEASE_AUTHORITY } from '../release-authority.mjs';
 
 test('current release authority records the demand consolidation and preserves prior transitions', () => {
   assert.deepEqual(ROOMFENG_RELEASE_AUTHORITY, {
-    buildPages: 524,
-    sitemapUrls: 514,
+    buildPages: 525,
+    sitemapUrls: 515,
+    categoryHubs001: {
+      previousBuildPages: 524,
+      previousSitemapUrls: 514,
+      addedRoutes: ['/zh/category/bathroom/', '/zh/category/entryway/', '/zh/category/kitchen/', '/zh/category/living-room/2/'],
+      removedPaginationRoutes: ['/zh/category/feng-shui/4/', '/zh/category/feng-shui/5/', '/zh/category/feng-shui/6/'],
+    },
     demandConsolidation001: {
       previousBuildPages: 1428,
       redirectedBlogArticles: 904,

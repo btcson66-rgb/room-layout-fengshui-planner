@@ -436,6 +436,10 @@ export const reviewReadyCategorySlugs = new Set([
   'faq',
   'living-room',
   'tutorial',
+  // 2026-11-10：自 feng-shui 拆出的房間主題（廚房 50、浴室 35、玄關 30 篇），各有自己的導讀。
+  'kitchen',
+  'bathroom',
+  'entryway',
 ]);
 
 export function isReviewReadyBlogSlug(slug) {
