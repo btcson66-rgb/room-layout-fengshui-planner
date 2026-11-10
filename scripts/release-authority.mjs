@@ -5,8 +5,27 @@
  * provenance. Historical baselines remain in their original evidence files.
  */
 export const ROOMFENG_RELEASE_AUTHORITY = Object.freeze({
-  buildPages: 524,
-  sitemapUrls: 514,
+  buildPages: 525,
+  sitemapUrls: 515,
+  // 2026-11-10 分類拆分：feng-shui 的 166 篇依主題移到 living-room（51）與新增的
+  // kitchen／bathroom／entryway 三個 Hub（50／35／30）。新增 3 個 Hub 網址；feng-shui
+  // 文章由 291 降到 125 篇，分頁由 6 頁變 3 頁（少 /4/ /5/ /6/）；living-room 由 1 篇變
+  // 52 篇，多出 /2/。淨變化：+3 −3 +1 = +1。
+  categoryHubs001: Object.freeze({
+    previousBuildPages: 524,
+    previousSitemapUrls: 514,
+    addedRoutes: Object.freeze([
+      '/zh/category/bathroom/',
+      '/zh/category/entryway/',
+      '/zh/category/kitchen/',
+      '/zh/category/living-room/2/',
+    ]),
+    removedPaginationRoutes: Object.freeze([
+      '/zh/category/feng-shui/4/',
+      '/zh/category/feng-shui/5/',
+      '/zh/category/feng-shui/6/',
+    ]),
+  }),
   // 2026-10-19 需求閘門合併：下面暫停索引的 904 篇刪檔、改 301 到語意最近的保留文章
   // （src/data/demandConsolidation.mjs），sitemap 不變。
   demandConsolidation001: Object.freeze({
