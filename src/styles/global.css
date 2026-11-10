@@ -102,6 +102,8 @@ p { margin: 0 0 var(--space-4); }
 .container { width: min(100% - 2rem, var(--container)); margin-inline: auto; }
 .section { padding-block: clamp(2.75rem, 6vw, var(--space-8)); }
 .page-grid { display: grid; gap: clamp(1.25rem, 2.5vw, var(--space-5)); }
+/* Grid items default to min-width:auto, so one wide table or code block would widen the whole track and make the page scroll sideways on phones. Let items shrink; wide content scrolls inside its own wrapper. */
+.page-grid > * { min-width: 0; }
 .lead { color: var(--color-muted); font-size: var(--text-lg); max-width: 68ch; }
 .eyebrow, .footer-label, .tool-card-index, .section-count {
   margin: 0 0 var(--space-2);
