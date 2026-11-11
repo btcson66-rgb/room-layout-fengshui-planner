@@ -4,6 +4,7 @@ description: "床頭靠牆但插座被床擋住怎麼辦？先讓插頭露出來
 date: "2026-09-01"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 床頭靠牆
   - 臥室風水

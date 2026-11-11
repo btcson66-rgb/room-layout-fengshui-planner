@@ -11,6 +11,7 @@ howToSteps:
   - "請同住者在走廊開燈並開關房門一次，記錄光線是否直射、聲音是否明顯打斷睡眠"
   - "打開衣櫃、拉出床下抽屜、模擬拿取物品，記錄哪個日常動作被家具或走道卡住"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 床對門
   - 臥室風水

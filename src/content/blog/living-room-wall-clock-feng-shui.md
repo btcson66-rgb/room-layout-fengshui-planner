@@ -4,6 +4,7 @@ description: "客廳掛鐘掛哪？鐘面中心離地160–180公分（視線高
 date: "2026-08-30"
 updated: "2026-11-10"
 category: "living-room"
+structure: "answer-first"
 tags:
   - 客廳風水
   - 掛鐘擺設

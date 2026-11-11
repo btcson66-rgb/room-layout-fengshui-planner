@@ -4,6 +4,7 @@ description: "行李箱放床下好嗎？看三件事：床下淨高比箱子多
 date: "2026-08-30"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 臥室風水
   - 行李箱收納

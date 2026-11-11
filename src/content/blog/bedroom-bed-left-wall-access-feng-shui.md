@@ -4,6 +4,7 @@ description: "床左邊靠牆怎麼辦？先分清左右（躺著面朝床尾的
 date: 2026-09-01
 updated: 2026-11-10
 category: room-planning
+structure: "answer-first"
 tags: [臥室風水, 床左側靠牆, 雙人床配置, 下床動線]
 keywords: [床左邊靠牆怎麼辦, 床左側靠牆風水, 雙人床靠牆, 床邊走道配置]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/]

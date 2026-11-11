@@ -4,6 +4,7 @@ description: "床架高度風水沒有吉數，但有好量的標準：坐在床
 date: "2026-08-29"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 臥室風水
   - 床墊高度

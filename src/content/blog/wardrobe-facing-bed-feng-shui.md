@@ -4,6 +4,7 @@ description: "衣櫃對床、開門見衣櫃角或側面怎麼處理？用60公�
 date: "2026-08-29"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 臥室風水
   - 衣櫃擺放

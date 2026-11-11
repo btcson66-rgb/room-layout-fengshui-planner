@@ -4,6 +4,7 @@ description: "安全帽收納看三件事：層板深度比帽長多 5 公分、
 date: "2026-08-30"
 updated: "2026-11-10"
 category: "entryway"
+structure: "answer-first"
 tags:
   - 玄關風水
   - 安全帽收納

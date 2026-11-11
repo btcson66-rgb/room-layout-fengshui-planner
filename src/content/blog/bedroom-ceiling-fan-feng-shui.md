@@ -4,6 +4,7 @@ description: "房間裝吊扇，民俗上最忌扇葉懸在床正上方；實際
 date: "2026-08-30"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 臥室風水
   - 吊扇風水
