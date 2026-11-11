@@ -4,6 +4,7 @@ description: "書桌對門與背對門的處理方式不同。用門片開啟方
 date: "2026-06-28"
 updated: "2026-11-10"
 category: "bedroom"
+structure: "answer-first"
 tags:
   - 書桌擺放
   - 書桌風水

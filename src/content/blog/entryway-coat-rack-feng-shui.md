@@ -4,6 +4,7 @@ description: "玄關衣帽架放在門片弧線之外，每人固定一個掛鉤
 date: "2026-08-29"
 updated: "2026-11-10"
 category: "entryway"
+structure: "answer-first"
 tags:
   - 玄關風水
   - 衣帽架

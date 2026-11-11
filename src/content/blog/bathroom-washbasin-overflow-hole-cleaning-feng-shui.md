@@ -4,6 +4,7 @@ description: "洗手台溢水孔是什麼？它是臉盆上緣防止滿水溢出
 date: "2026-08-30"
 updated: "2026-11-10"
 category: "bathroom"
+structure: "answer-first"
 tags:
   - 浴室風水
   - 洗手台溢水孔

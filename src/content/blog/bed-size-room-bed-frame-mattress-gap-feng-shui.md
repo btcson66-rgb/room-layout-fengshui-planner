@@ -4,6 +4,7 @@ description: "床架比床墊大，最常見的原因是台灣床墊（188 公�
 date: 2026-09-03
 updated: "2026-11-10"
 category: bedroom
+structure: "answer-first"
 tags: [床尺寸, 床架, 床墊, 房間風水]
 keywords: [床架比床墊大怎麼辦, 床墊比床架大, 床架比床墊大多少, 床墊尺寸台規歐規, 床架外框尺寸, 床墊床架差距]
 relatedTools: [/zh/furniture-fit-checker/, /zh/room-layout-planner/, /zh/storage-bed-selector/]

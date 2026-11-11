@@ -4,6 +4,7 @@ description: "開門見餐桌或餐桌正對大門怎麼辦？先確認餐椅後
 date: "2026-08-29"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 餐桌風水
   - 大門風水

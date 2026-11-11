@@ -11,6 +11,12 @@ const distRoot = path.join(root, 'dist');
 const failures = [];
 const checks = [];
 const expectedReviewReadyCount = 411;
+/**
+ * 「N 日／N 天／N 晚（觀察、測試）」與「四場景」這類試用期字樣。只比對整個 pattern 就是
+ * 這種字樣的情況（例如 /七日/、/7 晚|七晚/、/7 天界線測試/），不會誤傷 /有效日期/、/天窗/。
+ */
+const TRIAL_PERIOD_PHRASE = /^(?:(?:\d+\s*|[一二三四五六七八九十]+)(?:日|天|晚)(?:[^|]{0,6}測試)?(?:\|(?:\d+\s*|[一二三四五六七八九十]+)(?:日|天|晚))?|四場景)$/;
+
 const expandedArticleRequirements = new Map([
   ['bed-facing-door-feng-shui', {
     required: [/15 分鐘/, /一晚/, /cdc\.gov\/sleep/i, /usfa\.fema\.gov/i, /cpsc\.gov/i, /\/disclaimer\//],
@@ -5005,12 +5011,19 @@ for (const slug of reviewReadyBlogSlugs) {
   const expandedRequirements = expandedArticleRequirements.get(slug);
   if (expandedRequirements) {
     expandedArticleBodies.set(slug, body);
+    // 2026-11-10 稽核：下面的加長下限與「七日／五日／三晚…」字樣，是 8 月量產時的文章規格，
+    // 它們逐字要求每篇都有一段「N 日觀察」，等於強制同一副骨架（620 篇要求「七日」）。
+    // 已改寫成「開頭先回答查詢」結構的文章（frontmatter `structure: answer-first`）不再套用
+    // 這兩項：長度回到全站下限 1800，試用天數字樣不強制。來源網址、尺寸、禁用語等其餘
+    // required／forbidden 照舊檢查。
+    const answerFirst = /^structure:\s*["']?answer-first["']?\s*$/m.test(source.split(/^---\s*$/m)[1] ?? '');
     check(
       `source:${slug}:expanded-depth`,
-      characters >= (expandedRequirements.minimumCharacters ?? 2500),
+      characters >= (answerFirst ? 1800 : (expandedRequirements.minimumCharacters ?? 2500)),
       characters,
     );
     for (const pattern of expandedRequirements.required) {
+      if (answerFirst && TRIAL_PERIOD_PHRASE.test(pattern.source)) continue;
       check(`source:${slug}:required:${pattern.source}`, pattern.test(body), pattern.source);
     }
     for (const pattern of expandedRequirements.forbidden) {

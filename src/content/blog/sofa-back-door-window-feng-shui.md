@@ -4,6 +4,7 @@ description: "沙發靠窗不必封窗：沙發向前移 15–25 公分避開窗
 date: "2026-08-29"
 updated: "2026-11-10"
 category: "living-room"
+structure: "answer-first"
 tags:
   - 客廳風水
   - 沙發背門

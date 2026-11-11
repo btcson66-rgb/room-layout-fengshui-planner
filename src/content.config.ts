@@ -97,6 +97,9 @@ const blog = defineCollection({
     howToSteps: z.array(z.string()).default([]),
     howToTotalTime: z.string().optional(),
     plans: z.array(planSchema).default([]),
+    // 'answer-first'：已改寫成開頭直接回答查詢、不含固定「三方案／N 日觀察」骨架的文章。
+    // content-quality-audit 對這類文章不再強制加長下限與試用天數字樣。
+    structure: z.enum(['answer-first']).optional(),
   }),
 });
 

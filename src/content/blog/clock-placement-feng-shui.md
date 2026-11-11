@@ -4,6 +4,7 @@ description: "臥室時鐘可以對床尾嗎？整理全室時鐘禁忌：不掛
 date: "2026-07-21"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 時鐘位置
   - 掛鐘風水

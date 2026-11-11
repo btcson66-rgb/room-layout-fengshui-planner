@@ -4,6 +4,7 @@ description: "電視對床要化解嗎？先關燈測關機反光，再用螢幕
 date: "2026-08-29"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 電視對床
   - 臥室電視

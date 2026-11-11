@@ -4,6 +4,7 @@ description: "床頭可以放時鐘或鬧鐘嗎？避開鐘面正對枕頭與頭
 date: "2026-08-30"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 臥室風水
   - 床邊時鐘

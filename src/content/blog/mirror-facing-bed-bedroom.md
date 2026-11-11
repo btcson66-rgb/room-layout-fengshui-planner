@@ -4,6 +4,7 @@ description: "鏡子在床側邊也可能反射夜燈與人影：正躺、左右
 date: "2026-06-28"
 updated: "2026-11-10"
 category: "feng-shui"
+structure: "answer-first"
 tags:
   - 鏡子對床
   - 臥室鏡子
