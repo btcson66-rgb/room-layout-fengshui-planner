@@ -120,6 +120,54 @@
   margin-top: .65rem;
 }
 
+.us-seo-answer-note {
+  color: var(--color-muted);
+  margin-top: .6rem;
+}
+
+.us-seo-table-note {
+  color: var(--color-muted);
+  font-size: .92rem;
+  margin-top: .6rem;
+}
+
+.us-seo-table-wrap:focus-visible {
+  outline: 3px solid #d38b3d;
+  outline-offset: 2px;
+}
+
+.us-seo-table td[data-verdict='Fits'] strong { color: #1f6a4d; }
+.us-seo-table td[data-verdict='Tight'] strong { color: #8a5a10; }
+.us-seo-table td[data-verdict='Does not fit'] strong { color: #9a2f22; }
+
+.us-seo-diagram-grid--scaled {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.us-seo-diagram.us-seo-diagram--scaled svg {
+  aspect-ratio: var(--plan-ratio, 1 / 1);
+  height: auto;
+  margin-inline: auto;
+  max-height: 460px;
+  max-width: 100%;
+}
+
+.us-seo-plan-facts {
+  display: grid;
+  gap: .2rem;
+  margin: .6rem 0;
+  padding-left: 1.1rem;
+}
+
+.us-seo-legend {
+  display: block;
+  font-size: .85rem;
+}
+
+.us-seo-related li span {
+  color: var(--color-muted);
+}
+
 .us-seo-list {
   display: grid;
   gap: .55rem;
