@@ -2,7 +2,7 @@
 title: "玄關傘架怎麼放？門片迴轉範圍與排水的實際位置"
 description: "雨傘可以放哪裡：傘架放在大門迴轉範圍外、鉸鏈側牆邊，底部要有接水盤，濕傘與乾傘分開收。附 180 × 220 公分玄關平面圖，標出門扇與傘架的距離。"
 date: "2026-08-29"
-updated: "2026-11-11"
+updated: "2026-11-13"
 category: "entryway"
 structure: "answer-first"
 tags:
@@ -92,4 +92,4 @@ plans:
 
 ## 參考資料與限制
 
-本文整理風水文化與玄關使用條件，不保證財運、健康或家庭關係結果。居家防跌可參考 [衛生福利部居家防跌建議](https://www.mohw.gov.tw/cp-2704-51615-1.html)；避難動線與家具位置可參考 [國家災害防救科技中心居家防災資料](https://www.ncdr.nat.gov.tw/UploadFile/PageItem/240391377a704669bd5d39be3b49bdc9.pdf)；潮濕與通風可參考 [新北市環境保護局室內空氣品質改善技術指引](https://www.epd.ntpc.gov.tw/UploadFile/AirCon/20210604151501803725.pdf)。實際地面材質、產品承重、牆面固定與逃生規範仍依現場、製造商和所在地專業意見判斷。
+本文整理風水文化與玄關使用條件，不保證財運、健康或家庭關係結果。居家防跌可參考 [衛生福利部居家防跌建議](https://www.mohw.gov.tw/cp-2704-51615-1.html)；避難動線與家具位置可參考 [國家災害防救科技中心居家防災資料](https://www.ncdr.nat.gov.tw/UploadFile/PageItem/240391377a704669bd5d39be3b49bdc9.pdf)。實際地面材質、產品承重、牆面固定與逃生規範仍依現場、製造商和所在地專業意見判斷。
