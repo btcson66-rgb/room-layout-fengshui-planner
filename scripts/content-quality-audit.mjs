@@ -76,7 +76,8 @@ const expandedArticleRequirements = new Map([
   }],
   ['bedroom-ceiling-light-feng-shui', {
     minimumCharacters: 3200,
-    required: [/四場景/, /300\s*×\s*300/, /mtc\.ntnu\.edu\.tw/i, /床中央/],
+    // 2026-11-13：原本強制引用 mtc.ntnu.edu.tw（師大華語教學期刊的風水課文），與燈具位置無關，已移除。
+    required: [/四場景/, /300\s*×\s*300/, /床中央/],
     forbidden: [/一定招財|保證睡眠|必然壓床/],
   }],
   ['entryway-shoe-cabinet-feng-shui', {
