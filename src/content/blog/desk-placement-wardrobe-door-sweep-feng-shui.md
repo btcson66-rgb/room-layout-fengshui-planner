@@ -8,7 +8,7 @@ structure: "answer-first"
 tags: [書桌與衣櫃, 櫃門動線, 小房間, 房間風水]
 keywords: [書桌旁衣櫃, 書桌衣櫃風水, 衣櫃門撞書桌, 書桌收納動線]
 relatedTools: [/zh/desk-placement-feng-shui/, /zh/furniture-fit-checker/, /zh/room-layout-planner/]
-relatedPosts: [desk-placement-window-glare-feng-shui, desk-placement-monitor-depth-feng-shui, desk-placement-chair-turning-feng-shui, desk-placement-bed-sleep-separation-feng-shui]
+relatedPosts: [desk-placement-window-glare-feng-shui, desk-placement-monitor-depth-feng-shui, desk-placement-bed-sleep-separation-feng-shui]
 howToName: 測量書桌與衣櫃門的掃掠範圍
 howToTotalTime: PT30M
 howToSteps:

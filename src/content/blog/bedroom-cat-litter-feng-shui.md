@@ -35,14 +35,14 @@ plans:
     after: "240 × 330 公分臥室：砂盆放得下的位置"
     roomWidthCm: 240
     roomLengthCm: 330
-    caption: "砂盆放在東牆、窗下，離床尾 80 公分，夜間離床路線（虛線）離砂盆 45 公分；衣櫃門前的空間沒有被占用。"
+    caption: "東牆的藍線是窗，砂盆放在窗下，離床尾 80 公分，夜間離床路線（虛線）離砂盆 45 公分；衣櫃門前的空間沒有被占用。"
     ariaLabel: "240 乘 330 公分臥室平面圖：110 乘 188 公分的單人床靠西北，東牆有 60 乘 150 公分衣櫃，東牆南段窗下放 50 乘 40 公分貓砂盆，南牆有 80 公分寬房門，一條夜間路線從床邊走向房門，離砂盆 45 公分"
     furniture:
       - { x: 0, y: 0, width: 110, depth: 188, label: "床", className: bed }
       - { x: 180, y: 10, width: 60, depth: 150, label: "衣櫃", className: storage, hideSize: true }
       - { x: 190, y: 215, width: 50, depth: 40, label: "砂盆", hideSize: true }
     openings:
-      - { kind: window, wall: right, offset: 190, width: 100, label: "窗" }
+      - { kind: window, wall: right, offset: 190, width: 100 }
       - { kind: door, wall: bottom, offset: 20, width: 80, swing: in, hinge: start, label: "房門" }
     route: "M 145 150 L 145 290 L 60 318"
 ---
