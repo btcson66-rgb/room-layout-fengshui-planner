@@ -20,7 +20,7 @@
     "test:production-hardening-browser": "node scripts/test/production-hardening.browser.mjs",
     "test:adsense:browser": "node scripts/test/adsense-integration.browser.mjs",
     "test:live-crawl:browser": "node scripts/test/live-crawl-006.browser.mjs",
-    "audit:us-seo": "node scripts/us-seo-audit.mjs",
+    "audit:us-seo": "node scripts/us-seo-audit.mjs && node scripts/us-seo-arithmetic-check.mjs",
     "gsc:submit-sitemap": "node scripts/gsc-submit-sitemap.mjs",
     "gsc:sitemap-health": "node scripts/gsc-sitemap-health.mjs",
     "test:scripts": "node --test scripts/test/*.test.mjs",

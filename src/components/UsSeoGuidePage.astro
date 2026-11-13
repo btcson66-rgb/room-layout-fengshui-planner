@@ -1,6 +1,6 @@
 ---
 import Layout from './Layout.astro';
-import { bedroomBedRows, type GuidePageData } from '../us-seo/content';
+import type { GuidePageData } from '../us-seo/content';
 import { renderFloorPlanSvg } from '../us-seo/renderer';
 import ArticleByline from './ArticleByline.astro';
 import { techArticleSchema } from '../lib/articleSchema';
@@ -12,8 +12,6 @@ interface Props {
 
 const { data } = Astro.props;
 const siteUrl = 'https://roomfeng.win';
-const isBedroom = data.plans[0]?.unit === 'in';
-const bedRows = isBedroom ? bedroomBedRows(data.plans[0].roomWidth, data.plans[0].roomLength) : [];
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -45,7 +43,6 @@ const jsonLd = [
   },
   faqJsonLd,
 ];
-const squareFootNote = data.footprintNote;
 ---
 
 <Layout title={data.title} description={data.description} canonical={data.path} lang="en" jsonLd={jsonLd} pageType="guide">
@@ -56,7 +53,6 @@ const squareFootNote = data.footprintNote;
         <h1>{data.h1}</h1>
         <ArticleByline lang="en" datePublished={datePublished} dateModified={dateModified} />
         <p class="lead">{data.lead}</p>
-        {squareFootNote && <p class="us-seo-caution"><strong>Illustrative layout study:</strong> {squareFootNote} Square footage alone does not tell you the usable furniture area.</p>}
       </header>
 
       <section class="us-seo-section" aria-labelledby="quick-answer-heading">
@@ -67,39 +63,11 @@ const squareFootNote = data.footprintNote;
         </div>
       </section>
 
-      {isBedroom && (
-        <section class="us-seo-section" aria-labelledby="bed-size-heading">
-          <h2 id="bed-size-heading">Common mattress dimensions and room fit</h2>
-          <p>These are common U.S. mattress dimensions. Actual bed frames may be larger, so measure the outside dimensions of the frame before purchasing. “Physical fit” below means the mattress rectangle fits in at least one orientation; it does not certify daily comfort or a code requirement.</p>
-          <div class="us-seo-table-wrap">
-            <table class="us-seo-table">
-              <thead><tr><th>Bed size</th><th>Reference size</th><th>Physical fit</th><th>Access planning note</th></tr></thead>
-              <tbody>{bedRows.map((row) => <tr><th scope="row">{row.name}</th><td>{row.dimensions}</td><td>{row.physicalFit}</td><td>{row.accessNote}</td></tr>)}</tbody>
-            </table>
-          </div>
-        </section>
-      )}
-
       <section class="us-seo-section" aria-labelledby="assumptions-heading">
         <h2 id="assumptions-heading">Exact assumptions</h2>
         <ul class="us-seo-list">{data.assumptions.map((item) => <li>{item}</li>)}</ul>
         {data.math.length > 3 && <><h3>Detailed room math</h3><ul class="us-seo-list">{data.math.slice(3).map((item) => <li>{item}</li>)}</ul></>}
       </section>
-
-      {data.dimensionBudget && (
-        <section class="us-seo-section" aria-labelledby="dimension-budget-heading">
-          <h2 id="dimension-budget-heading">{data.dimensionBudget.heading}</h2>
-          <p>{data.dimensionBudget.intro}</p>
-          <div class="us-seo-table-wrap">
-            <table class="us-seo-table">
-              <thead><tr><th>Item</th><th>Example size</th><th>Planning note</th></tr></thead>
-              <tbody>{data.dimensionBudget.rows.map((row) => <tr><th scope="row">{row.item}</th><td>{row.size}</td><td>{row.note}</td></tr>)}</tbody>
-            </table>
-          </div>
-          <h3>Worked dimension checks</h3>
-          <ul class="us-seo-list">{data.dimensionBudget.checks.map((item) => <li>{item}</li>)}</ul>
-        </section>
-      )}
 
       <section class="us-seo-section" aria-labelledby="layouts-heading">
         <h2 id="layouts-heading">Layout options with proportional diagrams</h2>
