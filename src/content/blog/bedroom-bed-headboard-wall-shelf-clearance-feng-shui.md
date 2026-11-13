@@ -48,7 +48,7 @@ howToSteps:
 
 ## 固定與負載
 
-固定要依牆體與產品說明：石膏板、木作、磚牆與混凝土不能用同一種想當然的安裝方法，不要只鎖在薄背板，也不要把層板推緊牆角就當成固定。CPSC 的 Anchor It! 資料以防止家具與電視傾倒為主，提醒要依說明固定；壁掛層板本身仍以產品與牆體說明為準，不能用床頭、床墊或重物抵住代替固定。
+固定要依牆體與產品說明：石膏板、木作、磚牆與混凝土不能用同一種想當然的安裝方法，不要只鎖在薄背板，也不要把層板推緊牆角就當成固定。壁掛層板以產品與牆體說明為準（CPSC 的 Anchor It! 是談家具與電視傾倒的教育資料，撰寫時無法連線核對內文，這裡不引用其具體建議），不能用床頭、床墊或重物抵住代替固定。
 
 負載先放空層板測試，再放一兩本書，最後才加眼鏡盒或小燈，記下層板下垂、支架移動與物品滑動。常用物品要好拿，較重的放低處；液體、玻璃與尖角擺件不放頭頂上方。若床上有幼兒，放在層板上的東西更要想像它掉下來會落在哪裡。租屋不能鑽孔時，用床側收納或獨立家具，不要用未確認的黏貼方式懸掛重物。
 
@@ -78,6 +78,5 @@ howToSteps:
 
 ### 參考資料
 
-- [CPSC：Anchor It](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)
-- [CPSC：Prevent TV and Furniture Tip-Overs](https://www.cpsc.gov/Safety-Education/Safety-Guides/Home-Indoors-Furniture-Furnishings-and-Decorations/Prevent-TV-Furniture-Tip-Overs-Learn-How-at-AnchorItgov)
+- [CPSC：Anchor It](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：延伸閱讀（無法連線核對內文）
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)

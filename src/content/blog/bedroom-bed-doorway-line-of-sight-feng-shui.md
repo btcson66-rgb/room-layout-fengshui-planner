@@ -65,7 +65,7 @@ plans:
 
 ## 屏風、床尾與矮櫃：什麼時候才需要遮
 
-遮擋不是第一步。先看移床能不能做到（上面的算式）；做不到，才考慮擋視線。屏風、高櫃占地，還有固定與清潔的負擔：美國消費品安全委員會（CPSC）的 Anchor It! 資料提醒，高櫃與屏風之類的家具有傾倒風險，要依產品說明固定。放在床與門之間的家具，不能擋住從床到房門的逃生路線，也不能高到讓人在床上看不到門口。
+遮擋不是第一步。先看移床能不能做到（上面的算式）；做不到，才考慮擋視線。屏風、高櫃占地，還有固定與清潔的負擔：高櫃與屏風之類的家具有傾倒風險，要依產品說明固定。放在床與門之間的家具，不能擋住從床到房門的逃生路線，也不能高到讓人在床上看不到門口。
 
 比較低成本的做法是調整「第一眼看到的內容」：床尾保持留白，把包、衣物、洗好的衣服放回固定位置，讓門外視線落在乾淨的地板或側牆；床尾放低矮、固定的收納，視線高度低，也不阻路。這些調整不保證睡眠或運勢，只讓入口少一點雜亂與干擾。
 
@@ -96,4 +96,4 @@ plans:
 ## 參考資料與安全界線
 
 - [美國國家消防協會：居家逃生計畫](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：房門、窗戶與出口路徑保持可用的檢查。
-- [美國消費品安全委員會：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：床尾高櫃、屏風與家具固定的安全提醒。
+- [美國消費品安全委員會：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：家具與電視防傾倒教育資料（撰寫時無法連線核對內文，僅作延伸閱讀）。

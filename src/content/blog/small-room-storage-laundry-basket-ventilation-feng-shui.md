@@ -71,7 +71,7 @@ plans:
 
 ## 什麼情況不該把籃子留在房內
 
-房間已經有明顯漏水、霉味，濕衣沒有晾乾的位置，或籃子會堵住唯一的離房路線，就不要只靠換籃子解決。把待洗衣物移到可通風、可清潔、不阻路的區域，並處理環境來源。兒童或寵物會接觸的房間，要確認籃子不會傾倒、攀爬或夾手；若把籃子疊在高櫃上，高家具依 CPSC Anchor It! 的提醒固定。租屋優先選可移動的方案，不要在牆上鑽孔固定。
+房間已經有明顯漏水、霉味，濕衣沒有晾乾的位置，或籃子會堵住唯一的離房路線，就不要只靠換籃子解決。把待洗衣物移到可通風、可清潔、不阻路的區域，並處理環境來源。兒童或寵物會接觸的房間，要確認籃子不會傾倒、攀爬或夾手；若把籃子疊在高櫃上，高家具依產品說明固定。租屋優先選可移動的方案，不要在牆上鑽孔固定。
 
 ## 常見問題
 
@@ -93,4 +93,4 @@ plans:
 
 - [US EPA：Interactive Mold House Tour](https://www.epa.gov/mold/interactive-mold-house-tour)：居家各處的潮濕與霉菌來源。
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：室內空氣、濕度與通風管理。
-- [CPSC：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：高家具固定的提醒。
+- [CPSC：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：家具與電視防傾倒教育資料（撰寫時無法連線核對內文，僅作延伸閱讀，文中未引用其具體內容）。
