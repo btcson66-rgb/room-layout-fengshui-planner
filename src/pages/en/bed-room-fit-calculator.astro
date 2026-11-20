@@ -1,10 +1,51 @@
 ---
 import UsSeoCalculatorPage from '../../components/UsSeoCalculatorPage.astro';
+import { WALK_TARGET_IN, clearanceRows, ftIn, roomExamples } from '../../us-seo/bed-clearance';
+
+const T = WALK_TARGET_IN;
+const queen = clearanceRows[0];
+const king = clearanceRows[1];
 const faq = [
   { question: 'Which mattress sizes does this bed room fit calculator support?', answer: 'It includes Twin, Twin XL, Full, Queen, King and California King US mattress presets, plus Custom frame dimensions. Presets are mattress footprints; actual frames can be larger.' },
   { question: 'What clearances should I enter around a bed?', answer: 'Enter the clearances you actually need for bedside access and getting around the foot of the bed. The calculator does not declare a universal code minimum or accessibility standard.' },
   { question: 'Can a bed fit physically but fail the access check?', answer: 'Yes. The mattress or frame rectangle may fit while the requested side, foot or head clearances do not. That distinction is why the calculator reports both results.' },
+  { question: 'How much space should you leave around a bed?', answer: `Plan for ${T} in of clear floor beside the bed on each side you use and ${T} in at the foot. That is a planning target, not a building code. For a queen, ${queen.width} + ${2 * T} = ${queen.bothSides} in of room width gives ${T} in on both sides, and ${queen.length} + ${T} = ${queen.lengthNeeded} in of length covers the foot.` },
+  { question: 'How much clearance do you need around a queen bed or a king bed?', answer: `A queen needs ${queen.width} + ${T} = ${queen.oneSide} in of width for one open side and ${queen.width} + ${2 * T} = ${queen.bothSides} in for both sides. A king needs ${king.width} + ${T} = ${king.oneSide} in and ${king.width} + ${2 * T} = ${king.bothSides} in. Both need ${queen.length} + ${T} = ${queen.lengthNeeded} in of length for the foot.` },
+  { question: 'How much walking space is needed around a bed?', answer: `${T} in is the planning target on each side you use and at the foot; it is a planning number, not a building code. In a 9x10 room (108 × 120 in) a queen leaves 108 − ${queen.width} = ${108 - queen.width} in beside it, which gives one open side but not two.` },
 ];
 const related = [{ href: '/en/small-bedroom-layout-planner/', title: 'Plan a small bedroom' }, { href: '/en/furniture-fit-calculator/', title: 'Check another furniture item' }, { href: '/en/room-layout-planner/', title: 'Open the full room planner' }];
+const rows = clearanceRows.map((row) => ({
+  ...row,
+  cells: [
+    `${row.width} × ${row.length}`,
+    `${row.oneSide} in (${ftIn(row.oneSide)})`,
+    `${row.bothSides} in (${ftIn(row.bothSides)})`,
+    `${row.lengthNeeded} in (${ftIn(row.lengthNeeded)})`,
+    `${ftIn(row.bothSides)} × ${ftIn(row.lengthNeeded)}`,
+  ],
+}));
 ---
-<UsSeoCalculatorPage kind="bed" title="Bed Room Fit Calculator | RoomFeng" description="Check US mattress or custom bed-frame dimensions against room size and requested side, foot and head clearances." canonical="/en/bed-room-fit-calculator/" h1="Bed room fit calculator" lead="Choose a common US mattress size or enter the actual frame, then compare physical fit with the access space you want around the bed." faq={faq} related={related} />
+<UsSeoCalculatorPage kind="bed" title="Bed Room Fit Calculator | RoomFeng" description="Check US mattress or custom bed-frame dimensions against room size and clearances, and see how much space to leave around a queen or king bed." canonical="/en/bed-room-fit-calculator/" h1="Bed room fit calculator" lead="Choose a common US mattress size or enter the actual frame, then compare physical fit with the access space you want around the bed." faq={faq} related={related}>
+  <section class="card us-seo-copy us-seo-clearance" slot="answer" aria-labelledby="clearance-heading" id="clearance">
+    <h2 id="clearance-heading">How much space do you need around a bed?</h2>
+    <p data-clearance-answer>Plan for {T} in of clear floor beside the bed on each side you use and {T} in at the foot, a planning target used across RoomFeng's size pages, not a building code. For a queen ({queen.width} × {queen.length} in), {queen.width} + {T} = {queen.oneSide} in of room width gives one open side, {queen.width} + {2 * T} = {queen.bothSides} in ({ftIn(queen.bothSides)}) gives both sides, and {queen.length} + {T} = {queen.lengthNeeded} in of length covers the foot.</p>
+    <p>A king ({king.width} × {king.length} in) needs {king.width} + {T} = {king.oneSide} in of width for one open side and {king.width} + {2 * T} = {king.bothSides} in ({ftIn(king.bothSides)}) for both sides, with the same {king.length} + {T} = {king.lengthNeeded} in of length.</p>
+    <div class="us-seo-table-wrap" tabindex="0" role="region" aria-labelledby="clearance-heading">
+      <table class="us-seo-table" data-table="clearance">
+        <thead><tr><th scope="col">Bed</th><th scope="col">Mattress (in)</th><th scope="col">Room width, one side open (width + {T})</th><th scope="col">Room width, both sides open (width + {2 * T})</th><th scope="col">Room length, foot clear (length + {T})</th><th scope="col">Smallest room, both sides open</th></tr></thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr data-key={row.bed}>
+              <th scope="row">{row.bed}</th>
+              {row.cells.map((cell) => <td>{cell}</td>)}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="us-seo-table-note">Mattress sizes only, bed against a wall at the head. Targets: {T} in beside the bed and {T} in at the foot.</p>
+    <h3>What that means for room sizes</h3>
+    <p>A queen with both sides open fits a 10x10 room exactly: 120 − {queen.width} = {roomExamples.queen10x10.spare} in, {T} in each side (<a href="/en/queen-bed-in-10x10-room/">will a queen bed fit in a 10x10 room</a>). A king with both sides open needs more than 11 ft: an 11x12 room leaves 132 − {king.width} = {roomExamples.king11x12.spare} in, {roomExamples.king11x12.spare / 2} in each side, just under the target (<a href="/en/11x12-bedroom-layout/">11x12 bedroom layout</a>), while a 12x12 room leaves 144 − {king.width} = {roomExamples.king12x12.spare} in, {roomExamples.king12x12.spare / 2} in each side (<a href="/en/12x12-bedroom-layout/">12x12 bedroom layout</a>). A 10x12 room gives the same {roomExamples.king10x12Turned.spare} in when the headboard goes on the 12 ft wall (<a href="/en/king-bed-in-10x12-room/">will a king bed fit in a 10x12 room</a>).</p>
+    <p>These numbers use mattress sizes. A frame, headboard, nightstand or door swing takes inches from the clear floor, and the targets are not an accessibility standard: if someone needs a wheelchair or walker beside the bed, plan wider and check the standard that applies to you.</p>
+  </section>
+</UsSeoCalculatorPage>

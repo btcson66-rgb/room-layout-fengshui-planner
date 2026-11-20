@@ -5,8 +5,21 @@
  * provenance. Historical baselines remain in their original evidence files.
  */
 export const ROOMFENG_RELEASE_AUTHORITY = Object.freeze({
-  buildPages: 525,
-  sitemapUrls: 515,
+  buildPages: 528,
+  sitemapUrls: 518,
+  // 2026-11-20 美國尺寸答案頁：新增 3 個英文答案頁（10x10 放得下 queen 嗎、10x12 放得下 king 嗎、
+  // 300 平方英尺有多大），沿用 src/us-seo/answer-pages.ts 的資料模型。沒有任何網址被移除或轉址。
+  // 部署前線上 sitemap 是 categoryHubs001 之後的 515；候選 sitemap 必須剛好多出下面三個網址。
+  usAnswerPages002: Object.freeze({
+    previousBuildPages: 525,
+    previousSitemapUrls: 515,
+    addedRoutes: Object.freeze([
+      '/en/how-big-is-300-square-feet/',
+      '/en/king-bed-in-10x12-room/',
+      '/en/queen-bed-in-10x10-room/',
+    ]),
+    removedRoutes: Object.freeze([]),
+  }),
   // 2026-11-10 分類拆分：feng-shui 的 166 篇依主題移到 living-room（51）與新增的
   // kitchen／bathroom／entryway 三個 Hub（50／35／30）。新增 3 個 Hub 網址；feng-shui
   // 文章由 291 降到 125 篇，分頁由 6 頁變 3 頁（少 /4/ /5/ /6/）；living-room 由 1 篇變

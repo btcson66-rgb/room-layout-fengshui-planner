@@ -10,6 +10,7 @@ const baselineSitemapUrls = 1430;
 const expectedNewUrls = 17;
 // PRODUCT-006 adds one intentional commercial landing route outside the US SEO batch.
 const expectedCommercialRoutes = 1;
+const expectedAnswerPages002 = ROOMFENG_RELEASE_AUTHORITY.usAnswerPages002.addedRoutes.length;
 const expectedTrustRoutes = ROOMFENG_RELEASE_AUTHORITY.productionRepair001.addedRoutes.length;
 const expectedSitemapUrls = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const records = [
@@ -30,6 +31,9 @@ const records = [
   ['couch fit through door calculator', '/en/couch-fit-through-door-calculator/', 'new'],
   ['furniture fit calculator', '/en/furniture-fit-calculator/', 'new'],
   ['bed room fit calculator', '/en/bed-room-fit-calculator/', 'new'],
+  ['queen bed in 10x10 room', '/en/queen-bed-in-10x10-room/', 'new'],
+  ['king bed in 10x12 room', '/en/king-bed-in-10x12-room/', 'new'],
+  ['how big is 300 square feet', '/en/how-big-is-300-square-feet/', 'new'],
   ['feng shui bed placement', '/en/feng-shui-bed-placement/', 'new'],
   ['bed facing door feng shui', '/en/bed-facing-door-feng-shui/', 'new'],
   ['mirror facing bed feng shui', '/en/mirror-facing-bed-feng-shui/', 'new'],
@@ -130,4 +134,6 @@ for (const [path, html] of targetHtml) {
   }
 }
 
-console.log(`[us-seo-audit] PASS: ${records.length} intents, ${expectedNewUrls} US SEO URLs + ${expectedCommercialRoutes} commercial route, ${expectedSitemapUrls} sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.`);
+assert.equal(records.length, 20 + expectedAnswerPages002, 'record list must cover the original 20 intents plus the registered answer pages');
+for (const route of ROOMFENG_RELEASE_AUTHORITY.usAnswerPages002.addedRoutes) assert.ok(targetPaths.includes(route), `${route}: registered route is missing from the audit records`);
+console.log(`[us-seo-audit] PASS: ${records.length} intents, ${expectedNewUrls} US SEO URLs + ${expectedAnswerPages002} answer pages + ${expectedCommercialRoutes} commercial route, ${expectedSitemapUrls} sitemap URLs, noindex/canonical/title/H1/internal-link checks passed.`);

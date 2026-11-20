@@ -45,6 +45,7 @@ const fields = kind === 'couch'
         {kind === 'furniture' && <><p>A furniture item can fit inside the room rectangle and still block a route, door, drawer, wardrobe swing or chair pullback. This calculator reports physical rectangle fit separately from the clearances you request.</p><h2>Use outside dimensions and active clearances</h2><p>Use the largest outside footprint of the item, then enter the clearance you need on each side. Test both orientations because rotating a rectangular piece may change the answer.</p></>}
         {kind === 'bed' && <><p>Choose a common US mattress size as a starting point, or switch to Custom when you know the actual bed-frame footprint. A frame can be larger than its mattress.</p><h2>Separate mattress fit from access fit</h2><p>The result shows whether the bed rectangle fits physically and whether the requested left, right, foot and optional head clearances also fit. Verify doors, closets, windows and frame hardware in the planner.</p></>}
       </article>
+      <slot name="answer" />
 
       <section class="card us-seo-calculator" aria-labelledby="calculator-heading" data-calculator={kind}>
         <div class="us-seo-calculator-header"><div><p class="eyebrow">Runs in your browser</p><h2 id="calculator-heading">{calculatorName}</h2></div><label class="us-seo-unit-switch" for="unit-system">Units<select id="unit-system"><option value="imperial" selected>US feet + inches</option><option value="metric">Metric centimetres</option></select></label></div>

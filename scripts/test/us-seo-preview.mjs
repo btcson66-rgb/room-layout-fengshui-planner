@@ -9,7 +9,7 @@ const targetPaths = [
   '/en/450-sq-ft-studio-apartment-layout/', '/en/500-sq-ft-studio-apartment-layout/', '/en/long-narrow-living-room-layout/',
   '/en/awkward-living-room-layout/', '/en/living-room-layout-with-fireplace-and-tv/', '/en/couch-fit-through-door-calculator/',
   '/en/furniture-fit-calculator/', '/en/bed-room-fit-calculator/', '/en/feng-shui-bed-placement/', '/en/bed-facing-door-feng-shui/',
-  '/en/mirror-facing-bed-feng-shui/',
+  '/en/mirror-facing-bed-feng-shui/', '/en/queen-bed-in-10x10-room/', '/en/king-bed-in-10x12-room/', '/en/how-big-is-300-square-feet/',
 ];
 const critical = {
   '/en/': { title: 'RoomFeng | Free Room Furniture Layout Tool', h1: 'Will it fit? Check before you buy or move it.' },

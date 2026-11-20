@@ -37,8 +37,9 @@ const childSitemap = () => {
 test('US SEO Growth 002 retains its URLs while repair 001 adds only six trust routes', async () => {
   assert.ok(existsSync(dist), 'dist does not exist; run npm.cmd run build first');
   const hubs = ROOMFENG_RELEASE_AUTHORITY.categoryHubs001;
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 525, 'build authority changed unexpectedly');
-  assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 515, 'sitemap authority changed unexpectedly');
+  const answers = ROOMFENG_RELEASE_AUTHORITY.usAnswerPages002;
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.buildPages, 528, 'build authority changed unexpectedly');
+  assert.equal(ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, 518, 'sitemap authority changed unexpectedly');
 
   const sitemap = childSitemap();
   const candidateUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
@@ -51,15 +52,19 @@ test('US SEO Growth 002 retains its URLs while repair 001 adds only six trust ro
   const baselineXml = await baselineResponse.text();
   const baselineUrls = [...baselineXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
   const baselineCount = baselineUrls.length;
-  // 公開 sitemap 可能還是分類拆分之前的 514，也可能已經部署成 515。
-  assert.ok(baselineCount === hubs.previousSitemapUrls || baselineCount === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls, `unexpected public sitemap count ${baselineCount}`);
+  // 公開 sitemap 可能是分類拆分之前的 514、美國答案頁之前的 515，也可能已經部署成 518。
+  assert.ok([hubs.previousSitemapUrls, answers.previousSitemapUrls, ROOMFENG_RELEASE_AUTHORITY.sitemapUrls].includes(baselineCount), `unexpected public sitemap count ${baselineCount}`);
   const candidateSet = new Set(candidateUrls);
   const baselineSet = new Set(baselineUrls);
   const added = [...candidateSet].filter((url) => !baselineSet.has(url)).sort();
   const removed = [...baselineSet].filter((url) => !candidateSet.has(url)).sort();
   // 分類拆分（categoryHubs001）在部署前會讓候選 sitemap 比公開版多出固定的幾個網址；
   // 部署之後公開版已包含它們，就不得再有任何新增。
-  const expectedAdded = baselineCount === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls ? [] : hubs.addedRoutes.map((route) => `${siteUrl}${route}`).sort();
+  // 美國答案頁（usAnswerPages002）部署前，候選 sitemap 剛好多出它登記的三個網址。
+  const pendingRoutes = baselineCount === ROOMFENG_RELEASE_AUTHORITY.sitemapUrls ? []
+    : baselineCount === answers.previousSitemapUrls ? answers.addedRoutes
+      : [...hubs.addedRoutes, ...answers.addedRoutes];
+  const expectedAdded = pendingRoutes.map((route) => `${siteUrl}${route}`).sort();
   assert.deepEqual(added, expectedAdded, 'unexpected candidate URL additions');
   assert.deepEqual(removed.filter((url) => !isSearchDemandPruneRemoval(url)), [], 'candidate removed a public URL outside the search-demand prune');
 

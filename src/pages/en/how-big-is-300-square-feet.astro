@@ -1,0 +1,6 @@
+---
+import UsSeoAnswerPage from '../../components/UsSeoAnswerPage.astro';
+import { getAnswerPage } from '../../us-seo/answer-pages';
+const page = getAnswerPage('how-big-is-300-square-feet');
+---
+<UsSeoAnswerPage data={page} />

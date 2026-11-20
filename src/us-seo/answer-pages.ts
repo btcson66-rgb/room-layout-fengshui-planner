@@ -89,14 +89,14 @@ const dims = (a: number, b: number): string => `${trim(a, 2)} × ${trim(b, 2)}`;
 const dimsM = (wFt: number, lFt: number): string => `${ftM(wFt)} × ${ftM(lFt)}`;
 const an = (n: number): string => (/^(8|11|18)/.test(String(n)) ? 'an' : 'a');
 
-const SIZES = {
+export const SIZES = {
   Twin: { width: 38, length: 75 },
   Full: { width: 54, length: 75 },
   Queen: { width: 60, length: 80 },
   King: { width: 76, length: 80 },
   'California King': { width: 72, length: 84 },
 } as const;
-type BedName = keyof typeof SIZES;
+export type BedName = keyof typeof SIZES;
 
 const NIGHTSTAND = { width: 16, depth: 16 };
 const DRESSER = { width: 36, depth: 18 };
@@ -178,6 +178,8 @@ interface AreaConfig {
   slug: string;
   shapes: Shape[];
   drawn: [number, number];
+  /** Optional "next to familiar rooms" table: this area divided by each room's area. */
+  compare?: Array<{ w: number; l: number; href: string; name: string }>;
 }
 
 function areaGlanceTable(cfg: AreaConfig): TableData {
@@ -227,6 +229,27 @@ function footprintTable(squareFeet: number): TableData {
   };
 }
 
+function compareTable(cfg: AreaConfig): TableData | null {
+  if (!cfg.compare) return null;
+  const sq = cfg.squareFeet;
+  return {
+    id: 'compare',
+    heading: `What ${sq} sq ft looks like next to bedrooms you know`,
+    intro: `${sq} sq ft is the same floor area as several ordinary bedrooms. Each row divides ${sq} by that room's area, so you can picture the number as that many rooms.`,
+    columns: ['Room', 'Sides', 'Area (sq ft)', `${sq} sq ft is how many of them`],
+    rows: cfg.compare.map((room) => ({
+      key: `${room.w}x${room.l}`,
+      cells: [
+        { text: room.name, href: room.href },
+        { text: `${dims(room.w, room.l)} ft (${dimsM(room.w, room.l)} m)` },
+        { text: `${room.w * room.l} sq ft` },
+        { text: `${sq} ÷ ${room.w * room.l} = ${fixed(sq / (room.w * room.l), 1)}` },
+      ],
+    })),
+    note: 'Sides in meters are feet × 0.3048. The count is rounded to one decimal.',
+  };
+}
+
 const CORE_SQFT = 100;
 
 function studioFigure(squareFeet: number, wFt: number, lFt: number, heading: string, summary: string): PlanFigure {
@@ -268,7 +291,7 @@ function studioFigure(squareFeet: number, wFt: number, lFt: number, heading: str
 
 function seriesLinks(current: number): AnswerPageData['related'] {
   const all = [
-    { sq: 300, href: '/en/layout-guides/300-sq-ft-studio-layout/', title: '300 sq ft studio layouts: three zoning strategies' },
+    { sq: 300, href: '/en/how-big-is-300-square-feet/', title: 'How big is 300 square feet? Room and studio sizes' },
     { sq: 350, href: '/en/350-sq-ft-studio-apartment-layout/', title: '350 sq ft room: dimensions and studio layout' },
     { sq: 400, href: '/en/400-sq-ft-studio-apartment-layout/', title: '400 square foot apartment: sizes and layouts' },
     { sq: 450, href: '/en/450-sq-ft-studio-apartment-layout/', title: '450 sq ft room: size and studio apartment layout' },
@@ -280,6 +303,7 @@ function seriesLinks(current: number): AnswerPageData['related'] {
     .map((item) => ({ href: item.href, title: item.title, note: `${item.sq} sq ft is ${sqftM2(item.sq)} m², ${item.sq > current ? `${item.sq - current} sq ft larger` : `${current - item.sq} sq ft smaller`}.` }));
   return [
     ...nearby,
+    { href: '/en/layout-guides/300-sq-ft-studio-layout/', title: '300 sq ft studio layouts: three zoning strategies', note: 'Compares three full zoning layouts. The size pages in this series answer how big the area is and what fits.' },
     { href: '/en/studio-apartment-layout/', title: 'Studio apartment layout planner', note: 'Zone sleep, work and dining in your own measured studio.' },
     { href: '/en/room-size-layout-templates/', title: 'Room sizer and layout templates', note: 'Pick a room area and get a calculated template.' },
     { href: '/en/room-layout-planner/', title: 'Draw your actual studio in the RoomFeng planner', note: 'Enter your measured walls and furniture.' },
@@ -311,7 +335,7 @@ function areaPage(cfg: AreaConfig, text: {
     h1: text.h1,
     answer: [first, second],
     caveat: 'Listings often count the kitchen and bath in that figure; see what the number leaves out below.',
-    tables: [areaGlanceTable(cfg), footprintTable(sq)],
+    tables: [areaGlanceTable(cfg), footprintTable(sq), ...(compareTable(cfg) ? [compareTable(cfg) as TableData] : [])],
     plansHeading: `Two ${sq} sq ft studio shapes, drawn to scale`,
     plansIntro: `The same Queen bed, sofa, table and desk placed in a ${dims(drawnA.w, drawnA.l)} ft room and a ${dims(drawnB.w, drawnB.l)} ft room. Drawings and numbers use inches.`,
     plans: [
@@ -323,7 +347,7 @@ function areaPage(cfg: AreaConfig, text: {
     faq: text.faq,
     relatedHeading: 'Nearby room sizes and tools',
     related: seriesLinks(sq),
-    dateModified: '2026-11-12',
+    dateModified: '2026-11-20',
   };
 }
 
@@ -336,8 +360,9 @@ const gapOf = (w: number, l: number): number => {
 
 function summaryFor(w: number, l: number): string {
   const route = gapOf(w, l);
-  if (route < WALK_TARGET_IN) throw new Error(`${w} × ${l} ft drawing leaves only ${route} in`);
-  return `The sofa and table sit under the kitchen and bath block, and the Queen and desk share the far wall. The walkway between the table and the bed is ${route} in wide, above the ${WALK_TARGET_IN} in target.`;
+  const base = 'The sofa and table sit under the kitchen and bath block, and the Queen and desk share the far wall.';
+  if (route >= WALK_TARGET_IN) return `${base} The walkway between the table and the bed is ${route} in wide, above the ${WALK_TARGET_IN} in target.`;
+  return `${base} The walkway between the table and the bed is only ${route} in wide, below the ${WALK_TARGET_IN} in target, so in a room this shape the table or the sofa has to go, or the bed has to turn.`;
 }
 
 const exactShapes = (pairs: Array<[number, number, string]>, square?: number): Shape[] => [
@@ -440,6 +465,12 @@ interface BedroomConfig {
   slug: string;
   wFt: number;
   lFt: number;
+  /** Bed used in the furniture table (default Queen). */
+  bed?: 'Queen' | 'King';
+  /** Add a second bed table for the bed turned so the headboard is on the long wall. */
+  turned?: boolean;
+  /** Add the "desk beside the bed" row to the furniture table. */
+  deskSide?: boolean;
 }
 
 const verdictFor = (left: number): Verdict => (left >= WALK_TARGET_IN ? 'Fits' : left >= 0 ? 'Tight' : 'Does not fit');
@@ -453,14 +484,19 @@ function bedVerdict(W: number, L: number, bed: BedName): { verdict: Verdict; sid
   return { verdict, side, foot, both: side >= 2 * WALK_TARGET_IN };
 }
 
-function bedTable(cfg: BedroomConfig): TableData {
-  const W = cfg.wFt * 12;
-  const L = cfg.lFt * 12;
+function bedTable(cfg: BedroomConfig, turned = false): TableData {
+  const W = (turned ? cfg.lFt : cfg.wFt) * 12;
+  const L = (turned ? cfg.wFt : cfg.lFt) * 12;
+  const wallFt = W / 12;
   const beds = Object.keys(SIZES) as BedName[];
   return {
-    id: 'what-fits',
-    heading: `Which bed fits in ${an(cfg.wFt)} ${cfg.wFt}x${cfg.lFt} room?`,
-    intro: `Planning target used here: ${WALK_TARGET_IN} in of clear floor beside the bed on at least one side, and ${WALK_TARGET_IN} in at the foot. It is a planning target, not a building code. Bed lengthwise, headboard on ${an(cfg.wFt)} ${cfg.wFt} ft wall, mattress sizes only. "Fits" meets both; "Tight" fits the mattress but leaves under ${WALK_TARGET_IN} in somewhere; "Does not fit" is larger than the room.`,
+    id: turned ? 'what-fits-turned' : 'what-fits',
+    heading: turned
+      ? `Turn the bed: headboard on a ${wallFt} ft wall of the ${cfg.wFt}x${cfg.lFt} room`
+      : `Which bed fits in ${an(cfg.wFt)} ${cfg.wFt}x${cfg.lFt} room?`,
+    intro: turned
+      ? `Same room, bed turned so the headboard is on a ${wallFt} ft wall: the room is now ${W} in wide and ${L} in long for the bed. Same ${WALK_TARGET_IN} in planning target, not a building code. "Fits" meets ${WALK_TARGET_IN} in beside the bed and at the foot; "Tight" fits the mattress but leaves under ${WALK_TARGET_IN} in somewhere; "Does not fit" is larger than the room.`
+      : `Planning target used here: ${WALK_TARGET_IN} in of clear floor beside the bed on at least one side, and ${WALK_TARGET_IN} in at the foot. It is a planning target, not a building code. Bed lengthwise, headboard on ${an(cfg.wFt)} ${cfg.wFt} ft wall, mattress sizes only. "Fits" meets both; "Tight" fits the mattress but leaves under ${WALK_TARGET_IN} in somewhere; "Does not fit" is larger than the room.`,
     columns: ['Bed', 'Mattress (in)', `Beside the bed (${W} − width)`, `At the foot (${L} − length)`, `${WALK_TARGET_IN} in on both sides?`, 'Verdict'],
     rows: beds.map((bed) => {
       const { width, length } = SIZES[bed];
@@ -484,32 +520,44 @@ function bedTable(cfg: BedroomConfig): TableData {
 function furnitureTable(cfg: BedroomConfig): TableData {
   const W = cfg.wFt * 12;
   const L = cfg.lFt * 12;
-  const side = W - 60;
-  const foot = L - 80;
+  const bedName = cfg.bed ?? 'Queen';
+  const { width: bedW, length: bedL } = SIZES[bedName];
+  const side = W - bedW;
+  const foot = L - bedL;
   const rows: Array<[string, string, string, string, number]> = [
     ['nightstand', 'Nightstand', `${NIGHTSTAND.width} × ${NIGHTSTAND.depth} in, against the headboard on the open side`, `${side} − ${NIGHTSTAND.width}`, side - NIGHTSTAND.width],
     ['dresser-side', 'Dresser beside the bed', `${DRESSER.width} × ${DRESSER.depth} in, along the open side`, `${side} − ${DRESSER.depth}`, side - DRESSER.depth],
     ['dresser-foot', 'Dresser at the foot', `${DRESSER.width} × ${DRESSER.depth} in, against the foot wall`, `${foot} − ${DRESSER.depth}`, foot - DRESSER.depth],
     ['desk-foot', 'Desk at the foot', `${DESK.width} × ${DESK.depth} in, against the foot wall`, `${foot} − ${DESK.depth}`, foot - DESK.depth],
+    ...(cfg.deskSide ? [['desk-side', 'Desk beside the bed', `${DESK.width} × ${DESK.depth} in, long edge on the wall on the open side`, `${side} − ${DESK.depth}`, side - DESK.depth] as [string, string, string, string, number]] : []),
   ];
   return {
     id: 'furniture',
-    heading: `What furniture fits around a Queen in ${cfg.wFt}x${cfg.lFt}`,
-    intro: `Queen lengthwise, pushed to one wall: ${side} in of spare width (${W} − 60) and ${foot} in at the foot (${L} − 80). Each row subtracts the piece's depth from that space and judges what is left against the ${WALK_TARGET_IN} in target.`,
+    heading: `What furniture fits around a ${bedName} in ${cfg.wFt}x${cfg.lFt}`,
+    intro: `${bedName} lengthwise, pushed to one wall: ${side} in of spare width (${W} − ${bedW}) and ${foot} in at the foot (${L} − ${bedL}). Each row subtracts the piece's depth from that space and judges what is left against the ${WALK_TARGET_IN} in target.`,
     columns: ['Piece', 'Example size and place', 'Space left', 'Verdict'],
     rows: rows.map(([key, name, where, calc, left]) => {
-      const verdict: Verdict = key === 'desk-foot' ? (left >= WALK_TARGET_IN ? 'Fits' : 'Does not fit') : verdictFor(left);
+      const verdict: Verdict = key.startsWith('desk') ? (left >= WALK_TARGET_IN ? 'Fits' : 'Does not fit') : verdictFor(left);
       return { key, cells: [{ text: name }, { text: where }, { text: `${calc} = ${left} in` }, { text: verdict, verdict }] };
     }),
     note: 'A desk is judged "Fits" or "Does not fit" only: its chair pulls out into the space left, and under 30 in the chair blocks the way. Other pieces are "Tight" when they fit but leave under 30 in.',
   };
 }
 
-const ROOMS: Array<{ w: number; l: number; href: string; name: string; anchor: string }> = [
+interface RoomEntry {
+  w: number;
+  l: number;
+  href: string;
+  name: string;
+  anchor: string;
+  /** Existing layout guide for the same size: a different job (compares full layouts). */
+  guide?: { href: string; anchor: string };
+}
+const ROOMS: RoomEntry[] = [
   { w: 8, l: 10, href: '/en/8x10-bedroom-layout/', name: '8x10 bedroom layout', anchor: '8x10 bedroom layout: queen bed fit and floor plans' },
   { w: 9, l: 10, href: '/en/9x10-bedroom-layout/', name: '9x10 bedroom layout', anchor: '9x10 bedroom layout: what furniture fits' },
-  { w: 10, l: 10, href: '/en/layout-guides/10x10-bedroom-layout/', name: '10x10 bedroom layout guide', anchor: '10×10 bedroom layout ideas with a queen bed' },
-  { w: 10, l: 12, href: '/en/layout-guides/10x12-bedroom-queen-desk/', name: '10x12 bedroom layout guide', anchor: '10×12 bedroom layout with a queen bed and desk' },
+  { w: 10, l: 10, href: '/en/queen-bed-in-10x10-room/', name: '10x10 bedroom: will a queen bed fit?', anchor: 'Will a queen bed fit in a 10x10 room? Bed size table', guide: { href: '/en/layout-guides/10x10-bedroom-layout/', anchor: '10×10 bedroom layout ideas with a queen bed' } },
+  { w: 10, l: 12, href: '/en/king-bed-in-10x12-room/', name: '10x12 bedroom: will a king bed fit?', anchor: 'Will a king bed fit in a 10x12 room? Sizes and layouts', guide: { href: '/en/layout-guides/10x12-bedroom-queen-desk/', anchor: '10×12 bedroom layout with a queen bed and desk' } },
   { w: 11, l: 12, href: '/en/11x12-bedroom-layout/', name: '11x12 bedroom layout', anchor: '11x12 bedroom layout with a king or queen bed' },
   { w: 12, l: 12, href: '/en/12x12-bedroom-layout/', name: '12x12 bedroom layout', anchor: '12x12 bedroom layout: bed, desk and dresser' },
 ];
@@ -704,13 +752,20 @@ function bedroomRelated(cfg: BedroomConfig): AnswerPageData['related'] {
   const order = ROOMS;
   const index = order.findIndex((room) => room.w === cfg.wFt && room.l === cfg.lFt);
   const others = order.filter((_, i) => i !== index).sort((a, b) => Math.abs(a.w * a.l - cfg.wFt * cfg.lFt) - Math.abs(b.w * b.l - cfg.wFt * cfg.lFt));
+  const guideLink = (room: RoomEntry): AnswerPageData['related'] => room.guide
+    ? [{ href: room.guide.href, title: room.guide.anchor, note: `Compares three full ${room.w}x${room.l} layouts. This series answers which bed fits and what is left.` }]
+    : [];
   return [
-    ...others.map((room) => ({
-      href: room.href,
-      title: room.anchor,
-      note: `${room.w * room.l} sq ft (${sqftM2(room.w * room.l)} m²); a Queen leaves ${room.w * 12 - 60} in beside it and ${room.l * 12 - 80} in at the foot.`,
-    })),
-    { href: '/en/bed-room-fit-calculator/', title: 'Bed and room fit calculator', note: 'Enter any bed and room size to get the clearances.' },
+    ...guideLink(order[index]),
+    ...others.flatMap((room) => [
+      {
+        href: room.href,
+        title: room.anchor,
+        note: `${room.w * room.l} sq ft (${sqftM2(room.w * room.l)} m²); a Queen leaves ${room.w * 12 - 60} in beside it and ${room.l * 12 - 80} in at the foot.`,
+      },
+      ...guideLink(room),
+    ]),
+    { href: '/en/bed-room-fit-calculator/', title: 'Bed and room fit calculator', note: 'Enter any bed and room size to get the clearances, and see how much space to leave around a bed.' },
     { href: '/en/room-layout-planner/', title: 'Draw your bedroom in the RoomFeng planner', note: 'Enter your measured walls, door and furniture.' },
   ];
 }
@@ -727,16 +782,16 @@ function bedroomPage(cfg: BedroomConfig, text: {
     h1: text.h1,
     answer: text.answer,
     caveat: text.caveat,
-    tables: [bedTable(cfg), furnitureTable(cfg), roomsTable(cfg)],
+    tables: [bedTable(cfg), ...(cfg.turned ? [bedTable(cfg, true)] : []), furnitureTable(cfg), roomsTable(cfg)],
     plansHeading: `${cfg.wFt}x${cfg.lFt} bedroom layouts drawn to scale`,
-    plansIntro: `Two arrangements in a ${cfg.wFt * 12} × ${cfg.lFt * 12} in room, drawn from the mattress and furniture sizes above. The numbers under each drawing are measured from the drawing.`,
+    plansIntro: `${plans.length === 3 ? 'Three' : 'Two'} arrangements in a ${cfg.wFt * 12} × ${cfg.lFt * 12} in room, drawn from the mattress and furniture sizes above. The numbers under each drawing are measured from the drawing.`,
     plans,
     limitsHeading: 'What these numbers leave out',
     limits: BEDROOM_LIMITS(cfg),
     faq: text.faq,
     relatedHeading: 'Other bedroom sizes and tools',
     related: bedroomRelated(cfg),
-    dateModified: '2026-11-12',
+    dateModified: '2026-11-20',
   };
 }
 
@@ -818,8 +873,163 @@ const bedroom12 = bedroomPage(B12, {
   ],
 }, figures12x12());
 
-export const areaPages: AnswerPageData[] = [area350, area400, area450, area500];
-export const bedroomAnswerPages: AnswerPageData[] = [bedroom8, bedroom9, bedroom11, bedroom12];
+// ---------------------------------------------------------------- 2026-11-20 additions: 10x10, 10x12 (king) and 300 sq ft
+
+const B10: BedroomConfig = { slug: 'queen-bed-in-10x10-room', wFt: 10, lFt: 10, deskSide: true };
+const B10x12: BedroomConfig = { slug: 'king-bed-in-10x12-room', wFt: 10, lFt: 12, bed: 'King', turned: true, deskSide: true };
+
+function figures10x10(): PlanFigure[] {
+  const W = 120;
+  const L = 120;
+  return [
+    bedFigure('10x10 bedroom, Queen against one wall with a desk', W, L, [
+      box('Queen', 0, 0, 60, 80, 'bed'),
+      ns(60, 0),
+      box('36 in', 60, 16, 36, 64, 'route'),
+      box('Desk', 96, 40, DESK.depth, DESK.width, 'work'),
+      box('40 in', 0, 80, 96, 40, 'route'),
+    ], 'Queen against one wall, desk on the opposite wall', 'The Queen sits against the left wall with a nightstand at the head, and the 48 × 24 in desk stands against the right wall, beside the bed rather than at its foot. The chair pulls out into the 36 in between them.', (plan) => [
+      fact(plan, 'Queen', 'Desk', 'Bed to desk'),
+      fact(plan, 'Queen', 'wall-bottom', 'At the foot'),
+    ]),
+    bedFigure('10x10 bedroom, Queen centered', W, L, [
+      box('Queen', 30, 0, 60, 80, 'bed'),
+      ns(14, 0),
+      ns(90, 0),
+      box('30 in', 0, 16, 30, 64, 'route'),
+      box('30 in', 90, 16, 30, 64, 'route'),
+      box('22 in', 0, 80, 120, 22, 'route'),
+      box('Dresser', 42, 102, DRESSER.width, DRESSER.depth, 'storage'),
+    ], 'Queen centered, two nightstands, dresser on the foot wall', 'Centering the Queen gives exactly the 30 in target on both sides. The foot wall is then 40 in away, so a 36 × 18 in dresser there leaves only 22 in, under the target.', (plan) => [
+      fact(plan, 'Queen', 'wall-left', 'Left of the bed'),
+      fact(plan, 'Queen', 'wall-right', 'Right of the bed'),
+      fact(plan, 'Queen', 'Dresser', 'Bed to dresser'),
+    ]),
+    bedFigure('10x10 bedroom, King against one wall', W, L, [
+      box('King', 0, 0, 76, 80, 'bed'),
+      ns(76, 0),
+      box('44 in', 76, 16, 44, 64, 'route'),
+      box('40 in', 0, 80, 120, 40, 'route'),
+    ], 'King against one wall', 'The 76 × 80 in King fits and leaves 44 in beside it, but a nightstand at the head leaves only 28 in past it, under the target, and there is no space for a desk or dresser.', (plan) => [
+      fact(plan, 'King', 'wall-right', 'Beside the bed'),
+      fact(plan, 'NS', 'wall-right', 'Past the nightstand, at the head'),
+      fact(plan, 'King', 'wall-bottom', 'At the foot'),
+    ]),
+  ];
+}
+
+function figures10x12(): PlanFigure[] {
+  return [
+    bedFigure('10x12 bedroom, King against one wall with desk and dresser', 120, 144, [
+      box('King', 0, 0, 76, 80, 'bed'),
+      ns(76, 0),
+      box('44 in', 76, 16, 44, 64, 'route'),
+      box('40 in', 0, 80, 120, 40, 'route'),
+      box('Dresser', 0, 126, DRESSER.width, DRESSER.depth, 'storage'),
+      box('Desk', 72, 120, DESK.width, DESK.depth, 'work'),
+    ], 'King lengthwise, headboard on a 10 ft wall', 'One side is open (44 in) and the foot wall holds the dresser and a desk. The desk chair pulls out into the 40 in left, above the 30 in target.', (plan) => [
+      fact(plan, 'King', 'wall-right', 'Beside the bed'),
+      fact(plan, 'NS', 'wall-right', 'Past the nightstand, at the head'),
+      fact(plan, 'King', 'Desk', 'Bed to desk'),
+      fact(plan, 'King', 'Dresser', 'Bed to dresser'),
+    ]),
+    bedFigure('10x12 bedroom, King centered on the 12 ft wall', 144, 120, [
+      box('King', 34, 0, 76, 80, 'bed'),
+      ns(18, 0),
+      ns(110, 0),
+      box('34 in', 0, 16, 34, 64, 'route'),
+      box('34 in', 110, 16, 34, 64, 'route'),
+      box('40 in', 0, 80, 144, 40, 'route'),
+    ], 'King turned, headboard on the 12 ft wall', 'Turning the bed gives 34 in on each side, above the 30 in target, with two nightstands. The foot wall is 40 in away, so a 48 × 24 in desk there would leave 40 − 24 = 16 in and does not fit.', (plan) => [
+      fact(plan, 'King', 'wall-left', 'Left of the bed'),
+      fact(plan, 'King', 'wall-right', 'Right of the bed'),
+      fact(plan, 'King', 'wall-bottom', 'At the foot'),
+    ]),
+  ];
+}
+
+const bedroom10 = {
+  ...bedroomPage(B10, {
+    title: 'Will a Queen Bed Fit in a 10x10 Room? Bed Size Table',
+    description: 'Yes, a queen bed fits in a 10x10 room: 120 − 60 = 60 in beside it and 120 − 80 = 40 in at the foot. Twin to king, desk and dresser options, to scale.',
+    h1: 'Will a queen bed fit in a 10x10 room?',
+    answer: [
+      'Yes, a queen bed fits in a 10x10 room (120 × 120 in): a 60 × 80 in queen mattress leaves 120 − 60 = 60 in beside the bed and 120 − 80 = 40 in at the foot.',
+      `A king (76 × 80 in) also fits, with 120 − 76 = 44 in beside it, but a 48 × 24 in desk at the foot of either bed does not: 120 − 80 − 24 = 16 in is left, under the ${WALK_TARGET_IN} in planning target.`,
+    ],
+    caveat: 'These use the mattress size; a bed frame or headboard is usually larger and takes inches from each number.',
+    faq: [
+      { question: 'Will a queen bed fit in a 10x10 room?', answer: `Yes. A 60 × 80 in queen leaves 120 − 60 = 60 in beside it (30 in each side if centered) and 120 − 80 = 40 in at the foot, all at or above the ${WALK_TARGET_IN} in planning target.` },
+      { question: 'What is a good 10x10 bedroom layout with a queen bed?', answer: 'Two arrangements work: the queen against one wall, which leaves 60 in on the open side for a nightstand, dresser or desk, or the queen centered, which leaves exactly 30 in on each side and 40 in at the foot. Against one wall, a desk beside the bed leaves 120 − 60 − 24 = 36 in.' },
+      { question: 'Can I fit a full bed in a 10x10 bedroom?', answer: 'Yes, with room to spare. A 54 × 75 in full leaves 120 − 54 = 66 in beside it and 120 − 75 = 45 in at the foot.' },
+      { question: 'Does a king bed fit in a 10x10 room?', answer: `Yes, but only one side is comfortable. A 76 × 80 in king leaves 120 − 76 = 44 in beside it and 120 − 80 = 40 in at the foot; with a 16 in nightstand at the head, 120 − 76 − 16 = 28 in is left past it, under the ${WALK_TARGET_IN} in target.` },
+      { question: 'Can I fit a desk in a 10x10 bedroom with a queen bed?', answer: 'Beside the bed, yes: a 24 in deep desk along the wall on the open side leaves 120 − 60 − 24 = 36 in. At the foot of the bed, no: 120 − 80 − 24 = 16 in is left for the chair.' },
+      { question: 'Is a 10x10 bedroom small?', answer: `It is 100 sq ft (9.3 m²), which is 144 − 100 = 44 sq ft less than a 12x12 room. A queen takes ${fixed(QUEEN_SQFT, 1)} sq ft, ${fixed((QUEEN_SQFT / 100) * 100, 1)}% of 100, which leaves 100 − ${fixed(QUEEN_SQFT, 1)} = ${fixed(100 - Number(fixed(QUEEN_SQFT, 1)), 1)} sq ft of floor for walking and other furniture.` },
+      { question: 'How big is a 10x10 room in meters?', answer: `${roomSize(10, 10)}.` },
+    ],
+  }, figures10x10()),
+  datePublished: '2026-11-20',
+};
+
+const bedroom10x12 = {
+  ...bedroomPage(B10x12, {
+    title: 'Will a King Bed Fit in a 10x12 Room? Sizes and Layouts',
+    description: 'Yes, a king bed fits in a 10x12 room: 120 − 76 = 44 in beside it and 144 − 80 = 64 in at the foot. Two orientations, desk and dresser, to scale.',
+    h1: 'Will a king bed fit in a 10x12 room?',
+    answer: [
+      'Yes, a king bed fits in a 10x12 room (120 × 144 in): a 76 × 80 in king mattress leaves 120 − 76 = 44 in beside the bed and 144 − 80 = 64 in at the foot when the headboard is on a 10 ft wall.',
+      `With the headboard on a 12 ft wall instead, it leaves 144 − 76 = 68 in beside the bed (34 in each side if centered) and 120 − 80 = 40 in at the foot, so both sides clear the ${WALK_TARGET_IN} in planning target.`,
+    ],
+    caveat: 'These use the mattress size; a bed frame or headboard is usually larger and takes inches from each number.',
+    faq: [
+      { question: 'Will a king bed fit in a 10x12 room?', answer: 'Yes. A 76 × 80 in king leaves 120 − 76 = 44 in beside it and 144 − 80 = 64 in at the foot with the headboard on a 10 ft wall, or 144 − 76 = 68 in beside it and 120 − 80 = 40 in at the foot with the headboard on a 12 ft wall.' },
+      { question: 'Can a king bed and a desk fit in a 10x12 bedroom?', answer: 'Yes, if the headboard is on a 10 ft wall: a 48 × 24 in desk on the foot wall leaves 144 − 80 − 24 = 40 in for the chair. If the bed is turned to the 12 ft wall, the foot wall is only 120 − 80 = 40 in away and the same desk leaves 120 − 80 − 24 = 16 in.' },
+      { question: 'Does a queen bed fit in a 10x12 room?', answer: 'Yes, easily. A 60 × 80 in queen leaves 120 − 60 = 60 in beside it and 144 − 80 = 64 in at the foot, and a 48 × 24 in desk on the foot wall still leaves 144 − 80 − 24 = 40 in.' },
+      { question: 'What is a good 10x12 bedroom layout with a queen bed?', answer: 'Queen against one wall with the headboard on a 10 ft wall: 60 in beside the bed for a nightstand and dresser, and a desk on the foot wall with 40 in in front of it. The queen layouts with a desk and wardrobe are compared in full on the 10x12 layout guide.' },
+      { question: 'Which wall should the headboard go on in a 10x12 room with a king bed?', answer: `Use the 12 ft wall if you want ${WALK_TARGET_IN} in or more on both sides (144 − 76 = 68 in, so 34 in each side). Use the 10 ft wall if you want a desk or dresser on the foot wall, because it leaves 144 − 80 = 64 in at the foot.` },
+      { question: 'How big is a 10x12 room in meters?', answer: `${roomSize(10, 12)}.` },
+    ],
+  }, figures10x12()),
+  datePublished: '2026-11-20',
+};
+
+const A300: AreaConfig = {
+  squareFeet: 300,
+  slug: 'how-big-is-300-square-feet',
+  shapes: exactShapes([[10, 30, 'Narrow and long'], [12, 25, 'Long'], [12.5, 24, 'Long, a little wider'], [15, 20, 'Nearly square']], 17.32),
+  drawn: [1, 3],
+  compare: [
+    { w: 8, l: 10, href: '/en/8x10-bedroom-layout/', name: '8x10 bedroom' },
+    { w: 10, l: 10, href: '/en/queen-bed-in-10x10-room/', name: '10x10 bedroom' },
+    { w: 11, l: 12, href: '/en/11x12-bedroom-layout/', name: '11x12 bedroom' },
+    { w: 12, l: 12, href: '/en/12x12-bedroom-layout/', name: '12x12 bedroom' },
+  ],
+};
+
+const area300 = {
+  ...areaPage(A300, {
+    subject: 'A 300 sq ft room',
+    title: 'How Big Is 300 Square Feet? Room and Studio Sizes',
+    description: 'A 300 sq ft room is 27.9 m²: 12 × 25 ft, 12.5 × 24 ft or about 17.32 × 17.32 ft. See it next to familiar bedrooms and in two to-scale studio layouts.',
+    h1: 'How big is 300 square feet?',
+    summaries: [summaryFor(12, 25), summaryFor(15, 20)],
+    faq: [
+      { question: 'How big is 300 square feet?', answer: `300 square feet is ${sqftM2(300)} m², for example ${sides(12, 25)} or ${sides(15, 20)}. As a square it is about ${dims(17.32, 17.32)} ft (${dimsM(17.32, 17.32)} m).` },
+      { question: 'How big is a 300 sq ft room?', answer: `A 300 sq ft room is ${sqftM2(300)} m². Next to bedrooms, 300 ÷ 144 = ${fixed(300 / 144, 1)} times a 12x12 room (144 sq ft), and 300 ÷ 100 = ${fixed(300 / 100, 0)} times a 10x10 room (100 sq ft).` },
+      { question: 'How big is a 300 sq ft studio apartment?', answer: `${sqftM2(300)} m² of floor, for example ${sides(12, 25)}. In the drawing of that shape, with about ${CORE_SQFT} sq ft set aside for a kitchen and bath, a Queen, sofa, desk and table leave ${gapOf(12, 25)} in between the table and the bed.` },
+      { question: 'What does 300 square feet look like?', answer: `Picture ${queensIn(300)} Queen beds side by side on the floor (60 × 80 in = ${fixed(QUEEN_SQFT, 1)} sq ft each), or ${fixed(300 / 144, 1)} bedrooms of 12 × 12 ft. A Queen, sofa, desk and table together take ${fixed(SET_SQFT, 1)} sq ft, ${setPct(300)}% of 300.` },
+      { question: 'What are the dimensions of 300 sq ft?', answer: `Any width and length that multiply to 300: 10 × 30 ft, 12 × 25 ft, 15 × 20 ft, or about ${dims(17.32, 17.32)} ft if square. A 12 × 25 ft room has a perimeter of ${2 * (12 + 25)} ft (${fixed(2 * (12 + 25) * FT_TO_M, 2)} m).` },
+      { question: 'Can a Queen bed, sofa, desk and table fit in 300 sq ft?', answer: `By floor area, yes: together they take ${fixed(SET_SQFT, 1)} sq ft, ${setPct(300)}% of 300. By shape, it depends: the ${dims(12, 25)} ft drawing keeps ${gapOf(12, 25)} in between the table and the bed, but the ${dims(15, 20)} ft drawing keeps only ${gapOf(15, 20)} in, under the ${WALK_TARGET_IN} in target.` },
+      { question: 'What is 300 square feet in square meters?', answer: `300 sq ft is ${sqftM2(300)} m² (300 × 0.092903). A 12 × 25 ft room measures ${dimsM(12, 25)} m.` },
+      { question: 'How much bigger is 350 sq ft than 300 sq ft?', answer: `350 − 300 = 50 sq ft more (${sqftM2(50)} m²). The same furniture set takes ${setPct(300)}% of 300 sq ft but ${setPct(350)}% of 350.` },
+    ],
+  }),
+  datePublished: '2026-11-20',
+};
+
+export const areaPages: AnswerPageData[] = [area300, area350, area400, area450, area500];
+export const bedroomAnswerPages: AnswerPageData[] = [bedroom8, bedroom9, bedroom10, bedroom10x12, bedroom11, bedroom12];
+
 export const answerPages: AnswerPageData[] = [...areaPages, ...bedroomAnswerPages];
 
 export function getAnswerPage(slug: string): AnswerPageData {
