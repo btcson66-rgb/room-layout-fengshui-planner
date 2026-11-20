@@ -35,7 +35,7 @@ plans:
       - { kind: window, wall: top, offset: 60, width: 120, label: "窗" }
       - { kind: door, wall: bottom, offset: 100, width: 80, swing: in, hinge: start, label: "房門" }
     sightLines:
-      - { points: [[100, 140], [160, 140]] }
+      - { points: [[100, 105], [160, 105]] }
 ---
 
 # 書桌靠窗反光怎麼辦？比較螢幕正對、側對與背對窗戶
