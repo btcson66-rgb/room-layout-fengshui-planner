@@ -1,0 +1,6 @@
+---
+import UsSeoAnswerPage from '../../components/UsSeoAnswerPage.astro';
+import { getAnswerPage } from '../../us-seo/answer-pages';
+const page = getAnswerPage('queen-bed-in-10x10-room');
+---
+<UsSeoAnswerPage data={page} />
