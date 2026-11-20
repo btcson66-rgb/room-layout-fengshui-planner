@@ -47,7 +47,7 @@ plans:
     openings:
       - { kind: door, wall: bottom, offset: 40, width: 75, swing: out, hinge: start, label: "房門" }
     wallItems:
-      - { wall: left, offset: 95, width: 50, label: "濕毛巾桿 50" }
+      - { wall: left, offset: 95, width: 50, label: "濕毛巾桿 50", labelDy: -24 }
       - { wall: top, offset: 100, width: 30, label: "排風" }
 ---
 

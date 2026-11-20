@@ -42,11 +42,11 @@ plans:
       - { x: 64, y: 0, width: 152, depth: 188, label: "床", className: bed, hideSize: true }
       - { x: 222, y: 0, width: 40, depth: 40, label: "床頭櫃", className: storage, hideSize: true }
     zones:
-      - { x: 216, y: 40, width: 64, depth: 200, label: "起身路線 64", kind: area }
+      - { x: 216, y: 40, width: 64, depth: 200, label: "起身 64", kind: area }
     openings:
       - { kind: door, wall: bottom, offset: 30, width: 80, swing: in, hinge: start, label: "房門" }
     wallItems:
-      - { wall: top, offset: 230, width: 20, label: "插座" }
+      - { wall: top, offset: 230, width: 20, label: "插座", labelDx: -45 }
 ---
 
 # 臥室充電站與線材怎麼整理？先分功率、顧散熱，線不要落地

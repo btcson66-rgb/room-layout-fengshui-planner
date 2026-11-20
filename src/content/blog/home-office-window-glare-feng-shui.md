@@ -43,12 +43,12 @@ plans:
       - { x: 20, y: 0, width: 140, depth: 60, label: "書桌", className: desk, hideSize: true }
       - { x: 165, y: 0, width: 105, depth: 188, label: "床", className: bed, hideSize: true }
     zones:
-      - { x: 60, y: 60, width: 80, depth: 60, label: "椅子與後退", kind: area }
+      - { x: 60, y: 60, width: 80, depth: 60, label: "後退區", kind: area }
     openings:
       - { kind: window, wall: left, offset: 60, width: 180, label: "窗" }
       - { kind: door, wall: bottom, offset: 170, width: 80, swing: in, hinge: end, label: "房門" }
     sightLines:
-      - { points: [[90, 110], [90, 40]] }
+      - { points: [[125, 112], [125, 66]] }
 ---
 
 # 居家辦公窗戶眩光怎麼改善？先讓螢幕和窗戶垂直

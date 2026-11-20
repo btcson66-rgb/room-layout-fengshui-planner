@@ -30,7 +30,7 @@ plans:
     furniture:
       - { x: 50, y: 0, width: 110, depth: 188, label: "床", className: bed, hideSize: true }
     zones:
-      - { x: 160, y: 0, width: 60, depth: 50, label: "插拔位置", kind: area }
+      - { x: 160, y: 30, width: 60, depth: 50, label: "插拔位置", kind: area }
     openings:
       - { kind: door, wall: bottom, offset: 20, width: 80, swing: in, hinge: start, label: "房門" }
     wallItems:

@@ -46,7 +46,7 @@ plans:
     zones:
       - { x: 60, y: 60, width: 60, depth: 60, label: "爐前站位 60", kind: area }
     openings:
-      - { kind: door, wall: bottom, offset: 50, width: 80, swing: in, hinge: start, label: "房門" }
+      - { kind: door, wall: bottom, offset: 50, width: 80, swing: in, hinge: start }
     sightLines:
       - { points: [[90, 232], [90, 64]] }
 ---

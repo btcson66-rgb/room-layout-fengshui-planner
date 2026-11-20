@@ -42,7 +42,7 @@ plans:
     furniture:
       - { x: 0, y: 40, width: 35, depth: 100, label: "鞋櫃", className: storage, hideSize: true }
     zones:
-      - { x: 35, y: 40, width: 60, depth: 100, label: "櫃前站位 60", kind: area }
+      - { x: 35, y: 40, width: 60, depth: 100, label: "站位 60", kind: area }
     openings:
       - { kind: door, wall: bottom, offset: 150, width: 90, swing: in, hinge: end, label: "大門" }
       - { kind: opening, wall: top, offset: 80, width: 120, label: "通客廳" }

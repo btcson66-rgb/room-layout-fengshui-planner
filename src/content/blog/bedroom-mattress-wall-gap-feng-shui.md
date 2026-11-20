@@ -41,8 +41,6 @@ plans:
     furniture:
       - { x: 75, y: 10, width: 150, depth: 200, label: "床", className: bed, hideSize: true }
       - { x: 240, y: 220, width: 60, depth: 100, label: "衣櫃", className: storage, hideSize: true }
-    zones:
-      - { x: 75, y: 0, width: 150, depth: 10, label: "留縫 10", kind: area }
     openings:
       - { kind: window, wall: top, offset: 80, width: 140, label: "窗" }
       - { kind: door, wall: left, offset: 230, width: 80, swing: in, hinge: start, label: "房門" }

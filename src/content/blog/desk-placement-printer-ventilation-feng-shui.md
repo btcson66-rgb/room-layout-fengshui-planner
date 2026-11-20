@@ -28,14 +28,14 @@ plans:
     ariaLabel: "270 乘 300 公分房間平面圖：北牆邊有 120 乘 60 公分書桌，書桌右側有 50 乘 40 公分矮櫃放印表機，櫃前有取件站位，北牆在矮櫃後方有插座，書桌前有椅子與後退區，南牆東側有 80 公分寬房門向內開"
     furniture:
       - { x: 20, y: 0, width: 120, depth: 60, label: "書桌", className: desk, hideSize: true }
-      - { x: 145, y: 0, width: 50, depth: 40, label: "印表機櫃", className: storage, hideSize: true }
+      - { x: 145, y: 0, width: 50, depth: 40, label: "矮櫃", className: storage, hideSize: true }
     zones:
       - { x: 40, y: 60, width: 80, depth: 60, label: "椅子與後退", kind: area }
       - { x: 145, y: 40, width: 50, depth: 60, label: "取件換紙站位", kind: area }
     openings:
       - { kind: door, wall: bottom, offset: 190, width: 80, swing: in, hinge: end, label: "房門" }
     wallItems:
-      - { wall: top, offset: 160, width: 20, label: "插座" }
+      - { wall: top, offset: 160, width: 20, label: "插座", labelDx: 45 }
 ---
 
 # 印表機放書桌旁會太擠嗎？先算桌深，再留開蓋與換紙的站位

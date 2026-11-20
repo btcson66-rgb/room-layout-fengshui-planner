@@ -48,7 +48,7 @@ plans:
       - { kind: opening, wall: left, offset: 150, width: 120, label: "通玄關" }
       - { kind: window, wall: right, offset: 120, width: 150, label: "窗" }
     wallItems:
-      - { wall: top, offset: 130, width: 20, label: "插座" }
+      - { wall: top, offset: 130, width: 20, label: "插座", labelDx: -55 }
 ---
 
 # 客廳喇叭怎麼擺？先定聆聽位置，再顧穩固、通風與線材

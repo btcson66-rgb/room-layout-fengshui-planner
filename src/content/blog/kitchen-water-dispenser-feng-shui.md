@@ -47,11 +47,11 @@ plans:
       - { x: 0, y: 230, width: 120, depth: 70, label: "餐桌", hideSize: true }
     zones:
       - { x: 145, y: 60, width: 60, depth: 60, label: "爐前站位", kind: area }
-      - { x: 135, y: 150, width: 60, depth: 60, label: "取水站位", kind: area }
+      - { x: 135, y: 150, width: 60, depth: 60, label: "取水", kind: area }
     openings:
       - { kind: door, wall: left, offset: 110, width: 80, swing: in, hinge: start, label: "房門" }
     wallItems:
-      - { wall: right, offset: 170, width: 20, label: "專用插座" }
+      - { wall: right, offset: 118, width: 20, label: "插座" }
 ---
 
 # 廚房飲水機放哪裡？先看穩固、散熱、插座與漏水
