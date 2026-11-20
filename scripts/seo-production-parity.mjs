@@ -8,7 +8,9 @@ const evidenceDir = path.resolve(process.env.ROOMFENG_SEO_EVIDENCE_DIR ?? 'docs/
 const expectedSitemapUrlCount = ROOMFENG_RELEASE_AUTHORITY.sitemapUrls;
 const pendingRepair = ROOMFENG_RELEASE_AUTHORITY.productionRepair001;
 // The transition currently in flight: production still serves the previous release until this one deploys.
-const pendingTransition = ROOMFENG_RELEASE_AUTHORITY.categoryHubs001;
+const pendingTransition = ROOMFENG_RELEASE_AUTHORITY.usAnswerPages002;
+// Earlier transitions that are already deployed; their routes must stay in the sitemap.
+const deployedTransition = ROOMFENG_RELEASE_AUTHORITY.categoryHubs001;
 const requireDeployed = process.env.ROOMFENG_SEO_REQUIRE_DEPLOYED === '1';
 const representatives = [
   { path: '/', canonical: '/', sitemap: true },
@@ -65,7 +67,7 @@ const uniqueSitemapUrls = [...new Set(sitemapUrls)];
 check('sitemap has no duplicate URLs', sitemapUrls.length === uniqueSitemapUrls.length, `${sitemapUrls.length} total`);
 const sitemapSet = new Set(uniqueSitemapUrls);
 const toUrl = (route) => `https://roomfeng.win${route}`;
-const pendingUrls = [...pendingRepair.addedRoutes, ...pendingTransition.addedRoutes].map(toUrl);
+const pendingUrls = [...pendingRepair.addedRoutes, ...deployedTransition.addedRoutes, ...pendingTransition.addedRoutes].map(toUrl);
 const isDeployed = uniqueSitemapUrls.length === expectedSitemapUrlCount;
 const isPreDeploy = uniqueSitemapUrls.length === pendingTransition.previousSitemapUrls;
 check('sitemap count matches deployed or exact pre-deploy authority', isDeployed || isPreDeploy, `${uniqueSitemapUrls.length} vs ${pendingTransition.previousSitemapUrls}/${expectedSitemapUrlCount}`);
@@ -80,9 +82,9 @@ if (isDeployed) {
   const removed = [...sitemapSet].filter((url) => !candidateSet.has(url)).sort();
   check('candidate sitemap count', candidateSet.size === expectedSitemapUrlCount && candidateUrls.length === candidateSet.size, `${candidateUrls.length} vs ${expectedSitemapUrlCount}`);
   const expectedAdded = pendingTransition.addedRoutes.map(toUrl).sort();
-  const expectedRemoved = pendingTransition.removedPaginationRoutes.map(toUrl).sort();
+  const expectedRemoved = pendingTransition.removedRoutes.map(toUrl).sort();
   check('pre-deploy candidate adds exactly the registered routes', JSON.stringify(added) === JSON.stringify(expectedAdded), added.slice(0, 10));
-  check('pre-deploy candidate removes exactly the registered pagination routes', JSON.stringify(removed) === JSON.stringify(expectedRemoved), removed.slice(0, 10));
+  check('pre-deploy candidate removes exactly the registered routes', JSON.stringify(removed) === JSON.stringify(expectedRemoved), removed.slice(0, 10));
 }
 
 const representative = [];
@@ -146,7 +148,7 @@ const report = {
   source: origin,
   expectedSitemapUrlCount,
   sitemapUrlCount: uniqueSitemapUrls.length,
-  releaseState: isDeployed ? 'DEPLOYED' : isPreDeploy ? 'PRE_DEPLOY_EXACT_SIX_ROUTE_DELTA' : 'UNEXPECTED',
+  releaseState: isDeployed ? 'DEPLOYED' : isPreDeploy ? 'PRE_DEPLOY_EXACT_REGISTERED_DELTA' : 'UNEXPECTED',
   requireDeployed,
   sitemapIndexStatus: sitemapIndex.status,
   childSitemapStatus: childSitemap.status,

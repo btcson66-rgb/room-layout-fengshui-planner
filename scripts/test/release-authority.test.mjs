@@ -5,8 +5,14 @@ import { ROOMFENG_RELEASE_AUTHORITY } from '../release-authority.mjs';
 
 test('current release authority records the demand consolidation and preserves prior transitions', () => {
   assert.deepEqual(ROOMFENG_RELEASE_AUTHORITY, {
-    buildPages: 525,
-    sitemapUrls: 515,
+    buildPages: 528,
+    sitemapUrls: 518,
+    usAnswerPages002: {
+      previousBuildPages: 525,
+      previousSitemapUrls: 515,
+      addedRoutes: ['/en/how-big-is-300-square-feet/', '/en/king-bed-in-10x12-room/', '/en/queen-bed-in-10x10-room/'],
+      removedRoutes: [],
+    },
     categoryHubs001: {
       previousBuildPages: 524,
       previousSitemapUrls: 514,
