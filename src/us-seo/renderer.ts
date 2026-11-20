@@ -13,6 +13,10 @@ export interface DiagramPlan {
   unit: 'in' | 'ft';
   items: DiagramItem[];
   note?: string;
+  /** Text used for the room size in the aria-label (and the on-drawing label); defaults to `W × L unit`. */
+  dimensionLabel?: string;
+  /** Skip the on-drawing room-size label (it would sit under items that start at the top wall). */
+  hideDimensionText?: boolean;
 }
 
 const fills: Record<NonNullable<DiagramItem['tone']>, string> = {
@@ -58,6 +62,9 @@ export function renderFloorPlanSvg(plan: DiagramPlan): string {
     const textY = item.y + item.height / 2;
     return `<g><rect x="${item.x}" y="${item.y}" width="${item.width}" height="${item.height}" rx="${labelSize * 0.3}" fill="${fills[tone]}" stroke="#48655d" stroke-width="${labelSize * 0.12}"/><text x="${textX}" y="${textY}" text-anchor="middle" dominant-baseline="middle" font-size="${labelSize}" fill="#26352f" font-family="system-ui, sans-serif">${escapeXml(item.label)}</text></g>`;
   }).join('');
-  const dimensionText = `${plan.roomWidth} × ${plan.roomLength} ${plan.unit}`;
-  return `<svg class="us-seo-floor-plan" viewBox="0 0 ${plan.roomWidth} ${plan.roomLength}" role="img" aria-label="${escapeXml(`${plan.title}, ${dimensionText}`)}" xmlns="http://www.w3.org/2000/svg"><rect width="${plan.roomWidth}" height="${plan.roomLength}" fill="#fbfaf6" stroke="#26352f" stroke-width="${labelSize * 0.25}"/><text x="${plan.roomWidth / 2}" y="${labelSize * 1.1}" text-anchor="middle" font-size="${labelSize * 0.85}" fill="#69736b" font-family="system-ui, sans-serif">${escapeXml(dimensionText)}</text>${itemMarkup}</svg>`;
+  const dimensionText = plan.dimensionLabel ?? `${plan.roomWidth} × ${plan.roomLength} ${plan.unit}`;
+  const dimensionMarkup = plan.hideDimensionText
+    ? ''
+    : `<text x="${plan.roomWidth / 2}" y="${labelSize * 1.1}" text-anchor="middle" font-size="${labelSize * 0.85}" fill="#69736b" font-family="system-ui, sans-serif">${escapeXml(dimensionText)}</text>`;
+  return `<svg class="us-seo-floor-plan" viewBox="0 0 ${plan.roomWidth} ${plan.roomLength}" role="img" aria-label="${escapeXml(`${plan.title}, ${dimensionText}`)}" xmlns="http://www.w3.org/2000/svg"><rect width="${plan.roomWidth}" height="${plan.roomLength}" fill="#fbfaf6" stroke="#26352f" stroke-width="${labelSize * 0.25}"/>${dimensionMarkup}${itemMarkup}</svg>`;
 }

@@ -3,7 +3,7 @@ noindex: false
 title: "橫樑壓床壓桌怎麼辦？先量樑的投影線再決定移動方向"
 description: "書桌在樑下但人不在樑下，通常不用搬；床頭在樑下，就把樑的兩條投影線畫進平面圖，算出要移幾公分。附 280 × 300 公分臥室平面圖與租屋替代做法。"
 date: "2026-06-28"
-updated: "2026-11-11"
+updated: "2026-11-13"
 category: "feng-shui"
 structure: "answer-first"
 tags:
@@ -128,4 +128,3 @@ plans:
 
 - [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)
 - [U.S. Consumer Product Safety Commission：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)
-- [U.S. Environmental Protection Agency：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air)

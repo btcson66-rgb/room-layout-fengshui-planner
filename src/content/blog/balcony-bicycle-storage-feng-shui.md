@@ -2,7 +2,7 @@
 title: "陽台腳踏車收納風水怎麼放？從避難通道、日曬雨淋到固定動線整理"
 description: "腳踏車放陽台的條件：不堵住門與避難路徑、通行寬度留 60 公分、車架固定、不擋排水。附 180 × 300 公分陽台平面圖與立架、掛牆的比較。"
 date: "2026-08-30"
-updated: "2026-11-11"
+updated: "2026-11-13"
 category: "feng-shui"
 structure: "answer-first"
 tags:
@@ -99,4 +99,4 @@ plans:
 
 ## 參考資料與限制
 
-本文把風水中的通暢與靠山，轉成陽台通道、車架固定、防潮、排水與取車動線，不宣稱腳踏車會改變運勢。陽台與通道不得堆放妨礙逃生物品，可參考[消防署逃生通道說明](https://www.nfa.gov.tw/cht/index.php?article_id=11657&code=list&flag=detail&ids=1468)與[臺南市消防局居家防火提醒](https://119.tainan.gov.tw/News_Content.aspx?n=25521&s=7694555)，實際仍依建築、社區規約與現場避難條件調整。
+本文把風水中的通暢與靠山，轉成陽台通道、車架固定、防潮、排水與取車動線，不宣稱腳踏車會改變運勢。陽台與通道應避免堆放妨礙逃生的物品；臺南市消防局的居家防火提醒指出，梯間、通道及陽台勿堆積易燃物品，以免助長火災蔓延及影響逃生，可參考[消防署逃生通道說明](https://www.nfa.gov.tw/cht/index.php?article_id=11657&code=list&flag=detail&ids=1468)與[臺南市消防局居家防火提醒](https://119.tainan.gov.tw/News_Content.aspx?n=25521&s=7694555)，實際仍依建築、社區規約與現場避難條件調整。

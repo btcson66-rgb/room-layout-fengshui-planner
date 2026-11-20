@@ -1,0 +1,118 @@
+---
+import Layout from './Layout.astro';
+import ArticleByline from './ArticleByline.astro';
+import { techArticleSchema } from '../lib/articleSchema';
+import { renderFloorPlanSvg } from '../us-seo/renderer';
+import type { AnswerPageData } from '../us-seo/answer-pages';
+import '../styles/us-seo.css';
+
+interface Props {
+  data: AnswerPageData;
+}
+
+const { data } = Astro.props;
+const siteUrl = 'https://roomfeng.win';
+const datePublished = data.datePublished ?? '2026-09-16';
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: data.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
+const jsonLd = [
+  techArticleSchema({ path: data.path, headline: data.h1, description: data.description, datePublished, dateModified: data.dateModified, lang: 'en' }),
+  { '@context': 'https://schema.org', '@type': 'WebPage', name: data.title, description: data.description, url: `${siteUrl}${data.path}`, inLanguage: 'en-US' },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/en/` },
+      { '@type': 'ListItem', position: 2, name: data.h1, item: `${siteUrl}${data.path}` },
+    ],
+  },
+  faqJsonLd,
+];
+---
+
+<Layout title={data.title} description={data.description} canonical={data.path} lang="en" jsonLd={jsonLd} pageType="guide">
+  <section class="us-seo-page" data-answer-page={data.kind}>
+    <div class="container">
+      <header class="us-seo-hero">
+        <p class="us-seo-kicker">RoomFeng / measured layout guide</p>
+        <h1>{data.h1}</h1>
+        <ArticleByline lang="en" datePublished={datePublished} dateModified={data.dateModified} />
+        <p class="us-seo-answer" data-answer>{data.answer[0]} {data.answer[1]}</p>
+        <p class="us-seo-answer-note">{data.caveat}</p>
+      </header>
+
+      {data.tables.map((table) => (
+        <section class="us-seo-section" aria-labelledby={`${table.id}-heading`} id={table.id}>
+          <h2 id={`${table.id}-heading`}>{table.heading}</h2>
+          {table.intro && <p>{table.intro}</p>}
+          <div class="us-seo-table-wrap" tabindex="0" role="region" aria-labelledby={`${table.id}-heading`}>
+            <table class="us-seo-table" data-table={table.id}>
+              <thead><tr>{table.columns.map((column) => <th scope="col">{column}</th>)}</tr></thead>
+              <tbody>
+                {table.rows.map((row) => (
+                  <tr data-key={row.key}>
+                    {row.cells.map((cell, index) => {
+                      const content = cell.href ? <a href={cell.href}>{cell.text}</a> : cell.text;
+                      return index === 0
+                        ? <th scope="row">{content}</th>
+                        : <td data-verdict={cell.verdict}>{cell.verdict ? <strong>{cell.text}</strong> : content}</td>;
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {table.note && <p class="us-seo-table-note">{table.note}</p>}
+        </section>
+      ))}
+
+      <section class="us-seo-section" aria-labelledby="plans-heading" id="plans">
+        <h2 id="plans-heading">{data.plansHeading}</h2>
+        <p>{data.plansIntro}</p>
+        <div class="us-seo-diagram-grid us-seo-diagram-grid--scaled">
+          {data.plans.map((figure) => (
+            <figure class="us-seo-diagram us-seo-diagram--scaled" data-plan style={`--plan-ratio: ${figure.plan.roomWidth} / ${figure.plan.roomLength}`}>
+              <div set:html={renderFloorPlanSvg(figure.plan)}></div>
+              <figcaption>
+                <strong>{figure.heading}.</strong> {figure.summary}
+                <ul class="us-seo-plan-facts">
+                  {figure.facts.map((item) => (
+                    <li data-gap-a={item.a} data-gap-b={item.b} data-gap-in={item.inches}>{item.text}</li>
+                  ))}
+                </ul>
+                <span class="us-seo-legend">{figure.legend}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      <section class="us-seo-section us-seo-limits" aria-labelledby="limits-heading" id="limits">
+        <h2 id="limits-heading">{data.limitsHeading}</h2>
+        {data.limits.map((paragraph) => <p>{paragraph}</p>)}
+      </section>
+
+      <section class="us-seo-section us-seo-faq" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        {data.faq.map((item) => <article><h3>{item.question}</h3><p>{item.answer}</p></article>)}
+      </section>
+
+      <section class="cta-band" aria-label="Next planning step">
+        <div><h2>Test your measured room</h2><p>Enter your real wall lengths, door and furniture sizes in the free planner.</p></div>
+        <a class="button" href="/en/room-layout-planner/">Open the RoomFeng Room Planner</a>
+      </section>
+
+      <nav class="us-seo-section us-seo-related" aria-labelledby="related-heading">
+        <h2 id="related-heading">{data.relatedHeading}</h2>
+        <ul>{data.related.map((link) => <li><a href={link.href}>{link.title}</a> <span>{link.note}</span></li>)}</ul>
+      </nav>
+    </div>
+  </section>
+</Layout>

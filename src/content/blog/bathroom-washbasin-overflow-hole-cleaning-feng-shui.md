@@ -2,7 +2,7 @@
 title: "溢水孔是什麼？洗手台溢水孔作用、4 步驟清潔防臭與發霉處理"
 description: "洗手台溢水孔是什麼？它是臉盆上緣防止滿水溢出的導流安全孔，因平時少有水流最易積皂垢發臭。整理溢水孔小蘇打＋溫水 4 步驟清潔法、存水彎異味分辨，以及為何不可封死溢水孔。"
 date: "2026-08-30"
-updated: "2026-11-10"
+updated: "2026-11-13"
 category: "bathroom"
 structure: "answer-first"
 tags:
@@ -126,4 +126,4 @@ howToSteps:
 
 ## 參考資料與限制
 
-溢水孔與排水順暢的清潔背景可參考 [公廁設計與清潔實務資料](https://webpac.tad.gov.tw/ebook/%E9%A2%A8%E6%99%AF%E5%8D%80%E4%BA%BA%E6%80%A7%E5%8C%96%E5%85%AC%E5%BB%81%E8%A8%AD%E8%A8%88%E8%A6%8F%E7%AF%84.pdf)、[公廁清掃步驟](https://www.chepb.gov.tw/GetFile.ashx?ID=4614347784157899520) 及 [新北市公廁健檢建議](https://www.epd.ntpc.gov.tw/StaticPage/toilet-inspection)。潮濕、黴菌與清潔用品背景可參考 [環境部室內空氣品質資訊網](https://iaq.moenv.gov.tw/indoorair/Default.aspx)。本文不取代衛浴產品說明、水電檢修或防水工程判斷。
+洗手台內部與出水口細縫的清掃做法，可參考環保機關的 [公廁清掃步驟](https://www.chepb.gov.tw/GetFile.ashx?ID=4614347784157899520)；該資料是公廁清掃步驟，沒有專門談溢水孔。潮濕、黴菌與清潔用品背景可參考 [環境部室內空氣品質資訊網](https://iaq.moenv.gov.tw/indoorair/Default.aspx)。本文不取代衛浴產品說明、水電檢修或防水工程判斷。

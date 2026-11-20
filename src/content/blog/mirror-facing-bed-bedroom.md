@@ -2,7 +2,7 @@
 title: "鏡子對床側邊算嗎？3 種位置判斷與可復原化解法"
 description: "鏡子在床側邊也可能反射夜燈與人影：正躺、左右側躺、關燈後各測一次，三個角度都沒照到床面或頭部就不必處理；租屋鏡面衣櫃用遮布或調整門角度，附 270 × 300 公分平面圖。"
 date: "2026-06-28"
-updated: "2026-11-10"
+updated: "2026-11-13"
 category: "feng-shui"
 structure: "answer-first"
 tags:
@@ -98,7 +98,7 @@ plans:
 
 ## 鏡子與鏡面衣櫃要固定
 
-全身鏡、掛鏡與鏡面衣櫃，除了反光角度，也要看安裝是否穩固。美國消費品安全委員會的 Anchor It! 計畫提醒，高而重的家具與鏡子有傾倒風險，應依製造商說明固定，並避免放在容易被拉扯或攀爬的位置，有兒童或寵物同住時尤其要注意，見 [CPSC Anchor It! 安全中心](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)。租屋不能鑽牆時，選底座穩固的落地鏡，並避免把鏡子單獨立在床邊走道上。
+全身鏡、掛鏡與鏡面衣櫃，除了反光角度，也要看安裝是否穩固。美國消費品安全委員會的 Anchor It! 計畫提醒，電視與家具（如書櫃、抽屜櫃）要依製造商說明固定，並把會吸引兒童攀爬的物品移離高處，見 [CPSC Anchor It! 安全中心](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)。該頁沒有提到鏡子；全身鏡、掛鏡與鏡面衣櫃同樣高而容易傾倒，固定方式一樣依製造商說明，有兒童或寵物同住時尤其要注意。租屋不能鑽牆時，選底座穩固的落地鏡，並避免把鏡子單獨立在床邊走道上。
 
 ## 常見問題
 

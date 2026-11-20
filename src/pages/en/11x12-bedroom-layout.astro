@@ -1,10 +1,6 @@
 ---
-import UsSeoGuidePage from '../../components/UsSeoGuidePage.astro';
-import BedroomClearanceStudy from '../../components/BedroomClearanceStudy.astro';
-import { bedroomPages } from '../../us-seo/content';
-const page = bedroomPages.find((item) => item.slug === '11x12-bedroom-layout');
-if (!page) throw new Error('Missing 11x12 bedroom page data');
+import UsSeoAnswerPage from '../../components/UsSeoAnswerPage.astro';
+import { getAnswerPage } from '../../us-seo/answer-pages';
+const page = getAnswerPage('11x12-bedroom-layout');
 ---
-<UsSeoGuidePage data={page}>
-  <BedroomClearanceStudy slot="measurement-study" study="side" />
-</UsSeoGuidePage>
+<UsSeoAnswerPage data={page} />

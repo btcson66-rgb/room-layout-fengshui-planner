@@ -2,7 +2,7 @@
 title: "玄關掃地機器人風水怎麼放？充電座、電線、門口與回充動線"
 description: "玄關掃地機器人充電座放哪裡：離開門扇回轉範圍、前方留空、插座與電線不跨通道、避開濕鞋區。附 200 × 260 公分玄關平面圖與檢查清單。"
 date: "2026-08-29"
-updated: "2026-11-11"
+updated: "2026-11-13"
 category: "entryway"
 structure: "answer-first"
 tags:
@@ -112,4 +112,4 @@ plans:
 
 ## 參考資料與限制
 
-本文整理玄關放置充電座的尺寸與安全原則，不保證財運、清潔效果或家庭結果。充電座、插頭、電池、清潔、進出風口與故障處理可參考 [標準檢驗局使用掃地機器人安全提醒](https://www.bsmi.gov.tw/SafetyGIP/wSite/ct?ctNode=8155&mp=3&xItem=111992)、[標準檢驗局掃地機器人選購及使用注意事項](https://www.bsmi.gov.tw/bsmiGIP/wSite/ct?ctNode=8156&mp=1&xItem=115283) 與 [標準檢驗局掃地機器人檢測結果](https://www.bsmi.gov.tw/wSite/fp?ctNode=10001&mp=1&xItem=109096)。實際充電距離、地面、電池與維修仍依產品說明、所在地規範和合格專業意見判斷。
+本文整理玄關放置充電座的尺寸與安全原則，不保證財運、清潔效果或家庭結果。充電座、插頭、電池、清潔、進出風口與故障處理可參考 [標準檢驗局使用掃地機器人安全提醒](https://www.bsmi.gov.tw/SafetyGIP/wSite/ct?ctNode=8155&mp=3&xItem=111992) 與 [標準檢驗局掃地機器人檢測結果](https://www.bsmi.gov.tw/wSite/fp?ctNode=10001&mp=1&xItem=109096)。實際充電距離、地面、電池與維修仍依產品說明、所在地規範和合格專業意見判斷。
