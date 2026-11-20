@@ -84,4 +84,4 @@ Samsung 的頁面說不要使用排水管延長套件；其他品牌看說明書
 - [Samsung US：washing machine smells bad](https://www.samsung.com/us/support/troubleshoot/TSG10007246/)：下水道味可能與排水管插太深、虹吸有關。已核對。
 - [Samsung UK：washing machine does not fill up or drain](https://www.samsung.com/uk/support/home-appliances/what-to-do-when-my-washing-machine-does-not-fill-up-or-drain/)：泵浦濾網清潔步驟、進水濾網。已核對。
 
-文中的 100 公分立管高度是示意例的假設。本文不保證洗淨、漏水或財運；實際管路、固定與維修，依機型說明與合格專業人員的判斷。
+文中的 100 公分立管高度是示意例的假設。本文不談洗淨效果、漏水或財運的結果；實際管路、固定與維修，依機型說明與合格專業人員的判斷。
