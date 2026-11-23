@@ -107,7 +107,4 @@ OSHA 的資料建議螢幕與窗戶垂直，但仍要看玻璃、窗簾、燈具
 
 ## 參考資料與限制
 
-- [OSHA：Computer Workstations — Monitors](https://www.osha.gov/etools/computer-workstations/components/monitors)：螢幕放在正前方、至少 20 英吋遠、頂端與眼睛同高或略低、與窗戶垂直。已核對。
-- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：減少窗戶與燈具眩光、用百葉或窗簾擋光、東西向窗用直式百葉與南北向窗用橫式百葉、擦螢幕、牆面用不反光塗料、不要坐在空調出風口正下方。已核對。
-
-文中的 5 公分、60 公分等尺寸取自示意例；OSHA 資料是美國辦公室工作站建議，不是診斷。本文不保證專注、健康或工作成果，眼睛、頸肩、空調、電氣與窗戶作業問題仍依使用者狀況與專業意見處理。
+- [OSHA：Computer Workstations — Monitors](https://www.osha.gov/etools/computer-workstations/components/monitors)：螢幕放在正前方、至少 20 英吋遠、頂端與眼睛同高或略低、與窗戶垂直。- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：減少窗戶與燈具眩光、用百葉或窗簾擋光、東西向窗用直式百葉與南北向窗用橫式百葉、擦螢幕、牆面用不反光塗料、不要坐在空調出風口正下方。文中的 5 公分、60 公分等尺寸取自示意例；OSHA 資料是美國辦公室工作站建議，不是診斷。本文不保證專注、健康或工作成果，眼睛、頸肩、空調、電氣與窗戶作業問題仍依使用者狀況與專業意見處理。

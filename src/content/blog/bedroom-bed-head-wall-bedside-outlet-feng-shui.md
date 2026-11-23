@@ -89,7 +89,4 @@ plans:
 
 ## 參考資料與限制
 
-- [USFA：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：畫住家圖、每個房間找兩條出路、門窗不被擋住。已核對。
-- [USFA：Smoke Alarms](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/index.html)：每間臥室與睡眠區外都要裝煙霧警報器、10 年更換。已核對。
-
-文中的 25 公分、10 公分、32 公分都是用示意例的尺寸算出來的，不是標準。本文不保證睡眠、財運或健康結果，也不取代合格電氣人員的判斷。
+- [USFA：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：畫住家圖、每個房間找兩條出路、門窗不被擋住。- [USFA：Smoke Alarms](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/index.html)：每間臥室與睡眠區外都要裝煙霧警報器、10 年更換。文中的 25 公分、10 公分、32 公分都是用示意例的尺寸算出來的，不是標準。本文不保證睡眠、財運或健康結果，也不取代合格電氣人員的判斷。

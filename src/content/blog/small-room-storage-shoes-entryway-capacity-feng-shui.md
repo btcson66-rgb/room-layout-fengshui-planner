@@ -77,6 +77,6 @@ plans:
 
 ## 參考資料與限制
 
-- [宜家臺灣：臥室衣物收納系統挑選指南](https://www.ikea.com.tw/zh/rooms/bedroom/how-to/step-by-step-find-your-perfect-clothes-storage-system)：先量空間、用膠帶標出輪廓模擬、衣櫃前走道至少 60 公分、小臥室優先推拉門。已核對；它談衣櫃，沒有談鞋櫃。
+- [宜家臺灣：臥室衣物收納系統挑選指南](https://www.ikea.com.tw/zh/rooms/bedroom/how-to/step-by-step-find-your-perfect-clothes-storage-system)：先量空間、用膠帶標出輪廓模擬、衣櫃前走道至少 60 公分、小臥室優先推拉門。它談衣櫃，沒有談鞋櫃。
 
-原稿引用的 CPSC Anchor It!（403，無法核對）與 EPA 的黴菌導覽頁（與鞋子無關）已移除。原稿的 2 到 4 小時晾乾、25 到 35 公分鞋櫃深度、2 到 3 雙鞋，沒有可核對的來源，改為經驗值。文中的 10 公分與 17 公分是用示意例的尺寸算出來的。本文不談財運或吉凶的保證。
+文中的 10 公分與 17 公分是用示意例的尺寸算出來的。本文不談財運或吉凶的保證。

@@ -84,9 +84,4 @@ OSHA 的採購檢查表說，桌面要有霧面處理以減少眩光，避免玻
 
 ## 參考資料與限制
 
-- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：窗外亮光與螢幕成直角、用百葉或窗簾擋光。已核對。
-- [OSHA：Computer Workstations — Purchasing Guide](https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide)：桌面霧面、避免玻璃桌面、依工作選桌燈。已核對。
-- [OSHA：Computer Workstations — Document Holders](https://www.osha.gov/etools/computer-workstations/components/document-holders)：文件上的桌面燈不要在螢幕上造成眩光。已核對。
-- [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：天氣許可時開窗增加新鮮空氣。已核對。
-
-原稿另有 EPA 生物污染物頁面的引用，內容與反光無關，已移除。文中的 54 公分螢幕寬、60 公分窗扇與 43 公分是示意例的假設或算式，不是標準。本文不保證專注、升遷或成果；持續的眼睛、頭痛或姿勢不適，請諮詢適當的醫療或職業安全專業。
+- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：窗外亮光與螢幕成直角、用百葉或窗簾擋光。- [OSHA：Computer Workstations — Purchasing Guide](https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide)：桌面霧面、避免玻璃桌面、依工作選桌燈。- [OSHA：Computer Workstations — Document Holders](https://www.osha.gov/etools/computer-workstations/components/document-holders)：文件上的桌面燈不要在螢幕上造成眩光。- [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：天氣許可時開窗增加新鮮空氣。文中的 54 公分螢幕寬、60 公分窗扇與 43 公分是示意例的假設或算式，不是標準。本文不保證專注、升遷或成果；持續的眼睛、頭痛或姿勢不適，請諮詢適當的醫療或職業安全專業。

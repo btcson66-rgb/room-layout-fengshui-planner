@@ -85,7 +85,4 @@ plans:
 
 ## 參考資料與限制
 
-- [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：濕度 30% 到 50%、保持清潔乾燥、塵蟎常見於枕頭與被子。已核對。
-- [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：每個房間兩條出路、門窗不被擋住。已核對。
-
-文中的 40 公分站位、55 公分拉出距離與 6 公分餘量，是示意例的假設，不是標準。本文不談收納容量的絕對保證，也不是家具承重、兒童安全或地板工程的認證。
+- [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：濕度 30% 到 50%、保持清潔乾燥、塵蟎常見於枕頭與被子。- [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：每個房間兩條出路、門窗不被擋住。文中的 40 公分站位、55 公分拉出距離與 6 公分餘量，是示意例的假設，不是標準。本文不談收納容量的絕對保證，也不是家具承重、兒童安全或地板工程的認證。

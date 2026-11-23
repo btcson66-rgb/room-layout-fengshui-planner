@@ -80,8 +80,5 @@ Samsung 的頁面說不要使用排水管延長套件；其他品牌看說明書
 
 ## 參考資料與限制
 
-- [Samsung US：Make sure the washing machine's drain hose is installed correctly](https://www.samsung.com/us/support/troubleshoot/TSG10001007/)：插入 6 到 8 英寸、不氣密、高度 18 到 96 英寸、排到水槽 24 到 35 英寸、不用延長套件、不拆固定架。已核對；僅適用該品牌美國機型。
-- [Samsung US：washing machine smells bad](https://www.samsung.com/us/support/troubleshoot/TSG10007246/)：下水道味可能與排水管插太深、虹吸有關。已核對。
-- [Samsung UK：washing machine does not fill up or drain](https://www.samsung.com/uk/support/home-appliances/what-to-do-when-my-washing-machine-does-not-fill-up-or-drain/)：泵浦濾網清潔步驟、進水濾網。已核對。
-
-文中的 100 公分立管高度是示意例的假設。本文不談洗淨效果、漏水或財運的結果；實際管路、固定與維修，依機型說明與合格專業人員的判斷。
+- [Samsung US：Make sure the washing machine's drain hose is installed correctly](https://www.samsung.com/us/support/troubleshoot/TSG10001007/)：插入 6 到 8 英寸、不氣密、高度 18 到 96 英寸、排到水槽 24 到 35 英寸、不用延長套件、不拆固定架。僅適用該品牌美國機型。
+- [Samsung US：washing machine smells bad](https://www.samsung.com/us/support/troubleshoot/TSG10007246/)：下水道味可能與排水管插太深、虹吸有關。- [Samsung UK：washing machine does not fill up or drain](https://www.samsung.com/uk/support/home-appliances/what-to-do-when-my-washing-machine-does-not-fill-up-or-drain/)：泵浦濾網清潔步驟、進水濾網。文中的 100 公分立管高度是示意例的假設。本文不談洗淨效果、漏水或財運的結果；實際管路、固定與維修，依機型說明與合格專業人員的判斷。

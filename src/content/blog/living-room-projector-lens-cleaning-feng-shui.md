@@ -94,7 +94,4 @@ plans:
 
 ## 參考資料與限制
 
-- [Epson：Cleaning the Lens](https://files.support.epson.com/docid/cpd6/cpd65465/EN2/Maintenance/Tasks/cleaning_lens_common.html)：乾淨乾燥的拭鏡紙、吹球、不可用易燃氣體噴罐、剛關機不要擦、不用粗糙材料。已核對。
-- [Epson：Projector Maintenance](https://files.support.epson.com/docid/cpd6/cpd65868/EN/Maintenance/Concepts/projector_maintenance.html)：清鏡頭、濾網與通風口、清潔前關機拔線、不要打開沒說可以打開的蓋子。已核對。
-
-這兩份是 Epson 機型的手冊，其他品牌的規定可能不同。原稿提到的「燈泡機至少冷卻 30 分鐘」與「濾網每 100 到 500 小時清一次」，沒有可核對的來源，已移除；請依自己機型的說明書。原稿引用的 Canon LV-S3 手冊是舊機型，未列入。文中的 20 公分與 160 公分是用示意例的尺寸算出來的，不是標準。本文不談畫質、名聲或不過熱的保證，也不取代原廠維修。
+- [Epson：Cleaning the Lens](https://files.support.epson.com/docid/cpd6/cpd65465/EN2/Maintenance/Tasks/cleaning_lens_common.html)：乾淨乾燥的拭鏡紙、吹球、不可用易燃氣體噴罐、剛關機不要擦、不用粗糙材料。- [Epson：Projector Maintenance](https://files.support.epson.com/docid/cpd6/cpd65868/EN/Maintenance/Concepts/projector_maintenance.html)：清鏡頭、濾網與通風口、清潔前關機拔線、不要打開沒說可以打開的蓋子。這兩份是 Epson 機型的手冊，其他品牌的規定可能不同，請依自己機型的說明書。文中的 20 公分與 160 公分是用示意例的尺寸算出來的，不是標準。本文不談畫質、名聲或不過熱的保證，也不取代原廠維修。

@@ -59,6 +59,10 @@ plans:
 
 內政部建築研究所在家具防震的新聞稿裡說，高櫃要用 L 型五金或伸縮撐桿固定在牆上，重物放下層、動線保持通暢；床頭靠牆不能當成衣櫃防傾倒的措施。衣櫃頂部不要放開門或起身時會掉落的重物。美國國家消防協會（NFPA）的居家逃生計畫提示表建議，每個房間找出兩條出路，並確認門窗沒有被擋住；衣櫃、床與房門的距離不要讓離房的路變窄。
 
+## 換季與整理的順手動作
+
+衣櫃前的取衣站位不是只在每天穿衣時才用：換季搬出整箱衣物、把被子放上層時，也要站在同一個位置。所以站位前不要放整理箱、吸塵器或晾衣架，讓它保持空著；換季時先把要搬出的箱子放在床上，再整理，不必踩著床邊或擠在狹小的縫裡。衣櫃門若是推拉門，軌道每季順手擦一次，灰塵與毛髮卡住時門才不會卡死。
+
 ## 常見問題
 
 ### 衣櫃放床尾會堵住房門嗎？
@@ -75,7 +79,4 @@ plans:
 
 ## 參考資料與限制
 
-- [內政部：地震頻傳，居家應注意家具防震安全！](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)：高櫃用 L 型五金或伸縮撐桿固定、重物放下層、動線通暢。已核對。
-- [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：每個房間兩條出路、門窗不被擋住。已核對。
-
-原稿引用的 CPSC Anchor It!（403，無法核對）與 EPA Care for Your Air（與衣櫃分區無關）已移除。原稿的 55 公分是原案例的數字，無法重現，只作為「放床尾會堵住房門」的示意。文中的 10 公分、20 公分與 80 公分是用示意例的尺寸算出來的。本文不談財運、感情或睡眠的效果。
+- [內政部：地震頻傳，居家應注意家具防震安全！](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)：高櫃用 L 型五金或伸縮撐桿固定、重物放下層、動線通暢。- [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：每個房間兩條出路、門窗不被擋住。文中的 10 公分、20 公分與 80 公分是用示意例的尺寸算出來的。本文不談財運、感情或睡眠的效果。

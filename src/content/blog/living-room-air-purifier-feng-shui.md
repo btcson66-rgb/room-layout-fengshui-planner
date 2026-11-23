@@ -96,7 +96,4 @@ EPA 建議避免刻意產生臭氧的機型；其他宣稱不能代替實際性�
 
 ## 參考資料與限制
 
-- [US EPA：Guide to Air Cleaners in the Home](https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home)：CADR 要配合房間大小、包裝標示適用面積、避免刻意產生臭氧的機型、濾網定期更換。已核對。
-- [US EPA：Air Cleaners, HVAC Filters, and Coronavirus](https://www.epa.gov/indoor-air-quality-iaq/air-cleaners-hvac-filters-and-coronavirus-covid-19)：放在多數人花最多時間的房間、不在有人的空間使用刻意產生臭氧的機器。已核對。
-
-文中的 30 公分留空、35 公分機體與 12.8 平方公尺是示意例的假設或算式。本文不保證空氣品質、招財或健康結果；實際留空與濾網依產品手冊。
+- [US EPA：Guide to Air Cleaners in the Home](https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home)：CADR 要配合房間大小、包裝標示適用面積、避免刻意產生臭氧的機型、濾網定期更換。- [US EPA：Air Cleaners, HVAC Filters, and Coronavirus](https://www.epa.gov/indoor-air-quality-iaq/air-cleaners-hvac-filters-and-coronavirus-covid-19)：放在多數人花最多時間的房間、不在有人的空間使用刻意產生臭氧的機器。文中的 30 公分留空、35 公分機體與 12.8 平方公尺是示意例的假設或算式。本文不保證空氣品質、招財或健康結果；實際留空與濾網依產品手冊。

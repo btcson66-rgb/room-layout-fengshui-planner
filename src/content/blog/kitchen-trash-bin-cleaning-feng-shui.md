@@ -95,7 +95,7 @@ plans:
 
 ## 參考資料與限制
 
-- [IKEA US：FNISS 垃圾桶](https://www.ikea.com/us/en/p/fniss-trash-can-black-60295438/)：聚丙烯塑膠、軟布加溫和非研磨洗碗精擦拭、可用於潮濕處。已核對；是產品說明。
-- [IKEA US：TRÖSKNING 分類桶](https://www.ikea.com/us/en/p/troeskning-bin-with-lid-light-beige-80592258/)：軟布加溫和洗碗精擦拭、設計用來分類乾垃圾、蓋子可拆。已核對；是產品說明。
+- [IKEA US：FNISS 垃圾桶](https://www.ikea.com/us/en/p/fniss-trash-can-black-60295438/)：聚丙烯塑膠、軟布加溫和非研磨洗碗精擦拭、可用於潮濕處。是產品說明。
+- [IKEA US：TRÖSKNING 分類桶](https://www.ikea.com/us/en/p/troeskning-bin-with-lid-light-beige-80592258/)：軟布加溫和洗碗精擦拭、設計用來分類乾垃圾、蓋子可拆。是產品說明。
 
-原稿另引用 IKEA 的廚房垃圾桶分類頁面（商品列表，沒有保養或擺放的建議），已移除。本文不談招財、除蟲、食品安全或健康的保證；垃圾分類、化學品與蟲害，依當地規定與專業人員的判斷。
+本文不談招財、除蟲、食品安全或健康的保證；垃圾分類、化學品與蟲害，依當地規定與專業人員的判斷。

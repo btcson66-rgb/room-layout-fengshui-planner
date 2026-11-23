@@ -88,8 +88,4 @@ OSHA 的工作站環境資料建議把工作站調整到窗外的亮光與螢幕
 
 ## 參考資料與限制
 
-- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：窗外亮光與螢幕成直角、窗簾與百葉。已核對。
-- [OSHA：Computer Workstations — Desks](https://www.osha.gov/etools/computer-workstations/components/desks)：螢幕在正前方至少 20 英吋、不要把主機放在桌下。已核對。
-- [US EPA：Improving Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/improving-indoor-air-quality)：天氣許可時開窗增加通風，污染源控制最有效。已核對。
-
-原稿引用的 CPSC 窗簾繩頁面（cpsc.gov/gocordless）撰寫時回傳 403，無法核對，已移除連結，窗簾繩風險改為一般安全提醒。原稿標題與簡介所稱的「實測」沒有對應的測量紀錄，已改為示意例。文中的 60 公分、10 公分、75 公分與 20 公分是示意例的假設，75 到 80 公分的起身距離是經驗值，不是標準。本文不保證專注或成果。
+- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：窗外亮光與螢幕成直角、窗簾與百葉。- [OSHA：Computer Workstations — Desks](https://www.osha.gov/etools/computer-workstations/components/desks)：螢幕在正前方至少 20 英吋、不要把主機放在桌下。- [US EPA：Improving Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/improving-indoor-air-quality)：天氣許可時開窗增加通風，污染源控制最有效。文中的 60 公分、10 公分、75 公分與 20 公分是示意例的假設，75 到 80 公分的起身距離是經驗值，不是標準。本文不保證專注或成果。

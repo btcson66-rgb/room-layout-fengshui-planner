@@ -137,8 +137,5 @@ plans:
 
 ## 參考資料與限制
 
-- [NFPA：Cooking Safety（提示表）](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/cookingsafetytips.pdf?rev=6a4f544caac34f0f81506d80e14e0a95)：可燃物移離爐台、下廚時留在廚房、爐台周圍 1 公尺（3 英尺）兒童禁入區。已核對。
-- [EPA：烹調時改善室內空氣品質](https://www.epa.gov/indoor-air-quality-iaq/strategies-improving-indoor-air-quality-while-cooking-infographic)：排油煙機的使用與烹調後 10 到 20 分鐘。已核對。
-- 延伸閱讀（撰寫時對自動連線回傳驗證頁或 403，無法核對內文，本文沒有引用它們的具體內容）：[內政部消防署瓦斯使用安全提醒](https://www.nfa.gov.tw/cht/index.php?article_id=830&code=list&flag=detail&ids=21)、[CPSC 廚房烹調安全](https://www.cpsc.gov/safety-education/safety-guides/home-fire/recipe-safer-cooking)。
-
-文中 80 到 90 公分的門片掃過範圍與 60 公分站位是經驗值，不是法規；水火沖與爐灶對門屬民俗文化整理，不保證財運、健康或家庭結果，也不取代瓦斯、電氣、消防或室內設計專業意見。
+- [NFPA：Cooking Safety（提示表）](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/cookingsafetytips.pdf?rev=6a4f544caac34f0f81506d80e14e0a95)：可燃物移離爐台、下廚時留在廚房、爐台周圍 1 公尺（3 英尺）兒童禁入區。- [EPA：烹調時改善室內空氣品質](https://www.epa.gov/indoor-air-quality-iaq/strategies-improving-indoor-air-quality-while-cooking-infographic)：排油煙機的使用與烹調後 10 到 20 分鐘。文中 80 到 90 公分的門片掃過範圍與 60 公分站位是經驗值，不是法規；水火沖與爐灶對門屬民俗文化整理，不保證財運、健康或家庭結果，也不取代瓦斯、電氣、消防或室內設計專業意見。
+- 延伸閱讀：[內政部消防署瓦斯使用安全提醒](https://www.nfa.gov.tw/cht/index.php?article_id=830&code=list&flag=detail&ids=21)。
