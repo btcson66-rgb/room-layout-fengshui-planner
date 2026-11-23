@@ -2,12 +2,17 @@
 title: "冷氣在床側邊可以嗎？床側牆冷氣的出風方向、枕頭位置與床位調整"
 description: "冷氣在床側邊通常比在床頭正上方好處理：把枕頭放在離冷氣較遠的一端、擺葉調成水平往天花板送風，多數就不會直吹頭肩。本文給一句話答案、床與冷氣三種相對位置比較、300 × 330 公分案例與七次夜間起身回放。"
 date: "2026-09-03"
-updated: "2026-10-14"
+updated: "2026-11-23"
 category: "feng-shui"
+structure: "answer-first"
 tags: [臥室風水, 床側冷氣, 床邊動線, 回風]
 keywords: [冷氣在床側邊, 冷氣在床側風水, 床側牆冷氣配置, 冷氣吹頭怎麼辦, 冷氣床邊動線, 臥室冷氣回風]
 relatedTools: [/zh/room-layout-planner/, /zh/furniture-fit-checker/, /zh/bed-desk-wardrobe-layout/]
-relatedPosts: [air-conditioner-bedroom-layout, bedroom-air-conditioner-ceiling-direction-feng-shui, bedroom-air-conditioner-bedside-route-feng-shui, bedroom-air-conditioner-return-air-clearance-feng-shui]
+relatedPosts:
+  - air-conditioner-bedroom-layout
+  - bedroom-air-conditioner-ceiling-direction-feng-shui
+  - bedroom-air-conditioner-return-air-clearance-feng-shui
+  - bedroom-air-conditioner-curtain-airflow-feng-shui
 howToName: "檢查床側牆冷氣的風路與起身動線"
 howToTotalTime: "PT25M"
 howToSteps:
@@ -15,6 +20,22 @@ howToSteps:
   - "分別測試躺下、起身、開門和取濾網時的身體位置"
   - "比較移動床邊櫃、床向與出風角度的單一變因"
   - "完成七次夜間起身與一次清潔站位回放"
+plans:
+  - id: ac-sidewall-bed
+    after: "300 × 330 公分案例：床側出風與床邊櫃交換"
+    roomWidthCm: 300
+    roomLengthCm: 330
+    caption: "床（152 × 188 公分）頭靠北牆；冷氣在東牆中段（離北牆 100 到 190 公分），枕頭放北端、離冷氣較遠；床東側 58 公分是起身站位，床邊櫃（45 × 40 公分）在床頭東側；房門在南牆西側，向內開。"
+    ariaLabel: "300 乘 330 公分臥室平面圖：床 152 乘 188 公分頭靠北牆，東牆中段有冷氣，床東側有 58 公分的起身站位，床頭東側有 45 乘 40 公分床邊櫃，南牆西側有 80 公分寬房門向內開"
+    furniture:
+      - { x: 90, y: 0, width: 152, depth: 188, label: "床", className: bed, hideSize: true }
+      - { x: 242, y: 0, width: 45, depth: 40, label: "櫃", className: storage, hideSize: true }
+    zones:
+      - { x: 242, y: 50, width: 58, depth: 138, label: "起身", kind: area }
+    openings:
+      - { kind: door, wall: bottom, offset: 20, width: 80, swing: in, hinge: start, label: "房門" }
+    wallItems:
+      - { wall: right, offset: 100, width: 90, label: "冷氣", labelDx: -34, labelDy: 50 }
 ---
 
 # 冷氣在床側牆怎麼配置？先把床邊動線與回風區分開
@@ -29,8 +50,8 @@ howToSteps:
 
 1. **先看枕頭在哪一端**：床的長邊與冷氣同一面牆或垂直時，把枕頭放在離冷氣較遠的那一端，頭肩就離開主要風路。這是零成本、最先試的做法。
 2. **擺葉調成水平送風**：冷空氣會往下沉，擺葉朝天花板或水平送出，讓冷風先沿天花板擴散，比直接往床面吹舒服。多數機型的上下擺葉可以固定角度。
-3. **床邊留起身空間**：床到冷氣側牆之間若要走人，至少留 60 公分；只是貼牆不走人，也要讓床邊櫃、窗簾不擋住室內機下方的出風與上方回風。
-4. **最後才移床**：上面三步都試過仍整晚吹到，才考慮把床往另一側移 20～40 公分，移之前確認不會把床尾堵到房門。
+3. **床邊留起身空間**：床到冷氣側牆之間若要走人，留 60 公分左右（經驗值，不是標準）；只是貼牆不走人，也要讓床邊櫃、窗簾不擋住室內機下方的出風與上方回風。
+4. **最後才移床**：上面三步都試過仍整晚吹到，才考慮把床往另一側移 20～40 公分（經驗值），移之前確認不會把床尾堵到房門。
 
 | 冷氣位置 | 最常見的困擾 | 第一個要試的調整 |
 |---|---|---|
@@ -49,6 +70,8 @@ howToSteps:
 假設房間 300 × 330 公分，床 152 × 188 公分靠北牆，冷氣在東側牆中段，房門在南側，床右側只有 58 公分，床邊櫃寬 45 公分。方案 A 保留床邊櫃但櫃門朝冷氣；方案 B 將櫃子換成窄層板；方案 C 把床往西移 18 公分，讓出較完整的起身區。
 
 方案 A 要測櫃門開啟後是否站到出風路徑，也要測濾網能否取下。方案 B 雖然外框較小，仍要確認層板不擋回風且物品不會被風吹落。方案 C 若讓床另一側貼近衣櫃，可能把問題轉移到另一條通道。用 [家具尺寸檢查](/zh/furniture-fit-checker/)逐項核對，不以「看起來空」取代開門、起身和清潔回放。
+
+以上面的數字畫圖：床 152 × 188 公分頭靠北牆（離西牆 90 到 242 公分處），東側剩 300 − 242 = 58 公分，是起身站位；床邊櫃 45 × 40 公分放在床頭東側，冷氣在東牆離北牆 100 到 190 公分處。枕頭放在北端，離冷氣最近的床尾 188 − 100 = 88 公分處才開始進到冷氣的高度範圍，頭肩離風路較遠；起身站位正好在冷氣前方，所以起身時要看櫃門與出風有沒有重疊。這是示意例，不是實測空間。
 
 ## 先測回風，再談床邊的舒適感
 
