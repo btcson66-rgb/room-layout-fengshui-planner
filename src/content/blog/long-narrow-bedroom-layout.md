@@ -138,4 +138,4 @@ plans:
 
 ## 參考資料與限制
 
-文中的 75、25、125 公分是用示意例的尺寸算出來的，60 公分椅子後退量與下床空間是經驗值，不是法規。本文是一般住宅房間的量測與比較方法，不取代建築、消防、無障礙、施工或家具安裝的專業判斷。延伸閱讀（兩個網站撰寫時都擋下自動連線，無法核對內文，本文沒有引用它們的具體內容）：[內政部消防署逃生通道說明](https://www.nfa.gov.tw/cht/index.php?article_id=11657&code=list&flag=detail&ids=1468)、[美國 CPSC Anchor It! 家具固定專頁](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)。
+文中的 75、25、125 公分是用示意例的尺寸算出來的，60 公分椅子後退量與下床空間是經驗值，不是法規。本文是一般住宅房間的量測與比較方法，不取代建築、消防、無障礙、施工或家具安裝的專業判斷。延伸閱讀：[內政部消防署逃生通道說明](https://www.nfa.gov.tw/cht/index.php?article_id=11657&code=list&flag=detail&ids=1468)。

@@ -56,6 +56,10 @@ howToSteps:
 
 第一晚記錄現況；第二晚靠坐閱讀約 20 分鐘；第三晚測左右轉身與起床；第四晚換床單、清潔牆腳並收起靠墊；第五晚測夜間照明、窗簾與房門路線。記錄板件晃動、靠墊滑落、身體扭轉與物品掉落。只改一項再測，才知道是哪一項有用：靠坐舒服但結構晃動，先處理床架；結構穩但枕頭掉落，改物品邊界；靠墊堵窗或通道，就縮小或移除。
 
+## 兩人共用時怎麼分
+
+兩個人用同一張床時，靠坐的需求常不一樣：一人要靠著看書，另一人只想平躺。可以把靠墊做成一人一個、各自收在自己那側的床頭櫃或抽屜，而不是共用一個大靠墊；床頭板的高度與角度也以較常靠坐的那位為準。每次換床單時，把靠墊與枕頭一起拿起，順便看床頭板與牆之間有沒有掉進去的東西，這樣縫隙不會越積越多。
+
 ## 常見問題
 
 ### 床頭靠牆就一定有靠坐支撐嗎？
@@ -72,6 +76,4 @@ howToSteps:
 
 ## 參考資料與限制
 
-- [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找出兩個出口、確認門窗沒被擋住。已核對。
-
-原稿引用的 CPSC Anchor It（403）與 OSHA Computer Workstations（403）撰寫時無法讀取，已移除，原稿把它們說成「姿勢與人體操作範圍」「家具固定」的參考，沒有保留。本文不談睡眠、健康或運勢的效果。
+- [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找出兩個出口、確認門窗沒被擋住。本文不談睡眠、健康或運勢的效果。

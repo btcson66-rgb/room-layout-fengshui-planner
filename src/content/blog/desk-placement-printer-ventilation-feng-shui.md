@@ -82,7 +82,5 @@ plans:
 
 ## 參考資料與限制
 
-- [OSHA：Computer Workstations — Purchasing Guide](https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide)：桌面深度要讓螢幕離眼睛至少 20 英吋。已核對；它沒有談印表機。
-- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：電腦周邊設備（例如雷射印表機）可能釋放污染物，要放在通風良好處。已核對。
-
-文中印表機、鍵盤與矮櫃尺寸是示意例的假設，不是標準。本文僅作空間安排與民俗參考，不保證任何運勢，也不取代產品說明與專業意見。
+- [OSHA：Computer Workstations — Purchasing Guide](https://www.osha.gov/etools/computer-workstations/checklists/purchasing-guide)：桌面深度要讓螢幕離眼睛至少 20 英吋。它沒有談印表機。
+- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：電腦周邊設備（例如雷射印表機）可能釋放污染物，要放在通風良好處。文中印表機、鍵盤與矮櫃尺寸是示意例的假設，不是標準。本文僅作空間安排與民俗參考，不保證任何運勢，也不取代產品說明與專業意見。

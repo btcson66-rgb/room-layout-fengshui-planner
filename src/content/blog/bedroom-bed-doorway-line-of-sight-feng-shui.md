@@ -96,4 +96,3 @@ plans:
 ## 參考資料與安全界線
 
 - [美國國家消防協會：居家逃生計畫](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：房門、窗戶與出口路徑保持可用的檢查。
-- [美國消費品安全委員會：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：家具與電視防傾倒教育資料（撰寫時無法連線核對內文，僅作延伸閱讀）。

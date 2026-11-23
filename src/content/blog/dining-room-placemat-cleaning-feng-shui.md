@@ -81,7 +81,7 @@ IKEA 的餐桌保養說明建議，在盤子、杯子和熱的菜餚下使用餐
 
 ## 參考資料與限制
 
-- [IKEA 德國：Place mats & coasters（餐墊與杯墊）](https://www.ikea.com/de/en/cat/place-mats-coasters-20539/)：天然纖維用濕布擦、塑膠餐墊沖洗或濕布擦、100% 棉機洗與不可漂白烘乾。已核對；這是該商店針對自家產品的問答，不是官方標準。
-- [IKEA 印度：Dining tables（餐桌）](https://www.ikea.com/in/en/cat/dining-tables-21825/?page=3)：在盤杯與熱菜下使用餐墊、杯墊、隔熱墊保護桌面。已核對；同樣是商店的一般建議。
+- [IKEA 德國：Place mats & coasters（餐墊與杯墊）](https://www.ikea.com/de/en/cat/place-mats-coasters-20539/)：天然纖維用濕布擦、塑膠餐墊沖洗或濕布擦、100% 棉機洗與不可漂白烘乾。這是該商店針對自家產品的問答，不是官方標準。
+- [IKEA 印度：Dining tables（餐桌）](https://www.ikea.com/in/en/cat/dining-tables-21825/?page=3)：在盤杯與熱菜下使用餐墊、杯墊、隔熱墊保護桌面。同樣是商店的一般建議。
 
-原稿另引用的 IKEA 菲律賓餐桌擺飾文章（ph/ideas）與清潔無關，已移除。這些資料不能取代自家餐墊的洗標。本文不談家庭關係或運勢的效果。
+這些資料不能取代自家餐墊的洗標。本文不談家庭關係或運勢的效果。

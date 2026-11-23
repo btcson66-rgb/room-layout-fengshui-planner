@@ -85,4 +85,4 @@ plans:
 
 ## 參考資料與限制
 
-延長線與排插的火災數據與使用建議，引自 [CPSC：Power Up With Safety（Extension Cords & Power Strips）](https://www.cpsc.gov/s3fs-public/ExtensionCordsPowerStrips.pdf)；居家逃生與門窗不被擋住，引自 [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)。先前版本另列的兩個 CPSC 網頁（電氣安全、延長線火災）在撰寫時無法連線核對，已移除。本文不取代電氣專業判斷。
+延長線與排插的火災數據與使用建議，引自 [CPSC：Power Up With Safety（Extension Cords & Power Strips）](https://www.cpsc.gov/s3fs-public/ExtensionCordsPowerStrips.pdf)；居家逃生與門窗不被擋住，引自 [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)。本文不取代電氣專業判斷。

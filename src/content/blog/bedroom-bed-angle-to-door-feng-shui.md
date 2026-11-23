@@ -104,4 +104,4 @@ plans:
 
 ## 參考資料與限制
 
-家具固定與重物配置可參考 [美國消費品安全委員會 CPSC Anchor It!（家具與電視防傾倒教育資料，撰寫時無法連線核對內文）](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)；居家逃生路線可參考 [NFPA 居家火災逃生規劃資料](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)。文中 20 公分與 60 公分是經驗值，不是標準。本文是房間配置與傳統風水觀察的整理，不取代家具製造商、門窗工程、居家安全或醫療專業意見。
+居家逃生路線可參考 [NFPA 居家火災逃生規劃資料](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)。文中 20 公分與 60 公分是經驗值，不是標準。本文是房間配置與傳統風水觀察的整理，不取代家具製造商、門窗工程、居家安全或醫療專業意見。

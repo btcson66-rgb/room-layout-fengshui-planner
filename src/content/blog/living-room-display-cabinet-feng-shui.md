@@ -97,8 +97,4 @@ plans:
 
 ## 參考資料與限制
 
-- [內政部：地震頻傳，居家應注意家具防震安全！](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)（建築研究所新聞稿）：高櫃用 L 型五金或伸縮撐桿固定、重家具靠牆、重物放下層、動線通暢。已核對。
-- [國家災害防救科技中心：家庭地震應變計畫指引](https://www.ncdr.nat.gov.tw/UploadFile/PageItem/240391377a704669bd5d39be3b49bdc9.pdf)：地震時 30% 到 50% 的傷患因家具翻倒掉落所致。已核對。
-- [美國 EPA：Biological Contaminants and Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality)：定期吸塵、微濕布擦硬表面、清洗織品、控制濕氣。已核對。
-
-文中的 60 公分轉身空間與 45 公分間距是用示意例的尺寸算出來的，不是標準。本文是民俗文化與空間規劃參考，不談財運、名聲、健康或家庭結果；櫃體、玻璃、牆體與固定工程，依產品規格與合格專業人員的判斷。
+- [內政部：地震頻傳，居家應注意家具防震安全！](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)（建築研究所新聞稿）：高櫃用 L 型五金或伸縮撐桿固定、重家具靠牆、重物放下層、動線通暢。- [國家災害防救科技中心：家庭地震應變計畫指引](https://www.ncdr.nat.gov.tw/UploadFile/PageItem/240391377a704669bd5d39be3b49bdc9.pdf)：地震時 30% 到 50% 的傷患因家具翻倒掉落所致。- [美國 EPA：Biological Contaminants and Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/biological-contaminants-and-indoor-air-quality)：定期吸塵、微濕布擦硬表面、清洗織品、控制濕氣。文中的 60 公分轉身空間與 45 公分間距是用示意例的尺寸算出來的，不是標準。本文是民俗文化與空間規劃參考，不談財運、名聲、健康或家庭結果；櫃體、玻璃、牆體與固定工程，依產品規格與合格專業人員的判斷。

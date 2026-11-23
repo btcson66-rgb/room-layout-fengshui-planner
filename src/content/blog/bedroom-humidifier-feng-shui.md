@@ -95,7 +95,4 @@ EPA 的《Care for Your Air》建議室內濕度維持在 30% 到 50%，並用�
 
 ## 參考資料與限制
 
-- [US EPA：Care for Your Air: A Guide to Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：濕度 30% 到 50%、用濕度計、濕度高增加黴菌機會。已核對。
-- [US EPA：A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)：濕度低於 60%（理想 30% 到 50%）、窗戶凝結水要盡快處理。已核對。
-
-文中的 65 公分、25 公分與 15 公分是用示意例的尺寸算出來的，不是標準。本文不談睡眠、健康或運勢的效果；設備清潔、斷電與使用時間，以產品說明為準。
+- [US EPA：Care for Your Air: A Guide to Indoor Air Quality](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：濕度 30% 到 50%、用濕度計、濕度高增加黴菌機會。- [US EPA：A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)：濕度低於 60%（理想 30% 到 50%）、窗戶凝結水要盡快處理。文中的 65 公分、25 公分與 15 公分是用示意例的尺寸算出來的，不是標準。本文不談睡眠、健康或運勢的效果；設備清潔、斷電與使用時間，以產品說明為準。

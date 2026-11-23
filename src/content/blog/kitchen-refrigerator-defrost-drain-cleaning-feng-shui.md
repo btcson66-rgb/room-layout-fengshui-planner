@@ -88,6 +88,6 @@ Samsung 的說明是環境濕度高於 75% 或溫度遠低於 25 °C 時，自�
 
 ## 參考資料與限制
 
-- [Samsung UK：What should I do when water leaks from the drain tray of the refrigerator?](https://www.samsung.com/uk/support/home-appliances/what-should-i-do-when-water-leaks-from-the-drain-tray-of-the-refrigerator/)：除霜水流到底部後方排水盤、排水孔堵塞或結冰要找工程師、排水盤溢水要關機並清洗、環境溫濕度影響蒸發。已核對；僅適用該品牌。
+- [Samsung UK：What should I do when water leaks from the drain tray of the refrigerator?](https://www.samsung.com/uk/support/home-appliances/what-should-i-do-when-water-leaks-from-the-drain-tray-of-the-refrigerator/)：除霜水流到底部後方排水盤、排水孔堵塞或結冰要找工程師、排水盤溢水要關機並清洗、環境溫濕度影響蒸發。僅適用該品牌。
 
-原稿另引用兩份 Whirlpool 使用手冊（403，無法核對），沒有保留它們的內容。「排水孔通常在冷藏室後壁底部附近」是多數自動除霜機型的一般位置，沒有可核對的來源，請以手冊為準。文中的 80 公分與 28 公分是示意例的假設與算式。本文不談食物安全、財運或不積水的保證。
+「排水孔通常在冷藏室後壁底部附近」是多數自動除霜機型的一般位置，不是原廠資料，請以手冊為準。文中的 80 公分與 28 公分是示意例的假設與算式。本文不談食物安全、財運或不積水的保證。

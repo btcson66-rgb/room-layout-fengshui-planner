@@ -79,6 +79,4 @@ plans:
 
 ## 參考資料與限制
 
-- [USFA：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找兩條出路、門窗不被擋住。已核對。
-
-原稿另引用 CPSC Anchor It!（撰寫時 403，無法核對，而且談的是家具與電視防傾倒，與門簾無關），已移除。文中的 10 公分、15 公分與 85 公分是用示意例的尺寸算出來的，不是標準。本文是民俗與空間安排的參考，不保證睡眠或運勢。
+- [USFA：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找兩條出路、門窗不被擋住。文中的 10 公分、15 公分與 85 公分是用示意例的尺寸算出來的，不是標準。本文是民俗與空間安排的參考，不保證睡眠或運勢。

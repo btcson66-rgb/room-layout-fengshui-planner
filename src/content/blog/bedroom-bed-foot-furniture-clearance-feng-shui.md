@@ -91,6 +91,4 @@ plans:
 
 ## 參考資料與限制
 
-- [NFPA：Plan Your Home Fire Escape（居家逃生計畫單張，PDF）](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：畫出包含所有門窗的住家地圖、每個房間找出兩個出口、確保門窗沒被擋住。已核對。
-
-文中的 10 公分與 20 公分是用示意例的尺寸算出來的，不是標準。本文不談睡眠、感情或財運的效果；家具固定與消防逃生請依產品說明與專業人員。
+- [NFPA：Plan Your Home Fire Escape（居家逃生計畫單張，PDF）](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：畫出包含所有門窗的住家地圖、每個房間找出兩個出口、確保門窗沒被擋住。文中的 10 公分與 20 公分是用示意例的尺寸算出來的，不是標準。本文不談睡眠、感情或財運的效果；家具固定與消防逃生請依產品說明與專業人員。

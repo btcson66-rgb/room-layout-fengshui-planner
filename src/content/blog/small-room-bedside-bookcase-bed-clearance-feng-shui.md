@@ -79,8 +79,4 @@ plans:
 
 ## 參考資料與限制
 
-- [內政部：地震頻傳，居家應注意家具防震安全！](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)：高櫃用 L 型五金或伸縮撐桿固定、重物放下層、動線通暢。已核對。
-- [國家災害防救科技中心：家庭地震應變計畫指引](https://www.ncdr.nat.gov.tw/UploadFile/PageItem/240391377a704669bd5d39be3b49bdc9.pdf)：地震時 30% 到 50% 的傷患因家具翻倒掉落所致。已核對。
-- [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：每個房間兩條出路、門窗不被擋住。已核對。
-
-原稿引用的 CPSC Anchor It!（403，無法核對）、CPSC Childproofing（403）、CPSC 防傾倒研究報告（談的是免工具固定，與書櫃配置無關）與 EPA Care for Your Air（與書櫃無關）已移除。文中的 20 公分、60 公分與 32 公分是用示意例的尺寸算出來的，不是標準。本文不談省空間、收納或財運的保證。
+- [內政部：地震頻傳，居家應注意家具防震安全！](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)：高櫃用 L 型五金或伸縮撐桿固定、重物放下層、動線通暢。- [國家災害防救科技中心：家庭地震應變計畫指引](https://www.ncdr.nat.gov.tw/UploadFile/PageItem/240391377a704669bd5d39be3b49bdc9.pdf)：地震時 30% 到 50% 的傷患因家具翻倒掉落所致。- [NFPA：Plan Your Home Fire Escape](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/easy-to-read/etrescapeplanenglish.pdf)：每個房間兩條出路、門窗不被擋住。文中的 20 公分、60 公分與 32 公分是用示意例的尺寸算出來的，不是標準。本文不談省空間、收納或財運的保證。

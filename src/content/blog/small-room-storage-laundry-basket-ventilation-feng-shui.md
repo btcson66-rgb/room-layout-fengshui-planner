@@ -93,4 +93,3 @@ plans:
 
 - [US EPA：Interactive Mold House Tour](https://www.epa.gov/mold/interactive-mold-house-tour)：居家各處的潮濕與霉菌來源。
 - [US EPA：Care for Your Air](https://www.epa.gov/indoor-air-quality-iaq/care-your-air-guide-indoor-air-quality)：室內空氣、濕度與通風管理。
-- [CPSC：Anchor It!](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/AnchorItgov)：家具與電視防傾倒教育資料（撰寫時無法連線核對內文，僅作延伸閱讀，文中未引用其具體內容）。

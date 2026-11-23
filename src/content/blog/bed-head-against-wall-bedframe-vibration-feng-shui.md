@@ -58,6 +58,10 @@ howToSteps:
 
 床架出現裂痕、變形、螺絲反覆鬆脫、承重處異音或床腳歪斜時，先停止在上面睡，不要靠加墊子或擺東西處理；依製造商說明聯絡維修，或請專業人員檢查。若只是床腳滑動，可依產品方式處理，並保留能檢查牆面與床後縫隙的距離。結構與安全問題不能用擺件或方位說法取代。
 
+## 兩人使用與換床單時的觀察
+
+兩個人的體重與動作不同，震動常在其中一側特別明顯，可以請兩人分別在各自那側翻身、坐起，看是不是同一個部位在響。換床單時，順便把床墊拉起一角，看看床板、連接件與床腳有沒有鬆動或有灰塵卡住，這比等到出現異音才檢查容易。每次發現鬆動就依說明書鎖緊，並寫下日期，之後若又鬆動，就知道是反覆出現的問題。
+
 ## 常見問題
 
 ### 床頭靠牆震動是風水不好嗎？
@@ -74,7 +78,4 @@ howToSteps:
 
 ## 參考資料與限制
 
-- [內政部：地震頻傳，居家應注意家具防震安全！（建築研究所）](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)：高櫃以 L 型五金、伸縮撐桿固定。已核對。
-- [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找出兩個出口、確認門窗沒被擋住。已核對。
-
-原稿引用的 CPSC Anchor It（403）與 OSHA Workstation Environment（403）撰寫時無法讀取，已移除，所有歸屬於它們的說法也一併刪除。本文不談睡眠、健康、關係或運勢的效果，結構與安全問題請依製造商與專業人員。
+- [內政部：地震頻傳，居家應注意家具防震安全！（建築研究所）](https://www.moi.gov.tw/News_Content.aspx?Create=1&n=2&s=328537)：高櫃以 L 型五金、伸縮撐桿固定。- [U.S. Fire Administration：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找出兩個出口、確認門窗沒被擋住。本文不談睡眠、健康、關係或運勢的效果，結構與安全問題請依製造商與專業人員。

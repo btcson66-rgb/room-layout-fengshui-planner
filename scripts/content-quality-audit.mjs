@@ -5009,6 +5009,10 @@ for (const slug of reviewReadyBlogSlugs) {
   const updated = source.match(/updated:\s*["']?(\d{4}-\d{2}-\d{2})/)?.[1] ?? '';
   check(`source:${slug}:review-date`, updated >= '2026-07-15', updated || 'updated date is required');
   check(`source:${slug}:no-seo-copy`, !/SEO|搜尋流量|關鍵字叢集|建議保持免註冊/.test(body), 'no internal SEO/editorial instructions in reader content');
+  // 編輯過程文字不得外洩到讀者看得到的內容（改寫紀錄、連結查核過程、被移除的舊引用）。
+  const editorialLeak = /原稿|撰寫時(?:無法|被)|無法(?:連線)?核對內文|(?:原文|原稿)(?:曾)?引用/;
+  const frontDescription = (source.split(/^---\s*$/m)[1] ?? '').match(/^description:\s*(.*)$/m)?.[1] ?? '';
+  check(`source:${slug}:no-editorial-leak`, !editorialLeak.test(body) && !editorialLeak.test(frontDescription), 'body/description must not describe earlier drafts or link-checking');
   const expandedRequirements = expandedArticleRequirements.get(slug);
   if (expandedRequirements) {
     expandedArticleBodies.set(slug, body);

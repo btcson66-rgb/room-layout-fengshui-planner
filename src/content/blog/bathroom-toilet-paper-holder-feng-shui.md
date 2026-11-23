@@ -93,6 +93,6 @@ plans:
 
 ## 參考資料與限制
 
-- [內政部建築研究所：無障礙衛浴設備等標準研訂（PDF）](https://ws.moi.gov.tw/Download.ashx?n=Y29tcGxldGUucGRm&u=LzAwMS9VcGxvYWQvT2xkRmlsZV9BYnJpX0dvdi9yZXNlYXJjaC8xMzQ4LzE0NDc5Mjk5NzgxLnBkZg%3D%3D)：第 2.1.5 節，衛生紙捲筒設於座式便器側牆、出紙方向與便器垂直、前後各 20 公分、出口離座面 45 到 65 公分、材質防水與不銹鋼配件、安裝牢靠。已核對；這是針對行動不便者使用的座式馬桶，一般住宅只作參考。
+- [內政部建築研究所：無障礙衛浴設備等標準研訂（PDF）](https://ws.moi.gov.tw/Download.ashx?n=Y29tcGxldGUucGRm&u=LzAwMS9VcGxvYWQvT2xkRmlsZV9BYnJpX0dvdi9yZXNlYXJjaC8xMzQ4LzE0NDc5Mjk5NzgxLnBkZg%3D%3D)：第 2.1.5 節，衛生紙捲筒設於座式便器側牆、出紙方向與便器垂直、前後各 20 公分、出口離座面 45 到 65 公分、材質防水與不銹鋼配件、安裝牢靠。這是針對行動不便者使用的座式馬桶，一般住宅只作參考。
 
-原稿把這份研究說成泛指「取用高度與防潮」，現在改成引用它實際寫的數字，並註明適用範圍。文中的 40 公分與 80 公分是用示意例的尺寸算出來的，不是標準。本文不談財運、健康或家庭關係的效果。
+文中的 40 公分與 80 公分是用示意例的尺寸算出來的，不是標準。本文不談財運、健康或家庭關係的效果。

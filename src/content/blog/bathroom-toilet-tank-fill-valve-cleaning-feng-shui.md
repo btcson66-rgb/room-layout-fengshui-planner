@@ -84,7 +84,5 @@ howToSteps:
 
 ## 參考資料與限制
 
-- [Kohler：In-Wall Tank 安裝說明書](https://techcomm.kohler.com/techcomm/pdf/1589760-IN2.pdf)：清潔進水閥濾網每 6 個月或水流變小時、關水洩壓、軟毛刷、回裝後放水沖雜質。已核對；僅適用該型暗藏式水箱。
-- [美國 EPA：A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)：漏水後 24 到 48 小時內弄乾、浴室黴菌反覆時增加通風與清潔。已核對。
-
-本文不談馬桶診斷、衛生、健康或運勢。實際零件、供水、拆卸與維修，依產品標示與合格專業人員的判斷。
+- [Kohler：In-Wall Tank 安裝說明書](https://techcomm.kohler.com/techcomm/pdf/1589760-IN2.pdf)：清潔進水閥濾網每 6 個月或水流變小時、關水洩壓、軟毛刷、回裝後放水沖雜質。僅適用該型暗藏式水箱。
+- [美國 EPA：A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)：漏水後 24 到 48 小時內弄乾、浴室黴菌反覆時增加通風與清潔。本文不談馬桶診斷、衛生、健康或運勢。實際零件、供水、拆卸與維修，依產品標示與合格專業人員的判斷。

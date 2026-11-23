@@ -83,7 +83,4 @@ plans:
 
 ## 參考資料與限制
 
-- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：把工作站調整到窗外亮光與螢幕成直角，減少眩光。已核對。
-- [USFA：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找兩條出路，門窗不被擋住。已核對。
-
-文中的 60 公分下床側與椅子後退區是經驗值與示意例的假設，不是標準。本文僅作空間安排與民俗參考，不保證睡眠、專注或運勢。
+- [OSHA：Computer Workstations — Workstation Environment](https://www.osha.gov/etools/computer-workstations/workstation-environment)：把工作站調整到窗外亮光與螢幕成直角，減少眩光。- [USFA：Home Fire Escape Plans](https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/index.html)：每個房間找兩條出路，門窗不被擋住。文中的 60 公分下床側與椅子後退區是經驗值與示意例的假設，不是標準。本文僅作空間安排與民俗參考，不保證睡眠、專注或運勢。

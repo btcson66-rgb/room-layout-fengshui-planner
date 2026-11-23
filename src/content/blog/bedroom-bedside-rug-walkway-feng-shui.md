@@ -95,7 +95,5 @@ plans:
 
 ## 參考資料與限制
 
-- [衛生福利部：跌不償失 老人居家防跌 5 要點](https://www.mohw.gov.tw/cp-2704-51615-1.html)（資料來源：國民健康署）：去除地毯及踏墊皺褶與捲起的邊緣、腳踏墊底下加防滑墊、從床上能輕易開關燈。已核對；它談的是長者居家環境，不是針對所有人。
-- [美國環保署 EPA：An Introduction to Indoor Air Quality / The Inside Story](https://www.epa.gov/indoor-air-quality-iaq/inside-story-guide-indoor-air-quality)：受潮地毯盡快清潔烘乾或考慮更換。已核對。
-
-原稿把 EPA 頁面泛稱為地毯清潔與潮濕管理的參考，現在只引用它實際寫的受潮地毯那一段。文中的 50 公分、80 公分是用示意例的尺寸算出來的，不是標準。本文不談睡眠、防跌或健康的效果。
+- [衛生福利部：跌不償失 老人居家防跌 5 要點](https://www.mohw.gov.tw/cp-2704-51615-1.html)（資料來源：國民健康署）：去除地毯及踏墊皺褶與捲起的邊緣、腳踏墊底下加防滑墊、從床上能輕易開關燈。它談的是長者居家環境，不是針對所有人。
+- [美國環保署 EPA：An Introduction to Indoor Air Quality / The Inside Story](https://www.epa.gov/indoor-air-quality-iaq/inside-story-guide-indoor-air-quality)：受潮地毯盡快清潔烘乾或考慮更換。文中的 50 公分、80 公分是用示意例的尺寸算出來的，不是標準。本文不談睡眠、防跌或健康的效果。

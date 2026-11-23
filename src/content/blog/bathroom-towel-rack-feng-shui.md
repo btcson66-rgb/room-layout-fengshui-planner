@@ -103,7 +103,4 @@ plans:
 
 ## 參考資料與限制
 
-- [美國 EPA：A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)：浴室黴菌反覆出現時增加通風與清潔、洗澡時開排風扇或開窗、漏水或潑濕後 24 到 48 小時內弄乾。已核對。
-- [衛生福利部：跌不償失 老人居家防跌 5 要點](https://www.mohw.gov.tw/cp-2704-51615-1.html)（資料來源：國民健康署）：地板乾燥、浴室防滑墊、毛巾與沐浴用品放在合適高度。已核對。
-
-文中的 30 公分間隔與 50 公分毛巾桿是示意例的假設。本文不保證健康、財運或運勢結果；牆體防水、固定、排風與無障礙需求，依建物狀況、產品說明與合格專業人員判斷。
+- [美國 EPA：A Brief Guide to Mold, Moisture and Your Home](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home)：浴室黴菌反覆出現時增加通風與清潔、洗澡時開排風扇或開窗、漏水或潑濕後 24 到 48 小時內弄乾。- [衛生福利部：跌不償失 老人居家防跌 5 要點](https://www.mohw.gov.tw/cp-2704-51615-1.html)（資料來源：國民健康署）：地板乾燥、浴室防滑墊、毛巾與沐浴用品放在合適高度。文中的 30 公分間隔與 50 公分毛巾桿是示意例的假設。本文不保證健康、財運或運勢結果；牆體防水、固定、排風與無障礙需求，依建物狀況、產品說明與合格專業人員判斷。
